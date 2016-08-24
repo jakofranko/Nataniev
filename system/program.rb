@@ -83,9 +83,9 @@ class Program
 
 	end
 
-	def echo_for player,inventory
+	def echo
 
-		if isSolved(player,inventory)
+		if isSolved($nataniev.player,$nataniev.player.inventory_vessels)
 			return Wildcard.new(@main_echo).render
 		else
 			return Wildcard.new(@else_echo).render

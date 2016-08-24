@@ -7,13 +7,13 @@ class Basic
 
 	# System
 
-	def __connect p = nil
+	def __connect q = nil
 
 		return "Connected"
 
 	end
 
-	def __look p = nil
+	def __look q = nil
 
 		text = ""
 
@@ -36,11 +36,13 @@ class Basic
     # Visibles
     if visible_vessels.length > 0
       visible_vessels.each do |vessel|
-        text += "- "+vessel.print+"\n"
+        text += vessel.display
       end
       text += "\n\n"
     end
 
+    # Hint
+    text += parent_vessel.hint ? "? #{parent_vessel.hint}" : ""
 
 		return text
 
@@ -48,25 +50,29 @@ class Basic
 
 	# Basic
 
-	def __create p = nil
+	def __create q = nil
 
 		return "TODO"
 		
 	end
 
-	def __become p = nil
+	def __become q = nil
 
 		return "TODO"
 		
 	end
 
-	def __enter p = nil
+	def __enter q = nil
 
-		return "TODO"
+    v = find_visible_vessel(q) ; if !v then return error_target(q) end
+
+    set_parent(v.id) ; save
+
+		return "You entered #{v.print}."
 		
 	end
 
-	def __leave p = nil
+	def __leave q = nil
 
 		return "TODO"
 		
@@ -74,13 +80,13 @@ class Basic
 
 	# Narative
 
-	def __note p = nil
+	def __note q = nil
 
 		return "TODO"
 		
 	end
 
-	def __rename p = nil
+	def __rename q = nil
 
 		return "TODO"
 		
@@ -88,13 +94,13 @@ class Basic
 
 	# Warp
 
-	def warp p = nil
+	def warp q = nil
 
 		return "TODO"
 		
 	end
 
-	def __random p = nil
+	def __random q = nil
 
 		return "TODO"
 		
@@ -102,19 +108,19 @@ class Basic
 
 	# Inventory
 
-	def __inventory p = nil
+	def __inventory q = nil
 
 		return "TODO"
 		
 	end
 
-	def __take p = nil
+	def __take q = nil
 
 		return "TODO"
 		
 	end
 
-	def __drop p = nil
+	def __drop q = nil
 
 		return "TODO"
 		
@@ -122,19 +128,19 @@ class Basic
 
 	# Programming
 
-	def __program p = nil
+	def __program q = nil
 
 		return "TODO"
 		
 	end
 
-	def __use p = nil
+	def __use q = nil
 
 		return "TODO"
 		
 	end
 
-	def __call p = nil
+	def __call q = nil
 
 		return "TODO"
 		
@@ -142,25 +148,25 @@ class Basic
 
 	# Security
 
-	def __lock p = nil
+	def __lock q = nil
 
 		return "TODO"
 		
 	end
 
-	def __unlock p = nil
+	def __unlock q = nil
 
 		return "TODO"
 		
 	end
 
-	def __show p = nil
+	def __show q = nil
 
 		return "TODO"
 		
 	end
 
-	def __hide p = nil
+	def __hide q = nil
 
 		return "TODO"
 		

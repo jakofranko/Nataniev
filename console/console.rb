@@ -121,7 +121,6 @@ class Console
 
 end
 
-
 class String
 
   def colorize(color_code)

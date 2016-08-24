@@ -69,16 +69,15 @@ module Vessel
 
   # Setters
 
-  def setLock val ; @isLocked = val ; @timestamp = now end
-  def setHide val ; @isHidden = val ; @timestamp = now end
-  def setQuiet val ; @isQuiet = val ; @timestamp = now end
+  def set_lock val ; @isLocked = val ; @timestamp = now end
+  def set_hide val ; @isHidden = val ; @timestamp = now end
+  def set_quiet val ; @isQuiet = val ; @timestamp = now end
 
-  def setName val ; @name = val ; @timestamp = now end
-  def setAttribute val ; @attribute = val ; @timestamp = now end
-  def setParent val ; @parent = val ; @timestamp = now end
-  def setProgram val ; @program = val ; @timestamp = now end
-  def setNote val ; @note = val ; @timestamp = now end
-
+  def set_name val ; @name = val ; @timestamp = now end
+  def set_attribute val ; @attribute = val ; @timestamp = now end
+  def set_parent val ; @parent = val ; @timestamp = now end
+  def set_program val ; @program = val ; @timestamp = now end
+  def set_note val ; @note = val ; @timestamp = now end
 
   def load_parent_vessel
 
@@ -92,7 +91,8 @@ module Vessel
     id = -1
     $nataniev.parade.to_a.each do |line|
       id += 1 ; 
-      if id == @id then next end
+      if id == @id then next end                         # Self
+      if id == @parent then next end                     # Parent
       if !line['CODE'] then next end
       if line['CODE'][5,5].to_i != parent then next end
       array.push($nataniev.make_vessel(id))
@@ -148,17 +148,17 @@ module Vessel
 
   end
 
-  def display_for player,inventory
+  def display
 
     rune = program.isValid ? "=" : "-"
-    echo = program.echo_for(player,inventory) 
+    echo = program.echo
     return rune+" "+print.capitalize+(echo.to_s != "" ? ", "+echo : "" )+"\n"
 
   end
 
   def hint
 
-    if !isLocked || owner == $player.id
+    if !isLocked || owner == $nataniev.player.id
       if !attribute then return "Add an adjective to {{#{print}}} by {{renaming|rename}} it." end
       if !note then return "Add a {{Note}} to describe {{#{print}}}." end
       if !program.isValid then return "Add a {{Program}} to interact with {{#{print}}}." end
@@ -208,8 +208,37 @@ module Vessel
 
   def save
     
-    $parade.world.save(id,render)
+    $nataniev.parade.save(id,render)
 
   end
+
+  # Targetting
+
+  def find_visible_vessel name
+
+    name = name.split(" ").last
+
+    @visible_vessels.each do |v|
+      if v.name.like(name) then return v end
+    end
+
+    return nil
+
+  end
+
+  # Errors
+
+  def error_command_invalid command ; return "#{command} is not a valid command." end
+  def error_command_banned bannedWord ; return "Paradise does not allow the use of the word {{#{bannedWord}}}." end
+  def error_locked vesselName ; return "{{#{vesselName}}} is locked and cannot me modified." end
+  def error_stem vesselName ; return "{{#{vesselName}}} is a paradox and cannot be exited." end
+  def error_target vesselId ; return vesselId.to_i > 0 ? "There are no accessible vessels at ##{vesselId}" : "There is no visible vessel named {{#{vesselId}}}." end
+  def error_program_invalid vesselName ; return "{{#{vesselName}}} does not have a valid program." end
+  def error_program_denied program ; return "{{#{program}}} is not a valid program." end
+  def error_clone vesselName, clone = nil ; return clone ? "{{#{vesselName}}} already exists at the {{#{clone.name}|warp to #{clone.id}}}." : "{{#{vesselName}}} already exists here." end
+  def error_owner vesselName ; return "You do not own {{#{vesselName}}}." end
+  def error_frozen vesselName ; return "Your {{#{vesselName}}} vessel is frozen and cannot act." end
+  def error_estate distance ; return "Sorry, paradise does not have any more {{estate|help estate}} for new vessels." end
+  def error_id id ; return "##{id} is not a valid warp id." end
 
 end
