@@ -64,6 +64,7 @@ module Vessel
   # Slow Accessors
 
   def parent_vessel ; !@parent_vessel ? @parent_vessel = load_parent_vessel : @parent_vessel ; return @parent_vessel end
+  def present_vessels ; !@present_vessels ? @present_vessels = load_present_vessels : @present_vessels ; return @present_vessels end
   def visible_vessels ; !@visible_vessels ? @visible_vessels = load_visible_vessels : @visible_vessels ; return @visible_vessels end
   def inventory_vessels ; !@inventory_vessels ? @inventory_vessels = load_inventory_vessels : @inventory_vessels ; return @inventory_vessels end
 
@@ -82,6 +83,20 @@ module Vessel
   def load_parent_vessel
 
     return $nataniev.make_vessel(@parent)
+
+  end
+
+  def load_present_vessels
+
+    array = []
+    id = -1
+    $nataniev.parade.to_a.each do |line|
+      id += 1 ; 
+      if !line['CODE'] then next end
+      if line['CODE'][5,5].to_i != parent && line['CODE'][5,5].to_i != id then next end
+      array.push($nataniev.make_vessel(id))
+    end
+    return array
 
   end
 
@@ -213,6 +228,18 @@ module Vessel
   end
 
   # Targetting
+
+  def find_present_vessel name
+
+    name = name.split(" ").last
+
+    present_vessels.each do |v|
+      if v.name.like(name) then return v end
+    end
+
+    return nil
+
+  end
 
   def find_visible_vessel name
 

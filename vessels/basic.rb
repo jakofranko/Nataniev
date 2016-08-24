@@ -27,9 +27,11 @@ class Basic
     # Note
     if parent_vessel.note
 	    note = parent_vessel.note.strip
-	    note = note != "" ? "#{Wildcard.new(note).render}\n" : ""
-	    note = note.gsub("&","\n&")
-	    note = note.gsub("#","\n#")
+	    note = note != "" ? "#{Wildcard.new(note).render}" : ""
+      note = note.capitalize
+      note = note[0,1] != "&" ? "& "+note : note
+      note = note[note.length-1,1].strip != "." ? note.strip+"." : note
+      note = note.gsub(". ",".\n")
 	    text += note.strip+"\n\n"
 	  end
 
@@ -84,7 +86,9 @@ class Basic
 
 	def __note q = nil
 
-		return "TODO"
+    parent_vessel.set_note(q) ; parent_vessel.save
+
+		return "You added a note to #{parent_vessel.print}."
 		
 	end
 
@@ -98,7 +102,7 @@ class Basic
 
 	def __warp q = nil
 
-    q = q.to_s.sub("to ","").to_i
+    q = q.sub("to ","").to_i
     v = $nataniev.make_vessel(q.to_i) ; if !v then return error_target(q) end
 
     set_parent(v.id) ; save
@@ -125,7 +129,7 @@ class Basic
 
     v = find_visible_vessel(q) ; if !v then return error_target(q) end
 
-    v.__warp(@id) ; v.save
+    v.set_parent(@id) ; v.save
 
 		return "You took #{v.print}."
 		
@@ -135,7 +139,7 @@ class Basic
 
     v = find_inventory_vessel(q) ; if !v then return error_target(q) end
 
-    v.__warp(@parent) ; v.save
+    v.set_parent(@parent) ; v.save
 
     return "You dropped #{v.print}."
 		
@@ -165,25 +169,41 @@ class Basic
 
 	def __lock q = nil
 
-		return "TODO"
+    v = find_present_vessel(q) ; if !v then return error_target(q) end
+
+    v.set_lock(1) ; v.save
+
+		return "You locked #{v.print}."
 		
 	end
 
 	def __unlock q = nil
 
-		return "TODO"
+    v = find_present_vessel(q) ; if !v then return error_target(q) end
+    
+    v.set_lock(0) ; v.save
+
+		return "You unlocked #{v.print}."
 		
 	end
 
 	def __show q = nil
 
-		return "TODO"
+		v = find_present_vessel(q) ; if !v then return error_target(q) end
+    
+    v.set_hide(0) ; v.save
+
+    return "You revealed #{v.print}."
 		
 	end
 
 	def __hide q = nil
 
-		return "TODO"
+		v = find_present_vessel(q) ; if !v then return error_target(q) end
+    
+    v.set_hide(1) ; v.save
+
+    return "You hid #{v.print}."
 		
 	end
 	
