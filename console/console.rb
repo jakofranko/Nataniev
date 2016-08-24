@@ -24,6 +24,7 @@ class Console
       puts $nataniev.answer("connect")
       puts ""
     else
+      $nataniev.refresh
       puts "\n\n"
       puts $nataniev.answer("#{query}")
       puts ""

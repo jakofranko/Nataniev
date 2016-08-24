@@ -81,7 +81,7 @@ module Vessel
 
   def load_parent_vessel
 
-    return $nataniev.make_vessel(5)
+    return $nataniev.make_vessel(@parent)
 
   end
 
@@ -218,7 +218,7 @@ module Vessel
 
     name = name.split(" ").last
 
-    @visible_vessels.each do |v|
+    visible_vessels.each do |v|
       if v.name.like(name) then return v end
     end
 

@@ -16,8 +16,10 @@ class Nataniev
   def initialize
 
   	@console = Console.new
+    @id      = nil
     @player  = nil
     @parade  = nil 
+
 
   end
 
@@ -27,9 +29,11 @@ class Nataniev
 
   def set_player id
 
-    if id.to_i > 0
+    @id = id
+
+    if @id.to_i > 0
       @parade = Di.new("paradise")
-      @player = make_vessel(id)
+      @player = make_vessel(@id)
     else
       @player = Behol.new
     end
@@ -38,7 +42,8 @@ class Nataniev
 
   def answer query
 
-    if !@player then return "Vessel required" end
+    if !@player then set_player(query.split(" ").first) ; query = query.sub(query.split(" ").first,"").strip end
+
     query = query == "" ? "look" : query
 
     action = query.split(" ").first.strip
@@ -57,6 +62,13 @@ class Nataniev
   	hash = {}
   	hash["test"] = "something"
   	return hash
+
+  end
+
+  def refresh
+
+    @parade = Di.new("paradise")
+    @player = make_vessel(@id)
 
   end
 

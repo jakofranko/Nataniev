@@ -4,4 +4,4 @@
 load "nataniev.rb"
 
 $nataniev = Nataniev.new
-$nataniev.answer(ARGV.join(" "))
+puts $nataniev.answer(ARGV.join(" "))

@@ -68,13 +68,17 @@ class Basic
 
     set_parent(v.id) ; save
 
+    p @parent
+
 		return "You entered #{v.print}."
 		
 	end
 
 	def __leave q = nil
 
-		return "TODO"
+    set_parent(parent_vessel.parent) ; save
+
+		return "You left #{parent_vessel.name}."
 		
 	end
 
