@@ -18,8 +18,8 @@ class Console
 
   def validate query = nil
 
-    if !$nataniev.vessel
-      $nataniev.set_vessel(query.split(" ").first)
+    if !$nataniev.player
+      $nataniev.set_player(query.split(" ").first)
       puts "\n\n"
       puts $nataniev.answer("connect")
       puts ""

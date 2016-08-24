@@ -3,6 +3,7 @@
 
 $nataniev_path = File.expand_path(File.join(File.dirname(__FILE__), "/"))
 
+load "console/console.rb"
 load "#{$nataniev_path}/library/di.parser.rb"
 
 load "#{$nataniev_path}/system/vessel.rb"
@@ -13,38 +14,37 @@ class Nataniev
 
   def initialize
 
-  	load "console/console.rb"
   	@console = Console.new
-    @vessel  = nil
+    @player  = nil
     @parade  = nil 
 
   end
 
   def parade  ; return @parade  end
-  def vessel  ; return @vessel  end
+  def player  ; return @player  end
   def console ; return @console end
 
-  def set_vessel id
+  def set_player id
 
     if id.to_i > 0
       @parade = Di.new("paradise")
-      @vessel = Basic.new(id.to_i,@parade.line(id.to_i))
+      @player = make_vessel(id)
     else
-      @vessel = Behol.new
+      @player = Behol.new
     end
 
   end
 
   def answer query
 
-    if !@vessel then return "Vessel required" end
+    if !@player then return "Vessel required" end
     query = query == "" ? "look" : query
 
     action = query.split(" ").first.strip
     params = query.sub(action,"").strip
 
-    if @vessel.respond_to?(action)
-      return @vessel.send(action,params).strip
+    if @player.respond_to?("__#{action}")
+      return @player.send("__#{action}",params).strip
     else
       return "Unknown action: #{action}"
     end
@@ -56,6 +56,12 @@ class Nataniev
   	hash = {}
   	hash["test"] = "something"
   	return hash
+
+  end
+
+  def make_vessel id
+
+    return Basic.new(id.to_i,@parade.line(id.to_i))
 
   end
 

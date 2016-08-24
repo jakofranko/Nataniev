@@ -3,9 +3,12 @@
 
 require 'date'
 
-Dir["#{$paradise_path}/vessels/*"].each do |file_name|
-  load(file_name)
-end
+# Dir["#{$nataniev_path}/vessels/*"].each do |file_name|
+#   load(file_name)
+# end
+
+load "#{$nataniev_path}/system/wildcard.rb"
+load "#{$nataniev_path}/system/program.rb"
 
 module Vessel
 
@@ -34,7 +37,7 @@ module Vessel
 
   end
 
-  #
+  # Accessors
 
   def id ; return @id end
   def permissions ; return @permissions end
@@ -58,7 +61,11 @@ module Vessel
 
   def now ; return DateTime.parse(Time.now.to_s).strftime("%Y%m%d%H%M%S") end
 
-  #
+  # Slow Accessors
+
+  def parent_vessel ; !@parent_vessel ? @parent_vessel = load_parent_vessel : @parent_vessel ; return @parent_vessel end
+
+  # Setters
 
   def setLock val ; @isLocked = val ; @timestamp = now end
   def setHide val ; @isHidden = val ; @timestamp = now end
@@ -70,29 +77,17 @@ module Vessel
   def setProgram val ; @program = val ; @timestamp = now end
   def setNote val ; @note = val ; @timestamp = now end
 
+
+  def load_parent_vessel
+
+    return $nataniev.make_vessel(5)
+
+  end
+
+
   def destroy
 
     @isDestroyed = true
-
-  end
-
-  # Actions
-
-  def isEnterAllowedFor vessel
-
-    return true # TODO!
-
-  end
-
-  def isUseAllowedFor vessel
-
-    return true # TODO!
-
-  end
-
-  def isCallAllowedFor vessel
-
-    return true
 
   end
 

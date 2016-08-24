@@ -7,39 +7,57 @@ class Basic
 
 	# System
 
-	def connect p = nil
+	def __connect p = nil
 
 		return "Connected"
 
 	end
 
-	def look p = nil
+	def __look p = nil
 
-		return "Looking.."
+		text = ""
+
+		# Head
+		if parent == id
+      text += "~ "+"#{print}.\n\n".capitalize
+    else
+      text += "~ "+"#{print} in #{parent_vessel.print}.\n\n".capitalize
+    end
+
+    # Note
+    if parent_vessel.note
+	    note = parent_vessel.note.strip
+	    note = note != "" ? "#{Wildcard.new(note).render}\n" : ""
+	    note = note.gsub("&","\n&")
+	    note = note.gsub("#","\n#")
+	    text += note.strip
+	  end
+
+		return text
 
 	end
 
 	# Basic
 
-	def create p = nil
+	def __create p = nil
 
 		return "TODO"
 		
 	end
 
-	def become p = nil
+	def __become p = nil
 
 		return "TODO"
 		
 	end
 
-	def enter p = nil
+	def __enter p = nil
 
 		return "TODO"
 		
 	end
 
-	def leave p = nil
+	def __leave p = nil
 
 		return "TODO"
 		
@@ -47,13 +65,13 @@ class Basic
 
 	# Narative
 
-	def note p = nil
+	def __note p = nil
 
 		return "TODO"
 		
 	end
 
-	def rename p = nil
+	def __rename p = nil
 
 		return "TODO"
 		
@@ -67,7 +85,7 @@ class Basic
 		
 	end
 
-	def random p = nil
+	def __random p = nil
 
 		return "TODO"
 		
@@ -75,19 +93,19 @@ class Basic
 
 	# Inventory
 
-	def inventory p = nil
+	def __inventory p = nil
 
 		return "TODO"
 		
 	end
 
-	def take p = nil
+	def __take p = nil
 
 		return "TODO"
 		
 	end
 
-	def drop p = nil
+	def __drop p = nil
 
 		return "TODO"
 		
@@ -95,19 +113,19 @@ class Basic
 
 	# Programming
 
-	def program p = nil
+	def __program p = nil
 
 		return "TODO"
 		
 	end
 
-	def use p = nil
+	def __use p = nil
 
 		return "TODO"
 		
 	end
 
-	def call p = nil
+	def __call p = nil
 
 		return "TODO"
 		
@@ -115,25 +133,25 @@ class Basic
 
 	# Security
 
-	def lock p = nil
+	def __lock p = nil
 
 		return "TODO"
 		
 	end
 
-	def unlock p = nil
+	def __unlock p = nil
 
 		return "TODO"
 		
 	end
 
-	def show p = nil
+	def __show p = nil
 
 		return "TODO"
 		
 	end
 
-	def hide p = nil
+	def __hide p = nil
 
 		return "TODO"
 		

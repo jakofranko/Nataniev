@@ -10,11 +10,5 @@ class Russe
 		return "HEY THERE!!"
 
 	end
-
-	def _use params = nil
-
-		return "Custom USE program!"
-
-	end
 	
 end
