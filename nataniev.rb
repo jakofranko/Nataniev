@@ -72,7 +72,15 @@ class Nataniev
 
   def make_vessel id
 
-    return Basic.new(id.to_i,@parade.line(id.to_i))
+    line = @parade.line(id.to_i)
+    if line['CODE']
+      instance = line['CODE'].split("-")[3].downcase
+      if File.exist?("#{$nataniev_path}/vessels/#{instance}.rb")
+        load("#{$nataniev_path}/vessels/#{instance}.rb")
+        return Object.const_get(instance.capitalize).new()
+      end
+    end
+    return Basic.new(id.to_i,line)
 
   end
 
