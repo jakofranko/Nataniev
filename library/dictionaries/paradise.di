@@ -9,7 +9,7 @@
 1010-00001-00001-00000-20160617085824 Ghost
 1011-00015-00001-MAEVE-20160817164501 Maeve
 1011-00005-00001-00001-20160617085824 office         eleventh                                                                                        & There are 13 messages in your mailbox. & The sun is slowly setting behind the horizon. # Maeve is currently in the fog gate.
-1011-00005-00001-00001-20160824134038 geomaitre
+1011-00005-00023-00001-20160824134924 geomaitre
 0000-00005-00001-00000-20160617085824 mailbox        orange         say hello ECHO contains 16 messages
 1011-00005-00001-00000-20160617085824 wallclock                     ECHO indicates TIME::
 1011-00005-00001-RUSSE-20160617085824 manual         russian
@@ -12076,7 +12076,7 @@
 0000-11810-00009-00000-20160617085824 hall           minuscule                                                                                       Space seems to stretch and shrink as you progress through the archtitecture
 0000-12068-11992-00000-20160617085824 fields         green
 0000-11798-00009-00000-20160617085824 hallway        immense        ECHO enter AND warp 11793
-1000-00005-11885-00000-20160617085824 subtext        much                                                                                            Much subtext.
+1000-00005-11885-00000-20160824135429 subtext        much                                                                                            Much subtext.
 1000-12052-00009-00000-20160617085824 port           wide
 1000-00942-03523-00000-20160617085824 element
 0000-11989-02499-00000-20160617085824 teworkshop                                                                                                     The tea ceremony is one of the most important rituals in daily life..b  A teapot

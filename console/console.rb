@@ -12,7 +12,7 @@ class Console
     @last = ""
 
     puts "\n\n"
-    print "> "
+    print "> Vessel: "
 
   end
 

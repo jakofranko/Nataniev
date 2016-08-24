@@ -9,7 +9,7 @@ class Basic
 
 	def __connect q = nil
 
-		return "Connected"
+		return "#{print.capitalize} is online."
 
 	end
 
@@ -68,8 +68,6 @@ class Basic
 
     set_parent(v.id) ; save
 
-    p @parent
-
 		return "You entered #{v.print}."
 		
 	end
@@ -78,7 +76,7 @@ class Basic
 
     set_parent(parent_vessel.parent) ; save
 
-		return "You left #{parent_vessel.name}."
+		return "You left #{parent_vessel.print}."
 		
 	end
 
@@ -98,9 +96,14 @@ class Basic
 
 	# Warp
 
-	def warp q = nil
+	def __warp q = nil
 
-		return "TODO"
+    q = q.to_s.sub("to ","").to_i
+    v = $nataniev.make_vessel(q.to_i) ; if !v then return error_target(q) end
+
+    set_parent(v.id) ; save
+
+		return "You warped to #{v.print}."
 		
 	end
 
@@ -120,13 +123,21 @@ class Basic
 
 	def __take q = nil
 
-		return "TODO"
+    v = find_visible_vessel(q) ; if !v then return error_target(q) end
+
+    v.__warp(@id) ; v.save
+
+		return "You took #{v.print}."
 		
 	end
 
 	def __drop q = nil
 
-		return "TODO"
+    v = find_inventory_vessel(q) ; if !v then return error_target(q) end
+
+    v.__warp(@parent) ; v.save
+
+    return "You dropped #{v.print}."
 		
 	end
 
