@@ -33,6 +33,12 @@ class Basic
 	    text += note.strip
 	  end
 
+    # Visibles
+    if visible_vessels.length > 0
+      p visible_vessels
+    end
+
+
 		return text
 
 	end

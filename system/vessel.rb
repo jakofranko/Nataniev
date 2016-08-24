@@ -64,6 +64,8 @@ module Vessel
   # Slow Accessors
 
   def parent_vessel ; !@parent_vessel ? @parent_vessel = load_parent_vessel : @parent_vessel ; return @parent_vessel end
+  def visible_vessels ; !@visible_vessels ? @visible_vessels = load_visible_vessels : @visible_vessels ; return @visible_vessels end
+  def inventory_vessels ; !@inventory_vessels ? @inventory_vessels = load_inventory_vessels : @inventory_vessels ; return @inventory_vessels end
 
   # Setters
 
@@ -81,6 +83,36 @@ module Vessel
   def load_parent_vessel
 
     return $nataniev.make_vessel(5)
+
+  end
+
+  def load_visible_vessels
+
+    array = []
+    id = -1
+    $nataniev.parade.to_a.each do |line|
+      id += 1 ; 
+      if id == @id then next end
+      if !line['CODE'] then next end
+      if line['CODE'][5,5].to_i != parent then next end
+      array.push($nataniev.make_vessel(id))
+    end
+    return array
+
+  end
+
+  def load_inventory_vessels
+
+    array = []
+    id = -1
+    $nataniev.parade.to_a.each do |line|
+      id += 1 ; 
+      if id == @id then next end
+      if !line['CODE'] then next end
+      if line['CODE'][5,5].to_i != @id then next end
+      array.push($nataniev.make_vessel(id))
+    end
+    return array
 
   end
 
