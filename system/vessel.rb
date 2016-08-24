@@ -5,11 +5,12 @@ require 'date'
 
 Dir["#{$paradise_path}/vessels/*"].each do |file_name|
   load(file_name)
+  puts "loaded #{file_name}"
 end
 
 module Vessel
 
-  def initialize id,line
+  def initialize id = 0,line = {}
 
     @id = id.to_i
     @line = line

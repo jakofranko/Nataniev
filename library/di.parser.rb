@@ -2,23 +2,8 @@ class Di
 
 	def initialize query = nil
 
-		@NAME = nil
-		@DICT = nil
-		@KEY  = nil
-
-	end
-
-	def application input = nil
-
-		@NAME = input.gsub(" ",".").downcase
-		@TEXT = File.read("#{$paradise_path}/library/dictionaries/#{@NAME}.di", :encoding => 'UTF-8').split("\n")
-		@DICT = load(@NAME)
-
-		return self
-
-	end
-
-	def load file_name
+		@NAME = query.gsub(" ",".").downcase
+		@TEXT = File.read("#{$nataniev_path}/library/dictionaries/#{@NAME}.di", :encoding => 'UTF-8').split("\n")
 
 		content = []
 		@TEXT.each do |line|
@@ -27,7 +12,7 @@ class Di
 				content.push(parseLine(line))
 		end
 		if !@KEY then puts "Missing key" ; return nil end
-		return content
+		@DICT = content
 
 	end
 

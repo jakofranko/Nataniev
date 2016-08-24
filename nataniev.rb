@@ -3,7 +3,11 @@
 
 $nataniev_path = File.expand_path(File.join(File.dirname(__FILE__), "/"))
 
-load "#{$nataniev_path}/vessels/vessel.rb"
+load "#{$nataniev_path}/library/di.parser.rb"
+
+load "#{$nataniev_path}/system/vessel.rb"
+load "#{$nataniev_path}/vessels/behol.rb"
+load "#{$nataniev_path}/vessels/basic.rb"
 
 class Nataniev
 
@@ -22,11 +26,11 @@ class Nataniev
 
   def set_vessel id
 
-    if vessel.to_i > 0
-      @parade = Di.load("paradise")
-      @vessel = Basic.new(id,@parade.line(id))
+    if id.to_i > 0
+      @parade = Di.new("paradise")
+      @vessel = Basic.new(id.to_i,@parade.line(id.to_i))
     else
-      @vessel = Beholder.new
+      @vessel = Behol.new
     end
 
   end
