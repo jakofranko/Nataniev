@@ -5,7 +5,6 @@ require 'date'
 
 Dir["#{$paradise_path}/vessels/*"].each do |file_name|
   load(file_name)
-  puts "loaded #{file_name}"
 end
 
 module Vessel

@@ -38,8 +38,16 @@ class Nataniev
   def answer query
 
     if !@vessel then return "Vessel required" end
+    query = query == "" ? "look" : query
 
-  	return "#{@vessel.name}: #{query}"
+    action = query.split(" ").first.strip
+    params = query.sub(action,"").strip
+
+    if @vessel.respond_to?(action)
+      return @vessel.send(action,params).strip
+    else
+      return "Unknown action: #{action}"
+    end
 
   end
 
