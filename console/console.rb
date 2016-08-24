@@ -10,7 +10,6 @@ class Console
     system("clear")
     @text = ""
     @last = ""
-    @user = nil
 
     puts "\n\n"
     print "> "
@@ -19,14 +18,14 @@ class Console
 
   def validate query = nil
 
-    if !@user
-      @user = query.split(" ").first
+    if !$nataniev.vessel
+      $nataniev.set_vessel(query.split(" ").first)
       puts "\n\n"
-      puts $nataniev.answer("#{@user}")
+      puts $nataniev.answer("connect")
       puts ""
     else
       puts "\n\n"
-      puts $nataniev.answer("#{@user} #{query}")
+      puts $nataniev.answer("#{query}")
       puts ""
     end
 
@@ -95,7 +94,6 @@ class Console
 
   def onion text
 
-    if !@user then return text end
     onion = ""
     onionText = ""
 

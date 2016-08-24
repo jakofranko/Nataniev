@@ -3,7 +3,9 @@
 
 require 'date'
 
-load "#{$paradise_path}/system/vessel.actions.rb"
+Dir["#{$paradise_path}/vessels/*"].each do |file_name|
+  load(file_name)
+end
 
 module Vessel
 
