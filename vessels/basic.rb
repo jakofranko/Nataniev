@@ -30,12 +30,15 @@ class Basic
 	    note = note != "" ? "#{Wildcard.new(note).render}\n" : ""
 	    note = note.gsub("&","\n&")
 	    note = note.gsub("#","\n#")
-	    text += note.strip
+	    text += note.strip+"\n\n"
 	  end
 
     # Visibles
     if visible_vessels.length > 0
-      p visible_vessels
+      visible_vessels.each do |vessel|
+        text += "- "+vessel.print+"\n"
+      end
+      text += "\n\n"
     end
 
 

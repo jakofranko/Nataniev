@@ -116,7 +116,6 @@ module Vessel
 
   end
 
-
   def destroy
 
     @isDestroyed = true
