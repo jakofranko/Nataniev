@@ -20,7 +20,6 @@ class Nataniev
     @player  = nil
     @parade  = nil 
 
-
   end
 
   def parade  ; return @parade  end
@@ -35,7 +34,7 @@ class Nataniev
       @parade = Di.new("paradise")
       @player = make_vessel(@id)
     else
-      @player = Behol.new
+      @player = make_anonym(@id)
     end
 
   end
@@ -67,14 +66,24 @@ class Nataniev
 
   def refresh
 
-    @parade = Di.new("paradise")
-    @player = make_vessel(@id)
+    set_player(@id)
 
   end
 
   def make_vessel id
 
     return Basic.new(id.to_i,@parade.line(id.to_i))
+
+  end
+
+  def make_anonym id
+
+    if !File.exist?("#{$nataniev_path}/vessels/#{id}.rb") then return Ghost.new end
+
+    load("#{$nataniev_path}/vessels/#{id}.rb")
+    return Object.const_get(id.capitalize).new()
+
+    return nil
 
   end
 
