@@ -77,7 +77,7 @@ class Nataniev
       instance = line['CODE'].split("-")[3].downcase
       if File.exist?("#{$nataniev_path}/vessels/#{instance}.rb")
         load("#{$nataniev_path}/vessels/#{instance}.rb")
-        return Object.const_get(instance.capitalize).new()
+        return Object.const_get(instance.capitalize).new(id.to_i,line)
       end
     end
     return Basic.new(id.to_i,line)

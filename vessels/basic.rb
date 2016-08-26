@@ -3,22 +3,22 @@
 
 class Basic
 
-	include Vessel
+  include Vessel
 
-	# System
+  # System
 
-	def __connect q = nil
+  def __connect q = nil
 
-		return "#{print.capitalize} is online."
+    return "#{print.capitalize} is online."
 
-	end
+  end
 
-	def __look q = nil
+  def __look q = nil
 
-		text = ""
+    text = ""
 
-		# Head
-		if parent == id
+    # Head
+    if parent == id
       text += "~ "+"#{print}.\n\n".capitalize
     else
       text += "~ "+"#{print} in #{parent_vessel.print}.\n\n".capitalize
@@ -26,14 +26,14 @@ class Basic
 
     # Note
     if parent_vessel.note
-	    note = parent_vessel.note.strip
-	    note = note != "" ? "#{Wildcard.new(note).render}" : ""
+      note = parent_vessel.note.strip
+      note = note != "" ? "#{Wildcard.new(note).render}" : ""
       note = note.capitalize
       note = note[0,1] != "&" ? "& "+note : note
       note = note[note.length-1,1].strip != "." ? note.strip+"." : note
       note = note.gsub(". ",".\n")
-	    text += note.strip+"\n\n"
-	  end
+      text += note.strip+"\n\n"
+    end
 
     # Visibles
     if visible_vessels.length > 0
@@ -46,165 +46,185 @@ class Basic
     # Hint
     text += parent_vessel.hint ? "? #{parent_vessel.hint}" : ""
 
-		return text
+    return text
 
-	end
+  end
 
-	# Basic
+  # Basic
 
-	def __create q = nil
+  def __create q = nil
 
-		return "TODO"
-		
-	end
+    return "TODO"
+    
+  end
 
-	def __become q = nil
+  def __become q = nil
 
-		return "TODO"
-		
-	end
+    return "TODO"
+    
+  end
 
-	def __enter q = nil
+  def __enter q = nil
 
     v = find_visible_vessel(q) ; if !v then return error_target(q) end
 
     set_parent(v.id) ; save
 
-		return "You entered #{v.print}."
-		
-	end
+    return "You entered #{v.print}."
+    
+  end
 
-	def __leave q = nil
+  def __leave q = nil
 
     set_parent(parent_vessel.parent) ; save
 
-		return "You left #{parent_vessel.print}."
-		
-	end
+    return "You left #{parent_vessel.print}."
+    
+  end
 
-	# Narative
+  # Narative
 
-	def __note q = nil
+  def __note q = nil
 
     parent_vessel.set_note(q) ; parent_vessel.save
 
-		return "You added a note to #{parent_vessel.print}."
-		
-	end
+    return "You added a note to #{parent_vessel.print}."
+    
+  end
 
-	def __rename q = nil
+  def __rename q = nil
 
-		return "TODO"
-		
-	end
+    return "TODO"
+    
+  end
 
-	# Warp
+  # Warp
 
-	def __warp q = nil
+  def __warp q = nil
 
     q = q.sub("to ","").to_i
     v = $nataniev.make_vessel(q.to_i) ; if !v then return error_target(q) end
 
     set_parent(v.id) ; save
 
-		return "You warped to #{v.print}."
-		
-	end
+    return "You warped to #{v.print}."
+    
+  end
 
-	def __random q = nil
+  def __random q = nil
 
-		return "TODO"
-		
-	end
+    return "TODO"
+    
+  end
 
-	# Inventory
+  # Inventory
 
-	def __inventory q = nil
+  def __inventory q = nil
 
-		return "TODO"
-		
-	end
+    return "TODO"
+    
+  end
 
-	def __take q = nil
+  def __take q = nil
 
     v = find_visible_vessel(q) ; if !v then return error_target(q) end
 
     v.set_parent(@id) ; v.save
 
-		return "You took #{v.print}."
-		
-	end
+    return "You took #{v.print}."
+    
+  end
 
-	def __drop q = nil
+  def __drop q = nil
 
     v = find_inventory_vessel(q) ; if !v then return error_target(q) end
 
     v.set_parent(@parent) ; v.save
 
     return "You dropped #{v.print}."
-		
-	end
+    
+  end
 
-	# Programming
+  # Programming
 
-	def __program q = nil
+  def __program q = nil
 
-		return "TODO"
-		
-	end
+    return "TODO"
+    
+  end
 
-	def __use q = nil
+  def __use q = nil
 
-		return "TODO"
-		
-	end
+    return "TODO"
+    
+  end
 
-	def __call q = nil
+  def __call q = nil
 
-		return "TODO"
-		
-	end
+    return "TODO"
+    
+  end
 
-	# Security
+  def __inspect q = nil
 
-	def __lock q = nil
+    return "TODO"
+    
+  end
+
+  # Security
+
+  def __lock q = nil
 
     v = find_present_vessel(q) ; if !v then return error_target(q) end
 
     v.set_lock(1) ; v.save
 
-		return "You locked #{v.print}."
-		
-	end
+    return "You locked #{v.print}."
+    
+  end
 
-	def __unlock q = nil
+  def __unlock q = nil
 
     v = find_present_vessel(q) ; if !v then return error_target(q) end
     
     v.set_lock(0) ; v.save
 
-		return "You unlocked #{v.print}."
-		
-	end
+    return "You unlocked #{v.print}."
+    
+  end
 
-	def __show q = nil
+  def __show q = nil
 
-		v = find_present_vessel(q) ; if !v then return error_target(q) end
+    v = find_present_vessel(q) ; if !v then return error_target(q) end
     
     v.set_hide(0) ; v.save
 
     return "You revealed #{v.print}."
-		
-	end
+    
+  end
 
-	def __hide q = nil
+  def __hide q = nil
 
-		v = find_present_vessel(q) ; if !v then return error_target(q) end
+    v = find_present_vessel(q) ; if !v then return error_target(q) end
     
     v.set_hide(1) ; v.save
 
     return "You hid #{v.print}."
-		
-	end
-	
+    
+  end
+
+  # Destruction
+
+  def __destroy q = nil
+
+    return "TODO"
+
+  end
+
+  def __purge q = nil
+
+    return "TODO"
+    
+  end
+  
 end

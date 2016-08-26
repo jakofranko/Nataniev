@@ -3,58 +3,58 @@
 ~ AUTH : Devine Lu Linvega
 
 @ CODE                                NAME           ATTR           PROGRAM                                                                          NOTE
-0001-00013-00001-00000-20160617085824 Void           Void
-1011-00013-00001-00000-20160802194317 mirror         first                                                                                           Work in progress
-0111-00002-00001-00000-20160617085824 star           nullspace                                                                                       An impossible formation of nullspace has gathered here.
-1010-00001-00001-00000-20160617085824 Ghost
-1011-00015-00001-MAEVE-20160817164501 Maeve
-1011-00005-00001-00001-20160617085824 office         eleventh                                                                                        There are 13 messages in your mailbox. & The sun is slowly setting behind the horizon. # Maeve is currently in the fog gate.
-1011-00005-00023-00001-20160824141221 geomaitre
-0000-00005-00001-00000-20160617085824 mailbox        orange         say hello ECHO contains 16 messages
-1011-00005-00001-00000-20160617085824 wallclock                     ECHO indicates TIME::
-1011-00005-00001-RUSSE-20160824140452 manual         russian                                                                                         test
-0000-04127-00006-00000-20160731102521 microwave      pretty         create a teapot                                                                  your full name is VESSEL:FULL
-0011-07910-00001-00000-20160617085824 gardens        library                                                                                         A delicate glass deer wanders about the white gardens as the snow falls lightly on a darkened tombstone at the center of the meadow
-0010-07500-00000-00000-20160617085824 board                                                                                                          The board is a reference vessel to communicate with the developer of Paradise. Have a look at <vessel>the guidelines</vessel> to learn about how to leave a proper message.
-0011-00013-00001-00000-20160617085824 ghosts         book           ECHO enter the library AND                                                       The cover of the old book is left untitled
-0000-09674-10122-00000-20160617085824 wocket                                                                                                         This is an active universe. You may contribute
-0000-06886-10111-00000-20160617085824 journal        editors                                                                                         This partially destroyed book was recoverd form the drawer. If felt it was worthwhile to keep..b entry ii.b entry iv.b entry v.b entry vii.b entry iix.b entry ix
-0000-09674-06119-00000-20160617085824 flask                                                                                                          A flask full of pets.
-1100-00017-00006-00000-20160617085824 lifeless       realm          take var.1                                                                       here dwell the dead: the drowned
-0001-01169-00001-00000-20160617085824 reflexions     broken         IF is 3 THEN
-1000-07980-07433-00000-20160617085824 compounds      carbon                                                                                          At first glance
-1000-05231-05280-00000-20160617085824 books          rows                                                                                            A darker corner of the library. Strange titles of places you have never heard of adorn the spines of the large and foreboding books. Flipping through a couple you discover they are full of utter nonsense
-0000-07326-00001-00000-20160812204502 tea            enlightening
-0000-09674-02388-00000-20160617085824 thing          great
-0011-00271-00009-00000-20160617085824 maeve                         IF is 0 THEN warp to 6
-0004-06785-00024-00000-20160617085824 Nature         Mothers        IF has spring THEN                                                               you should not be here.
-0000-09674-02388-00000-20160617085824 conglomerate
-0010-01827-00001-00000-20160617085824 seat                          ECHO take AND enter a seat                                                       Relaxing into your seat
-1000-16389-07171-00000-20160617085824 ticket         haven                                                                                           12 june tooth house and four teen. this now belongs to me. the ticket likes it here. the ticket wants to stay
-1000-05231-05280-00000-20160617085824 books          rows                                                                                            Click the zeros to exit. .b oooo
-0000-06107-00267-00000-20160617085824 sparrow        note                                                                                            Poo tee weet.
-0000-09674-07171-00000-20160617085824 coconut
-1000-01122-01122-00000-20160617085824 blue           portal         warp to 942
-0000-16238-07433-00000-20160617085824 world          center
-0000-09674-06785-00000-20160617085824 chair          grey                                                                                            note
-1100-09503-02388-00000-20160617085824 astrolab                                                                                                       Mapmaker
-1000-00942-07433-00000-20160617085824 germ           communication                                                                                   You see the word virus.
-0000-16238-07433-00000-20160617085824 world          outer
-1000-05231-05280-00000-20160617085824 section        blocked                                                                                         Large metal bars prevent you from going any farther
-1000-00052-07433-00000-20160617085824 euclydiflagellum non            inventory
-0000-00049-00008-00000-20160617085824 office         goverknots
-0010-05960-00000-00000-20160812094502 Ring*          Golem                                                                                           The Golem Ring
-0016-06785-00000-00000-20160617085824 Ring*          Bird                                                                                            The Bird Ring is one of the the four rings in Paradise. Along with the Golem Ring
-1000-03229-06785-00000-20160617085824 towel          silky          IF is a glint THEN                                                               If you find this near iron
-0000-10702-06785-00000-20160617085824 debris                        ECHO rummage through AND create the grapple hook gun
-0010-17276-00001-00000-20160617085824 stranger       mysterious                                                                                      Nil
-0000-09674-02388-00000-20160617085824 lunkagunk
-1000-06864-07433-00000-20160617085824 guidemaster                   create a bacterial guide
-0000-01894-02388-00000-20160617085824 crystal        ring           IF has key of chaos THEN                                                         The ring of crystal guards an enigmatic Earthfallen named Diotdioklub
-0000-09674-02388-00000-20160617085824 shadow
-0000-07445-00000-00000-20160617085824 gate           goverknots
-0000-09674-02388-00000-20160617085824 parp
-0000-09674-00003-00000-20160617085824 port
+1111-00013-00000-HAVEN-00000000000000 Void           Void                                                                                            An impossible formation of nullspace has gathered here.
+1011-00001-00000-HAVEN-00000000000000 haven          inner
+1011-00002-00000-HAVEN-00000000000000 library
+1011-00001-00000-GHOST-00000000000000 ghost
+1011-00015-00000-MAEVE-00000000000000 maeve
+1011-00005-00000-HAVEN-00000000000000 office         eleventh                                                                                        There are 13 messages in your mailbox. & The sun is slowly setting behind the horizon. # Maeve is currently in the fog gate.
+1011-00001-00000-BASIC-00000000000000 geomaitre
+1011-00005-00000-HAVEN-00000000000000 mailbox        orange         say hello ECHO contains 16 messages
+1011-00005-00000-HAVEN-00000000000000 wallclock                     ECHO indicates TIME::
+1011-00005-00000-HAVEN-00000000000000 manual         russian                                                                                         test
+1011-04127-00000-HAVEN-00000000000000 microwave      pretty         create a teapot                                                                  your full name is VESSEL:FULL
+1011-07910-00000-HAVEN-00000000000000 gardens        library                                                                                         A delicate glass deer wanders about the white gardens as the snow falls lightly on a darkened tombstone at the center of the meadow
+1011-07500-00000-HAVEN-00000000000000 board                                                                                                          The board is a reference vessel to communicate with the developer of Paradise. Have a look at <vessel>the guidelines</vessel> to learn about how to leave a proper message.
+1011-00013-00000-HAVEN-00000000000000 ghosts         book           ECHO enter the library AND                                                       The cover of the old book is left untitled
+1011-09674-00000-HAVEN-00000000000000 wocket                                                                                                         This is an active universe. You may contribute
+1011-06886-00000-HAVEN-00000000000000 journal        editors                                                                                         This partially destroyed book was recoverd form the drawer. If felt it was worthwhile to keep..b entry ii.b entry iv.b entry v.b entry vii.b entry iix.b entry ix
+1011-09674-00000-HAVEN-00000000000000 flask                                                                                                          A flask full of pets.
+1011-00017-00000-HAVEN-00000000000000 lifeless       realm          take var.1                                                                       here dwell the dead: the drowned
+1011-01169-00000-HAVEN-00000000000000 reflexions     broken         IF is 3 THEN
+1011-07980-00000-HAVEN-00000000000000 compounds      carbon                                                                                          At first glance
+1011-05231-00000-HAVEN-00000000000000 books          rows                                                                                            A darker corner of the library. Strange titles of places you have never heard of adorn the spines of the large and foreboding books. Flipping through a couple you discover they are full of utter nonsense
+1011-07326-00000-HAVEN-00000000000000 tea            enlightening
+1011-09674-00000-HAVEN-00000000000000 thing          great
+1011-00271-00000-HAVEN-00000000000000 maeve                         IF is 0 THEN warp to 6
+1011-06785-00000-HAVEN-00000000000000 Nature         Mothers        IF has spring THEN                                                               you should not be here.
+1011-09674-00000-HAVEN-00000000000000 conglomerate
+1011-01827-00000-HAVEN-00000000000000 seat                          ECHO take AND enter a seat                                                       Relaxing into your seat
+1011-16389-00000-HAVEN-00000000000000 ticket         haven                                                                                           12 june tooth house and four teen. this now belongs to me. the ticket likes it here. the ticket wants to stay
+1011-05231-00000-HAVEN-00000000000000 books          rows                                                                                            Click the zeros to exit. .b oooo
+1011-06107-00000-HAVEN-00000000000000 sparrow        note                                                                                            Poo tee weet.
+1011-09674-00000-HAVEN-00000000000000 coconut
+1011-01122-00000-HAVEN-00000000000000 blue           portal         warp to 942
+1011-16238-00000-HAVEN-00000000000000 world          center
+1011-09674-00000-HAVEN-00000000000000 chair          grey                                                                                            note
+1011-09503-00000-HAVEN-00000000000000 astrolab                                                                                                       Mapmaker
+1011-00942-00000-HAVEN-00000000000000 germ           communication                                                                                   You see the word virus.
+1011-16238-00000-HAVEN-00000000000000 world          outer
+1011-05231-00000-HAVEN-00000000000000 section        blocked                                                                                         Large metal bars prevent you from going any farther
+1011-00052-00000-HAVEN-00000000000000 euclydiflagellum non            inventory
+1011-00049-00000-HAVEN-00000000000000 office         goverknots
+1011-05960-00000-HAVEN-00000000000000 Ring*          Golem                                                                                           The Golem Ring
+1011-06785-00000-HAVEN-00000000000000 Ring*          Bird                                                                                            The Bird Ring is one of the the four rings in Paradise. Along with the Golem Ring
+1011-03229-00000-HAVEN-00000000000000 towel          silky          IF is a glint THEN                                                               If you find this near iron
+1011-10702-00000-HAVEN-00000000000000 debris                        ECHO rummage through AND create the grapple hook gun
+1011-17276-00000-HAVEN-00000000000000 stranger       mysterious                                                                                      Nil
+1011-09674-00000-HAVEN-00000000000000 lunkagunk
+1011-06864-00000-HAVEN-00000000000000 guidemaster                   create a bacterial guide
+1011-01894-00000-HAVEN-00000000000000 crystal        ring           IF has key of chaos THEN                                                         The ring of crystal guards an enigmatic Earthfallen named Diotdioklub
+1011-09674-00000-HAVEN-00000000000000 shadow
+1011-07445-00000-HAVEN-00000000000000 gate           goverknots
+1011-09674-00000-HAVEN-00000000000000 parp
+
 1000-00942-07433-00000-20160617085824 vibrio         tiny           ECHO become AND become a tiny multiflagellate vibrio
 1000-18051-00006-00000-20160617085824 mouse                                                                                                          The mouse bites you and you catch the plauge
 0013-01585-00001-00000-20160617085824 station        echoes                                                                                          The platform is clouded in a thick mist. Flashing blue gates stand at opposite ends to guide the train through the constant fog of the landscape. A teddy bear missing an eye can be seen lying abandoned on the station floor. The cries of lost vessels reverberate throughout the station filling it with an terrifying air. Just as it begins to become unbearable
@@ -12333,7 +12333,7 @@
 1000-12325-12325-00000-20160617085824 ticket         haven          take the haven liner ticket
 1000-00271-00003-00000-20160617085824 tiger
 1000-12329-00003-00000-20160617085824 foobar
-1000-00271-12328-00000-20160617085824 anus                          ECHO I experienced AND usage I experienced
+
 1000-14233-12326-00000-20160617085824 ticket         haven                                                                                           here
 1000-00942-00003-00000-20160617085824 teapot
 1000-01415-00003-00000-20160617085824 teapot
@@ -13491,7 +13491,7 @@
 1000-07256-07256-00000-20160617085824 plane                                                                                                          lets just see where this takes us
 1000-13484-07256-00000-20160617085824 river          dim                                                                                             water turbines churning dense algeal blooms
 1000-12253-13482-00000-20160617085824 china                                                                                                          China has an overcrowded population and lifeforms of humans are viewed to be hard working and determined though almost always misunderstood
-0010-01415-13483-00000-20160617085824 alex                          poop                                                                             ANUS ANUS ANUS
+
 0000-13463-13482-00000-20160617085824 star           still                                                                                           Bright light blinds you but you catch the outline of somthing a few steps away
 1000-12236-13482-00000-20160617085824 horizen                                                                                                        There are three gates where the road branches of into three sections and one gate is light the other is dark and the last one emmits no dark or light at all
 1000-13489-13482-00000-20160617085824 light          gate                                                                                            A feeling of warmth creeps over you as you melt into the light

@@ -110,6 +110,7 @@ module Vessel
       if id == @parent then next end                     # Parent
       if !line['CODE'] then next end
       if line['CODE'][5,5].to_i != parent then next end
+      if parent_vessel.isQuiet && line['CODE'][11,5].to_i != parent_vessel.owner then next end
       array.push($nataniev.make_vessel(id))
     end
     return array

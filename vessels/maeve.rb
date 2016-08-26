@@ -7,4 +7,10 @@ class Maeve
 
 	def __look q = nil ; return "WHHAAAd." end
 
+	def __auto q = nil
+
+		puts "?"
+		
+	end
+
 end
