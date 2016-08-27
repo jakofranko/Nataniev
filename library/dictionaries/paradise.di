@@ -9,15 +9,15 @@
 1011-00001-00000-HAVEN-00000000000000 library                                                                                                        An ornated entrance reveal the shelves of the main collections. & The lateral stairways connect to the mezzanine.
 1011-00001-00000-ESTAT-00000000000000 signpost       estate
 1011-00003-00000-HAVEN-00000000000000 collections    main                                                                                            Arched bookcases circle around the the somber room. & One of the shelves host the White Tome of Portals. & Another, the Cyan Manual of Programing. & Yet another, the Red Book of Ghosts.
-1011-00003-00000-HAVEN-00000000000000 mezzanine      upstairs                                                                                        The main collections are currently closed.
+1011-00003-00000-HAVEN-00000000000000 mezzanine      upstairs                                                                                        The brass and marble pathways climb above and around the lower floors of library. & A hole under one of the many staircases reveals a small office.
 1011-00003-00000-HAVEN-00000000000000 hourglass      tainted        ECHO displays TIME::
 1011-00005-00000-HAVEN-00000000000000 tome           white
 1011-00005-00000-HAVEN-00000000000000 manual         cyan
 1011-00005-00000-HAVEN-00000000000000 book           red
 1011-00005-00000-HAVEN-00000000000000 clockpost      brass          ECHO displays DATE::
-1011-00000-00000-HAVEN-00000000000000 
-1011-00000-00000-HAVEN-00000000000000 
-1011-00000-00000-HAVEN-00000000000000 
+1011-00006-00000-HAVEN-00000000000000 pathways       marble
+1011-00006-00000-HAVEN-00000000000000 office         eleventh       
+1011-00006-00000-HAVEN-00000000000000 piano          ceramic        ECHO plays a RAND(dark,soft,happy) RAND(melody,tune,song).
 1011-00000-00000-HAVEN-00000000000000 
 1011-00000-00000-HAVEN-00000000000000 
 1011-00000-00000-HAVEN-00000000000000 

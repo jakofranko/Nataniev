@@ -12,11 +12,23 @@ class Wildcard
 	def render
 
 		output = @txt
+
+		# Operations RAND()
+		search = @txt.scan(/(?:RAND\()([\w\W]*?)(?=\))/)
+	    search.each do |str,details|
+	    	output = output.sub("RAND(#{str})",str.split(",").sample)
+	    end
+
+		# Swaps
 		swaps = _swaps
 		output.split(" ").each do |word|
 			if swaps[word] then output = output.gsub(word,swaps[word]) end
 		end
 		return output
+
+	end
+
+	def _operations
 
 	end
 
