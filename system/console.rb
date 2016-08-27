@@ -5,7 +5,7 @@ require 'io/console'
 
 class Console
 
-  def initialize
+  def start
 
     system("clear")
     @text = ""
