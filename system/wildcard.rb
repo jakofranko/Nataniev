@@ -16,7 +16,7 @@ class Wildcard
 		# Operations RAND()
 		search = @txt.scan(/(?:RAND\()([\w\W]*?)(?=\))/)
 	    search.each do |str,details|
-	    	output = output.sub("RAND(#{str})",str.split(",").sample)
+	    	output = output.gsub("RAND(#{str})",str.split(",").sample)
 	    end
 
 		# Swaps

@@ -206,6 +206,21 @@ class Basic
 
   end
 
+  def __sonar q = nil
+
+    tries = 0
+    parent = @parent
+    while tries < 100
+      code = $nataniev.parade.to_a[parent]["CODE"]
+      if parent == code[5,5].to_i then return "You are in #{$nataniev.make_vessel(parent).print} universe." end
+      parent = code[5,5].to_i
+      tries += 1
+    end
+
+    return "You are in a circular paradox."
+
+  end
+
   # Possible
 
   def completion
