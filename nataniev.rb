@@ -9,6 +9,8 @@ load "#{$nataniev_path}/library/en.parser.rb"
 load "#{$nataniev_path}/system/tools.rb"
 load "#{$nataniev_path}/system/console.rb"
 load "#{$nataniev_path}/system/vessel.rb"
+load "#{$nataniev_path}/system/clock.rb"
+load "#{$nataniev_path}/system/desamber.rb"
 
 load "#{$nataniev_path}/vessels/behol.rb"
 load "#{$nataniev_path}/vessels/basic.rb"

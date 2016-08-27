@@ -9,7 +9,7 @@ class En
     @tree = {}
     @lines = []
 
-    @GRID = loadGrid(input)
+    @GRID = loadGrid(@NAME)
     
   end
 
