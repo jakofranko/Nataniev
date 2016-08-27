@@ -284,8 +284,8 @@ module Vessel
     note = note.capitalize
     # Replace
     visible_vessels.each do |vessel|
-      if !note.include?(vessel.name) then next end
-      note = note.sub(vessel.name,"{{#{vessel.name}}}")
+      if !note.downcase.include?(vessel.name) then next end
+      note = note.downcase.sub(" "+vessel.name," {{#{vessel.name}}}")
     end
     # Format
     note_formated = ""
@@ -304,7 +304,7 @@ module Vessel
 
     text = ""
     visible_vessels.each do |vessel|
-      if parent_vessel.note.include?(vessel.name) then next end
+      if parent_vessel.note.to_s.downcase.include?(vessel.name) then next end
       text += vessel.display
     end
     
