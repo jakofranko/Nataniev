@@ -26,9 +26,9 @@ class Behol
     instance = q.split(" ").first
     params   = q.sub(instance,"").to_s.strip
 
-    if !File.exist?("#{$nataniev_path}/instances/#{instance}/vessel.rb") then return "#{instance.capitalize} is unfound." end
+    if !File.exist?("#{$nataniev_path}/instances/instance.#{instance}/vessel.rb") then return "#{instance.capitalize} is unfound." end
 
-    load "#{$nataniev_path}/instances/#{instance}/vessel.rb"
+    load "#{$nataniev_path}/instances/instance.#{instance}/vessel.rb"
 
     vessel = Object.const_get(instance.capitalize).new()
 
