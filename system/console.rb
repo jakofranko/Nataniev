@@ -97,16 +97,16 @@ class Console
 
   def onion text
 
-    onion = ""
+    @onion = ""
     onionText = ""
 
-    $nataniev.completion.each do |command,params|
+    $nataniev.player.completion.each do |command|
       if text.length > 1 && command[0,text.length] == text
-        onion = params != "" ? "#{command} (#{params})" : "#{command}"
+        @onion = "#{command}"
       end
     end
 
-    onionText = "#{text}#{onion[text.length,onion.length-text.length].to_s.ghostly}"
+    onionText = "#{text}#{@onion[text.length,@onion.length-text.length].to_s.ghostly}"
 
     return onionText
 
@@ -114,11 +114,7 @@ class Console
 
   def autocomplete
 
-    $nataniev.completion.each do |command,params|
-      if @text.length > 1 && command[0,@text.length] == @text
-        return command
-      end
-    end
+    return !@onion ? "" : @onion
 
   end
 

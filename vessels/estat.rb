@@ -7,7 +7,7 @@ class Estat
 
 	def display
 
-		return "? On #{print}, the number #{$nataniev.parade.to_a.length} is printed.\n"
+		return "? #{print.capitalize}, displays #{$nataniev.parade.to_a.length}.\n"
 
 	end
 

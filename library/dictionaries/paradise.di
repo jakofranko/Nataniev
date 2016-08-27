@@ -10,7 +10,7 @@
 1011-00001-00000-ESTAT-00000000000000 signpost       estate
 1011-00003-00000-HAVEN-00000000000000 collections    main                                                                                            The main collections are currently closed.
 1011-00003-00000-HAVEN-00000000000000 mezzanine      upstairs                                                                                        The main collections are currently closed.
-1011-00000-00000-BASIC-00000000000000 
+1011-00003-00000-BASIC-00000000000000 clockpost      brass          ECHO displays TIME::
 1011-00000-00000-HAVEN-00000000000000 
 1011-00000-00000-HAVEN-00000000000000 
 1011-00000-00000-HAVEN-00000000000000 
@@ -54,7 +54,7 @@
 1011-00000-00000-HAVEN-00000000000000 
 1011-00000-00000-HAVEN-00000000000000 
 1011-00000-00000-HAVEN-00000000000000 
-1011-00005-00000-BASIC-20160827144042 geomaitre
+1011-00003-00000-BASIC-20160827151108 geomaitre
 1000-00942-07433-00000-20160617085824 vibrio         tiny           ECHO become AND become a tiny multiflagellate vibrio
 1000-18051-00006-00000-20160617085824 mouse                                                                                                          The mouse bites you and you catch the plauge
 0013-01585-00001-00000-20160617085824 station        echoes                                                                                          The platform is clouded in a thick mist. Flashing blue gates stand at opposite ends to guide the train through the constant fog of the landscape. A teddy bear missing an eye can be seen lying abandoned on the station floor. The cries of lost vessels reverberate throughout the station filling it with an terrifying air. Just as it begins to become unbearable

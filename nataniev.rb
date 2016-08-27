@@ -60,14 +60,6 @@ class Nataniev
 
   end
 
-  def completion
-
-  	hash = {}
-  	hash["test"] = "something"
-  	return hash
-
-  end
-
   def refresh
 
     set_player(@id)
