@@ -17,7 +17,10 @@
 1011-00005-00000-HAVEN-00000000000000 clockpost      brass          ECHO displays DATE::
 1011-00006-00000-HAVEN-00000000000000 pathways       marble
 1011-00006-00000-HAVEN-00000000000000 piano          ceramic        ECHO plays a RAND(dark,soft,happy) RAND(melody,tune,song).
-1011-00006-00000-HAVEN-00000000000000 office         eleventh       
+1011-00006-00000-HAVEN-00000000000000 office         eleventh                                                                                        The low ceiling vault reveals an hexagonal room with maps covered walls. & At its center, on a wooden desk rests a small computer. &
+1011-00014-00000-HAVEN-00000000000000 desk           wooden                                     
+1011-00014-00000-ATARI-00000000000000 computer       plastic        
+1011-00014-00000-HAVEN-00000000000000 maps           void     
 1011-00000-00000-HAVEN-00000000000000 
 1011-00000-00000-HAVEN-00000000000000 
 1011-00000-00000-HAVEN-00000000000000 
@@ -51,10 +54,7 @@
 1011-00000-00000-HAVEN-00000000000000 
 1011-00000-00000-HAVEN-00000000000000 
 1011-00000-00000-HAVEN-00000000000000 
-1011-00000-00000-HAVEN-00000000000000 
-1011-00000-00000-HAVEN-00000000000000 
-1011-00000-00000-HAVEN-00000000000000 
-1011-00014-00000-BASIC-20160827160721 geomaitre
+1011-00014-00000-BASIC-20160827163309 geomaitre
 1000-00942-07433-00000-20160617085824 vibrio         tiny           ECHO become AND become a tiny multiflagellate vibrio
 1000-18051-00006-00000-20160617085824 mouse                                                                                                          The mouse bites you and you catch the plauge
 0013-01585-00001-00000-20160617085824 station        echoes                                                                                          The platform is clouded in a thick mist. Flashing blue gates stand at opposite ends to guide the train through the constant fog of the landscape. A teddy bear missing an eye can be seen lying abandoned on the station floor. The cries of lost vessels reverberate throughout the station filling it with an terrifying air. Just as it begins to become unbearable

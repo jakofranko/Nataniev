@@ -212,7 +212,7 @@ class Basic
     parent = @parent
     while tries < 100
       code = $nataniev.parade.to_a[parent]["CODE"]
-      if parent == code[5,5].to_i then return "You are in #{$nataniev.make_vessel(parent).print} universe." end
+      if parent == code[5,5].to_i then return "You are #{tries} levels deep, in #{$nataniev.make_vessel(parent).print} universe." end
       parent = code[5,5].to_i
       tries += 1
     end
