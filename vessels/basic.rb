@@ -37,7 +37,7 @@ class Basic
 
     v = find_visible_vessel(q) ; if !v then return error_target(q) end
 
-    set_parent(v.id) ; save
+    set_parent(v.id)
 
     return "You entered #{v.print}."
     
@@ -45,7 +45,9 @@ class Basic
 
   def __leave q = nil
 
-    set_parent(parent_vessel.parent) ; save
+    if @parent == parent_vessel.parent then return error_stem end
+
+    set_parent(parent_vessel.parent)
 
     return "You left #{parent_vessel.print}."
     
@@ -55,7 +57,7 @@ class Basic
 
   def __note q = nil
 
-    parent_vessel.set_note(q) ; parent_vessel.save
+    parent_vessel.set_note(q)
 
     return "You added a note to #{parent_vessel.print}."
     
@@ -74,7 +76,7 @@ class Basic
     q = q.sub("to ","").to_i
     v = $nataniev.make_vessel(q.to_i) ; if !v then return error_target(q) end
 
-    set_parent(v.id) ; save
+    set_parent(v.id)
 
     return "You warped to #{v.print}."
     
@@ -98,7 +100,7 @@ class Basic
 
     v = find_visible_vessel(q) ; if !v then return error_target(q) end
 
-    v.set_parent(@id) ; v.save
+    v.set_parent(@id)
 
     return "You took #{v.print}."
     
@@ -108,7 +110,7 @@ class Basic
 
     v = find_inventory_vessel(q) ; if !v then return error_target(q) end
 
-    v.set_parent(@parent) ; v.save
+    v.set_parent(@parent)
 
     return "You dropped #{v.print}."
     
@@ -146,7 +148,7 @@ class Basic
 
     v = find_present_vessel(q) ; if !v then return error_target(q) end
 
-    v.set_lock(1) ; v.save
+    v.set_lock(1)
 
     return "You locked #{v.print}."
     
@@ -156,7 +158,7 @@ class Basic
 
     v = find_present_vessel(q) ; if !v then return error_target(q) end
     
-    v.set_lock(0) ; v.save
+    v.set_lock(0)
 
     return "You unlocked #{v.print}."
     
@@ -166,7 +168,7 @@ class Basic
 
     v = find_present_vessel(q) ; if !v then return error_target(q) end
     
-    v.set_hide(0) ; v.save
+    v.set_hide(0)
 
     return "You revealed #{v.print}."
     
@@ -176,7 +178,7 @@ class Basic
 
     v = find_present_vessel(q) ; if !v then return error_target(q) end
     
-    v.set_hide(1) ; v.save
+    v.set_hide(1)
 
     return "You hid #{v.print}."
     
@@ -195,5 +197,14 @@ class Basic
     return "TODO"
     
   end
+
+  # Locate
+
+  def __where q = nil
+
+    return @parent.to_s
+
+  end
+
   
 end

@@ -9,12 +9,6 @@ class Clock
 		
 	end
 
-	def application query = nil
-
-		return default
-
-	end
-
 	def elapsed
 
 		return ((@time.hour) * 60 * 60) + (@time.min * 60) + @time.sec

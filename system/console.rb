@@ -14,7 +14,7 @@ class Console
     puts "\n\n"
     print "> Vessel: "
 
-    $nataniev.set_player("6")
+    $nataniev.set_player("51")
 
   end
 

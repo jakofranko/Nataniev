@@ -12,13 +12,6 @@ class Desamber
 
 	end
 
-	def application query = nil
-
-		@date = Date.today.to_s
-		return default
-		
-	end
-
 	def month
 
 		return @date[5,2].to_i
@@ -71,7 +64,7 @@ class Desamber
 	end
 
 	def default
-
+	
 		return "#{@dict[equalMonth-1]} #{equalDay}, #{year}"
 
 	end

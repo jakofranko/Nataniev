@@ -6,55 +6,55 @@
 1111-00013-00000-HAVEN-00000000000000 Void           Void                                                                                            An impossible formation of nullspace has gathered here.
 1011-00001-00000-HAVEN-00000000000000 haven          inner                                                                                           Light snow falls through the fog and onto a meadow of red oaks. & At its center, stands the library, built of ashened bricks and tainted glass.
 1011-00001-00000-HAVEN-00000000000000 meadow
-1011-00001-00000-HAVEN-00000000000000 library
-1011-00015-00000-MAEVE-00000000000000 maeve
-1011-00001-00000-HAVEN-00000000000000 office         eleventh                                                                                        There are 13 messages in your mailbox. & The sun is slowly setting behind the horizon. # Maeve is currently in the fog gate.
-1011-00001-00000-BASIC-20160827125439 geomaitre
-1011-00005-00000-HAVEN-00000000000000 mailbox        orange         say hello ECHO contains 16 messages
-1011-00005-00000-HAVEN-00000000000000 wallclock                     ECHO indicates TIME::
-1011-00005-00000-HAVEN-00000000000000 manual         russian                                                                                         test
-1011-04127-00000-HAVEN-00000000000000 microwave      pretty         create a teapot                                                                  your full name is VESSEL:FULL
-1011-07910-00000-HAVEN-00000000000000 gardens        library                                                                                         A delicate glass deer wanders about the white gardens as the snow falls lightly on a darkened tombstone at the center of the meadow
-1011-07500-00000-HAVEN-00000000000000 board                                                                                                          The board is a reference vessel to communicate with the developer of Paradise. Have a look at <vessel>the guidelines</vessel> to learn about how to leave a proper message.
-1011-00013-00000-HAVEN-00000000000000 ghosts         book           ECHO enter the library AND                                                       The cover of the old book is left untitled
-1011-09674-00000-HAVEN-00000000000000 wocket                                                                                                         This is an active universe. You may contribute
-1011-06886-00000-HAVEN-00000000000000 journal        editors                                                                                         This partially destroyed book was recoverd form the drawer. If felt it was worthwhile to keep..b entry ii.b entry iv.b entry v.b entry vii.b entry iix.b entry ix
-1011-09674-00000-HAVEN-00000000000000 flask                                                                                                          A flask full of pets.
-1011-00017-00000-HAVEN-00000000000000 lifeless       realm          take var.1                                                                       here dwell the dead: the drowned
-1011-01169-00000-HAVEN-00000000000000 reflexions     broken         IF is 3 THEN
-1011-07980-00000-HAVEN-00000000000000 compounds      carbon                                                                                          At first glance
-1011-05231-00000-HAVEN-00000000000000 books          rows                                                                                            A darker corner of the library. Strange titles of places you have never heard of adorn the spines of the large and foreboding books. Flipping through a couple you discover they are full of utter nonsense
-1011-07326-00000-HAVEN-00000000000000 tea            enlightening
-1011-09674-00000-HAVEN-00000000000000 thing          great
-1011-00271-00000-HAVEN-00000000000000 maeve                         IF is 0 THEN warp to 6
-1011-06785-00000-HAVEN-00000000000000 Nature         Mothers        IF has spring THEN                                                               you should not be here.
-1011-09674-00000-HAVEN-00000000000000 conglomerate
-1011-01827-00000-HAVEN-00000000000000 seat                          ECHO take AND enter a seat                                                       Relaxing into your seat
-1011-16389-00000-HAVEN-00000000000000 ticket         haven                                                                                           12 june tooth house and four teen. this now belongs to me. the ticket likes it here. the ticket wants to stay
-1011-05231-00000-HAVEN-00000000000000 books          rows                                                                                            Click the zeros to exit. .b oooo
-1011-06107-00000-HAVEN-00000000000000 sparrow        note                                                                                            Poo tee weet.
-1011-09674-00000-HAVEN-00000000000000 coconut
-1011-01122-00000-HAVEN-00000000000000 blue           portal         warp to 942
-1011-16238-00000-HAVEN-00000000000000 world          center
-1011-09674-00000-HAVEN-00000000000000 chair          grey                                                                                            note
-1011-09503-00000-HAVEN-00000000000000 astrolab                                                                                                       Mapmaker
-1011-00942-00000-HAVEN-00000000000000 germ           communication                                                                                   You see the word virus.
-1011-16238-00000-HAVEN-00000000000000 world          outer
-1011-05231-00000-HAVEN-00000000000000 section        blocked                                                                                         Large metal bars prevent you from going any farther
-1011-00052-00000-HAVEN-00000000000000 euclydiflagellum non            inventory
-1011-00049-00000-HAVEN-00000000000000 office         goverknots
-1011-05960-00000-HAVEN-00000000000000 Ring*          Golem                                                                                           The Golem Ring
-1011-06785-00000-HAVEN-00000000000000 Ring*          Bird                                                                                            The Bird Ring is one of the the four rings in Paradise. Along with the Golem Ring
-1011-03229-00000-HAVEN-00000000000000 towel          silky          IF is a glint THEN                                                               If you find this near iron
-1011-10702-00000-HAVEN-00000000000000 debris                        ECHO rummage through AND create the grapple hook gun
-1011-17276-00000-HAVEN-00000000000000 stranger       mysterious                                                                                      Nil
-1011-09674-00000-HAVEN-00000000000000 lunkagunk
-1011-06864-00000-HAVEN-00000000000000 guidemaster                   create a bacterial guide
-1011-01894-00000-HAVEN-00000000000000 crystal        ring           IF has key of chaos THEN                                                         The ring of crystal guards an enigmatic Earthfallen named Diotdioklub
-1011-09674-00000-HAVEN-00000000000000 shadow
-1011-07445-00000-HAVEN-00000000000000 gate           goverknots
-1011-09674-00000-HAVEN-00000000000000 parp
-
+1011-00001-00000-HAVEN-00000000000000 library                                                                                                        An ornated entrance reveal the shelves of the main collections. & The lateral stairways connect to the mezzanine.
+1011-00001-00000-ESTAT-00000000000000 signpost       estate
+1011-00003-00000-HAVEN-00000000000000 collections    main                                                                                            The main collections are currently closed.
+1011-00003-00000-HAVEN-00000000000000 mezzanine      upstairs                                                                                        The main collections are currently closed.
+1011-00000-00000-BASIC-00000000000000 
+1011-00000-00000-HAVEN-00000000000000 
+1011-00000-00000-HAVEN-00000000000000 
+1011-00000-00000-HAVEN-00000000000000 
+1011-00000-00000-HAVEN-00000000000000 
+1011-00000-00000-HAVEN-00000000000000 
+1011-00000-00000-HAVEN-00000000000000 
+1011-00000-00000-HAVEN-00000000000000 
+1011-00000-00000-HAVEN-00000000000000 
+1011-00000-00000-HAVEN-00000000000000 
+1011-00000-00000-HAVEN-00000000000000 
+1011-00000-00000-HAVEN-00000000000000 
+1011-00000-00000-HAVEN-00000000000000 
+1011-00000-00000-HAVEN-00000000000000 
+1011-00000-00000-HAVEN-00000000000000 
+1011-00000-00000-HAVEN-00000000000000 
+1011-00000-00000-HAVEN-00000000000000 
+1011-00000-00000-HAVEN-00000000000000 
+1011-00000-00000-HAVEN-00000000000000 
+1011-00000-00000-HAVEN-00000000000000 
+1011-00000-00000-HAVEN-00000000000000 
+1011-00000-00000-HAVEN-00000000000000 
+1011-00000-00000-HAVEN-00000000000000 
+1011-00000-00000-HAVEN-00000000000000 
+1011-00000-00000-HAVEN-00000000000000 
+1011-00000-00000-HAVEN-00000000000000 
+1011-00000-00000-HAVEN-00000000000000 
+1011-00000-00000-HAVEN-00000000000000 
+1011-00000-00000-HAVEN-00000000000000 
+1011-00000-00000-HAVEN-00000000000000 
+1011-00000-00000-HAVEN-00000000000000 
+1011-00000-00000-HAVEN-00000000000000 
+1011-00000-00000-HAVEN-00000000000000 
+1011-00000-00000-HAVEN-00000000000000 
+1011-00000-00000-HAVEN-00000000000000 
+1011-00000-00000-HAVEN-00000000000000 
+1011-00000-00000-HAVEN-00000000000000 
+1011-00000-00000-HAVEN-00000000000000 
+1011-00000-00000-HAVEN-00000000000000 
+1011-00000-00000-HAVEN-00000000000000 
+1011-00000-00000-HAVEN-00000000000000 
+1011-00000-00000-HAVEN-00000000000000 
+1011-00000-00000-HAVEN-00000000000000 
+1011-00000-00000-HAVEN-00000000000000 
+1011-00005-00000-BASIC-20160827144042 geomaitre
 1000-00942-07433-00000-20160617085824 vibrio         tiny           ECHO become AND become a tiny multiflagellate vibrio
 1000-18051-00006-00000-20160617085824 mouse                                                                                                          The mouse bites you and you catch the plauge
 0013-01585-00001-00000-20160617085824 station        echoes                                                                                          The platform is clouded in a thick mist. Flashing blue gates stand at opposite ends to guide the train through the constant fog of the landscape. A teddy bear missing an eye can be seen lying abandoned on the station floor. The cries of lost vessels reverberate throughout the station filling it with an terrifying air. Just as it begins to become unbearable

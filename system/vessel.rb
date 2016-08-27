@@ -70,15 +70,15 @@ module Vessel
 
   # Setters
 
-  def set_lock val ; @isLocked = val ; @timestamp = now end
-  def set_hide val ; @isHidden = val ; @timestamp = now end
-  def set_quiet val ; @isQuiet = val ; @timestamp = now end
+  def set_lock val ; @isLocked = val ; save end
+  def set_hide val ; @isHidden = val ; save end
+  def set_quiet val ; @isQuiet = val ; save end
 
-  def set_name val ; @name = val ; @timestamp = now end
-  def set_attribute val ; @attribute = val ; @timestamp = now end
-  def set_parent val ; @parent = val ; @timestamp = now end
-  def set_program val ; @program = val ; @timestamp = now end
-  def set_note val ; @note = val ; @timestamp = now end
+  def set_name val ; @name = val ; save end
+  def set_attribute val ; @attribute = val ; save end
+  def set_parent val ; @parent = val ; save end
+  def set_program val ; @program = val ; save end
+  def set_note val ; @note = val ; save end
 
   def load_parent_vessel
 
@@ -224,6 +224,7 @@ module Vessel
 
   def save
     
+    @timestamp = now
     $nataniev.parade.save(id,render)
 
   end
@@ -278,18 +279,22 @@ module Vessel
 
     if !parent_vessel.note then return nil end
     
-    note = parent_vessel.note.strip
+    note = parent_vessel.note
     note = note != "" ? "#{Wildcard.new(note).render}" : ""
     note = note.capitalize
-    note = note[0,1] != "&" ? "& "+note : note
-    note = note[note.length-1,1].strip != "." ? note.strip+"." : note
-    note = note.gsub(". ",".\n")
     # Replace
     visible_vessels.each do |vessel|
       if !note.include?(vessel.name) then next end
       note = note.sub(vessel.name,"{{#{vessel.name}}}")
     end
-    return note.strip+"\n\n"
+    # Format
+    note_formated = ""
+    note.split("&").each do |line|
+      line = line.strip
+      line = line[line.length-1,1] != "." ? line+"." : line
+      note_formated += "& "+line.gsub(". ",".\n").capitalize+"\n"
+    end
+    return note_formated.strip+"\n\n"
 
   end
 
@@ -318,7 +323,7 @@ module Vessel
   def error_command_invalid command ; return "#{command} is not a valid command." end
   def error_command_banned bannedWord ; return "Paradise does not allow the use of the word #{bannedWord}." end
   def error_locked vesselName ; return "#{vesselName} is locked and cannot me modified." end
-  def error_stem vesselName ; return "#{vesselName} is a paradox and cannot be exited." end
+  def error_stem ; return "#{parent_vessel.print.capitalize} is a paradox and cannot be exited." end
   def error_target vesselId ; return vesselId.to_i > 0 ? "There are no accessible vessels at ##{vesselId}" : "There is no visible vessel named #{vesselId}." end
   def error_program_invalid vesselName ; return "#{vesselName} does not have a valid program." end
   def error_program_denied program ; return "#{program} is not a valid program." end
