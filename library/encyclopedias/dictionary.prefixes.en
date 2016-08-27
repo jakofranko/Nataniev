@@ -1,0 +1,473 @@
+~ NAME : Dictionary
+~ NOTE : English prefixes & Suffixes
+~ AUTH : Devine Lu Linvega
+
+PREFIXES
+  ACT     : action
+  AER     : air
+  AGR     : farm
+  ALG     : pain
+  AMBI    : both sides
+  AMBUL   : move
+  AMI     : love
+  ANA     : through
+  ANDR    : male
+  ANIM    : spirit
+  ANN     : year
+  ANTE    : past
+  ANTH    : flower
+  ANTHROP : human
+  ANTI    : opposite
+  APO     : separate
+  AQU     : water
+  ARBOR   : tree
+  ARCH    : ancient
+  ARTHR   : joint
+  ART     : skill
+  ASTRO   : star
+  AUD     : hearing
+  AUTO    : self
+  AVI     : bird
+  BAR     : pressure
+  BELL    : war
+  BENE    : well-being
+  BI      : two
+  BIBLI   : book
+  BIO     : life
+  BLAST   : primitive
+  BURS    : pouch
+  CALC    : stone
+  CAND    : glow
+  CAPT    : hold
+  CARDI   : heart
+  CARN    : flesh
+  CATA    : intensive
+  CAUST   : burn
+  CEDE    : yield
+  CELER   : fast
+  CENT    : hundredth
+  CENTR   : center
+  CEPHAL  : head
+  CEREBR  : brain
+  CERT    : assurance
+  CHROM   : color
+  CHRON   : time
+  CHRYS   : gold
+  CIDE    : kill
+  CIRCUM  : around
+  CLAIM   : shout
+  CLAR    : clear
+  CLUD    : close
+  CLINE   : lean
+  CO      : joint
+  COL     : collection
+  COM     : common
+  COGN    : knowledge
+  CON     : marriage
+  CONTRA  : opposite
+  CORP    : body
+  COSM    : universe
+  COUNTER : contrary
+  CRANIO  : skull
+  CRED    : belief
+  CRUC    : cross
+  CRYPTO  : secret
+  CUMUL   : mass
+  CURR    : run
+  CYCL    : circle
+  DE      : reduce
+  DEC     : ten
+  DECI    : one tenth
+  DEM     : people
+  DEMI    : half
+  DENDR   : tree
+  DENT    : tooth
+  DERM    : skin
+  DI      : separation
+  DIA     : between
+  DICT    : speak
+  DOMIN   : master
+  DON     : gift
+  DUC     : lead
+  DU      : two
+  DUR     : durability
+  DYN     : power
+  DYS     : abnormal
+  EGO     : self
+  EM      : into
+  ENDO    : inside
+  ENN     : years
+  EN      : inside
+  EP      : outside
+  EQU     : equal
+  ERG     : work
+  ESTH    : sensation
+  ETHNO   : race
+  EU      : well
+  EX      : outside
+  EXTRA   : beyond
+  FAC     : make
+  FER     : carry
+  FID     : faith
+  FLECT   : bend
+  FLOR    : flower
+  FOR     : complete
+  FORE    : previous
+  FORM    : shape
+  FRACT   : break
+  FUG     : escape
+  FUNCT   : performance
+  FUS     : pour
+  GASTR   : stomach
+  GEN     : production
+  GEO     : earth
+  GER     : old age
+  GIGA    : billion
+  GON     : angle
+  GRAM    : letter
+  GRAN    : grain
+  GRAPH   : writing
+  GRAT    : pleasing
+  GYN     : female
+  GRESS   : step
+  HECT    : hundred
+  HELIC   : spiral
+  HELI    : sun
+  HEMI    : partial
+  HEM     : blood
+  HEPA    : liver
+  HEPT    : seven
+  HERBI   : plant
+  HETERO  : difference
+  HEX     : six
+  HISTO   : tissue
+  HOMO    : likeness
+  HYDR    : liquid
+  HYGR    : moisture
+  HYPER   : excessive
+  HYP     : underside
+  IATR    : medical
+  ICON    : image
+  IDIO    : person
+  IMAG    : likeness
+  INFRA   : below
+  INTER   : joint
+  INTRA   : inside
+  IR      : not
+  ISO     : equal
+  JECT    : throw
+  JUD     : law
+  JUNCT   : join
+  JUVEN   : youngster
+  KILO    : thousand
+  KINE    : motion
+  LAB     : work
+  LACT    : milk
+  LATER   : side
+  LEUK    : colorlessness
+  LEX     : word
+  LIBER   : freedom
+  LINGU   : language
+  LIP     : fat
+  LITE    : fossil
+  LOC     : place
+  LOG     : discourse
+  LOQU    : speaker
+  LUC     : light
+  LUD     : to play
+  LUMIN   : light
+  LUN     : moon
+  MACRO   : large
+  MAGN    : great
+  MAL     : illness
+  MAN     : hand
+  MAND    : order
+  MANIA   : madness
+  MAR     : sea
+  MATER   : mother
+  MAX     : greatest
+  MEDI    : middle
+  MEGA    : million
+  MELAN   : black
+  MEMOR   : rememberance
+  MERGE   : dive
+  MESO    : middle
+  META    : change
+  METER   : measure
+  MICRO   : short
+  MID     : middle
+  MIGR    : move
+  MILLI   : onethousandth
+  MIN     : small
+  MIS     : hate
+  MISS    : sent
+  MOB     : move
+  MON     : singular
+  MOT     : move
+  MORPH   : form
+  MORT    : death
+  MULTI   : many
+  MUT     : change
+  MY      : muscle
+  NARR    : tell
+  NAT     : born
+  NAV     : ship
+  NECR    : death
+  NEO     : recent
+  NEPHR   : kidney
+  NEUR    : nerve
+  NOM     : name
+  NON     : negative
+  NOT     : mark
+  NOUN    : declaration
+  NOV     : new
+  NUMER   : number
+  OB      : blocker
+  OCT     : eight
+  OCU     : eye
+  OD      : path
+  ODOR    : smell
+  OMNI    : all
+  OP      : sight
+  OPT     : best
+  ORTHO   : straight
+  OSTEO   : bone
+  OUT     : excess
+  OVER    : excessive
+  OXI     : sharp
+  PALE    : ancient
+  PAN     : everyone
+  PARA    : protection
+  PATER   : father
+  PATH    : feeling
+  PED     : foot
+  PEL     : force
+  PENT    : five
+  PEPT    : digestion
+  PER     : traverse
+  PERI    : surrounds
+  PHAG    : devouring
+  PHIL    : love
+  PHON    : sound
+  PHOT    : light
+  PHYLL   : leaf
+  PHYS    : medicine
+  PHYT    : plant
+  PLAS    : development
+  PLAUD   : approval
+  PNEUM   : breath
+  POD     : foot
+  POLI    : cities
+  POLY    : many
+  PON     : place
+  POP     : people
+  PORT    : carry
+  POS     : place
+  POST    : after
+  PRE     : earlier
+  PRO     : before
+  PROT    : primitive
+  PSEUD   : fake
+  PSYCH   : mental
+  PUGN    : fight
+  PUL     : urge
+  PURG    : clean
+  PUT     : think
+  PYR     : fire
+  QUAD    : four
+  QUART   : fourth
+  QUIN    : fifth
+  RADIC   : root
+  RADIO   : radiation
+  RAM     : branch
+  RE      : back
+  REG     : rule
+  RETRO   : back
+  RHIN    : nose
+  RHOD    : red
+  RID     : laugh
+  RUB     : red
+  RUPT    : burst
+  SAN     : health
+  SCEND   : climb
+  SCI     : knowledge
+  SCLER   : hard
+  SCOP    : vision
+  SCRIB   : written
+  SE      : separation
+  SECT    : cut
+  SED     : sit
+  SELF    : self
+  SEMI    : partial
+  SEPT    : seven
+  SERV    : keep
+  SEX     : six
+  SOL     : sun
+  SOMN    : sleep
+  SON     : sound
+  SOPH    : wise
+  SPEC    : look
+  SPHERE  : ball
+  SPIR    : breathe
+  STA     : stand
+  STELL   : star
+  STRUCT  : build
+  SUM     : highest
+  SY      : together
+  TACT    : touch
+  TAX     : arrangement
+  TECHNO  : skill
+  TEL     : distant
+  TEMP    : time
+  TEN     : hold
+  TERM    : limit
+  TERR    : land
+  TETRA   : four
+  THE     : god
+  THERM   : heat
+  TORT    : twist
+  TOX     : poison
+  TRACT   : drag
+  TRANS   : beyond
+  TRI     : three
+  ULTRA   : beyond
+  UN      : lack
+  UNI     : single
+  URB     : city
+  VAC     : empty
+  VEN     : come
+  VER     : truth
+  VERB    : word
+  VERS    : turn
+  VICE    : subordinate
+  VID     : sight
+  VIS     : sight
+  VIV     : life
+  VOC     : voice
+  VOL     : will
+  VOR     : devouring
+  XANTH   : yellow
+  XEN     : foreigner
+  XER     : dry
+  XYL     : wood
+  ZO      : animal life
+  ZYG     : pair
+SUFFIXES
+  ABLE    : capable to do
+  AC      : pertaining to
+  ACITY   : quality of
+  ADE     : action or process of
+  AGE     : action or process of
+  AHOLIC  : one with an obsession for
+  AL      : relation to do
+  ALGIA   : pain of
+  AN      : belonging to 
+  ANCE    : state or quality of
+  ANT     : person who does
+  ARD     : person who does the action of
+  ARIAN   : person who is
+  ARIUM   : place for
+  ARY     : relation to
+  ATE     : state or quality of
+  ATION   : action or process to
+  ATIVE   : tending to
+  CIDE    : act of killing the
+  CRACY   : rule of
+  CRAT    : someone who has power over
+  CULE    : diminutive for
+  CY      : state of
+  CYCLE   : circles of
+  DOM     : realm of
+  DOX     : belief in
+  ECTOMY  : surgical removal of
+  ED      : past tense of
+  EE      : receiver of
+  EER     : engaged with
+  EMIA    : blood condition of
+  ENCE    : state or condition of
+  ENCY    : condition or quality of
+  ENT     : causing of
+  ER      : more than
+  ERN     : state or quality of
+  ESCENCE : state or process of
+  ESE     : relation to a place of
+  ESQUE   : style of
+  ESS     : female of
+  EST     : mainly
+  ETIC    : relation to act like
+  ETTE    : diminutive of
+  FUL     : full of
+  FY      : causes of
+  GAM     : marriage with
+  GON     : angle of
+  HOOD    : state of
+  IAL     : relation to
+  IAN     : relation to
+  IASIS   : diseased condition of
+  IATRIC  : healing practice of
+  IBLE    : able to be
+  IC      : characteristic of
+  ILE     : capable of
+  ILY     : manner of
+  INE     : relation to
+  ING     : part of
+  ION     : action or process of
+  IOUS    : having the qualities of
+  ISH     : characteristic of
+  ISM     : state or quality of
+  IST     : one who does the action of
+  ITE     : resident of
+  ITIS    : inflammation of
+  ITY     : condition of
+  IVE     : inclined to be
+  IZATION : act or process of making
+  IZE     : cause of
+  LESS    : lack of
+  LET     : version of
+  LIKE    : resembling
+  LING    : inferiority of 
+  LOGER   : one who does
+  LOG     : speech of
+  LY      : manner of
+  MENT    : action of
+  NESS    : state or quality of
+  OID     : resembling
+  OLOGY   : science of
+  OMA     : tumor within
+  ONYM    : name of
+  OPIA    : eye defect of
+  OPSY    : examination of
+  OR      : person who is
+  ORY     : relation to
+  OSIS    : diseased condition of
+  OSTOMY  : surgical removal of
+  OUS     : full of
+  PATH    : one who engages in the
+  PATHY   : disease of
+  PHILE   : one who loves
+  PHOBIA  : abnormal fear of
+  PHONE   : sound of
+  PHYTE   : plant of
+  PLEGIA  : paralysis of
+  PLEGIC  : paralyzed by
+  PNEA    : air from
+  SCOPY   : visual exam of
+  SCRIBE  : to write
+  SECT    : to cut
+  SHIP    : skill of
+  SION    : state or quality of
+  SOME    : group of
+  SOPHY   : wisdom pertaining to
+  TH      : state or quality of
+  TION    : state or quality of
+  TOME    : cut to
+  TROPHY  : growth within
+  TUDE    : state of
+  TY      : state of
+  ULAR    : relation to
+  UOUS    : quality of
+  URE     : action of
+  WARD    : specifying direction to
+  WARE    : things of the same type as
+  WISE    : manner of
+  Y       : characterized by

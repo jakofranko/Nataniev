@@ -3,22 +3,39 @@
 
 class Behol
 
-	include Vessel
+  include Vessel
 
-	def print ; return "the Beholder" end
+  def print ; return "the Beholder" end
 
-	def __look q = nil ; return "#{print.capitalize} is blind." end
+  def __look q = nil ; return "#{print.capitalize} is blind." end
 
-	def __connect q = nil
+  def __connect q = nil
 
-		return "#{print.capitalize} is online."
+    return "#{print.capitalize} is online."
 
-	end
+  end
 
-	def __view q = nil
+  def __view q = nil
 
-		return "Seeing: #{q}"
+    return "Seeing: #{q}"
 
-	end
-	
+  end
+
+  def __http q = nil
+
+    instance = q.split(" ").first
+    params   = q.sub(instance,"").to_s.strip
+
+    if !File.exist?("#{$nataniev_path}/instances/#{instance}/vessel.rb") then return "#{instance.capitalize} is unfound." end
+
+    load "#{$nataniev_path}/instances/#{instance}/vessel.rb"
+
+    vessel = Object.const_get(instance.capitalize).new()
+
+    if !vessel.respond_to?("http") then return "#{instance.capitalize} doesn't know http." end
+
+    return vessel.send("http",params).strip
+
+  end
+  
 end

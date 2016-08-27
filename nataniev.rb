@@ -4,6 +4,7 @@
 $nataniev_path = File.expand_path(File.join(File.dirname(__FILE__), "/"))
 
 load "#{$nataniev_path}/library/di.parser.rb"
+load "#{$nataniev_path}/library/en.parser.rb"
 
 load "#{$nataniev_path}/system/tools.rb"
 load "#{$nataniev_path}/system/console.rb"

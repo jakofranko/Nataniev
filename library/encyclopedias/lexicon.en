@@ -1,0 +1,1598 @@
+~ NAME : Lexicon
+~ NOTE : Project archive
+~ AUTH : Devine Lu Linvega
+
+ABLETON
+  UNDE : Aliceffekt
+  BREF : I designed this dark {{Ableton}} Live theme where the knobs and various other controls stick out from the interface. 
+  LONG 
+    & To Install it on OS X, simply right click on the Live Icon and select {*Show Package Content*} and paste the skin file {_XXIIVV.ask_} in the skin folder. 
+    & I was disapointed to the see the hugly Ableton Live 9 Standard blue icon, so I designed a new one and packaged it along with the theme.
+  LINK
+    GITH : https://github.com/XXIIVV/AbletonSkin
+
+TO THE AEONS HELL
+  UNDE : First wave
+  BREF : This album is a sort of mixtape made of bits and pieces from songs I like.
+  LINK
+    BAND : http://aliceffekt.bandcamp.com/album/accursed-be-it-to-the-aeons-hell
+
+ADVENT V
+  UNDE : Automatons
+  BREF : {{Advent V}}, is a simple twitter game in the format of the {_Choose Your Own Adventure_} where the players tell Advent where to go in a choice of locations.
+  LINK 
+    TWTR : https://twitter.com/adventvrecall
+    GITH : https://github.com/XXIIVV/auto.adventv
+
+AGEING
+  UNDE : Nereid
+  BREF : {{Ageing}} is a special tribute to {{Jesse Kanda|http://www.jessekanda.com}}'s works, from the {{Beauty}} & {{Appeal}} series.
+  TYPE : Diary
+
+ALICEFFEKT
+  UNDE : Audio
+  BREF : Aliceffekt, is an explorative and narrative audio project by {{Devine Lu Linvega}} that travels across the fictional worlds of the {{Neauismetica}} where every album is a sort of travel diary across the {{Dinaisth}} landscape.
+  LINK : 
+    BAND : https://aliceffekt.bandcamp.com
+
+ALPHAVETIST
+  UNDE : Mobile
+  BREF : {{Alphavetist}} is a minimalist alphabet learning application for iOS for reviewing the Hebrew, Cyrillic, Korean, Inuktitut, Greek, Morse and Japanese alphabets.
+  LINK
+    ITUN : https://itunes.apple.com/ca/app/hahapapa/id689193147
+    GITH : https://github.com/Echorridoors/alphavetist
+
+ANN YOZORA SAINT
+  UNDE : First wave
+  LINK
+    BAND : https://aliceffekt.bandcamp.com/album/ann-yozora-saint
+
+APPEAL
+  UNDE : Nereid
+  BREF : A new series of profiles of {{Nereid}}'s {{Beauty}} patients.
+  TYPE : Diary
+
+POLYGORE
+  UNDE : Nereid
+  BREF : A study of the base elements of this {{world|Nereid}}.
+  TYPE : Diary
+
+AR MOIRE
+  UNDE : Polygonoscopy
+  BREF : The {{Ar Moire}} diagrams are {{Polygonoscopic|Polygonoscopy}} sounds.
+  TYPE : Diary
+
+NERVOUS
+  UNDE : Polygonoscopy
+  BREF : Series of Vertexbrates.
+  TYPE : Diary
+
+ARTWORK
+  UNDE : Illustration
+  BREF : A collection of various illustrations drawn over the years, unrelated to other XXIIVV projects.
+  TYPE : Diary
+
+ASTRATAS
+  UNDE : Polygonoscopy
+  BREF : The {{Astratas}} topologic maps oscillate to {{Serventines}}'s {{Polygonoscopic|polygonoscopy}} frequencies.
+  TYPE : Diary
+
+AUDIO
+  UNDE : Home
+  BREF : {{Devine|Devine Lu Linvega}} originally started the {{Aliceffekt|Audio}} project to create soundscapes to complement {{illustrations|illustration}} and {{games|Interactive}}, but has since produced a wide variety of tracks, ranging from IDM, noise, industrial, and ambient - as well as music for interactive installations.
+  TYPE : Portal
+
+AUTOMATONS
+  UNDE : Language
+  BREF : A collection of twitter games and chatbots, along with their source files.
+  TYPE : Portal
+
+BEAUTY
+  UNDE : Nereid
+  BREF : {{Beauty}} is a series of {{Nereid}} beauties, earlier patients to Nereid's {{Appeal}}.
+  TYPE : Diary
+
+BELDAM RECORDS
+  UNDE : Audio
+  BREF : Created in collaboration with {{Elodie Lareine|http://noirmirroir.com}}, {{Beldam Records}} is a small label focusing on pop idm and experimental techno music. Each release is 4 tracks long, and includes an animation video version of the album art.
+  TYPE : Portal
+  LINK
+    BAND : https://beldamrecords.bandcamp.com
+    SNDC : https://soundcloud.com/beldam-records
+    TWTR : https://twitter.com/beldamrecords
+
+BIFURCAN
+  UNDE : Mobile
+  BREF : Named after a Borges short of the {{same name|http://en.wikipedia.org/wiki/The_Garden_of_Forking_Paths}}, similarly to {{Entaloneralie}}, this application is a cryptic watchface for iOS. Every second, the labyrinth reorganize itself to display the time with its twists and turns. It takes a little practice to be able to see the patterns in the lines. Clicking on the screen will unveil the time as seen in this {{video|https://www.youtube.com/watch?v=HzXIJpzPB6c}}. The original application was created in 30 minutes for a micro jam. If you have a {{Pebble Watch|https://getpebble.com}}, you can download it as a {{watchface|http://www.mypebblefaces.com/apps/10183/7055/}}, the Pebble C script was written by Chase Colburn and is also available on {{Github|https://github.com/chasecolburn/line-maze}}. The screensaver version was done by {{Tekgo|http://tekgo.org}} and was also added to the source code.
+  LINK
+    ITUN : https://itunes.apple.com/ca/app/bifurcan/id737264896
+    GITH : https://github.com/Echorridoors/Bifurcan
+    PEBL : Pebble|http://www.mypebblefaces.com/apps/10183/7055/
+
+BLAM
+  UNDE : First wave
+  LINK
+    BAND : https://aliceffekt.bandcamp.com/album/blam-le-passage-sacrilege
+
+BLINDFOLK
+  UNDE : Online
+  BREF : {{Blindfolk}} was a cryptic multiplayer combat game where players must program their character to foresee and react to the other players' action.
+  LONG
+    & It was first created in the span of 48 hours for {{Global Game Jam 2016|http://globalgamejam.org}}. 
+    & This project joins {{Paradise}} in its text-based interaction and concepts. 
+    & The game is open source and is available on {{Github|https://github.com/XXIIVV/Blind}}
+    & The game uses a simple scripting language, here is an example of a riposte to an attack coming from the back, and a default movement pattern with an attack and a shout.
+    # case attack.backward  step.leftcase default  attack.forward  turn.right  attack.backward  say yatta
+  LINK
+    GITH : https://github.com/XXIIVV/apis.blindfolk
+
+BRANE
+  UNDE : Polygonoscopy
+  BREF : {{Brane}} is a series of procedurally generated prints, designed to look like like portals bubbling out of fabric. This series is part of the {{Kaleidoscope}} collection. The prints are exposed the MIGS gallery on november 10th 2014.
+  TYPE : Diary
+
+CAMILARE
+  UNDE : Oquonie
+  BREF : Language spoken in {{Oquonie}} containing a little over 20 glyphs. The language is spoken in segments of 3 letters. This sentence will often be encountered when trying to enter a locked door with the wrong character. This sentence should be read as {_The door is locked unless nemedique_}.
+  LONG
+    * Dictionary
+    & This is a list of the most commonly used characters in {{Oquonie}}.
+    & <style>#camilare { border:0px}#camilare td { padding:0px 15px; vertical-align:middle; border:0px; font-size:18px;}#camilare img { margin:0px; width:100px;}</style><table id='camilare'><tr>	<td><img src='content/lexicon/camilare.Nestorine.png'/></td><td>Nestorine<br/><small>Nestorine</small></td>	<td><img src='content/lexicon/camilare.Nephtaline.png'/></td><td>Nephtaline<br/><small>Nephtaline</small></td>	<td><img src='content/lexicon/camilare.Necomedre.png'/></td><td>Necomedre<br/><small>Necomedre</small></td></tr><tr>	<td><<img src='content/lexicon/camilare.Neomine.png'/></td><td>Neomine<br/><small>Neomine</small></td>	<td><img src='content/lexicon/camilare.Door.png'/></td><td>Dialocie<br/><small>Door</small></td>	<td><img src='content/lexicon/camilare.Special.png'/></td><td>Paradiacie<br/><small>Door Special</small></td></tr><tr>	<td><img src='content/lexicon/camilare.Teleport.png'/></td><td>Zolenie<br/><small>Teleport</small></td>	<td><img src='content/lexicon/camilare.Correct.png'/></td><td>Hoathiste<br/><small>Correct/Yes</small></td>	<td><img src='content/lexicon/camilare.Incorrect.png'/></td><td>Gemaniste<br/><small>Incorrect/No</small></td></tr><tr>	<td><img src='content/lexicon/camilare.Unlocked.png'/></td><td>Ecrine<br/><small>Unlocked</small></td>	<td><img src='content/lexicon/camilare.Locked.png'/></td><td>Ednasene<br/><small>Locked</small></td>	<td><img src='content/lexicon/camilare.Help.png'/></td><td>Celpadmale<br/><small>Help</small></td></tr><tr>	<td><img src='content/lexicon/camilare.Sound.png'/></td><td>Aohzaille<br/><small>Sound</small></td>	<td><img src='content/lexicon/camilare.Guide.png'/></td><td>Mikethale<br/><small>Guide</small></td>	<td><img src='content/lexicon/camilare.Inside.png'/></td><td>Casarmate<br/><small>Inside</small></td></tr><tr>	<td><img src='content/lexicon/camilare.Outside.png'/></td><td>Carmate<br/><small>Outside</small></td>	<td><img src='content/lexicon/camilare.Key.png'/></td><td>Emetegisenete<br/><small>Key</small></td>	<td><img src='content/lexicon/camilare.Friend.png'/></td><td>Zorgiene<br/><small>Friend</small></td></tr><tr>	<td><img src='content/lexicon/camilare.Foe.png'/></td><td>Oquonie<br/><small>Foe</small></td>	<td><img src='content/lexicon/camilare.Pillar.png'/></td><td>Den<br/><small>Pillar</small></td>	<td><img src='content/lexicon/camilare.Nemedique.png'/></td><td>Nemedique<br/><small>Nemedique</small></td></tr></table>
+
+
+CENOTE
+  UNDE : Desktop
+  BREF : Cenote is an experimental platformer inspired by {{Underwater Base Jumping|http://www.youtube.com/watch?v=uQITWbAaDx0}}. The goal is to reach a small red planet with the highest amount of points left. Cenote is the spiritual prequel of {{Zjeveni}}.
+  LONG
+    - The air is only depleting when you are sinking.
+    - Each time you stop, your drop speed is reseted, so the least stops the faster you reach the bottom.
+    - Press R at any time to go back to the beginning.
+
+CHILDREN OF BRAMBLE
+  UNDE : Third wave
+  BREF : This short album contains two dark ambient/industrial tracks that sings of the Oasis of {{Rlionn}} and her Children. This album begins by the Oasis of {{Laeisth}} to finally reach the castle of {{Andes}} and its desertsunk structures. This single is part of the {{Neauismetica}}, and shares some narrative concepts with {{Telekinetic}}.
+  LINK
+    BAND : https://aliceffekt.bandcamp.com/album/children-with-veins-of-bramble
+
+CYANOSIS FEVER
+  UNDE : Desktop
+  BREF : Cyanosis is a 3d abstract world of static to explore and to get lost into. 
+  LONG
+    - If you start to foam, close the game as you faint
+    - This is not a game game
+
+DAMOISEAU CANALX
+  UNDE : Fourth wave
+  BREF : {{Damoiseau Canalx}} is the first single for the {{Fourth wave}}, in the spirit of {{Blam}}, that explores industrial sounds within darkstep and 2-step styles.
+  LONG 
+    & The album was recorded live, at Passport in Montreal during the last AMP event and is being released as-is. 
+    & The album was composed as side project while working on {{Ten Axitecture}} and includes bits and pieces from {{Blam}}.
+  LINK
+    BAND : https://aliceffekt.bandcamp.com/album/damoiseau-canalx
+
+DEFRACTION OPTICS
+  UNDE : Physical
+  BREF : {{Defraction Optics}} is the second book of {{Elodie Lareine|http://noirmirroir.com/}}, a manual of procedural imagery, in the fashion of {{Vast}}.
+  LINK
+    SITE : http://noirmirroir.com/defract
+
+DEI DAIN
+  UNDE : Second wave
+  BREF : <Written and released in Tokyo in 2013, {{Dei Dain}} is the sixth album as part of {{Aliceffekt}}'s {{Second Wave}} albums.
+  LINK
+    BAND : https://aliceffekt.bandcamp.com/album/dei-dain
+
+DESKTOP
+  UNDE : Interactive
+  BREF : This list shows all of the desktop projects built of the last few years.
+  TYPE : Portal
+
+DEATH
+  UNDE : Devine lu linvega
+  BREF : Inspired from Chris Crawford's Jars, these cells shows my life span with a cell for each week.
+
+DIARY
+  UNDE : Oscean
+
+HORAIRE
+  UNDE : Oscean
+
+RANDOM
+  UNDE : Oscean
+
+PORTAL
+  UNDE : Oscean
+
+DEW
+  UNDE : Mobile
+  BREF : {{Dew}} is a minimalist alarm app, designed to set up nap/sleeping alarms with a simple flick. 
+  LONG
+    & The application will then  wake you with a soft white noise tone that will gradually bring you back to reality.
+  LINK
+    ITUN : https://itunes.apple.com/ca/app/dew/id954020907
+    GITH : https://github.com/Echorridoors/dew
+
+DICTIONAERY
+  UNDE : Traumae
+  BREF : The {{Dictionaery}} is a generated list of all registered/coined {{Traumae}} words.
+
+DICTIONARISM
+  UNDE : Automatons
+  BREF : {{Dictionarism}} is a simple twitter bot that generates {_-isms_} from every of every single word of a dictionary and tweets them.
+  LINK
+    TWTR : https://twitter.com/dictionarism
+    GITH : https://github.com/XXIIVV/auto.dictionarism
+
+DILUVIUM
+  UNDE : Desktop
+  BREF : Diluvium is a jam game made by {{Henk Boom|http://henk.ca}}(FRACT), {{Dominique Ferland|http://dom2d.com}}(Playpeep), {{Renaud Bedard|http://theinstructionlimit.com/}}(FEZ) and Devine Lu Linvega, made in 3 days at the Toronto Game Jam of 2012
+  LONG
+    & The game was first showcased at the <a href='https://www.facebook.com/events/447362851940595/'>Indies Meetup</a> on june 6th 2012. 
+    & Thank you for your support on the <a href='http://forums.tigsource.com/index.php?topic=26064.15'>TIGsource</a> tread.
+    & {*Update:*} A new version was released on june 15th 2012 including better online accessiblity, animal balancing and minor networking fixes. 
+    * Gameplay
+    & This is a multiplayer typing tactics game where you incarnate an animal summoner. You must type, quickly and intelligently, sequences of animal names to counter and destroy your opponent. 
+    & The game will {_most likely_} let you summon any animal you can think of, choose wisely for each animal has it's own speed, power and intelligence stats. 
+    * Multiplayer
+    & By typing {*LOCAL*} in the login you will then find yourself battling the computer and possibly discover new animals. But the real fun begins by challenging other human summoners
+    & If you wish to start your own arena, type {*HOST RABBIT*} in the splash screen input. This will initiate an arena called "rabbit" and other players will be able to join it by typing {*JOIN RABBIT*} - you don't have to pick rabbit as game name. 
+    & If you want to create a nameless match, simply type {*HOST*}, without a game name, and other players will be able to join it by typing {*JOIN*} and by typing your IP Address if the other player is on the same local network.
+    & To join a game over the internet, you can type {*JOIN RABBIT*} to connect to the game named "rabbit" or leave simply type {*JOIN*} to connect to a random game. If you wish to play local, you can simply type the host's IP. 
+    * Splash Commands</h2>
+    & You can enter a few commands and cheat codes into the splash field.
+    # Local  > <comment>{empty}</comment>    : Play against an AI summonerJoin   > <comment>{empty}</comment>    : Battle a random internet summoner       > Game Name  : Challenge a specific internet summoner       > IP Address : Challenge a local(LAN) summonerHost   > <comment>{empty}</comment>    : Create a LAN/Internet game       > Game Name  : Create a LAN/Internet game with a specific nameMute   > <comment>{empty}</comment>    : Turn the music OFF
+    & The game also has a few cheat codes that can be entered in the splash field, ask your friends for these codes maybe someone has found one.
+    * Soundtrack
+    & The sounds and sountrack of the game were composed by {{Aliceffekt}}. There is 4 versions of the BGM available in the game, some of them are secret tracks.
+    & If you wish to turn off the sounds, type in {*MUTE*} in the login field. You might have heard something about cheatcodes, well, if you know any. They must be typed into the login screen.
+    * Patch 1.1
+    & A new version was released on june 15th 2012 including better online accessiblity, animal balancing and minor networking fixes.
+    - You can now name your games and tell your friend to connect to it by name instead of IP! (IP still works, though)
+    - Create a server and wait for a user, or join an anonymous server randomly!
+    - Server no longer needs to forward port 10000
+    - In local mode, AI opponent spawns more/less units per second depending on wins/losses
+    - Options better presented, no more accidental enter key press
+    - Escape key quits to splash
+  LINK
+    YOUT : http://youtu.be/z7NNBzNXncw
+    GITH : https://github.com/Collegiennes/diluvium
+
+DIRECTORY
+  UNDE : Devine Lu Linvega
+  BREF : I often get asked for inspirations and for medias that influenced my works, I have decided to maintain this list of things that I enjoyed watching and that I enjoy talking about.
+  LONG
+    * Books
+    - {{Flatland: A Romance of Many Dimensions|https://en.wikipedia.org/wiki/Flatland}},  Edwin A. Abbott. 1884
+    - {{Le Matin Des Magiciens|https://en.wikipedia.org/wiki/The_Morning_of_the_Magicians}},  Louis Pauwels & Jacques Bergier. 1960
+    - {{Le Città Invisibili|https://en.wikipedia.org/wiki/Invisible_Cities}}, Italo Calvino. 1972 
+    - {{Ficciones|https://en.wikipedia.org/wiki/Ficciones}}, Jorge Luis Borges. 1941
+    - {{The Mysterious Stranger|https://en.wikipedia.org/wiki/The_Mysterious_Stranger}}, Mark Twain. 1916
+    - {{Kybalion|https://en.wikipedia.org/wiki/Kybalion}}, the Three Initiates. 1908
+    - {{La Ricerca della Lingua Perfetta nella Cultura Europea|https://en.wikipedia.org/wiki/La_Ricerca_della_Lingua_Perfetta_nella_Cultura_Europea}}, Umberto Eco. 1993
+    - {{Consolations in Travel|https://en.wikipedia.org/wiki/Humphry_Davy}}, Sir Humphry Davy. 1830
+    - {{Blumroch l'admirable|https://en.wikipedia.org/wiki/Louis_Pauwels}}, Louis Pauwels. 1976
+    - {{Simulacra and Simulation|https://en.wikipedia.org/wiki/Simulacra_and_Simulation}}, Jean Baudrillard. 1981
+    * Movies
+    - {{Last Life In The Universe|https://en.wikipedia.org/wiki/Last_Life_in_the_Universe}}, Pen-Ek Ratanaruang. 2003
+    - {{Solaris|https://en.wikipedia.org/wiki/Solaris_(2002_film)}}, Steven Soderbergh. 2002
+    - {{Wristcutters: A Love Story|http://www.imdb.com/title/tt0477139/}}, Goran Dukic. 2006
+    - {{Mais ne nous délivrez pas du mal|https://en.wikipedia.org/wiki/Don%27t_Deliver_Us_from_Evil}}, Joël Séria. 1971
+    - {{Faust|https://en.wikipedia.org/wiki/Faust_(1994_film)}}, Jan Švankmajer. 1994
+    - {{Rosencrantz and Guildenstern Are Dead|https://en.wikipedia.org/wiki/Rosencrantz_%26_Guildenstern_Are_Dead_(film)}}, Tom Stoppard. 1990
+    - {{Primer|https://en.wikipedia.org/wiki/Primer_(film)}}, Shane Carruth. 2004
+    - {{My Dinner with Andre|https://en.wikipedia.org/wiki/My_Dinner_with_Andre}}, Louis Malle. 1981
+    - {{Valerie and Her Week of Wonders|https://en.wikipedia.org/wiki/Valerie_and_Her_Week_of_Wonders_(film)}}, Jaromil Jireš. 1970
+    - {{The Legend of Suram Fortress|https://en.wikipedia.org/wiki/The_Legend_of_Suram_Fortress}}, Sergei Parajanov. 1985
+    * Words
+    - {{Февраль|https://ru.wikipedia.org/wiki/Февраль}}, February in Russian
+    - {{Roÿnes|https://fr.wiktionary.org/wiki/roÿne}}, queen in Middle French
+    - Pleurir, crying-laugh in French
+    - Neleodicastes, unknown from Logopandekteision
+    - {{Dodecahedron|https://en.wikipedia.org/wiki/Dodecahedron}}, in English
+    - {{Oyasumi|https://en.wiktionary.org/wiki/お休み}}, "good rest" in Japanese
+    - {{Betwixt|https://en.wikipedia.org/wiki/Betwixt}}, in English
+
+DODECAE
+  UNDE : Supervisitor
+  BREF : In collaboration with the <a href=‘https://bentomiso.com’>BentoMiso</a> coworking space, {{XXIIVV|http://xxiivv.com}} will present live experimental music performances from {{Adversary|http://tympanikaudio.com/releases/ta025}}, {{Ilkae|https://ilkae.bandcamp.com}}, {{Dualryan|https://dualryan.bandcamp.com}} and {{Aliceffekt|https://aliceffekt.bandcamp.com}} alongside the visualists {{Nonante|http://theinstructionlimit.com}} and {{Melesul3|http://www.pocaille.com}}, following the yearly <a href=‘https://bentomiso.com/bit-bazaar-winter-market-2014/’>Bit Bazzar</a> market on {_December 6th, 2014_}.
+  LINK
+    FCBK : Event|https://www.facebook.com/events/558238014277230/?fref=ts
+
+DOMESTIC MOIRE
+  UNDE : Ar moire
+  BREF : Look into it as it gaze back into you.
+  LINK
+    GITH : https://github.com/neauoire/DomesticMoire
+    ITCH : http://aliceffekt.itch.io/domestic-moire
+
+DONSOL
+  UNDE : Mobile
+  BREF : {{Donsol}} is a simple solitary card game, designed by {{John Eternal|https://twitter.com/johneternal}} during {{Train Jam|http://trainjam.com}}, where you must go through a series of rooms(4 cards) with the tools available.
+  LONG
+    & While the game was designed on a train, without internet connection, it seems like Donsol's gameplay accidentally ended up being a twist to Zach Gage and Kurt Bieg's {{Scoundrel|http://stfj.net/index2.php?project=art/2011/Scoundrel.pdf}}, designed in 2011. Another game, working in a similar fashion, also released this week, Card Crawl. It seems as if this game design was overdue.
+  LINK
+   ITUN : https://itunes.apple.com/us/app/donsol/id976367718?ls=1&mt=8
+   GITH : https://github.com/Echorridoors/donsol
+   HELP : Guide|http://wiki.xxiivv.com/Donsol+guide
+
+DONSOL GUIDE
+  UNDE : Donsol
+  BREF : {{Donsol}}, designed by {{John Eternal|https://twitter.com/johneternal}}, is a game about exploring a dungeon using nothing but what you find.You play with a standard 54 poker card set, Jokers included.
+  LONG
+    & Shuffle the deck and draw 4 cards, equip a shield, slay all monsters, heal yourself with potions and exit the deck alive.
+    - ♦Diamonds are shields
+    - ♥︎Hearts are potions
+    - ♠Spades are monsters
+    - ♣︎Clubs and Jokers are also monsters
+    * Red Cards
+    & Red number cards equal their value and face cards(J,Q,K,A) equal 11
+    * ♥︎ Potions
+    & You begin with a max of 21 health points and can never go above. You can only drink one health potion per room.
+    * ♦ Shield Cards
+    & You can fight a monster without shield, but suffer full damage. Equipping a shield allows you to absorb the damage difference from the monster value. {_If you have an 8 shield equipped, by attacking a 9 monster you suffer 1 damage._}
+    & Shields can only defend monsters in descending value and if you use a shield on a monster with higher or equal value to the previous, it will break. Broken shields leave you unarmored, and you take full damage.
+    * Black Cards
+    & Black number cards equal their value and face cards are as follows J is 11, Q is 13, K is 15, A is 17 and Jokers are both equal to 21.
+    * ♠ Monster Cards
+    & Once you have dealt with at least 3 cards, you can move onto the next room(set of 4 cards), moving the remainder card to the bottom of the deck.
+    & Running away from the room moves the cards to the bottom of the deck. You can run away from a room you have not interacted with, once in a row.
+    * Example Play
+    - Open the door (Shuffle the deck and draw 4 cards)
+    - The room contains a 7♦, Q♥︎, 10♠, J♣︎
+    - Equip the 7♦ shield, and battle the J♣︎ (11-7=4 lost HP)
+    - Battle the 10♠ (10-7=3 lost HP), drink the Q♥︎ and heal 11 HP up to max 21.
+    - With the room empty we sneak into the next room.
+    - The room contains A♦, K♦, K♣︎, 9♥︎
+    - Equip the K♦ (replacing the 7♦), battle the K♣︎ (15-11=4 lost HP)
+    - Drink the 9♥︎ and heal 9 HP up to max 21. 
+    - Moving to the next room places the A♦ at the bottom of the deck.
+    - The room contains A♣︎, J♣︎, 10♦, 6♠.
+    - Continue making your way through the dungeon (deck) until all enemies are defeated.
+  LINK
+    ITUN : https://itunes.apple.com/us/app/donsol/id976367718
+
+DOWNTEMPERATURE
+  UNDE : First wave
+
+DRYPOINT
+  UNDE : Desktop
+  BREF : {{Drypoint is a very hard platformer game for keyboard cowboys. See if you can get to the blue door. Read about Drypoint on the {{TIGSource forum tread|http://forums.tigsource.com/index.php?topic=8241}}.
+  LONG
+    - There are a few different paths to get to the end.
+    - The game is based on complex jumping techniques.
+    - This is {*nearly*} impossible.
+
+EFLI
+  UNDE : Eschatolor
+  BREF : {{EFLI}}, 103.0FM, was a pirate radio broadcast, available from Montreal's Plateau area, between 22:00 and 6:00. The radio started broadcasting on May 20th, 2015. Not much else is disclosed. Read more about {{Eschatolor}}.
+
+EHRIVEVNV
+  UNDE : Neon hermetism
+  BREF : The {{Ehrivevnv}}, of {_The Methamondst Conclave_}, is a dimensional puzzle. The puzzle presents itself as the simplest primitive allowed by the current navigationable dimension. 
+  LONG
+    & The prism mesh is porous in that it allows to be looked into. The inside of the puzzle displays a universe, where at its center, lies another Ehrivevnv, which in turn, seemingly holds a universe. With each universe that any one puzzle contains, the laws of nature grow increasingly more complex and diverse.
+    & Some, believe that superior intelligences reside deep into the puzzle, others believe it to be a trap.
+
+ENTALONERALIE
+  UNDE : Mobile
+  BREF : {{Entaloneralie}} is an experimental time observation device, in the lines of {{Bifurcan}}. While the old design displayed a circular layout and binary type format. The redesign explores an entirely different system of displaying minutes and is meant to be a toy, a distraction.
+  LINK
+    ITUN : https://itunes.apple.com/us/app/entaloneralie/id657224738
+    GITH : https://github.com/Echorridoors/Entaloneralie
+
+ES GULF SUNFLOWERS
+  UNDE : Second wave
+  BREF : {{Es Gulf Sunflowers}} tale remembers the gorgeous sunken fields of {{Es|Dinaisth}} - the underwater jump gate to {{Dinaisth}}, for its vast ocean terrace and display of sunflowers.
+  LINK
+    BAND : https://aliceffekt.bandcamp.com/album/es-gulfssunflowers
+
+ESCHATOLOR
+  UNDE : Beldam records
+  BREF : {{Eschatolor}} is the fourth release on the Beldam Records catalog. Written by Катя Тевелизион, this album was inspired from russian number stations. 
+  LONG
+    & It was recorded playing through the FM band, from the {{EFLI}} 103.0Mhz pirate radio station in Montreal, giving it its texture and warmth.
+  LINK
+    BAND : https://tevelision.bandcamp.com/album/eschatolor
+    ITUN : iTunes|https://itunes.apple.com/ca/album/eschatolor/id1000241341
+
+EXTENDED SLEEP
+  UNDE : Third wave
+  BREF : {{Extended sleep}} is the sequel to {{Known Magye}}, a deeper exploration of its universes, its stories. While the album released after {{Fourth wave}} release {{Supervisitor}}, it is part of the {{Third wave}}.
+  LONG
+    & The album will be first performed at the A Maze Festival in Berlin, on April 23rd 2015.
+  LINK
+    BAND : https://aliceffekt.bandcamp.com/album/extended-sleep
+
+FIRST AID LAST AID
+  UNDE : First wave
+
+FIRST WAVE
+  UNDE : Aliceffekt
+  TYPE : Portal
+
+FLAG
+  UNDE : Traumae
+  BREF : The {{Traumae}} flag was released on February 2016, the graphic's ratio is 11:18(1.636). The three circles symbolizes the three root letters of the Traumae language, {_XDB_}, and are each connected with a single stroke that closes itself again.
+  LINK
+    GITH : https://github.com/Traumae/Branding
+
+FLOWERS
+  UNDE : Artwork
+  BREF : A series of abstract six-sided flowers drawn using a procedural drawing script. These flowers have inspired a series of illustrations used in Elodie Lareine's book titled "{{Vast}}" as well as the cover of the {{Aliceffekt}} single titled "{{Known Magye}}", released in 2014.
+  LONG
+    & If you wish to create your own fractals, you can download the photoshop actions and use them on a 2000x2000 photoshop file. 
+    & The script also includes a 5 sided rotation action.
+  TYPE : Diary
+
+FOURTH WAVE
+  UNDE : Aliceffekt
+  TYPE : Portal
+
+FROM SAHARAPHOREST
+  UNDE : Second wave
+  BREF : As an experiment, I recorded the album playing through cassette tapes and fell in love with the recording for it's uneasy sounds and noisy silences - It felt like it somehow made sense with this album.
+  LONG
+    & The first 3 tracks are ripped from cassette tapes, and the last one is a single clean mastered version.
+    & There was 5 tapes made and given to fans at shows as artworks. 
+    & This release is related to {{Vert Kirlian Theatre}} album, released in 2008.
+  LINK
+    BAND : http://aliceffekt.bandcamp.com/album/19th-month-from-saharaphorest-to-duomo
+
+GENESIS MINERS
+  UNDE : First wave
+  LINK
+    BAND : https://aliceffekt.bandcamp.com/album/genesis-iii-20-ov-idyllic-miners
+
+GERMANY
+  UNDE : Travel
+  BREF : Travel pictures from 2012 and Amaze's 2015.
+  TYPE : Diary
+
+GONE PLAINS
+  UNDE : First wave
+
+HEX HIVE NECKLACE
+  UNDE : Physical
+  BREF : A small design necklace, looks great in black.
+  LINK
+    SITE : http://www.thingiverse.com/thing:18853
+
+HIVERSAIRES
+  UNDE : Mobile
+  BREF : {{Hiversaires}} is a point-n-click, or "escape" type game created for adventurers who remember games where you had to draw maps to {*find your way out of a cave*}. 
+  LONG
+    & The dark world of Hiversaires features an original {{Aliceffekt}} soundtrack to lure you through its entangled corridors.
+    * Textless adventure
+    & Hiversaires is the first part in a series of textless games, that also includes the isometric adventure {{Oquonie}}. While the game has no text, there is an underlying story.
+  LINK
+    ITUN : https://itunes.apple.com/au/app/hiversaires/id630992348
+    GITH : https://github.com/Echorridoors/hiversaires
+
+HOME
+  UNDE : Home
+  BREF : Welcome to the documentation and playground for the projects of multimedia developer {{Devine Lu Linvega}}. This wiki provides narrative context for the {{Audio}}, {{Visual}} and {{Research}} projects. A {{Portal}} and a {{Timeline|Horaire}} are also maintained daily as part of {{XXIIVV|Oscean}}.
+  LONG
+    & If this is your first time around, the {{Introduction|Oscean}} is a good place to begin your exploration. If you wish to stay updated on the development of the latest projects, follow {{@Neauoire|http://twitter.com/neauoire}}.
+
+HOWLS VIRGIL SYSTEMS
+  UNDE : First wave
+
+HUNDRED RABBITS
+  UNDE : Hundred rabbits
+  BREF : {{Hundred Rabbits}}, is a nomad design studio founded by {{Rekka Bellum|http://kokorobo.ca}} and {{Devine Lu Linvega|Devine Lu Linvega}} aboard a {{sailboat|https://github.com/hundredrabbits/Yamaha-33}}, somewhere on the shores of the Pacific Ocean.
+  LONG
+    & This partnership is host to interactive projects like {{Oquonie}}, {{Grimgrains|http://grimgrains.com}} and travel diaries. A {{Patreon page|https://www.patreon.com/100}} is available to help fund the production of monthly videos and liveaboard documentation.
+    & Living on a {{sailboat|Hundred rabbits}} might be quite foreign for most people, as it once was for us. This selection of questions and answers will try to address the recurring requests. If you want to add to this list, ask your questions as comments {{here|https://www.patreon.com/posts/4421599}}.
+  LINK
+    GITH : https://github.com/hundredrabbits
+    PATR : https://patreon.com/100
+    TWTR : https://twitter.com/hundredrabbits
+
+PINO
+  UNDE : Hundred rabbits
+  BREF : {{PINO}}, is a 33' Yamaha Sloop sailboat, built in 1982. It is ocean ready and sleeps 5 passengers comfortably. You can read more about the {{Hundred Rabbits}} project {{here|http://100r.co/Sailboat}}.
+  LINK
+    PATR : https://patreon.com/100
+
+GRIMGRAINS
+  UNDE : Hundred rabbits
+  BREF : {{Grimgrains}} is a food blog maintained by {{Hundred Rabbits}}, documenting interesting food experiments and lifestyle DIYs guides.
+  LINK
+    MAIN : http://grimgrains.com/
+    TWTR : https://twitter.com/grimgrains
+    GITH : https://github.com/XXIIVV/http.grim
+
+HYPERVOID
+  UNDE : Polygonoscopy
+  BREF : Navigating the nullplane of Dischromatic Nullcolour Anti-pigments. The {{Hypervoid}} pieces were selected to be on the cover of the second volume of the {{Amaze Newspaper|http://issuu.com/independenceamazing/docs/amaze_screen}}.
+  TYPE : Diary
+
+ILLUSTRATION
+  UNDE : Visual
+  TYPE : Portal
+  BREF : A collection of illustrated works.
+
+INTERACTIVE
+  UNDE : Visual
+  BREF : The {{Interactive}} Portal contains all the released interactive applications. The interactive project list contains various completed and unreleased experiments and games for iOS, desktop and browser.
+  TYPE : Portal
+
+KALEIDOSCOPE
+  UNDE : Polygonoscopy
+  BREF : Nothing is as reassuring as looking through the {{Polygonoscope|Polygonoscopy}} and seeing everything is where you left it.
+  TYPE : Diary
+
+KEYBOARD 468
+  UNDE : Mobile
+  BREF : The {{Keyboard 468}} is a 18 keys keyboard that sorts characters by the most likely letter to follow the last input. So you always only need to type using the two rows at the top, maximizing the space and allowing for big large letters. The hidden letters are accessible through the {_alt_} key, alongside symbols and numbers.
+  LONG
+    * Privacy Policy
+    & This policy exists to inform you that the keyboard does not record, save, harvest or send any data of any type. The application, and its keyboard extension is self contained and does not keep any data. The active {{source code|https://github.com/neauoire/iOSKeyboard}} is also available to demonstrate that the keyboard does not hold onto your content.
+  LINK
+    ITUN : https://itunes.apple.com/ca/app/468-keyboard/id954698999
+    GITH : https://github.com/Echorridoors/Keyboard468
+
+KNOWN MAGYE
+  UNDE : Third wave
+  BREF : {{Known Magye}} is an album and performance relying heavily on visuals. Sometimes reminiscent of the compositions of {{Children of bramble}}, sometimes of the drowned sounds of {{Telekinetic}}, this single is a fair mix of ambient and breaks. 
+  LONG
+    & The album was recorded live from {{San Fransisco|travel}}'s {*POW POW POW*} which was controlled entirely with the {{Leap Motion|https://www.leapmotion.com}}.
+  LINK
+    BAND : https://aliceffekt.bandcamp.com/album/known-magye
+
+VERT KIRLIAN THEATRE
+  UNDE : First wave
+  BREF : This album was written entirely in the {{Yamanote line|http://en.wikipedia.org/wiki/Yamanote_Line}}, during my first trip to Tokyo, {{Japan}}.
+
+LEDOLIEL
+  UNDE : Mobile
+  BREF : {{Ledoliel}} is a strange dating toy for iOS, involving procedural creatures and their bizarre customs, where you must try and figure out what topics they might want to discuss, gift they might want to receive and places they may like to be touched - based on their cryptic attributes.
+  LINK
+    ITUN : https://itunes.apple.com/us/app/ledoliel/id891693763
+    GITH : https://github.com/Echorridoors/ledoliel
+
+LOOKING GLACE
+  UNDE : Beldam records
+  BREF : Following {{Miniscopie}}, {{Looking Glace}} is {{Reine|http://noirmirroir.com}}'s second release on {{Beldam Records}}, painting a harsher, and more complete picture of her acoustic universe where the liquid sounds and suffocating vocoder are incessantly present.
+  LINK
+    BAND : https://beldamrecords.bandcamp.com/album/looking-glace
+    ITUN : https://itunes.apple.com/ca/album/looking-glace-ep/id1034127266
+
+LUS FLORAL FUNERALIS
+  UNDE : First wave
+
+GAII
+  UNDE : Audio
+  BREF : GAII, also Malice or 害意, tells the {{earlier tales|Neauismetica}} of {{Neonev}} as she crossed the {{Kanikule}} ocean. The tracks are singing of the daily discoveries, and it's darker distances. The Malice logo was designed by {{Jan Vranovský|http://visualscream.net}}.
+  TYPE : Portal
+
+COLLECTED WORKS
+  UNDE : Gaii
+  BREF : {{Collected Works}}, is a collection of chiptune works written, under the {{Gaii}}(Malice) alias, between 2008 and 2015. 
+  LONG
+    & This release includes the complete Storm Transit record, as well as a few original Malice tracks and the {{Merveilles Portable}} soundtrack.
+  LINK
+    BAND : https://gaii.bandcamp.com/
+
+MERVEILLES
+  UNDE : Merveilles
+  BREF : {{Merveilles}} is a small online community founded, around 2010. Its original purpose was to allow {{Merveilles Portable}}, from which it took its name, players to communicate with eachother. Since then, it has evolved to host various discussion about programming, art, game dev, music, AI and trans-humanism.
+  LONG 
+    & While the original gatherings mainly existed on IRC, it has since migrated onto {_Slack_} where it has became a private room that invites new members selectively.
+  LINK
+    GITH : https://github.com/merveilles
+
+MERVEILLES PORTABLE
+  UNDE : Unreleased
+  BREF : {{Merveilles Portable}} was a mini MMORPG for handhelds(iPod, iPad, Android, webOS) and computer. It was coded by {*Deeo*} and designed by {{Devine Lu Linvega}}. It was a tiny brown world that used floors as areas, players could interact with eachothers using a glyph language.
+  LONG
+    & The game ran around 2009-2011, and was eventually shut down due to a complicated migration.
+
+METHASCOPE
+  UNDE : Polygonoscopy
+  BREF : The {{Methascopes|Methascope}} are frozen {{Polygonoscopic|Polygonoscopy}} drops, similar to snowflakes.
+  TYPE : Diary
+
+MILAVREGA
+  UNDE : Unreleased
+  BREF : {{Milavrega}} is an {{unreleased}} mobile game happening in someone's lost phone. You must try and find your way through the folders, emails and contacts to decypher the enigma of the phone's owner.
+
+MILAVREGARIAN
+  UNDE : Typography
+  BREF : Pixel font family used in {{Milavrega}}, contains all letters and numbers.
+  LINK
+    GITH : https://github.com/neauoire/Font-Collection
+
+MINISCOPIE
+  UNDE : Beldam records
+  BREF : {{Miniscopie}} is the second release on the {{Beldam Records}} catalog. Written by {{Reine|http://noirmirroir.com}}, this album combines ambient and deep IDM flavoured sounds. The album is the first music release from Elodie, who also created the {{Vast}} book.
+  LINK
+    BAND : https://beldamrecords.bandcamp.com/album/miniscopie
+    ITUN : https://itunes.apple.com/us/album/miniscopie-ep/id956624857
+
+MIRAI SEU
+  UNDE : Typography
+  BREF : New font inspired from {{Milavregarian}}, contains all letters and numbers.
+  LINK
+    GITH : https://github.com/neauoire/Font-Collection
+
+MIXTAPE
+  UNDE : Audio
+  BREF : A collection of dj sets recorded over the years, ranging from industrial, to classical to idm.
+  LONG
+    & Some of the tracklists were lost, feel free to contact me if you need to find the name of a specific track. The entire collection is available {{here|https://drive.google.com/folderview?id=0B24klRuG3GLNam56My1Va1RfSU0&usp=sharing}} while the individual tracklists can be seen bellow.
+  TYPE : Text
+  LINK
+    DRIV : https://drive.google.com/folderview?id=0B24klRuG3GLNam56My1Va1RfSU0&usp=sharing
+
+GROT
+  UNDE : Mixtape
+  BREF : For {{Secret Thirteen|http://secretthirteen.org}}
+  LONG
+    - Эдуард Артемьев - Философская тема
+    - Decades/Failures - Everything in Black
+    - The Twilight Sad - In Nowheres
+    - Soror Dolorosa - Trembling Androgyneous
+    - Сруб - До Горизонта Земли
+    - The Retuses - сагитта
+    - 友川カズキ - 顕信の一撃
+    - Nonima & theAudiologist - Higghi
+    - Эдуард Артемьев - На крыше
+    - Wand - Cave In
+    - Soviet Soviet - Further
+    - Сруб - Юдоль
+    - This Cold Night - D.C.D.S.
+    - HTRK - Body Double
+    - Sexy Sushi - Je ne suis pas satisfaite du tout
+  LINK
+    DRIV : https://drive.google.com/open?id=0B24klRuG3GLNaW1LUFJfWEpzMGs
+
+QUERY
+  UNDE : Mixtape
+  BREF : For {{MusicForProgramming();|http://musicforprogramming.net}}
+  LONG
+    - Kangding ray - La Belle
+    - Nonima & theAudiologist - Shard
+    - HTRK - Love Triangle
+    - Forest Swords - The Weight of Gold
+    - Plaid - 35 Summers
+    - blΔnc - Canans Sun
+    - Nonima & theAudiologist - Shaping Harmonics
+    - Сруб - После Гроз
+    - Tevelision - 3
+    - HTRK - Skinny
+    - Plaid - Sömnl
+    - Akkord - Channel Drift
+    - Aliceffekt - A Thousand Times Parix
+  LINK
+    DRIV : https://drive.google.com/open?id=0B24klRuG3GLNdms0UkR1ZUdQNlk
+
+SOMBRE
+  UNDE : Mixtape
+  BREF : For {{Depthcore Radio|http://depthcore.com}}
+  LONG
+    - Access To Arasaka - xt10.20zp9
+    - Clubroot - Embryo
+    - Dahlia's Tear - 2nd Sky Between Lights, Unreleased Colours and Earth 
+    - Dead Can Dance - Circunradiant Dawn 
+    - 黒百合姉妹 - Under del Linden
+    - Red Sun - 絵の前日 
+    - Prefuse 73 - The Only Hand To Hold 
+    - Mum - Will The Summer Make Good For All Of Our Sin 
+    - Mute. - The Truth About Popmusic_Vol.1
+    - Bruno Coulais - La Fin Du Reve
+    - Igorrr - Fryzura Konika 
+    - Nero's Day At Disneyland - pact with god 
+    - LOLI RIPE - Be my pet! 
+    - Drumcorps - Botch Up and Die 
+    - Jóhann Jóhannsson - Part II
+    - J.A.シーザー - 慈悲心鳥
+  LINK
+    DRIV : https://drive.google.com/open?id=0B24klRuG3GLNU0RLUGZWaWxON3c
+
+MOBILE
+  UNDE : Interactive
+  BREF : This collection of {{mobile}} apps constitutes a series of games, tools and experiments about interative design and linguistics. The development and patches are tracked across the {{Echorridoors|http://github.com/echorridoors/verreciel}} repositories.
+  TYPE : Portal
+
+MODERNISTA
+  UNDE : Artwork
+  BREF : {{Modernista}} is the name of a series of 5 prints inspired from American Modernism.
+  TYPE : Diary
+
+NATANIEV
+  UNDE : Unreleased
+  BREF : Nataniev was an {{adventure fitness app|http://www.youtube.com/watch?v=DBZCLjsI1bs}}. A simple {{pedometer|http://en.wikipedia.org/wiki/Pedometer}}, or step-counter, in which you travel as you go about your daily life. Your pace, your progress and the collected steps of all players are pooled to make new areas accessible. You can see your rank change in real time against all the other wanderers of Nataniev.
+  LONG
+    & The app does not require an active online connection, if no wi-fi/wireless is found, you will be shown alternative data about your progress. The app runs in background and will vibrate when a point of interest is approaching. 
+    * Delayed Release
+    & The application was first supposed to hit the app store on june 25th 2013, but due to faulty code, the release was delayed until july 3rd. 
+    * Pulling it from the App Store
+    & The application was pulled from the app store on February 17th 2014. The app had been broken since the release of iOS7. I can see the app now being possible again with the help of the Nike Fuelband or some similar device, but until such companionship exists, the application will remain offline.
+
+NATANIEV CASE
+  UNDE : Physical
+  BREF : I could not find a slick black case so I designed myself an iPhone 5S case with Society6. The print contains the name of my favourite 3 chapters of the {{Vast}} book: "{_Jlhadeaai, Huqrea & Jahaoghad_}".
+  LINK
+    SITE : http://society6.com/aliceffekt/Nataniev-iPhone-Cover_iPhone-Case
+
+NEREID
+  UNDE : Illustration
+  BREF : {{Nereid}} is one of Neptune's {{moon|http://en.wikipedia.org/wiki/Nereid_(moon)}}. It has but one weather, "cold", terribly slow internet reception, idyllic valleys. The soil is mostly diamonds, {_carbonado_} and the lack of atmosphere leaves the surface of the moon, mostly quiet. Were there pigments on Nereid, they would be illegal - for Nereid is strickly colourless.
+  LONG
+    & The daily eclipse we call Night, you can have a look at my {{travel photography|Serventines}}.
+  TYPE : Portal
+
+NETHER ESPER INSERTS
+  UNDE : First wave
+
+NOIRCA
+  UNDE : Mobile
+  BREF : {{Noirca}} is a minimalist Black & White camera application for iOS that launches instantly, without prompts and without social connects - simple, clean. The app has one purpose, to launch quickly and render the photos with a softly washed out B&W film quality.
+  LINK
+    ITUN : https://itunes.apple.com/us/app/noirca/id893715212
+    GITH : https://github.com/Echorridoors/noirca
+
+NOR LET THE FOOLS
+  UNDE : First wave
+  LINK
+    BAND : http://aliceffekt.bandcamp.com/album/nor-let-the-fools-mistake-love
+
+CODE
+  UNDE : Code
+  BREF : This is a collection of linguistic and programming projects.
+  TYPE : Text
+  LINK
+    GITH : https://github.com/dariusk/NaNoGenMo-2015/issues/90
+
+RUBY RIDING HOOD
+  UNDE : Code
+  BREF : Inspired by a talk with a friend about Steven Pinker's {{The Language Instincs|http://en.wikipedia.org/wiki/The_Language_Instinct}}, I decided to try and translate Leanne Guenther's {{Little Red Riding Hood|http://www.dltk-teach.com/rhymes/littlered/story.htm}} into {{Ruby|http://en.wikipedia.org/wiki/Ruby_(programming_language)}}.
+  LONG
+    & The idea was simple, how much meaning can I extrude from the original text and parse into a computer language, as it turns out, a lot of it can. 
+    & The full text is on Github. Feel free to contact me with pull requests and optimisations.
+  LINK
+    GITH : https://gist.github.com/neauoire/9beee5e555615e0003d194548c158979
+
+NUMERALS
+  UNDE : Code
+  BREF : {{Numerals}}, is a script that generates the name of numbers with 50'000 characters and beyond. It uses various extensions of the short word form, and ISQ inspired names, to create the names of numbers which have never previously been catalogued.
+  LONG
+    - One Million 6 zeros
+    - One Quindecillion 48 zeros
+    - One Quattuortrigintallion 105 zeros
+    - One Sexagintallion 183 zeros
+    - One Unnonagintallion 276 zeros
+    - One Septenviginticentillion 384 zeros
+    - One Quattuortrecentillion 915 zeros
+    - One Unseptuagintasescentillion 2016 zeros
+    - One Duotrigintatrillinillion 9999 zeros
+    - One Septuagintaquadrillinillion 14313 zeros
+    - One Quattuorquadragintaoctillinillion 24135 zeros
+    - One Octillinillion 25203 zeros
+    - One Trigintanonillinillion 28893 zeros
+    - One Treoctogintaquadringentimilligillion 31452 zeros
+    - One Novennonagintaseptingentimilligillion 32400 zeros
+    - One Senonagintamilligillion 40191 zeros
+    - One Quinsexagintamilligillion 49998 zeros
+  LINK
+    GITH : https://github.com/XXIIVV/toys.numerals
+
+OCCULTER
+  UNDE : Physical
+  BREF : Occulter is a small boutique I admire, and that sells {{black things|http://www.occulter.org}}.
+
+ONLINE
+  UNDE : Interactive
+  BREF : A collection of {{interactive}} projects playable from your browser.
+  TYPE : Portal
+
+OQUONIE
+  UNDE : Mobile
+  BREF : {{Oquonie}} is a textless puzzle game for iPad and iPhone created in collaboration with illustrator {{Rekka Bellum|http://kokorobot.ca}} where you must find your way across an intertwined megastructure. 
+  LONG
+    & You will not be alone, your incarnations will have the help of {_bizaroid_} characters speaking {{an obscure language|Camilare}}.
+    & Oquonie features an original {{Aliceffekt}} soundtrack that is now available on {{Bandcamp|https://aliceffekt.bandcamp.com/album/short-stories-in-impossible-spaces}}. The game was best described as {_"{{Animal Crossing in a K-Hole|http://killscreendaily.com/articles/oquonie-maze-worth-entering/}}"_}.
+  LINK
+    ITUN : https://itunes.apple.com/us/app/oquonie/id819777958
+    GITH : https://github.com/hundredrabbits/Oquonie"
+
+OQUONIE GUIDE
+  UNDE : Oquonie
+  BREF : I noticed that a few people get stuck after finding the first red pillar. This guide is meant to be a spoiler-free list of tips to help you proceed through {{Oquonie}}. So if you have not yet found the first pillar, this is {*not*} for you, so keep playing, for your only task at the moment would be to find three matching tokens.
+  LONG
+    * That darn shark
+    & You have found a locked red door, {*a red pillar thing*} appeared next to one of the town's gates, you have been turned back into the first character, {{Necomedre|Oquonie universe}}. What do?
+    % content/lexicon/oquonie guide.oquonie.guide.png
+    ? Many doors, across the worlds, were locked. You have gone through the levels without paying any mind to them but now you will need to find each world's {{Red Pillar|Oquonie universe}} to unlock the door. My guess would be that you are in town and do not know where to proceed next. So this is my tip to you.
+    & The simplest pillar, if you are {{Necomedre|Oquonie universe}}, is found in the second world, {{Nephtaline|Oquonie universe}}. You need 3 {{tokens|Oquonie universe}}, one can be found in the {{Necomedre World|Oquonie universe}}, the second, in town by the {{ramen guy|Oquonie universe}} near the landing, and the third, within the {{Nephtaline World|Oquonie universe}}.
+    & Once your have turned into {{Nemedique|Oquonie universe}}, you will be able to open a locked door by the owl, and collect the second pillar.
+    & Good luck.
+    % content/lexicon/oquonie guide.oquonie.pillar.png
+
+OQUONIE UNIVERSE
+  UNDE : Oquonie
+  BREF : The game {{Oquonie}} has no name, but we still created them some names to help us talk about it. But feel free to call them, the dino, the rabbit, the bird, the pig and the humanoid if that helps you.
+  LONG
+    * Playable
+    ? Necomedre
+    % content/lexicon/oquonie universe.oquonie.char1.png
+    ? Nephtaline
+    % content/lexicon/oquonie universe.oquonie.char2.png
+    ? Neomine
+    % content/lexicon/oquonie universe.oquonie.char3.png
+    ? Nestorine
+    % content/lexicon/oquonie universe.oquonie.char4.png
+    ? Nemedique
+    % content/lexicon/oquonie universe.oquonie.char5.png
+    * NPCs
+    ? Owl
+    % content/lexicon/oquonie universe.oquonie.guide.png
+    ? Ramen
+    % content/lexicon/oquonie universe.oquonie.ramen.png
+    ? Shark
+    % content/lexicon/oquonie universe.oquonie.shark.png
+    ? Audio
+    % content/lexicon/oquonie universe.oquonie.audio.png
+    ? Pillar
+    % content/lexicon/oquonie universe.oquonie.pillar.png
+
+THE SIXTH SEASON
+  UNDE : Second wave
+  BREF : {{The Sixth Season}} contains 7 original tracks, singing the {{Neauismetical|Neauismetica}} tales of the sixth season, or the {_establishment of the Oasis_}. {_Whiinders_} and the likes, raising tents hoping for a glorious end in memory of {{Rlionn}}.
+  LONG
+    & This album established the sound that {{Aliceffekt}} decided to persue for the {{Second Wave}} releases.
+  LINK
+    BAND : http://aliceffekt.bandcamp.com/album/orchestrate-the-sixth-season
+
+OTOROUTES MINIATURES
+  UNDE : First wave
+
+PARADISE
+  UNDE : Online
+  BREF : Initiated in 2011, {*Paradise*} is a procedural {{interactive fiction|Interactive}} and multiplayer novel, in which you can be anything and anyone, travel to the oddest of places, entirely user-created. You may choose to make a mess, or to create order, in the comfort of your teacup.
+  LONG 
+    & There are no Paradise, no teacup, no you or me - but words. These words are the place holders of intricate concepts, shared with other users that will create personal and different experiences from the same words.
+    ? {_"In a little while you will be alone in shoreless space, to wander its limitless solitudes without friend or comrade forever--for you will remain a thought, the only existent thought, and by your nature inextinguishable, indestructible. "_} - Mark Twain, {{the mysterious Stranger|http://en.wikipedia.org/wiki/The_Mysterious_Stranger}}
+  LINK
+    SITE : http://paradise.xxiivv.com
+    GITH : https://github.com/XXIIVV/apis.paradise
+
+MAEVE
+  UNDE : Paradise
+  BREF : {{Maeve}} is an automated {{Paradise}} vessel that travels around the universe to find and remove incomplete vessels.
+  LINK
+    SITE : http://paradise.xxiivv.com
+    GITH : https://github.com/XXIIVV/auto.maeve
+
+PEDESTRIAN PARADISE
+  UNDE : First wave
+
+PHYSICAL
+  UNDE : Visual
+  BREF : These are a couple object I designed that can be 3d printed. You can see additional designs on <a href='http://www.thingiverse.com/Aliceffekt/designs'>Thingiverse</a>.
+  TYPE : Portal
+
+PICO
+  UNDE : Desktop
+  BREF : Pico is an {{experimental color based puzzle game|http://youtu.be/kN7dUqMtIWU}} where the player needs to combine primary colours to create the pattern wanted by each level. Read the {{forum tread|http://forums.tigsource.com/index.php?topic=15392.0}}. It was created in a few days with {{Renaud Bedard|http://theinstructionlimit.com/}} and showcased at {*Prince of the Arcade*}.
+  LONG
+    - Create the right colours and patterns with the given tools.
+    - This simple game can quickly become complex based on your take on the puzzles.
+    - This game requires a mouse to play.
+  LINK
+    GITH : https://github.com/Collegiennes/pico
+
+PICO BATTLE
+  UNDE : Desktop
+  BREF : {{Renaud Bedard|http://theinstructionlimit.com/}} and I showcased an experimental game at {*Prince of the Arcade*} last year but, between {{Volkenessen}}, {{Diluvium}} and {{Waiting for Horus}}, only got back to release it now. It is simply called Pico Battle and like our other {{Pico}} titled game - this game plays with colours; but this time, in multiplayer.
+  LONG
+    & Unlike our last game, text heavy Diluvium, Pico Battle is wordless. There is no contextual hints within the game, but an audio tutorial that starts automaticaly in the lobby. 
+    * Lobby
+    & Upon launching the game, you will find yourself in the Lobby, a temporary haven. You should look for an hexagon floating about the edges of your screen (right click drag to rotate around the planet) and click on it to practice against the AI. You might see circles too, they are other players and could challenge you as soon as you raise your shield.
+    * Shielding
+    & To protect yourself against incoming attacks, find the patch of dirt marked by a black & white circle, and connect a node to it. The shield will light up, eating away at the incoming bullets with a similar hue. In the lobby, you are invisible to potential attackers as long as your shield is unpowered.
+    * Shooting
+    & To win against your opponent, locate a patch of mushrooms and connect nodes to it — this is your cannon. It needs a minimum amount of power to be able to fire, and based on the incoming nodes, will fire bullets of various sizes and colours; easier or harder to defend against. The idea being to match the colour of incoming bullets with your shield, and to differ as much as possible from the opponent’s shield colour (which is indicated by the contour of his circular icon) with your cannon’s bullets.
+    & Pico Battle is an entirely wordless game, and might seem offputting or hard to grasp at first. In the lobby, a robotic voice will explain the basics of the game, and take your time there to experiment with the controls and the scarce UI elements. As you get familiar with the game and its interface, you will discover strategies and enjoy it even more.
+    - AI now raises a random shield before you attack with any colour
+    - Fixed graphical issue on arc-link shadows
+    - Escape key now quits the game if pressed in the lobby
+  LINK
+    GITH : https://github.com/Collegiennes/picoBattle
+
+POLYGONOSCOPY
+  UNDE : Illustration
+  BREF : {{Polygonoscopy}} is a series of illustration made with the {{Kaleidoscope}} along with better lenses, allowing me to zoom into reflections and visit spaces that would normally be impossible to explore. This, in some ways, pleases my curiosity in explorating the {_Simulacra_}.
+  TYPE : Portal
+
+PORTALION
+  UNDE : Second wave
+  BREF : {{Portalion}} is the successor to {{The Opal Inquisitors}}, continuing the exploration of the central regions of {{Dinaisth}}, landing on the southernest docks of {_Laeisth_}.
+  LONG
+    & On a foggy night of the {_Sixth Season_}, embarking on one of the vessels of the {_Septechoes_} in the desert of {_Clionn_}, {{Neonev}} sails toward {_Whiinders_} to see its {{Immortal Birds}} once more.
+    - Landing in Laeisth
+    - The Sixth Season Festival
+    - Tunnel Aeroports of Clionn
+    - Moebius Lift's Ascension
+  LINK
+    BAND : https://aliceffekt.bandcamp.com/album/portalion
+
+PURGATEUS
+  UNDE : Desktop
+  BREF : Purgateus is a {{Proteus|http://www.visitproteus.com}} remix, inspired from a tweet by {{Ian Snyder|https://twitter.com/whatisian/status/468819959859007488}}. This world behave just like Proteus, but looks and sounds different. Read more on {{Venus Patrol|http://venuspatrol.com/purgateus/}}.
+  LONG
+    * Instructions
+    - Make a copy of your {*/resources*} folder.
+    - Replace the {*/resources*} folder with the downloaded package.
+    - On OS X, right-click on Proteus, {*Show Package Content*}.
+  LINK
+    BAND : https://aliceffekt.bandcamp.com/album/purgateus
+    DRIV : https://drive.google.com/open?id=0B24klRuG3GLNMnVuVWUzY3NxT2c
+  TYPE : Diary
+
+RAFINOGRADE
+  UNDE : Mobile
+  BREF : {{Rafinograde}} is a minimalist sketching app generating procedural and animated strokes, or simply, a distraction.
+  LINK
+    ITUN : https://itunes.apple.com/us/app/rafinograde/id951781579
+    GITH : https://github.com/Echorridoors/Rafinograde
+
+RAMIEL
+  UNDE : Beldam records
+  BREF : {{Ramiel}} is the third release on the {{Beldam Records}} catalog. Written by {{Villa Moirai|https://beldamrecords.bandcamp.com}}, this album is an even mixture and techno and idm. The album name and cover are a tribute to the geometric angel of the Evangelion anime series.
+  LINK
+    BAND : https://beldamrecords.bandcamp.com/album/ramiel
+    ITUN : https://itunes.apple.com/us/album/ramiel-ep/id958562173
+
+RATHER NEOCLASSICAL
+  UNDE : Artwork
+  BREF : In an attempt to bring these old neoclassical paintings to life, I have rendered them through multiple vertex distortion shaders, creating these disfigured characters.
+  TYPE : Diary
+
+REGIONSTEAM SNOWDAYS
+  UNDE : First wave
+
+REMIX
+  UNDE : Audio
+  BREF : Here is a list of the remixes that I have made and tracks that were released on compilation albums. 
+  LONG
+    & Once in a blue moon I will remix music for my friends. Some of these tracks are no longer being distributed by their channels and have become rarities. See if you can find them all.
+    * Compilations and Remixes
+    - <a href="http://www.adnoiseam.net/store/comaduster-winter-eyes_p4083.html?utm_campaign=adnoiseam&utm_medium=twitter&utm_source=twitterfeed&utm_content=adnoiseam&utm_term=adnoiseam"> Winter Eyes (Aliceffekt Remix)</a> <br /> Comaduster (2013), Tympanik Audio 
+    - <a href="http://www.youtube.com/watch?v=lQItP8L8N2k"> Fisherman II (Aliceffekt Remix)</a> <br /> Veroníque (2013)
+    - <a href="http://www.youtube.com/watch?v=3kALWsZPJi8"> Ghostnote (Aliceffekt Remix)</a> <br /> iVardensphere (2012), Metropolis 
+    - <a href="http://www.youtube.com/watch?v=ehB-ZSWymic"> Dan Dan (Aliceffekt Remix)</a> <br /> Misteur Valaire (2011)
+    - <a href="http://www.youtube.com/watch?v=TtgUpM5HxhY"> Thievery of the Jade Books </a> <br /> VA - Kinetik Festival Volume 4 (2011), Artoffact 
+    - {* Laeis 7th Passage E.th *} <br /> VA - Kinetik Festival Volume 3 (2010), Artoffact 
+    - <a href="http://ant-zen.bandcamp.com/track/dumachus-junction-feat-aliceffekt"> Dumachus Junction Feat. Aliceffekt </a> <br /> Iszoloscope - Beyond Within (2010), Ant-zen 
+    - {* Weltenzerstorer (Aliceffekt Remix) *} <br /> Doomer - The Ruins of Your World (2010) 
+    - {* Does it really matter (Aliceffekt Remix) *} <br /> Stray - Devalued and Discarded (2009) 
+    - {* Bad Girls (Aliceffekt Remix) *} <br /> Perfection Plastic - Échec De La Matière (2009)
+
+RENL MOONS
+  UNDE : Nereid
+  BREF : There are four orbiting moons above {{Serventines}}.
+  TYPE : Diary
+
+RING OF SCALES
+  UNDE : Physical
+  BREF : A large ring I made to learn about 3d printing.
+  LINK
+    SITE : http://www.thingiverse.com/thing:19152
+
+
+SECOND WAVE
+  UNDE : Aliceffekt
+  TYPE : Portal
+
+SEPTAMBRES
+  UNDE : Typography
+  BREF : Septambres is the original {{Traumae}} form, or 3x3x3 grid mapping. The font also includes the base 10 vedic numbers.
+  LINK
+    GITH : https://github.com/XXIIVV/Font-Collection
+
+SERVENTINES
+  UNDE : Nereid
+  BREF : {{Serventines}} is a travel diary documenting travels across {{Nereid}}'s various regions, the small planet's skies and {{gravitating objects|Renl moons}}.
+  TYPE : Diary
+
+SHIKANOKOA VS 1H1D
+  UNDE : First wave
+  BREF : Live recording of a show.
+
+SISEON
+  UNDE : Desktop
+  BREF : Siseon is an {{exploration game|http://www.youtube.com/embed/es6YXGlsgxw}} evolving within a megastructure invaded by life.
+
+SPAGETTINI SCALE
+  UNDE : Physical
+  BREF : This scale was featured on the <a href='http://www.makerbot.com/blog/2012/03/20/spaghetti-scale-by-aliceffekt/'>Makerbot Blog</a> and should help you always cook the right quantity of pasta.
+
+SPOOL HOLDER
+  UNDE : Physical
+  BREF : This spool holder works with the <a href='http://www.pp3dp.com'>PP3DP Printer</a> and should allow you to fit a larger spool on your printer.
+  LINK
+    SITE : http://www.thingiverse.com/thing:18833
+
+SUPERVISITOR
+  UNDE : Fourth wave
+  BREF : {{Supervisitor}} is the third album of {{Aliceffekt}}'s {{Fourth wave}}. It was performed live at the {{Dodecae}} event in Toronto on December 6th, and was written for {{Arturia|http://arturia.com}}'s analog and monophonic {{Microbrute|http://www.arturia.com/microbrute-se/overview}} synthetiser. The album navigates between dark electro, idm and even hard trance at times.
+  LINK
+    BAND : https://aliceffekt.bandcamp.com/album/supervisitor
+    ITUN : iTunes|https://itunes.apple.com/ca/album/supervisitor-ep/id951144870
+
+TALK
+  UNDE : Research
+  BREF : These talks were created as periodical research dumps, often gravitating around the topics of the {{hexagrammaton|Oscean}} and {{Horaire}}.
+  TYPE : Diary
+
+TARPOPHOBIA
+  UNDE : Polygonoscopy
+  BREF : {{Tarpophobia}} is the fear of seeing yourself fractalized onto reflective surfaces, especially onto eyes.
+  TYPE : Diary
+
+TELEKINESIS
+  UNDE : Telekinetic
+  BREF : {{Telekinesis}} is a Leap Motion based controller that allows, through Pure Data, to control multiple midi instruments at once. The tool was used for both, the live performance of {{Telekinetic}} and {{Ten Axitecture}}. The picture was taken at 8Static, by {{Marjorie Becker|https://www.flickr.com/photos/m_becker/}}.
+
+TELEKINETIC
+  UNDE : Third wave
+  BREF : {{Telekinetic}} is the name of a concept album by {{Aliceffekt}} played live with the <a href='https://www.leapmotion.com'>Leap Motion</a>, first performed at <a href='http://www.cnet.com.au/dj-turns-leap-motion-into-a-theremin-sort-of-339345563.htm'>Sabaco in Tokyo</a>. 
+  LONG
+    & The event was recorded and can still be watched online on <a href="http://www.ustream.tv/recorded/39105185">UStream</a>. There was a <a href="http://www.cnet.com.au/dj-turns-leap-motion-into-a-theremin-sort-of-339345563.htm">short article on CNET</a> about the event as well. The album cover features an alternate door to {{Paradise}}'s Library of Sand ornated of the number 210 in <a href='Needle+numbers'>Needle Numbers</a> as well as the <a href='Traumae'>Traumae</a> letters <a href='/traumae:bi'>BI</a> <a href='/traumae:ti'>TI</a> <a href='/traumae:ta'>TA</a> <a href='/traumae:si'>SI</a> <a href='/traumae:po'>PO</a>.
+    & You can watch a a demo of the <a href='https://www.facebook.com/photo.php?v=10153250341045274'>prototype</a>.
+  LINK
+    BAND : https://aliceffekt.bandcamp.com/album/telekinetic
+
+TEN AXITECTURE
+  UNDE : Beldam records
+  BREF : {{Ramiel}} is the first release on the {{Beldam Records}} catalog. Written by {{Aliceffekt}}, this album combines acoustic instruments and IDM. 
+  LONG
+    & The 4 tracks are interpretations of different fictional worlds that have played a role in the {{Aliceffekt}} narrative: Eudoxie from Calvino's Invisible Cities, Borges' Tlon and Schuiten's Citees Obscures.
+  LINK
+    BAND : https://aliceffekt.bandcamp.com/album/ten-axitecture
+    ITUN : iTunes|https://itunes.apple.com/ca/album/ten-axitecture-ep/id937396413
+
+EHRIVEVNV STUDIES
+  UNDE : Third wave
+  BREF : This album was composed for and performed at <a href='105'>Blip Festival Tokyo</a> on October 21st 2012 and reissued on april 15th 2013, including some changes from the <a href=''>Melbourne Squaresound Show</a>. Exploring new aesthetics and sounds, this highly melodic releases reaches into IDM and glitch while keeping some of the Aliceffekt compositions. Whilst the album displays a series of light hearted songs, its title and cover are showing a moment in the <a href='Neauismetical+timeline'>27th season</a> when <a href='Vetetrandes'>Vetetrandes</a> was at it's worse. 
+  LONG
+    & The Processing source files for the <a href='http://www.youtube.com/watch?v=9vA3HI9kuaE&feature=youtu.be'>Blip Festival performance</a> are available for download on the <a href='105'>project page</a>.
+    & The track names contains encrypted Traumae</a>. The first track is decrypted into "<a href='Simkin'>Simkin</a> <a href='Kamsi'>Kamsi</a>" and can be translated to {_Time Structure_}, refering to The Library of Sand. The second track, "<a href='Xomsinsom'>Xomsinsom</a> <a href='kim'>Kim</a> <a href='Yajnev'>Yajnev</a>", can be translated to {_Yajnev's Curse_} and refers to the short <a href='082'>Yajnev's Thoughts</a>. The third track is titled "<a href='Ko'>Ko</a> <a href='sokamxi'>Sokamxi</a>" which simply means {_The Impossible Exploration_}.
+    # ami -> vloks  -> Ihom  -> ykim -> w
+    & Following are the resulting transformations using the previous encryption.
+    # "Simkin Kamsi""Xomsinsom Kim Yajnev""Ko Sokamxi"Skimn KsamiXomsinom kim YajnevthKo SokxamiSkimn IhvloXysiny w YajnevthKo Sokxvlo
+  LINK
+    BAND : https://aliceffekt.bandcamp.com/album/the-ehrivevnv-studies-reissue
+
+THE OPAL INQUISITORS
+  UNDE : Second wave
+  BREF : {{The Opal Inquisitors}} is the prequel to {{Portalion}}, where {{Neonev}} begin their exploration of the central regions of {{Dinaisth}}, emerging from the tunnels of {_Dei Dain Canals_}.
+  LONG
+    & Driving the {{Vermillionth}} up the spires below the surface of central islands, the records are photographs of the travels between the caves of {_Dilitrielth_} and the deserts of {{Duomo}.
+    - Down The Vertical Canals
+    - Below The Vetetrandes Spires
+    - Moires Of Dei Dain
+    - Exosphere Sunsets(Ver’Tale)
+  LINK
+    BAND : https://aliceffekt.bandcamp.com/album/the-opal-inquisitors
+
+THE WILL THE WISP
+  UNDE : Automatons
+  BREF : {{The will the wisp}} is a twitter bot that generates short poems, once every hour. Inspired by Lewis Carroll's Jabberwocky.
+  LINK
+    TWTR : https://twitter.com/thewillthewisp
+    GITH : https://github.com/XXIIVV/auto.willwisp
+
+DEFINITIST
+  UNDE : Automatons
+  BREF : {{Definitist}} is a twitter bot that generates procedural english words by combining various prefixes and suffixes, and try to form definitions of these newly created terms.
+  LONG
+    - Dictcephaladelog: Speech or process of foretelling the future encephalitis.
+    - Percedecracyalgia: Pain government throughout, yield.
+    - Juvenoryocuplegia: To bring back to youthful strength or appearance relating to an eye doctor paralysis.
+    - Omniialsanive: Relating to knowing all things inclined to relating to cleanliness and health.
+    - Pentostomydermsion: Surgical pentagon state or quality elephant.
+    - Selfmortcideily: In what manner act of killing or by itself, death.
+    - Ferdynletoid: Resembling version of bear energy.
+    - Nonizepoliful: Become with no special characteristics full of metropolis.
+    - Ruptorygenine: Relating to a break in something relating to birth.
+    - Selfcyclhoodtroby: Nourishment condition for ring.
+    - Gramhydrudeic: Characterized by written liquid.
+    - Fidcardiboneity: Quality of sound from faith.
+    - Forpolierist: A person more completely city.
+    - Toxbytitearium: Follower poison plant.
+    - Centblastbileian: Relating to one who loves hundred primitive.
+  LINK
+    GITH : https://github.com/XXIIVV/auto.definitist
+
+THIRD WAVE
+  UNDE : Aliceffekt
+  TYPE : Portal
+
+TIME ALLOY
+  UNDE : Polygonoscopy
+  BREF : The {{Time Alloy}} is a series of {{Polygonoscopic|Polygonoscopy}} samples, taken from {{The sartre mechanism}}.
+  TYPE : Diary
+
+TRAPEZOID
+  UNDE : Fourth wave
+  BREF : {{Trapezoid}} is {{Aliceffekt}}'s second release produced on Arturia's MicroBrute - making it a sort of sequel to {{Supervisitor}}. The album was recorded live at the {{Ghost Train|https://www.facebook.com/events/380649788812746/}} party, on July 22nd 2015.
+  LINK
+    BAND : https://aliceffekt.bandcamp.com/album/trapezoid
+
+
+TYPOGRAPHY
+  UNDE : Illustration
+  BREF : Some of the {{typographies|Typography}} I have created over time, feel free to use them as want.
+  TYPE : Portal
+
+UNRELEASED
+  UNDE : Interactive
+  BREF : A list of projects that were abandoned or simply put on indefinite hold and unsupported, with their source code available.
+  TYPE : Portal
+
+VALENTINEL HOPES
+  UNDE : Desktop
+  BREF : Valentinel is a platformer inspired from parkour and trance music. The game has no music, you are invited to listen to your own.
+  LONG
+    - Typical FPS control except for the mouse direction.
+    - Take a break sometime.
+    - Try going through the game while looking backward.
+
+VAST
+  UNDE : Physical
+  BREF : I recently found myself illustrating {{Elodie|http://noirmirroir.com}}'s abstract book "{{Vast - the perfect, the circular, the subjugated|http://noirmirroir.com/vast}}". A strangely perfect nonsensical coffee table curiosity that grabbed me from the moment I heard of its ties with some of the same Borgesian concepts that have also been exploring lately.
+  LONG
+    & I have created a series of ink fractals to ornate the book’s preface, table of content and cover. The book is a unique piece of cryptography that is somehow narrative in its unintelligibleness.
+  LINK
+   SITE : http://noirmirroir.com/vast
+
+VERMILLIONTH
+  UNDE : First wave
+  LINK
+    BAND : https://aliceffekt.bandcamp.com/album/vermillionth
+
+VERRECIEL
+  UNDE : Mobile
+  BREF : {{Verreciel}} is a virtual space exploration project in which you must learn to use your {_Glass Ship_}'s consoles, route them into one-another, and navigate the surrounding universes aboard its fragile habitat.
+  LONG
+    & The game joins the sequence of linguistically involved projects like {{Paradise}}, {{Hiversaires}} and {{Oquonie}}. You can follow the development of the game on {{Twitter|https://twitter.com/search?q=verreciel&src=typd}}.
+  LINK
+    ITUN : https://itunes.apple.com/ca/app/verreciel/id1065988107
+    GITH : https://github.com/Echorridoors/Verreciel
+
+VERRECIEL OST
+  UNDE : Beldam records
+  BREF : This soundtrack release, written by {{Aliceffekt}} for the mobile application {{Verreciel}}, features a fair dose of breaks and {{Beldam|Beldam records}}'s signature vocoded synths.
+  LINK
+    BAND : https://aliceffekt.bandcamp.com/album/verreciel    
+
+VETETRANDES LETTRES
+  UNDE : Second wave
+  BREF : {{Vetetrandes Lettres}}'s songs sings of the {{first ages|Neauismetica}} of {{Dinaisth}} on the island of {{Vetetrandes}}. While the album begins in Vetetrandes, it moves to the shores of {_Dilitrielth_} and turns its attention across {{Kanikule}} and toward the {_Es_}'Gulf of {_Eaurison_}.
+  LONG
+    & The album includes 4 edited tracks from the {{Es Gulf Sunflowers}} release. The {_Ver'Tale_} extension is a hint to a location of {_Whiinders_}, close to the visited {_Vert Kirlian Theatre_}. 
+    & The album begins with a track about {{Yajnev}}, the composition is based on his trip near the white trees of the {_Oasis_} and the {_Children of Brambles_}.
+    & The album is part of {{Aliceffekt}}'s {{Second Wave}} albums.
+  LINK
+    BAND : http://aliceffekt.bandcamp.com/album/vetetrandes-lettres-perdues
+
+VISUAL
+  UNDE : Home
+  BREF : Various entries relative to interactive and design related projects.
+  TYPE : Portal
+
+VOCAVULARIST
+  UNDE : Mobile
+  BREF : {{Vocavularist}}, is a Japanese, Russian & Korean vocabulary review program for iOS. It contains the 600 first kanji, 600 simple Russian words and 800 simple korean expressions.
+  LINK
+    ITUN : https://itunes.apple.com/us/app/nijuniju/id686266543
+    GITH : https://github.com/neauoire/vocavularist
+
+VOLKENESSEN
+  UNDE : Desktop
+  BREF : It's a two-player, {{physics-based 2D fighting game|http://www.youtube.com/watch?feature=player_embedded&v=VheiqV4AuRE}}. Each player starts with 9 random attached items on his back, and the goal is to strip the other player of his items by beating the crap out of him. When items are removed, they clutter up the playing area, making it even more cahotic and hilarious. The washing machine and sink in the background can also fall and bounce around!
+  LONG
+    & {_Winning game of the Montreal edition of the Global Game Jam 2012, Volkenessen is a 2D Fighting game developed by {{Renaud Bedard|http://theinstructionlimit.com/}} and myself._}
+    & The game is available for download for OS X and Windows (64bits), for the non-64bits version, use the mirror on the {{Global Game Jam 2012 site|http://globalgamejam.org/2012/volkenessen}}. 
+    & You {*need a controller*} to play this game, it simply won't work with a keyboard. It was tested with the XBox controller and some generic Logitech controller. It will be presented at the {{IGDA|http://www.igda.org/montreal/Jan31_DemoNight}} tomorrow evening at the demo night and publicly playable for the first time at the next {{Indies Meetup|https://www.facebook.com/events/182113635223855/}} and {{Toy Company festival|http://toycompany.cc/}} in February.
+    * Controls
+    & You need two gamepads (so far the Xbox wired, wireless and a Logitech generic gamepad have been tested and work) to play, there are no keyboard control fallback (yet). The controls are pretty exotic. To move around you can press either the D-Pad (or left analog stick) or the face buttons (A/B/X/Y), and the direction of the button does the same input as if you pressed that D-Pad direction. As you move, your player will throw a punch, kick or flail his ears to make you move as a result.
+    & To hit the other player, you need to get close to him by hitting away from him, then hit him by moving away from him. Ramming into the opponent just doesn't do it, you need to throw punches, and depending on the impact velocity, even that might not be enough. You can throw double-punches to make sure you land a solid hit and take off an item.
+  LINK
+    GITH : https://github.com/Collegiennes/volkenessen
+
+WAITING FOR HORUS
+  UNDE : Desktop
+  BREF : Waiting for Horus was a fast paced multiplayer arena type 3rd person shooter.
+
+WALLPAPER
+  UNDE : Visual
+  BREF : Collection of {{Wallpapers|Wallpaper}} related to {{Oscean}} and {{Horaire}}.
+  TYPE : Diary
+
+ZJEVENI
+  UNDE : Desktop
+  BREF : {{Zjeveni}} is one of my earliest experimental Unity games. This third person exploration game is simply about climbing to the high points of the structure.
+
+~ Oscean
+
+OSCEAN
+  UNDE : Oscean
+  BREF : {*XXIIVV*} is the connecting thread between all of {_Devine lu linvega_}’s works, and host to the pillars and tools of the persona. Initiated in 2009, this ultrafolio’s initial purpose was to archive various narrative documentation for a series of shorts.
+  LONG
+    & The current platform is built in {{Ruby|https://en.wikipedia.org/wiki/Ruby_(programming_language)}}, and is currently hosted on {{Digital Ocean|https://www.digitalocean.com/?refcode=4ed988ca8c17}}. The site is segmented into 3 parts, {*a time-tracker*}, {*a lexicon*} and a {*diary*}. Every single day, since 2009, a log has been added to the {{Horaire}}, every new project has an entry in the {{Lexicon|Portal}} and every event has a page in the {*diary*}. 
+    ? Above these core systems, other systems exists - such as {{Paradise}}, the {{API|http://api.xxiivv.com}} and a series of {{bots|Automatons}}. This website is the skeleton of a rigorous lifestyle change, initiated in 2006.
+  LINK
+    GITH : https://github.com/XXIIVV/http.oscean
+  TYPE : Portal
+  
+SHORTHAND
+  UNDE : Language
+  BREF : Notebook and after notebook, I fill pages of notes, ideas and to-dos. When presented with {{the idea of shorthand|http://theatlantic.com/technology/archive/2014/06/yeah-i-still-use-shorthand-and-a-smartpen/373281/}}, I saw immediate practical application.
+  LONG
+    * The idea is simple, writing faster. 
+    & I played with different ideas and this is the system that worked best for me, it’s an inspiration and a mixture of already existing shorthand systems that fits my writing style.
+    % content/lexicon/shorthand.alphabet.png
+    & Simple enough, now most letters are transformed into a single stroke shape that flows and combines to form shorter words, that can be written faster.
+
+CLOCK
+  UNDE : Oscean
+  BREF : On {{XXIIVV|Oscean}}, Time is written using a variance of the {{Internet Time|https://en.wikipedia.org/wiki/Swatch_Internet_Time}} with 4 digits instead of the Swatch Beat's 3 digits system. The system has no timezone and no daylight saving-time. Read more on {{Desamber}}.
+  LONG
+    - The current time is {{!clock}}
+  LINK
+    GITH : https://github.com/XXIIVV/main.clock
+
+DESAMBER
+  UNDE : Oscean
+  BREF : On {{XXIIVV|Oscean}}, dates are written using a variance of the {{International Fixed Calendar|https://en.wikipedia.org/wiki/International_Fixed_Calendar}} and a custom convention to move the English months' names, away from those of Greek gods'.
+  LONG
+    * Today is {{!desamber}}
+    & The {_Equal Month calendar_} format has 13 months and so the number of each of these months are flected into their names.
+    & {*Every month is exactly 28 days long*}, and the 365th day of the year is the {_Year Day_}, followed by the {_Leap Day_} on leap years. 
+    - 1, Unesamber
+    - 8, Octesamber
+    - 2, Dutesamber
+    - 9, Novesamber
+    - 3, Trisesamber
+    - 10, {{Desamber}}
+    - 4, Tetresamber
+    - 11, Undesamber
+    - 5, Pentesamber
+    - 12, Dodesamber
+    - 6, Hexesamber
+    - 13, Tridesamber
+    - 7, Sevesamber
+  LINK
+    GITH : https://github.com/XXIIVV/main.desamber
+
+~ Neauismetica
+
+NEAUISMETICA
+  BREF : The {{Neauismetica}} portal was put together to please the curious {{enthusiast|Visual}}, {{audiophile|Audio}} and {{reader|Research}}, but might confuse the accidental visitor. If you found your way onto this page by accident, begin by reading the {{Introduction|Oscean}}. 
+  LONG
+    & Incessantly dreamt of, the city of {{Neau}} and its radiant blue rooftops were the first to populate my dreams. Changing as I did, the horizon line didn't seem so far anymore and as I drifted away from Neau across the {{Cyan Ocean|Kanikule}} with {{Neonev}}, maybe I died of old age but she lived on.
+    & I often think of this machine-plant {{patience|Paradichlorisse}} in the sand sand filled air of {{Vetetrandes}}. Continually mouthing at this {{impossible sentence|Nohlxeserre}}, words longer than any span of time, continually luring pilgrims who {{die|Neausea}} at its feet.
+    & Resting my eyes, I see {{Scientists|Immortal Birds}}, sometimes praying by the {{Ehrivevnv}}, idle at the cliffsides of {{Duomo}}, treading on the edge of {{Occurence|Soies}}. Other nights I see the {_gathering of the birds_}, ready to leave {{Dinaisth}} far behind. 
+    & Referenced in almost all of the {{hexagrammaton|Oscean}} projects, tales of this world are told through music, illustrations and are the culture behind the {{Traumae Language|Traumae}}</a>. Seen through the eyes of the {{Immortal Birds}} of {{Dinaisth}} traveling across seasons, these notes are disorderedly fragments of a story, recorded intermittently by {{Devine lu linvega}}.
+    ? {_Et haec revelantur in virtute et veritate<br /> non Vi._} - Vriel
+  TYPE : Portal
+
+NEON HERMETISM
+  UNDE : Neauismetica
+  BREF : {{Neon Hermetism}} is a collection of experiments by scientists, operating as the {{Immortal Birds}}, involved in the creation of machines to study time.
+  LONG
+    & The company was launched upon the discovery of the {{Ehrivevnv}}, an impossible structure and dimensional puzzle/game existing in occuring space. It is believed to be a gathering place for more advanced beings.
+    ? {_Beyond the first curvature where the computing beautiful, sleeps<br />a new languages of possibly unsustainable meanings awakes._}
+
+SOIES
+  UNDE : Neon hermetism
+  BREF : {{Soies}}, {_The Size of Impossibilities_}, is a core concept used by the {{Neon Hermetism}} to traverse the occuring, possible and impossible spaces.
+  LONG
+    & The Soies model simulates the first numbers to exist beyond the limit of the current system, or computeable dimension. The impossible events are then caught by systems operating in {_The Rules of Maeve}.
+    * The Rules of Maeve
+    & Invoking an impossible event will store the happening possible timeline in a pocket of impossible space, accessible by the machines of the {{Neon Hermetism}}.
+    ? In the plausible case where an impossible event would {{wish|Nohlxeserre}} itself possible, it would not make it so.
+    
+NEAUSEA
+  UNDE : Neon hermetism
+  BREF : {{Neausea}}, made of {{Neau}} and {{sea|Kanikule}}, and originated from an exchange between {{Neonev}} and the {{Neon hermetism}}, on the topic of crossing on the {{Kanikule}} ocean. The word means the exit of an impossibly long space by traveling an infinitely long time, or countering an impossible event with another.
+  LONG
+    ? {_Blessed impossible selves are in debt, for all the horrible days._}
+
+NOHLXESERRE
+  UNDE : Neon hermetism
+  BREF : {{Nohlxeserre}}, or {_Language of the Birds_}, is the spoken language by the Courtship of The {{Immortal Birds}}. It is said that the language spilled out from the {{Ehrivevnv}}.  
+  LONG
+    & The richness and detail of experiencing an event, pales in comparison to have it recited with the infinite words of this {{Neauseatic|Neausea}} language, see {{Paradichlorisse}}.
+
+FEU
+  UNDE : Neon hermetism
+  BREF : {{Feu}}, or {_The End Of Science_}, is the moment when the happening is happening too fast for one to grasp.
+
+PARADICHLORISSE
+  UNDE : Immortal birds
+  BREF : {{Paradichlorisse}} is located on the south-east shore of {{Vetetrandes}}, near {{Yajnev}}. Not much is known about this lifeform, besides that it appeared around the {{Yajnev Collapse|Yajnev}}, speaking a dialect of {{Nohlxeserre}}.
+  LONG
+    & All pilgrim who reach its location infinite being collapse and starve as they experience every life and every death through the speech of the infinite being.
+    & {_What first seemed like tales became the only real and my own life, a story.<br/>When Paradichlorisse spoke of silence, silence fell._}
+
+~ DINAISTH
+
+DINAISTH
+  UNDE : Neauismetica
+  TYPE : Text
+  BREF : {{Dinaisth}} is both the name of a {_marble_}, and that of the continent arbouring the Offices of the {{Immortal Birds}} in the {{Neauismetica}}. 
+
+NEAU
+  UNDE : Dinaisth
+  BREF : Notable for its blue rooftops, the circular city displays a tall spire at its center. The city lends its name to the {{Neauismetica}} for it was the origin of all life in Dinaisth and the first sighting of {{Traumae}}. The city exists at the center of the vast ocean of {_Kanikule_}.
+
+KANIKULE
+  UNDE : Dinaisth
+  BREF : Being an infinite cyan space, an immortal will spend an infitite amount of time crossing the ocean, effectively reaching the outer-shores mortal. Reaching the island, coming from the outtet-shores is not feasable.
+
+LAEISTH
+  UNDE : Dinaisth
+  BREF : The warm desert of {_Dinaisth_} is host to the {{Rlionn|Immortal Birds}} Oasis, a blackened ditch home to the mortal clones of its violent host. 
+
+VETETRANDES
+  UNDE : Dinaisth
+  BREF : The observable portion of the island appears as broken structures remains of the city that once stood there, called {_Yajnev_}. As you would approach the epicenter of the bound city, time is unmoving. It is said that, at its center, one can find the corpse of an ancient {{Immortal Birds}}, who's head was filled with void and so it is believed that the Neauismetican universe exists within its mind and that the space within its skull is the only true dimension.
+
+DUOMO
+  UNDE : Dinaisth
+  BREF : The {{Duomo}} plateau rises far above the lightest atmosphere of Dinaisth. Various types of plants manage to emerge from the frozen grey soil, a similar soil is found around of {{Paradichlorisse}} suggesting that the soil is in fact ancient organic matter.
+
+Whiinders
+  UNDE : Dinaisth
+  BREF : Todo
+
+~ IMMORTAL BIRDS
+
+IMMORTAL BIRDS
+  UNDE : Neauismetica
+  BREF : {{Immortal Birds}} are individuals looking working on the {{Ehrivevnv}}, aspiring to reach the center of the dimensional puzzle. The group is often called {_The Courtship Of The Immortal Birds_}, taking its name from the {{Language Of The Birds|Nohlxeserre}}. 
+  TYPE : Text
+
+YAJNEV
+  UNDE : Immortal birds
+  BREF : {{Yajnev}} who's death triggered the {{first season|Feu}}, often referred to as the "Yajnev Collapse". The event engulfed Vetetrandes in a "loss of time", opaque and impenetrable.
+  LONG
+    & In his life, Yajnev worked in what became the {{Ehrivevnv}} with ties in the early {{Neon hermetism}}. His connection with {{Andes}} is unclear, but his death coincides with notes found in the Offices. Yajnev was also doing early research on {{Neausea}}.
+
+LUDIVINE
+  UNDE : Immortal birds
+  BREF : {{Ludivine}} is a system that guides the research and study of the {{Neon Hermetism}} in the space surrounding {{Dinaisth}}, not much else is known.
+  
+RLIONN
+  UNDE : Immortal birds
+  BREF : Rlionn, {_Ehrleeon_}, is an important and recurring Immortal intelligence from the {{Neauismetica}} for she is the mother of {{Neonev}} and regent of the {{Laeisth|Dinaisth}} sands and Oasis. 
+  LONG
+    & Not many have successfully crossed the {{Rlionn Oasis|Dinaisth}}, for it is swarming with a lifeform called her "Children". Rlionn is not a single individual but an intelligent trait that manifests itself as a collective state of mind for the inhabitant of the Oasis.
+    * Rlionn's Children
+    & With fingers sharp as needles, her children feast on stray travelers and onto eachother - undyingly. Travelers who sent out letters from the oasis, will often speak of the dark plagued-like sands, tarnished with dried rotten blood surrounding the oasis of Rlionn. The letters will speak of a glare, seen in the dilated eyes of the Children, and a unique pitch audible in moments of lucidity. 
+    & Spoken-of in tales and songs, the story of her children are sung in the album {{Children of bramble}} and illustrated in the {{The Rlionn Oasis|Laeisth}} short.
+
+ANDES
+  UNDE : Immortal birds
+  BREF : Andes, immortal, who slipped into {{Dinaisth}}'s {{timeline|Soies}} shortly before the {{first season|Feu}}. 
+  LONG
+    & The role of Andes in the {{Yajnev Collapse|Yajnev}} is unknown, but his arrival coincides with the destruction of Vetetrandes.
+    & His existance is explored through notes journals scattered across his abandoned offices in Dinaisth.
+    & Not much is known about Andes besides that his existance in Dinaisth was made possible by exploiting a flaw in the protections systems of {{Soies}}, the called is now commonly known as "The rope of maeve" and is used by the {{Neon Hemetists|Neon Hermetism}} to travel through timelines, see {{The rule of maeve|Soies}}.
+
+NEONEV
+  UNDE : Immortal birds
+  BREF : {{Neonev}} is the protagonist of the {{Neauismetica}}. She traveled {{Dinaisth}} for a long time. She appeared on the raft in {{Kanikule}} during the {{first season|feu}} and is a {_Daughter of {{Rlionn}}_}, Immortal.
+  LONG
+    & Throughout her long life, she wore many names. Neonev, while she crossed {{Kanikule}} from {{Neau}}. Neonev, by the meeting with {{Andes}} in {{Dinaisth}}. Evelyn, when meeting with {{Aliceffekt}} in {{Es|Dinaisth}}.
+    & Neonev met with {{Andes}} at his arrival in the northern part of Dinais and again as Evelyn before he met with {{Paradichlorisse}} in the last season. While they lived apart, they corresponded and established {{Neon Hermetism}} to solve the dimensional puzzle {{Ehrivevnv}}.
+
+~ Photography
+
+PHOTOGRAPH
+  UNDE : Visual
+  BREF : The photography on {{XXIIVV|Oscean}} is mainly done with a now deceased Leica M8, and an old Nikon D90 camera. A few other cameras are used, below is a list {{Devine|Devine lu linvega}}'s principal camera equipment.
+  LONG
+    - {*Film*}
+    - {{Bessa R3M 250 Jahre|https://www.cameraquest.com/voigt_250.htm}}, Voigtlander
+    - {{Super wide heliar 15mm f4.5|http://www.kenrockwell.com/voigtlander/15mm.htm}}, Voigtlander
+    - {{Ultron 28mm f2|http://www.kenrockwell.com/voigtlander/28mm-f2.htm}}, Voigtlander
+    - {*Infrared*}
+    - D3000, Nikon({{Modified|http://www.lifepixel.com/infrared-photography-primer}})
+    - {{50mm Nikkor f1.2|https://commons.wikimedia.org/wiki/File:Auto_nikkor_50mm.jpg}}, Nikon
+    - {*General*}
+    - {{D90|http://www.kenrockwell.com/nikon/d90.htm}}, Nikon
+    - {{28mm Soligor f2.8|http://cannonfastreviews.com/soligor-28mm-f2-8-wide-auto/}}, Soligor
+  TYPE : Portal
+  
+MACRO
+  UNDE : Photograph
+  BREF : Various macro shots.
+  TYPE : Diary
+
+SAILING
+  UNDE : Photograph
+  BREF : Who haven't dreamt of living on a sailboat.<br/>{_What if I tried_}.
+  TYPE : Diary
+  
+INFRARED
+  UNDE : Photograph
+  BREF : This album contains various {{infrared}} photographs taken with a modified Nikon D3000 camera.
+  TYPE : Diary
+
+~ Travel
+
+TRAVEL
+  UNDE : Misc
+  BREF : Photoblog from around the world, I highlighted some of my favourite trips in the list below.
+  TYPE : Portal
+
+AT SEA
+  UNDE : Travel
+  BREF : Written at sea.
+  TYPE : Diary
+
+AUSTRALIA
+  UNDE : Travel
+  BREF : Trip to Melbourne in feb 2013.
+  TYPE : Diary
+
+AUSTRIA
+  UNDE : Travel
+  BREF : Travel diary for our trip to Ars Electronica in Linz, followed with Vienna, in September of 2015.
+  TYPE : Diary
+
+AMERICA
+  UNDE : Travel
+  BREF : Landscapes taken around America, taken during a 52 hours train ride during {{Train Jam|http://trainjam.com}} in 2015, from Chicago to San Francisco.
+  TYPE : Diary
+
+CANADA
+  UNDE : Travel
+  BREF : Pictures taken from January 2016.
+  TYPE : Diary
+
+FRANCE
+  UNDE : Travel
+  BREF : A diary of my trip to france.
+  TYPE : Diary
+
+NETHERLANDS
+  UNDE : Travel
+  BREF : Trip to {{Netherlands}} in 2015 for Indievelopment.
+  TYPE : Diary
+
+JAPAN
+  UNDE : Travel
+  BREF : A variety of diary entries written throughout trips to Japan between 2009 and 2014.
+  TYPE : Diary
+  
+THAILAND
+  UNDE : Travel
+  BREF : A collection of pictures taken in Thailand in 2014.
+  TYPE : Diary
+
+CZECH
+  UNDE : Travel
+  BREF : Trip to Czech Republic in 2011.
+  TYPE : Diary
+
+~ Drownspire
+
+DROWNSPIRE
+  UNDE : Drownspire
+  BREF : {{Drownspire}} was the name of an online store founded with Rekka Bellum, back in 2009. We distributed the {{Vambits}} designer toys and published the {{Merure}} books.
+
+MERURE
+  UNDE : Drownspire
+  BREF : A series of books I published with friends.
+  TYPE : Diary
+
+VAMBITS
+  UNDE : Physical
+  BREF : {{Vambits}} are small DIY desktoys designed to be laser cutted in acrylic. The product was initially created with {{Ponoko|https://www.ponoko.com}}.
+  LONG
+    & The design was eventually ripped and sold by various resellers on Esty and in stores in Australia. The design templates are now available on Github for anyone to download and customize.
+  TYPE : Diary
+  LINK
+    GITH : https://github.com/hundredrabbits/Vambits
+
+~ Segments
+
+LANGUAGE OF THE BIRDS
+  UNDE : Segment
+  BREF : I have been pondering what a conceptually perfect {{language}} could look like; a language so precise that it fully expresses an idea in all its infinite details.
+  LONG
+    & Immortals speak not with words<br />But wait for things to happen<br />And merely points at them.
+
+~ Language
+
+LANGUAGE
+  UNDE : Research
+  BREF : Welcome to the language/linguistics portal. This a notebook of sorts, collecting notes on a few natural languages and on my constructed logical languages researches.
+  LONG
+    & Some of the tasks at hand might involve translating the wiki into {{English Prime|http://en.wikipedia.org/wiki/E-Prime}}, E′. Also see correspondances between {{Traumae}} against {{Tractatus Logico-Philosophicus|https://en.wikipedia.org/wiki/Tractatus_Logico-Philosophicus}}. In another order of ideas, the analysis of the {{Logopandecteision|http://en.wikipedia.org/wiki/Logopandecteision}} sounds like a fun project. I should compare Traumae against the rules of {{Neaudethaumata|http://penelope.uchicago.edu/urquhart/index.html}}.
+
+JAPANESE
+  UNDE : Language
+  BREF : This page is currently used to store hours invested in learning {{Japanese}}. It will, hopefully, become a series of notes on the language at some point in time.
+
+RUSSIAN
+  UNDE : Language
+  BREF : This page is currently used to store hours invested in learning {{Japanese}}. It will, hopefully, become a series of notes on the language at some point in time.
+
+TRAUMAE
+  UNDE : Language
+  BREF : Created in 1998, {{Traumae}} is a {{synthetic language|http://en.wikipedia.org/wiki/Constructed_language}} by {{Devine Lu Linvega|Devine Lu Linvega}} for language processing experiments and research. 
+  LONG
+    & The Traumae language has 27 root syllables, each associated to a core idea - combinable and specific, to make all permutations of its alphabet possible. Written from left to right with implicit neutrality, words and groups of word are both ruled by the same grammatical logics. And so, a single letter or a word will work as a function onto the succeeding pieces of the phrase.
+    & {_Vilo pi 1998, {{Traumae}} lo {{vi dix|https://en.wikipedia.org/wiki/Constructed_language}} vip {{Devine Lu Linvega|Devine Lu Linvega}} po dix tivo xa vix. 27 dik vid lo la traumae dix, sal vota lati tix - la xa xas lo toxi, sal sato lo to. Lobid paki libo pi lixo las lita, dipix xa sadip vota dati dop. La vid xa la sadip vop kai pal dipix.
+    ? Text translated into {{Traumae}}
+  TYPE : Portal
+  LINK
+    GITH : https://github.com/XXIIVV/tool.traumae
+
+DEVINE LU LINVEGA
+  TYPE : Portal
+  BREF : {{Devine lu linvega}} is a composer, illustrator and programer, living aboard a {{sailboat|Hundred rabbits}} on the Pacific Ocean. 
+  LONG
+    & Operating under the {{Neauoire|https://twitter.com/neauoire}} moniker, Devine is currating the {{Beldam Records}} catalog along with {{Elodie Lareine|http://noirmirroir.com}} and creating {{experimental mobile projects|http://www.creativeapplications.net/openframeworks/experimental-mobile-apps-by-devine-aliceffect-lu-linvega}}.
+    & Populating {{OScean}} with notes on {{Language}}, {{Illustrations|Illustration}} and {{Sounds|Audio}}, Devine hopes to inspire visitors to learn and to travel.    
+    & "To flee is life; To linger is death"
+
+NOOTROPICS
+  UNDE : Lifestyle
+  BREF : {{Nootropics|https://en.wikipedia.org/wiki/Nootropic}} are {_smart drugs_}. They can help with focus and attention, or simply serve as a weak stimulant - not unlike coffee. I started using them out of curiosity and they grew on me as an extra tool to help with concentration.
+  LONG
+    & There are a variety of Nootropics out there, and I have only tried but the combination, {_stack_}, of Noopept and Citicoline, as per suggested by a friend back in Tokyo. I order my supplements from {{Intellimeds|https://www.intellimeds.co.uk}}, shipping to Canada. I take this stack every day for a {*sequence of 30 days, then stop for a week*} as it seems to make the effect stronger when I start again at the end of the week.
+    - {{20mg Noopept|https://www.intellimeds.co.uk/noopept-powder}}, powder
+    - {{150mg Citicoline|https://www.intellimeds.co.uk/citicoline/citicoline-powder}}, powder
+    & It feels a bit like coffee, but with a light {_tunnel vision_}, the immediate effect is that of tuning out the voices in your head for a moment. When cycling on Noopept, it feels a bit like seeing wider. When coding, it feels a bit like things need to get done. I have been taking it for more than a year and I have yet to feel any negative effect. Noopept can be distracting at times, I heard that Racetams are weaker and might be more what you are looking for - I have yet to try them.
+
+LIFESTYLE
+  UNDE : Devine lu linvega
+  BREF : This entry covers multiple questions I have been getting lately.
+  TYPE : Text
+
+KEYBOARD
+  UNDE : Lifestyle
+  BREF : My {{mechanical keyboard|Keyboard}} is the {{Vortex Poker II PBT Mechanical Keyboard|https://mechanicalkeyboards.com/shop/index.php?l=product_detail&p=458}} with {{Blank Mint PBT caps|https://www.massdrop.com/buy/npkc-blank-pbt-keycaps}}. It's also connected, to my Macbook, through a {{90 degrees angle USB wire|http://www.amazon.ca/gp/product/B004YD6LW0?psc=1&redirect=true&ref_=oh_aui_detailpage_o00_s00}}.
+  LONG
+    & The color choice is inspired from the {{Oscean}} interface colors. I have red Cherry MX switches installed, with {{sound dampening o-rings|http://www.amazon.ca/gp/product/B00VHXHP6Q?psc=1&redirect=true&ref_=oh_aui_detailpage_o00_s00}}. This cheers me up.
+  LINK
+    DROP : https://www.massdrop.com/mechanical-keyboards
+    REDD : https://www.reddit.com/r/MechanicalKeyboards/
+  
+~ Research
+
+RESEARCH
+  UNDE : Home
+  BREF : Various entries on topics gravitating around a philosophy of bettering through an improvement of language and informatics. These sections may contains incomplete, broken or deprecated articles.
+  TYPE : Portal
+
+SEGMENT
+  UNDE : Research
+  BREF : Various notes written as shorts.
+  TYPE : Text
+
+NOTES
+  UNDE : Research
+  BREF : Various notes written as stories.
+  TYPE : Text
+
+THE SARTRE MECHANISM
+  UNDE : Notes
+  BREF : It was just three days before Christmas when my friend invited me to his workshop to witness the completion of his latest project, sold to me as a {_perfection of design_}. 
+  LONG
+    & Crouched over a small heap of cogs, he did not look over as I hung my snow-covered coat on something that, by the look of it, might very well be a time machine. His gaze turned for a moment, perhaps to make sure that I did not break anything as I navigated the hoarded studio.
+    & What I first perceived as a pile of junk from afar, turned out to be an upmost beautiful clock, but where the needles would have been, a small hand rested at the tip of a short metallic arm.
+    & Its maker held a minuscule weight above the tiny hand, before carefully laying it onto the opened palm. Whirring and clicking into life, a second arm emerged and plucked a gear out of its entrails and laid it back into the toolbox at its side. In controlled gestures, activated by the weight, tiny arms dismantled bolts and screws, while carefully putting them in that toolbox, gradually taking the casing of the mechanism apart, leaving its core exposed.
+    & I started in silent awe, to the busy mechanical concerto, playing its requiem. The arms eventually began to reach inside the mechanism, unbuilding its core, growing weaker as it dismantled the heavier components and moved them back into the toolbox. This obscene ritual of disembowelment and exposé on pointlessness ended as the tiny arms and the weight had fallen back into the toolbox.
+    & The machine was indeed truly perfect. 
+    & {_Originally written by {{Voidshaper|https://twitter.com/voidshaper}}, <br />Edited by {{Devine Lu Linvega}}_}
+    

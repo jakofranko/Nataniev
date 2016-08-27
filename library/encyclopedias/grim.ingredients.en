@@ -1,0 +1,447 @@
+~ NAME : Ingredients
+~ NOTE : Grimgrains List of Ingredients
+~ AUTH : Rekka Bellum & Devine Lu Linvega
+
+SEA SALT
+  TINT : EFEFEF
+  BREF : Some boutiques in hawaii sell black salt with powdered black lava added in
+ALL PURPOSE FLOUR
+  TINT : EFEFEF
+  BREF : Plain flour has an average protein content, making it versatile to use in almost any recipe that requires flour
+BAKING POWDER
+  TINT : EFEFEF
+BAMBOO CHARCOAL POWDER
+  TINT : 000000
+BANANA
+  TINT : FFD800
+BLACK RICE
+  TINT : 000000
+BLACK SESAME SEEDS
+  TINT : 000000
+CARROT
+  TINT : FF6600
+  BREF : Overconsumming carrots can cause what is reffered to as "Carotenosis", a condition in which the skin turns orange
+COCONUT OIL
+  TINT : EFEFEF
+  BREF : Coconut oil was used in oil lamps in India before they had electrical lighting
+FLAX SEEDS
+  TINT : 875A2C
+  BREF : Flax is the national flower of Belarus
+GARDEN CUCUMBER
+  TINT : 006633
+  BREF : Cucumbers are usually more than 90% water
+LONG GRAIN WHITE RICE
+  TINT : EFEFEF
+MAPLE SYRUP
+  TINT : 875A2C
+  BREF : Quebec is the largest producer of maple syrup in the world
+RED MISO
+  TINT : 875A2C
+  BREF : Miso can be used to pickle vegetables
+RICE VINEGAR
+  BREF : Substituting rice vinegar for western style vinegar isnt really appropriate, its too acidic
+SAUERKRAUT
+  TINT : C820B3
+SESAME OIL
+  TINT : 875A2C
+  BREF : Sesame oil is sometimes mixed into very hot and spicy food to help neutralize the heat
+CANOLA OIL
+  BREF : Canola oil has many non food uses, it is used in candles, lipsticks, inks etc 
+SOY MILK
+  TINT : EFEFEF
+  BREF : If you produce your own soy milk, know that there wont be any waste. The pulp can be used to make okara, which you can use to make baked goods.
+SUGAR
+  TINT : EFEFEF
+  BREF : The average person consumes about 24kg of sugar per year, which is about 260 calories per day
+WAKAME
+  TINT : 006633
+  BREF : Wakame is a very invasive plant, its even banned in australia
+BEET ROOT JUICE
+  TINT : C820B3
+  BREF : Don't be alarmed, beet root juice will make your urine red for a day
+VANILLA EXTRACT
+  BREF : No description
+ZUCCHINI
+  TINT : 006633
+ALFALFA SPROUTS
+  TINT : 006633
+COCONUT MILK
+  TINT : EFEFEF
+WHITE CAULIFLOWER
+  TINT : EFEFEF
+  BREF : The oldest record of cauliflower dates back to the 6th century bc
+DRIED CRANBERRIES
+  TINT : 94191C
+  BREF : Dried cranberries are often coated with a bit of vegetable oil to keep them from sticking to each other, look in natural food stores to find brands that don't do this
+BROWN SUGAR
+  TINT : 875A2C
+  BREF : Natural brown sugars that have been highly centrifuged go by the names of turbinado, demeara or raw sugar. Others that have been midly centrifuged and that have a higher molasses content go by Panela, rapadura, jaggery, muscovado etc
+SCALLIONS
+  TINT : 006633
+  BREF : In some countries scallions are mistakenly referred to as 'shallots'
+SPINACH
+  TINT : 006633
+  BREF : During the cold war, wine with added spinach juice was given to weakened soldiers
+SPELT FLOUR
+  TINT : EFEFEF
+  BREF : Spelt flour was a staple food during the Bronze age all the way up to medieval times
+SOY SAUCE
+  TINT : 000000
+  BREF : The solids left behind after the fermentation process is used as animal feed
+CHILI PEPPER FLAKES
+  TINT : 94191C
+  BREF : Chili pepper flakes have become a table top must over the years, it will often be present on a restaurant table alongside salt and pepper
+LEMON JUICE
+  TINT : FFD800
+  BREF : You can use lemon juice as invisible ink, if you put some heat on it then you can see it
+GINGER ROOT
+  TINT : FFD800
+YELLOW PEPPERS
+  TINT : FFD800
+  BREF : The misleading name 'pepper' was given by Christopher Columbus when he brought back a plant to europe. The word pepper was given to all spices in europe that had a hot and pungent taste
+GROUND TURMERIC
+  TINT : FFD800
+  BREF : Its sometimes used as a fabric dye, namely for Buddhist Monk's robes. 
+CUMIN SEEDS
+  TINT : 875A2C
+  BREF : In Sanskrit Cumin is known as "Jira" which also means “that which helps digestion"
+MUSTARD SEEDS
+  TINT : FFD800
+  BREF : Canada is the top producer of mustard seeds, it produces over 200,700 tonnes of it per year. 
+BLACK PEPPER
+  TINT : 000000
+  BREF : Historically, black pepper is the world's most traded spice
+NUTRITIONAL YEAST
+  TINT : FFD800
+  BREF : In the US it's sometimes referred to as "nooch"
+OLIVE OIL
+  BREF : extra virgin olive oil has strict requirements, it's checked for all kinds of defects to be made perfect
+WATER
+  BREF : 70% of the fresh water used by people goes to agriculture
+ORANGE
+  TINT : FF6600
+  BREF : In the early 16th century, the orange was considered a luxury item and rich people would grow it in private conservatories called "orangeries".
+TAMARIND PASTE
+  TINT : 875A2C
+CINNAMON
+  TINT : 875A2C
+  BREF : Cinnamon and garlic and be used to preserve fried foods
+PUMPKIN
+  TINT : FF6600
+  BREF : The darker the skin of the pumpkin, the higher the beta carotene content
+CURRY POWDER
+  TINT : FFD800
+  BREF : The word curry is derived from the word 'kari' meaning 'sauce' or 'relish for rice'
+TOFU
+  TINT : EFEFEF
+  BREF : The word 'bean curds' for tofu has been used in the US since 1840.
+EGGPLANT
+  TINT : 6620B3
+MATCHA POWDER
+  TINT : 006633
+  BREF : Only Tencha can be used to make matcha
+MINT
+  TINT : 006633
+  BREF : Oil derived from fresh mint can be used as a friendly insecticide 
+BROWN RICE SYRUP
+  TINT : 875A2C
+  BREF : Brown rice syrup is used to sweeten rice milk
+PUFFED RICE
+  TINT : EFEFEF
+  BREF :  Preparing rice this way makes it less perishable. 
+HOUJICHA
+  TINT : 875A2C
+  BREF : KitKat in japan has a houjicha flavour
+OATS
+  TINT : EFEFEF
+  BREF : If oat flour is used alone in baking, the flour wont rise. Best to mix it with other types of flour!
+DEGLET NOOR DATES
+  TINT : 875A2C
+  BREF : Date palms have been around for at least 50 million years
+FLEUR DE SEL
+  TINT : EFEFEF
+  BREF : Fleur de sel is considered more of a garnish or a condiment, it creates contrast in sweet deserts 
+CRIMINI MUSHROOM
+  TINT : 875A2C
+  BREF : Mature crimini mushrooms are actually portobello mushrooms
+BASIL
+  TINT : 006633
+  BREF : When soaked in water, the seeds of some basil varieties become gelatinous. They are in turn used in drinks and desserts. 
+CORNSTARCH
+  TINT : EFEFEF
+DRIED TOMATOES
+  TINT : 94191C
+  BREF : The tomatoes can also be dried with an oven
+SMOKED PAPRIKA
+  TINT : 94191C
+  BREF : Paprika is used with henna to give a red tint
+ACTIVE DRY YEAST
+  TINT : FFD800
+POPPY SEEDS
+  TINT : 000000
+  BREF : Poppy seeds are less allergenic than a lot of other seeds or nuts
+PURPLE POTATO POWDER
+  TINT : 6620B3
+YUCA
+  TINT : EFEFEF
+  BREF : Tapioca is actually a starch extracted from Yuca roots 
+SRIRACHA
+  TINT : 94191C
+  BREF : Sauce is named after the town of Si Racha in thailand where it was first made and served in restaurants 
+AVOCADO
+  TINT : 006633
+  BREF : Avocado trees dont self-pollinate, they need another avocado tree nearby to bear fruit 
+RED ONION
+  TINT : C820B3
+  BREF : There is a variety of red onions in italy that has a stronger and sweeter taste, it is sometimes made into marmalades
+RED CABBAGE
+  TINT : 6620B3
+  BREF : Red cabbage can be used as a natural colorant, it needs to be boiled and mixed with vinegar to keep its colour 
+PURPLE CAULIFLOWER
+  TINT : 6620B3
+  BREF : The oldest record of cauliflower dates back to the 6th century bc
+RED WINE
+  TINT : 6620B3
+  BREF : Wine has long been used as an antiseptic to treat wounds, it was even used to treat pain from child birth.
+GOCHUJANG
+  TINT : 94191C
+  BREF : Traditionally, gojuchang was fermented outdoors in large earthen pots
+GOLDEN BEET
+  TINT : FFD800
+  BREF : Golden beets are rich in b-xanthin pigment, making it not a replacement to red beets (which contain betalain pigment). Both pigments offer different health benefits!
+THYME
+  TINT : 006633
+  BREF : Thyme keeps its flavour better when dried than other herbs 
+SHICHIMI TOGARASHI
+  TINT : 94191C
+  BREF : 'shichi' is the japanese word for 7 and 'togarashi' for 'chiles'
+ACORN SQUASH
+  TINT : FF6600
+  BREF : The seeds of the acorn squash can be eaten, they're delicious when roasted!
+GREEN BEANS
+  TINT : 006633
+  BREF : There are over 130 varieties of green beans
+BAKING SODA
+  TINT : EFEFEF
+  BREF : Since sodium bicarbonate can cause alkalosis, it's sometimes used to treat aspirin overdoses.
+HACHIYA PERSIMMON
+  TINT : FF6600
+  BREF : Unripe persimmon can be frozen outside during winter to help speed up the ripening process
+KALE
+  TINT : 006633
+  BREF : Some people grow kale for their ornamental leaves, in colours varying in red, pink and even lavender. They are beautiful and eatable!
+AGAR AGAR POWDER
+  TINT : EFEFEF
+  BREF : Agar is used to make impression material in dentistry
+NUTMEG
+  TINT : 875A2C
+  BREF : If consumed in high doses, raw nutmeg has psychoactive effects
+RED BEETS
+  TINT : 94191C
+BAY LEAF
+  TINT : 006633
+TOMATO PASTE
+  TINT : 94191C
+BAGUETTE
+  TINT : 875A2C
+  BREF : A law in the 1920's was put in place to keep bakers from working before 4 am, this didn't give them time to make proper rounded loaves. Making slender baguettes was a simple solution to this problem since they bake more rapidly.
+RICE FLOUR
+  TINT : EFEFEF
+  BREF : Brown rice flour is sometimes used as a base to grow mushrooms.
+GARLIC
+  TINT : EFEFEF
+  BREF : Garlic has been used in many cultures around the world for thousands of years. Dating all the way back to the time the pyramids were built!
+VEGETABLE BOUILLON
+  TINT : 875A2C
+  BREF : Dehydrated vegetable bouillon has many names depending on where you live. In Canada and the US it is known as 'bouillon cube', it's known as 'stock cube' in Australia, Ireland, New Zealand, South Africa and in the UK. And as 'dehydrated bouillon' in France.
+CORN SEMOLINA
+  TINT : FFD800
+  BREF : Corn semolina is ground up corn
+SICHUAN PEPPERCORNS
+  TINT : 875A2C
+CORIANDER
+  TINT : 006633
+SUNFLOWER SEEDS
+  TINT : 875A2C
+VEGAN BUTTER
+  BREF : No description
+YELLOW ONION
+  TINT : FFD800
+ROYAL BLUE COLOURING
+  TINT : 145BAC
+VIOLET COLOURING
+  TINT : 6620B3
+LEMON ZEST
+  TINT : FFD800
+POWDERED SUGAR
+  TINT : EFEFEF
+  BREF : Powdered sugar is available in different degrees of fineness, the more X's the finer the grain
+CHICKPEA FLOUR
+  TINT : FFD800
+NORI SHEETS
+  TINT : 000000
+  BREF : Seaweed takes about 45 days to grow 
+WHOLE WHEAT FLOUR
+  TINT : 875A2C
+WHITE SESAME SEEDS
+  TINT : EFEFEF
+DRIED RAISINS
+  TINT : 875A2C
+BREAD CRUSTS
+  TINT : 875A2C
+WHOLE CANE SUGAR
+  TINT : 875A2C
+SILKEN TOFU
+  TINT : EFEFEF
+BASMATI RICE
+  TINT : EFEFEF
+BOSC PEAR
+  TINT : 875A2C
+RAW PUMPKIN SEEDS
+  TINT : 006633
+RUSSET POTATOES
+  TINT : EFEFEF
+SHIITAKE MUSHROOMS
+  TINT : 875A2C
+MIRIN
+  BREF : Mirin is added to grilled fish to help reduce the fishy smell.
+DAIKON
+  TINT : EFEFEF
+LEMON
+  TINT : FFD800
+  BREF : Lemon juice can be used as an invisible ink.
+RED LENTILS
+  TINT : FF6600
+  BREF : Lentils are considered to be one of the best foods because their chemical structures are not altered by cooking
+BLACK PEPPERCORNS
+  TINT : 000000
+SWEET POTATOES
+  TINT : FF6600
+  BREF : Since vitamin A deficiency is a common problem in africa, people are encouraged to eat sweet potatoes 
+APPLE CIDER VINEGAR
+  BREF : It is thought that consuming vinegar between meals will help to make you feel full longer
+BELUGA LENTILS
+  TINT : 000000
+  BREF : Lens is the latin name for lentil
+DIJON MUSTARD
+  TINT : FFD800
+APPLE JUICE
+  BREF : No description
+APPLE
+  BREF : No description
+BULL KELP POWDER
+  BREF : No description
+TOFU MAYO
+  BREF : No description
+CHICKPEAS
+  BREF : No description
+UNSWEETENED CAROB CHIPS
+  TINT : 875A2C
+FRESH MINT
+  TINT : 006633
+LIME
+  TINT : 006633
+BALSAMIC VINEGAR
+  TINT : 6620B3
+SAKE
+  BREF : No description
+BLACK GLUTINOUS RICE
+  TINT : 000000
+MANGO
+  TINT : FFD800
+BURMESE TOFU
+  TINT : FFD800
+GREEN PEAS
+  TINT : 006633
+RED PEPPER
+  TINT : 94191C
+GREEN CHILE
+  TINT : 006633
+BLACK OLIVES
+  TINT : 000000
+WHOLE GRAIN MACARONI
+  TINT : 875A2C
+POMEGRANATE SEEDS
+  TINT : 94191C
+POMEGRANATE JUICE
+  TINT : 94191C
+COCOA POWDER
+  TINT : 6620B3
+CAYENNE PEPPER
+  TINT : 94191C
+PANKO
+  BREF : No description
+ORANGE JUICE
+  TINT : FF6600
+GOJI BERRIES
+  TINT : 94191C
+WASABI POWDER
+  TINT : 006633
+SOY YOGURT
+  TINT : EFEFEF
+ANISE SEEDS
+  BREF : No description
+BARTLETT PEAR
+  TINT : 006633
+POTATOES
+  TINT : 875A2C
+UNSWEETENED APPLE SAUCE
+TAHINI
+  BREF : Tahini is made by grinding toasted hulled sesame seeds. It is used in baba ghanoush, halva, hummus and in many other recipes. Because of its high oil content, it needs to be refrigerated to prevent spoilage. Tahini has high levels of calcium and protein, making it a must ingredient in any plantbased pantry.
+ARUGULA
+  TINT : 006633
+DRIED WHITE MULBERRIES
+  BREF : No description
+KINAKO
+  BREF : No description
+BLUE CORN TORTILLAS
+  TINT : 000000
+HEIRLOOM TOMATOES
+  TINT : 94191C
+HEARTS OF PALM
+  TINT : EFEFEF
+  BREF : Heart of palm is a vegetable that is harvested from the inner core of certain palm trees. They can be eaten as is, but they're especially delicious when tossed into a salad. 
+PORTOBELLO MUSHROOMS
+  TINT : 875A2C
+  BREF : Portobello are mature 'common mushroom'. They can be used in plantbased recipes as hamburger steaks, you can even use them as buns.
+WHOLE GRAIN BROWN RICE
+  TINT : 875A2C
+  BREF : Brown rice is a wholegrain rice that has a nutty flavour, it's also more nutritious and chewier than white rice. Brown rice is producted by only removing the outermost husk, while white rice has several other layers removed. It is best to soak the rice for a day before cooking it to obtain a more nutritionally complete food, soaking it beforehand activates various enzymes in the rice.
+HOPS
+  TINT : 006633
+  BREF : There are many different varieties of hops around, from all corners of the globe.
+COCONUT SUGAR
+  TINT : 875A2C
+  BREF : sourced from wikipedia
+VEGEMITE
+  TINT : 875A2C
+  BREF : It's one of the richest sources of B vitamins, specifically thiamine, riboglavin, niacin and folic acid. It doesn't have any fat, added sugar or animal content.
+BLACKBERRIES
+  TINT : 000000
+EINKORN FLOUR
+  TINT : 875A2C
+  BREF : Einkorn wheat was one of the first plants to be domesticated and cultivated. It has a high percentage of protein, more than regular wheat. It also has high levels of fat, phosphorus, potassium, pyridoxine (a form of vitamin b6) and beta-carotene, making it more nutritious than other kinds of grains. Another great thing about einkorn is that it isn't as toxic to people on gluten-free diets, it as yet to be proven but it should definitely be looked into!
+TOFURKY SAUSAGES
+  TINT : 875A2C
+DRIED HIJIKI
+  TINT : 000000
+TEMPEH
+  TINT : 875A2C
+SOBA NOODLES
+  TINT : 875A2C
+ARROWROOT STARCH
+  TINT : EFEFEF
+ROSEMARY
+  TINT : 006633
+SCOOBI DO
+  BREF : No description
+GARAM MASALA
+  TINT : 875A2C
+WHITE MISO
+  BREF : No description
+HEIRLOOM CARROTS
+  BREF : No description
+FUSILLI
+  BREF : No description
+CORN TORTILLAS
+  BREF : No description
