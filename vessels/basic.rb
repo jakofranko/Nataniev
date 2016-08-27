@@ -15,38 +15,7 @@ class Basic
 
   def __look q = nil
 
-    text = ""
-
-    # Head
-    if parent == id
-      text += "~ "+"#{print}.\n\n".capitalize
-    else
-      text += "~ "+"#{print} in #{parent_vessel.print}.\n\n".capitalize
-    end
-
-    # Note
-    if parent_vessel.note
-      note = parent_vessel.note.strip
-      note = note != "" ? "#{Wildcard.new(note).render}" : ""
-      note = note.capitalize
-      note = note[0,1] != "&" ? "& "+note : note
-      note = note[note.length-1,1].strip != "." ? note.strip+"." : note
-      note = note.gsub(". ",".\n")
-      text += note.strip+"\n\n"
-    end
-
-    # Visibles
-    if visible_vessels.length > 0
-      visible_vessels.each do |vessel|
-        text += vessel.display
-      end
-      text += "\n\n"
-    end
-
-    # Hint
-    text += parent_vessel.hint ? "? #{parent_vessel.hint}" : ""
-
-    return text
+    return "#{look_head}#{look_note}#{look_visibles}#{look_hint}"
 
   end
 

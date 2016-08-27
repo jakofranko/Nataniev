@@ -266,6 +266,53 @@ module Vessel
 
   end
 
+  # Look
+
+  def look_head
+
+    return parent == id ? "~ The paradox of "+"#{print}.\n\n".capitalize : "~ "+"#{print} in #{parent_vessel.print}.\n\n".capitalize
+
+  end
+
+  def look_note
+
+    if !parent_vessel.note then return nil end
+    
+    note = parent_vessel.note.strip
+    note = note != "" ? "#{Wildcard.new(note).render}" : ""
+    note = note.capitalize
+    note = note[0,1] != "&" ? "& "+note : note
+    note = note[note.length-1,1].strip != "." ? note.strip+"." : note
+    note = note.gsub(". ",".\n")
+    # Replace
+    visible_vessels.each do |vessel|
+      if !note.include?(vessel.name) then next end
+      note = note.sub(vessel.name,"{{#{vessel.name}}}")
+    end
+    return note.strip+"\n\n"
+
+  end
+
+  def look_visibles
+
+    if visible_vessels.length < 1 then return nil end
+
+    text = ""
+    visible_vessels.each do |vessel|
+      if parent_vessel.note.include?(vessel.name) then next end
+      text += vessel.display
+    end
+    
+    return text+"\n\n"
+
+  end
+
+  def look_hint
+
+    return parent_vessel.hint
+
+  end
+
   # Errors
 
   def error_command_invalid command ; return "#{command} is not a valid command." end

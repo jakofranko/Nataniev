@@ -14,6 +14,8 @@ class Console
     puts "\n\n"
     print "> Vessel: "
 
+    $nataniev.set_player("6")
+
   end
 
   def validate query = nil
@@ -21,12 +23,12 @@ class Console
     if !$nataniev.player
       $nataniev.set_player(query.split(" ").first)
       puts "\n\n"
-      puts $nataniev.answer("connect")
+      puts $nataniev.answer("connect").console_markup
       puts ""
     else
       $nataniev.refresh
       puts "\n\n"
-      puts $nataniev.answer("#{query}")
+      puts $nataniev.answer("#{query}").console_markup
       puts ""
     end
 
@@ -152,5 +154,20 @@ class String
   def grey ; colorize(37) end
   def pink ; colorize(35) end
   def light_blue ; colorize(36) end
+
+  def console_markup
+    
+    content = self
+
+    if !content then return "" end
+      
+    search = content.scan(/(?:\{\{)([\w\W]*?)(?=\}\})/)
+    search.each do |str,details|
+        content = content.gsub("{{"+str+"}}",str.underline)
+    end
+    
+    return "#{content}"
+
+  end
 
 end

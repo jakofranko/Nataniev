@@ -4,12 +4,12 @@
 
 @ CODE                                NAME           ATTR           PROGRAM                                                                          NOTE
 1111-00013-00000-HAVEN-00000000000000 Void           Void                                                                                            An impossible formation of nullspace has gathered here.
-1011-00001-00000-HAVEN-00000000000000 haven          inner
-1011-00002-00000-HAVEN-00000000000000 library
-1011-00001-00000-GHOST-00000000000000 ghost
+1011-00001-00000-HAVEN-00000000000000 haven          inner                                                                                           Light snow falls through the fog and onto a meadow of red oaks. & At its center, stands the library, built of ashened bricks and tainted glass.
+1011-00001-00000-HAVEN-00000000000000 meadow
+1011-00001-00000-HAVEN-00000000000000 library
 1011-00015-00000-MAEVE-00000000000000 maeve
-1011-00005-00000-HAVEN-00000000000000 office         eleventh                                                                                        There are 13 messages in your mailbox. & The sun is slowly setting behind the horizon. # Maeve is currently in the fog gate.
-1011-00001-00000-BASIC-00000000000000 geomaitre
+1011-00001-00000-HAVEN-00000000000000 office         eleventh                                                                                        There are 13 messages in your mailbox. & The sun is slowly setting behind the horizon. # Maeve is currently in the fog gate.
+1011-00001-00000-BASIC-20160827125439 geomaitre
 1011-00005-00000-HAVEN-00000000000000 mailbox        orange         say hello ECHO contains 16 messages
 1011-00005-00000-HAVEN-00000000000000 wallclock                     ECHO indicates TIME::
 1011-00005-00000-HAVEN-00000000000000 manual         russian                                                                                         test
