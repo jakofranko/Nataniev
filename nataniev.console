@@ -1,7 +1,7 @@
 #!/bin/env ruby
 # encoding: utf-8
 
-load "nataniev.rb"
+require_relative "nataniev.rb"
 	
 $nataniev = Nataniev.new
 $nataniev.console.listen while(true)
