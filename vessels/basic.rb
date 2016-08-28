@@ -23,7 +23,7 @@ class Basic
 
   def __create q = nil
 
-    return "TODO"
+    return "TODO[create]"
     
   end
 
@@ -126,7 +126,9 @@ class Basic
 
   def __use q = nil
 
-    return "TODO"
+    v = find_visible_vessel(q) ; if !v then return error_target(q) end
+
+    return v.use
     
   end
 

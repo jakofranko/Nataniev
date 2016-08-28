@@ -54,38 +54,38 @@ class Program
 		
 	end
 
-	def isSolved player,inventory
+	def isSolved
 
 		parts = @cond.split(" ")
 		if @cond == "" then return true end
 
 		if parts.first == "HAS"
-			inventory.each do |vessel|
+			$nataniev.player.inventory_vessels.each do |vessel|
 				if vessel.name.like(parts.last) then return true end
 			end
 		elsif parts.first == "IS"
-			if player.name.like(parts.last) then return true end
+			if $nataniev.player.name.like(parts.last) then return true end
 		end
 
 		return false 
 
 	end
 
-	def run player,inventory
+	def run
 
-		if isSolved(player,inventory)
-			return $parade.act(Wildcard.new(@main).render)
+		if isSolved
+			return $nataniev.answer(Wildcard.new(@main).render)
 		elsif @else
-			return $parade.act(Wildcard.new(@else).render)
+			return $nataniev.answer(Wildcard.new(@else).render)
 		else
-			return "EROR Invalid program."
+			return "Invalid program."
 		end
 
 	end
 
 	def echo
 
-		if isSolved($nataniev.player,$nataniev.player.inventory_vessels)
+		if isSolved
 			return Wildcard.new(@main_echo).render
 		else
 			return Wildcard.new(@else_echo).render

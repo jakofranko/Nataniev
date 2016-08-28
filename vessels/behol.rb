@@ -15,12 +15,6 @@ class Behol
 
   end
 
-  def __view q = nil
-
-    return "Seeing: #{q}"
-
-  end
-
   def __http q = nil
 
     instance = q.split(" ").first
