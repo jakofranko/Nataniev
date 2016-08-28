@@ -283,6 +283,19 @@ module Vessel
 
   end
 
+  # Possible
+
+  def completion
+
+    cmds = []
+    visible_vessels.each do |vessel|
+      cmds.push("enter the #{vessel.name}")  
+    end
+    
+    return cmds
+
+  end
+
   # Errors
 
   def error_command_invalid command ; return "#{command} is not a valid command." end

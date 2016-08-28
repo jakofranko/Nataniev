@@ -14,8 +14,6 @@ class Console
     puts "\n\n"
     print "> Vessel: "
 
-    $nataniev.set_player("51")
-
   end
 
   def validate query = nil
@@ -97,6 +95,9 @@ class Console
 
   def onion text
 
+    if !$nataniev.player then return text end
+    if !$nataniev.player.completion then return text end
+      
     @onion = ""
     onionText = ""
 

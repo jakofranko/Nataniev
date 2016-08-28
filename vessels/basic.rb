@@ -227,17 +227,4 @@ class Basic
 
   end
 
-  # Possible
-
-  def completion
-
-    cmds = []
-    visible_vessels.each do |vessel|
-      cmds.push("enter the #{vessel.name}")  
-    end
-    
-    return cmds
-
-  end
-
 end
