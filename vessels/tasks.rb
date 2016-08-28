@@ -15,6 +15,12 @@ class Tasks
 
 	end
 
+	def note
+
+		return "This list is a series of issues found in XXIIVV.\n"+use
+
+	end
+
 	def use q = nil
 
 		text = ""
