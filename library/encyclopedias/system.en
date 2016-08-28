@@ -2,34 +2,34 @@
 ~ NOTE : YAML
 ~ AUTH : Devine Lu Linvega
 
-JIIN
-  Forecast
-  Lietal
-  Traumae
-    - Find database drop
-    - Fix translator
-    - Implement documentation and add to XXIIVV
-    - Dictionaery page
-  Analytics
-    - Fix Monitor
-  Oscean
-    - Allow for {{$clock}} templates to fire Jiin commands
-    - Implement Talk/Forum
-  Paradise
-    - Implement variables in call command
-    - Clean programs with ECHO AND
-    - Implement time(travel to)
-    - Tutorial
-    - Landing world
-    - Talk/Forum tools
-  Blindfolk
-    - Rebuilt Blindfolk with new architecture(FLAT)
-  Rationality project
-    - Complete sorting of canon
+Paradise OS
+  - Forum vessel
+  - Archv vessel
+  - Atari vessel
+
+
+
+Lietal
+Traumae
+  - Find database drop
+  - Fix translator
+  - Implement documentation and add to XXIIVV
+  - Dictionaery page
+Analytics
+  - Fix Monitor
+Oscean
+  - Implement Talk/Forum
+Paradise
+  - Implement variables in call command
+  - Clean programs with ECHO AND
+  - Tutorial
+  - Landing world
+  - Talk/Forum tools
+Blindfolk
+  - Rebuilt Blindfolk with new architecture(FLAT)
+Rationality project
+  - Complete sorting of canon
 
 100R
   Setup podcast in iTunes
   Expose press events in timeline
-
-Paradise OS
-  - First draft
