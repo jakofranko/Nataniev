@@ -28,10 +28,6 @@ class Wildcard
 
 	end
 
-	def _operations
-
-	end
-
 	def _swaps
 
 		hash = {}

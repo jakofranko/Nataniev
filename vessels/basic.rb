@@ -136,7 +136,9 @@ class Basic
 
   def __call q = nil
 
-    return "TODO"
+    if q.to_i < 1 then return error_id end
+
+    return $nataniev.make_vessel(q.to_i).use
     
   end
 

@@ -196,7 +196,7 @@ module Vessel
     _icon      = "" # icon
     result     = _article+_attribute+_name+_icon
   
-    return result.downcase.sub("a o","an o").sub("a u","an u").sub("a e","an e")
+    return result.downcase.sub("a o","an o").sub("a u","an u").sub("a e","an e").sub("a i","an i").sub("a hy","an hy")
 
   end
 
