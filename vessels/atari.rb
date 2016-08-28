@@ -7,7 +7,7 @@ class Atari
 
 	def use q = nil
 
-		return "yes"
+		return "yes(#{q})"
 		
 	end
 

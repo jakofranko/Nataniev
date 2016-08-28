@@ -128,7 +128,9 @@ class Basic
 
     v = find_visible_vessel(q) ; if !v then return error_target(q) end
 
-    return v.use
+    params = q.split(v.name) ; params[0] = nil
+
+    return v.use(params.join.strip)
     
   end
 

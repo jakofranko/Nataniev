@@ -21,7 +21,7 @@
 1010-00014-00000-HAVEN-00000000000000 desk           wooden                                                                                          Unmistakably the inside of a boring, old desk.
 1010-00014-00000-ATARI-00000000000000 computer       plastic        
 1010-00014-00000-HAVEN-00000000000000 maps           voidspace     
-1010-00015-00000-NOTEB-00000000000000 notebook       task                                                                                            Tasks..
+1010-00015-00000-TASKS-00000000000000 notebook       task                                                                                            Tasks..
 1010-00000-00000-HAVEN-00000000000000 
 1010-00000-00000-HAVEN-00000000000000 
 1010-00000-00000-HAVEN-00000000000000 
@@ -54,7 +54,7 @@
 1010-00000-00000-HAVEN-00000000000000 
 1010-00000-00000-HAVEN-00000000000000 
 1010-00000-00000-HAVEN-00000000000000 
-1011-00015-00000-BASIC-20160827192652 geomaitre
+1011-00014-00000-BASIC-20160827200616 geomaitre
 1000-00942-07433-00000-20160617085824 vibrio         tiny           ECHO become AND become a tiny multiflagellate vibrio
 1000-18051-00006-00000-20160617085824 mouse                                                                                                          The mouse bites you and you catch the plauge
 0013-01585-00001-00000-20160617085824 station        echoes                                                                                          The platform is clouded in a thick mist. Flashing blue gates stand at opposite ends to guide the train through the constant fog of the landscape. A teddy bear missing an eye can be seen lying abandoned on the station floor. The cries of lost vessels reverberate throughout the station filling it with an terrifying air. Just as it begins to become unbearable

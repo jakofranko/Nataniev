@@ -1,11 +1,21 @@
 #!/bin/env ruby
 # encoding: utf-8
 
-class Noteb
+class Tasks
 
 	include Vessel
 
-	def use
+	def display
+
+		count = 0
+		tasks.each do |k,v|
+			count += v.length
+		end
+		return "> #{print.capitalize}, contains #{count} entries.\n"
+
+	end
+
+	def use q = nil
 
 		text = ""
 		tasks.each do |k,v|
