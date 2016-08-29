@@ -1,7 +1,7 @@
 #!/bin/env ruby
 # encoding: utf-8
 
-class Tasks
+class Lexio
 
 	include Vessel
 
@@ -45,17 +45,10 @@ class Tasks
 		hash = {}
 
 		@lexicon = En.new("lexicon").to_h
-		@horaire = Di.new("horaire").to_a
-
+		
 		hash['unparented'] = list_unparented
 		hash['brokenlinks'] = list_brokenlinks
 		hash['stub'] = list_stubs
-
-		hash['orphans'] = list_orphans
-		hash['duplicates'] = list_duplicates
-		hash['strangetasks'] = list_strangetasks
-		hash['available'] = list_available
-		hash['missingdays'] = list_missingdays
 
 		return hash
 
