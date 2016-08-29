@@ -7,7 +7,7 @@ class Maeve
 
 	def __look q = nil ; return "WHHAAAd." end
 
-	def __auto q = nil
+	def __auto q = nil # TODO
 
 		puts "?"
 		

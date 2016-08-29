@@ -70,15 +70,15 @@ module Vessel
 
   # Setters
 
-  def set_lock val ; @isLocked = val ; save end
-  def set_hide val ; @isHidden = val ; save end
-  def set_quiet val ; @isQuiet = val ; save end
+  def set_lock return nil end
+  def set_hide return nil end
+  def set_quiet return nil end
 
-  def set_name val ; @name = val ; save end
-  def set_attribute val ; @attribute = val ; save end
-  def set_parent val ; @parent = val ; save end
-  def set_program val ; @program = val ; save end
-  def set_note val ; @note = val ; save end
+  def set_name return nil end
+  def set_attribute return nil end
+  def set_parent return nil end
+  def set_program return nil end
+  def set_notereturn nil end
 
   # Loaders
 

@@ -7,6 +7,7 @@ class Horai
 
 	def display
 
+		# TODO
 		# When days are missing, display the missing days instead. Same for lexicon.
 		# Also add option to display available diaries.
 

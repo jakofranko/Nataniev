@@ -8,6 +8,7 @@ class Forum
 	def use q = nil
 
 		# Discussion vessel
+		# TODO: Display via__actions when in parent vessel.
 
 		return "QUERY: #{q}"
 		

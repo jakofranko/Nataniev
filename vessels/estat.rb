@@ -7,6 +7,7 @@ class Estat
 
 	def display
 
+		# TODO: Display vessels that can be destroyed
 		return "? #{print.capitalize}, displays #{$nataniev.parade.to_a.length}.\n"
 
 	end

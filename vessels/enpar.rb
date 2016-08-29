@@ -7,6 +7,7 @@ class Enpar
 
 	def display
 		
+		# TODO: Rename..
 		return "> #{print.capitalize}, contains #{En.new(attribute).to_h.length} entries."
 
 	end
