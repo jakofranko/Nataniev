@@ -5,6 +5,12 @@ class Forum
 
 	include Vessel
 
+	def note
+
+		return "This vessel grants you new commands, say and listen."
+
+	end
+
 	def use q = nil
 
 		# Discussion vessel
