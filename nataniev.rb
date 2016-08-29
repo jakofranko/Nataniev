@@ -54,6 +54,8 @@ class Nataniev
 
     if @player.respond_to?("__#{action}")
       return @player.send("__#{action}",params).strip
+    elsif @player.parent_vessel.respond_to?("via__#{action}")
+      return @player.parent_vessel.send("via__#{action}",params).strip
     else
       return "Unknown action: #{action}"
     end

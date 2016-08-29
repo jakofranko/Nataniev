@@ -13,4 +13,10 @@ class Forum
 		
 	end
 
+	def via__say q = nil
+
+		return "hey" # TODO, create forum vessel
+
+	end
+
 end

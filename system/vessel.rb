@@ -138,7 +138,7 @@ module Vessel
 
   def find_present_vessel name
 
-    name = " #{name} ".sub(" a ","").sub(" an ","").sub(" the ","").strip.split(" ").first.strip
+    name = " #{name} ".sub(" a ","").sub(" an ","").sub(" the ","").strip.split(" ").first.to_s.strip
 
     present_vessels.each do |v|
       if v.name.like(name) then return v end
@@ -150,7 +150,7 @@ module Vessel
 
   def find_visible_vessel name
 
-    name = " #{name} ".sub(" a ","").sub(" an ","").sub(" the ","").strip.split(" ").first.strip
+    name = " #{name} ".sub(" a ","").sub(" an ","").sub(" the ","").strip.split(" ").first.to_s.strip
 
     visible_vessels.each do |v|
       if v.name.like(name) then return v end
@@ -162,7 +162,7 @@ module Vessel
 
   def find_inventory_vessel name
 
-    name = " #{name} ".sub(" a ","").sub(" an ","").sub(" the ","").strip.split(" ").first.strip
+    name = " #{name} ".sub(" a ","").sub(" an ","").sub(" the ","").strip.split(" ").first.to_s.strip
 
     inventory_vessels.each do |v|
       if v.name.like(name) then return v end
