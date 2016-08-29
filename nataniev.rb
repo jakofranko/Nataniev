@@ -12,7 +12,7 @@ load "#{$nataniev_path}/system/vessel.rb"
 load "#{$nataniev_path}/system/clock.rb"
 load "#{$nataniev_path}/system/desamber.rb"
 
-load "#{$nataniev_path}/vessels/behol.rb"
+load "#{$nataniev_path}/vessels/ghost.rb"
 load "#{$nataniev_path}/vessels/basic.rb"
 
 class Nataniev

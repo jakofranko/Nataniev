@@ -1,15 +1,17 @@
 #!/bin/env ruby
 # encoding: utf-8
 
-class Atari
+class Willw
 
 	include Vessel
 
 	def use q = nil
 		
+		return "The insect chimes into a rhyme \"#{poem(q)}\"."
+
 	end
 
-	def initialize query = nil
+	def poem q = nil
 
 		@templates = createTemplates
 		@usedWords = []
@@ -17,11 +19,7 @@ class Atari
 
 		@dict = dict
 
-	end
-
-	def application query = nil # Word
-
-		query = query.sub("willwisp","").strip
+		query = q.to_s.sub("willwisp","").strip
 		targetTemplate = @templates.sample
 
 		p = nil
@@ -153,9 +151,7 @@ class Atari
 
 		# Simple
 		templates.push("A {n<1} is {a>1}..")
-		templates.push("{A<1} {N<1} O'Clock!")
-		templates.push("Dr. {N<1}{n>1}")
-		templates.push("At the {V>1} & {V>1} Cafe")
+		templates.push("{N<1}{n>1}?")
 		templates.push("{V>1} all {N>1}s!")
 		templates.push("{V<1} {N<1}")
 		templates.push("The {A>1} {N<1}s")
@@ -165,7 +161,6 @@ class Atari
 		# Intermediate
 		templates.push("The {N>1}, a {a>1} {n>1}.")
 		templates.push("A {N<1}, the {A<1} {N<1}.")
-		templates.push("Saint-{A>1} Of {V>1} {N>1}.")
 		templates.push("{N<1} {N=1} {N>1}.")
 		templates.push("Of {A>1} & {A<1} {N=1}.")
 		templates.push("In a {a<1} {n=1} by the {n>1}.")

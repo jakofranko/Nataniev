@@ -136,6 +136,8 @@ class Basic
     
   end
 
+  def __poke q = nil ; return __use(q) end
+
   def __use q = nil
 
     v = find_visible_vessel(q) ; if !v then return error_target(q) end

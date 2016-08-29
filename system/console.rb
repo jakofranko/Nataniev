@@ -12,7 +12,7 @@ class Console
     @last = ""
 
     puts "\n\n"
-    print "> Vessel: "
+    print "Connection is active.\n\n> Vessel: "
 
   end
 
