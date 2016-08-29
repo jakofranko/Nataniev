@@ -70,15 +70,15 @@ module Vessel
 
   # Setters
 
-  def set_lock return nil end
-  def set_hide return nil end
-  def set_quiet return nil end
+  def set_lock ; return nil end
+  def set_hide ; return nil end
+  def set_quiet ; return nil end
 
-  def set_name return nil end
-  def set_attribute return nil end
-  def set_parent return nil end
-  def set_program return nil end
-  def set_notereturn nil end
+  def set_name ; return nil end
+  def set_attribute ; return nil end
+  def set_parent ; return nil end
+  def set_program ; return nil end
+  def set_notereturn ; return nil end
 
   # Loaders
 
