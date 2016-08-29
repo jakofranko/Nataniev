@@ -3,6 +3,7 @@
 ~ AUTH : Devine Lu Linvega
 
 @ DATE     CODE PICT TERM                 TASK                 NAME                  TEXT
+2016 08 29 - 24      Polygonoscopy        Modeling
 2016 08 28 - 38      The will the wisp    Migration
 2016 08 27 - 27      Paradise             Design
 2016 08 26 - 00
