@@ -3,10 +3,11 @@
 ~ AUTH : Devine Lu Linvega
 
 @ DATE     CODE PICT TERM                 TASK                 NAME                  TEXT
-2016 08 27 - 27      Paradise             Development
+2016 08 28 - 38      The will the wisp    Migration
+2016 08 27 - 27      Paradise             Design
 2016 08 26 - 00
-2016 08 25 - 29      Paradise             Development
-2016 08 24 - 29      Paradise             Development
+2016 08 25 - 39      Paradise             Development
+2016 08 24 - 39      Paradise             Development
 2016 08 23 - 26   77 America              Photography          San Francisco         First picture taken upon sailing to San Francisco from Vancouver.
 2016 08 22 - 35      Paradise             Development
 2016 08 21 ! 25   75 Nervous              Modeling             Exhibit C

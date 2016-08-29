@@ -5,6 +5,4 @@ class Tweet
 
 	include Vessel
 
-	
-
 end
