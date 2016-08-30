@@ -1,11 +1,11 @@
 ~ NAME : Forum(Talk)
-~ NOTE : *
+~ NOTE : Parent - Id - Timestamp
 ~ AUTH : Devine Lu Linvega
 
-@ TIME         CODE ROOM                 USER                 TEXT
-20160820160209 0000 Paradise             Aliceffekt           This is a test
-20160820160233 0000 Paradise             Aliceffekt           This is a test
-20160820160310 0000 Paradise             Aliceffekt           This is a test
-20160820162355 0000 Paradise34528        Aliceffekt           This is a test
-20160820162525 0000 parade               neauoire             hello there
-20160820163055 0000 parade               nataniev             hello world
+@ CODE                          NAME           TEXT
+0000-00002-00021-20160830090112 log            hello punks
+0000-00002-00021-20160830090310 geomaitre      hello world
+0000-00002-00021-20160830090403 geomaitre      hello there
+0000-00002-00021-20160830091436 geomaitre      test
+0000-00002-00021-20160830092011 geomaitre      what's up
+0000-00002-00021-20160830092341 geomaitre      it works
