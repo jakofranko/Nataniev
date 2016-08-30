@@ -15,11 +15,11 @@ class Horai
 		hash['strangetasks'] = list_strangetasks
 		hash['missingdays'] = list_missingdays
 
-		if hash['duplicates'].length > 0 then return "Duplicated entry: #{hash['duplicates'].first}" end
-		if hash['strangetasks'].length > 0 then return "Strange task: #{hash['strangetasks'].first}" end
-		if hash['missingdays'].length > 0 then return "Missing day: #{hash['missingdays'].first}" end
+		if hash['duplicates'].length > 0 then return "> #{print.capitalize}, duplicate log: #{hash['duplicates'].first}.\n" end
+		if hash['strangetasks'].length > 0 then return "> #{print.capitalize}, strange log: #{hash['strangetasks'].first}.\n" end
+		if hash['missingdays'].length > 0 then return "> #{print.capitalize}, missing log: #{hash['missingdays'].first}.\n" end
 		
-		return "? #{print.capitalize}, contains #{@horaire.to_a.length} entries.\n"
+		return "> #{print.capitalize}, contains #{@horaire.to_a.length} logs.\n"
 
 	end
 
@@ -94,7 +94,7 @@ class Horai
 			d = test2.to_s[8,2]
 			i += 1
 			if !dates.include?("#{y} #{m} #{d}")
-				array.push("    #{y} #{m} #{d}")
+				array.push("#{y} #{m} #{d}")
 			end
 		end
 		return array

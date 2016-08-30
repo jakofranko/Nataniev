@@ -5,15 +5,21 @@ class Lexio
 
 	include Vessel
 
-	# TODO: Turn into a horai and lexio vessel type
-
 	def display
 
-		count = 0
-		tasks.each do |k,v|
-			count += v.length
-		end
-		return "> #{print.capitalize}, contains #{count} entries.\n"
+		@lexicon = En.new("lexicon").to_h
+
+		hash = {}
+
+		hash['unparented'] = list_unparented
+		hash['brokenlinks'] = list_brokenlinks
+		hash['stub'] = list_stubs
+
+		if hash['unparented'].length > 0 then return "> #{print.capitalize}, unparented: #{hash['unparented'].first}.\n" end
+		if hash['brokenlinks'].length > 0 then return "> #{print.capitalize}, broken link: #{hash['brokenlinks'].first}.\n" end
+		if hash['stub'].length > 0 then return "> #{print.capitalize}, stub: #{hash['stub'].first}.\n" end
+		
+		return "> #{print.capitalize}, contains #{@lexicon.length} entries.\n"
 
 	end
 
@@ -25,32 +31,7 @@ class Lexio
 
 	def use q = nil
 
-		text = ""
-		tasks.each do |k,v|
-			if v.length < 1 then next end
-			text += "\n#{v.length.to_s.append(" ",3)} #{k.upcase.to_s}\n\n"
-			v.each do |task|
-				text += "#{task}\n"
-			end
-		end
-
-		return text
-
-	end
-
-	# tasks
-
-	def tasks
-
-		hash = {}
-
-		@lexicon = En.new("lexicon").to_h
-		
-		hash['unparented'] = list_unparented
-		hash['brokenlinks'] = list_brokenlinks
-		hash['stub'] = list_stubs
-
-		return hash
+		return "TODO"
 
 	end
 
@@ -77,7 +58,7 @@ class Lexio
 	        	if name[0,1] == "!" then next end
 	        	if link.include?("http") then next end
 	        	if @lexicon[link.upcase] then next end
-	            array.push("*   #{term.append(" ",20).capitalize}"+name.capitalize)
+	            array.push("#{term.capitalize}"+name.capitalize)
 	        end
 		end
 		return array
@@ -89,7 +70,7 @@ class Lexio
 		array = []
 		@lexicon.each do |term,content|
 			if content["BREF"] then next end
-	        array.push("#{content['LONG'].to_s.length.to_s.append(" ",4)}"+term.capitalize)
+	        array.push(term.capitalize)
 		end
 		return array
 
@@ -107,7 +88,7 @@ class Lexio
 		end
 
 		hash.each do |k,v|
-			array.push("#{v.to_s.append(' ',4)}"+k.capitalize)
+			array.push("#{v.to_s}"+k.capitalize)
 		end
 		return array
 		

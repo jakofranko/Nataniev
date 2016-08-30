@@ -21,8 +21,8 @@
 1010-00014-00000-HAVEN-00000000000000 desk           wooden                                                                                          Unmistakably the inside of a boring, old desk.
 1010-00014-00000-ATARI-00000000000000 computer       plastic        
 1010-00014-00000-HAVEN-00000000000000 maps           voidspace     
-1010-00015-00000-LEXIO-00000000000000 notebook       task                                                                                            Tasks..
-1010-00015-00000-HORAI-00000000000000 logbook        grey           
+1010-00015-00000-LEXIO-00000000000000 lexicon        cyan                                                                                            
+1010-00015-00000-HORAI-00000000000000 logbook        red           
 1010-00014-00000-HAVEN-00000000000000 wallclock      old            ECHO displays TIME::
 1010-00002-00000-FORUM-00000000000000 log            hollow
 1010-00002-00000-WILLW-00000000000000 beetle         ghostly
