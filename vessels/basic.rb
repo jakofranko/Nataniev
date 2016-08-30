@@ -7,21 +7,21 @@ class Basic
 
   # Setters
 
-  def set_lock      val ; if owner != $nataniev.player.id then return false end ; @isLocked = val ; save ;  return true end
-  def set_hide      val ; if owner != $nataniev.player.id then return false end ; @isHidden = val ; save ;  return true end
-  def set_quiet     val ; if owner != $nataniev.player.id then return false end ; @isQuiet = val ; save ;   return true end
+  def set_lock      val ; if owner != $nataniev.player.id then return false end ; @is_locked = val ; save ;  return true end
+  def set_hide      val ; if owner != $nataniev.player.id then return false end ; @is_hidden = val ; save ;  return true end
+  def set_quiet     val ; if owner != $nataniev.player.id then return false end ; @is_quiet = val ; save ;   return true end
 
-  def set_name      val ; if isLocked then return false end ; @name = val ; save ;      return true end
-  def set_attribute val ; if isLocked then return false end ; @attribute = val ; save ; return true end
-  def set_parent    val ; if isLocked then return false end ; @parent = val ; save ;    return true end
-  def set_program   val ; if isLocked then return false end ; @program = val ; save ;   return true end
-  def set_note      val ; if isLocked then return false end ; @note = val ; save ;      return true end
+  def set_name      val ; if is_locked then return false end ; @name = val ; save ;      return true end
+  def set_attribute val ; if is_locked then return false end ; @attribute = val ; save ; return true end
+  def set_parent    val ; if is_locked then return false end ; @parent = val ; save ;    return true end
+  def set_program   val ; if is_locked then return false end ; @program = val ; save ;   return true end
+  def set_note      val ; if is_locked then return false end ; @note = val ; save ;      return true end
 
   # System
 
   def __connect q = nil
 
-    return "#{print.capitalize} is online."
+    return "You are #{print}."
 
   end
 
@@ -35,7 +35,7 @@ class Basic
 
   def __create q = nil
 
-    return "TODO[create]"
+    return "Avail: #{$nataniev.find_id}"
     
   end
 

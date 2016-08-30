@@ -54,7 +54,7 @@
 1010-00000-00000-HAVEN-00000000000000 
 1010-00000-00000-HAVEN-00000000000000 
 1010-00000-00000-HAVEN-00000000000000 
-0000-00002-00000-BASIC-20160830094128 geomaitre
+0000-00002-00000-BASIC-20160830162746 geomaitre
 1000-00942-07433-00000-20160617085824 vibrio         tiny           ECHO become AND become a tiny multiflagellate vibrio
 1000-18051-00006-00000-20160617085824 mouse                                                                                                          The mouse bites you and you catch the plauge
 0013-01585-00001-00000-20160617085824 station        echoes                                                                                          The platform is clouded in a thick mist. Flashing blue gates stand at opposite ends to guide the train through the constant fog of the landscape. A teddy bear missing an eye can be seen lying abandoned on the station floor. The cries of lost vessels reverberate throughout the station filling it with an terrifying air. Just as it begins to become unbearable
@@ -13290,7 +13290,7 @@
 0000-08840-12725-00000-20160617085824 foobians       group                                                                                           The foobians admire you questioningly.
 1000-03285-02388-00000-20160617085824 arrow          one            random var.1                                                                     Try to find this arrow and fire it off into a different place
 1000-13192-13568-00000-20160617085824 fire                                                                                                           The fire almost appears to be flickering blue
-0000-12725- vessel 12725'-00000-20160617085824 2014           10                                                                                              568
+
 0000-03772-02388-00000-20160617085824 lever          lullaby        ECHO pull AND shout me swings softly to sleep as soft music plays
 0000-07140-06785-00000-20160811094501 dingy          small
 1100-08942-07171-00000-20160617085824 arena          portal         warp to 19541

@@ -24,6 +24,7 @@ class Nataniev
     @id      = nil
     @player  = nil
     @parade  = nil 
+    @estate  = 30000
 
   end
 
@@ -36,6 +37,7 @@ class Nataniev
     @id = id
 
     if @id.to_i > 0
+      @parade = Di.new("paradise")
       @player = make_vessel(@id)
     else
       @player = make_anonym(@id)
@@ -92,5 +94,19 @@ class Nataniev
     return nil
 
   end
+
+  def find_id
+
+    id = 0
+    while id < 30000
+      id +=1
+      if parade.to_a[id]['CODE'] then next end
+      return id
+    end
+
+    return nil
+
+  end
+
 
 end
