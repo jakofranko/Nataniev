@@ -7,15 +7,15 @@ class Basic
 
   # Setters
 
-  def set_lock val ; @isLocked = val ; save end
-  def set_hide val ; @isHidden = val ; save end
-  def set_quiet val ; @isQuiet = val ; save end
+  def set_lock      val ; if owner != $nataniev.player.id then return false end ; @isLocked = val ; save ;  return true end
+  def set_hide      val ; if owner != $nataniev.player.id then return false end ; @isHidden = val ; save ;  return true end
+  def set_quiet     val ; if owner != $nataniev.player.id then return false end ; @isQuiet = val ; save ;   return true end
 
-  def set_name val ; @name = val ; save end
-  def set_attribute val ; @attribute = val ; save end
-  def set_parent val ; @parent = val ; save end
-  def set_program val ; @program = val ; save end
-  def set_note val ; @note = val ; save end
+  def set_name      val ; if isLocked then return false end ; @name = val ; save ;      return true end
+  def set_attribute val ; if isLocked then return false end ; @attribute = val ; save ; return true end
+  def set_parent    val ; if isLocked then return false end ; @parent = val ; save ;    return true end
+  def set_program   val ; if isLocked then return false end ; @program = val ; save ;   return true end
+  def set_note      val ; if isLocked then return false end ; @note = val ; save ;      return true end
 
   # System
 
@@ -49,9 +49,7 @@ class Basic
 
     v = find_visible_vessel(q) ; if !v then return error_target(q) end
 
-    set_parent(v.id)
-
-    return "You entered #{v.print}."
+    return set_parent(v.id) ? "You entered #{v.print}." : "The #{name} is locked."
     
   end
 
@@ -59,9 +57,7 @@ class Basic
 
     if @parent == parent_vessel.parent then return error_stem end
 
-    set_parent(parent_vessel.parent)
-
-    return "You left #{parent_vessel.print}."
+    return set_parent(parent_vessel.parent) ? "You left #{parent_vessel.print}." : "The #{name} is locked."
     
   end
 
@@ -69,9 +65,7 @@ class Basic
 
   def __note q = nil
 
-    parent_vessel.set_note(q)
-
-    return "You added a note to #{parent_vessel.print}."
+    return parent_vessel.set_note(q) ? "You added a note to #{parent_vessel.print}." : "The #{parent_vessel.name} cannot be modified."
     
   end
 
@@ -88,9 +82,7 @@ class Basic
     q = q.sub("to ","").to_i
     v = $nataniev.make_vessel(q.to_i) ; if !v then return error_target(q) end
 
-    set_parent(v.id)
-
-    return "You warped to #{v.print}."
+    return set_parent(v.id) ? "You warped to #{v.print}." : "The #{name} is locked."
     
   end
 
@@ -112,9 +104,7 @@ class Basic
 
     v = find_visible_vessel(q) ; if !v then return error_target(q) end
 
-    v.set_parent(@id)
-
-    return "You took #{v.print}."
+    return v.set_parent(@id) ? "You took #{v.print}." : "The #{v.name} is locked."
     
   end
 
@@ -122,9 +112,7 @@ class Basic
 
     v = find_inventory_vessel(q) ; if !v then return error_target(q) end
 
-    v.set_parent(@parent)
-
-    return "You dropped #{v.print}."
+    return v.set_parent(@parent) ? "You dropped #{v.print}." : "The #{v.name} is locked."
     
   end
 
@@ -168,19 +156,15 @@ class Basic
 
     v = find_present_vessel(q) ; if !v then return error_target(q) end
 
-    v.set_lock(1)
-
-    return "You locked #{v.print}."
+    return v.set_lock(1) ? "You locked #{v.print}." : "You cannot lock the #{v.name}."
     
   end
 
   def __unlock q = nil
 
     v = find_present_vessel(q) ; if !v then return error_target(q) end
-    
-    v.set_lock(0)
 
-    return "You unlocked #{v.print}."
+    return v.set_lock(0) ? "You unlocked #{v.print}." : "You cannot unlock the #{v.name}."
     
   end
 
@@ -188,19 +172,15 @@ class Basic
 
     v = find_present_vessel(q) ; if !v then return error_target(q) end
     
-    v.set_hide(0)
-
-    return "You revealed #{v.print}."
+    return v.set_hide(0) ? "You revealed #{v.print}." : "You cannot reveal the #{v.name}."
     
   end
 
   def __hide q = nil
 
     v = find_present_vessel(q) ; if !v then return error_target(q) end
-    
-    v.set_hide(1)
 
-    return "You hid #{v.print}."
+    return v.set_hide(1) ? "You hid #{v.print}." : "You cannot hide the #{v.name}."
     
   end
 
@@ -232,7 +212,13 @@ class Basic
     parent = @parent
     while tries < 100
       code = $nataniev.parade.to_a[parent]["CODE"]
-      if parent == code[5,5].to_i then return "You are #{tries} levels deep, in #{$nataniev.make_vessel(parent).print} universe." end
+      if parent == code[5,5].to_i 
+        if tries == 0
+          return "You are at the stem of the #{$nataniev.make_vessel(parent).name} universe."
+        else
+          return "You are #{tries} levels deep, in the #{$nataniev.make_vessel(parent).name} universe." 
+        end
+      end
       parent = code[5,5].to_i
       tries += 1
     end

@@ -1,5 +1,5 @@
 ~ NAME : Forum(Talk)
-~ NOTE : Parent - Id - Timestamp
+~ NOTE : Code(Unused) - Parent - Id - Timestamp
 ~ AUTH : Devine Lu Linvega
 
 @ CODE                          NAME           TEXT

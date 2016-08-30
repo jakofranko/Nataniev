@@ -3,10 +3,6 @@
 
 require 'date'
 
-# Dir["#{$nataniev_path}/vessels/*"].each do |file_name|
-#   load(file_name)
-# end
-
 load "#{$nataniev_path}/system/wildcard.rb"
 load "#{$nataniev_path}/system/program.rb"
 
@@ -63,22 +59,22 @@ module Vessel
 
   # Slow Accessors
 
-  def parent_vessel ; !@parent_vessel ? @parent_vessel = load_parent_vessel : @parent_vessel ; return @parent_vessel end
-  def present_vessels ; !@present_vessels ? @present_vessels = load_present_vessels : @present_vessels ; return @present_vessels end
-  def visible_vessels ; !@visible_vessels ? @visible_vessels = load_visible_vessels : @visible_vessels ; return @visible_vessels end
+  def parent_vessel     ; !@parent_vessel ? @parent_vessel = load_parent_vessel : @parent_vessel ; return @parent_vessel end
+  def present_vessels   ; !@present_vessels ? @present_vessels = load_present_vessels : @present_vessels ; return @present_vessels end
+  def visible_vessels   ; !@visible_vessels ? @visible_vessels = load_visible_vessels : @visible_vessels ; return @visible_vessels end
   def inventory_vessels ; !@inventory_vessels ? @inventory_vessels = load_inventory_vessels : @inventory_vessels ; return @inventory_vessels end
 
   # Setters
 
-  def set_lock ; return nil end
-  def set_hide ; return nil end
-  def set_quiet ; return nil end
+  def set_lock val = nil        ; return nil end
+  def set_hide val = nil        ; return nil end
+  def set_quiet val = nil       ; return nil end
 
-  def set_name ; return nil end
-  def set_attribute ; return nil end
-  def set_parent ; return nil end
-  def set_program ; return nil end
-  def set_notereturn ; return nil end
+  def set_name val = nil        ; return nil end
+  def set_attribute val = nil   ; return nil end
+  def set_parent val = nil      ; return nil end
+  def set_program val = nil     ; return nil end
+  def set_notereturn val = nil  ; return nil end
 
   # Loaders
 
@@ -236,7 +232,7 @@ module Vessel
 
   def look_head
 
-    return parent == id ? "~ The paradox of "+"#{print}.\n\n".capitalize : "~ "+"#{print} in #{parent_vessel.print}.\n\n".capitalize
+    return parent == id ? "~ The paradox of "+"#{print.downcase}.\n\n".capitalize : "~ "+"#{print} in #{parent_vessel.print}.\n\n".capitalize
 
   end
 

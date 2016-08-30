@@ -29,12 +29,6 @@ class Lexio
 
 	end
 
-	def use q = nil
-
-		return "TODO"
-
-	end
-
 	def list_unparented
 
 		array = []
