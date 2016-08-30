@@ -1,0 +1,12 @@
+#!/bin/env ruby
+# encoding: utf-8
+
+require_relative "nataniev.rb"
+	
+$nataniev = Nataniev.new
+
+tweet = $nataniev.make_anonym("tweet")
+
+willw = $nataniev.make_anonym("willw")
+
+puts tweet.save("thewillthewisp",willw.poem)

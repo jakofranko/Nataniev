@@ -27,7 +27,7 @@ class Nataniev
 
   end
 
-  def parade  ; return @parade  end
+  def parade  ; @parade = !@parade ? Di.new("paradise") : @parade ; return @parade  end
   def player  ; return @player  end
   def console ; return @console end
 
@@ -36,7 +36,6 @@ class Nataniev
     @id = id
 
     if @id.to_i > 0
-      @parade = Di.new("paradise")
       @player = make_vessel(@id)
     else
       @player = make_anonym(@id)
@@ -71,7 +70,7 @@ class Nataniev
 
   def make_vessel id
 
-    line = @parade.line(id.to_i)
+    line = parade.line(id.to_i)
     if line['CODE']
       instance = line['CODE'].split("-")[3].downcase
       if File.exist?("#{$nataniev_path}/vessels/#{instance}.rb")
