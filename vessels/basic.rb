@@ -35,7 +35,16 @@ class Basic
 
   def __create q = nil
 
-    return "Avail: #{$nataniev.find_id}"
+    q = q
+    q = " #{q} ".sub(" a ","").sub(" an ","").sub(" the ","").strip
+
+    _name      = q.split(" ").last
+    _attribute = q.split(" ").length > 1 ? q.split(" ").first : nil
+
+    new_vessel = Basic.new($nataniev.find_available_id,{'CODE' => "0000-#{parent.to_s.prepend("0",5)}-#{id.to_s.prepend("0",5)}-00000-#{now}", 'NAME' => _name, 'ATTR' => _attribute})
+    new_vessel.save
+
+    return "You created #{new_vessel.print}."
     
   end
 

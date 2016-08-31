@@ -3,7 +3,6 @@
 ~ AUTH : Devine Lu Linvega
 
 Paradise OS
-  - Forum vessel
   - Archv vessel
   - Atari vessel
   - Custom commands from parent vessels
@@ -35,3 +34,9 @@ Rationality project
 100R
   Setup podcast in iTunes
   Expose press events in timeline
+
+
+attr_reader :v  def v; @v; end
+attr_writer :v  def v=(value); @v=value; end
+attr_accessor :v  attr_reader :v; attr_writer :v
+attr_accessor :v, :w  attr_accessor :v; attr_accessor :w

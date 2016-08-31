@@ -13,7 +13,7 @@ module Vessel
     @id = id.to_i
     @line = line
 
-    @code = @line['CODE'] ? @line['CODE'].split("-") : "1111-00000-00000-00000-20160101010101"
+    @code = @line['CODE'] ? @line['CODE'].split("-") : "0000-00000-00000-00000-20160101010101"
 
     @permissions = @code[0]
     @is_locked    = permissions[0,1].to_i
@@ -108,7 +108,7 @@ module Vessel
       if id == @parent then next end                     # Parent
       if !line['CODE'] then next end
       if line['CODE'][5,5].to_i != parent then next end
-      if parent_vessel.is_quiet && line['CODE'][11,5].to_i != parent_vessel.owner then next end
+      if parent_vessel.is_quiet && line['CODE'][11,5].to_i != parent_vessel.owner && line['CODE'][11,5].to_i != $nataniev.player.id then next end
       array.push($nataniev.make_vessel(id))
     end
     return array
@@ -207,9 +207,9 @@ module Vessel
   def hint
 
     if !is_locked || owner == $nataniev.player.id
-      if !attribute then return "Add an adjective to #{print} by renaming|rename it." end
-      if !note then return "Add a Note to describe #{print}." end
-      if !program.isValid then return "Add a Program to interact with #{print}." end
+      if !attribute then return "? Add an adjective to #{print} by renaming it." end
+      if !note then return "? Add a Note to describe #{print}." end
+      if !program.isValid then return "? Add a Program to interact with #{print}." end
     end
     return nil
 

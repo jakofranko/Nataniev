@@ -3,7 +3,7 @@
 ~ AUTH : Devine Lu Linvega
 
 @ CODE                                NAME           ATTR           PROGRAM                                                                          NOTE
-1110-00013-00000-HAVEN-00000000000000 Void           Void                                                                                            RAND(TODO,VOODOO)
+1111-00013-00000-HAVEN-00000000000000 Void           Void                                                                                            RAND(TODO,VOODOO)
 1010-00001-00000-HAVEN-00000000000000 haven          inner                                                                                           Light snow falls through the fog and onto a meadow of red oaks. & At its center, stands the library, built of ashened bricks and tainted glass.
 1010-00001-00000-HAVEN-00000000000000 meadow         oak                                                                                             Infrequent saplings overshadow a few thorny shrubs. & A ghostly beetle rests on a hollow log.
 1010-00001-00000-HAVEN-00000000000000 library                                                                                                        An ornated entrance reveal the shelves of the main collections. & The lateral stairways connect to the mezzanine.
@@ -54,7 +54,7 @@
 1010-00000-00000-HAVEN-00000000000000 
 1010-00000-00000-HAVEN-00000000000000 
 1010-00000-00000-HAVEN-00000000000000 
-0000-00002-00000-BASIC-20160830162746 geomaitre
+0000-00086-00000-00000-20160830173323 geomaitre
 1000-00942-07433-00000-20160617085824 vibrio         tiny           ECHO become AND become a tiny multiflagellate vibrio
 1000-18051-00006-00000-20160617085824 mouse                                                                                                          The mouse bites you and you catch the plauge
 0013-01585-00001-00000-20160617085824 station        echoes                                                                                          The platform is clouded in a thick mist. Flashing blue gates stand at opposite ends to guide the train through the constant fog of the landscape. A teddy bear missing an eye can be seen lying abandoned on the station floor. The cries of lost vessels reverberate throughout the station filling it with an terrifying air. Just as it begins to become unbearable
@@ -89,7 +89,7 @@
 0000-00976-05960-00000-20160617085824 alphcatch                     ECHO activate AND warp 100                                                       Synchs your brain activity with the soies. In practice this means you will have a brain with infinite storage for the amount of time you spend logged in.
 0000-09674-02388-00000-20160617085824 blenso
 0000-09674-02388-00000-20160617085824 tinger                                                                                                         If you need some vessels with a short ID
-0000-09674-02388-00000-20160617085824 thinger
+0000-00002-00051-00000-20160830172824 punk           funky
 1000-00079-00057-00000-20160617085824 chamber        private                                                                                         A small
 1000-18051-00079-00000-20160617085824 information    confidential                                                                                    You have found yourself just over a hill to see a magnificent city. There is no batman.
 1000-18051-00067-00000-20160617085824 heart                                                                                                          This is private residence. Stuff is sent here by the automated constructors.

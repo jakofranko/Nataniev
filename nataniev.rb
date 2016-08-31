@@ -95,7 +95,7 @@ class Nataniev
 
   end
 
-  def find_id
+  def find_available_id
 
     id = 0
     while id < 30000
