@@ -8,6 +8,9 @@ Paradise OS
   - Clean programs with ECHO AND
   - Tutorial
   - Landing world
+  - Russian lessons
+  - Traffic logger
+  - Blindfolk
   
 Lietal
 Traumae
@@ -19,16 +22,12 @@ Analytics
   - Fix Monitor
 Oscean
   - Implement Talk/Forum
-Paradise
-Blindfolk
-  - Rebuilt Blindfolk with new architecture(FLAT)
 Rationality project
   - Complete sorting of canon
 
 100R
   Setup podcast in iTunes
   Expose press events in timeline
-
 
 attr_reader :v  def v; @v; end
 attr_writer :v  def v=(value); @v=value; end

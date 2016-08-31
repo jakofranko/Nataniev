@@ -9,6 +9,12 @@ class Maeve
 
 	def __look q = nil
 
+		return "#{print.capitalize} is blind."
+
+	end
+
+	def auto q = nil # TODO
+
 		sight = {}
 		id = 0
 		while id < $nataniev.parade.to_a.length
@@ -16,16 +22,14 @@ class Maeve
 			if !sight[vessel.rating] then sight[vessel.rating] = [] end
 			sight[vessel.rating].push(vessel)
 			id += 1
-			if vessel.rating < 2 then puts "#{vessel.id.to_s.prepend("0",5)} #{vessel.print.append(" ",30)} - #{vessel.rating}" ; vessel.destroy end
+			if vessel.rating < 2 then 
+				puts "#{vessel.id.to_s.prepend("0",5)} #{vessel.print.append(" ",30)} - #{vessel.rating}\n" 
+				vessel.destroy 
+				break
+			end
 		end
 
 		return "WHHAAAd."
-
-	end
-
-	def auto q = nil # TODO
-
-		puts "?"
 		
 	end
 

@@ -7,7 +7,13 @@ class Estat
 
 	def display
 
-		return "? #{print.capitalize}, displays #{$nataniev.parade.to_a.length}.\n"
+		count = 0
+		$nataniev.parade.to_a.each do |v|
+			if !v['CODE'] then next end
+			count += 1
+		end
+
+		return "? #{print.capitalize}, displays #{count}.\n"
 
 	end
 
