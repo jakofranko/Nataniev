@@ -17,6 +17,8 @@ class Basic
   def set_program   val ; if is_locked then return false end ; @program = val ; save ;   return true end
   def set_note      val ; if is_locked then return false end ; @note = val ; save ;      return true end
 
+  def destroy ; @isDestroyed = true ; save ; end
+
   # System
 
   def __connect q = nil

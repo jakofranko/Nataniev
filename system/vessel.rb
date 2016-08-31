@@ -24,7 +24,7 @@ module Vessel
     @parent = @code[1].to_i
     @owner  = @code[2].to_i
     @instance = @code[3].to_s
-    @timestamp = @code[4].to_i
+    @timestamp = Timestamp.new(@code[4])
 
     @name = @line['NAME'] ? @line['NAME'] : "voidspace"
     @attribute = @line['ATTR'] ? @line['ATTR'] : ""
@@ -63,6 +63,7 @@ module Vessel
   def present_vessels   ; !@present_vessels ? @present_vessels = load_present_vessels : @present_vessels ; return @present_vessels end
   def visible_vessels   ; !@visible_vessels ? @visible_vessels = load_visible_vessels : @visible_vessels ; return @visible_vessels end
   def inventory_vessels ; !@inventory_vessels ? @inventory_vessels = load_inventory_vessels : @inventory_vessels ; return @inventory_vessels end
+  def owned_vessels     ; !@owned_vessels ? @owned_vessels = load_owned_vessels : @owned_vessels ; return @owned_vessels end
 
   # Setters
 
@@ -130,6 +131,21 @@ module Vessel
 
   end
 
+  def load_owned_vessels
+
+    array = []
+    id = -1
+    $nataniev.parade.to_a.each do |line|
+      id += 1 ; 
+      if id == @id then next end
+      if !line['CODE'] then next end
+      if line['CODE'][11,5].to_i != @id then next end
+      array.push($nataniev.make_vessel(id))
+    end
+    return array
+
+  end
+
   # Targetting
 
   def find_present_vessel name
@@ -170,13 +186,13 @@ module Vessel
 
   def destroy
 
-    @isDestroyed = true
+    # Cannot destroy vessel module
 
   end
 
   def use q = nil
 
-    if !program.isValid then return "Nothing happens." end
+    if !program.is_valid then return "Nothing happens." end
     return program.run
 
   end
@@ -185,7 +201,7 @@ module Vessel
 
   def print
 
-    _article   = program.isValid || note || is_frozen ? "the " : "a "
+    _article   = program.is_valid || note || is_frozen ? "the " : "a "
     _article   = owner == ($player && $player.id) ? "your " : _article
     _attribute = attribute.to_s != "" ? "#{attribute} " : ""
     _name      = name
@@ -198,7 +214,7 @@ module Vessel
 
   def display
 
-    rune = program.isValid ? "=" : "-"
+    rune = program.is_valid ? "=" : "-"
     echo = program.echo
     return rune+" "+print.capitalize+(echo.to_s != "" ? ", "+echo : "" )+"\n"
 
@@ -209,7 +225,7 @@ module Vessel
     if !is_locked || owner == $nataniev.player.id
       if !attribute then return "? Add an adjective to #{print} by renaming it." end
       if !note then return "? Add a Note to describe #{print}." end
-      if !program.isValid then return "? Add a Program to interact with #{print}." end
+      if !program.is_valid then return "? Add a Program to interact with #{print}." end
     end
     return nil
 
@@ -223,7 +239,7 @@ module Vessel
 
   def save
     
-    @timestamp = now
+    @timestamp = Timestamp.new
     $nataniev.parade.save(id,render)
 
   end
@@ -289,6 +305,26 @@ module Vessel
     end
     
     return cmds
+
+  end
+
+  def rating
+
+    v = 0
+
+    if name.length > 3 then v += 1 end
+    if attribute.to_s.length > 3 then v += 1 end
+    if program.is_valid then v += 1 end
+    if note.to_s.length > 30 then v += 1 end
+    if timestamp.elapsed < 80000 then v += 1 end
+    if is_locked then v += 1 end
+    if is_quiet then v += 1 end
+    if is_hidden then v += 1 end
+    if is_frozen then v += 1 end
+    if inventory_vessels.length > 2 then v += 1 end
+    if owned_vessels.length > 5 then v += 1 end
+
+    return v
 
   end
 

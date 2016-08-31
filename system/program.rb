@@ -48,7 +48,7 @@ class Program
 
 	end
 
-	def isValid
+	def is_valid
 
 		return @main != "" ? true : false
 		

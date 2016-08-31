@@ -3,13 +3,12 @@
 ~ AUTH : Devine Lu Linvega
 
 Paradise OS
-  - Archv vessel
   - Atari vessel
-  - Custom commands from parent vessels
-  - Setters should only be in basic, and return true/false if they succeed
-
-
-
+  - Implement variables in call command
+  - Clean programs with ECHO AND
+  - Tutorial
+  - Landing world
+  
 Lietal
 Traumae
   - Find database drop
@@ -21,11 +20,6 @@ Analytics
 Oscean
   - Implement Talk/Forum
 Paradise
-  - Implement variables in call command
-  - Clean programs with ECHO AND
-  - Tutorial
-  - Landing world
-  - Talk/Forum tools
 Blindfolk
   - Rebuilt Blindfolk with new architecture(FLAT)
 Rationality project
