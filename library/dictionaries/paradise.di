@@ -452,7 +452,7 @@
 0000-00967-01479-00000-20160617085824 terminal       local          ECHO access the AND craft ciellian leaf:warp to 7928:You recall a fond memory.:110 200 150
 0100-02041-06785-00000-20160617085824 pier           ancient                                                                                         The pier
 
-0000-00449-00213-00000-20160617085824 arcanum                                                                                                        Three axioms stand before you
+
 0100-02571-02627-00000-20160617085824 near
 1000-00406-00411-00000-20160617085824 doiseteedois                                                                                                    (pt br) isso e
 0100-02571-02641-00000-20160617085824 away
@@ -832,7 +832,7 @@
 1000-00823-01479-00000-20160617085824 tree           crystalline    ECHO pick a leaf from the AND create crystal leaf
 0000-00824-02388-00000-20160617085824 child          cobold
 0000-00780-02388-00000-20160617085824 drink          take           say me takes a drink.
-0000-08040-01479-00000-20160617085824 eye            shining        ECHO touch the AND create owl charm
+
 0000-00604-00213-00000-20160617085824 wing           east           ECHO walk towards AND enter east wing                                            2F : East Wing
 1000-00942-15995-00000-20160617085824 litdoc.warpref                                                                                                 Warp 12 community board. Warp 13 library.
 0010-03143-02388-00000-20160617085824 wildcards      multiple                                                                                        It is possible to use multiple wildcards at once
@@ -1525,7 +1525,7 @@
 1000-00942-09166-00000-20160617085824 cheese                                                                                                         Hyeh heh heh
 0010-00942-00001-00000-20160617085824 page           previous       ECHO return to AND leave                                                         This should take you back to the previous page. To get back
 0000-01494-02388-00000-20160617085824 heat           orb                                                                                             a cheap but useful magical object capable of warming up a 400 sq ft space with no input of energy
-0000-01427-10418-00000-20160617085824 lab                                                                                                            The room is empty except for an old wooden book case covered in dust and rust the room is illuminated by the vortex fields shining a bright turquoise glow through the window at the far end of the room
+
 0000-01494-02388-00000-20160617085824 cabinet        balsa                                                                                           the cabinet contains smore supplies: chocolate
 
 1000-00894-02388-00000-20160617085824 vessel
@@ -1700,7 +1700,7 @@
 0001-01644-02388-00000-20160617085824 places         important                                                                                       If you find yourself in nullspace
 0000-00575-02388-00000-20160617085824 chamber        revitalization                                                                                  The resuscitation of the dead or dying is a resource intensive process. .b You see a smiling technician gesturing to a valkr revit pod here
 1000-01663-00742-00000-20160617085824 undergrowth                                                                                                    To where it bent in the undergrowth
-0000-01650-10205-00000-20160617085824 giving
+
 0000-01677-07400-00000-20160617085824 sphere                                                                                                         the creator blew into the sphere blues and grays and greens
 1100-00966-00003-00000-20160617085824 four                                                                                                           four
 1000-00468-07433-00000-20160617085824 tunnel         smoking                                                                                         this place belongs to four who is new
@@ -1969,7 +1969,7 @@
 0000-00804-10205-00000-20160617085824 lost           paradise                                                                                        The mind is its own place
 0000-01450-01407-00000-20160617085824 embrace                                                                                                        The arms of the human spirit wrap around you snugly. You feel warm
 0000-00804-10205-00000-20160617085824 occultphilosophica de                                                                                              The gate of Acheron is in this book. It speaks stones
-0000-01450-01407-00000-20160617085824 clouds                                                                                                         Entering the clouds
+
 0000-01960-02388-00000-20160617085824 simulator      virtual        say me becomes a cartoon vessel.randomby(12314).name squashed by vessel.randomby(1966).name say me becomes a cartoon random vessel squashd by a
 0000-00804-10205-00000-20160617085824 scie           universe                                                                                        How do we discover the individual laws of Physics
 1000-01769-01677-00000-20160617085824 way            milky                                                                                           A wondrous galaxy.
@@ -2252,7 +2252,7 @@
 0000-02207-05960-00000-20160617085824 card           second                                                                                          The second card depicts a circle with a dot above it.
 0000-02245-05960-00000-20160617085824 card           third                                                                                           The third card reads to
 0000-02250-02246-00000-20160617085824 barman
-0000-01734-02246-00000-20160617085824 head           old
+
 0000-01734-02246-00000-20160617085824 temper         wenches
 0000-01734-02246-00000-20160617085824 tavern         nondescript
 0000-02227-02388-00000-20160617085824 stream         singing                                                                                         .b You see an oil sheen on chuckling whitewater here
@@ -2272,7 +2272,7 @@
 0000-02260-02246-00000-20160617085824 bottle         broken
 0000-02265-02246-00000-20160617085824 liquid         small
 0000-02024-05960-00000-20160617085824 path                          ECHO proceed on AND warp 2267                                                    You proceed further into the jungle
-0000-02255-02267-00000-20160617085824 distance       min
+
 0000-02255-02267-00000-20160617085824 moor           isolated
 
 0000-02248-02246-00000-20160617085824 bartender      old
@@ -2819,7 +2819,7 @@
 1000-00271-02727-00000-20160617085824 sourcefed                                                                                                      Man does darrell love this anime
 
 0000-02811-02388-00000-20160617085824 continued      ethics                                                                                          Before we continue
-0000-02814-02388-00000-20160617085824 it             certify                                                                                         Yes
+
 1000-05569-02799-00000-20160617085824 pond                                                                                                           The pond had a strange reflexion on it almost as if there was a room inside. You could see the reflexion of a mysterious white wolf along the edge. As you walked into it
 
 0000-02815-02388-00000-20160617085824 onward         continue       IF has a catnip mousie THEN                                                      Congratulations
@@ -2976,7 +2976,7 @@
 0000-00344-02962-00000-20160617085824 donatello      chapel                                                                                          You see ceiling
 0000-07286-02388-00000-20160617085824 slab           uncut          ECHO erect AND warp 1783
 
-0000-02969-02962-00000-20160617085824 ceiling
+
 
 
 0000-02943-02388-00000-20160617085824 duck           locked         IF has a red duck THEN                                                           Good job. Quack.
@@ -3039,12 +3039,12 @@
 0000-10980-02496-00000-20160617085824 tree           japanese                                                                                        A beautiful tree with red leaves.
 0000-03031-02388-00000-20160617085824 cushions       rocky          IF has kibipub THEN                                                              What have past Hopefuls dropped here
 
-0000-02986-03033-00000-20160617085824 ethics
+
 
 
 
 0000-03036-03033-00000-20160617085824 arbitrariness
-0000-03036-03033-00000-20160617085824 sexuality                                                                                                      You see fear
+
 
 0000-03040-03033-00000-20160617085824 experimentation
 0010-02996-02388-00000-20160617085824 usage          roleplaying                                                                                     Would you like to use a whatever
@@ -3393,7 +3393,7 @@
 0100-03331-02388-00000-20160617085824 kelsi          attack         IF has ghost THEN                                                                Only one of the destructive blasts seems to actually destroy anything. You point out this clone to Kixobi
 1000-03387-05960-00000-20160617085824 gate           tannhauser
 
-0000-02869-02910-00000-20160617085824 to             right
+
 0000-02124-02388-00000-20160617085824 digging        on                                                                                              Digging is the practice of creating worlds within worlds
 
 1000-00942-02009-00000-20160617085824 konpaku        youmu                                                                                           Half human half phantom gardener girl
@@ -4168,7 +4168,7 @@
 0000-04160-02388-00000-20160617085824 tip            whitecap                                                                                        An embattled seaship fights valiantly against the soaring waves. A call comes out for you to climb aboard.
 1000-00271-00003-00000-20160617085824 fireball
 0000-04160-02388-00000-20160617085824 foam           spray
-0000-04163-02388-00000-20160617085824 foam                          ECHO dip your hand into AND create a bubble of foam
+
 0000-04158-02388-00000-20160617085824 mill           grist          IF has balipip THEN                                                              The grist mill begins a utopian timberland
 0100-04179-02388-00000-20160617085824 two            beanpole       IF has mystic pea THEN create a vessel.randomby(2388).note vessel.randomby(2388).name
 1000-00942-02499-00000-20160617085824 puppy          curious        ECHO pet AND                                                                     The puppy wants to check out all the experiments
@@ -4387,7 +4387,7 @@
 
 1000-04382-04278-00000-20160617085824 void                          warp 4098
 1000-04382-04381-00000-20160617085824 here
-0000-02869-02910-00000-20160617085824 horizon        and
+
 
 0000-06785-06785-00000-20160617085824 man            hooded                                                                                          The hooded figure raises its head to reveal its face. Underneath the hood
 1000-00013-04384-00000-20160617085824 castle                                                                                                         You see a red door in front of you. Farther down the hall there is a green door and a blue door.
@@ -5303,7 +5303,7 @@
 0000-05292-02388-00000-20160617085824 caldera        verdant                                                                                         The top of the volcano has been overgrown with plantlife
 0000-05292-02388-00000-20160617085824 lavflows       old                                                                                             .b You see a carbonized orchard and a fiery chasm here
 
-0000-05276-05276-00000-20160617085824 warp           ihr            IF is 5276 THEN ECHO travel using the AND warp 8
+
 0000-05297-02388-00000-20160617085824 orchard        carbonized                                                                                      The fruit trees here are no longer living
 0000-05300-02388-00000-20160617085824 skulls         littered                                                                                        Toadstools grow on the inside of the skulls. The scent of mushroom and smoke fills the orchard.
 0000-05294-02388-00000-20160617085824 bunker         underground
