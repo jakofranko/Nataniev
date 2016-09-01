@@ -3,6 +3,7 @@
 ~ AUTH : Devine Lu Linvega
 
 @ DATE     CODE PICT TERM                 TASK                 NAME                  TEXT
+2016 08 31 ! 29   86 Sailing              Photography
 2016 08 30 - 34      Markle               Development
 2016 08 29 - 24      Polygonoscopy        Modeling
 2016 08 28 - 38      The will the wisp    Migration
@@ -15,13 +16,13 @@
 2016 08 21 ! 25   75 Nervous              Modeling             Exhibit C
 2016 08 20 - 35      Blindfolk            Linguistics
 2016 08 19 - 00
-2016 08 18 - 00
+2016 08 18 - 29   90 Sailing              Photography
 2016 08 17 - 38      Oscean               Development
 2016 08 16 - 00
 2016 08 15 - 00
 2016 08 14 - 00
 2016 08 13 - 00
-2016 08 12 - 00
+2016 08 12 - 29   91 Sailing              Photography
 2016 08 11 - 00
 2016 08 10 - 00      America              Travel               San Francisco
 2016 08 09 - 35      Oscean               Tools
