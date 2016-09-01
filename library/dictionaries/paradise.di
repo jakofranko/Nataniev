@@ -54,7 +54,7 @@
 1010-00000-00000-HAVEN-00000000000000 
 1010-00000-00000-HAVEN-00000000000000 
 1010-00000-00000-HAVEN-00000000000000 
-
+0000-00002-00000-00000-20160831214830 geomaitre
 1000-00942-07433-00000-20160617085824 vibrio         tiny           ECHO become AND become a tiny multiflagellate vibrio
 1000-18051-00006-00000-20160617085824 mouse                                                                                                          The mouse bites you and you catch the plauge
 0013-01585-00001-00000-20160617085824 station        echoes                                                                                          The platform is clouded in a thick mist. Flashing blue gates stand at opposite ends to guide the train through the constant fog of the landscape. A teddy bear missing an eye can be seen lying abandoned on the station floor. The cries of lost vessels reverberate throughout the station filling it with an terrifying air. Just as it begins to become unbearable
@@ -89,7 +89,7 @@
 0000-00976-05960-00000-20160617085824 alphcatch                     ECHO activate AND warp 100                                                       Synchs your brain activity with the soies. In practice this means you will have a brain with infinite storage for the amount of time you spend logged in.
 
 0000-09674-02388-00000-20160617085824 tinger                                                                                                         If you need some vessels with a short ID
-0000-00002-00051-00000-20160830172824 punk           funky
+
 1000-00079-00057-00000-20160617085824 chamber        private                                                                                         A small
 1000-18051-00079-00000-20160617085824 information    confidential                                                                                    You have found yourself just over a hill to see a magnificent city. There is no batman.
 1000-18051-00067-00000-20160617085824 heart                                                                                                          This is private residence. Stuff is sent here by the automated constructors.

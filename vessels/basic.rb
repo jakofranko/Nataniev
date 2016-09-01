@@ -80,9 +80,10 @@ class Basic
     
   end
 
-  def __rename q = nil
+  def __rename q = nil # TODO: Transform-catepillar, implement qualifier as make-pretty?
 
-    return "TODO"
+    name = q.split(" ").last
+    return parent_vessel.set_name(name) ? "You renamed the #{parent_vessel.name} to the #{name}." : "You cannot rename the #{parent_vessel.name}."
     
   end
 
@@ -97,17 +98,18 @@ class Basic
     
   end
 
-  def __random q = nil
-
-    return "TODO"
-    
-  end
-
   # Inventory
 
   def __inventory q = nil
 
-    return "TODO"
+    if inventory_vessels.length == 0 then return error_empty end
+
+    text = ""
+    inventory_vessels.each do |vessel|    
+      text += "- #{vessel.print}"
+    end
+
+    return text
     
   end
 
@@ -199,7 +201,11 @@ class Basic
 
   def __destroy q = nil
 
-    return "TODO"
+    v = find_present_vessel(q) ; if !v then return error_target(q) end
+
+    if v.owner != id then return error_owner end
+
+    return v.destroy ? "You destroyed the #{v.name}." : "You cannot destroy the #{v.name}."
 
   end
 
