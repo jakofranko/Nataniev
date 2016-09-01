@@ -54,7 +54,7 @@
 1010-00000-00000-HAVEN-00000000000000 
 1010-00000-00000-HAVEN-00000000000000 
 1010-00000-00000-HAVEN-00000000000000 
-0000-00001-00000-00000-20160830200109 geomaitre
+
 1000-00942-07433-00000-20160617085824 vibrio         tiny           ECHO become AND become a tiny multiflagellate vibrio
 1000-18051-00006-00000-20160617085824 mouse                                                                                                          The mouse bites you and you catch the plauge
 0013-01585-00001-00000-20160617085824 station        echoes                                                                                          The platform is clouded in a thick mist. Flashing blue gates stand at opposite ends to guide the train through the constant fog of the landscape. A teddy bear missing an eye can be seen lying abandoned on the station floor. The cries of lost vessels reverberate throughout the station filling it with an terrifying air. Just as it begins to become unbearable
@@ -7713,7 +7713,7 @@
 1000-07693-07678-00000-20160617085824 mrg            ht                                                                                              You awake on a rubbery floor with a sticky feel
 1000-07431-00069-00000-20160617085824 monster                                                                                                        However
 1000-07715-07703-00000-20160617085824 horse
-0000-09303-09286-00000-20160617085824 explore                       ECHO just AND enter tuna
+
 0000-13162-07433-00000-20160617085824 rock           ashen          ECHO move AND say me tries to move the ashen rock, to no avail                   Look at that neat little ash covered rock. It seems to be covering something
 0000-07454-02388-00000-20160617085824 vacuum         external       create some mud
 1000-00011-00003-00000-20160617085824 teapot                                                                                                         Lacquered blue.
@@ -10185,7 +10185,7 @@
 0000-10174-02388-00000-20160617085824 roof           magnetic       null
 0000-09598-02388-00000-20160617085824 disks          huge                                                                                            .b You see an observation platform set into the mushy wall here
 0000-10174-02388-00000-20160617085824 device         strange        null                                                                             The device consists of a gravitonometric oscillator
-0000-09175-05960-00000-20160617085824 flower                        ECHO pick AND create a white anemone flower                                      A white anemone
+
 0000-10111-02388-00000-20160617085824 mogul          mandible                                                                                        .b You see a shiny black top hat on a mandible mogul here.b You see a fine suit on a mandible mogul here
 0000-10174-02388-00000-20160617085824 solution       pool                                                                                            The solution seems to be alchemical in nature
 0000-10174-10180-00000-20160617085824 spoon          greasy
@@ -12901,7 +12901,7 @@
 1000-12893-12725-00000-20160617085824 impossibility
 1000-00942-02077-00000-20160617085824 diary                                                                                                          All that is written is dinosaurs on every day in april.
 1000-00004-00003-00000-20160617085824 vessel
-0000-12892-12725-00000-20160617085824 atmosphere                                                                                                     An atmosphere.
+
 0000-11221-12725-00000-20160617085824 heaven                                                                                                         Youre in a heaven. You see angels and jesus. You can also see a god.
 0000-12898-12725-00000-20160617085824 angels                                                                                                         Angels. On the angels are wings.
 0000-11368-02388-00000-20160617085824 mine           copper                                                                                          The thick stony walls are full of copper ore. A pile of picks rests against the walls and a vaulted tunnel is recessed into them.
@@ -13195,7 +13195,7 @@
 1000-15633-13141-00000-20160617085824 gates          massive                                                                                         Gates 15 feet tall and 12 feet across. They are covered with runes of some long forgotten language.
 1000-12122-12725-00000-20160617085824 returnal                      ECHO enter AND warp current vessel id                                            No.
 0000-11578-07433-00000-20160617085824 mushroom       metal          ECHO touch AND become a metal statue of a mushroom                               Something about this mushroom does not seem right. It seems to pulse with strange energies.
-0000-13187-12725-00000-20160617085824 revealance                    ECHO enter AND warp 13195                                                        No.
+
 1000-13047-13568-00000-20160617085824 hut            small                                                                                           The hut is warm. A fire blazes in the corner
 0000-15511-07433-00000-20160617085824 bedroom                       IF has homunculus THEN                                                           A forest grows in the middle of the room
 0000-13197-02388-00000-20160617085824 machine        earthquake     ECHO press the button on AND say me feels vessel.parent.name shaken violently by the earthquake machine
@@ -13698,7 +13698,7 @@
 0000-13687-02388-00000-20160617085824 lightstones                                                                                                    a mineralized stone passed through the xylem of the plant
 0000-13687-02388-00000-20160617085824 carpetmoss                                                                                                     a fastgrowing
 0000-13692-02388-00000-20160617085824 colony         mite                                                                                            .b You see a mayormite migrating to yosemite park here.b You see a mistermite milling in a mitemill here.b You see a majormite mitigate at a mitemosque here
-0000-13693-02388-00000-20160617085824 mayormite
+
 0000-13693-02388-00000-20160617085824 mitemuseum                                                                                                     .b You see a mitersaw and a mitre here.b You see a display on mitosis over a mitochondrion here
 
 
@@ -15190,7 +15190,7 @@
 1000-01834-00003-00000-20160617085824 teapot
 1000-15185-00003-00000-20160617085824 dog            nice
 0000-05308-02388-00000-20160617085824 sphere         strange        ECHO retrieve AND warp 15102
-0000-15187-15107-00000-20160617085824 even           i                                                                                               I don t even
+
 1000-15189-15178-00000-20160617085824 model
 1000-15188-15188-00000-20160617085824 death
 1000-00271-03237-00000-20160617085824 hairbrush
@@ -16901,7 +16901,7 @@
 1000-00942-00003-00000-20160617085824 teapot
 0000-09676-02388-00000-20160617085824 octothorpe                                                                                                     eight fields of edible and useful undersea crops surround the palace. each field contains a house or two with a resident cephalopod farm family. together they make up the hamlet that supports the operations of the palace.
 1000-16846-16793-00000-20160617085824 pond           small                                                                                           A tiny stream flows into this pond
-0000-16846-16793-00000-20160617085824 house                                                                                                          The walls are painted wood
+
 1000-05786-16877-00000-20160617085824 grimoire       grim                                                                                            This ancient tome is a catalog of the zoologically dubious.
 1000-16967-00003-00000-20160617085824 bffl                                                                                                           Th bffl ds nt xst
 0000-16846-16793-00000-20160617085824 gnome          garden                                                                                          Faded
@@ -18123,7 +18123,7 @@
 1000-10569-06785-00000-20160617085824 cloak          tattered
 0000-18118-05960-00000-20160617085824 station        orbital                                                                                         you are floating over a teleport platform in the center module of a station in orbit around dinaisth. there is no artificial gravity
 1010-18118-05960-00000-20160617085824 unit           sensory                                                                                         this module has several large screens lining its walls. waterfalls of electromagnetic spectra flow over them
-0000-18119-10205-00000-20160617085824 andromedae                                                                                                     andromedae
+
 0000-12017-02388-00000-20160617085824 philosophy     technological  ECHO read about AND warp 18097
 
 0000-16045-02388-00000-20160617085824 hero           juke                                                                                            We Will Rock You
