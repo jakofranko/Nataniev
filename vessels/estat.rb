@@ -13,7 +13,12 @@ class Estat
 			count += 1
 		end
 
-		return "? #{print.capitalize}, displays #{count}.\n"
+		perc = count/20000.to_f
+		perc *= 1000
+		perc = perc.to_i.to_f
+		perc /= 10
+
+		return "? #{print.capitalize}, displays #{(perc)}%\n"
 
 	end
 

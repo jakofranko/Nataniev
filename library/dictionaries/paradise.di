@@ -5,12 +5,12 @@
 @ CODE                                NAME           ATTR           PROGRAM                                                                          NOTE
 1111-00013-00000-HAVEN-00000000000000 Void           Void                                                                                            RAND(TODO,VOODOO)
 1010-00001-00000-HAVEN-00000000000000 haven          inner                                                                                           Light snow falls through the fog and onto a meadow of red oaks. & At its center, stands the library, built of ashened bricks and tainted glass.
-1010-00001-00000-HAVEN-00000000000000 meadow         oak                                                                                             Infrequent saplings overshadow a few thorny shrubs. & A ghostly beetle rests on a hollow log.
+1010-00001-00000-HAVEN-00000000000000 meadow         unfathomable                                                                                    Your senses leave you, and exchange some thoughts over a cup of tea. & The thoughts express their concerns about being tossed around the dangerously hot liquid.
 1010-00001-00000-HAVEN-00000000000000 library                                                                                                        An ornated entrance reveal the shelves of the main collections. & The lateral stairways connect to the mezzanine.
 1010-00001-00000-ESTAT-00000000000000 signpost       estate
 1010-00003-00000-HAVEN-00000000000000 collections    main                                                                                            Arched libraries circle around the the somber room. & One of the shelves host the White Tome of Portals. & Another, the Cyan Manual of Programing. & Yet another, the Red Book of Ghosts.
 1010-00003-00000-HAVEN-00000000000000 mezzanine      upstairs                                                                                        The brass and marble pathways climb above and around the lower floors of library. & A hole under one of the many staircases reveals a small office.
-1010-00003-00000-HAVEN-00000000000000 hourglass      tainted        ECHO displays TIME::
+1010-00003-00000-HAVEN-00000000000000 painting       hourglass      ECHO displays TIME::
 1010-00005-00000-HAVEN-00000000000000 tome           white
 1010-00005-00000-HAVEN-00000000000000 manual         cyan
 1010-00005-00000-HAVEN-00000000000000 book           red
@@ -24,8 +24,10 @@
 1010-00015-00000-LEXIO-00000000000000 lexicon        cyan                                                                                            
 1010-00015-00000-HORAI-00000000000000 logbook        red           
 1010-00014-00000-HAVEN-00000000000000 wallclock      old            ECHO displays TIME::
-1010-00002-00000-FORUM-00000000000000 log            hollow
-1010-00002-00000-WILLW-00000000000000 beetle         ghostly
+1010-00051-00000-FORUM-00000000000000 log            hollow
+1010-00051-00000-WILLW-00000000000000 beetle         ghostly
+1010-00002-00000-HAVEN-00000000000000 room           dying                                                                                           A typical living room that will soon have passed away.
+1010-00000-00000-HAVEN-00000000000000 holder                                                                                                         Amongst the thorny shrubs, on a circular clothed table, lies a most incomprehensible arrangement of dishware. & Each teacup rests on a common porcelain plate, which in turn, sits on top of that same teacup. & Picking up the plate, to lift up the cup, results in picking up the cup and lifting up the plate.
 1010-00000-00000-HAVEN-00000000000000 
 1010-00000-00000-HAVEN-00000000000000 
 1010-00000-00000-HAVEN-00000000000000 
@@ -52,9 +54,7 @@
 1010-00000-00000-HAVEN-00000000000000 
 1010-00000-00000-HAVEN-00000000000000 
 1010-00000-00000-HAVEN-00000000000000 
-1010-00000-00000-HAVEN-00000000000000 
-1010-00000-00000-HAVEN-00000000000000 
-0000-00002-00000-00000-20160831214830 geomaitre
+0000-00002-00000-00000-20160901103220 geomaitre
 1000-00942-07433-00000-20160617085824 vibrio         tiny           ECHO become AND become a tiny multiflagellate vibrio
 1000-18051-00006-00000-20160617085824 mouse                                                                                                          The mouse bites you and you catch the plauge
 0013-01585-00001-00000-20160617085824 station        echoes                                                                                          The platform is clouded in a thick mist. Flashing blue gates stand at opposite ends to guide the train through the constant fog of the landscape. A teddy bear missing an eye can be seen lying abandoned on the station floor. The cries of lost vessels reverberate throughout the station filling it with an terrifying air. Just as it begins to become unbearable
