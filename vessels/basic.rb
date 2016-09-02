@@ -52,7 +52,11 @@ class Basic
 
   def __become q = nil
 
-    return "TODO"
+    v = find_visible_vessel(q) ; if !v then return error_target(q) end
+
+    if v.is_locked then return error_locked(q) end
+
+    return "::#{v.id}"
     
   end
 

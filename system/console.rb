@@ -18,17 +18,19 @@ class Console
 
   def validate query = nil
 
+    answer = nil
+
     if !$nataniev.player
       $nataniev.set_player(query.split(" ").first)
-      puts "\n\n"
-      puts $nataniev.answer("connect").console_markup
-      puts ""
+      answer = $nataniev.answer("connect").console_markup
     else
       $nataniev.refresh
-      puts "\n\n"
-      puts $nataniev.answer("#{query}").console_markup
-      puts ""
+      answer = $nataniev.answer("#{query}").console_markup
     end
+
+    puts "\n\n"
+    puts answer
+    puts ""
 
     @last = query.length > 1 ? query : @last
     @text = ""

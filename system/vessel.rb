@@ -328,6 +328,24 @@ module Vessel
 
   end
 
+  # Help
+
+  def __help q = nil
+
+    text = "Help for the #{self.class.name} vessel:"
+
+    lines = File.read("#{$nataniev_path}/vessels/#{self.class.name.downcase}.rb", :encoding => 'UTF-8').split("\n")
+
+    content = []
+    lines.each do |line|
+      if line.strip[0,6] != "def __" then next end
+      puts line
+    end
+
+    return text
+
+  end
+
   # Errors
 
   def error_command_invalid command ; return "#{command} is not a valid command." end
