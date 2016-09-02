@@ -3,6 +3,7 @@
 ~ AUTH : Devine Lu Linvega
 
 Paradise OS
+  - New vessels, previous ID should be emptied. Maeve should move vessels out of paradoxes
   - Atari vessel
   - Implement variables in call command
   - Tutorial
@@ -13,13 +14,12 @@ Paradise OS
   - Ghost vessel
   - Analytics
   - Document on XXIIVV
+  - Instance Traumae(Lietal)
+    - Find database drop
+    - Fix translator
+    - Implement documentation and add to XXIIVV
+    - Dictionaery page
   
-Lietal
-Traumae
-  - Find database drop
-  - Fix translator
-  - Implement documentation and add to XXIIVV
-  - Dictionaery page
 Analytics
   - Fix Monitor
 Oscean

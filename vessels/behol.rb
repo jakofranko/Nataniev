@@ -6,14 +6,9 @@ class Behol
   include Vessel
 
   def print ; return "the Beholder" end
+  def connect q = nil ; return "#{print.capitalize} is online." end
 
   def __look q = nil ; return "#{print.capitalize} is blind." end
-
-  def __connect q = nil
-
-    return "#{print.capitalize} is online."
-
-  end
 
   def __http q = nil
 

@@ -72,7 +72,7 @@ class Nataniev
 
   def make_vessel id
 
-    line = parade.line(id.to_i)
+    line = parade.line(id.to_i) ; if !line then return nil end
     if line['CODE']
       instance = line['CODE'].split("-")[3].downcase
       if File.exist?("#{$nataniev_path}/vessels/#{instance}.rb")

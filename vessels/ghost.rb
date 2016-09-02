@@ -3,32 +3,26 @@
 
 class Ghost
 
-	include Vessel
+  include Vessel
 
-	def name
+  def name
 
-		return "ghost"
-		
-	end
+    return "ghost"
+    
+  end
 
-	def __connect q = nil
+  def __look q = 3
 
-		return "#{print.capitalize} is awake."
+    @parent = q
 
-	end
+    return "#{look_head}#{look_note}#{look_visibles}#{look_hint}"
 
-	def __look q = 3
+  end
 
-		@parent = q
+  def __enter q = nil
 
-		return "#{look_head}#{look_note}#{look_visibles}#{look_hint}"
+    return "HEY"
 
-	end
-
-	def __enter q = nil
-
-		return "HEY"
-
-	end
-	
+  end
+  
 end

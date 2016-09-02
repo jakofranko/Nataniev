@@ -5,32 +5,36 @@ class Maeve
 
 	include Vessel
 
-	def __connect q = nil ; return "#{print.capitalize} is now active." end
+	def print ; return "Maeve" end
 
 	def __look q = nil
 
-		return "#{print.capitalize} is blind."
+		return "#{print.capitalize} sees #{sight.first.length} to move, #{sight.last.length} to destroy."
 
 	end
 
 	def auto q = nil # TODO
 
-		sight = {}
-		id = 0
+		return "Nothing to do."
+
+	end
+
+	def sight
+
+		sight_destroy = []
+		sight_move = []
+
+		id = 50
 		while id < $nataniev.parade.to_a.length
-			vessel = $nataniev.make_vessel(id)
-			if !sight[vessel.rating] then sight[vessel.rating] = [] end
-			sight[vessel.rating].push(vessel)
 			id += 1
-			if vessel.rating < 2 then 
-				puts "#{vessel.id.to_s.prepend("0",5)} #{vessel.print.append(" ",30)} - #{vessel.rating}\n" 
-				vessel.destroy 
-				break
-			end
+			vessel = $nataniev.make_vessel(id)
+			if vessel.class.name != "Basic" then next end
+			if vessel.rating < 3 then sight_destroy.push(vessel) end
+			if !vessel.parent_vessel then sight_move.push(vessel) end
 		end
 
-		return "WHHAAAd."
-		
+		return sight_move, sight_destroy
+
 	end
 
 end

@@ -321,8 +321,7 @@ module Vessel
     if is_quiet then v += 1 end
     if is_hidden then v += 1 end
     if is_frozen then v += 1 end
-    if inventory_vessels.length > 2 then v += 1 end
-    if owned_vessels.length > 5 then v += 1 end
+    # if owned_vessels.length > 5 then v += 1 end
 
     return v
 
@@ -339,7 +338,9 @@ module Vessel
     content = []
     lines.each do |line|
       if line.strip[0,6] != "def __" then next end
-      puts line
+      action = line.split(" ")[1].to_s.gsub("__","")
+      documentation = line.include?("#") ? line.split("#").last : nil
+      puts "#{action} -> #{documentation}"
     end
 
     return text

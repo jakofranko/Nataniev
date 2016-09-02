@@ -21,15 +21,14 @@ class Console
     answer = nil
 
     if !$nataniev.player
-      $nataniev.set_player(query.split(" ").first)
-      answer = $nataniev.answer("connect").console_markup
-    else
-      $nataniev.refresh
-      answer = $nataniev.answer("#{query}").console_markup
+      $nataniev.set_player(query.split(" ").first)  
+      query = "look"    
     end
+    
+    $nataniev.refresh
 
     puts "\n\n"
-    puts answer
+    puts $nataniev.answer("#{query}").console_markup
     puts ""
 
     @last = query.length > 1 ? query : @last

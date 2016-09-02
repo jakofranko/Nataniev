@@ -21,12 +21,6 @@ class Basic
 
   # System
 
-  def __connect q = nil
-
-    return "You are #{print}."
-
-  end
-
   def __look q = nil
 
     return "#{look_head}#{look_note}#{look_visibles}#{look_hint}"
