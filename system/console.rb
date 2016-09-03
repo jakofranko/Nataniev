@@ -25,7 +25,7 @@ class Console
     params = query.sub("#{actor}","").sub("#{action}","").strip
 
     puts "\n\n"
-    puts $nataniev.operate(actor,action,params)
+    puts $nataniev.operate(actor,action,params).console_markup
     puts ""
 
     @last = query.length > 1 ? query : @last

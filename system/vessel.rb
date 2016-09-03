@@ -321,7 +321,7 @@ module Vessel
     if is_quiet then v += 1 end
     if is_hidden then v += 1 end
     if is_frozen then v += 1 end
-    # if owned_vessels.length > 5 then v += 1 end
+    if owned_vessels.length > 5 then v += 1 end
 
     return v
 

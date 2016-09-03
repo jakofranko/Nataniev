@@ -28,7 +28,7 @@ class Maeve
 
 		maeve.visible_vessels.each do |vessel|
 			if vessel.class != Basic.new.class && vessel.class != Ghost.new.class then next end
-			if vessel.rating < 3 then return act_destroy(vessel) end
+			if vessel.rating < 2 then return act_destroy(vessel) end
 			if vessel.class == Ghost.new.class then return act_throw(vessel) end
 		end
 
