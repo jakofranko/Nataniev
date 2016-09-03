@@ -4,7 +4,12 @@
 
 NATANIEV
   Actions
-    Improve become
+    Become
+      Improve for web client
+    Create
+      Limit vessel name length
+    Rename
+      Limit vessel name length
   Vessels
     Creation should empty the previous inhabitants
     Variables in call command

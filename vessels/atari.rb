@@ -7,7 +7,7 @@ class Atari
 
 	def use q = nil
 
-		return q ? $nataniev.answer(q) : "Query is empty."
+		return q != "" ? $nataniev.answer(q) : "? Query is empty."
 		
 	end
 
