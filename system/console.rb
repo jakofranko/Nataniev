@@ -12,8 +12,8 @@ class Console
     @last = ""
     @id   = q
 
-    puts "\n\n"
-    print "##{q} Connected.\n\n> "
+    puts "\n"
+    print " "+" + ".bg_white+" #{q} Connected.\n"+" "+" > ".bg_grey+" "
 
   end
 
@@ -24,9 +24,8 @@ class Console
     action = parts[0] ? parts[0] : "look"
     params = query.sub("#{actor}","").sub("#{action}","").strip
 
-    puts "\n\n"
+    puts "\n"
     puts $nataniev.operate(actor,action,params).console_markup
-    puts ""
 
     @last = query.length > 1 ? query : @last
     @text = ""
@@ -67,7 +66,7 @@ class Console
     end
 
     print("\e[1K\r")
-    print " ".bg_red+" "+onion(@text)
+    print " "+" > ".bg_grey+" "+onion(@text)
 
   end
 
@@ -158,8 +157,17 @@ class String
     search.each do |str,details|
         content = content.gsub("{{"+str+"}}",str.underline)
     end
+
+    # Runes
+
+    text = ""
+    content.lines.each do |line|
+      rune = line[0,2].strip == "" ? "." : line[0,1]
+      line = "#{line[2,line.length-2]}".strip
+      text += " "+" #{rune} ".bg_white+" #{line}\n"
+    end
     
-    return "#{content}"
+    return text
 
   end
 

@@ -248,7 +248,7 @@ module Vessel
 
   def look_head
 
-    return parent == id ? "~ The paradox of "+"#{print.downcase}.\n\n".capitalize : "~ "+"#{print} in #{parent_vessel.print}.\n\n".capitalize
+    return parent == id ? "~ The paradox of "+"#{print.downcase}.\n\n".capitalize : "~ "+"#{print} in #{parent_vessel.print}.\n".capitalize
 
   end
 
@@ -271,7 +271,7 @@ module Vessel
       line = line[line.length-1,1] != "." ? line+"." : line
       note_formated += "& "+line.gsub(". ",".\n").capitalize+"\n"
     end
-    return note_formated.strip+"\n\n"
+    return note_formated.strip+"\n"
 
   end
 
@@ -285,7 +285,7 @@ module Vessel
       text += vessel.display
     end
     
-    return text+"\n\n"
+    return text+"\n"
 
   end
 

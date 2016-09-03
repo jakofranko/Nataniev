@@ -40,7 +40,7 @@ class Basic
     new_vessel = Basic.new($nataniev.find_available_id,{'CODE' => "0000-#{parent.to_s.prepend("0",5)}-#{id.to_s.prepend("0",5)}-BASIC-#{now}", 'NAME' => _name, 'ATTR' => _attribute})
     new_vessel.save
 
-    return "You created #{new_vessel.print}."
+    return "! You created #{new_vessel.print}."
     
   end
 
@@ -58,7 +58,7 @@ class Basic
 
     v = find_visible_vessel(q) ; if !v then return error_target(q) end
 
-    return set_parent(v.id) ? "You entered #{v.print}." : "The #{name} is locked."
+    return set_parent(v.id) ? "! You entered #{v.print}." : "! The #{name} is locked."
     
   end
 
@@ -66,7 +66,7 @@ class Basic
 
     if @parent == parent_vessel.parent then return error_stem end
 
-    return set_parent(parent_vessel.parent) ? "You left #{parent_vessel.print}." : "The #{name} is locked."
+    return set_parent(parent_vessel.parent) ? "! You left #{parent_vessel.print}." : "! The #{name} is locked."
     
   end
 
@@ -74,14 +74,14 @@ class Basic
 
   def __note q = nil
 
-    return parent_vessel.set_note(q) ? "You added a note to #{parent_vessel.print}." : "The #{parent_vessel.name} cannot be modified."
+    return parent_vessel.set_note(q) ? "! You added a note to #{parent_vessel.print}." : "! The #{parent_vessel.name} cannot be modified."
     
   end
 
   def __rename q = nil # TODO: Transform-catepillar, implement qualifier as make-pretty?
 
     name = q.split(" ").last
-    return parent_vessel.set_name(name) ? "You renamed the #{parent_vessel.name} to the #{name}." : "You cannot rename the #{parent_vessel.name}."
+    return parent_vessel.set_name(name) ? "! You renamed the #{parent_vessel.name} to the #{name}." : "! You cannot rename the #{parent_vessel.name}."
     
   end
 
@@ -92,7 +92,7 @@ class Basic
     q = q.sub("to ","").to_i
     v = $nataniev.make_vessel(q.to_i) ; if !v then return error_target(q) end
 
-    return set_parent(v.id) ? "You warped to #{v.print}." : "The #{name} is locked."
+    return set_parent(v.id) ? "! You warped to #{v.print}." : "! The #{name} is locked."
     
   end
 
@@ -115,7 +115,7 @@ class Basic
 
     v = find_visible_vessel(q) ; if !v then return error_target(q) end
 
-    return v.set_parent(@id) ? "You took #{v.print}." : "The #{v.name} is locked."
+    return v.set_parent(@id) ? "! You took #{v.print}." : "! The #{v.name} is locked."
     
   end
 
@@ -123,7 +123,7 @@ class Basic
 
     v = find_inventory_vessel(q) ; if !v then return error_target(q) end
 
-    return v.set_parent(@parent) ? "You dropped #{v.print}." : "The #{v.name} is locked."
+    return v.set_parent(@parent) ? "! You dropped #{v.print}." : "! The #{v.name} is locked."
     
   end
 
@@ -131,7 +131,7 @@ class Basic
 
   def __program q = nil
 
-    return "TODO"
+    return "! TODO"
     
   end
 
@@ -159,7 +159,7 @@ class Basic
 
   def __inspect q = nil
 
-    return "TODO"
+    return "! TODO"
     
   end
 
@@ -169,7 +169,7 @@ class Basic
 
     v = find_present_vessel(q) ; if !v then return error_target(q) end
 
-    return v.set_lock(1) ? "You locked #{v.print}." : "You cannot lock the #{v.name}."
+    return v.set_lock(1) ? "! You locked #{v.print}." : "! You cannot lock the #{v.name}."
     
   end
 
@@ -177,7 +177,7 @@ class Basic
 
     v = find_present_vessel(q) ; if !v then return error_target(q) end
 
-    return v.set_lock(0) ? "You unlocked #{v.print}." : "You cannot unlock the #{v.name}."
+    return v.set_lock(0) ? "! You unlocked #{v.print}." : "! You cannot unlock the #{v.name}."
     
   end
 
@@ -185,7 +185,7 @@ class Basic
 
     v = find_present_vessel(q) ; if !v then return error_target(q) end
     
-    return v.set_hide(0) ? "You revealed #{v.print}." : "You cannot reveal the #{v.name}."
+    return v.set_hide(0) ? "! You revealed #{v.print}." : "You cannot reveal the #{v.name}."
     
   end
 
@@ -193,7 +193,7 @@ class Basic
 
     v = find_present_vessel(q) ; if !v then return error_target(q) end
 
-    return v.set_hide(1) ? "You hid #{v.print}." : "You cannot hide the #{v.name}."
+    return v.set_hide(1) ? "! You hid #{v.print}." : "! You cannot hide the #{v.name}."
     
   end
 
@@ -205,13 +205,13 @@ class Basic
 
     if v.owner != id then return error_owner end
 
-    return v.destroy ? "You destroyed the #{v.name}." : "You cannot destroy the #{v.name}."
+    return v.destroy ? "! You destroyed the #{v.name}." : "! You cannot destroy the #{v.name}."
 
   end
 
   def __purge q = nil
 
-    return "TODO"
+    return "! TODO"
     
   end
 
@@ -231,16 +231,16 @@ class Basic
       code = $nataniev.parade.to_a[parent]["CODE"]
       if parent == code[5,5].to_i 
         if tries == 0
-          return "You are at the stem of the #{$nataniev.make_vessel(parent).name} universe."
+          return "! You are at the stem of the #{$nataniev.make_vessel(parent).name} universe."
         else
-          return "You are #{tries} levels deep, in the #{$nataniev.make_vessel(parent).name} universe." 
+          return "! You are #{tries} levels deep, in the #{$nataniev.make_vessel(parent).name} universe." 
         end
       end
       parent = code[5,5].to_i
       tries += 1
     end
 
-    return "You are in a circular paradox."
+    return "! You are in a circular paradox."
 
   end
 
