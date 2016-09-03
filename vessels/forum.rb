@@ -14,7 +14,6 @@ class Forum
 		@forum.to_a.reverse.each do |line|
 			if count > 15 then break end
 			parts = line['CODE'].split("-")
-			puts "#{parts.first.to_i} / #{id}"
 			if parts.first.to_i != id then next end
 			time = parts.last
 			if !sorted[Timestamp.new(time).ago] then sorted[Timestamp.new(time).ago] = [] end
