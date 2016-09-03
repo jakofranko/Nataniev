@@ -3,15 +3,15 @@
 ~ AUTH : Devine Lu Linvega
 
 Paradise OS
-  - New vessels, previous ID should be emptied. Maeve should move vessels out of paradoxes
+  - New vessels, previous ID should be emptied.
   - Atari vessel
   - Implement variables in call command
   - Tutorial
   - Dynamic help commands
   - Traffic logger
+    - Fix Monitor
   - Blindfolk
   - Re-implement become
-  - Ghost vessel
   - Analytics
   - Document on XXIIVV
   - Instance Traumae(Lietal)
@@ -20,8 +20,6 @@ Paradise OS
     - Implement documentation and add to XXIIVV
     - Dictionaery page
   
-Analytics
-  - Fix Monitor
 Oscean
   - Implement Talk/Forum
 Rationality project

@@ -36,12 +36,13 @@ class Timestamp
 		if timeDiff == -1 then return "tomorrow" end
 		if timeDiff == 0 then return "today" end
 		if timeDiff == 1 then return "yesterday" end
+		if timeDiff <  7 then return "#{timeDiff} days ago" end
 		if timeDiff == 7 then return "a week ago" end
-		if timeDiff > 740 then return (timeDiff/30/12).to_s+" years ago" end
-		if timeDiff > 60 then return (timeDiff/30).to_s+" months ago" end
-		if timeDiff > 30 then return "a month ago" end
+		if timeDiff >  740 then return (timeDiff/30/12).to_s+" years ago" end
+		if timeDiff >  60 then return (timeDiff/30).to_s+" months ago" end
+		if timeDiff >  30 then return "a month ago" end
 
-		return elapsed
+		return "#{elapsed} / #{timeDiff}"
 
 	end
 

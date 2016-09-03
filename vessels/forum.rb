@@ -13,7 +13,10 @@ class Forum
 		count = 0
 		@forum.to_a.reverse.each do |line|
 			if count > 15 then break end
-			time = line['CODE'].split("-").last
+			parts = line['CODE'].split("-")
+			puts "#{parts.first.to_i} / #{id}"
+			if parts.first.to_i != id then next end
+			time = parts.last
 			if !sorted[Timestamp.new(time).ago] then sorted[Timestamp.new(time).ago] = [] end
 			sorted[Timestamp.new(time).ago].push(line)
 			count += 1
@@ -21,7 +24,7 @@ class Forum
 
 		text = "This vessel grants you the unique command \"say\".\n\n"
 		sorted.to_a.reverse.each do |ago,messages|
-			text += "# #{ago.capitalize}\n"
+			text += "# #{ago}\n"
 			messages.reverse.each do |message|
 				text += "- #{message['TEXT']}, said #{message['NAME']}\n"
 			end
@@ -39,12 +42,11 @@ class Forum
 
 	def via__say q = nil
 
-		_code = "0000"
-		_room = "#{parent}".prepend("0",5)
-		_id   = "#{id}".prepend("0",5)
+		_room = "#{id}".prepend("0",5)
+		_id   = "#{$nataniev.player.id}".prepend("0",5)
 		_name = "#{$nataniev.player.name}".append(" ",14)
 
-		flatten = "#{_code}-#{_room}-#{_id}-#{now} #{_name} #{q}\n"
+		flatten = "#{_room}-#{_id}-#{now} #{_name} #{q}\n"
 
 		Di.new("forum").add(flatten)
 		return "Added message: #{q}"

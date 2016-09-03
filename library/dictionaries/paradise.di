@@ -24,37 +24,37 @@
 1010-00015-00000-LEXIO-00000000000000 lexicon        cyan                                                                                            
 1010-00015-00000-HORAI-00000000000000 logbook        red           
 1010-00014-00000-HAVEN-00000000000000 wallclock      old            ECHO displays TIME::
-1010-00051-00000-FORUM-00000000000000 log            hollow
+1010-00012-00000-FORUM-00000000000000 lobby          hollow
 1010-00051-00000-WILLW-00000000000000 beetle         ghostly
 1010-00002-00000-HAVEN-00000000000000 room           dying                                                                                           A typical living room that will soon have passed away.
 1010-00000-00000-HAVEN-00000000000000 holder                                                                                                         Amongst the thorny shrubs, on a circular clothed table, lies a most incomprehensible arrangement of dishware. & Each teacup rests on a common porcelain plate, which in turn, sits on top of that same teacup. & Picking up the plate, to lift up the cup, results in picking up the cup and lifting up the plate.
-1010-00000-00000-HAVEN-00000000000000 room
-1010-00000-00000-HAVEN-00000000000000 
-1010-00000-00000-HAVEN-00000000000000 
-1010-00000-00000-HAVEN-00000000000000 
-1010-00000-00000-HAVEN-00000000000000 
-1010-00000-00000-HAVEN-00000000000000 
-1010-00000-00000-HAVEN-00000000000000 
-1010-00000-00000-HAVEN-00000000000000 
-1010-00000-00000-HAVEN-00000000000000 
-1010-00000-00000-HAVEN-00000000000000 
-1010-00000-00000-HAVEN-00000000000000 
-1010-00000-00000-HAVEN-00000000000000 
-1010-00000-00000-HAVEN-00000000000000 
-1010-00000-00000-HAVEN-00000000000000 
-1010-00000-00000-HAVEN-00000000000000 
-1010-00000-00000-HAVEN-00000000000000 
-1010-00000-00000-HAVEN-00000000000000 
-1010-00000-00000-HAVEN-00000000000000 
-1010-00000-00000-HAVEN-00000000000000 
-1010-00000-00000-HAVEN-00000000000000 
-1010-00000-00000-HAVEN-00000000000000 
-1010-00000-00000-HAVEN-00000000000000 
-1010-00000-00000-HAVEN-00000000000000 
-1010-00000-00000-HAVEN-00000000000000 
-1010-00000-00000-HAVEN-00000000000000 
+1010-00012-00000-HAVEN-00000000000000 room
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 1010-19806-00000-MAEVE-20160902230211 Maeve
-0000-00025-00000-BASIC-20160902221602 geomaitre
+0000-00021-00000-BASIC-20160902230942 geomaitre
 1000-00942-07433-BASIC-20160617085824 vibrio         tiny           ECHO become AND become a tiny multiflagellate vibrio
 1000-18051-00006-BASIC-20160617085824 mouse                                                                                                          The mouse bites you and you catch the plauge
 0013-01585-00001-BASIC-20160617085824 station        echoes                                                                                          The platform is clouded in a thick mist. Flashing blue gates stand at opposite ends to guide the train through the constant fog of the landscape. A teddy bear missing an eye can be seen lying abandoned on the station floor. The cries of lost vessels reverberate throughout the station filling it with an terrifying air. Just as it begins to become unbearable
@@ -1425,7 +1425,7 @@
 0000-04384-02388-BASIC-20160617085824 abyss          director                                                                                        Director Alyss rules the Void Theatre with an iron fist
 0011-00942-00001-BASIC-20160617085824 room           reading                                                                                         The reading room is occupied by nothing but silence and a few reading desks alit with short mechanical lamps.
 1000-01396-01152-BASIC-20160617085824 window                                                                                                         You exit the manor into an enormous field stretching as far as you can see.
-0000-00025-00000-BASIC-20160902222104 voidspace
+
 1000-06306-07433-BASIC-20160617085824 germ           disposal       destroy a guide request affidavit                                                This little coccus seems to be constantly hungry.
 0010-06785-06785-BASIC-20160617085824 sweater        stygiblue      IF is 6785 THEN say me pulls the sweater over his head and is immediatly shrouded by a warm blue aura. The sweater is an impossible shade of blue only found by mixing colours together for an infinite amount of time.
 1000-01409-02388-BASIC-20160617085824 dress          gingham        IF has doktyl THEN                                                               In a pocket of the dress
@@ -3518,7 +3518,7 @@
 0100-15600-00122-BASIC-20160617085824 limesicle
 0000-03344-02388-BASIC-20160617085824 cover          mandible                                                                                        Trash and waste falls down from the city far
 
-0000-00025-00000-BASIC-20160902221944 voidspace
+
 0000-03368-02388-BASIC-20160617085824 dervish        dust                                                                                            A powerful whirling  being reminiscent of the golden gyre
 
 0000-06151-10205-BASIC-20160617085824 carbon
@@ -10392,7 +10392,7 @@
 0000-10269-10382-BASIC-20160617085824 debrion        portal                                                                                          There appears to be a large steel building of the kind normally used for storage it appears have been fitted for a different purpose in this case
 0000-10298-02388-BASIC-20160617085824 alpacpen                                                                                                       The sage can obtain a large quantity of resources from the alpacas: clothing
 0000-01329-10382-BASIC-20160617085824 bookshelf                                                                                                      There are several books on the shelf
-0000-00025-00000-BASIC-20160902222050 voidspace
+
 1000-00942-10382-BASIC-20160617085824 pond           small                                                                                           This pond appears to be a breeding area for fireflies
 0000-01329-10382-BASIC-20160617085824 lizard         stuffed                                                                                         It is rather fearsome looking and shows signs that it once basked in the sun for long periods of time
 1000-00008-10358-BASIC-20160617085824 window
@@ -19812,7 +19812,7 @@
 1000-00398-19804-BASIC-20160617085824 pig
 1000-19806-19806-BASIC-20160617085824 ladies         sexy
 1000-19806-19806-BASIC-20160617085824 pigs           sexy
-1000-19806-19806-BASIC-20160617085824 cndms
+
 1100-19801-19582-BASIC-20160617085824 eggs           small          leave
 1000-19801-19582-BASIC-20160617085824 path           obscure                                                                                         as you walk down a long
 1000-17276-00003-BASIC-20160617085824 teapot
