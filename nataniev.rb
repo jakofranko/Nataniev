@@ -49,6 +49,17 @@ class Nataniev
     end
 
   end
+  
+  def answer q = nil
+
+    parts  = q.split(" ")
+    actor  = parts[0]
+    action = parts[1] ? parts[1] : "look"
+    params = q.sub("#{actor}","").sub("#{action}","").strip
+
+    return operate(actor,action,params)
+
+  end
 
   def make_vessel id
 

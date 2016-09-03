@@ -21,7 +21,7 @@ class Console
 
     parts  = query.split(" ")
     actor  = @id ? @id : 51
-    action = parts[1] ? parts[1] : "look"
+    action = parts[0] ? parts[0] : "look"
     params = query.sub("#{actor}","").sub("#{action}","").strip
 
     puts "\n\n"

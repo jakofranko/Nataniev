@@ -4,10 +4,8 @@
 
 Paradise OS
   - New vessels, previous ID should be emptied.
-  - Atari vessel
   - Implement variables in call command
   - Tutorial
-  - Dynamic help commands
   - Traffic logger
     - Fix Monitor
   - Blindfolk
