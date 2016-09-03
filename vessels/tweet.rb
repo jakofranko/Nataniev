@@ -8,11 +8,13 @@ class Tweet
 
 	include Vessel
 
-	def use q = nil
+	def __look q = nil
 
 		account = "neauoire"
 
-		require_relative("#{$nataniev_path}/secrets/secret.#{account}.config.rb")
+		if !File.exist?("#{$nataniev_path}/secrets/secret.#{account}.config.rb") then return "Missing keys." end
+
+		load "#{$nataniev_path}/secrets/secret.#{account}.config.rb"
 
 		client = Twitter::REST::Client.new($twitter_config)
 		client.search("to:#{account}", :result_type => "recent").take(15).each do |tweet|
@@ -25,7 +27,9 @@ class Tweet
 
 	def save account, content
 
-		require_relative("#{$nataniev_path}/secrets/secret.#{account}.config.rb")
+		if !File.exist?("#{$nataniev_path}/secrets/secret.#{account}.config.rb") then return "Missing keys." end
+
+		load "#{$nataniev_path}/secrets/secret.#{account}.config.rb"
 
 		client = Twitter::REST::Client.new($twitter_config)
 		client.update(content)
