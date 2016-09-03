@@ -80,7 +80,7 @@ class Nataniev
         return Object.const_get(instance.capitalize).new(id.to_i,line)
       end
     end
-    return Basic.new(id.to_i,line)
+    return Ghost.new(id.to_i,line)
 
   end
 
@@ -105,6 +105,14 @@ class Nataniev
     end
 
     return nil
+
+  end
+
+  def find_random_basic_vessel
+
+    target = make_vessel(rand(0...20000))
+    if target.class != Basic.new.class then return find_random_basic_vessel end
+    return target
 
   end
 
