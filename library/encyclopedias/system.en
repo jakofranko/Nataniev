@@ -2,32 +2,29 @@
 ~ NOTE : YAML
 ~ AUTH : Devine Lu Linvega
 
-Paradise OS
-  - New vessels, previous ID should be emptied.
-  - Implement variables in call command
-  - Tutorial
-  - Traffic logger
-    - Fix Monitor
-  - Blindfolk
-  - Re-implement become
-  - Analytics
-  - Document on XXIIVV
-  - Instance Traumae(Lietal)
-    - Find database drop
-    - Fix translator
-    - Implement documentation and add to XXIIVV
-    - Dictionaery page
-  
-Oscean
-  - Implement Talk/Forum
-Rationality project
-  - Complete sorting of canon
+NATANIEV
+  Actions
+    Improve become
+  Vessels
+    Creation should empty the previous inhabitants
+    Variables in call command
+  Tutorial
+    Implement the ghost guide
+    Implement the teapot guide
+  Analytics
+    Add logs to Nataniev
+    Upgrade monitor
+  Blindfolk
+    Get up and running
+  Traumae
+    Implement
+    Translator
 
-100R
+XXIIVV
+  Document Paradise
+  Migrate Bot Repos
+  Implement Forum vessels
+
+HUNDREEDRABBITS
   Setup podcast in iTunes
   Expose press events in timeline
-
-attr_reader :v  def v; @v; end
-attr_writer :v  def v=(value); @v=value; end
-attr_accessor :v  attr_reader :v; attr_writer :v
-attr_accessor :v, :w  attr_accessor :v; attr_accessor :w
