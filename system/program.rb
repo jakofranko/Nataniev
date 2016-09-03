@@ -60,11 +60,11 @@ class Program
 		if @cond == "" then return true end
 
 		if parts.first == "HAS"
-			$nataniev.player.inventory_vessels.each do |vessel|
+			$nataniev.actor.inventory_vessels.each do |vessel|
 				if vessel.name.like(parts.last) then return true end
 			end
 		elsif parts.first == "IS"
-			if $nataniev.player.name.like(parts.last) then return true end
+			if $nataniev.actor.name.like(parts.last) then return true end
 		end
 
 		return false 

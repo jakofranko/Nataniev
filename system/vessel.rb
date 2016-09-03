@@ -109,7 +109,7 @@ module Vessel
       if id == @parent then next end                     # Parent
       if !line['CODE'] then next end
       if line['CODE'][5,5].to_i != parent then next end
-      if parent_vessel.is_quiet && line['CODE'][11,5].to_i != parent_vessel.owner && line['CODE'][11,5].to_i != $nataniev.player.id then next end
+      if parent_vessel.is_quiet && line['CODE'][11,5].to_i != parent_vessel.owner && line['CODE'][11,5].to_i != $nataniev.actor.id then next end
       array.push($nataniev.make_vessel(id))
     end
     return array
@@ -222,7 +222,7 @@ module Vessel
 
   def hint
 
-    if !is_locked || owner == $nataniev.player.id
+    if !is_locked || owner == $nataniev.actor.id
       if !attribute then return "? Add an adjective to #{print} by renaming it." end
       if !note then return "? Add a Note to describe #{print}." end
       if !program.is_valid then return "? Add a Program to interact with #{print}." end

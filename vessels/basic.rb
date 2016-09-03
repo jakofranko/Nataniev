@@ -7,9 +7,9 @@ class Basic
 
   # Setters
 
-  def set_lock      val ; if owner != $nataniev.player.id then return false end ; @is_locked = val ; save ;  return true end
-  def set_hide      val ; if owner != $nataniev.player.id then return false end ; @is_hidden = val ; save ;  return true end
-  def set_quiet     val ; if owner != $nataniev.player.id then return false end ; @is_quiet = val ; save ;   return true end
+  def set_lock      val ; if owner != $nataniev.actor.id then return false end ; @is_locked = val ; save ;  return true end
+  def set_hide      val ; if owner != $nataniev.actor.id then return false end ; @is_hidden = val ; save ;  return true end
+  def set_quiet     val ; if owner != $nataniev.actor.id then return false end ; @is_quiet = val ; save ;   return true end
 
   def set_name      val ; if is_locked then return false end ; @name = val ; save ;      return true end
   def set_attribute val ; if is_locked then return false end ; @attribute = val ; save ; return true end
@@ -139,7 +139,9 @@ class Basic
 
   def __use q = nil
 
-    v = find_visible_vessel(q) ; if !v then return error_target(q) end
+    name = " #{q} ".sub(" a ","").sub(" an ","").sub(" the ","").strip.split(" ").first.to_s.strip
+
+    v = find_visible_vessel(name) ; if !v then return error_target(name) end
 
     params = q.split(v.name) ; params[0] = nil
 

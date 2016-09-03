@@ -25,7 +25,7 @@ class Forum
 		sorted.to_a.reverse.each do |ago,messages|
 			text += "# #{ago}\n"
 			messages.reverse.each do |message|
-				text += "- #{message['TEXT']}, said #{message['NAME']}\n"
+				text += "- #{message['TEXT']}, said the #{message['NAME']}\n"
 			end
 		end
 
@@ -42,8 +42,8 @@ class Forum
 	def via__say q = nil
 
 		_room = "#{id}".prepend("0",5)
-		_id   = "#{$nataniev.player.id}".prepend("0",5)
-		_name = "#{$nataniev.player.name}".append(" ",14)
+		_id   = "#{$nataniev.actor.id}".prepend("0",5)
+		_name = "#{$nataniev.actor.name}".append(" ",14)
 
 		flatten = "#{_room}-#{_id}-#{now} #{_name} #{q}\n"
 

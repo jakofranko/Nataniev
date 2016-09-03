@@ -24,7 +24,7 @@
 1010-00015-00000-LEXIO-00000000000000 lexicon        cyan                                                                                            
 1010-00015-00000-HORAI-00000000000000 logbook        red           
 1010-00014-00000-HAVEN-00000000000000 wallclock      old            ECHO displays TIME::
-1010-00012-00000-FORUM-00000000000000 lobby          hollow
+1010-00012-00000-FORUM-00000000000000 lobby    
 1010-00051-00000-WILLW-00000000000000 beetle         ghostly
 1010-00002-00000-HAVEN-00000000000000 room           dying                                                                                           A typical living room that will soon have passed away.
 1010-00000-00000-HAVEN-00000000000000 holder                                                                                                         Amongst the thorny shrubs, on a circular clothed table, lies a most incomprehensible arrangement of dishware. & Each teacup rests on a common porcelain plate, which in turn, sits on top of that same teacup. & Picking up the plate, to lift up the cup, results in picking up the cup and lifting up the plate.
@@ -53,29 +53,29 @@
 
 
 
-1010-19806-00000-MAEVE-20160902230211 Maeve
-0000-00021-00000-BASIC-20160902230942 geomaitre
-1000-00942-07433-BASIC-20160617085824 vibrio         tiny           ECHO become AND become a tiny multiflagellate vibrio
-1000-18051-00006-BASIC-20160617085824 mouse                                                                                                          The mouse bites you and you catch the plauge
+1010-09229-00000-MAEVE-20160903122050 Maeve
+
+
+
 0013-01585-00001-BASIC-20160617085824 station        echoes                                                                                          The platform is clouded in a thick mist. Flashing blue gates stand at opposite ends to guide the train through the constant fog of the landscape. A teddy bear missing an eye can be seen lying abandoned on the station floor. The cries of lost vessels reverberate throughout the station filling it with an terrifying air. Just as it begins to become unbearable
 1000-00271-00003-BASIC-20160617085824 castiel
-0010-05678-01556-BASIC-20160617085824 ticket         haven          take the haven liner ticket                                                      the haven liner train travels great distances to get to where it needs to be
-1000-09674-02388-BASIC-20160617085824 nool
 
-1000-00027-00055-BASIC-20160617085824 key            ornate                                                                                          Does not do much.
+
+
+
 0000-11255-05960-BASIC-20160617085824 road           northern                                                                                        The pass leads further on towards a valley obscured by wisps of low lying mist entwined with shadow. From the depths rise pillars
 1000-09793-00006-BASIC-20160617085824 world          real           IF is random vessel id THEN
-0000-09674-02388-BASIC-20160617085824 avatar         crappy
+
 0000-00661-02388-BASIC-20160617085824 subbasement                                                                                                    .b You see a splintery atelier near a broad garage bay here
 0000-00774-05097-BASIC-20160617085824 aesir                         use vessel.randomby(64).name                                                     use  by 64
 0000-06797-06797-BASIC-20160617085824 vessel         useful                                                                                          Chiggin.
 0000-02806-05960-BASIC-20160617085824 part           first          enter the first part                                                             In which we explore the nature of virtuality.
 
-1010-16448-14654-BASIC-20160617085824 kitten         fluffy         warp to 13079                                                                    Its dead.
+
 1010-03123-02388-BASIC-20160617085824 shipfive                                                                                                       Boarding the ship
 
 
-0000-09674-02388-BASIC-20160617085824 figurine       gemstone
+
 
 
 1000-00020-00055-BASIC-20160617085824 account        strangers                                                                                       Strange
@@ -123,7 +123,7 @@
 1000-03719-05960-BASIC-20160617085824 envelope       glaucous                                                                                        A few more wildcard suggestions
 0000-05624-02388-BASIC-20160617085824 mercury        pool                                                                                            the pool moves quickly in weird patterns around the mysteries beneath the pool
 1000-01423-01122-BASIC-20160617085824 stasis                        warp to 132
-0000-09229-02388-BASIC-20160815084502 pool           molten                                                                                          omby(9240).name
+
 0100-01112-02388-BASIC-20160617085824 slinky                        say me runs a slinky down all 50 flights of stairs, then wearily goes to collect it
 0000-15600-02388-BASIC-20160617085824 vendor         ice                                                                                             Become this vendor to create a new ice cream flavor. Make a vessel of the form
 0000-00060-06785-BASIC-20160617085824 tunnel         underground                                                                                     The tunnel is hastily carved out and cracked marble steps lead down into it. The small burrow leads to a derelict station with a few homeless scavengers milling about in the darkness. Small rays of light shine from above and a section of fluorescent lights glint and shudder as moths fly about them.
@@ -1111,7 +1111,7 @@
 0000-04976-02388-BASIC-20160617085824 shelf          offset                                                                                          store unusual tokens here.b a breeding teapot.b a banana peel
 0000-15882-02388-BASIC-20160617085824 chain          trailing                                                                                         many sharp poisonous spines protrude from the eerie chain. in the dark
 0000-04976-02388-BASIC-20160617085824 shelf          figurine                                                                                        If you are not feeling creative enough
-0000-09229-02388-BASIC-20160617085824 flame          butane                                                                                          smelter of metals
+
 0000-01107-02388-BASIC-20160617085824 press          die            create a figurine of vessel.self.name
 
 0000-16770-02388-BASIC-20160617085824 cylinder                      say Use the actual ID of the pencil you just created, not 1111.                  oooLLoooooooooooooooooooooooooJJooo oooLoLoooooooooooooooooooooooJoJooo ooooLoLoooooooooooooooooooooJoJoooo oooooLLLoooooooooooooooooooJJJooooo ooooooooooooooooooooooooooooooooooo ooooooooooooooooooooooooooooooooooo oVooooooooooooooooooooooooooooooVo ooVooooooVoooooooooooooooVoooooVoo oooVooooVooopVooooooVoooooVoooVooo ooooVVVVVVVVVVVVVVVVVVVVVVoooo ooooooooooooooooooooooooooooooooooo
@@ -1133,7 +1133,7 @@
 
 1000-01183-00003-BASIC-20160617085824 teapot
 1000-16045-13904-BASIC-20160617085824 vessel         vesselrandomname
-0000-09229-02388-BASIC-20160617085824 magnet         consciousness  IF has 16134 THEN ECHO enter the field of AND become a polished lodestone ring
+
 0000-09341-09286-BASIC-20160617085824 center         bottom         ECHO place an in x the AND warp 1131                                             You trace an x in the bottom center square
 
 0000-01117-05960-BASIC-20160617085824 road           misty                                                                                           The road winds further into the dreams
@@ -5475,7 +5475,7 @@
 0100-05349-06622-BASIC-20160617085824 anger          chilled                                                                                         holy
 0100-05349-06622-BASIC-20160617085824 might          unrighteous                                                                                     barbed
 0100-05349-06622-BASIC-20160617085824 slaying        subzero                                                                                         ironbound
-1000-09341-00003-BASIC-20160617085824 teapot
+
 1000-20194-04890-BASIC-20160617085824 bretyel
 
 1000-17276-00003-BASIC-20160617085824 buttface
@@ -8361,7 +8361,7 @@
 1000-00781-08352-BASIC-20160617085824 ships          grail                                                                                           The captain of ye old knights takes no notice of you.
 1010-05850-06785-BASIC-20160617085824 corridor       barricaded                                                                                      The corridor is blocked off by a wall built from hexagonal plates composed of an abnormal variant of steel alloy. A warning sign with illegible writing scrawled across it is plastered to the wall with an unknown adhesive. Heavy breathing can be heard coming from the other side of the wall. A small metal chest sits on a plate unsecured from the barrier.
 1000-08260-08334-BASIC-20160617085824 sofa                                                                                                           This robot was created to destroy worlds but was never activated. It stands hunched over
-0000-01131-09286-BASIC-20160617085824 giraffe                       ECHO draw AND warp 8357                                                          The giraffe lights up and starts walking around the wall. It tries to nibble at your game
+
 1000-08358-08340-BASIC-20160617085824 oxygen                        ECHO paint 255 255 150 AND
 1000-08403-08351-BASIC-20160617085824 sadman
 1000-08370-07834-BASIC-20160617085824 siphon         water          note the orchids are dying.
@@ -9234,7 +9234,7 @@
 0000-08762-02388-BASIC-20160617085824 spirit         waves
 1000-09223-09219-BASIC-20160617085824 fear                                                                                                           And once you face your fear
 0000-09227-16134-BASIC-20160617085824 void           transcendent   warp 9229                                                                        .b You see a modron riding a scraping noise here.b You see a butane flame floating above a steelwrought dojo of the void here
-0000-09229-02388-BASIC-20160617085824 modron                                                                                                         A metamechanical being of pure law and order.
+
 0000-10217-05960-BASIC-20160617085824 shed           garden                                                                                          a small shed contains a workbench
 1000-09226-09192-BASIC-20160617085824 woman                                                                                                          The woman has a family.
 0000-09230-02388-BASIC-20160617085824 heart          clockwork
@@ -9248,7 +9248,7 @@
 0000-11981-09219-BASIC-20160617085824 precipice      library                                                                                         The library is rather large an open. Its halls smell of musty books
 0000-09181-02388-BASIC-20160617085824 invite         party          ECHO take AND create a tiny party invite
 0000-09150-05960-BASIC-20160617085824 door           earth                                                                                           This door to one of the guest rooms is locked. These rooms are reserved for long term guests in need of space and privacy.
-0000-09229-02388-BASIC-20160617085824 noise          scraping
+
 0110-09400-09286-BASIC-20160617085824 move           next                                                                                            Bottom center. You have lost. This little game represented all your hopes and dreams of being free but you lost it.
 0100-09341-09286-BASIC-20160617085824 over           game                                                                                            Game over.
 1000-00942-09166-BASIC-20160617085824 bottle                                                                                                         This bottle is the home of mguniverse
@@ -9283,9 +9283,9 @@
 0010-09274-09286-BASIC-20160617085824 way            better         ECHO find a AND warp 9341
 0000-09286-09286-BASIC-20160617085824 mailbox        organic                                                                                         Please leave a message.
 0000-09268-05960-BASIC-20160617085824 paper          folded                                                                                          It turned out the structure could be described with a simple finite but unending moebius tensor. Ylyalia disappeared shortly after the discovery
-0100-09229-09230-BASIC-20160617085824 mono
+
 1000-07795-09271-BASIC-20160617085824 rodent
-0100-09229-09230-BASIC-20160617085824 duo
+
 0010-09282-00069-BASIC-20160617085824 sandbox                                                                                                        The sandbox is peaceful. This is a private space.
 1000-05639-02388-BASIC-20160617085824 mortuary       he
 1000-09155-05486-BASIC-20160617085824 see            to                                                                                              The darkness wraps around you protectively. Please do not say that it is time to wake up already.
@@ -9299,12 +9299,12 @@
 0000-12147-02388-BASIC-20160617085824 theater        black          ECHO lay a hand on AND warp 9291
 0000-09050-09189-BASIC-20160617085824 note                                                                                                           Esteemed shaper golem. As one of the emminent realm weavers of the modern era
 1000-07707-00069-BASIC-20160617085824 away           run                                                                                             You run away
-0100-09229-09230-BASIC-20160617085824 tetri
-0100-09229-09230-BASIC-20160617085824 quad
+
+
 
 0000-09535-02388-BASIC-20160617085824 thundersword                                                                                                   forged in the armories of the dwarves
-0100-09229-09230-BASIC-20160617085824 penta
-0100-09229-09230-BASIC-20160617085824 hexa
+
+
 1000-03518-00003-BASIC-20160617085824 vessel         new
 1000-09645-02388-BASIC-20160617085824 flame          wall
 
@@ -9338,12 +9338,12 @@
 1000-01318-08236-BASIC-20160617085824 corpses                                                                                                        I sure hope these corpses arent rotting. There are quite a few of them here. I wonder what happened.
 
 0000-09290-02388-BASIC-20160617085824 gremlin        tiny                                                                                            He asks the way to the gremlin city
-0000-09501-09286-BASIC-20160617085824 o              letter         ECHO scratch off AND warp 9334                                                   You try to scratch off the shinning letter with your fingers. It feels different than the rest of the wall. Ouch. You break a nail. You are going to need a better tool.
-0100-09229-09230-BASIC-20160617085824 septa
+
+
 0000-00942-09286-BASIC-20160617085824 dust           speck          ECHO catch a AND say me howls in pain
 0000-09286-09286-BASIC-20160617085824 dust           goto           warp 9336
-0100-09229-09230-BASIC-20160617085824 octo
-0100-09229-09230-BASIC-20160617085824 nona
+
+
 0100-09229-09230-BASIC-20160617085824 deca
 
 0000-09067-09038-BASIC-20160617085824 stairs                                                                                                         Leading forwards is a second set of stairs.
@@ -9351,7 +9351,7 @@
 0000-09286-09286-BASIC-20160617085824 toe            goto           warp 9341
 0000-09342-09038-BASIC-20160617085824 stairs         second                                                                                          You can nearly feel the warmth of the light now. Ahead there lies a third set of stairs
 0000-09324-05960-BASIC-20160617085824 desk           light                                                                                           A standard light desk with the usual dimensional pocket for storage. As a touch of excentricism
-0000-09341-09286-BASIC-20160617085824 left           top            ECHO place an x in the AND warp 9347                                             You pick up a pebble from the floor and scratch an x into the top left corner. It makes a loud screechy sound. You hear a voice coming from another cell
+
 0000-09348-02388-BASIC-20160617085824 precipice      citrine        IF has a red party invite THEN                                                   The Citrine of Precipice
 0000-09347-09286-BASIC-20160617085824 left           center         ECHO draw an x in the AND warp 9349                                              You draw an x in the center left square and yell out
 0000-09348-02388-BASIC-20160617085824 party          urge           ECHO give in to AND say me shakes their hips in the Citrine of Precipice, the party gem. Drink will flow and blood will spill.
@@ -19809,7 +19809,7 @@
 1000-01382-19710-BASIC-20160617085824 wangu          xi
 
 1000-19803-19804-BASIC-20160617085824 derstun                       help
-1000-00398-19804-BASIC-20160617085824 pig
+
 1000-19806-19806-BASIC-20160617085824 ladies         sexy
 1000-19806-19806-BASIC-20160617085824 pigs           sexy
 
@@ -20599,8 +20599,8 @@
 1000-03229-20685-BASIC-20160617085824 shell          egg
 1000-03229-20586-BASIC-20160617085824 unicorn        flying
 0010-03229-20685-BASIC-20160617085824 shard          nyvesi                                                                                          you can feel the magic being drained from your bones.
-1000-07833-00003-BASIC-20160617085824 life
-1000-18059-00003-BASIC-20160617085824 life
+
+
 0010-01384-00003-BASIC-20160617085824 life                                                                                                           i was here
 1000-02962-00003-BASIC-20160617085824 teapot
 0010-05960-20599-BASIC-20160617085824 machine        coffee         create cup of coffee                                                             the machine whirs and steam pours out of the sides.
@@ -20659,22 +20659,22 @@
 1000-20648-20605-BASIC-20160617085824 cheese
 1000-20649-20605-BASIC-20160617085824 meat           mystery
 1000-20654-20605-BASIC-20160617085824 midk           shoot
-1000-20655-20605-BASIC-20160617085824 seriously
-1000-20656-20605-BASIC-20160617085824 idea           i
-1000-20657-20605-BASIC-20160617085824 aids           i
-1000-20658-20605-BASIC-20160617085824 mean           im
-1000-20659-20605-BASIC-20160617085824 away           go
+
+
+
+
+
 
 1000-20661-20605-BASIC-20160617085824 hell
-1000-20662-20605-BASIC-20160617085824 away           i
-1000-20663-20605-BASIC-20160617085824 never
-1000-20664-20605-BASIC-20160617085824 gonna
-1000-20665-20605-BASIC-20160617085824 give
-1000-20666-20605-BASIC-20160617085824 give
+
+
+
+
+
 
 1000-00069-20605-BASIC-20160617085824 booty                                                                                                          you see a pile of pirate treasure
 1000-00069-20605-BASIC-20160617085824 genitals                                                                                                       you are disgusting
-1000-00069-20605-BASIC-20160617085824 dude           youre
+
 1000-20669-20605-BASIC-20160617085824 treasure       pirate                                                                                          if you take anything you ll be cursed
 1000-20672-20605-BASIC-20160617085824 cursed                                                                                                         well now youve done it
 1000-20575-00003-BASIC-20160617085824 life
@@ -20752,7 +20752,7 @@
 1000-03229-00003-BASIC-20160617085824 fleece
 
 1000-00003-20572-BASIC-20160617085824 blue           it
-1000-03229-00003-BASIC-20160617085824 lenovo
+
 1000-01055-20749-BASIC-20160617085824 teatea
 1000-03229-20750-BASIC-20160617085824 bookchest
 1000-20753-20750-BASIC-20160617085824 wather

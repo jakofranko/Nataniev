@@ -4,5 +4,5 @@
 require_relative "nataniev.rb"
 	
 $nataniev = Nataniev.new
-$nataniev.console.start
+$nataniev.console.start ARGV.first
 $nataniev.console.listen while(true)

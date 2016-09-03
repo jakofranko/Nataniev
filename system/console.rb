@@ -5,36 +5,31 @@ require 'io/console'
 
 class Console
 
-  def start
+  def start q = nil
 
     system("clear")
     @text = ""
     @last = ""
+    @id   = q
 
     puts "\n\n"
-    print "Connection is active.\n\n> Vessel: "
+    print "##{q} Connected.\n\n> "
 
   end
 
   def validate query = nil
 
-    answer = nil
-
-    if !$nataniev.player
-      $nataniev.set_player(query.split(" ").first)  
-      query = "look"    
-    end
-    
-    $nataniev.refresh
+    parts  = query.split(" ")
+    actor  = @id ? @id : 51
+    action = parts[1] ? parts[1] : "look"
+    params = query.sub("#{actor}","").sub("#{action}","").strip
 
     puts "\n\n"
-    puts $nataniev.answer("#{query}").console_markup
+    puts $nataniev.operate(actor,action,params)
     puts ""
 
     @last = query.length > 1 ? query : @last
     @text = ""
-
-    return "Done."
 
   end
 
@@ -96,13 +91,13 @@ class Console
 
   def onion text
 
-    if !$nataniev.player then return text end
-    if !$nataniev.player.completion then return text end
+    if !$nataniev.actor then return text end
+    if !$nataniev.actor.completion then return text end
       
     @onion = ""
     onionText = ""
 
-    $nataniev.player.completion.each do |command|
+    $nataniev.actor.completion.each do |command|
       if text.length > 1 && command[0,text.length] == text
         @onion = "#{command}"
       end

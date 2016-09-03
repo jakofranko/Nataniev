@@ -7,8 +7,7 @@ class Atari
 
 	def use q = nil
 
-		# TODO: ??
-		return "QUERY: #{q}"
+		return q ? $nataniev.answer(q) : "Query is empty."
 		
 	end
 

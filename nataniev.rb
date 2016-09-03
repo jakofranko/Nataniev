@@ -29,44 +29,24 @@ class Nataniev
   end
 
   def parade  ; @parade = !@parade ? Di.new("paradise") : @parade ; return @parade  end
-  def player  ; return @player  end
+  def actor   ; return @actor end
   def console ; return @console end
 
-  def set_player id
+  def operate actor, action, params
 
-    @id = id
+    @parade = Di.new("paradise")
 
-    if @id.to_i > 0
-      @parade = Di.new("paradise")
-      @player = make_vessel(@id)
-    else
-      @player = make_anonym(@id)
-    end
+    actor_vessel = actor.to_i > 0 ? make_vessel(actor) : make_anonym(actor)
 
-  end
+    if !actor_vessel then return "Unknown vessel id: #{actor}" else @actor = actor_vessel end
 
-  def answer query
-
-    if !@player then set_player(query.split(" ").first) ; query = query.sub(query.split(" ").first,"").strip end
-
-    query = query == "" ? "look" : query
-
-    action = query.split(" ").first.strip
-    params = query.sub(action,"").strip
-
-    if @player.respond_to?("__#{action}")
-      return @player.send("__#{action}",params).strip
-    elsif @player.parent_vessel.respond_to?("via__#{action}")
-      return @player.parent_vessel.send("via__#{action}",params).strip
+    if actor_vessel.respond_to?("__#{action}")
+      return actor_vessel.send("__#{action}",params).strip
+    elsif actor_vessel.parent_vessel.respond_to?("via__#{action}")
+      return actor_vessel.parent_vessel.send("via__#{action}",params).strip
     else
       return "Unknown action: #{action}"
     end
-
-  end
-
-  def refresh
-
-    set_player(@id)
 
   end
 

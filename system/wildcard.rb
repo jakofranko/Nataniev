@@ -31,12 +31,12 @@ class Wildcard
 	def _swaps
 
 		hash = {}
-		hash["VESSEL:FULL"] = $nataniev.player.print
-		hash["VESSEL:NAME"] = $nataniev.player.name
-		hash["VESSEL:ATTR"] = $nataniev.player.attribute
-		hash["PARENT:FULL"] = $nataniev.player.parent_vessel.print
-		hash["PARENT:NAME"] = $nataniev.player.parent_vessel.name
-		hash["PARENT:ATTR"] = $nataniev.player.parent_vessel.attribute
+		hash["VESSEL:FULL"] = $nataniev.actor.print
+		hash["VESSEL:NAME"] = $nataniev.actor.name
+		hash["VESSEL:ATTR"] = $nataniev.actor.attribute
+		hash["PARENT:FULL"] = $nataniev.actor.parent_vessel.print
+		hash["PARENT:NAME"] = $nataniev.actor.parent_vessel.name
+		hash["PARENT:ATTR"] = $nataniev.actor.parent_vessel.attribute
 		hash["TIME::"] = Clock.new.default
 		hash["TIME:H"] = DateTime.parse(Time.now.to_s).strftime("%H").to_s
 		hash["TIME:M"] = DateTime.parse(Time.now.to_s).strftime("%M").to_s
