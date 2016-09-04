@@ -1,6 +1,8 @@
 #!/bin/env ruby
 # encoding: utf-8
 
+# You see nothing, enter the nothing.
+
 require_relative "nataniev.rb"
 	
 $nataniev = Nataniev.new

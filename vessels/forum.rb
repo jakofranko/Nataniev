@@ -23,7 +23,7 @@ class Forum
 
 		text = "This vessel grants you the unique command \"say\".\n\n"
 		sorted.to_a.reverse.each do |ago,messages|
-			text += "# #{ago}\n"
+			text += "# Written #{ago}\n"
 			messages.reverse.each do |message|
 				text += "- #{message['TEXT']}, said the #{message['NAME']}\n"
 			end
@@ -48,7 +48,7 @@ class Forum
 		flatten = "#{_room}-#{_id}-#{now} #{_name} #{q}\n"
 
 		Di.new("forum").add(flatten)
-		return "Added message: #{q}"
+		return "+ Added message: #{q}"
 
 	end
 

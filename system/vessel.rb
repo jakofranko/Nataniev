@@ -248,7 +248,7 @@ module Vessel
 
   def look_head
 
-    return parent == id ? "~ The paradox of "+"#{print.downcase}.\n\n".capitalize : "~ "+"#{print} in #{parent_vessel.print}.\n".capitalize
+    return parent == id ? "~ The paradox of #{print.downcase}.\n\n".capitalize : "~ "+"#{print} in #{parent_vessel.print}.\n".capitalize
 
   end
 

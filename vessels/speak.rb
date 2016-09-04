@@ -21,7 +21,6 @@ class Speak
 
 	def translate english, russian
 
-		# $jiin.command("flat russian vocabulary").to_a
 		# translate("Do you speak English?","Вы говорите по-английски?")
 
 		system({"TEXT" => russian,"VOICE" => "katya"}, "say -v $VOICE $TEXT")

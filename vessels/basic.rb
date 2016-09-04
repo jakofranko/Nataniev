@@ -29,6 +29,9 @@ class Basic
     _name      = q.split(" ").last
     _attribute = q.split(" ").length > 1 ? q.split(" ").first : nil
 
+    if _name.length > 14      then return "! Names cannot exceed 14 characters in length." end
+    if _attribute.length > 14 then return "! Attributes cannot exceed 14 characters in length." end
+
     new_vessel = Basic.new($nataniev.find_available_id,{'CODE' => "0000-#{parent.to_s.prepend("0",5)}-#{id.to_s.prepend("0",5)}-BASIC-#{now}", 'NAME' => _name, 'ATTR' => _attribute})
     new_vessel.save
 
@@ -73,6 +76,9 @@ class Basic
   def __name q = nil
 
     name = q.split(" ").last
+
+    if name.length > 14 then return "! Names cannot exceed 14 characters in length." end
+
     return parent_vessel.set_name(name) ? "! You named the #{parent_vessel.name}, a #{name}." : "! You cannot rename the #{parent_vessel.name}."
     
   end
@@ -80,6 +86,9 @@ class Basic
   def __make q = nil
 
     attribute = q.split(" ").last
+
+    if attribute.length > 14 then return "! Attributes cannot exceed 14 characters in length." end
+
     return parent_vessel.set_attribute(attribute) ? "! You made the #{parent_vessel.name}, #{attribute}." : "! You cannot define the #{parent_vessel.name}."
     
   end
@@ -92,6 +101,12 @@ class Basic
     v = $nataniev.make_vessel(q.to_i) ; if !v then return error_target(q) end
 
     return set_parent(v.id) ? "! You warped to #{v.print}." : "! The #{name} is locked."
+    
+  end
+
+  def __loop q = nil
+
+    return set_parent(id) ? "! You created a paradox." : "! The #{name} is locked."
     
   end
 

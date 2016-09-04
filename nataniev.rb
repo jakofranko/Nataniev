@@ -16,6 +16,8 @@ load "#{$nataniev_path}/system/timestamp.rb"
 load "#{$nataniev_path}/vessels/ghost.rb"
 load "#{$nataniev_path}/vessels/basic.rb"
 
+# You see nothing, enter the nothing.
+
 class Nataniev
 
   def initialize

@@ -95,7 +95,7 @@
 2016 06 06 - 34      Verreciel            Update               1.3
 2016 06 05 - 35      Donsol               Update               1.7
 2016 06 04 - 36      Advent v             Update               The Necropolis
-2016 06 03 - 36      Oscean               Update               Jiin
+2016 06 03 - 36      Oscean               Update               Nataniev
 2016 06 02 - 24      Hundred rabbits      Video
 2016 06 01
 2016 05 31 - 39      Pino                 Maintenance
