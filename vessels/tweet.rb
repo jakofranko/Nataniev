@@ -18,7 +18,7 @@ class Tweet
 
 		client = Twitter::REST::Client.new($twitter_config)
 		client.search("to:#{account}", :result_type => "recent").take(15).each do |tweet|
-			puts "#{tweet.user.screen_name.append(" ",25)} #{tweet.text.sub("@"+account,"").strip}"
+			puts "- #{tweet.user.screen_name.append(" ",25)} #{tweet.text.sub("@"+account,"").strip}"
 		end
 
 		return "Completed."

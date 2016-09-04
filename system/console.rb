@@ -13,7 +13,7 @@ class Console
     @id   = q
 
     puts "\n"
-    print " "+" + ".bg_white+" #{q} Connected.\n"+" "+" > ".bg_grey+" "
+    print " "+" + ".bg_white+" #{q} Connected.\n"+" "+" > ".bg_white+" "
 
   end
 
@@ -66,7 +66,7 @@ class Console
     end
 
     print("\e[1K\r")
-    print " "+" > ".bg_grey+" "+onion(@text)
+    print " "+" > ".bg_white+" "+onion(@text)
 
   end
 

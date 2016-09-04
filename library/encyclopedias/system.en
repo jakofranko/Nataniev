@@ -10,9 +10,16 @@ NATANIEV
       Limit vessel name length
     Rename
       Limit vessel name length
+    Purge
+      Implement
+    Program
+      Implement
   Vessels
     Creation should empty the previous inhabitants
     Variables in call command
+    Frozen/Unique Validation
+  Etc
+    Documentation(README.md, etc..)
   Tutorial
     Implement the ghost guide
     Implement the teapot guide
@@ -24,12 +31,17 @@ NATANIEV
   Traumae
     Implement
     Translator
+  Satellite
+    Implement again
+
+BELDAM
+  Rebuild website
 
 XXIIVV
   Document Paradise
   Migrate Bot Repos
   Implement Forum vessels
 
-HUNDREEDRABBITS
+HUNDREDRABBITS
   Setup podcast in iTunes
   Expose press events in timeline

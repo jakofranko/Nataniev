@@ -9,7 +9,7 @@ class Russi
 
 		word = Di.new("russian.vocabulary").to_a.sample
 
-		return "- #{print.capitalize}, translates \"#{word['RUSSIAN']}\" as \"#{word['ENGLISH']}\"."
+		return "- #{print.capitalize}, translates \"#{word['RUSSIAN']}\" as \"#{word['ENGLISH']}\".\n"
 
 	end
 

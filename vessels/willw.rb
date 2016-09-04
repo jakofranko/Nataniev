@@ -5,6 +5,12 @@ class Willw
 
 	include Vessel
 
+	def display q = nil
+
+		return "- #{print.capitalize}, chirps a rhyme \"#{poem(q)}\".\n"
+
+	end
+
 	def use q = nil
 		
 		return "The insect chimes into a rhyme \"#{poem(q)}\"."

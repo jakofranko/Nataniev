@@ -99,10 +99,10 @@ class Nataniev
 
   end
 
-  def find_random_basic_vessel
+  def find_random_vessel c = Basic.new.class
 
     target = make_vessel(rand(0...20000))
-    if target.class != Basic.new.class then return find_random_basic_vessel end
+    if target.class != c then return find_random_vessel(c) end
     return target
 
   end

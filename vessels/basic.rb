@@ -19,15 +19,7 @@ class Basic
 
   def destroy ; @isDestroyed = true ; save ; end
 
-  # System
-
-  def __look q = nil
-
-    return "#{look_head}#{look_note}#{look_visibles}#{look_hint}"
-
-  end
-
-  # Basic
+  #: Basic
 
   def __create q = nil
 
@@ -70,7 +62,7 @@ class Basic
     
   end
 
-  # Narative
+  #: Narative
 
   def __note q = nil
 
@@ -78,25 +70,40 @@ class Basic
     
   end
 
-  def __rename q = nil # TODO: Transform-catepillar, implement qualifier as make-pretty?
+  def __name q = nil
 
     name = q.split(" ").last
-    return parent_vessel.set_name(name) ? "! You renamed the #{parent_vessel.name} to the #{name}." : "! You cannot rename the #{parent_vessel.name}."
+    return parent_vessel.set_name(name) ? "! You named the #{parent_vessel.name}, a #{name}." : "! You cannot rename the #{parent_vessel.name}."
     
   end
 
-  # Warp
+  def __make q = nil
+
+    attribute = q.split(" ").last
+    return parent_vessel.set_attribute(attribute) ? "! You made the #{parent_vessel.name}, #{attribute}." : "! You cannot define the #{parent_vessel.name}."
+    
+  end
+
+  #: Warp
 
   def __warp q = nil
 
-    q = q.sub("to ","").to_i
+    q = q.to_s.sub("to ","").to_i
     v = $nataniev.make_vessel(q.to_i) ; if !v then return error_target(q) end
 
     return set_parent(v.id) ? "! You warped to #{v.print}." : "! The #{name} is locked."
     
   end
 
-  # Inventory
+  def __random q = nil
+
+    v = $nataniev.find_random_vessel ; if !v then return error_random end
+
+    return __warp(v.id)
+    
+  end
+
+  #: Inventory
 
   def __inventory q = nil
 
@@ -127,7 +134,7 @@ class Basic
     
   end
 
-  # Programming
+  #: Programming
 
   def __program q = nil
 
@@ -163,7 +170,7 @@ class Basic
     
   end
 
-  # Security
+  #: Security
 
   def __lock q = nil
 
@@ -215,15 +222,15 @@ class Basic
     
   end
 
-  # Locate
+  #: System
 
-  def __where q = nil
+  def __look q = nil
 
-    return @parent.to_s
+    return "#{look_head}#{look_note}#{look_visibles}#{look_hint}"
 
   end
 
-  def __sonar q = nil
+  def __sonar q = nil # Returns details about the parent location, its depth and the universe.
 
     tries = 0
     parent = @parent
@@ -231,16 +238,16 @@ class Basic
       code = $nataniev.parade.to_a[parent]["CODE"]
       if parent == code[5,5].to_i 
         if tries == 0
-          return "! You are at the stem of the #{$nataniev.make_vessel(parent).name} universe."
+          return "! You are in the #{parent_vessel.name} ##{@parent}, at the stem of #{$nataniev.make_vessel(parent).print} universe."
         else
-          return "! You are #{tries} levels deep, in the #{$nataniev.make_vessel(parent).name} universe." 
+          return "! You are in the #{parent_vessel.name} ##{@parent}, #{tries} levels deep, within the #{$nataniev.make_vessel(parent).print} universe." 
         end
       end
       parent = code[5,5].to_i
       tries += 1
     end
 
-    return "! You are in a circular paradox."
+    return "! You are in the #{parent_vessel.name}(##{@parent}), within a circular paradox."
 
   end
 

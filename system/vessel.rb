@@ -192,7 +192,7 @@ module Vessel
 
   def use q = nil
 
-    if !program.is_valid then return "Nothing happens." end
+    if !program.is_valid then return "! Nothing happens." end
     return program.run
 
   end
@@ -331,16 +331,23 @@ module Vessel
 
   def __help q = nil
 
-    text = "Help for the #{self.class.name} vessel:"
+    text = "& Help for the #{self.class.name} vessel:\n\n"
 
     lines = File.read("#{$nataniev_path}/vessels/#{self.class.name.downcase}.rb", :encoding => 'UTF-8').split("\n")
 
     content = []
     lines.each do |line|
-      if line.strip[0,6] != "def __" then next end
-      action = line.split(" ")[1].to_s.gsub("__","")
-      documentation = line.include?("#") ? line.split("#").last : nil
-      puts "#{action} -> #{documentation}"
+
+      if line.strip[0,6] == "def __"
+        action = line.split(" ")[1].to_s.gsub("__","")
+        documentation = line.include?("#") ? line.split("#").last.strip : "Missing documentation"
+        text += "- "+"{{#{action}}}".append(" ",15)+" #{documentation}\n"
+      end
+
+      if line.strip[0,3] == "#: "
+        text += "# #{line.sub('#: ','').strip}\n"
+      end
+      
     end
 
     return text
@@ -362,5 +369,6 @@ module Vessel
   def error_frozen vesselName ; return "Your #{vesselName} vessel is frozen and cannot act." end
   def error_estate distance ; return "Sorry, paradise does not have any more estate|help estate for new vessels." end
   def error_id id ; return "##{id} is not a valid warp id." end
+  def error_random ; return "A strange event occured, try again." end
 
 end

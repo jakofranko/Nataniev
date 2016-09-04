@@ -55,7 +55,7 @@ class Maeve
 		maeve = $nataniev.make_vessel(50)
 
 		if maeve.parent_vessel.id == maeve.parent_vessel.parent
-			target = $nataniev.find_random_basic_vessel
+			target = $nataniev.find_random_vessel
 			maeve.set_parent(target.id)
 			return "Warped to #{target.name}()."
 		else
