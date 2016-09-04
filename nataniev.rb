@@ -38,14 +38,14 @@ class Nataniev
 
     actor_vessel = actor.to_i > 0 ? make_vessel(actor) : make_anonym(actor)
 
-    if !actor_vessel then return "Unknown vessel id: #{actor}" else @actor = actor_vessel end
+    if !actor_vessel then return "? #{actor} is not a valid vessel id." else @actor = actor_vessel end
 
     if actor_vessel.respond_to?("__#{action}")
       return actor_vessel.send("__#{action}",params).strip
     elsif actor_vessel.parent_vessel.respond_to?("via__#{action}")
       return actor_vessel.parent_vessel.send("via__#{action}",params).strip
     else
-      return "Unknown action: #{action}"
+      return "? #{action} is not a valid action. Use {{help}} to find the valid actions for the #{actor_vessel.class.to_s.downcase} vessel."
     end
 
   end

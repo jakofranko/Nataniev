@@ -356,19 +356,19 @@ module Vessel
 
   # Errors
 
-  def error_command_invalid command ; return "#{command} is not a valid command." end
-  def error_command_banned bannedWord ; return "Paradise does not allow the use of the word #{bannedWord}." end
-  def error_locked vesselName ; return "#{vesselName} is locked and cannot me modified." end
-  def error_stem ; return "#{parent_vessel.print.capitalize} is a paradox and cannot be exited." end
-  def error_empty ; return "You do not contain any vessel." end
-  def error_target vesselId ; return vesselId.to_i > 0 ? "There are no accessible vessels at ##{vesselId}" : "There is no visible vessel named #{vesselId}." end
-  def error_program_invalid vesselName ; return "#{vesselName} does not have a valid program." end
-  def error_program_denied program ; return "#{program} is not a valid program." end
-  def error_clone vesselName, clone = nil ; return clone ? "#{vesselName} already exists at the #{clone.name}|warp to #{clone.id}." : "#{vesselName} already exists here." end
-  def error_owner vesselName ; return "You do not own #{vesselName}." end
-  def error_frozen vesselName ; return "Your #{vesselName} vessel is frozen and cannot act." end
-  def error_estate distance ; return "Sorry, paradise does not have any more estate|help estate for new vessels." end
-  def error_id id ; return "##{id} is not a valid warp id." end
-  def error_random ; return "A strange event occured, try again." end
+  def error_command_invalid command ; return "? #{command} is not a valid command." end
+  def error_command_banned bannedWord ; return "? Paradise does not allow the use of the word #{bannedWord}." end
+  def error_locked vesselName ; return "? #{vesselName} is locked and cannot me modified." end
+  def error_stem ; return "? #{parent_vessel.print.capitalize} is a paradox and cannot be exited." end
+  def error_empty ; return "? You do not contain any vessel." end
+  def error_target vesselId ; return vesselId.to_i > 0 ? "? There are no accessible vessels at ##{vesselId}" : "There is no visible vessel named #{vesselId}." end
+  def error_program_invalid vesselName ; return "? #{vesselName} does not have a valid program." end
+  def error_program_denied program ; return "? #{program} is not a valid program." end
+  def error_clone vesselName, clone = nil ; return clone ? "? #{vesselName} already exists at the #{clone.name}|warp to #{clone.id}." : "#{vesselName} already exists here." end
+  def error_owner vesselName ; return "? You do not own #{vesselName}." end
+  def error_frozen vesselName ; return "? Your #{vesselName} vessel is frozen and cannot act." end
+  def error_estate distance ; return "? Sorry, paradise does not have any more estate|help estate for new vessels." end
+  def error_id id ; return "? ##{id} is not a valid warp id." end
+  def error_random ; return "? A strange event occured, try again." end
 
 end
