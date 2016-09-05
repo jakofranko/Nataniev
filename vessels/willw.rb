@@ -13,7 +13,7 @@ class Willw
 
 	def use q = nil
 		
-		return "The insect chimes into a rhyme \"#{poem(q)}\"."
+		return "! The insect chimes into a rhyme \"#{poem(q)}\"."
 
 	end
 
@@ -25,12 +25,14 @@ class Willw
 
 		@dict = dict
 
-		query = q.to_s.sub("willwisp","").strip
 		targetTemplate = @templates.sample
 
 		p = nil
+		c = 0
 		while !p
-			p = generate(targetTemplate,query)
+			if c > 100 then targetTemplate = @templates.sample ; c = 0 end
+			p = generate(targetTemplate,q.to_s.strip)
+			c += 1
 		end
 
 	    p = p.gsub("A o", "An o")
