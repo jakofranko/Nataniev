@@ -3,6 +3,14 @@
 ~ AUTH : Devine Lu Linvega
 
 @ DATE     CODE PICT TERM                 TASK                 NAME                  TEXT
+2016 09 11 - 24      Hundred rabbits      Video
+2016 09 10 - 15      Hundred rabbits      Composition
+2016 09 09 - 38      Pino                 Maintenance
+2016 09 08 - 37      Pino                 Maintenance
+2016 09 07 - 00 
+2016 09 06 - 37      Pino                 Maintenance
+2016 09 05 - 00 
+2016 09 04 - 34      Markle               Design
 2016 09 03 - 35      Paradise             Development
 2016 09 02 - 35      Paradise             Development
 2016 09 01 - 29      Hundred rabbits      Video
