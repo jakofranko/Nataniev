@@ -6,11 +6,7 @@ NATANIEV
   Actions
     Become
       Improve for web client
-    Create
-    Rename
     Purge
-      Implement
-    Program
       Implement
   Vessels
     Creation should empty the previous inhabitants
@@ -24,21 +20,25 @@ NATANIEV
   Analytics
     Add logs to Nataniev
     Upgrade monitor
-  Blindfolk
-    Get up and running
-  Traumae
-    Implement
-    Translator
   Satellite
     Re-Implement
+  
+BLINDFOLK
+    Get up and running
+
+LIETAL
+  Implement
+  Translator
+
+OSCEAN
+    Document Paradise
+    Migrate Bot Repos
+    Implement Forum vessels
+    Improve Mobile plash
+    Add flags(TODO)
 
 BELDAM
   Rebuild website
-
-XXIIVV
-  Document Paradise
-  Migrate Bot Repos
-  Implement Forum vessels
 
 HUNDREDRABBITS
   Setup podcast in iTunes
