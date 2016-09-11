@@ -8,20 +8,27 @@ class Tweet
 
 	include Vessel
 
-	def __look q = nil
+	def via__see q = nil
 
-		account = "neauoire"
+		if q.to_s == "" then return "? Add a parameter to search for tweet." end
 
-		if !File.exist?("#{$nataniev_path}/secrets/secret.#{account}.config.rb") then return "Missing keys." end
-
-		load "#{$nataniev_path}/secrets/secret.#{account}.config.rb"
-
-		client = Twitter::REST::Client.new($twitter_config)
-		client.search("to:#{account}", :result_type => "recent").take(15).each do |tweet|
-			puts "- #{tweet.user.screen_name.append(" ",25)} #{tweet.text.sub("@"+account,"").strip}"
+		text = "& Listing:\n"
+		findTweets([q]).each do |tweet|
+			text += "- #{tweet.user.screen_name.append(" ",25)} #{tweet.text.strip.gsub(/\r\n?/, "\n")}\n"
 		end
 
-		return "Completed."
+		return text
+
+	end
+
+	def __look q = nil
+
+		text = "Listing:\n"
+		findTweets(["to:neauoire","aliceffekt","xxiivv"]).each do |tweet|
+			text += "- #{tweet.user.screen_name.append(" ",25)} #{tweet.text.strip.gsub('\n','')}\n"
+		end
+
+		return text
 
 	end
 
@@ -35,6 +42,26 @@ class Tweet
 		client.update(content)
 
 		return "Saved tweet #{content}, to #{account}."
+
+	end
+
+	def findTweets words
+
+		account = "neauoire"
+
+		if !File.exist?("#{$nataniev_path}/secrets/secret.#{account}.config.rb") then return "Missing keys." end
+		load "#{$nataniev_path}/secrets/secret.#{account}.config.rb"
+		client = Twitter::REST::Client.new($twitter_config)
+
+		tweets = []
+
+		words.each do |word|
+			client.search(word, :result_type => "recent").take(5).each do |tweet|
+				tweets.push(tweet)
+			end
+		end
+
+		return tweets
 
 	end
 

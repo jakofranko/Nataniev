@@ -239,12 +239,6 @@ class Basic
 
   #: System
 
-  def __look q = nil
-
-    return "#{look_head}#{look_note}#{look_visibles}#{look_hint}"
-
-  end
-
   def __sonar q = nil # Returns details about the parent location, its depth and the universe.
 
     tries = 0

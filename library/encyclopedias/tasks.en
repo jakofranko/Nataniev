@@ -11,7 +11,7 @@ NATANIEV
   Vessels
     Creation should empty the previous inhabitants
     Variables in call command
-    Frozen/Unique Validation
+    Frozen/Unique/Shut/Closed Validation
   Etc
     Documentation(README.md, etc..)
   Tutorial
@@ -22,20 +22,21 @@ NATANIEV
     Upgrade monitor
   Satellite
     Re-Implement
+  Twitter
+    Improve __look with multiple search queries
   
 BLINDFOLK
-    Get up and running
+  Get up and running
 
 LIETAL
   Implement
   Translator
 
 OSCEAN
-    Document Paradise
-    Migrate Bot Repos
-    Implement Forum vessels
-    Improve Mobile plash
-    Add flags(TODO)
+  Document Paradise
+  Improve Mobile plash
+  Add flags(TODO)
+  Improve search page
 
 BELDAM
   Rebuild website
@@ -43,3 +44,5 @@ BELDAM
 HUNDREDRABBITS
   Setup podcast in iTunes
   Expose press events in timeline
+  Add Image Thumbnail to Iridium video
+  Update URL to Iridium video

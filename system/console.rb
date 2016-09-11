@@ -24,7 +24,7 @@ class Console
     action = parts[0] ? parts[0] : "look"
     params = query.sub("#{actor}","").sub("#{action}","").strip
 
-    puts "\n"
+    puts "\n "+" - ".bg_white+" ------------------------------------------------------\n"
     puts $nataniev.operate(actor,action,params).console_markup
 
     @last = query.length > 1 ? query : @last

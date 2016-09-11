@@ -223,9 +223,9 @@ module Vessel
   def hint
 
     if !is_locked || owner == $nataniev.actor.id
-      if !attribute then return "? Add an adjective to #{print} by renaming it." end
-      if !note then return "? Add a Note to describe #{print}." end
-      if !program.is_valid then return "? Add a Program to interact with #{print}." end
+      if !attribute then return "? Add an adjective to #{print} by renaming it.\n" end
+      if !note then return "? Add a Note to describe #{print}.\n" end
+      if !program.is_valid then return "? Add a Program to interact with #{print}.\n" end
     end
     return nil
 
@@ -245,6 +245,12 @@ module Vessel
   end
 
   # Look
+
+  def __look q = nil
+
+    return "#{look_head}#{look_note}#{look_visibles}#{look_hint}#{look_via}"
+
+  end
 
   def look_head
 
@@ -292,6 +298,25 @@ module Vessel
   def look_hint
 
     return parent_vessel.hint
+
+  end
+
+  def look_via
+
+    lines = File.read("#{$nataniev_path}/vessels/#{parent_vessel.class.name.downcase}.rb", :encoding => 'UTF-8').split("\n")
+
+    vias = []
+    lines.each do |line|
+      if line.strip[0,9] == "def via__"
+        vias.push(line.strip.gsub("def via__","").split(" ").first)
+      end
+    end
+
+    text = ""
+
+    text += "@ #{parent_vessel.print.capitalize} grants you the additional command \"#{vias.first}\".\n"
+
+    return text
 
   end
 
@@ -361,7 +386,7 @@ module Vessel
   def error_locked vesselName ; return "? #{vesselName} is locked and cannot me modified." end
   def error_stem ; return "? #{parent_vessel.print.capitalize} is a paradox and cannot be exited." end
   def error_empty ; return "? You do not contain any vessel." end
-  def error_target vesselId ; return vesselId.to_i > 0 ? "? There are no accessible vessels at ##{vesselId}" : "There is no visible vessel named #{vesselId}." end
+  def error_target vesselId ; return vesselId.to_i > 0 ? "? There are no accessible vessels at ##{vesselId}" : "? There is no visible vessel named #{vesselId}." end
   def error_program_invalid vesselName ; return "? #{vesselName} does not have a valid program." end
   def error_program_denied program ; return "? #{program} is not a valid program." end
   def error_clone vesselName, clone = nil ; return clone ? "? #{vesselName} already exists at the #{clone.name}|warp to #{clone.id}." : "#{vesselName} already exists here." end
