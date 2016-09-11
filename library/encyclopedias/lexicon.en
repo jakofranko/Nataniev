@@ -2,15 +2,6 @@
 ~ NOTE : Project archive
 ~ AUTH : Devine Lu Linvega
 
-ABLETON
-  UNDE : Aliceffekt
-  BREF : I designed this dark {{Ableton}} Live theme where the knobs and various other controls stick out from the interface. 
-  LONG 
-    & To Install it on OS X, simply right click on the Live Icon and select {*Show Package Content*} and paste the skin file {_XXIIVV.ask_} in the skin folder. 
-    & I was disapointed to the see the hugly Ableton Live 9 Standard blue icon, so I designed a new one and packaged it along with the theme.
-  LINK
-    GITH : https://github.com/XXIIVV/AbletonSkin
-
 TO THE AEONS HELL
   UNDE : First wave
   BREF : This album is a sort of mixtape made of bits and pieces from songs I like.
@@ -22,7 +13,7 @@ ADVENT V
   BREF : {{Advent V}}, is a simple twitter game in the format of the {_Choose Your Own Adventure_} where the players tell Advent where to go in a choice of locations.
   LINK 
     TWTR : https://twitter.com/adventvrecall
-    GITH : https://github.com/XXIIVV/auto.adventv
+    GITH : https://github.com/XXIIVV/instance.adven
 
 AGEING
   UNDE : Nereid
@@ -120,11 +111,11 @@ BLINDFOLK
   LONG
     & It was first created in the span of 48 hours for {{Global Game Jam 2016|http://globalgamejam.org}}. 
     & This project joins {{Paradise}} in its text-based interaction and concepts. 
-    & The game is open source and is available on {{Github|https://github.com/XXIIVV/Blind}}
+    & The game is open source and is available on {{Github|https://github.com/XXIIVV/instance.blind}}
     & The game uses a simple scripting language, here is an example of a riposte to an attack coming from the back, and a default movement pattern with an attack and a shout.
     # case attack.backward  step.leftcase default  attack.forward  turn.right  attack.backward  say yatta
   LINK
-    GITH : https://github.com/XXIIVV/apis.blindfolk
+    GITH : https://github.com/XXIIVV/instance.blind
 
 BRANE
   UNDE : Polygonoscopy
@@ -215,13 +206,6 @@ DEW
 DICTIONAERY
   UNDE : Traumae
   BREF : The {{Dictionaery}} is a generated list of all registered/coined {{Traumae}} words.
-
-DICTIONARISM
-  UNDE : Automatons
-  BREF : {{Dictionarism}} is a simple twitter bot that generates {_-isms_} from every of every single word of a dictionary and tweets them.
-  LINK
-    TWTR : https://twitter.com/dictionarism
-    GITH : https://github.com/XXIIVV/auto.dictionarism
 
 DILUVIUM
   UNDE : Desktop
@@ -410,12 +394,6 @@ FIRST WAVE
   UNDE : Aliceffekt
   TYPE : Portal
 
-FLAG
-  UNDE : Traumae
-  BREF : The {{Traumae}} flag was released on February 2016, the graphic's ratio is 11:18(1.636). The three circles symbolizes the three root letters of the Traumae language, {_XDB_}, and are each connected with a single stroke that closes itself again.
-  LINK
-    GITH : https://github.com/Traumae/Branding
-
 FLOWERS
   UNDE : Artwork
   BREF : A series of abstract six-sided flowers drawn using a procedural drawing script. These flowers have inspired a series of illustrations used in Elodie Lareine's book titled "{{Vast}}" as well as the cover of the {{Aliceffekt}} single titled "{{Known Magye}}", released in 2014.
@@ -479,7 +457,7 @@ HOWLS VIRGIL SYSTEMS
 
 HUNDRED RABBITS
   UNDE : Hundred rabbits
-  BREF : {{Hundred Rabbits}}, is a nomad design studio founded by {{Rekka Bellum|http://kokorobo.ca}} and {{Devine Lu Linvega|Devine Lu Linvega}} aboard a {{sailboat|https://github.com/hundredrabbits/Yamaha-33}}, somewhere on the shores of the Pacific Ocean.
+  BREF : {{Hundred Rabbits}}, is a nomad design studio founded by {{Rekka Bellum|http://kokorobo.ca}} and {{Devine Lu Linvega|Devine Lu Linvega}} aboard a {{sailboat|https://github.com/hundredrabbits/Pino}}, somewhere on the shores of the Pacific Ocean.
   LONG
     & This partnership is host to interactive projects like {{Oquonie}}, {{Grimgrains|http://grimgrains.com}} and travel diaries. A {{Patreon page|https://www.patreon.com/100}} is available to help fund the production of monthly videos and liveaboard documentation.
     & Living on a {{sailboat|Hundred rabbits}} might be quite foreign for most people, as it once was for us. This selection of questions and answers will try to address the recurring requests. If you want to add to this list, ask your questions as comments {{here|https://www.patreon.com/posts/4421599}}.
@@ -500,7 +478,7 @@ GRIMGRAINS
   LINK
     MAIN : http://grimgrains.com/
     TWTR : https://twitter.com/grimgrains
-    GITH : https://github.com/XXIIVV/http.grim
+    GITH : https://github.com/XXIIVV/instance.grimg
 
 HYPERVOID
   UNDE : Polygonoscopy
@@ -527,7 +505,7 @@ KEYBOARD 468
   BREF : The {{Keyboard 468}} is a 18 keys keyboard that sorts characters by the most likely letter to follow the last input. So you always only need to type using the two rows at the top, maximizing the space and allowing for big large letters. The hidden letters are accessible through the {_alt_} key, alongside symbols and numbers.
   LONG
     * Privacy Policy
-    & This policy exists to inform you that the keyboard does not record, save, harvest or send any data of any type. The application, and its keyboard extension is self contained and does not keep any data. The active {{source code|https://github.com/neauoire/iOSKeyboard}} is also available to demonstrate that the keyboard does not hold onto your content.
+    & This policy exists to inform you that the keyboard does not record, save, harvest or send any data of any type. The application, and its keyboard extension is self contained and does not keep any data. The active {{source code|https://github.com/Echorridoors/Keyboard468}} is also available to demonstrate that the keyboard does not hold onto your content.
   LINK
     ITUN : https://itunes.apple.com/ca/app/468-keyboard/id954698999
     GITH : https://github.com/Echorridoors/Keyboard468
@@ -549,7 +527,7 @@ LEDOLIEL
   BREF : {{Ledoliel}} is a strange dating toy for iOS, involving procedural creatures and their bizarre customs, where you must try and figure out what topics they might want to discuss, gift they might want to receive and places they may like to be touched - based on their cryptic attributes.
   LINK
     ITUN : https://itunes.apple.com/us/app/ledoliel/id891693763
-    GITH : https://github.com/Echorridoors/ledoliel
+    GITH : https://github.com/Echorridoors/Ledoliel
 
 LOOKING GLACE
   UNDE : Beldam records
@@ -715,6 +693,16 @@ NATANIEV CASE
   BREF : I could not find a slick black case so I designed myself an iPhone 5S case with Society6. The print contains the name of my favourite 3 chapters of the {{Vast}} book: "{_Jlhadeaai, Huqrea & Jahaoghad_}".
   LINK
     SITE : http://society6.com/aliceffekt/Nataniev-iPhone-Cover_iPhone-Case
+    DRIV : https://drive.google.com/open?id=0B24klRuG3GLNaE5SSC1fLTJKM00
+
+ABLETON
+  UNDE : Aliceffekt
+  BREF : I designed this dark {{Ableton}} Live theme where the knobs and various other controls stick out from the interface. 
+  LONG 
+    & To Install it on OS X, simply right click on the Live Icon and select {*Show Package Content*} and paste the skin file {_XXIIVV.ask_} in the skin folder. 
+    & I was disapointed to the see the hugly Ableton Live 9 Standard blue icon, so I designed a new one and packaged it along with the theme.
+  LINK
+    DRIV : https://drive.google.com/open?id=0B24klRuG3GLNMFdKNEFDd01LZTQ
 
 NEREID
   UNDE : Illustration
@@ -742,8 +730,7 @@ CODE
   UNDE : Code
   BREF : This is a collection of linguistic and programming projects.
   TYPE : Text
-  LINK
-    GITH : https://github.com/dariusk/NaNoGenMo-2015/issues/90
+  FLAG : TODO
 
 RUBY RIDING HOOD
   UNDE : Code
@@ -792,10 +779,10 @@ OQUONIE
   BREF : {{Oquonie}} is a textless puzzle game for iPad and iPhone created in collaboration with illustrator {{Rekka Bellum|http://kokorobot.ca}} where you must find your way across an intertwined megastructure. 
   LONG
     & You will not be alone, your incarnations will have the help of {_bizaroid_} characters speaking {{an obscure language|Camilare}}.
-    & Oquonie features an original {{Aliceffekt}} soundtrack that is now available on {{Bandcamp|https://aliceffekt.bandcamp.com/album/short-stories-in-impossible-spaces}}. The game was best described as {_"{{Animal Crossing in a K-Hole|http://killscreendaily.com/articles/oquonie-maze-worth-entering/}}"_}.
+    & Oquonie features an original {{Aliceffekt}} soundtrack that is now available on {{Bandcamp|https://aliceffekt.bandcamp.com/album/short-stories-in-impossible-spaces}}. The game was best described as {_{{Animal Crossing in a K-Hole|http://killscreendaily.com/articles/oquonie-maze-worth-entering/}}_}.
   LINK
     ITUN : https://itunes.apple.com/us/app/oquonie/id819777958
-    GITH : https://github.com/hundredrabbits/Oquonie"
+    GITH : https://github.com/hundredrabbits/Oquonie
 
 OQUONIE GUIDE
   UNDE : Oquonie
@@ -837,6 +824,11 @@ OQUONIE UNIVERSE
     ? Pillar
     % content/lexicon/oquonie universe.oquonie.pillar.png
 
+MARKLE
+  UNDE : Mobile
+  BREF : More details soon.
+  FLAG : TODO
+
 THE SIXTH SEASON
   UNDE : Second wave
   BREF : {{The Sixth Season}} contains 7 original tracks, singing the {{Neauismetical|Neauismetica}} tales of the sixth season, or the {_establishment of the Oasis_}. {_Whiinders_} and the likes, raising tents hoping for a glorious end in memory of {{Rlionn}}.
@@ -856,14 +848,14 @@ PARADISE
     ? {_"In a little while you will be alone in shoreless space, to wander its limitless solitudes without friend or comrade forever--for you will remain a thought, the only existent thought, and by your nature inextinguishable, indestructible. "_} - Mark Twain, {{the mysterious Stranger|http://en.wikipedia.org/wiki/The_Mysterious_Stranger}}
   LINK
     SITE : http://paradise.xxiivv.com
-    GITH : https://github.com/XXIIVV/apis.paradise
+    GITH : https://github.com/XXIIVV/Nataniev
 
 MAEVE
   UNDE : Paradise
   BREF : {{Maeve}} is an automated {{Paradise}} vessel that travels around the universe to find and remove incomplete vessels.
   LINK
     SITE : http://paradise.xxiivv.com
-    GITH : https://github.com/XXIIVV/auto.maeve
+    GITH : https://github.com/XXIIVV/Nataniev/blob/master/vessels/maeve.rb
 
 PEDESTRIAN PARADISE
   UNDE : First wave
@@ -981,7 +973,6 @@ RING OF SCALES
   LINK
     SITE : http://www.thingiverse.com/thing:19152
 
-
 SECOND WAVE
   UNDE : Aliceffekt
   TYPE : Portal
@@ -990,7 +981,7 @@ SEPTAMBRES
   UNDE : Typography
   BREF : Septambres is the original {{Traumae}} form, or 3x3x3 grid mapping. The font also includes the base 10 vedic numbers.
   LINK
-    GITH : https://github.com/XXIIVV/Font-Collection
+    GITH : https://github.com/neauoire/Font-Collection
 
 SERVENTINES
   UNDE : Nereid
@@ -1083,7 +1074,14 @@ THE WILL THE WISP
   BREF : {{The will the wisp}} is a twitter bot that generates short poems, once every hour. Inspired by Lewis Carroll's Jabberwocky.
   LINK
     TWTR : https://twitter.com/thewillthewisp
-    GITH : https://github.com/XXIIVV/auto.willwisp
+    GITH : https://github.com/XXIIVV/Nataniev/blob/master/vessels/willw.rb
+
+DICTIONARISM
+  UNDE : Automatons
+  BREF : {{Dictionarism}} is a simple twitter bot that generates {_-isms_} from every of every single word of a dictionary and tweets them.
+  LINK
+    TWTR : https://twitter.com/dictionarism
+    GITH : https://github.com/XXIIVV/Nataniev/blob/master/vessels/disms.rb
 
 DEFINITIST
   UNDE : Automatons
@@ -1189,7 +1187,7 @@ VOCAVULARIST
   BREF : {{Vocavularist}}, is a Japanese, Russian & Korean vocabulary review program for iOS. It contains the 600 first kanji, 600 simple Russian words and 800 simple korean expressions.
   LINK
     ITUN : https://itunes.apple.com/us/app/nijuniju/id686266543
-    GITH : https://github.com/neauoire/vocavularist
+    GITH : https://github.com/Echorridoors/Vocavularist
 
 VOLKENESSEN
   UNDE : Desktop
@@ -1226,7 +1224,7 @@ OSCEAN
     & The current platform is built in {{Ruby|https://en.wikipedia.org/wiki/Ruby_(programming_language)}}, and is currently hosted on {{Digital Ocean|https://www.digitalocean.com/?refcode=4ed988ca8c17}}. The site is segmented into 3 parts, {*a time-tracker*}, {*a lexicon*} and a {*diary*}. Every single day, since 2009, a log has been added to the {{Horaire}}, every new project has an entry in the {{Lexicon|Portal}} and every event has a page in the {*diary*}. 
     ? Above these core systems, other systems exists - such as {{Paradise}}, the {{API|http://api.xxiivv.com}} and a series of {{bots|Automatons}}. This website is the skeleton of a rigorous lifestyle change, initiated in 2006.
   LINK
-    GITH : https://github.com/XXIIVV/http.oscean
+    GITH : https://github.com/XXIIVV/instance.oscea
   TYPE : Portal
   
 SHORTHAND
@@ -1244,7 +1242,7 @@ CLOCK
   LONG
     - The current time is {{!clock}}
   LINK
-    GITH : https://github.com/XXIIVV/main.clock
+    GITH : https://github.com/XXIIVV/Nataniev/blob/master/system/clock.rb
 
 DESAMBER
   UNDE : Oscean
@@ -1267,7 +1265,7 @@ DESAMBER
     - 13, Tridesamber
     - 7, Sevesamber
   LINK
-    GITH : https://github.com/XXIIVV/main.desamber
+    GITH : https://github.com/XXIIVV/Nataniev/blob/master/system/desamber.rb
 
 ~ Neauismetica
 
@@ -1540,7 +1538,7 @@ TRAUMAE
     ? Text translated into {{Traumae}}
   TYPE : Portal
   LINK
-    GITH : https://github.com/XXIIVV/tool.traumae
+    GITH : https://github.com/XXIIVV/instance.lietl
 
 DEVINE LU LINVEGA
   TYPE : Portal
