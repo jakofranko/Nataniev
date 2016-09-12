@@ -743,39 +743,41 @@ Lexicon
     DEF : The Shannon entropy is a measure of the average information content one is missing when one does not know the value of the random variable.
   Trait ascription biased
     DEF : Tendency for people to view themselves as relatively variable in terms of personality, behavior, and mood while viewing others as much more predictable.
-    
+
 ~
 
 ETC
   Moloch
     DEF : Personification of the prisoner's dilemma. The face of competitive games which demand great sacrifice of their participants. Poetic construct.
-    SRC : Refer to slatestarcodex.com/2014/07/30/meditations-on-moloch/.
+    SRC : slatestarcodex.com/2014/07/30/meditations-on-moloch/
   Intrinsic
     DEF : Ontologically basic entities, thoughts, beliefs, ideas, for which no justification is needed. For instance, belief that the self exists, (or that anything exists). The ability to identify "things". Fundamental directives (EG, pursuit of survival, reproduction). Much of the mind is, and aught be, fluid, self-organizing, built from a small set of axioms, an elegant core, but it's impossible to build a working agent without implanting it with a few assumptions, a few mechanisms that will just work straight away. These assumptions are the intrinsics.
-  acop / reflective decision theory / reflective protocol
+  acop / reflective decision theory / reflective protocol[TODO]
     DEF : acausal cooperation, but this is probably not a good name, because it becomes causal as soon as you permit abstract entities to partake in causality, and well, you probably should, because reflective protocols become obvious when you do and reflective protocols are really good. superrationality, but this is a terrible name which sounds like it means something really dumb, so if you use it with anyone who doesn't already know what it means they will assume you mean something really dumb and the conversation will catch on fire and collapse and you will not realize what has happened until it is too late. 
     EX1 : A decisionmaking process that can reason through the consequences of its nature as an abstract entity shared between many minds. Conventional rationality cannot do this, and frequently attacks itself as a result. Acop is a good property most if not all reflective/introspective decision theories have. Essentially: An agent will anticipate that agents with similarly sophisticated decision theories will commit to the same policies, and thus said agent will choose policies that it will tolerate being reflected back at it, effectively coordinating its policy decisions (and consequent actions) with every other intelligent agent without ever exchanging information, without necessarily even knowing with certainty that the other exists. It is a partial antidote to moloch, however it will not apply between factions who cannot determine each other to be acop-compatible. Generally, to make a decision on the basis of acop raises the probability that agents like you will make the same decision, even if it does not give you certainty.
-  universe
+  Universe
     DEF : A vast place, which cannot be seen beyond.
   measure
     DEF : The measure of a class of thing is the ratio by which it occurs in an infinite set.
     EX1 : the measure of even numbers in the set of integers is 1/2 (I think?..) compat requires that the measure of anti-compat resimulators across all life-supporting universes is quite low.
-  anthromag / anthropic magnitude
-    DEF : the measure of a witness. A bit of an overloaded term. May refer to the measure of a particular class of witness, a particular class of simulant, across a particular set of universes, or in a single universe/encoding, or across all universes.
-  anthromag metric
+  Anthropic Magnitude
+    DEF : The measure of a witness. A bit of an overloaded term. May refer to the measure of a particular class of witness, a particular class of simulant, across a particular set of universes, or in a single universe/encoding, or across all universes.
+  Anthropic Magnitude Metric[TODO]
     DEF : an anthromag metric of an encoding is the probability of that encoding observing its own existence from within. Its true nature seems to be fundamentally unknowable. We just use various computational/mathematical metrics instead.
-  Oulipo
+  Oulipo[TODO-Example]
     DEF : Art developed under artificial constraints. Term takes after the name of a French school primarily concerned with this
-  the aspiration
+  the aspiration[TODO-Rename]
     DEF : CEV, Coherent Extrapolated Volition, however "aspiration" is a real word that pretty much means what it sounds like it means so let's use that instead) "Yudkowsky advances the Coherent Extrapolated Volition (CEV) model. According to him, our coherent extrapolated volition is [a precise articulation of the] choices and the actions we would collectively take if "we knew more, thought faster, were more the people we wished we were, and had grown up closer together." There is, right after that, an implication that an FAI researcher's goal is not to formalize the Aspiration, which is beyond them, but to build something that can formalize the aspiration. It's plausible, and it gives purpose to those who have, for lack of better words, strayed far from their designer's intents, but personally, I cannot accept that the aspirations of the human animal are not within reach of the same.  ~faun "Rather than a Friendly AI being designed directly by human programmers, it is to be designed by a seed AI programmed to first study human nature and then produce the AI which humanity would want, given sufficient time and insight, to arrive at a satisfactory answer. The appeal to an objective though contingent human nature(perhaps expressed, for mathematical purposes, in the form of a utility function or other decision-theoretic formalism), as providing the ultimate criterion of "Friendliness", is an answer to the meta-ethical problem of defining an objective morality; extrapolated volition is intended to be what humanity objectively would want, all things considered, but it can only be defined relative to the psychological and cognitive qualities of present-day, unextrapolated humanity.  
   chimera
     DEF : A word or concept that is such a ungainly bastard of a mosaic of divergent interpretations that it can have no elegant, or even functional, definition or articulation. Under an analytic eye, it may turn out that the chimera, by what few shreds of its definition we can obtain, is an all-encompassing or all-excluding category, that is, a useless word, that could not possibly mean what it is commonly thought to. In these cases we might say that the chimera is mythical, that it does not exist.
   White Whale
     DEF : An unattainable ideal, or an ideal for which the risk of failure outweighs the potential for success, which the subject pursues single-mindedly, obsessively, despite. For them, no amount of risk will seem to outweigh the tiny sliver of possibility of success. Their values may have calcified in an absolutist state, in which no other path but the pursuit of the whale seems worth considering.
   Scott Alexander, Yvain
-    DEF : does slatestarcodex.com. Much sanity. Very insightful.
+    DEF : Much sanity. Very insightful.
+    SRC : slatestarcodex.com
   archipelago
-    DEF : A state of states with the sole purpose of enabling its citizens to gather with and be governed by their own. Yvain explores the implications and necessities quite well here http://slatestarcodex.com/2014/06/07/archipelago-and-atomic-communitarianism/ Mencius Moldbug seems to think that the archipelago will emerge as a natural consequence of free market post-statism. This is one of the reasons Yarvin is a dangerous idiot. Guaranteeing individual freedom of movement would require a huge amount of deliberate intervention. He may simply be making this shit up in order to pull libertarianism down his sinkhole.
+    DEF : A state of states with the sole purpose of enabling its citizens to gather with and be governed by their own. Mencius Moldbug seems to think that the archipelago will emerge as a natural consequence of free market post-statism. This is one of the reasons Yarvin is a dangerous idiot. Guaranteeing individual freedom of movement would require a huge amount of deliberate intervention. He may simply be making this shit up in order to pull libertarianism down his sinkhole.
+    SRC : http://slatestarcodex.com/2014/06/07/archipelago-and-atomic-communitarianism/ 
   rescue-net
     DEF : Assuming countably-infinite, equally-real universes (which is theI ultimate conclusion of mathematical-realism and other possible Tegmark-world systems), this would effectively result in a fractal of universes-resimulating-universes-resimulating-universes; or if there is an absolute upper bound on a coherent universe's complexity, universes-merely-resimulating-plausible-minds. A cosmology that assumes the combined truth of cognitive-patternism and mathematical-realist ensemble-universes, wherein all sufficiently advanced civilizations/singletons ultimately become aware of these principles, and ultimately apply acausal-trade behaviors to said system to derive absolute moral imperatives. The most likely imperative, arguably, is the creation of a rescue-net; other specific imperatives within this system may be able to be acausally inferred, but we haven't been able to formalize them yet.
   dry, drypat
