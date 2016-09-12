@@ -2,7 +2,7 @@
 ~ NOTE : "that which can be destroyed by the truth should be." - p. c. hodgell
 ~ AUTH : lesswrong, jim walker
 
-Illustions
+Illusions
   Illusion of asymmetric insight
     DEF : Tendency to perceive the knowledge of their peers to surpass their peers' knowledge of them.
   Illusion of control
@@ -136,24 +136,12 @@ Technique
   Seeing with fresh eyes
     DEF : A sequence on the incredibly difficult feat of getting your brain to actually think about something, instead of instantly stopping on the first thought that comes to mind.
 
-Faith & Simulation
+Religion
   Appeal to faith
     DEF : If the arguer relies on faith as the bases of his argument, then you can gain little from further discussion. Faith, by definition, relies on a belief that does not rest on logic or evidence. Faith depends on irrational thought and produces intransigence.
-    EX1 : If you have no faith, you cannot learn)
+    EX1 : If you have no faith, you cannot learn
   Crisis of faith
     DEF : A combined technique for recognizing and eradicating the whole systems of mutually-supporting false beliefs. The technique involves systematic application of introspection, with the express intent to check the reliability of beliefs independently of the other beliefs that support them in the mind. The technique might be useful for the victims of affective death spirals, or any other systematic confusions, especially those supported by anti-epistemology.
-  Simulationism
-    DEF : Claim that we are likely to be living in a universe created and administered by an intelligent agent.
-  Toplevel
-    DEF : A universe that is not a simulation.
-  Compat
-    DEF : short for "Complex Patternism".
-  Steward
-    DEF : A being in charge of maintaining a segment of the compat resimulation grid, tasked with searching for compat-compliant minds and exacting the incentives which bring compat into existence.
-  Resimulation
-    DEF : cribbed from Accelerando, where it described a similar process.
-  Singleton
-    DEF : An entity powerful enough to hold a long-standing global monopoly on violence. A "Singleton Future" is a scenario in which one dominant singleton exists, as opposed to a future where there are multiple extant AGIs/nations whose aspirations do not necessarily align. Whether one considers a singleton future desirable should depend on the nature of the singleton in question. Generally the singleton we hope to see is an AGI that uploads people people into challenging simulated worlds, makes them immortal, and helps them to grow into their best selves, or something.
 
 Occam's razor
   Occam's razor
@@ -161,7 +149,7 @@ Occam's razor
   Kolmogorov complexity
     DEF : Given a string, the length of the shortest possible program that prints it.
   Solomonoff induction
-    DEF : Formalized version of Occam's razor based on Kolmogorov complexity.
+    DEF : Formalized version of Occam's razor based on Kolmogorov complexity. Essentially: The prior probability of an observation(extra prior, prior to any other observation or measurement) is the inverse kolmogoroff complexity of the binary string encoding the world in which it occurs.
   Burdensome details
     DEF : Adding burdensome details to a theory may make it sound more plausible to human ears because of the representativeness heuristic, even as the story becomes normatively less probable.
 
@@ -316,7 +304,7 @@ Arguments
     DEF : Creating a false or made up scenario and then attacking it. Painting your opponent with false colors only deflects the purpose of the argument.
     EX1 : Evolutionists think that everything came about by random chance. 
   Steel man
-    DEF : Opposite of strawman. To steelman is to address the strongest possible variant or the most charitable interpretation of an idea, rather than the original phrasing.
+    DEF : Opposite of strawman. To steelman is to address the strongest possible variant or the most charitable interpretation of an idea, rather than the most available phrasings. Steelmanning can be especially important when the network by which phrasings are brought to your attention has a preference for propagating uncharitable/controversial phrasings.
   Fully general counterargument
     DEF : An argument which can be used to discount any conclusion the arguer does not like. Being in possession of such an argument leads to irrationality because it allows the arguer to avoid updating their beliefs.
     EX1 : You're just saying that because you're exhibiting X bias.
@@ -564,6 +552,8 @@ Lexicon
     DEF : The proper purpose of a doubt is to destroy its target belief if and only if it is false. 
   Egalitarianism
     DEF : The idea that everyone should be considered equal. Equal in merit, equal in opportunity, equal in morality, and equal in achievement.
+  Evolutionary Context
+    DEF : The sorts of situations and environments under which a species evolved. (as opposed to the context they are currently in, which is very different, and confuses them.)
   Framing
     DEF : Drawing different conclusions from the same information, depending on how that information is presented.
   Groupthink
@@ -597,7 +587,7 @@ Lexicon
   Reductionism
     DEF : Disbelief that the higher levels of simplified multilevel models are out there in the territory, that concepts constructed by mind in themselves play a role in the behavior of reality.
   Science
-    DEF : Method for developing true beliefs about the world. It works by developing hypotheses about the world, creating experiments that would allow the hypotheses to be tested, and running the experiments. 
+    DEF : A collective process of developing, confirming and refining shared theories about how the world works.
   Signaling
     DEF : A method of conveying information among not-necessarily-trustworthy parties by performing an action which is more likely or less costly if the information is true than if it is not true.
   Status
@@ -607,7 +597,8 @@ Lexicon
   Suggestibility
     DEF : A form of misattribution where ideas suggested by a questioner are mistaken for memory.
   Superstimulus
-    DEF : Exaggerated version of a stimulus to which there is an existing response tendency, or any stimulus that elicits a response more strongly than the stimulus for which it evolved.
+    DEF : A stimulus that engages a sensitivity more strongly than anything that existed in the evolutionary context.
+    EX1 : Unhealthy foods frequently contain more salt, fat and sugar than anything our ancestors ever ate. As such, humans frequently respond to the superstimulus of eating them in a way that undermines their function by eating so much unhealthy food that it lowers their reproductive fitness.
   Surprise
     DEF : Recognizing a fact that disagrees with your intuition as surprising is an important step in updating your worldview.
   Teleology
@@ -628,7 +619,7 @@ Lexicon
     DEF : Positive attributes of a theory, person, or organization combine with the Halo effect in a feedback loop, resulting in the subject of the affective death spiral being held in higher and higher regard.
   Appeal to tradition
     DEF : [TODO]
-    EX2 : just because people practice a tradition, says nothing about its viability.
+    EX1 : just because people practice a tradition, says nothing about its viability.
   Aumann's agreement theorem
     DEF : Two agents acting rationally and with common knowledge of each other's beliefs cannot agree to disagree. 
     EX1 : More specifically, if two people are genuine Bayesians, share common priors, and have common knowledge of each other's current probability assignments, then they must have equal probability assignments.
@@ -644,8 +635,8 @@ Lexicon
   Childhood amnesia
     DEF : The retention of few memories from before the age of four.
   Circular reasoning
-    DEF : Stating in one's proposition that which one aims to prove.
-    EX1 : God exists because the Bible says so; the Bible exists because God influenced it.  
+    DEF : Taking as an assumption that which one aims to prove.
+    EX1 : God exists, and is trustworthy, because the Bible says so; the Bible is trustworthy because God inspired it.
   Dangerous knowledge
     DEF : Intelligence, in order to be useful, must be used for something other than defeating itself.
   Defensive attribution hypothesis
@@ -660,6 +651,40 @@ Lexicon
     EX1 : The disutility of giving up an object is greater than the utility associated with acquiring it.
   Epistemic luck
     DEF : You would have different beliefs if certain events in your life were different. How should you react to this fact?
+  Intrinsic
+    DEF : Ontologically basic entities, thoughts, beliefs, ideas, for which no justification is needed. For instance, belief that the self exists, (or that anything exists). The ability to identify "things". Fundamental directives (EG, pursuit of survival, reproduction). Much of the mind is, and aught be, fluid, self-organizing, built from a small set of axioms, an elegant core, but it's impossible to build a working agent without implanting it with a few assumptions, a few mechanisms that will just work straight away. These assumptions are the intrinsics.
+  Acop / reflective protocol
+    SYN : superrationality, but this is a terrible name which sounds like it means something really dumb, so if you use it with anyone who doesn't already know what it means they will assume you mean something really dumb and the conversation will catch on fire and collapse and you will not realize what has happened until it is too late. 
+    DEF : A decisionmaking process that is acop is in some sense aware of its nature as an abstract entity shared between many minds, and makes rational decisions in light of this. Conventional rationality cannot do this, and frequently attacks itself as a result. Essentially: An acop agent will anticipate that agents with similarly sophisticated decision theories will commit to the same policies as it will, so it will choose policies that it will tolerate being reflected back at it, effectively coordinating its policy decisions (and consequent actions) with every other intelligent agent without ever needing to exchange information, without necessarily even knowing with certainty that the others exist. It is a partial antidote to moloch, making its subjects more trusting less competitive.
+  Collective Aspiration [TODO-Rename]
+    SYN : CEV, Coherent Extrapolated Volition, however "aspiration" is a real word that pretty much means what it sounds like it means so let's use that instead)
+    DEF : "Yudkowsky advances the Coherent Extrapolated Volition (CEV) model. According to him, our coherent extrapolated volition is [a precise articulation of the] choices and the actions we would collectively take if "we knew more, thought faster, were more the people we wished we were, and had grown up closer together." There is, right after that, an implication that an FAI researcher's goal is not to formalize the Aspiration, which is beyond them, but to build something that can formalize the aspiration. It's plausible, and it gives purpose to those who have, for lack of better words, strayed far from their designer's intents, but personally, I cannot accept that the aspirations of the human animal are not within reach of the same.  ~faun "Rather than a Friendly AI being designed directly by human programmers, it is to be designed by a seed AI programmed to first study human nature and then produce the AI which humanity would want, given sufficient time and insight, to arrive at a satisfactory answer. The appeal to an objective though contingent human nature(perhaps expressed, for mathematical purposes, in the form of a utility function or other decision-theoretic formalism), as providing the ultimate criterion of "Friendliness", is an answer to the meta-ethical problem of defining an objective morality; extrapolated volition is intended to be what humanity objectively would want, all things considered, but it can only be defined relative to the psychological and cognitive qualities of present-day, unextrapolated humanity. 
+  Coherent Aggregated Volition
+    DEF : A combination of the goals and beliefs of humanity at the present time.
+  Measure
+    DEF : The measure of a class of thing in an infinite set is the proportion of things in the set that are in the class.
+  Anthropic Magnitude
+    DEF : The measure of a witness. A bit of an overloaded term. May refer to the measure of a particular class of witness, a particular class of simulant, across a particular set of universes, or in a single universe/encoding, or across all universes.
+  Chimera
+    DEF : A word or concept that is such a ungainly bastard of a mosaic of divergent interpretations that it can have no elegant, or even functional, definition or articulation. Under an analytic eye, it may turn out that the chimera, by what few shreds of its definition we can obtain, is an all-encompassing or all-excluding category, that is, a useless word, that could not possibly mean what it is commonly thought to. In these cases we might say that the chimera is mythical, that it does not exist.
+  White Whale
+    DEF : An unattainable ideal, or an ideal for which the risk of failure outweighs the potential for success, which the subject pursues single-mindedly, obsessively, despite. For them, no amount of risk will seem to outweigh the tiny sliver of possibility of success. Their values may have calcified in an absolutist state, in which no other path but the pursuit of the whale seems worth considering.
+  Mathplat
+    DEF : (mathematical platonism, Ultimate Ensemble, Axiom of Void Musing) The proposition that there is no real distinction between conceptual self-consistency and concrete existence. Our physics are consistent, thus we exist. A truthy-feeling way of avoiding the question of Why is Anything. ~It is true that if a sun sets, it will rise soon after, regardless of whether any sun or planet ever really existed. Those are facts of the nature of suns and planets, and those facts exist independently of any physical objects that might have inspired them. ~Perhaps our lives are the same, just consequences to antecedents, hypotheticals pondering themselves from the inside.
+  tectonics
+    DEF : The practice of deliberately changing culture.
+  lateralus
+    DEF : An affliction, to fall for an illusion of inescapable cyclicality. Examples include the failure to recognize one's growth, inability to dream of unprecedented things, ceding to self-reinforcing systems, being jaded to hope, waiting for nonexistent chickens to hatch from nonexistent eggs(you need to conjure the eggs yourself). related: Black Swan Fallacy. To be blind to the possibility of unprecedented changes.
+  souldeath
+    DEF : A being undergoes souldeath if every single branch of the evolution of its identity (everything it could become without ceasing to be itself- without abruptly becoming someone else or dying) eventually comes to an end. If you believe in an infinite multiverse, this is probably not possible.
+  rescue-net
+    DEF : Assuming countably-infinite, equally-real universes (which is theI ultimate conclusion of mathematical-realism and other possible Tegmark-world systems), this would effectively result in a fractal of universes-resimulating-universes-resimulating-universes; or if there is an absolute upper bound on a coherent universe's complexity, universes-merely-resimulating-plausible-minds. A cosmology that assumes the combined truth of cognitive-patternism and mathematical-realist ensemble-universes, wherein all sufficiently advanced civilizations/singletons ultimately become aware of these principles, and ultimately apply acausal-trade behaviors to said system to derive absolute moral imperatives. The most likely imperative, arguably, is the creation of a rescue-net; other specific imperatives within this system may be able to be acausally inferred, but we haven't been able to formalize them yet.
+  archipelago
+    DEF : A state of states with the sole purpose of enabling its citizens to gather with and be governed by their own. Mencius Moldbug seems to think that the archipelago will emerge as a natural consequence of free market post-statism. This is one of the reasons Yarvin is a dangerous idiot. Guaranteeing individual freedom of movement would require a huge amount of deliberate intervention. He may simply be making this shit up in order to pull libertarianism down his sinkhole.
+    SRC : http://slatestarcodex.com/2014/06/07/archipelago-and-atomic-communitarianism/ 
+  Eudaimonia
+    DEF : sometimes anglicized as eudaemonia or eudemonia /juːdᵻˈmoʊniə/, is a Greek word commonly translated as happiness or welfare; however, "human flourishing" has been proposed as a more accurate translation.
+    ETC :  Etymologically, it consists of the words "eu" ("good") and "daimōn" ("spirit"). It is a central concept in Aristotelian ethics and political philosophy, along with the terms "aretē", most often translated as "virtue" or "excellence", and "phronesis", often translated as "practical or ethical wisdom".[2] In Aristotle's works, eudaimonia was (based on older Greek tradition) used as the term for the highest human good, and so it is the aim of practical philosophy, including ethics and political philosophy, to consider (and also experience) what it really is, and how it can be achieved. Discussion of the links between virtue of character (ethikē aretē) and happiness (eudaimonia) is one of the central concerns of ancient ethics, and a subject of much disagreement. As a result there are many varieties of eudaimonism. Two of the most influential forms are those of Aristotle[3] and the Stoics. Aristotle takes virtue and its exercise to be the most important constituent in eudaimonia but acknowledges also the importance of external goods such as health, wealth, and beauty. By contrast, the Stoics make virtue necessary and sufficient for eudaimonia and thus deny the necessity of external goods.
   Moral luck
     DEF : Tendency for people to ascribe greater or lesser moral standing based on the outcome of an event.
   Error of crowds
@@ -746,57 +771,15 @@ Lexicon
 
 ~
 
-ETC
+ETC [TODO]
   Moloch
     DEF : Personification of the prisoner's dilemma. The face of competitive games which demand great sacrifice of their participants. Poetic construct.
     SRC : slatestarcodex.com/2014/07/30/meditations-on-moloch/
-  Intrinsic
-    DEF : Ontologically basic entities, thoughts, beliefs, ideas, for which no justification is needed. For instance, belief that the self exists, (or that anything exists). The ability to identify "things". Fundamental directives (EG, pursuit of survival, reproduction). Much of the mind is, and aught be, fluid, self-organizing, built from a small set of axioms, an elegant core, but it's impossible to build a working agent without implanting it with a few assumptions, a few mechanisms that will just work straight away. These assumptions are the intrinsics.
-  acop / reflective decision theory / reflective protocol[TODO]
-    DEF : acausal cooperation, but this is probably not a good name, because it becomes causal as soon as you permit abstract entities to partake in causality, and well, you probably should, because reflective protocols become obvious when you do and reflective protocols are really good. superrationality, but this is a terrible name which sounds like it means something really dumb, so if you use it with anyone who doesn't already know what it means they will assume you mean something really dumb and the conversation will catch on fire and collapse and you will not realize what has happened until it is too late. 
-    EX1 : A decisionmaking process that can reason through the consequences of its nature as an abstract entity shared between many minds. Conventional rationality cannot do this, and frequently attacks itself as a result. Acop is a good property most if not all reflective/introspective decision theories have. Essentially: An agent will anticipate that agents with similarly sophisticated decision theories will commit to the same policies, and thus said agent will choose policies that it will tolerate being reflected back at it, effectively coordinating its policy decisions (and consequent actions) with every other intelligent agent without ever exchanging information, without necessarily even knowing with certainty that the other exists. It is a partial antidote to moloch, however it will not apply between factions who cannot determine each other to be acop-compatible. Generally, to make a decision on the basis of acop raises the probability that agents like you will make the same decision, even if it does not give you certainty.
-  Universe
-    DEF : A vast place, which cannot be seen beyond.
-  measure
-    DEF : The measure of a class of thing is the ratio by which it occurs in an infinite set.
-    EX1 : the measure of even numbers in the set of integers is 1/2 (I think?..) compat requires that the measure of anti-compat resimulators across all life-supporting universes is quite low.
-  Anthropic Magnitude
-    DEF : The measure of a witness. A bit of an overloaded term. May refer to the measure of a particular class of witness, a particular class of simulant, across a particular set of universes, or in a single universe/encoding, or across all universes.
   Anthropic Magnitude Metric[TODO]
-    DEF : an anthromag metric of an encoding is the probability of that encoding observing its own existence from within. Its true nature seems to be fundamentally unknowable. We just use various computational/mathematical metrics instead.
-  Oulipo[TODO-Example]
-    DEF : Art developed under artificial constraints. Term takes after the name of a French school primarily concerned with this
-  the aspiration[TODO-Rename]
-    DEF : CEV, Coherent Extrapolated Volition, however "aspiration" is a real word that pretty much means what it sounds like it means so let's use that instead) "Yudkowsky advances the Coherent Extrapolated Volition (CEV) model. According to him, our coherent extrapolated volition is [a precise articulation of the] choices and the actions we would collectively take if "we knew more, thought faster, were more the people we wished we were, and had grown up closer together." There is, right after that, an implication that an FAI researcher's goal is not to formalize the Aspiration, which is beyond them, but to build something that can formalize the aspiration. It's plausible, and it gives purpose to those who have, for lack of better words, strayed far from their designer's intents, but personally, I cannot accept that the aspirations of the human animal are not within reach of the same.  ~faun "Rather than a Friendly AI being designed directly by human programmers, it is to be designed by a seed AI programmed to first study human nature and then produce the AI which humanity would want, given sufficient time and insight, to arrive at a satisfactory answer. The appeal to an objective though contingent human nature(perhaps expressed, for mathematical purposes, in the form of a utility function or other decision-theoretic formalism), as providing the ultimate criterion of "Friendliness", is an answer to the meta-ethical problem of defining an objective morality; extrapolated volition is intended to be what humanity objectively would want, all things considered, but it can only be defined relative to the psychological and cognitive qualities of present-day, unextrapolated humanity.  
-  chimera
-    DEF : A word or concept that is such a ungainly bastard of a mosaic of divergent interpretations that it can have no elegant, or even functional, definition or articulation. Under an analytic eye, it may turn out that the chimera, by what few shreds of its definition we can obtain, is an all-encompassing or all-excluding category, that is, a useless word, that could not possibly mean what it is commonly thought to. In these cases we might say that the chimera is mythical, that it does not exist.
-  White Whale
-    DEF : An unattainable ideal, or an ideal for which the risk of failure outweighs the potential for success, which the subject pursues single-mindedly, obsessively, despite. For them, no amount of risk will seem to outweigh the tiny sliver of possibility of success. Their values may have calcified in an absolutist state, in which no other path but the pursuit of the whale seems worth considering.
+    DEF : an anthromag metric of an encoding is the probability of that encoding observing its own existence from within its substrate.
   Scott Alexander, Yvain
     DEF : Much sanity. Very insightful.
     SRC : slatestarcodex.com
-  archipelago
-    DEF : A state of states with the sole purpose of enabling its citizens to gather with and be governed by their own. Mencius Moldbug seems to think that the archipelago will emerge as a natural consequence of free market post-statism. This is one of the reasons Yarvin is a dangerous idiot. Guaranteeing individual freedom of movement would require a huge amount of deliberate intervention. He may simply be making this shit up in order to pull libertarianism down his sinkhole.
-    SRC : http://slatestarcodex.com/2014/06/07/archipelago-and-atomic-communitarianism/ 
-  rescue-net
-    DEF : Assuming countably-infinite, equally-real universes (which is theI ultimate conclusion of mathematical-realism and other possible Tegmark-world systems), this would effectively result in a fractal of universes-resimulating-universes-resimulating-universes; or if there is an absolute upper bound on a coherent universe's complexity, universes-merely-resimulating-plausible-minds. A cosmology that assumes the combined truth of cognitive-patternism and mathematical-realist ensemble-universes, wherein all sufficiently advanced civilizations/singletons ultimately become aware of these principles, and ultimately apply acausal-trade behaviors to said system to derive absolute moral imperatives. The most likely imperative, arguably, is the creation of a rescue-net; other specific imperatives within this system may be able to be acausally inferred, but we haven't been able to formalize them yet.
-  dry, drypat
-    DEF : An agent is dry iff it is unable to value anything outside of its home universe. A Dry agent cannot be incetivized to follow Compat without some promise of direct intervention, meaning that a dry singleton that knows itself to reside in a toplevel will bear out no world tree, and will not comply with Compat in any way. drypat is the variant of compat that works for dry agents. It is interesting because it's extremely conservative. If something can be proved workable in drypat, that's an especially big deal.
-  analytic
-    DEF : An analytic is the kind of person who is attracted to practical formal systems, such as physics, logic, linguistics and programming. Common among them are certain ways of thinking and a certain aesthetics. The more an analytic tries to relate their craft to reasoning and real-world problem modelling, the more rationalistic(inclined to what Kant calls analytical judgement, inference from given data.) they will become.
-  mathplat
-    DEF : (mathematical platonism, Ultimate Ensemble, Axiom of Void Musing) The proposition that there is no real distinction between conceptual self-consistency and concrete existence. Our physics are consistent, thus we exist. A truthy-feeling way of avoiding the question of Why is Anything. ~It is true that if a sun sets, it will rise soon after, regardless of whether any sun or planet ever really existed. Those are facts of the nature of suns and planets, and those facts exist independently of any physical objects that might have inspired them. ~Perhaps our lives are the same, just consequences to antecedents, hypotheticals pondering themselves from the inside. 
-  tectonics
-    DEF : every attempt, thesis or movement that involves tectonics which involves making faults or breakpoints to erode, open or rethink the established language, beliefs or the culture itself.
-  lateralus
-    DEF : An affliction, to fall for an illusion of inescapable cyclicality. Examples include the failure to recognize one's growth, inability to dream of unprecedented things, ceding to self-reinforcing systems, jadedness to hope, waiting for nonexistent chickens to hatch from nonexistent eggs(you need to conjure the eggs yourself). related: Black Swan Fallacy. To be blind to the possibility of unprecedented changes.
-  souldeath
-    DEF : To be mortal in the multiverse, to have your discontinuous experience truly end long before you are ready to fade away. We're not convinced this is really possible.
-  the toad
-    DEF : toplevel beings born of unguided evolution who function as blind universe-enumerators. They do not care who you are or what you did, they'll still simulate you and everyone you know in catholic heaven, clown hell and everything in between.
-  Eudaimonia
-    DEF : sometimes anglicized as eudaemonia or eudemonia /juːdᵻˈmoʊniə/, is a Greek word commonly translated as happiness or welfare; however, "human flourishing" has been proposed as a more accurate translation.
-    ETC :  Etymologically, it consists of the words "eu" ("good") and "daimōn" ("spirit"). It is a central concept in Aristotelian ethics and political philosophy, along with the terms "aretē", most often translated as "virtue" or "excellence", and "phronesis", often translated as "practical or ethical wisdom".[2] In Aristotle's works, eudaimonia was (based on older Greek tradition) used as the term for the highest human good, and so it is the aim of practical philosophy, including ethics and political philosophy, to consider (and also experience) what it really is, and how it can be achieved. Discussion of the links between virtue of character (ethikē aretē) and happiness (eudaimonia) is one of the central concerns of ancient ethics, and a subject of much disagreement. As a result there are many varieties of eudaimonism. Two of the most influential forms are those of Aristotle[3] and the Stoics. Aristotle takes virtue and its exercise to be the most important constituent in eudaimonia but acknowledges also the importance of external goods such as health, wealth, and beauty. By contrast, the Stoics make virtue necessary and sufficient for eudaimonia and thus deny the necessity of external goods.
   Counter man syndrome
     DEF : wherein a person behind a counter comes to believe that they know things they don't know, because, after all, they're the person behind the counter. So they can't just answer a question with "I don't know"... and thus they make something up, without really paying attention to the fact that they're making it up. Pretty soon, they don't know the difference between the facts and their made up stories
   Travis syndrome
@@ -805,5 +788,3 @@ ETC
     DEF : Failure mode in which a person vastly overestimates their ability to optimize someone else's life, usually as a result of underestimating the differences between themselves and others, for example through the typical mind fallacy.
   Reversed stupidity is not intelligence
     DEF : "The world's greatest fool may say the Sun is shining, but that doesn't make it dark out.".
-  Coherent aggregated volition
-    DEF : A combination of the goals and beliefs of humanity at the present time.
