@@ -27,7 +27,7 @@ class Basic
     q = " #{q} ".sub(" a ","").sub(" an ","").sub(" the ","").strip
 
     _name      = q.split(" ").last
-    _attribute = q.split(" ").length > 1 ? q.split(" ").first : nil
+    _attribute = q.split(" ").length > 1 ? q.split(" ").first : ""
 
     if _name.length > 14      then return "! Names cannot exceed 14 characters in length." end
     if _attribute.length > 14 then return "! Attributes cannot exceed 14 characters in length." end
@@ -173,7 +173,7 @@ class Basic
 
   def __call q = nil
 
-    if q.to_i < 1 then return error_id end
+    if q.to_i < 1 then return error_id(q) end
 
     return $nataniev.make_vessel(q.to_i).use
     
@@ -235,6 +235,23 @@ class Basic
 
     return "! TODO"
     
+  end
+
+  #: Lookups
+
+  def __find q = nil 
+
+    if q.split(" ").first == "my"
+      vessel = find_owned_vessel(q.sub("my ",''))
+    else q.split(" ").first == "the"
+      vessel = find_any_vessel(q.sub("my ",''))
+    end
+
+    if !vessel then return "! There are no vessel named \"#{q}\"." end
+    if vessel.is_hidden then return "! The #{vessel.print} is hidden and cannot be located." end
+
+    return "! {{#{vessel.print.capitalize}}} is located at #{vessel.parent}."
+
   end
 
   #: System
