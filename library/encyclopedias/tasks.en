@@ -10,6 +10,18 @@ NATANIEV
       Implement
     Program
       Implement
+    Find my
+      Implement
+    Find a
+      Implement
+    Find the
+      Implement
+    Make
+      Rename(?!)
+    Call the
+      Implement
+    Call my
+      Implement
   Vessels
     Creation should empty the previous inhabitants
     Variables in call command
@@ -27,6 +39,8 @@ NATANIEV
     Re-Implement
   EN Parser
     Test saving?!
+  Russian
+    Improve learning tools
   
 BLINDFOLK
   Get up and running
@@ -40,6 +54,8 @@ OSCEAN
   Improve Mobile plash
   Add flags(TODO)
   Improve search page
+  EN module
+    Trial with Rationality Canon file
 
 BELDAM
   Rebuild website
@@ -47,6 +63,5 @@ BELDAM
 HUNDREDRABBITS
   Setup podcast in iTunes
   Expose press events in timeline
-  Add Image Thumbnail to Iridium video
   Update URL to Iridium video
   Edit beer bread capsule

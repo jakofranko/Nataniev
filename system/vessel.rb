@@ -312,11 +312,11 @@ module Vessel
       end
     end
 
-    text = ""
+    if vias.length == 0 then return nil end
+    if vias.length == 1 then return "@ #{parent_vessel.print.capitalize} grants you the additional command \"#{vias.first}\".\n" end
+    if vias.length == 2 then return "@ #{parent_vessel.print.capitalize} grants you the additional commands \"#{vias[0]}\" and \"#{vias[1]}\".\n" end
 
-    text += "@ #{parent_vessel.print.capitalize} grants you the additional command \"#{vias.first}\".\n"
-
-    return text
+    return "@ #{parent_vessel.print.capitalize} grants you the additional commands.\n"
 
   end
 
