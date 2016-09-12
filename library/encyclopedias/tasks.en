@@ -8,10 +8,13 @@ NATANIEV
       Improve for web client
     Purge
       Implement
+    Program
+      Implement
   Vessels
     Creation should empty the previous inhabitants
     Variables in call command
     Frozen/Unique/Shut/Closed Validation
+    Warn for long notes in the <hint>
   Etc
     Documentation(README.md, etc..)
   Tutorial
@@ -22,8 +25,8 @@ NATANIEV
     Upgrade monitor
   Satellite
     Re-Implement
-  Twitter
-    Improve __look with multiple search queries
+  EN Parser
+    Test saving?!
   
 BLINDFOLK
   Get up and running

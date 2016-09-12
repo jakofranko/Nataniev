@@ -4,26 +4,26 @@
 
 Illustions
   Illusion of asymmetric insight
-    DEF : Tendency of people to perceive the knowledge of their peers to surpass their peers' knowledge of them.
+    DEF : Tendency to perceive the knowledge of their peers to surpass their peers' knowledge of them.
   Illusion of control
     DEF : Tendency to believe they can control or at least influence outcomes that they clearly cannot.
   Illusion of external agency
-    DEF : When people view self-generated preferences as instead being caused by insightful, effective and benevolent agents
+    DEF : Tendency to perceive self-generated preferences as instead being caused by insightful, effective and benevolent agents
   Illusory correlation
-    DEF : Beliefs that inaccurately suppose a relationship between a certain type of action and an effect. Inaccurately remembering a relationship between two events.
+    DEF : Tendency to believe that inaccurately suppose a relationship between a certain type of action and an effect. Inaccurately remembering a relationship between two events.
   Illusion of truth effect
     DEF : That people are more likely to identify as true statements those they have previously heard (even if they cannot consciously remember having heard them), regardless of the actual validity of the statement. In other words, a person is more likely to believe a familiar statement than an unfamiliar one.
   Clustering illusion
-    DEF : Tendency to see patterns where actually none exist.
+    DEF : Tendency to perceive patterns where actually none exist.
   Frequency illusion
     DEF : Phenomenon in which people who just learn or notice something start seeing it everywhere.
     ALT : Baader-Meinhof Phenomenon
   Illusory transparency
-    DEF : People overestimate others' ability to know them, and they also overestimate their ability to know others. Misleading impression that your words convey more to others than they really do.
+    DEF : Tendency to overestimate others' ability to know them, and they also overestimate their ability to know others. Misleading impression that your words convey more to others than they really do.
   Illusory superiority
-    DEF : Overestimating one's desirable qualities, and underestimating undesirable qualities, relative to other people. (Also known as "Lake Wobegon effect", "better-than-average effect", or "superiority bias".)[81]
+    DEF : Tendency to overestimating one's desirable qualities, and underestimating undesirable qualities, relative to other people. (Also known as "Lake Wobegon effect", "better-than-average effect", or "superiority bias".)
 
-Fault
+Faults
   Cached thought
     DEF : Answer that was arrived at by recalling a previously-computed conclusion, rather than performing the reasoning from scratch.
   Déformation professionnelle
@@ -52,7 +52,7 @@ Theories
   Causal decision theory
     DEF : a branch of decision theory which advises an agent to take actions that maximizes the causal consequences on the probability of desired outcomes
   Control theory
-    An example is a cruise control, which maintains a certain speed, but only measures the current speed, and knows nothing of the system that produces that speed (wind, car weight, grade). : 
+    EX1 : An example is a cruise control, which maintains a certain speed, but only measures the current speed, and knows nothing of the system that produces that speed (wind, car weight, grade).
   Decision theory
     DEF : Is the study of principles and algorithms for making correct decisions-that is, decisions that allow an agent to achieve better outcomes with respect to its goals.
   Evidential decision theory
@@ -162,6 +162,8 @@ Occam's razor
     DEF : Given a string, the length of the shortest possible program that prints it.
   Solomonoff induction
     DEF : Formalized version of Occam's razor based on Kolmogorov complexity.
+  Burdensome details
+    DEF : Adding burdensome details to a theory may make it sound more plausible to human ears because of the representativeness heuristic, even as the story becomes normatively less probable.
 
 Bayesianism
   Bayesian probability
@@ -217,6 +219,8 @@ Fallacies
     EX1 : 
 
 Biases
+  Authority bias
+    DEF : Tendency to attribute greater accuracy to the opinion of an authority figure (unrelated to its content) and be more influenced by that opinion.
   Conformity bias
     DEF : Behaving similarly to the others in a group, even if doing so goes against your own judgment.
   Ingroup bias
@@ -329,13 +333,14 @@ Arguments
     EX1 : labeling, straw man arguments, name calling, offensive remarks and anger.
     ENG : to the man
   Red herring
+    DEF : A diversion from the active topic.
     DEF : Arguer diverts the attention by changing the subject.
 
 ~
 ~
 ~
 
-Effects(To Complete)
+Effects[TODO]
   Ambiguity effect
     DEF : Tendency to avoid options for which missing information makes the probability seem "unknown".
   Bandwagon effect
@@ -427,7 +432,7 @@ Effects(To Complete)
   Von restorff effect
     DEF : Tendency to remember an item that "stands out like a sore thumb", more than other items.
   Worse-than-average effect
-    DEF : A tendency to believe ourselves to be worse than others at tasks which are difficult.[85]
+    DEF : Tendency to believe ourselves to be worse than others at tasks which are difficult.
   Zeigarnik effect
     DEF : That uncompleted or interrupted tasks are remembered better than completed ones.
   Focusing effect
@@ -435,7 +440,7 @@ Effects(To Complete)
 
 ~
 
-Biases(To Complete)
+Biases[TODO]
   Actor–observer bias
     DEF : Tendency for explanations of other individuals' behaviors to overemphasize the influence of their personality and underemphasize the influence of their situation (see also Fundamental attribution error), and for explanations of one's own behaviors to do the opposite (that is, to overemphasize the influence of our situation and underemphasize the influence of our own personality).
   Anthropic bias
@@ -471,13 +476,13 @@ Biases(To Complete)
   Mood-congruent memory bias
     DEF : The improved recall of information congruent with one's current mood.
   Notational bias
-    DEF : Form of cultural bias in which a notation induces the appearance of a nonexistent natural law.
+    DEF : Cultural bias in which a notation induces the appearance of a nonexistent natural law.
   Omission bias
     DEF : Tendency to judge harmful actions as worse, or less moral, than equally harmful omissions.
   Self-serving bias
     DEF : Tendency to attribute successes to internal characteristics while blaming failures on outside forces. It may also manifest itself as a tendency for people to evaluate ambiguous information in a way beneficial to their interests.
   Shared information bias
-    DEF : Known as the tendency for group members to spend more time and energy discussing information that all members are already familiar with (i.e., shared information), and less time and energy discussing information that only some members are aware of.
+    DEF : Tendency for group members to spend more time and energy discussing information that all members are already familiar with (i.e., shared information), and less time and energy discussing information that only some members are aware of.
     EX1 : unshared information
   Status quo bias
     DEF : Tendency to like things to stay relatively the same.
@@ -491,11 +496,11 @@ Biases(To Complete)
   Unit bias
     DEF : Tendency to want to finish a given unit of a task or an item with strong effects on the consumption of food in particular.
   Zero-risk bias
-    DEF : Preference for reducing a small risk to zero over a greater reduction in a larger risk. It is relevant
+    DEF : Preference for reducing a small risk to zero over a greater reduction in a larger risk.
 
 ~
 
-Fallacies(To Complete)
+Fallacies[TODO]
   Composition fallacy
     DEF : when the conclusion of an argument depends on an erroneous characteristic from parts of something to the whole or vice versa.
     EX1 : Humans have consciousness and human bodies and brains consist of atoms; therefore, atoms have consciousness.
@@ -509,7 +514,8 @@ Fallacies(To Complete)
     DEF : A rhetorical move often used in political, philosophical, and cultural arguments.
     EX1 : X is in a category whose archetypal member gives us a certain emotional reaction. Therefore, we should apply that emotional reaction to X, even though it is not a central category member.
   Reification fallacy
-    EX1: IQ tests as an actual measure of intelligence; the concept of race (even though genetic attributes exist), from the chosen combination of attributes or the labeling of a group of people, come from abstract social constructs; Astrology; god(s); Jesus; Santa Claus, black race, white race, etc.
+    EX1 : IQ tests as an actual measure of intelligence; the concept of race (even though genetic attributes exist), from the chosen combination of attributes or the labeling of a group of people, come from abstract social constructs; 
+    EX2 : Astrology; god(s); Jesus; Santa Claus, black race, white race, etc.
   Scales of justice fallacy
     DEF : Error of using a simple polarized scheme for deciding a complex issue/ each piece of evidence about the question is individually categorized as supporting exactly one of the two opposing positions.
   Texas sharpshooter fallacy
@@ -521,106 +527,79 @@ Fallacies(To Complete)
 
 Lexicon
   Akrasia
-    DEF : the state of acting against one's better judgment. Note that, for example, if you are procrastinating because it's not in your best interest to complete the task you are delaying, it is not a case of akrasia.
+    DEF : State of acting against one's better judgment.
   Alief
-    DEF : an independent source of emotional reaction which can coexist with a contradictory belief.
+    DEF : An independent source of emotional reaction which can coexist with a contradictory belief.
     EX1 : The fear felt when a monster jumps out of the darkness in a scary movie is based on the alief that the monster is about to attack you, even though you believe that it cannot.
   Altruism
-    DEF : Actions undertaken for the benefit of other people. If you do something to feel good about helping people, or even to be a better person in some spiritual sense, it isn't truly altruism.
+    DEF : Actions undertaken for the benefit of other people. 
+    EX1 : If you do something to feel good about helping people, or even to be a better person in some spiritual sense, it isn't truly altruism.
   Anthropomorphism
     DEF : Attributing distinctly human characteristics to nonhuman processes.
   Anti-epistemology
-    DEF : is bad explicit beliefs about rules of reasoning, usually developed in the course of protecting an existing false belief - false beliefs are opposed not only by true beliefs (that must then be obscured in turn) but also by good rules of systematic reasoning (which must then be denied). The explicit defense of fallacy as a general rule of reasoning is anti-epistemology.
+    DEF : Bad explicit beliefs about rules of reasoning, usually developed in the course of protecting an existing false belief
   Anti-inductiveness
-    DEF : (also known as the reverse Tinkerbell effect) - it is the idea that the market would stop being efficient if everyone acted like it already was efficient.
-    EX1 : is that of a vote in a democracy. The more people that believe their vote counts towards the outcome of an election, the less their votes count, as there is a greater population of voters, and thus each individual voter has a lower percentage of total votes.
-  Antiprediction
-    DEF : is a statement of confidence in an event that sounds startling, but actually isn't far from a maxentropy prior.
-    EX1 : If someone thinks that our state of knowledge implies strong ignorance about the speed of some process X on a logarithmic scale from nanoseconds to centuries, they may make the startling-sounding statement that X is very unlikely to take 'one to three years'.
-  Authority
-    DEF : Tendency to attribute greater accuracy to the opinion of an authority figure (unrelated to its content) and be more influenced by that opinion.[citation needed]
+    DEF : The idea that the market would stop being efficient if everyone acted like it already was efficient.
+    EX1 : A vote in a democracy (the more people that believe their vote counts towards the outcome of an election, the less their votes count).
+    ALT : Reverse Tinkerbell effect
   Belief
-    DEF : the mental state in which an individual holds a proposition to be true. Beliefs are often metaphorically referred to as maps, and are considered valid to the extent that they correctly correspond to the truth. A person's knowledge is a subset of their beliefs, namely the beliefs that are also true and justified. Beliefs can be second-order, concerning propositions about other beliefs.
+    DEF : the mental state in which an individual holds a proposition to be true. 
   Beneffectance
     DEF : Tendency to perceive oneself as responsible for desirable outcomes but not responsible for undesirable ones.
   Causality
-    DEF : refers to the relationship between an event (the cause) and a second event (the effect), where the second event is a direct consequence of the first.
+    DEF : Relationship between a cause and an effect, where the effect is a direct consequence of the cause.
   Compartmentalization
-    DEF : A tendency to restrict application of a generally-applicable skill, such as scientific method, only to select few contexts. More generally, the concept refers to not following a piece of knowledge to its logical conclusion, or not taking it seriously.
+    DEF : Tendency to restrict application of a generally-applicable skill, such as scientific method, only to select few contexts.
   Confabulation
     DEF : Remembering something that never actually happened.
-  Consequentialism
-    DEF : the ethical theory that people should choose the action that will result in the best outcome.
   Cryptomnesia
     DEF : Form of misattribution where a memory is mistaken for imagination.
+  Consequentialism
+    DEF : Ethical theory that people should choose the action that will result in the best outcome.
   Curiosity
-    DEF : The first virtue is curiosity. A burning itch to know is higher than a solemn vow to pursue truth. To feel the burning itch of curiosity requires both that you be ignorant, and that you desire to relinquish your ignorance. If in your heart you believe you already know, or if in your heart you do not wish to know, then your questioning will be purposeless and your skills without direction. Curiosity seeks to annihilate itself; there is no curiosity that does not want an answer. The glory of glorious mystery is to be solved, after which it ceases to be mystery. Be wary of those who speak of being open-minded and modestly confess their ignorance. There is a time to confess your ignorance and a time to relinquish your ignorance. -Twelve Virtues of Rationality
-  Death
-    DEF : First you're there, and then you're not there, and they can't change you from being not there to being there, because there's nothing there to be changed from being not there to being there. That's death. Cryonicists use the concept of information-theoretic death, which is what happens when the information needed to reconstruct you even in principle is no longer present. Anything less, to them, is just a flesh wound.
+    DEF : Curiosity seeks to annihilate itself; there is no curiosity that does not want an answer. 
   Defensibility
     DEF : Arguing that a policy is defensible rather than optimal or that it has some benefit compared to the null action rather than the best benefit of any action.
-  Disagreement
-    DEF : Aumann's agreement theorem can be informally interpreted as suggesting that if two people are honest seekers of truth, and both believe each other to be honest, then they should update on each other's opinions and quickly reach agreement. The very fact that a person believes something is Rational evidence that that something is true, and so this fact should be taken into account when forming your belief. Outside of well-functioning prediction markets, Aumann agreement can probably only be approximated by careful deliberative discourse. Thus, fostering effective deliberation should be seen as a key goal of Less Wrong.
   Doubt
-    DEF : The proper purpose of a doubt is to destroy its target belief if and only if it is false. The mere feeling of crushing uncertainty is not virtuous unto an aspiring rationalist; probability theory is the law that says we must be uncertain to the exact extent to which the evidence merits uncertainty.
+    DEF : The proper purpose of a doubt is to destroy its target belief if and only if it is false. 
   Egalitarianism
-    DEF : the idea that everyone should be considered equal. Equal in merit, equal in opportunity, equal in morality, and equal in achievement. Dismissing egalitarianism is not opposed to humility, even though from the signaling perspective it seems to be opposed to modesty.
-  Evidence
-    DEF : for a given theory is the observation of an event that is more likely to occur if the theory is true than if it is false. (The event would be evidence against the theory if it is less likely if the theory is true.)
-  Evolution
-    DEF : The brainless, mindless optimization process responsible for the production of all biological life on Earth, including human beings. Since the design signature of evolution is alien and counterintuitive, it takes some study to get to know your accidental Creator.
+    DEF : The idea that everyone should be considered equal. Equal in merit, equal in opportunity, equal in morality, and equal in achievement.
   Framing
-    DEF : drawing different conclusions from the same information, depending on how that information is presented.
-  Future
-    DEF : If it hasn't happened yet but is going to, then it's part of the future. Checking whether or not something is going to happen is notoriously difficult. Luckily, the field of heuristics and biases has given us some insights into what can go wrong. Namely, one problem is that the future elicits far mode, which isn't about truth-seeking or gritty details.
-  Fuzzies
-    DEF: A hypothetical measurement unit for "warm fuzzy feeling" one gets from believing that one has done good. Unlike utils, fuzzies can be earned through psychological tricks without regard for efficiency. For this reason, it may be a good idea to separate the concerns for actually doing good, for which one might need to shut up and multiply, and for earning fuzzies, to get psychological comfort. : 
+    DEF : Drawing different conclusions from the same information, depending on how that information is presented.
   Groupthink
     DEF : Tendency of humans to tend to agree with each other, and hold back objections or dissent even when the group is wrong.
   Hedonism
-    DEF : refers to a set of philosophies which hold that the highest goal is to maximize pleasure, or more precisely pleasure minus pain.
+    DEF : A set of philosophies which hold that the highest goal is to maximize pleasure, or more precisely pleasure minus pain.
   Hypocrisy
-    DEF : the act of claiming to motives, morals and standards one does not possess. Informally, it refers to not living up the standards that one espouses, whether or not one sincerely believes those standards.
-  Impossibility
-    DEF : Careful use of language dictates that we distinguish between several senses in which something can be said to be impossible. Some things are logically impossible/ you can't have a square circle or an object that is both perfectly black and perfectly not-black. Also, in our reductionist universe operating according to universal physical laws, some things are physically impossible based on our model of how things work, even they are not obviously contradictory or contrary to reason/ for example, the laws of thermodynamics give us a strong guarantee that there can never be a perpetual motion machine. It can be tempting to label as impossible very difficult problems which you have no idea how to solve. But the apparent lack of a solution is not a strong guarantee that no solution can exist in the way that the laws of thermodynamics, or Godel's incompleteness results, give us proofs that something cannot be accomplished. A blank map does not correspond to a blank territory; in the absence of a proof that a problem is insolvable, you can't be confident that you're not just overlooking something that a greater intelligence would spot in an instant.
+    DEF : Act of claiming to motives, morals and standards one does not possess.
   Incredulity
     DEF : Spending emotional energy on incredulity wastes time you could be using to update. It repeatedly throws you back into the frame of the old, wrong viewpoint. It feeds your sense of righteous indignation at reality daring to contradict you.
   Luminosity
-    DEF : reflective awareness. A luminous mental state is one that you have and know that you have. It could be an emotion, a belief or alief, a disposition, a quale, a memory - anything that might happen or be stored in your brain. What's going on in your head?
-  Memorization
-    DEF : is what you're doing when you cram for a university exam. It's not enough for understanding.
+    DEF : Reflective awareness. A luminous mental state is one that you have and know that you have. 
   Mind-killer
     DEF : Name given to topics (such as politics) that tend to produce extremely biased discussions. Another cause of mind-killers is social taboo. Negative connotations are associated with some topics, thus creating a strong bias supported by signaling drives that makes non-negative characterization of these topics appear absurd.
-  Modesty
-    DEF : admitting or boasting of flaws so as to not create perceptions of arrogance. Not to be confused with humility.
-  Oops
-    DEF : Theories must be bold and expose themselves to falsification; be willing to commit the heroic sacrifice of giving up your own ideas when confronted with contrary evidence; play nice in your arguments; try not to deceive yourself; and other fuzzy verbalisms. It is better to say oops quickly when you realize a mistake. The alternative is stretching out the battle with yourself over years.
   Password
     DEF : The answer you guess instead of actually understanding the problem.
   Persistence
     DEF : The unwanted recurrence of memories of a traumatic event.
   Phlogiston
-    DEF : the 18 century's answer to the Elemental Fire of the Greek alchemists. Ignite wood, and let it burn. What is the orangey-bright "fire" stuff? Why does the wood transform into ash? To both questions, the 18th-century chemists answered, "phlogiston"....and that was it, you see, that was their answer/ "Phlogiston." -Fake Causality
-  Possibility
-    DEF : words in natural language carry connotations that may become misleading when the words get applied with technical precision. While it's not technically a lie to say that it's possible to win a lottery, the statement is deceptive. It's much more precise, for communication of the actual fact through connotation, to say that it's impossible to win the lottery. This is an example of antiprediction.
+    DEF : the 18 century's answer to the Elemental Fire of the Greek alchemists. Or Fake Causality.
   Prediction
-    DEF : a statement or claim that a particular event will occur in the future in more certain terms than a forecast.
+    DEF : Statement or claim that a particular event will occur in the future in more certain terms than a forecast.
   Priming
     DEF : Psychological phenomenon that consists in early stimulus influencing later thoughts and behavior.
   Rationality
-    DEF : the characteristic of thinking and acting optimally. An agent is rational if it wields its intelligence in such a way as to maximize the convergence between its beliefs and reality; and acts on these beliefs in such a manner as to maximize its chances of achieving whatever goals it has. For humans, this means mitigating (as much as possible) the influence of cognitive biases.
+    DEF : The characteristic of thinking and acting optimally. An agent is rational if it wields its intelligence in such a way as to maximize the convergence between its beliefs and reality; and acts on these beliefs in such a manner as to maximize its chances of achieving whatever goals it has. 
   Rationalization
-    DEF : starts from a conclusion, and then works backward to arrive at arguments apparently favouring that conclusion. Rationalization argues for a side already selected. The term is misleading as it is the very opposite and antithesis of rationality, as if lying were called "truthization".
+    DEF : Starts from a conclusion, and then works backward to arrive at arguments apparently favouring that conclusion. Rationalization argues for a side already selected.
   Reactance
     DEF : Tendency to do the opposite of what someone wants you to do out of a need to resist a perceived attempt to constrain your freedom of choice.
   Reductionism
-    DEF : a disbelief that the higher levels of simplified multilevel models are out there in the territory, that concepts constructed by mind in themselves play a role in the behavior of reality. This doesn't contradict the notion that the concepts used in simplified multilevel models refer to the actual clusters of configurations of reality.
-  Religion
-    DEF : Religion is a complex group of human activities - involving tribal affiliation, belief in belief, supernatural claims, and a range of shared group practices such as worship meetings, rites of passage, etc.
+    DEF : Disbelief that the higher levels of simplified multilevel models are out there in the territory, that concepts constructed by mind in themselves play a role in the behavior of reality.
   Science
-    DEF : a method for developing true beliefs about the world. It works by developing hypotheses about the world, creating experiments that would allow the hypotheses to be tested, and running the experiments. By having people publish their falsifiable predictions and their experimental results, science protects itself from individuals deceiving themselves or others.
+    DEF : Method for developing true beliefs about the world. It works by developing hypotheses about the world, creating experiments that would allow the hypotheses to be tested, and running the experiments. 
   Signaling
-    DEF : "A method of conveying information among not-necessarily-trustworthy parties by performing an action which is more likely or less costly if the information is true than if it is not true".
+    DEF : A method of conveying information among not-necessarily-trustworthy parties by performing an action which is more likely or less costly if the information is true than if it is not true.
   Status
     DEF : Real or perceived relative measure of social standing, which is a function of both resource control and how one is viewed by others.
   Stereotype
@@ -628,430 +607,143 @@ Lexicon
   Suggestibility
     DEF : A form of misattribution where ideas suggested by a questioner are mistaken for memory.
   Superstimulus
-    DEF : an exaggerated version of a stimulus to which there is an existing response tendency, or any stimulus that elicits a response more strongly than the stimulus for which it evolved.
+    DEF : Exaggerated version of a stimulus to which there is an existing response tendency, or any stimulus that elicits a response more strongly than the stimulus for which it evolved.
   Surprise
     DEF : Recognizing a fact that disagrees with your intuition as surprising is an important step in updating your worldview.
   Teleology
-    DEF : The study of things that happen for the sake of their future consequences. The fallacious meaning of it is that events are the result of future events. The non-fallacious meaning is that it is the study of things that happen because of their intended results, where the intention existed in an actual mind in the prior past, and so was causally able to bring about the event by planning and acting.
+    DEF : The study of things that happen for the sake of their future consequences. The fallacious meaning of it is that events are the result of future events. The non-fallacious meaning is that it is the study of things that happen because of their intended results, where the intention existed in an actual mind in the prior past, and so was causally able to bring about the event by planning and acting. [TODO-WTF?]
   Truth
     DEF : The correspondence between and one's beliefs about reality and reality.
   Anchoring
     DEF : Relying too heavily on a past reference or on one piece of information when making decisions.
   Connotation
     DEF : Emotional association with a word.
-
-~
-
-Executors
-  Adaptation executors
-    DEF : Individual organisms are best thought of as adaptation-executers rather than as fitness-maximizers.
-    EX1 : Our taste buds do not find lettuce delicious and cheeseburgers distasteful once we are fed a diet too high in calories and too low in micronutrients. Tastebuds are adapted to an ancestral environment in which calories, not micronutrients, were the limiting factor. Evolution operates on too slow a timescale to re-adapt to adapt to a new conditions (such as a diet).
-Process
+  Maxentropy Prior
+    DEF : [TODO]
   Adversarial process
     DEF : Form of truth-seeking or conflict resolution in which identifiable factions hold one-sided positions.
-Spiral
+  Death spirals
+    DEF : Cultishness is an empirical attractor in human groups, roughly an affective death spiral, plus peer pressure and outcasting behavior, plus defensiveness around something believed to have been perfected.
   Affective death spiral
     DEF : Positive attributes of a theory, person, or organization combine with the Halo effect in a feedback loop, resulting in the subject of the affective death spiral being held in higher and higher regard.
-Values
-  Alien values
-    DEF : There are no rules requiring minds to value life, liberty or the pursuit of happiness.
-Tradition
   Appeal to tradition
-    DEF : just because people practice a tradition, says nothing about its viability.
-    EX1 : astrology, religion, slavery
-Theorem
+    DEF : [TODO]
+    EX2 : just because people practice a tradition, says nothing about its viability.
   Aumann's agreement theorem
-    DEF : roughly speaking, says that two agents acting rationally (in a certain precise sense) and with common knowledge of each other's beliefs cannot agree to disagree. More specifically, if two people are genuine Bayesians, share common priors, and have common knowledge of each other's current probability assignments, then they must have equal probability assignments.
+    DEF : Two agents acting rationally and with common knowledge of each other's beliefs cannot agree to disagree. 
+    EX1 : More specifically, if two people are genuine Bayesians, share common priors, and have common knowledge of each other's current probability assignments, then they must have equal probability assignments.
   Bayes' theorem
     DEF : A law of probability that describes the proper way to incorporate new evidence into prior probabilities to form an updated probability estimate.
   Cox's theorem
     DEF : Roughly, that if your beliefs at any given time take the form of an assignment of a numerical "plausibility score" to every proposition, and if they satisfy a few plausible axioms, then your plausibilities must effectively be probabilities obeying the usual laws of probability theory, and your updating procedure must be the one implied by Bayes' theorem.
-Probability
-  Neglect of probability
-    DEF : Tendency to completely disregard probability when making a decision under uncertainty.
-Question
-  Begging the question
-    DEF : But does religion and worship actually produce moral behavior?
-    EX1 : We must encourage our youth to worship God to instill moral behavior.
-    ALT : Assuming the answer
-  Privileging the question
-    DEF : questions that someone has unjustifiably brought to your attention in the same way that a privileged hypothesis unjustifiably gets brought to your attention.
-    EX1 : should gay marriage be legal? Should Congress pass stricter gun control laws? Should immigration policy be tightened or relaxed? The problem with privileged questions is that you only have so much attention to spare. Attention paid to a question that has been privileged funges against attention you could be paying to better questions. Even worse, it may not feel from the inside like anything is wrong, you can apply all of the epistemic rationality in the world to answering a question like "should Congress pass stricter gun control laws?" and never once ask yourself where that question came from and whether there are better questions you could be answering instead.  
-Deepities
-  Beware of deepities
-    DEF : A deepity is a proposition that seems both important and true-and profound-but that achieves this effect by being ambiguous. People see the trivial but true interpretation and then think that there must be some kind of truth to the false but profound one.
-    EX1 : "love is a word". One interpretation is that -love-, the word, is a word and this is trivially true. The second interpretation is that love is nothing more than a verbal construct. This interpretation is false, but if it were true would be profound. The "deepity" seems profound due to a conflation of the two interpretations.
-Spot
-  Bias blind spot
-    DEF : Tendency not to compensate for one's own cognitive biases.
-Bullet
-  Bite the bullet
-    DEF : is to accept the consequences of a hard choice, or unintuitive conclusions of a formal reasoning procedure.
-Swan
   Black swan
-    DEF : is a high-impact event that is hard to predict (but not necessarily of low probability). It is also an event that is not accounted for in a model and therefore causes the model to break down when it occurs.
-Law
+    DEF : is a high-impact event that is hard to predict, not accounted for, and therefore causes the model to break down when it occurs.
   Burch's law
-    DEF : "I think people should have a right to be stupid and, if they have that right, the market's going to respond by supplying as much stupidity as can be sold."*Greg Burch* A corollary of Burch's Law is that any bias should be regarded as a potential vulnerability whereby the market can trick one into buying something one doesn't really want.
-  Goodhart's law
-    DEF : states that once a certain indicator of success is made a target of a social or economic policy, it will lose the information content that would qualify it to play such a role. People and institutions try to achieve their explicitly stated targets in the easiest way possible, often obeying the letter of the law. This is often done in way that the designers of the law did not anticipate or want. For example, the soviet factories which when given targets on the basis of numbers of nails produced many tiny useless nails and when given targets on basis of weight produced a few giant nails.
-Details
-  Burdensome details
-    DEF : Adding burdensome details to a theory may make it sound more plausible to human ears because of the representativeness heuristic, even as the story becomes normatively less probable.
-Difficult
-  Challenging the difficult
-    DEF: A sequence on how to do things that are difficult or "impossible". : 
-Amnesia
+    DEF : A corollary of Burch's Law is that any bias should be regarded as a potential vulnerability whereby the market can trick one into buying something one doesn't really want.
+    EX1 : "I think people should have a right to be stupid and, if they have that right, the market's going to respond by supplying as much stupidity as can be sold." -Greg Burch
   Childhood amnesia
     DEF : The retention of few memories from before the age of four.
-Thesis
-  Church-turing thesis
-    DEF : states the equivalence between the mathematical concepts of algorithm or computation and Turing-Machine. It asserts that if some calculation is effectively carried out by an algorithm, then there exists a Turing machines which will compute that calculation.
-Reasoning
   Circular reasoning
-    DEF : stating in one's proposition that which one aims to prove.
+    DEF : Stating in one's proposition that which one aims to prove.
     EX1 : God exists because the Bible says so; the Bible exists because God influenced it.  
-Style
-  Cognitive style
-    DEF : Certain cognitive styles might tend to produce more accurate results. A common distinction between cognitive styles is that of foxes vs. hedgehogs. Hedgehogs view the world through the lens of a single defining idea and foxes draw on a wide variety of experiences and for whom the world cannot be boiled down to a single idea. Foxes tend to be better calibrated and more accurate.
-Volition
-  Coherent aggregated volition
-    DEF : is one of Ben Goertzel's responses to Eliezer Yudkowsky's Coherent Extrapolated Volition, the other being Coherent Blended Volition. CAV would be a combination of the goals and beliefs of humanity at the present time.
-  Coherent blended volition
-    DEF : Coherent Blended Volition is a recent concept coined in a 2012 paper by Ben Goertzel with the aim to clarify his Coherent Aggregated Volition idea. This clarifications follows the author's attempt to develop a comprehensive alternative to Coherent Extrapolated Volition.
-  Coherent extrapolated volition
-    DEF : A term developed by Eliezer Yudkowsky while discussing Friendly AI development. It's meant as an argument that it would not be sufficient to explicitly program our desires and motivations into an AI. Instead, we should find a way to program it in a way that it would act in our best interests - what we want it to do and not what we tell it to.
-Politics
-  Color politics
-    DEF : The words "Blues" and "Greens" are often used to refer to two opposing political factions. Politics commonly involves an adversarial process, where factions usually identify with political positions, and use arguments as soldiers to defend their side. The dichotomies presented by the opposing sides are often false dilemmas, which can be shown by presenting third options.
-Knowledge
-  Common knowledge
-    DEF : In the context of Aumann's agreement theorem, a fact is part of the common knowledge of a group of agents when they all know it, they all know that they all know it, and so on ad infinitum.
   Dangerous knowledge
     DEF : Intelligence, in order to be useful, must be used for something other than defeating itself.
-Space
-  Configuration space
-    DEF : Is an isomorphism between the attributes of something, and its position on a multidimensional graph. Theoretically, the attributes and precise position on the graph should contain the same information. In practice, the concept usually appears as a suffix, as in "walletspace", where "walletspace" refers to the configuration space of all possible wallets, arranged by similarity. Walletspace would intersect with leatherspace, and the set of leather wallets is a subset of both walletspace and leatherspace, which are both subsets of thingspace.
-  Mind design space
-    DEF : Refers to the configuration space of possible minds. As humans living in a human world, we can safely make all sorts of assumptions about the minds around us without even realizing it. Each human might have their own unique personal qualities, so it might naively seem that there's nothing you can say about people you don't know. But there's actually quite a lot you can say (with high or very high probability) about a random human/ that they have standard emotions like happiness, sadness, and anger; standard senses like sight, vision, and hearing; that they speak a language; and no doubt any number of other subtle features that are even harder to quickly explain in words. These things are the specific results of adaptation pressures in the ancestral environment and can't be expected to be shared by a random alien or AI. That is, humans are packed into a tiny dot in the configuration space/ there is vast range over of other ways a mind can be.
-Causation
-  Confusion of correlation and causation
-    DEF : Stephen Jay Gould called the invalid assumption that correlation implies cause as "probably among the two or three most serious and common errors of human reasoning" (The Mismeasure of Man).
-    EX1 : More men play chess than women, therefore, men make better chess players than women.
-    EX2 : Children who watch violence on TV tend to act violently when they grow up. But does television programming cause violence or do violence oriented children prefer to watch violent programs? Perhaps an entirely different reason creates violence not related to television at all.  
-Arts
-  Dark arts
-    DEF : refers to rhetorical techniques crafted to exploit human cognitive biases in order to persuade, deceive, or otherwise manipulate a person into irrationally accepting beliefs perpetuated by the practitioner of the Arts. Use of the dark arts is especially common in sales and similar situations (known as hard sell in the sales business) and promotion of political and religious views.
-Spirals
-  Death spirals
-    DEF : Cultishness is an empirical attractor in human groups, roughly an affective death spiral, plus peer pressure and outcasting behavior, plus defensiveness around something believed to have been perfected.
-Hypothesis
   Defensive attribution hypothesis
     DEF : Attributing more blame to a harm-doer as the outcome becomes more severe or as personal or situational similarity to the victim increases.
   Just-world hypothesis
-    DEF : Tendency for people to want to believe that the world is fundamentally just, causing them to rationalize an otherwise inexplicable injustice as deserved by the victim(s).
-  Privileging the hypothesis
-    DEF : is singling out a particular hypothesis for attention when there is insufficient evidence already in hand to justify such special attention.
-Data
-  Defying the data
-    DEF : Sometimes, the results of an experiment contradict what we have strong theoretical reason to believe. But experiments can go wrong, for various reasons. So if our theory is strong enough, we should in some cases defy the data/ know that there has to be something wrong with the result, even without offering ideas on what it might be.
-Inference
+    DEF : Tendency for people to want to believe that the world is fundamentally just, causing them to rationalize an otherwise inexplicable injustice as deserved by the victims.
   Empathic inference
-    DEF : Every-day common mind-reading. It's an inference made about other person's mental states using your own brain as reference, by making your brain feel or think in the same way as the other person you can emulate their mental state and predict their reactions.
-Todo
+    DEF : It's an inference made about other person's mental states using your own brain as reference, by making your brain feel or think in the same way as the other person you can emulate their mental state and predict their reactions.
   Endowment effect
     EX1 : Tendency to demand much more to give up an object than they would be willing to pay to acquire it.
-Luck
+  Loss aversion
+    EX1 : The disutility of giving up an object is greater than the utility associated with acquiring it.
   Epistemic luck
     DEF : You would have different beliefs if certain events in your life were different. How should you react to this fact?
   Moral luck
     DEF : Tendency for people to ascribe greater or lesser moral standing based on the outcome of an event.
-Crowds
   Error of crowds
     DEF : is the idea that under some scoring rules, the average error becomes less than the error of the average, thus making the average belief tautologically worse than a belief of a random person. Compare this to the ideas of modesty argument and wisdom of the crowd. A related idea is that a popular belief is likely to be wrong because the less popular ones couldn't maintain support if they were worse than the popular one.
-Injunction
   Ethical injunction
-    DEF : are rules not to do something even when it's the right thing to do. (That is, you refrain "even when your brain has computed it's the right thing to do", but this will just seem like "the right thing to do".)
-    EX1 : you shouldn't rob banks even if you plan to give the money to a good cause. This is to protect you from your own cleverness (especially taking bad black swan bets), and the Corrupted hardware you're running on.
-God
-  Evolution as alien god
-    DEF : is a thought experiment in which evolution is imagined as a god. The though experiment is meant to convey the idea that evolution doesn't have a mind. The god in though experiment would be a tremendously powerful, unbelievably stupid, ridiculously slow, and utterly uncaring god; a god monomaniacally focused on the relative fitness of genes within a species; a god whose attention was completely separated and working at cross-purposes in rabbits and wolves.
-Psychology
-  Evolutionary psychology
-    DEF : the idea of evolution as the idiot designer of humans - that our brains are not consistently well-designed - is a key element of many of the explanations of human errors that appear on this website.
-Middle
-  Excluded middle
-    DEF : considering only the extremes. Many people use Aristotelian either/or logic tending to describe in terms of up/down, black/white, true/false, love/hate, etc. Many times, a continuum occurs between the extremes that people fail to see. The universe also contains many "maybes."
-    ALT : false dichotomy
-    EX1 : You either like it or you don't. He either stands guilty or not guilty.
-Value
+    DEF : Rules not to do something even when it's the right thing to do. (That is, you refrain "even when your brain has computed it's the right thing to do", but this will just seem like "the right thing to do".)
   Expected value
-    For example, when you roll a die, the expected value is (1+2+3+4+5+6)/6 = 3.5. (Since a die doesn't even have a face that says 3.5, this illustrates that very often, the "expected value" isn't a value you actually expect.) : 
+    EX1 : When you roll a die, the expected value is (1+2+3+4+5+6)/6 = 3.5. (Since a die doesn't even have a face that says 3.5, this illustrates that very often, the "expected value" isn't a value you actually expect.)
   Instrumental value
-    DEF : a value pursued for the purpose of achieving other values. Values which are pursued for their own sake are called terminal values.
-Aversion
+    DEF : Value pursued for the purpose of achieving other values. Values which are pursued for their own sake are called terminal values.
   Extreme aversion
     DEF : Tendency to avoid extremes, and choose an option if it is the intermediate choice.
-  Loss aversion
-    EX1 : the disutility of giving up an object is greater than the utility associated with acquiring it.
-Simplicity
   Fake simplicity
     DEF : If you have a simple answer to a complex problem then it is probably a case whereby your beliefs appear to match the evidence much more strongly than they actually do.
-Gray
   Fallacy of gray
     DEF : The false belief that because nothing is certain, everything is equally uncertain. It does not take into account that some things are more certain than others.
-Will
   Free will
     DEF : means our algorithm's ability to determine our actions. People often get confused over free will because they picture themselves as being restrained rather than part of physics. Yudowsky calls this view Requiredism, but most people just view this essentially as Compatibilism.
-Error
   Fundamental attribution error
     DEF : Tendency for people to over-emphasize personality-based explanations for behaviors observed in others while under-emphasizing the role and power of situational influences on the same behavior.
   Ultimate attribution error
     DEF : Occurs when negative behavior in one's own group is explained away as circumstantial, but negative behavior among outsiders is believed to be evidence of flaws in character.Similar to the fundamental attribution error, in this error a person is likely to make an internal attribution to an entire group instead of the individuals within the group.
   Use-mention error
-    DEF : confusing a word or a concept with something that supposedly exists.
+    DEF : Confusing a word or a concept with something that supposedly exists.
     EX1 : An essay on THE HISTORY OF GOD does not refer to an actual god, but rather the history of the concept of god in human culture. To avoid confusion, people usually put the word or phrase in quotations.
-Example
-  Generalizing from one example
-    DEF : an incorrect generalisation when you only have direct first-person knowledge of one mind, psyche or social circle and you treat it as typical even in the face of contrary evidence.
-Filter
   Great filter
-    DEF : is a proposed explanation for the Fermi Paradox. The development of intelligent life requires many steps, such as the emergence of single-celled life and the transition from unicellular to multicellular life forms. Since we have not observed intelligent life beyond our planet, there seems to be a developmental step that is so difficult and unlikely that it "filters out" nearly all civilizations before they can reach a space-faring stage.
-Selection
+    DEF : Proposed explanation for the Fermi Paradox. The development of intelligent life requires many steps, such as the emergence of single-celled life and the transition from unicellular to multicellular life forms. Since we have not observed intelligent life beyond our planet, there seems to be a developmental step that is so difficult and unlikely that it "filters out" nearly all civilizations before they can reach a space-faring stage.
   Group selection
-    DEF : is an incorrect belief about evolutionary theory that a feature of the organism is there for the good of the group.
+    DEF : Incorrect belief about evolutionary theory that a feature of the organism is there for the good of the group.
   Observational selection
-    DEF : pointing out favorable circumstances while ignoring the unfavorable. Anyone who goes to Las Vegas gambling casinos will see people winning at the tables and slots. The casino managers make sure to install bells and whistles to announce the victors, while the losers never get mentioned. This may lead one to conclude that the chances of winning appear good while in actually just the reverse holds true.
-Truths
-  Half truths
-    DEF : A statement usually intended to deceive that omits some of the facts necessary for an accurate description.
-    ALT : suppressed evidence
-Instinct
-  Herd instinct
-    DEF : Tendency to adopt the opinions and follow the behaviors of the majority to feel safer and to avoid conflict.
-Biases
-  Heuristics and biases
-    DEF : program in cognitive psychology tries to work backward from biases (experimentally reproducible human errors) to heuristics (the underlying mechanisms at work in the brain).
-Solutions
-  Hold off on proposing solutions
-    DEF : "Do not propose solutions until the problem has been discussed as thoroughly as possible without suggesting any." It is easy to show that this edict works in contexts where there are objectively defined good solutions to problems.
-Universal
+    DEF : Pointing out favorable circumstances while ignoring the unfavorable. Anyone who goes to Las Vegas gambling casinos will see people winning at the tables and slots. The casino managers make sure to install bells and whistles to announce the victors, while the losers never get mentioned. This may lead one to conclude that the chances of winning appear good while in actually just the reverse holds true.
   Human universal
-    DEF : Donald E. Brown has compiled a list of over a hundred human universals - traits found in every culture ever studied, most of them so universal that anthropologists don't even bother to note them explicitly.
-Strategic
-  Humans are not automatically strategic
-    DEF : most courses of action are extremely ineffective and most of the time there has been no strong evolutionary or cultural force sufficient to focus us on the very narrow behavior patterns that would actually be effective. When this is coupled with the fact that people tend to spend a lot less effort on planning how to go about a reaching a goal rather than just trying to achieve it you end up with the conclusion that humans are not automatically strategic.
-Discounting
+    DEF : Donald E. Brown has compiled a list of over a hundred human universals - traits found in every culture ever studied, most of them so universal that anthropologists don't even bother to note them explicitly.[TODO-Wikipedia this]
   Hyperbolic discounting
     DEF : Tendency to have a stronger preference for more immediate payoffs relative to later payoffs, the closer to the present both payoffs are.  
-Distance
   Inferential distance
     DEF : Gap between the background knowledge and epistemology of a person trying to explain an idea, and the background knowledge and epistemology of the person trying to understand it.
-Cascade
   Information cascade
     DEF : Occurs when people signal that they have information about something, but actually based their judgment on other people's signals, resulting in a self-reinforcing community opinion that does not necessarily reflect reality.
-Hazard
   Information hazard
     DEF : Risk that arises from the dissemination or the potential dissemination of (true) information that may cause harm or enable some agent to cause harm.
-Roles
   Intellectual roles
     DEF : Group rationality may be improved when members of the group take on specific intellectual roles. While these roles may be incomplete on their own, each embodies an aspect of proper rationality. If certain roles are biased against, purposefully adopting them might reduce bias.
-Pump
   Intuition pump
     DEF : In summary, they are thought experiments that highlight, or pumping, certain ideas, intuitions or concepts while attenuating others so as to make some conclusion obvious and simple to reach. The intuition pump is a carefully designed persuasion tool in which you check to see if the same intuitions still get pumped when you change certain settings in a thought experiment.
-Escalation
   Irrational escalation
     DEF : Tendency to make irrational decisions based upon rational decisions in the past or to justify actions already taken.
-Phenomenon
-  Just-world phenomenon
-    DEF : Tendency for people to believe that the world is "just" and therefore people "get what they deserve."
   Tip of the tongue phenomenon
     DEF : When a subject is able to recall parts of an item, or related information, but is frustratingly unable to recall the whole item. This is thought an instance of "blocking" where multiple similar memories are being recalled and interfere with each other.
-World
   Least convenient possible world
     DEF : is a technique for enforcing intellectual honesty, to be used when arguing against an idea. The essence of the technique is to assume that all the specific details will align with the idea against which you are arguing, i.e. to consider the idea in the context of a least convenient possible world, where every circumstance is colluding against your objections and counterarguments. This approach ensures that your objections are strong enough, running minimal risk of being rationalizations for your position.
-  Possible world
-    DEF : is one that is internally consistent, even if it is counterfactual.
-Sharpening
-  Leveling and sharpening
-    DEF : Memory distortions introduced by the loss of details in a recollection over time, often concurrent with sharpening or selective recollection of certain details that take on exaggerated significance in relation to the details or aspects of the experience lost through leveling. Both biases may be reinforced over time, and by repeated recollection or re-telling of a memory.
-Questions
   Loaded questions
-    DEF : embodies an assumption that, if answered, indicates an implied agreement.
+    DEF : Embodies an assumption that, if answered, indicates an implied agreement.
     EX1 : Have you stopped beating your wife yet?
   Meaningless questions
     DEF : If everything proved possible, then the possibility exists for the impossible, a contradiction. Although everything may not prove possible, there may occur an infinite number of possibilities as well as an infinite number of impossibilities.
     EX1 : "How high is up?" "Is everything possible?" "Up" describes a direction, not a measurable entity.
   Wrong questions
     DEF : A question about your map that wouldn't make sense if you had a more accurate map.
-Odds
-  Log odds
-    DEF : is an alternate way of expressing probabilities, which simplifies the process of updating them with new evidence. Unfortunately, it is difficult to convert between probability and log odds. The log odds is the log of the odds ratio.
-Rudeness
-  Logical rudeness
-    DEF : is a response to criticism which insulates the responder from having to address the criticism directly.
-    EX1 : ignoring all the diligent work that evolutionary biologists did to dig up previous fossils, and insisting you can only be satisfied by an actual videotape, is "logically rude" because you're ignoring evidence that someone went to a great deal of trouble to provide to you.
-Required
-  Lonely dissenters suffer social disapproval, but are required
-    DEF : Asch's conformity experiment showed that the presence of a single dissenter tremendously reduced the incidence of "conforming" wrong answers.
-Categories
   Magical categories
     DEF : an English word which, although it sounds simple - hey, it's just one word, right? - is actually not simple, and furthermore, may be applied in a complicated way that drags in other considerations. Physical brains are not powerful enough to search all possibilities; we have to cut down the search space to possibilities that are likely to be good. Most of the "obviously bad" methods - those that would end up violating our other values, and so ranking very low in our preference ordering - do not even occur to us as possibilities.
-Interpretation
-  Many-worlds interpretation
-    DEF : uses decoherence to explain how the universe splits into many separate branches, each of which looks like it came out of a random collapse.
-Race'
-  Marginally zero-sum game also known as 'arms race'
-    DEF : A zero-sum game where the efforts of each player not just give them a benefit at the expense of the others, but decrease the efficacy of everyone's past and future actions, thus making everyone's actions extremely inefficient in the limit.
-Lineage
-  Meme lineage
-    DEF : is a set of beliefs, attitudes, and practices that all share a clear common origin point. This concept also emphasizes the means of transmission of the beliefs in question. If a belief is part of a meme lineage that transmits for primarily social reasons, it may be discounted for purposes of the modesty argument.
-Models
-  Mental models
-    DEF : A hypothetical form of representation of knowledge in human mind. Mental models form to approximately describe dynamics of observed situations, and reuse parts of existing models to represent novel situations
-Statistics
-  Misunderstanding the nature of statistics
-    EX1 : "Statistics show that of those who contract the habit of eating, very few survive." -- Wallace Irwin
-    EX2 : the majority of people in the United States die in hospitals, therefore, stay out of them.
-Uncertainty
-  Moral uncertainty
-    DEF : is uncertainty about how to act given the diversity of moral doctrines. Moral uncertainty includes a level of uncertainty above the more usual uncertainty of what to do given incomplete information, since it deals also with uncertainty about which moral theory is right. Even with complete information about the world this kind of uncertainty would still remain
-Induction
-  Most of science is actually done by induction
-    DEF : To come up with something worth testing, a scientist needs to do lots of sound induction first or borrow an idea from someone who already used induction. This is because induction is the only way to reliably find candidate hypotheses which deserve attention.
-    EX1 : finding something interesting or surprising to believe in and then pinning all your hopes on that thing turning out to be true.
-Considering
-  Most peoples' beliefs aren't worth considering
-    DEF : Sturgeon's Law says that as a general rule, 90% of everything is garbage. Even if it is the case that 90% of everything produced by any field is garbage that does not mean one can dismiss the 10% that is quality work. Instead, it is important engage with that 10%, and use that as the standard of quality.
-Cognition
   Motivated cognition
     DEF : The unconscious tendency of individuals to fit their processing of information to conclusions that suit some end or goal.
-Skepticism
   Motivated skepticism
     DEF : Tendency of applying more skepticism to claims that you don't like (or intuitively disbelieve), than to claims that you do like
-Cynicism
   Naïve cynicism
     DEF : Expecting more egocentric bias in others than in oneself.
   Naïve realism
     DEF : The belief that we see reality as it really is – objectively and without bias; that the facts are plain for all to see; that rational people will agree with us; and that those who don't are either uninformed, lazy, irrational, or biased.
-Metaethics
-  No-nonsense metaethics
-    DEF : A sequence by lukeprog that explains and defends a naturalistic approach to metaethics and what he calls pluralistic moral reductionism. We know that people can mean different things, but use the same word, e.g. sound can mean auditory experience or acoustic vibrations in the air. Pluralistic moral reductionism is the idea that we do the same thing when we talk about what it moral.
-Sequitur
   Non sequitur
     DEF : An inference or conclusion that does not follow from established premises or evidence.
     ENG : It does not follow
     EX1 : there occured an increase of births during the full moon. Conclusion, full moons cause birth rates to rise. But does a full moon actually cause more births, or did it occur for other reasons, perhaps from expected statistical variations?
-Lie
-  Not technically a lie
-    DEF : is a statement that is literally true, but causes the listener to attain false beliefs by performing incorrect inference, is not technically a lie.
-Ratio
-  Odds ratio
-    DEF : are an alternate way of expressing probabilities, which simplifies the process of updating them with new evidence. The odds ratio of A is P(A)/P(-A).  
-Debating
-  Paranoid debating
-    DEF : a group estimation game in which one player, unknown to the others, tries to subvert the group estimate.
-Rule
-  Peak-end rule
-    DEF : We do not judge our experiences on the net pleasantness of unpleasantness or on how long the experience lasted, but instead on how they were at their peak (pleasant or unpleasant) and how they ended.
-  Peak–end rule
-    DEF : That people seem to perceive not the sum of an experience but the average of how it was at its peak (e.g., pleasant or unpleasant) and how it ended.
-  Scoring rule
-    DEF : a scoring rule is a measure of performance of probabilistic predictions - made under uncertainty.
-  Crocker's rules
-    DEF : By declaring commitment to Crocker's rules, one authorizes other debaters to optimize their messages for information, even when this entails that emotional feelings will be disregarded. This means that you have accepted full responsibility for the operation of your own mind, so that if you're offended, it's your own fault.
-Zombie
-  Philosophical zombie
-    DEF : a hypothetical entity that looks and behaves exactly like a human (often stipulated to be atom-by-atom identical to a human) but is not actually conscious/ they are often said lack qualia or phenomena consciousness.
-Charity
-  Politics as charity
-    DEF : in terms of expected value, altruism is a reasonable motivator for voting (as opposed to common motivators like "wanting to be heard").
-Mind-killer
-  Politics is the mind-killer
-    DEF : Politics is not a good area for rational debate. It is often about status and power plays where arguments are soldiers rather than tools to get closer to the truth.
-Hoc
-  Post hoc, ergo propter hoc
-    DEF : Similar to a non sequitur, but time dependent.
-    ENG : It happened after, so it was caused by.
-    EX1 : She got sick after she visited China, so something in China caused her sickness. Perhaps her sickness derived from something entirely independent from China.
-Rationalization
-  Post-purchase rationalization
-    DEF : Tendency to persuade oneself through rational argument that a purchase was a good value.
-Market
-  Prediction market
-    DEF : speculative markets created for the purpose of making predictions. Assets are created whose final cash value is tied to a particular event or parameter. The current market prices can then be interpreted as predictions of the probability of the event or the expected value of the parameter.
-Mind
-  Probability is in the mind
-    DEF : Probabilities express uncertainty, and it is only agents who can be uncertain. A blank map does not correspond to a blank territory. Ignorance is in the mind.
-Disorder
-  Reason as memetic immune disorder
-    DEF : is problem that when you are rational you deem your conclusions more valuable than those of non-rational people. This can end up being a problem as you are less likely to update your beliefs when they are opposed. This adds the risk that if you make a one false belief and then rationally deduce a plethora of others from it you will be less likely to update any erroneous conclusions.  
-Bump
   Reminiscence bump
     DEF : Tendency to recall more personal events from adolescence and early adulthood than from other lifetime periods.
-Retrospection
   Rosy retrospection
     DEF : Tendency to rate past events more positively than they had actually rated them when the event occurred.
-Slopes
-  Schelling fences and slippery slopes
-    DEF : a slippery slope is something that affects people's willingness or ability to oppose future policies. Slippery slopes can sometimes be avoided by establishing a "Schelling fence" (also known as the bright-line rule). It is a Schelling point that the various interest groups involved - or yourself across different values and times - make a credible precommitment to defend.
-Point
-  Schelling point
-    DEF : is a solution that people will tend to use in the absence of communication, because it seems natural, special, or relevant to them.
-Insensitivity
-  Scope insensitivity
-    DEF : Phenomenon related to the representativeness heuristic where subjects based their willingness-to-pay mostly on a mental image rather than the effect on a desired outcome.
-    EX1 : An environmental measure that will save 200,000 birds doesn't conjure anywhere near a hundred times the emotional impact and willingness-to-pay of a measure that would save 2,000 birds, even though in fact the former measure is two orders of magnitude more effective.
-Perception
-  Selective perception
-    DEF : Tendency of expectations to affect perception.
-Prophecy
   Self-fulfilling prophecy
     DEF : Tendency to engage in behaviors that elicit results which will confirm our beliefs.
-Cliché
-  Semantic stopsign (also known as thought-terminating cliché
-    DEF : A meaningless generic explanation that creates an illusion of giving an answer, without actually explaining anything.
-Information
   Shannon information
     DEF : The Shannon entropy is a measure of the average information content one is missing when one does not know the value of the random variable.
-Slope
-  Slippery slope
-    DEF : a change in procedure, law, or action, will result in adverse consequences.
-    EX1 : If we allow doctor assisted suicide, then eventually the government will control how we die. It does not necessarily follow that just because we make changes that a slippery slope will occur.
-Confusion
-  Source confusion
-    DEF : Confusing episodic memories with other information, creating distorted memories.
-Numbers
-  Statistics of small numbers
-    DEF : similar to observational selection. Simply because someone can point to a few favorable numbers says nothing about the overall chances.
-    EX1 : My parents smoked all their lives and they never got cancer.
-    EX2 : I don't care what others say about Yugos, my Yugo has never had a problem.)
-Magic
-  Sympathetic magic
-    DEF : Humans seem to naturally generate a series of concepts known as sympathetic magic, a host of theories and practices which have certain principles in common, two of which are of overriding importance/ the Law of Contagion holds that two things which have interacted, or were once part of a single entity, retain their connection and can exert influence over each other; the Law of Similarity holds that things which are similar or treated the same establish a connection and can affect each other.
-Justification
-  System justification
-    DEF : Tendency to defend and bolster the status quo.
-    EX1 : Existing social, economic, and political arrangements tend to be preferred, and alternatives disparaged, sometimes even at the expense of individual and collective self-interest.
-Explanation
-  Technical explanation
-    DEF : A technical explanation is an explanation of a phenomenon that makes you anticipate certain experiences. A proper technical explanation controls anticipation strictly, weighting your priors and evidence precisely to create the justified amount of uncertainty. Technical explanations are contrasted with verbal explanations, which give the impression of understanding without actually producing the proper expectation.
-Territory
-  The map is not the territory
-    DEF : the idea that our perception of the world is being generated by our brain and can be considered as a 'map' of reality written in neural patterns. Reality exists outside our mind but we can construct models of this 'territory' based on what we glimpse through our senses.
-Life
-  The science of winning at life
-    DEF : A sequence by lukeprog that summarizes scientifically-backed advice for "winning" at everyday life/ in one's productivity, in one's relationships, in one's emotions, etc. Each post concludes with footnotes and a long list of references from the academic literature.
-Biased
   Trait ascription biased
     DEF : Tendency for people to view themselves as relatively variable in terms of personality, behavior, and mood while viewing others as much more predictable.
-Inconvenience
-  Trivial inconvenience
-    DEF : inconveniences that take few resources to counteract but have a disproportionate impact on people deciding whether to take a course of action.
-Right
-  Two wrongs make a right
-    EX1 : trying to justify what we did by accusing someone else of doing the same. 
-
+    
 ~
 
 ETC
@@ -1101,7 +793,8 @@ ETC
   the toad
     DEF : toplevel beings born of unguided evolution who function as blind universe-enumerators. They do not care who you are or what you did, they'll still simulate you and everyone you know in catholic heaven, clown hell and everything in between.
   Eudaimonia
-    DEF : sometimes anglicized as eudaemonia or eudemonia /juːdᵻˈmoʊniə/, is a Greek word commonly translated as happiness or welfare; however, "human flourishing" has been proposed as a more accurate translation.[1] Etymologically, it consists of the words "eu" ("good") and "daimōn" ("spirit"). It is a central concept in Aristotelian ethics and political philosophy, along with the terms "aretē", most often translated as "virtue" or "excellence", and "phronesis", often translated as "practical or ethical wisdom".[2] In Aristotle's works, eudaimonia was (based on older Greek tradition) used as the term for the highest human good, and so it is the aim of practical philosophy, including ethics and political philosophy, to consider (and also experience) what it really is, and how it can be achieved. Discussion of the links between virtue of character (ethikē aretē) and happiness (eudaimonia) is one of the central concerns of ancient ethics, and a subject of much disagreement. As a result there are many varieties of eudaimonism. Two of the most influential forms are those of Aristotle[3] and the Stoics. Aristotle takes virtue and its exercise to be the most important constituent in eudaimonia but acknowledges also the importance of external goods such as health, wealth, and beauty. By contrast, the Stoics make virtue necessary and sufficient for eudaimonia and thus deny the necessity of external goods.[4]
+    DEF : sometimes anglicized as eudaemonia or eudemonia /juːdᵻˈmoʊniə/, is a Greek word commonly translated as happiness or welfare; however, "human flourishing" has been proposed as a more accurate translation.
+    ETC :  Etymologically, it consists of the words "eu" ("good") and "daimōn" ("spirit"). It is a central concept in Aristotelian ethics and political philosophy, along with the terms "aretē", most often translated as "virtue" or "excellence", and "phronesis", often translated as "practical or ethical wisdom".[2] In Aristotle's works, eudaimonia was (based on older Greek tradition) used as the term for the highest human good, and so it is the aim of practical philosophy, including ethics and political philosophy, to consider (and also experience) what it really is, and how it can be achieved. Discussion of the links between virtue of character (ethikē aretē) and happiness (eudaimonia) is one of the central concerns of ancient ethics, and a subject of much disagreement. As a result there are many varieties of eudaimonism. Two of the most influential forms are those of Aristotle[3] and the Stoics. Aristotle takes virtue and its exercise to be the most important constituent in eudaimonia but acknowledges also the importance of external goods such as health, wealth, and beauty. By contrast, the Stoics make virtue necessary and sufficient for eudaimonia and thus deny the necessity of external goods.
   Counter man syndrome
     DEF : wherein a person behind a counter comes to believe that they know things they don't know, because, after all, they're the person behind the counter. So they can't just answer a question with "I don't know"... and thus they make something up, without really paying attention to the fact that they're making it up. Pretty soon, they don't know the difference between the facts and their made up stories
   Travis syndrome
@@ -1110,3 +803,5 @@ ETC
     DEF : Failure mode in which a person vastly overestimates their ability to optimize someone else's life, usually as a result of underestimating the differences between themselves and others, for example through the typical mind fallacy.
   Reversed stupidity is not intelligence
     DEF : "The world's greatest fool may say the Sun is shining, but that doesn't make it dark out.".
+  Coherent aggregated volition
+    DEF : A combination of the goals and beliefs of humanity at the present time.
