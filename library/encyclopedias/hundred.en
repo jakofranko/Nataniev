@@ -549,12 +549,6 @@
   VLUE : -619.00
   TEXT : Found Mardon, a company that insures liveaboards
 
-2016-03-02
-  TYPE : expense
-  NAME : Mooring
-  VLUE : -460.00
-  TEXT : Stayed in North Saanich
-
 2016-03-01
   TYPE : patreon
   NAME : March
@@ -627,12 +621,6 @@
   NAME : January
   VLUE : 821.00
 
-2015-12-17
-  TYPE : expense
-  NAME : Air Bnb
-  VLUE : -976.00
-  TEXT : Stayed in Burnaby for a month, visited Vancouver and had a lot of coffee
-
 2015-12-11
   TYPE : press
   NAME : Motherboard
@@ -646,11 +634,6 @@
 2015-11-29
   TYPE : release
   NAME : Oquonie Apple TV
-
-2015-11-05
-  TYPE : expense
-  NAME : Plane Tickets
-  VLUE : -832.70
 
 2015-11-01
   TYPE : first
