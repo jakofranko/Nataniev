@@ -16,6 +16,8 @@ NATANIEV
       Implement
     Call my
       Implement
+    Move Note and security things as via__ commands
+    Migrate help to Basic.methods.sort(u.posts.methods - Object.methods)
   Vessels
     Creation should empty the previous inhabitants
     Variables in call command
@@ -59,3 +61,9 @@ HUNDREDRABBITS
   Expose press events in timeline
   Update URL to Iridium video
   Edit beer bread capsule
+
+PINO
+  Insurance
+  AIS
+  Storm Sail
+  

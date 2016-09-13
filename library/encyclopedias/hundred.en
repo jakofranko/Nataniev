@@ -2,6 +2,24 @@
 ~ NOTE : Hundred Rabbits
 ~ AUTH : Devine Lu Linvega & Rekka Bellum # 
 
+2016-09-13
+  TYPE : hidden
+  NAME : Oil Change
+
+2016-09-12
+  TYPE : hidden
+  NAME : Changed secondary filter
+
+2016-09-10
+  TYPE : expense
+  NAME : Outboard Engine
+  VLUE : -250
+
+2016-09-09
+  TYPE : expense
+  NAME : Gennaker
+  VLUE : -650
+
 2016-08-31
   TYPE : video
   NAME : Episode 8
@@ -150,6 +168,10 @@
   NAME : Anti-fouling
   VLUE : -800
 
+2016-06-21
+  TYPE : hidden
+  NAME : Changed primary filter
+
 2016-06-20
   TYPE : hidden
   NAME : Anti-corrosion zinc replaced
@@ -266,10 +288,20 @@
   POSI
     48.453803, -123.293562
 
+2016-05-24
+  TYPE : expense
+  NAME : Satellite Phone
+  VLUE : -1100
+
 2016-05-23
   TYPE : expense
   NAME : Handheld VHF & GPS
   VLUE : -550
+
+2016-06-22
+  TYPE : expense
+  NAME : Personal Location Beacon
+  VLUE : -400
 
 2016-05-21
   TYPE : sail
