@@ -3,6 +3,9 @@
 ~ AUTH : Devine Lu Linvega
 
 NATANIEV
+  Client
+    Make a first build
+    Implement dirunes
   Actions
     Become
       Improve for web client
@@ -16,7 +19,6 @@ NATANIEV
       Implement
     Call my
       Implement
-    Move Note and security things as via__ commands
     Migrate help to Basic.methods.sort(u.posts.methods - Object.methods)
   Vessels
     Creation should empty the previous inhabitants
@@ -68,3 +70,11 @@ PINO
   Fuel tank for outboard
   Wet Suit
   Fins
+  Make secondary anchor accessible
+  Spindle
+
+OQUONIE
+  Fix issue with Nephtaline world loop(blocking exit)
+
+VOCAVULARIST
+  Mak build and upload

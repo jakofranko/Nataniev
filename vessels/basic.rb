@@ -65,34 +65,6 @@ class Basic
     
   end
 
-  #: Narative
-
-  def __note q = nil
-
-    return parent_vessel.set_note(q) ? "! You added a note to #{parent_vessel.print}." : "! The #{parent_vessel.name} cannot be modified."
-    
-  end
-
-  def __name q = nil
-
-    name = q.split(" ").last
-
-    if name.length > 14 then return "! Names cannot exceed 14 characters in length." end
-
-    return parent_vessel.set_name(name) ? "! You named the #{parent_vessel.name}, a #{name}." : "! You cannot rename the #{parent_vessel.name}."
-    
-  end
-
-  def __make q = nil
-
-    attribute = q.split(" ").last
-
-    if attribute.length > 14 then return "! Attributes cannot exceed 14 characters in length." end
-
-    return parent_vessel.set_attribute(attribute) ? "! You made the #{parent_vessel.name}, #{attribute}." : "! You cannot define the #{parent_vessel.name}."
-    
-  end
-
   #: Warp
 
   def __warp q = nil
@@ -133,7 +105,7 @@ class Basic
     
   end
 
-  def __take q = nil
+  def vis__take q = nil
 
     v = find_visible_vessel(q) ; if !v then return error_target(q) end
 
@@ -141,7 +113,7 @@ class Basic
     
   end
 
-  def __drop q = nil
+  def vis__drop q = nil
 
     v = find_inventory_vessel(q) ; if !v then return error_target(q) end
 
@@ -149,37 +121,37 @@ class Basic
     
   end
 
+  #: Narative
+
+  def via__note q = nil
+
+    return parent_vessel.set_note(q) ? "! You added a note to #{parent_vessel.print}." : "! The #{parent_vessel.name} cannot be modified."
+    
+  end
+
+  def via__name q = nil
+
+    name = q.split(" ").last
+
+    if name.length > 14 then return "! Names cannot exceed 14 characters in length." end
+
+    return parent_vessel.set_name(name) ? "! You named the #{parent_vessel.name}, a #{name}." : "! You cannot rename the #{parent_vessel.name}."
+    
+  end
+
+  def via__make q = nil
+
+    attribute = q.split(" ").last
+
+    if attribute.length > 14 then return "! Attributes cannot exceed 14 characters in length." end
+
+    return parent_vessel.set_attribute(attribute) ? "! You made the #{parent_vessel.name}, #{attribute}." : "! You cannot define the #{parent_vessel.name}."
+    
+  end
+
   #: Programming
 
-  def __program q = nil
-
-    return "! TODO"
-    
-  end
-
-  def __poke q = nil ; return __use(q) end
-
-  def __use q = nil
-
-    name = " #{q} ".sub(" a ","").sub(" an ","").sub(" the ","").strip.split(" ").first.to_s.strip
-
-    v = find_visible_vessel(name) ; if !v then return error_target(name) end
-
-    params = q.split(v.name) ; params[0] = nil
-
-    return v.use(params.join.strip)
-    
-  end
-
-  def __call q = nil
-
-    if q.to_i < 1 then return error_id(q) end
-
-    return $nataniev.make_vessel(q.to_i).use
-    
-  end
-
-  def __inspect q = nil
+  def via__program q = nil
 
     return "! TODO"
     
@@ -187,7 +159,7 @@ class Basic
 
   #: Security
 
-  def __lock q = nil
+  def vis__lock q = nil
 
     v = find_present_vessel(q) ; if !v then return error_target(q) end
 
@@ -195,7 +167,7 @@ class Basic
     
   end
 
-  def __unlock q = nil
+  def vis__unlock q = nil
 
     v = find_present_vessel(q) ; if !v then return error_target(q) end
 
@@ -203,7 +175,7 @@ class Basic
     
   end
 
-  def __show q = nil
+  def vis__show q = nil
 
     v = find_present_vessel(q) ; if !v then return error_target(q) end
     
@@ -211,7 +183,7 @@ class Basic
     
   end
 
-  def __hide q = nil
+  def vis__hide q = nil
 
     v = find_present_vessel(q) ; if !v then return error_target(q) end
 
@@ -221,7 +193,7 @@ class Basic
 
   # Destruction
 
-  def __destroy q = nil
+  def vis__destroy q = nil
 
     v = find_present_vessel(q) ; if !v then return error_target(q) end
 
@@ -231,7 +203,7 @@ class Basic
 
   end
 
-  def __purge q = nil
+  def vis__purge q = nil
 
     return "! TODO"
     
@@ -275,6 +247,36 @@ class Basic
 
     return "! You are in the #{parent_vessel.name}(##{@parent}), within a circular paradox."
 
+  end
+
+  #: WIP
+
+  def __poke q = nil ; return __use(q) end
+
+  def vis__use q = nil
+
+    name = " #{q} ".sub(" a ","").sub(" an ","").sub(" the ","").strip.split(" ").first.to_s.strip
+
+    v = find_visible_vessel(name) ; if !v then return error_target(name) end
+
+    params = q.split(v.name) ; params[0] = nil
+
+    return v.use(params.join.strip)
+    
+  end
+
+  def __call q = nil
+
+    if q.to_i < 1 then return error_id(q) end
+
+    return $nataniev.make_vessel(q.to_i).use
+    
+  end
+
+  def vis__inspect q = nil
+
+    return "! TODO"
+    
   end
 
 end

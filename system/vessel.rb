@@ -387,6 +387,26 @@ module Vessel
 
     text = "& Help for the #{self.class.name} vessel:\n\n"
 
+    parent_commands = []
+    (parent_vessel.methods - Object.methods).sort.each do |method|
+      if method[0,5] != "via__" then next end
+      parent_commands.push(method.to_s.sub("via__",""))
+    end
+
+    # Visibles
+    visible_commands = []
+    visible_vessels.each do |vessel|
+      (vessel.methods - Object.methods).sort.each do |method|
+        if method[0,5] != "vis__" then next end
+        visible_commands.push(method.to_s.sub("vis__","")+" "+vessel.name)
+      end
+      
+    end
+
+    p visible_commands
+
+    return "?"
+    
     lines = File.read("#{$nataniev_path}/vessels/#{self.class.name.downcase}.rb", :encoding => 'UTF-8').split("\n")
 
     content = []
