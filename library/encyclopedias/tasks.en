@@ -7,10 +7,8 @@ NATANIEV
     Make a first build
     Implement dirunes
   Actions
-    Create
-      Improve
     Sonar
-      Remove, merge with inspect
+      Remove, merge with examine
     Become
       Improve for web client
     Purge
@@ -27,10 +25,6 @@ NATANIEV
       [TODO]
     Help
       Implement comments/docs
-    Beholder
-      Fix?
-    Speak
-      Remove?
   Vessels
     Creation should empty the previous inhabitants
     Frozen/Unique/Shut/Closed Validation
@@ -76,6 +70,7 @@ HUNDREDRABBITS
   Make project page
   Oquonie Stickers
   100R Business Cards
+  Make new tier, including shirts
 
 PINO
   Insurance(DolphinInsurance?)

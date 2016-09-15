@@ -1,11 +1,9 @@
 #!/bin/env ruby
 # encoding: utf-8
 
-class Speak
+class Speak # TODO
 
-	include Vessel
-
-	def use q = nil
+	def __info q = nil
 
 		say("vicki",q)
 		
