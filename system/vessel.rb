@@ -158,22 +158,16 @@ module Vessel
 
   # TODO
 
-  class Actions ; 
-
-    def initialize actor ; @actor = actor end
-
+  class Actions
+    include ActionCollection
   end
 
   class ParentActions
-
-    def initialize actor ; @actor = actor end
-
+    include ActionCollection
   end
 
   class VisibleActions
-
-    def initialize actor ; @actor = actor end
-
+    include ActionCollection
   end
 
   def actions ; return Actions.new(self) end

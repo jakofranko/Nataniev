@@ -9,6 +9,8 @@ module ActionLook
 
   end
 
+  private
+
   def look_head
 
     return @actor.parent == @actor.id ? "~ The paradox of #{@actor.print.downcase}.\n\n".capitalize : "~ "+"#{@actor.print} in #{@actor.parent_vessel.print}.\n".capitalize

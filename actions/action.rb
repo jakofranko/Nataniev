@@ -3,6 +3,8 @@
 
 module Action
 
+  private
+
   def find_present_vessel name
 
     name = " #{name} ".sub(" a ","").sub(" an ","").sub(" the ","").strip.split(" ").last.to_s.strip
@@ -65,6 +67,22 @@ module Action
     end
 
     return collection
+
+  end
+
+end
+
+module ActionCollection
+
+  def initialize actor
+
+    @actor = actor
+
+  end
+
+  def available
+    
+    return methods - Object.methods
 
   end
 

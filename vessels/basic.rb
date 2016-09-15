@@ -21,6 +21,8 @@ class Basic
 
   class Actions
 
+    include ActionCollection
+
     include ActionLook
 
     include ActionCreate
@@ -39,26 +41,24 @@ class Basic
 
     include ActionSonar
 
-    def initialize actor ; @actor = actor end
-
   end
 
   class ParentActions
 
+    include ActionCollection
+
     include ActionNote
     include ActionName
-
-    def initialize actor ; @actor = actor end
 
   end
 
   class VisibleActions
 
+    include ActionCollection
+
     include ActionTakeDrop
     include ActionShowHide
     include ActionLockUnlock
-
-    def initialize actor ; @actor = actor end
 
   end
 

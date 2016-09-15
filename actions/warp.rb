@@ -12,6 +12,8 @@ module ActionWarp
     
   end
 
+  private
+  
   def warp_random q = nil
 
     v = $nataniev.find_random_vessel ; if !v then return error_random end

@@ -20,6 +20,7 @@ NATANIEV
     Call my
       Implement
     Cast
+      [TODO]
     Warp to
       distinction
     Warp in
@@ -28,9 +29,6 @@ NATANIEV
       merge with Find
     Help
       Implement comments
-    Actions
-      Migrate to actions
-    Migrate help to Basic.methods.sort(u.posts.methods - Object.methods)
   Vessels
     Creation should empty the previous inhabitants
     Variables in call command
