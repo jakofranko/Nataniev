@@ -34,8 +34,6 @@ class Nataniev
 
   end
 
-    
-
   def parade  ; @parade = !@parade ? Di.new("paradise") : @parade ; return @parade  end
   def actor   ; return @actor end
   def console ; return @console end
@@ -50,10 +48,10 @@ class Nataniev
 
     p (actor_vessel.actions.methods - Object.methods)
 
-    if actor_vessel.respond_to?("__#{action}")
-      return actor_vessel.send("__#{action}",params).strip
-    elsif actor_vessel.parent_vessel.respond_to?("via__#{action}")
-      return actor_vessel.parent_vessel.send("via__#{action}",params).strip
+    if actor_vessel.actions.respond_to?("#{action}")
+      return actor_vessel.actions.send("#{action}",params).strip
+    elsif actor_vessel.parent_vessel.parent_actions.respond_to?("#{action}")
+      return actor_vessel.parent_vessel.parent_actions.send("#{action}",params).strip
     else
       return "? #{action} is not a valid action. Use {{help}} to find the valid actions for the #{actor_vessel.class.to_s.downcase} vessel."
     end

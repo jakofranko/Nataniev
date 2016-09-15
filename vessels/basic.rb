@@ -19,10 +19,9 @@ class Basic
 
   def destroy ; @isDestroyed = true ; save ; end
 
-  def actions ; return Actions.new(self) end
-  def via_actions ; return Actions.new(self) end
-
   class Actions
+
+    include ActionLook
 
     include ActionCreate
     include ActionBecome
@@ -32,15 +31,8 @@ class Basic
     include ActionWarp
     include ActionFind
 
-    include ActionTakeDrop
-    include ActionShowHide
-    include ActionLockUnlock
-
     include ActionInventory
     include ActionHelp
-
-    include ActionNote
-    include ActionName
 
     include ActionUse
     include ActionCall
@@ -55,5 +47,35 @@ class Basic
 
   end
 
+  class ParentActions
+
+    include ActionNote
+    include ActionName
+
+    def initialize actor
+
+      @actor = actor
+
+    end
+
+  end
+
+  class VisibleActions
+
+    include ActionTakeDrop
+    include ActionShowHide
+    include ActionLockUnlock
+
+    def initialize actor
+
+      @actor = actor
+
+    end
+
+  end
+
+  def actions ; return Actions.new(self) end
+  def parent_actions ; return ParentActions.new(self) end
+  def visible_actions ; return VisibleActions.new(self) end
 
 end

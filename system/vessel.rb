@@ -81,11 +81,6 @@ module Vessel
   def set_program val = nil     ; return nil end
   def set_notereturn val = nil  ; return nil end
 
-  class Actions
-
-  end
-  def actions ; return Actions.new end
-
   # Loaders
 
   def load_parent_vessel
@@ -222,6 +217,43 @@ module Vessel
 
   end
 
+  # TODO
+
+  class Actions
+
+    def initialize actor
+
+      @actor = actor
+
+    end
+
+  end
+
+  class ParentActions
+
+    def initialize actor
+
+      @actor = actor
+
+    end
+
+  end
+
+  class VisibleActions
+
+    def initialize actor
+
+      @actor = actor
+
+    end
+
+  end
+
+  def actions ; return Actions.new(self) end
+  def parent_actions ; return ParentActions.new(self) end
+  def visible_actions ; return VisibleActions.new(self) end
+
+
   def destroy
 
     # Cannot destroy vessel module
@@ -279,82 +311,6 @@ module Vessel
     
     @timestamp = Timestamp.new
     $nataniev.parade.save(id,render)
-
-  end
-
-  # Look
-
-  def __look q = nil
-
-    return "#{look_head}#{look_note}#{look_visibles}#{look_hint}#{look_via}"
-
-  end
-
-  def look_head
-
-    return parent == id ? "~ The paradox of #{print.downcase}.\n\n".capitalize : "~ "+"#{print} in #{parent_vessel.print}.\n".capitalize
-
-  end
-
-  def look_note
-
-    if !parent_vessel.note then return nil end
-    
-    note = parent_vessel.note
-    note = note != "" ? "#{Wildcard.new(note).render}" : ""
-    note = note.capitalize
-    # Replace
-    visible_vessels.each do |vessel|
-      if !note.downcase.include?(vessel.name) then next end
-      note = note.downcase.sub(" "+vessel.name," {{#{vessel.name}}}")
-    end
-    # Format
-    note_formated = ""
-    note.split("&").each do |line|
-      line = line.strip
-      line = line[line.length-1,1] != "." ? line+"." : line
-      note_formated += "& "+line.gsub(". ",".\n").capitalize+"\n"
-    end
-    return note_formated.strip+"\n"
-
-  end
-
-  def look_visibles
-
-    if visible_vessels.length < 1 then return nil end
-
-    text = ""
-    visible_vessels.each do |vessel|
-      if parent_vessel.note.to_s.downcase.include?(vessel.name) then next end
-      text += vessel.display
-    end
-    
-    return text+"\n"
-
-  end
-
-  def look_hint
-
-    return parent_vessel.hint
-
-  end
-
-  def look_via
-
-    lines = File.read("#{$nataniev_path}/vessels/#{parent_vessel.class.name.downcase}.rb", :encoding => 'UTF-8').split("\n")
-
-    vias = []
-    lines.each do |line|
-      if line.strip[0,9] == "def via__"
-        vias.push(line.strip.gsub("def via__","").split(" ").first)
-      end
-    end
-
-    if vias.length == 0 then return nil end
-    if vias.length == 1 then return "@ #{parent_vessel.print.capitalize} grants you the additional command \"#{vias.first}\".\n" end
-    if vias.length == 2 then return "@ #{parent_vessel.print.capitalize} grants you the additional commands \"#{vias[0]}\" and \"#{vias[1]}\".\n" end
-
-    return "@ #{parent_vessel.print.capitalize} grants you the additional commands.\n"
 
   end
 
