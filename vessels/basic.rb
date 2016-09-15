@@ -31,13 +31,8 @@ class Basic
     include ActionLeave
 
     include ActionWarp
-    include ActionFind
 
     include ActionInventory
-    include ActionHelp
-
-    include ActionUse
-    include ActionCall
 
     include ActionSonar
 
@@ -52,7 +47,7 @@ class Basic
 
   end
 
-  class VisibleActions
+  class TargetActions
 
     include ActionCollection
 
@@ -60,10 +55,13 @@ class Basic
     include ActionShowHide
     include ActionLockUnlock
 
+    include ActionUse
+    include ActionCall
+
   end
 
   def actions ; return Actions.new(self) end
   def parent_actions ; return ParentActions.new(self) end
-  def visible_actions ; return VisibleActions.new(self) end
+  def target_actions ; return TargetActions.new(self) end
 
 end

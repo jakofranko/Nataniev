@@ -17,6 +17,11 @@ module ActionHelp
       text += "- _ #{action}\n"
     end
 
+    text += "# Default Actions:\n"
+    @actor.default_actions.available.each do |action|
+      text += "- _ #{action}\n"
+    end
+
     return text
 
   end

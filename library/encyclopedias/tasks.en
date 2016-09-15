@@ -7,6 +7,12 @@ NATANIEV
     Make a first build
     Implement dirunes
   Actions
+    Warp
+      Fragrances
+    Create
+      Improve
+    Sonar
+      Remove, merge with inspect
     Become
       Improve for web client
     Purge
@@ -28,7 +34,7 @@ NATANIEV
     Warp
       merge with Find
     Help
-      Implement comments
+      Implement comments/docs
   Vessels
     Creation should empty the previous inhabitants
     Variables in call command
@@ -48,6 +54,8 @@ NATANIEV
     Test saving?!
   Russian
     Improve learning tools
+  Enums
+    Build class
   
 BLINDFOLK
   Get up and running

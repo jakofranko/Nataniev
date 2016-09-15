@@ -46,6 +46,8 @@ class Nataniev
       return actor_vessel.actions.send("#{action}",params).strip
     elsif actor_vessel.parent_vessel.parent_actions.respond_to?("#{action}")
       return actor_vessel.parent_vessel.parent_actions.send("#{action}",params).strip
+    elsif actor_vessel.default_actions.respond_to?("#{action}")
+      return actor_vessel.default_actions.send("#{action}",params).strip
     else
       return "? #{action} is not a valid action. Use {{help}} to find the valid actions for the #{actor_vessel.class.to_s.downcase} vessel."
     end

@@ -166,13 +166,20 @@ module Vessel
     include ActionCollection
   end
 
-  class VisibleActions
+  class TargetActions
     include ActionCollection
+  end
+
+  class DefaultActions
+    include ActionCollection
+    include ActionHelp
+    include ActionExamine
   end
 
   def actions ; return Actions.new(self) end
   def parent_actions ; return ParentActions.new(self) end
-  def visible_actions ; return VisibleActions.new(self) end
+  def target_actions ; return TargetActions.new(self) end
+  def default_actions ; return DefaultActions.new(self) end
 
   # Prints
 
