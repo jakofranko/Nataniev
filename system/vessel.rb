@@ -150,70 +150,9 @@ module Vessel
 
   end
 
-  # Targetting
+  def render
 
-  def find_present_vessel name
-
-    name = " #{name} ".sub(" a ","").sub(" an ","").sub(" the ","").strip.split(" ").last.to_s.strip
-
-    present_vessels.each do |v|
-      if v.name.like(name) then return v end
-    end
-
-    return nil
-
-  end
-
-  def find_visible_vessel name
-
-    name = " #{name} ".sub(" a ","").sub(" an ","").sub(" the ","").strip.split(" ").last.to_s.strip
-
-    visible_vessels.each do |v|
-      if v.name.like(name) then return v end
-    end
-
-    return nil
-
-  end
-
-  def find_inventory_vessel name
-
-    name = " #{name} ".sub(" a ","").sub(" an ","").sub(" the ","").strip.split(" ").last.to_s.strip
-
-    inventory_vessels.each do |v|
-      if v.name.like(name) then return v end
-    end
-
-    return nil
-
-  end
-
-  def find_any_vessel name
-
-    name = " #{name} ".sub(" a ","").sub(" an ","").sub(" the ","").strip.split(" ").last.to_s.strip
-
-    id = -1
-    $nataniev.parade.to_a.each do |v|
-      id += 1
-      v = $nataniev.make_vessel(id)
-      if v.name.like(name) then return v end
-    end
-
-    return nil
-
-  end
-
-  def find_owned_vessel name
-
-    name = " #{name} ".sub(" a ","").sub(" an ","").sub(" the ","").strip.split(" ").last.to_s.strip
-
-    collection = []
-
-    owned_vessels.each do |v|
-      if v.name.like(name) then return v end
-    end
-
-    return collection
+    return @isDestroyed == true ? "" : "#{code} #{name.to_s.append(" ",14)} #{attribute.to_s.append(" ",14)} #{program.to_s.append(" ",80)} #{note}"
 
   end
 
