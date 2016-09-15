@@ -42,6 +42,8 @@ class Nataniev
 
     if !actor_vessel then return "? #{actor} is not a valid vessel id." else @actor = actor_vessel end
 
+    p (actor_vessel.actions.methods - Object.methods)
+
     if actor_vessel.respond_to?("__#{action}")
       return actor_vessel.send("__#{action}",params).strip
     elsif actor_vessel.parent_vessel.respond_to?("via__#{action}")
@@ -108,6 +110,5 @@ class Nataniev
     return target
 
   end
-
 
 end

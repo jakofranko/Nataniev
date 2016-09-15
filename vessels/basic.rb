@@ -19,25 +19,29 @@ class Basic
 
   def destroy ; @isDestroyed = true ; save ; end
 
-  #: Basic
+  load "#{$nataniev_path}/actions/create.rb"
+  load "#{$nataniev_path}/actions/enter.rb"
+  load "#{$nataniev_path}/actions/leave.rb"
 
-  def __create q = nil
+  def actions ; return Actions.new(self) end
+  
+  class Actions
 
-    q = q
-    q = " #{q} ".sub(" a ","").sub(" an ","").sub(" the ","").strip
+    include ActionCreate
+    include ActionEnter
+    include ActionLeave
 
-    _name      = q.split(" ").last
-    _attribute = q.split(" ").length > 1 ? q.split(" ").first : ""
+    def initialize actor
 
-    if _name.length > 14      then return "! Names cannot exceed 14 characters in length." end
-    if _attribute.length > 14 then return "! Attributes cannot exceed 14 characters in length." end
+      @actor = actor
 
-    new_vessel = Basic.new($nataniev.find_available_id,{'CODE' => "0000-#{parent.to_s.prepend("0",5)}-#{id.to_s.prepend("0",5)}-BASIC-#{now}", 'NAME' => _name, 'ATTR' => _attribute})
-    new_vessel.save
+    end
 
-    return "! You created #{new_vessel.print}."
-    
   end
+
+  
+
+  #: Basic
 
   def __become q = nil
 
@@ -46,22 +50,6 @@ class Basic
     if v.is_locked then return error_locked(q) end
 
     return "::#{v.id}"
-    
-  end
-
-  def __enter q = nil
-
-    v = find_visible_vessel(q) ; if !v then return error_target(q) end
-
-    return set_parent(v.id) ? "! You entered #{v.print}." : "! The #{name} is locked."
-    
-  end
-
-  def __leave q = nil
-
-    if @parent == parent_vessel.parent then return error_stem end
-
-    return set_parent(parent_vessel.parent) ? "! You left #{parent_vessel.print}." : "! The #{name} is locked."
     
   end
 
