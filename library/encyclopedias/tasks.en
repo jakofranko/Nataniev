@@ -7,8 +7,6 @@ NATANIEV
     Make a first build
     Implement dirunes
   Actions
-    Warp
-      Fragrances
     Create
       Improve
     Sonar
@@ -27,18 +25,14 @@ NATANIEV
       Implement
     Cast
       [TODO]
-    Warp to
-      distinction
-    Warp in
-      distinction
-    Warp
-      merge with Find
     Help
       Implement comments/docs
-    Fix beholder
+    Beholder
+      Fix?
+    Speak
+      Remove?
   Vessels
     Creation should empty the previous inhabitants
-    Variables in call command
     Frozen/Unique/Shut/Closed Validation
     Warn for long notes in the <hint>
   Etc
@@ -79,7 +73,7 @@ BELDAM
 HUNDREDRABBITS
   Setup podcast in iTunes
   Update URL to Iridium video
-  Make a project page
+  Make project page
   Oquonie Stickers
   100R Business Cards
 
@@ -97,4 +91,4 @@ OQUONIE
   Fix issue with Nephtaline world loop(blocking exit)
 
 VOCAVULARIST
-  Mak build and upload
+  Make build and upload

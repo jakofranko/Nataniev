@@ -45,6 +45,24 @@ module Action
 
     name = " #{name} ".sub(" a ","").sub(" an ","").sub(" the ","").strip.split(" ").last.to_s.strip
 
+    candidates = []
+
+    id = -1
+    $nataniev.parade.to_a.each do |v|
+      id += 1
+      v = $nataniev.make_vessel(id)
+      if v.name.like(name) then return candidates.push(v) end
+    end
+
+    return candidates.sample
+
+  end
+
+
+  def find_the_vessel name
+
+    name = " #{name} ".sub(" a ","").sub(" an ","").sub(" the ","").strip.split(" ").last.to_s.strip
+
     id = -1
     $nataniev.parade.to_a.each do |v|
       id += 1
