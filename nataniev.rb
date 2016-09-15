@@ -42,8 +42,6 @@ class Nataniev
 
     if !actor_vessel then return "? #{actor} is not a valid vessel id." else @actor = actor_vessel end
 
-    p actor_vessel
-    
     if actor_vessel.actions.respond_to?("#{action}")
       return actor_vessel.actions.send("#{action}",params).strip
     elsif actor_vessel.parent_vessel.parent_actions.respond_to?("#{action}")
