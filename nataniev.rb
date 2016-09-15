@@ -16,10 +16,6 @@ load "#{$nataniev_path}/system/timestamp.rb"
 load "#{$nataniev_path}/vessels/ghost.rb"
 load "#{$nataniev_path}/vessels/basic.rb"
 
-Dir["#{$nataniev_path}/actions/*"].each do |file_name|
-  load file_name
-end
-
 # You see nothing, enter the nothing.
 
 class Nataniev
@@ -45,8 +41,6 @@ class Nataniev
     actor_vessel = actor.to_i > 0 ? make_vessel(actor) : make_anonym(actor)
 
     if !actor_vessel then return "? #{actor} is not a valid vessel id." else @actor = actor_vessel end
-
-    p (actor_vessel.actions.methods - Object.methods)
 
     if actor_vessel.actions.respond_to?("#{action}")
       return actor_vessel.actions.send("#{action}",params).strip

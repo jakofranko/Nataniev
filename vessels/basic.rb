@@ -39,11 +39,7 @@ class Basic
 
     include ActionSonar
 
-    def initialize actor
-
-      @actor = actor
-
-    end
+    def initialize actor ; @actor = actor end
 
   end
 
@@ -52,11 +48,7 @@ class Basic
     include ActionNote
     include ActionName
 
-    def initialize actor
-
-      @actor = actor
-
-    end
+    def initialize actor ; @actor = actor end
 
   end
 
@@ -66,11 +58,7 @@ class Basic
     include ActionShowHide
     include ActionLockUnlock
 
-    def initialize actor
-
-      @actor = actor
-
-    end
+    def initialize actor ; @actor = actor end
 
   end
 

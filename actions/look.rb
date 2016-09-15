@@ -5,7 +5,7 @@ module ActionLook
 
   def look q = nil
 
-    return "#{look_head}" # #{look_note}#{look_visibles}#{look_hint}#{look_via}
+    return "#{look_head}#{look_note}#{look_visibles}#{look_hint}#{look_via}"
 
   end
 
@@ -17,13 +17,13 @@ module ActionLook
 
   def look_note
 
-    if !parent_vessel.note then return nil end
+    if !@actor.parent_vessel.note then return nil end
     
-    note = parent_vessel.note
+    note = @actor.parent_vessel.note
     note = note != "" ? "#{Wildcard.new(note).render}" : ""
     note = note.capitalize
     # Replace
-    visible_vessels.each do |vessel|
+    @actor.visible_vessels.each do |vessel|
       if !note.downcase.include?(vessel.name) then next end
       note = note.downcase.sub(" "+vessel.name," {{#{vessel.name}}}")
     end
@@ -40,11 +40,11 @@ module ActionLook
 
   def look_visibles
 
-    if visible_vessels.length < 1 then return nil end
+    if @actor.visible_vessels.length < 1 then return nil end
 
     text = ""
-    visible_vessels.each do |vessel|
-      if parent_vessel.note.to_s.downcase.include?(vessel.name) then next end
+    @actor.visible_vessels.each do |vessel|
+      if @actor.parent_vessel.note.to_s.downcase.include?(vessel.name) then next end
       text += vessel.display
     end
     
@@ -54,13 +54,13 @@ module ActionLook
 
   def look_hint
 
-    return parent_vessel.hint
+    return @actor.parent_vessel.hint
 
   end
 
   def look_via
 
-    lines = File.read("#{$nataniev_path}/vessels/#{parent_vessel.class.name.downcase}.rb", :encoding => 'UTF-8').split("\n")
+    lines = File.read("#{$nataniev_path}/vessels/#{@actor.parent_vessel.class.name.downcase}.rb", :encoding => 'UTF-8').split("\n")
 
     vias = []
     lines.each do |line|
@@ -70,10 +70,10 @@ module ActionLook
     end
 
     if vias.length == 0 then return nil end
-    if vias.length == 1 then return "@ #{parent_vessel.print.capitalize} grants you the additional command \"#{vias.first}\".\n" end
-    if vias.length == 2 then return "@ #{parent_vessel.print.capitalize} grants you the additional commands \"#{vias[0]}\" and \"#{vias[1]}\".\n" end
+    if vias.length == 1 then return "@ #{@actor.parent_vessel.print.capitalize} grants you the additional command \"#{vias.first}\".\n" end
+    if vias.length == 2 then return "@ #{@actor.parent_vessel.print.capitalize} grants you the additional commands \"#{vias[0]}\" and \"#{vias[1]}\".\n" end
 
-    return "@ #{parent_vessel.print.capitalize} grants you the additional commands.\n"
+    return "@ #{@actor.parent_vessel.print.capitalize} grants you the additional commands.\n"
 
   end
 

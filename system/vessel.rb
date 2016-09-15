@@ -219,53 +219,27 @@ module Vessel
 
   # TODO
 
-  class Actions
+  class Actions ; 
 
-    def initialize actor
-
-      @actor = actor
-
-    end
+    def initialize actor ; @actor = actor end
 
   end
 
   class ParentActions
 
-    def initialize actor
-
-      @actor = actor
-
-    end
+    def initialize actor ; @actor = actor end
 
   end
 
   class VisibleActions
 
-    def initialize actor
-
-      @actor = actor
-
-    end
+    def initialize actor ; @actor = actor end
 
   end
 
   def actions ; return Actions.new(self) end
   def parent_actions ; return ParentActions.new(self) end
   def visible_actions ; return VisibleActions.new(self) end
-
-
-  def destroy
-
-    # Cannot destroy vessel module
-
-  end
-
-  def use q = nil
-
-    if !program.is_valid then return "! Nothing happens." end
-    return program.run
-
-  end
 
   # Prints
 
@@ -298,12 +272,6 @@ module Vessel
       if !program.is_valid then return "? Add a Program to interact with #{print}.\n" end
     end
     return nil
-
-  end
-
-  def render
-
-    return @isDestroyed == true ? "" : "#{code} #{name.to_s.append(" ",14)} #{attribute.to_s.append(" ",14)} #{program.to_s.append(" ",80)} #{note}"
 
   end
 
@@ -343,51 +311,6 @@ module Vessel
     if owned_vessels.length > 5 then v += 1 end
 
     return v
-
-  end
-
-  # Help
-
-  def __help q = nil
-
-    text = "& Help for the #{self.class.name} vessel:\n\n"
-
-    player_commands = []
-    (self.methods - Object.methods).sort.each do |method|
-      if method[0,2] != "__" then next end
-      puts method
-      # parent_commands.push(method.to_s.sub("via__",""))
-    end
-
-
-    parent_commands = []
-    (parent_vessel.methods - Object.methods).sort.each do |method|
-      if method[0,5] != "via__" then next end
-      parent_commands.push(method.to_s.sub("via__",""))
-    end
-
-    puts self.actions.methods
-
-    return "?"
-
-    lines = File.read("#{$nataniev_path}/vessels/#{self.class.name.downcase}.rb", :encoding => 'UTF-8').split("\n")
-
-    content = []
-    lines.each do |line|
-
-      if line.strip[0,6] == "def __"
-        action = line.split(" ")[1].to_s.gsub("__","")
-        documentation = line.include?("#") ? line.split("#").last.strip : "Missing documentation"
-        text += "- "+"{{#{action}}}".append(" ",15)+" #{documentation}\n"
-      end
-
-      if line.strip[0,3] == "#: "
-        text += "# #{line.sub('#: ','').strip}\n"
-      end
-      
-    end
-
-    return text
 
   end
 
