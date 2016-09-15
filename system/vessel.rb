@@ -6,6 +6,10 @@ require 'date'
 load "#{$nataniev_path}/system/wildcard.rb"
 load "#{$nataniev_path}/system/program.rb"
 
+Dir["#{$nataniev_path}/actions/*"].each do |file_name|
+  require file_name
+end
+
 module Vessel
 
   def initialize id = 0,line = {}
@@ -78,7 +82,7 @@ module Vessel
   def set_notereturn val = nil  ; return nil end
 
   class Actions
-    
+
   end
   def actions ; return Actions.new end
 

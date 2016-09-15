@@ -19,17 +19,23 @@ class Basic
 
   def destroy ; @isDestroyed = true ; save ; end
 
-  load "#{$nataniev_path}/actions/create.rb"
-  load "#{$nataniev_path}/actions/enter.rb"
-  load "#{$nataniev_path}/actions/leave.rb"
-
   def actions ; return Actions.new(self) end
-  
+
   class Actions
 
     include ActionCreate
+    include ActionBecome
     include ActionEnter
     include ActionLeave
+
+    include ActionWarp
+
+    include ActionTakeDrop
+    include ActionShowHide
+    include ActionLockUnlock
+
+    include ActionInventory
+    include ActionHelp
 
     def initialize actor
 
@@ -39,75 +45,6 @@ class Basic
 
   end
 
-  
-
-  #: Basic
-
-  def __become q = nil
-
-    v = find_visible_vessel(q) ; if !v then return error_target(q) end
-
-    if v.is_locked then return error_locked(q) end
-
-    return "::#{v.id}"
-    
-  end
-
-  #: Warp
-
-  def __warp q = nil
-
-    q = q.to_s.sub("to ","").to_i
-    v = $nataniev.make_vessel(q.to_i) ; if !v then return error_target(q) end
-
-    return set_parent(v.id) ? "! You warped to #{v.print}." : "! The #{name} is locked."
-    
-  end
-
-  def __loop q = nil
-
-    return set_parent(id) ? "! You created a paradox." : "! The #{name} is locked."
-    
-  end
-
-  def __random q = nil
-
-    v = $nataniev.find_random_vessel ; if !v then return error_random end
-
-    return __warp(v.id)
-    
-  end
-
-  #: Inventory
-
-  def __inventory q = nil
-
-    if inventory_vessels.length == 0 then return error_empty end
-
-    text = ""
-    inventory_vessels.each do |vessel|    
-      text += "- #{vessel.print}"
-    end
-
-    return text
-    
-  end
-
-  def vis__take q = nil
-
-    v = find_visible_vessel(q) ; if !v then return error_target(q) end
-
-    return v.set_parent(@id) ? "! You took #{v.print}." : "! The #{v.name} is locked."
-    
-  end
-
-  def vis__drop q = nil
-
-    v = find_inventory_vessel(q) ; if !v then return error_target(q) end
-
-    return v.set_parent(@parent) ? "! You dropped #{v.print}." : "! The #{v.name} is locked."
-    
-  end
 
   #: Narative
 
@@ -142,40 +79,6 @@ class Basic
   def via__program q = nil
 
     return "! TODO"
-    
-  end
-
-  #: Security
-
-  def vis__lock q = nil
-
-    v = find_present_vessel(q) ; if !v then return error_target(q) end
-
-    return v.set_lock(1) ? "! You locked #{v.print}." : "! You cannot lock the #{v.name}."
-    
-  end
-
-  def vis__unlock q = nil
-
-    v = find_present_vessel(q) ; if !v then return error_target(q) end
-
-    return v.set_lock(0) ? "! You unlocked #{v.print}." : "! You cannot unlock the #{v.name}."
-    
-  end
-
-  def vis__show q = nil
-
-    v = find_present_vessel(q) ; if !v then return error_target(q) end
-    
-    return v.set_hide(0) ? "! You revealed #{v.print}." : "You cannot reveal the #{v.name}."
-    
-  end
-
-  def vis__hide q = nil
-
-    v = find_present_vessel(q) ; if !v then return error_target(q) end
-
-    return v.set_hide(1) ? "! You hid #{v.print}." : "! You cannot hide the #{v.name}."
     
   end
 

@@ -16,6 +16,10 @@ load "#{$nataniev_path}/system/timestamp.rb"
 load "#{$nataniev_path}/vessels/ghost.rb"
 load "#{$nataniev_path}/vessels/basic.rb"
 
+Dir["#{$nataniev_path}/actions/*"].each do |file_name|
+  load file_name
+end
+
 # You see nothing, enter the nothing.
 
 class Nataniev
@@ -29,6 +33,8 @@ class Nataniev
     @estate  = 30000
 
   end
+
+    
 
   def parade  ; @parade = !@parade ? Di.new("paradise") : @parade ; return @parade  end
   def actor   ; return @actor end
