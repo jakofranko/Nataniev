@@ -1,7 +1,7 @@
 #!/bin/env ruby
 # encoding: utf-8
 
-class Ghost
+class Ghost # TODO
 
   include Vessel
 
@@ -9,20 +9,6 @@ class Ghost
 
     return "ghost"
     
-  end
-
-  def __look q = 3
-
-    @parent = q
-
-    return "#{look_head}#{look_note}#{look_visibles}#{look_hint}"
-
-  end
-
-  def __enter q = nil
-
-    return "HEY"
-
   end
   
 end

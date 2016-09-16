@@ -6,63 +6,63 @@ require 'twitter'
 
 class Tweet
 
-	include Vessel
+  include Vessel
 
-	def via__see q = nil
+  def via__see q = nil
 
-		if q.to_s == "" then return "? Add a parameter to search for tweet." end
+    if q.to_s == "" then return "? Add a parameter to search for tweet." end
 
-		text = "& Listing:\n"
-		findTweets([q]).each do |tweet|
-			text += "- #{tweet.user.screen_name.append(" ",25)} #{tweet.text.strip.gsub(/\r\n?/, "\n")}\n"
-		end
+    text = "& Listing:\n"
+    findTweets([q]).each do |tweet|
+      text += "- #{tweet.user.screen_name.append(" ",25)} #{tweet.text.strip.gsub(/\r\n?/, "\n")}\n"
+    end
 
-		return text
+    return text
 
-	end
+  end
 
-	def __look q = nil
+  def __look q = nil
 
-		text = "Listing:\n"
-		findTweets(["to:neauoire","aliceffekt","xxiivv"]).each do |tweet|
-			text += "- #{tweet.user.screen_name.append(" ",25)} #{tweet.text.strip.gsub('\n','')}\n"
-		end
+    text = "Listing:\n"
+    findTweets(["to:neauoire","aliceffekt","xxiivv"]).each do |tweet|
+      text += "- #{tweet.user.screen_name.append(" ",25)} #{tweet.text.strip.gsub('\n','')}\n"
+    end
 
-		return text
+    return text
 
-	end
+  end
 
-	def save account, content
+  def save account, content
 
-		if !File.exist?("#{$nataniev_path}/secrets/secret.#{account}.config.rb") then return "Missing keys." end
+    if !File.exist?("#{$nataniev_path}/secrets/secret.#{account}.config.rb") then return "Missing keys." end
 
-		load "#{$nataniev_path}/secrets/secret.#{account}.config.rb"
+    load "#{$nataniev_path}/secrets/secret.#{account}.config.rb"
 
-		client = Twitter::REST::Client.new($twitter_config)
-		client.update(content)
+    client = Twitter::REST::Client.new($twitter_config)
+    client.update(content)
 
-		return "Saved tweet #{content}, to #{account}."
+    return "Saved tweet #{content}, to #{account}."
 
-	end
+  end
 
-	def findTweets words
+  def findTweets words
 
-		account = "neauoire"
+    account = "neauoire"
 
-		if !File.exist?("#{$nataniev_path}/secrets/secret.#{account}.config.rb") then return "Missing keys." end
-		load "#{$nataniev_path}/secrets/secret.#{account}.config.rb"
-		client = Twitter::REST::Client.new($twitter_config)
+    if !File.exist?("#{$nataniev_path}/secrets/secret.#{account}.config.rb") then return "Missing keys." end
+    load "#{$nataniev_path}/secrets/secret.#{account}.config.rb"
+    client = Twitter::REST::Client.new($twitter_config)
 
-		tweets = []
+    tweets = []
 
-		words.each do |word|
-			client.search(word, :result_type => "recent").take(5).each do |tweet|
-				tweets.push(tweet)
-			end
-		end
+    words.each do |word|
+      client.search(word, :result_type => "recent").take(5).each do |tweet|
+        tweets.push(tweet)
+      end
+    end
 
-		return tweets
+    return tweets
 
-	end
+  end
 
 end

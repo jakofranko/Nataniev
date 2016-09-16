@@ -1,14 +1,8 @@
 #!/bin/env ruby
 # encoding: utf-8
 
-class Atari
+class Atari # TODO
 
-	include Vessel
-
-	def use q = nil
-
-		return q != "" ? $nataniev.answer(q) : "? Query is empty."
-		
-	end
+  include Vessel
 
 end

@@ -22,6 +22,8 @@ NATANIEV
   Vessels
     Creation should empty the previous inhabitants
     Warn for long notes in the <hint>
+    Ghost Vessel
+      Build
   Etc
     Documentation(README.md, etc..)
   Tutorial
@@ -34,6 +36,9 @@ NATANIEV
     Save Logs
     EN Parser saving?
     Fix monitor
+  HttpCorpse
+    Create html wrapper module
+    Implement on instances
   
 BLINDFOLK
   Get up and running

@@ -17,6 +17,7 @@ class Basic
     include ActionWarp
     include ActionCall
 
+    include ActionTransform
     include ActionInventory
 
   end
@@ -26,7 +27,6 @@ class Basic
     include ActionCollection
 
     include ActionNote
-    include ActionName
     include ActionCast
 
   end

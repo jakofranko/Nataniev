@@ -3,23 +3,23 @@
 
 class Estat
 
-	include Vessel
+  include Vessel
 
-	def display
+  def display
 
-		count = 0
-		$nataniev.parade.to_a.each do |v|
-			if !v['CODE'] then next end
-			count += 1
-		end
+    count = 0
+    $nataniev.parade.to_a.each do |v|
+      if !v['CODE'] then next end
+      count += 1
+    end
 
-		perc = count/20000.to_f
-		perc *= 1000
-		perc = perc.to_i.to_f
-		perc /= 10
+    perc = count/20000.to_f
+    perc *= 1000
+    perc = perc.to_i.to_f
+    perc /= 10
 
-		return "? #{print.capitalize}, displays #{(perc)}%\n"
+    return "? #{print.capitalize}, displays #{(perc)}%\n"
 
-	end
+  end
 
 end
