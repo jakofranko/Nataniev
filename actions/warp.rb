@@ -6,11 +6,12 @@ module ActionWarp
   def warp q = nil
 
     parts = q.split(" ")
-    command = "warp_#{parts[0]}_#{parts[1]}".strip
     target = q.sub("#{parts[0]} #{parts[1]}","").strip
 
-    if self.respond_to?(command,target)
-      return self.send(command,target).strip
+    if self.respond_to?("warp_#{parts[0]}_#{parts[1]}",target)
+      return self.send("warp_#{parts[0]}_#{parts[1]}",target).strip
+    elsif self.respond_to?("warp_#{parts[0]}_id",parts[1].to_i) && parts.last.to_i > 0
+      return self.send("warp_#{parts[0]}_id",parts[1].to_i).strip
     else
       return "? Unknown command"
     end
@@ -29,7 +30,7 @@ module ActionWarp
 
   end
 
-  def warp_to_id q = nil
+  def warp_to_id id
 
     v = $nataniev.make_vessel(id) ; if !v then return error_target(q) end
 
@@ -71,7 +72,7 @@ module ActionWarp
 
   end
 
-  def warp_in_id q = nil
+  def warp_in_id id
 
     v = $nataniev.make_vessel(id) ; if !v then return error_target(q) end
 
