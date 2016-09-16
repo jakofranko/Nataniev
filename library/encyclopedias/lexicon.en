@@ -110,7 +110,7 @@ BLINDFOLK
   BREF : {{Blindfolk}} was a cryptic multiplayer combat game where players must program their character to foresee and react to the other players' action.
   LONG
     & It was first created in the span of 48 hours for {{Global Game Jam 2016|http://globalgamejam.org}}. 
-    & This project joins {{Paradise}} in its text-based interaction and concepts. 
+    & This project joins {{Nataniev}} in its text-based interaction and concepts. 
     & The game is open source and is available on {{Github|https://github.com/XXIIVV/instance.blind}}
     & The game uses a simple scripting language, here is an example of a riposte to an attack coming from the back, and a default movement pattern with an attack and a shout.
     # case attack.backward  step.leftcase default  attack.forward  turn.right  attack.backward  say yatta
@@ -840,9 +840,9 @@ THE SIXTH SEASON
 OTOROUTES MINIATURES
   UNDE : First wave
 
-PARADISE
+NATANIEV
   UNDE : Online
-  BREF : Initiated in 2011, {*Paradise*} is a procedural {{interactive fiction|Interactive}} and multiplayer novel, in which you can be anything and anyone, travel to the oddest of places, entirely user-created. You may choose to make a mess, or to create order, in the comfort of your teacup.
+  BREF : Initiated in 2011, as {_Paradise_}, {{Nataniev} is a procedural {{interactive fiction|Interactive}} and multiplayer novel, in which you can be anything and anyone, travel to the oddest of places, entirely user-created. You may choose to make a mess, or to create order, in the comfort of your teacup.
   LONG 
     & There are no Paradise, no teacup, no you or me - but words. These words are the place holders of intricate concepts, shared with other users that will create personal and different experiences from the same words.
     ? {_"In a little while you will be alone in shoreless space, to wander its limitless solitudes without friend or comrade forever--for you will remain a thought, the only existent thought, and by your nature inextinguishable, indestructible. "_} - Mark Twain, {{the mysterious Stranger|http://en.wikipedia.org/wiki/The_Mysterious_Stranger}}
@@ -851,8 +851,8 @@ PARADISE
     GITH : https://github.com/XXIIVV/Nataniev
 
 MAEVE
-  UNDE : Paradise
-  BREF : {{Maeve}} is an automated {{Paradise}} vessel that travels around the universe to find and remove incomplete vessels.
+  UNDE : Nataniev
+  BREF : {{Maeve}} is an automated {{Nataniev}} vessel that travels around the universe to find and remove incomplete vessels.
   LINK
     SITE : http://paradise.xxiivv.com
     GITH : https://github.com/XXIIVV/Nataniev/blob/master/vessels/maeve.rb
@@ -1031,7 +1031,7 @@ TELEKINETIC
   UNDE : Third wave
   BREF : {{Telekinetic}} is the name of a concept album by {{Aliceffekt}} played live with the <a href='https://www.leapmotion.com'>Leap Motion</a>, first performed at <a href='http://www.cnet.com.au/dj-turns-leap-motion-into-a-theremin-sort-of-339345563.htm'>Sabaco in Tokyo</a>. 
   LONG
-    & The event was recorded and can still be watched online on <a href="http://www.ustream.tv/recorded/39105185">UStream</a>. There was a <a href="http://www.cnet.com.au/dj-turns-leap-motion-into-a-theremin-sort-of-339345563.htm">short article on CNET</a> about the event as well. The album cover features an alternate door to {{Paradise}}'s Library of Sand ornated of the number 210 in <a href='Needle+numbers'>Needle Numbers</a> as well as the <a href='Traumae'>Traumae</a> letters <a href='/traumae:bi'>BI</a> <a href='/traumae:ti'>TI</a> <a href='/traumae:ta'>TA</a> <a href='/traumae:si'>SI</a> <a href='/traumae:po'>PO</a>.
+    & The event was recorded and can still be watched online on <a href="http://www.ustream.tv/recorded/39105185">UStream</a>. There was a <a href="http://www.cnet.com.au/dj-turns-leap-motion-into-a-theremin-sort-of-339345563.htm">short article on CNET</a> about the event as well. The album cover features an alternate door to {{Nataniev}}'s Library of Sand ornated of the number 210 in <a href='Needle+numbers'>Needle Numbers</a> as well as the <a href='Traumae'>Traumae</a> letters <a href='/traumae:bi'>BI</a> <a href='/traumae:ti'>TI</a> <a href='/traumae:ta'>TA</a> <a href='/traumae:si'>SI</a> <a href='/traumae:po'>PO</a>.
     & You can watch a a demo of the <a href='https://www.facebook.com/photo.php?v=10153250341045274'>prototype</a>.
   LINK
     BAND : https://aliceffekt.bandcamp.com/album/telekinetic
@@ -1156,7 +1156,7 @@ VERRECIEL
   UNDE : Mobile
   BREF : {{Verreciel}} is a virtual space exploration project in which you must learn to use your {_Glass Ship_}'s consoles, route them into one-another, and navigate the surrounding universes aboard its fragile habitat.
   LONG
-    & The game joins the sequence of linguistically involved projects like {{Paradise}}, {{Hiversaires}} and {{Oquonie}}. You can follow the development of the game on {{Twitter|https://twitter.com/search?q=verreciel&src=typd}}.
+    & The game joins the sequence of linguistically involved projects like {{Nataniev}}, {{Hiversaires}} and {{Oquonie}}. You can follow the development of the game on {{Twitter|https://twitter.com/search?q=verreciel&src=typd}}.
   LINK
     ITUN : https://itunes.apple.com/ca/app/verreciel/id1065988107
     GITH : https://github.com/Echorridoors/Verreciel
@@ -1222,7 +1222,7 @@ OSCEAN
   BREF : {*XXIIVV*} is the connecting thread between all of {_Devine lu linvega_}’s works, and host to the pillars and tools of the persona. Initiated in 2009, this ultrafolio’s initial purpose was to archive various narrative documentation for a series of shorts.
   LONG
     & The current platform is built in {{Ruby|https://en.wikipedia.org/wiki/Ruby_(programming_language)}}, and is currently hosted on {{Digital Ocean|https://www.digitalocean.com/?refcode=4ed988ca8c17}}. The site is segmented into 3 parts, {*a time-tracker*}, {*a lexicon*} and a {*diary*}. Every single day, since 2009, a log has been added to the {{Horaire}}, every new project has an entry in the {{Lexicon|Portal}} and every event has a page in the {*diary*}. 
-    ? Above these core systems, other systems exists - such as {{Paradise}}, the {{API|http://api.xxiivv.com}} and a series of {{bots|Automatons}}. This website is the skeleton of a rigorous lifestyle change, initiated in 2006.
+    ? Above these core systems, other systems exists - such as {{Nataniev}}, the {{API|http://api.xxiivv.com}} and a series of {{bots|Automatons}}. This website is the skeleton of a rigorous lifestyle change, initiated in 2006.
   LINK
     GITH : https://github.com/XXIIVV/instance.oscea
   TYPE : Portal

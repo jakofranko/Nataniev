@@ -25,7 +25,7 @@ class Lexio
 
 	def note
 
-		return "This list is a series of issues found in XXIIVV.\n"+use
+		return "This list is a series of issues found in XXIIVV.\n"
 
 	end
 

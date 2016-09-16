@@ -3,6 +3,9 @@
 ~ AUTH : Devine Lu Linvega
 
 @ DATE     CODE PICT TERM                 TASK                 NAME                  TEXT
+2016 09 15 - 44      Hundred rabbits      Development
+2016 09 14 - 48      Nataniev             Migration
+2016 09 13 - 44      Nataniev             Migration
 2016 09 12 - 35      Pino                 Maintenance
 2016 09 11 - 24      Hundred rabbits      Video
 2016 09 10 - 15      Hundred rabbits      Composition
@@ -12,19 +15,19 @@
 2016 09 06 - 37      Pino                 Maintenance
 2016 09 05 - 00 
 2016 09 04 - 34      Markle               Design
-2016 09 03 - 35      Paradise             Development
-2016 09 02 - 35      Paradise             Development
+2016 09 03 - 35      Nataniev             Development
+2016 09 02 - 35      Nataniev             Development
 2016 09 01 - 29      Hundred rabbits      Video
 2016 08 31 - 29   86 Sailing              Photography
 2016 08 30 - 34      Markle               Development
 2016 08 29 - 24      Polygonoscopy        Modeling
 2016 08 28 - 38      The will the wisp    Migration
-2016 08 27 - 27      Paradise             Design
+2016 08 27 - 27      Nataniev             Design
 2016 08 26 - 00
-2016 08 25 - 39      Paradise             Development
-2016 08 24 - 39      Paradise             Development
+2016 08 25 - 39      Nataniev             Development
+2016 08 24 - 39      Nataniev             Development
 2016 08 23 - 26   77 America              Photography          San Francisco         First picture taken upon sailing to San Francisco from Vancouver.
-2016 08 22 - 35      Paradise             Development
+2016 08 22 - 35      Nataniev             Development
 2016 08 21 ! 25   75 Nervous              Modeling             Exhibit C
 2016 08 20 - 35      Blindfolk            Linguistics
 2016 08 19 - 00
@@ -41,13 +44,13 @@
 2016 08 08 ! 29   44 Polygonoscopy        Modeling             Scan
 2016 08 07 - 35      Oscean               Tools
 2016 08 06 - 19      Hundred rabbits      Composition
-2016 08 05 - 32      Paradise             Tools
-2016 08 04 - 38      Paradise             Tools
+2016 08 05 - 32      Nataniev             Tools
+2016 08 04 - 38      Nataniev             Tools
 2016 08 03 - 38      Oscean               Tools
 2016 08 02 - 28      Markle               Design
-2016 08 01 - 38      Paradise             Tools
-2016 07 31 - 38      Paradise             Migration
-2016 07 30 - 38      Paradise             Tools
+2016 08 01 - 38      Nataniev             Tools
+2016 07 31 - 38      Nataniev             Migration
+2016 07 30 - 38      Nataniev             Tools
 2016 07 29 - 35      Atari                Tools
 2016 07 28 - 23      Atari                Tools
 2016 07 27 - 17      Atari                Tools
@@ -84,15 +87,15 @@
 2016 06 26 - 39      Pino                 Maintenance
 2016 06 25 - 39      Pino                 Maintenance
 2016 06 24 - 24      Hundred rabbits      Video
-2016 06 23 - 34      Paradise             Migration
-2016 06 22 - 34      Paradise             Migration
-2016 06 21 - 34      Paradise             Migration
-2016 06 20 - 35      Paradise             Migration
+2016 06 23 - 34      Nataniev             Migration
+2016 06 22 - 34      Nataniev             Migration
+2016 06 21 - 34      Nataniev             Migration
+2016 06 20 - 35      Nataniev             Migration
 2016 06 19 - 26      Nereid               Modeling
-2016 06 18 - 34      Paradise             Migration
-2016 06 17 - 34      Paradise             Migration
+2016 06 18 - 34      Nataniev             Migration
+2016 06 17 - 34      Nataniev             Migration
 2016 06 16 - 34      Advent v             Migration
-2016 06 15 - 37      Paradise             Migration
+2016 06 15 - 37      Nataniev             Migration
 2016 06 14 - 32      Grimgrains           Migration
 2016 06 13 - 26      Nereid               Modeling
 2016 06 12 - 34      Grimgrains           Migration
@@ -295,17 +298,17 @@
 2015 11 28 - 26      Oscean               Analytics
 2015 11 27 - 28      Oquonie              Design
 2015 11 26 - 28      Oquonie              Design
-2015 11 25 - 37      Paradise             Testing
-2015 11 24 - 35      Paradise             Testing
+2015 11 25 - 37      Nataniev             Testing
+2015 11 24 - 35      Nataniev             Testing
 2015 11 23 - 35      Oquonie              Refactoring
-2015 11 22 - 25      Paradise             Testing
+2015 11 22 - 25      Nataniev             Testing
 2015 11 21 - 34      Alphavetist          Update               3.8
 2015 11 20 ! 29  476 Keyboard             Photography          All blank keycaps
 2015 11 19 - 29      Oscean               Design
 2015 11 18 - 37      Oquonie              Refactoring
 2015 11 17 - 34      Alphavetist          Update               3.7
 2015 11 16 - 19      Grot                 Mixing
-2015 11 15 - 27      Paradise             Update               1.2
+2015 11 15 - 27      Nataniev             Update               1.2
 2015 11 14 - 29      Hundred rabbits      Live
 2015 11 13 ! 29  475 Hundred rabbits      Branding             Begin
 2015 11 12 - 37      Oquonie              Refactoring
@@ -336,13 +339,13 @@
 2015 10 18 - 25      Verreciel            Documentation
 2015 10 17 - 25      Verreciel            Documentation
 2015 10 16 - 36      Verreciel            Development
-2015 10 15 - 27  473 Paradise             Design               The New Ghost
+2015 10 15 - 27  473 Nataniev             Design               The New Ghost
 2015 10 14 - 34      Markle               Prototype
 2015 10 13 - 32      Verreciel            Development
 2015 10 12 - 32      Verreciel            Development
 2015 10 11 - 32      Verreciel            Development
 2015 10 10 - 34      Verreciel            Development
-2015 10 09 - 34      Paradise             Update               1.1
+2015 10 09 - 34      Nataniev             Update               1.1
 2015 10 08 - 36      Verreciel            Development
 2015 10 07 - 39      Verreciel            Development
 2015 10 06 - 36      Verreciel            Development
@@ -410,17 +413,17 @@
 2015 08 05 ! 26  437 Infrared             Photography          Habitat 67
 2015 08 04 - 35  435 Sailing              Writing              Thinking about livin
 2015 08 03 - 36      Advent v             Update               0.1
-2015 08 02 - 36      Paradise             Update               1.0
+2015 08 02 - 36      Nataniev             Update               1.0
 2015 08 01 ! 26  436 Infrared             Photography          Graveyard
 2015 07 31 - 36      Oscean               Update               4.0
 2015 07 30 - 25      Donsol               Update               1.5
 2015 07 29 - 14      Trapezoid            Update               Reissue
 2015 07 28 ! 19  434 Trapezoid            Release              Release
-2015 07 27 - 39      Paradise             Development
-2015 07 26 - 39      Paradise             Development
+2015 07 27 - 39      Nataniev             Development
+2015 07 26 - 39      Nataniev             Development
 2015 07 25 - 39      Oscean               Refactoring
 2015 07 24 - 39      Oscean               Development
-2015 07 23 - 26      Paradise             Design
+2015 07 23 - 26      Nataniev             Design
 2015 07 22 - 19      Trapezoid            Live
 2015 07 21 - 34      Den                  Development
 2015 07 20 - 34      Den                  Development
@@ -599,7 +602,7 @@
 2015 01 28 - 37      Oquonie              Refactoring
 2015 01 27 - 37      Oquonie              Refactoring
 2015 01 26 ! 35      Alphavetist          Update               3.2
-2015 01 25 ! 35      Paradise             Update               0.9
+2015 01 25 ! 35      Nataniev             Update               0.9
 2015 01 24 ! 35  295 Alphavetist          Update               3.0
 2015 01 23 - 33      Dew                  Update               1.3
 2015 01 22 - 33      Bifurcan             Update               1.3
@@ -636,8 +639,8 @@
 2014 12 22 - 35      Lyken                Development
 2014 12 21 - 35      Lyken                Prototype
 2014 12 20 - 34      Dew                  Development
-2014 12 19 - 34      Paradise             Development
-2014 12 18 - 37      Paradise             Update               Automate
+2014 12 19 - 34      Nataniev             Development
+2014 12 18 - 37      Nataniev             Update               Automate
 2014 12 17 - 37  259 Dew                  Release              Release
 2014 12 16 - 37      Dew                  Development
 2014 12 15 - 25  291 Rafinograde          Release              Release
@@ -662,22 +665,22 @@
 2014 11 26 - 25  283 Oquonie              Branding             Walkthrough
 2014 11 25 - 25      Defraction optics    Design
 2014 11 24 - 25      Defraction optics    Design
-2014 11 23 - 36      Paradise             Update
+2014 11 23 - 36      Nataniev             Update
 2014 11 22 - 28  165 The sartre mechanism Illustration         Ultravoid
-2014 11 21 - 35      Paradise             Update
-2014 11 20 - 34      Paradise             Update
-2014 11 19 - 39  424 Paradise             Update               The Techgnostic Orde
+2014 11 21 - 35      Nataniev             Update
+2014 11 20 - 34      Nataniev             Update
+2014 11 19 - 39  424 Nataniev             Update               The Techgnostic Orde
 2014 11 18 - 17      Supervisitor         Composition
 2014 11 17 - 17      Supervisitor         Composition
 2014 11 16 - 17      Supervisitor         Composition
-2014 11 15 - 39      Paradise             Update
-2014 11 14 - 39      Paradise             Update
-2014 11 13 - 39      Paradise             Update
-2014 11 12 - 39      Paradise             Update
-2014 11 11 - 39      Paradise             Update
-2014 11 10 - 39      Paradise             Update
-2014 11 09 - 35      Paradise             Update               The Negative Void
-2014 11 08 - 39      Paradise             Update
+2014 11 15 - 39      Nataniev             Update
+2014 11 14 - 39      Nataniev             Update
+2014 11 13 - 39      Nataniev             Update
+2014 11 12 - 39      Nataniev             Update
+2014 11 11 - 39      Nataniev             Update
+2014 11 10 - 39      Nataniev             Update
+2014 11 09 - 35      Nataniev             Update               The Negative Void
+2014 11 08 - 39      Nataniev             Update
 2014 11 07 - 17      Supervisitor         Composition
 2014 11 06 - 17      Supervisitor         Composition
 2014 11 05 - 17      Supervisitor         Composition
@@ -731,12 +734,12 @@
 2014 09 18 ! 25  257 Renl moons           Illustration         Veneq
 2014 09 17 ! 25  253 Renl moons           Illustration         Clij
 2014 09 16 ! 25  250 Serventines          Modeling             Jenen
-2014 09 15 - 35      Paradise             Update               Inner Haven
+2014 09 15 - 35      Nataniev             Update               Inner Haven
 2014 09 14
 2014 09 13
 2014 09 12
 2014 09 11 ! 00      Japan                Travel               Tokyo
-2014 09 10 - 35      Paradise             Update               Triste Le Roy
+2014 09 10 - 35      Nataniev             Update               Triste Le Roy
 2014 09 09 - 17  264 Ten axitecture       Composition          Ten Axitecture
 2014 09 08 - 29  249 Serventines          Modeling             Undernest
 2014 09 07 - 29  256 Serventines          Modeling             Qairo
@@ -774,15 +777,15 @@
 2014 08 06 - 35  139 Advent v             Branding             Release
 2014 08 05 - 29      Advent v             Live
 2014 08 04 - 38      Advent v             Development
-2014 08 03 - 35      Paradise             Update               Quiet Hell
+2014 08 03 - 35      Nataniev             Update               Quiet Hell
 2014 08 02 - 38      Advent v             Development
 2014 08 01 - 38      Advent v             Development
 2014 07 31
 2014 07 30
 2014 07 29 - 16  129 Ledoliel             Update               1.2
 2014 07 28 - 35  128 Bifurcan             Update               Screensaver
-2014 07 27 - 38      Paradise             Update               Ten Axis
-2014 07 26 - 31      Paradise             Update               Inner Haven
+2014 07 27 - 38      Nataniev             Update               Ten Axis
+2014 07 26 - 31      Nataniev             Update               Inner Haven
 2014 07 25
 2014 07 24
 2014 07 23
@@ -796,16 +799,16 @@
 2014 07 15 - 35      Oscean               Analytics
 2014 07 14 - 35      Oscean               Analytics
 2014 07 13 - 35      Oscean               Analytics
-2014 07 12 - 35      Paradise             Update
+2014 07 12 - 35      Nataniev             Update
 2014 07 11 - 35      Oscean               Update               Analytics
 2014 07 10 - 35      Oquonie              Update               2.2
 2014 07 09 - 35      Vocavularist         Update               2.2
 2014 07 08 - 35      Alphavetist          Update               2.2
 2014 07 07 - 31      Alphavetist          Update               2.1
-2014 07 06 - 35      Paradise             Tools
-2014 07 05 - 25      Paradise             Update
-2014 07 04 - 25      Paradise             Update
-2014 07 03 - 25      Paradise             Design
+2014 07 06 - 35      Nataniev             Tools
+2014 07 05 - 25      Nataniev             Update
+2014 07 04 - 25      Nataniev             Update
+2014 07 03 - 25      Nataniev             Design
 2014 07 02 - 25      Ledoliel             Update               1.1
 2014 07 01 - 29      Bifurcan             Update               1.1
 2014 06 30 - 39      Ledoliel             Design
@@ -830,22 +833,22 @@
 2014 06 11 - 35      Ledoliel
 2014 06 10 - 26      Ledoliel             Release              Release
 2014 06 09 - 35      Ledoliel
-2014 06 08 - 35      Paradise             Development
-2014 06 07 - 35      Paradise             Development
+2014 06 08 - 35      Nataniev             Development
+2014 06 07 - 35      Nataniev             Development
 2014 06 06 - 35      Ledoliel
 2014 06 05 - 35      Ledoliel
 2014 06 04 - 35      Ledoliel
 2014 06 03 - 35  118 Ledoliel                                  Space friends
 2014 06 02 - 35  117 Ledoliel                                  Strange Diplomacy
-2014 06 01 - 35      Paradise             Development
-2014 05 31 - 35      Paradise             Development
+2014 06 01 - 35      Nataniev             Development
+2014 05 31 - 35      Nataniev             Development
 2014 05 30 - 34      Traumae              Development
 2014 05 29 - 34      Traumae              Development
 2014 05 28 - 29      Serventines          Modeling             Perce                 One of the more memorable shores of {{Serventines}}, a smaller hill had its core eaten.
 2014 05 27 - 29  248 Serventines          Modeling             Snailden
 2014 05 26 - 25      Brane                Illustration
-2014 05 25 - 35  127 Paradise             Development          Update
-2014 05 24 - 35      Paradise             Development
+2014 05 25 - 35  127 Nataniev             Development          Update
+2014 05 24 - 35      Nataniev             Development
 2014 05 23 - 19  116 Purgateus            Composition          Autumn
 2014 05 22 - 35      Purgateus            Composition          Release
 2014 05 21 - 19   36 Purgateus            Composition          Summer Landing
@@ -861,27 +864,27 @@
 2014 05 11 - 25      Verreciel            Prototype
 2014 05 10 - 25  277 Nereid               Modeling             The Habitat
 2014 05 09 - 26  278 Nereid               Modeling             The Stems
-2014 05 08 - 32      Paradise             Development
-2014 05 07 - 39      Paradise             Development
-2014 05 06 - 39      Paradise             Development
-2014 05 05 - 39      Paradise             Development
+2014 05 08 - 32      Nataniev             Development
+2014 05 07 - 39      Nataniev             Development
+2014 05 06 - 39      Nataniev             Development
+2014 05 05 - 39      Nataniev             Development
 2014 05 04
 2014 05 03
-2014 05 02 - 39      Paradise             Development
+2014 05 02 - 39      Nataniev             Development
 2014 05 01 - 35      Noirca               Prototype
-2014 04 30 - 39      Paradise             Update
-2014 04 29 - 39      Paradise             Update
+2014 04 30 - 39      Nataniev             Update
+2014 04 29 - 39      Nataniev             Update
 2014 04 28 - 26  279 Nereid               Modeling             The South
 2014 04 27 - 29      Collegiennes         Design
 2014 04 26 - 29      Collegiennes         Design
 2014 04 25 - 29      Collegiennes         Design
 2014 04 24 - 25  280 Nereid               Modeling             The Highways
-2014 04 23 - 35      Paradise             Update
-2014 04 22 - 35      Paradise             Update
+2014 04 23 - 35      Nataniev             Update
+2014 04 22 - 35      Nataniev             Update
 2014 04 21 - 35      Oscean               Update
 2014 04 20 - 35      Oscean               Refactoring
 2014 04 19 - 25      Kaleidoscope         Illustration
-2014 04 18 - 37      Paradise             Update
+2014 04 18 - 37      Nataniev             Update
 2014 04 17 - 28  169 Nataniev case        Design               First print
 2014 04 16
 2014 04 15 - 28  137 Monoyse              Design               Synthesis Programmin
@@ -953,7 +956,7 @@
 2014 02 08 - 25  380 Japan                Photography          Tokyo Asnowed
 2014 02 07 - 35  379 Oquonie              Development          And so began testing
 2014 02 06 - 35      Oscean               Analytics
-2014 02 05 - 35      Paradise             Update
+2014 02 05 - 35      Nataniev             Update
 2014 02 04 - 39      Oquonie              Development
 2014 02 03 - 34  377 Oscean               Development          From Mediatemple to
 2014 02 02 - 29      Wallpaper            Illustration
@@ -1017,54 +1020,54 @@
 2013 12 06 - 34      Oquonie              Design
 2013 12 05 - 39      Mute                 Development
 2013 12 04 - 39      Mute                 Development
-2013 12 03 - 28      Paradise             Update
+2013 12 03 - 28      Nataniev             Update
 2013 12 02 - 36      Traumae              Linguistics
 2013 12 01 - 36      Traumae              Linguistics
-2013 11 30 - 36      Paradise             Testing
-2013 11 29 - 36      Paradise             Testing
+2013 11 30 - 36      Nataniev             Testing
+2013 11 29 - 36      Nataniev             Testing
 2013 11 28 - 36      Traumae              Development
 2013 11 27 - 36      Traumae              Cryptography
-2013 11 26 - 36      Paradise             Testing
-2013 11 25 - 36      Paradise             Testing
+2013 11 26 - 36      Nataniev             Testing
+2013 11 25 - 36      Nataniev             Testing
 2013 11 24 - 39      Oscean               Update
-2013 11 23 - 28      Paradise             Prototype
-2013 11 22 - 28      Paradise             Prototype
+2013 11 23 - 28      Nataniev             Prototype
+2013 11 22 - 28      Nataniev             Prototype
 2013 11 21 - 25  190 Wallpaper            Design               Motto
 2013 11 20 - 25      Verreciel            Prototype
 2013 11 19 - 25      Verreciel            Prototype
 2013 11 18
-2013 11 17 - 39      Paradise             Development
-2013 11 16 - 39      Paradise             Development
-2013 11 15 - 39      Paradise             Development
-2013 11 14 - 39      Paradise             Development
-2013 11 13 - 39      Paradise             Development
-2013 11 12 - 39      Paradise             Development
-2013 11 11 - 39      Paradise             Development
-2013 11 10 - 39      Paradise             Development
+2013 11 17 - 39      Nataniev             Development
+2013 11 16 - 39      Nataniev             Development
+2013 11 15 - 39      Nataniev             Development
+2013 11 14 - 39      Nataniev             Development
+2013 11 13 - 39      Nataniev             Development
+2013 11 12 - 39      Nataniev             Development
+2013 11 11 - 39      Nataniev             Development
+2013 11 10 - 39      Nataniev             Development
 2013 11 09 - 36      Dictionaery          Development
-2013 11 08 - 36      Paradise             Prototype
-2013 11 07 - 25      Paradise             Development
+2013 11 08 - 36      Nataniev             Prototype
+2013 11 07 - 25      Nataniev             Development
 2013 11 06 - 34      Dictionaery
 2013 11 05 - 34      Dictionaery
 2013 11 04 - 34      Dictionaery
 2013 11 03 - 25      Collegiennes         Design               Update
 2013 11 02 - 29      Bifurcan             Release              Release
-2013 11 01 - 34      Paradise             Development
-2013 10 31 - 34      Paradise             Development
-2013 10 30 - 34      Paradise             Development
-2013 10 29 - 34      Paradise             Development
-2013 10 28 - 34      Paradise             Development
-2013 10 27 - 34      Paradise             Development
+2013 11 01 - 34      Nataniev             Development
+2013 10 31 - 34      Nataniev             Development
+2013 10 30 - 34      Nataniev             Development
+2013 10 29 - 34      Nataniev             Development
+2013 10 28 - 34      Nataniev             Development
+2013 10 27 - 34      Nataniev             Development
 2013 10 26 - 19      Known magye          Composition
 2013 10 25 - 36      Voynich              Prototype
 2013 10 24 - 34      Oscean               Development
 2013 10 23 - 34      Oscean               Refactoring
 2013 10 22 - 34      Oscean               Development
 2013 10 21 - 36      Traumae              Documentation
-2013 10 20 - 36      Paradise             Refactoring
-2013 10 19 - 36      Paradise             Refactoring
+2013 10 20 - 36      Nataniev             Refactoring
+2013 10 19 - 36      Nataniev             Refactoring
 2013 10 18 - 27      Oquonie              Design
-2013 10 17 - 39      Paradise             Refactoring
+2013 10 17 - 39      Nataniev             Refactoring
 2013 10 16 - 39      Oscean               Refactoring
 2013 10 15 - 37      Oscean               Development
 2013 10 14 - 37      Oquonie              Development
@@ -1078,7 +1081,7 @@
 2013 10 06 - 26      Oquonie              Design
 2013 10 05 - 26  361 Oquonie              Design               Contest
 2013 10 04 - 36  360 Dictionaery          Refactoring          iOS7 Patch
-2013 10 03 - 36      Paradise             Refactoring
+2013 10 03 - 36      Nataniev             Refactoring
 2013 10 02 ! 19  359 Telekinetic          Release              Album Release
 2013 10 01 - 29      Telekinetic          Illustration
 2013 09 30 - 19      Telekinetic          Live                 Square Sound - Tokyo
@@ -1387,9 +1390,9 @@
 2012 12 01 - 38      Oscean               Development
 2012 11 30
 2012 11 29
-2012 11 28 - 39      Paradise             Prototype
+2012 11 28 - 39      Nataniev             Prototype
 2012 11 27 - 28  109 Infrared             Photography          Tokyo Infrared
-2012 11 26 - 39      Paradise             Prototype
+2012 11 26 - 39      Nataniev             Prototype
 2012 11 25
 2012 11 24 - 25  108 Japan                Photography          Ramen Museum
 2012 11 23
@@ -1398,27 +1401,27 @@
 2012 11 20
 2012 11 19 - 19      Mixtape              Mixing               Ghosts
 2012 11 18
-2012 11 17 - 39      Paradise             Prototype
-2012 11 16 - 39      Paradise             Prototype
-2012 11 15 - 39      Paradise             Prototype
-2012 11 14 - 35      Paradise             Prototype
+2012 11 17 - 39      Nataniev             Prototype
+2012 11 16 - 39      Nataniev             Prototype
+2012 11 15 - 39      Nataniev             Prototype
+2012 11 14 - 35      Nataniev             Prototype
 2012 11 13
 2012 11 12
 2012 11 11
 2012 11 10
 2012 11 09 - 25      Oscean               Design
 2012 11 08 - 25      Audio                Writing
-2012 11 07 - 35      Paradise             Prototype
-2012 11 06 - 35      Paradise             Prototype
-2012 11 05 - 35      Paradise             Prototype
+2012 11 07 - 35      Nataniev             Prototype
+2012 11 06 - 35      Nataniev             Prototype
+2012 11 05 - 35      Nataniev             Prototype
 2012 11 04
-2012 11 03 - 35      Paradise             Development
-2012 11 02 - 39      Paradise             Development
+2012 11 03 - 35      Nataniev             Development
+2012 11 02 - 39      Nataniev             Development
 2012 11 01 - 36      Oscean               Design
-2012 10 31 - 38      Paradise             Development
-2012 10 30 - 38      Paradise             Development          For the Horsemen of   The air cracked and, from nullspace, the Library of Sand emerged.
-2012 10 29 - 38      Paradise             Tools
-2012 10 28 - 35      Paradise             Development
+2012 10 31 - 38      Nataniev             Development
+2012 10 30 - 38      Nataniev             Development          For the Horsemen of   The air cracked and, from nullspace, the Library of Sand emerged.
+2012 10 29 - 38      Nataniev             Tools
+2012 10 28 - 35      Nataniev             Development
 2012 10 27
 2012 10 26
 2012 10 25 ! 19  106 Ehrivevnv Studies    Release              Ehrivevnv Studies   
@@ -1454,10 +1457,10 @@
 2012 09 25 - 35      Neauismetica         Writing
 2012 09 24
 2012 09 23 - 17      To The Aeons Hell    Composition
-2012 09 22 - 37      Paradise             Development
-2012 09 21 - 37      Paradise             Development
-2012 09 20 - 32      Paradise             Tools
-2012 09 19 - 37      Paradise             Development
+2012 09 22 - 37      Nataniev             Development
+2012 09 21 - 37      Nataniev             Development
+2012 09 20 - 32      Nataniev             Tools
+2012 09 19 - 37      Nataniev             Development
 2012 09 18 - 28      Ehrivevnv Studies    Composition
 2012 09 17 - 35      Ehrivevnv Studies    Composition
 2012 09 16 - 35      Ehrivevnv Studies    Composition
@@ -1469,13 +1472,13 @@
 2012 09 10 - 25      Waiting for horus    Design
 2012 09 09
 2012 09 08
-2012 09 07 - 37      Paradise             Development
-2012 09 06 - 37      Paradise             Development
+2012 09 07 - 37      Nataniev             Development
+2012 09 06 - 37      Nataniev             Development
 2012 09 05 - 37      Oscean               Tools
-2012 09 04 - 37      Paradise             Development
+2012 09 04 - 37      Nataniev             Development
 2012 09 03 - 35      Waiting for horus    Design
 2012 09 02 - 37      Waiting for horus    Design
-2012 09 01 - 37      Paradise             Development
+2012 09 01 - 37      Nataniev             Development
 2012 08 31
 2012 08 30 - 25      Waiting for horus    Design
 2012 08 29 - 35      Oscean               Development
@@ -1495,21 +1498,21 @@
 2012 08 15 - 39      Traumae              Linguistics
 2012 08 14 - 39      Traumae              Cryptography
 2012 08 13 - 39      Traumae              Linguistics
-2012 08 12 - 32      Paradise             Development
-2012 08 11 - 32      Paradise             Development
-2012 08 10 - 32      Paradise             Development
-2012 08 09 - 35      Paradise             Development
+2012 08 12 - 32      Nataniev             Development
+2012 08 11 - 32      Nataniev             Development
+2012 08 10 - 32      Nataniev             Development
+2012 08 09 - 35      Nataniev             Development
 2012 08 08 - 29   39 Infrared             Writing              Wereda
 2012 08 07
 2012 08 06
 2012 08 05 - 32      Oscean               Development
 2012 08 04
 2012 08 03 - 28   26 Artwork              Illustration         Neoneve Afloat Revis
-2012 08 02 - 32      Paradise             Development
-2012 08 01 - 39      Paradise             Development
-2012 07 31 - 35      Paradise             Development
-2012 07 30 - 35      Paradise             Development
-2012 07 29 - 26      Paradise             Development
+2012 08 02 - 32      Nataniev             Development
+2012 08 01 - 39      Nataniev             Development
+2012 07 31 - 35      Nataniev             Development
+2012 07 30 - 35      Nataniev             Development
+2012 07 29 - 26      Nataniev             Development
 2012 07 28 - 19      Mixtape              Mixing               Alife
 2012 07 27
 2012 07 26
@@ -1655,9 +1658,9 @@
 2012 03 08 - 25   31 Spool holder         Design               PP3DP 1kg Spool Hold
 2012 03 07 - 35      Traumae              Documentation
 2012 03 06 - 25   30 Spagettini scale     Design               Spagettini Scale
-2012 03 05 - 29   68 Paradise             Development          A Ghost in Paradise
-2012 03 04 - 35  100 Paradise             Illustration         Lost in Paradise
-2012 03 03 - 35      Paradise             Release
+2012 03 05 - 29   68 Nataniev             Development          A Ghost in Paradise
+2012 03 04 - 35  100 Nataniev             Illustration         Lost in Paradise
+2012 03 03 - 35      Nataniev             Release
 2012 03 02 - 35      Paradise
 2012 03 01 - 25   29 Waiting for horus    Design               Waiting for Horus
 2012 02 29 - 35      Oscean               Design
@@ -1993,14 +1996,14 @@
 2011 04 05 - 25      Paradise
 2011 04 04
 2011 04 03 - 15      To The Aeons Hell    Composition
-2011 04 02 - 35      Paradise             Design
-2011 04 01 - 35      Paradise             Design
-2011 03 31 - 35      Paradise             Design
-2011 03 30 - 35      Paradise             Design
-2011 03 29 - 29      Paradise             Design
-2011 03 28 - 35      Paradise             Design
-2011 03 27 - 35      Paradise             Design
-2011 03 26 - 39      Paradise             Design
+2011 04 02 - 35      Nataniev             Design
+2011 04 01 - 35      Nataniev             Design
+2011 03 31 - 35      Nataniev             Design
+2011 03 30 - 35      Nataniev             Design
+2011 03 29 - 29      Nataniev             Design
+2011 03 28 - 35      Nataniev             Design
+2011 03 27 - 35      Nataniev             Design
+2011 03 26 - 39      Nataniev             Design
 2011 03 25 - 25      Drownspire
 2011 03 24 - 35      Traumae              Documentation
 2011 03 23
@@ -2067,8 +2070,8 @@
 2011 01 21 - 15      To The Aeons Hell    Composition
 2011 01 20 - 15      To The Aeons Hell    Composition
 2011 01 19 - 15      Mixtape              Mixing               Tunnel
-2011 01 18 - 35      Paradise             Design
-2011 01 17 - 25      Paradise             Design
+2011 01 18 - 35      Nataniev             Design
+2011 01 17 - 25      Nataniev             Design
 2011 01 16 - 25      Traumae              Typography
 2011 01 15 - 15      To The Aeons Hell    Composition
 2011 01 14 - 35      Oscean               Development
@@ -2093,17 +2096,17 @@
 2010 12 26 - 25      Artwork              Illustration
 2010 12 25
 2010 12 24
-2010 12 23 - 39      Paradise             Development
-2010 12 22 - 39      Paradise             Development
+2010 12 23 - 39      Nataniev             Development
+2010 12 22 - 39      Nataniev             Development
 2010 12 21
 2010 12 20 - 15  315 To The Aeons Hell    Release              To The Aeons Hell   
 2010 12 19 - 35   49 Yearly               Writing              MMX
 2010 12 18 - 19      To The Aeons Hell    Live                 Toy Company - Montre
 2010 12 17 - 19      To The Aeons Hell    Rehearsal
-2010 12 16 - 39      Paradise             Development
-2010 12 15 - 39      Paradise             Development
-2010 12 14 - 39      Paradise             Development
-2010 12 13 - 26      Paradise             Prototype
+2010 12 16 - 39      Nataniev             Development
+2010 12 15 - 39      Nataniev             Development
+2010 12 14 - 39      Nataniev             Development
+2010 12 13 - 26      Nataniev             Prototype
 2010 12 12
 2010 12 11 - 25   93 Vambits              Design               Vambits, Last Gen
 2010 12 10
@@ -2118,7 +2121,7 @@
 2010 12 01
 2010 11 30 - 25      Artwork              Illustration
 2010 11 29 - 29   48 Artwork              Illustration         Tools to creative
-2010 11 28 - 35      Paradise             Development
+2010 11 28 - 35      Nataniev             Development
 2010 11 27
 2010 11 26
 2010 11 25
@@ -2128,9 +2131,9 @@
 2010 11 21 - 35                           Prototype
 2010 11 20 - 25      Traumae              Typography
 2010 11 19
-2010 11 18 - 35      Paradise             Development
+2010 11 18 - 35      Nataniev             Development
 2010 11 17
-2010 11 16 - 25      Paradise             Prototype
+2010 11 16 - 25      Nataniev             Prototype
 2010 11 15
 2010 11 14 - 35      Oscean               Development
 2010 11 13
