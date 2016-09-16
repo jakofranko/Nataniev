@@ -561,7 +561,7 @@
 2015 03 07 - 35  369 Donsol               Design               Prototype
 2015 03 06 - 35      Alphavetist          Update               3.3
 2015 03 05 - 35      Donsol               Design
-2015 03 04 ! 26  368 Oquonie              Live                 Present Oquonie at t
+2015 03 04 - 26  368 Oquonie              Live                 IGF2015
 2015 03 03 - 35      Donsol               Design
 2015 03 02 - 25      Donsol               Illustration
 2015 03 01 - 25      Donsol               Prototype
