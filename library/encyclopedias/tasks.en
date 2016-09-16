@@ -25,6 +25,8 @@ NATANIEV
       [TODO]
     Help
       Implement comments/docs
+    Drop
+      Implement actions for inventory vessels
     Note
       Don't trigger procedural notes on parsing
   Vessels

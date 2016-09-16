@@ -5,10 +5,10 @@ module ActionInventory
 
   def inventory q = nil
 
-    if inventory_vessels.length == 0 then return error_empty end
+    if @actor.inventory_vessels.length == 0 then return error_empty end
 
     text = ""
-    inventory_vessels.each do |vessel|    
+    @actor.inventory_vessels.each do |vessel|    
       text += "- #{vessel.print}"
     end
 

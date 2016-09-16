@@ -3,13 +3,9 @@
 
 module ActionExamine
 
-  include Action
-
   def examine q = nil
 
-    v = find_visible_vessel(q) ; if !v then return v = @actor end
-
-    return sonar(v)
+    return sonar(@target)
     
   end
 

@@ -64,8 +64,7 @@ module ActionLook
 
     text = ""
 
-    # Parent
-    @actor.parent_actions.available.each do |action|
+    @actor.parent_vessel.parent_actions.available.each do |action|
       text += "@+ #{action}\n"
     end
 

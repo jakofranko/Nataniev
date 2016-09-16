@@ -63,19 +63,18 @@ module Vessel
 
   # Slow Accessors
 
-  def target_vessel q = nil # TODO: Clean to one liner
-    name = " #{q} ".sub(" a ","").sub(" an ","").sub(" the ","").strip.split(" ").last.to_s.strip
-    visible_vessels.each do |v|
-      if v.name.like(name) then return v end
-    end
-    return nil
-  end
-
   def parent_vessel     ; !@parent_vessel ? @parent_vessel = load_parent_vessel : @parent_vessel ; return @parent_vessel end
   def present_vessels   ; !@present_vessels ? @present_vessels = load_present_vessels : @present_vessels ; return @present_vessels end
   def visible_vessels   ; !@visible_vessels ? @visible_vessels = load_visible_vessels : @visible_vessels ; return @visible_vessels end
   def inventory_vessels ; !@inventory_vessels ? @inventory_vessels = load_inventory_vessels : @inventory_vessels ; return @inventory_vessels end
   def owned_vessels     ; !@owned_vessels ? @owned_vessels = load_owned_vessels : @owned_vessels ; return @owned_vessels end
+
+  def target_vessel q = nil # TODO: Clean to one liner
+    name = " #{q} ".sub(" a ","").sub(" an ","").sub(" the ","").strip.split(" ").last.to_s.strip
+    visible_vessels.each do |v| if v.name.like(name) then return v end end
+    inventory_vessels.each do |v| if v.name.like(name) then return v end end
+    return nil
+  end
 
   # Setters
 
@@ -181,7 +180,6 @@ module Vessel
   class DefaultActions
     include ActionCollection
     include ActionHelp
-    include ActionExamine
   end
 
   def actions ; return Actions.new($nataniev.actor,self) end
@@ -198,6 +196,9 @@ module Vessel
     parent_actions.available.each do |action| cmds.push("#{action}") end
 
     visible_vessels.each do |v|
+      v.target_actions.available.each do |action| cmds.push("#{action} the #{v.name}") end
+    end
+    inventory_vessels.each do |v|
       v.target_actions.available.each do |action| cmds.push("#{action} the #{v.name}") end
     end
     

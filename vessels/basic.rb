@@ -60,6 +60,7 @@ class Basic
     include ActionLock
     include ActionUnlock
 
+    include ActionExamine
     include ActionUse
 
     include ActionDestroy
