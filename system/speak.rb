@@ -3,27 +3,27 @@
 
 class Speak # TODO
 
-	def __info q = nil
+  def __info q = nil
 
-		say("vicki",q)
-		
-		return result
+    say("vicki",q)
+    
+    return result
 
-	end
+  end
 
-	def say voice = 'katya', text
+  def say voice = 'katya', text
 
-		system({"TEXT" => text,"VOICE" => voice}, "say -v $VOICE $TEXT &")
+    system({"TEXT" => text,"VOICE" => voice}, "say -v $VOICE $TEXT &")
 
-	end
+  end
 
-	def translate english, russian
+  def translate english, russian
 
-		# translate("Do you speak English?","Вы говорите по-английски?")
+    # translate("Do you speak English?","Вы говорите по-английски?")
 
-		system({"TEXT" => russian,"VOICE" => "katya"}, "say -v $VOICE $TEXT")
-		system({"TEXT" => english,"VOICE" => "vicki"}, "say -v $VOICE $TEXT")
+    system({"TEXT" => russian,"VOICE" => "katya"}, "say -v $VOICE $TEXT")
+    system({"TEXT" => english,"VOICE" => "vicki"}, "say -v $VOICE $TEXT")
 
-	end
+  end
 
 end

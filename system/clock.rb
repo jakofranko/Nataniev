@@ -3,40 +3,40 @@
 
 class Clock
 
-	def initialize query = nil
+  def initialize query = nil
 
-		@time = Time.now + (3600 * 13) # server offset(+13 hours:Japan)
-		
-	end
+    @time = Time.now + (3600 * 13) # server offset(+13 hours:Japan)
+    
+  end
 
-	def elapsed
+  def elapsed
 
-		return ((@time.hour) * 60 * 60) + (@time.min * 60) + @time.sec
+    return ((@time.hour) * 60 * 60) + (@time.min * 60) + @time.sec
 
-	end
+  end
 
-	def timeInt
+  def timeInt
 
-		return ((elapsed / 86400.0) * 1000000).to_i
+    return ((elapsed / 86400.0) * 1000000).to_i
 
-	end
+  end
 
-	def timeStr
+  def timeStr
 
-		return timeInt.to_s.append("0",6)
+    return timeInt.to_s.append("0",6)
 
-	end
+  end
 
-	def format_normal
+  def format_normal
 
-		return timeStr[0,3]+":"+timeStr[3,3]
+    return timeStr[0,3]+":"+timeStr[3,3]
 
-	end
+  end
 
-	def default
+  def default
 
-		return format_normal
-		
-	end
+    return format_normal
+    
+  end
 
 end

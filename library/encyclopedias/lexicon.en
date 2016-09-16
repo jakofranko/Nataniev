@@ -183,16 +183,16 @@ DEATH
   BREF : Inspired from Chris Crawford's Jars, these cells shows my life span with a cell for each week.
 
 DIARY
-  UNDE : Oscean
+  UNDE : Nataniev
 
 HORAIRE
-  UNDE : Oscean
+  UNDE : Nataniev
 
 RANDOM
-  UNDE : Oscean
+  UNDE : Nataniev
 
 PORTAL
-  UNDE : Oscean
+  UNDE : Nataniev
 
 DEW
   UNDE : Mobile
@@ -448,9 +448,9 @@ HIVERSAIRES
 
 HOME
   UNDE : Home
-  BREF : Welcome to the documentation and playground for the projects of multimedia developer {{Devine Lu Linvega}}. This wiki provides narrative context for the {{Audio}}, {{Visual}} and {{Research}} projects. A {{Portal}} and a {{Timeline|Horaire}} are also maintained daily as part of {{XXIIVV|Oscean}}.
+  BREF : Welcome to the documentation and playground for the projects of multimedia developer {{Devine Lu Linvega}}. This wiki provides narrative context for the {{Audio}}, {{Visual}} and {{Research}} projects. A {{Portal}} and a {{Timeline|Horaire}} are also maintained daily as part of {{XXIIVV|Nataniev}}.
   LONG
-    & If this is your first time around, the {{Introduction|Oscean}} is a good place to begin your exploration. If you wish to stay updated on the development of the latest projects, follow {{@Neauoire|http://twitter.com/neauoire}}.
+    & If this is your first time around, the {{Introduction|Nataniev}} is a good place to begin your exploration. If you wish to stay updated on the development of the latest projects, follow {{@Neauoire|http://twitter.com/neauoire}}.
 
 HOWLS VIRGIL SYSTEMS
   UNDE : First wave
@@ -678,23 +678,6 @@ MODERNISTA
   BREF : {{Modernista}} is the name of a series of 5 prints inspired from American Modernism.
   TYPE : Diary
 
-NATANIEV
-  UNDE : Unreleased
-  BREF : Nataniev was an {{adventure fitness app|http://www.youtube.com/watch?v=DBZCLjsI1bs}}. A simple {{pedometer|http://en.wikipedia.org/wiki/Pedometer}}, or step-counter, in which you travel as you go about your daily life. Your pace, your progress and the collected steps of all players are pooled to make new areas accessible. You can see your rank change in real time against all the other wanderers of Nataniev.
-  LONG
-    & The app does not require an active online connection, if no wi-fi/wireless is found, you will be shown alternative data about your progress. The app runs in background and will vibrate when a point of interest is approaching. 
-    * Delayed Release
-    & The application was first supposed to hit the app store on june 25th 2013, but due to faulty code, the release was delayed until july 3rd. 
-    * Pulling it from the App Store
-    & The application was pulled from the app store on February 17th 2014. The app had been broken since the release of iOS7. I can see the app now being possible again with the help of the Nike Fuelband or some similar device, but until such companionship exists, the application will remain offline.
-
-NATANIEV CASE
-  UNDE : Physical
-  BREF : I could not find a slick black case so I designed myself an iPhone 5S case with Society6. The print contains the name of my favourite 3 chapters of the {{Vast}} book: "{_Jlhadeaai, Huqrea & Jahaoghad_}".
-  LINK
-    SITE : http://society6.com/aliceffekt/Nataniev-iPhone-Cover_iPhone-Case
-    DRIV : https://drive.google.com/open?id=0B24klRuG3GLNaE5SSC1fLTJKM00
-
 ABLETON
   UNDE : Aliceffekt
   BREF : I designed this dark {{Ableton}} Live theme where the knobs and various other controls stick out from the interface. 
@@ -839,16 +822,6 @@ THE SIXTH SEASON
 
 OTOROUTES MINIATURES
   UNDE : First wave
-
-NATANIEV
-  UNDE : Online
-  BREF : Initiated in 2011, as {_Paradise_}, {{Nataniev} is a procedural {{interactive fiction|Interactive}} and multiplayer novel, in which you can be anything and anyone, travel to the oddest of places, entirely user-created. You may choose to make a mess, or to create order, in the comfort of your teacup.
-  LONG 
-    & There are no Paradise, no teacup, no you or me - but words. These words are the place holders of intricate concepts, shared with other users that will create personal and different experiences from the same words.
-    ? {_"In a little while you will be alone in shoreless space, to wander its limitless solitudes without friend or comrade forever--for you will remain a thought, the only existent thought, and by your nature inextinguishable, indestructible. "_} - Mark Twain, {{the mysterious Stranger|http://en.wikipedia.org/wiki/The_Mysterious_Stranger}}
-  LINK
-    SITE : http://paradise.xxiivv.com
-    GITH : https://github.com/XXIIVV/Nataniev
 
 MAEVE
   UNDE : Nataniev
@@ -1015,7 +988,8 @@ SUPERVISITOR
 
 TALK
   UNDE : Research
-  BREF : These talks were created as periodical research dumps, often gravitating around the topics of the {{hexagrammaton|Oscean}} and {{Horaire}}.
+  BREF : These talks were created as periodical research dumps, often gravitating around the topics of the {{hexagrammaton|Nataniev
+  }} and {{Horaire}}.
   TYPE : Diary
 
 TARPOPHOBIA
@@ -1120,7 +1094,6 @@ TRAPEZOID
   LINK
     BAND : https://aliceffekt.bandcamp.com/album/trapezoid
 
-
 TYPOGRAPHY
   UNDE : Illustration
   BREF : Some of the {{typographies|Typography}} I have created over time, feel free to use them as want.
@@ -1208,25 +1181,42 @@ WAITING FOR HORUS
 
 WALLPAPER
   UNDE : Visual
-  BREF : Collection of {{Wallpapers|Wallpaper}} related to {{Oscean}} and {{Horaire}}.
+  BREF : Collection of {{Wallpapers|Wallpaper}} related to {{Nataniev}} and {{Horaire}}.
   TYPE : Diary
 
 ZJEVENI
   UNDE : Desktop
   BREF : {{Zjeveni}} is one of my earliest experimental Unity games. This third person exploration game is simply about climbing to the high points of the structure.
 
-~ Oscean
-
-OSCEAN
-  UNDE : Oscean
-  BREF : {*XXIIVV*} is the connecting thread between all of {_Devine lu linvega_}’s works, and host to the pillars and tools of the persona. Initiated in 2009, this ultrafolio’s initial purpose was to archive various narrative documentation for a series of shorts.
-  LONG
+~ Nataniev
+  
+NATANIEV
+  UNDE : Nataniev
+  BREF : Currently working on this page. Come back soon.
+  LONG 
+    & There are no Paradise, no teacup, no you or me - but words. These words are the place holders of intricate concepts, shared with other users that will create personal and different experiences from the same words.
+    ? {_"In a little while you will be alone in shoreless space, to wander its limitless solitudes without friend or comrade forever--for you will remain a thought, the only existent thought, and by your nature inextinguishable, indestructible. "_} - Mark Twain, {{the mysterious Stranger|http://en.wikipedia.org/wiki/The_Mysterious_Stranger}}
+    ? Initiated in 2011, as {_Paradise_}, {{Nataniev} is a procedural {{interactive fiction|Interactive}} and multiplayer novel, in which you can be anything and anyone, travel to the oddest of places, entirely user-created. You may choose to make a mess, or to create order, in the comfort of your teacup.
+    ? Nataniev was an {{adventure fitness app|http://www.youtube.com/watch?v=DBZCLjsI1bs}}. A simple {{pedometer|http://en.wikipedia.org/wiki/Pedometer}}, or step-counter, in which you travel as you go about your daily life. Your pace, your progress and the collected steps of all players are pooled to make new areas accessible. You can see your rank change in real time against all the other wanderers of Nataniev.
     & The current platform is built in {{Ruby|https://en.wikipedia.org/wiki/Ruby_(programming_language)}}, and is currently hosted on {{Digital Ocean|https://www.digitalocean.com/?refcode=4ed988ca8c17}}. The site is segmented into 3 parts, {*a time-tracker*}, {*a lexicon*} and a {*diary*}. Every single day, since 2009, a log has been added to the {{Horaire}}, every new project has an entry in the {{Lexicon|Portal}} and every event has a page in the {*diary*}. 
     ? Above these core systems, other systems exists - such as {{Nataniev}}, the {{API|http://api.xxiivv.com}} and a series of {{bots|Automatons}}. This website is the skeleton of a rigorous lifestyle change, initiated in 2006.
+    & The app does not require an active online connection, if no wi-fi/wireless is found, you will be shown alternative data about your progress. The app runs in background and will vibrate when a point of interest is approaching. 
+    * Delayed Release
+    & The application was first supposed to hit the app store on june 25th 2013, but due to faulty code, the release was delayed until july 3rd. 
+    * Pulling it from the App Store
+    & The application was pulled from the app store on February 17th 2014. The app had been broken since the release of iOS7. I can see the app now being possible again with the help of the Nike Fuelband or some similar device, but until such companionship exists, the application will remain offline.
   LINK
-    GITH : https://github.com/XXIIVV/instance.oscea
+    SITE : http://paradise.xxiivv.com
+    GITH : https://github.com/XXIIVV/Nataniev
   TYPE : Portal
-  
+
+NATANIEV CASE
+  UNDE : Physical
+  BREF : I could not find a slick black case so I designed myself an iPhone 5S case with Society6. The print contains the name of my favourite 3 chapters of the {{Vast}} book: "{_Jlhadeaai, Huqrea & Jahaoghad_}".
+  LINK
+    SITE : http://society6.com/aliceffekt/Nataniev-iPhone-Cover_iPhone-Case
+    DRIV : https://drive.google.com/open?id=0B24klRuG3GLNaE5SSC1fLTJKM00
+
 SHORTHAND
   UNDE : Language
   BREF : Notebook and after notebook, I fill pages of notes, ideas and to-dos. When presented with {{the idea of shorthand|http://theatlantic.com/technology/archive/2014/06/yeah-i-still-use-shorthand-and-a-smartpen/373281/}}, I saw immediate practical application.
@@ -1237,16 +1227,16 @@ SHORTHAND
     & Simple enough, now most letters are transformed into a single stroke shape that flows and combines to form shorter words, that can be written faster.
 
 CLOCK
-  UNDE : Oscean
-  BREF : On {{XXIIVV|Oscean}}, Time is written using a variance of the {{Internet Time|https://en.wikipedia.org/wiki/Swatch_Internet_Time}} with 4 digits instead of the Swatch Beat's 3 digits system. The system has no timezone and no daylight saving-time. Read more on {{Desamber}}.
+  UNDE : Nataniev
+  BREF : On {{XXIIVV|Nataniev}}, Time is written using a variance of the {{Internet Time|https://en.wikipedia.org/wiki/Swatch_Internet_Time}} with 4 digits instead of the Swatch Beat's 3 digits system. The system has no timezone and no daylight saving-time. Read more on {{Desamber}}.
   LONG
     - The current time is {{!clock}}
   LINK
     GITH : https://github.com/XXIIVV/Nataniev/blob/master/system/clock.rb
 
 DESAMBER
-  UNDE : Oscean
-  BREF : On {{XXIIVV|Oscean}}, dates are written using a variance of the {{International Fixed Calendar|https://en.wikipedia.org/wiki/International_Fixed_Calendar}} and a custom convention to move the English months' names, away from those of Greek gods'.
+  UNDE : Nataniev
+  BREF : On {{XXIIVV|Nataniev}}, dates are written using a variance of the {{International Fixed Calendar|https://en.wikipedia.org/wiki/International_Fixed_Calendar}} and a custom convention to move the English months' names, away from those of Greek gods'.
   LONG
     * Today is {{!desamber}}
     & The {_Equal Month calendar_} format has 13 months and so the number of each of these months are flected into their names.
@@ -1270,12 +1260,12 @@ DESAMBER
 ~ Neauismetica
 
 NEAUISMETICA
-  BREF : The {{Neauismetica}} portal was put together to please the curious {{enthusiast|Visual}}, {{audiophile|Audio}} and {{reader|Research}}, but might confuse the accidental visitor. If you found your way onto this page by accident, begin by reading the {{Introduction|Oscean}}. 
+  BREF : The {{Neauismetica}} portal was put together to please the curious {{enthusiast|Visual}}, {{audiophile|Audio}} and {{reader|Research}}, but might confuse the accidental visitor. If you found your way onto this page by accident, begin by reading the {{Introduction|Nataniev}}. 
   LONG
     & Incessantly dreamt of, the city of {{Neau}} and its radiant blue rooftops were the first to populate my dreams. Changing as I did, the horizon line didn't seem so far anymore and as I drifted away from Neau across the {{Cyan Ocean|Kanikule}} with {{Neonev}}, maybe I died of old age but she lived on.
     & I often think of this machine-plant {{patience|Paradichlorisse}} in the sand sand filled air of {{Vetetrandes}}. Continually mouthing at this {{impossible sentence|Nohlxeserre}}, words longer than any span of time, continually luring pilgrims who {{die|Neausea}} at its feet.
     & Resting my eyes, I see {{Scientists|Immortal Birds}}, sometimes praying by the {{Ehrivevnv}}, idle at the cliffsides of {{Duomo}}, treading on the edge of {{Occurence|Soies}}. Other nights I see the {_gathering of the birds_}, ready to leave {{Dinaisth}} far behind. 
-    & Referenced in almost all of the {{hexagrammaton|Oscean}} projects, tales of this world are told through music, illustrations and are the culture behind the {{Traumae Language|Traumae}}</a>. Seen through the eyes of the {{Immortal Birds}} of {{Dinaisth}} traveling across seasons, these notes are disorderedly fragments of a story, recorded intermittently by {{Devine lu linvega}}.
+    & Referenced in almost all of the {{hexagrammaton|Nataniev}} projects, tales of this world are told through music, illustrations and are the culture behind the {{Traumae Language|Traumae}}</a>. Seen through the eyes of the {{Immortal Birds}} of {{Dinaisth}} traveling across seasons, these notes are disorderedly fragments of a story, recorded intermittently by {{Devine lu linvega}}.
     ? {_Et haec revelantur in virtute et veritate<br /> non Vi._} - Vriel
   TYPE : Portal
 
@@ -1394,7 +1384,7 @@ NEONEV
 
 PHOTOGRAPH
   UNDE : Visual
-  BREF : The photography on {{XXIIVV|Oscean}} is mainly done with a now deceased Leica M8, and an old Nikon D90 camera. A few other cameras are used, below is a list {{Devine|Devine lu linvega}}'s principal camera equipment.
+  BREF : The photography on {{XXIIVV|Nataniev}} is mainly done with a now deceased Leica M8, and an old Nikon D90 camera. A few other cameras are used, below is a list {{Devine|Devine lu linvega}}'s principal camera equipment.
   LONG
     - {*Film*}
     - {{Bessa R3M 250 Jahre|https://www.cameraquest.com/voigt_250.htm}}, Voigtlander
@@ -1545,7 +1535,7 @@ DEVINE LU LINVEGA
   BREF : {{Devine lu linvega}} is a composer, illustrator and programer, living aboard a {{sailboat|Hundred rabbits}} on the Pacific Ocean. 
   LONG
     & Operating under the {{Neauoire|https://twitter.com/neauoire}} moniker, Devine is currating the {{Beldam Records}} catalog along with {{Elodie Lareine|http://noirmirroir.com}} and creating {{experimental mobile projects|http://www.creativeapplications.net/openframeworks/experimental-mobile-apps-by-devine-aliceffect-lu-linvega}}.
-    & Populating {{OScean}} with notes on {{Language}}, {{Illustrations|Illustration}} and {{Sounds|Audio}}, Devine hopes to inspire visitors to learn and to travel.    
+    & Populating {{Nataniev}} with notes on {{Language}}, {{Illustrations|Illustration}} and {{Sounds|Audio}}, Devine hopes to inspire visitors to learn and to travel.    
     & "To flee is life; To linger is death"
 
 NOOTROPICS
@@ -1566,7 +1556,7 @@ KEYBOARD
   UNDE : Lifestyle
   BREF : My {{mechanical keyboard|Keyboard}} is the {{Vortex Poker II PBT Mechanical Keyboard|https://mechanicalkeyboards.com/shop/index.php?l=product_detail&p=458}} with {{Blank Mint PBT caps|https://www.massdrop.com/buy/npkc-blank-pbt-keycaps}}. It's also connected, to my Macbook, through a {{90 degrees angle USB wire|http://www.amazon.ca/gp/product/B004YD6LW0?psc=1&redirect=true&ref_=oh_aui_detailpage_o00_s00}}.
   LONG
-    & The color choice is inspired from the {{Oscean}} interface colors. I have red Cherry MX switches installed, with {{sound dampening o-rings|http://www.amazon.ca/gp/product/B00VHXHP6Q?psc=1&redirect=true&ref_=oh_aui_detailpage_o00_s00}}. This cheers me up.
+    & The color choice is inspired from the {{Nataniev}} interface colors. I have red Cherry MX switches installed, with {{sound dampening o-rings|http://www.amazon.ca/gp/product/B00VHXHP6Q?psc=1&redirect=true&ref_=oh_aui_detailpage_o00_s00}}. This cheers me up.
   LINK
     DROP : https://www.massdrop.com/mechanical-keyboards
     REDD : https://www.reddit.com/r/MechanicalKeyboards/

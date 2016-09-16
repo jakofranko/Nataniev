@@ -5,68 +5,68 @@ require 'date'
 
 class Desamber
 
-	def initialize(date = Date.today.to_s)
+  def initialize(date = Date.today.to_s)
 
-		@date = date
-		@dict = ['Unesamber', 'Dutesamber', 'Trisesamber', 'Tetresamber', 'Pentesamber', 'Hexesamber', 'Sevesamber', 'Octesamber', 'Novesamber', 'Desamber', 'Undesamber', 'Dodesamber', 'Tridesamber']
+    @date = date
+    @dict = ['Unesamber', 'Dutesamber', 'Trisesamber', 'Tetresamber', 'Pentesamber', 'Hexesamber', 'Sevesamber', 'Octesamber', 'Novesamber', 'Desamber', 'Undesamber', 'Dodesamber', 'Tridesamber']
 
-	end
+  end
 
-	def month
+  def month
 
-		return @date[5,2].to_i
+    return @date[5,2].to_i
 
-	end
+  end
 
-	def day
+  def day
 
-		return @date[8,2].to_i
+    return @date[8,2].to_i
 
-	end
+  end
 
-	def year
+  def year
 
-		return @date[0,4].to_i
+    return @date[0,4].to_i
 
-	end
+  end
 
-	def monthName
+  def monthName
 
-		return "#{@dict[equalMonth-1]}"
+    return "#{@dict[equalMonth-1]}"
 
-	end
+  end
 
-	def span
+  def span
 
-		return Date.new(y=year,m=month,d=day).yday
+    return Date.new(y=year,m=month,d=day).yday
 
-	end
+  end
 
-	def equalMonth
-		
-		if span >= 365 then return 0 end
-		return (span/28.to_f).ceil
+  def equalMonth
+    
+    if span >= 365 then return 0 end
+    return (span/28.to_f).ceil
 
-	end
+  end
 
-	def equalDay
+  def equalDay
 
-		if span == 365 then return "Year Day" end
-		if span == 366 then return "Leap Day" end
-		return (span % 28) == 0 ? 28 : span % 28
+    if span == 365 then return "Year Day" end
+    if span == 366 then return "Leap Day" end
+    return (span % 28) == 0 ? 28 : span % 28
 
-	end
+  end
 
-	def default_month_year
+  def default_month_year
 
-		return "#{@dict[equalMonth-1]} #{year}"
+    return "#{@dict[equalMonth-1]} #{year}"
 
-	end
+  end
 
-	def default
-	
-		return "#{@dict[equalMonth-1]} #{equalDay}, #{year}"
+  def default
+  
+    return "#{@dict[equalMonth-1]} #{equalDay}, #{year}"
 
-	end
+  end
 
 end

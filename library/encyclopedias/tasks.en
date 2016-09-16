@@ -28,8 +28,6 @@ NATANIEV
     Implement the teapot guide
   Satellite
     Re-Implement
-  Russian
-    Improve learning tools
   System
     Enums Class
     Save Logs
@@ -50,9 +48,13 @@ OSCEAN
   Improve search page
   EN module
     Trial with Rationality Canon file
+  Merge Oscean with Nataniev
+  Add Markle entry
+  Migrate to HttpCorpse Class
 
 BELDAM
   Rebuild website
+  Migrate to HttpCorpse Class
 
 HUNDREDRABBITS
   Setup podcast in iTunes
@@ -61,10 +63,10 @@ HUNDREDRABBITS
   Oquonie Stickers
   100R Business Cards
   Make new tier, including shirts
-  Migrate to @actor/@target
+  Migrate to HttpCorpse Class
 
 GRIMGRAIN
-  Migrate to @actor/@target
+  Migrate to HttpCorpse Class
 
 PINO
   Insurance(DolphinInsurance?)
@@ -86,4 +88,3 @@ VOCAVULARIST
 
 VERRECIEL
   Migrate to Swift 3
-
