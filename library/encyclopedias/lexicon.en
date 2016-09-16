@@ -809,7 +809,11 @@ OQUONIE UNIVERSE
 
 MARKLE
   UNDE : Mobile
-  BREF : More details soon.
+  BREF : {{Markle}} is an upcoming iOS puzzle game released as {{Hundred Rabbits}}.
+  LONG
+    & More details shortly.
+  LINK
+    SITE : http://100r.co/projects
   FLAG : TODO
 
 THE SIXTH SEASON

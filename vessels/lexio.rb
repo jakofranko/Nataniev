@@ -3,182 +3,184 @@
 
 class Lexio
 
-	include Vessel
+  include Vessel
 
-	def display
+  # Overrides
 
-		@lexicon = En.new("lexicon").to_h
+  def display
 
-		hash = {}
+    @lexicon = En.new("lexicon").to_h
 
-		hash['unparented'] = list_unparented
-		hash['brokenlinks'] = list_brokenlinks
-		hash['stub'] = list_stubs
+    hash = {}
 
-		if hash['unparented'].length > 0 then return "> #{print.capitalize}, unparented: #{hash['unparented'].first}.\n" end
-		if hash['brokenlinks'].length > 0 then return "> #{print.capitalize}, broken link: #{hash['brokenlinks'].first}.\n" end
-		if hash['stub'].length > 0 then return "> #{print.capitalize}, stub: #{hash['stub'].first}.\n" end
-		
-		return "> #{print.capitalize}, contains #{@lexicon.length} entries.\n"
+    hash['unparented'] = list_unparented
+    hash['brokenlinks'] = list_brokenlinks
+    hash['stub'] = list_stubs
 
-	end
+    if hash['unparented'].length > 0 then return "> #{print.capitalize}, unparented: #{hash['unparented'].first}.\n" end
+    if hash['brokenlinks'].length > 0 then return "> #{print.capitalize}, broken link: #{hash['brokenlinks'].first}.\n" end
+    if hash['stub'].length > 0 then return "> #{print.capitalize}, stub: #{hash['stub'].first}.\n" end
+    
+    return "> #{print.capitalize}, contains #{@lexicon.length} entries.\n"
 
-	def note
+  end
 
-		return "This list is a series of issues found in XXIIVV.\n"
+  def note
 
-	end
+    return "This list is a series of issues found in XXIIVV.\n"
 
-	def list_unparented
+  end
 
-		array = []
-		@lexicon.each do |term,content|
-			if @lexicon[content["UNDE"].to_s.upcase] then next end
-			if content["TYPE"].to_s.like("portal") == true then next end
-			array.push("*".append(" ",4)+term.append(" ",20).capitalize)
-		end
-		return array
+  def list_unparented
 
-	end
+    array = []
+    @lexicon.each do |term,content|
+      if @lexicon[content["UNDE"].to_s.upcase] then next end
+      if content["TYPE"].to_s.like("portal") == true then next end
+      array.push("*".append(" ",4)+term.append(" ",20).capitalize)
+    end
+    return array
 
-	def list_brokenlinks
+  end
 
-		array = []
-		@lexicon.each do |term,content|
-			search = (content["BREF"].to_s+content["LONG"].to_s).to_s.scan(/(?:\{\{)([\w\W]*?)(?=\}\})/)
-	        search.each do |str,details|
-	        	name = str.split("|").first
-	        	link = str.split("|").last
-	        	if name[0,1] == "!" then next end
-	        	if link.include?("http") then next end
-	        	if @lexicon[link.upcase] then next end
-	            array.push("#{term.capitalize}"+name.capitalize)
-	        end
-		end
-		return array
+  def list_brokenlinks
 
-	end
+    array = []
+    @lexicon.each do |term,content|
+      search = (content["BREF"].to_s+content["LONG"].to_s).to_s.scan(/(?:\{\{)([\w\W]*?)(?=\}\})/)
+          search.each do |str,details|
+            name = str.split("|").first
+            link = str.split("|").last
+            if name[0,1] == "!" then next end
+            if link.include?("http") then next end
+            if @lexicon[link.upcase] then next end
+              array.push("#{term.capitalize}"+name.capitalize)
+          end
+    end
+    return array
 
-	def list_stubs
+  end
 
-		array = []
-		@lexicon.each do |term,content|
-			if content["BREF"] then next end
-	        array.push(term.capitalize)
-		end
-		return array
+  def list_stubs
 
-	end
+    array = []
+    @lexicon.each do |term,content|
+      if content["BREF"] then next end
+          array.push(term.capitalize)
+    end
+    return array
 
-	def list_orphans
+  end
 
-		array = []
-		hash = {}
-		@horaire.each do |log|
-			term = log["TERM"].to_s
-			if term == "" then next end
-			if @lexicon[term.upcase] then next end
-			hash[term] = hash[term].to_i + 1
-		end
+  def list_orphans
 
-		hash.each do |k,v|
-			array.push("#{v.to_s}"+k.capitalize)
-		end
-		return array
-		
-	end
+    array = []
+    hash = {}
+    @horaire.each do |log|
+      term = log["TERM"].to_s
+      if term == "" then next end
+      if @lexicon[term.upcase] then next end
+      hash[term] = hash[term].to_i + 1
+    end
 
-	def list_duplicates
+    hash.each do |k,v|
+      array.push("#{v.to_s}"+k.capitalize)
+    end
+    return array
+    
+  end
 
-		array = []
-		@used = []
+  def list_duplicates
 
-		@horaire.each do |log|
-			if !log["PICT"] then next end
-			if @used.include?(log["PICT"].to_i)
-				array.push("#{log['DATE'].append(" ",20)} #{log['PICT']}")
-			end
-			@used.push(log["PICT"].to_i)
-		end
-		return array
-		
-	end
+    array = []
+    @used = []
 
-	def list_strangetasks
+    @horaire.each do |log|
+      if !log["PICT"] then next end
+      if @used.include?(log["PICT"].to_i)
+        array.push("#{log['DATE'].append(" ",20)} #{log['PICT']}")
+      end
+      @used.push(log["PICT"].to_i)
+    end
+    return array
+    
+  end
 
-		array = []
-		@tasks = {}
+  def list_strangetasks
 
-		@horaire.each do |log|
-			if !log['TASK'] then next end
-			@tasks[log['TASK']] = @tasks[log['TASK']].to_i + 1
-		end
+    array = []
+    @tasks = {}
 
-		@tasks.each do |task,val|
-			if val > 9 then next end
-			array.push("#{val.to_s.append(' ',4)}"+task)
-		end
+    @horaire.each do |log|
+      if !log['TASK'] then next end
+      @tasks[log['TASK']] = @tasks[log['TASK']].to_i + 1
+    end
 
-		return array
-		
-	end
+    @tasks.each do |task,val|
+      if val > 9 then next end
+      array.push("#{val.to_s.append(' ',4)}"+task)
+    end
 
-	def list_available
+    return array
+    
+  end
 
-		array = []
-		diaries = []
-		@horaire.each do |log|
-			if !log["PICT"] then next end
-			diaries.push(log["PICT"].to_i)
-		end
+  def list_available
 
-		diaries = diaries.sort
+    array = []
+    diaries = []
+    @horaire.each do |log|
+      if !log["PICT"] then next end
+      diaries.push(log["PICT"].to_i)
+    end
 
-		i = 1
-		while i < 999
-			if !diaries.include?(i)
-				array.push("#{i.to_s.append(' ',4)}Available")
-				break
-			end
-			i += 1
-		end
-		return array
+    diaries = diaries.sort
 
-	end
+    i = 1
+    while i < 999
+      if !diaries.include?(i)
+        array.push("#{i.to_s.append(' ',4)}Available")
+        break
+      end
+      i += 1
+    end
+    return array
 
-	def list_missingterm
+  end
 
-		array = []
-		@tasks = {}
+  def list_missingterm
 
-		@horaire.each do |log|
-			if log['TERM'].to_s != "" then next end
-			array.push("#{log['DATE'].append(" ",20)} #{log['NAME']} #{log['PICT']} #{log['TASK']} #{log['TEXT']}")
-		end
-		return array
+    array = []
+    @tasks = {}
 
-	end
+    @horaire.each do |log|
+      if log['TERM'].to_s != "" then next end
+      array.push("#{log['DATE'].append(" ",20)} #{log['NAME']} #{log['PICT']} #{log['TASK']} #{log['TEXT']}")
+    end
+    return array
 
-	def list_missingdays
+  end
 
-		array = []
-		dates = []
-		@horaire.each do |log|
-			dates.push(log['DATE'])
-		end
-		i = 0
-		while i < (365 * 10)
-			test2 = Time.now - (i * 24 * 60 * 60)
-			y = test2.to_s[0,4]
-			m = test2.to_s[5,2]
-			d = test2.to_s[8,2]
-			i += 1
-			if !dates.include?("#{y} #{m} #{d}")
-				array.push("    #{y} #{m} #{d}")
-			end
-		end
-		return array
+  def list_missingdays
 
-	end
+    array = []
+    dates = []
+    @horaire.each do |log|
+      dates.push(log['DATE'])
+    end
+    i = 0
+    while i < (365 * 10)
+      test2 = Time.now - (i * 24 * 60 * 60)
+      y = test2.to_s[0,4]
+      m = test2.to_s[5,2]
+      d = test2.to_s[8,2]
+      i += 1
+      if !dates.include?("#{y} #{m} #{d}")
+        array.push("    #{y} #{m} #{d}")
+      end
+    end
+    return array
+
+  end
 
 end

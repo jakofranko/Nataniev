@@ -15,7 +15,7 @@
 2016 09 07 - 00 
 2016 09 06 - 37      Pino                 Maintenance
 2016 09 05 - 00 
-2016 09 04 - 34      Markle               Design
+2016 09 04 - 24   96 Markle               Design
 2016 09 03 - 35      Nataniev             Development
 2016 09 02 - 35      Nataniev             Development
 2016 09 01 - 29      Hundred rabbits      Video

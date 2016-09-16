@@ -3,124 +3,140 @@
 
 class Horai
 
-	include Vessel
+  include Vessel
 
-	def display
+  # Actions
 
-		@horaire = Di.new("horaire").to_a
-			
-		hash = {}
+  class TargetActions
 
-		hash['duplicates'] = list_duplicates
-		hash['strangetasks'] = list_strangetasks
-		hash['missingdays'] = list_missingdays
+    include ActionCollection
 
-		if hash['duplicates'].length > 0 then return "> #{print.capitalize}, duplicate log: #{hash['duplicates'].first}.\n" end
-		if hash['strangetasks'].length > 0 then return "> #{print.capitalize}, strange log: #{hash['strangetasks'].first}.\n" end
-		if hash['missingdays'].length > 0 then return "> #{print.capitalize}, missing log: #{hash['missingdays'].first}.\n" end
-		
-		return "> #{print.capitalize}, contains #{@horaire.to_a.length} logs.\n"
+    def browse q = nil
 
-	end
+      @horaire = Di.new("horaire").to_a
 
-	def use q = nil
+      hash = {}
 
-		@horaire = Di.new("horaire").to_a
+      hash['duplicates'] = list_duplicates
+      hash['strangetasks'] = list_strangetasks
+      hash['missingdays'] = list_missingdays
 
-		return "The next available id is ##{list_available}."
+      text = ""
 
-	end
+      if hash['duplicates'].length > 0 then text += "> #{@actor.print.capitalize}, duplicate log: #{hash['duplicates'].first}.\n" end
+      if hash['strangetasks'].length > 0 then text += "> #{@actor.print.capitalize}, strange log: #{hash['strangetasks'].first}.\n" end
+      if hash['missingdays'].length > 0 then text += "> #{@actor.print.capitalize}, missing log: #{hash['missingdays'].first}.\n" end
 
-	def list_duplicates
+      return "#{text}! The next available id is ##{list_available}."
 
-		array = []
-		@used = []
+    end
 
-		@horaire.each do |log|
-			if !log["PICT"] then next end
-			if @used.include?(log["PICT"].to_i)
-				array.push("#{log['DATE'].append(" ",20)} #{log['PICT']}")
-			end
-			@used.push(log["PICT"].to_i)
-		end
-		return array
-		
-	end
+    private
 
-	def list_strangetasks
+    def list_duplicates
 
-		array = []
-		@tasks = {}
+      array = []
+      @used = []
 
-		@horaire.each do |log|
-			if !log['TASK'] then next end
-			@tasks[log['TASK']] = @tasks[log['TASK']].to_i + 1
-		end
+      @horaire.each do |log|
+        if !log["PICT"] then next end
+        if @used.include?(log["PICT"].to_i)
+          array.push("#{log['DATE'].append(" ",20)} #{log['PICT']}")
+        end
+        @used.push(log["PICT"].to_i)
+      end
+      return array
+      
+    end
 
-		@tasks.each do |task,val|
-			if val > 9 then next end
-			array.push("#{val.to_s.append(' ',4)}"+task)
-		end
+    def list_strangetasks
 
-		return array
-		
-	end
+      array = []
+      @tasks = {}
 
-	def list_missingterm
+      @horaire.each do |log|
+        if !log['TASK'] then next end
+        @tasks[log['TASK']] = @tasks[log['TASK']].to_i + 1
+      end
 
-		array = []
-		@tasks = {}
+      @tasks.each do |task,val|
+        if val > 9 then next end
+        array.push("#{val.to_s.append(' ',4)}"+task)
+      end
 
-		@horaire.each do |log|
-			if log['TERM'].to_s != "" then next end
-			array.push("#{log['DATE'].append(" ",20)} #{log['NAME']} #{log['PICT']} #{log['TASK']} #{log['TEXT']}")
-		end
-		return array
+      return array
+      
+    end
 
-	end
+    def list_missingterm
 
-	def list_missingdays
+      array = []
+      @tasks = {}
 
-		array = []
-		dates = []
-		@horaire.each do |log|
-			dates.push(log['DATE'])
-		end
-		i = 0
-		while i < (365 * 10)
-			test2 = Time.now - (i * 24 * 60 * 60)
-			y = test2.to_s[0,4]
-			m = test2.to_s[5,2]
-			d = test2.to_s[8,2]
-			i += 1
-			if !dates.include?("#{y} #{m} #{d}")
-				array.push("#{y} #{m} #{d}")
-			end
-		end
-		return array
+      @horaire.each do |log|
+        if log['TERM'].to_s != "" then next end
+        array.push("#{log['DATE'].append(" ",20)} #{log['NAME']} #{log['PICT']} #{log['TASK']} #{log['TEXT']}")
+      end
+      return array
 
-	end
+    end
 
-	def list_available
+    def list_missingdays
 
-		array = []
-		diaries = []
-		@horaire.each do |log|
-			if !log["PICT"] then next end
-			diaries.push(log["PICT"].to_i)
-		end
+      array = []
+      dates = []
+      @horaire.each do |log|
+        dates.push(log['DATE'])
+      end
+      i = 0
+      while i < (365 * 10)
+        test2 = Time.now - (i * 24 * 60 * 60)
+        y = test2.to_s[0,4]
+        m = test2.to_s[5,2]
+        d = test2.to_s[8,2]
+        i += 1
+        if !dates.include?("#{y} #{m} #{d}")
+          array.push("#{y} #{m} #{d}")
+        end
+      end
+      return array
 
-		diaries = diaries.sort
+    end
 
-		i = 1
-		while i < 999
-			if !diaries.include?(i)
-				return i
-			end
-			i += 1
-		end
-		return array
+    def list_available
 
-	end
+      array = []
+      diaries = []
+      @horaire.each do |log|
+        if !log["PICT"] then next end
+        diaries.push(log["PICT"].to_i)
+      end
+
+      diaries = diaries.sort
+
+      i = 1
+      while i < 999
+        if !diaries.include?(i)
+          return i
+        end
+        i += 1
+      end
+      return array
+
+    end
+
+  end
+
+  def target_actions ; return TargetActions.new($nataniev.actor, self) end
+
+  # Overrides
+  
+  def display
+
+    @horaire = Di.new("horaire").to_a
+    
+    return "> #{print.capitalize}, contains #{@horaire.to_a.length} logs.\n"
+
+  end
 
 end
