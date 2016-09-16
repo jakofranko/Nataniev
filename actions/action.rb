@@ -108,9 +108,10 @@ end
 
 module ActionCollection
 
-  def initialize actor
+  def initialize actor, target
 
     @actor = actor
+    @target = target
 
   end
 

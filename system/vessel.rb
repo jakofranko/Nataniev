@@ -63,6 +63,14 @@ module Vessel
 
   # Slow Accessors
 
+  def target_vessel q = nil # TODO: Clean to one liner
+    name = " #{q} ".sub(" a ","").sub(" an ","").sub(" the ","").strip.split(" ").last.to_s.strip
+    visible_vessels.each do |v|
+      if v.name.like(name) then return v end
+    end
+    return nil
+  end
+
   def parent_vessel     ; !@parent_vessel ? @parent_vessel = load_parent_vessel : @parent_vessel ; return @parent_vessel end
   def present_vessels   ; !@present_vessels ? @present_vessels = load_present_vessels : @present_vessels ; return @present_vessels end
   def visible_vessels   ; !@visible_vessels ? @visible_vessels = load_visible_vessels : @visible_vessels ; return @visible_vessels end
@@ -176,10 +184,10 @@ module Vessel
     include ActionExamine
   end
 
-  def actions ; return Actions.new(self) end
-  def parent_actions ; return ParentActions.new(self) end
-  def target_actions ; return TargetActions.new(self) end
-  def default_actions ; return DefaultActions.new(self) end
+  def actions ; return Actions.new($nataniev.actor,self) end
+  def parent_actions ; return ParentActions.new($nataniev.actor,self) end
+  def target_actions ; return TargetActions.new($nataniev.actor,self) end
+  def default_actions ; return DefaultActions.new($nataniev.actor,self) end
 
   def all_actions
 
@@ -188,7 +196,7 @@ module Vessel
     actions.available.each do |action| cmds.push("#{action}") end
     default_actions.available.each do |action| cmds.push("#{action}") end
     parent_actions.available.each do |action| cmds.push("#{action}") end
-      
+
     visible_vessels.each do |v|
       v.target_actions.available.each do |action| cmds.push("#{action} the #{v.name}") end
     end

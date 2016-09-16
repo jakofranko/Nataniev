@@ -5,11 +5,9 @@ module ActionDestroy
 
   def destroy q = nil
 
-    v = find_present_vessel(q) ; if !v then return error_target(q) end
+  	if @target.owner != @actor.id then return error_owner(v.name) end
 
-    if v.owner != id then return error_owner end
-
-    return v.destroy ? "! You destroyed the #{v.name}." : "! You cannot destroy the #{v.name}."
+    return @target.destroy ? "! You destroyed the #{@target.name}." : "! You cannot destroy the #{@target.name}."
 
   end
 

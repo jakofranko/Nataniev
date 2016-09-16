@@ -22,7 +22,7 @@ class Nataniev
 
   def initialize
 
-  	@console = Console.new
+    @console = Console.new
     @id      = nil
     @player  = nil
     @parade  = nil 
@@ -42,15 +42,20 @@ class Nataniev
 
     if !actor_vessel then return "? #{actor} is not a valid vessel id." else @actor = actor_vessel end
 
-    if actor_vessel.actions.respond_to?("#{action}")
-      return actor_vessel.actions.send("#{action}",params).strip
-    elsif actor_vessel.parent_vessel.parent_actions.respond_to?("#{action}")
-      return actor_vessel.parent_vessel.parent_actions.send("#{action}",params).strip
-    elsif actor_vessel.default_actions.respond_to?("#{action}")
-      return actor_vessel.default_actions.send("#{action}",params).strip
-    else
-      return "? #{action} is not a valid action. Use {{help}} to find the valid actions for the #{actor_vessel.class.to_s.downcase} vessel."
-    end
+    # Default
+    vessel = actor_vessel
+    if vessel && vessel.default_actions.respond_to?("#{action}") then return vessel.default_actions.send("#{action}",params).strip end
+    # Self
+    vessel = actor_vessel
+    if vessel && vessel.actions.respond_to?("#{action}") then return vessel.actions.send("#{action}",params).strip end
+    # Parent
+    vessel = actor_vessel.parent_vessel
+    if vessel && vessel.parent_actions.respond_to?("#{action}") then return vessel.parent_actions.send("#{action}",params).strip end
+    # Target
+    vessel = actor_vessel.target_vessel(params)
+    if vessel && vessel.target_actions.respond_to?("#{action}") then return vessel.target_actions.send("#{action}",params).strip end
+    
+    return "? #{action} is not a valid action. Use {{help}} to find the valid actions for the #{actor_vessel.class.to_s.downcase} vessel."
 
   end
   

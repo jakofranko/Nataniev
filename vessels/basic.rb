@@ -56,16 +56,18 @@ class Basic
 
     include ActionShow
     include ActionHide
-    
+
     include ActionLock
     include ActionUnlock
 
     include ActionUse
 
+    include ActionDestroy
+
   end
 
-  def actions ; return Actions.new(self) end
-  def parent_actions ; return ParentActions.new(self) end
-  def target_actions ; return TargetActions.new(self) end
+  def actions ; return Actions.new($nataniev.actor, self) end
+  def parent_actions ; return ParentActions.new($nataniev.actor, self) end
+  def target_actions ; return TargetActions.new($nataniev.actor, self) end
 
 end
