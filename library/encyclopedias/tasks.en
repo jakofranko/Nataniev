@@ -25,6 +25,8 @@ NATANIEV
       [TODO]
     Help
       Implement comments/docs
+    Note
+      Don't trigger procedural notes on parsing
   Vessels
     Creation should empty the previous inhabitants
     Frozen/Unique/Shut/Closed Validation

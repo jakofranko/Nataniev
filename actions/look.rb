@@ -62,20 +62,14 @@ module ActionLook
 
   def look_via
 
-    lines = File.read("#{$nataniev_path}/vessels/#{@actor.parent_vessel.class.name.downcase}.rb", :encoding => 'UTF-8').split("\n")
+    text = ""
 
-    vias = []
-    lines.each do |line|
-      if line.strip[0,9] == "def via__"
-        vias.push(line.strip.gsub("def via__","").split(" ").first)
-      end
+    # Parent
+    @actor.parent_actions.available.each do |action|
+      text += "@+ #{action}\n"
     end
 
-    if vias.length == 0 then return nil end
-    if vias.length == 1 then return "@ #{@actor.parent_vessel.print.capitalize} grants you the additional command \"#{vias.first}\".\n" end
-    if vias.length == 2 then return "@ #{@actor.parent_vessel.print.capitalize} grants you the additional commands \"#{vias[0]}\" and \"#{vias[1]}\".\n" end
-
-    return "@ #{@actor.parent_vessel.print.capitalize} grants you the additional commands.\n"
+    return text
 
   end
 

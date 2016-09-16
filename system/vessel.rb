@@ -181,6 +181,22 @@ module Vessel
   def target_actions ; return TargetActions.new(self) end
   def default_actions ; return DefaultActions.new(self) end
 
+  def all_actions
+
+    cmds = []
+
+    actions.available.each do |action| cmds.push("#{action}") end
+    default_actions.available.each do |action| cmds.push("#{action}") end
+    parent_actions.available.each do |action| cmds.push("#{action}") end
+      
+    visible_vessels.each do |v|
+      v.target_actions.available.each do |action| cmds.push("#{action} the #{v.name}") end
+    end
+    
+    return cmds
+
+  end
+
   # Prints
 
   def print
@@ -219,19 +235,6 @@ module Vessel
     
     @timestamp = Timestamp.new
     $nataniev.parade.save(id,render)
-
-  end
-
-  # Possible
-
-  def completion
-
-    cmds = []
-    visible_vessels.each do |vessel|
-      cmds.push("enter the #{vessel.name}")  
-    end
-    
-    return cmds
 
   end
 

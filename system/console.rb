@@ -91,12 +91,11 @@ class Console
   def onion text
 
     if !$nataniev.actor then return text end
-    if !$nataniev.actor.completion then return text end
       
     @onion = ""
     onionText = ""
 
-    $nataniev.actor.completion.each do |command|
+    $nataniev.actor.all_actions.each do |command|
       if text.length > 1 && command[0,text.length] == text
         @onion = "#{command}"
       end

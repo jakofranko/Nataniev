@@ -116,7 +116,7 @@ module ActionCollection
 
   def available
     
-    return methods - Object.methods
+    return methods - Object.methods - [:available]
 
   end
 

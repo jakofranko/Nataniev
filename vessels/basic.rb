@@ -26,11 +26,10 @@ class Basic
     include ActionLook
 
     include ActionCreate
-    include ActionBecome
-    include ActionEnter
     include ActionLeave
 
     include ActionWarp
+    include ActionCall
 
     include ActionInventory
 
@@ -49,12 +48,19 @@ class Basic
 
     include ActionCollection
 
-    include ActionTakeDrop
-    include ActionShowHide
-    include ActionLockUnlock
+    include ActionEnter
+    include ActionBecome
+
+    include ActionTake
+    include ActionDrop
+
+    include ActionShow
+    include ActionHide
+    
+    include ActionLock
+    include ActionUnlock
 
     include ActionUse
-    include ActionCall
 
   end
 
