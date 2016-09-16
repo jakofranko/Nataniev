@@ -34,8 +34,6 @@ class Basic
 
     include ActionInventory
 
-    include ActionSonar
-
   end
 
   class ParentActions

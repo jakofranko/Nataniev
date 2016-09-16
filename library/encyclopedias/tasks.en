@@ -34,17 +34,15 @@ NATANIEV
   Tutorial
     Implement the ghost guide
     Implement the teapot guide
-  Analytics
-    Add logs to Nataniev
-    Upgrade monitor
   Satellite
     Re-Implement
-  EN Parser
-    Test saving?!
   Russian
     Improve learning tools
-  Enums
-    Build class
+  System
+    Enums Class
+    Save Logs
+    EN Parser saving?
+    Fix monitor
   
 BLINDFOLK
   Get up and running
