@@ -12,12 +12,11 @@ NATANIEV
       Rename storage
       Create proge type
       Re implement Use
-    Call the
-      Implement
-    Call my
-      Implement
+    Cast
+      Fix issue where vessels can be casted into un-de-castable type instances
     Help
       Implement comments/docs
+      Improve look
     Note
       Don't trigger procedural notes on parsing
   Vessels

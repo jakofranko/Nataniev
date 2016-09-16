@@ -98,6 +98,7 @@ module Vessel
   def set_note      val ; if is_locked then return false end ; @note = val ; save ;      return true end
 
   def destroy ; @isDestroyed = true ; save ; end
+  def answer  ; return "! #{print.capitalize} does not answer." end
 
   # Loaders
 
@@ -186,6 +187,7 @@ module Vessel
 
   class TargetActions
     include ActionCollection
+    include ActionExamine
   end
 
   class DefaultActions

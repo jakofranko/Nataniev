@@ -19,9 +19,9 @@ module ActionExamine
       code = $nataniev.parade.to_a[parent]["CODE"]
       if parent == code[5,5].to_i 
         if tries == 0
-          return "! The #{v.name} is at the stem of #{$nataniev.make_vessel(parent).print} universe."
+          return "! The #{v.name}(##{v.id}) is at the stem of #{$nataniev.make_vessel(parent).print} universe."
         else
-          return "! The #{v.name} is #{tries} levels deep, within the #{$nataniev.make_vessel(parent).print} universe." 
+          return "! The #{v.name}(##{v.id}) is #{tries} levels deep, within the #{$nataniev.make_vessel(parent).print} universe." 
         end
       end
       parent = code[5,5].to_i

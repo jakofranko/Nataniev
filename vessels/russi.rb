@@ -6,7 +6,8 @@ class Russi
   include Vessel
 
   def dict ; return Di.new("russian.vocabulary").to_a end
-  
+  def answer ; word = Di.new("russian.vocabulary").to_a.sample ; return "! The Russian word \"#{word['RUSSIAN']}\" means \"#{word['ENGLISH']}\"." end
+
   # Actions
 
   class PresenceActions

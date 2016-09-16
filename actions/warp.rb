@@ -2,7 +2,7 @@
 # encoding: utf-8
 
 module ActionWarp
-
+  
   def warp q = nil
 
     parts = q.split(" ")
@@ -32,7 +32,7 @@ module ActionWarp
 
   def warp_to_id id
 
-    v = $nataniev.make_vessel(id) ; if !v then return error_target(q) end
+    v = $nataniev.make_vessel(id) ; if !v || v.parent then return error_target(id) end
 
     return warp_to(v.parent_vessel)
 
