@@ -3,16 +3,9 @@
 ~ AUTH : Devine Lu Linvega
 
 NATANIEV
-  Client
-    Make a first build
-    Implement dirunes
   Actions
-    Sonar
-      Remove, merge with examine
-    Become
-      Improve for web client
-    Purge
-      Implement
+    Instances
+      Ender Type # Inenterable basic type vessel
     Program
       Implement
     Make
@@ -21,17 +14,12 @@ NATANIEV
       Implement
     Call my
       Implement
-    Cast
-      [TODO]
     Help
       Implement comments/docs
-    Drop
-      Implement actions for inventory vessels
     Note
       Don't trigger procedural notes on parsing
   Vessels
     Creation should empty the previous inhabitants
-    Frozen/Unique/Shut/Closed Validation
     Warn for long notes in the <hint>
   Etc
     Documentation(README.md, etc..)
@@ -69,10 +57,14 @@ BELDAM
 HUNDREDRABBITS
   Setup podcast in iTunes
   Update URL to Iridium video
-  Make project page
+  Improve project page
   Oquonie Stickers
   100R Business Cards
   Make new tier, including shirts
+  Migrate to @actor/@target
+
+GRIMGRAIN
+  Migrate to @actor/@target
 
 PINO
   Insurance(DolphinInsurance?)
@@ -91,3 +83,7 @@ OQUONIE
 
 VOCAVULARIST
   Make build and upload
+
+VERRECIEL
+  Migrate to Swift 3
+

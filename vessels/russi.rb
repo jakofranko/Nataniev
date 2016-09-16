@@ -3,29 +3,27 @@
 
 class Russi
 
-	include Vessel
+  include Vessel
 
-	def display
+  # Actions
 
-		word = Di.new("russian.vocabulary").to_a.sample
+  class PresenceActions
 
-		return "- #{print.capitalize}, translates \"#{word['RUSSIAN']}\" as \"#{word['ENGLISH']}\".\n"
+    include ActionCollection
+    include ActionTranslate
 
-	end
+  end
 
-	def use q = nil
+  def presence_actions ; return PresenceActions.new($nataniev.actor, self) end
 
-		q = q.strip
+  # Overrides
+  
+  def display
 
-		if q.to_s == "" then return "You must include a word to find a translation." end
+    word = Di.new("russian.vocabulary").to_a.sample
 
-		Di.new("russian.vocabulary").to_a.each do |word|
-			if word['ENGLISH'].downcase == q.downcase then return "The russian translation of \"#{q}\", is \"#{word['RUSSIAN']}\"." end
-			if word['RUSSIAN'].downcase == q.downcase then return "The english translation of \"#{q}\", is \"#{word['ENGLISH']}\"." end
-		end
+    return "- #{print.capitalize}, translates \"#{word['RUSSIAN']}\" as \"#{word['ENGLISH']}\".\n"
 
-		return "The dictionary does not include the word \"#{q}\"."
-		
-	end
+  end
 
 end

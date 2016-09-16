@@ -61,13 +61,15 @@ module Vessel
 
   def now ; return DateTime.parse(Time.now.to_s).strftime("%Y%m%d%H%M%S") end
 
-  # Slow Accessors
+  # Cached Accessors
 
   def parent_vessel     ; !@parent_vessel ? @parent_vessel = load_parent_vessel : @parent_vessel ; return @parent_vessel end
   def present_vessels   ; !@present_vessels ? @present_vessels = load_present_vessels : @present_vessels ; return @present_vessels end
   def visible_vessels   ; !@visible_vessels ? @visible_vessels = load_visible_vessels : @visible_vessels ; return @visible_vessels end
   def inventory_vessels ; !@inventory_vessels ? @inventory_vessels = load_inventory_vessels : @inventory_vessels ; return @inventory_vessels end
   def owned_vessels     ; !@owned_vessels ? @owned_vessels = load_owned_vessels : @owned_vessels ; return @owned_vessels end
+
+  # Dynamic Accessors
 
   def target_vessel q = nil # TODO: Clean to one liner
     name = " #{q} ".sub(" a ","").sub(" an ","").sub(" the ","").strip.split(" ").last.to_s.strip
@@ -76,17 +78,26 @@ module Vessel
     return nil
   end
 
+  def presence_vessel q = nil # TODO: Clean to one liner
+    visible_vessels.each do |v| if v.presence_actions.respond_to?(q) then return v end end
+    inventory_vessels.each do |v| if v.presence_actions.respond_to?(q) then return v end end
+    return nil
+  end
+
   # Setters
 
-  def set_lock val = nil        ; return nil end
-  def set_hide val = nil        ; return nil end
-  def set_quiet val = nil       ; return nil end
+  def set_lock      val ; if owner != $nataniev.actor.id then return false end ; @is_locked = val ; save ;  return true end
+  def set_hide      val ; if owner != $nataniev.actor.id then return false end ; @is_hidden = val ; save ;  return true end
+  def set_quiet     val ; if owner != $nataniev.actor.id then return false end ; @is_quiet = val ; save ;   return true end
 
-  def set_name val = nil        ; return nil end
-  def set_attribute val = nil   ; return nil end
-  def set_parent val = nil      ; return nil end
-  def set_program val = nil     ; return nil end
-  def set_notereturn val = nil  ; return nil end
+  def set_name      val ; if is_locked then return false end ; @name = val ; save ;      return true end
+  def set_attribute val ; if is_locked then return false end ; @attribute = val ; save ; return true end
+  def set_parent    val ; if is_locked then return false end ; @parent = val ; save ;    return true end
+  def set_instance  val ; if is_locked then return false end ; @instance = val ; save ;  return true end
+  def set_program   val ; if is_locked then return false end ; @program = val ; save ;   return true end
+  def set_note      val ; if is_locked then return false end ; @note = val ; save ;      return true end
+
+  def destroy ; @isDestroyed = true ; save ; end
 
   # Loaders
 
@@ -182,10 +193,15 @@ module Vessel
     include ActionHelp
   end
 
+  class PresenceActions
+    include ActionCollection
+  end
+
   def actions ; return Actions.new($nataniev.actor,self) end
   def parent_actions ; return ParentActions.new($nataniev.actor,self) end
   def target_actions ; return TargetActions.new($nataniev.actor,self) end
   def default_actions ; return DefaultActions.new($nataniev.actor,self) end
+  def presence_actions ; return PresenceActions.new($nataniev.actor,self) end
 
   def all_actions
 
@@ -197,6 +213,7 @@ module Vessel
 
     visible_vessels.each do |v|
       v.target_actions.available.each do |action| cmds.push("#{action} the #{v.name}") end
+      v.presence_actions.available.each do |action| cmds.push("#{action}") end
     end
     inventory_vessels.each do |v|
       v.target_actions.available.each do |action| cmds.push("#{action} the #{v.name}") end

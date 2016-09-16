@@ -54,6 +54,9 @@ class Nataniev
     # Target
     vessel = actor_vessel.target_vessel(params)
     if vessel && vessel.target_actions.respond_to?("#{action}") then return vessel.target_actions.send("#{action}",params).strip end
+    # Presence
+    vessel = actor_vessel.presence_vessel(action)
+    if vessel then return vessel.presence_actions.send("#{action}",params).strip end
     
     return "? #{action} is not a valid action. Use {{help}} to find the valid actions for the #{actor_vessel.class.to_s.downcase} vessel."
 

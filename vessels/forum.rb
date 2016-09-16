@@ -17,6 +17,7 @@ class Forum
 
     include ActionCollection
     include ActionSay
+    include ActionCast
 
   end
 
