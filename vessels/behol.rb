@@ -13,6 +13,6 @@ class Behol # TODO
 
   end
 
-  def actions ; return Actions.new(self) end
+  def actions ; return Actions.new(self,self) end
   
 end

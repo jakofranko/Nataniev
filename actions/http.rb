@@ -14,9 +14,9 @@ module ActionHttp
 
     vessel = Object.const_get(instance.capitalize).new
 
-    if !vessel.respond_to?("http") then return "#{instance.capitalize} doesn't know http." end
+    if !vessel.actions.respond_to?("http",params) then return "#{instance.capitalize} doesn't know http." end
 
-    return vessel.send("http",params).strip
+    return vessel.actions.send("http",params).strip
 
   end
 
