@@ -7,12 +7,12 @@ module ActionTranslate
 
     if q.to_s == "" then return "! You must include a word to find a translation." end
 
-    Di.new("russian.vocabulary").to_a.each do |word|
-      if word['ENGLISH'].downcase == q.downcase then return "The russian translation of \"#{q}\", is \"#{word['RUSSIAN']}\"." end
-      if word['RUSSIAN'].downcase == q.downcase then return "The english translation of \"#{q}\", is \"#{word['ENGLISH']}\"." end
+    @target.dict.each do |word|
+      if word['ENGLISH'].downcase == q.downcase then return "! The russian translation of \"#{q}\", is \"#{word['RUSSIAN']}\"." end
+      if word['RUSSIAN'].downcase == q.downcase then return "! The english translation of \"#{q}\", is \"#{word['ENGLISH']}\"." end
     end
 
-    return "The dictionary does not include the word \"#{q}\"."
+    return "! The dictionary does not include the word \"#{q}\"."
 
   end
 

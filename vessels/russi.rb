@@ -5,6 +5,8 @@ class Russi
 
   include Vessel
 
+  def dict ; return Di.new("russian.vocabulary").to_a end
+  
   # Actions
 
   class PresenceActions

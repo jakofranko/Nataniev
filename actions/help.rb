@@ -22,6 +22,32 @@ module ActionHelp
       text += "- _ #{action}\n"
     end
 
+    # Visible
+    collection = []
+    @actor.visible_vessels.each do |v|
+      v.target_actions.available.each do |action|
+        collection.push(action)
+      end
+    end
+
+    text += "# Target Actions:\n"
+    collection.uniq.each do |action|
+      text += "- _ #{action}\n"
+    end
+
+    # Presence
+    collection = []
+    @actor.visible_vessels.each do |v|
+      v.presence_actions.available.each do |action|
+        collection.push(action)
+      end
+    end
+
+    text += "# Presence Actions:\n"
+    collection.uniq.each do |action|
+      text += "- _ #{action}\n"
+    end
+
     return text
 
   end
