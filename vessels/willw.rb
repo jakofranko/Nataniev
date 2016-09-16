@@ -11,12 +11,6 @@ class Willw
 
 	end
 
-	def use q = nil
-		
-		return "! The insect chimes into a rhyme \"#{poem(q)}\"."
-
-	end
-
 	def poem q = nil
 
 		@templates = createTemplates

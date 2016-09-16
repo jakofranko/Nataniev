@@ -5,11 +5,11 @@ module ActionSay
 
   def say q = nil
 
-    _room = "#{@actor.id}".prepend("0",5)
-    _id   = "#{$nataniev.actor.id}".prepend("0",5)
-    _name = "#{$nataniev.actor.name}".append(" ",14)
+    _room = "#{@actor.parent}".prepend("0",5)
+    _id   = "#{@actor.id}".prepend("0",5)
+    _name = "#{@actor.name}".append(" ",14)
 
-    flatten = "#{_room}-#{_id}-#{now} #{_name} #{q}\n"
+    flatten = "#{_room}-#{_id}-#{Timestamp.new.to_s} #{_name} #{q}\n"
 
     Di.new("forum").add(flatten)
     return "+ Added message: #{q}"
