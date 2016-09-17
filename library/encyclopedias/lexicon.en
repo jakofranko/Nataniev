@@ -1050,6 +1050,8 @@ THE OPAL INQUISITORS
 THE WILL THE WISP
   UNDE : Automatons
   BREF : {{The will the wisp}} is a twitter bot that generates short poems, once every hour. Inspired by Lewis Carroll's Jabberwocky.
+  LONG
+    ? It can be found as a ghostly beetle, in the {{Meadow|Nataniev}}, on a tree.
   LINK
     TWTR : https://twitter.com/thewillthewisp
     GITH : https://github.com/XXIIVV/Nataniev/blob/master/vessels/willw.rb
@@ -1057,6 +1059,8 @@ THE WILL THE WISP
 DICTIONARISM
   UNDE : Automatons
   BREF : {{Dictionarism}} is a simple twitter bot that generates {_-isms_} from every of every single word of a dictionary and tweets them.
+  LONG
+    ? It can be found as writing on a blackboard, in the {{Library|Nataniev}}.
   LINK
     TWTR : https://twitter.com/dictionarism
     GITH : https://github.com/XXIIVV/Nataniev/blob/master/vessels/disms.rb
