@@ -8,6 +8,7 @@ NATANIEV
       Ender Type # Inenterable basic type vessel
       Clone Type # Inherit characteristics of other vessel
       Proge Type # Run storage as program
+      Ghost Type # Well..
     Program
       Rename storage
       Create proge type
@@ -18,12 +19,10 @@ NATANIEV
       Implement comments/docs
       Improve look
     Note
-      Don't trigger procedural notes on parsing
-  Vessels
-    Creation should empty the previous inhabitants
-    Warn for long notes in the <hint>
-    Ghost Vessel
-      Build
+      Don't trigger procedural notes on parsing!
+    Create
+      Creation should empty the previous inhabitants
+      Warn for long notes in the <hint>
   Etc
     Documentation(README.md, etc..)
   Tutorial
@@ -39,6 +38,9 @@ NATANIEV
   HttpCorpse
     Create html wrapper module
     Implement on instances
+  Twitter Client
+    Migrate to @actor/@target
+    Create bot that servers API commands
   
 BLINDFOLK
   Get up and running

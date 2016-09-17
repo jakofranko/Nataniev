@@ -1193,7 +1193,7 @@ ZJEVENI
   
 NATANIEV
   UNDE : Nataniev
-  BREF : {{Nataniev}} is a development engine built within a MUD-like environment. It serves this website, {{Hundred Rabbits}}, {{Grimgrains}}, as well as each of the {{Twitter Bots|Automaton}}.
+  BREF : {{Nataniev}} is a development engine built within a MUD-like environment. It serves this website, {{Hundred Rabbits}}, {{Grimgrains}}, as well as each {{Twitter Bot|Automatons}}.
   LONG
     & Initiated in 2011, this custom engine includes a CLI, formerly known as {_Paradise_}, two different flat-files database parsers and its own unique APIs syntax.
     & Single scripts and repositories, known as vessels and instances, exist as locations in this {*Ecosystem*} and can be visited through the CLI. For example, each Automaton exist as a character that can be found within Paradise; this page exist as a page in a book, in a library that can also be entered and explored.
