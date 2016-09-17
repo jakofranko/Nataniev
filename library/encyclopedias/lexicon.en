@@ -1196,21 +1196,17 @@ ZJEVENI
   
 NATANIEV
   UNDE : Nataniev
-  BREF : Currently working on this page. Come back soon.
-  LONG 
-    & There are no Paradise, no teacup, no you or me - but words. These words are the place holders of intricate concepts, shared with other users that will create personal and different experiences from the same words.
+  BREF : {{Nataniev}} is a development engine built within a MUD-like environment. It serves this website, {{Hundred Rabbits}}, {{Grimgrains}}, as well as each of the {{Twitter Bots|Automaton}}.
+  LONG
+    & Initiated in 2011, this custom engine includes a CLI, formerly known as {_Paradise_}, two different flat-files database parsers and its own unique APIs syntax.
+    & Single scripts and repositories, known as vessels and instances, exist as locations in this {*Ecosystem*} and can be visited through the CLI. For example, each Automaton exist as a character that can be found within Paradise; this page exist as a page in a book, in a library that can also be entered and explored.
+    ? Deep within this virtual structure, sleeps a small office - and in it a desk, on which rests a book that translates Russian words into English.
+    * Horaire Logs
+    & {{Horaire}} is a logbook that holds {_daily creative output entries_}, logged for each day since April 2006. This rigid lifestyle expriment is aiming at discerning and predicting the creativity patterns of {{Devine Lu Linvega}}. The latest visualisation of these logs can be seen {{here|Horaire}}.
+    * Multiplayer Operating System
+    & The Interactive Fiction client is currently being developed to allow anyone to enter, explore and build within the library. The new version will allow anyone to deploy their own instance of {{Nataniev}}, and travel from theirs, to this one seemlessly.
     ? {_"In a little while you will be alone in shoreless space, to wander its limitless solitudes without friend or comrade forever--for you will remain a thought, the only existent thought, and by your nature inextinguishable, indestructible. "_} - Mark Twain, {{the mysterious Stranger|http://en.wikipedia.org/wiki/The_Mysterious_Stranger}}
-    ? Initiated in 2011, as {_Paradise_}, {{Nataniev} is a procedural {{interactive fiction|Interactive}} and multiplayer novel, in which you can be anything and anyone, travel to the oddest of places, entirely user-created. You may choose to make a mess, or to create order, in the comfort of your teacup.
-    ? Nataniev was an {{adventure fitness app|http://www.youtube.com/watch?v=DBZCLjsI1bs}}. A simple {{pedometer|http://en.wikipedia.org/wiki/Pedometer}}, or step-counter, in which you travel as you go about your daily life. Your pace, your progress and the collected steps of all players are pooled to make new areas accessible. You can see your rank change in real time against all the other wanderers of Nataniev.
-    & The current platform is built in {{Ruby|https://en.wikipedia.org/wiki/Ruby_(programming_language)}}, and is currently hosted on {{Digital Ocean|https://www.digitalocean.com/?refcode=4ed988ca8c17}}. The site is segmented into 3 parts, {*a time-tracker*}, {*a lexicon*} and a {*diary*}. Every single day, since 2009, a log has been added to the {{Horaire}}, every new project has an entry in the {{Lexicon|Portal}} and every event has a page in the {*diary*}. 
-    ? Above these core systems, other systems exists - such as {{Nataniev}}, the {{API|http://api.xxiivv.com}} and a series of {{bots|Automatons}}. This website is the skeleton of a rigorous lifestyle change, initiated in 2006.
-    & The app does not require an active online connection, if no wi-fi/wireless is found, you will be shown alternative data about your progress. The app runs in background and will vibrate when a point of interest is approaching. 
-    * Delayed Release
-    & The application was first supposed to hit the app store on june 25th 2013, but due to faulty code, the release was delayed until july 3rd. 
-    * Pulling it from the App Store
-    & The application was pulled from the app store on February 17th 2014. The app had been broken since the release of iOS7. I can see the app now being possible again with the help of the Nike Fuelband or some similar device, but until such companionship exists, the application will remain offline.
   LINK
-    SITE : http://paradise.xxiivv.com
     GITH : https://github.com/XXIIVV/Nataniev
   TYPE : Portal
 
