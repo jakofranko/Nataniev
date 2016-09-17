@@ -827,13 +827,6 @@ THE SIXTH SEASON
 OTOROUTES MINIATURES
   UNDE : First wave
 
-MAEVE
-  UNDE : Nataniev
-  BREF : {{Maeve}} is an automated {{Nataniev}} vessel that travels around the universe to find and remove incomplete vessels.
-  LINK
-    SITE : http://paradise.xxiivv.com
-    GITH : https://github.com/XXIIVV/Nataniev/blob/master/vessels/maeve.rb
-
 PEDESTRIAN PARADISE
   UNDE : First wave
 
@@ -1205,7 +1198,6 @@ NATANIEV
     & Initiated in 2011, this custom engine includes a CLI, formerly known as {_Paradise_}, two different flat-files database parsers and its own unique APIs syntax.
     & Single scripts and repositories, known as vessels and instances, exist as locations in this {*Ecosystem*} and can be visited through the CLI. For example, each Automaton exist as a character that can be found within Paradise; this page exist as a page in a book, in a library that can also be entered and explored.
     ? Deep within this virtual structure, sleeps a small office - and in it a desk, on which rests a book that translates Russian words into English.
-    * Horaire Logs
     & {{Horaire}} is a logbook that holds {_daily creative output entries_}, logged for each day since April 2006. This rigid lifestyle expriment is aiming at discerning and predicting the creativity patterns of {{Devine Lu Linvega}}. The latest visualisation of these logs can be seen {{here|Horaire}}.
     * Multiplayer Operating System
     & The Interactive Fiction client is currently being developed to allow anyone to enter, explore and build within the library. The new version will allow anyone to deploy their own instance of {{Nataniev}}, and travel from theirs, to this one seemlessly.
@@ -1214,52 +1206,20 @@ NATANIEV
     GITH : https://github.com/XXIIVV/Nataniev
   TYPE : Portal
 
+MAEVE
+  UNDE : Nataniev
+  BREF : {{Maeve}} is an automated {{Nataniev}} vessel, traveling around the virtual scapes of Nataniev looking for incomplete vessels and errors.
+  LONG
+    Rating each vessel with an index, it deletes redundant vessels and move vessels outside of the void.
+  LINK
+    GITH : https://github.com/XXIIVV/Nataniev/blob/master/vessels/maeve.rb
+
 NATANIEV CASE
   UNDE : Physical
   BREF : I could not find a slick black case so I designed myself an iPhone 5S case with Society6. The print contains the name of my favourite 3 chapters of the {{Vast}} book: "{_Jlhadeaai, Huqrea & Jahaoghad_}".
   LINK
     SITE : http://society6.com/aliceffekt/Nataniev-iPhone-Cover_iPhone-Case
     DRIV : https://drive.google.com/open?id=0B24klRuG3GLNaE5SSC1fLTJKM00
-
-SHORTHAND
-  UNDE : Language
-  BREF : Notebook and after notebook, I fill pages of notes, ideas and to-dos. When presented with {{the idea of shorthand|http://theatlantic.com/technology/archive/2014/06/yeah-i-still-use-shorthand-and-a-smartpen/373281/}}, I saw immediate practical application.
-  LONG
-    * The idea is simple, writing faster. 
-    & I played with different ideas and this is the system that worked best for me, it’s an inspiration and a mixture of already existing shorthand systems that fits my writing style.
-    % content/lexicon/shorthand.alphabet.png
-    & Simple enough, now most letters are transformed into a single stroke shape that flows and combines to form shorter words, that can be written faster.
-
-CLOCK
-  UNDE : Nataniev
-  BREF : On {{XXIIVV|Nataniev}}, Time is written using a variance of the {{Internet Time|https://en.wikipedia.org/wiki/Swatch_Internet_Time}} with 4 digits instead of the Swatch Beat's 3 digits system. The system has no timezone and no daylight saving-time. Read more on {{Desamber}}.
-  LONG
-    - The current time is {{!clock}}
-  LINK
-    GITH : https://github.com/XXIIVV/Nataniev/blob/master/system/clock.rb
-
-DESAMBER
-  UNDE : Nataniev
-  BREF : On {{XXIIVV|Nataniev}}, dates are written using a variance of the {{International Fixed Calendar|https://en.wikipedia.org/wiki/International_Fixed_Calendar}} and a custom convention to move the English months' names, away from those of Greek gods'.
-  LONG
-    * Today is {{!desamber}}
-    & The {_Equal Month calendar_} format has 13 months and so the number of each of these months are flected into their names.
-    & {*Every month is exactly 28 days long*}, and the 365th day of the year is the {_Year Day_}, followed by the {_Leap Day_} on leap years. 
-    - 1, Unesamber
-    - 8, Octesamber
-    - 2, Dutesamber
-    - 9, Novesamber
-    - 3, Trisesamber
-    - 10, {{Desamber}}
-    - 4, Tetresamber
-    - 11, Undesamber
-    - 5, Pentesamber
-    - 12, Dodesamber
-    - 6, Hexesamber
-    - 13, Tridesamber
-    - 7, Sevesamber
-  LINK
-    GITH : https://github.com/XXIIVV/Nataniev/blob/master/system/desamber.rb
 
 ~ Neauismetica
 
@@ -1571,6 +1531,51 @@ RESEARCH
   UNDE : Home
   BREF : Various entries on topics gravitating around a philosophy of bettering through an improvement of language and informatics. These sections may contains incomplete, broken or deprecated articles.
   TYPE : Portal
+
+TOOLS
+  UNDE : Research
+  BREF : A list of tools that exists within {{Nataniev}}.
+  TYPE : Portal
+
+SHORTHAND
+  UNDE : Language
+  BREF : Notebook and after notebook, I fill pages of notes, ideas and to-dos. When presented with {{the idea of shorthand|http://theatlantic.com/technology/archive/2014/06/yeah-i-still-use-shorthand-and-a-smartpen/373281/}}, I saw immediate practical application.
+  LONG
+    * The idea is simple, writing faster. 
+    & I played with different ideas and this is the system that worked best for me, it’s an inspiration and a mixture of already existing shorthand systems that fits my writing style.
+    % content/lexicon/shorthand.alphabet.png
+    & Simple enough, now most letters are transformed into a single stroke shape that flows and combines to form shorter words, that can be written faster.
+
+CLOCK
+  UNDE : Nataniev
+  BREF : On {{XXIIVV|Nataniev}}, Time is written using a variance of the {{Internet Time|https://en.wikipedia.org/wiki/Swatch_Internet_Time}} with 4 digits instead of the Swatch Beat's 3 digits system. The system has no timezone and no daylight saving-time. Read more on {{Desamber}}.
+  LONG
+    - The current time is {{!clock}}
+  LINK
+    GITH : https://github.com/XXIIVV/Nataniev/blob/master/system/clock.rb
+
+DESAMBER
+  UNDE : Nataniev
+  BREF : On {{XXIIVV|Nataniev}}, dates are written using a variance of the {{International Fixed Calendar|https://en.wikipedia.org/wiki/International_Fixed_Calendar}} and a custom convention to move the English months' names, away from those of Greek gods'.
+  LONG
+    * Today is {{!desamber}}
+    & The {_Equal Month calendar_} format has 13 months and so the number of each of these months are flected into their names.
+    & {*Every month is exactly 28 days long*}, and the 365th day of the year is the {_Year Day_}, followed by the {_Leap Day_} on leap years. 
+    - 1, Unesamber
+    - 8, Octesamber
+    - 2, Dutesamber
+    - 9, Novesamber
+    - 3, Trisesamber
+    - 10, {{Desamber}}
+    - 4, Tetresamber
+    - 11, Undesamber
+    - 5, Pentesamber
+    - 12, Dodesamber
+    - 6, Hexesamber
+    - 13, Tridesamber
+    - 7, Sevesamber
+  LINK
+    GITH : https://github.com/XXIIVV/Nataniev/blob/master/system/desamber.rb
 
 SEGMENT
   UNDE : Research
