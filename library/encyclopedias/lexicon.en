@@ -1547,7 +1547,7 @@ SHORTHAND
     & Simple enough, now most letters are transformed into a single stroke shape that flows and combines to form shorter words, that can be written faster.
 
 CLOCK
-  UNDE : Nataniev
+  UNDE : Tools
   BREF : On {{XXIIVV|Nataniev}}, Time is written using a variance of the {{Internet Time|https://en.wikipedia.org/wiki/Swatch_Internet_Time}} with 4 digits instead of the Swatch Beat's 3 digits system. The system has no timezone and no daylight saving-time. Read more on {{Desamber}}.
   LONG
     - The current time is {{!clock}}
@@ -1555,7 +1555,7 @@ CLOCK
     GITH : https://github.com/XXIIVV/Nataniev/blob/master/system/clock.rb
 
 DESAMBER
-  UNDE : Nataniev
+  UNDE : Tools
   BREF : On {{XXIIVV|Nataniev}}, dates are written using a variance of the {{International Fixed Calendar|https://en.wikipedia.org/wiki/International_Fixed_Calendar}} and a custom convention to move the English months' names, away from those of Greek gods'.
   LONG
     * Today is {{!desamber}}
