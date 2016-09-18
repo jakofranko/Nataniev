@@ -7,5 +7,4 @@ module Corpse
 
   end
 
-  
 end

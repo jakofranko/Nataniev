@@ -24,15 +24,10 @@ module CorpseHttp
 
   end
 
-  def add_script_jquery
-
-    @scripts.to_s += "<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js' ></script>"
-
-  end
-
   def add_script name
 
-    @script.to_s += "<script src='scripts/#{name}'></script>"
+    @scripts = !@scripts ? "" : @scripts
+    @scripts += "<script src='scripts/#{name}'></script>"
 
   end
 
@@ -40,18 +35,14 @@ module CorpseHttp
 
   def links
 
-    return "
-<link rel='shortcut icon'      href='http://wiki.xxiivv.com/img/interface/favicon.ico' />
-<link rel='apple-touch-icon-precomposed'   href='../../img/interface/phone_xxiivv.png'/>
-<link rel='shortcut icon' href='http://wiki.xxiivv.com/img/interface/favicon.ico' />"
-
     return "#{@links}"
 
   end
 
   def add_link rel = 'stylesheet', type = 'text/css', name
 
-    @links.to_s += "<link rel='#{rel}' type='#{type}' href='links/#{name}' />"
+    @links = !@links ? "" : @links
+    @links += "<link rel='#{rel}' type='#{type}' href='links/#{name}' />"
 
   end
 
@@ -69,6 +60,20 @@ module CorpseHttp
 
   end
 
+  # Title
+
+  def body
+
+    return "<body>#{@body}</body>"
+
+  end
+
+  def set_body body
+
+    @body = body
+
+  end
+
   # Output
 
   def result
@@ -82,9 +87,7 @@ module CorpseHttp
   #{links}
   #{title}
 </head>
-<body>
-  #{body}
-</body>
+#{body}
 </html>"
 
   end

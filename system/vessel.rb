@@ -5,8 +5,14 @@ require 'date'
 
 load "#{$nataniev_path}/system/wildcard.rb"
 load "#{$nataniev_path}/system/program.rb"
+load "#{$nataniev_path}/system/action.rb"
+load "#{$nataniev_path}/system/corpse.rb"
 
 Dir["#{$nataniev_path}/actions/*"].each do |file_name|
+  require file_name
+end
+
+Dir["#{$nataniev_path}/corpses/*"].each do |file_name|
   require file_name
 end
 
