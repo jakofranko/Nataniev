@@ -53,7 +53,7 @@
 
 
 
-1010-08824-00000-MAEVE-20160913213823 Maeve
+1010-00942-00000-MAEVE-20160917054502 Maeve
 0110-00031-00000-BASIC-20160916150721 geomaitre      quiet                                                                                           this is nothing.
 
 
@@ -11462,7 +11462,7 @@
 
 0000-11446-06622-BASIC-20160617085824 three                         paint 153 76 0
 1000-04067-02388-BASIC-20160617085824 frigate        flying         warp var.1                                                                       feel free to become this vessel and pilot it around paradise by hitting the sync switch. just make sure to bring it back in  one piece
-0000-11457-02388-BASIC-20160617085824 ballroom
+
 0000-11457-02388-BASIC-20160617085824 bedroom        sparse                                                                                          .b You see a master bed and rows of cots here.b You see a linen closet and a military shower here
 0000-11457-02388-BASIC-20160617085824 room           war                                                                                             generals gathered from oceans all over paradise are here to discuss strategy. given that their goals are wildly divergent
 0000-11457-02388-BASIC-20160617085824 room           periscope

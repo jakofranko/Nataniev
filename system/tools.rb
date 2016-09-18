@@ -83,6 +83,7 @@ class Array
     self.each do |line|
       rune = line[0,1]
       text = line.sub(rune,"").strip
+      html += prev == "-" && rune != "-" ? "<hr class='spacer'/>" : ""
       case rune
       when "&"
         html += "<p>#{text}</p>"
@@ -103,8 +104,6 @@ class Array
       end
       prev = rune
     end
-
-    if prev == "-" then html += "<end></end>" end
 
     return html
 
