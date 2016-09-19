@@ -3,9 +3,12 @@
 ~ AUTH : Devine Lu Linvega
 
 @ DATE     CODE PICT TERM                 TASK                 NAME                  TEXT
-2016 09 16 - 34      Nataniev             Migration
+2016 09 19 - 38      Oquonie              Update               4.2
+2016 09 18 - 34      Vocavularist         Update               2.6
+2016 09 17 - 28      Nataniev             Design
+2016 09 16 - 34      Hundred rabbits      Migration
 2016 09 15 - 34      Hundred rabbits      Development
-2016 09 14 - 38      Nataniev             Migration
+2016 09 14 - 38      Nataniev             Maintenance
 2016 09 13 - 34      Nataniev             Migration
 2016 09 12 - 35      Pino                 Maintenance
 2016 09 11 - 24      Hundred rabbits      Video

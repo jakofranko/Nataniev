@@ -35,9 +35,6 @@ NATANIEV
     Save Logs
     EN Parser saving?
     Fix monitor
-  HttpCorpse
-    Create html wrapper module
-    Implement on instances
   Twitter Client
     Migrate to @actor/@target
     Create bot that servers API commands
@@ -61,13 +58,17 @@ BELDAM
 
 HUNDREDRABBITS
   Setup podcast in iTunes
-  Improve project page
-  Oquonie Stickers
   100R Business Cards
   Make new tier, including shirts
 
 GRIMGRAIN
   Migrate to HttpCorpse Class
+
+VERRECIEL
+  Migrate to Swift 3
+
+MARKLE
+  Implement door mechanic
 
 PINO
   Insurance(DolphinInsurance?)
@@ -83,10 +84,5 @@ PINO
   Hammock
 
 OQUONIE
-  Fix issue with Nephtaline world loop(blocking exit)
-
-VOCAVULARIST
-  Make build and upload
-
-VERRECIEL
-  Migrate to Swift 3
+  Need High Res Portraits for stickers
+  
