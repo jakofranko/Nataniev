@@ -64,13 +64,28 @@ module CorpseHttp
 
   def body
 
-    return "<body>#{@body}</body>"
+    return @body
 
   end
 
   def set_body body
 
     @body = body
+
+  end
+
+  # Footers
+
+  def footers
+
+    return @footers
+
+  end
+
+  def add_footer html
+
+    @footers = !@footers ? "" : @footers
+    @footers += html
 
   end
 
@@ -81,13 +96,16 @@ module CorpseHttp
     return "
 <!DOCTYPE html>
 <html> 
-<head>
-  #{metas}
-  #{scripts}
-  #{links}
-  #{title}
-</head>
-#{body}
+  <head>
+    #{metas}
+    #{scripts}
+    #{links}
+    #{title}
+  </head>
+  <body>
+    #{body}
+  </body>
+  #{footers}
 </html>"
 
   end
