@@ -3,6 +3,7 @@
 ~ AUTH : Devine Lu Linvega
 
 @ DATE     CODE PICT TERM                 TASK                 NAME                  TEXT
+2016 09 20 ! 24   98 Rather neoclassical  Illustration         Study E
 2016 09 19 - 38      Oquonie              Update               4.2
 2016 09 18 - 34      Vocavularist         Update               2.6
 2016 09 17 - 28      Nataniev             Design
