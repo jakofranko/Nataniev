@@ -5,14 +5,14 @@ module CorpseHttp
 
   def metas
 
-    return "
-<meta charset='UTF-8'>
-<meta name='viewport'            content='width=device-width, initial-scale=1, maximum-scale=1'>
-<meta name='apple-mobile-web-app-capable' content='yes' />
-<meta name='viewport'        content='width=device-width, initial-scale=1.0'>
-<meta name='description'         content='Works of Devine Lu Linvega' />
-<meta name='keywords'            content='aliceffekt, traumae, ikaruga, devine lu linvega' />
-<meta name='apple-mobile-web-app-capable' content='yes'>"
+    return "<meta charset='UTF-8'>#{@metas}"
+
+  end
+
+  def add_meta name, content
+
+    @metas = !@metas ? "" : @metas
+    @metas += "<meta name='#{name}' content='#{content}' />"
 
   end
 
