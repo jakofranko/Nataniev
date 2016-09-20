@@ -9,7 +9,7 @@ class Behol # TODO
 
     include ActionCollection
 
-    include ActionHttp
+    include ActionHttp # Rename to gaze
 
   end
 

@@ -4,11 +4,5 @@
 class Ghost # TODO
 
   include Vessel
-
-  def name
-
-    return "ghost"
-    
-  end
   
 end

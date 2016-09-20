@@ -12,13 +12,15 @@ class Maeve # TODO
 
   def __look q = nil
 
-    return act
+    return ".."
+    # return act
 
   end
 
   def auto q = nil # TODO
 
-    return act
+    return ".."
+    # return act
 
   end
 

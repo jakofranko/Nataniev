@@ -97,7 +97,7 @@ class Array
         html += "<h2>#{text}</h2>"
       when "#"
         html += "<pre>#{text}</pre>"
-      when "%"
+      when "%" # TODO: Allow other formats, such as video and youtube links!
         html += "<img src='#{text}'/>"
       else
         html += "[??]#{text}[??]"

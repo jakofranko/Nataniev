@@ -38,9 +38,16 @@ NATANIEV
   Twitter Client
     Migrate to @actor/@target
     Create bot that servers API commands
+  Library
+    Rename formats?
+    Move Grim to instances
+    Move Hundred to instances
   
 BLINDFOLK
   Get up and running
+
+ADVENTV
+  Get up and running again
 
 LIETAL
   Implement
