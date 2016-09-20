@@ -291,7 +291,7 @@
 2015 12 09 - 25      Verreciel            Design
 2015 12 08 - 25      Verreciel            Development
 2015 12 07 - 35      Noirca               Update               4.1
-2015 12 06 - 35  477 Hundred rabbits      Branding             Origami
+2015 12 06 - 25  477 Hundred rabbits      Branding             Origami
 2015 12 05 - 32      Nataniev             Refactoring
 2015 12 04 ! 25  478 Keyboard 468         Update               1.4
 2015 12 03 - 21      Oquonie              Branding
@@ -778,7 +778,7 @@
 2014 08 09 - 35      Advent v             Update
 2014 08 08 - 26  141 Dew                  Prototype            Announcement
 2014 08 07 - 35      Advent v             Update
-2014 08 06 - 35  139 Advent v             Branding             Release
+2014 08 06 - 25  139 Advent v             Branding             Release
 2014 08 05 - 29      Advent v             Live
 2014 08 04 - 38      Advent v             Development
 2014 08 03 - 35      Nataniev             Update               Quiet Hell
@@ -897,7 +897,7 @@
 2014 04 12 - 28   69 Methascope           Illustration         200x
 2014 04 11 - 28   46 Methascope           Illustration         2000x
 2014 04 10 - 27      Artwork              Illustration
-2014 04 09 - 35      Vast                 Branding
+2014 04 09 - 25      Vast                 Branding
 2014 04 08 ! 29  241 Vast                 Release              Epreuve
 2014 04 07 - 35      Nataniev             Layout
 2014 04 06 - 25      Kaleidoscope         Illustration
@@ -2996,7 +2996,7 @@
 2008 07 13
 2008 07 12
 2008 07 11
-2008 07 10 ! 35      Nataniev             Branding             Founded XXIIVV
+2008 07 10 ! 25      Nataniev             Branding             Founded XXIIVV
 2008 07 09
 2008 07 08
 2008 07 07
