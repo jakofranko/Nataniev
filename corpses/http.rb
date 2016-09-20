@@ -42,7 +42,7 @@ module CorpseHttp
   def add_link rel = 'stylesheet', type = 'text/css', name
 
     @links = !@links ? "" : @links
-    @links += "<link rel='#{rel}' type='#{type}' href='links/#{name}' />"
+    @links += name.include?("http://") ? "<link rel='#{rel}' type='#{type}' href='#{name}' />" :  "<link rel='#{rel}' type='#{type}' href='links/#{name}' />"
 
   end
 
