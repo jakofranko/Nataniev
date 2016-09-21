@@ -3,6 +3,8 @@
 
 module ActionSay
 
+  include Action
+  
   def say q = nil
 
     _room = "#{@actor.parent}".prepend("0",5)

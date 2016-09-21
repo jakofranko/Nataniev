@@ -3,6 +3,8 @@
 
 module ActionCreate
 
+  include Action
+  
   def create q = nil
 
     q = " #{q} ".sub(" a ","").sub(" an ","").sub(" the ","").strip

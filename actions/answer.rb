@@ -3,9 +3,11 @@
 
 module ActionAnswer
 
+  include Action
+
   def answer q = nil
 
-  	return "Huh?"
+    return "Huh? #{q}?"
     
   end
 

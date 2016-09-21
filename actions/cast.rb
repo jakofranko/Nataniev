@@ -3,6 +3,8 @@
 
 module ActionCast
 
+  include Action
+  
   def cast q = nil
 
   	instance_name = q.to_s.split(" ").last.to_s.upcase

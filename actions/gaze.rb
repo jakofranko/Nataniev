@@ -3,6 +3,8 @@
 
 module ActionGaze
 
+  include Action
+  
   def gaze q = nil
 
     instance = q.split(" ").first

@@ -3,6 +3,8 @@
 
 module ActionLeave
 
+  include Action
+  
   def leave q = nil
 
     if @actor.parent == @actor.parent_vessel.parent then return error_stem end

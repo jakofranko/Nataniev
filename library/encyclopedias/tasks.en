@@ -4,7 +4,7 @@
 
 NATANIEV
   Actions
-    Document
+    Documentation
       Find good system
     Instances
       Ender Type # Inenterable basic type vessel
@@ -12,8 +12,7 @@ NATANIEV
       Proge Type # Run storage as program
       Ghost Type # Well..
     Program
-      Rename storage
-      Create proge type
+      Rename storage(Encode?Enscribe)
       Re implement Use
     Cast
       Fix issue where vessels can be casted into un-de-castable type instances
@@ -35,8 +34,8 @@ NATANIEV
   System
     Enums Class
     Save Logs
+      Fix monitor
     EN Parser saving?
-    Fix monitor
   Twitter Client
     Migrate to @actor/@target
     Create bot that servers API commands
@@ -58,6 +57,7 @@ LIETAL
 OSCEAN
   Add flags(TODO/STUB)
   Improve search page
+  Implement tasks
   EN module
     Trial with Rationality Canon file
 

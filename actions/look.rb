@@ -3,6 +3,8 @@
 
 module ActionLook
 
+  include Action
+  
   def look q = nil
 
     return "#{look_head}#{look_note}#{look_visibles}#{look_hint}#{look_via}"

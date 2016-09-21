@@ -3,7 +3,9 @@
 
 module ActionUse # TODO
 
-   def use q = nil
+  include Action
+
+  def use q = nil
 
     name = " #{q} ".sub(" a ","").sub(" an ","").sub(" the ","").strip.split(" ").first.to_s.strip
 

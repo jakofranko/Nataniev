@@ -3,6 +3,8 @@
 
 module ActionTranslate
 
+  include Action
+  
   def translate q = nil
 
     if q.to_s == "" then return "! You must include a word to find a translation." end

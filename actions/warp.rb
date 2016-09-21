@@ -3,6 +3,8 @@
 
 module ActionWarp
   
+  include Action
+
   def warp q = nil
 
     parts = q.split(" ")

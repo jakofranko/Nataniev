@@ -3,6 +3,8 @@
 
 module ActionCall
 
+  include Action
+
   def call q = nil
 
     target = q.split(" ").first

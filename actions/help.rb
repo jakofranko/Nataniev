@@ -3,6 +3,8 @@
 
 module ActionHelp
 
+  include Action
+  
   def help q = nil
 
     text = "& Something here\n"

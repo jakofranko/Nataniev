@@ -3,6 +3,8 @@
 
 module ActionInventory
 
+  include Action
+  
   def inventory q = nil
 
     if @actor.inventory_vessels.length == 0 then return error_empty end

@@ -3,6 +3,8 @@
 
 module ActionExamine
 
+  include Action
+  
   def examine q = nil
 
     return sonar(@target)

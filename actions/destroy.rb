@@ -3,6 +3,8 @@
 
 module ActionDestroy
 
+  include Action
+  
   def destroy q = nil
 
   	if @target.owner != @actor.id then return error_owner(v.name) end

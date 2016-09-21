@@ -3,6 +3,8 @@
 
 module ActionTransform
 
+  include Action
+  
   def transform q = nil
 
     name = q.split(" ").last
