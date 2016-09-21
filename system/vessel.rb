@@ -65,6 +65,9 @@ module Vessel
   def program ; return Program.new(@program) end
   def note ; return @note.to_s != "" ? @note : nil end
 
+  def answer q = nil ; return "! #{print.capitalize} does not answer." end
+  def sight q = nil ; return "! #{print.capitalize} is invisible." end
+
   def now ; return DateTime.parse(Time.now.to_s).strftime("%Y%m%d%H%M%S") end
 
   # Cached Accessors
@@ -104,7 +107,6 @@ module Vessel
   def set_note      val ; if is_locked then return false end ; @note = val ; save ;      return true end
 
   def destroy ; @isDestroyed = true ; save ; end
-  def answer  ; return "! #{print.capitalize} does not answer." end
 
   # Loaders
 
@@ -205,11 +207,17 @@ module Vessel
     include ActionCollection
   end
 
+  class PassiveActions
+    include ActionCollection
+    include ActionAnswer
+  end
+
   def actions ; return Actions.new($nataniev.actor,self) end
   def parent_actions ; return ParentActions.new($nataniev.actor,self) end
   def target_actions ; return TargetActions.new($nataniev.actor,self) end
   def default_actions ; return DefaultActions.new($nataniev.actor,self) end
   def presence_actions ; return PresenceActions.new($nataniev.actor,self) end
+  def passive_actions ; return PassiveActions.new($nataniev.actor,self) end
 
   def all_actions
 

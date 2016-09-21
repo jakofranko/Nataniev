@@ -5,47 +5,28 @@ module ActionCall
 
   def call q = nil
 
-    parts = q.split(" ")
+    target = q.split(" ").first
+    params = q.sub(target,"").to_s.strip
 
-    if parts.last.to_i > 0
-      return call_id(parts.last.to_i)
-    elsif self.respond_to?("call_#{parts.first}")
-      return self.send("call_#{parts.first}",parts.last).strip
-    else
-      return "? Unknown command"
+    if target.to_i > 0
+      return call_id(target,params)
+    elsif $nataniev.make_anonym(target).class != Ghost.class
+      return call_anonym(target,params)      
     end
 
-    return $nataniev.make_vessel(q.to_i).answer
+    return "? Unknown call"
 
   end
 
-  def call_id id
+  def call_anonym instance, params
 
-    return $nataniev.make_vessel(id).answer
-
-  end
-
-  def call_my q = nil
-
-    v = find_owned_vessel(q) ; if !v then return error_target(q) end
-
-    return v.answer
+    return $nataniev.make_anonym(instance).passive_actions.answer(params)
 
   end
 
-  def call_the q = nil
+  def call_id id, params
 
-    v = find_the_vessel(q) ; if !v then return error_target(q) end
-
-    return v.answer
-
-  end
-
-  def call_a q = nil
-
-    v = find_any_vessel(q) ; if !v then return error_target(q) end
-
-    return v.answer
+    return $nataniev.make_vessel(id).passive_actions.answer(params)
 
   end
 

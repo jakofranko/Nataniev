@@ -4,6 +4,8 @@
 
 NATANIEV
   Actions
+    Document
+      Find good system
     Instances
       Ender Type # Inenterable basic type vessel
       Clone Type # Inherit characteristics of other vessel
@@ -40,8 +42,8 @@ NATANIEV
     Create bot that servers API commands
   Library
     Rename formats?
-    Move Grim to instances
-    Move Hundred to instances
+    Move Grim.en to instances
+    Move Hundred.en to instances
   
 BLINDFOLK
   Get up and running
@@ -75,6 +77,11 @@ VERRECIEL
 MARKLE
   Implement door mechanic
 
+NEOCLASSICAL
+  Rename to Plague
+  Re-render 4
+  Add authors
+
 PINO
   Insurance(DolphinInsurance?)
   AIS
@@ -88,6 +95,9 @@ PINO
   Fizzy-water maker
   Hammock
   Fuel Generator
+  Mexico Sail
+    Print documents
+    Translate crew list into Spanish
 
 OQUONIE
   Need High Res Portraits for stickers

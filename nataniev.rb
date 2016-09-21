@@ -89,14 +89,16 @@ class Nataniev
 
   end
 
-  def make_anonym id
+  def make_anonym instance
 
-    if !File.exist?("#{$nataniev_path}/vessels/#{id}.rb") then return Ghost.new end
-
-    load("#{$nataniev_path}/vessels/#{id}.rb")
-    return Object.const_get(id.capitalize).new()
-
-    return nil
+    if File.exist?("#{$nataniev_path}/vessels/#{instance}.rb")
+      load("#{$nataniev_path}/vessels/#{instance}.rb")
+      return Object.const_get(instance.capitalize).new
+    elsif File.exist?("#{$nataniev_path}/instances/instance.#{instance}/vessel.rb")
+      load "#{$nataniev_path}/instances/instance.#{instance}/vessel.rb"
+      return Object.const_get(instance.capitalize).new
+    end
+    return Ghost.new
 
   end
 
