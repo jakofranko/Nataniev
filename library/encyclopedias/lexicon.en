@@ -916,9 +916,11 @@ RAMIEL
     BAND : https://beldamrecords.bandcamp.com/album/ramiel
     ITUN : https://itunes.apple.com/us/album/ramiel-ep/id958562173
 
-RATHER NEOCLASSICAL
+LARD SHADER
   UNDE : Artwork
-  BREF : In an attempt to bring these old neoclassical paintings to life, I have rendered them through multiple vertex distortion shaders, creating these disfigured characters.
+  BREF : This is a 3d vertex shader applied on a 2d image, transforming neoclassical painted figured into plump versions of themselves.
+  LONG
+    The shader first creates a vertical displacement based on the intersection of brightness and red values at each vertex and then re-apply itself 3 times onto the resulted new topology.
   TYPE : Diary
 
 REGIONSTEAM SNOWDAYS

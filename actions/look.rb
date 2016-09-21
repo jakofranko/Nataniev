@@ -1,6 +1,9 @@
 #!/bin/env ruby
 # encoding: utf-8
 
+load "#{$nataniev_path}/system/documentation.rb"
+include Documentation
+
 module ActionLook
 
   include Action

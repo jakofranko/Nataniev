@@ -3,7 +3,7 @@
 ~ AUTH : Devine Lu Linvega
 
 @ DATE     CODE PICT TERM                 TASK                 NAME                  TEXT
-2016 09 20 ! 24   98 Rather neoclassical  Illustration         Study E
+2016 09 20 ! 24   98 Lard shader          Illustration         Study C
 2016 09 19 - 38      Oquonie              Update               4.2
 2016 09 18 - 34      Vocavularist         Update               2.6
 2016 09 17 - 28      Nataniev             Design
@@ -560,9 +560,9 @@
 2015 03 16 - 25      Alphavetist          Update               3.4
 2015 03 15 - 36      Neon hermetism       Writing
 2015 03 14 - 29  378 Donsol guide         Design               Guide
-2015 03 13 - 25  362 Rather neoclassical  Illustration         Study D
-2015 03 12 - 25  318 Rather neoclassical  Illustration         Study C
-2015 03 11 - 25  314 Rather neoclassical  Illustration         Study A
+2015 03 13 - 25  362 Lard shader          Illustration         Study B
+2015 03 12 - 25  318 Lard shader          Illustration         Study A
+2015 03 11 - 25      Lard shader          Illustration         
 2015 03 10 - 36      Donsol               Development          0
 2015 03 09 - 36      Donsol               Development          0
 2015 03 08 - 35      Donsol               Development          0

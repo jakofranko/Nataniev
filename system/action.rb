@@ -3,6 +3,12 @@
 
 module Action
 
+  def initialize q = nil, t = nil
+
+    puts "??"
+
+  end
+
   private
 
   def find_present_vessel name

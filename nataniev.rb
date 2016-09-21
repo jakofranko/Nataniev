@@ -14,6 +14,7 @@ load "#{$nataniev_path}/system/desamber.rb"
 load "#{$nataniev_path}/system/timestamp.rb"
 load "#{$nataniev_path}/system/action.rb"
 load "#{$nataniev_path}/system/corpse.rb"
+load "#{$nataniev_path}/system/documentation.rb"
 
 load "#{$nataniev_path}/vessels/ghost.rb"
 load "#{$nataniev_path}/vessels/basic.rb"
