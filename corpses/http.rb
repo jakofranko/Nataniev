@@ -64,15 +64,29 @@ module CorpseHttp
 
   # Title
 
-  def body q = nil
+  def view q = nil
 
-    return @body ? @body : "Missing body"
+    return @view ? @view : "Missing view"
 
   end
 
-  def set_body body
+  def set_view view
 
-    @body = body
+    @view = view
+
+  end
+
+  # Inline Style
+
+  def set_style style_array
+
+    @style = style_array
+
+  end
+
+  def style
+
+    return "<style>#{@style}</style>"
 
   end
 
@@ -103,9 +117,10 @@ module CorpseHttp
     #{scripts}
     #{links}
     #{title}
+    #{style}
   </head>
   <body>
-    #{body(@query)}
+    #{view}
   </body>
   #{footers}
 </html>"
