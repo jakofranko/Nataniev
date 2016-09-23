@@ -3,13 +3,15 @@
 ~ AUTH : Devine Lu Linvega
 
 @ DATE     CODE PICT TERM                 TASK                 NAME                  TEXT
+2016 09 23 - 36      Nataniev             Tools
+2016 09 22 - 39      Nataniev             Migration
 2016 09 21 ! 29  102 Wallpaper            Design               Shinji                Get in the fucking robot!
 2016 09 20 ! 24   98 Lard shader          Illustration         Study C
 2016 09 19 - 38      Oquonie              Update               4.2
 2016 09 18 - 34      Vocavularist         Update               2.6
 2016 09 17 - 28      Nataniev             Design
 2016 09 16 - 34      Hundred rabbits      Migration
-2016 09 15 - 34      Hundred rabbits      Development
+2016 09 15 - 34      Hundred rabbits      Tools
 2016 09 14 - 38      Nataniev             Maintenance
 2016 09 13 - 34      Nataniev             Migration
 2016 09 12 - 35      Pino                 Maintenance
@@ -22,7 +24,7 @@
 2016 09 05 - 00 
 2016 09 04 - 24   96 Markle               Design
 2016 09 03 - 35      Nataniev             Development
-2016 09 02 - 35      Nataniev             Development
+2016 09 02 - 35      Nataniev             Tools
 2016 09 01 - 29      Hundred rabbits      Video
 2016 08 31 - 29   86 Sailing              Photography
 2016 08 30 - 34      Markle               Development
@@ -30,8 +32,8 @@
 2016 08 28 - 38      The will the wisp    Migration
 2016 08 27 - 27      Nataniev             Design
 2016 08 26 - 00
-2016 08 25 - 39      Nataniev             Development
-2016 08 24 - 39      Nataniev             Development
+2016 08 25 - 39      Nataniev             Tools
+2016 08 24 - 39      Nataniev             Tools
 2016 08 23 - 26   77 America              Photography          San Francisco         First picture taken upon sailing to San Francisco from Vancouver.
 2016 08 22 - 35      Nataniev             Development
 2016 08 21 ! 25   75 Nervous              Modeling             Exhibit C
@@ -151,14 +153,14 @@
 2016 04 29
 2016 04 28 - 25      Hundred rabbits      Video
 2016 04 27 - 34      Lietal               Development
-2016 04 26 - 34      Lietal               Development
+2016 04 26 - 34      Lietal               Tools
 2016 04 25 - 27   23 Polygore             Modeling             Hexagore
 2016 04 24 - 27   28 Polygore             Modeling             Pentagore
 2016 04 23 - 37      Lietal               Linguistics
 2016 04 22 - 28      Verreciel            Design
 2016 04 21 - 19      Verreciel ost        Composition
-2016 04 20 - 35      Verreciel            Development
-2016 04 19 - 29      Hundred rabbits      Development
+2016 04 20 - 35      Verreciel            Tools
+2016 04 19 - 29      Hundred rabbits      Tools
 2016 04 18 - 19      Hundred rabbits      Composition
 2016 04 17 - 25      Hundred rabbits      Video
 2016 04 16 - 37      Lietal               Linguistics
@@ -170,7 +172,7 @@
 2016 04 10 - 19      Verreciel ost        Composition
 2016 04 09 - 18      Hundred rabbits      Composition
 2016 04 08 - 18      Hundred rabbits      Composition
-2016 04 07 - 35      Hundred rabbits      Development
+2016 04 07 - 35      Hundred rabbits      Tools
 2016 04 06
 2016 04 05 - 29      Verreciel            Testing
 2016 04 04 - 29      Verreciel            Refactoring
@@ -259,9 +261,9 @@
 2016 01 12 - 28  490 Ageing               Illustration         02
 2016 01 11 ! 28  487 Ageing               Illustration         01
 2016 01 10 - 35      Verreciel            Development
-2016 01 09 - 37      Verreciel            Development
-2016 01 08 - 37      Verreciel            Development
-2016 01 07 - 37      Verreciel            Development
+2016 01 09 - 37      Verreciel            Tools
+2016 01 08 - 37      Verreciel            Tools
+2016 01 07 - 37      Verreciel            Tools
 2016 01 06 - 32      Nataniev             Development
 2016 01 05 - 32      Verreciel            Development
 2016 01 04 - 23  483 Bifurcan                                  Bifurcan Die
@@ -269,7 +271,7 @@
 2016 01 02 - 26  481 Domestic moire       Design               Pre release
 2016 01 01 - 26      Domestic moire       Design
 2015 12 31 ! 00  104 Yearly                                    MMVX
-2015 12 30 - 38      Nataniev             Development
+2015 12 30 - 38      Nataniev             Tools
 2015 12 29 - 35      Nataniev             Analytics
 2015 12 28 - 32      Den                  Prototype
 2015 12 27 - 34      Hundred rabbits      Development
@@ -278,7 +280,7 @@
 2015 12 24 - 32      Nataniev             Refactoring
 2015 12 23 - 35      Nataniev             Refactoring
 2015 12 22 - 35      Nataniev             Tools
-2015 12 21 - 38      Grimgrains           Development
+2015 12 21 - 38      Grimgrains           Tools
 2015 12 20 - 28      Hundred rabbits      Branding
 2015 12 19 - 37      Verreciel            Development
 2015 12 18 - 37      Verreciel            Tools
@@ -330,8 +332,8 @@
 2015 11 02 - 26  472 Dictionarism         Design               Diarism
 2015 11 01 ! 32  471 Code                 Linguistics          The Useless
 2015 10 31 - 32      Code                 Linguistics
-2015 10 30 - 36      Verreciel            Development
-2015 10 29 - 38      Verreciel            Development
+2015 10 30 - 36      Verreciel            Tools
+2015 10 29 - 38      Verreciel            Tools
 2015 10 28 - 39      Verreciel            Development
 2015 10 27 - 25      Verreciel            Design
 2015 10 26 - 26      Verreciel            Design
@@ -426,19 +428,19 @@
 2015 07 29 - 14      Trapezoid            Update               Reissue
 2015 07 28 ! 19  434 Trapezoid            Release              Release
 2015 07 27 - 39      Nataniev             Development
-2015 07 26 - 39      Nataniev             Development
+2015 07 26 - 39      Nataniev             Tools
 2015 07 25 - 39      Nataniev             Refactoring
 2015 07 24 - 39      Nataniev             Development
 2015 07 23 - 26      Nataniev             Design
 2015 07 22 - 19      Trapezoid            Live
-2015 07 21 - 34      Den                  Development
-2015 07 20 - 34      Den                  Development
+2015 07 21 - 34      Den                  Tools
+2015 07 20 - 34      Den                  Tools
 2015 07 19 - 34      Traumae              Linguistics
 2015 07 18 - 38      Verreciel            Development
 2015 07 17 - 36      Verreciel            Development
-2015 07 16 - 36      Verreciel            Development
+2015 07 16 - 36      Verreciel            Tools
 2015 07 15 - 25  433 Lifestyle            Photography          Everyday Carry
-2015 07 14 - 34      Verreciel            Development
+2015 07 14 - 34      Verreciel            Tools
 2015 07 13 - 32  432 Unifit               Design               Jam day 3
 2015 07 12 - 39  431 Unifit               Design               Jam day 2
 2015 07 11 - 39  271 Unifit               Design               Jam day 1
@@ -480,12 +482,12 @@
 2015 06 05 - 36      Nataniev             Development
 2015 06 04 - 25      Beldam records       Design
 2015 06 03 - 25      Beldam records       Design
-2015 06 02 - 35      Beldam records       Development
+2015 06 02 - 35      Beldam records       Tools
 2015 06 01 - 35      Beldam records       Development
 2015 05 31 - 36      Russian              Linguistics
 2015 05 30 - 39      Russian              Linguistics
-2015 05 29 - 36      Rafinograde          Development
-2015 05 28 - 36      Rafinograde          Development
+2015 05 29 - 36      Rafinograde          Tools
+2015 05 28 - 36      Rafinograde          Tools
 2015 05 27 - 35      Russian              Linguistics
 2015 05 26 - 32      Entaloneralie        Update               2.3
 2015 05 25 - 36      Hiversaires          Update               3.3
@@ -634,17 +636,17 @@
 2015 01 02 - 35      Noirca               Update               3.5
 2015 01 01 - 35      Entaloneralie        Update               2.1
 2014 12 31 ! 17  282 Beldam records       Branding             Founded Beldam recor
-2014 12 30 - 35      Noirca               Development
+2014 12 30 - 35      Noirca               Tools
 2014 12 29 - 34  260 Keyboard 468         Design               Preparing for the re
-2014 12 28 - 34      Keyboard 468         Development
-2014 12 27 - 34      Keyboard 468         Development
+2014 12 28 - 34      Keyboard 468         Tools
+2014 12 27 - 34      Keyboard 468         Tools
 2014 12 26 - 34      Keyboard 468         Prototype
 2014 12 25 - 25  299 Hypervoid            Illustration         Antipigment
 2014 12 24 - 35      Lyken                Development
-2014 12 23 - 35      Lyken                Development
+2014 12 23 - 35      Lyken                Tools
 2014 12 22 - 35      Lyken                Development
 2014 12 21 - 35      Lyken                Prototype
-2014 12 20 - 34      Dew                  Development
+2014 12 20 - 34      Dew                  Tools
 2014 12 19 - 34      Nataniev             Development
 2014 12 18 - 37      Nataniev             Update               Automate
 2014 12 17 - 37  259 Dew                  Release              Release
@@ -833,23 +835,23 @@
 2014 06 17 - 29      Ledoliel             Design
 2014 06 16 - 29      Ledoliel             Design
 2014 06 15 ! 35  293 Oquonie              Update               Nastazie
-2014 06 14 - 35      Oquonie              Development
+2014 06 14 - 35      Oquonie              Tools
 2014 06 13 - 35      Paradise
 2014 06 12 - 35      Ledoliel
 2014 06 11 - 35      Ledoliel
 2014 06 10 - 26      Ledoliel             Release              Release
 2014 06 09 - 35      Ledoliel
 2014 06 08 - 35      Nataniev             Development
-2014 06 07 - 35      Nataniev             Development
+2014 06 07 - 35      Nataniev             Tools
 2014 06 06 - 35      Ledoliel
 2014 06 05 - 35      Ledoliel
 2014 06 04 - 35      Ledoliel
 2014 06 03 - 35  118 Ledoliel                                  Space friends
 2014 06 02 - 35  117 Ledoliel                                  Strange Diplomacy
 2014 06 01 - 35      Nataniev             Development
-2014 05 31 - 35      Nataniev             Development
-2014 05 30 - 34      Traumae              Development
-2014 05 29 - 34      Traumae              Development
+2014 05 31 - 35      Nataniev             Tools
+2014 05 30 - 34      Traumae              Tools
+2014 05 29 - 34      Traumae              Tools
 2014 05 28 - 29      Serventines          Modeling             Perce                 One of the more memorable shores of {{Serventines}}, a smaller hill had its core eaten.
 2014 05 27 - 29  248 Serventines          Modeling             Snailden
 2014 05 26 - 25      Brane                Illustration
@@ -963,8 +965,8 @@
 2014 02 07 - 35  379 Oquonie              Development          And so began testing
 2014 02 06 - 35      Nataniev             Analytics
 2014 02 05 - 35      Nataniev             Update
-2014 02 04 - 39      Oquonie              Development
-2014 02 03 - 34  377 Nataniev             Development          From Mediatemple to
+2014 02 04 - 39      Oquonie              Tools
+2014 02 03 - 34  377 Nataniev             Development
 2014 02 02 - 29      Wallpaper            Illustration
 2014 02 01 - 39      Nataniev             Update
 2014 01 31 - 29  383 Flowers              Illustration         Nestorine
@@ -1024,7 +1026,7 @@
 2013 12 08 - 34      Oquonie              Design
 2013 12 07 - 34      Oquonie              Design
 2013 12 06 - 34      Oquonie              Design
-2013 12 05 - 39      Mute                 Development
+2013 12 05 - 39      Mute                 Tools
 2013 12 04 - 39      Mute                 Development
 2013 12 03 - 28      Nataniev             Update
 2013 12 02 - 36      Traumae              Linguistics
@@ -1042,10 +1044,10 @@
 2013 11 20 - 25      Verreciel            Prototype
 2013 11 19 - 25      Verreciel            Prototype
 2013 11 18
-2013 11 17 - 39      Nataniev             Development
-2013 11 16 - 39      Nataniev             Development
-2013 11 15 - 39      Nataniev             Development
-2013 11 14 - 39      Nataniev             Development
+2013 11 17 - 39      Nataniev             Tools
+2013 11 16 - 39      Nataniev             Tools
+2013 11 15 - 39      Nataniev             Tools
+2013 11 14 - 39      Nataniev             Tools
 2013 11 13 - 39      Nataniev             Development
 2013 11 12 - 39      Nataniev             Development
 2013 11 11 - 39      Nataniev             Development
@@ -1096,7 +1098,7 @@
 2013 09 27 - 15      Telekinetic          Composition
 2013 09 26 - 36      Nataniev             Refactoring
 2013 09 25 - 36      Nataniev             Development
-2013 09 24 - 36      Nataniev             Development
+2013 09 24 - 36      Nataniev             Tools
 2013 09 23 - 18      Telekinetic          Composition
 2013 09 22 - 19      Telekinetic          Live                 Indie Dance Party -
 2013 09 21 - 18  358 Telekinetic          Composition          Leap Motion Controll
@@ -1207,7 +1209,7 @@
 2013 06 08 - 35      Hiversaires          Refactoring
 2013 06 07 - 35      Hiversaires          Refactoring
 2013 06 06 - 35      Nataniev             Design
-2013 06 05 - 35      Nataniev             Development
+2013 06 05 - 35      Nataniev             Tools
 2013 06 04 - 35      Nataniev             Design
 2013 06 03 - 35      Nataniev             Design
 2013 06 02 - 29  236 Entaloneralie        Release              Release
@@ -1279,7 +1281,7 @@
 2013 03 28 - 35      Hiversaires          Development
 2013 03 27 - 38  215 Hiversaires          Testing              Devlog 25
 2013 03 26 - 29      Hiversaires          Design
-2013 03 25 - 37      Dictionaery          Development
+2013 03 25 - 37      Dictionaery          Tools
 2013 03 24 - 37      Nataniev             Design
 2013 03 23 - 19      Hiversaires          Composition
 2013 03 22 - 17      Hiversaires          Composition
@@ -1294,7 +1296,7 @@
 2013 03 13 - 36      Hiversaires          Testing
 2013 03 12 - 33  213 Hiversaires          Testing              Devlog 23
 2013 03 11 - 35  212 Hiversaires          Testing              Devlog 22
-2013 03 10 - 38      Nataniev             Development
+2013 03 10 - 38      Nataniev             Tools
 2013 03 09 - 23  211 Japan                Photography          Sand Storm in Tokyo
 2013 03 08 - 28  210 Hiversaires          Design               Devlog 21
 2013 03 07 - 28  200 Hiversaires          Design               Devlog 20
@@ -1359,20 +1361,20 @@
 2013 01 07
 2013 01 06 - 25  166 Japan                Photography          Mt. Fuji
 2013 01 05
-2013 01 04 - 34      Traumae              Development
-2013 01 03 - 35      Traumae              Development
-2013 01 02 - 34      Traumae              Development
+2013 01 04 - 34      Traumae              Tools
+2013 01 03 - 35      Traumae              Tools
+2013 01 02 - 34      Traumae              Tools
 2013 01 01 - 27  163 Infrared             Photography          Tokyo Infrared II
 2012 12 31 - 39      Nataniev             Development
 2012 12 30 - 39      Traumae              Linguistics
 2012 12 29 - 27      Traumae              Linguistics
 2012 12 28 - 39      Traumae              Linguistics
-2012 12 27 - 39      Nataniev             Development
+2012 12 27 - 39      Nataniev             Tools
 2012 12 26
 2012 12 25
 2012 12 24
 2012 12 23 - 35      Nataniev             Design
-2012 12 22 - 35      Nataniev             Development
+2012 12 22 - 35      Nataniev             Tools
 2012 12 21 - 35      Nataniev             Development
 2012 12 20 - 39      Traumae              Documentation
 2012 12 19 - 39      Traumae              Cryptography
@@ -1466,20 +1468,20 @@
 2012 09 22 - 37      Nataniev             Development
 2012 09 21 - 37      Nataniev             Development
 2012 09 20 - 32      Nataniev             Tools
-2012 09 19 - 37      Nataniev             Development
+2012 09 19 - 37      Nataniev             Tools
 2012 09 18 - 28      Ehrivevnv Studies    Composition
 2012 09 17 - 35      Ehrivevnv Studies    Composition
 2012 09 16 - 35      Ehrivevnv Studies    Composition
 2012 09 15 - 19      Collected works      Composition
 2012 09 14 - 19      Collected works      Composition
 2012 09 13 - 18      To The Aeons Hell    Composition
-2012 09 12 - 38      Nataniev             Development
+2012 09 12 - 38      Nataniev             Tools
 2012 09 11
 2012 09 10 - 25      Waiting for horus    Design
 2012 09 09
 2012 09 08
 2012 09 07 - 37      Nataniev             Development
-2012 09 06 - 37      Nataniev             Development
+2012 09 06 - 37      Nataniev             Tools
 2012 09 05 - 37      Nataniev             Tools
 2012 09 04 - 37      Nataniev             Development
 2012 09 03 - 35      Waiting for horus    Design
@@ -1514,10 +1516,10 @@
 2012 08 05 - 32      Nataniev             Development
 2012 08 04
 2012 08 03 - 28   26 Artwork              Illustration         Neoneve Afloat Revis
-2012 08 02 - 32      Nataniev             Development
+2012 08 02 - 32      Nataniev             Tools
 2012 08 01 - 39      Nataniev             Development
-2012 07 31 - 35      Nataniev             Development
-2012 07 30 - 35      Nataniev             Development
+2012 07 31 - 35      Nataniev             Tools
+2012 07 30 - 35      Nataniev             Tools
 2012 07 29 - 26      Nataniev             Development
 2012 07 28 - 19      Mixtape              Mixing               Alife
 2012 07 27
@@ -1545,7 +1547,7 @@
 2012 07 05 - 35      Nataniev             Design
 2012 07 04 - 19      To The Aeons Hell    Composition
 2012 07 03 - 39      Nataniev             Design
-2012 07 02 - 38      Nataniev             Development
+2012 07 02 - 38      Nataniev             Tools
 2012 07 01 - 35      Pico battle          Refactoring          Pico Battle Update
 2012 06 30
 2012 06 29
@@ -1554,7 +1556,7 @@
 2012 06 26 - 18      To The Aeons Hell    Composition
 2012 06 25 - 17      Vetetrandes lettres  Illustration
 2012 06 24
-2012 06 23 - 35      Nataniev             Development
+2012 06 23 - 35      Nataniev             Tools
 2012 06 22 - 18      To The Aeons Hell    Composition
 2012 06 21 - 18      To The Aeons Hell    Composition
 2012 06 20 - 25      Pico battle          Design
@@ -1685,7 +1687,7 @@
 2012 02 16 - 25      Waiting for horus    Design
 2012 02 15 - 25      Waiting for horus    Design
 2012 02 14 - 25      Traumae              Typography
-2012 02 13 - 35      Nataniev             Development
+2012 02 13 - 35      Nataniev             Tools
 2012 02 12 ! 17   27 Es gulf sunflowers   Release              Es Gulfs'Sunflowers
 2012 02 11 - 19      Es gulf sunflowers   Live                 Toy Company - Jack &
 2012 02 10 - 15      Mixtape              Mixing               Ghosts
@@ -1704,7 +1706,7 @@
 2012 01 28 - 25      Collegiennes         Design
 2012 01 27 - 25      Collegiennes         Design
 2012 01 26
-2012 01 25 - 35      Nataniev             Development
+2012 01 25 - 35      Nataniev             Tools
 2012 01 24
 2012 01 23 - 25   24 Artwork              Illustration         Veins of brambles
 2012 01 22 - 15      Es gulf sunflowers   Composition
@@ -1831,7 +1833,7 @@
 2011 09 23 - 25      Traumae              Documentation
 2011 09 22 - 25      Artwork              Illustration
 2011 09 21 - 25      Artwork              Illustration
-2011 09 20 - 35      Nataniev             Development
+2011 09 20 - 35      Nataniev             Tools
 2011 09 19 - 19
 2011 09 18 - 15      The Sixth Season     Composition
 2011 09 17 - 15      The Sixth Season     Composition
@@ -1855,7 +1857,7 @@
 2011 08 30
 2011 08 29
 2011 08 28 - 35      Nataniev             Development
-2011 08 27 - 35      Nataniev             Development
+2011 08 27 - 35      Nataniev             Tools
 2011 08 26 - 25   17 Aliceffekt           Illustration         Aliceffekt Shirt I
 2011 08 25 - 35      Nataniev             Development
 2011 08 24 - 35      Neauismetica         Writing
@@ -1966,11 +1968,11 @@
 2011 05 11 - 19      Vermillionth         Rehearsal
 2011 05 10 - 35      Traumae              Documentation
 2011 05 09 - 19      Vermillionth         Composition
-2011 05 08 - 35      Nataniev             Development
+2011 05 08 - 35      Nataniev             Tools
 2011 05 07
-2011 05 06 - 35      Nataniev             Development
+2011 05 06 - 35      Nataniev             Tools
 2011 05 05
-2011 05 04 - 35      Nataniev             Development
+2011 05 04 - 35      Nataniev             Tools
 2011 05 03 - 35      Nataniev             Development
 2011 05 02 - 35      Nataniev             Design
 2011 05 01 - 35      Nataniev             Tools
@@ -2109,9 +2111,9 @@
 2010 12 19 - 35   49 Yearly               Writing              MMX
 2010 12 18 - 19      To The Aeons Hell    Live                 Toy Company - Montre
 2010 12 17 - 19      To The Aeons Hell    Rehearsal
-2010 12 16 - 39      Nataniev             Development
-2010 12 15 - 39      Nataniev             Development
-2010 12 14 - 39      Nataniev             Development
+2010 12 16 - 39      Nataniev             Tools
+2010 12 15 - 39      Nataniev             Tools
+2010 12 14 - 39      Nataniev             Tools
 2010 12 13 - 26      Nataniev             Prototype
 2010 12 12
 2010 12 11 - 25   93 Vambits              Design               Vambits, Last Gen
@@ -2160,7 +2162,7 @@
 2010 10 29 - 35      Nataniev             Development
 2010 10 28 - 25      Siseon
 2010 10 27
-2010 10 26 - 35      Nataniev             Development
+2010 10 26 - 35      Nataniev             Tools
 2010 10 25 - 35      Pico                 Design
 2010 10 24 - 25      Pico                 Design
 2010 10 23 - 29
@@ -2221,8 +2223,8 @@
 2010 08 29 - 15      Mixtape              Mixing               Wave
 2010 08 28 - 25      Nataniev             Development
 2010 08 27
-2010 08 26 - 35      Nataniev             Development
-2010 08 25 - 35      Nataniev             Development
+2010 08 26 - 35      Nataniev             Tools
+2010 08 25 - 35      Nataniev             Tools
 2010 08 24 - 25      Merure               Design
 2010 08 23 - 35      Nataniev             Design
 2010 08 22 - 25      Pico
