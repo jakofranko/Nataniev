@@ -50,7 +50,7 @@ module CorpseHttp
 
   # Title
 
-  def title
+  def title q = nil
 
     return @title ? "<title>#{@title}</title>" : "<title>Missing title</title>"
 
@@ -64,7 +64,7 @@ module CorpseHttp
 
   # Title
 
-  def body
+  def body q = nil
 
     return @body ? @body : "Missing body"
 
@@ -105,7 +105,7 @@ module CorpseHttp
     #{title}
   </head>
   <body>
-    #{body}
+    #{body(@query)}
   </body>
   #{footers}
 </html>"

@@ -35,9 +35,9 @@
 0000-01351-00051-BASIC-20160914155232 computer
 0000-01151-00051-BASIC-20160915095316 test
 0000-00014-00051-BASIC-20160916151032 dog
-
-
-
+0000-00006-01912-BASIC-20160921160934 dress
+0000-00006-01912-BASIC-20160921161903 starship                                                                                                       first mate is beautiful
+0000-00033-01912-BASIC-20160921161847 mate           first
 
 
 
@@ -1915,7 +1915,7 @@
 0000-01907-02388-BASIC-20160617085824 bloom          bromeliad      ECHO watch AND create a juicy pineapple                                          Mipmip.
 1010-01883-01713-BASIC-20160617085824 quest          marthas        IF has my keys THEN                                                              To be continued soon.
 0000-00789-05960-BASIC-20160617085824 waves          path                                                                                            A semi solid tangle of carrier waves modulates along the river
-1000-00001-00003-BASIC-20160617085824 vessel
+0000-00006-00003-BASIC-20160921162037 woman
 1000-01640-01556-BASIC-20160617085824 corridor       dark                                                                                            there is a set of descending stairs on the left and ascending stairs on the right. the right set is swallowed in darkness
 1000-00942-01898-BASIC-20160617085824 miracle                                                                                                        Ma sei solo
 1000-00835-00100-BASIC-20160617085824 pictures                                                                                                       You are now inside the pictures. There is an old house to your left
