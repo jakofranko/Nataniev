@@ -52,7 +52,7 @@ module CorpseHttp
 
   def title
 
-    return @title ? "<title>#{@title}</title>" : "Missing title"
+    return @title ? "<title>#{@title}</title>" : "<title>Missing title</title>"
 
   end
 
