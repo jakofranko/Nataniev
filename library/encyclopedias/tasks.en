@@ -3,8 +3,6 @@
 ~ AUTH : Devine Lu Linvega
 
 NATANIEV
-  Branding 
-    Sublime theme
   Actions
     Documentation
       Find good system
@@ -45,6 +43,9 @@ NATANIEV
     Rename formats?
     Move Grim.en to instances
     Move Hundred.en to instances
+  Corpse
+    Move html error to corpse
+    Beholder is looking for vessel.corpse
   
 BLINDFOLK
   Get up and running

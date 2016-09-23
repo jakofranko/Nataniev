@@ -3,6 +3,8 @@
 
 module CorpseHttp
 
+  include Corpse
+
   def metas
 
     return "<meta charset='UTF-8'>#{@metas}"
@@ -50,7 +52,7 @@ module CorpseHttp
 
   def title
 
-    return "<title>#{@title}</title>"
+    return @title ? "<title>#{@title}</title>" : "Missing title"
 
   end
 
@@ -64,7 +66,7 @@ module CorpseHttp
 
   def body
 
-    return @body
+    return @body ? @body : "Missing body"
 
   end
 

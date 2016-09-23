@@ -3,7 +3,15 @@
 
 module Corpse
 
-  def initialize
+  def initialize q = nil
+
+    @query = q
+    
+  end
+
+  def result
+
+    return "Shapeless."
 
   end
 

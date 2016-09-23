@@ -3,28 +3,28 @@
 
 # You see nothing, enter the nothing.
 
-begin
+# begin
 
 require_relative "nataniev.rb"
 
 $nataniev = Nataniev.new
 puts $nataniev.answer(ARGV.join(" "))
 
-rescue Exception
+# rescue Exception
 
-  error = $@
-  errorCleaned = error.to_s.gsub(", ","<br />").gsub("`","<b>").gsub("'","</b>").gsub("\"","").gsub("/var/www/wiki.xxiivv/public_html/","")
-  errorCleaned = errorCleaned.gsub("[","\n").gsub("]","")
+#   error = $@
+#   errorCleaned = error.to_s.gsub(", ","<br />").gsub("`","<b>").gsub("'","</b>").gsub("\"","").gsub("/var/www/wiki.xxiivv/public_html/","")
+#   errorCleaned = errorCleaned.gsub("[","\n").gsub("]","")
 
-  html = ""
-  html += "<style>
-  body {background:black;margin:0px;padding:0px}
-  pre { color:white;font-family:Monaco,Courier,Mono; font-size:12px;padding: 100px;border-bottom: 1px dotted #555}
-  pre b { color:#777}
-  pre a { color:#72dec2; text-decoration:none}
-  </style>"
-  error = $!.to_s.gsub("`","<b>").gsub("'","</b>")
-  html += "<body style=''><pre><b>Error</b>     #{error}<br/><b>Location</b>  "+errorCleaned+"<br /><b>Report</b>    Please, report this error to <a href='https://twitter.com/neauoire'>@neauoire</a><br /></pre></body>"
-  puts html
+#   html = ""
+#   html += "<style>
+#   body {background:black;margin:0px;padding:0px}
+#   pre { color:white;font-family:Monaco,Courier,Mono; font-size:12px;padding: 100px;border-bottom: 1px dotted #555}
+#   pre b { color:#777}
+#   pre a { color:#72dec2; text-decoration:none}
+#   </style>"
+#   error = $!.to_s.gsub("`","<b>").gsub("'","</b>")
+#   html += "<body style=''><pre><b>Error</b>     #{error}<br/><b>Location</b>  "+errorCleaned+"<br /><b>Report</b>    Please, report this error to <a href='https://twitter.com/neauoire'>@neauoire</a><br /></pre></body>"
+#   puts html
 
-end
+# end
