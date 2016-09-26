@@ -89,7 +89,6 @@ BELDAM RECORDS
   TYPE : Portal
   LINK
     BAND : https://beldamrecords.bandcamp.com
-    SNDC : https://soundcloud.com/beldam-records
     TWTR : https://twitter.com/beldamrecords
 
 BIFURCAN
@@ -1561,9 +1560,10 @@ SHORTHAND
 
 CLOCK
   UNDE : Tools
-  BREF : On {{XXIIVV|Nataniev}}, Time is written using a variance of the {{Internet Time|https://en.wikipedia.org/wiki/Swatch_Internet_Time}} with 4 digits instead of the Swatch Beat's 3 digits system. The system has no timezone and no daylight saving-time. Read more on {{Desamber}}.
+  BREF : On {{XXIIVV|Nataniev}}, Time is written using a variance of the {{Internet Time|https://en.wikipedia.org/wiki/Swatch_Internet_Time}} with 4 digits instead of the Swatch Beat's 3 digits system.
   LONG
-    - The current time is {{!clock}}
+    * The current time is {{!clock}}
+    & The system has no timezone and no daylight saving-time. Read more on {{Desamber}}.
   LINK
     GITH : https://github.com/XXIIVV/Nataniev/blob/master/system/clock.rb
 
