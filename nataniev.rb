@@ -10,9 +10,6 @@ class Nataniev
     @time    = Time.new
     @path    = File.expand_path(File.join(File.dirname(__FILE__), "/"))
 
-    load "#{@path}/system/console.rb"
-
-    @console = Console.new
     @id      = nil
     @player  = nil
     @parade  = nil 
@@ -23,7 +20,13 @@ class Nataniev
   attr_accessor :time
   attr_accessor :path
   attr_accessor :actor
-  attr_accessor :console
+
+  def console
+    
+    load "#{@path}/system/console.rb"
+    return Console.new
+
+  end
 
   def parade  ; @parade = !@parade ? Di.new("paradise") : @parade ; return @parade  end
 
