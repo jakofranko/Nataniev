@@ -106,14 +106,4 @@ module ActionWarp
 
   end
 
-  # Etc..
-
-  def warp_randomly q = nil
-
-    v = $nataniev.find_random_vessel ; if !v then return error_random end
-
-    return warp(v.id)
-    
-  end
-
 end

@@ -8,6 +8,7 @@
 require_relative "nataniev.rb"
 
 $nataniev = Nataniev.new
+$nataniev.start
 puts $nataniev.answer(ARGV.join(" "))
 
 # rescue Exception

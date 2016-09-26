@@ -104,3 +104,14 @@ VOYNICH
   Redo
   
 - Wireheading
+
+
+
+def cache var, val
+
+instance_variable_set("@__#{var}", val)
+return cache(__callee__, 500)
+
+p @__answer
+return "!!"
+end

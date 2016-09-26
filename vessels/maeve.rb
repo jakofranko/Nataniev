@@ -26,6 +26,8 @@ class Maeve # TODO
 
   def act
 
+    return ".."
+
     maeve = $nataniev.make_vessel(50)
 
     maeve.visible_vessels.each do |vessel|
