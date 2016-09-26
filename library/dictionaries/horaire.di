@@ -3,6 +3,8 @@
 ~ AUTH : Devine Lu Linvega
 
 @ DATE     CODE PICT TERM                 TASK                 NAME                  TEXT
+2015 09 25 - 27      Nataniev             Design
+2016 09 24 - 35      Pino                 Maintenance
 2016 09 23 - 36      Nataniev             Tools
 2016 09 22 - 39      Nataniev             Migration
 2016 09 21 ! 29  102 Wallpaper            Design               Shinji                Get in the fucking robot!
@@ -504,9 +506,9 @@
 2015 05 14 ! 25  427 Netherlands          Photography          Utrecht
 2015 05 13 - 27  425 Astratas             Illustration         Lines B
 2015 05 12 - 27  415 Astratas             Illustration         Lines A
-2015 05 11 ! 27  409 Ar moire             Illustration         Pattern IIII
+2015 05 11 - 27  409 Ar moire             Illustration         Pattern IIII
 2015 05 10 - 27  408 Ar moire             Illustration         Pattern III
-2015 05 09 - 27  400 Ar moire             Illustration         Pattern II
+2015 05 09 ! 27  400 Ar moire             Illustration         Pattern II
 2015 05 08 - 27  397 Ar moire             Illustration         Pattern I
 2015 05 07 ! 27  394 Time alloy           Illustration         Vertaline
 2015 05 06 - 27  393 Time alloy           Illustration         Opaline

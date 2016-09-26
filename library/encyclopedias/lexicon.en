@@ -94,7 +94,10 @@ BELDAM RECORDS
 
 BIFURCAN
   UNDE : Mobile
-  BREF : Named after a Borges short of the {{same name|http://en.wikipedia.org/wiki/The_Garden_of_Forking_Paths}}, similarly to {{Entaloneralie}}, this application is a cryptic watchface for iOS. Every second, the labyrinth reorganize itself to display the time with its twists and turns. It takes a little practice to be able to see the patterns in the lines. Clicking on the screen will unveil the time as seen in this {{video|https://www.youtube.com/watch?v=HzXIJpzPB6c}}. The original application was created in 30 minutes for a micro jam. If you have a {{Pebble Watch|https://getpebble.com}}, you can download it as a {{watchface|http://www.mypebblefaces.com/apps/10183/7055/}}, the Pebble C script was written by Chase Colburn and is also available on {{Github|https://github.com/chasecolburn/line-maze}}. The screensaver version was done by {{Tekgo|http://tekgo.org}} and was also added to the source code.
+  BREF : Named after a Borges short of the {{same name|http://en.wikipedia.org/wiki/The_Garden_of_Forking_Paths}}, similarly to {{Entaloneralie}}, this application is a cryptic watchface for iOS. 
+  LONG
+    & Every second, the labyrinth reorganize itself to display the time with its twists and turns. It takes a little practice to be able to see the patterns in the lines. Clicking on the screen will unveil the time as seen in this {{video|https://www.youtube.com/watch?v=HzXIJpzPB6c}}. The original application was created in 30 minutes for a micro jam. 
+    & If you have a {{Pebble Watch|https://getpebble.com}}, you can download it as a {{watchface|http://www.mypebblefaces.com/apps/10183/7055/}}, the Pebble C script was written by Chase Colburn and is also available on {{Github|https://github.com/chasecolburn/line-maze}}. The screensaver version was done by {{Tekgo|http://tekgo.org}} and was also added to the source code.
   LINK
     ITUN : https://itunes.apple.com/ca/app/bifurcan/id737264896
     GITH : https://github.com/Echorridoors/Bifurcan
@@ -129,7 +132,6 @@ CAMILARE
     * Dictionary
     & This is a list of the most commonly used characters in {{Oquonie}}.
     & <style>#camilare { border:0px}#camilare td { padding:0px 15px; vertical-align:middle; border:0px; font-size:18px;}#camilare img { margin:0px; width:100px;}</style><table id='camilare'><tr>	<td><img src='content/lexicon/camilare.Nestorine.png'/></td><td>Nestorine<br/><small>Nestorine</small></td>	<td><img src='content/lexicon/camilare.Nephtaline.png'/></td><td>Nephtaline<br/><small>Nephtaline</small></td>	<td><img src='content/lexicon/camilare.Necomedre.png'/></td><td>Necomedre<br/><small>Necomedre</small></td></tr><tr>	<td><<img src='content/lexicon/camilare.Neomine.png'/></td><td>Neomine<br/><small>Neomine</small></td>	<td><img src='content/lexicon/camilare.Door.png'/></td><td>Dialocie<br/><small>Door</small></td>	<td><img src='content/lexicon/camilare.Special.png'/></td><td>Paradiacie<br/><small>Door Special</small></td></tr><tr>	<td><img src='content/lexicon/camilare.Teleport.png'/></td><td>Zolenie<br/><small>Teleport</small></td>	<td><img src='content/lexicon/camilare.Correct.png'/></td><td>Hoathiste<br/><small>Correct/Yes</small></td>	<td><img src='content/lexicon/camilare.Incorrect.png'/></td><td>Gemaniste<br/><small>Incorrect/No</small></td></tr><tr>	<td><img src='content/lexicon/camilare.Unlocked.png'/></td><td>Ecrine<br/><small>Unlocked</small></td>	<td><img src='content/lexicon/camilare.Locked.png'/></td><td>Ednasene<br/><small>Locked</small></td>	<td><img src='content/lexicon/camilare.Help.png'/></td><td>Celpadmale<br/><small>Help</small></td></tr><tr>	<td><img src='content/lexicon/camilare.Sound.png'/></td><td>Aohzaille<br/><small>Sound</small></td>	<td><img src='content/lexicon/camilare.Guide.png'/></td><td>Mikethale<br/><small>Guide</small></td>	<td><img src='content/lexicon/camilare.Inside.png'/></td><td>Casarmate<br/><small>Inside</small></td></tr><tr>	<td><img src='content/lexicon/camilare.Outside.png'/></td><td>Carmate<br/><small>Outside</small></td>	<td><img src='content/lexicon/camilare.Key.png'/></td><td>Emetegisenete<br/><small>Key</small></td>	<td><img src='content/lexicon/camilare.Friend.png'/></td><td>Zorgiene<br/><small>Friend</small></td></tr><tr>	<td><img src='content/lexicon/camilare.Foe.png'/></td><td>Oquonie<br/><small>Foe</small></td>	<td><img src='content/lexicon/camilare.Pillar.png'/></td><td>Den<br/><small>Pillar</small></td>	<td><img src='content/lexicon/camilare.Nemedique.png'/></td><td>Nemedique<br/><small>Nemedique</small></td></tr></table>
-
 
 CENOTE
   UNDE : Desktop
@@ -782,12 +784,12 @@ OQUONIE GUIDE
   LONG
     * That darn shark
     & You have found a locked red door, {*a red pillar thing*} appeared next to one of the town's gates, you have been turned back into the first character, {{Necomedre|Oquonie universe}}. What do?
-    % content/lexicon/oquonie guide.oquonie.guide.png
+    % oquonie guide
     ? Many doors, across the worlds, were locked. You have gone through the levels without paying any mind to them but now you will need to find each world's {{Red Pillar|Oquonie universe}} to unlock the door. My guess would be that you are in town and do not know where to proceed next. So this is my tip to you.
     & The simplest pillar, if you are {{Necomedre|Oquonie universe}}, is found in the second world, {{Nephtaline|Oquonie universe}}. You need 3 {{tokens|Oquonie universe}}, one can be found in the {{Necomedre World|Oquonie universe}}, the second, in town by the {{ramen guy|Oquonie universe}} near the landing, and the third, within the {{Nephtaline World|Oquonie universe}}.
     & Once your have turned into {{Nemedique|Oquonie universe}}, you will be able to open a locked door by the owl, and collect the second pillar.
     & Good luck.
-    % content/lexicon/oquonie guide.oquonie.pillar.png
+    % oquonie pillar
 
 OQUONIE UNIVERSE
   UNDE : Oquonie
@@ -795,26 +797,26 @@ OQUONIE UNIVERSE
   LONG
     * Playable
     ? Necomedre
-    % content/lexicon/oquonie universe.oquonie.char1.png
+    % oquonie.char1
     ? Nephtaline
-    % content/lexicon/oquonie universe.oquonie.char2.png
+    % oquonie.char2.png
     ? Neomine
-    % content/lexicon/oquonie universe.oquonie.char3.png
+    % oquonie.char3.png
     ? Nestorine
-    % content/lexicon/oquonie universe.oquonie.char4.png
+    % oquonie.char4
     ? Nemedique
-    % content/lexicon/oquonie universe.oquonie.char5.png
+    % oquonie.char5
     * NPCs
     ? Owl
-    % content/lexicon/oquonie universe.oquonie.guide.png
+    % oquonie.guide
     ? Ramen
-    % content/lexicon/oquonie universe.oquonie.ramen.png
+    % oquonie.ramen
     ? Shark
-    % content/lexicon/oquonie universe.oquonie.shark.png
+    % oquonie.shark
     ? Audio
-    % content/lexicon/oquonie universe.oquonie.audio.png
+    % oquonie.audio
     ? Pillar
-    % content/lexicon/oquonie universe.oquonie.pillar.png
+    % oquonie.pillar
 
 MARKLE
   UNDE : Mobile
@@ -1212,7 +1214,8 @@ NATANIEV
     & {{Horaire}} is a logbook that holds {_daily creative output entries_}, logged for each day since April 2006. This rigid lifestyle expriment is aiming at discerning and predicting the creativity patterns of {{Devine Lu Linvega}}. The latest visualisation of these logs can be seen {{here|Horaire}}.
     * Multiplayer Operating System
     & The Interactive Fiction client is currently being developed to allow anyone to enter, explore and build within the library. The new version will allow anyone to deploy their own instance of {{Nataniev}}, and travel from theirs, to this one seemlessly.
-    ? {_"In a little while you will be alone in shoreless space, to wander its limitless solitudes without friend or comrade forever--for you will remain a thought, the only existent thought, and by your nature inextinguishable, indestructible. "_} - Mark Twain, {{the mysterious Stranger|http://en.wikipedia.org/wiki/The_Mysterious_Stranger}}
+    ? In a little while you will be alone in shoreless space, to wander its limitless solitudes without friend or comrade forever--for you will remain a thought, the only existent thought, and by your nature inextinguishable, indestructible.
+    & From Mark Twain's {{the mysterious Stranger|http://en.wikipedia.org/wiki/The_Mysterious_Stranger}}
   LINK
     GITH : https://github.com/XXIIVV/Nataniev
 
@@ -1553,7 +1556,7 @@ SHORTHAND
   LONG
     * The idea is simple, writing faster. 
     & I played with different ideas and this is the system that worked best for me, it’s an inspiration and a mixture of already existing shorthand systems that fits my writing style.
-    % content/lexicon/shorthand.alphabet.png
+    % shorthand alphabet
     & Simple enough, now most letters are transformed into a single stroke shape that flows and combines to form shorter words, that can be written faster.
 
 CLOCK
@@ -1571,19 +1574,11 @@ DESAMBER
     * Today is {{!desamber}}
     & The {_Equal Month calendar_} format has 13 months and so the number of each of these months are flected into their names.
     & {*Every month is exactly 28 days long*}, and the 365th day of the year is the {_Year Day_}, followed by the {_Leap Day_} on leap years. 
-    - 1, Unesamber
-    - 8, Octesamber
-    - 2, Dutesamber
-    - 9, Novesamber
-    - 3, Trisesamber
-    - 10, {{Desamber}}
-    - 4, Tetresamber
-    - 11, Undesamber
-    - 5, Pentesamber
-    - 12, Dodesamber
-    - 6, Hexesamber
-    - 13, Tridesamber
-    - 7, Sevesamber
+    # 01 Unesamber      02 Dutesamber     03 Trisesamber
+    # 04 Tetresamber    05 Pentesamber    06 Hexesamber
+    # 07 Sevesamber     08 Octesamber     09 Novesamber
+    # 10 Desamber       11 Undesamber     12 Dodesamber
+    # 13 Tridesamber
   LINK
     GITH : https://github.com/XXIIVV/Nataniev/blob/master/system/desamber.rb
 

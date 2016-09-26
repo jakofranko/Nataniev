@@ -76,33 +76,51 @@ end
 
 class Array
 
+  def runes_collection
+
+    return {
+      "&" => {"tag" => "p"},
+      "-" => {"tag" => "list", "stash" => "true"},
+      "#" => {"tag" => "code", "stash" => "true"},
+      "?" => {"tag" => "nt"},
+      "*" => {"tag" => "h2"},
+      "+" => {"tag" => "hs"}
+    }
+    
+  end
+
   def runes
 
     html = ""
     prev = ""
+    collection = runes_collection
+    stash = ""
+    tag = ""
+
     self.each do |line|
       rune = line[0,1]
       text = line.sub(rune,"").strip
-      html += prev == "-" && rune != "-" ? "<hr class='spacer'/>" : ""
-      case rune
-      when "&"
-        html += "<p>#{text}</p>"
-      when "="
-        html += "<l class='head'>#{text}</l>"
-      when "-"
-        html += "<l>#{text}</l>"
-      when "?"
-        html += "<p class='note'>#{text}</p>"
-      when "*"
-        html += "<h2>#{text}</h2>"
-      when "#"
-        html += "<pre>#{text}</pre>"
-      when "%" # TODO: Allow other formats, such as video and youtube links!
-        html += "<img src='#{text}'/>"
-      else
-        html += "[??]#{text}[??]"
+      tag  = collection[rune] ? collection[rune]['tag'] : "unknown"
+
+      if rune == "%" then html += Media.new("generic",text).to_html ; next end
+
+      if stash != "" && rune != prev
+        html += "<#{tag}>#{stash}</#{tag}>"
+        stash = ""
       end
+
+      if collection[rune]["stash"]
+        stash += "#{text}<br />"
+      else
+        html += "<#{tag}>#{text}</#{tag}>"
+      end
+
       prev = rune
+    end
+
+    if stash != ""
+      html += "<#{tag}>#{stash}</#{tag}>"
+      stash = ""
     end
 
     return html
