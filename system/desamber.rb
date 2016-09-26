@@ -63,8 +63,8 @@ class Desamber
 
   end
 
-  def default
-  
+  def to_s
+
     return "#{@dict[equalMonth-1]} #{equalDay}, #{year}"
 
   end

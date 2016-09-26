@@ -27,16 +27,10 @@ class Clock
 
   end
 
-  def format_normal
+  def to_s
 
     return timeStr[0,3]+":"+timeStr[3,3]
 
-  end
-
-  def default
-
-    return format_normal
-    
   end
 
 end

@@ -80,8 +80,8 @@ class String
 
   def parser macro
 
-    if macro == "!clock" then return "<a href='/Clock'>#{Clock.new().default}</a>" end
-    if macro == "!desamber" then return "<a href='/Desamber'>#{Desamber.new().default}</a>" end
+    if macro == "!clock" then return "<a href='/Clock'>#{Clock.new}</a>" end
+    if macro == "!desamber" then return "<a href='/Desamber'>#{Desamber.new}</a>" end
 
     if macro.include?("|")
       if macro.split("|")[1].include?("http") then return "<a href='"+macro.split("|")[1]+"' class='external'>"+macro.split("|")[0]+"</a>"
