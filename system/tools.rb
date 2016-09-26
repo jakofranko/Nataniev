@@ -121,7 +121,7 @@ class Array
       text = line.sub(rune,"").strip
       tag  = collection[rune] ? collection[rune]['tag'] : "unknown"
 
-      if rune == "%" then html += Media.new("generic",text).to_html ; next end
+      if rune == "%" then html += Media.new("generic",text).to_s ; next end
 
       if stash != "" && rune != prev
         html += "<#{tag}>#{stash}</#{tag}>"

@@ -160,7 +160,7 @@ class Media
 
   end
 
-  def to_html
+  def to_s
 
     if File.exist?("/var/www/client.oscean/media/#{@cat}/#{@id}.mp4")
       return "<video #{@class ? "class='#{@class}'" : ""} autoplay loop><source src='/media/#{@cat}/#{@id}.mp4' type='video/mp4'>Your browser does not support the video tag.</video>"
