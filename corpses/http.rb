@@ -5,6 +5,8 @@ module CorpseHttp
 
   include Corpse
 
+  # Metas
+
   def metas
 
     return "<meta charset='UTF-8'>#{@metas}"
@@ -78,15 +80,15 @@ module CorpseHttp
 
   # Inline Style
 
-  def set_style style_array
-
-    @style = style_array
-
-  end
-
   def style
 
     return "<style>#{@style}</style>"
+
+  end
+
+  def set_style style_array
+
+    @style = style_array
 
   end
 
@@ -128,8 +130,6 @@ module CorpseHttp
   end
 
 end
-
-
 
 class Media
 

@@ -34,9 +34,9 @@ class Tweet
 
   def save account, content
 
-    if !File.exist?("#{$nataniev_path}/secrets/secret.#{account}.config.rb") then return "Missing keys." end
+    if !File.exist?("#{$nataniev.path}/secrets/secret.#{account}.config.rb") then return "Missing keys." end
 
-    load "#{$nataniev_path}/secrets/secret.#{account}.config.rb"
+    load "#{$nataniev.path}/secrets/secret.#{account}.config.rb"
 
     client = Twitter::REST::Client.new($twitter_config)
     client.update(content)
@@ -49,8 +49,8 @@ class Tweet
 
     account = "neauoire"
 
-    if !File.exist?("#{$nataniev_path}/secrets/secret.#{account}.config.rb") then return "Missing keys." end
-    load "#{$nataniev_path}/secrets/secret.#{account}.config.rb"
+    if !File.exist?("#{$nataniev.path}/secrets/secret.#{account}.config.rb") then return "Missing keys." end
+    load "#{$nataniev.path}/secrets/secret.#{account}.config.rb"
     client = Twitter::REST::Client.new($twitter_config)
 
     tweets = []

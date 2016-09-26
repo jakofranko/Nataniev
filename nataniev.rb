@@ -1,29 +1,16 @@
 #!/bin/env ruby
 # encoding: utf-8
 
-$nataniev_path = File.expand_path(File.join(File.dirname(__FILE__), "/"))
-
-load "#{$nataniev_path}/library/di.parser.rb"
-load "#{$nataniev_path}/library/en.parser.rb"
-
-load "#{$nataniev_path}/system/tools.rb"
-load "#{$nataniev_path}/system/console.rb"
-load "#{$nataniev_path}/system/vessel.rb"
-load "#{$nataniev_path}/system/clock.rb"
-load "#{$nataniev_path}/system/desamber.rb"
-load "#{$nataniev_path}/system/timestamp.rb"
-load "#{$nataniev_path}/system/action.rb"
-load "#{$nataniev_path}/system/corpse.rb"
-load "#{$nataniev_path}/system/documentation.rb"
-
-load "#{$nataniev_path}/vessels/ghost.rb"
-load "#{$nataniev_path}/vessels/basic.rb"
-
 # You see nothing, enter the nothing.
 
 class Nataniev
 
   def initialize
+
+    @time    = Time.new
+    @path    = File.expand_path(File.join(File.dirname(__FILE__), "/"))
+
+    load "#{@path}/system/console.rb"
 
     @console = Console.new
     @id      = nil
@@ -33,9 +20,12 @@ class Nataniev
 
   end
 
+  attr_accessor :time
+  attr_accessor :path
+  attr_accessor :actor
+  attr_accessor :console
+
   def parade  ; @parade = !@parade ? Di.new("paradise") : @parade ; return @parade  end
-  def actor   ; return @actor end
-  def console ; return @console end
 
   def operate actor, action, params
 
@@ -67,6 +57,21 @@ class Nataniev
   
   def answer q = nil
 
+    load "#{@path}/library/di.parser.rb"
+    load "#{@path}/library/en.parser.rb"
+
+    load "#{@path}/system/tools.rb"
+    load "#{@path}/system/vessel.rb"
+    load "#{@path}/system/clock.rb"
+    load "#{@path}/system/desamber.rb"
+    load "#{@path}/system/timestamp.rb"
+    load "#{@path}/system/action.rb"
+    load "#{@path}/system/corpse.rb"
+    load "#{@path}/system/documentation.rb"
+
+    load "#{@path}/vessels/ghost.rb"
+    load "#{@path}/vessels/basic.rb"
+
     parts  = q.split(" ")
     actor  = parts[0]
     action = parts[1] ? parts[1] : "look"
@@ -81,8 +86,8 @@ class Nataniev
     line = parade.line(id.to_i) ; if !line then return nil end
     if line['CODE']
       instance = line['CODE'].split("-")[3].downcase
-      if File.exist?("#{$nataniev_path}/vessels/#{instance}.rb")
-        load("#{$nataniev_path}/vessels/#{instance}.rb")
+      if File.exist?("#{$nataniev.path}/vessels/#{instance}.rb")
+        load("#{$nataniev.path}/vessels/#{instance}.rb")
         return Object.const_get(instance.capitalize).new(id.to_i,line)
       end
     end
@@ -92,11 +97,11 @@ class Nataniev
 
   def make_anonym instance
 
-    if File.exist?("#{$nataniev_path}/vessels/#{instance}.rb")
-      load("#{$nataniev_path}/vessels/#{instance}.rb")
+    if File.exist?("#{$nataniev.path}/vessels/#{instance}.rb")
+      load("#{$nataniev.path}/vessels/#{instance}.rb")
       return Object.const_get(instance.capitalize).new
-    elsif File.exist?("#{$nataniev_path}/instances/instance.#{instance}/vessel.rb")
-      load "#{$nataniev_path}/instances/instance.#{instance}/vessel.rb"
+    elsif File.exist?("#{$nataniev.path}/instances/instance.#{instance}/vessel.rb")
+      load "#{$nataniev.path}/instances/instance.#{instance}/vessel.rb"
       return Object.const_get(instance.capitalize).new
     end
     return Ghost.new

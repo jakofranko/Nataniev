@@ -1,6 +1,22 @@
 #!/bin/env ruby
 # encoding: utf-8
 
+def load_folder path
+
+  Dir[path].each do |file_name|
+    load file_name
+  end
+
+end
+
+def require_folder path
+
+  Dir[path].each do |file_name|
+    require file_name
+  end
+
+end
+
 class String
 
   def like target

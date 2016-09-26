@@ -3,7 +3,7 @@ class En
   def initialize query = nil
 
     @NAME = query.gsub(" ",".").downcase
-    @TEXT = File.read("#{$nataniev_path}/library/encyclopedias/#{@NAME}.en", :encoding => 'UTF-8').split("\n")
+    @TEXT = File.read("#{$nataniev.path}/library/encyclopedias/#{@NAME}.en", :encoding => 'UTF-8').split("\n")
 
     @NOTE = []
     @tree = {}
@@ -17,7 +17,7 @@ class En
 
     # Create @lines
 
-    File.open("#{$nataniev_path}/library/encyclopedias/#{file}.en","r:UTF-8") do |f|
+    File.open("#{$nataniev.path}/library/encyclopedias/#{file}.en","r:UTF-8") do |f|
       number = 0
       f.each_line do |line|
         depth = line[/\A */].size
@@ -119,12 +119,12 @@ class En
     end
 
     # Create temp file
-    out_file = File.new("#{$nataniev_path}/library/encyclopedias/#{@NAME}.txt", "w")
+    out_file = File.new("#{$nataniev.path}/library/encyclopedias/#{@NAME}.txt", "w")
     out_file.puts(content)
     out_file.close
 
     # Replace file
-    File.rename("#{$nataniev_path}/library/encyclopedias/temp.#{@NAME}.txt", "#{$nataniev_path}/library/encyclopedias/#{@NAME}.en")
+    File.rename("#{$nataniev.path}/library/encyclopedias/temp.#{@NAME}.txt", "#{$nataniev.path}/library/encyclopedias/#{@NAME}.en")
 
   end
 

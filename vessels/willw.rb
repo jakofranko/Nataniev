@@ -130,7 +130,7 @@ class Willw
 
     dict = {}
 
-    File.open("#{$nataniev_path}/library/encyclopedias/dictionary.en","r:UTF-8") do |f|
+    File.open("#{$nataniev.path}/library/encyclopedias/dictionary.en","r:UTF-8") do |f|
       f.each_line do |line|
         depth = line[/\A */].size
         line = line.strip
