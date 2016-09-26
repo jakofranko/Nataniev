@@ -3,12 +3,15 @@
 
 # You see nothing, enter the nothing.
 
+
 class Nataniev
 
   def initialize
 
     @time    = Time.new
     @path    = File.expand_path(File.join(File.dirname(__FILE__), "/"))
+
+    load "#{@path}/system/tools.rb"
 
     @id      = nil
     @player  = nil
@@ -19,18 +22,7 @@ class Nataniev
 
   def start
 
-    load "#{@path}/library/di.parser.rb"
-    load "#{@path}/library/en.parser.rb"
-
-    load "#{@path}/system/tools.rb"
-    load "#{@path}/system/vessel.rb"
-    load "#{@path}/system/clock.rb"
-    load "#{@path}/system/desamber.rb"
-    load "#{@path}/system/timestamp.rb"
-    load "#{@path}/system/action.rb"
-    load "#{@path}/system/corpse.rb"
-    load "#{@path}/system/documentation.rb"
-
+    load_folder "#{path}/system/*"
     load "#{@path}/vessels/ghost.rb"
     load "#{@path}/vessels/basic.rb"
 

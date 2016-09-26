@@ -3,7 +3,7 @@ class Di
   def initialize query = nil
 
     @NAME = query.gsub(" ",".").downcase
-    @TEXT = File.read("#{$nataniev.path}/library/dictionaries/#{@NAME}.di", :encoding => 'UTF-8').split("\n")
+    @TEXT = File.read("#{$nataniev.path}/library/#{@NAME}.di", :encoding => 'UTF-8').split("\n")
 
     content = []
     @TEXT.each do |line|
@@ -47,7 +47,7 @@ class Di
 
   def add line
 
-    open("#{$nataniev.path}/library/dictionaries/#{@NAME}.di", 'a') do |f|
+    open("#{$nataniev.path}/library/#{@NAME}.di", 'a') do |f|
       f.puts line
     end
 
@@ -68,12 +68,12 @@ class Di
     end
     
     # Create temp file
-    out_file = File.new("#{$nataniev.path}/library/dictionaries/temp.#{@NAME}.di", "w")
+    out_file = File.new("#{$nataniev.path}/library/temp.#{@NAME}.di", "w")
     out_file.puts(@TEXT.join("\n"))
     out_file.close
 
     # Replace file
-    File.rename("#{$nataniev.path}/library/dictionaries/temp.#{@NAME}.di", "#{$nataniev.path}/library/dictionaries/#{@NAME}.di")
+    File.rename("#{$nataniev.path}/library/temp.#{@NAME}.di", "#{$nataniev.path}/library/#{@NAME}.di")
 
   end
 

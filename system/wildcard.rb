@@ -37,11 +37,11 @@ class Wildcard
     hash["PARENT:FULL"] = $nataniev.actor.parent_vessel.print
     hash["PARENT:NAME"] = $nataniev.actor.parent_vessel.name
     hash["PARENT:ATTR"] = $nataniev.actor.parent_vessel.attribute
-    hash["TIME::"] = Clock.new
+    hash["TIME::"] = Clock.new.to_s
     hash["TIME:H"] = DateTime.parse(Time.now.to_s).strftime("%H").to_s
     hash["TIME:M"] = DateTime.parse(Time.now.to_s).strftime("%M").to_s
     hash["TIME:S"] = DateTime.parse(Time.now.to_s).strftime("%S").to_s
-    hash["DATE::"] = Desamber.new
+    hash["DATE::"] = Desamber.new.to_s
     hash["DATE:Y"] = DateTime.parse(Time.now.to_s).strftime("%Y").to_s
     hash["DATE:M"] = DateTime.parse(Time.now.to_s).strftime("%m").to_s
     hash["DATE:D"] = DateTime.parse(Time.now.to_s).strftime("%d").to_s
