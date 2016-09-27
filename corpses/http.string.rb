@@ -29,7 +29,7 @@ class String
       else return "<a href='"+macro.split("|")[1]+"'>"+macro.split("|")[0]+"</a>" end
     end
     
-    return macro
+    return "<a href='/#{macro.gsub(' ','+')}'>#{macro}</a>"
 
   end
 
