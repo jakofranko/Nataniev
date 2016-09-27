@@ -3,6 +3,7 @@
 
 require_relative "http.media.rb"
 require_relative "http.string.rb"
+require_relative "http.array.rb"
 
 module CorpseHttp
 
