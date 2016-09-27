@@ -1,7 +1,7 @@
 #!/bin/env ruby
 # encoding: utf-8
 
-module Documentation
+class Object
 
   def docs q = nil
 
