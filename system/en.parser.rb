@@ -1,9 +1,10 @@
 class En
 
-  def initialize query = nil
+  def initialize query = nil, path = $nataniev.path
 
     @NAME = query.gsub(" ",".").downcase
-    @TEXT = File.read("#{$nataniev.path}/library/#{@NAME}.en", :encoding => 'UTF-8').split("\n")
+    @path = path
+    @TEXT = File.read("#{path}/library/#{@NAME}.en", :encoding => 'UTF-8').split("\n")
 
     @NOTE = []
     @tree = {}
@@ -13,11 +14,13 @@ class En
     
   end
 
+  attr_accessor :path
+
   def loadGrid file
 
     # Create @lines
 
-    File.open("#{$nataniev.path}/library/#{file}.en","r:UTF-8") do |f|
+    File.open("#{path}/library/#{file}.en","r:UTF-8") do |f|
       number = 0
       f.each_line do |line|
         depth = line[/\A */].size
@@ -119,12 +122,12 @@ class En
     end
 
     # Create temp file
-    out_file = File.new("#{$nataniev.path}/library/#{@NAME}.txt", "w")
+    out_file = File.new("#{path}/library/#{@NAME}.txt", "w")
     out_file.puts(content)
     out_file.close
 
     # Replace file
-    File.rename("#{$nataniev.path}/library/temp.#{@NAME}.txt", "#{$nataniev.path}/library/#{@NAME}.en")
+    File.rename("#{path}/library/temp.#{@NAME}.txt", "#{path}/library/#{@NAME}.en")
 
   end
 

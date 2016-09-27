@@ -1,20 +1,23 @@
 class Di
 
-  def initialize query = nil
+  def initialize query = nil, path = $nataniev.path
 
     @NAME = query.gsub(" ",".").downcase
-    @TEXT = File.read("#{$nataniev.path}/library/#{@NAME}.di", :encoding => 'UTF-8').split("\n")
+    @path = path
+    @TEXT = File.read("#{path}/library/#{@NAME}.di", :encoding => 'UTF-8').split("\n")
 
     content = []
     @TEXT.each do |line|
-        if !@KEY && line.strip[0,1] == "@" then @KEY = parseKey(line) ; next end
+        if line.strip[0,1] == "@" then @KEY = parseKey(line) ; next end
         if !@KEY then next end
         content.push(parseLine(line))
     end
-    if !@KEY then puts "Missing key" ; return nil end
+
     @DICT = content
 
   end
+
+  attr_accessor :path
 
   def parseKey keyString
 
@@ -47,13 +50,13 @@ class Di
 
   def add line
 
-    open("#{$nataniev.path}/library/#{@NAME}.di", 'a') do |f|
+    open("#{path}/library/#{@NAME}.di", 'a') do |f|
       f.puts line
     end
 
   end
 
-  def save id, content
+  def save_line id, content
 
     save_lines([[id,content]])
 
@@ -68,12 +71,12 @@ class Di
     end
     
     # Create temp file
-    out_file = File.new("#{$nataniev.path}/library/temp.#{@NAME}.di", "w")
+    out_file = File.new("#{path}/library/temp.#{@NAME}.di", "w")
     out_file.puts(@TEXT.join("\n"))
     out_file.close
 
     # Replace file
-    File.rename("#{$nataniev.path}/library/temp.#{@NAME}.di", "#{$nataniev.path}/library/#{@NAME}.di")
+    File.rename("#{path}/library/temp.#{@NAME}.di", "#{$nataniev.path}/library/#{@NAME}.di")
 
   end
 

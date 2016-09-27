@@ -270,7 +270,7 @@ module Vessel
   def save
     
     @timestamp = Timestamp.new
-    $nataniev.parade.save(id,render)
+    $nataniev.parade.save_line(id,render)
 
   end
 
