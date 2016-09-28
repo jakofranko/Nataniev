@@ -13,19 +13,13 @@ puts $nataniev.answer(ARGV.join(" "))
 
 rescue Exception
 
-  error = $@
-  errorCleaned = error.to_s.gsub(", ","<br />").gsub("`","<b>").gsub("'","</b>").gsub("\"","").gsub("/var/www/wiki.xxiivv/public_html/","")
-  errorCleaned = errorCleaned.gsub("[","\n").gsub("]","")
-
-  html = ""
-  html += "<style>
-  body {background:black;margin:0px;padding:0px}
-  pre { color:white;font-family:Monaco,Courier,Mono; font-size:12px;padding: 100px;border-bottom: 1px dotted #555}
-  pre b { color:#777}
-  pre a { color:#72dec2; text-decoration:none}
-  </style>"
-  error = $!.to_s.gsub("`","<b>").gsub("'","</b>")
-  html += "<body style=''><pre><b>Error</b>     #{error}<br/><b>Location</b>  "+errorCleaned+"<br /><b>Report</b>    Please, report this error to <a href='https://twitter.com/neauoire'>@neauoire</a><br /></pre></body>"
-  puts html
+  puts "<pre style='margin:100px'>\n\n#{$!.to_s.gsub('`','').gsub('\'','').capitalize}\n\n"
+  $@.each do |e|
+    line = e.scan(/(?:\:)([\w\W]*?)(?=\:)/).first.first
+    file = e.split("/").last.split(":").first.gsub(".rb","").strip
+    func = e.split("`").last.gsub("'","")
+    puts "#{file.append(' ',20)} #{line.prepend(' ',3)} #{func.append(' ',20)}"
+  end
+  puts "\n</pre>"
 
 end
