@@ -94,9 +94,13 @@ class En
     return t
   end
 
-  def to_h
+  def to_h type
 
-    return @GRID
+    h = {}
+    @GRID.each do |k,v|
+      h[k] = Object.const_get(type.capitalize).new(k,v)
+    end
+    return h
 
   end
 

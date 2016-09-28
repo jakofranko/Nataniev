@@ -135,7 +135,7 @@ class Horai
 
     @horaire = Di.new("horaire").to_a
     
-    return "> #{print.capitalize}, contains #{@horaire.to_a.length} logs.\n"
+    return "> #{print.capitalize}, contains #{@horaire.to_a("log").length} logs.\n"
 
   end
 

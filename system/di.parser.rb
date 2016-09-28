@@ -82,9 +82,13 @@ class Di
 
   # Accessors
 
-  def to_a
+  def to_a type
 
-    return @DICT
+    a = []
+    @DICT.each do |line|
+      a.push(Object.const_get(type.capitalize).new(line))
+    end
+    return a
 
   end
 
