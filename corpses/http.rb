@@ -9,6 +9,16 @@ module CorpseHttp
 
   include Corpse
 
+  attr_accessor :title
+  attr_accessor :metas
+  attr_accessor :body
+
+  def build
+
+    puts "Warning: Nothing to build"
+
+  end
+
   # Metas
 
   def metas
@@ -62,23 +72,11 @@ module CorpseHttp
 
   end
 
-  def set_title name
-
-    @title = name
-
-  end
-
   # Title
 
-  def view q = nil
+  def body q = nil
 
-    return @view ? @view : "Missing view"
-
-  end
-
-  def set_view view
-
-    @view = view
+    return @body ? @body : "Missing view"
 
   end
 
@@ -86,13 +84,21 @@ module CorpseHttp
 
   def style
 
-    return "<style>#{@style}</style>"
+    @style = @style ? @style : []
+
+    css = ""
+    @style.each do |k,v|
+      css += "#{k} {#{v}} "
+    end
+
+    return "<style>#{css}</style>"
 
   end
 
-  def set_style style_array
+  def add_style k,v
 
-    @style = style_array
+    @style = @style ? @style : []
+    @style.push([k,v])
 
   end
 
@@ -115,6 +121,8 @@ module CorpseHttp
 
   def result
 
+    build
+
     return "
 <!DOCTYPE html>
 <html> 
@@ -126,7 +134,7 @@ module CorpseHttp
     #{style}
   </head>
   <body>
-    #{view}
+    #{body}
   </body>
   #{footers}
 </html>"

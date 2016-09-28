@@ -95,12 +95,18 @@ class En
   end
 
   def to_h type
-
+    
     h = {}
     @GRID.each do |k,v|
       h[k] = Object.const_get(type.capitalize).new(k,v)
     end
     return h
+
+  end
+
+  def length
+
+    return @GRID.length
 
   end
 
