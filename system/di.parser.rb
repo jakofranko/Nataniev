@@ -82,11 +82,12 @@ class Di
 
   # Accessors
 
-  def to_a type
+  def to_a type = nil
 
     a = []
     @DICT.each do |line|
-      a.push(Object.const_get(type.capitalize).new(line))
+      if type then a.push(Object.const_get(type.capitalize).new(line))
+      else a.push(line) end
     end
     return a
 

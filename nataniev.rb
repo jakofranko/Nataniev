@@ -3,7 +3,6 @@
 
 # You see nothing, enter the nothing.
 
-
 class Nataniev
 
   def initialize
@@ -34,8 +33,8 @@ class Nataniev
 
   def console
     
-    load "#{@path}/system/console.rb"
-    return Console.new
+    @console = @console ? @console : Console.new
+    return @console
 
   end
 
