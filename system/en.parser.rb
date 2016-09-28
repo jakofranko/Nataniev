@@ -131,4 +131,12 @@ class En
 
   end
 
+  # Filters
+
+  def filter field, value, type
+
+    return Object.const_get(type.capitalize).new(value.capitalize,@GRID[value.upcase])
+
+  end
+
 end

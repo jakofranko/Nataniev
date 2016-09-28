@@ -84,36 +84,23 @@ MARKLE
 
 PINO
   AIS
+  Windvane
+  Install timer for fridge
+  Fuel Generator
   Storm Sail
   Wet Suit
-  Fins
   Make secondary anchor accessible
-  Install timer for fridge
   Fizzy-water maker
   Hammock
-  Fuel Generator
+  Fins
   Camera
   Wifi signal booster
   Bluetooth Speaker
-  Windvane
-  Ice packs
   
-
 BABELFUCK
   Make nice
 
 VOYNICH
   Redo
   
-- Wireheading
-
-
-
-def cache var, val
-
-instance_variable_set("@__#{var}", val)
-return cache(__callee__, 500)
-
-p @__answer
-return "!!"
-end
+BABEL ROGUELIKE
