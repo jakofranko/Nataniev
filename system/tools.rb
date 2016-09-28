@@ -1,6 +1,14 @@
 #!/bin/env ruby
 # encoding: utf-8
 
+def load_any path, file
+
+  if file.to_s == "" then return end
+  if !File.exist?("#{path}/#{file.downcase}.rb") then return end
+  load "#{path}/#{file.downcase}.rb"
+
+end
+
 def load_folder path
 
   Dir[path].each do |file_name|

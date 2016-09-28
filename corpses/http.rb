@@ -84,21 +84,7 @@ module CorpseHttp
 
   def style
 
-    @style = @style ? @style : []
-
-    css = ""
-    @style.each do |k,v|
-      css += "#{k} {#{v}} "
-    end
-
-    return "<style>#{css}</style>"
-
-  end
-
-  def add_style k,v
-
-    @style = @style ? @style : []
-    @style.push([k,v])
+    return "<style></style>"
 
   end
 
