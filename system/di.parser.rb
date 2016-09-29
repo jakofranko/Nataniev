@@ -111,7 +111,7 @@ class Di
 
     a = []
     @DICT.each do |line|
-      if !line[field.upcase].to_s.like(value) then next end
+      if !line[field.upcase].to_s.like(value) && value != "*" then next end
       a.push(Object.const_get(type.capitalize).new(line))
     end
     return a
