@@ -15,7 +15,7 @@ module CorpseHttp
 
   def build
 
-    puts "Warning: Nothing to build"
+    puts ""
 
   end
 
