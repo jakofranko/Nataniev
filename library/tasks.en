@@ -39,13 +39,8 @@ NATANIEV
   Twitter Client
     Migrate to @actor/@target
     Create bot that servers API commands
-  Library
-    Rename formats?
-    Move Grim.en to instances
-    Move Hundred.en to instances
   Corpse
     Move html error to corpse
-    Beholder is looking for vessel.corpse
   
 BLINDFOLK
   Get up and running
@@ -61,9 +56,12 @@ OSCEAN
   Add flags(TODO/STUB)
   Improve search page
   Implement tasks
-  EN module
+  Parsers Modules
     Trial with Rationality Canon file
   Method
+  Display Paradise content(vessels/documentation/etc.)
+  Flactals
+  Voynich
 
 BELDAM
   Rebuild website
@@ -83,9 +81,8 @@ MARKLE
   Implement 3rd floor(under)
 
 PINO
-  AIS
-  Windvane
   Install timer for fridge
+  AIS
   Fuel Generator
   Storm Sail
   Wet Suit
@@ -96,6 +93,9 @@ PINO
   Camera
   Wifi signal booster
   Bluetooth Speaker
+  Make Episode 9
+  Get battery grid for laptops
+  Fill watertanks
   
 BABELFUCK
   Make nice

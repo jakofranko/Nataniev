@@ -21,7 +21,7 @@
 1010-00014-00000-HAVEN-00000000000000 desk           wooden                                                                                          Unmistakably the inside of a boring, old desk.
 1010-00014-00000-ATARI-00000000000000 computer       plastic        
 1010-00014-00000-HAVEN-00000000000000 maps           voidspace     
-1010-00015-00000-LEXIO-00000000000000 lexicon        cyan                                                                                            
+1010-00015-00000-HAVEN-00000000000000 lexicon        cyan                                                                                            
 1010-00015-00000-HORAI-00000000000000 logbook        red           
 1010-00014-00000-HAVEN-00000000000000 wallclock      old            ECHO displays TIME::
 1010-00014-00000-RUSSI-00000000000000 dictionary     russian    
@@ -54,7 +54,7 @@
 
 
 1010-00942-00000-MAEVE-20160917054502 Maeve
-0110-01151-00000-BASIC-20160920173253 geomaitre      quiet                                                                                           this is nothing.
+0110-00015-00000-BASIC-20161005103609 geomaitre      quiet                                                                                           this is nothing.
 
 
 0013-01585-00001-BASIC-20160617085824 station        echoes                                                                                          The platform is clouded in a thick mist. Flashing blue gates stand at opposite ends to guide the train through the constant fog of the landscape. A teddy bear missing an eye can be seen lying abandoned on the station floor. The cries of lost vessels reverberate throughout the station filling it with an terrifying air. Just as it begins to become unbearable
