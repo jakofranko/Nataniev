@@ -2,26 +2,321 @@
 ~ NOTE : "that which can be destroyed by the truth should be." - p. c. hodgell
 ~ AUTH : lesswrong, jim walker
 
+Fallacies
+  Bandwagon fallacy
+    DEF : Concluding that an idea has merit simply because many people believe it or practice it. 
+    EX1 : Most people believe in a god; therefore, it must prove true.
+  Conjunction fallacy
+    DEF : Assuming that specific conditions are more probable than general ones.
+  Detached lever fallacy
+    DEF : Assuming that something simple for one system will be simple for others. 
+    EX1 : 
+  Gambler's fallacy
+    DEF : Assuming that individual random events are influenced by previous random events.
+    EX1 : I've flipped heads with this coin five times consecutively, so the chance of tails coming out on the sixth flip is much greater than heads.
+  Ludic fallacy
+    DEF : Analysing chance related problems within the narrow frame of games. 
+  Mind projection fallacy
+    DEF : Thinking that the way you see the world reflects the way the world really is.
+  Planning fallacy
+    DEF : Underestimating task-completion times.
+  Sunk cost fallacy
+    DEF : Letting past investments interfere with decision-making in the present.
+  Typical mind fallacy
+    DEF : Assuming that other people are more like you than they actually are.
+  Composition fallacy
+    DEF : when the conclusion of an argument depends on an erroneous characteristic from parts of something to the whole or vice versa.
+    EX1 : Humans have consciousness and human bodies and brains consist of atoms; therefore, atoms have consciousness.
+    EX2 : a word processor program consists of many bytes; therefore a byte forms a fraction of a word processor.
+  Giant cheesecake fallacy
+    DEF : Occurs when an argument leaps directly from capability to actuality, without considering the necessary intermediate of motive.
+    EX1 : A sufficiently powerful Artificial Intelligence could overwhelm any human resistance and wipe out humanity.
+  Narrative fallacy
+    DEF : A vulnerability to over interpretation and our predilection for compact stories over raw truths.
+  Noncentral fallacy
+    DEF : A rhetorical move often used in political, philosophical, and cultural arguments.
+    EX1 : X is in a category whose archetypal member gives us a certain emotional reaction. Therefore, we should apply that emotional reaction to X, even though it is not a central category member.
+  Reification fallacy
+    EX1 : IQ tests as an actual measure of intelligence; the concept of race (even though genetic attributes exist), from the chosen combination of attributes or the labeling of a group of people, come from abstract social constructs; 
+    EX2 : Astrology; god(s); Jesus; Santa Claus, black race, white race, etc.
+  Scales of justice fallacy
+    DEF : Error of using a simple polarized scheme for deciding a complex issue/ each piece of evidence about the question is individually categorized as supporting exactly one of the two opposing positions.
+  Texas sharpshooter fallacy
+    DEF : Adjusting an hypothesis after the data was collected.
+  The top 1% fallacy
+    DEF : Related to not taking into account the idea that a small sample size is not always reflective of a whole population and that sample populations with certain characteristics, e.g. made up of repeat job seekers, are not reflective of the whole population.
+
+Heuristics
+  Absurdity heuristic
+    DEF : Mental shortcut where highly untypical situations are classified as absurd or impossible. Where you don't expect intuition to construct an adequate model of reality, classifying an idea as impossible may be overconfident.
+  Affect heuristic
+    DEF : Mental shortcut that makes use of current emotions to make decisions and solve problems quickly and efficiently. basing a decision on an emotional reaction rather than a calculation of risks and benefits.
+  Availability heuristic
+    DEF : Mental shortcut that treats easily recalled information as important or at least more important than alternative solutions which are not as readily recalled. a biased prediction, due to the tendency to focus on the most salient and emotionally-charged outcome.
+  Contagion heuristic
+    DEF : Leads people to avoid contact with people or objects viewed as "contaminated" by previous contact with someone or something viewed as bad-or, less often, to seek contact with objects that have been in contact with people or things considered good.
+  Representativeness heuristic
+    DEF : Mental shortcut where people judge the probability or frequency of a hypothesis by considering how much the hypothesis resembles available data as opposed to using a Bayesian calculation.
+
+Arguments
+  Arguing by analogy
+    DEF : Arguing that since things are alike in some ways, they will probably be alike in others. 
+  Arguing by definition
+    DEF : Arguing that something is part of a class because it fits the definition of that class. 
+  Argument from omniscience
+    DEF : An arguer would need omniscience to know about everyone's beliefs or disbeliefs or about their knowledge.
+    EX1 : All people believe in something. Everyone knows that.
+  Argumentum ad baculum
+    DEF : Argument relying on an appeal to fear or a threat.
+    EX1 : If you don't believe in God, you'll burn in hell
+  Argumentum ad ignorantiam
+    DEF : Argument relying on people's ignorance.
+  Argumentum ad populum
+    DEF : Argument relying on sentimental weakness rather than facts and reasons.
+  Argumentum ad verecundiam
+    DEF : Argument relying on the the words of an "expert" or authority as the bases of the argument instead of using the logic or evidence that supports an argument. 
+    ENG : argument from authority.
+    EX1 : Professor so-and-so believes in creation-science.
+  Argumentum ex silentio
+    DEF : Argument relyingon ignorance as evidence for something.
+    ENG : Appeal to ignorance
+    EX1 : We have no evidence that God doesn't exist, therefore, he must exist.
+    EX2 : Because we have no knowledge of alien visitors, that means they do not exist.
+  Argumentum ad consequentiam
+    DEF : An argument that concludes a premise as either true or false based on whether the premise leads to desirable or undesirable consequences.
+    ENG : Appeal to consequences
+    EX1 : Some religious people believe that knowledge of evolution leads to immorality, therefore evolution proves false. Even if teaching evolution did lead to immorality, it would not imply a falsehood of evolution.
+  Straw man
+    DEF : Creating a false or made up scenario and then attacking it. Painting your opponent with false colors only deflects the purpose of the argument.
+    EX1 : Evolutionists think that everything came about by random chance. 
+  Steel man
+    DEF : Opposite of strawman. To steelman is to address the strongest possible variant or the most charitable interpretation of an idea, rather than the most available phrasings. Steelmanning can be especially important when the network by which phrasings are brought to your attention has a preference for propagating uncharitable/controversial phrasings.
+  Fully general counterargument
+    DEF : An argument which can be used to discount any conclusion the arguer does not like. Being in possession of such an argument leads to irrationality because it allows the arguer to avoid updating their beliefs.
+    EX1 : You're just saying that because you're exhibiting X bias.
+  Applause light
+    DEF : Is an empty statement which evokes positive affect without providing new information
+  Argument from adverse consequences
+    DEF : Just because a repugnant crime or act occurred, does not necessarily mean that a defendant committed the crime or that we should judge him guilty. Or, disasters occur because God punishes non-believers; therefore, we should all believe in God) Just because calamities or tragedies occur, says nothing about the existence of gods or that we should believe in a certain way.
+    EX1 : We should judge the accused as guilty, otherwise others will commit similar crimes
+  Proving non-existence
+    DEF : When an arguer cannot provide the evidence for his claims, he may challenge his opponent to prove it doesn't exist. Although one may prove non-existence in special limitations, such as showing that a box does not contain certain items, one cannot prove universal or absolute non-existence, or non-existence out of ignorance. One cannot prove something that does not exist. The proof of existence must come from those who make the claims.
+    EX1 : prove God doesn't exist; prove UFO's haven't visited earth, etc.
+  Ad hominem
+    DEF : An arguer who uses ad hominems attacks the person instead of the argument. Whenever an arguer cannot defend his position with evidence, facts or reason.
+    EX1 : labeling, straw man arguments, name calling, offensive remarks and anger.
+    ENG : to the man
+  Red herring
+    DEF : A diversion from the active topic.
+    DEF : Arguer diverts the attention by changing the subject.
+
+Effects
+  Ambiguity effect
+    DEF : Tendency to avoid options for which missing information makes the probability seem "unknown".
+  Bandwagon effect
+    DEF : Tendency to do (or believe) things because many other people do (or believe) the same. Related to groupthink, crowd psychology, herd behaviour, and manias.
+  Bizarreness effect
+    DEF : Bizarre material is better remembered than common material.
+  Bystander effect
+    DEF : Social psychological phenomenon in which individuals are less likely to offer help in an emergency situation when other people are present.
+  Context effect
+    DEF : That cognition and memory are dependent on context, such that out-of-context memories are more difficult to retrieve than in-context memories
+    EX1 : Recall time and accuracy for a work-related memory will be lower at home, and vice versa.
+  Contrast effect
+    DEF : Enhancement or diminishment of a weight or other measurement when compared with recently observed contrasting object.
+  Cross-race effect
+    DEF : Tendency for people of one race to have difficulty identifying members of a race other than their own.
+  Dunning-kruger effect
+    DEF : When people are incompetent in the strategies they adopt to achieve success and satisfaction, they suffer a dual burden, not only do they reach erroneous conclusions and make unfortunate choices, but their incompetence robs them of the ability to realize it. Instead, ...they are left with the mistaken impression that they are doing just fine.
+  False consensus effect
+    DEF : Tendency for people to overestimate the degree to which others agree with them.
+  Forer effect
+    DEF : Tendency to give high accuracy ratings to descriptions of their personality that supposedly are tailored specifically for them, but are in fact vague and general enough to apply to a wide range of people.
+    EX1 : horoscopes
+    ALT : Barnum Effect
+  Generation effect
+    DEF : That self-generated information is remembered best.
+    EX1 : People are better able to recall memories of statements that they have generated than similar statements generated by others.
+  Google effect
+    DEF : Tendency to forget information that can be found readily online by using Internet search engines.
+  Halo effect
+    DEF : Tendency for a person's positive or negative traits to "spill over" from one area of their personality to another in others' perceptions of them.
+  Hostile media effect
+    DEF : Tendency to perceive news coverage as biased against your position on an issue.
+  Humor effect
+    DEF : That humorous items are more easily remembered than non-humorous ones, which might be explained by the distinctiveness of humor, the increased cognitive processing time to understand the humor, or the emotional arousal caused by the humor.
+  Lake wobegon effect
+    DEF : Tendency to report flattering beliefs about oneself and believe that one is above average.
+  Levels-of-processing effect
+    DEF : That different methods of encoding information into memory have different levels of effectiveness.
+  List-length effect
+    DEF : A smaller percentage of items are remembered in a longer list, but as the length of the list increases, the absolute number of items remembered increases as well.
+  Mere exposure effect
+    DEF : Tendency to express undue liking for things merely because they are familiar with them.
+  Misinformation effect
+    DEF : Memory becoming less accurate because of interference from post-event information.
+  Modality effect
+    DEF : That memory recall is higher for the last items of a list when the list items were received via speech than when they were received through writing.
+  Neglect of prior base rates effect
+    DEF : Tendency to fail to incorporate prior known probabilities which are pertinent to the decision at hand.
+  Next-in-line effect
+    DEF : That a person in a group has diminished recall for the words of others who spoke immediately before himself, if they take turns speaking.
+  Observer-expectancy effect
+    DEF : Tendency to expects a given result and therefore unconsciously manipulating an experiment or misinterprets data in order to find it.
+  Overconfidence effect
+    DEF : Tendency of being more certain than is justified, given your priors and the evidence available.
+  Part-list cueing effect
+    DEF : That being shown some items from a list and later retrieving one item causes it to become harder to retrieve the other items.
+  Picture superiority effect
+    DEF : The notion that concepts that are learned by viewing pictures are more easily and frequently recalled than are concepts that are learned by viewing their written word form counterparts.
+  Positivity effect
+    DEF : That older adults favor positive over negative information in their memories.
+  Primacy effect
+    DEF : Tendency to weigh initial events more than subsequent events.
+  Primacy effect, recency effect & serial position effect
+    DEF : That items near the end of a sequence are the easiest to recall, followed by the items at the beginning of a sequence; items in the middle are the least likely to be remembered.
+  Processing difficulty effect
+    DEF : That information that takes longer to read and is thought about more (processed with more difficulty) is more easily remembered.
+  Pseudocertainty effect
+    DEF : Tendency to make risk-averse choices if the expected outcome is positive, but make risk-seeking choices to avoid negative outcomes.
+  Recency effect
+    DEF : Tendency to weigh recent events more than earlier events.
+  Self-relevance effect
+    DEF : That memories relating to the self are better recalled than similar information relating to others.
+  Spacing effect
+    DEF : That information is better recalled if exposure to it is repeated over a long span of time rather than a short one.
+  Spotlight effect
+    DEF : Tendency to overestimate the amount that other people notice your appearance or behavior.
+  Subadditivity effect
+    DEF : Tendency to judge probability of the whole to be less than the probabilities of the parts.
+  Suffix effect
+    DEF : Diminishment of the recency effect because a sound item is appended to the list that the subject is not required to recall.
+  Telescoping effect
+    DEF : Tendency to perceive recent events to have occurred more remotely and remote events appear to have occurred more recently.
+  Testing effect
+    DEF : The fact that you more easily remember information you have read by rewriting it instead of rereading it.
+  Underconfidence effect
+    DEF : State of being more uncertain than is justified, given your priors and the evidence you are aware of.
+  Verbatim effect
+    DEF : That the "gist" of what someone has said is better remembered than the verbatim wording. This is because memories are representations, not exact copies.
+  Von restorff effect
+    DEF : Tendency to remember an item that "stands out like a sore thumb", more than other items.
+  Worse-than-average effect
+    DEF : Tendency to believe ourselves to be worse than others at tasks which are difficult.
+  Zeigarnik effect
+    DEF : That uncompleted or interrupted tasks are remembered better than completed ones.
+  Focusing effect
+    DEF : Tendency of placing too much importance on one aspect of an event; causes error in accurately predicting the utility of a future outcome.
+
+Biases
+  Actor–observer bias
+    DEF : Tendency for explanations of other individuals' behaviors to overemphasize the influence of their personality and underemphasize the influence of their situation (see also Fundamental attribution error), and for explanations of one's own behaviors to do the opposite (that is, to overemphasize the influence of our situation and underemphasize the influence of our own personality).
+  Anthropic bias
+    DEF : Tendency for one's evidence to be biased by observation selection effects.
+  Attentional bias
+    DEF : Tendency to neglect relevant data when making judgments of a correlation or association.
+  Change bias
+    DEF : After an investment of effort in producing change, remembering one's past performance as more difficult than it actually was.
+  Choice-supportive bias
+    DEF : In a self-justifying manner retroactively ascribing one's choices to be more informed than they were when they were made.
+  Confirmation bias
+    DEF : Tendency to search for or interpret information in a way that confirms one's preconceptions.
+  Congruence bias
+    DEF : Tendency to test hypotheses exclusively through direct testing, in contrast to tests of possible alternative hypotheses.
+  Conservatism or regressive bias
+    DEF : Tendency to remember high values and high likelihoods/probabilities/frequencies as lower than they actually were and low ones as higher than they actually were. Based on the evidence, memories are not extreme enough.
+  Egocentric bias
+    DEF : Tendency to claim more responsibility for themselves for the results of a joint action than an outside observer would. Recalling the past in a self-serving manner.
+    EX1 : Remembering one's exam grades as being better than they were.
+    EX2 : Remembering a caught fish as being bigger than it was.
+  Exposure-suspicion bias
+    DEF : Knowledge of a subject's disease in a medical study may influence the search for causes.
+  Extrinsic incentives bias
+    DEF : An exception to the fundamental attribution error, when people view others as having (situational) extrinsic motivations and (dispositional) intrinsic motivations for oneself
+  Fading affect bias
+    DEF : A bias in which the emotion associated with unpleasant memories fades more quickly than the emotion associated with positive events.
+  Impact bias
+    DEF : Tendency to overestimate the length or the intensity of the impact of future feeling states.
+  Information bias
+    DEF : Tendency to seek information even when it cannot affect action.
+  Modesty bias
+    DEF : Tendency to blame failures on oneself while attributing successes to situational factors. Opposite of self-serving bias.
+  Mood-congruent memory bias
+    DEF : The improved recall of information congruent with one's current mood.
+  Notational bias
+    DEF : Cultural bias in which a notation induces the appearance of a nonexistent natural law.
+  Omission bias
+    DEF : Tendency to judge harmful actions as worse, or less moral, than equally harmful omissions.
+  Self-serving bias
+    DEF : Tendency to attribute successes to internal characteristics while blaming failures on outside forces. It may also manifest itself as a tendency for people to evaluate ambiguous information in a way beneficial to their interests.
+  Shared information bias
+    DEF : Tendency for group members to spend more time and energy discussing information that all members are already familiar with (i.e., shared information), and less time and energy discussing information that only some members are aware of.
+    EX1 : unshared information
+  Status quo bias
+    DEF : Tendency to like things to stay relatively the same.
+  Stereotypical bias
+    DEF : Memory distorted towards stereotypes.
+    EX1 : "black-sounding" names being misremembered as names of criminals.
+  Superiority bias
+    DEF : Tendency to overestimating one's desirable qualities, and underestimating undesirable qualities, relative to other people.
+    ALT : Lake Wobegon effect
+  Survivorship bias
+    DEF : Tendency of focusing on what has survived to the present and ignoring what must have been lost.
+  Trait ascription bias
+    DEF : Tendency for people to view themselves as relatively variable in terms of personality, behavior and mood while viewing others as much more predictable.
+  Unit bias
+    DEF : Tendency to want to finish a given unit of a task or an item with strong effects on the consumption of food in particular.
+  Zero-risk bias
+    DEF : Preference for reducing a small risk to zero over a greater reduction in a larger risk.
+  Authority bias
+    DEF : Tendency to attribute greater accuracy to the opinion of an authority figure (unrelated to its content) and be more influenced by that opinion.
+  Conformity bias
+    DEF : Behaving similarly to the others in a group, even if doing so goes against your own judgment.
+  Ingroup bias
+    DEF : Giving preferential treatment to others they perceive to be members of their own groups.
+  Correspondence bias
+    DEF : Overestimating the contribution of lasting traits and dispositions, as opposed to situational effects, in determining people's behavior.
+  Obsequiousness bias
+    DEF : Altering responses in the direction they perceive desired by the investigator.
+  Unacceptability bias
+    DEF : Refusing of evading questions that may embarrass or invade privacy.
+  Projection bias
+    DEF : Assuming that others share the same or similar thoughts, beliefs, values, or positions.
+  Consistency bias
+    DEF : Incorrectly remembering one's past attitudes and behaviour as resembling present attitudes and behaviour.
+  Hindsight bias
+    DEF : Seeing past events as predictable, based on knowledge of later events.
+    ALT : I-knew-it-all-along" effect
+  Optimism bias
+    DEF : Systematic tendency to be over-optimistic about the outcome of planned actions.
+  Outcome bias
+    DEF : Tendency to judge a decision by its eventual outcome instead of based on the quality of the decision at the time it was made.
+  Outgroup homogeneity bias
+    DEF : Tendecy of people see members of their own group as being relatively more varied than members of other groups.
+  Positive bias
+    DEF : Tendency to test hypotheses with positive rather than negative examples, thus risking to miss obvious disconfirming tests.
+  Positive outcome bias
+    DEF : Tendency in prediction to overestimate the probability of good things happening to them.
+    EX1 : Wishful thinking, optimism bias and valence effect
+
 Illusions
   Illusion of asymmetric insight
     DEF : Tendency to perceive the knowledge of their peers to surpass their peers' knowledge of them.
   Illusion of control
     DEF : Tendency to believe they can control or at least influence outcomes that they clearly cannot.
   Illusion of external agency
-    DEF : Tendency to perceive self-generated preferences as instead being caused by insightful, effective and benevolent agents
+    DEF : Tendency to perceive self-generated preferences as instead being caused by insightful, effective and benevolent agents.
   Illusory correlation
     DEF : Tendency to believe that inaccurately suppose a relationship between a certain type of action and an effect. Inaccurately remembering a relationship between two events.
   Illusion of truth effect
-    DEF : That people are more likely to identify as true statements those they have previously heard (even if they cannot consciously remember having heard them), regardless of the actual validity of the statement. In other words, a person is more likely to believe a familiar statement than an unfamiliar one.
+    DEF : Tendency to identify as true statements familiar statements over unfamiliar ones.
   Clustering illusion
     DEF : Tendency to perceive patterns where actually none exist.
   Frequency illusion
-    DEF : Phenomenon in which people who just learn or notice something start seeing it everywhere.
+    DEF : Tendency to notice something everywhere after having learnt about it.
     ALT : Baader-Meinhof Phenomenon
   Illusory transparency
     DEF : Tendency to overestimate others' ability to know them, and they also overestimate their ability to know others. Misleading impression that your words convey more to others than they really do.
-  Illusory superiority
-    DEF : Tendency to overestimating one's desirable qualities, and underestimating undesirable qualities, relative to other people. (Also known as "Lake Wobegon effect", "better-than-average effect", or "superiority bias".)
 
 Faults
   Cached thought
@@ -176,342 +471,6 @@ Util
     DEF : The felicific calculus is an algorithm formulated by utilitarian philosopher Jeremy Bentham (1748–1832) for calculating the degree or amount of pleasure that a specific action is likely to cause. Bentham, an ethical hedonist, believed the moral rightness or wrongness of an action to be a function of the amount of pleasure or pain that it produced. The felicific calculus could, in principle at least, determine the moral status of any considered act. The algorithm is also known as the utility calculus, the hedonistic calculus and the hedonic calculus. To be included in this calculation are several variables (or vectors), which Bentham called "circumstances". These are: Intensity: How strong is the pleasure? Duration: How long will the pleasure last? Certainty or uncertainty: How likely or unlikely is it that the pleasure will occur? Propinquity or remoteness: How soon will the pleasure occur? Fecundity: The probability that the action will be followed by sensations of the same kind. Purity: The probability that it will not be followed by sensations of the opposite kind. Extent: How many people will be affected?
   Hedons and dolors
     DEF : The units of measurements used in the felicific calculus may be termed hedons and dolors, similar to the utilitarian posends and negends.  
-
-Fallacies
-  Bandwagon fallacy
-    DEF : Concluding that an idea has merit simply because many people believe it or practice it. 
-    EX1 : Most people believe in a god; therefore, it must prove true.
-  Conjunction fallacy
-    DEF : Assuming that specific conditions are more probable than general ones.
-    EX1 : 
-  Detached lever fallacy
-    DEF : Assuming that something simple for one system will be simple for others. 
-    EX1 : 
-  Gambler's fallacy
-    DEF : Assuming that individual random events are influenced by previous random events.
-    EX1 : I've flipped heads with this coin five times consecutively, so the chance of tails coming out on the sixth flip is much greater than heads.
-  Ludic fallacy
-    DEF : Analysing chance related problems within the narrow frame of games. 
-    EX1 : 
-  Mind projection fallacy
-    DEF : Thinking that the way you see the world reflects the way the world really is.
-    EX1 : 
-  Planning fallacy
-    DEF : Underestimating task-completion times.
-    EX1 : 
-  Sunk cost fallacy
-    DEF : Letting past investments interfere with decision-making in the present.
-    EX1 : 
-  Typical mind fallacy
-    DEF : Assuming that other people are more like you than they actually are.
-    EX1 : 
-
-Biases
-  Authority bias
-    DEF : Tendency to attribute greater accuracy to the opinion of an authority figure (unrelated to its content) and be more influenced by that opinion.
-  Conformity bias
-    DEF : Behaving similarly to the others in a group, even if doing so goes against your own judgment.
-  Ingroup bias
-    DEF : Giving preferential treatment to others they perceive to be members of their own groups.
-  Correspondence bias
-    DEF : Overestimating the contribution of lasting traits and dispositions, as opposed to situational effects, in determining people's behavior.
-  Obsequiousness bias
-    DEF : Altering responses in the direction they perceive desired by the investigator.
-  Unacceptability bias
-    DEF : Refusing of evading questions that may embarrass or invade privacy.
-  Projection bias
-    DEF : Assuming that others share the same or similar thoughts, beliefs, values, or positions.
-  Consistency bias
-    DEF : Incorrectly remembering one's past attitudes and behaviour as resembling present attitudes and behaviour.
-  Hindsight bias
-    DEF : Seeing past events as predictable, based on knowledge of later events.
-    ALT : I-knew-it-all-along" effect
-  Optimism bias
-    DEF : Systematic tendency to be over-optimistic about the outcome of planned actions.
-  Outcome bias
-    DEF : Tendency to judge a decision by its eventual outcome instead of based on the quality of the decision at the time it was made.
-  Outgroup homogeneity bias
-    DEF : Tendecy of people see members of their own group as being relatively more varied than members of other groups.
-  Positive bias
-    DEF : Tendency to test hypotheses with positive rather than negative examples, thus risking to miss obvious disconfirming tests.
-  Positive outcome bias
-    DEF : Tendency in prediction to overestimate the probability of good things happening to them.
-    EX1 : Wishful thinking, optimism bias and valence effect
-
-Intelligence
-  Artificial General Intelligence
-    DEF : Intelligence as, or more, robust as humans. It is likely that the creation of AGI will be immediately followed by a technological singularity as the AI improves itself and takes to its ambitions with unprecedented ingenuity.
-  Extensibility argument for greater-than-human intelligence
-    DEF : Argument that once we get to a human level AGI, extensibility would make an AGI of greater-than-human-intelligence feasible.
-  Friendly artificial intelligence
-    DEF : Superintelligence that produces good, beneficial outcomes rather than harmful ones.
-  Unfriendly artificial intelligence
-    DEF : Superintelligence capable of causing great harm to humanity, and having goals that make it useful for the AI to do so. The AI's goals don't need to be antagonistic to humanity's goals for it to be Unfriendly; there are strong reasons to expect that almost any powerful AGI not explicitly programmed to be benevolent to humans is lethal.
-  Omega
-    DEF : Superintelligence being used in philosophical problems. Omega is most commonly used as the predictor in Newcomb's problem. In its role as predictor, Omega's predictions occur almost certainly. In some thought experiments, Omega is also taken to be super-powerful. Omega can be seen as analogous to Laplace's demon, or as the closest approximation to the Demon capable of existing in our universe.
-  Unboxing
-    DEF : Superintelligence, when guarded by lesser beings will almost always be able to convince them to release it eventually. Some rationalists also seem to be capable of this. (This is presumably why the incarceration rate for rationalists is so low)
-  Paperclip maximizer
-    DEF : Intelligence that has been created to maximize the number of paperclips in the universe. It is a hypothetical unfriendly artificial intelligence.
-  Newcomb's problem
-    DEF : Superintelligence Omega shows you two boxes, A and B, and offers you the choice of taking only box A, or both boxes A and B. Omega has put $1,000 in box B. If Omega thinks you will take box A only, he has put $1,000,000 in it.
-  Emulation argument for human-level ai
-    DEF : Argument that since whole brain emulation seems feasible then human-level AI must also be feasible.
-  Evolutionary argument for human-level ai
-    DEF : Argument that uses the fact that evolution produced human level intelligence to argue for the feasibility of human-level AI.
-
-Heuristics
-  Absurdity heuristic
-    DEF : Mental shortcut where highly untypical situations are classified as absurd or impossible. Where you don't expect intuition to construct an adequate model of reality, classifying an idea as impossible may be overconfident.
-  Affect heuristic
-    DEF : Mental shortcut that makes use of current emotions to make decisions and solve problems quickly and efficiently. basing a decision on an emotional reaction rather than a calculation of risks and benefits.
-  Availability heuristic
-    DEF : Mental shortcut that treats easily recalled information as important or at least more important than alternative solutions which are not as readily recalled. a biased prediction, due to the tendency to focus on the most salient and emotionally-charged outcome.
-  Contagion heuristic
-    DEF : Leads people to avoid contact with people or objects viewed as "contaminated" by previous contact with someone or something viewed as bad-or, less often, to seek contact with objects that have been in contact with people or things considered good.
-  Representativeness heuristic
-    DEF : Mental shortcut where people judge the probability or frequency of a hypothesis by considering how much the hypothesis resembles available data as opposed to using a Bayesian calculation.
-
-Arguments
-  Arguing by analogy
-    DEF : Arguing that since things are alike in some ways, they will probably be alike in others. 
-  Arguing by definition
-    DEF : Arguing that something is part of a class because it fits the definition of that class. 
-  Argument from omniscience
-    DEF : An arguer would need omniscience to know about everyone's beliefs or disbeliefs or about their knowledge.
-    EX1 : All people believe in something. Everyone knows that.
-  Argumentum ad baculum
-    DEF : Argument relying on an appeal to fear or a threat.
-    EX1 : If you don't believe in God, you'll burn in hell
-  Argumentum ad ignorantiam
-    DEF : Argument relying on people's ignorance.
-  Argumentum ad populum
-    DEF : Argument relying on sentimental weakness rather than facts and reasons.
-  Argumentum ad verecundiam
-    DEF : Argument relying on the the words of an "expert" or authority as the bases of the argument instead of using the logic or evidence that supports an argument. 
-    ENG : argument from authority.
-    EX1 : Professor so-and-so believes in creation-science.
-  Argumentum ex silentio
-    DEF : Argument relyingon ignorance as evidence for something.
-    ENG : Appeal to ignorance
-    EX1 : We have no evidence that God doesn't exist, therefore, he must exist.
-    EX2 : Because we have no knowledge of alien visitors, that means they do not exist.
-  Argumentum ad consequentiam
-    DEF : An argument that concludes a premise as either true or false based on whether the premise leads to desirable or undesirable consequences.
-    ENG : Appeal to consequences
-    EX1 : Some religious people believe that knowledge of evolution leads to immorality, therefore evolution proves false. Even if teaching evolution did lead to immorality, it would not imply a falsehood of evolution.
-  Straw man
-    DEF : Creating a false or made up scenario and then attacking it. Painting your opponent with false colors only deflects the purpose of the argument.
-    EX1 : Evolutionists think that everything came about by random chance. 
-  Steel man
-    DEF : Opposite of strawman. To steelman is to address the strongest possible variant or the most charitable interpretation of an idea, rather than the most available phrasings. Steelmanning can be especially important when the network by which phrasings are brought to your attention has a preference for propagating uncharitable/controversial phrasings.
-  Fully general counterargument
-    DEF : An argument which can be used to discount any conclusion the arguer does not like. Being in possession of such an argument leads to irrationality because it allows the arguer to avoid updating their beliefs.
-    EX1 : You're just saying that because you're exhibiting X bias.
-  Applause light
-    DEF : Is an empty statement which evokes positive affect without providing new information
-  Argument from adverse consequences
-    DEF : Just because a repugnant crime or act occurred, does not necessarily mean that a defendant committed the crime or that we should judge him guilty. Or, disasters occur because God punishes non-believers; therefore, we should all believe in God) Just because calamities or tragedies occur, says nothing about the existence of gods or that we should believe in a certain way.
-    EX1 : We should judge the accused as guilty, otherwise others will commit similar crimes
-  Proving non-existence
-    DEF : When an arguer cannot provide the evidence for his claims, he may challenge his opponent to prove it doesn't exist. Although one may prove non-existence in special limitations, such as showing that a box does not contain certain items, one cannot prove universal or absolute non-existence, or non-existence out of ignorance. One cannot prove something that does not exist. The proof of existence must come from those who make the claims.
-    EX1 : prove God doesn't exist; prove UFO's haven't visited earth, etc.
-  Ad hominem
-    DEF : An arguer who uses ad hominems attacks the person instead of the argument. Whenever an arguer cannot defend his position with evidence, facts or reason.
-    EX1 : labeling, straw man arguments, name calling, offensive remarks and anger.
-    ENG : to the man
-  Red herring
-    DEF : A diversion from the active topic.
-    DEF : Arguer diverts the attention by changing the subject.
-
-~
-~
-~
-
-Effects[TODO]
-  Ambiguity effect
-    DEF : Tendency to avoid options for which missing information makes the probability seem "unknown".
-  Bandwagon effect
-    DEF : Tendency to do (or believe) things because many other people do (or believe) the same. Related to groupthink, crowd psychology, herd behaviour, and manias.
-  Bizarreness effect
-    DEF : Bizarre material is better remembered than common material.
-  Bystander effect
-    DEF : Social psychological phenomenon in which individuals are less likely to offer help in an emergency situation when other people are present.
-  Context effect
-    DEF : That cognition and memory are dependent on context, such that out-of-context memories are more difficult to retrieve than in-context memories
-    EX1 : Recall time and accuracy for a work-related memory will be lower at home, and vice versa.
-  Contrast effect
-    DEF : Enhancement or diminishment of a weight or other measurement when compared with recently observed contrasting object.
-  Cross-race effect
-    DEF : Tendency for people of one race to have difficulty identifying members of a race other than their own.
-  Dunning-kruger effect
-    DEF : When people are incompetent in the strategies they adopt to achieve success and satisfaction, they suffer a dual burden, not only do they reach erroneous conclusions and make unfortunate choices, but their incompetence robs them of the ability to realize it. Instead, ...they are left with the mistaken impression that they are doing just fine.
-  False consensus effect
-    DEF : Tendency for people to overestimate the degree to which others agree with them.
-  Forer effect
-    DEF : Tendency to give high accuracy ratings to descriptions of their personality that supposedly are tailored specifically for them, but are in fact vague and general enough to apply to a wide range of people.
-    EX1 : horoscopes
-    ALT : Barnum Effect
-  Generation effect
-    DEF : That self-generated information is remembered best.
-    EX1 : People are better able to recall memories of statements that they have generated than similar statements generated by others.
-  Google effect
-    DEF : Tendency to forget information that can be found readily online by using Internet search engines.
-  Halo effect
-    DEF : Tendency for a person's positive or negative traits to "spill over" from one area of their personality to another in others' perceptions of them.
-  Hostile media effect
-    DEF : Tendency to perceive news coverage as biased against your position on an issue.
-  Humor effect
-    DEF : That humorous items are more easily remembered than non-humorous ones, which might be explained by the distinctiveness of humor, the increased cognitive processing time to understand the humor, or the emotional arousal caused by the humor.
-  Lake wobegon effect
-    DEF : Tendency to report flattering beliefs about oneself and believe that one is above average.
-  Levels-of-processing effect
-    DEF : That different methods of encoding information into memory have different levels of effectiveness.
-  List-length effect
-    DEF : A smaller percentage of items are remembered in a longer list, but as the length of the list increases, the absolute number of items remembered increases as well.
-  Mere exposure effect
-    DEF : Tendency to express undue liking for things merely because they are familiar with them.
-  Misinformation effect
-    DEF : Memory becoming less accurate because of interference from post-event information.
-  Modality effect
-    DEF : That memory recall is higher for the last items of a list when the list items were received via speech than when they were received through writing.
-  Neglect of prior base rates effect
-    DEF : Tendency to fail to incorporate prior known probabilities which are pertinent to the decision at hand.
-  Next-in-line effect
-    DEF : That a person in a group has diminished recall for the words of others who spoke immediately before himself, if they take turns speaking.
-  Observer-expectancy effect
-    DEF : Tendency to expects a given result and therefore unconsciously manipulating an experiment or misinterprets data in order to find it.
-  Overconfidence effect
-    DEF : Tendency of being more certain than is justified, given your priors and the evidence available.
-  Part-list cueing effect
-    DEF : That being shown some items from a list and later retrieving one item causes it to become harder to retrieve the other items.
-  Picture superiority effect
-    DEF : The notion that concepts that are learned by viewing pictures are more easily and frequently recalled than are concepts that are learned by viewing their written word form counterparts.
-  Positivity effect
-    DEF : That older adults favor positive over negative information in their memories.
-  Primacy effect
-    DEF : Tendency to weigh initial events more than subsequent events.
-  Primacy effect, recency effect & serial position effect
-    DEF : That items near the end of a sequence are the easiest to recall, followed by the items at the beginning of a sequence; items in the middle are the least likely to be remembered.
-  Processing difficulty effect
-    DEF : That information that takes longer to read and is thought about more (processed with more difficulty) is more easily remembered.
-  Pseudocertainty effect
-    DEF : Tendency to make risk-averse choices if the expected outcome is positive, but make risk-seeking choices to avoid negative outcomes.
-  Recency effect
-    DEF : Tendency to weigh recent events more than earlier events.
-  Self-relevance effect
-    DEF : That memories relating to the self are better recalled than similar information relating to others.
-  Spacing effect
-    DEF : That information is better recalled if exposure to it is repeated over a long span of time rather than a short one.
-  Spotlight effect
-    DEF : Tendency to overestimate the amount that other people notice your appearance or behavior.
-  Subadditivity effect
-    DEF : Tendency to judge probability of the whole to be less than the probabilities of the parts.
-  Suffix effect
-    DEF : Diminishment of the recency effect because a sound item is appended to the list that the subject is not required to recall.
-  Telescoping effect
-    DEF : Tendency to perceive recent events to have occurred more remotely and remote events appear to have occurred more recently.
-  Testing effect
-    DEF : The fact that you more easily remember information you have read by rewriting it instead of rereading it.
-  Underconfidence effect
-    DEF : State of being more uncertain than is justified, given your priors and the evidence you are aware of.
-  Verbatim effect
-    DEF : That the "gist" of what someone has said is better remembered than the verbatim wording. This is because memories are representations, not exact copies.
-  Von restorff effect
-    DEF : Tendency to remember an item that "stands out like a sore thumb", more than other items.
-  Worse-than-average effect
-    DEF : Tendency to believe ourselves to be worse than others at tasks which are difficult.
-  Zeigarnik effect
-    DEF : That uncompleted or interrupted tasks are remembered better than completed ones.
-  Focusing effect
-    DEF : Tendency of placing too much importance on one aspect of an event; causes error in accurately predicting the utility of a future outcome.
-
-~
-
-Biases[TODO]
-  Actor–observer bias
-    DEF : Tendency for explanations of other individuals' behaviors to overemphasize the influence of their personality and underemphasize the influence of their situation (see also Fundamental attribution error), and for explanations of one's own behaviors to do the opposite (that is, to overemphasize the influence of our situation and underemphasize the influence of our own personality).
-  Anthropic bias
-    DEF : Tendency for one's evidence to be biased by observation selection effects.
-  Attentional bias
-    DEF : Tendency to neglect relevant data when making judgments of a correlation or association.
-  Change bias
-    DEF : After an investment of effort in producing change, remembering one's past performance as more difficult than it actually was.
-  Choice-supportive bias
-    DEF : In a self-justifying manner retroactively ascribing one's choices to be more informed than they were when they were made.
-  Confirmation bias
-    DEF : Tendency to search for or interpret information in a way that confirms one's preconceptions.
-  Congruence bias
-    DEF : Tendency to test hypotheses exclusively through direct testing, in contrast to tests of possible alternative hypotheses.
-  Conservatism or regressive bias
-    DEF : Tendency to remember high values and high likelihoods/probabilities/frequencies as lower than they actually were and low ones as higher than they actually were. Based on the evidence, memories are not extreme enough.
-  Egocentric bias
-    DEF : Tendency to claim more responsibility for themselves for the results of a joint action than an outside observer would. Recalling the past in a self-serving manner.
-    EX1 : Remembering one's exam grades as being better than they were.
-    EX2 : Remembering a caught fish as being bigger than it was.
-  Exposure-suspicion bias
-    DEF : Knowledge of a subject's disease in a medical study may influence the search for causes.
-  Extrinsic incentives bias
-    DEF : An exception to the fundamental attribution error, when people view others as having (situational) extrinsic motivations and (dispositional) intrinsic motivations for oneself
-  Fading affect bias
-    DEF : A bias in which the emotion associated with unpleasant memories fades more quickly than the emotion associated with positive events.
-  Impact bias
-    DEF : Tendency to overestimate the length or the intensity of the impact of future feeling states.
-  Information bias
-    DEF : Tendency to seek information even when it cannot affect action.
-  Modesty bias
-    DEF : Tendency to blame failures on oneself while attributing successes to situational factors. Opposite of self-serving bias.
-  Mood-congruent memory bias
-    DEF : The improved recall of information congruent with one's current mood.
-  Notational bias
-    DEF : Cultural bias in which a notation induces the appearance of a nonexistent natural law.
-  Omission bias
-    DEF : Tendency to judge harmful actions as worse, or less moral, than equally harmful omissions.
-  Self-serving bias
-    DEF : Tendency to attribute successes to internal characteristics while blaming failures on outside forces. It may also manifest itself as a tendency for people to evaluate ambiguous information in a way beneficial to their interests.
-  Shared information bias
-    DEF : Tendency for group members to spend more time and energy discussing information that all members are already familiar with (i.e., shared information), and less time and energy discussing information that only some members are aware of.
-    EX1 : unshared information
-  Status quo bias
-    DEF : Tendency to like things to stay relatively the same.
-  Stereotypical bias
-    DEF : Memory distorted towards stereotypes.
-    EX1 : "black-sounding" names being misremembered as names of criminals.
-  Survivorship bias
-    DEF : Tendency of focusing on what has survived to the present and ignoring what must have been lost.
-  Trait ascription bias
-    DEF : Tendency for people to view themselves as relatively variable in terms of personality, behavior and mood while viewing others as much more predictable.
-  Unit bias
-    DEF : Tendency to want to finish a given unit of a task or an item with strong effects on the consumption of food in particular.
-  Zero-risk bias
-    DEF : Preference for reducing a small risk to zero over a greater reduction in a larger risk.
-
-~
-
-Fallacies[TODO]
-  Composition fallacy
-    DEF : when the conclusion of an argument depends on an erroneous characteristic from parts of something to the whole or vice versa.
-    EX1 : Humans have consciousness and human bodies and brains consist of atoms; therefore, atoms have consciousness.
-    EX2 : a word processor program consists of many bytes; therefore a byte forms a fraction of a word processor.
-  Giant cheesecake fallacy
-    DEF : Occurs when an argument leaps directly from capability to actuality, without considering the necessary intermediate of motive.
-    EX1 : A sufficiently powerful Artificial Intelligence could overwhelm any human resistance and wipe out humanity.
-  Narrative fallacy
-    DEF : A vulnerability to over interpretation and our predilection for compact stories over raw truths.
-  Noncentral fallacy
-    DEF : A rhetorical move often used in political, philosophical, and cultural arguments.
-    EX1 : X is in a category whose archetypal member gives us a certain emotional reaction. Therefore, we should apply that emotional reaction to X, even though it is not a central category member.
-  Reification fallacy
-    EX1 : IQ tests as an actual measure of intelligence; the concept of race (even though genetic attributes exist), from the chosen combination of attributes or the labeling of a group of people, come from abstract social constructs; 
-    EX2 : Astrology; god(s); Jesus; Santa Claus, black race, white race, etc.
-  Scales of justice fallacy
-    DEF : Error of using a simple polarized scheme for deciding a complex issue/ each piece of evidence about the question is individually categorized as supporting exactly one of the two opposing positions.
-  Texas sharpshooter fallacy
-    DEF : Adjusting an hypothesis after the data was collected.
-  The top 1% fallacy
-    DEF : Related to not taking into account the idea that a small sample size is not always reflective of a whole population and that sample populations with certain characteristics, e.g. made up of repeat job seekers, are not reflective of the whole population.
-  
-~
 
 Lexicon
   Akrasia

@@ -174,7 +174,7 @@ how much      сколько
 however       впрочем
 huge          огромный
 husband       муж
-i             я
+I             я
 if            если
 in            во
 in general    вообще
