@@ -1,22 +1,24 @@
 class En
 
+  attr_accessor :name
+
   def initialize query = nil, path = $nataniev.path
 
-    @NAME = query.gsub(" ",".").downcase
+    @name = query.gsub(" ",".").downcase
     @path = path
-    @TEXT = File.read("#{path}/library/#{@NAME}.en", :encoding => 'UTF-8').split("\n")
-
-    @NOTE = []
+    @note = []
     @tree = {}
     @lines = []
 
-    @GRID = loadGrid(@NAME)
+    if !File.exist?("#{path}/library/#{name}.en") then @path = $nataniev.path end
+
+    @GRID = render(name)
     
   end
 
   attr_accessor :path
 
-  def loadGrid file
+  def render file
 
     # Create @lines
 
@@ -27,7 +29,7 @@ class En
         line = line.strip
         if line == "" then next end
         if line[0,1] == "~"
-          @NOTE.push(line)
+          @note.push(line)
         else
           @lines.push([number,depth,line])
           number += 1
@@ -92,13 +94,18 @@ class En
     end
 
     return t
+
   end
 
-  def to_h type
+  def to_h type = nil
     
     h = {}
     @GRID.each do |k,v|
-      h[k] = Object.const_get(type.capitalize).new(k,v)
+      if type
+        h[k] = Object.const_get(type.capitalize).new(k,v)
+      else
+        h[k] = v
+      end
     end
     return h
 
@@ -113,7 +120,7 @@ class En
   def save
 
     # Add notes
-    content = @NOTE.join("\n")+"\n\n"
+    content = @note.join("\n")+"\n\n"
 
     # Create lines
     @GRID.sort.reverse.each do |key,values|
@@ -132,12 +139,12 @@ class En
     end
 
     # Create temp file
-    out_file = File.new("#{path}/library/#{@NAME}.txt", "w")
+    out_file = File.new("#{path}/library/#{name}.txt", "w")
     out_file.puts(content)
     out_file.close
 
     # Replace file
-    File.rename("#{path}/library/temp.#{@NAME}.txt", "#{path}/library/#{@NAME}.en")
+    File.rename("#{path}/library/temp.#{name}.txt", "#{path}/library/#{name}.en")
 
   end
 

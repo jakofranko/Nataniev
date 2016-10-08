@@ -30,6 +30,7 @@ class Array
       tag  = collection[rune] ? collection[rune]['tag'] : "unknown"
 
       if rune == "%" then html += Media.new("generic",text).to_s ; next end
+      if rune == "$" then html += (n = Nataniev.new ; n.start ; n.answer(text) ) ; next end
 
       if stash != "" && rune != prev
         prev_tag = collection[prev]["tag"]
