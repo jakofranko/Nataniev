@@ -1,16 +1,15 @@
-~ NAME : canon on rationality
-~ NOTE : "that which can be destroyed by the truth should be." - p. c. hodgell
-~ AUTH : lesswrong, jim walker
+~ NAME : Rationality Artillery
+~ NOTE : That which can be destroyed by the truth should be.(P. C. Hodgell)
+~ AUTH : Compiled by Devine Ly Linvega, from Lesswrong & Jim Walker
 
 Fallacies
   Bandwagon fallacy
-    DEF : Concluding that an idea has merit simply because many people believe it or practice it. 
+    DEF : Assuming that an idea has merit simply because many people believe it or practice it. 
     EX1 : Most people believe in a god; therefore, it must prove true.
   Conjunction fallacy
     DEF : Assuming that specific conditions are more probable than general ones.
   Detached lever fallacy
     DEF : Assuming that something simple for one system will be simple for others. 
-    EX1 : 
   Gambler's fallacy
     DEF : Assuming that individual random events are influenced by previous random events.
     EX1 : I've flipped heads with this coin five times consecutively, so the chance of tails coming out on the sixth flip is much greater than heads.
@@ -46,75 +45,9 @@ Fallacies
   The top 1% fallacy
     DEF : Related to not taking into account the idea that a small sample size is not always reflective of a whole population and that sample populations with certain characteristics, e.g. made up of repeat job seekers, are not reflective of the whole population.
 
-Heuristics
-  Absurdity heuristic
-    DEF : Mental shortcut where highly untypical situations are classified as absurd or impossible. Where you don't expect intuition to construct an adequate model of reality, classifying an idea as impossible may be overconfident.
-  Affect heuristic
-    DEF : Mental shortcut that makes use of current emotions to make decisions and solve problems quickly and efficiently. basing a decision on an emotional reaction rather than a calculation of risks and benefits.
-  Availability heuristic
-    DEF : Mental shortcut that treats easily recalled information as important or at least more important than alternative solutions which are not as readily recalled. a biased prediction, due to the tendency to focus on the most salient and emotionally-charged outcome.
-  Contagion heuristic
-    DEF : Leads people to avoid contact with people or objects viewed as "contaminated" by previous contact with someone or something viewed as bad-or, less often, to seek contact with objects that have been in contact with people or things considered good.
-  Representativeness heuristic
-    DEF : Mental shortcut where people judge the probability or frequency of a hypothesis by considering how much the hypothesis resembles available data as opposed to using a Bayesian calculation.
-
-Arguments
-  Arguing by analogy
-    DEF : Arguing that since things are alike in some ways, they will probably be alike in others. 
-  Arguing by definition
-    DEF : Arguing that something is part of a class because it fits the definition of that class. 
-  Argument from omniscience
-    DEF : An arguer would need omniscience to know about everyone's beliefs or disbeliefs or about their knowledge.
-    EX1 : All people believe in something. Everyone knows that.
-  Argumentum ad baculum
-    DEF : Argument relying on an appeal to fear or a threat.
-    EX1 : If you don't believe in God, you'll burn in hell
-  Argumentum ad ignorantiam
-    DEF : Argument relying on people's ignorance.
-  Argumentum ad populum
-    DEF : Argument relying on sentimental weakness rather than facts and reasons.
-  Argumentum ad verecundiam
-    DEF : Argument relying on the the words of an "expert" or authority as the bases of the argument instead of using the logic or evidence that supports an argument. 
-    ENG : argument from authority.
-    EX1 : Professor so-and-so believes in creation-science.
-  Argumentum ex silentio
-    DEF : Argument relyingon ignorance as evidence for something.
-    ENG : Appeal to ignorance
-    EX1 : We have no evidence that God doesn't exist, therefore, he must exist.
-    EX2 : Because we have no knowledge of alien visitors, that means they do not exist.
-  Argumentum ad consequentiam
-    DEF : An argument that concludes a premise as either true or false based on whether the premise leads to desirable or undesirable consequences.
-    ENG : Appeal to consequences
-    EX1 : Some religious people believe that knowledge of evolution leads to immorality, therefore evolution proves false. Even if teaching evolution did lead to immorality, it would not imply a falsehood of evolution.
-  Straw man
-    DEF : Creating a false or made up scenario and then attacking it. Painting your opponent with false colors only deflects the purpose of the argument.
-    EX1 : Evolutionists think that everything came about by random chance. 
-  Steel man
-    DEF : Opposite of strawman. To steelman is to address the strongest possible variant or the most charitable interpretation of an idea, rather than the most available phrasings. Steelmanning can be especially important when the network by which phrasings are brought to your attention has a preference for propagating uncharitable/controversial phrasings.
-  Fully general counterargument
-    DEF : An argument which can be used to discount any conclusion the arguer does not like. Being in possession of such an argument leads to irrationality because it allows the arguer to avoid updating their beliefs.
-    EX1 : You're just saying that because you're exhibiting X bias.
-  Applause light
-    DEF : Is an empty statement which evokes positive affect without providing new information
-  Argument from adverse consequences
-    DEF : Just because a repugnant crime or act occurred, does not necessarily mean that a defendant committed the crime or that we should judge him guilty. Or, disasters occur because God punishes non-believers; therefore, we should all believe in God) Just because calamities or tragedies occur, says nothing about the existence of gods or that we should believe in a certain way.
-    EX1 : We should judge the accused as guilty, otherwise others will commit similar crimes
-  Proving non-existence
-    DEF : When an arguer cannot provide the evidence for his claims, he may challenge his opponent to prove it doesn't exist. Although one may prove non-existence in special limitations, such as showing that a box does not contain certain items, one cannot prove universal or absolute non-existence, or non-existence out of ignorance. One cannot prove something that does not exist. The proof of existence must come from those who make the claims.
-    EX1 : prove God doesn't exist; prove UFO's haven't visited earth, etc.
-  Ad hominem
-    DEF : An arguer who uses ad hominems attacks the person instead of the argument. Whenever an arguer cannot defend his position with evidence, facts or reason.
-    EX1 : labeling, straw man arguments, name calling, offensive remarks and anger.
-    ENG : to the man
-  Red herring
-    DEF : A diversion from the active topic.
-    DEF : Arguer diverts the attention by changing the subject.
-
 Effects
   Ambiguity effect
     DEF : Tendency to avoid options for which missing information makes the probability seem "unknown".
-  Bandwagon effect
-    DEF : Tendency to do (or believe) things because many other people do (or believe) the same. Related to groupthink, crowd psychology, herd behaviour, and manias.
   Bizarreness effect
     DEF : Bizarre material is better remembered than common material.
   Bystander effect
@@ -134,6 +67,8 @@ Effects
     DEF : Tendency to give high accuracy ratings to descriptions of their personality that supposedly are tailored specifically for them, but are in fact vague and general enough to apply to a wide range of people.
     EX1 : horoscopes
     ALT : Barnum Effect
+  Motivated cognition
+    DEF : Tendency to process information toward conclusions that suit some end or goal.
   Generation effect
     DEF : That self-generated information is remembered best.
     EX1 : People are better able to recall memories of statements that they have generated than similar statements generated by others.
@@ -299,6 +234,71 @@ Biases
     DEF : Tendency in prediction to overestimate the probability of good things happening to them.
     EX1 : Wishful thinking, optimism bias and valence effect
 
+
+Heuristics
+  Absurdity heuristic
+    DEF : Mental shortcut where highly untypical situations are classified as absurd or impossible. Where you don't expect intuition to construct an adequate model of reality, classifying an idea as impossible may be overconfident.
+  Affect heuristic
+    DEF : Mental shortcut that makes use of current emotions to make decisions and solve problems quickly and efficiently. basing a decision on an emotional reaction rather than a calculation of risks and benefits.
+  Availability heuristic
+    DEF : Mental shortcut that treats easily recalled information as important or at least more important than alternative solutions which are not as readily recalled. a biased prediction, due to the tendency to focus on the most salient and emotionally-charged outcome.
+  Contagion heuristic
+    DEF : Leads people to avoid contact with people or objects viewed as "contaminated" by previous contact with someone or something viewed as bad-or, less often, to seek contact with objects that have been in contact with people or things considered good.
+  Representativeness heuristic
+    DEF : Mental shortcut where people judge the probability or frequency of a hypothesis by considering how much the hypothesis resembles available data as opposed to using a Bayesian calculation.
+
+Arguments
+  Arguing by analogy
+    DEF : Arguing that since things are alike in some ways, they will probably be alike in others. 
+  Arguing by definition
+    DEF : Arguing that something is part of a class because it fits the definition of that class. 
+  Argument from omniscience
+    DEF : An arguer would need omniscience to know about everyone's beliefs or disbeliefs or about their knowledge.
+    EX1 : All people believe in something. Everyone knows that.
+  Argumentum ad baculum
+    DEF : Argument relying on an appeal to fear or a threat.
+    EX1 : If you don't believe in God, you'll burn in hell
+  Argumentum ad ignorantiam
+    DEF : Argument relying on people's ignorance.
+  Argumentum ad populum
+    DEF : Argument relying on sentimental weakness rather than facts and reasons.
+  Argumentum ad verecundiam
+    DEF : Argument relying on the the words of an "expert" or authority as the bases of the argument instead of using the logic or evidence that supports an argument. 
+    ENG : argument from authority.
+    EX1 : Professor so-and-so believes in creation-science.
+  Argumentum ex silentio
+    DEF : Argument relyingon ignorance as evidence for something.
+    ENG : Appeal to ignorance
+    EX1 : We have no evidence that God doesn't exist, therefore, he must exist.
+    EX2 : Because we have no knowledge of alien visitors, that means they do not exist.
+  Argumentum ad consequentiam
+    DEF : An argument that concludes a premise as either true or false based on whether the premise leads to desirable or undesirable consequences.
+    ENG : Appeal to consequences
+    EX1 : Some religious people believe that knowledge of evolution leads to immorality, therefore evolution proves false. Even if teaching evolution did lead to immorality, it would not imply a falsehood of evolution.
+  Straw man
+    DEF : Creating a false or made up scenario and then attacking it. Painting your opponent with false colors only deflects the purpose of the argument.
+    EX1 : Evolutionists think that everything came about by random chance. 
+  Steel man
+    DEF : Opposite of strawman. To steelman is to address the strongest possible variant or the most charitable interpretation of an idea, rather than the most available phrasings. Steelmanning can be especially important when the network by which phrasings are brought to your attention has a preference for propagating uncharitable/controversial phrasings.
+  Fully general counterargument
+    DEF : An argument which can be used to discount any conclusion the arguer does not like. Being in possession of such an argument leads to irrationality because it allows the arguer to avoid updating their beliefs.
+    EX1 : You're just saying that because you're exhibiting X bias.
+  Applause light
+    DEF : Is an empty statement which evokes positive affect without providing new information
+  Argument from adverse consequences
+    DEF : Just because a repugnant crime or act occurred, does not necessarily mean that a defendant committed the crime or that we should judge him guilty. Or, disasters occur because God punishes non-believers; therefore, we should all believe in God) Just because calamities or tragedies occur, says nothing about the existence of gods or that we should believe in a certain way.
+    EX1 : We should judge the accused as guilty, otherwise others will commit similar crimes
+  Proving non-existence
+    DEF : When an arguer cannot provide the evidence for his claims, he may challenge his opponent to prove it doesn't exist. Although one may prove non-existence in special limitations, such as showing that a box does not contain certain items, one cannot prove universal or absolute non-existence, or non-existence out of ignorance. One cannot prove something that does not exist. The proof of existence must come from those who make the claims.
+    EX1 : prove God doesn't exist; prove UFO's haven't visited earth, etc.
+  Ad hominem
+    DEF : An arguer who uses ad hominems attacks the person instead of the argument. Whenever an arguer cannot defend his position with evidence, facts or reason.
+    EX1 : labeling, straw man arguments, name calling, offensive remarks and anger.
+    ENG : to the man
+  Red herring
+    DEF : A diversion from the active topic.
+    DEF : Arguer diverts the attention by changing the subject.
+
 Illusions
   Illusion of asymmetric insight
     DEF : Tendency to perceive the knowledge of their peers to surpass their peers' knowledge of them.
@@ -431,32 +431,21 @@ Technique
   Seeing with fresh eyes
     DEF : A sequence on the incredibly difficult feat of getting your brain to actually think about something, instead of instantly stopping on the first thought that comes to mind.
 
-Religion
-  Appeal to faith
-    DEF : If the arguer relies on faith as the bases of his argument, then you can gain little from further discussion. Faith, by definition, relies on a belief that does not rest on logic or evidence. Faith depends on irrational thought and produces intransigence.
-    EX1 : If you have no faith, you cannot learn
-  Crisis of faith
-    DEF : A combined technique for recognizing and eradicating the whole systems of mutually-supporting false beliefs. The technique involves systematic application of introspection, with the express intent to check the reliability of beliefs independently of the other beliefs that support them in the mind. The technique might be useful for the victims of affective death spirals, or any other systematic confusions, especially those supported by anti-epistemology.
-
-Occam's razor
+Bayesianism
+  Bayesian probability
+    DEF : represents a level of certainty relating to a potential outcome or idea. This is in contrast to a frequentist probability that represents the frequency with which a particular outcome will occur over any number of trials. An event with Bayesian probability of .6 (or 60%) should be interpreted as stating "With confidence 60%, this event contains the true outcome", whereas a frequentist interpretation would view it as stating "Over 100 trials, we should observe event X approximately 60 times." The difference is more apparent when discussing ideas. A frequentist will not assign probability to an idea; either it is true or false and it cannot be true 6 times out of 10.
+  Bayesian decision theory
+    DEF : Decision theory informed by Bayesian probability. A statistical system that tries to quantify the tradeoff between various decisions, making use of probabilities and costs.
+  Absolute certainty
+    DEF : equivalent of Bayesian probability of 1. Losing an epistemic bet made with absolute certainty corresponds to receiving infinite negative payoff, according to the logarithmic proper scoring rule. Cromwell's rule states that the use of prior probabilities of 0 or 1 should be avoided, except when applied to statements that are logically true or false.
   Occam's razor
     DEF : Principle commonly stated as "Entities must not be multiplied beyond necessity". When several theories are able to explain the same observations, Occam's razor suggests the simpler one is preferable.
   Kolmogorov complexity
     DEF : Given a string, the length of the shortest possible program that prints it.
   Solomonoff induction
-    DEF : Formalized version of Occam's razor based on Kolmogorov complexity. Essentially: The prior probability of an observation(extra prior, prior to any other observation or measurement) is the inverse kolmogoroff complexity of the binary string encoding the world in which it occurs.
+    DEF : Formalized version of Occam's razor based on Kolmogorov complexity. The prior probability of an observation(extra prior, prior to any other observation or measurement) is the inverse kolmogoroff complexity of the binary string encoding the world in which it occurs.
   Burdensome details
     DEF : Adding burdensome details to a theory may make it sound more plausible to human ears because of the representativeness heuristic, even as the story becomes normatively less probable.
-
-Bayesianism
-  Bayesian probability
-    DEF : represents a level of certainty relating to a potential outcome or idea. This is in contrast to a frequentist probability that represents the frequency with which a particular outcome will occur over any number of trials. An event with Bayesian probability of .6 (or 60%) should be interpreted as stating "With confidence 60%, this event contains the true outcome", whereas a frequentist interpretation would view it as stating "Over 100 trials, we should observe event X approximately 60 times." The difference is more apparent when discussing ideas. A frequentist will not assign probability to an idea; either it is true or false and it cannot be true 6 times out of 10.
-  Bayesian decision theory
-    DEF : is a decision theory which is informed by Bayesian probability. It is a statistical system that tries to quantify the tradeoff between various decisions, making use of probabilities and costs.
-  Bayesian
-    DEF : Bayesian probability theory is the math of epistemic rationality, Bayesian decision theory is the math of instrumental rationality.
-  Absolute certainty
-    DEF : equivalent of Bayesian probability of 1. Losing an epistemic bet made with absolute certainty corresponds to receiving infinite negative payoff, according to the logarithmic proper scoring rule. Cromwell's rule states that the use of prior probabilities of 0 or 1 should be avoided, except when applied to statements that are logically true or false.
 
 Util
   Utilitarianism
@@ -675,6 +664,8 @@ Lexicon
     DEF : Incorrect belief about evolutionary theory that a feature of the organism is there for the good of the group.
   Observational selection
     DEF : Pointing out favorable circumstances while ignoring the unfavorable. Anyone who goes to Las Vegas gambling casinos will see people winning at the tables and slots. The casino managers make sure to install bells and whistles to announce the victors, while the losers never get mentioned. This may lead one to conclude that the chances of winning appear good while in actually just the reverse holds true.
+  Other-optimizing
+    DEF : Failure mode in which a person vastly overestimates their ability to optimize someone else's life, usually as a result of underestimating the differences between themselves and others, for example through the typical mind fallacy.
   Human universal
     DEF : Donald E. Brown has compiled a list of over a hundred human universals - traits found in every culture ever studied, most of them so universal that anthropologists don't even bother to note them explicitly.[TODO-Wikipedia this]
   Hyperbolic discounting
@@ -687,8 +678,6 @@ Lexicon
     DEF : Risk that arises from the dissemination or the potential dissemination of (true) information that may cause harm or enable some agent to cause harm.
   Intellectual roles
     DEF : Group rationality may be improved when members of the group take on specific intellectual roles. While these roles may be incomplete on their own, each embodies an aspect of proper rationality. If certain roles are biased against, purposefully adopting them might reduce bias.
-  Intuition pump
-    DEF : In summary, they are thought experiments that highlight, or pumping, certain ideas, intuitions or concepts while attenuating others so as to make some conclusion obvious and simple to reach. The intuition pump is a carefully designed persuasion tool in which you check to see if the same intuitions still get pumped when you change certain settings in a thought experiment.
   Irrational escalation
     DEF : Tendency to make irrational decisions based upon rational decisions in the past or to justify actions already taken.
   Tip of the tongue phenomenon
@@ -705,8 +694,6 @@ Lexicon
     DEF : A question about your map that wouldn't make sense if you had a more accurate map.
   Magical categories
     DEF : an English word which, although it sounds simple - hey, it's just one word, right? - is actually not simple, and furthermore, may be applied in a complicated way that drags in other considerations. Physical brains are not powerful enough to search all possibilities; we have to cut down the search space to possibilities that are likely to be good. Most of the "obviously bad" methods - those that would end up violating our other values, and so ranking very low in our preference ordering - do not even occur to us as possibilities.
-  Motivated cognition
-    DEF : The unconscious tendency of individuals to fit their processing of information to conclusions that suit some end or goal.
   Motivated skepticism
     DEF : Tendency of applying more skepticism to claims that you don't like (or intuitively disbelieve), than to claims that you do like
   Naïve cynicism
@@ -717,8 +704,6 @@ Lexicon
     DEF : An inference or conclusion that does not follow from established premises or evidence.
     ENG : It does not follow
     EX1 : there occured an increase of births during the full moon. Conclusion, full moons cause birth rates to rise. But does a full moon actually cause more births, or did it occur for other reasons, perhaps from expected statistical variations?
-  Reminiscence bump
-    DEF : Tendency to recall more personal events from adolescence and early adulthood than from other lifetime periods.
   Rosy retrospection
     DEF : Tendency to rate past events more positively than they had actually rated them when the event occurred.
   Self-fulfilling prophecy
@@ -727,23 +712,5 @@ Lexicon
     DEF : The Shannon entropy is a measure of the average information content one is missing when one does not know the value of the random variable.
   Trait ascription biased
     DEF : Tendency for people to view themselves as relatively variable in terms of personality, behavior, and mood while viewing others as much more predictable.
-
-~
-
-ETC [TODO]
-  Moloch
-    DEF : Personification of the prisoner's dilemma. The face of competitive games which demand great sacrifice of their participants. Poetic construct.
-    SRC : slatestarcodex.com/2014/07/30/meditations-on-moloch/
-  Anthropic Magnitude Metric[TODO]
-    DEF : an anthromag metric of an encoding is the probability of that encoding observing its own existence from within its substrate.
-  Scott Alexander, Yvain
-    DEF : Much sanity. Very insightful.
-    SRC : slatestarcodex.com
-  Counter man syndrome
-    DEF : wherein a person behind a counter comes to believe that they know things they don't know, because, after all, they're the person behind the counter. So they can't just answer a question with "I don't know"... and thus they make something up, without really paying attention to the fact that they're making it up. Pretty soon, they don't know the difference between the facts and their made up stories
-  Travis syndrome
-    DEF : Overestimating the significance of the present. It is related to the enlightenment Idea of Progress and chronological snobbery with possibly an appeal to novelty logical fallacy being part of the bias.
-  Other-optimizing
-    DEF : Failure mode in which a person vastly overestimates their ability to optimize someone else's life, usually as a result of underestimating the differences between themselves and others, for example through the typical mind fallacy.
-  Reversed stupidity is not intelligence
-    DEF : "The world's greatest fool may say the Sun is shining, but that doesn't make it dark out.".
+  Intransigence
+    DEF : [TODO]
