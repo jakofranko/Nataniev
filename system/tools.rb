@@ -17,6 +17,14 @@ def load_folder path
 
 end
 
+def require_any path, file
+
+  if file.to_s == "" then return end
+  if !File.exist?("#{path}/#{file.downcase}.rb") then return end
+  require "#{path}/#{file.downcase}.rb"
+
+end
+
 def require_folder path
 
   Dir[path].each do |file_name|
@@ -24,6 +32,7 @@ def require_folder path
   end
 
 end
+
 
 class String
 

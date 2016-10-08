@@ -8,7 +8,7 @@ module ActionCall
   def call q = nil
 
     target = q.split(" ").first
-    params = q.sub(target,"").to_s.strip
+    params = q.sub("#{target}","").to_s.strip
 
     if target.to_i > 0
       return call_id(target,params)
