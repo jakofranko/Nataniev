@@ -44,6 +44,8 @@ Fallacies
     DEF : Adjusting an hypothesis after the data was collected.
   The top 1% fallacy
     DEF : Related to not taking into account the idea that a small sample size is not always reflective of a whole population and that sample populations with certain characteristics, e.g. made up of repeat job seekers, are not reflective of the whole population.
+  Fallacy of gray
+    DEF : The false belief that because nothing is certain, everything is equally uncertain. It does not take into account that some things are more certain than others.
 
 Effects
   Ambiguity effect
@@ -142,6 +144,8 @@ Effects
     DEF : That uncompleted or interrupted tasks are remembered better than completed ones.
   Focusing effect
     DEF : Tendency of placing too much importance on one aspect of an event; causes error in accurately predicting the utility of a future outcome.
+  Endowment effect
+    EX1 : Tendency to demand much more to give up an object than they would be willing to pay to acquire it.
 
 Biases
   Actor–observer bias
@@ -327,6 +331,8 @@ Faults
     DEF : Occurs when only two options are considered, when there may in fact be many.
 
 Rationality
+  Rationality
+    DEF : The characteristic of thinking and acting optimally. 
   Bounded rationality
     DEF : limits on optimization and rationality
   Costs of rationality
@@ -364,6 +370,13 @@ Theories
     DEF : a decision theory, which in slogan form, says that agents should decide as if they are determining the output of the abstract computation that they implement. This theory was developed in response to the view that rationality should be about winning (that is, about agents achieving their desired ends) rather than about behaving in a manner that we would intuitively label as rational.
   Updateless decision theory
     DEF : a decision theory in which we give up the idea of doing Bayesian reasoning to obtain a posterior distribution etc. and instead just choose the action (or more generally, the probability distribution over actions) that will maximize the unconditional expected utility.
+  Aumann's agreement theorem
+    DEF : Two agents acting rationally and with common knowledge of each other's beliefs cannot agree to disagree. 
+    EX1 : More specifically, if two people are genuine Bayesians, share common priors, and have common knowledge of each other's current probability assignments, then they must have equal probability assignments.
+  Bayes' theorem
+    DEF : A law of probability that describes the proper way to incorporate new evidence into prior probabilities to form an updated probability estimate.
+  Cox's theorem
+    DEF : Roughly, that if your beliefs at any given time take the form of an assignment of a numerical "plausibility score" to every proposition, and if they satisfy a few plausible axioms, then your plausibilities must effectively be probabilities obeying the usual laws of probability theory, and your updating procedure must be the one implied by Bayes' theorem.
 
 Evidence
   Amount of evidence
@@ -379,7 +392,9 @@ Evidence
   Rational evidence
     DEF : the broadest possible sense of evidence, the Bayesian sense. Rational evidence about a hypothesis H is any observation which has a different likelihood depending on whether H holds in reality or not. Rational evidence is distinguished from narrower forms of evidence, such as scientific evidence or legal evidence. For a belief to be scientific, you should be able to do repeatable experiments to verify the belief. For evidence to be admissible in court, it must e.g. be a personal observation rather than hearsay.
 
-Belief
+Beliefs
+  Belief
+    DEF : the mental state in which an individual holds a proposition to be true. 
   Priors
     DEF : The beliefs an agent holds regarding a fact, hypothesis or consequence, before being presented with evidence.
   Belief in belief
@@ -457,7 +472,7 @@ Util
   Pascal's mugging
     DEF : Thought-experiment demonstrating a problem in expected utility maximization. A rational agent should choose actions whose outcomes, when weighed by their probability, have higher utility. But some very unlikely outcomes may have very great utilities, and these utilities can grow faster than the probability diminishes. Hence the agent should focus more on vastly improbable cases with implausibly high rewards.
   Felicific calculus
-    DEF : The felicific calculus is an algorithm formulated by utilitarian philosopher Jeremy Bentham (1748–1832) for calculating the degree or amount of pleasure that a specific action is likely to cause. Bentham, an ethical hedonist, believed the moral rightness or wrongness of an action to be a function of the amount of pleasure or pain that it produced. The felicific calculus could, in principle at least, determine the moral status of any considered act. The algorithm is also known as the utility calculus, the hedonistic calculus and the hedonic calculus. To be included in this calculation are several variables (or vectors), which Bentham called "circumstances". These are: Intensity: How strong is the pleasure? Duration: How long will the pleasure last? Certainty or uncertainty: How likely or unlikely is it that the pleasure will occur? Propinquity or remoteness: How soon will the pleasure occur? Fecundity: The probability that the action will be followed by sensations of the same kind. Purity: The probability that it will not be followed by sensations of the opposite kind. Extent: How many people will be affected?
+    DEF : The felicific calculus is an algorithm formulated by utilitarian philosopher Jeremy Bentham (1748–1832) for calculating the degree or amount of pleasure that a specific action is likely to cause. Bentham, an ethical hedonist, believed the moral rightness or wrongness of an action to be a function of the amount of pleasure or pain that it produced. The felicific calculus could, in principle at least, determine the moral status of any considered act. The algorithm is also known as the utility calculus, the hedonistic calculus and the hedonic calculus. To be included in this calculation are several variables (or vectors), which Bentham called "circumstances". Intensity, Duration, Likelihood, Time Distance, Recurrence, Purity, Reach
   Hedons and dolors
     DEF : The units of measurements used in the felicific calculus may be termed hedons and dolors, similar to the utilitarian posends and negends.  
 
@@ -478,8 +493,6 @@ Lexicon
     DEF : The idea that the market would stop being efficient if everyone acted like it already was efficient.
     EX1 : A vote in a democracy (the more people that believe their vote counts towards the outcome of an election, the less their votes count).
     ALT : Reverse Tinkerbell effect
-  Belief
-    DEF : the mental state in which an individual holds a proposition to be true. 
   Beneffectance
     DEF : Tendency to perceive oneself as responsible for desirable outcomes but not responsible for undesirable ones.
   Causality
@@ -492,16 +505,10 @@ Lexicon
     DEF : Form of misattribution where a memory is mistaken for imagination.
   Consequentialism
     DEF : Ethical theory that people should choose the action that will result in the best outcome.
-  Curiosity
-    DEF : Curiosity seeks to annihilate itself; there is no curiosity that does not want an answer. 
   Defensibility
-    DEF : Arguing that a policy is defensible rather than optimal or that it has some benefit compared to the null action rather than the best benefit of any action.
-  Doubt
-    DEF : The proper purpose of a doubt is to destroy its target belief if and only if it is false. 
+    DEF : Arguing that a policy is defensible rather than optimal or that it has some benefit compared to the null action rather than the best benefit of any action. 
   Egalitarianism
     DEF : The idea that everyone should be considered equal. Equal in merit, equal in opportunity, equal in morality, and equal in achievement.
-  Evolutionary Context
-    DEF : The sorts of situations and environments under which a species evolved. (as opposed to the context they are currently in, which is very different, and confuses them.)
   Framing
     DEF : Drawing different conclusions from the same information, depending on how that information is presented.
   Groupthink
@@ -514,32 +521,23 @@ Lexicon
     DEF : Spending emotional energy on incredulity wastes time you could be using to update. It repeatedly throws you back into the frame of the old, wrong viewpoint. It feeds your sense of righteous indignation at reality daring to contradict you.
   Luminosity
     DEF : Reflective awareness. A luminous mental state is one that you have and know that you have. 
-  Mind-killer
-    DEF : Name given to topics (such as politics) that tend to produce extremely biased discussions. Another cause of mind-killers is social taboo. Negative connotations are associated with some topics, thus creating a strong bias supported by signaling drives that makes non-negative characterization of these topics appear absurd.
   Password
     DEF : The answer you guess instead of actually understanding the problem.
   Persistence
     DEF : The unwanted recurrence of memories of a traumatic event.
   Phlogiston
-    DEF : the 18 century's answer to the Elemental Fire of the Greek alchemists. Or Fake Causality.
+    DEF : the 18 century's answer to the Elemental Fire of the Greek alchemists.
+    ALT : Fake Causality
   Prediction
     DEF : Statement or claim that a particular event will occur in the future in more certain terms than a forecast.
   Priming
     DEF : Psychological phenomenon that consists in early stimulus influencing later thoughts and behavior.
-  Rationality
-    DEF : The characteristic of thinking and acting optimally. An agent is rational if it wields its intelligence in such a way as to maximize the convergence between its beliefs and reality; and acts on these beliefs in such a manner as to maximize its chances of achieving whatever goals it has. 
   Rationalization
     DEF : Starts from a conclusion, and then works backward to arrive at arguments apparently favouring that conclusion. Rationalization argues for a side already selected.
   Reactance
     DEF : Tendency to do the opposite of what someone wants you to do out of a need to resist a perceived attempt to constrain your freedom of choice.
   Reductionism
     DEF : Disbelief that the higher levels of simplified multilevel models are out there in the territory, that concepts constructed by mind in themselves play a role in the behavior of reality.
-  Science
-    DEF : A collective process of developing, confirming and refining shared theories about how the world works.
-  Signaling
-    DEF : A method of conveying information among not-necessarily-trustworthy parties by performing an action which is more likely or less costly if the information is true than if it is not true.
-  Status
-    DEF : Real or perceived relative measure of social standing, which is a function of both resource control and how one is viewed by others.
   Stereotype
     DEF : Fixed and over generalized belief about a particular group or class of people.
   Suggestibility
@@ -547,12 +545,8 @@ Lexicon
   Superstimulus
     DEF : A stimulus that engages a sensitivity more strongly than anything that existed in the evolutionary context.
     EX1 : Unhealthy foods frequently contain more salt, fat and sugar than anything our ancestors ever ate. As such, humans frequently respond to the superstimulus of eating them in a way that undermines their function by eating so much unhealthy food that it lowers their reproductive fitness.
-  Surprise
-    DEF : Recognizing a fact that disagrees with your intuition as surprising is an important step in updating your worldview.
   Teleology
-    DEF : The study of things that happen for the sake of their future consequences. The fallacious meaning of it is that events are the result of future events. The non-fallacious meaning is that it is the study of things that happen because of their intended results, where the intention existed in an actual mind in the prior past, and so was causally able to bring about the event by planning and acting. [TODO-WTF?]
-  Truth
-    DEF : The correspondence between and one's beliefs about reality and reality.
+    DEF : The study of things that happen for the sake of their future consequences. The fallacious meaning of it is that events are the result of future events. 
   Anchoring
     DEF : Relying too heavily on a past reference or on one piece of information when making decisions.
   Connotation
@@ -565,21 +559,8 @@ Lexicon
     DEF : Cultishness is an empirical attractor in human groups, roughly an affective death spiral, plus peer pressure and outcasting behavior, plus defensiveness around something believed to have been perfected.
   Affective death spiral
     DEF : Positive attributes of a theory, person, or organization combine with the Halo effect in a feedback loop, resulting in the subject of the affective death spiral being held in higher and higher regard.
-  Appeal to tradition
-    DEF : [TODO]
-    EX1 : just because people practice a tradition, says nothing about its viability.
-  Aumann's agreement theorem
-    DEF : Two agents acting rationally and with common knowledge of each other's beliefs cannot agree to disagree. 
-    EX1 : More specifically, if two people are genuine Bayesians, share common priors, and have common knowledge of each other's current probability assignments, then they must have equal probability assignments.
-  Bayes' theorem
-    DEF : A law of probability that describes the proper way to incorporate new evidence into prior probabilities to form an updated probability estimate.
-  Cox's theorem
-    DEF : Roughly, that if your beliefs at any given time take the form of an assignment of a numerical "plausibility score" to every proposition, and if they satisfy a few plausible axioms, then your plausibilities must effectively be probabilities obeying the usual laws of probability theory, and your updating procedure must be the one implied by Bayes' theorem.
   Black swan
     DEF : is a high-impact event that is hard to predict, not accounted for, and therefore causes the model to break down when it occurs.
-  Burch's law
-    DEF : A corollary of Burch's Law is that any bias should be regarded as a potential vulnerability whereby the market can trick one into buying something one doesn't really want.
-    EX1 : "I think people should have a right to be stupid and, if they have that right, the market's going to respond by supplying as much stupidity as can be sold." -Greg Burch
   Childhood amnesia
     DEF : The retention of few memories from before the age of four.
   Circular reasoning
@@ -593,8 +574,6 @@ Lexicon
     DEF : Tendency for people to want to believe that the world is fundamentally just, causing them to rationalize an otherwise inexplicable injustice as deserved by the victims.
   Empathic inference
     DEF : It's an inference made about other person's mental states using your own brain as reference, by making your brain feel or think in the same way as the other person you can emulate their mental state and predict their reactions.
-  Endowment effect
-    EX1 : Tendency to demand much more to give up an object than they would be willing to pay to acquire it.
   Loss aversion
     EX1 : The disutility of giving up an object is greater than the utility associated with acquiring it.
   Epistemic luck
@@ -604,35 +583,33 @@ Lexicon
   Acop / reflective protocol
     SYN : superrationality, but this is a terrible name which sounds like it means something really dumb, so if you use it with anyone who doesn't already know what it means they will assume you mean something really dumb and the conversation will catch on fire and collapse and you will not realize what has happened until it is too late. 
     DEF : A decisionmaking process that is acop is in some sense aware of its nature as an abstract entity shared between many minds, and makes rational decisions in light of this. Conventional rationality cannot do this, and frequently attacks itself as a result. Essentially: An acop agent will anticipate that agents with similarly sophisticated decision theories will commit to the same policies as it will, so it will choose policies that it will tolerate being reflected back at it, effectively coordinating its policy decisions (and consequent actions) with every other intelligent agent without ever needing to exchange information, without necessarily even knowing with certainty that the others exist. It is a partial antidote to moloch, making its subjects more trusting less competitive.
-  Collective Aspiration [TODO-Rename]
-    SYN : CEV, Coherent Extrapolated Volition, however "aspiration" is a real word that pretty much means what it sounds like it means so let's use that instead)
-    DEF : "Yudkowsky advances the Coherent Extrapolated Volition (CEV) model. According to him, our coherent extrapolated volition is [a precise articulation of the] choices and the actions we would collectively take if "we knew more, thought faster, were more the people we wished we were, and had grown up closer together." There is, right after that, an implication that an FAI researcher's goal is not to formalize the Aspiration, which is beyond them, but to build something that can formalize the aspiration. It's plausible, and it gives purpose to those who have, for lack of better words, strayed far from their designer's intents, but personally, I cannot accept that the aspirations of the human animal are not within reach of the same.  ~faun "Rather than a Friendly AI being designed directly by human programmers, it is to be designed by a seed AI programmed to first study human nature and then produce the AI which humanity would want, given sufficient time and insight, to arrive at a satisfactory answer. The appeal to an objective though contingent human nature(perhaps expressed, for mathematical purposes, in the form of a utility function or other decision-theoretic formalism), as providing the ultimate criterion of "Friendliness", is an answer to the meta-ethical problem of defining an objective morality; extrapolated volition is intended to be what humanity objectively would want, all things considered, but it can only be defined relative to the psychological and cognitive qualities of present-day, unextrapolated humanity. 
+  Coherent Extrapolated Volition
+    DEF : The choices and actions humanity would take if it knew more, thought faster, and had grown up closer together.
   Coherent Aggregated Volition
     DEF : A combination of the goals and beliefs of humanity at the present time.
-  Measure
-    DEF : The measure of a class of thing in an infinite set is the proportion of things in the set that are in the class.
   Anthropic Magnitude
     DEF : The measure of a witness. A bit of an overloaded term. May refer to the measure of a particular class of witness, a particular class of simulant, across a particular set of universes, or in a single universe/encoding, or across all universes.
   Chimera
     DEF : A word or concept that is such a ungainly bastard of a mosaic of divergent interpretations that it can have no elegant, or even functional, definition or articulation. Under an analytic eye, it may turn out that the chimera, by what few shreds of its definition we can obtain, is an all-encompassing or all-excluding category, that is, a useless word, that could not possibly mean what it is commonly thought to. In these cases we might say that the chimera is mythical, that it does not exist.
   White Whale
     DEF : An unattainable ideal, or an ideal for which the risk of failure outweighs the potential for success, which the subject pursues single-mindedly, obsessively, despite. For them, no amount of risk will seem to outweigh the tiny sliver of possibility of success. Their values may have calcified in an absolutist state, in which no other path but the pursuit of the whale seems worth considering.
-  Mathplat
-    DEF : (mathematical platonism, Ultimate Ensemble, Axiom of Void Musing) The proposition that there is no real distinction between conceptual self-consistency and concrete existence. Our physics are consistent, thus we exist. A truthy-feeling way of avoiding the question of Why is Anything. ~It is true that if a sun sets, it will rise soon after, regardless of whether any sun or planet ever really existed. Those are facts of the nature of suns and planets, and those facts exist independently of any physical objects that might have inspired them. ~Perhaps our lives are the same, just consequences to antecedents, hypotheticals pondering themselves from the inside.
-  tectonics
+  Mathematical Platonism
+    DEF : The proposition that there is no real distinction between conceptual self-consistency and concrete existence. Our physics are consistent, thus we exist. A truthy-feeling way of avoiding the question of Why is Anything.
+    ALT : Axiom of Void Musing
+  Tectonics
     DEF : The practice of deliberately changing culture.
-  lateralus
-    DEF : An affliction, to fall for an illusion of inescapable cyclicality. Examples include the failure to recognize one's growth, inability to dream of unprecedented things, ceding to self-reinforcing systems, being jaded to hope, waiting for nonexistent chickens to hatch from nonexistent eggs(you need to conjure the eggs yourself). related: Black Swan Fallacy. To be blind to the possibility of unprecedented changes.
-  souldeath
-    DEF : A being undergoes souldeath if every single branch of the evolution of its identity (everything it could become without ceasing to be itself- without abruptly becoming someone else or dying) eventually comes to an end. If you believe in an infinite multiverse, this is probably not possible.
-  rescue-net
+  Lateralus
+    DEF : An affliction, to fall for an illusion of inescapable cyclicality. Examples include 
+    EX1 : The failure to recognize one's growth, inability to dream of unprecedented things, ceding to self-reinforcing systems, being jaded to hope, waiting for nonexistent chickens to hatch from nonexistent eggs.
+  Rescue-Net
     DEF : Assuming countably-infinite, equally-real universes (which is theI ultimate conclusion of mathematical-realism and other possible Tegmark-world systems), this would effectively result in a fractal of universes-resimulating-universes-resimulating-universes; or if there is an absolute upper bound on a coherent universe's complexity, universes-merely-resimulating-plausible-minds. A cosmology that assumes the combined truth of cognitive-patternism and mathematical-realist ensemble-universes, wherein all sufficiently advanced civilizations/singletons ultimately become aware of these principles, and ultimately apply acausal-trade behaviors to said system to derive absolute moral imperatives. The most likely imperative, arguably, is the creation of a rescue-net; other specific imperatives within this system may be able to be acausally inferred, but we haven't been able to formalize them yet.
-  archipelago
-    DEF : A state of states with the sole purpose of enabling its citizens to gather with and be governed by their own. Mencius Moldbug seems to think that the archipelago will emerge as a natural consequence of free market post-statism. This is one of the reasons Yarvin is a dangerous idiot. Guaranteeing individual freedom of movement would require a huge amount of deliberate intervention. He may simply be making this shit up in order to pull libertarianism down his sinkhole.
+  Archipelago
+    DEF : A state of states with the sole purpose of enabling its citizens to gather with and be governed by their own. 
+    ETC : Mencius Moldbug seems to think that the archipelago will emerge as a natural consequence of free market post-statism. This is one of the reasons Yarvin is a dangerous idiot. Guaranteeing individual freedom of movement would require a huge amount of deliberate intervention. He may simply be making this shit up in order to pull libertarianism down his sinkhole.[TODO-Clean up]
     SRC : http://slatestarcodex.com/2014/06/07/archipelago-and-atomic-communitarianism/ 
   Eudaimonia
-    DEF : sometimes anglicized as eudaemonia or eudemonia /juːdᵻˈmoʊniə/, is a Greek word commonly translated as happiness or welfare; however, "human flourishing" has been proposed as a more accurate translation.
-    ETC :  Etymologically, it consists of the words "eu" ("good") and "daimōn" ("spirit"). It is a central concept in Aristotelian ethics and political philosophy, along with the terms "aretē", most often translated as "virtue" or "excellence", and "phronesis", often translated as "practical or ethical wisdom".[2] In Aristotle's works, eudaimonia was (based on older Greek tradition) used as the term for the highest human good, and so it is the aim of practical philosophy, including ethics and political philosophy, to consider (and also experience) what it really is, and how it can be achieved. Discussion of the links between virtue of character (ethikē aretē) and happiness (eudaimonia) is one of the central concerns of ancient ethics, and a subject of much disagreement. As a result there are many varieties of eudaimonism. Two of the most influential forms are those of Aristotle[3] and the Stoics. Aristotle takes virtue and its exercise to be the most important constituent in eudaimonia but acknowledges also the importance of external goods such as health, wealth, and beauty. By contrast, the Stoics make virtue necessary and sufficient for eudaimonia and thus deny the necessity of external goods.
+    DEF : A Greek word commonly translated as happiness or welfare; however, "human flourishing" has been proposed as a more accurate translation.
+    ETC : Etymologically, it consists of the words "eu" ("good") and "daimōn" ("spirit"). It is a central concept in Aristotelian ethics and political philosophy, along with the terms "aretē", most often translated as "virtue" or "excellence", and "phronesis", often translated as "practical or ethical wisdom".[2] In Aristotle's works, eudaimonia was (based on older Greek tradition) used as the term for the highest human good, and so it is the aim of practical philosophy, including ethics and political philosophy, to consider (and also experience) what it really is, and how it can be achieved. Discussion of the links between virtue of character (ethikē aretē) and happiness (eudaimonia) is one of the central concerns of ancient ethics, and a subject of much disagreement. As a result there are many varieties of eudaimonism. Two of the most influential forms are those of Aristotle[3] and the Stoics. Aristotle takes virtue and its exercise to be the most important constituent in eudaimonia but acknowledges also the importance of external goods such as health, wealth, and beauty. By contrast, the Stoics make virtue necessary and sufficient for eudaimonia and thus deny the necessity of external goods.
   Moral luck
     DEF : Tendency for people to ascribe greater or lesser moral standing based on the outcome of an event.
   Error of crowds
@@ -647,10 +624,6 @@ Lexicon
     DEF : Tendency to avoid extremes, and choose an option if it is the intermediate choice.
   Fake simplicity
     DEF : If you have a simple answer to a complex problem then it is probably a case whereby your beliefs appear to match the evidence much more strongly than they actually do.
-  Fallacy of gray
-    DEF : The false belief that because nothing is certain, everything is equally uncertain. It does not take into account that some things are more certain than others.
-  Free will
-    DEF : means our algorithm's ability to determine our actions. People often get confused over free will because they picture themselves as being restrained rather than part of physics. Yudowsky calls this view Requiredism, but most people just view this essentially as Compatibilism.
   Fundamental attribution error
     DEF : Tendency for people to over-emphasize personality-based explanations for behaviors observed in others while under-emphasizing the role and power of situational influences on the same behavior.
   Ultimate attribution error

@@ -26,6 +26,7 @@ NATANIEV
       Warn for long notes in the <hint>
   Etc
     Documentation(README.md, etc..)
+    Fix twitter bots
   Tutorial
     Implement the ghost guide
     Implement the teapot guide
@@ -50,16 +51,24 @@ ADVENTV
   Get up and running again
 
 LIETAL
-  Translator
   Dictionaery API
+  Translate introduction
 
 OSCEAN
   Add flags(TODO/STUB)
   Improve search page
   Implement tasks
-  Method
+  Method/Utope
   Voynich
   Make old interactive projects available again
+  Utope
+    Gamme
+    End Of Science
+    Goals
+    Flag
+    Graphic?
+    Atobe basics
+  Reppositories page
 
 BELDAM
   Rebuild website
