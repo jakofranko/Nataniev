@@ -5,7 +5,7 @@ class Media
 
   def initialize(cat,id,url = nil)
 
-      @id  = id.to_s.gsub(" ",".")
+      @id  = id.to_s.gsub(" ",".").downcase
       @cat = cat.to_s.downcase.gsub(" ",".")
       @path = "/var/www/client.oscean/media"
       @class = nil
@@ -56,7 +56,7 @@ class Media
 
   def debug
 
-    return "[missing:#{@id}:#{@cat}:#{@class}]"
+    return "[missing:#{path}/#{@cat}/#{@id}:#{@class}]" 
 
   end
 
