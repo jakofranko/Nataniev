@@ -6,6 +6,7 @@
 require_relative "nataniev.rb"
 
 $nataniev = Nataniev.new
+$nataniev.start
 tweet = $nataniev.make_anonym("tweet")
 minute = Time.now.strftime("%M").to_i
 
