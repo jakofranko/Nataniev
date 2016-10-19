@@ -12572,7 +12572,6 @@ NOUN
   ruche
   rucksack
   ruckus
-  ruction
   rudder
   rudiment
   rue
@@ -15660,7 +15659,6 @@ NOUN
   turnup
   turpentine
   turpitude
-  turps
   turquoise
   turret
   turtle
@@ -16763,7 +16761,6 @@ ADV
   accordingly
   actually
   admittedly
-  adrift
   advisedly
   afar
   afield
@@ -16778,7 +16775,6 @@ ADV
   ago
   ahead
   ajar
-  akimbo
   alfresco
   alias
   allegedly
@@ -16956,8 +16952,6 @@ ADV
   nay
   near
   nearly
-  needs
-  neer
   never
   nevermore
   nevertheless
@@ -16970,12 +16964,8 @@ ADV
   now
   nowadays
   nowhere
-  oclock
-  oer
   off
-  oft
   often
-  ofttimes
   once
   only
   onward
@@ -16985,29 +16975,18 @@ ADV
   outdoors
   outright
   over
-  overboard
-  overhead
-  overleaf
   overly
-  overmuch
   overnight
-  overseas
-  parrotfashion
   particularly
   partly
-  passim
   peculiarly
-  pellmell
-  peradventure
   perchance
   perfectly
   perforce
   perhaps
   personally
-  piecemeal
   poorly
   possibly
-  posthaste
   practically
   precisely
   presently
@@ -17016,37 +16995,25 @@ ADV
   properly
   purely
   purposely
-  pursuant
   quite
   rarely
   rather
   readily
   really
-  redhanded
   respectively
-  richly
   rightly
   rightward
   ritardando
   roughly
   roundly
   scarcely
-  scilicet
-  scotfree
-  seaward
   secondly
-  seldom
-  shipshape
+  seldomly
   shortly
-  sic
-  sideways
   simply
   sincerely
-  singlehanded
-  skyhigh
-  skyward
-  slantwise
-  slapbang
+  singlehandedly
+  skywardly
   solely
   someday
   somehow
@@ -17060,22 +17027,14 @@ ADV
   sorely
   straightaway
   supposedly
-  supra
   surely
   swimmingly
   terribly
   thankfully
   then
-  thence
   thenceforth
   there
-  thereabouts
   thereafter
-  thereby
-  therefore
-  therein
-  thereof
-  thereto
   thereupon
   thither
   thrice
@@ -17107,7 +17066,6 @@ ADV
   videlicet
   virtually
   vivace
-  viz
   weakly
   wellnigh
   wherefore
@@ -17125,7 +17083,6 @@ ADV
   yes
   yesterday
   yet
-  yonder
   
 VERB
   abandon
@@ -17791,8 +17748,6 @@ VERB
   deactivate
   deaden
   deafen
-  debag
-  debar
   debark
   debase
   debate
@@ -19324,7 +19279,6 @@ VERB
   pad
   paddle
   paginate
-  pall
   palliate
   palpate
   palpitate
@@ -27012,7 +26966,6 @@ PREP
   since
   throughout
   toward
-  towards
   between
   betwixt
   under
@@ -27077,7 +27030,7 @@ GEOL
   silurian
   triassic
 
-POSS
+ARTICLE
   her
   his
   my
@@ -27085,10 +27038,11 @@ POSS
   their
   thy
   your
+  the
+  a
 
 INTERROG
   how
   what
   when
   where
-  which
