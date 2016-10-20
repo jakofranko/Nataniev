@@ -16,4 +16,14 @@ if minute == 26 then tweet.save("thewillthewisp",$nataniev.answer("behol call wi
 # Tasks
 if minute == 45 then $nataniev.make_anonym("maeve").auto end
 
-$nataniev.answer("willw auto")
+# WillW
+willw  = $nataniev.make_anonym("willw")
+target = tweet.last_tweets_at("thewillthewisp").first
+usern  = target.user.screen_name
+word   = target.text.downcase.split(' ').last.gsub(/[^0-9a-z]/i, '')
+poem   = willw.poem_for(usern,word)
+if poem
+  client = client("thewillthewisp")
+  client.update(poem, in_reply_to_status_id: target.id)
+  client.follow(usern)
+end

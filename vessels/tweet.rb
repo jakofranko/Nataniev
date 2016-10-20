@@ -34,12 +34,7 @@ class Tweet
 
   def save account, content
 
-    if !File.exist?("#{$nataniev.path}/secrets/secret.#{account}.config.rb") then return "Missing keys." end
-
-    load "#{$nataniev.path}/secrets/secret.#{account}.config.rb"
-
-    client = Twitter::REST::Client.new($twitter_config)
-    client.update(content)
+    client(account).update(content)
 
     return "Saved tweet #{content}, to #{account}."
 
@@ -62,6 +57,23 @@ class Tweet
     end
 
     return tweets
+
+  end
+
+  def last_tweets_at account
+
+    tweets = []
+    client(account).search("to:#{account}", :result_type => "recent").take(5).each do |tweet|
+      tweets.push(tweet)
+    end
+    return tweets
+
+  end
+
+  def client account
+
+    require "#{$nataniev.path}/secrets/secret.#{account}.config.rb"
+    return Twitter::REST::Client.new($twitter_config)
 
   end
 
