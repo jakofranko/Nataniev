@@ -15,3 +15,5 @@ if minute == 16 then tweet.save("dictionarism",$nataniev.answer("behol call dism
 if minute == 26 then tweet.save("thewillthewisp",$nataniev.answer("behol call willw")) end
 # Tasks
 if minute == 45 then $nataniev.make_anonym("maeve").auto end
+
+$nataniev.answer("willw auto")

@@ -18,9 +18,27 @@ class Ra
 
   end
 
+  def to_s
+
+    return @payload.join("\n")
+
+  end
+
   def length
 
     return @payload.length
+
+  end
+
+  def replace text
+
+    # Create temp file
+    out_file = File.new("#{path}/library/temp.#{@name}.ra", "w")
+    out_file.puts(text)
+    out_file.close
+
+    # Replace file
+    File.rename("#{path}/library/temp.#{@name}.ra", "#{@path}/library/#{@name}.ra")
 
   end
 
