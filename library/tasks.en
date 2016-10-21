@@ -3,6 +3,8 @@
 ~ AUTH : Devine Lu Linvega
 
 NATANIEV
+  Migrate dictionary to .DI file
+  Migrate memory to .DI file
   Actions
     Documentation
       Find good system
@@ -62,9 +64,7 @@ LIETAL
 
 OSCEAN
   Add flags(TODO/STUB)
-  Improve search page
   Implement tasks
-  Method/Utope
   Voynich
   Make old interactive projects available again
   Utope
@@ -76,8 +76,8 @@ OSCEAN
     Atobe basics
   Repositories page
   Surperstition short
-  Migrate Tasks into Lexicon?
   Migrate dictionary
+  Diary page
 
 BELDAM
   Rebuild website
@@ -89,6 +89,7 @@ HUNDREDRABBITS
   Migrate Oquonie to Javascript
   Migrate Logo animation to Javascript
   Make alpha for Markle
+  Update Episode 8 preview image with photo
 
 GRIMGRAIN
 

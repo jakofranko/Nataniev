@@ -38,7 +38,7 @@ class Array
         stash = ""
       end
 
-      if collection[rune]["stash"]
+      if collection[rune] && collection[rune]["stash"]
         stash += "#{text}<br />"
       else
         html += "<#{tag}>#{text}</#{tag}>"
