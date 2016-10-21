@@ -7,20786 +7,26966 @@
 ~ V : VERB
 ~ D : ADV
 ~ P : PREP
-~ A : ARTICLE
+~ R : ARTICLE
 ~ Q : INTERROG
 
-A1 a
-N2 aardvark
-D2 aback
-N3 abacus
-V3 abandon
-V2 abase
-V2 abate
-N3 abattoir
-N3 abbacy
-N2 abbess
-N2 abbey
-N2 abbot
-V3 abbreviate
-V3 abdicate
-N3 abdomen
-V2 abduct
-D2 abeam
-N4 aberration
-V2 abet
-N3 abeyance
-V2 abhor
-N3 abhorrence
-V2 abide
-N4 ability
-V2 abjure
-N3 ablution
-V3 abnegate
-N4 abnegation
-D2 aboard
-N2 abode
-V3 abolish
-N4 abolition
-N2 abomb
-V4 abominate
-N4 aborigine
-V2 abort
-N3 abortion
-V2 abound
-P2 about
-P2 above
-V2 abrade
-N3 abrasion
-D2 abreast
-V2 abridge
-D2 abroad
-V3 abrogate
-N2 abscess
-V2 abseil
-N2 absence
-N3 absentee
-N4 absenteeism
-N2 absinth
-D5 absolutely
-N4 absolution
-N4 absolutism
-V2 absolve
-V2 absorb
-N3 absorption
-V2 abstain
-N3 abstention
-N3 abstinence
-N3 abstraction
-N3 abundance
-V2 abuse
-V2 abut
-N3 abutment
-D2 abuzz
-N2 abyss
-N3 acacia
-N4 academia
-N5 academician
-N4 academy
-N3 acanthus
-V2 accede
-V4 accelerate
-N5 accelerator
-N2 accent
-V3 accentuate
-V2 accept
-N3 acceptance
-N2 access
-N3 accession
-N4 accessory
-N3 accident
-V2 acclaim
-N4 acclamation
-V4 acclimatize
-N3 accolade
-V4 accommodate
-N5 accommodation
-N5 accompaniment
-V4 accompany
-N3 accomplice
-V3 accomplish
-N4 accomplishment
-V2 accord
-N3 accordance
-D3 according
-D4 accordingly
-N3 accordion
-V2 accost
-N2 account
-N3 accountant
-V3 accredit
-N3 accretion
-V2 accrue
-V4 accumulate
-N5 accumulation
-N5 accumulator
-N4 accuracy
-N4 accusation
-V2 accuse
-V3 accustom
-N1 ace
-N5 acetaldehyde
-N3 acetate
-N3 acetone
-N4 acetylene
-N1 ache
-V2 achieve
-N4 achievement
-N2 acid
-V3 acknowledge
-N5 acknowledgement
-N1 acme
-N1 acne
-N3 acolyte
-N3 aconite
-N2 acorn
-V3 acquaint
-N4 acquaintance
-V3 acquiesce
-V2 acquire
-N4 acquirement
-N4 acquisition
-V2 acquit
-N1 acre
-N2 acreage
-N3 acrobat
-N3 acronym
-N4 acropolis
-P2 across
-N3 acrostic
-N1 act
-N2 acting
-N3 actinism
-N3 actinium
-N2 action
-V3 activate
-N3 activism
-N4 activity
-N2 actor
-N2 actress
-N4 actuality
-D3 actually
-N3 actuary
-V2 actuate
-N3 acuity
-N3 acumen
-N4 acupuncture
-N1 ad
-N2 adage
-N2 adam
-V2 adapt
-N3 adaptor
-V1 add
-N3 addendum
-N2 adder
-N2 addict
-N3 addition
-N3 additive
-V2 addle
-N2 address
-N3 addressee
-V2 adduce
-V2 adhere
-N3 adherent
-N3 adhesion
-N3 adjective
-V2 adjoin
-V2 adjourn
-V2 adjudge
-V4 adjudicate
-N2 adjunct
-V2 adjure
-V2 adjust
-N3 adjutant
-N2 admin
-V4 administer
-V4 administrate
-N5 administration
-N5 administrator
-N3 admiral
-N4 admiralty
-N4 admiration
-V2 admire
-N3 admission
-V2 admit
-N3 admittance
-D4 admittedly
-N3 admixture
-V3 admonish
-N1 ado
-N2 adobe
-N3 adonis
-V2 adopt
-V2 adore
-V2 adorn
-N4 adrenalin
-V2 adsorb
-N4 adulation
-V4 adulterate
-N4 adulterer
-N4 adultery
-V3 adumbrate
-V2 advance
-N4 advancement
-N3 advantage
-N2 advent
-N3 adventist
-N3 adventure
-N4 adventurer
-N2 adverb
-N4 adversary
-N4 adversity
-N2 advert
-V3 advertise
-N5 advertisement
-N2 advice
-V2 advise
-D4 advisedly
-N3 adviser
-N3 advocaat
-N4 advocacy
-N3 advocate
-N1 adz
-N1 adze
-N2 aegis
-N2 aeon
-V2 aerate
-N2 aerial
-N3 aerodrome
-N3 aerofoil
-N3 aeroplane
-N3 aerosol
-N3 aerospace
-N2 aesthete
-N4 aetiology
-D2 afar
-N2 affair
-V2 affect
-N4 affectation
-N3 affection
-N4 affidavit
-V3 affiliate
-N4 affiliation
-N4 affinity
-V2 affirm
-V2 affix
-V2 afflict
-N3 affliction
-V2 afford
-V3 afforest
-N2 affray
-N2 affront
-N2 afghan
-N5 aficionado
-D2 afield
-D2 aflame
-D2 afloat
-D2 afoot
-D2 afresh
-N3 african
-N3 afrikaans
-N4 afrikaner
-N5 afrocaribbean
-D1 aft
-P2 after
-N3 afterbirth
-N3 aftercare
-N4 aftereffect
-N3 afterglow
-N3 afterlife
-N3 aftermath
-N3 afternoon
-N3 aftershave
-N3 aftertaste
-N3 afterthought
-D3 afterward
-D3 afterwards
-D2 again
-P2 against
-N3 agaric
-N2 agate
-N2 agave
-N1 age
-N2 ageism
-N3 agency
-N3 agenda
-N2 agent
-V4 agglomerate
-V4 agglutinate
-V3 aggrandize
-V3 aggravate
-N3 aggregate
-N3 aggression
-N3 aggressor
-N2 aggro
-V3 agitate
-N2 agnail
-N3 agnostic
-D1 ago
-V3 agonize
-N3 agony
-N5 agoraphobia
-V2 agree
-N3 agreement
-N4 agriculture
-N4 agrimony
-N4 agronomy
-N2 ague
-D2 ahead
-N1 aid
-N1 aide
-N4 aidedecamp
-N1 aids
-V1 ail
-N3 aileron
-N2 ailment
-V1 aim
-N1 air
-N2 airbase
-N1 airbed
-N2 airbrick
-N2 airbus
-N5 airconditioning
-N2 aircraft
-N4 aircraftcarrier
-N3 aircraftman
-N4 aircraftwoman
-N2 aircrew
-N3 aircushion
-N4 airedale
-N2 airer
-N2 airfield
-N2 airgun
-N2 airhead
-N2 airlift
-N2 airline
-N3 airliner
-N2 airlock
-N2 airmail
-N2 airman
-N2 airplane
-N2 airport
-N2 airscrew
-N2 airship
-N2 airspace
-N2 airstrip
-N2 airway
-N3 airwoman
-N2 aisle
-N1 aitch
-N2 aitchbone
-D2 ajar
-N3 akela
-N4 alabaster
-N4 alacrity
-N2 alarm
-N3 alarmist
-N1 alb
-N3 albatross
-N3 albino
-N2 album
-N3 albumen
-N3 albumin
-N3 alchemy
-N3 alcohol
-N4 alcoholism
-N2 alcove
-N3 aldehyde
-N2 alder
-N3 alderman
-N1 ale
-N3 alehouse
-N3 alembic
-N3 alfalfa
-D3 alfresco
-N2 alga
-N3 algebra
-N2 algol
-N3 algorithm
-D2 alias
-N3 alibi
-V3 alienate
-V2 alight
-V2 align
-N4 alimony
-N3 alkali
-N5 alkalinity
-N3 alkaloid
-N2 alkane
-N2 alkene
-N2 alkyne
-N2 allah
-V2 allay
-N2 allclear
-N4 allegation
-V2 allege
-D4 allegedly
-N3 allegiance
-N4 allegory
-N3 allergy
-V3 alleviate
-N2 alley
-N2 alliance
-N4 alligator
-N5 alliteration
-V3 allocate
-V2 allot
-N3 allotment
-N4 allotropy
-V2 allow
-N3 allowance
-N2 alloy
-N3 allrounder
-N2 allspice
-V2 allude
-V2 allure
-N3 allusion
-N3 alluvium
-N2 ally
-N3 almanac
-N2 almond
-N3 almoner
-D2 almost
-N2 almshouse
-N2 aloe
-P2 along
-D3 alongside
-D2 aloud
-N1 alp
-N3 alpaca
-N2 alpha
-N3 alphabet
-D3 already
-D2 alright
-N3 alsatian
-D2 also
-N3 alsoran
-N2 altar
-N3 altarpiece
-V2 alter
-V3 altercate
-V3 alternate
-N4 alternator
-N4 altimeter
-N3 altitude
-N2 alto
-D4 altogether
-N2 altruism
-N2 alum
-N4 alumina
-N4 aluminium
-V4 aluminize
-N4 aluminum
-N3 alumnus
-D2 always
-N3 alyssum
-N3 amalgam
-V4 amalgamate
-N4 amanuensis
-N3 amaranth
-N4 amaryllis
-V2 amass
-N3 amateur
-V2 amaze
-N3 amazon
-N4 ambassador
-N2 amber
-N2 ambience
-N2 ambit
-N3 ambition
-N4 ambivalence
-V2 amble
-N3 ambrosia
-N3 ambulance
-N3 ambuscade
-N2 ambush
-V4 ameliorate
-V2 amend
-N3 amendment
-N2 amends
-N4 amenity
-N5 americanism
-N4 americium
-N3 amethyst
-N3 amharic
-D3 amidships
-P2 amidst
-N2 amine
-N3 amity
-N3 ammeter
-N2 ammo
-N3 ammonia
-N3 ammonite
-N4 ammunition
-N3 amnesia
-N3 amnesty
-N5 amniocentesis
-N2 amnion
-N3 amoeba
-D2 amok
-P2 amongst
-V3 amortize
-N2 amount
-N2 amour
-N1 amp
-N4 ampelopsis
-N3 amperage
-N2 ampere
-N3 ampersand
-N4 amphetamine
-N3 amphitheatre
-N3 amphora
-N3 amplifier
-V3 amplify
-N3 amplitude
-N3 ampoule
-N3 ampulla
-V3 amputate
-N3 amulet
-V2 amuse
-N4 amusement
-N4 anabaptist
-N4 anabolism
-N4 anachronism
-N4 anaconda
-N3 anaemia
-N4 anaesthesia
-N4 anaesthetist
-V4 anaesthetize
-N3 anagram
-N4 analgesia
-N3 analog
-V4 analogize
-N4 analogue
-N4 analogy
-V3 analyse
-N4 analysis
-N3 analyst
-N3 analyze
-N3 anapaest
-N3 anarchism
-N3 anarchist
-N3 anarchy
-N4 anathema
-V5 anathematize
-N4 anatomy
-N3 ancestor
-N3 ancestry
-N2 anchor
-N3 anchorage
-N3 anchorite
-N3 anchorman
-N3 anchovy
-N3 andiron
-N2 android
-N3 anecdote
-N3 anemia
-N5 anemometer
-N3 anemone
-N4 anesthesia
-N3 aneurysm
-D2 anew
-N2 angel
-N3 angelfish
-N4 angelica
-N3 angelus
-N2 anger
-N3 angina
-N3 angiosperm
-V2 angle
-N3 anglicism
-V3 anglicize
-N4 anglophile
-N3 angora
-N4 angostura
-N1 angst
-N2 angstrom
-N2 anguish
-N3 aniline
-V4 animadvert
-N3 animal
-N4 animalism
-N5 animality
-V4 animalize
-N4 animation
-N3 animism
-N5 animosity
-N3 animus
-N2 anion
-N2 anise
-N3 aniseed
-N2 ankle
-N2 anklet
-N4 ankylosis
-N3 annatto
-V2 anneal
-N3 annelid
-V2 annex
-N2 annexe
-V4 annihilate
-N5 anniversary
-V3 annotate
-V2 announce
-N3 announcer
-V2 annoy
-N3 annuity
-V2 annul
-N4 annunciation
-N2 anode
-V3 anodize
-V2 anoint
-N4 anomaly
-D2 anon
-N3 anorak
-N4 anorexia
-N2 answer
-N3 answerphone
-N1 ant
-N4 antagonism
-N4 antagonist
-V4 antagonize
-N1 ante
-N3 anteater
-N4 antecedent
-N4 antechamber
-V3 antedate
-N3 antelope
-N3 antenna
-N3 anteroom
-N2 anthem
-N2 anther
-N2 anthill
-N4 anthology
-N3 anthracite
-N2 anthrax
-N5 anthropology
-N5 anthropomorphism
-N4 antibiotic
-N4 antibody
-N2 antic
-N3 antichrist
-V4 anticipate
-N4 anticlimax
-N4 anticyclone
-N5 antidepressant
-N3 antidote
-N3 antifreeze
-N3 antigen
-N4 antihero
-N5 antihistamine
-N3 antiknock
-N3 antilog
-N5 antilogarithm
-N5 antimacassar
-N4 antimatter
-N4 antimony
-N4 antinomy
-N4 antinovel
-N5 antiparticle
-N4 antipathy
-N5 antiperspirant
-N3 antiphon
-N3 antipope
-N4 antiquary
-N3 antique
-N4 antiquity
-N4 antirrhinum
-N4 antisemite
-N4 antiserum
-N4 antithesis
-N4 antitoxin
-N2 antler
-N3 antonym
-N2 antrum
-N2 anus
-N2 anvil
-N3 anxiety
-N4 anybody
-D3 anyhow
-D3 anyway
-D3 anywhere
-N2 aorta
-D2 apace
-N2 apache
-D2 apart
-N3 apartheid
-N3 apartment
-N3 apathy
-N1 ape
-N3 apeman
-N4 aperitif
-N3 aperture
-N2 apex
-N3 aphasia
-N3 aphelion
-N2 aphid
-N2 aphis
-N3 aphorism
-N3 apiary
-N4 apiculture
-D2 apiece
-N2 aplomb
-N4 apocalypse
-N3 apogee
-N4 apologia
-N4 apologist
-V4 apologize
-N4 apology
-N3 apophthegm
-N4 apoplexy
-N4 apostasy
-N3 apostate
-N3 apostle
-N4 apostolate
-N3 apostrophe
-N5 apothecary
-N4 apotheosis
-V2 appal
-N4 apparatus
-N3 apparel
-N4 apparition
-V2 appeal
-V2 appear
-N3 appearance
-V2 appease
-N3 appellant
-N4 appellation
-V2 append
-N3 appendage
-N5 appendectomy
-N5 appendicitis
-N3 appendix
-V3 appertain
-N3 appetite
-N4 appetizer
-V2 applaud
-N2 applause
-N2 apple
-N2 appliance
-N3 applicant
-N4 application
-N4 applicator
-N3 appliqu
-V2 apply
-V2 appoint
-N3 appointment
-V3 apportion
-N4 apposition
-N3 appraisal
-V2 appraise
-V3 appreciate
-N4 appreciation
-V3 apprehend
-N4 apprehension
-N3 apprentice
-V2 apprise
-N2 appro
-V2 approach
-N4 approbation
-N3 approval
-V2 approve
-N4 appurtenance
-N3 apricot
-N2 april
-N2 apron
-N2 aprsski
-N1 apse
-N2 apsis
-N3 aptitude
-N2 aqua
-N3 aqualung
-N4 aquamarine
-N3 aquaplane
-N4 aquarelle
-N3 aquarium
-N3 aquarius
-N3 aquatint
-N3 aqueduct
-N4 aquilegia
-N2 arab
-N4 arabesque
-N3 arabic
-N3 arachnid
-N3 araldite
-N3 aramaic
-N3 arbiter
-V3 arbitrate
-N4 arbitration
-N4 arbitrator
-N2 arbor
-N4 arboretum
-N5 arboriculture
-N2 arbour
-N3 arbutus
-N1 arc
-N2 arcade
-N3 arcadian
-N5 archaeology
-N5 archaeopteryx
-N2 archaism
-N3 archangel
-N3 archbishop
-N4 archbishopric
-N3 archdeacon
-N3 archdiocese
-N2 archduke
-N4 archenemy
-N4 archeology
-N2 archer
-N3 archery
-N3 archetype
-N4 archimandrite
-N5 archipelago
-N3 architect
-N4 architecture
-N3 architrave
-N2 archive
-N3 archivist
-N2 archway
-N2 ardor
-N2 ardour
-N1 are
-N2 area
-N3 arena
-N3 areola
-N2 argent
-N2 argon
-N3 argosy
-N2 argot
-V2 argue
-N3 argument
-N5 argumentation
-N2 argus
-N4 argybargy
-N2 aria
-N2 aries
-D2 aright
-V2 arise
-N5 aristocracy
-N4 aristocrat
-N5 aristotelian
-N4 arithmetic
-N1 ark
-N1 arm
-N3 armada
-N4 armadillo
-N4 armageddon
-N3 armament
-N3 armature
-N2 armband
-N2 armchair
-N3 armhole
-N3 armistice
-N2 armlet
-N2 armour
-N3 armourer
-N3 armoury
-N2 armpit
-N2 armrest
-N3 armwrestling
-N2 army
-N3 arnica
-N3 aroma
-N6 aromatherapy
-D2 around
-V2 arouse
-N3 arpeggio
-N2 arrack
-V2 arraign
-V2 arrange
-N4 arrangement
-N2 arras
-N2 array
-V2 arrest
-N3 arrester
-N4 arrirepense
-N2 arris
-N3 arrival
-V2 arrive
-N3 arriviste
-V3 arrogate
-N2 arrow
-N3 arrowhead
-N3 arrowroot
-N1 arse
-N4 arsehole
-N3 arsenal
-N3 arsenic
-N2 arson
-N1 art
-N1 arte
-N3 artefact
-N6 arteriosclerosis
-N3 artery
-N3 arthritis
-N3 arthropod
-N3 artichoke
-N3 article
-N5 articulation
-N3 artifice
-N4 artificer
-N4 artillery
-N3 artisan
-N2 artist
-N2 artiste
-N2 artwork
-N2 arum
-N2 aryan
-N1 as
-N5 asafetida
-N5 asafoetida
-N3 asbestos
-V2 ascend
-N4 ascendancy
-N3 ascension
-N2 ascent
-V3 ascertain
-V2 ascribe
-N3 asepsis
-N1 ash
-N2 ashcan
-N4 ashkenazi
-N2 ashlar
-D2 ashore
-N2 ashram
-N2 ashtray
-N2 asian
-N3 asiatic
-D2 aside
-V1 ask
-D2 askance
-D2 askew
-D2 aslant
-N1 asp
-N4 asparagus
-N2 aspect
-N2 aspen
-N4 asperity
-N3 aspersion
-N2 asphalt
-N3 asphodel
-N3 asphyxia
-V3 asphyxiate
-N2 aspic
-N4 aspidistra
-N4 aspiration
-N4 aspirator
-V2 aspire
-N3 aspirin
-N1 ass
-V2 assail
-N3 assassin
-V4 assassinate
-N2 assault
-N2 assay
-N3 assegai
-N3 assemblage
-V3 assemble
-N3 assembler
-N3 assembly
-V2 assent
-V2 assert
-N3 assertion
-V2 assess
-N3 assessor
-N2 asset
-N4 assetstripping
-V4 asseverate
-N3 asshole
-V2 assign
-N4 assignation
-N3 assignee
-N3 assignment
-V4 assimilate
-V2 assist
-N3 assistant
-V3 associate
-N4 association
-N3 assonance
-V2 assort
-N3 assortment
-V2 assuage
-V2 assume
-N3 assumption
-N3 assurance
-V2 assure
-D4 assuredly
-N3 astatine
-N2 aster
-N3 asterisk
-D2 astern
-N3 asteroid
-N2 asthma
-N4 astigmatism
-V3 astonish
-V2 astound
-D3 astraddle
-N3 astrakhan
-D2 astray
-D2 astride
-N3 astrolabe
-N4 astrology
-N3 astronaut
-N4 astronomy
-D3 asunder
-N3 asylum
-N4 asymmetry
-P1 at
-N3 atavism
-N3 ataxia
-N3 atelier
-N2 atheism
-N6 atherosclerosis
-N2 athlete
-N2 athome
-N2 atlas
-N3 atmosphere
-N2 atoll
-N2 atom
-V3 atomize
-N4 atomizer
-V2 atone
-N4 atonement
-N2 atrium
-N4 atrocity
-N3 atrophy
-N3 atropine
-N2 attach
-N3 attachment
-V2 attack
-V2 attain
-N3 attainment
-N2 attar
-V2 attempt
-V2 attend
-N3 attendance
-N3 attendant
-N3 attendee
-N3 attention
-V3 attenuate
-V2 attest
-N2 attic
-N3 attitude
-V5 attitudinize
-N3 attorney
-N6 attorneygeneral
-V2 attract
-N3 attraction
-V3 attribute
-N3 attrition
-V2 attune
-N3 aubergine
-N3 aubrietia
-N2 auction
-N3 auctioneer
-N2 audience
-N3 audiotape
-N2 audit
-N3 audition
-N3 auditor
-N4 auditorium
-N2 auger
-N1 aught
-V2 augment
-V2 augur
-N3 augury
-N1 auk
-N1 aunt
-N2 auntie
-N2 aura
-N3 aureole
-N3 auricle
-N4 auricula
-N2 aurochs
-N3 aurora
-N4 auscultation
-N2 auspice
-N4 austerity
-N3 australian
-N3 autarchy
-N3 autarky
-V4 authenticate
-N2 author
-N4 authority
-V3 authorize
-N3 authorship
-N2 autism
-N3 autobahn
-N5 autobiography
-N3 autoclave
-N4 autocracy
-N3 autocrat
-N3 autocross
-N3 autocue
-N3 autodaf
-N3 autograph
-N3 automat
-V3 automate
-N4 automation
-N4 automatism
-N4 automaton
-N5 automobile
-N4 autonomy
-N4 autopilot
-N3 autopsy
-N3 autoroute
-N4 autostrada
-N5 autosuggestion
-N2 autumn
-N2 auxin
-V2 avail
-N3 avalanche
-N3 avantgarde
-N3 avarice
-N3 avatar
-N1 ave
-V2 avenge
-N3 avenue
-V2 aver
-N3 average
-N3 aversion
-V2 avert
-N3 avesta
-N3 aviary
-N3 aviation
-N3 aviator
-N4 avocado
-N3 avocet
-V2 avoid
-N4 avoirdupois
-V2 avow
-V2 await
-V2 awake
-V3 awaken
-V2 award
-D2 away
-N1 awe
-D3 awfully
-D3 awhile
-N1 awl
-N1 awn
-N2 awning
-D2 awry
-N2 axil
-N2 axiom
-N2 axis
-N2 axle
-N3 axolotl
-N4 ayatollah
-D1 aye
-N3 azalea
-N3 azimuth
-N2 aztec
-N2 azure
-V1 baa
-V2 babble
-N1 babe
-N2 babel
-N2 baboon
-N2 baby
-N3 babygro
-V3 babysit
-N4 baccalaureate
-N3 baccarat
-N3 bacchanal
-N2 bacchant
-N2 baccy
-N3 bachelor
-N3 bacillus
-N1 back
-N2 backache
-N3 backbencher
-N3 backbiting
-N3 backboiler
-N2 backbone
-N3 backburner
-N2 backchat
-N2 backcloth
-V2 backcomb
-N2 backcrawl
-V2 backdate
-N2 backdrop
-V2 backfire
-N4 backformation
-N3 backgammon
-N2 background
-N3 backhander
-N2 backing
-N2 backlash
-N2 backlist
-N2 backlog
-N2 backpack
-N2 backrest
-N2 backside
-V2 backslide
-V2 backspace
-N2 backspin
-D2 backstage
-N2 backstitch
-N2 backstop
-N2 backstreet
-N2 backstroke
-V2 backtrack
-N2 backup
-D2 backward
-D2 backwards
-N2 backwash
-N3 backwater
-N2 backyard
-N2 bacon
-N5 bacteriology
-N3 bacterium
-N2 baddy
-N1 badge
-N2 badger
-N3 badinage
-D2 badly
-N3 badminton
-V2 badmouth
-V2 baffle
-N1 bag
-N4 bagatelle
-N2 bagel
-N2 baggage
-N2 bagpipe
-N2 baguette
-N2 bahai
-V1 bail
-N2 bailey
-N2 bailiff
-N3 bailiwick
-N3 bainmarie
-N1 bairn
-N1 bait
-N1 baize
-V1 bake
-N3 bakelite
-N2 baker
-N3 bakery
-N4 bakingpowder
-N4 bakingsoda
-N3 baklava
-N2 baksheesh
-N4 balaclava
-N4 balalaika
-N2 balance
-N3 balcony
-N3 balderdash
-N2 baleen
-N1 ball
-N2 ballad
-N3 balladry
-N2 ballast
-N3 ballbearing
-N2 ballboy
-N2 ballcock
-N4 ballerina
-N2 ballet
-N4 balletdancer
-N3 ballista
-N2 balloon
-N2 ballot
-N3 ballotbox
-N4 ballotpaper
-N2 ballpark
-N2 ballpoint
-N2 ballroom
-N2 ballsup
-N3 ballyhoo
-N1 balm
-N2 balsa
-N2 balsam
-N3 baluster
-N3 balustrade
-N2 bamboo
-V3 bamboozle
-V1 ban
-N3 banana
-N1 band
-N2 bandage
-N3 bandanna
-N2 bandbox
-N3 bandeau
-N4 banderole
-N3 bandicoot
-N2 bandit
-N3 bandmaster
-N2 bandog
-N3 bandolier
-N2 bandsaw
-N2 bandsman
-N2 bandstand
-N3 bandwagon
-N2 bandwidth
-V2 bandy
-N1 bane
-N1 bang
-N2 banger
-N2 bangle
-V2 banish
-N3 banister
-N2 banjo
-N1 bank
-N2 banknote
-N2 banksia
-N2 banner
-N2 bannock
-N2 banquet
-N2 banquette
-N2 banshee
-N2 bantam
-N3 bantamweight
-N2 banter
-N2 bantu
-N3 bantustan
-N2 banyan
-N2 baobab
-N1 bap
-N2 baptism
-N2 baptist
-N4 baptistery
-V2 baptize
-N1 bar
-N3 barathea
-N1 barb
-N3 barbarian
-N3 barbarism
-N4 barbarity
-N3 barbecue
-N2 barbel
-N2 barbell
-N2 barber
-N3 barberry
-N3 barbershop
-N3 barbican
-N2 barbie
-N4 barbiturate
-N2 barbour
-N4 barcarole
-N1 bard
-D3 barely
-N2 bargain
-N1 barge
-N3 bargeboard
-N2 bargee
-N4 bargepole
-N3 baritone
-N2 barium
-N1 bark
-N2 barker
-N2 barley
-N1 barm
-N2 barmaid
-N2 barman
-N1 barn
-N3 barnacle
-N2 barney
-N2 barnowl
-V2 barnstorm
-N2 barnyard
-N3 barograph
-N4 barometer
-N2 baron
-N3 baroness
-N3 baronet
-N3 barony
-N2 barque
-N1 barr
-V2 barrack
-N4 barracouta
-N4 barracuda
-N2 barrage
-N3 barratry
-N1 barre
-N2 barrel
-N4 barrelorgan
-N3 barricade
-N2 barrier
-N3 barrister
-N2 barrow
-N3 bartender
-V2 barter
-N2 baryon
-N3 baryta
-N2 barytes
-N2 basalt
-N3 baseball
-N3 baseline
-N3 basement
-V1 bash
-N2 basil
-N4 basilica
-N3 basilisk
-N2 basin
-N2 basis
-V1 bask
-N2 basket
-N3 basketball
-N3 basketry
-N3 basketwork
-N2 basque
-N3 basrelief
-N1 bass
-N2 basset
-N3 bassinet
-N2 basso
-N2 bassoon
-N1 bast
-V3 bastardize
-V1 baste
-N4 bastinado
-N2 bastion
-V1 bat
-N1 batch
-N1 bath
-V1 bathe
-N2 bathhouse
-N4 bathingcostume
-N2 bathos
-N2 bathrobe
-N2 bathroom
-N3 bathyscaphe
-N3 bathysphere
-N2 batik
-N2 batiste
-N2 batman
-N2 baton
-N3 batrachian
-N2 batsman
-N3 battalion
-V2 batten
-N3 battenberg
-N2 batter
-N4 batteringram
-N3 battery
-N2 battle
-N2 battleaxe
-N3 battlebus
-N4 battlecruiser
-N3 battlecry
-N3 battledore
-N3 battledress
-N3 battlefield
-N3 battlement
-N3 battleship
-N2 bauble
-N2 bauxite
-N3 bawdyhouse
-V1 bawl
-V1 bay
-N3 bayberry
-N2 bayleaf
-N3 bayonet
-N2 bazaar
-N3 bazooka
-N2 bdellium
-V1 be
-P2 before
-P2 between
-P2 betwixt
-N2 bevel
-N3 beverage
-N2 bevy
-V2 bewail
-V2 beware
-V3 bewilder
-V2 bewitch
-P2 beyond
-N2 bezel
-N3 bezique
-N1 bhang
-N1 bias
-N2 biathlon
-N1 bib
-N2 bibcock
-N2 bible
-N4 biblebashing
-N4 bibliography
-N4 bibliophile
-N2 bicarb
-N4 bicarbonate
-N5 bicentenary
-N2 biceps
-V2 bicker
-N3 bicycle
-V1 bid
-N2 bidding
-N2 biddy
-V1 bide
-N2 bidet
-N1 bier
-V3 bifurcate
-N3 bigamy
-N2 bighead
-N1 bight
-N2 bigot
-N2 bigwig
-N2 bijou
-N3 bikini
-N3 bilberry
-N2 bile
-N1 bilge
-N3 bilharzia
-V1 bilk
-N1 bill
-N3 billabong
-N2 billboard
-N2 billet
-N3 billetdoux
-N2 billhook
-N2 billiards
-N3 billionaire
-N2 billow
-N3 billposter
-N2 billy
-N2 bimbo
-N1 bin
-V1 bind
-N2 binder
-N3 bindery
-N2 binding
-N2 bindweed
-N1 bine
-N2 bingo
-N3 binliner
-N2 binman
-N3 binnacle
-N3 binomial
-N1 bint
-N4 biochemistry
-N5 bioengineering
-N4 biogenesis
-N3 biography
-N3 biology
-N2 biopsy
-N2 biorhythm
-N2 biosphere
-N4 biosynthesis
-N5 biotechnology
-N2 biotin
-N1 biped
-N2 biplane
-N1 birch
-N1 bird
-N2 birdbath
-N2 birdbrain
-N2 birdcage
-N2 birdie
-N2 birdlime
-N3 birdnesting
-N2 birdseed
-N2 birdsong
-N3 birdwatcher
-N3 biretta
-N2 biro
-N1 birth
-N2 birthday
-N2 birthmark
-N2 birthplace
-N2 birthright
-N2 birthstone
-N2 biscuit
-V2 bisect
-N2 bishop
-N3 bishopric
-N2 bismuth
-N2 bison
-N2 bisque
-N2 bister
-N1 bistre
-N2 bistro
-N1 bit
-N1 bitch
-V1 bite
-N2 bittern
-N3 bitumen
-N2 bivalve
-N3 bivouac
-N1 biz
-V1 blab
-N2 blabber
-V2 blackball
-N3 blackberry
-N2 blackbird
-N2 blackboard
-N2 blackcap
-N3 blackcurrant
-V2 blacken
-N2 blackfly
-N2 blackguard
-N2 blackhead
-N2 blacking
-N2 blackjack
-N2 blacklead
-N2 blackleg
-N2 blacklist
-N2 blackmail
-N2 blackout
-N2 blackshirt
-N2 blacksmith
-N2 blackthorn
-N2 bladder
-N3 bladderwrack
-N1 blade
-V1 blame
-V1 blanch
-N2 blancmange
-V2 blandish
-N2 blanket
-V1 blare
-N2 blarney
-V2 blaspheme
-N3 blasphemy
-N1 blast
-N3 blastfurnace
-N2 blastoff
-N1 blaze
-N2 blazer
-V2 blazon
-V1 bleach
-V1 bleat
-V1 bleed
-N2 bleeder
-N1 bleep
-N2 bleeper
-N2 blemish
-V1 blench
-V1 blend
-N2 blender
-N2 blenny
-V1 bless
-N2 blessing
-N1 blight
-N2 blighter
-N2 blighty
-N1 blimp
-V2 blindfold
-N2 blindworm
-V1 blink
-N2 blinker
-N1 blip
-N1 bliss
-N2 blister
-N2 blitzkrieg
-N2 blizzard
-V1 bloat
-N2 bloater
-N1 blob
-N1 bloc
-N1 block
-N2 blockade
-N2 blockage
-N3 blockbuster
-N2 blockhead
-N2 blockhouse
-N1 bloke
-N1 blood
-N2 bloodheat
-N2 bloodhound
-N3 bloodletting
-N3 bloodmoney
-N4 bloodpoisoning
-N1 bloodshed
-N2 bloodstain
-N2 bloodstream
-N3 bloodsucker
-N3 bloodvessel
-N1 bloom
-N2 bloomer
-N2 blossom
-N1 blot
-N1 blotch
-N2 blotter
-N4 blottingpaper
-N1 blouse
-N2 blouson
-N1 blow
-V2 blowdry
-N2 blower
-N2 blowfly
-N3 blowhole
-N2 blowjob
-N2 blowlamp
-N2 blowout
-N2 blowpipe
-N2 blowtorch
-N2 blowup
-V1 blub
-N2 blubber
-N2 bludgeon
-N2 bluebell
-N3 blueberry
-N3 bluebottle
-N2 bluegrass
-V3 bluepencil
-N2 blueprint
-N3 bluestocking
-N2 blunder
-N3 blunderbuss
-V1 blur
-N1 blurb
-V1 blurt
-V1 blush
-N2 blusher
-V2 bluster
-N1 bmx
-N1 boa
-N1 boar
-N1 board
-N2 boarder
-N2 boardgame
-N3 boardinghouse
-N3 boardingschool
-N2 boardroom
-V1 boast
-N1 boat
-N2 boater
-N2 boathook
-N2 boathouse
-N2 boating
-N2 boatman
-N2 boatswain
-N2 boattrain
-N1 bob
-N2 bobbin
-N2 bobble
-N2 bobby
-N1 bobsled
-N2 bobsleigh
-N2 bobtail
-N1 boche
-N1 bod
-V1 bode
-N3 bodega
-N2 bodice
-N2 bodkin
-N2 body
-N3 bodyblow
-N4 bodybuilding
-N3 bodyguard
-N3 bodysuit
-N3 bodywork
-N1 boer
-N2 boffin
-N1 bog
-N2 bogey
-N3 bogeyman
-V2 boggle
-N2 bogie
-N3 bohemian
-N1 boil
-N2 boiler
-N3 boilerroom
-N2 bole
-N3 bolero
-N1 boll
-N2 bollard
-N3 bollocking
-N2 bollocks
-N3 boloney
-N3 bolshevik
-N2 bolster
-V1 bolt
-N3 bolthole
-N1 bomb
-V2 bombard
-N3 bombardier
-N2 bombast
-N3 bombazine
-N2 bomber
-N2 bombshell
-N2 bombsite
-N3 bonanza
-N2 bonbon
-N1 bond
-N2 bondage
-N2 bondsman
-N1 bone
-N4 bonemarrow
-N3 bonemeal
-N4 boneshaker
-N2 bonfire
-N2 bongo
-N3 bonhomie
-V1 bonk
-N2 bonnet
-N2 bonsai
-N2 bonus
-N1 boob
-N2 booby
-N2 boodle
-V2 boogie
-N4 boogiewoogie
-N1 book
-N3 bookbinder
-N2 bookcase
-N2 bookend
-N2 bookie
-N2 booking
-N3 bookinghall
-N3 bookkeeper
-N2 booklet
-N3 bookmaker
-N2 bookmark
-N2 bookplate
-N3 bookseller
-N2 bookshop
-N2 bookstall
-N2 bookworm
-N1 boom
-N3 boomerang
-N1 boor
-N2 booster
-N1 boot
-N2 bootblack
-N2 bootee
-N1 booth
-N3 bootlicker
-N1 boots
-N2 bootstrap
-N2 booty
-N2 boozer
-N2 boozeup
-N2 borage
-N2 borax
-N3 bordeaux
-N2 border
-N3 borderer
-N3 borderland
-N3 borderline
-N1 bore
-N3 boredom
-N2 boron
-N2 borough
-V2 borrow
-N2 borstal
-N1 bortsch
-N2 borzoi
-N1 bosh
-N2 bosom
-N1 boss
-N3 botany
-V2 bother
-N4 botheration
-N2 bottle
-V3 bottlefeed
-N3 bottleneck
-N2 bottom
-N3 botulism
-N1 boucl
-N2 boudoir
-N5 bougainvillaea
-N1 bough
-N3 bouillon
-N2 boulder
-N2 boule
-N3 boulevard
-V1 bounce
-N2 bouncer
-N3 boundary
-N2 bounder
-N2 bounty
-N2 bouquet
-N2 bourbon
-N4 bourgeoisie
-N1 bourn
-N1 bourse
-N1 bout
-N3 boutique
-N3 bouzouki
-N1 bow
-V3 bowdlerize
-N2 bowel
-N2 bower
-N3 bowerbird
-N2 bowie
-N1 bowl
-N2 bowler
-N2 bowline
-N2 bowling
-N4 bowlingalley
-N3 bowlinggreen
-N2 bowman
-N2 bowsprit
-N2 bowstring
-N2 bowtie
-N3 bowwindow
-N1 box
-N2 boxer
-N2 boxing
-N2 boxroom
-N2 boxwood
-N1 boy
-V2 boycott
-N2 boyfriend
-N2 boyo
-N1 bra
-N1 brace
-N3 bracelet
-N4 brachiosaurus
-N2 bracken
-N2 bracket
-N1 bract
-N1 brad
-N2 bradawl
-N1 brae
-V1 brag
-N2 braggart
-N2 brahma
-N2 brahman
-N1 braid
-N2 braille
-N1 brain
-N2 brainchild
-N3 brainpower
-N2 brainstorm
-V2 brainwash
-N2 brainwave
-V1 braise
-N1 brake
-N2 bramble
-N2 brambling
-N1 bran
-N1 branch
-N1 brand
-V2 brandish
-N2 brandy
-N3 brandysnap
-N2 brantub
-N1 brass
-N3 brasserie
-N3 brassica
-N2 brassire
-N3 brassrubbing
-N1 brat
-N3 bravado
-N3 bravura
-N1 brawl
-N1 brawn
-N1 bray
-V1 braze
-N2 brazier
-N2 brazil
-N1 breach
-N1 bread
-N2 breadboard
-N2 breadcrumb
-N2 breadfruit
-N2 breadline
-N1 breadth
-N3 breadwinner
-V1 break
-N2 breakage
-N3 breakaway
-N3 breakdancing
-N2 breakdown
-N2 breaker
-N2 breakfast
-N2 breakin
-N3 breakingpoint
-N2 breakout
-N2 breakthrough
-N2 breakup
-N3 breakwater
-N1 bream
-N1 breast
-N2 breastbone
-V2 breastfeed
-N2 breastplate
-N2 breaststroke
-N2 breastwork
-N1 breath
-N4 breathalyser
-V1 breathe
-N2 breather
-N3 breathingspace
-N1 breech
-V1 breed
-N2 breeding
-N1 breeze
-N3 breezeblock
-N1 bren
-N1 brent
-N2 breton
-N1 breve
-N3 breviary
-N3 brevity
-V1 brew
-N3 brewery
-N2 brewup
-V1 bribe
-N2 bricbrac
-N1 brick
-N2 brickbat
-N2 brickie
-N3 bricklayer
-N2 brickwork
-N2 brickyard
-N1 bride
-N3 bridegroom
-N3 bridesmaid
-N1 bridge
-N3 bridgehead
-N3 bridgework
-N2 bridle
-N3 bridlepath
-N1 brie
-N2 briefcase
-N1 brier
-N1 brig
-N2 brigade
-N3 brigadier
-N2 brigand
-N3 brigantine
-V2 brighten
-N3 brilliantine
-N1 brim
-N2 brimstone
-N1 brine
-V1 bring
-N1 brink
-N3 brinkmanship
-N2 briquette
-N2 brisket
-N2 brisling
-N2 bristle
-N1 brit
-N3 britannia
-N3 briticism
-N2 briton
-V1 broach
-V2 broadcast
-N2 broadcloth
-V2 broaden
-N2 broadsheet
-N2 broadside
-N2 broadsword
-N2 brocade
-N3 broccoli
-N2 brochure
-N2 brogue
-V1 broil
-N2 broiler
-N2 broker
-N3 brokerage
-N2 brolly
-N2 bromide
-N2 bromine
-N3 bronchitis
-N2 bronchus
-N2 bronco
-N4 brontosaurus
-N1 bronze
-N1 brooch
-N1 brood
-V1 brook
-N1 broom
-N2 broomstick
-N1 broth
-N2 brothel
-N2 brother
-N3 brotherhood
-N4 brotherinlaw
-N3 brouhaha
-N1 brow
-V2 browbeat
-N2 brownie
-N2 browning
-V1 browse
-N4 brucellosis
-N1 bruise
-N2 bruiser
-V1 bruit
-N1 brunch
-N2 brunette
-N1 brunt
-N1 brush
-N2 brushoff
-N2 brushup
-N2 brushwood
-N2 brushwork
-V3 brutalize
-N1 brute
-N2 bryony
-N2 bubble
-N2 bubo
-N3 buccaneer
-N1 buck
-N2 bucket
-N3 bucketshop
-N2 buckle
-N2 buckler
-N2 buckram
-N2 buckshot
-N2 buckskin
-N2 buckthorn
-N2 bucktooth
-N2 buckwheat
-N1 bud
-N2 buddha
-N2 buddhism
-N3 buddleia
-N2 buddy
-V1 budge
-N4 budgerigar
-N2 budget
-N2 budgie
-N3 buffalo
-N2 buffer
-V2 buffet
-N2 buffoon
-N1 bug
-N2 bugbear
-N3 buggery
-N2 buggy
-N2 bugle
-N2 bugloss
-V1 build
-N2 builder
-N2 building
-N2 buildup
-N1 bulb
-N1 bulge
-N3 bulimia
-N1 bulk
-N2 bulkhead
-N1 bull
-N2 bulldog
-V2 bulldoze
-N3 bulldozer
-N2 bullet
-N3 bulletin
-N2 bullfight
-N2 bullfinch
-N2 bullfrog
-N2 bullheaded
-N2 bullion
-N2 bullock
-N2 bullring
-N3 bullseye
-N3 bullterrier
-N2 bully
-N2 bulrush
-N2 bulwark
-N1 bum
-N2 bumbag
-V2 bumble
-N3 bumblebee
-N1 bumf
-N1 bump
-N2 bumper
-N2 bumpkin
-N1 bun
-N1 bunch
-N2 bundle
-N1 bung
-N3 bungalow
-N2 bungee
-V2 bungle
-N2 bunion
-N1 bunk
-N1 bunkbed
-N2 bunker
-N2 bunkum
-N2 bunny
-N2 bunting
-N2 buoy
-N1 bur
-V2 burble
-N2 burbot
-N2 burden
-N2 burdock
-N3 bureau
-N5 bureaucracy
-N4 bureaucrat
-N2 buret
-N2 burette
-V2 burgeon
-N2 burger
-N2 burgher
-N2 burglar
-N3 burglary
-V2 burgle
-N4 burgomaster
-N3 burgundy
-N2 burial
-N2 burin
-N3 burlesque
-N1 burn
-N2 burner
-N3 burningglass
-V2 burnish
-N2 burnous
-N2 burnout
-N1 burr
-N2 burrow
-N2 bursar
-N3 bursary
-V1 burst
-N2 burton
-V2 bury
-N1 bus
-N2 busby
-N1 bush
-N3 bushbaby
-N2 bushel
-N2 bushfire
-N2 bushman
-N3 business
-N4 businessman
-V1 busk
-N2 busman
-N2 busstop
-V1 bust
-N2 bustard
-N2 buster
-N2 bustier
-N2 bustle
-N2 bustup
-N4 busybody
-N2 butane
-N2 butcher
-N3 butchery
-N2 butler
-N1 butt
-N2 butter
-N3 butterbean
-N3 buttercream
-N3 buttercup
-N3 butterfat
-N4 butterfingers
-N3 butterfly
-N4 buttericing
-N3 buttermilk
-N3 butterscotch
-N2 buttock
-N2 button
-N4 buttonhole
-N2 buttress
-N2 butty
-N2 butyl
-V1 buy
-N2 buyer
-N2 buyout
-N1 buzz
-N2 buzzard
-N2 buzzer
-N2 buzzword
-P1 by
-N3 byelection
-N2 bylaw
-N2 byline
-N2 bypass
-N2 byplay
-N3 byproduct
-N1 byre
-N2 byroad
-N4 byssinosis
-N3 bystander
-N1 byte
-N2 byway
-N2 byword
-V1 c
-N1 cab
-N2 cabal
-N3 cabaret
-N2 cabbage
-N2 cabby
-N2 caber
-N2 cabin
-N3 cabinboy
-N3 cabinet
-N5 cabinetmaker
-N2 cable
-N3 cablecar
-N3 cablegram
-N2 cabman
-N3 caboodle
-N2 caboose
-N3 cabriole
-N3 cabriolet
-N2 cacao
-N1 cache
-N2 cachet
-N2 cachou
-N2 cackle
-N4 cacophony
-N2 cactus
-N1 cad
-N3 cadaver
-N3 caddisfly
-N3 caddisworm
-N2 cadence
-N3 cadenza
-N2 cadet
-V1 cadge
-N2 cadi
-N2 cadmium
-N1 cadre
-N2 caecum
-N3 caerphilly
-N2 caesar
-N3 caesura
-N1 caf
-N4 cafeteria
-N2 caffeine
-N2 caftan
-N1 cage
-N3 cagoule
-N1 cain
-N1 cairn
-N2 cairngorm
-N2 caisson
-V3 cajole
-N1 cake
-N3 cakewalk
-N3 calabash
-N3 calabrese
-N3 calamine
-N4 calamity
-N4 calceolaria
-N4 calciferol
-V3 calcify
-V2 calcine
-N2 calcite
-N2 calcium
-V3 calculate
-N4 calculation
-N4 calculator
-N3 calculus
-N3 calendar
-N3 calender
-N4 calendula
-N1 calf
-N2 calflove
-N2 calfskin
-N3 caliber
-V3 calibrate
-N2 calibre
-N3 calico
-N4 californium
-N2 caliph
-V1 call
-N2 callbox
-N2 caller
-N2 callgirl
-N4 calligraphy
-N2 calling
-N3 calliper
-N4 callosity
-N2 callup
-N2 callus
-N3 calomel
-N3 calorie
-N5 calorimeter
-V3 calumniate
-N3 calumny
-N3 calvados
-V1 calve
-N3 calvinism
-N1 calx
-N3 calypso
-N2 calyx
-N1 cam
-N5 camaraderie
-N2 camber
-N2 cambric
-N3 camcorder
-N2 camel
-N3 camelhair
-N3 camellia
-N3 camembert
-N2 cameo
-N3 camera
-N4 cameraman
-N4 camisole
-N4 camomile
-N3 camouflage
-N2 campaign
-N4 campanile
-N5 campanology
-N4 campanula
-N1 campbed
-N2 camper
-N4 campfollower
-N2 camphor
-V3 camphorate
-N2 campion
-N2 campsite
-N2 campus
-N2 camshaft
-N1 can
-N3 canaille
-N2 canal
-V3 canalize
-N2 canap
-N2 canard
-N3 canary
-N3 canasta
-N2 cancan
-V2 cancel
-N2 cancer
-N3 candela
-N4 candelabrum
-N3 candida
-N3 candidate
-N2 candle
-N3 candlelight
-N3 candlemas
-N4 candlepower
-N3 candlestick
-N3 candlewick
-N2 candor
-N2 candour
-N2 candy
-N3 candyfloss
-N3 candystripe
-N3 candytuft
-N1 cane
-N3 canister
-N2 canker
-N2 canna
-N3 cannabis
-N3 cannery
-N3 cannibal
-V4 cannibalize
-N2 cannon
-N3 cannonade
-N3 cannonball
-N4 cannonfodder
-N2 canoe
-N2 canon
-N3 canonist
-V3 canonize
-V3 canoodle
-N3 canopy
-N3 cantaloup
-N3 cantata
-N2 canteen
-N2 canter
-N3 canticle
-N4 cantilever
-N2 canto
-N2 canton
-N3 cantonment
-N2 cantor
-N2 canvas
-V2 canvass
-N2 canyon
-N1 cap
-N5 capability
-N4 capacitance
-N4 capacitor
-N4 capacity
-N1 cape
-N2 caper
-N4 capercaillie
-N5 capillarity
-N3 capital
-N4 capitalism
-N4 capitalist
-V4 capitalize
-N4 capitation
-V4 capitulate
-N2 capo
-N2 capon
-N4 cappuccino
-N2 caprice
-N3 capricorn
-N3 capriole
-N3 capsicum
-V2 capsize
-N2 capstan
-N3 capsule
-V3 capsulize
-N2 captain
-N2 caption
-V3 captivate
-N2 captive
-N2 captor
-V2 capture
-N3 capuchin
-N4 capybara
-N1 car
-N2 carafe
-N3 caramel
-N3 carapace
-N2 carat
-N3 caravan
-N5 caravanserai
-N3 caravel
-N3 caraway
-N1 carb
-N2 carbide
-N2 carbine
-N4 carbohydrate
-N3 carbolic
-N2 carbon
-N3 carbonate
-V3 carbonize
-N4 carborundum
-N2 carboy
-N3 carbuncle
-N4 carburettor
-N2 carcass
-N4 carcinogen
-N4 carcinoma
-N1 card
-N3 cardamom
-N2 cardboard
-N2 cardgame
-N3 cardigan
-N3 cardiogram
-N3 cardiograph
-N4 cardiology
-N2 cardoon
-N2 cardphone
-N2 cardsharp
-N3 cardtable
-N1 care
-V2 careen
-N2 career
-N3 careerist
-N2 carer
-V2 caress
-N2 caret
-N4 caretaker
-N2 cargo
-N2 carib
-N3 caribou
-N4 caricature
-N2 caries
-N3 carillon
-N3 carioca
-N3 carmelite
-N2 carnage
-N3 carnation
-N2 carnet
-N3 carnival
-N3 carnivore
-N2 carob
-N2 carol
-N3 carotene
-N3 carotid
-V2 carouse
-N3 carousel
-V1 carp
-N2 carpel
-N3 carpenter
-N2 carpet
-N3 carpetbag
-N4 carpetbagger
-N3 carpeting
-N4 carpetsweeper
-N2 carport
-N2 carpus
-N3 carrageen
-N2 carrel
-N2 carriage
-N4 carriageway
-N2 carrier
-N2 carrion
-N2 carrot
-V2 carry
-N1 cart
-N2 cartel
-N2 carthorse
-N3 carthusian
-N3 cartilage
-N4 cartography
-N2 carton
-N2 cartoon
-N2 cartouche
-N2 cartridge
-N4 cartridgebelt
-N2 cartwheel
-N2 cartwright
-V1 carve
-N2 carver
-N3 carvery
-N2 carveup
-N2 carving
-N4 casanova
-N2 cascade
-N3 cascara
-N1 case
-V4 caseharden
-N2 casein
-N3 caselaw
-N3 casemate
-N3 casement
-N3 casework
-N1 cash
-N2 cashbook
-N2 cashcard
-N2 cashew
-V2 cashier
-N2 cashmere
-N2 cashpoint
-N2 casing
-N3 casino
-N1 cask
-N2 casket
-N3 cassata
-N3 cassava
-N4 casserole
-N2 cassette
-N2 cassia
-N2 cassis
-N2 cassock
-N3 cassoulet
-N4 cassowary
-V1 cast
-N3 castanet
-N3 castaway
-N1 caste
-N2 casteism
-V3 castigate
-N2 casting
-N2 castle
-N2 castor
-V2 castrate
-N3 castrato
-N3 casualty
-N2 casuist
-N1 cat
-N4 catabolism
-N4 catachresis
-N3 cataclysm
-N3 catacomb
-N4 catafalque
-N3 catalan
-N4 catalepsy
-N3 catalpa
-V3 catalyse
-N4 catalysis
-N3 catalyst
-V3 catalyze
-N4 catamaran
-N3 catamite
-N3 catapult
-N3 cataract
-N2 catarrh
-N3 catastrophe
-N4 catatonia
-N2 catcall
-N1 catch
-N2 catchall
-N4 catchascatchcan
-N2 catchline
-N2 catchment
-N2 catchphrase
-N2 catchword
-N3 catechism
-N3 catechist
-V3 catechize
-N4 catechumen
-V4 categorize
-N4 category
-V2 cater
-N3 caterer
-N4 caterpillar
-V3 caterwaul
-N2 catfish
-N2 catgut
-N3 catharsis
-N3 cathedral
-N3 catheter
-N2 cathode
-N2 cation
-N2 catkin
-N2 catlick
-N2 catmint
-N2 catnap
-N2 catnip
-N5 catoninetails
-N3 catseye
-N2 catspaw
-N2 catsuit
-N3 cattery
-N3 cattlegrid
-N2 catwalk
-N2 caucus
-N1 caul
-N2 cauldron
-N4 cauliflower
-V1 caulk
-N4 causality
-N3 causation
-N1 cause
-N3 causerie
-N3 causeway
-V3 cauterize
-N2 caution
-N3 cavalcade
-N3 cavalier
-N3 cavalry
-N1 cave
-N2 caveat
-N3 caveman
-N2 cavern
-N2 caviar
-N2 caviare
-V2 cavil
-N3 cavity
-V2 cavort
-N2 cavy
-N1 caw
-N2 cayenne
-N2 cayman
-N2 cdvideo
-N3 ceasefire
-N2 cecum
-N2 cedar
-V1 cede
-N3 cedilla
-N2 ceefax
-N2 ceilidh
-N2 ceiling
-N3 celandine
-N3 celebrant
-V3 celebrate
-N4 celebrity
-N3 celeriac
-N4 celerity
-N3 celery
-N3 celesta
-N1 cell
-N2 cellar
-N2 cello
-N3 cellophane
-N2 cellphone
-N3 cellulite
-N3 celluloid
-N3 cellulose
-N1 celt
-N2 cement
-N4 cemetery
-N3 cenobite
-N3 cenotaph
-N2 censer
-N2 censor
-V2 censure
-N2 census
-N1 cent
-N2 centaur
-N4 centenarian
-N4 centenary
-N3 centerboard
-N3 centerfold
-N3 centigram
-N4 centiliter
-N3 centilitre
-N2 centime
-N4 centimeter
-N3 centimetre
-N3 centipede
-N3 centralism
-V3 centralize
-N3 centreboard
-N3 centrefold
-N3 centrepiece
-N3 centrifuge
-N2 centrist
-N3 centurion
-N3 century
-N4 cephalopod
-N2 cereal
-N4 cerebellum
-N4 cerebration
-N3 cerebrum
-N4 ceremony
-N2 cerise
-N2 cerium
-D3 certainly
-N3 certainty
-N4 certificate
-V3 certify
-N3 certitude
-N2 cervix
-N2 cesium
-N3 cessation
-N2 cession
-N2 cesspit
-N3 cetacean
-N2 cetane
-N2 chablis
-N2 chacha
-N2 chaconne
-V1 chafe
-N1 chaff
-N2 chaffinch
-N3 chafingdish
-N2 chagrin
-N1 chain
-N2 chaingang
-N2 chainmail
-N2 chainsaw
-V2 chainsmoke
-N1 chair
-N2 chairlift
-N2 chairman
-N3 chairperson
-N1 chaise
-N4 chalcedony
-N2 chalet
-N2 chalice
-N1 chalk
-N2 challenge
-N2 chamber
-N3 chamberlain
-N3 chambermaid
-N3 chamberpot
-N3 chameleon
-V2 chamfer
-N2 chamois
-N1 champ
-N2 champagne
-N2 champers
-N2 champion
-N3 championship
-N1 chance
-N2 chancel
-N4 chancellery
-N3 chancellor
-N3 chancery
-N3 chandelier
-N2 chandler
-N1 change
-N3 changeling
-N3 changeover
-N2 channel
-N1 chant
-N2 chanter
-N3 chanticleer
-N2 chantry
-N1 chaos
-V1 chap
-N3 chaparral
-N3 chapatti
-N2 chapel
-N3 chaperon
-N2 chaplain
-N2 chaplet
-N2 chapman
-N2 chappie
-N2 chapter
-N1 char
-N3 charabanc
-N3 character
-V4 characterize
-N2 charade
-N2 charcoal
-V1 charge
-N4 chargecapping
-N2 charger
-N2 chariot
-N3 charioteer
-N3 charisma
-N3 charity
-N3 charlady
-N3 charlatan
-N3 charleston
-N2 charlotte
-N1 charm
-N3 charnelhouse
-N1 chart
-N2 charter
-N2 chartism
-N2 chartreuse
-N3 charwoman
-V1 chase
-N2 chaser
-N1 chasm
-N2 chassis
-V2 chasten
-V2 chastise
-N3 chastity
-N3 chasuble
-V1 chat
-N3 chatelaine
-N2 chatline
-N2 chattel
-V2 chatter
-N3 chatterbox
-N2 chauffeur
-N3 chauvinism
-N3 chauvinist
-V2 cheapen
-N2 cheapjack
-N2 cheapskate
-V1 cheat
-V1 check
-N2 checker
-N2 checkin
-N2 checkmate
-N2 checkout
-N2 checkpoint
-N2 checkup
-N2 cheddar
-N1 cheek
-N2 cheekbone
-N1 cheep
-N1 cheer
-N3 cheerleader
-N1 cheese
-N4 cheeseburger
-N3 cheesecake
-N3 cheesecloth
-N2 cheetah
-N1 chef
-N2 chemise
-N2 chemist
-N3 chemistry
-N5 chemotherapy
-N3 chenille
-N2 cheque
-N3 chequebook
-N2 chequer
-V2 cherish
-N2 cheroot
-N2 cherry
-N2 cherub
-N2 chervil
-N2 cheshire
-N1 chess
-N2 chessboard
-N2 chessman
-N1 chest
-N3 chesterfield
-N2 chestnut
-N3 chevalglass
-N3 chevalier
-N2 chevron
-V1 chew
-N3 chewinggum
-N1 chi
-N2 chianti
-N4 chiaroscuro
-N2 chicane
-N4 chicanery
-N1 chick
-N2 chicken
-N3 chickenfeed
-N3 chickenpox
-N3 chickenwire
-N2 chickpea
-N2 chickweed
-N2 chicle
-N3 chicory
-V1 chide
-N1 chief
-D2 chiefly
-N2 chieftain
-N2 chiffchaff
-N2 chiffon
-N2 chignon
-N3 chihuahua
-N2 chilblain
-N1 child
-N2 childbirth
-N2 childhood
-N3 childminder
-N1 chill
-N2 chilli
-N1 chime
-N3 chimera
-N2 chimney
-N3 chimneybreast
-N3 chimneypot
-N3 chimneystack
-N3 chimneysweep
-N1 chimp
-N3 chimpanzee
-N1 chin
-N2 china
-N3 chinaman
-N3 chinchilla
-N1 chine
-V1 chink
-N4 chinoiserie
-N1 chintz
-N1 chip
-N2 chipboard
-N2 chipmunk
-N4 chipolata
-N4 chiromancy
-N4 chiropody
-N4 chiropractic
-V1 chirp
-V2 chirrup
-N2 chisel
-N1 chit
-N2 chitchat
-N3 chivalry
-N1 chive
-V2 chivvy
-N2 chloral
-N2 chloride
-V3 chlorinate
-N2 chlorine
-N3 chloroform
-N3 chlorophyll
-N1 choc
-N1 chock
-N3 chocolate
-N1 choice
-N1 choir
-N2 choirboy
-V1 choke
-N2 choker
-N6 cholecalciferol
-N2 choler
-N3 cholera
-N4 cholesterol
-V1 chomp
-V1 choose
-V1 chop
-N2 chopper
-N2 chopstick
-N3 chopsuey
-N3 chorale
-N1 chord
-N2 chordate
-N1 chore
-V3 choreograph
-N4 choreography
-N3 chorister
-N2 chortle
-N2 chorus
-N1 chough
-N1 chow
-N1 christ
-V2 christen
-N3 christendom
-N4 christianity
-N2 christmas
-N3 christmasbox
-N3 chromatin
-N5 chromatography
-N1 chrome
-N2 chromite
-N2 chromium
-N3 chromosome
-N3 chronicle
-N4 chronology
-N4 chronometer
-N3 chrysalis
-N4 chrysanthemum
-N4 chrysoberyl
-N3 chrysolite
-N3 chrysoprase
-N2 chteau
-N1 chub
-N1 chubb
-N1 chuck
-V2 chuckle
-V1 chuff
-V1 chug
-N2 chukker
-N1 chum
-N1 chump
-N1 chunk
-V2 chunter
-N1 church
-N2 churchgoer
-N2 churchman
-N3 churchwarden
-N2 churchyard
-N1 churl
-N1 churn
-N1 chute
-N2 chutney
-N2 chutzpah
-N2 chyle
-N1 chyme
-N3 cicada
-N3 cicatrice
-N3 cicely
-N3 cicerone
-N2 cider
-N2 cigar
-N3 cigarette
-N2 cilium
-N1 cinch
-N3 cinchona
-N2 cincture
-N2 cinder
-N4 cinderella
-N3 cinema
-N6 cinematography
-N4 cineraria
-N3 cinnabar
-N3 cinnamon
-N2 cinque
-N3 cinquefoil
-N2 circle
-N2 circlet
-N2 circuit
-N4 circuitbreaker
-N3 circuitry
-V4 circularize
-V3 circulate
-N4 circulation
-V3 circumcise
-N4 circumference
-N3 circumflex
-N5 circumlocution
-V5 circumnavigate
-V3 circumscribe
-N3 circumstance
-V3 circumvent
-N2 circus
-N3 cirrhosis
-N2 cirrus
-N3 cistercian
-N2 cistern
-N2 cistus
-N3 citadel
-N3 citation
-V1 cite
-N3 citizen
-N2 citrate
-N2 citron
-N4 citronella
-N2 citrus
-N2 city
-N3 citystate
-N2 civet
-N3 civilian
-N4 civility
-N5 civilization
-V3 civilize
-V1 clack
-N2 cladding
-V1 claim
-N2 claimant
-N1 clair
-N3 clairvoyance
-N1 clam
-V2 clamber
-N1 clamp
-N2 clampdown
-N1 clan
-N1 clang
-N2 clanger
-N2 clangor
-N2 clangour
-N1 clank
-N2 clansman
-N1 clap
-N2 clapper
-N3 clapperboard
-N2 claptrap
-N2 claque
-N2 claret
-V3 clarify
-N3 clarinet
-N2 clarion
-N3 clarity
-N1 clash
-N1 clasp
-N2 claspknife
-N1 class
-N3 classicism
-V3 classify
-N2 classmate
-N2 classroom
-N1 clat
-N2 clatter
-N1 clause
-N4 claustrophobia
-N3 clavichord
-N3 clavicle
-N1 claw
-N3 clawhammer
-N1 clay
-N2 claymore
-N2 cleaner
-V1 cleanse
-N2 cleanup
-N2 clearance
-N2 clearing
-N3 clearinghouse
-N2 clearout
-N2 clearup
-N2 clearway
-N1 cleat
-N2 cleavage
-V1 cleave
-N2 cleaver
-N1 clef
-N1 cleft
-N3 clematis
-N3 clementine
-V1 clench
-N4 clerestory
-N2 clergy
-N3 clergyman
-N2 cleric
-N3 clerihew
-N1 clerk
-N1 clich
-N1 click
-N1 client
-N3 clientele
-N1 cliff
-N3 cliffhanger
-N4 climacteric
-N2 climate
-N2 climax
-V1 climb
-N2 climbdown
-N3 climbingframe
-N1 clime
-V1 clinch
-N2 clincher
-V1 cling
-N2 clinic
-N1 clink
-N2 clinker
-V1 clip
-N2 clipboard
-N2 clipjoint
-N2 clipper
-N2 clipping
-N2 clique
-N3 clitoris
-N1 cloak
-N2 cloakroom
-N2 clobber
-N1 cloche
-N1 clock
-N2 clockwork
-N1 clod
-N3 clodhopper
-N1 clog
-N2 cloister
-N1 clone
-N1 clonk
-V1 close
-N2 closet
-N2 closeup
-N2 closure
-N1 clot
-N1 cloth
-V1 clothe
-N3 clotheshorse
-N3 clothesline
-N3 clothespeg
-N2 clothier
-N2 clothing
-N1 cloud
-N2 cloudburst
-N4 cloudcuckooland
-N1 clout
-N1 clove
-N2 clover
-N1 clown
-V1 cloy
-N1 club
-N2 clubfoot
-N2 clubhouse
-N2 clubland
-N2 clubroot
-N1 cluck
-N1 clue
-N1 clump
-N1 clunk
-N2 cluster
-N1 clutch
-N2 clutter
-N1 coach
-N2 coachload
-N2 coachman
-N2 coachwork
-V3 coagulate
-N1 coal
-V2 coalesce
-N2 coalface
-N2 coalfield
-N3 coalition
-N2 coalman
-N2 coalmine
-N3 coalscuttle
-N2 coaltit
-N2 coaming
-V2 coarsen
-N1 coast
-N2 coaster
-N2 coastguard
-N2 coastline
-N1 coat
-N2 coating
-N2 coattail
-V1 coax
-N1 cob
-N2 cobalt
-N2 cobber
-V2 cobble
-N2 cobbler
-N2 cobol
-N2 cobra
-N2 cobweb
-N2 coca
-N2 cocaine
-N2 coccyx
-N3 cochineal
-N1 cock
-N2 cockade
-N5 cockadoodledoo
-N4 cockaleekie
-N3 cockatoo
-N3 cockchafer
-N2 cocker
-N3 cockerel
-N2 cockfight
-N2 cockle
-N2 cockney
-N2 cockpit
-N2 cockroach
-N2 cockscomb
-N2 cocktail
-N2 cockup
-N2 coco
-N2 cocoa
-N3 coconut
-N2 cocoon
-N2 cocotte
-N1 cod
-N2 coda
-V2 coddle
-N1 code
-N2 codeine
-N5 codependency
-N2 coder
-N2 codex
-N2 codfish
-N2 codger
-N3 codicil
-V3 codify
-N2 codling
-N2 codpiece
-N3 codswallop
-N4 coeducation
-N3 coefficient
-N3 coelacanth
-N4 coelenterate
-N3 coenobite
-V1 coerce
-V2 coexist
-N2 coffee
-N3 coffeemill
-N4 coffeetable
-N2 coffer
-N3 cofferdam
-N2 coffin
-N1 cog
-V3 cogitate
-N2 cognac
-N3 cognition
-N3 cognizance
-N3 cognomen
-N3 cognoscente
-N2 cogwheel
-V3 cohabit
-V2 cohere
-N3 cohesion
-N2 cohort
-N1 coif
-V1 coiff
-N2 coiffeur
-N2 coiffure
-V1 coil
-N1 coin
-N2 coinage
-N2 coinbox
-V2 coincide
-N3 coincidence
-N1 coir
-N2 coition
-N2 coitus
-N1 coke
-N1 col
-N2 cola
-N3 colander
-N2 cole
-N4 coleopteron
-N3 coleslaw
-N2 coleus
-N2 coley
-N2 colic
-N3 colitis
-V4 collaborate
-N2 collage
-N3 collagen
-N2 collapse
-N2 collar
-N3 collarbone
-V2 collate
-N4 collateral
-N3 collation
-N3 colleague
-N2 collect
-N3 collection
-N4 collectivism
-V4 collectivize
-N3 collector
-N2 colleen
-N2 college
-V2 collide
-N2 collie
-N2 collier
-N3 colliery
-N3 collision
-V3 collocate
-N2 colloid
-N5 colloquialism
-N4 colloquium
-N3 colloquy
-V2 collude
-N2 cologne
-N2 colon
-N3 colonel
-N4 colonialism
-N3 colonist
-V3 colonize
-N3 colonnade
-N3 colony
-N3 colophon
-N4 coloration
-N5 coloratura
-N3 coloring
-N3 colossus
-N4 colostomy
-N3 colouring
-N4 coloursergeant
-N4 colposcopy
-N1 colt
-N2 colter
-N2 coltsfoot
-N3 columbine
-N2 column
-N3 columnist
-N2 coma
-N1 comb
-N2 combat
-N3 combatant
-N4 combination
-V2 combine
-N2 combo
-N3 combustion
-V1 come
-N3 comeback
-N3 comecon
-N3 comedian
-N3 comedienne
-N3 comedown
-N3 comedy
-N2 comeon
-N2 comer
-N2 comet
-N3 comeuppance
-N2 comfit
-N2 comfort
-N3 comforter
-N2 comfrey
-N3 comity
-N2 comma
-V2 command
-N3 commandant
-V3 commandeer
-N3 commander
-N5 commanderinchief
-N3 commandment
-N3 commando
-V4 commemorate
-V2 commence
-N4 commencement
-V2 commend
-N2 comment
-N4 commentary
-V3 commentate
-N4 commentator
-N2 commerce
-N4 commercialism
-V4 commercialize
-N2 commie
-N4 commination
-V3 commingle
-V3 comminute
-V4 commiserate
-N3 commissar
-N4 commissariat
-N4 commissary
-N3 commission
-N5 commissionagent
-N4 commissionaire
-N4 commissioner
-V2 commit
-N3 commitment
-N3 committal
-N3 committee
-N2 commode
-N4 commodity
-N3 commodore
-N5 commonality
-N4 commonalty
-N3 commoner
-D3 commonly
-N3 commonroom
-N3 commonwealth
-N3 commotion
-V2 commune
-N4 communicant
-V4 communicate
-N5 communication
-N3 communion
-N4 communiqu
-N3 communism
-N3 communist
-N4 community
-V2 commute
-N3 commuter
-N2 compact
-N3 companion
-N4 companionship
-N4 companionway
-N3 company
-V2 compare
-N4 comparison
-N3 compartment
-V5 compartmentalize
-N2 compass
-N3 compassion
-N3 compatriot
-V2 compel
-N3 compendium
-V3 compensate
-N4 compensation
-V2 compete
-N3 competence
-N4 competition
-N4 competitor
-V3 compile
-N3 compiler
-V2 complain
-N3 complainant
-N2 complaint
-N3 complement
-N2 complex
-N3 complexion
-N2 compliance
-V3 complicate
-N4 complication
-N4 complicity
-N3 compliment
-N2 compline
-V2 comply
-N3 component
-V2 compose
-N3 composer
-N4 composition
-N4 compositor
-N2 compost
-N3 composure
-N2 compote
-N2 compound
-N1 compre
-V3 comprehend
-N4 comprehension
-V2 compress
-N3 compression
-N3 compressor
-V2 comprise
-N3 compromise
-N3 comptroller
-N3 compulsion
-N3 compunction
-V2 compute
-N3 computer
-V4 computerize
-N2 comrade
-V1 con
-N5 concatenation
-V2 conceal
-V2 concede
-N2 conceit
-V2 conceive
-V3 concentrate
-N4 concentration
-N2 concept
-N3 conception
-V4 conceptualize
-V2 concern
-N2 concert
-N4 concertina
-N3 concerto
-N3 concession
-N1 conch
-N4 conchology
-N2 concierge
-V3 conciliate
-N2 conclave
-V2 conclude
-N3 conclusion
-V2 concoct
-N2 concord
-N3 concordance
-N3 concordat
-N2 concourse
-N3 concretion
-N3 concubine
-N4 concupiscence
-V2 concur
-V2 concuss
-N3 concussion
-V2 condemn
-N4 condensation
-V2 condense
-N3 condenser
-V3 condescend
-N3 condiment
-N3 condition
-N4 conditioner
-V3 condole
-N3 condolence
-N2 condom
-N4 condominium
-V2 condone
-N2 condor
-V2 conduce
-N2 conduct
-N3 conductance
-N3 conduction
-N3 conductor
-N2 conduit
-N1 cone
-V4 confabulate
-N3 confection
-N4 confectioner
-N5 confectionery
-N5 confederacy
-N5 confederation
-V2 confer
-N3 conference
-N3 conferment
-V2 confess
-D4 confessedly
-N3 confession
-N4 confessional
-N3 confessor
-N3 confetti
-N3 confidant
-V2 confide
-N3 confidence
-N5 configuration
-V2 confine
-N4 confinement
-V2 confirm
-N4 confirmation
-V3 confiscate
-N4 conflagration
-V2 conflate
-N2 conflict
-N2 confluence
-V2 conform
-N4 conformation
-N3 conformist
-N4 conformity
-V2 confound
-V2 confront
-V2 confuse
-N3 confusion
-V2 confute
-N2 conga
-V2 congeal
-N2 conger
-N3 congeries
-V2 congest
-N3 congestion
-V4 congratulate
-N5 congratulation
-V3 congregate
-N4 congregation
-N6 congregationalism
-N2 congress
-N3 congressman
-N3 conifer
-N3 conjecture
-V2 conjoin
-V3 conjugate
-N4 conjugation
-N3 conjunction
-N4 conjunctiva
-N5 conjunctivitis
-V2 conjure
-N3 conjuror
-V1 conk
-N2 conker
-V1 conn
-V2 connect
-N4 connectingrod
-N3 connection
-N3 connector
-V2 connive
-N3 connoisseur
-V2 connote
-V2 conquer
-N2 conquest
-N2 conscience
-V2 conscript
-V3 consecrate
-N3 consensus
-V2 consent
-N3 consequence
-D4 consequently
-N4 conservancy
-N4 conservation
-N5 conservationist
-N4 conservatoire
-N5 conservatory
-V2 conserve
-V3 consider
-N5 consideration
-V2 consign
-N3 consignment
-V2 consist
-N4 consistency
-N4 consistory
-N4 consolation
-N3 console
-V4 consolidate
-N2 consomm
-N3 consonance
-N3 consonant
-N2 consort
-N3 consortium
-N4 conspiracy
-N4 conspirator
-V2 conspire
-N3 constable
-N5 constabulary
-N3 constancy
-N4 constellation
-N4 consternation
-V3 constipate
-N4 constipation
-N4 constituency
-V3 constitute
-N4 constitution
-V2 constrain
-N2 constraint
-V2 constrict
-N3 constrictor
-V2 construct
-N3 construction
-V2 construe
-N5 consubstantiation
-N2 consul
-N3 consulate
-V2 consult
-N4 consultancy
-N3 consultant
-N4 consultation
-V2 consume
-N3 consumer
-N4 consumerism
-V3 consummate
-N3 consumption
-N2 contact
-N3 contagion
-V2 contain
-N3 container
-V4 containerize
-N3 containment
-V4 contaminate
-V3 contemplate
-N2 contempt
-V2 contend
-N2 content
-N3 contention
-N3 contentment
-N2 contest
-N3 contestant
-N2 context
-N4 contingency
-N3 continuance
-N4 continuation
-V3 continue
-N4 continuity
-N3 continuo
-N3 continuum
-V2 contort
-N4 contortionist
-N2 contour
-N3 contraband
-N4 contraception
-N2 contract
-N3 contraction
-N3 contractor
-V3 contradict
-N5 contradistinction
-N3 contraflow
-N3 contralto
-N3 contraption
-D4 contrariwise
-N2 contrast
-V3 contravene
-N3 contretemps
-V3 contribute
-N4 contribution
-N3 contrivance
-V2 contrive
-N2 control
-N3 controller
-N4 controversy
-V3 controvert
-N4 contumely
-V2 contuse
-N3 conundrum
-N4 conurbation
-V3 convalesce
-N3 convection
-N3 convector
-V2 convene
-N3 convener
-N3 convenience
-N2 convent
-N4 conventicle
-N3 convention
-V2 converge
-N4 conversation
-N6 conversationalist
-N3 conversion
-V2 convert
-V2 convey
-N3 conveyance
-N3 conveyor
-V2 convict
-N3 conviction
-V2 convince
-N4 convocation
-V2 convoke
-N4 convolution
-N4 convolvulus
-N2 convoy
-V2 convulse
-N3 convulsion
-N2 cony
-N1 coo
-N2 cooee
-V1 cook
-N2 cookbook
-N2 cooker
-N3 cookery
-N2 cookie
-N2 coolant
-N2 coolbag
-N2 cooler
-N2 coolie
-N1 coomb
-N1 coon
-N1 coop
-N2 cooper
-V3 cooperate
-V1 coopt
-N1 coot
-N2 copal
-N3 copartner
-N1 cope
-N2 copeck
-N2 copier
-N3 copilot
-N2 coping
-N3 copingstone
-N2 copout
-N2 copper
-N3 copperhead
-N3 copperplate
-N2 coppice
-N2 copra
-N1 copse
-N1 copt
-N2 coptic
-N3 copula
-V3 copulate
-N2 copy
-N3 copybook
-N3 copycat
-N2 copyist
-N3 copyright
-N4 copytypist
-N4 copywriter
-N2 coquette
-N3 coracle
-N2 coral
-N3 coralline
-N2 corbel
-N1 cord
-N2 cordite
-N2 cordon
-N3 corduroy
-N1 core
-N4 corespondent
-N2 corgi
-N3 coriander
-N1 cork
-N2 corkage
-N2 corker
-N2 corkscrew
-N1 corm
-N3 cormorant
-N1 corn
-N2 corncob
-N2 corncrake
-N2 cornea
-N3 cornelian
-N2 corner
-N3 cornerstone
-N2 cornet
-N2 cornflake
-N2 cornflour
-N3 cornflower
-N2 cornice
-N4 cornucopia
-N3 corolla
-N4 corollary
-N3 corona
-N4 coronation
-N3 coroner
-N3 coronet
-N4 corporation
-N1 corps
-N1 corpse
-N2 corpus
-N3 corpuscle
-N2 corral
-N3 correction
-N4 correctitude
-V3 correlate
-V3 correspond
-N4 correspondence
-N4 correspondent
-N3 corridor
-N4 corrigendum
-V4 corroborate
-V2 corrode
-N3 corrosion
-V3 corrugate
-N2 corsage
-N2 corsair
-N3 corselette
-N2 corset
-N2 cortex
-N1 cortge
-N3 cortisone
-N3 corundum
-V3 coruscate
-N2 corvette
-N2 corymb
-N3 cosecant
-N5 cosignatory
-N2 cosine
-N4 cosmogony
-N4 cosmology
-N3 cosmonaut
-N2 cosmos
-N2 cossack
-V2 cosset
-V1 cost
-N4 costermonger
-N2 costing
-N2 costume
-N3 costumier
-N1 cot
-N3 cotangent
-N2 cotdeath
-N1 cote
-N3 coterie
-N4 cotoneaster
-N2 cottage
-N3 cottager
-N2 cotter
-N2 cotton
-N4 cotyledon
-N1 couch
-N2 couchette
-N2 cougar
-V1 cough
-N2 coulomb
-N2 coulter
-N2 council
-N3 councillor
-N2 counsel
-N3 counsellor
-N3 counselor
-N1 count
-N2 countdown
-N3 countenance
-V3 counteract
-N4 counterattack
-N4 counterbalance
-D4 counterclockwise
-N5 counterespionage
-N3 counterfoil
-N6 counterintelligence
-V3 countermand
-N4 countermeasure
-N3 countermove
-N3 counterpane
-N3 counterpart
-N3 counterpoint
-N3 counterpoise
-N6 counterrevolution
-V3 countersign
-V3 countersink
-N4 countertenor
-V3 countervail
-N3 counterweight
-N2 countess
-N2 country
-N4 countryandwestern
-N3 countryman
-N3 countryside
-N2 county
-N1 coup
-N1 coupe
-N2 couple
-N2 couplet
-N2 coupling
-N2 coupon
-N2 courage
-N2 courgette
-N2 courier
-N1 course
-N2 courser
-N1 court
-N2 courtcard
-N3 courtesan
-N3 courtesy
-N2 courthouse
-N2 courtier
-N2 courtroom
-N2 courtship
-N2 courtyard
-N2 couscous
-N2 cousin
-N2 couture
-N3 couturier
-N1 cove
-N2 coven
-N3 covenant
-N3 coventry
-V2 cover
-N3 coverage
-N3 coverall
-N3 coverlet
-N3 coverpoint
-N3 coverup
-V2 covet
-N2 covey
-V1 cow
-N2 coward
-N3 cowardice
-N2 cowbell
-N2 cowboy
-V2 cower
-N2 cowherd
-N2 cowhide
-N1 cowl
-N2 cowlick
-N2 cowling
-N3 coworker
-N3 cowparsley
-N2 cowpat
-N2 cowpox
-N2 cowrie
-V2 cowrite
-N2 cowslip
-N1 cox
-N2 coxcomb
-N2 coxswain
-N2 coyote
-N2 coypu
-V2 cozen
-V1 crab
-D2 crabwise
-N1 crack
-N2 crackdown
-N2 cracker
-V2 crackle
-N2 crackling
-N2 cracknel
-N2 crackup
-N2 cradle
-N4 cradlesnatcher
-N3 cradlesong
-N1 craft
-N2 craftsman
-N1 crag
-N1 crake
-V1 cram
-N2 crammer
-N1 cramp
-N2 crampon
-N2 crampoon
-N3 cranberry
-N1 crane
-N3 cranefly
-N3 cranesbill
-N2 cranium
-N1 crank
-N2 crankcase
-N2 crankpin
-N2 crankshaft
-N2 cranny
-N1 crape
-N1 crash
-V2 crashdive
-N3 crashhelmet
-V2 crashland
-N1 crate
-N2 crater
-N2 cravat
-V1 crave
-N2 craving
-N1 craw
-N2 crawfish
-V1 crawl
-N2 crayfish
-N2 crayon
-V1 craze
-N0 crche
-N1 creak
-N1 cream
-N2 creamer
-N3 creamery
-N1 crease
-V1 create
-N2 creation
-N2 creator
-N2 creature
-N2 credence
-N3 credential
-N5 credibility
-N2 credit
-N3 creditor
-N2 credo
-N1 creed
-N1 creek
-N1 creel
-V1 creep
-N2 creeper
-N4 creepycrawly
-V2 cremate
-N4 crematorium
-V3 crenelate
-V3 crenellate
-N2 creole
-N2 creosote
-N3 crescendo
-N2 crescent
-N1 cress
-N1 crest
-N2 cretin
-N2 cretonne
-N2 crevasse
-N2 crevice
-N1 crew
-N2 crewel
-N3 crewelwork
-N1 crib
-N2 cribbage
-N1 crick
-N2 cricket
-N1 crier
-N1 crime
-N3 criminal
-N5 criminology
-V1 crimp
-N2 crimplene
-V1 cringe
-N2 crinkle
-N3 crinoline
-N2 cripple
-N2 crisis
-N2 crispbread
-N2 crisscross
-N3 criterion
-N2 critic
-N3 criticism
-V3 criticize
-N3 critique
-N0 crme
-N1 croak
-N2 crochet
-N1 crock
-N3 crockery
-N4 crocodile
-N2 crocus
-N2 croesus
-N1 croft
-N2 crofter
-N2 croissant
-N2 cromlech
-N1 crone
-N2 crony
-N1 crook
-V1 croon
-N1 crop
-N2 cropper
-N2 croquet
-N2 croquette
-N2 crosier
-N1 cross
-N2 crossbar
-N2 crossbench
-N2 crossbill
-N2 crossbow
-N2 crossbreed
-V2 crosscheck
-N3 crossdressing
-N1 crosse
-V4 crossexamine
-V4 crossfertilize
-N2 crossfire
-N2 crossgrain
-V2 crosshatch
-N2 crossing
-N3 crossover
-N2 crosspatch
-N2 crosspiece
-V3 crossquestion
-V3 crossrefer
-N4 crossreference
-N2 crossroad
-N3 crosssection
-N2 crossstitch
-N2 crosstalk
-D2 crossways
-N2 crosswind
-N2 crossword
-N1 crotch
-N2 crotchet
-N2 croton
-V1 crouch
-N1 croup
-N2 croupier
-V1 crow
-N2 crowbar
-N1 crowd
-N1 crown
-N2 crowsfoot
-N2 crowsnest
-N0 crpe
-N1 cru
-N3 crucible
-N3 crucifix
-N4 crucifixion
-V3 crucify
-N1 crud
-N1 cruet
-V1 cruise
-N2 cruiser
-N3 cruiserweight
-N1 crumb
-V2 crumble
-N2 crumpet
-V2 crumple
-V1 crunch
-N2 crupper
-N2 crusade
-N1 cruse
-V1 crush
-N1 crust
-N3 crustacean
-N1 crutch
-N1 crux
-N3 cruzado
-N3 cruzeiro
-V1 cry
-N3 crybaby
-N3 cryogenics
-N1 crypt
-N3 cryptogam
-N3 cryptogram
-N4 cryptography
-N2 crystal
-N4 crystalgazing
-V3 crystallize
-N5 crystallography
-N3 crystalloid
-N1 cub
-N4 cubbyhole
-N1 cube
-N3 cubicle
-N2 cubism
-N2 cubit
-N2 cuckold
-N2 cuckoo
-N3 cuckoopint
-N3 cuckoospit
-N3 cucumber
-N1 cud
-V2 cuddle
-N2 cudgel
-N1 cue
-N2 cueball
-V1 cuff
-N2 cufflink
-N2 cuirass
-N2 cuisine
-N3 culdesac
-V1 cull
-V3 culminate
-N2 culprit
-N1 cult
-N3 cultivar
-V3 cultivate
-N4 cultivator
-N2 culture
-N2 culvert
-N2 cumin
-N3 cummerbund
-N3 cumulus
-N4 cunnilingus
-N1 cunt
-N1 cup
-N2 cupboard
-N2 cupful
-N2 cupid
-N4 cupidity
-N3 cupola
-N2 cuppa
-N4 cupronickel
-N2 cuptie
-N1 cur
-N3 curaao
-N3 curacy
-N2 curare
-N2 curate
-N3 curator
-N1 curb
-N1 curd
-V2 curdle
-V1 cure
-N2 cureall
-N2 curette
-N2 curfew
-N2 curia
-N2 curie
-N2 curio
-N4 curiosity
-N2 curium
-V1 curl
-N2 curler
-N2 curlew
-N3 curlicue
-N2 curling
-N3 curmudgeon
-N2 currant
-N3 currency
-D3 currently
-N4 curriculum
-V2 curry
-N3 currycomb
-N4 currypowder
-N1 curse
-N2 cursor
-V2 curtail
-N2 curtain
-N3 curtaincall
-N4 curtainraiser
-N3 curtilage
-N3 curvature
-N1 curve
-N2 curvet
-N2 cushion
-N1 cusp
-N2 custard
-N3 custodian
-N3 custody
-N2 custom
-N3 customer
-N3 customhouse
-V3 customize
-V1 cut
-N2 cutback
-N3 cuticle
-N2 cutis
-N2 cutlass
-N2 cutler
-N3 cutlery
-N2 cutlet
-N2 cutoff
-N2 cutout
-N2 cutter
-N2 cutthroat
-N2 cutting
-N3 cuttlefish
-N3 cutwater
-N1 cuve
-N1 cwm
-N2 cyanide
-N3 cyanogen
-N3 cyanosis
-N3 cyberpunk
-N2 cycad
-N3 cyclamate
-N3 cyclamen
-N2 cycle
-N3 cycletrack
-N2 cyclist
-N2 cyclone
-N3 cyclotron
-N2 cygnet
-N3 cylinder
-N2 cymbal
-N1 cyme
-N2 cynic
-N3 cynosure
-N2 cypress
-N1 cyst
-N3 cystitis
-N4 cytology
-N3 cytoplasm
-N1 czech
-V1 d
-N1 dab
-V2 dabble
-N2 dabchick
-N1 dace
-N2 dacha
-N2 dachshund
-N2 dactyl
-N1 dad
-N2 dada
-N2 daddy
-N4 daddylonglegs
-N2 dado
-N1 daff
-N3 daffodil
-N2 dagger
-N2 dago
-N4 daguerreotype
-N2 dahlia
-N3 daiquiri
-N2 dairy
-N2 dairying
-N3 dairymaid
-N3 dairyman
-N1 dais
-N2 daisy
-N2 dale
-V2 dally
-N3 dalmatian
-N1 dam
-N2 damage
-V3 damascene
-N2 damask
-N1 dame
-N3 dameschool
-V1 damn
-N3 damnation
-V2 dampen
-N2 damper
-N2 damsel
-N3 damselfly
-N2 damson
-N1 dan
-V1 dance
-N3 dancehall
-N3 dandelion
-N2 dander
-V3 dandify
-V2 dandle
-N2 dandruff
-N2 dandy
-N3 dandybrush
-N1 dane
-V2 dangle
-N1 daphne
-V2 dapple
-V1 dare
-N4 daredevil
-N2 daring
-N3 dariole
-V2 darken
-N2 darkroom
-N2 darky
-N2 darling
-V1 darn
-N2 darnel
-N2 darner
-N2 darning
-N1 dart
-N2 dartboard
-V1 dash
-N2 dashboard
-N3 database
-N1 date
-N3 dateline
-N3 datestamp
-V1 daub
-N2 daughter
-N4 daughterinlaw
-V1 daunt
-N2 dauphin
-N3 davenport
-N2 davit
-N2 davy
-N1 daw
-V2 dawdle
-N1 dawn
-N1 day
-N1 daybed
-N2 dayboy
-N2 daybreak
-N2 daydream
-N2 daylight
-N2 dayroom
-N2 dayschool
-N2 daytime
-N2 daytrip
-V1 daze
-V2 dazzle
-N2 deacon
-V3 deactivate
-N2 deadbeat
-V2 deaden
-N2 deadhead
-N2 deadline
-N2 deadlock
-V2 deafen
-N1 deal
-N2 dealer
-N3 deanery
-N2 dearie
-N1 dearth
-N1 death
-N1 deathbed
-N2 deathblow
-N2 deathmask
-N3 deathrattle
-N2 deathtrap
-N3 deathwarrant
-N2 deathwatch
-N2 deathwish
-N1 deb
-N3 debacle
-V2 debark
-V2 debase
-V2 debate
-V2 debauch
-N3 debauchee
-N4 debauchery
-N3 debenture
-V4 debilitate
-N4 debility
-N2 debit
-V2 debouch
-V2 debrief
-N2 debris
-N1 debt
-N2 debtor
-V2 debug
-V2 debunk
-N2 debut
-N3 debutante
-N2 decade
-N3 decadence
-N3 decagon
-N4 decahedron
-N4 decaliter
-N3 decalitre
-N4 decalogue
-N4 decameter
-N3 decametre
-V2 decamp
-V2 decant
-N3 decanter
-V4 decapitate
-N3 decapod
-V4 decarbonize
-N3 decathlon
-V2 decay
-N2 deceit
-V2 deceive
-V4 decelerate
-N3 december
-N3 decency
-V4 decentralize
-N3 deception
-N3 decibel
-V2 decide
-D4 decidedly
-N3 decider
-N3 decigram
-N4 deciliter
-N3 decilitre
-V4 decimalize
-V3 decimate
-N4 decimeter
-N3 decimetre
-V3 decipher
-N3 decision
-N1 deck
-N2 deckchair
-N2 deckhand
-V2 declaim
-N4 declaration
-V2 declare
-V4 declassify
-N3 declension
-N4 declination
-V2 decline
-N4 declivity
-V2 declutch
-N3 decoction
-V2 decode
-V3 decompose
-V3 decompress
-N4 decompression
-N4 decongestant
-V5 decontaminate
-V3 decorate
-N4 decoration
-N4 decorator
-N3 decorum
-N2 decoy
-V2 decrease
-N2 decree
-D4 decrescendo
-N3 decretal
-V5 decriminalize
-V2 decry
-V3 dedicate
-N4 dedication
-V2 deduce
-V2 deduct
-N3 deduction
-N1 dee
-N1 deed
-N2 deedbox
-V1 deem
-N2 deemster
-V2 deepen
-N2 deepfreeze
-V2 deepfry
-N1 deer
-N2 deerskin
-N3 deerstalker
-V3 deescalate
-V2 deface
-V3 defalcate
-N4 defalcation
-V2 defame
-N2 default
-V2 defeat
-N3 defeatism
-V3 defecate
-N2 defect
-N2 defence
-V2 defend
-N3 defendant
-N2 defense
-V2 defer
-N3 deference
-N2 defiance
-N4 deficiency
-N3 deficit
-N3 defile
-V2 define
-N4 definition
-V2 deflate
-N3 deflation
-V2 deflect
-V3 deflower
-V3 defoliate
-V3 deforest
-V2 deform
-N4 deformity
-V2 defraud
-V2 defray
-V2 defrock
-V2 defrost
-V2 defuse
-V2 defy
-N5 degeneration
-V2 degrade
-N2 degree
-V2 dehisce
-V4 dehumanize
-V3 dehydrate
-V1 deice
-V2 deify
-V1 deign
-V6 deinstitutionalize
-N1 deism
-N2 deity
-V2 deject
-N2 dekko
-V2 delay
-N4 delectation
-N3 delegate
-N4 delegation
-V2 delete
-N1 delft
-N2 deli
-N5 deliberation
-N4 delicacy
-N5 delicatessen
-V2 delight
-V3 delimit
-V3 delineate
-N3 delinquent
-V3 deliquesce
-N3 delirium
-V3 deliver
-N4 deliverance
-N4 delivery
-N1 dell
-V2 delouse
-N3 delphinium
-N2 delta
-V2 delude
-N2 deluge
-N3 delusion
-V1 delve
-V4 demagnetize
-N3 demagog
-N4 demagogue
-N2 demand
-N4 demarcation
-V5 dematerialize
-V2 demean
-N3 demeanor
-N3 demeanour
-N3 dementia
-N4 demerara
-N3 demerger
-N3 demerit
-N2 demesne
-N3 demigod
-V5 demilitarize
-N3 demimonde
-N2 demise
-N6 demisemiquaver
-V2 demist
-N2 demo
-V4 demobilize
-N4 democracy
-N3 democrat
-V4 democratize
-V4 demodulate
-N4 demography
-V3 demolish
-N2 demon
-V4 demonetize
-N3 demonism
-N5 demonolatry
-N5 demonology
-V3 demonstrate
-N4 demonstration
-N4 demonstrator
-V4 demoralize
-V2 demote
-N3 demotic
-V4 demotivate
-V2 demur
-N3 demurrer
-V4 demystify
-N1 den
-N3 denarius
-V5 denationalize
-V3 denature
-N6 dendrochronology
-N4 dendrology
-N1 dene
-N2 dengue
-N2 denial
-N2 denier
-V3 denigrate
-N2 denim
-N3 denizen
-V4 denominate
-N5 denomination
-N5 denominator
-V2 denote
-N4 denouement
-V2 denounce
-N3 density
-N1 dent
-N3 dentifrice
-N2 dentin
-N2 dentine
-N2 dentist
-N3 dentition
-N2 denture
-V4 denuclearize
-V2 denude
-N4 denunciation
-V2 deny
-N2 deodar
-N3 deodorant
-V3 deodorize
-V2 depart
-N3 department
-N3 departure
-V2 depend
-N3 dependant
-N3 dependence
-N4 dependency
-V2 depict
-V3 depilate
-V2 deplete
-V2 deplore
-V2 deploy
-V5 depoliticize
-V4 depopulate
-V2 deport
-N3 deportee
-N3 deportment
-V2 depose
-N3 deposit
-N5 depositary
-N4 deposition
-N4 depositor
-N5 depository
-N2 depot
-V2 deprave
-N4 depravity
-V3 deprecate
-V3 depreciate
-N4 depreciation
-N4 depredation
-V2 depress
-N3 depression
-N4 deprivation
-V2 deprive
-N1 depth
-N2 depthcharge
-N4 deputation
-V2 depute
-V3 deputize
-N3 deputy
-V2 derail
-V2 derange
-N2 derby
-V4 derecognize
-V4 deregulate
-N4 dereliction
-V3 derestrict
-V2 deride
-N4 derivation
-V2 derive
-N4 dermatitis
-N5 dermatology
-N2 dermis
-V3 derogate
-N2 derrick
-N3 derringdo
-N2 derris
-N1 derv
-N2 dervish
-V4 desalinate
-V3 descale
-N2 descant
-V2 descend
-N3 descendant
-N2 descent
-V2 describe
-N3 description
-V2 descry
-V3 desecrate
-V4 desegregate
-V3 deselect
-V4 desensitize
-N2 desert
-N6 desertification
-V2 deserve
-V3 desiccate
-N5 desideratum
-N2 design
-V3 designate
-N4 designation
-D4 designedly
-N3 designer
-N2 desire
-V2 desist
-N1 desk
-N2 desktop
-N4 desolation
-N2 despair
-N4 desperado
-V2 despise
-P2 despite
-V2 despoil
-N2 despot
-N3 despotism
-N2 dessert
-N3 dessertspoon
-V4 destabilize
-N4 destination
-V2 destine
-N3 destiny
-V2 destroy
-N3 destroyer
-N3 destruction
-N3 desuetude
-V2 detach
-N3 detachment
-N2 detail
-V2 detain
-N3 detainee
-V2 detect
-N3 detection
-N3 detective
-N3 detention
-V2 deter
-N3 detergent
-V4 deteriorate
-N5 determination
-V3 determine
-N4 determinism
-V2 detest
-V2 dethrone
-V3 detonate
-N4 detonator
-N2 detour
-V4 detoxify
-V2 detract
-N3 detractor
-N3 detriment
-N3 detritus
-N1 deuce
-N3 deuterium
-N2 deutschmark
-V3 devalue
-V3 devastate
-V3 develop
-N4 development
-V2 deviate
-N2 device
-N2 devil
-N3 devilment
-N3 devilry
-V2 devise
-N4 devolution
-V2 devolve
-V2 devote
-N3 devotee
-N3 devotion
-V2 devour
-N1 dew
-N3 dewberry
-N2 dewclaw
-N2 dewdrop
-N2 dewlap
-N4 dexterity
-N2 dextrin
-N2 dextrose
-N1 dhal
-N2 dharma
-N2 dhoti
-N2 diabetes
-N3 diabolism
-N3 diaconate
-N3 diacritic
-N2 diadem
-N4 diaeresis
-V2 diagnose
-N3 diagnosis
-N3 diagnostics
-N2 diagram
-N1 dial
-N2 dialect
-N3 dialectic
-N3 dialectics
-N2 dialog
-N3 dialogue
-N3 dialysis
-N3 diameter
-N2 diamond
-N2 dianthus
-N3 diapason
-N2 diaper
-N2 diaphragm
-N4 diapositive
-N2 diarist
-N2 diarrhea
-N3 diarrhoea
-N2 diary
-N3 diaspora
-N2 diastase
-N2 diatom
-N2 diatribe
-N3 diazepam
-N2 dibble
-N4 dichotomy
-N1 dick
-N2 dickens
-N2 dickhead
-N2 dicky
-N3 dickybird
-N5 dicotyledon
-N3 dictaphone
-V2 dictate
-N3 dictator
-N2 diction
-N4 dictionary
-N2 dictum
-V2 diddle
-N4 didgeridoo
-N1 die
-N3 diecasting
-N2 diehard
-N3 dieresis
-N2 diesel
-N3 diesinker
-N3 diestamping
-N1 diet
-N3 dietitian
-V2 differ
-N3 difference
-V4 differentiate
-N4 difficulty
-V2 diffract
-N3 diffusion
-V1 dig
-V2 digest
-N3 digestion
-N2 digger
-N2 digit
-N4 digitalis
-V3 digitize
-V3 dignify
-N4 dignitary
-N3 dignity
-N2 digraph
-V2 digress
-N2 diktat
-N1 dil
-N4 dilatation
-V2 dilate
-N2 dildo
-N3 dilemma
-N3 dilettante
-N1 dill
-V4 dillydally
-V2 dilute
-N1 dime
-N3 dimension
-V3 diminish
-N4 diminution
-N2 dimmer
-N2 dimple
-N2 dimwit
-N1 din
-N2 dinar
-V1 dine
-N2 diner
-N2 dinette
-V1 ding
-N2 dingbat
-N2 dingdong
-N2 dinghy
-N2 dingle
-N2 dingo
-N3 diningcar
-N3 diningroom
-N2 dinner
-N3 dinnerdance
-N4 dinnerjacket
-N3 dinosaur
-N1 dint
-N2 diocese
-N1 diode
-N2 diopter
-N1 dioptre
-N3 diorama
-N2 dioxide
-N3 diphtheria
-N2 diphthong
-N4 diplodocus
-N3 diploma
-N4 diplomacy
-N3 diplomat
-N4 diplomatist
-N3 dipole
-N2 dipper
-N2 dipso
-N4 dipsomania
-N2 dipstick
-N2 dipswitch
-N2 diptych
-N3 direction
-N3 directive
-D3 directly
-N3 director
-N4 directorate
-N6 directorgeneral
-N4 directory
-N3 directress
-N1 dirge
-N2 dirham
-N1 dirk
-N1 dirndl
-N1 dirt
-N5 disability
-V3 disable
-V3 disabuse
-N4 disadvantage
-V3 disagree
-V3 disallow
-V3 disappear
-V3 disappoint
-N4 disappointment
-N5 disapprobation
-V3 disapprove
-V2 disarm
-N4 disarmament
-V3 disarrange
-N3 disarray
-V4 disassociate
-N3 disaster
-V3 disavow
-V2 disband
-V2 disbar
-V3 disbelieve
-V2 disburse
-N1 disc
-V2 discard
-V2 discern
-V2 discharge
-N3 disciple
-N5 disciplinarian
-N3 discipline
-V2 disclaim
-N3 disclaimer
-V2 disclose
-V3 discolor
-V3 discolour
-V3 discomfit
-N3 discomfort
-V3 discompose
-V3 disconcert
-V3 disconnect
-N3 discontent
-V4 discontinue
-N2 discord
-N3 discothque
-N2 discount
-V4 discountenance
-V3 discourage
-N2 discourse
-V3 discover
-N4 discovery
-N3 discredit
-N4 discrepancy
-N3 discretion
-V4 discriminate
-N5 discrimination
-N2 discus
-V2 discuss
-N2 disdain
-N2 disease
-V3 disembark
-V4 disembarrass
-V4 disembowel
-V3 disenchant
-V4 disencumber
-V4 disenfranchise
-V3 disengage
-V4 disentangle
-V4 disestablish
-V3 disfigure
-V2 disgorge
-N2 disgrace
-V2 disguise
-N2 disgust
-N1 dish
-N4 disharmony
-N2 dishcloth
-V3 dishearten
-N3 dishwasher
-V4 disillusion
-N4 disincentive
-V3 disincline
-V3 disinfect
-N4 disinfectant
-N5 disinformation
-V4 disinherit
-V4 disintegrate
-V3 disinter
-V3 disinvest
-V2 disjoint
-N3 disjunction
-N2 diskette
-V2 dislike
-V3 dislocate
-V2 dislodge
-V3 dismantle
-N2 dismay
-V3 dismember
-V2 dismiss
-V2 dismount
-V3 disobey
-V3 disoblige
-N3 disorder
-V4 disorganize
-V3 disorient
-V4 disorientate
-V2 disown
-V3 disparage
-N4 disparity
-N3 dispatchbox
-N4 dispatchrider
-V2 dispel
-N4 dispensary
-N4 dispensation
-V2 dispense
-N3 dispenser
-V2 disperse
-N3 dispersion
-V3 dispirit
-V2 displace
-N4 displacement
-V2 display
-V2 displease
-V2 disport
-N3 disposal
-V2 dispose
-N4 disposition
-V3 dispossess
-N2 disproof
-N4 disproportion
-V2 disprove
-N3 disputant
-N4 disputation
-V2 dispute
-V4 disqualify
-V3 disquiet
-N4 disquietude
-N4 disquisition
-V3 disregard
-N3 disrepair
-N3 disrepute
-N3 disrespect
-V2 disrobe
-V2 disrupt
-V4 dissatisfy
-V2 dissect
-V3 dissemble
-V4 disseminate
-N3 dissension
-V2 dissent
-N3 dissenter
-N4 dissertation
-N3 disservice
-V4 dissimulate
-V3 dissipate
-N4 dissipation
-V3 dissociate
-N4 dissolution
-V2 dissolve
-V2 dissuade
-N2 distaff
-N2 distance
-N2 distaste
-N3 distemper
-V2 distend
-N2 distich
-V2 distil
-V2 distill
-N3 distiller
-N4 distillery
-N3 distinction
-V3 distinguish
-V2 distort
-V2 distract
-N3 distraction
-V2 distrain
-N2 distraint
-N2 distress
-V3 distribute
-N4 distribution
-N4 distributor
-N2 district
-N2 distrust
-V2 disturb
-N3 disturbance
-N3 disunion
-V3 disunite
-N2 disuse
-N4 disyllable
-N1 ditch
-V2 dither
-N3 dithyramb
-N2 ditto
-N2 ditty
-N2 diva
-N2 divan
-V1 dive
-V3 divebomb
-N2 diver
-V2 diverge
-V4 diversify
-N3 diversion
-N4 diversity
-V2 divert
-V2 divest
-V2 divide
-N3 dividend
-N3 divider
-N4 divination
-N3 diviner
-N3 divingbell
-N3 divingboard
-N3 divingsuit
-N4 diviningrod
-N4 divinity
-N3 division
-N3 divisor
-N2 divorce
-N3 divorcee
-N2 divot
-V2 divulge
-N3 diwali
-N2 dixie
-N3 dixieland
-N3 djellaba
-V1 do
-N1 doe
-N1 doer
-V1 doff
-N1 dog
-N2 dogcart
-N3 dogcollar
-N1 doge
-N2 dogend
-N2 dogfight
-N2 dogfish
-N3 doggerel
-D2 doggo
-N4 doggypaddle
-N2 doghouse
-N2 dogma
-N3 dogmatism
-V3 dogmatize
-N3 dogooder
-N2 dogrose
-N3 dogsbody
-N2 dogstar
-N2 dogtooth
-N2 dogtrot
-N2 dogwatch
-N2 dogwood
-N1 doh
-N2 doily
-N3 doingover
-N2 dolby
-N2 dole
-N1 doll
-N2 dollar
-N2 dollop
-N2 dolly
-N3 dollybird
-N2 dolma
-N2 dolmen
-N3 dolomite
-N2 dolor
-N2 dolour
-N2 dolphin
-N4 dolphinarium
-N1 dolt
-N1 dom
-N2 domain
-N1 dome
-V4 domesticate
-N5 domesticity
-N4 domicile
-V3 dominate
-V3 domineer
-N3 dominion
-N3 domino
-V1 don
-V2 donate
-N3 donation
-N2 donjon
-N2 donkey
-N3 donkeywork
-N2 donna
-N2 donor
-N2 donut
-V2 doodle
-N1 doom
-N2 doomsday
-N1 door
-N2 doorbell
-N3 doorkeeper
-N2 doorknob
-N2 doorman
-N2 doormat
-N2 doorpost
-N2 doorstep
-N2 doorstop
-N2 doorway
-N1 dope
-N3 doppelgnger
-N3 dorado
-N2 dormer
-N4 dormitory
-N4 dormobile
-N2 dormouse
-N2 dory
-N2 dosage
-N1 dose
-N3 dosedo
-N1 dosh
-V1 doss
-N2 dosser
-N2 dosshouse
-N2 dossier
-N1 dot
-N2 dotage
-N2 dotard
-V1 dote
-N3 dotterel
-N2 dottle
-N3 doublebass
-V3 doublebook
-V3 doublecheck
-V3 doublecross
-N4 doubledealing
-N4 doubledecker
-V3 doublepark
-N2 doublet
-N3 doubletalk
-N3 doublethink
-N2 doubloon
-N1 doubt
-D2 doubtless
-N1 douche
-N1 dough
-N2 doughnut
-N3 doughnutting
-V1 douse
-N1 dove
-N3 dovecote
-N3 dovetail
-N3 dowager
-N2 dowel
-N3 dowelling
-N2 dower
-N1 down
-N3 downandout
-N2 downbeat
-N2 downer
-N2 downfall
-V2 downgrade
-D2 downhill
-N2 downland
-N2 downpipe
-N2 downpour
-D2 downstairs
-D2 downstream
-N2 downturn
-D2 downward
-N2 dowry
-N3 dowsingrod
-N4 doxology
-N2 doyen
-V1 doze
-N2 dozen
-N1 drachm
-N2 drachma
-N1 draft
-N2 draftsman
-V1 drag
-V2 draggle
-N2 dragnet
-N2 dragon
-N3 dragonfly
-N2 dragoon
-V1 drain
-N2 drainage
-N3 drainingboard
-N2 drainpipe
-N1 drake
-N2 dralon
-N1 dram
-N2 drama
-N3 dramatist
-V3 dramatize
-V1 drape
-N2 draper
-N3 drapery
-N1 draught
-N2 draughtboard
-N2 draughthorse
-N2 draughtsman
-V1 draw
-N2 drawback
-N2 drawbridge
-N2 drawer
-N2 drawing
-N3 drawingboard
-N3 drawingpin
-N3 drawingroom
-V1 drawl
-N2 drawstring
-N1 dray
-V1 dread
-N1 dream
-N2 dreamboat
-N2 dreamland
-V1 dredge
-N2 dredger
-V1 drench
-V1 dress
-N2 dressage
-N2 dresser
-N2 dressing
-N3 dressingdown
-N3 dressinggown
-N3 dressingroom
-N4 dressingtable
-N3 dressmaker
-N2 dressshield
-N2 dressshirt
-N1 drey
-V2 dribble
-N2 driblet
-N1 drier
-N1 drift
-N2 drifter
-N2 driftnet
-N2 driftwood
-N1 drill
-D2 drily
-V1 drink
-N3 drinkdriver
-V1 drip
-V2 dripdry
-V2 dripfeed
-N2 dripping
-V1 drive
-N2 drivel
-N2 driver
-N3 driveway
-N4 drivinglicence
-N3 drivingwheel
-N2 drizzle
-N4 dromedary
-N1 drone
-V1 drool
-V1 droop
-N1 drop
-N3 dropcurtain
-N2 dropkick
-N2 dropout
-N2 dropper
-N2 dropshot
-N2 dropsy
-N4 drosophila
-N1 dross
-N1 drought
-N1 drove
-N2 drover
-V1 drown
-V1 drowse
-V1 drub
-N1 drudge
-N1 drug
-N2 drugget
-N2 druggist
-N2 drugstore
-N1 druid
-N1 drum
-N2 drumbeat
-N2 drumhead
-N2 drummer
-N2 drumstick
-N2 drunkard
-N1 drupe
-N1 dryad
-V2 dryclean
-V1 dub
-N2 dubbin
-N3 dubiety
-N2 ducat
-N2 duchess
-N2 duchy
-N1 duck
-N2 duckbill
-N2 duckboard
-N2 duckling
-N2 duckweed
-N2 ducky
-N1 duct
-N1 dude
-N2 dudgeon
-N1 duel
-N2 duenna
-N1 duet
-V1 duff
-N2 duffer
-N2 duffle
-N3 dufflecoat
-N1 dug
-N2 dugong
-N2 dugout
-N1 duke
-N3 dulcimer
-N2 dullard
-D2 duly
-N2 dumbbell
-V2 dumbfound
-N2 dumbo
-N2 dumdum
-N2 dummy
-N1 dump
-N2 dumpling
-N1 dunce
-N3 dunderhead
-N1 dune
-N1 dung
-N3 dungaree
-N3 dungbeetle
-N2 dungeon
-N2 dunghill
-V1 dunk
-N2 dunlin
-N2 dunnock
-N1 duo
-N3 duodenum
-N3 duologue
-N1 dupe
-N2 duplex
-N4 duplicator
-N4 duplicity
-N3 duration
-N2 duress
-N2 durex
-N1 dusk
-N1 dust
-N2 dustbin
-N2 dustcart
-N2 duster
-N3 dustjacket
-N2 dustman
-N2 dustpan
-N2 dustsheet
-N2 dustup
-N1 dutch
-N2 dutchman
-N2 duty
-N2 duvet
-N1 dwarf
-V1 dwell
-N2 dwelling
-V2 dwindle
-N1 dye
-N1 dyke
-N3 dynamism
-N3 dynamite
-N3 dynamo
-N5 dynamometer
-N2 dynast
-N3 dynasty
-N1 dyne
-N4 dysentery
-N3 dysfunction
-N3 dyslexia
-N5 dysmenorrhoea
-N3 dyspepsia
-N3 dysphasia
-N3 dysprosium
-N3 dystrophy
-N1 e
-N2 eagle
-N2 eaglet
-N1 ear
-N2 earache
-N2 eardrum
-N2 earful
-N1 earl
-V2 earmark
-V1 earn
-N2 earphone
-N2 earpiece
-N2 earplug
-N2 earring
-N2 earshot
-N1 earth
-N3 earthenware
-N2 earthling
-N2 earthquake
-N2 earthwork
-N2 earthworm
-N3 eartrumpet
-N2 earwig
-N1 ease
-N2 easel
-N3 easement
-D3 easily
-N1 east
-N2 easter
-N3 easterner
-N3 eastnortheast
-N3 eastsoutheast
-V1 eat
-N2 eater
-N5 eaudecologne
-V3 eavesdrop
-N1 ebb
-N3 ebonite
-N3 ebony
-N4 ecclesiastic
-N3 echelon
-N3 echidna
-N4 echinoderm
-N2 echo
-N5 echolocation
-N4 echosounder
-N3 eclampsia
-N2 eclipse
-N3 ecliptic
-N3 eclogue
-N4 ecology
-N4 economist
-V4 economize
-N4 economy
-N4 ecosystem
-N3 ecstasy
-N3 ectomorph
-N3 ectoplasm
-N1 ecu
-N3 eczema
-N2 edam
-N2 eddy
-N3 edelweiss
-N3 edema
-N2 eden
-N1 edge
-D3 edgeways
-N2 edging
-N2 edict
-N3 edifice
-V3 edify
-V2 edit
-N3 edition
-N3 editor
-V3 educate
-N4 education
-N5 educationist
-V2 educe
-N1 eel
-V2 efface
-N2 effect
-V3 effervesce
-N3 effigy
-V3 effloresce
-N2 effluence
-N3 effluvium
-N2 effort
-N4 effrontery
-V2 effuse
-N3 effusion
-N1 eft
-N2 efta
-V1 egg
-N2 eggcup
-N2 eggflip
-N2 egghead
-N2 eggplant
-N2 eggshell
-N2 eggwhite
-N3 eglantine
-N1 ego
-N2 egoism
-N3 egotism
-N3 egotrip
-N2 egress
-N2 egret
-N5 egyptology
-N2 eider
-N3 eiderdown
-N2 eightsome
-N3 einsteinium
-N3 eisteddfod
-V4 ejaculate
-V2 eject
-N3 ejector
-V1 eke
-N2 eland
-V2 elapse
-N4 elastomer
-V2 elate
-N2 elbow
-N3 elbowgrease
-N3 elbowroom
-N2 elder
-N4 elderberry
-N4 eldorado
-N4 elecampane
-V2 elect
-N3 election
-V4 electioneer
-N3 elector
-N4 electorate
-N4 electrician
-N5 electricity
-V4 electrify
-N6 electrocardiogram
-N6 electrocardiograph
-V4 electrocute
-N3 electrode
-N7 electroencephalogram
-N7 electroencephalograph
-V4 electrolyse
-N5 electrolysis
-N4 electrolyte
-V4 electrolyze
-N5 electromagnet
-N6 electromagnetism
-N3 electron
-N4 electronvolt
-V4 electroplate
-N4 electroscope
-N7 electrotechnology
-N6 electrotherapy
-N3 elegy
-N3 element
-N3 elephant
-N5 elephantiasis
-V3 elevate
-N4 elevation
-N4 elevator
-N4 elevenplus
-N3 elevenses
-N1 elf
-V3 elicit
-V2 elide
-V4 eliminate
-N3 elision
-N3 elixir
-N1 elk
-N1 ell
-N2 ellipse
-N3 ellipsis
-N3 ellipsoid
-N1 elm
-N4 elocution
-V3 elongate
-V2 elope
-N3 eloquence
-D1 else
-D3 elsewhere
-V4 elucidate
-V2 elude
-N2 elver
-N3 elysium
-V3 emaciate
-N2 email
-V3 emanate
-V4 emancipate
-V4 emasculate
-V2 embalm
-N3 embankment
-N3 embargo
-V2 embark
-V3 embarrass
-N3 embassy
-V1 embed
-V3 embellish
-N2 ember
-V3 embezzle
-V3 embitter
-V3 emblazon
-N2 emblem
-V3 embody
-V3 embolden
-N3 embolism
-N3 embolus
-V2 emboss
-N3 embouchure
-V2 embrace
-N3 embrasure
-N4 embrocation
-V3 embroider
-N4 embroidery
-V2 embroil
-N2 embryo
-N4 embryology
-V2 emend
-N3 emerald
-V2 emerge
-N4 emergency
-N3 emery
-N4 emeryboard
-N3 emigrant
-V3 emigrate
-N3 eminence
-N2 emir
-N3 emirate
-N4 emissary
-V2 emit
-N4 emolument
-V2 emote
-N3 emotion
-V3 empanel
-V3 empathize
-N3 empathy
-N3 emperor
-N3 emphasis
-V3 emphasize
-N4 emphysema
-N2 empire
-N5 empirebuilding
-N4 emplacement
-V2 employ
-N3 employee
-N3 employment
-N3 emporium
-V3 empower
-N2 empress
-N3 empyrean
-N1 emu
-V3 emulate
-V4 emulsify
-N3 emulsion
-N1 en
-V3 enable
-V2 enact
-N3 enactment
-N3 enamel
-V3 enamor
-V3 enamour
-V2 encamp
-V4 encapsulate
-V2 encase
-N5 encephalitis
-N5 encephalogram
-N5 encephalograph
-V2 enchant
-N3 enchanter
-V3 encircle
-N2 enclave
-V2 enclose
-N3 enclosure
-V2 encode
-N3 encomium
-V3 encompass
-N2 encore
-V3 encounter
-V3 encourage
-V2 encroach
-V2 encrust
-V3 encumber
-N3 encumbrance
-N5 encyclopedia
-N1 end
-V3 endanger
-V2 endear
-N3 endearment
-N2 ending
-N2 endive
-N4 endometrium
-N3 endomorph
-V2 endorse
-N3 endoscope
-V2 endow
-N3 endowment
-N3 endpaper
-N3 endproduct
-V2 endue
-N3 endurance
-V2 endure
-D2 endways
-N3 enema
-N3 enemy
-V3 energize
-N3 energy
-V3 enervate
-V3 enfeeble
-N3 enfilade
-V2 enfold
-V2 enforce
-V3 enfranchise
-V2 engage
-N4 engagement
-V3 engender
-N2 engine
-N3 engineer
-N4 engineering
-N3 englishman
-V2 engraft
-V2 engrave
-N3 engraving
-V2 engross
-V2 engulf
-V2 enhance
-N3 enigma
-V2 enjoin
-V2 enjoy
-N4 enkephalin
-V3 enkindle
-V2 enlarge
-N3 enlarger
-V3 enlighten
-N4 enlightenment
-V2 enlist
-V3 enliven
-V2 enmesh
-N3 enmity
-V3 ennoble
-N2 ennui
-N4 enormity
-N2 enprint
-V2 enquire
-N3 enquiry
-V2 enrage
-V3 enrapture
-V2 enrich
-V2 enrol
-V2 enroll
-V2 ensconce
-N3 ensemble
-V2 enshrine
-V2 enshroud
-N2 ensign
-N3 ensilage
-V2 enslave
-V2 ensnare
-V2 ensue
-V2 ensure
-N4 entablature
-V2 entail
-V3 entangle
-N2 entente
-V2 enter
-N3 enterprise
-V3 entertain
-N4 entertainer
-N4 entertainment
-V2 enthral
-V2 enthrall
-V2 enthrone
-V2 enthuse
-N3 enthusiasm
-N3 enthusiast
-V2 entice
-D4 entirely
-N4 entirety
-V3 entitle
-N3 entity
-V2 entomb
-N5 entomology
-N3 entourage
-N2 entracte
-V2 entrance
-N2 entrant
-V2 entrap
-N1 entre
-V2 entreat
-N3 entreaty
-N2 entrecte
-V2 entrench
-N4 entrepreneur
-N2 entrept
-N3 entropy
-V2 entrust
-N2 entry
-N3 entryphone
-V2 entwine
-N3 enumber
-V4 enumerate
-N5 enumerator
-V3 enunciate
-N4 enuresis
-V3 envelop
-N3 envelope
-N4 environment
-N6 environmentalist
-V3 envisage
-N2 envoy
-N2 envy
-V2 enwrap
-N2 enzyme
-N3 epaulet
-N3 epaulette
-N3 ephedrine
-N2 epic
-N4 epicenter
-N3 epicentre
-N3 epicure
-N4 epicurean
-N4 epidemic
-N6 epidemiology
-N4 epidermis
-N4 epidiascope
-N4 epiglottis
-N3 epigram
-N3 epigraph
-N4 epilepsy
-N4 epilogue
-N4 epiphany
-N5 episcopacy
-N4 episcopate
-N5 episiotomy
-N3 episode
-N6 epistemology
-N3 epistle
-N3 epitaph
-N4 epithelium
-N3 epithet
-N3 epitome
-V4 epitomize
-N2 epoch
-N3 eponym
-N3 epsilon
-N4 equality
-V3 equalize
-N4 equalizer
-D3 equally
-N5 equanimity
-V2 equate
-N3 equation
-N3 equator
-N3 equerry
-N4 equilibrium
-N3 equinox
-V2 equip
-N3 equipage
-N3 equipment
-N3 equipoise
-N4 equitation
-N3 equity
-V4 equivocate
-N1 era
-V4 eradicate
-V2 erase
-N3 eraser
-N3 erasure
-N2 erbium
-N1 erg
-D2 ergo
-N4 ergonomics
-N2 ergot
-N2 erin
-N2 ermine
-N2 ernie
-V2 erode
-N4 eroticism
-V1 err
-N2 errand
-N3 erratum
-N2 error
-N4 eructation
-V2 erupt
-N5 erysipelas
-N4 erythrocyte
-V3 escalate
-N4 escalator
-N3 escalope
-N3 escapade
-V2 escape
-N3 escapee
-N4 escapement
-N3 escapism
-N5 escapology
-N3 escarpment
-N5 eschatology
-V2 eschew
-N2 escort
-N3 escritoire
-N3 escudo
-N3 escutcheon
-N3 eskimo
-N4 esophagus
-N4 espadrille
-N3 espalier
-N3 esparto
-D4 especially
-N4 esperanto
-N3 espionage
-N3 esplanade
-N3 espousal
-V2 espouse
-N3 espresso
-N2 esprit
-V2 espy
-N2 esquire
-N2 essay
-N2 essence
-V3 establish
-N4 establishment
-N2 estate
-V2 esteem
-N2 ester
-N3 estimate
-N4 estimation
-N3 estonian
-V2 estrange
-N3 estrogen
-N2 estrus
-N3 estuary
-N1 eta
-V1 etch
-N2 etching
-N4 eternity
-N3 ethanal
-N2 ethane
-N2 ether
-N2 ethic
-N3 ethiopian
-N4 ethnology
-N2 ethos
-N2 ethyl
-N3 ethylene
-V3 etiolate
-N4 etiology
-N3 etiquette
-N5 etymology
-N4 eucalyptus
-N3 eucharist
-N3 eukaryote
-V3 eulogize
-N3 eulogy
-N2 eunuch
-N3 euphemism
-N3 euphonium
-N3 euphony
-N3 euphoria
-N4 eurodollar
-N3 europium
-N4 euthanasia
-V3 evacuate
-N4 evacuee
-V2 evade
-V3 evaluate
-V3 evanesce
-N4 evangelism
-N4 evangelist
-V4 evangelize
-V4 evaporate
-N3 evasion
-N1 eve
-N2 even
-N3 evening
-N3 evensong
-N2 event
-N3 eventide
-N3 eventing
-N5 eventuality
-V3 eventuate
-D2 ever
-D3 evermore
-N4 everyman
-D4 everywhere
-V2 evict
-N3 evidence
-D4 evidently
-N3 evildoer
-V2 evince
-V4 eviscerate
-V2 evoke
-N4 evolution
-N5 evolutionist
-V2 evolve
-N1 ewe
-N2 ewer
-N1 ex
-V4 exacerbate
-N3 exaction
-N4 exactitude
-D3 exactly
-V4 exaggerate
-V2 exalt
-N2 exam
-N5 examination
-V3 examine
-N3 example
-V4 exasperate
-V3 excavate
-V2 exceed
-D4 exceedingly
-V2 excel
-N3 excellence
-N4 excellency
-V2 except
-N3 exception
-N2 excerpt
-N2 excess
-N2 exchange
-N3 exchequer
-V2 excise
-V2 excite
-N4 excitement
-V2 exclaim
-N4 exclamation
-V2 exclude
-V5 excommunicate
-V3 excoriate
-N3 excrement
-N3 excrescence
-V2 excrete
-V3 exculpate
-N3 excursion
-V2 excuse
-V3 execrate
-V3 execute
-N4 execution
-N5 executioner
-N4 executive
-N4 executor
-N4 exegesis
-N3 exemplar
-V4 exemplify
-N3 exercise
-V2 exert
-V2 exeunt
-V3 exfoliate
-V3 exhale
-V2 exhaust
-N3 exhaustion
-V3 exhibit
-N4 exhibition
-N5 exhibitioner
-N5 exhibitionism
-V4 exhilarate
-V2 exhort
-V2 exhume
-N4 exigency
-N3 exile
-V2 exist
-N3 existence
-N5 existentialism
-N2 exit
-N3 exodus
-V4 exonerate
-V3 exorcize
-N3 exordium
-V2 expand
-N2 expanse
-N3 expansion
-N4 expansionism
-N2 expat
-V3 expatiate
-V2 expect
-N4 expectancy
-N4 expectation
-V4 expectorate
-V3 expedite
-N4 expedition
-V2 expel
-V2 expend
-N4 expenditure
-N2 expense
-N3 experience
-N4 experiment
-N3 expertise
-V2 expiate
-V2 expire
-N3 expiry
-V2 explain
-N4 explanation
-N3 expletive
-V3 explicate
-V2 explode
-N2 exploit
-V2 explore
-N3 explosion
-N2 expo
-N3 exponent
-V2 export
-N2 expos
-V2 expose
-N4 exposition
-V4 expostulate
-N3 exposure
-V2 expound
-V2 express
-N3 expression
-N4 expressionism
-N3 expressway
-V3 expropriate
-N3 expulsion
-V2 expunge
-V3 expurgate
-N5 exserviceman
-N6 exservicewoman
-V4 extemporize
-V2 extend
-N3 extension
-N2 extent
-V3 extenuate
-V4 exterminate
-V4 externalize
-N3 extinction
-V3 extinguish
-N4 extinguisher
-V3 extirpate
-V2 extol
-V2 extort
-N3 extortion
-V2 extract
-N3 extraction
-N3 extractor
-V3 extradite
-V4 extrapolate
-N5 extravaganza
-N3 extremist
-N4 extremity
-V3 extricate
-N3 extrovert
-V2 extrude
-V2 exude
-V2 exult
-N1 eye
-N3 eyeball
-N3 eyebath
-N3 eyebright
-N3 eyebrow
-N3 eyeful
-N3 eyeglass
-N4 eyehole
-N3 eyelash
-N3 eyelet
-N3 eyelid
-N4 eyeliner
-N4 eyeopener
-N3 eyepiece
-N3 eyeshade
-N4 eyeshadow
-N3 eyesight
-N3 eyesore
-N3 eyetooth
-N3 eyewash
-N4 eyewitness
-N2 eyrie
-N1 faade
-N2 fable
-N2 fabric
-V3 fabricate
-N1 face
-N3 facecloth
-N4 faceflannel
-N3 facelift
-N3 facepack
-N2 facer
-N2 facet
-V4 facilitate
-N4 facility
-N2 facing
-N4 facsimile
-N1 fact
-N2 factor
-N3 factorial
-V3 factorize
-N3 factory
-N3 factotum
-N2 factsheet
-N3 faculty
-N1 fad
-V1 fade
-V1 faff
-N1 fag
-N2 fagend
-N2 faggot
-N2 fagot
-N1 fah
-N2 faience
-V1 fail
-N2 failing
-N2 failure
-N1 fair
-N2 fairground
-N2 fairing
-D2 fairly
-N2 fairway
-N2 fairy
-N3 fairyland
-N1 faith
-D3 faithfully
-N1 fake
-N2 fakir
-N2 falcon
-N3 falconry
-V1 fall
-N3 fallacy
-N2 fallout
-N3 falsehood
-N3 falsetto
-V3 falsify
-N3 falsity
-V2 falter
-N1 fame
-V4 familiarize
-N3 family
-N2 famine
-V2 famish
-N1 fan
-N3 fanatic
-N2 fancier
-N2 fancy
-N3 fandango
-N2 fanfare
-N1 fang
-N2 fanjet
-N2 fanlight
-N2 fanny
-N2 fantail
-N3 fantasia
-V3 fantasize
-N3 fantasy
-N2 farad
-N1 farce
-N1 fare
-N3 farestage
-N3 farina
-N1 farm
-N2 farmer
-N2 farmhand
-N2 farmhouse
-N2 farmstead
-N2 farmyard
-N3 farrago
-N2 farrier
-N2 farrow
-N2 farsi
-N2 farthing
-N4 farthingale
-N2 fascia
-N3 fascicle
-V3 fascinate
-N2 fascism
-N2 fashion
-V1 fast
-N2 fastback
-V2 fasten
-N3 fastening
-N2 fastness
-N1 fat
-N3 fatalism
-N4 fatality
-N1 fate
-N2 fathead
-N2 father
-N4 fatherfigure
-N4 fatherinlaw
-N3 fatherland
-N2 fathom
-N3 fatigue
-N2 fatstock
-V2 fatten
-N2 fatwa
-N2 faucet
-N1 fault
-N3 faultfinder
-N3 faultfinding
-N1 faun
-N2 fauna
-N4 favoritism
-N4 favouritism
-V1 fawn
-N1 fax
-N1 fay
-V1 faze
-N2 fealty
-N1 fear
-N1 feast
-N1 feat
-N2 feather
-V2 featherbed
-N3 featherbrain
-N3 feathering
-N3 featherweight
-N2 feature
-N3 febrifuge
-N3 february
-V3 fecundate
-V3 federate
-N4 federation
-N1 fee
-V1 feed
-N2 feedback
-N2 feeder
-V1 feel
-N2 feeler
-N2 feeling
-V1 feign
-N1 feint
-N2 feldspar
-V4 felicitate
-N4 felicity
-N1 fell
-N3 fellatio
-N2 feller
-N2 felloe
-N2 fellow
-N4 fellowfeeling
-N3 fellowship
-N5 fellowtraveller
-N2 felon
-N3 felony
-N1 felt
-N3 felucca
-N3 feminism
-N2 femur
-N1 fen
-N1 fence
-N2 fencing
-V1 fend
-N2 fender
-N2 fennel
-N3 fenugreek
-N2 ferment
-N4 fermentation
-N2 fermium
-N1 fern
-N2 ferret
-N4 ferroconcrete
-N3 ferrule
-N2 ferry
-V3 fertilize
-N4 fertilizer
-N2 fervor
-N2 fervour
-N2 fescue
-V2 fester
-N3 festival
-N4 festivity
-N2 festoon
-N2 festschrift
-N2 feta
-V1 fetch
-N2 fetish
-N2 fetlock
-N2 fetter
-N2 fettle
-N2 fetus
-N1 feud
-N2 fever
-N3 feverfew
-N1 fez
-N1 fhrer
-N1 fianc
-N2 fiasco
-N1 fiat
-N1 fib
-N2 fiber
-N3 fiberboard
-N3 fiberglass
-N1 fibre
-N3 fibreboard
-N3 fibreglass
-N2 fibril
-N3 fibrosis
-N4 fibrositis
-N3 fibula
-N1 fiche
-N2 fiction
-N2 fiddle
-N4 fiddlefaddle
-N2 fiddler
-N4 fidelity
-V2 fidget
-N1 fief
-N1 field
-N2 fieldday
-N2 fielder
-N2 fieldfare
-N2 fieldsman
-N2 fieldwork
-N1 fiend
-N2 fiesta
-N1 fife
-N1 fig
-V1 fight
-N2 fighter
-N2 figleaf
-N2 figment
-N4 figuration
-N2 figure
-N4 figurehead
-N5 figureskating
-N3 figurine
-N3 filament
-N2 filbert
-V1 filch
-N2 file
-N4 filibuster
-N3 filigree
-N2 filing
-N4 filipino
-V1 fill
-N2 filler
-N2 fillet
-N2 filling
-N4 fillingstation
-N2 fillip
-N2 filly
-N1 film
-N2 filmgoer
-N3 filmsetting
-N2 filmstrip
-N3 filofax
-N2 filter
-N4 filterpaper
-N1 filth
-V2 filtrate
-N1 fin
-V3 finagle
-N3 finale
-N3 finalist
-N4 finality
-V3 finalize
-N2 finance
-N3 financier
-N1 finch
-V1 find
-N2 finder
-N2 finding
-N1 fine
-N3 finery
-N2 finesse
-V3 finetune
-N2 finger
-N3 fingerboard
-N3 fingerbowl
-V3 fingerdry
-N3 fingering
-N3 fingermark
-N3 fingernail
-N3 fingerplate
-N3 fingerprint
-N3 fingerstall
-N3 fingertip
-N2 finial
-N2 finis
-V2 finish
-N4 finishingschool
-N1 finn
-N2 finnan
-N2 fino
-N1 fiord
-N2 fipple
-N1 fir
-N2 fircone
-N1 fire
-N3 firealarm
-N2 firearm
-N3 fireball
-N3 firebomb
-N3 firebox
-N3 firebrand
-N3 firebreak
-N3 firebrick
-N3 fireclay
-N4 firecracker
-N3 firedamp
-N3 firedog
-N3 firedrill
-N4 fireeater
-N3 fireengine
-N3 fireescape
-N4 firefighter
-N3 firefly
-N3 fireguard
-N3 firelight
-N4 firelighter
-N3 fireman
-N3 fireplace
-N4 firepower
-N4 firepractice
-N4 fireraiser
-N3 firescreen
-N3 fireship
-N3 fireside
-N3 firestorm
-N3 firetrap
-N4 firewatcher
-N4 firewater
-N3 firewood
-N3 firework
-N2 firing
-N3 firingline
-N3 firingsquad
-N1 firm
-N3 firmament
-N2 firmware
-N2 firstfruit
-D2 firstly
-N1 firth
-N1 fish
-N2 fishbowl
-N2 fisher
-N3 fisherman
-N3 fishery
-N2 fishhook
-N2 fishing
-N3 fishingline
-N3 fishingrod
-N3 fishkettle
-N2 fishknife
-N2 fishmeal
-N3 fishmonger
-N2 fishnet
-N2 fishplate
-N2 fishslice
-N2 fishtail
-N2 fishwife
-N2 fission
-N2 fissure
-N1 fist
-N3 fistula
-N1 fit
-N2 fitment
-N2 fitter
-N2 fitting
-N2 fiver
-N1 fives
-N3 fivestones
-V1 fix
-V2 fixate
-N3 fixation
-D3 fixedly
-N2 fixer
-N3 fixity
-N2 fixture
-V1 fizz
-V2 fizzle
-N1 flab
-V3 flabbergast
-N1 flag
-N2 flagday
-N3 flagellant
-V3 flagellate
-N3 flagellum
-N3 flageolet
-N4 flagofficer
-N2 flagon
-N3 flagpole
-N2 flagship
-N2 flagstaff
-N2 flagstone
-N3 flagwaving
-N1 flail
-N1 flair
-N1 flak
-N1 flake
-N1 flame
-N3 flamenco
-N4 flamethrower
-N3 flamingo
-N1 flan
-N1 flange
-N1 flank
-N2 flannel
-N3 flannelette
-V1 flap
-N3 flapdoodle
-N2 flapjack
-N2 flapper
-V1 flare
-N3 flarepath
-N2 flareup
-V1 flash
-N2 flashback
-N2 flashcube
-N2 flasher
-N2 flashgun
-N2 flashing
-N2 flashlamp
-N2 flashlight
-N2 flashpoint
-N1 flask
-N1 flat
-N2 flatfish
-N2 flatfooted
-N3 flatiron
-N2 flatmate
-V2 flatten
-V2 flatter
-N3 flattery
-N2 flatworm
-V1 flaunt
-N2 flautist
-N3 flavoring
-N3 flavouring
-N1 flaw
-N1 flax
-N2 flaxseed
-V1 flay
-N1 flea
-N2 fleabag
-N2 fleabite
-N2 fleapit
-N1 fleck
-N2 flection
-V1 fledge
-N2 fledgling
-V1 flee
-N1 fleece
-N1 fleet
-N2 fleming
-N1 flesh
-N2 fleshwound
-N3 fleurdelis
-N1 flex
-N2 flexion
-N3 flexitime
-N5 flibbertigibbet
-N1 flick
-V2 flicker
-N2 flickknife
-N1 flight
-N2 flightdeck
-N4 flightrecorder
-V1 flinch
-V1 fling
-N1 flint
-N2 flintlock
-N1 flip
-N2 flipflop
-N2 flipper
-V1 flirt
-V1 flit
-N1 flitch
-V2 flitter
-N3 flittermouse
-V1 float
-N1 flock
-N3 flockpaper
-N1 floe
-V1 flog
-N1 flood
-N2 floodgate
-N2 floodlight
-N2 floodtide
-N1 floor
-N2 floorboard
-N2 floorcloth
-N2 flooring
-N2 floozie
-V1 flop
-N2 flora
-N2 floret
-N4 floribunda
-N2 florin
-N2 florist
-V2 floruit
-N1 floss
-N3 flotation
-N3 flotilla
-N2 flotsam
-N1 flounce
-N2 flounder
-N1 flour
-V2 flourish
-V1 flout
-V1 flow
-N2 flower
-N2 flowerbed
-N3 flowerhead
-N3 flowerpot
-N1 flu
-V2 fluctuate
-N1 flue
-N1 fluff
-N3 flugelhorn
-N1 fluid
-N1 fluke
-N3 flummery
-V2 flummox
-V1 flunk
-N2 flunkey
-V2 fluoresce
-N3 fluorescence
-V3 fluoridate
-N2 fluoride
-V3 fluorinate
-N2 fluorine
-N2 fluorite
-N4 fluorocarbon
-N2 fluorspar
-N2 flurry
-V1 flush
-V2 fluster
-N1 flute
-V2 flutter
-N1 flux
-N3 flycatcher
-N1 flyer
-V2 flyfish
-N2 flyhalf
-N2 flyleaf
-N2 flyover
-N3 flypaper
-N2 flypast
-V2 flypost
-N2 flysheet
-V2 flytip
-N2 flytrap
-N2 flyweight
-N2 flywheel
-N2 fnumber
-N1 foal
-N1 foam
-V1 fob
-N2 focus
-N2 fodder
-N1 foe
-N2 foetus
-N1 fog
-N2 fogbank
-N2 foghorn
-N2 foglamp
-N2 fogy
-N2 foible
-N1 foil
-V1 foist
-N1 fold
-N2 folder
-N2 foliage
-N2 folio
-N1 folk
-N2 folkdance
-N2 folklore
-N3 folksinger
-N2 folksong
-N3 folktale
-N2 folkweave
-N3 follicle
-V2 follow
-N3 follower
-N3 followon
-N3 followthrough
-N3 followup
-N2 folly
-V2 foment
-N2 fondant
-V2 fondle
-N2 fondue
-N3 fontanel
-N4 fontanelle
-N1 food
-N2 foodchain
-N2 foodie
-N2 foodstuff
-N1 fool
-N3 foolery
-N2 foolscap
-N1 foot
-N2 footage
-N2 football
-N2 footbrake
-N2 footbridge
-N2 footfall
-N2 footfault
-N2 foothill
-N2 foothold
-N2 footing
-V2 footle
-N2 footman
-N2 footmark
-N2 footnote
-N2 footpad
-N2 footpath
-N2 footplate
-N2 footprint
-N2 footrest
-N2 footsie
-N2 footstep
-N2 footstool
-N2 footway
-N2 footwear
-N2 footwork
-N1 fop
-N2 forage
-N2 foray
-N3 forbearance
-V2 forbid
-N1 force
-V3 forcefeed
-N3 forcemeat
-N2 forceps
-N1 ford
-V2 forearm
-N3 forebear
-V3 forebode
-N4 foreboding
-V3 forecast
-N4 forecastle
-V3 foreclose
-N3 forecourt
-N4 forefather
-N4 forefinger
-N3 forefoot
-N3 forefront
-N3 foreground
-N3 forehand
-N3 forehead
-N3 foreigner
-V3 foreknow
-N3 foreland
-N3 foreleg
-N3 forelimb
-N3 forelock
-N3 foreman
-N3 foremast
-N3 forename
-N3 forenoon
-V3 foreordain
-N3 forepaw
-N3 foreplay
-N4 forerunner
-N3 foresail
-V3 foresee
-V4 foreshadow
-N3 foreshore
-V4 foreshorten
-N3 foresight
-N3 foreskin
-N2 forest
-V3 forestall
-N3 forester
-N3 forestry
-N3 foretaste
-V3 foretell
-N3 forethought
-D3 forever
-V3 forewarn
-N4 forewoman
-N3 foreword
-N2 forfeit
-V3 forgather
-V1 forge
-N3 forgery
-V2 forget
-N4 forgetmenot
-V2 forgive
-N4 forgiveness
-V2 forgo
-N1 fork
-N4 formaldehyde
-N3 formalin
-N3 formalism
-N4 formality
-V3 formalize
-N2 format
-N3 formation
-N1 forme
-D3 formerly
-N3 formica
-N3 formula
-N4 formulary
-V3 formulate
-V3 fornicate
-V2 forsake
-D2 forsooth
-V2 forswear
-N3 forsythia
-N1 fort
-D1 forth
-D2 forthwith
-N5 fortification
-V3 fortify
-N3 fortitude
-N2 fortnight
-N2 fortran
-N2 fortress
-N2 fortune
-N5 fortuneteller
-N2 forum
-N1 fosse
-N2 fossil
-V2 foster
-N2 foulup
-V1 found
-N3 foundation
-N4 foundationstone
-V2 founder
-N2 foundling
-N2 foundry
-N1 fount
-N2 fountain
-N3 fountainhead
-N3 fountainpen
-N3 fourinhand
-N3 fourposter
-N2 foursome
-N1 fowl
-N1 fox
-N2 foxglove
-N3 foxhole
-N2 foxhound
-N3 foxhunting
-N3 foxterrier
-N2 foxtrot
-N2 foyer
-N2 fracas
-N2 fraction
-N2 fracture
-N2 fragment
-N2 fragrance
-N2 frailty
-N1 frame
-N2 frameup
-N3 framework
-N1 franc
-N2 franchise
-N2 francium
-N2 franglais
-N3 frankenstein
-N3 frankfurter
-N3 frankincense
-N4 fraternity
-V3 fraternize
-N3 fratricide
-N1 frau
-N1 fraud
-N1 fray
-N1 freak
-N2 freckle
-N2 freebie
-N2 freeboard
-N3 freebooter
-N2 freedman
-N2 freedom
-N2 freefone
-N3 freeforall
-N2 freehold
-N2 freelance
-N3 freeloader
-N2 freeman
-N3 freemason
-N2 freepost
-N2 freesia
-N3 freestyle
-N3 freethinker
-N2 freeway
-V2 freewheel
-V1 freeze
-V3 freezedry
-N2 freezer
-N2 freezeup
-N1 freight
-N2 freighter
-N3 freightliner
-V3 frenchify
-N2 frenchman
-N3 frenchwoman
-N2 frenzy
-N3 frequency
-N2 fresco
-V2 freshen
-N2 fresher
-N2 freshet
-N2 freshman
-N1 fret
-N2 fretsaw
-N2 fretwork
-N1 friar
-N2 friary
-N3 fricassee
-N2 friction
-N2 friday
-N1 fridge
-N4 fridgefreezer
-N1 friend
-N2 friendship
-N2 friesian
-N1 frieze
-V1 frig
-N2 frigate
-N1 fright
-V2 frighten
-N1 frill
-N1 fringe
-N3 frippery
-N2 frisbee
-V1 frisk
-N2 frisson
-N4 fritillary
-N2 fritter
-V1 frizz
-V2 frizzle
-N1 frock
-N2 frockcoat
-N1 frog
-N2 frogman
-V2 frogmarch
-N2 frogspawn
-V2 frolic
-P1 from
-N1 frond
-N1 front
-N2 frontage
-N3 frontbencher
-N2 frontier
-N3 frontispiece
-N1 frost
-N2 frostbite
-N2 frosting
-N1 froth
-V1 frown
-V3 fructify
-N2 fructose
-N1 fruit
-N3 fruiterer
-N2 fruition
-N2 frulein
-N1 frump
-V2 frustrate
-N2 frustum
-V1 fry
-N1 fryer
-N2 fryingpan
-N1 fryup
-N1 fte
-N2 fuchsia
-N2 fuckup
-V2 fuddle
-N1 fudge
-N1 fuel
-N1 fug
-N3 fugitive
-N2 fugue
-N2 fulcrum
-V2 fulfil
-V2 fulfill
-V1 full
-N2 fuller
-N2 fullness
-N3 fulltimer
-D2 fully
-N2 fulmar
-V3 fulminate
-V2 fumble
-N1 fume
-V3 fumigate
-N1 fun
-N2 function
-N4 functionalism
-N4 functionary
-N1 fund
-N5 fundamentalism
-N3 fundraiser
-N3 funeral
-N2 funfair
-N3 fungicide
-N2 fungus
-N1 funk
-N2 funnel
-N3 funnybone
-N1 fur
-N3 furbelow
-V2 furbish
-V1 furl
-N2 furlong
-N2 furlough
-N2 furnace
-V2 furnish
-N3 furnisher
-N3 furniture
-N2 furor
-N2 furore
-N2 furrier
-N2 furrow
-D2 further
-N3 furtherance
-D3 furthermore
-N2 fury
-N1 furze
-V1 fuse
-N3 fuselage
-N2 fusil
-N3 fusilier
-N3 fusillade
-N2 fusion
-N1 fuss
-N2 fusspot
-N2 fustian
-N2 futon
-N3 futurism
-N4 futurity
-N5 futurology
-N1 fuzz
-N1 gab
-N3 gabardine
-V2 gabble
-N2 gable
-V1 gad
-N3 gadabout
-N2 gadfly
-N2 gadget
-N4 gadolinium
-N2 gadwall
-N1 gael
-N2 gaelic
-N1 gaff
-N1 gaffe
-N2 gaffer
-N1 gag
-N2 gaggle
-N3 gaiety
-D2 gaily
-V1 gain
-V2 gainsay
-N1 gait
-N2 gaiter
-N1 gal
-N2 gala
-N3 galantine
-N3 galaxy
-N2 gale
-N1 gall
-N3 gallantry
-N2 galleon
-N3 galleria
-N3 gallery
-N2 galley
-N3 galleyslave
-N3 gallicism
-N2 gallium
-V3 gallivant
-N2 gallon
-N2 gallop
-N2 gallstone
-D2 galore
-N2 galosh
-V2 galumph
-V3 galvanize
-N5 galvanometer
-N2 gambit
-V2 gamble
-N2 gamboge
-V2 gambol
-N3 gamecock
-N4 gamekeeper
-N3 gamelan
-N4 gamesmanship
-N3 gamester
-N2 gamete
-N2 gamin
-N2 gamine
-N2 gamma
-N2 gammon
-N2 gamut
-N2 gander
-N1 gang
-N2 ganger
-N2 ganglion
-N2 gangplank
-N2 gangrene
-N2 gangster
-N2 gangue
-N2 gangway
-N2 gannet
-N2 gantry
-N1 gap
-V1 gape
-N2 garage
-N1 garb
-N2 garbage
-V2 garble
-N2 garden
-N3 gardener
-N3 gardenia
-N2 garfish
-V2 gargle
-N3 gargoyle
-N4 garibaldi
-N2 garland
-N2 garlic
-N2 garment
-V2 garner
-N2 garnet
-V2 garnish
-N2 garret
-N3 garrison
-N2 garter
-N1 gas
-N2 gasbag
-N1 gash
-N3 gasholder
-V3 gasify
-N2 gasket
-N2 gaslight
-N2 gasman
-N3 gasoline
-N4 gasometer
-V1 gasp
-N3 gastritis
-N5 gastroenteritis
-N3 gastronome
-N4 gastronomy
-N3 gastropod
-N2 gasworks
-N1 gate
-N3 gateau
-N4 gatecrasher
-N3 gatehouse
-N3 gateleg
-N3 gatepost
-N3 gateway
-V2 gather
-N3 gathering
-N3 gaucherie
-N2 gaucho
-N1 gaul
-N2 gauntlet
-N1 gauss
-N1 gauze
-N2 gavel
-N2 gavotte
-V1 gawk
-V1 gawp
-N3 gayety
-V1 gaze
-N3 gazebo
-N3 gazelle
-N2 gazette
-N3 gazetteer
-N3 gazpacho
-V2 gazump
-V3 gazunder
-N1 gear
-N2 gearbox
-N2 gearing
-N2 gearwheel
-N2 gecko
-N2 geegee
-N2 geezer
-N2 geisha
-N1 gel
-N3 gelatin
-V1 geld
-N2 gelding
-N3 gelignite
-N1 gem
-N3 gemini
-N2 gemma
-N2 gemstone
-N2 gendarme
-N2 gender
-N1 gene
-N4 genealogy
-N6 generalissimo
-N5 generality
-V4 generalize
-D4 generally
-V3 generate
-N4 generation
-N4 generator
-N3 genesis
-N2 genie
-N2 genius
-N3 genocide
-N2 genome
-N1 genre
-N1 gent
-N2 gentian
-N4 gentility
-N3 gentleman
-N4 gentlewoman
-N5 gentrification
-V3 genuflect
-N2 genus
-N1 geode
-N3 geodesy
-N3 geography
-N3 geology
-N3 geometry
-N2 geordie
-N2 georgette
-N3 geranium
-N2 gerbil
-N1 germ
-N3 germander
-N3 germanium
-N3 germicide
-V3 germinate
-N5 gerontology
-V4 gerrymander
-N2 gerund
-N2 gesso
-N3 gestapo
-N3 gestation
-V4 gesticulate
-N2 gesture
-V1 get
-N3 getaway
-N2 getout
-N4 gettogether
-N2 getup
-N4 getupandgo
-N2 geyser
-N1 ghee
-N2 gherkin
-N2 ghetto
-N4 ghettoblaster
-N1 ghost
-N2 ghosting
-N3 ghostwriter
-N1 ghoul
-N1 gi
-N1 giant
-V2 gibber
-N3 gibberish
-N2 gibbet
-N2 gibbon
-N1 gift
-V2 giftwrap
-V2 giggle
-N3 gigolo
-N1 gill
-N2 gillie
-N4 gillyflower
-N1 gilt
-N2 gimlet
-N2 gimmick
-N1 gimp
-N1 gin
-N2 ginger
-N3 gingerbread
-D3 gingerly
-N3 gingernut
-N2 gingham
-N4 gingivitis
-N2 ginkgo
-N2 ginseng
-N2 giraffe
-V1 gird
-N2 girder
-N2 girdle
-N1 girl
-N2 girlfriend
-N2 giro
-N1 girth
-N2 gismo
-N1 gist
-N1 git
-V1 give
-N3 giveaway
-N2 gizzard
-N2 glacier
-V2 gladden
-N1 glade
-N3 gladiator
-N3 gladiolus
-N1 glair
-N2 glamor
-V3 glamorize
-N2 glamour
-V1 glance
-N1 gland
-V1 glare
-N2 glasnost
-N1 glass
-N3 glassblowing
-N2 glasshouse
-N3 glasspaper
-N2 glassware
-N3 glaucoma
-V1 glaze
-N2 glazier
-N1 gleam
-V1 glean
-N1 glebe
-N1 glee
-N1 glen
-N3 glengarry
-V1 glide
-N2 glider
-V2 glimmer
-N1 glimpse
-V1 glint
-N2 glissade
-N3 glissando
-V2 glisten
-N1 glitch
-V2 glitter
-N1 glitz
-N2 gloaming
-V1 gloat
-N1 glob
-N1 globe
-N4 globetrotter
-N3 globule
-N3 globulin
-N3 glockenspiel
-N1 gloom
-V3 glorify
-N2 glory
-N4 gloryhole
-N1 gloss
-N3 glossary
-N2 glottis
-N3 gloucester
-N1 glove
-N2 glover
-V1 glow
-V2 glower
-N2 glowworm
-N3 gloxinia
-N2 glucose
-N1 glue
-N3 gluesniffing
-V1 glut
-N3 glutamate
-N2 gluten
-N2 glutton
-N3 gluttony
-N3 glycerin
-N3 glycerine
-N3 glycerol
-N3 glycogen
-N4 glycolysis
-N1 gman
-V1 gnash
-N1 gnat
-V1 gnaw
-N1 gneiss
-N1 gnome
-N2 gnomon
-N1 gnu
-V1 go
-V1 goad
-N2 goahead
-N1 goal
-N2 goalie
-N3 goalkeeper
-N2 goalpost
-N1 goat
-N2 goatee
-N2 goatherd
-N2 goatskin
-N1 gob
-N2 gobbet
-V2 gobble
-N4 gobbledegook
-N3 gobetween
-N2 goblet
-N2 goblin
-N3 gobstopper
-N2 goby
-N2 gocart
-N1 god
-N2 godchild
-N3 goddaughter
-N2 goddess
-N3 godfather
-N2 godhead
-N3 godmother
-N3 godparent
-N2 godsend
-N2 godson
-N1 goer
-N3 gogetter
-V2 goggle
-N3 gogglebox
-N1 going
-N3 goingover
-N2 goiter
-N1 goitre
-N2 gokart
-N1 gold
-N2 goldcrest
-N3 golddigger
-N2 golddust
-N2 goldfield
-N2 goldfinch
-N2 goldfish
-N2 goldmine
-V2 goldplate
-N2 goldrush
-N2 goldsmith
-N1 golf
-N2 golfcourse
-N3 golliwog
-N2 golly
-N2 gonad
-N3 gondola
-N3 gondolier
-N2 goner
-N1 gong
-N3 gonorrhea
-N4 gonorrhoea
-N1 goo
-N2 goodness
-N2 goodwill
-N2 goody
-N2 googly
-N1 goon
-N1 goose
-N4 gooseberry
-N3 gooseflesh
-N3 goosestep
-N2 gopher
-N1 gore
-N1 gorge
-N2 gorgon
-N4 gorgonzola
-N3 gorilla
-N1 gorse
-N2 gorsedd
-N2 goshawk
-N2 gosling
-N2 goslow
-N2 gospel
-N3 gossamer
-N2 gossip
-N1 goth
-N2 gouache
-N2 gouda
-N1 gouge
-N2 goulash
-N1 gourd
-N2 gourmand
-N3 gourmandise
-N2 gourmet
-N1 gout
-V2 govern
-N3 governance
-N3 governess
-N3 government
-N3 governor
-N6 governorgeneral
-N1 gown
-N1 goy
-V1 grab
-N1 grace
-N3 gracenote
-V2 gradate
-N3 gradation
-N1 grade
-N2 gradient
-N3 gradualism
-N2 graduate
-N1 grail
-N1 grain
-N2 grammar
-N3 grammarian
-N3 gramophone
-N2 grampus
-N1 gran
-N4 granadilla
-N3 granary
-N2 grandad
-N2 grandchild
-N3 granddaughter
-N2 grandee
-N2 grandeur
-N3 grandfather
-N2 grandma
-N3 grandmother
-N2 grandpa
-N3 grandparent
-N2 grandsire
-N2 grandson
-N2 grandstand
-N1 grange
-N2 granite
-N2 granny
-V1 grant
-V3 granulate
-N3 granule
-N1 grape
-N3 grapefruit
-N3 grapeshot
-N3 grapevine
-N2 graphite
-N4 graphology
-N2 grapnel
-V2 grapple
-N4 grapplingiron
-V1 grasp
-N1 grass
-N3 grasshopper
-N2 grassland
-N1 grate
-V3 gratify
-N2 grating
-D2 gratis
-N3 gratitude
-N3 gratuity
-V1 grave
-N4 gravedigger
-N2 gravel
-N1 graves
-N3 gravestone
-N3 graveyard
-N4 gravimeter
-N4 gravimetry
-V3 gravitate
-N4 gravitation
-N3 gravity
-N2 gravy
-N3 gravyboat
-N2 grayling
-V1 graze
-N2 grazier
-N2 grazing
-N1 grease
-N3 greasepaint
-N2 greaser
-N2 greatcoat
-D2 greatly
-N1 greave
-N1 grebe
-N1 greed
-N1 greek
-N3 greenery
-N2 greenfinch
-N2 greenfly
-N2 greengage
-N3 greengrocer
-N4 greengrocery
-N2 greenhorn
-N2 greenhouse
-N2 greenroom
-N2 greenstuff
-N2 greensward
-N2 greenwood
-V1 greet
-N2 greeting
-N2 gremlin
-N2 grenade
-N3 grenadier
-N2 greyhound
-N2 greylag
-N1 grid
-N2 griddle
-N3 gridiron
-N1 grief
-N2 grievance
-V1 grieve
-N2 griffin
-N2 griffon
-N1 grill
-N2 grille
-N1 grilse
-N2 grimace
-N1 grime
-V1 grin
-V1 grind
-N2 grinder
-N2 grindstone
-V1 grip
-V1 gripe
-N1 grist
-N2 gristle
-N1 grit
-V2 grizzle
-V1 groan
-N1 groat
-N2 grocer
-N3 grocery
-N1 grog
-N1 groin
-N2 grommet
-N1 groom
-N1 groove
-V1 grope
-N2 grosgrain
-N2 grotto
-N1 ground
-N2 grounding
-N2 groundnut
-N2 groundplan
-N2 groundrent
-N2 groundsel
-N2 groundsheet
-N2 groundsman
-N3 groundwater
-N2 groundwork
-N1 group
-N2 groupie
-N1 grout
-N1 grove
-V2 grovel
-V1 grow
-N2 grower
-V1 growl
-N1 growth
-N1 groyne
-N1 grub
-N1 grudge
-N1 gruel
-V2 grumble
-N1 grunt
-N1 gruyre
-N1 gstring
-N1 gsuit
-N1 gt
-N1 gte
-N2 guano
-N3 guarantee
-N3 guarantor
-N3 guaranty
-V1 guard
-N2 guardhouse
-N2 guardian
-N2 guardroom
-N2 guardsman
-N2 guava
-N2 gudgeon
-N2 guernsey
-N3 guerrilla
-V1 guess
-N2 guesswork
-N1 guest
-N2 guesthouse
-N3 guestimate
-N1 guff
-N2 guffaw
-N2 guidance
-N1 guide
-N3 guidebook
-N3 guidedog
-N3 guideline
-N2 guider
-N1 guild
-N2 guilder
-N2 guildhall
-N2 guile
-N3 guillemot
-N3 guillotine
-N1 guilt
-N2 guinea
-N3 guineafowl
-N3 guineapig
-N2 guipure
-N1 guise
-N2 guitar
-N1 gulch
-N1 gulf
-V1 gull
-N2 gullet
-N2 gully
-V1 gulp
-N1 gum
-N2 gumboil
-N2 gumboot
-N2 gumdrop
-N2 gumption
-N2 gumtree
-N1 gun
-N2 gunboat
-N3 guncarriage
-N3 guncotton
-N2 gunfight
-N2 gunfire
-N2 gunman
-N3 gunmetal
-N2 gunner
-N3 gunnery
-N2 gunny
-N2 gunpoint
-N3 gunpowder
-N3 gunrunner
-N2 gunshot
-N3 gunslinger
-N2 gunsmith
-N3 gunwale
-N2 guppy
-V2 gurgle
-N2 gurkha
-N2 gurnard
-N2 guru
-V1 gush
-N2 gusher
-N2 gusset
-N1 gust
-N2 gusto
-N1 gut
-N4 guttapercha
-N2 gutter
-N3 guttering
-N3 guttersnipe
-N1 guv
-N1 guy
-V2 guzzle
-V1 gybe
-N1 gym
-N3 gymkhana
-N3 gymnasium
-N2 gymnast
-N3 gymnosperm
-N2 gymslip
-N2 gynae
-N5 gynaecology
-N5 gynecology
-N2 gypsum
-N2 gypsy
-V2 gyrate
-N3 gyrfalcon
-N4 gyrocompass
-N3 gyroscope
-N4 haberdasher
-N4 habiliment
-N2 habit
-N3 habitat
-N4 habitation
-N3 habitu
-V3 habituate
-N3 hacienda
-N1 hack
-N2 hacker
-N2 hackle
-N2 hackney
-N2 hacksaw
-N2 haddock
-N1 hades
-N3 haematite
-N5 haematology
-N4 haemoglobin
-N4 haemophilia
-N4 haemophiliac
-N2 hafnium
-N1 haft
-N1 hag
-N2 haggis
-V2 haggle
-N4 hagiography
-N4 hagiology
-N2 haha
-N2 hahnium
-N2 haiku
-V1 hail
-N2 hailstone
-N2 hailstorm
-N1 hair
-N2 hairbrush
-N2 haircloth
-N2 haircut
-N2 hairdo
-N3 hairdresser
-N2 hairdrier
-N2 hairgrip
-N2 hairline
-N2 hairnet
-N2 hairpiece
-N2 hairpin
-N2 hairslide
-N2 hairspray
-N2 hairspring
-N3 hairstyle
-N3 hairtrigger
-N1 hajj
-N2 hajji
-N2 haka
-N1 hake
-N2 halal
-N2 halberd
-N1 half
-N2 halfback
-N2 halfbreed
-N3 halfbrother
-N2 halfcaste
-N2 halfcrown
-N3 halfdozen
-N3 halfduplex
-N2 halfhour
-N2 halflife
-N2 halflight
-N2 halfmast
-N3 halfpenny
-N3 halfsister
-N2 halfterm
-N2 halftime
-N3 halftitle
-N2 halftone
-N2 halftruth
-N3 halfvolley
-D2 halfway
-N2 halfwit
-N3 halibut
-N4 halitosis
-N1 hall
-N2 hallmark
-V2 hallow
-N3 halloween
-V4 hallucinate
-N5 hallucination
-N5 hallucinogen
-N2 hallway
-N2 halo
-N3 halogen
-N2 halon
-V1 halt
-N2 halter
-N2 halva
-V1 halve
-N2 halyard
-N1 ham
-N3 hamburger
-N3 hamitic
-N2 hamlet
-N2 hammer
-N3 hammerhead
-N3 hammerlock
-N3 hammertoe
-N2 hammock
-V2 hamper
-N2 hamster
-N2 hamstring
-N1 hand
-N2 handbag
-N2 handball
-N2 handbell
-N2 handbill
-N2 handbook
-N2 handbrake
-N2 handcart
-N2 handclap
-N2 handcraft
-N2 handcuff
-N2 handful
-N2 handgun
-N2 handhold
-N3 handicap
-N3 handicraft
-N3 handiwork
-N3 handkerchief
-N2 handle
-N3 handlebar
-N2 handler
-N2 handmaid
-N3 handmedown
-N2 handout
-N3 handover
-D4 handoverfist
-V2 handpick
-N2 handrail
-N2 handsaw
-N2 handset
-N2 handshake
-N2 handspring
-N2 handstand
-N2 handwork
-N3 handwriting
-N3 handyman
-V1 hang
-N2 hangar
-N2 hanger
-N3 hangeron
-N3 hangglider
-N2 hanging
-N2 hangman
-N2 hangnail
-N2 hangout
-N3 hangover
-N2 hangup
-N1 hank
-V2 hanker
-N2 hanky
-N4 hankypanky
-N2 hansard
-N2 hansom
-N3 hanukkah
-V2 happen
-N3 happening
-N4 harakiri
-N3 harangue
-V2 harass
-N3 harbinger
-N4 harbourmaster
-N2 hardboard
-V2 harden
-N3 hardihood
-D2 hardly
-N2 hardon
-N2 hardship
-N2 hardtop
-N2 hardware
-N2 hardwood
-N1 hare
-N3 harebell
-N3 harelip
-N2 harem
-N3 haricot
-V1 hark
-N3 harlequin
-N4 harlequinade
-N2 harlot
-N1 harm
-N4 harmonica
-N3 harmonium
-V3 harmonize
-N3 harmony
-N2 harness
-N1 harp
-N2 harpoon
-N3 harpsichord
-N2 harpy
-N3 harridan
-N2 harrier
-N2 harrow
-N1 hart
-N3 hartebeest
-N2 harvest
-N3 harvester
-N2 hasbeen
-N1 hash
-N2 hashish
-N2 haslet
-N1 hasp
-N2 hassock
-N1 haste
-V2 hasten
-N1 hat
-N2 hatband
-N2 hatbox
-V1 hatch
-N2 hatchback
-N2 hatchet
-N2 hatchway
-V1 hate
-N2 hatpin
-N1 hatred
-N2 hatstand
-N2 hatter
-V1 haul
-N2 haulage
-N2 haulier
-N1 haulm
-N1 haunch
-V1 haunt
-N2 hauteur
-V1 have
-N2 haven
-N3 havenot
-V2 haver
-N3 haversack
-N2 havoc
-N1 haw
-N2 hawfinch
-V1 hawk
-N2 hawker
-N2 hawser
-N2 hawthorn
-N1 hay
-N2 haycock
-N3 haymaking
-N2 haystack
-N2 hazard
-N1 haze
-N2 hazel
-N3 hazelnut
-N1 hbomb
-N1 hcek
-N1 head
-N2 headache
-N2 headband
-N3 headbanger
-N2 headboard
-N2 headbutt
-N2 headcount
-N2 headdress
-N2 header
-N2 headgear
-N3 headhunting
-N2 heading
-N2 headlamp
-N2 headland
-N2 headlight
-N2 headline
-N2 headlock
-D2 headlong
-N2 headman
-N3 headmaster
-N3 headquarters
-N2 headrest
-N2 headroom
-N2 headscarf
-N2 headset
-N2 headship
-N3 headshrinker
-N2 headstall
-N2 headstone
-N2 headway
-N2 headword
-V1 heal
-N1 health
-N1 heap
-V1 hear
-N2 hearing
-N3 hearingaid
-V2 hearken
-N2 hearsay
-N1 hearse
-N1 heart
-N2 heartache
-N2 heartbeat
-N2 heartbreak
-N2 heartburn
-V2 hearten
-N1 hearth
-N2 hearthrug
-D3 heartily
-N2 heartland
-N3 heartsearching
-N2 heartthrob
-N2 heartwood
-N1 heat
-N2 heater
-N1 heath
-N2 heathen
-N2 heather
-N2 heating
-N2 heatwave
-V1 heave
-N2 heaven
-N3 heavyweight
-N1 hebe
-N2 hebrew
-V2 heckle
-N2 hectare
-N3 hectogram
-V2 hector
-N1 hedge
-N3 hedgehog
-V3 hedgehop
-N3 hedgerow
-N3 hedonism
-V1 heed
-N2 heehaw
-N2 heelball
-N4 hegemony
-N3 hegira
-N2 heifer
-N1 height
-V2 heighten
-N1 heir
-N2 heirloom
-V2 hele
-N4 helicopter
-N3 heliograph
-N3 heliotrope
-N3 heliport
-N2 helium
-N2 helix
-N3 hellebore
-N2 hellene
-N3 hellenism
-N2 hellfire
-N3 hellhole
-N1 helm
-N2 helmet
-N2 helmsman
-N2 helot
-V1 help
-N2 helping
-N2 helpline
-N2 helpmate
-D4 helterskelter
-N2 heman
-N3 hematite
-N5 hematology
-N3 hemisphere
-N2 hemline
-N2 hemlock
-N4 hemoglobin
-N4 hemophilia
-N4 hemophiliac
-N1 hemp
-N2 hemstitch
-N1 hen
-N2 henbane
-D1 hence
-D3 henceforth
-N2 henchman
-N1 henge
-N2 henna
-N3 henparty
-V2 henpeck
-N2 henry
-N4 hepatitis
-N3 heptagon
-A1 her
-N2 herald
-N3 heraldry
-N1 herb
-N2 herbage
-N3 herbalist
-N3 herbarium
-N3 herbicide
-N3 herbivore
-N1 herd
-N2 herdsman
-D1 here
-D3 hereabouts
-D3 hereafter
-D3 hereby
-N4 heredity
-N3 hereford
-D2 herein
-D4 hereinafter
-D2 hereof
-N3 heresy
-N3 heretic
-D3 hereto
-D4 heretofore
-D3 hereupon
-D3 herewith
-N3 heritage
-N4 hermaphrodite
-N2 hermit
-N3 hermitage
-N3 hermitcrab
-N2 hernia
-N2 hero
-N2 heroin
-N2 heroine
-N2 heroism
-N2 heron
-N4 heroworship
-N1 herpes
-N1 herr
-N2 herring
-N3 herringbone
-N3 herringgull
-N1 hertz
-V3 hesitate
-N2 hessian
-V1 hew
-V1 hex
-N3 hexagon
-N3 hexagram
-N4 hexameter
-N2 heyday
-N3 hezbollah
-N2 hiatus
-V3 hibernate
-N3 hibiscus
-N1 hick
-N3 hickory
-N1 hide
-N3 hideandseek
-N3 hideaway
-N3 hideout
-N2 hiding
-N3 hidingplace
-N3 hierarchy
-N3 hieroglyph
-D6 higgledypiggledy
-N2 highball
-N2 highflyer
-N2 highland
-N2 highlight
-N3 highlighter
-D2 highly
-N2 highness
-N2 highup
-N2 highway
-N3 highwayman
-V2 hijack
-N1 hike
-N1 hill
-N3 hillbilly
-N2 hillock
-N2 hillside
-N2 hilltop
-N3 hillwalking
-N1 hilt
-N1 hind
-N2 hindi
-N2 hindrance
-N2 hindsight
-N2 hindu
-N2 hinduism
-N4 hindustani
-N1 hinge
-N2 hinny
-N1 hint
-N3 hinterland
-N2 hipbath
-N2 hipbone
-N2 hipflask
-N2 hippie
-N2 hippo
-N3 hippocket
-N3 hippodrome
-N5 hippopotamus
-N2 hipster
-V1 hire
-N3 hireling
-A1 his
-V1 hiss
-N3 histamine
-N3 histogram
-N4 histology
-N3 historian
-N4 historicism
-N5 historicity
-N5 historiography
-N3 history
-V1 hit
-V1 hitch
-V2 hitchhike
-D2 hither
-D3 hitherto
-N2 hittite
-N1 hive
-N1 hoard
-N2 hoarding
-N2 hoarfrost
-N1 hoax
-N1 hob
-V2 hobble
-N2 hobby
-N3 hobbyhorse
-N3 hobgoblin
-N2 hobnail
-V2 hobnob
-N2 hobo
-V1 hock
-N2 hockey
-N4 hocuspocus
-N1 hod
-N1 hoe
-N1 hog
-N3 hogmanay
-N2 hogshead
-N2 hogwash
-V1 hoick
-V1 hoist
-N2 hokum
-N1 hold
-N2 holdall
-N2 holding
-N2 holdup
-N2 hole
-N3 holiday
-N5 holidaymaker
-N3 holiness
-N2 holism
-V2 holler
-N2 holly
-N3 hollyhock
-N1 holm
-N2 holmium
-N3 holocaust
-N3 hologram
-N4 holography
-N2 holster
-N2 homage
-N2 homburg
-N1 home
-N3 homebrew
-N4 homecoming
-N3 homeland
-N4 homeopathy
-N3 homestead
-D3 homeward
-N3 homework
-N3 homicide
-N3 homily
-N5 homoeopathy
-V4 homogenize
-N3 homograph
-N4 homology
-N3 homonym
-N4 homophobia
-N3 homophone
-N1 hone
-D3 honestly
-N3 honesty
-N2 honey
-N3 honeybee
-N3 honeycomb
-N3 honeydew
-N3 honeymoon
-N4 honeysuckle
-N1 honk
-N3 honkytonk
-N4 honorarium
-N1 hooch
-N1 hood
-N2 hoodlum
-N2 hoodoo
-V2 hoodwink
-N1 hoof
-N2 hooha
-N1 hook
-N2 hookah
-N2 hooker
-N2 hookey
-N2 hookup
-N2 hookworm
-N3 hooligan
-N1 hoop
-N2 hoopla
-N2 hoopoe
-N1 hoot
-N2 hooter
-N2 hoover
-N1 hop
-N1 hope
-D4 hopefully
-N2 hopper
-N2 hopscotch
-N1 horde
-N3 horehound
-N3 horizon
-N2 hormone
-N1 horn
-N2 hornbeam
-N2 hornbill
-N2 hornblende
-N2 hornet
-N2 hornpipe
-N4 horology
-N3 horoscope
-V3 horrify
-N2 horror
-N1 horse
-N3 horseback
-N3 horsebox
-N3 horsebrass
-N3 horseflesh
-N3 horsefly
-N3 horsehair
-N3 horseman
-N3 horseplay
-N4 horsepower
-N3 horserace
-N4 horseradish
-N3 horseshoe
-N3 horsetail
-N3 horsewhip
-N4 horsewoman
-N4 horticulture
-N3 hosanna
-N1 hose
-N2 hosier
-N3 hosiery
-N2 hospice
-N3 hospital
-N5 hospitality
-V4 hospitalize
-N1 host
-N2 hostage
-N2 hostel
-N3 hosteling
-N3 hostelling
-N3 hostelry
-N2 hostess
-N4 hostility
-N1 hotbed
-N2 hotchpotch
-N2 hotel
-N3 hotelier
-D2 hotfoot
-N2 hothead
-N2 hothouse
-N2 hotplate
-N2 hotpot
-N3 hottentot
-N1 hound
-N1 hour
-N2 hourglass
-N2 houri
-N1 house
-N3 houseagent
-N3 houseboat
-N4 housebreaking
-N3 housecoat
-N3 housefly
-N3 household
-N4 householder
-N4 househunting
-N4 househusband
-N4 housekeeper
-N4 housekeeping
-N3 housemaid
-N3 houseman
-N4 housemartin
-N4 housemaster
-N3 houseplant
-N3 houseroom
-N3 housetop
-N4 housewarming
-N3 housewife
-N3 housework
-N4 houseyhousey
-N2 housing
-N2 hovel
-V2 hover
-N3 hovercraft
-N3 hoverport
-Q1 how
-D2 howbeit
-N2 howdah
-D3 however
-N3 howitzer
-N1 howl
-N2 howler
-D3 howsoever
-N2 hoyden
-N1 hub
-N4 hubblebubble
-N2 hubbub
-N2 hubby
-N2 hubris
-N4 huckleberry
-N2 huckster
-V2 huddle
-N1 hue
-N1 huff
-V1 hug
-D3 hugely
-N3 huguenot
-N2 hula
-N1 hulk
-N1 hull
-N4 hullabaloo
-V1 hum
-N3 humanism
-N5 humanitarian
-N4 humanity
-V3 humanize
-N3 humankind
-D3 humanly
-N2 humbug
-N3 humdinger
-N3 humerus
-N4 humidifier
-V4 humidify
-N4 humidity
-V3 humiliate
-N4 humility
-N3 hummingbird
-N2 hummock
-N2 hummus
-N4 humoresque
-N3 humorist
-N1 hump
-N2 humpback
-N2 humus
-N1 hun
-V1 hunch
-N2 hunchback
-N3 hundredweight
-N3 hungarian
-N2 hunger
-N1 hunk
-V1 hunt
-N2 hunter
-N2 huntsman
-N2 hurdle
-N2 hurdler
-N4 hurdygurdy
-V1 hurl
-N2 hurley
-N4 hurlyburly
-N3 hurricane
-N5 hurricanelamp
-N2 hurry
-V1 hurt
-V2 hurtle
-N2 husband
-N3 husbandry
-V1 hush
-N1 husk
-N2 husky
-N1 huss
-N2 hussar
-N2 hussy
-N2 hustings
-V2 hustle
-N1 hut
-N1 hutch
-N2 hyacinth
-N2 hybrid
-V3 hybridize
-N2 hydra
-N3 hydrangea
-N2 hydrant
-N2 hydrate
-N2 hydride
-N4 hydrocarbon
-N5 hydrocephalus
-N3 hydrofoil
-N3 hydrogen
-V4 hydrogenate
-N4 hydrography
-N4 hydrology
-V3 hydrolyse
-N4 hydrolysis
-V3 hydrolyze
-N4 hydrometer
-N4 hydropathy
-N4 hydrophobia
-N3 hydroplane
-N4 hydroponics
-N3 hydrosphere
-N5 hydrotherapy
-N3 hydroxide
-N3 hydroxyl
-N2 hyena
-N2 hygiene
-N4 hygrometer
-N3 hygroscope
-N2 hymen
-N1 hymn
-N2 hymnal
-N4 hymnology
-N2 hyoscine
-N4 hyperbola
-N4 hyperbole
-N5 hyperglycaemia
-N5 hyperglycemia
-N4 hypermarket
-N4 hypermedia
-N4 hypertension
-N3 hypertext
-N4 hyperthermia
-N5 hyperthyroidism
-N6 hyperventilation
-N2 hyphen
-V3 hyphenate
-N3 hypnosis
-N5 hypnotherapy
-N3 hypnotism
-V3 hypnotize
-N2 hypo
-N3 hypocaust
-N4 hypochondria
-N4 hypochondriac
-N4 hypocrisy
-N3 hypocrite
-N4 hypotension
-N4 hypotenuse
-N5 hypothalamus
-N4 hypothermia
-N4 hypothesis
-V4 hypothesize
-N5 hypothyroidism
-N6 hypoventilation
-N2 hyssop
-N5 hysterectomy
-N4 hysteresis
-N3 hysteria
-N3 hysteric
-N2 iambus
-N2 ibex
-N2 ibis
-N1 ibo
-N1 ice
-N2 iceaxe
-N3 iceberg
-N3 icebox
-N4 icebreaker
-N3 icecream
-N3 icecube
-N3 icefield
-N4 icelander
-N3 icepack
-N3 icepick
-N3 iceplant
-N3 icerink
-N3 iceskate
-N3 ichneumon
-N4 ichthyology
-N4 ichthyosaurus
-N3 icicle
-N2 icing
-N2 icon
-N4 iconoclast
-N5 iconography
-N5 iconostasis
-N5 icosahedron
-N2 idea
-N3 idealism
-V3 idealize
-D3 ideally
-N6 identification
-V4 identify
-N4 identikit
-N4 identity
-N3 ideogram
-N3 ideograph
-N4 ideologue
-N4 ideology
-N3 idiocy
-N2 idiom
-N5 idiosyncrasy
-N2 idiot
-N2 idol
-N4 idolater
-V3 idolize
-N2 idyll
-N2 igloo
-V2 ignite
-N3 ignition
-N4 ignominy
-N4 ignoramus
-N3 ignorance
-V2 ignore
-N3 iguana
-N4 iguanodon
-N4 ikebana
-N2 ileum
-N2 ilex
-N1 ilk
-N2 illness
-V2 illtreat
-V4 illuminate
-V3 illumine
-V2 illuse
-N3 illusion
-N4 illusionist
-V3 illustrate
-N4 illustration
-N2 image
-N4 imagery
-N5 imagination
-V3 imagine
-N3 imago
-N2 imam
-N3 imbalance
-N4 imbecile
-V2 imbibe
-N3 imbroglio
-V2 imbue
-V3 imitate
-N4 imitation
-D5 immediately
-D4 immensely
-V2 immerse
-N3 immersion
-N3 immigrant
-V3 immigrate
-V4 immobilize
-V3 immolate
-N4 immunity
-V3 immunize
-N7 immunodeficiency
-N6 immunoglobulin
-N5 immunology
-N6 immunotherapy
-V2 immure
-N1 imp
-N2 impact
-V2 impair
-N3 impala
-V3 impale
-V2 impart
-N2 impasse
-N3 impasto
-N3 impatiens
-V2 impeach
-N3 impedance
-V2 impede
-N4 impediment
-V2 impel
-V2 impend
-N4 imperfection
-N4 imperialism
-V3 imperil
-V4 impersonate
-N4 impetigo
-N3 impetus
-N3 impiety
-V2 impinge
-V2 implant
-N3 implement
-V3 implicate
-N4 implication
-V2 implode
-V2 implore
-V2 imply
-V2 import
-V3 importune
-V2 impose
-N4 imposition
-N2 impost
-N3 impostor
-N3 imposture
-V2 impound
-V4 impoverish
-N4 imprecation
-V3 impregnate
-N4 impresario
-V2 impress
-N3 impression
-N4 impressionism
-N4 imprimatur
-V2 imprint
-V3 imprison
-N4 improbity
-N4 impropriety
-V2 improve
-V3 improvise
-V2 impugn
-N2 impulse
-N3 impulsion
-N4 impunity
-N4 impurity
-V2 impute
-P1 in
-N5 inability
-N3 inaction
-N5 inamorato
-D3 inasmuch
-V4 inaugurate
-D2 inboard
-N3 inbreeding
-N2 inca
-V3 incandesce
-N4 incantation
-V5 incapacitate
-N5 incapacity
-V4 incarcerate
-N4 incarnation
-V2 incense
-N3 incentive
-N3 inception
-N2 incest
-N1 inch
-N3 incidence
-N3 incident
-D5 incidentally
-V4 incinerate
-N5 incinerator
-V2 incise
-N3 incision
-N3 incisor
-V2 incite
-N5 incivility
-N4 inclination
-V2 incline
-V2 include
-N2 income
-V3 incommode
-N5 incomprehension
-N4 inconvenience
-V4 incorporate
-V2 increase
-D4 increasingly
-N3 increment
-V4 incriminate
-N4 incrustation
-V3 incubate
-N4 incubation
-N4 incubator
-N3 incubus
-V3 inculcate
-N4 incumbency
-N5 incunabulum
-V2 incur
-N3 incursion
-V2 incurve
-N4 indecision
-D2 indeed
-D6 indefinitely
-V4 indemnify
-N4 indemnity
-V2 indent
-N4 indentation
-N3 indention
-N3 indenture
-N2 index
-N3 indiaman
-N2 indian
-N4 indiarubber
-V3 indicate
-N4 indicator
-V2 indict
-N3 indictment
-N4 indifference
-N4 indigestion
-N4 indignation
-N4 indignity
-N3 indigo
-N4 indiscipline
-N4 indiscretion
-V2 indite
-N2 indium
-N5 individualism
-N6 individuality
-V5 individualize
-D5 individually
-V4 indoctrinate
-D2 indoors
-V2 induce
-N4 inducement
-V2 induct
-N3 inductance
-N3 induction
-N3 inductor
-V2 indulge
-N3 indulgence
-N4 industrialism
-N4 industrialist
-V4 industrialize
-N3 industry
-V3 inebriate
-N5 inequality
-N4 inequity
-N3 inertia
-N4 inexperience
-N2 infant
-N3 infanta
-N4 infanticide
-N3 infantry
-N4 infantryman
-N2 infarct
-V3 infatuate
-V2 infect
-N3 infection
-N5 infelicity
-V2 infer
-N3 inference
-N5 inferiority
-N3 inferno
-V2 infest
-N3 infidel
-N5 infidelity
-N2 infield
-N3 infighting
-N2 infill
-N3 infilling
-V3 infiltrate
-N4 infinitive
-N4 infinitude
-N4 infinity
-N4 infirmary
-N4 infirmity
-V2 infix
-V2 inflame
-N4 inflammation
-V2 inflate
-N3 inflation
-V2 inflect
-N3 inflection
-V2 inflict
-N4 inflorescence
-N2 inflow
-N2 influence
-N3 influenza
-N2 influx
-N2 info
-V2 inform
-N3 informant
-N4 information
-N3 informer
-N3 infraction
-N4 infrastructure
-V2 infringe
-V3 infuriate
-V2 infuse
-N3 infusion
-N4 ingenuity
-V2 ingest
-N3 inglenook
-N2 ingnue
-N2 ingot
-N4 ingratitude
-N3 ingredient
-N2 ingress
-V3 inhabit
-N4 inhabitant
-N3 inhalant
-V3 inhale
-N3 inhaler
-V2 inhere
-V3 inherit
-N4 inheritance
-V3 inhibit
-N4 inhibition
-N4 iniquity
-V3 initiate
-N4 initiative
-V2 inject
-N3 injunction
-V2 injure
-N3 injury
-N3 injustice
-N1 ink
-N2 inkling
-N2 inkstand
-N2 inkwell
-N2 inlaw
-V2 inlay
-N2 inlet
-N2 inmate
-N1 inn
-N2 innings
-N3 innkeeper
-V3 innovate
-N3 innuendo
-V4 inoculate
-N3 inpatient
-N2 input
-N2 inquest
-N4 inquietude
-V2 inquire
-N3 inquiry
-N4 inquisition
-N4 inquisitor
-N2 inroad
-N2 inrush
-V2 inscribe
-N3 inscription
-N2 insect
-N4 insecticide
-N4 insectivore
-V4 inseminate
-V2 insert
-N3 insertion
-N2 inset
-D2 inshore
-N2 inside
-N3 insider
-N2 insight
-N3 insignia
-V3 insinuate
-V2 insist
-N4 insobriety
-D3 insofar
-N3 insole
-N3 insomnia
-N3 insomniac
-D3 insomuch
-V2 inspect
-N3 inspector
-N4 inspiration
-V2 inspire
-V3 inspirit
-N5 instability
-V2 install
-N3 installment
-N3 instalment
-N2 instance
-D3 instantly
-D2 instead
-N2 instep
-V3 instigate
-V2 instil
-V2 instill
-N2 instinct
-N3 institute
-N4 institution
-V6 institutionalize
-V2 instruct
-N3 instruction
-N3 instrument
-N5 instrumentalist
-N6 instrumentality
-N5 instrumentation
-V3 insulate
-N3 insulin
-V2 insult
-N3 insurance
-V2 insure
-N2 insured
-N3 insurer
-N4 insurrection
-N3 intaglio
-N2 intake
-N3 integer
-V3 integrate
-N4 integrity
-N4 integument
-N3 intellect
-N4 intelligence
-N5 intelligentsia
-V2 intend
-N4 intensifier
-V4 intensify
-N4 intensity
-N2 intent
-N3 intention
-V3 interact
-V3 interbreed
-V3 intercede
-V3 intercept
-N4 intercession
-V3 interchange
-N3 intercom
-V6 intercommunicate
-N5 intercommunion
-V4 interconnect
-N3 intercourse
-N3 interdict
-N3 interest
-N3 interface
-N4 interfacing
-V3 interfere
-N4 interference
-N4 interferon
-V3 interfuse
-N3 interim
-V3 interject
-N4 interjection
-V3 interlace
-V3 interlard
-V3 interleave
-V3 interline
-V3 interlink
-V3 interlock
-N5 interlocutor
-N4 interloper
-N3 interlude
-V4 intermarry
-N5 intermediary
-N3 interment
-N4 intermezzo
-V4 intermingle
-N4 intermission
-V3 intermix
-N2 intern
-V4 internalize
-N6 internationalism
-V6 internationalize
-N3 internee
-V5 interpenetrate
-N3 interplay
-N3 interpol
-V4 interpolate
-V3 interpose
-V3 interpret
-N4 interpreter
-N4 interregnum
-V4 interrelate
-V4 interrogate
-V3 interrupt
-N4 interrupter
-V3 intersect
-N4 intersection
-V3 intersperse
-N3 interstice
-V3 intertwine
-N3 interval
-V3 intervene
-N4 intervention
-N5 interventionist
-N3 interview
-V3 interweave
-N3 intestine
-N4 intifada
-N4 intimacy
-V3 intimate
-V4 intimidate
-P2 into
-N4 intonation
-V2 intone
-V4 intoxicate
-N2 intray
-V3 intrigue
-V3 introduce
-N4 introduction
-N2 introit
-N4 introspection
-N3 introvert
-V2 intrude
-N3 intruder
-N3 intrusion
-N3 intuition
-N2 inuit
-V3 inundate
-V2 inure
-V2 invade
-V4 invalidate
-N3 invasion
-N3 invective
-V2 inveigh
-V3 inveigle
-V2 invent
-N3 invention
-N4 inventory
-N3 inversion
-V2 invert
-V2 invest
-V4 investigate
-N4 investiture
-N3 investment
-V4 invigilate
-V4 invigorate
-N4 invitation
-V2 invite
-N4 invocation
-N2 invoice
-V2 invoke
-N4 involution
-V2 involve
-D3 inwardly
-N2 iodide
-N2 iodine
-N1 ion
-V2 ionize
-N3 ionizer
-N3 ionosphere
-N2 iota
-N1 iou
-N5 ipecacuanha
-N1 ire
-N3 iridium
-N2 iris
-N3 irishman
-N4 irishwoman
-V1 irk
-N2 iron
-N3 ironing
-N4 ironingboard
-N4 ironmaster
-N4 ironmonger
-N3 ironstone
-N3 ironware
-N3 ironwork
-N3 ironworks
-N3 irony
-V3 irradiate
-N4 irredentist
-V3 irrigate
-V3 irritate
-V2 irrupt
-N3 isinglass
-N2 islam
-N2 island
-N3 islander
-N2 isle
-N2 islet
-N3 isobar
-V3 isolate
-N5 isolationism
-N3 isomer
-N3 isotherm
-N3 isotope
-N3 israelite
-N2 issue
-N2 isthmus
-N3 italian
-V4 italicize
-N1 itch
-N2 item
-V3 itemize
-V3 iterate
-N5 itinerary
-N3 ivory
-N1 ivy
-N1 j
-V1 jab
-V2 jabber
-N2 jabot
-N4 jacaranda
-N2 jacinth
-N1 jack
-N2 jackal
-N3 jackanapes
-N2 jackass
-N2 jackboot
-N2 jackdaw
-N2 jacket
-N4 jackinthebox
-N2 jackknife
-N4 jackolantern
-N2 jackpot
-N3 jackrabbit
-N2 jackstone
-N3 jacobite
-N2 jacquard
-N3 jacuzzi
-N1 jade
-N1 jag
-N2 jaguar
-N2 jailbird
-N2 jailbreak
-N2 jailer
-N1 jain
-N2 jalap
-N3 jalopy
-N3 jalousie
-N1 jam
-N1 jamb
-N3 jamboree
-N2 jamjar
-V2 jangle
-N3 janitor
-N3 january
-N1 jap
-N2 japan
-N3 japanese
-N1 jape
-N4 japonica
-N1 jar
-N3 jardinire
-N2 jargon
-N2 jasmine
-N2 jasper
-N2 jaundice
-N1 jaunt
-N3 javanese
-N3 javelin
-N1 jaw
-N2 jawbone
-N3 jawbreaker
-N1 jay
-V2 jaywalk
-N1 jazz
-N2 jazzman
-N1 jcb
-N3 jealousy
-N1 jeep
-V1 jeer
-N3 jehovah
-N3 jejunum
-V1 jell
-V3 jellify
-N2 jelly
-N3 jellyfish
-N2 jemmy
-N2 jenny
-N3 jennywren
-V3 jeopardize
-N3 jeopardy
-N2 jerboa
-N3 jeremiad
-N3 jeremiah
-V1 jerk
-N2 jerkin
-N3 jeroboam
-N2 jerry
-N4 jerrybuilder
-N3 jerrycan
-N2 jersey
-N1 jest
-N2 jester
-N2 jesuit
-N1 jet
-N2 jetsam
-V3 jettison
-N2 jetty
-N1 jew
-N2 jewel
-N3 jeweler
-N3 jeweller
-N4 jewellery
-N2 jewess
-N2 jewry
-N3 jezebel
-V1 jib
-V1 jibe
-N1 jiff
-N1 jig
-N2 jigger
-N6 jiggerypokery
-V2 jiggle
-N2 jigsaw
-N2 jihad
-V1 jilt
-N2 jingle
-N2 jingo
-V1 jink
-N2 jinnee
-N3 jitterbug
-N1 jive
-N1 job
-N2 jobber
-N3 jobbery
-N2 jobcentre
-V2 jobhunt
-N3 jobsharing
-N2 jobsheet
-N1 jock
-N2 jockey
-N2 jockstrap
-V1 jog
-N2 jogger
-V2 joggle
-N2 jogtrot
-N1 john
-N2 johnny
-N7 johnnycomelately
-V1 join
-N2 joiner
-N1 joint
-N2 jointure
-N1 joist
-N3 jojoba
-N1 joke
-N2 joker
-V3 jollify
-N3 jollity
-N2 jolly
-V1 jolt
-N2 jonah
-N2 jonquil
-N1 joss
-N2 jossstick
-V2 jostle
-V1 jot
-N2 jotter
-N2 jotting
-N2 joule
-N2 journal
-N3 journalese
-N3 journalism
-N3 journalist
-N2 journey
-N3 journeyman
-N1 jove
-N1 jowl
-N1 joy
-N2 joystick
-N3 jubilee
-N2 judaism
-N2 judas
-V2 judder
-N1 judge
-N3 judgement
-N4 judicature
-N4 judiciary
-N2 judo
-N1 jug
-N3 juggernaut
-V2 juggle
-N1 juice
-N3 jujitsu
-N2 juju
-N2 jujube
-N3 jukebox
-N2 julep
-N2 julienne
-N2 july
-V2 jumble
-N2 jumbo
-V1 jump
-N2 jumper
-N2 jumpjet
-N2 jumplead
-N2 jumpoff
-V2 jumpstart
-N2 junction
-N2 juncture
-N1 june
-N2 jungle
-N3 juniper
-N1 junk
-N2 junket
-N2 junkie
-N2 junta
-N4 juridical
-N4 jurisdiction
-N4 jurisprudence
-N2 jurist
-N2 juror
-N2 jury
-N3 jurybox
-N2 justice
-V3 justify
-V1 jut
-N1 jute
-V3 juxtapose
-N2 kaffir
-N2 kaiser
-N4 kalashnikov
-N2 kale
-N4 kaleidoscope
-N3 kaleyard
-N3 kamikaze
-N3 kangaroo
-N2 kaolin
-N2 kapok
-N2 kappa
-N4 karabiner
-N3 karakul
-N2 karaoke
-N2 karate
-N2 karma
-N2 kauri
-N2 kayak
-N2 kazoo
-N1 kea
-N2 kebab
-V1 kedge
-N3 kedgeree
-N1 keel
-V2 keelhaul
-N2 keelson
-N1 keen
-V1 keep
-N2 keeper
-N2 keepfit
-N2 keeping
-N2 keepsake
-N1 keg
-N1 kelp
-N2 kelpie
-N1 kelt
-N2 kelvin
-N1 ken
-N2 kendo
-N2 kennel
-N2 kepi
-N3 keratin
-N1 kerb
-N3 kerbcrawling
-N2 kerbstone
-N2 kerchief
-N3 kerfuffle
-N1 kermes
-N2 kernel
-N3 kerosene
-N2 kestrel
-N1 ketch
-N2 ketchup
-N2 ketone
-N2 kettle
-N3 kettledrum
-N1 key
-N2 keyboard
-N3 keyhole
-N2 keynote
-N2 keypad
-N2 keypunch
-N2 keyring
-N2 keystone
-N2 keystroke
-N2 keyword
-N1 kgb
-N1 khan
-N2 kibbutz
-N2 kibosh
-V1 kick
-N2 kickback
-N2 kickoff
-N2 kickstand
-N2 kickstart
-V1 kid
-N2 kiddie
-N2 kiddo
-V2 kidnap
-N2 kidney
-V1 kill
-N2 killer
-N2 killing
-N2 killjoy
-N1 kiln
-N3 kilobyte
-N5 kilocalorie
-N4 kilocycle
-N3 kilogram
-N3 kilohertz
-N4 kilojoule
-N4 kiloliter
-N3 kilolitre
-N4 kilometer
-N3 kilometre
-N3 kiloton
-N3 kilovolt
-N3 kilowatt
-N4 kilowatthour
-N1 kilt
-N2 kilter
-N3 kimono
-N1 kin
-N1 kind
-N4 kindergarten
-V2 kindle
-N2 kindling
-N2 kindness
-N1 king
-N2 kingcup
-N2 kingdom
-N3 kingfisher
-N2 kingpin
-N2 kingpost
-N1 kink
-N2 kinship
-N2 kinsman
-N1 kiosk
-N2 kipper
-N1 kir
-N3 kirbygrip
-N1 kirk
-N3 kirksession
-N1 kirsch
-N2 kismet
-V1 kiss
-N2 kisscurl
-N2 kisser
-N3 kissogram
-N1 kit
-N2 kitbag
-N2 kitchen
-N3 kitchenette
-N3 kitchenware
-N1 kite
-N3 kitemark
-N1 kith
-N1 kitsch
-N2 kitten
-N3 kittiwake
-N2 kitty
-N2 kiwi
-N2 klaxon
-N2 kleenex
-N4 kleptomania
-N1 kmmel
-N1 knack
-N2 knacker
-N2 knapsack
-N2 knapweed
-N1 knave
-V1 knead
-N1 knee
-N2 kneebend
-N2 kneecap
-N2 kneejerk
-V1 kneel
-N2 kneeler
-N2 kneesup
-N1 knell
-N4 knickerbocker
-N2 knickknack
-N1 knife
-N2 knifeedge
-N3 knifepleat
-N1 knight
-V1 knit
-N2 knitting
-N4 knittingmachine
-N4 knittingneedle
-N2 knitwear
-N1 knob
-V1 knock
-N2 knocker
-N3 knockingshop
-N2 knockout
-N2 knockup
-N1 knoll
-N1 knot
-N2 knotgrass
-N3 knothole
-V1 know
-N2 knowall
-N2 knowhow
-D3 knowingly
-N2 knowledge
-N2 knuckle
-N4 knuckleduster
-N1 knurl
-N2 koala
-N1 kohl
-N3 kohlrabi
-N2 kolkhoz
-N1 kook
-N4 kookaburra
-N2 koppie
-N2 koran
-N2 korean
-N2 kowtow
-N1 kraal
-N1 kraut
-N2 kremlin
-N1 krill
-N2 krona
-N1 krone
-N3 krugerrand
-N2 krummhorn
-N2 krypton
-N2 kudos
-N2 kudu
-N2 kumquat
-N4 kurchatovium
-N2 kyle
-N1 l
-N1 lab
-N2 label
-N2 labium
-N5 laboratory
-N3 laborer
-N3 labourer
-N3 labrador
-N3 laburnum
-N3 labyrinth
-N1 lac
-N1 lace
-V3 lacerate
-N2 laceup
-N1 lack
-N2 lackey
-N2 lacquer
-N2 lacrosse
-N2 lactate
-N3 lactation
-N2 lactose
-N3 lacuna
-N1 lad
-N2 ladder
-N3 ladderback
-V1 lade
-N2 ladle
-N2 lady
-N3 ladybird
-N4 ladyinwaiting
-N4 ladykiller
-N3 ladyship
-N1 lag
-N2 lager
-N2 laggard
-N2 lagging
-N2 lagoon
-N1 lah
-N1 lair
-N1 laird
-N3 laissezfaire
-N2 laity
-N1 lake
-N1 lakh
-N1 lam
-N2 lama
-N4 lamasery
-N1 lamb
-N3 lambada
-V2 lambaste
-N2 lambda
-N2 lambswool
-N2 lament
-N4 lamentation
-N3 lamina
-V3 laminate
-N2 lammas
-N1 lamp
-N2 lampblack
-N2 lamplight
-N3 lamplighter
-N2 lampoon
-N2 lamppost
-N2 lamprey
-N2 lampshade
-N1 lan
-N3 lancastrian
-N1 lance
-N5 lancecorporal
-N2 lancer
-N2 lancet
-N1 land
-N3 landagent
-N2 landau
-N2 landfall
-N2 landfill
-N2 landgirl
-N2 landing
-N3 landingcraft
-N3 landinggear
-N3 landingstage
-N3 landlady
-N2 landlord
-N3 landlubber
-N2 landmark
-N2 landmine
-N3 landowner
-N2 landscape
-N2 landslide
-N2 landslip
-N1 lane
-N2 language
-V2 languish
-N2 languor
-N3 lanolin
-N2 lantern
-N3 lanthanide
-N3 lanthanum
-N2 lanyard
-V1 lap
-N2 lapdog
-N2 lapel
-N3 laplander
-N1 lapp
-N2 lappet
-N1 lapse
-N2 laptop
-N2 lapwing
-N2 larboard
-N3 larceny
-N1 larch
-N1 lard
-N2 larder
-N3 lardycake
-D3 largely
-N2 largesse
-N2 lariat
-N2 larkspur
-N2 larva
-N4 laryngitis
-N2 larynx
-N2 lasagne
-N2 laser
-V1 lash
-N1 lass
-N3 lassitude
-N2 lasso
-N1 last
-D2 lastly
-N1 latch
-N2 latchkey
-N4 latecomer
-D3 lately
-N2 latex
-N1 lath
-N1 lathe
-N2 lather
-N2 latin
-V3 latinize
-N3 latitude
-N2 latrine
-D3 latterly
-N2 lattice
-N2 latvian
-V1 laud
-N3 laudanum
-V1 laugh
-N2 laughing
-N3 laughinggas
-N2 laughter
-N1 launch
-N2 launcher
-V2 launder
-N3 launderette
-N2 laundress
-N2 laundry
-N2 laurel
-N1 lav
-N2 lava
-N4 lavatory
-V1 lave
-N3 lavender
-N5 lavenderwater
-N2 laver
-N1 law
-N3 lawbreaker
-N2 lawcourt
-N3 lawgiver
-N3 lawmaker
-N1 lawn
-N3 lawnmower
-N3 lawrencium
-N2 lawsuit
-N2 lawyer
-N1 lay
-N3 layabout
-N2 layby
-N2 layer
-N2 layette
-N2 layman
-N2 layoff
-N2 layout
-V1 laze
-N3 lazybones
-N1 lea
-V1 leach
-N1 lead
-N2 leader
-N2 leadin
-N2 leading
-N4 leadpoisoning
-N1 leaf
-N2 leaflet
-N2 leafmould
-N2 leafstalk
-N2 league
-N1 leak
-N2 leakage
-N2 leaning
-N2 leanto
-V1 leap
-N2 leapfrog
-V1 learn
-N2 learner
-N2 learning
-N1 lease
-N3 leasehold
-N1 leash
-N2 leather
-N3 leatherback
-N3 leatherette
-N4 leatherjacket
-N1 leave
-N2 leaven
-N4 leavetaking
-N2 lecher
-N3 lechery
-N2 lectern
-N2 lecture
-N3 lecturer
-N1 ledge
-N2 ledger
-N1 lee
-N1 leech
-N1 leek
-V1 leer
-N2 leeway
-N3 lefthander
-N2 leftism
-N3 leftover
-D2 leftward
-N2 lefty
-N1 leg
-N3 legacy
-N3 legalese
-N4 legality
-V3 legalize
-N2 legate
-N3 legatee
-N3 legation
-N2 legbye
-N2 legend
-N4 legerdemain
-N2 legging
-N2 legion
-N3 legionnaire
-V3 legislate
-N4 legislation
-N4 legislature
-V5 legitimatize
-V4 legitimize
-N2 lego
-N2 legpull
-N2 legroom
-N2 legume
-N1 lei
-N2 leisure
-N4 leisurewear
-N3 leitmotif
-N2 lemming
-N2 lemon
-N3 lemonade
-N2 lemur
-V1 lend
-N1 length
-V2 lengthen
-D2 lengthways
-D2 lengthwise
-N1 lens
-N1 lent
-N2 lentil
-N1 leo
-N2 leopard
-N2 leotard
-N2 leper
-N3 leprechaun
-N3 leprosy
-N2 lesbian
-N5 lesemajesty
-N2 lesion
-N2 lessee
-V2 lessen
-N2 lesson
-N2 lessor
-N1 let
-N2 letdown
-N3 lethargy
-N2 letout
-N2 letter
-N3 letterbomb
-N3 letterbox
-N3 letterhead
-N3 letterpress
-N2 lettuce
-N2 letup
-N3 leucocyte
-N3 leukaemia
-N3 leukemia
-N2 levant
-N2 levee
-N2 level
-N3 leveler
-N3 leveller
-N2 lever
-N3 leverage
-N3 leveret
-N3 leviathan
-V3 levitate
-N3 levity
-V2 levy
-N5 lexicography
-N3 lexicon
-N4 liability
-V2 liaise
-N3 liaison
-N2 liana
-N1 liar
-N1 lib
-N3 libation
-N2 libel
-V4 liberalize
-V3 liberate
-N3 libertine
-N3 liberty
-N3 libido
-N2 libra
-N3 librarian
-N3 library
-N3 libretto
-N2 licence
-V2 license
-N3 licensee
-N3 licentiate
-N2 lichen
-N2 lichgate
-V1 lick
-N1 lid
-N2 lido
-N1 lie
-N1 lied
-N4 liedetector
-N2 liedown
-N2 liein
-N1 lien
-N2 lieu
-N4 lieutenant
-N1 life
-N3 lifebelt
-N3 lifeblood
-N3 lifeboat
-N4 lifebuoy
-N3 lifeguard
-N4 lifejacket
-N3 lifeline
-N5 lifepreserver
-N2 lifer
-N4 lifestyle
-N3 lifetime
-V1 lift
-N2 liftoff
-N3 ligament
-N3 ligature
-N2 lightbulb
-V2 lighten
-N2 lighter
-N2 lighthouse
-N2 lighting
-N2 lightning
-N5 lightningconductor
-N2 lightship
-N3 lightyear
-N2 lignite
-N4 likelihood
-V2 liken
-N3 likeness
-D3 likewise
-N2 liking
-N2 lilac
-N4 lilliputian
-N2 lilo
-N1 lilt
-N2 lily
-N1 limb
-N2 limber
-N2 limbo
-N1 lime
-N3 limekiln
-N3 limelight
-N3 limerick
-N3 limestone
-N2 limey
-N2 limit
-N4 limitation
-V1 limn
-N2 limo
-N3 limousine
-N2 limpet
-N2 linage
-N2 linchpin
-N2 linctus
-N2 linden
-V1 line
-N2 lineage
-N3 lineament
-N3 lineation
-N4 linedrawing
-N2 linen
-N3 lineout
-N2 liner
-N3 linesman
-N2 lineup
-N1 ling
-V2 linger
-N3 lingerie
-N2 lingo
-N2 linguist
-N3 linguistics
-N3 liniment
-N2 lining
-N1 link
-N2 linkage
-N2 linkman
-N2 linkup
-N2 linnet
-N2 lino
-N3 linocut
-N3 linoleum
-N2 linseed
-N4 linseywoolsey
-N1 lint
-N2 lintel
-N1 lion
-N2 lionheart
-V2 lionize
-N1 lip
-N2 lipid
-N4 liposuction
-V2 lipread
-N3 lipservice
-N2 lipstick
-V3 liquefy
-N3 liqueur
-V3 liquidate
-N4 liquidation
-N4 liquidity
-V3 liquidize
-N4 liquidizer
-N2 liquor
-N3 liquorice
-N2 lira
-N2 lisle
-N1 lisp
-V1 list
-V2 listen
-N3 listener
-N3 listeria
-N3 litany
-N1 lite
-N2 liter
-N4 literacy
-N4 literalism
-N4 literature
-N2 lithium
-N3 lithograph
-N4 lithography
-N3 lithuanian
-N3 litigant
-V3 litigate
-N2 litism
-N2 litmus
-N2 litotes
-N1 litre
-N2 litter
-N3 litterbug
-N3 litterlout
-N3 liturgy
-N4 livelihood
-V2 liven
-N2 liver
-N4 liverpudlian
-N3 liverwort
-N3 livery
-N3 livestock
-N2 living
-N3 livingroom
-N2 lizard
-V1 ll
-N2 llama
-N1 lloyds
-N1 loach
-N1 load
-N2 loader
-V1 loaf
-N2 loafer
-N1 loam
-N1 loan
-V1 loathe
-V1 lob
-N2 lobby
-N2 lobbyist
-N1 lobe
-N3 lobelia
-N4 lobotomy
-N2 lobscouse
-N2 lobster
-N3 lobsterpot
-N2 lobworm
-N3 locale
-N4 locality
-V3 localize
-V2 locate
-N3 location
-N1 loch
-N1 lock
-N2 locker
-N2 locket
-N2 lockjaw
-N3 lockkeeper
-N2 lockout
-N2 locksmith
-N2 lockup
-N4 locomotion
-N4 locomotive
-N2 locus
-N2 locust
-N3 locution
-N1 lode
-N3 lodestar
-N3 lodestone
-N1 lodge
-N2 lodger
-N2 lodging
-N1 loess
-N1 loft
-N1 log
-N2 logan
-N4 loganberry
-N3 logarithm
-N2 logbook
-N2 logger
-N3 loggerhead
-N2 loggia
-N2 logging
-N2 logjam
-N2 logo
-N1 loin
-N2 loincloth
-V2 loiter
-V1 loll
-N3 lollipop
-V2 lollop
-N2 lolly
-N3 londoner
-N2 loner
-V1 long
-N2 longboat
-N2 longbow
-N3 longeron
-N4 longevity
-N2 longhand
-N2 longing
-N3 longitude
-N4 longshoreman
-D2 longways
-N1 loo
-N2 loofah
-V1 look
-N3 lookalike
-N2 looker
-N3 lookeron
-N2 lookin
-N3 lookingglass
-N2 lookout
-V1 loom
-N1 loon
-N3 loonybin
-N1 loop
-N3 loophole
-V2 loosen
-N1 loot
-V1 lop
-V1 lope
-N2 loquat
-N1 lord
-N2 lordship
-N1 lore
-N2 lorgnette
-N2 lorry
-V1 lose
-N2 loser
-N1 loss
-N3 lossleader
-N1 lot
-N3 lothario
-N2 lotion
-N3 lottery
-N2 lotto
-N2 lotus
-N4 lotuseater
-N3 loudspeaker
-N1 lough
-V1 lounge
-V1 lour
-N1 louse
-N1 lout
-N1 louvre
-N2 lovage
-N2 lovat
-N1 love
-N3 lovebird
-N3 lovechild
-N4 loveinamist
-N5 loveliesbleeding
-N4 lovemaking
-N3 lovenest
-N2 lover
-N3 loveseat
-N3 lovingcup
-N1 low
-N2 lowland
-N3 loyalist
-N2 lozenge
-N1 lplate
-N1 lsd
-N2 lubber
-N3 lubricant
-V3 lubricate
-N2 lucerne
-N3 lucifer
-N1 luck
-N1 lucre
-N2 luddite
-N2 ludo
-V1 luff
-V1 lug
-N2 luggage
-N2 lugger
-N3 lughole
-N2 lugsail
-N2 lugworm
-V1 lull
-N3 lullaby
-N3 lumbago
-N2 lumber
-N3 lumberjack
-N4 lumberjacket
-N3 lumberroom
-N4 luminary
-N4 luminescence
-V1 lump
-N4 lumpectomy
-N3 lunacy
-N3 lunatic
-N3 lunation
-N1 lunch
-N2 luncheon
-N1 lung
-N1 lunge
-N2 lupin
-N2 lupus
-N1 lurch
-N2 lurcher
-V1 lure
-N2 lurex
-V1 lurk
-N1 lush
-N1 lust
-N2 luster
-N1 lustre
-N1 lute
-N3 lutenist
-N3 lutetium
-N3 lutheran
-N1 lux
-V3 luxuriate
-N3 luxury
-N2 lychee
-N2 lycra
-N1 lye
-N1 lymph
-N3 lymphoma
-V1 lynch
-N1 lynx
-N1 lyre
-N3 lyrebird
-N3 lyricism
-N3 lyricist
-N1 m
-N1 ma
-N1 maam
-D2 maana
-N1 mac
-N3 macadam
-N4 macadamia
-N3 macaque
-N4 macaroni
-N3 macaroon
-N2 macaw
-N2 macdoine
-N1 mace
-V3 macerate
-N1 mach
-N2 machete
-N4 machination
-N2 machine
-N4 machinegun
-N4 machinery
-N3 machinist
-N3 machismo
-N3 mackerel
-N3 mackintosh
-N2 macram
-N4 macrocarpa
-N3 macrocosm
-N5 macroeconomics
-N2 macron
-N3 macula
-N2 madam
-N2 madame
-V2 madden
-N2 madder
-N3 madeira
-N5 mademoiselle
-N2 madhouse
-D2 madly
-N2 madman
-N3 madonna
-N3 madrigal
-N3 madwoman
-N2 maelstrom
-N2 maenad
-N2 maestro
-N2 mafia
-N3 mafioso
-N1 mag
-N3 magazine
-N3 magenta
-N2 maggot
-N2 magic
-N3 magician
-N4 magistracy
-N3 magistrate
-N2 magma
-N2 magnate
-N3 magnesia
-N3 magnesium
-N2 magnet
-N3 magnetism
-V3 magnetize
-N3 magneto
-N4 magnificat
-N5 magnification
-V3 magnify
-N3 magnitude
-N3 magnolia
-N2 magnox
-N2 magnum
-N2 magpie
-N2 magus
-N2 magyar
-N4 maharaja
-N4 maharanee
-N4 maharishi
-N3 mahatma
-N2 mahjong
-N4 mahogany
-N3 mahonia
-N2 mahout
-N1 maid
-N2 maiden
-N3 maidenhair
-N3 maidenhead
-N3 maidservant
-N1 mail
-N2 mailbag
-N2 mailbox
-N2 mailshot
-V1 maim
-N2 mainframe
-N2 mainland
-V2 mainline
-D2 mainly
-N2 mainmast
-N2 mainsail
-N2 mainspring
-N2 mainstay
-N2 mainstream
-V2 maintain
-N3 maintenance
-N2 maintop
-N3 maintopmast
-N4 maiolica
-N3 maisonette
-N1 maize
-N3 majesty
-N4 majordomo
-N3 majorette
-N5 majorgeneral
-N4 majority
-V1 make
-N4 makebelieve
-N2 maker
-N2 makeup
-N3 makeweight
-N2 making
-N3 malachite
-V5 maladminister
-N3 malady
-N2 malaise
-N4 malapropism
-N3 malaria
-N3 malarkey
-N2 malay
-N3 malcontent
-N4 malediction
-N4 malefactor
-N3 malfeasance
-N4 malformation
-N3 malfunction
-N2 malice
-V3 malinger
-N1 mall
-N2 mallard
-N2 mallet
-N2 mallow
-N2 malmsey
-N4 malnutrition
-N3 malpractice
-N1 malt
-N2 maltese
-N2 maltose
-V2 maltreat
-N2 mama
-N2 mamba
-N2 mambo
-N2 mammal
-N3 mammogram
-N4 mammography
-N2 mammon
-N2 mammoth
-N1 man
-N3 manacle
-V2 manage
-N4 management
-N3 manager
-N4 manageress
-N3 manatarms
-N3 manatee
-N3 mancunian
-N3 mandala
-N3 mandamus
-N3 mandarin
-N2 mandate
-N3 mandible
-N3 mandolin
-N2 mandrake
-N2 mandrel
-N2 mandrill
-N1 mane
-N3 manganese
-N1 mange
-N4 mangelwurzel
-N2 manger
-N3 mangetout
-V2 mangle
-N2 mango
-N2 mangrove
-V3 manhandle
-N3 manhole
-N2 manhood
-N2 manhour
-N2 manhunt
-N3 manicure
-N4 manifesto
-N3 manikin
-N3 manila
-V4 manipulate
-N2 mankind
-N2 manna
-N3 mannequin
-N2 manner
-N3 mannerism
-N3 manofwar
-N2 manor
-N3 manpower
-N2 mansard
-N1 manse
-N3 manservant
-N2 mansion
-N3 manslaughter
-N2 mantel
-N3 mantelpiece
-N3 mantelshelf
-N3 mantilla
-N2 mantis
-N3 mantissa
-N2 mantle
-N2 mantra
-N2 mantrap
-N4 manufacture
-N2 manure
-N3 manuscript
-N2 maoism
-N2 maori
-N1 map
-N2 maple
-N3 mapleleaf
-N2 maquette
-N2 maquis
-V1 mar
-N3 marabou
-N3 maraca
-N4 maraschino
-N3 marathon
-V2 maraud
-N2 marble
-N2 marbling
-N3 marcasite
-N1 march
-N3 marchioness
-N1 mare
-N3 margarine
-N1 marge
-N2 margin
-V4 marginalize
-N3 marguerite
-N3 marigold
-N4 marijuana
-N3 marimba
-N3 marina
-N3 marinade
-V3 marinate
-N3 mariner
-N3 marionette
-N3 marjoram
-N1 mark
-N2 markdown
-N2 marker
-N2 market
-N3 marketday
-N3 marketeer
-N3 marketplace
-N2 marking
-N2 marksman
-N2 markup
-N1 marl
-N2 marlin
-N3 marlinspike
-N3 marmalade
-N2 marmite
-N3 marmoset
-N2 marmot
-N3 marocain
-V2 maroon
-N2 marque
-N3 marquee
-N2 marquess
-N3 marquetry
-N2 marquis
-N2 marquise
-N2 marram
-N2 marriage
-N2 marrow
-N3 marrowbone
-N3 marrowfat
-V2 marry
-N3 marsala
-N3 marseillaise
-N1 marsh
-N2 marshal
-N2 marshland
-N3 marshmallow
-N3 marsupial
-N1 mart
-N3 martello
-N2 marten
-N2 martin
-N3 martinet
-N4 martingale
-N3 martini
-N3 martinmas
-N2 martyr
-N2 marvel
-N2 marxism
-N5 marxismleninism
-N3 marzipan
-N3 mascara
-N2 mascot
-N2 maser
-N1 mash
-N1 mask
-N3 masochism
-N2 mason
-N3 masonry
-N2 masque
-N3 masquerade
-N1 mass
-N2 massacre
-N2 massage
-N2 masseur
-N2 massif
-N1 mast
-N4 mastectomy
-N2 master
-N3 masterclass
-N3 masterkey
-N3 mastermind
-N3 masterpiece
-N3 masterstroke
-N3 masterswitch
-N3 mastery
-N2 masthead
-N2 mastic
-V3 masticate
-N2 mastiff
-N3 mastitis
-N3 mastodon
-V3 masturbate
-N3 matador
-N1 match
-N2 matchboard
-N2 matchbox
-N3 matchmaker
-N2 matchstick
-N2 matchwood
-N1 mate
-N2 mater
-N3 material
-N4 materialism
-V4 materialize
-D4 materially
-N4 maternity
-N1 math
-N1 maths
-N2 matine
-N3 matinee
-N2 matins
-N2 matriarch
-N3 matriarchy
-N3 matricide
-V4 matriculate
-N2 matriel
-N4 matrimony
-N2 matrix
-N2 matron
-N2 matter
-N2 matting
-N2 mattock
-N2 mattress
-V3 maturate
-N4 maturation
-V1 maul
-N2 maulstick
-V2 maunder
-N2 maundy
-N3 mausoleum
-N3 maverick
-N1 maw
-N3 maxilla
-N2 maxim
-V3 maximize
-N3 maximum
-N2 maya
-D1 maybe
-N2 mayday
-N3 mayflower
-N2 mayfly
-N2 mayhem
-N3 mayonnaise
-N2 mayor
-N4 mayoralty
-N3 mayoress
-N3 maypole
-N1 maze
-N3 mazurka
-N2 mccarthyism
-N1 mccoy
-N1 me
-N1 mead
-N2 meadow
-N3 meadowsweet
-N1 meal
-N3 mealticket
-N2 mealtime
-N1 mean
-V2 meander
-N2 meanie
-N2 meaning
-D2 meantime
-D3 meanwhile
-N2 measure
-N4 measurement
-N1 meat
-N2 meatball
-N2 mecca
-N3 mechanic
-N3 mechanism
-V3 mechanize
-N1 med
-N2 medal
-N3 medalist
-N3 medallion
-N3 medallist
-V2 meddle
-V2 mediate
-N2 medic
-N4 medicament
-N3 medicare
-V3 medicate
-N4 medication
-N3 medicine
-N4 mediocrity
-V3 meditate
-N2 medium
-N2 medlar
-N2 medley
-N3 medulla
-N3 medusa
-N2 meerkat
-N2 meerschaum
-N2 meeting
-N3 megabuck
-N3 megabyte
-N3 megadeath
-N3 megahertz
-N3 megalith
-N5 megalomania
-N5 megalosaurus
-N3 megaphone
-N3 megastar
-N3 megaton
-N3 megavolt
-N3 megawatt
-N2 megohm
-N3 meiosis
-N3 melamine
-N4 melancholia
-N4 melancholy
-N3 melanin
-N4 melanoma
-V1 meld
-N2 melee
-N3 melodeon
-N4 melodrama
-N3 melody
-N2 melon
-V1 melt
-N2 meltdown
-N3 meltingpot
-N2 member
-N3 membership
-N2 membrane
-N3 memento
-N2 memo
-N2 memoir
-N4 memorandum
-N3 memorial
-V3 memorize
-N3 memory
-N3 memsahib
-N2 menace
-N4 menagerie
-V1 mend
-N4 mendelevium
-N2 mending
-N2 menhir
-N4 meningitis
-N3 meniscus
-N3 menopause
-N3 menorah
-V2 menstruate
-N3 menstruation
-N4 mensuration
-N2 menswear
-N4 mentality
-N2 menthol
-V2 mention
-N2 mentor
-N2 menu
-N2 mercer
-V3 mercerize
-N3 merchandise
-N2 merchant
-N3 merchantman
-D4 mercifully
-N3 mercury
-N2 mercy
-N1 mere
-N3 merganser
-V1 merge
-N2 merger
-N3 meridian
-N3 meringue
-N3 merino
-N2 merit
-N5 meritocracy
-N2 merlin
-N2 mermaid
-N4 merrygoround
-N4 merrymaking
-N2 mescal
-N3 mescaline
-N5 mesembryanthemum
-N1 mesh
-V3 mesmerize
-N3 mesomorph
-N2 meson
-N3 mesosphere
-N1 mess
-N2 message
-N3 messenger
-N2 messiah
-N4 metabolism
-N4 metabolite
-V4 metabolize
-N4 metacarpus
-N2 metal
-N4 metalanguage
-V3 metallize
-N5 metallography
-N3 metalloid
-N4 metallurgy
-N3 metalwork
-V4 metamorphose
-N5 metamorphosis
-N3 metaphor
-N4 metaphysic
-N4 metastasis
-N4 metatarsus
-V1 mete
-N2 meteor
-N3 meteorite
-N3 meteoroid
-N5 meteorology
-N3 methadone
-N3 methanal
-N2 methane
-N3 methanol
-V2 methinks
-N2 method
-N3 methodist
-N5 methodology
-N1 meths
-N2 methyl
-V3 methylate
-N4 metonymy
-N1 metre
-N7 metrekilogramsecond
-V3 metricate
-N2 metro
-N3 metronome
-N4 metropolis
-N2 mettle
-N1 mew
-V1 mewl
-N1 mews
-N3 mexican
-N3 mezzanine
-N3 mezzotint
-N2 miaow
-N2 miasma
-N2 mica
-N3 michaelmas
-N1 mick
-N2 mickey
-N2 mickle
-N2 microbe
-N5 microbiology
-N3 microchip
-N4 microcircuit
-N4 microclimate
-N5 microcomputer
-N3 microcosm
-N3 microdot
-N5 microelectronics
-N3 microfiche
-N3 microfilm
-N3 microlight
-N3 micromesh
-N4 micrometer
-N2 micron
-N4 microorganism
-N3 microphone
-N5 microphotograph
-N5 microprocessor
-N3 microscope
-N4 microscopy
-N4 microsecond
-N5 microsurgery
-N3 microwave
-N4 micturition
-N2 midday
-N2 midden
-N3 middleman
-N3 middleweight
-N2 midfield
-N1 midge
-N2 midget
-N2 midi
-N2 midland
-N2 midlife
-N2 midnight
-N2 midoff
-N2 midon
-N2 midriff
-N3 midshipman
-D2 midships
-N2 midstream
-N3 midsummer
-D2 midway
-N2 midwest
-N3 midwicket
-N2 midwife
-N3 midwinter
-N1 mien
-V1 miff
-N1 might
-N4 mighthavebeen
-N3 mignonette
-N1 migr
-N2 migraine
-V2 migrate
-N3 mikado
-N1 mike
-N1 mil
-N3 milady
-N2 mildew
-D2 mildly
-N2 mile
-N2 mileage
-N2 miler
-N3 milestone
-N2 milfoil
-N3 milieu
-N4 militarism
-V4 militarize
-V3 militate
-N3 militia
-N1 milk
-N2 milkmaid
-N2 milkman
-N3 milkpowder
-N2 milksop
-N1 mill
-N5 millefeuille
-N3 millennium
-N2 miller
-N2 millet
-N3 milletgrass
-N2 milliard
-N3 millibar
-N3 milligram
-N4 milliliter
-N3 millilitre
-N4 millimeter
-N3 millimetre
-N3 milliner
-N2 million
-N3 millionaire
-N3 millipede
-N4 millisecond
-N2 millpond
-N2 millrace
-N2 millstone
-N2 millwheel
-N3 millworker
-N2 millwright
-N4 milometer
-N2 milord
-N1 milt
-N1 mime
-N3 mimeograph
-V2 mimic
-N3 mimosa
-N3 minaret
-V1 mince
-N3 mincemeat
-N1 mind
-N2 minder
-V2 mindread
-N1 mine
-N3 minefield
-N4 minelayer
-N2 miner
-N3 mineral
-V4 mineralize
-N5 mineralogy
-N3 minestrone
-N4 minesweeper
-N4 mineworker
-N1 ming
-V2 mingle
-V4 miniaturize
-N3 minibus
-N3 minicab
-N5 minicomputer
-N2 minim
-N4 minimalism
-V3 minimize
-N2 minion
-N3 minipill
-N4 miniseries
-N3 miniskirt
-N3 minister
-N4 ministration
-N3 ministry
-N1 mink
-N2 minnow
-N4 minority
-N2 minster
-N2 minstrel
-N1 mint
-N2 minuet
-N1 minx
-N3 miracle
-N2 mirage
-N1 mire
-N2 mirror
-N1 mirth
-N4 misadventure
-N3 misalliance
-N3 misanthrope
-N4 misanthropy
-V3 misapply
-V4 misapprehend
-V4 misappropriate
-V3 misbehave
-V4 miscalculate
-N3 miscarriage
-V3 miscarry
-V2 miscast
-N5 miscegenation
-N4 miscellany
-N2 mischance
-N2 mischief
-V3 misconceive
-N3 misconduct
-V3 misconstrue
-V3 miscopy
-V2 miscount
-N2 miscreant
-N2 misdeed
-N4 misdemeanor
-N4 misdemeanour
-V3 misdiagnose
-V2 misdial
-V3 misdirect
-N2 misdoing
-N2 miser
-N4 misericord
-N3 misery
-V2 misfield
-V2 misfire
-N2 misfit
-N3 misfortune
-V2 misgive
-N3 misgiving
-V3 misgovern
-V3 mishandle
-N2 mishap
-V2 mishear
-V2 mishit
-N2 mishmash
-V3 misinform
-V4 misinterpret
-V2 misjudge
-V2 miskey
-V2 mislay
-V2 mislead
-V3 mismanage
-V2 mismatch
-N3 misnomer
-N4 misogyny
-V2 misplace
-N2 misprint
-N3 misprision
-V3 mispronounce
-V2 misquote
-V2 misread
-V4 misrepresent
-N3 misrule
-N1 miss
-N2 missal
-N3 missile
-N2 mission
-N2 missis
-N2 missive
-V2 misspell
-V2 misspend
-V2 misstate
-N1 mist
-N2 mistake
-N2 mister
-V2 mistime
-N3 mistletoe
-N2 mistral
-V2 mistreat
-N2 mistress
-N2 mistrial
-V2 mistrust
-V4 misunderstand
-N5 misunderstanding
-N3 misusage
-V2 misuse
-N1 mite
-V3 mitigate
-N3 mitosis
-N1 mitt
-V1 mix
-N2 mixer
-N2 mixture
-N2 mixup
-N2 mizen
-N3 mizenmast
-N1 mlange
-N1 mle
-N1 mnage
-N1 mo
-N1 moa
-N1 moan
-N1 moat
-N1 mob
-N2 mobcap
-V3 mobilize
-N2 mobster
-N3 moccasin
-N2 mocha
-V1 mock
-N2 mocker
-N3 mockery
-N3 mockingbird
-N2 mockup
-N1 mode
-N2 model
-N2 modem
-N4 moderation
-N4 moderator
-N3 modernism
-V3 modernize
-N3 modicum
-N5 modification
-V3 modify
-N2 modiste
-V3 modulate
-N3 module
-N3 modulus
-N1 mog
-N3 mogadon
-N2 mogul
-N2 mohair
-N3 moiety
-N1 moire
-V2 moisten
-N2 moisture
-V3 moisturize
-N1 mold
-V2 molder
-N2 molding
-N2 mole
-N4 molecule
-N3 molehill
-V2 molest
-N1 moll
-V3 mollify
-N2 mollusc
-N2 mollusk
-V4 mollycoddle
-D2 molto
-N4 molybdenum
-N1 mom
-N2 moment
-N3 momentum
-N2 momma
-N2 mommy
-N2 monad
-N2 monarch
-N3 monarchism
-N3 monarchy
-N4 monastery
-N2 monday
-N4 monetarism
-N2 money
-N4 moneygrubber
-N4 moneylender
-N4 moneymaker
-N4 moneyspinner
-N2 monger
-N3 mongolian
-N3 mongolism
-N2 mongoose
-N2 mongrel
-N2 monism
-N3 monitor
-N1 monk
-N2 monkey
-N3 monkeynut
-N4 monkeypuzzle
-N2 monkshood
-N3 monochrome
-N3 monocle
-N6 monocotyledon
-N3 monody
-N4 monogamy
-N3 monogram
-N3 monograph
-N3 monolith
-N4 monologue
-N4 monomania
-N3 monoplane
-N4 monopolist
-V4 monopolize
-N4 monopoly
-N3 monorail
-N5 monosyllable
-N3 monotheism
-N3 monotone
-N3 monoxide
-N3 monseigneur
-N3 monsieur
-N3 monsignor
-N2 monsoon
-N2 monster
-N2 monstrance
-N4 monstrosity
-N2 montage
-N1 month
-N3 monument
-N1 moo
-V1 mooch
-N1 mood
-N1 moon
-N2 moonbeam
-N2 moonface
-N2 moonie
-N2 moonlight
-N2 moonscape
-N2 moonshine
-N2 moonshot
-N2 moonstone
-V1 moor
-N2 moorhen
-N2 mooring
-N2 moorland
-N1 moose
-N1 mop
-V1 mope
-N1 moped
-N2 moquette
-N2 moraine
-N3 morale
-N3 moralist
-N4 morality
-V3 moralize
-N2 morass
-N4 moratorium
-N3 morello
-D3 moreover
-N2 morgue
-N2 mormon
-N1 morn
-N2 mornay
-N2 morning
-N3 morocco
-N2 moron
-N2 morpheme
-N2 morphia
-N2 morphine
-N4 morphology
-N2 morrow
-N1 morse
-N2 morsel
-N4 mortality
-N2 mortar
-N3 mortarboard
-N2 mortgage
-N3 mortgagee
-N3 mortgager
-N3 mortician
-V3 mortify
-N3 mortuary
-N2 mosaic
-N3 moselle
-V2 mosey
-N2 mosque
-N3 mosquito
-N4 mosquitonet
-N1 moss
-D2 mostly
-N1 mot
-N1 mote
-N2 motel
-N2 motet
-N1 moth
-N2 mothball
-N2 mother
-N4 motherinlaw
-N3 motherland
-N4 motherofpearl
-N2 motif
-N2 motion
-V3 motivate
-N2 motive
-N3 motocross
-N2 motor
-N3 motorcade
-N3 motorist
-V3 motorize
-N3 motorman
-N3 motorway
-N2 motown
-V2 mottle
-N2 motto
-N1 mould
-V2 moulder
-N2 moulding
-N1 mound
-N1 mount
-N2 mountain
-N3 mountaineer
-N3 mountainside
-N3 mountebank
-N2 mountie
-N2 mounting
-V1 mourn
-N2 mourner
-N2 mourning
-N1 mouse
-N3 mousetrap
-N3 moussaka
-N1 mousse
-N2 moustache
-N1 mouth
-N2 mouthful
-N3 mouthorgan
-N2 mouthpiece
-N2 mouthwash
-V1 move
-N3 movement
-N2 mover
-N2 movie
-V1 mow
-N4 mozzarella
-N1 mr
-N1 mrs
-N1 ms
-N2 msalliance
-N1 mtier
-N1 mu
-N3 mucilage
-N1 muck
-N2 mucker
-V2 muckrake
-N3 muckspreader
-N2 mucus
-N1 mud
-V2 muddle
-N2 mudflap
-N2 mudflat
-N2 mudguard
-N3 mudslinger
-N2 muesli
-N2 muezzin
-V1 muff
-N2 muffin
-V2 muffle
-N2 muffler
-N2 mufti
-V1 mug
-N2 muggins
-N4 muhammadan
-N3 mulatto
-N3 mulberry
-N1 mulch
-N2 mule
-N3 muleteer
-N1 mull
-N2 mullah
-N2 mullet
-N5 mulligatawny
-N2 mullion
-N5 multimillionaire
-N4 multiplicand
-N5 multiplication
-N5 multiplicity
-N3 multiplier
-V3 multiply
-N3 multitude
-V2 mumble
-N4 mumbojumbo
-N2 mummer
-N3 mummery
-V3 mummify
-N2 mummy
-V1 munch
-N1 mung
-N6 municipality
-N3 muniment
-N3 munition
-N1 muon
-N2 mural
-N2 murder
-N1 murk
-N2 murmur
-N2 murrain
-N3 muscadet
-N2 muscat
-N3 muscatel
-N2 muscle
-N3 muscleman
-N3 muscovite
-N4 musculature
-N1 muse
-N2 museum
-N1 mush
-N2 mushroom
-N2 music
-N3 musichall
-N3 musician
-N5 musicology
-N1 musk
-N2 musket
-N3 musketeer
-N3 musketry
-N2 muskrat
-N2 muskrose
-N2 muslin
-N2 musquash
-N2 mussel
-N1 must
-N2 mustache
-N2 mustang
-N2 mustard
-V2 muster
-N3 mutagen
-V2 mutate
-N3 mutation
-V3 mutilate
-N3 mutineer
-N3 mutiny
-N1 mutt
-V2 mutter
-N2 mutton
-N3 muttonhead
-N2 muzak
-N2 muzzle
-A1 my
-N2 myalgia
-N4 mycology
-N2 myna
-N2 myopia
-N1 myrrh
-N2 myrtle
-N3 mystery
-N2 mystic
-V3 mystify
-N3 mystique
-N1 myth
-N4 mythology
-N5 myxomatosis
-V1 nab
-N2 nacho
-N1 nacre
-N2 nadir
-N2 naevus
-N1 nag
-N2 naiad
-N1 nail
-N3 nailfile
-N1 name
-N3 nameday
-N4 namedropping
-D3 namely
-N3 nameplate
-N3 namesake
-N1 nan
-N2 nancy
-N2 nanny
-N1 nap
-N2 napalm
-N1 nape
-N2 naphtha
-N3 naphthalene
-N2 napkin
-N2 nappy
-N3 narcissism
-N3 narcissus
-N3 narcosis
-V2 narrate
-N3 narrative
-N2 narwhal
-N3 nasturtium
-N2 nation
-N4 nationalism
-N5 nationality
-V4 nationalize
-N2 native
-N4 nativity
-N3 natterjack
-N4 naturalism
-N4 naturalist
-V4 naturalize
-D4 naturally
-N2 nature
-N3 naturism
-N2 nausea
-V2 nauseate
-N3 nautilus
-N1 nave
-N2 navel
-V3 navigate
-N4 navigation
-N2 navvy
-N2 navy
-D1 nay
-N3 nazarene
-N2 nazi
-N1 neap
-N4 neapolitan
-D1 near
-D2 nearly
-N2 nearside
-V2 neaten
-N3 nebula
-N5 necessitarian
-V4 necessitate
-N4 necessity
-N1 neck
-N2 neckband
-N3 neckerchief
-N2 necklace
-N2 neckline
-N2 necktie
-N4 necromancy
-N4 necrophilia
-N4 necropolis
-N3 necrosis
-N2 nectar
-N3 nectarine
-N2 neddy
-V1 need
-N2 needle
-N3 needlecord
-N3 needlepoint
-N4 needlewoman
-N3 needlework
-N3 neerdowell
-V2 negate
-N3 negation
-N4 negativism
-V2 neglect
-N2 neglige
-N3 negligence
-V3 negotiate
-N1 neigh
-N3 neighborhood
-N3 neighbourhood
-N2 nelson
-N3 nematode
-N3 nemesis
-N4 neoclassicism
-N3 neodymium
-N3 neologism
-N1 neon
-N2 neophyte
-N2 nephew
-N3 nephritis
-N3 nepotism
-N3 neptunium
-N1 nerd
-N2 nereid
-N1 nerve
-N3 nervecell
-N3 nervecentre
-N1 nest
-V2 nestle
-N2 nestling
-N1 net
-N2 netball
-N2 netting
-N2 nettle
-N3 nettlerash
-N2 network
-N3 neuralgia
-N3 neuritis
-N4 neurology
-N2 neuron
-N3 neurosis
-N5 neurosurgery
-V3 neutralize
-N3 neutrino
-N2 neutron
-D2 never
-D3 nevermore
-N4 nevernever
-D4 nevertheless
-N2 nevus
-N3 newcomer
-N2 newel
-D2 newly
-N2 newlywed
-N3 newsagent
-N2 newscast
-N3 newscaster
-N2 newsflash
-N3 newsletter
-N3 newspaper
-N2 newspeak
-N2 newsprint
-N3 newsreader
-N2 newsreel
-N2 newssheet
-N2 newsstand
-N3 newsvendor
-N1 newt
-N2 newton
-N2 nexus
-N2 niacin
-N1 nib
-V2 nibble
-N1 nibs
-N3 nicety
-N1 niche
-N1 nick
-N2 nickel
-N2 nicker
-N2 nickname
-N3 nicotine
-V3 nictitate
-N1 niece
-N1 niff
-D1 nigh
-N1 night
-N2 nightbird
-N2 nightcap
-N2 nightclub
-N2 nightdress
-N2 nightfall
-N2 nightgown
-N2 nightie
-N4 nightingale
-N2 nightjar
-N2 nightlife
-N2 nightlight
-N2 nightmare
-N2 nightshade
-N2 nightshirt
-N2 nightspot
-N2 nighttime
-N3 nightwatchman
-N3 nihilism
-N1 nil
-N2 nimbus
-N3 nincompoop
-N3 ninepin
-N2 ninny
-N2 niobium
-N1 nip
-N2 nipper
-N2 nipple
-N3 nirvana
-N1 nit
-N2 niter
-N3 nitpicking
-N2 nitrate
-N1 nitre
-N2 nitride
-V3 nitrify
-N2 nitrite
-N3 nitrogen
-N5 nitroglycerin
-N5 nitroglycerine
-N4 nittygritty
-N2 nitwit
-D1 no
-N1 nob
-N2 noball
-V2 nobble
-N3 nobelium
-N4 nobility
-N3 nobleman
-N4 noblewoman
-N2 nocturne
-V1 nod
-N2 noddle
-N2 noddy
-N1 node
-N3 nodule
-N1 noel
-N2 noggin
-N1 noh
-N1 noise
-N2 nomad
-N2 nomen
-N4 nomenclature
-N4 nominalism
-V3 nominate
-N3 nominee
-N5 nonagenarian
-N4 nonaggression
-N3 nonagon
-N1 nonce
-N3 nonceword
-N2 noncom
-N4 noncombatant
-N4 nonconductor
-N4 nonconformist
-N5 nonconformity
-N5 noncooperation
-N3 nondrinker
-N3 nondriver
-N4 nonentity
-D4 nonetheless
-N3 nonevent
-N3 nonfiction
-N5 noninterference
-N5 nonintervention
-N3 nonmember
-N4 nonobservance
-N3 nonpayment
-V2 nonplus
-N6 nonproliferation
-N4 nonresistance
-N2 nonsense
-N3 nonsmoker
-N4 nonspecialist
-N3 nonstarter
-N3 nonswimmer
-N3 nonviolence
-N2 noodle
-N1 nook
-N1 noon
-N2 noonday
-N1 noose
-N1 nor
-N1 norm
-V3 normalize
-D3 normally
-N2 norman
-N1 norn
-N1 norse
-N1 north
-N2 northeast
-N3 northeaster
-N3 northerner
-N2 northman
-N3 northnortheast
-N3 northnorthwest
-N2 northwest
-N3 northwester
-N3 norwegian
-N3 norwester
-N1 nose
-N3 nosebag
-N3 noseband
-N3 nosebleed
-N3 nosedive
-N3 nosegay
-N2 noshup
-N3 nostalgia
-N2 nostril
-N2 nostrum
-D1 not
-N3 notary
-N3 notation
-N1 notch
-N1 note
-N3 notebook
-N3 notecase
-N3 notelet
-N4 notepaper
-N2 nothing
-N3 nothingness
-N2 notice
-N4 noticeboard
-V3 notify
-N2 notion
-N2 nougat
-N1 nought
-N1 noun
-V2 nourish
-N3 nourishment
-N1 nous
-N2 nova
-N3 novelette
-N3 novelist
-N3 novella
-N3 novelty
-N3 november
-N3 novena
-N2 novice
-N3 noviciate
-D1 now
-D3 nowadays
-D2 nowhere
-N1 nowt
-N2 nozzle
-N1 nu
-N1 nuance
-N1 nub
-N2 nucleon
-N2 nucleus
-V1 nudge
-N2 nudist
-N2 nugget
-N2 nuisance
-V3 nullify
-N2 number
-N3 numberplate
-N3 numeral
-N4 numeration
-N4 numerator
-N5 numerology
-N2 numskull
-N1 nun
-N2 nuncio
-N3 nunnery
-N1 nurse
-N3 nursemaid
-N3 nursery
-N4 nurseryman
-N2 nursling
-N2 nurture
-N1 nut
-N2 nutcase
-N3 nutcracker
-N2 nuthatch
-N2 nutmeg
-N2 nutria
-N2 nutrient
-N3 nutriment
-N3 nutrition
-N2 nutshell
-N2 nutter
-V2 nuzzle
-N2 nylon
-N1 nymph
-N2 nympho
-N4 nymphomania
-N1 oaf
-N1 oak
-N3 oakapple
-N2 oakum
-N1 oar
-N2 oarsman
-N2 oasis
-N1 oast
-N2 oasthouse
-N1 oat
-N2 oatcake
-N1 oath
-N2 oatmeal
-N4 obbligato
-N3 obeisance
-N3 obelisk
-N3 obelus
-V2 obey
-V3 obfuscate
-N4 obituary
-N2 object
-V4 objectify
-N3 objection
-N4 objectlesson
-N3 oblation
-V3 obligate
-N4 obligation
-V2 oblige
-V4 obliterate
-N3 oblivion
-N3 obloquy
-N2 oboe
-N4 obscurantism
-N3 observance
-N4 observation
-N5 observatory
-V2 observe
-N3 observer
-V2 obsess
-N3 obsession
-N3 obsidian
-N3 obstacle
-N4 obstetrician
-V2 obstruct
-N3 obstruction
-V2 obtain
-V2 obtrude
-N2 obverse
-V2 obviate
-N4 ocarina
-N3 occasion
-N3 occident
-N3 occiput
-V2 occlude
-N3 occupant
-N4 occupation
-N3 occupier
-V3 occupy
-V2 occur
-N3 occurrence
-N2 ocean
-N5 oceanography
-N3 ocelot
-N2 ocher
-N1 ochre
-N3 octagon
-N4 octahedron
-N2 octane
-N2 octave
-N3 octavo
-N2 octet
-N3 october
-N5 octogenarian
-N3 octopus
-N3 oculist
-N2 oddball
-N3 oddity
-N2 oddment
-N2 oddson
-N1 ode
-N2 odium
-N4 odometer
-N2 odor
-N2 odour
-N3 odyssey
-N3 oedema
-N4 oesophagus
-N3 oestrogen
-N2 oestrus
-P1 of
-D1 off
-N2 offal
-N2 offcut
-N2 offday
-N2 offence
-V2 offend
-N2 offense
-V2 offer
-N3 offering
-N4 offertory
-N2 office
-N3 officer
-N4 officialese
-V3 officiate
-N2 offing
-N3 offlicence
-V2 offload
-N2 offprint
-N3 offseason
-N2 offset
-N2 offshoot
-N2 offspring
-D2 often
-N2 ogee
-N2 ogive
-V2 ogle
-N1 ogre
-N1 ohm
-N1 oil
-N2 oilcake
-N2 oilcan
-N2 oilcloth
-N2 oilfield
-N2 oilpaint
-N2 oilskin
-N2 oilstone
-N2 ointment
-N3 okapi
-N2 okra
-N2 oldie
-N3 oleander
-N3 oligarch
-N4 oligarchy
-N2 olive
-N3 olivine
-N3 olympiad
-N3 ombudsman
-N3 omega
-N3 omelette
-N2 omen
-N3 omicron
-N3 omission
-V2 omit
-N3 omnibus
-P1 on
-N3 onanism
-D1 once
-N3 onceover
-N3 oncogene
-N4 oncology
-N4 oneliner
-N3 oneness
-N2 onion
-N3 onlooker
-D2 only
-N6 onomatopoeia
-N2 onrush
-N2 onset
-N2 onslaught
-P2 onto
-N4 ontology
-N2 onus
-D2 onward
-N2 onyx
-N2 oolite
-N2 oompah
-N1 oomph
-N1 ooze
-N4 opacity
-N2 opal
-N3 opener
-N3 opening
-N4 openingtime
-D3 openly
-N3 openwork
-N3 opera
-N4 operahouse
-V3 operate
-N4 operation
-N4 operator
-N4 operculum
-N4 operetta
-N3 ophidian
-N3 ophthalmia
-N5 ophthalmology
-N4 ophthalmoscope
-V2 opine
-N3 opinion
-N2 opium
-N3 opossum
-N3 opponent
-N4 opportunism
-N5 opportunity
-V2 oppose
-N4 opposition
-V2 oppress
-N3 opprobrium
-V2 oppugn
-V1 opt
-N3 optician
-N3 optimism
-V3 optimize
-N3 optimum
-N2 option
-N2 opus
-N1 or
-N3 oracle
-N2 orange
-N3 orangeade
-N4 orangeman
-N4 orangery
-N4 orangutan
-N3 oration
-N3 orator
-N4 oratorio
-N4 oratory
-N1 orb
-N2 orbit
-N2 orca
-N2 orchard
-N3 orchestra
-V3 orchestrate
-N2 orchid
-V2 ordain
-N2 ordeal
-N2 order
-N4 orderpaper
-N3 ordinal
-N3 ordinance
-N3 ordinand
-N3 ordinate
-N4 ordination
-N2 ordnance
-N2 ordure
-N1 ore
-N4 oregano
-N2 organ
-N3 organdie
-N4 organgrinder
-N3 organism
-N3 organist
-N5 organization
-V3 organize
-N3 organloft
-N3 organza
-N2 orgasm
-N2 orgy
-N2 oriel
-N2 orient
-V3 orientate
-N4 orientation
-N4 orienteering
-N3 orifice
-N4 origami
-N3 origan
-N3 origin
-V4 originate
-N3 oriole
-N3 ormolu
-N3 ornament
-N5 ornithology
-N2 orphan
-N3 orphanage
-N3 orrery
-N2 orris
-N4 orthography
-N3 ortolan
-N2 oscar
-V3 oscillate
-N4 oscilloscope
-N2 osier
-N2 osmium
-N3 osmosis
-N2 osprey
-N3 ossicle
-V3 ossify
-N4 ostentation
-N5 osteoarthritis
-N4 osteopathy
-N5 osteoporosis
-N2 ostler
-V3 ostracize
-N2 ostrich
-D3 otherwise
-N2 otter
-N2 oubliette
-N3 ouija
-N1 ounce
-A1 our
-V1 oust
-D1 out
-N2 outage
-N2 outback
-V3 outbalance
-V2 outbid
-N2 outbreak
-N3 outbuilding
-N2 outburst
-N2 outcast
-V2 outclass
-N2 outcome
-N2 outcrop
-N2 outcry
-V3 outdistance
-V2 outdo
-D2 outdoors
-V2 outface
-N2 outfall
-N2 outfield
-N2 outfit
-N3 outfitter
-V2 outflank
-N2 outflow
-V2 outfox
-V2 outgrow
-N2 outgrowth
-N2 outhouse
-N2 outing
-V2 outlast
-N2 outlaw
-N2 outlay
-N2 outlet
-N2 outline
-V2 outlive
-N2 outlook
-V4 outmaneuver
-V4 outmanoeuvre
-V2 outmatch
-V3 outnumber
-V2 outpace
-N3 outpatient
-N4 outplacement
-N2 outpost
-N3 outpouring
-N2 output
-N2 outrage
-V2 outrank
-N3 outrider
-N3 outrigger
-D2 outright
-V2 outrun
-V2 outsell
-N2 outset
-V2 outshine
-N2 outside
-N3 outsider
-V2 outsmart
-N3 outstation
-V2 outstay
-V2 outstrip
-N2 outtake
-N2 outtray
-V2 outvote
-N3 outwardness
-V2 outweigh
-V2 outwit
-N2 outwork
-N2 ouzel
-N2 ouzo
-N3 ovary
-N3 ovation
-N2 oven
-N3 ovenware
-D2 over
-N5 overabundance
-V3 overact
-V3 overawe
-V4 overbalance
-V3 overbear
-V3 overbid
-V3 overbook
-V4 overburden
-V3 overcharge
-N3 overcoat
-V3 overcome
-V5 overcompensate
-V3 overcook
-V3 overcrowd
-V5 overdevelop
-V3 overdo
-N3 overdose
-N3 overdraft
-V3 overdraw
-V3 overdress
-N3 overdrive
-V3 overeat
-V5 overemphasize
-N5 overenthusiasm
-V5 overestimate
-V4 overexcite
-V4 overexert
-V4 overexpose
-V3 overfeed
-V3 overfill
-V3 overfish
-V3 overflow
-V3 overfly
-V3 overhang
-V3 overhaul
-V3 overhear
-V3 overheat
-V4 overindulge
-N3 overkill
-V3 overlap
-V3 overlay
-V3 overlie
-V3 overload
-V3 overlook
-N3 overlord
-D3 overly
-V3 overman
-D3 overnight
-N3 overpass
-V3 overpay
-V3 overplay
-V4 overpower
-V3 overprice
-V3 overprint
-V4 overproduce
-V3 overrate
-V3 overreach
-V3 overreact
-V3 override
-N4 overrider
-V4 overrule
-V3 overrun
-V3 oversee
-V3 oversew
-V4 overshadow
-N3 overshoe
-V3 overshoot
-N3 oversight
-V5 oversimplify
-V3 oversleep
-V5 overspecialize
-V3 overspend
-N3 overspill
-V3 overspread
-V3 overstate
-V3 overstay
-N3 oversteer
-V3 overstep
-V3 overstock
-V3 overstrain
-V3 overstretch
-V4 oversubscribe
-V3 overtake
-V3 overtax
-V3 overthrow
-N3 overtime
-N3 overtone
-N3 overture
-V3 overturn
-V3 overuse
-N3 overview
-V3 overwhelm
-V3 overwind
-V3 overwork
-N3 oviduct
-V3 ovulate
-N3 ovule
-N2 ovum
-V1 owe
-N1 owl
-N2 owlet
-N2 owner
-N5 owneroccupier
-N1 owt
-N1 ox
-N2 oxbow
-N2 oxbridge
-N2 oxhide
-N4 oxidation
-N2 oxide
-V3 oxidize
-N2 oxtail
-N3 oxygen
-V4 oxygenate
-N4 oxymoron
-N2 oyster
-N4 oystercatcher
-N2 ozone
-N1 pa
-N3 pabulum
-N4 pacemaker
-N4 pacesetter
-N3 pachyderm
-N3 pacifier
-N3 pacifism
-V3 pacify
-V1 pack
-N2 package
-N3 packaging
-N2 packer
-N2 packet
-N2 packhorse
-N2 packing
-N2 packthread
-N1 pact
-V1 pad
-N2 padding
-V2 paddle
-N3 paddleboat
-N3 paddlewheel
-N2 paddock
-N2 paddy
-N2 padlock
-N1 padre
-N2 paean
-N4 paedophile
-N4 paedophilia
-N2 paella
-N2 pagan
-N1 page
-N2 pageant
-N3 pageantry
-N3 pageboy
-N2 pager
-V3 paginate
-N3 pagoda
-N1 pail
-N1 pain
-N3 painkiller
-N1 paint
-N2 paintbox
-N2 paintbrush
-N2 painter
-N2 painting
-N2 paintwork
-N1 pair
-N2 paisley
-N2 paki
-N4 pakistani
-N1 pal
-N2 palace
-N5 palaeography
-N6 palaeontology
-N2 palais
-N3 palanquin
-N2 palate
-N4 palatinate
-N3 palaver
-N2 pale
-N3 paleface
-N4 paleography
-N5 paleontology
-N2 palette
-N4 paletteknife
-N4 palimony
-N3 palimpsest
-N3 palindrome
-N2 paling
-N3 palisade
-N3 palladium
-N3 pallbearer
-N2 pallet
-N2 palliasse
-V2 palliate
-N2 pallor
-N1 palm
-N3 palmetto
-N3 palmistry
-N4 palomino
-V2 palpate
-V3 palpitate
-N4 palpitation
-N2 palsy
-N3 pampasgrass
-V2 pamper
-N2 pamphlet
-N3 pamphleteer
-N3 panacea
-N2 panache
-N3 panama
-N4 panatella
-N2 pancake
-N2 pancreas
-N2 panda
-N4 pandemonium
-V2 pander
-N1 pane
-N4 panegyric
-N2 panel
-N4 panelbeater
-N3 paneling
-N3 panelist
-N3 panelling
-N3 panellist
-N1 pang
-N3 pangolin
-N2 panic
-N3 panicle
-N3 panjandrum
-N2 pannier
-N3 panoply
-N4 panorama
-N2 pansy
-V1 pant
-N4 pantechnicon
-N2 pantheism
-N2 pantheon
-N2 panther
-N4 pantiegirdle
-N3 pantihose
-N3 pantile
-N2 panto
-N3 pantograph
-N3 pantomime
-N2 pantry
-N1 pap
-N2 papa
-N3 papacy
-N4 paparazzo
-N2 paper
-N3 paperback
-N3 paperboy
-N3 paperchase
-N3 paperclip
-N4 paperhanger
-N3 paperknife
-N3 papermill
-N3 paperweight
-N3 paperwork
-N3 papilla
-N2 papist
-N2 papoose
-N3 paprika
-N3 papyrus
-N3 parable
-N4 parabola
-N5 paracetamol
-N3 parachute
-N2 parade
-N4 paradeground
-N4 paradiddle
-N3 paradigm
-N3 paradise
-N3 paradox
-N3 paraffin
-N3 paragon
-N3 paragraph
-N3 parakeet
-N3 parallax
-N5 parallelepiped
-N5 parallelogram
-V3 paralyse
-N4 paralysis
-V3 paralyze
-N4 paramedic
-N4 parameter
-N3 paramour
-N4 paranoia
-N3 parapet
-N3 paraphrase
-N4 paraplegia
-N6 parapsychology
-N3 paraquat
-N4 parascending
-N3 parasite
-N3 parasol
-N4 paratrooper
-N4 paratyphoid
-V2 parboil
-N2 parcel
-V1 parch
-N2 parchment
-N2 pardon
-V1 pare
-N2 parent
-N3 parentage
-N4 parenthesis
-N3 parenting
-N2 parfait
-N2 pariah
-N2 paring
-N2 parish
-N4 parishioner
-N3 parity
-N1 park
-N2 parka
-N2 parkin
-N3 parkinglot
-N4 parkingmeter
-N4 parkingticket
-N2 parkland
-N2 parlance
-N2 parley
-N3 parliament
-N5 parliamentarian
-N2 parlor
-N2 parlour
-N3 parmesan
-N3 parody
-N3 parole
-N3 paroxysm
-N2 parquet
-N3 parquetry
-N1 parr
-N3 parricide
-N2 parrot
-V2 parry
-V1 parse
-N2 parsec
-N4 parsimony
-N2 parsley
-N2 parsnip
-N2 parson
-N3 parsonage
-N1 part
-V2 partake
-N2 parterre
-N3 partexchange
-N6 parthenogenesis
-N4 participant
-V4 participate
-N4 participle
-N3 particle
-N6 particularity
-V5 particularize
-D5 particularly
-N2 parting
-N3 partition
-D2 partly
-N2 partner
-N3 partnership
-N2 partridge
-N2 partsong
-N3 parttimer
-N4 parturition
-N2 party
-N3 partywall
-N3 parvenu
-N1 pas
-N2 pascal
-N1 pash
-N2 pasha
-N2 pashto
-N4 pasqueflower
-N2 passage
-N4 passageway
-N2 passbook
-N3 passenger
-N3 passerby
-N3 passerine
-N2 passion
-N4 passionflower
-N3 passionfruit
-N3 passionplay
-N2 passkey
-N2 passmark
-N3 passover
-N2 passport
-N2 password
-N2 pasta
-N1 paste
-N3 pasteboard
-N2 pastel
-N2 pastern
-N2 pasteup
-V3 pasteurize
-N2 pastiche
-N3 pastille
-N2 pastime
-N2 pastor
-N4 pastorale
-N3 pastorate
-N3 pastrami
-N2 pastry
-N3 pastrycook
-N3 pasturage
-N2 pasture
-N1 patch
-N2 patchboard
-N3 patchouli
-N2 patchwork
-N1 pate
-N3 patella
-N2 paten
-N2 patent
-N3 patentee
-N2 pater
-N5 paterfamilias
-N4 paternalism
-N4 paternity
-N4 paternoster
-N1 path
-N3 pathfinder
-N3 pathogen
-N4 pathology
-N2 pathos
-N2 pathway
-N2 patience
-N3 patina
-N2 patio
-N4 patisserie
-N2 patois
-N2 patriarch
-N3 patriarchate
-N3 patriarchy
-N3 patrician
-N3 patricide
-N4 patrimony
-N2 patriot
-N2 patrol
-N2 patron
-N3 patronage
-V3 patronize
-N4 patronymic
-N2 patten
-N2 patter
-N2 pattern
-N2 patty
-N3 paucity
-N1 paunch
-N2 pauper
-N1 pause
-N2 pavane
-V1 pave
-N3 pavement
-N3 pavilion
-N3 pavingstone
-N3 pavlova
-N1 paw
-N1 pawl
-V1 pawn
-N3 pawnbroker
-N2 pawnshop
-N2 pawpaw
-N1 pax
-V1 pay
-N5 payasyouearn
-N1 paybed
-N2 payclaim
-N2 payday
-N2 payload
-N3 paymaster
-N2 payment
-N2 payoff
-N3 payola
-N3 paypacket
-N2 payroll
-N1 pe
-N1 pea
-N1 peace
-N4 peacemaker
-N4 peaceoffering
-N3 peacepipe
-N3 peacetime
-V1 peach
-N2 peacock
-N2 peafowl
-N2 peahen
-V1 peak
-N2 peakload
-N1 peal
-N1 pean
-N2 peanut
-N1 pear
-N1 pearl
-N3 pearldiver
-N2 peasant
-N4 peasepudding
-N3 peashooter
-N3 peasouper
-N1 peat
-N2 peatbog
-N2 pebble
-N3 pebbledash
-N2 pecan
-N4 peccadillo
-N1 peck
-N2 pecker
-N2 pectin
-V3 peculate
-N5 peculiarity
-D4 peculiarly
-N4 pedagogue
-N4 pedagogy
-N2 pedal
-N3 pedalo
-N2 pedant
-V2 peddle
-N2 peddler
-N3 pederast
-N4 pederasty
-N3 pedestal
-N3 pedestrian
-N3 pedicure
-N3 pedigree
-N3 pediment
-N2 pedlar
-N4 pedometer
-N4 pedophile
-N4 pedophilia
-N3 peduncle
-V1 peek
-V1 peel
-N2 peeling
-N1 peen
-V1 peep
-N3 peephole
-N2 peepshow
-N1 peer
-N2 peerage
-N2 peewit
-N1 peg
-N2 pegboard
-N2 pegleg
-N1 peke
-N3 pekingese
-N4 pelargonium
-N1 pelf
-N3 pelican
-N2 pelisse
-N3 pellagra
-N2 pellet
-N3 pellicle
-N2 pelmet
-N1 pelt
-N2 pelvis
-N1 pen
-V3 penalize
-N3 penalty
-N2 penance
-N2 penchant
-N2 pencil
-N2 pendant
-N3 pendulum
-V3 penetrate
-N2 penfriend
-N2 penguin
-N4 penicillin
-N4 peninsula
-N2 penis
-N5 penitentiary
-N2 penknife
-N2 penname
-N2 pennant
-N2 pennon
-N2 penny
-N4 pennypinching
-N4 pennyroyal
-N3 pennywort
-N3 pennyworth
-N4 penology
-N2 penpal
-N3 penpushing
-N2 pension
-N3 pensioner
-N3 pentacle
-N3 pentagon
-N3 pentagram
-N4 pentameter
-N3 pentateuch
-N3 pentathlon
-N3 pentecost
-N2 penthouse
-N3 penumbra
-N3 penury
-N1 peon
-N2 peony
-N2 pepper
-N3 peppercorn
-N3 peppermill
-N3 peppermint
-N4 pepperoni
-N3 pepperpot
-N2 pepsin
-N2 peptide
-V4 perambulate
-N5 perambulator
-N3 percale
-V2 perceive
-N3 percentage
-N4 percentile
-N3 perception
-N1 perch
-D2 perchance
-V3 percolate
-N4 percolator
-N3 percussion
-N3 perdition
-N3 peregrine
-N4 perestroika
-N3 perfection
-N4 perfectionism
-D3 perfectly
-N3 perfidy
-V3 perforate
-D2 perforce
-V2 perform
-N3 performance
-N2 perfume
-N3 perfumer
-N3 pergola
-D2 perhaps
-N2 perianth
-N4 pericardium
-N3 perigee
-N4 perihelion
-N2 peril
-N4 perimeter
-N3 perineum
-N2 period
-N4 periodical
-N4 periphery
-N4 periphrasis
-N3 periscope
-V2 perish
-N3 perisher
-N4 peristalsis
-N4 peritoneum
-N5 peritonitis
-N3 periwig
-N4 periwinkle
-N3 perjury
-N1 perk
-N2 perlite
-N3 permafrost
-V2 permeate
-N3 permission
-V2 permit
-N4 permutation
-N4 peroration
-N3 peroxide
-V3 perpetrate
-V3 perpetuate
-N4 perpetuity
-V2 perplex
-N4 perplexity
-N3 perquisite
-N2 perry
-V3 persecute
-V3 persevere
-N2 persian
-N3 persiflage
-N3 persimmon
-V2 persist
-N2 person
-N3 persona
-N3 personage
-N5 personality
-V4 personalize
-D4 personally
-V4 personify
-N3 personnel
-N3 perspective
-N2 perspex
-N4 perspiration
-V2 perspire
-V2 persuade
-N3 persuasion
-V2 pertain
-V2 perturb
-N2 peruke
-V2 peruse
-V2 pervade
-N3 perversion
-V2 pervert
-N3 peseta
-N2 peso
-N3 pessary
-N3 pessimism
-N1 pest
-V2 pester
-N3 pesticide
-N3 pestilence
-N2 pestle
-N1 pet
-N2 petal
-N2 petard
-V2 peter
-N3 petersham
-N3 pethidine
-N3 petiole
-N3 petition
-N2 petrel
-V3 petrify
-N5 petrochemical
-N4 petrodollar
-N2 petrol
-N3 petroleum
-N3 petticoat
-V3 pettifog
-N3 petunia
-N1 pew
-N2 pewter
-N2 peyote
-N2 pfennig
-N1 ph
-N3 phagocyte
-N2 phalanx
-N2 phallus
-N2 phantasm
-N5 phantasmagoria
-N2 phantom
-N2 pharaoh
-N3 pharisee
-N3 pharmacist
-N5 pharmacology
-N5 pharmacopoeia
-N3 pharmacy
-N2 pharynx
-N1 phase
-N2 pheasant
-N5 phenobarbitone
-N2 phenol
-N4 phenomenon
-N3 pheromone
-N1 phi
-N1 phial
-N4 philadelphus
-V3 philander
-N4 philanthropy
-N4 philately
-N3 philippic
-N3 philistine
-N2 phillips
-N4 philodendron
-N4 philology
-N4 philosopher
-V4 philosophize
-N4 philosophy
-N2 philter
-N1 philtre
-N3 phlebitis
-N1 phlegm
-N1 phloem
-N1 phlox
-N2 phoenix
-N1 phone
-N3 phonecard
-N2 phonein
-N2 phoneme
-N3 phonograph
-N4 phonology
-N2 phosphate
-N2 phosphor
-N4 phosphorescence
-N3 phosphorus
-N5 photochemistry
-N4 photocopier
-N4 photocopy
-N3 photofit
-N3 photograph
-N4 photography
-N4 photogravure
-N5 photojournalism
-N6 photolithography
-N4 photometer
-N2 photon
-N3 photostat
-N5 photosynthesis
-N1 phrase
-N4 phraseology
-N4 phrenology
-N1 phut
-N4 phylactery
-N2 phylum
-N2 physic
-N3 physician
-N3 physicist
-N2 physio
-N4 physiognomy
-N4 physiology
-N5 physiotherapy
-N3 physique
-N1 pi
-N2 pianist
-N4 pianoaccordion
-N3 pianoforte
-N3 pianola
-N2 piazza
-N2 pibroch
-N2 pica
-N3 picador
-N4 piccalilli
-N4 piccaninny
-N3 piccolo
-N1 pick
-N4 pickaninny
-N2 pickax
-N2 pickaxe
-N2 picket
-N2 pickle
-N2 pickmeup
-N3 pickpocket
-N2 pickup
-N2 picnic
-N1 pict
-N3 pictograph
-N2 picture
-V2 piddle
-N2 pidgin
-N1 pie
-N1 piece
-N3 piecework
-N2 piecrust
-N2 piedterre
-N1 pier
-V1 pierce
-N2 pierglass
-N2 pierrot
-N1 piet
-N2 pietism
-N2 piety
-N1 pig
-N2 pigeon
-N4 pigeonhole
-N3 piggery
-N2 piggy
-N3 pigiron
-N2 piglet
-N2 pigment
-N4 pigmentation
-N2 pigskin
-N2 pigsty
-N2 pigswill
-N2 pigtail
-N1 pike
-N3 pikestaff
-N3 pilaster
-N2 pilau
-N2 pilchard
-N2 pile
-N4 piledriver
-N2 pileup
-V2 pilfer
-N2 pilgrim
-N3 pilgrimage
-N1 pill
-V2 pillage
-N2 pillar
-N3 pillarbox
-N2 pillbox
-N2 pillion
-N3 pillory
-N2 pillow
-N3 pillowcase
-N2 pilot
-N3 pilotlight
-N3 pimento
-N3 pimiento
-N1 pimp
-N3 pimpernel
-N2 pimple
-N1 pin
-N3 pinafore
-N2 pinball
-N3 pincenez
-V1 pinch
-N2 pinchbeck
-N3 pincushion
-V1 pine
-N3 pineapple
-N1 ping
-N2 pingpong
-N2 pinhead
-N3 pinhole
-N2 pinion
-V1 pink
-N3 pinmoney
-N2 pinnace
-N3 pinnacle
-N2 pinny
-N2 pinpoint
-N2 pinprick
-N2 pinstripe
-N1 pint
-N2 pinta
-N3 pintable
-N2 pintail
-N2 pintle
-N2 pintuck
-N2 pinup
-N2 pinwheel
-N2 pinyin
-N1 pion
-N2 pioneer
-N1 pip
-N1 pipe
-N3 pipeclay
-N4 pipecleaner
-N3 pipedream
-N3 pipeline
-N2 piper
-N2 pipette
-N2 piping
-N2 pipit
-N2 pippin
-N3 pipsqueak
-V2 pique
-N2 piquet
-N3 piracy
-N3 piranha
-N2 pirate
-N3 pirouette
-N1 pisces
-N3 piscina
-N3 pisstaking
-N2 pissup
-N3 pistachio
-N1 piste
-N2 pistil
-N2 pistol
-N2 piston
-N3 pistonring
-N3 pistonrod
-V1 pit
-N1 pitch
-N2 pitchblende
-N2 pitcher
-N2 pitchfork
-N2 pitchpine
-N2 pitfall
-N1 pith
-N2 pithead
-N2 piton
-N2 pitta
-N2 pittance
-N4 pituitary
-N2 pity
-N2 pivot
-N2 pixel
-N2 pixie
-N2 pizza
-N3 pizzeria
-N2 placard
-V2 placate
-N1 place
-N3 placebo
-N3 placekick
-N3 placemat
-N3 placename
-N3 placenta
-N2 placer
-N4 placesetting
-N2 placket
-V3 plagiarize
-N2 plague
-N1 plaice
-N1 plaid
-N2 plainchant
-N2 plainsong
-N1 plaint
-N2 plaintiff
-N1 plait
-N1 plan
-N2 planchette
-N1 plane
-N2 planet
-N4 planetarium
-N1 plank
-N2 planking
-N2 plankton
-N2 planner
-N1 plant
-N2 plantain
-N3 plantation
-N2 planter
-N2 plaque
-N2 plasma
-N2 plaster
-N3 plasterboard
-N2 plastic
-N3 plasticine
-N1 plate
-N3 plateau
-N4 platelayer
-N3 platelet
-N2 platen
-N3 platerack
-N2 platform
-N3 platinum
-N3 platitude
-N3 platonism
-N2 platoon
-N2 platter
-N3 platypus
-N2 plaudit
-V1 play
-V2 playact
-N2 playback
-N2 playbill
-N2 playboy
-N2 player
-N3 playfellow
-N2 playgoer
-N2 playground
-N2 playgroup
-N2 playhouse
-N3 playingcard
-N3 playingfield
-N2 playlet
-N2 playmate
-N2 playoff
-N2 playpen
-N2 plaything
-N2 playtime
-N2 playwright
-N1 plea
-V1 pleach
-V1 plead
-N2 pleading
-N3 pleasantry
-V1 please
-N2 pleasure
-N1 pleat
-N1 pleb
-N3 plebeian
-N3 plebiscite
-N2 plectrum
-N1 pledge
-N6 plenipotentiary
-N3 plenitude
-N2 plenty
-N2 plenum
-N2 pleonasm
-N3 plethora
-N2 pleura
-N3 pleurisy
-N2 plexus
-V1 plight
-N2 plimsoll
-N1 plinth
-V1 plod
-N1 plonk
-N2 plonker
-N1 plop
-N1 plot
-N2 ploughman
-N2 ploughshare
-N2 plover
-N2 plowman
-N2 plowshare
-N1 ploy
-V1 pluck
-N1 plug
-N3 plughole
-N1 plum
-N2 plumage
-N1 plumb
-N2 plumber
-N2 plumbing
-N2 plumbline
-N1 plume
-N2 plummet
-V1 plump
-V2 plunder
-V1 plunge
-N2 plunger
-N3 pluralism
-N4 plurality
-V3 pluralize
-N1 plush
-N2 pluto
-N4 plutocracy
-N3 plutocrat
-N3 plutonium
-V1 ply
-N2 plywood
-N5 pneumoconiosis
-N3 pneumonia
-N1 po
-V1 poach
-N1 pock
-N2 pocket
-N3 pocketbook
-N3 pocketful
-N1 pod
-N2 podium
-N1 poem
-N2 poesy
-N1 poet
-N3 poetaster
-N2 poetry
-N2 pogo
-N2 pogrom
-N3 poinsettia
-N1 point
-N3 pointduty
-N2 pointer
-N3 pointillism
-N2 pointing
-N3 pointtopoint
-N1 poise
-N2 poison
-N1 poke
-N2 poker
-N3 pokerface
-N4 polarity
-V3 polarize
-N3 polaroid
-N2 polder
-N2 pole
-N3 polecat
-N3 polemic
-N2 police
-N4 policeman
-N3 policy
-N5 policyholder
-N2 polio
-N5 poliomyelitis
-V2 polish
-N4 politician
-V4 politicize
-N4 politico
-N3 polity
-N2 polka
-N1 poll
-N2 pollack
-N2 pollard
-N2 pollen
-V3 pollinate
-N2 polling
-N3 pollingbooth
-N3 pollingday
-N4 pollingstation
-N2 pollster
-V2 pollute
-N2 polo
-N3 polonaise
-N3 poloneck
-N3 polonium
-N3 poltergeist
-N2 poltroon
-N3 polyandry
-N3 polyanthus
-N3 polyester
-N3 polyethene
-N4 polyethylene
-N4 polygamy
-N3 polygon
-N3 polygraph
-N4 polygyny
-N4 polyhedron
-N3 polymath
-N3 polymer
-N4 polynomial
-N2 polyp
-N4 polyphony
-N4 polypropene
-N5 polypropylene
-N5 polysaccharide
-N4 polystyrene
-N5 polysyllable
-N4 polytechnic
-N3 polytheism
-N3 polythene
-N4 polyurethane
-N1 pom
-N2 pomace
-N2 pomade
-N3 pomander
-N4 pomegranate
-N3 pomelo
-N2 pommel
-N2 pommy
-N1 pomp
-N2 pompom
-N2 pompon
-N2 pompous
-N2 poncho
-N1 pond
-V2 ponder
-N2 pondweed
-V1 pong
-N2 poniard
-N2 pontiff
-V4 pontificate
-N2 pontoon
-N2 pony
-N3 ponytail
-N4 ponytrekking
-N2 poodle
-N1 poof
-V2 poohpooh
-N1 pool
-N1 poop
-N2 poorhouse
-D2 poorly
-N1 pop
-N2 popcorn
-N1 pope
-N3 popery
-N2 popgun
-N3 popinjay
-N2 poplar
-N2 poplin
-N3 poppadam
-N2 popper
-N2 poppet
-N3 poppingcrease
-N2 poppy
-N3 poppycock
-N3 populace
-V4 popularize
-V3 populate
-N4 population
-N3 populist
-N3 porcelain
-N1 porch
-N3 porcupine
-V1 pore
-N1 pork
-N2 porker
-N4 pornography
-N3 porphyry
-N2 porpoise
-N2 porridge
-N3 porringer
-N1 port
-N2 portage
-N4 portakabin
-N2 portal
-N3 portcullis
-V2 portend
-N2 portent
-N2 porter
-N3 porterage
-N3 portfolio
-N3 porthole
-N3 portico
-N2 portion
-N4 portmanteau
-N2 portrait
-N3 portraiture
-V2 portray
-N3 portuguese
-V1 pose
-N2 poser
-N2 poseur
-V2 posit
-N3 position
-N4 positivism
-N3 positron
-N1 posse
-V2 possess
-N3 possession
-N5 possibility
-D3 possibly
-N2 possum
-N1 post
-N2 postage
-N2 postbag
-N2 postbox
-N2 postcard
-N2 postcode
-V2 postdate
-N2 poster
-N4 posterity
-N2 postern
-N3 postgraduate
-N3 postilion
-N5 postimpressionism
-N2 postman
-N2 postmark
-N3 postmaster
-N3 postmortem
-V2 postpone
-N2 postscript
-N3 postulant
-V3 postulate
-N2 posture
-N2 posy
-N1 pot
-N2 potage
-N2 potash
-N3 potassium
-N3 potation
-N3 potato
-N3 potbelly
-N3 potboiler
-N2 poteen
-N3 potentate
-N2 pother
-N2 potherb
-N3 pothole
-N2 pothook
-N3 pothunter
-N2 potion
-N3 potpourri
-N2 potsherd
-N2 potshot
-N2 pottage
-N2 potter
-N3 pottery
-N2 potty
-N1 pouch
-N1 pouffe
-N1 poult
-N3 poulterer
-N2 poultice
-N2 poultry
-V1 pounce
-N1 pound
-N2 poundage
-N2 pounder
-V1 pour
-N2 pourboire
-V1 pout
-N2 pouter
-N3 poverty
-N2 powder
-N3 powderpuff
-N3 powderroom
-N2 power
-N3 powerboat
-N3 powerhouse
-N3 powerplant
-N4 powersharing
-N2 powwow
-N1 pox
-D4 practically
-N2 practice
-V2 practise
-N4 practitioner
-N3 praenomen
-N2 praetor
-N3 pragmatism
-N2 prairie
-V1 praise
-N2 praline
-N1 pram
-V1 prance
-N1 prank
-N2 prankster
-N4 praseodymium
-N1 prat
-V1 prate
-V2 prattle
-N1 prawn
-V1 pray
-N2 prayer
-N3 prayerbook
-N3 prayermat
-N3 prayerwheel
-N1 prcis
-V1 preach
-N2 preamble
-N1 preamp
-N3 preamplifier
-V2 prearrange
-N2 prebend
-N4 prebendary
-N3 precaution
-V2 precede
-N3 precedence
-N3 precedent
-N3 precentor
-N2 precept
-N3 preceptor
-N3 precession
-N2 precinct
-N4 preciosity
-N3 precipice
-V4 precipitate
-N5 precipitation
-D4 precisely
-N3 precision
-V2 preclude
-N4 precognition
-V3 preconceive
-N4 preconception
-N4 precondition
-N3 precursor
-V2 predate
-N3 predator
-V3 predecease
-N4 predecessor
-V3 predestine
-V4 predetermine
-N4 predicament
-V3 predicate
-V2 predict
-N3 prediction
-N4 predilection
-V3 predispose
-V4 predominate
-N2 preecho
-N2 preembryo
-V1 preempt
-N2 preemption
-V1 preen
-N2 prefab
-V4 prefabricate
-N2 preface
-N2 prefect
-N3 prefecture
-V2 prefer
-N3 preference
-N3 preferment
-V3 prefigure
-N2 prefix
-V2 preheat
-V2 prejudge
-N3 prejudice
-N3 prelacy
-N2 prelate
-N2 prelim
-N2 prelude
-N1 premed
-N5 premedication
-V4 premeditate
-N2 premier
-N2 premire
-N2 premise
-N2 premiss
-N2 premium
-N3 premolar
-N4 premonition
-V3 preoccupy
-V2 preordain
-N1 prep
-V2 prepack
-N4 preparation
-V2 prepare
-N4 preparedness
-V2 prepay
-V2 preplan
-V4 preponderate
-N4 preposition
-V3 prepossess
-N2 preppy
-N2 prepuce
-N4 preraphaelite
-V3 prerecord
-N4 prerogative
-N2 presage
-N3 presbyopia
-N3 presbyter
-N4 presbytery
-V2 prescribe
-N2 prescript
-N3 prescription
-N2 presence
-N2 present
-N4 presentation
-N4 presentiment
-D3 presently
-N4 preservative
-V2 preserve
-V2 preset
-V2 preside
-N4 presidency
-N3 president
-N3 presidium
-V1 press
-N2 pressgang
-N2 pressie
-N2 pressstud
-N2 pressup
-N2 pressure
-N5 pressurecooker
-V3 pressurize
-N2 prestel
-N6 prestidigitator
-N2 prestige
-D4 presumably
-V2 presume
-N3 presumption
-V3 presuppose
-N2 pretence
-V2 pretend
-N3 pretender
-N2 pretense
-N3 pretension
-N2 pretext
-V3 prettify
-N2 pretzel
-V2 prevail
-V4 prevaricate
-V2 prevent
-N2 preview
-N1 prey
-N1 price
-N4 pricefixing
-V1 prick
-N2 prickle
-N1 pride
-N3 priedieu
-N1 priest
-N1 prig
-N3 primacy
-N2 primate
-V1 prime
-N2 primer
-N5 primogeniture
-V1 primp
-N2 primrose
-N3 primula
-N2 primus
-N1 prince
-N3 princeling
-N2 princess
-N5 principality
-N3 principle
-V1 prink
-V1 print
-N2 printer
-N2 printing
-N3 printingpress
-N2 printout
-N3 priority
-N2 priory
-V1 prise
-N1 prism
-N2 prison
-N3 prisoner
-N3 privacy
-N3 privateer
-N3 privation
-V3 privatize
-N2 privet
-N3 privilege
-N3 prizefight
-N4 prizegiving
-N4 prizewinner
-N5 probability
-N2 probate
-N3 probation
-N4 probationer
-N1 probe
-N3 probity
-N2 problem
-N3 proboscis
-N3 procedure
-V2 proceed
-N3 proceeding
-V2 process
-N3 procession
-N3 processor
-V2 proclaim
-N4 proclivity
-V4 procrastinate
-V2 procreate
-N2 proctor
-N4 procuration
-N4 procurator
-V2 procure
-N3 procurer
-V1 prod
-N3 prodigy
-V2 produce
-N3 producer
-N2 product
-N3 production
-N5 productivity
-N1 proem
-N4 profanity
-V2 profess
-N3 profession
-N5 professionalism
-N3 professor
-V2 proffer
-N3 profile
-N2 profit
-V3 profiteer
-N5 profiterole
-N4 profitsharing
-N4 progenitor
-N3 progeny
-N4 progesterone
-N4 progestogen
-N3 prognosis
-N3 prognostic
-V4 prognosticate
-N2 progress
-N3 progression
-V3 prohibit
-N4 prohibition
-N2 project
-N4 projectile
-N3 projection
-N3 projector
-N3 prokaryote
-N3 prolactin
-N2 prolapse
-N5 prolegomenon
-N4 proletariat
-V4 proliferate
-N3 prologue
-V2 prolong
-N1 prom
-N3 promenade
-N4 promenader
-N3 promethium
-N3 prominence
-N2 promise
-N2 promo
-N4 promontory
-V2 promote
-N3 promoter
-N2 prompter
-V3 promulgate
-N1 prong
-N2 pronoun
-V2 pronounce
-D2 pronto
-N4 pronunciation
-N1 proof
-V2 proofread
-N1 prop
-N4 propaganda
-V3 propagate
-N4 propagator
-N2 propane
-N3 propanone
-V2 propel
-N3 propeller
-N2 propene
-N4 propensity
-D3 properly
-N3 property
-N3 prophecy
-V3 prophesy
-N2 prophet
-N4 prophylaxis
-N4 propinquity
-V3 propitiate
-N3 proponent
-N3 proportion
-N3 proposal
-V2 propose
-N4 proposition
-V2 propound
-N3 proprietor
-N3 propriety
-N3 propulsion
-N3 propylene
-V3 prorogue
-N3 proscenium
-V2 proscribe
-N1 prose
-V3 prosecute
-N4 prosecution
-N3 proselyte
-V4 proselytize
-N3 prosody
-N2 prospect
-N3 prospectus
-V2 prosper
-N4 prosperity
-N2 prostate
-N3 prosthesis
-N3 prostitute
-N4 protactinium
-N4 protagonist
-V2 protect
-N3 protection
-N3 protector
-N4 protectorate
-N2 protein
-N2 protest
-N3 protestant
-N4 protestation
-N1 protg
-N2 protium
-N3 protocol
-N2 proton
-N3 protoplasm
-N3 prototype
-N3 protozoan
-V2 protract
-N3 protractor
-V2 protrude
-V1 prove
-N3 provenance
-N3 provender
-N2 proverb
-V2 provide
-N3 providence
-N2 province
-N3 provision
-N3 proviso
-N2 provo
-N4 provocation
-V2 provoke
-N2 provost
-N1 prow
-N2 prowess
-V1 prowl
-N4 proximity
-N2 proxy
-N1 prude
-V1 prune
-V1 pry
-N1 psalm
-N2 psalmist
-N3 psalmody
-N2 psalter
-N3 psaltery
-N4 psephology
-N3 pseudonym
-N1 psi
-N4 psittacosis
-N3 psoriasis
-V1 psych
-N1 psyche
-N3 psychiatry
-N5 psychoanalysis
-N5 psychokinesis
-N4 psychology
-N3 psychopath
-N6 psychopathology
-N4 psychopathy
-N3 psychosis
-N5 psychotherapy
-N3 ptarmigan
-N4 pteridophyte
-N4 pterodactyl
-N3 pterosaur
-N2 ptomaine
-N1 pub
-N2 pubcrawl
-N3 puberty
-N1 pubes
-N3 pubescence
-N2 pubis
-N3 publican
-N4 publication
-N3 publicist
-N4 publicity
-V3 publicize
-V2 publish
-N3 publisher
-N1 puck
-V2 pucker
-N1 pud
-N2 pudding
-N2 puddle
-N3 pudendum
-N1 puff
-N3 puffadder
-N2 puffball
-N2 puffin
-N1 pug
-N3 pugilist
-N2 pugnose
-N2 puissance
-V1 puke
-N3 pulchritude
-V2 pule
-V1 pull
-N2 pullet
-N2 pulley
-N2 pullin
-N2 pullman
-N2 pullout
-N3 pullover
-V3 pullulate
-N1 pulp
-N2 pulpit
-N2 pulpwood
-N2 pulsar
-V2 pulsate
-N1 pulse
-V3 pulverize
-N2 puma
-N2 pumice
-V2 pummel
-N1 pump
-N4 pumpernickel
-N2 pumpkin
-N1 pun
-N1 punch
-N2 punchball
-N2 punchbowl
-N2 punchline
-N2 punchup
-N3 punctilio
-V2 punctuate
-N3 punctuation
-N2 puncture
-N2 pundit
-V2 punish
-N3 punishment
-N3 punjabi
-N1 punk
-N2 punkah
-N2 punnet
-N2 punster
-N1 punt
-N2 punter
-N1 pup
-N2 pupa
-N2 pupil
-N2 puppet
-N2 puppy
-N3 puppyfat
-V2 purchase
-N2 purdah
-N1 pure
-D3 purely
-N4 purgatory
-V1 purge
-V3 purify
-N2 purist
-N3 puritan
-N3 purity
-V1 purl
-N2 purler
-N3 purlieu
-N2 purlin
-V2 purloin
-N2 purple
-V2 purport
-N2 purpose
-D4 purposely
-V1 purr
-N1 purse
-N2 purser
-N2 pursuance
-V2 pursue
-N2 pursuit
-N3 pursuivant
-V2 purvey
-N2 purview
-N1 pus
-V1 push
-N3 pushbutton
-N2 pushchair
-N2 pusher
-N3 pushover
-N2 pushstart
-N2 pushtu
-N2 pushup
-N1 puss
-N2 pussy
-V3 pussyfoot
-V3 pustulate
-N3 pustule
-V1 put
-N2 putdown
-N2 puton
-V3 putrefy
-N1 putsch
-V1 putt
-N2 puttee
-V2 putter
-N3 puttinggreen
-N2 putty
-N2 puzzle
-N2 puzzler
-N3 pyaemia
-N2 pyemia
-N2 pygmy
-N2 pylon
-N2 pyorrhea
-N3 pyorrhoea
-N4 pyracantha
-N3 pyramid
-N1 pyre
-N3 pyrethrum
-N2 pyrex
-N3 pyrexia
-N2 pyrites
-N4 pyromania
-N2 python
-N1 pyx
-N1 quack
-N5 quadragesima
-N3 quadrangle
-N2 quadrant
-N3 quadriceps
-N3 quadrille
-N4 quadriplegia
-N2 quadruped
-N3 quadruplet
-V1 quaff
-N2 quagmire
-V2 quail
-V1 quake
-N2 quaker
-N5 qualification
-V3 qualify
-N3 quality
-N1 qualm
-N3 quandary
-N2 quango
-V3 quantify
-N3 quantity
-N2 quantum
-N3 quarantine
-N1 quark
-N2 quarrel
-N2 quarry
-N1 quart
-N2 quarter
-N3 quarterback
-N3 quarterdeck
-N4 quarterfinal
-N3 quarterhour
-N3 quarterlight
-N4 quartermaster
-N3 quarterstaff
-N2 quartet
-N2 quarto
-N1 quartz
-N2 quasar
-V1 quash
-N2 quatrain
-N3 quatrefoil
-N4 quattrocento
-V2 quaver
-N2 quay
-N3 quayside
-N2 queen
-N3 queenanne
-N3 queenpost
-V1 quell
-V1 quench
-N1 quern
-N2 query
-N1 quest
-N2 question
-N4 questionmaster
-N3 questionnaire
-N2 queue
-V3 queuejump
-N2 quibble
-N1 quiche
-V2 quicken
-V2 quickfreeze
-N2 quickie
-N2 quicklime
-N2 quicksand
-N3 quicksilver
-N2 quickstep
-N1 quid
-N3 quiddity
-V3 quieten
-N3 quietism
-N3 quietude
-N3 quietus
-N1 quiff
-N1 quill
-N1 quilt
-N1 quim
-N1 quin
-N1 quince
-N5 quincentenary
-N2 quincunx
-N2 quinine
-N5 quinquagesima
-N3 quinquereme
-N3 quintessence
-N2 quintet
-N3 quintuplet
-N1 quip
-N1 quire
-N1 quirk
-N2 quisling
-V1 quit
-N1 quitch
-D1 quite
-N2 quitter
-N2 quiver
-N1 quiz
-N1 quod
-N2 quoin
-N2 quoit
-N2 quorum
-N2 quota
-N3 quotation
-V1 quote
-V1 quoth
-N2 quotient
-N1 r
-N2 rabbet
-N2 rabbi
-N2 rabbit
-N2 rabble
-N4 rabblerouser
-N2 rabies
-N1 race
-N3 racecourse
-N3 racegoer
-N3 racehorse
-N2 raceme
-N3 racetrack
-N3 racialism
-N2 racism
-V1 rack
-N2 racket
-N3 racketeer
-N2 rackrent
-N3 raconteur
-N2 racoon
-N1 rad
-N2 radar
-N2 raddle
-N2 radian
-V2 radiate
-N3 radiation
-N3 radiator
-N3 radicchio
-N3 radicle
-N6 radioactivity
-N4 radiocarbon
-N3 radiogram
-N3 radiograph
-N5 radioisotope
-N4 radiology
-N4 radioscopy
-N6 radiotelegraphy
-N6 radiotelephony
-N5 radiotherapy
-N2 radish
-N2 radium
-N2 radius
-N2 radix
-N2 radon
-N2 raffia
-N2 raffle
-N1 raft
-N2 rafter
-N1 rag
-N4 ragamuffin
-N2 ragbag
-N1 rage
-N2 ragout
-N2 ragtag
-N2 ragtime
-N2 ragwort
-N1 raid
-N1 rail
-N2 railcar
-N2 railcard
-N2 railing
-N3 raillery
-N2 railman
-N2 railroad
-N2 railway
-N3 railwayman
-N2 raiment
-N1 rain
-N2 rainbow
-N2 raincoat
-N2 raindrop
-N2 rainfall
-N3 rainforest
-N2 rainstorm
-N3 rainwater
-N2 rainwear
-V1 raise
-N2 raisin
-N1 raj
-N2 raja
-V1 rake
-N2 rakeoff
-V2 rally
-N3 rallycross
-N1 ram
-N3 ramadan
-V2 ramble
-N2 rambler
-N3 rambutan
-N3 ramekin
-N5 ramification
-V3 ramify
-N1 ramp
-V2 rampage
-N2 rampart
-N2 ramrod
-N1 ranch
-N2 rancor
-N2 rancour
-N1 rand
-N2 ranee
-N1 range
-N4 rangefinder
-N2 ranger
-V2 rankle
-V2 ransack
-N2 ransom
-V1 rant
-N4 ranunculus
-N1 rap
-N1 rape
-N2 rapier
-N2 rapine
-N2 rapist
-N2 rapport
-N4 rapprochement
-N3 rapscallion
-N2 rapture
-N3 rarebit
-V3 rarefy
-D3 rarely
-N3 rarity
-N2 rascal
-N1 rash
-N2 rasher
-N1 rasp
-N3 raspberry
-N4 raspberrycane
-N1 rat
-N5 ratatouille
-N2 ratbag
-N2 ratchet
-V1 rate
-N4 ratecapping
-N4 ratepayer
-D2 rather
-V3 ratify
-N2 rating
-N2 ratio
-V4 ratiocinate
-N2 ration
-N4 rationale
-N4 rationalism
-V4 rationalize
-N2 ratline
-N2 ratsbane
-N2 rattan
-N2 rattat
-V2 rattle
-N3 rattlesnake
-V2 ravage
-V1 rave
-V2 ravel
-N2 raven
-N2 raver
-N2 ravine
-N2 raving
-N3 ravioli
-V2 ravish
-N2 rawhide
-N2 rawlplug
-N1 ray
-N2 rayon
-V1 raze
-N2 razor
-N3 razorbill
-N3 razorblade
-N3 razoredge
-N4 razzledazzle
-N3 razzmatazz
-V1 reach
-N3 reachmedown
-V3 reacquaint
-V1 react
-N2 reaction
-V3 reactivate
-N2 reactor
-V1 read
-V2 readdress
-N2 reader
-N3 readership
-D3 readily
-N3 readiness
-N2 reading
-V2 readjust
-V2 readmit
-V2 readopt
-V2 reaffirm
-V3 reafforest
-N2 reagent
-N1 real
-V2 realign
-N2 realism
-N3 reality
-V2 realize
-V3 reallocate
-D2 really
-N1 realm
-N2 realty
-N1 ream
-V3 reanimate
-V1 reap
-N2 reaper
-V2 reappear
-V2 reapply
-V2 reappoint
-V3 reapportion
-V2 reappraise
-V1 rear
-N2 rearguard
-N2 rearlamp
-V1 rearm
-V2 rearrange
-V2 rearrest
-N2 rearward
-N2 reason
-V3 reassemble
-V2 reassert
-V2 reassess
-V2 reassign
-V2 reassure
-V3 reawaken
-N2 rebate
-N2 rebel
-N3 rebellion
-V2 rebid
-V2 rebind
-N2 rebirth
-V2 reboot
-V2 rebound
-V3 rebroadcast
-N2 rebuff
-V2 rebuild
-V2 rebuke
-N2 rebus
-V2 rebut
-N1 rec
-V2 recall
-V2 recant
-V5 recapitulate
-N6 recapitulation
-V3 recapture
-V2 recast
-V2 recede
-N2 receipt
-V2 receive
-N3 receiver
-N4 receivership
-N4 receptacle
-N3 reception
-N4 receptionist
-N2 recess
-N3 recession
-V2 recharge
-V2 recheck
-V3 rechristen
-N4 recidivist
-N2 recipe
-N3 recipient
-V4 reciprocate
-N5 reciprocity
-N3 recital
-N4 recitation
-N4 recitative
-V2 recite
-V2 reckon
-N3 reckoning
-V2 reclaim
-V4 reclassify
-V2 recline
-V2 reclothe
-N2 recluse
-N4 recognition
-N4 recognizance
-V3 recognize
-V2 recoil
-V3 recollect
-N4 recollection
-V3 recolour
-V3 recombine
-V3 recommence
-V3 recommend
-V3 recompense
-V4 reconcile
-V4 recondition
-N4 reconnaissance
-V3 reconnect
-V4 reconnoiter
-V3 reconnoitre
-V3 reconquer
-V4 reconsider
-V4 reconstitute
-V3 reconstruct
-V3 reconvene
-V3 reconvert
-V3 recopy
-N2 record
-N3 recorder
-N4 recordholder
-N3 recording
-N3 recordist
-N4 recordplayer
-V2 recount
-V2 recoup
-N2 recourse
-V3 recover
-N4 recovery
-V2 recreate
-N3 recreation
-V4 recriminate
-V2 recross
-V3 recrudesce
-N2 recruit
-N3 rectangle
-V3 rectify
-N3 rectitude
-N2 recto
-N2 rector
-N3 rectory
-N2 rectum
-V4 recuperate
-V2 recur
-N3 recusant
-V3 recycle
-N2 redbreast
-N2 redcap
-N2 redcoat
-N3 redcurrant
-V2 redden
-V4 redecorate
-V2 redeem
-N3 redeemer
-V3 redefine
-N3 redemption
-V3 redeploy
-V3 redesign
-V4 redevelop
-N2 redhead
-V2 redial
-N4 rediffusion
-V3 redirect
-V4 rediscover
-V4 redistribute
-V3 redivide
-N2 redneck
-V2 redo
-V3 redouble
-N2 redoubt
-V2 redound
-N2 redpoll
-V2 redraft
-V2 redraw
-V2 redress
-N2 redshank
-N2 redshift
-N2 redskin
-N2 redstart
-V2 reduce
-N3 reduction
-V4 reduplicate
-N2 redwing
-N2 redwood
-V2 reecho
-N1 reed
-N1 reedbed
-V3 reeducate
-N1 reef
-N2 reefer
-N2 reefknot
-V1 reek
-N1 reel
-V2 reelect
-V2 reembark
-V2 reemerge
-V3 reemphasize
-V2 reemploy
-V2 reenact
-V2 reengage
-V2 reenlist
-V2 reenter
-N2 reentry
-V2 reequip
-V3 reestablish
-N1 reeve
-V3 reexamine
-N1 ref
-V2 reface
-V3 refashion
-N4 refectory
-V2 refer
-N3 referee
-N3 reference
-N4 referendum
-N3 referral
-V2 refill
-V2 refine
-N4 refinement
-N3 refiner
-N4 refinery
-V2 refit
-V2 reflate
-N3 reflation
-V2 reflect
-N3 reflection
-N3 reflector
-N5 reflexology
-V2 refloat
-V3 refocus
-V3 reforest
-V2 reforge
-V2 reform
-V3 reformat
-N4 reformation
-N5 reformatory
-N3 reformer
-N3 reformism
-V4 reformulate
-V2 refract
-N3 refractor
-N2 refrain
-V2 refreeze
-V2 refresh
-N3 refresher
-N3 refreshment
-N4 refrigerant
-V4 refrigerate
-N5 refrigerator
-V2 refuel
-N2 refuge
-N3 refugee
-V2 refund
-V3 refurbish
-V3 refurnish
-N3 refusal
-N2 refuse
-N4 refusenik
-V2 refute
-N1 reg
-V2 regain
-V3 regale
-V2 regard
-N3 regatta
-N3 regency
-V4 regenerate
-N2 regent
-N2 reggae
-N3 regicide
-N2 regime
-N3 regimen
-N3 regiment
-N3 regina
-N2 region
-N3 register
-N3 registrar
-N4 registration
-N3 registry
-V2 regrade
-V2 regress
-V2 regret
-V2 regroup
-V2 regrow
-V3 regulate
-N4 regulation
-N3 regulo
-V4 regurgitate
-V5 rehabilitate
-V2 rehang
-V2 rehash
-V2 rehear
-N3 rehearsal
-V2 rehearse
-V2 reheat
-V2 rehouse
-N1 reich
-V1 reign
-V2 reimburse
-V2 reimpose
-N1 rein
-N4 reincarnation
-N2 reindeer
-V2 reinforce
-N4 reinforcement
-V2 reinsert
-V2 reinstate
-V2 reinsure
-V3 reinterpret
-V3 reintroduce
-V2 reinvest
-V2 reissue
-V3 reiterate
-V2 reject
-V2 rejig
-V2 rejoice
-V2 rejoin
-N3 rejoinder
-V4 rejuvenate
-V3 rekindle
-V3 relabel
-V2 relapse
-V2 relate
-N3 relation
-N4 relationship
-N5 relativity
-V2 relax
-N4 relaxation
-V2 relay
-V2 relearn
-V2 release
-V3 relegate
-V2 relent
-V2 relet
-N2 reliance
-N2 relic
-N2 relict
-N2 relief
-V2 relieve
-N3 relievo
-V2 relight
-N3 religion
-N5 religiosity
-V2 reline
-V3 relinquish
-N4 reliquary
-N2 relish
-V2 relive
-V2 reload
-V3 relocate
-V2 rely
-V2 remain
-N3 remainder
-V2 remake
-V2 remand
-V2 remark
-V3 remarry
-V3 remeasure
-N3 remedy
-V3 remember
-N3 remembrance
-V2 remind
-N3 reminder
-V3 reminisce
-N4 reminiscence
-N3 remission
-V2 remit
-N3 remittance
-V2 remix
-N2 remnant
-V3 remodel
-V3 remonstrate
-N2 remorse
-V3 remortgage
-N3 removal
-V2 remove
-V4 remunerate
-N3 renaissance
-V2 rename
-V5 renationalize
-V1 rend
-V2 render
-N3 rendezvous
-N3 rendition
-N3 renegade
-V2 renege
-V4 renegotiate
-V2 renew
-N2 rennet
-V2 renounce
-V3 renovate
-N2 renown
-N1 rent
-N2 rental
-N2 rentboy
-N2 rentier
-V3 renumber
-N4 renunciation
-V3 reoccupy
-V2 reoccur
-V2 reopen
-V2 reorder
-V3 reorganize
-V2 reorient
-V3 reorientate
-N1 rep
-V2 repack
-V3 repackage
-V2 repaint
-V2 repair
-V3 repaper
-N4 reparation
-N3 repartee
-N2 repast
-V3 repatriate
-V2 repay
-V2 repeal
-V2 repeat
-N3 repeater
-V2 repel
-V2 repent
-N4 repercussion
-N3 repertoire
-N4 repertory
-N4 repetition
-V2 rephrase
-V2 repine
-V2 replace
-N4 replacement
-V2 replant
-V2 replay
-V3 replenish
-N3 replica
-V2 reply
-V2 repoint
-V4 repopulate
-V2 report
-N3 reportage
-N3 reporter
-V2 repose
-V4 reposition
-N5 repository
-V3 repossess
-V2 repot
-V3 reprehend
-V3 represent
-N5 representation
-V2 repress
-V2 reprice
-V2 reprieve
-N3 reprimand
-V2 reprint
-N3 reprisal
-N2 reprise
-N2 repro
-V2 reproach
-N3 reprobate
-V3 reprocess
-V3 reproduce
-N4 reproduction
-V3 reprogram
-N2 reproof
-V2 reprove
-N3 reptile
-N3 republic
-V3 republish
-V3 repudiate
-N3 repugnance
-V2 repulse
-N3 repulsion
-V3 repurchase
-N4 reputation
-N2 repute
-N2 request
-N3 requiem
-V2 require
-N4 requisition
-V2 requite
-V2 reread
-V3 rerecord
-N3 reredos
-V3 rerelease
-V2 reroute
-V2 rerun
-N3 resale
-V4 reschedule
-V2 rescind
-N2 rescript
-V2 rescue
-V2 reseal
-N2 research
-V2 resell
-N3 resemblance
-V3 resemble
-V2 resent
-N3 resentment
-N4 reservation
-V2 reserve
-N3 reservist
-N3 reservoir
-V2 reset
-V3 resettle
-V2 reshape
-V3 reshuffle
-V2 reside
-N3 residence
-N4 residency
-N3 resident
-N3 residue
-N3 residuum
-V2 resign
-N4 resignation
-N2 resin
-V2 resist
-N3 resistance
-N3 resistor
-V2 resit
-N4 resolution
-V2 resolve
-V3 resonate
-V2 resort
-V2 resound
-N2 resource
-N2 respect
-D5 respectively
-V2 respell
-N4 respiration
-N4 respirator
-V2 respire
-N2 respite
-V2 respond
-N3 respondent
-N2 response
-N6 responsibility
-V2 respray
-N1 rest
-V2 restart
-V2 restate
-N3 restaurant
-N4 restaurateur
-N2 restcure
-N4 restitution
-V2 restock
-N4 restoration
-V2 restore
-V2 restrain
-N2 restraint
-V2 restrict
-V3 restructure
-V3 restyle
-N2 result
-V2 resume
-N3 resumption
-V3 resurface
-V3 resurrect
-N4 resurrection
-V4 resuscitate
-N2 retail
-V2 retain
-N3 retainer
-V2 retake
-V3 retaliate
-V2 retard
-V1 retch
-V2 retell
-N3 retention
-V3 retexture
-V2 rethink
-N3 reticence
-V4 reticulate
-V2 retie
-N3 retina
-N3 retinue
-V2 retire
-N4 retirement
-N2 retort
-V2 retouch
-V2 retrace
-V2 retract
-V2 retrain
-V2 retread
-V2 retreat
-V2 retrench
-N2 retrial
-N4 retribution
-V2 retrieve
-N3 retriever
-V3 retrogress
-N4 retrorocket
-N3 retrospect
-N4 retrospection
-N4 retrovirus
-V2 retry
-N3 retsina
-V2 retune
-V2 return
-N3 returnee
-V2 retype
-V3 reunify
-N2 reunion
-V2 reunite
-V3 reupholster
-V1 reuse
-V3 revalue
-V2 revamp
-V2 reveal
-N3 reveille
-V2 revel
-N4 revelation
-N2 revenge
-N3 revenue
-V4 reverberate
-V2 revere
-N3 reverence
-N4 reverential
-N3 reverie
-N2 revers
-V2 reverse
-N3 reversion
-V2 revert
-N2 review
-V3 revile
-V2 revise
-N3 revision
-N4 revisionism
-V3 revisit
-V4 revitalize
-N3 revival
-N4 revivalism
-V2 revive
-V4 revivify
-V2 revoke
-V2 revolt
-N4 revolution
-V5 revolutionize
-V2 revolve
-N3 revolver
-N2 revue
-N3 revulsion
-N2 reward
-V2 rewind
-V2 rewire
-V2 reword
-V2 rework
-V2 rewrite
-N1 rex
-V3 rhapsodize
-N3 rhapsody
-N1 rhea
-N2 rhenium
-N2 rheostat
-N2 rhesus
-N3 rhetoric
-N3 rheumatism
-N3 rhinestone
-N2 rhino
-N4 rhinoceros
-N2 rhizome
-N1 rho
-N2 rhodium
-N4 rhododendron
-N2 rhombus
-N2 rhubarb
-N1 rhyme
-N3 rhymester
-N1 rhythm
-N1 rib
-N3 ribaldry
-N2 riband
-N2 ribbing
-N2 ribbon
-N2 ribcage
-N4 riboflavin
-N3 ribtickler
-N1 rice
-N4 ricepaper
-N1 rick
-N2 rickets
-N2 rickshaw
-N3 ricochet
-N3 ricotta
-N2 ricrac
-V1 rid
-N2 riddance
-V2 riddle
-V1 ride
-N2 rider
-N1 ridge
-N4 ridgepole
-N3 ridgeway
-N4 ridicule
-N2 riding
-N3 ridinglight
-N3 ridingschool
-N2 riesling
-N1 riff
-V2 riffle
-N2 riffraff
-V2 rifle
-N3 rifleman
-N3 riflerange
-N3 rifleshot
-N2 rifling
-N1 rift
-N3 riftvalley
-V1 rig
-N2 rigger
-N2 rigging
-V2 righten
-N3 righthander
-N2 rightism
-D2 rightly
-D2 rightward
-N4 rigmarole
-N2 rigor
-N2 rigour
-N2 rigout
-V2 rile
-N1 rill
-N1 rim
-N1 rime
-N1 rind
-V1 ring
-N3 ringbinder
-N2 ringdove
-N2 ringer
-V2 ringfence
-N3 ringleader
-N2 ringlet
-N3 ringmaster
-N2 ringside
-N2 ringworm
-N1 rink
-V1 rinse
-N1 riot
-N1 rip
-N2 ripcord
-V2 ripen
-N2 ripoff
-N2 riposte
-N2 ripper
-N2 ripple
-N2 ripsaw
-V1 rise
-N2 riser
-N1 risk
-N3 risotto
-N3 rissole
-D4 ritardando
-N1 rite
-N2 ritual
-N3 ritualism
-N2 rival
-N3 rivalry
-N2 river
-N3 riverside
-N2 rivet
-N3 riviera
-N3 rivulet
-N1 roach
-N1 road
-N1 roadbed
-N2 roadblock
-N2 roadhog
-N3 roadholding
-N2 roadhouse
-N2 roadie
-N3 roadmetal
-N2 roadshow
-N2 roadside
-N2 roadstead
-N2 roadster
-N2 roadway
-V1 roam
-N1 roar
-V1 roast
-N2 roaster
-V1 rob
-N3 robbery
-N1 robe
-N2 robin
-N3 robinia
-N2 robot
-N1 roc
-N2 rochet
-V1 rock
-N4 rockabilly
-N2 rockcake
-N3 rockcrystal
-N2 rocker
-N3 rockery
-N2 rocket
-N3 rocketry
-N2 rockface
-N2 rockfall
-N3 rockgarden
-N3 rockingchair
-N3 rockinghorse
-N2 rockplant
-N3 rocksalmon
-N2 rocksalt
-N1 rod
-N2 rodent
-N2 rodeo
-N4 rodomontade
-N1 roe
-N2 roebuck
-N2 roentgen
-N3 rogation
-N2 rogue
-N3 roguery
-V2 roister
-N2 role
-N4 roleplaying
-V1 roll
-N2 rollcall
-N2 roller
-N4 rollercoaster
-N3 rollerskate
-N3 rollingmill
-N3 rollingpin
-N3 rollingstock
-N2 rollmop
-N2 rollup
-N4 rolypoly
-N1 rom
-N2 romance
-N4 romanesque
-N3 romanic
-V3 romanize
-N4 romanticism
-N4 romanticist
-V4 romanticize
-N3 romany
-N2 romeo
-V1 romp
-N2 rompers
-N3 rondeau
-N2 rondel
-N2 rondo
-N1 rood
-N2 roodscreen
-N1 roof
-N3 roofgarden
-N2 roofing
-N2 roofrack
-N2 rooftop
-N2 rooftree
-N1 rook
-N3 rookery
-N2 rookie
-N1 room
-N3 roominghouse
-N2 roommate
-N1 roost
-N2 rooster
-N1 root
-N2 rootstock
-N1 rope
-N4 ropeladder
-N3 roquefort
-N2 rorqual
-N1 ros
-N3 rosary
-N1 rose
-N3 rosebowl
-N3 rosebud
-N3 rosebush
-N3 rosehip
-N4 rosemary
-N2 rosette
-N4 rosewater
-N4 rosewindow
-N3 rosewood
-N2 rosin
-N2 roster
-N2 rostrum
-V1 rot
-N2 rota
-N3 rotarian
-V2 rotate
-N3 rotation
-N4 rotavator
-N1 rote
-N2 rotgut
-N4 rotisserie
-N2 rotor
-N2 rotter
-N3 rottweiler
-N3 rotunda
-N1 rou
-N2 rouble
-N1 rouge
-N2 roughage
-N2 roughcast
-V2 roughdry
-V2 roughen
-D2 roughly
-N2 roughneck
-N3 roughrider
-N2 roulade
-N2 roulette
-N2 roundel
-N3 roundelay
-N2 rounder
-N2 roundhead
-D2 roundly
-N2 roundsman
-N2 roundup
-N2 roundworm
-V1 rouse
-N3 roustabout
-V1 rout
-N1 route
-N2 routine
-N1 roux
-V1 rove
-N2 rover
-N2 rowan
-N2 rowboat
-N2 rowel
-N3 rowingboat
-N2 rowlock
-N3 royalist
-N3 royalty
-N1 rsum
-V1 rub
-N3 rubato
-N2 rubber
-V3 rubberize
-N2 rubbing
-N2 rubbish
-N2 rubble
-N2 rubdown
-N3 rubella
-N3 rubicon
-N3 rubidium
-N2 rubric
-N2 ruby
-N1 ruche
-V1 ruck
-N2 rucksack
-N2 ruckus
-N2 rudder
-N3 rudiment
-N1 rue
-V1 ruff
-N2 ruffian
-V2 ruffle
-N1 rug
-N2 rugby
-N2 rugger
-N1 ruin
-N3 ruination
-N2 rule
-N2 ruler
-N2 ruling
-N2 rumba
-V2 rumble
-N3 ruminant
-V3 ruminate
-V2 rummage
-N2 rummy
-N1 rump
-V2 rumple
-N2 rumpus
-V1 run
-N3 runabout
-N3 runaround
-N3 runaway
-N2 rundown
-N1 rune
-N1 rung
-N2 runin
-N2 runnel
-N2 runner
-N3 runnerup
-N2 running
-N3 runningboard
-N2 runoff
-N2 runout
-N1 runt
-N2 runthrough
-N2 runup
-N2 runway
-N2 rupee
-N2 rupiah
-N2 rupture
-N1 ruse
-N1 rush
-N2 rushlight
-N1 rusk
-N2 russian
-N1 rust
-V3 rusticate
-V2 rustle
-N1 rut
-N3 ruthenium
-N4 rutherfordium
-N1 rye
-N2 ryegrass
-N2 sabbath
-N2 saber
-N2 sable
-N2 sabot
-N3 sabotage
-N3 saboteur
-N1 sabre
-N4 sabrerattling
-N1 sac
-N3 saccharin
-N2 sachet
-N1 sack
-N2 sackbut
-N2 sackcloth
-N2 sacking
-N3 sacrament
-N3 sacrifice
-N3 sacrilege
-N3 sacristan
-N3 sacristy
-N2 sacrum
-N2 saddle
-N3 saddleback
-N3 saddlebag
-N2 saddler
-N3 saddlery
-N3 sadducee
-N2 sadhu
-N2 sadism
-N5 sadomasochism
-N3 safari
-N3 safeguard
-N3 safety
-N4 safetybelt
-N4 safetycatch
-N4 safetyvalve
-N2 saffron
-V1 sag
-N2 saga
-N1 sage
-N3 sagebrush
-N4 sagittarius
-N2 sago
-N2 sahib
-N1 sail
-N2 sailboard
-N2 sailcloth
-N3 sailingboat
-N2 sailor
-N2 sailplane
-N2 sainfoin
-N1 saint
-N1 sake
-N2 salaam
-N2 salad
-N4 saladdressing
-N4 salamander
-N3 salami
-N3 salary
-N2 sale
-N3 saleroom
-N3 salesman
-N4 salesmanship
-N4 salesperson
-N4 saleswoman
-N3 saliva
-V3 salivate
-N2 sallow
-N2 salmon
-N4 salmonella
-N2 salon
-N2 saloon
-N2 salsa
-N3 salsify
-N1 salt
-N3 saltcellar
-N2 salting
-N2 saltire
-N2 saltlick
-N2 saltmine
-N2 saltpan
-N3 saltpeter
-N2 saltpetre
-N3 saluki
-N4 salutation
-N2 salute
-N2 salvage
-N3 salvation
-V1 salve
-N2 salver
-N2 salvia
-N2 salvo
-N4 samaritan
-N3 samarium
-N2 samba
-N3 samizdat
-N3 samosa
-N3 samovar
-N2 samoyed
-N2 sampan
-N2 samphire
-N2 sample
-N2 sampler
-N2 sampling
-N2 samson
-N3 samurai
-N4 sanatorium
-V3 sanctify
-N2 sanction
-N3 sanctity
-N3 sanctuary
-N2 sanctum
-N1 sand
-N2 sandal
-N3 sandaltree
-N3 sandalwood
-N2 sandbag
-N2 sandbank
-V2 sandblast
-N2 sandboy
-N3 sandcastle
-N2 sanddune
-N2 sander
-N2 sandman
-N3 sandmartin
-N3 sandpaper
-N3 sandpiper
-N2 sandpit
-N2 sandstone
-N2 sandstorm
-N2 sandwich
-N3 sandwichboard
-N2 sangfroid
-N2 sangria
-N3 sanhedrin
-N4 sanitarium
-N4 sanitation
-V3 sanitize
-N3 sanity
-N3 sansculotte
-N3 sanserif
-N2 sanskrit
-N1 sap
-N2 sapling
-N2 sapper
-N2 sapphire
-N3 saprophyte
-N3 saraband
-N3 saracen
-N2 sarcasm
-N3 sarcoma
-N4 sarcophagus
-N2 sardine
-N3 sardonyx
-N3 sargasso
-N1 sarge
-N2 sari
-N2 sarnie
-N2 sarong
-N5 sarsaparilla
-N2 sarsen
-N3 sarsenet
-N1 sash
-V2 sashay
-N2 sashcord
-N2 sashweight
-N3 sashwindow
-N3 sassafras
-N3 sassenach
-N2 satan
-N3 satanism
-N2 satchel
-V1 sate
-N2 sateen
-N3 satellite
-V2 satiate
-N3 satiety
-N2 satin
-N3 satinwood
-N2 satire
-N3 satirist
-V3 satirize
-N4 satisfaction
-V3 satisfy
-N2 satrap
-N3 satsuma
-V3 saturate
-N4 saturation
-N3 saturday
-N4 saturnalia
-N2 satyr
-N1 sauce
-N3 sauceboat
-N3 saucepan
-N2 saucer
-N3 sauerkraut
-N2 sauna
-V2 saunter
-N2 sausage
-N2 sauternes
-N3 savannah
-N2 savant
-V1 save
-N3 saveloy
-N2 saver
-N2 savior
-N3 saviour
-N2 savoy
-N1 saw
-N2 sawdust
-N2 sawfish
-N2 sawmill
-N2 sawyer
-N1 sax
-N1 saxe
-N3 saxifrage
-N2 saxon
-N3 saxophone
-V1 say
-N2 saying
-N2 sayso
-N1 scab
-N2 scabbard
-N2 scabies
-N3 scabious
-N2 scaffold
-N3 scaffolding
-V1 scald
-N2 scale
-N2 scallion
-N3 scallywag
-N1 scalp
-N2 scalpel
-N1 scam
-N1 scamp
-V2 scamper
-V1 scan
-N2 scandal
-V3 scandalize
-N4 scandalmonger
-N4 scandinavian
-N2 scandium
-N2 scanner
-N2 scansion
-N3 scapegoat
-N3 scapula
-N1 scar
-N2 scarab
-D3 scarcely
-N3 scarcity
-V1 scare
-N3 scarecrow
-N4 scaremonger
-V1 scarf
-V3 scarify
-N4 scarlatina
-N1 scarp
-V2 scarper
-N1 scat
-N4 scatology
-V2 scatter
-N3 scatterbrain
-V2 scavenge
-N3 scavenger
-N3 scenario
-N1 scene
-N3 scenery
-N4 sceneshifter
-N1 scent
-N2 scepter
-N2 sceptic
-N1 sceptre
-N3 schadenfreude
-N3 schedule
-N2 schema
-V3 schematize
-N1 scheme
-N2 scherzo
-N1 schism
-N1 schist
-N4 schizophrenia
-N1 schlock
-N1 schmaltz
-N1 schmuck
-N1 schnapps
-N2 schnitzel
-N2 scholar
-N3 scholarship
-N4 scholasticism
-N1 school
-N2 schoolboy
-N2 schoolchild
-N2 schoolgirl
-N2 schoolhouse
-N2 schooling
-N3 schoolleaver
-N3 schoolmaster
-N3 schoolmistress
-N2 schoolroom
-N3 schoolteacher
-N2 schooner
-N2 schottische
-N3 sciatica
-N1 science
-N2 scientist
-N4 scientology
-N2 scifi
-N3 scimitar
-N3 scintilla
-V3 scintillate
-N1 scion
-N3 sclerosis
-V1 scold
-N1 sconce
-N1 scone
-N1 scoop
-V1 scoot
-N2 scooter
-V1 scorch
-N2 scorcher
-N1 score
-N3 scoreboard
-N3 scorebook
-N2 scoria
-N1 scorn
-N2 scorpio
-N2 scorpion
-N1 scot
-V1 scotch
-N2 scotsman
-N2 scottie
-N2 scoundrel
-V1 scour
-N1 scourge
-N1 scout
-N2 scouter
-N3 scoutmaster
-N1 scow
-N1 scowl
-V2 scrabble
-N1 scrag
-V1 scram
-V2 scramble
-N2 scrambler
-N2 scrapbook
-V1 scrape
-N2 scraper
-N2 scrapie
-N2 scraping
-N2 scrapyard
-V1 scratch
-V1 scrawl
-N1 scream
-N1 scree
-N1 screech
-N2 screechowl
-N1 screed
-N1 screen
-N2 screenplay
-N3 screenwriter
-N1 screw
-N2 screwball
-N3 screwdriver
-N2 screwup
-V2 scribble
-N1 scribe
-N1 scrim
-N2 scrimmage
-V1 scrimp
-N1 scrip
-N1 script
-N2 scripture
-N3 scriptwriter
-N3 scrivener
-N3 scrofula
-N1 scroll
-N1 scrooge
-N2 scrotum
-V1 scrounge
-N1 scrub
-N2 scrubber
-N1 scruff
-N1 scrum
-N2 scrumhalf
-N2 scrummage
-V1 scrump
-N2 scrumpy
-V1 scrunch
-N2 scruple
-N3 scrutineer
-V3 scrutinize
-N3 scrutiny
-N2 scuba
-N4 scubadiving
-V1 scud
-V1 scuff
-N2 scuffle
-N1 scull
-N2 sculler
-N3 scullery
-N2 scullion
-V1 sculpt
-N2 sculptor
-N2 sculpture
-N1 scum
-N2 scumbag
-V2 scupper
-N1 scurf
-V2 scurry
-N2 scurvy
-N1 scut
-V2 scutter
-N2 scuttle
-N1 scythe
-N1 sea
-N1 seabed
-N2 seaboard
-N3 seafarer
-N2 seafood
-N2 seagull
-N3 seakale
-N1 seal
-N2 sealant
-N3 sealingwax
-N2 sealskin
-N1 seam
-N2 seaman
-N3 seamanship
-N2 seamstress
-N1 seance
-N2 seaplane
-N2 seaport
-V1 sear
-V1 search
-N2 searchlight
-N3 searchparty
-N2 seascape
-N2 seashell
-N2 seashore
-N2 seaside
-N2 season
-N3 seasoning
-N1 seat
-N2 seatbelt
-N2 seating
-N2 seaway
-N2 seaweed
-N2 secant
-V2 secede
-N3 secession
-V2 seclude
-N3 seclusion
-V2 second
-V3 secondguess
-D3 secondly
-N3 secrecy
-N3 secretaire
-N4 secretariat
-N4 secretary
-N7 secretarygeneral
-V2 secrete
-N3 secretion
-N1 sect
-N2 section
-N2 sector
-N4 security
-N2 sedan
-N3 sedation
-N3 sedative
-N1 sedge
-N3 sediment
-N3 sedition
-V2 seduce
-N3 seduction
-N3 seductress
-N2 sedum
-N1 see
-N1 seed
-N1 seedbed
-N2 seedling
-N2 seedpearl
-N4 seedpotato
-N2 seedsman
-V1 seek
-V1 seep
-N2 seepage
-N1 seer
-N3 seersucker
-N2 seesaw
-V1 seethe
-N2 segment
-V3 segregate
-N4 segregation
-N2 seigneur
-N1 seine
-N3 seismogram
-N3 seismograph
-N4 seismology
-V1 seize
-N2 seizure
-D3 seldomly
-V2 select
-N3 selection
-N3 selector
-N3 selenium
-N5 selfabasement
-N4 selfabsorption
-N3 selfabuse
-N5 selfadvancement
-N6 selfaggrandizement
-N5 selfanalysis
-N3 selfassured
-N4 selfcensorship
-N3 selfconceit
-N3 selfcontrol
-N4 selfdeception
-N3 selfdefence
-N3 selfdefense
-N4 selfdelusion
-N3 selfdenial
-N5 selfdeprecation
-V3 selfdestruct
-N4 selfdestruction
-N6 selfdetermination
-N4 selfdiscipline
-N5 selfdiscovery
-N2 selfdoubt
-N3 selfesteem
-N6 selfexamination
-N4 selfexpression
-N4 selffulfilment
-N2 selfhelp
-N3 selfimage
-N5 selfimprovement
-N4 selfinterest
-N6 selfjustification
-N3 selfknowledge
-N3 selfpity
-N5 selfpollination
-N3 selfportrait
-N5 selfpreservation
-N5 selfrealization
-N3 selfregard
-N3 selfreliance
-N3 selfreproach
-N3 selfrespect
-N3 selfrestraint
-N3 selfrule
-N4 selfsacrifice
-V2 selfseed
-N3 selfstarter
-N2 selfworth
-V1 sell
-N2 seller
-N3 sellingpoint
-N3 sellotape
-N2 sellout
-N2 selvage
-N3 semaphore
-N2 semblance
-N2 semen
-N3 semester
-N2 semi
-N3 semibreve
-N4 semicircle
-N4 semicolon
-N5 semiconductor
-N4 semifinal
-N3 seminar
-N4 seminary
-N3 semiotics
-N4 semiquaver
-N2 semite
-N3 semitone
-N4 semivowel
-N4 semolina
-N2 semtex
-N2 senate
-N3 senator
-V1 send
-N2 sendoff
-N2 sendup
-N3 seneschal
-N2 senna
-N3 sensation
-N5 sensationalism
-N1 sense
-N3 senseorgan
-N5 sensibility
-V3 sensitize
-N2 sensor
-N4 sensuality
-N2 sentence
-N3 sentiment
-N3 sentinel
-N2 sentry
-N3 sentrybox
-N1 seor
-N2 seora
-N3 seorita
-N2 sepal
-N4 separation
-N4 separatist
-N4 separator
-N3 sephardi
-N2 sepia
-N2 sepoy
-N2 sepsis
-N1 sept
-N3 september
-N2 septet
-N4 septicaemia
-N4 septicemia
-N5 septuagenarian
-N5 septuagesima
-N3 septuagint
-N2 septum
-N3 sepulture
-N2 sequel
-N2 sequence
-N3 sequencer
-V3 sequester
-V3 sequestrate
-N2 sequin
-N3 sequoia
-N3 seraglio
-N2 seraph
-N1 serb
-N2 serbian
-N3 serenade
-N5 serendipity
-N1 serf
-N1 serge
-N2 sergeant
-N4 sergeantmajor
-N2 serial
-V3 serialize
-N2 series
-N2 serif
-N2 serjeant
-N4 serjeantatarms
-N2 sermon
-V3 sermonize
-N2 serpent
-N2 serum
-N2 servant
-V1 serve
-N2 server
-N3 servery
-N2 service
-N4 serviceman
-N5 servicewoman
-N2 serviette
-N2 serving
-N3 servitor
-N3 servitude
-N2 servo
-N2 sesame
-N2 session
-N2 sestet
-N1 set
-N2 setback
-N2 settee
-N2 setter
-N2 setting
-N2 settle
-N3 settlement
-N2 settler
-N2 setto
-N2 setup
-V2 sever
-N3 severance
-V1 sew
-N2 sewage
-N2 sewer
-N3 sewerage
-N2 sewing
-N4 sewingmachine
-N1 sex
-N5 sexagenarian
-N5 sexagesima
-N2 sexism
-N4 sexology
-N2 sextant
-N2 sextet
-N2 sexton
-N3 sextuplet
-N1 shack
-N2 shackle
-N1 shad
-N2 shaddock
-N1 shade
-N2 shading
-N2 shadow
-N4 shadowboxing
-N1 shaft
-V1 shag
-N2 shagreen
-N1 shah
-V1 shake
-N2 shaker
-N2 shakeup
-N2 shako
-N2 shale
-N2 shallot
-N2 shalom
-V1 sham
-N2 shaman
-V2 shamble
-N1 shame
-N2 shammy
-N2 shampoo
-N2 shamrock
-N2 shandy
-V2 shanghai
-N1 shank
-N2 shantung
-N2 shanty
-N1 shape
-N1 shard
-N1 share
-N4 shareholder
-N3 shareout
-N1 shark
-N2 sharkskin
-V2 sharpen
-N2 sharper
-N3 sharpshooter
-V2 shatter
-V1 shave
-N2 shaver
-N2 shaving
-N1 shawl
-N1 sheaf
-V1 shear
-N1 sheath
-V1 sheathe
-V1 sheave
-N2 shebeen
-N1 sheen
-N1 sheep
-N2 sheepdip
-N2 sheepdog
-N2 sheepfold
-N2 sheepshank
-N2 sheepskin
-V1 sheer
-N1 sheet
-N2 sheeting
-N1 sheikh
-N2 sheila
-N2 shekel
-N2 shelduck
-N1 shelf
-N2 shelflife
-N2 shelfmark
-N2 shellac
-N2 shellfish
-N2 shellshock
-N2 shelta
-N2 shelter
-V1 shelve
-N3 shemozzle
-N4 shenanigan
-N2 shepherd
-N3 sheraton
-N2 sherbet
-N1 sherd
-N2 sheriff
-N2 sherpa
-N2 sherry
-N2 shiatsu
-N3 shibboleth
-N1 shield
-V1 shift
-N1 shiite
-N3 shillelagh
-N2 shilling
-V4 shillyshally
-N1 shim
-V2 shimmer
-N1 shin
-N2 shinbone
-N2 shindig
-N2 shindy
-V1 shine
-N2 shiner
-N2 shingle
-N2 shinto
-N2 shinty
-N1 ship
-N3 shipbuilder
-N3 shipcanal
-N2 shipload
-N2 shipmate
-N2 shipment
-N3 shipowner
-N2 shipper
-N2 shipping
-N2 shipwreck
-N2 shipwright
-N2 shipyard
-N1 shire
-N3 shirehorse
-V1 shirk
-N1 shirr
-N1 shirt
-N2 shirtsleeve
-N2 shirttail
-N3 shirtwaister
-N2 shiver
-N1 shoal
-N1 shock
-N2 shocker
-N1 shoe
-N2 shoehorn
-N2 shoelace
-N3 shoemaker
-N2 shoestring
-N2 shoetree
-V1 shoot
-N3 shootingbrake
-N3 shootingstick
-N1 shop
-N2 shopfloor
-N3 shopkeeper
-V2 shoplift
-N2 shopping
-N3 shopwalker
-N1 shore
-N3 shoreline
-N2 shortage
-N2 shortbread
-N2 shortcake
-V2 shortchange
-N3 shortcoming
-N2 shortcrust
-V2 shorten
-N3 shortening
-N2 shortfall
-N2 shorthand
-N2 shorthorn
-D2 shortly
-N2 shorty
-N1 shot
-N2 shotgun
-N2 shotput
-N2 shoulder
-N3 shoulderblade
-N3 shoulderpad
-N3 shoulderstrap
-V1 shout
-V1 shove
-N5 shovehalfpenny
-N2 shovel
-N3 shovelboard
-N3 shoveller
-V1 show
-N2 showbiz
-N2 showcase
-N2 showdown
-N2 shower
-N2 showgirl
-N2 showing
-N3 showjumping
-N2 showman
-N2 showoff
-N2 showpiece
-N2 showplace
-N2 showroom
-N3 showstopper
-N2 shrapnel
-N0 shred
-N1 shrew
-N1 shriek
-N1 shrike
-N1 shrimp
-N1 shrine
-V1 shrink
-N2 shrinkage
-V2 shrinkwrap
-V1 shrive
-V2 shrivel
-N1 shroud
-N3 shrovetide
-N1 shrub
-N3 shrubbery
-V1 shrug
-V2 shudder
-V2 shuffle
-N2 shufti
-V1 shun
-V1 shunt
-V1 shut
-N2 shutdown
-N3 shuteye
-N2 shutter
-N2 shuttle
-N3 shuttlecock
-V1 shy
-N2 shylock
-N2 shyster
-N1 si
-N2 siamese
-N2 sibling
-N2 sibyl
-N2 sickbay
-N1 sickbed
-V2 sicken
-N2 sickle
-N2 sickleave
-N3 sicklecell
-N2 sickness
-N2 sickpay
-N1 side
-N3 sideboard
-N3 sidecar
-N3 sidedoor
-N3 sidedrum
-N3 sideeffect
-N3 sidekick
-N3 sidelight
-N3 sideline
-N3 sideroad
-N4 sidesaddle
-N3 sideshow
-N3 sidesman
-N3 sidestep
-N3 sideswipe
-V3 sidetrack
-N3 sidewalk
-N2 siding
-V2 sidle
-N1 siege
-N2 siemens
-N2 sienna
-N2 sierra
-N2 siesta
-N1 sieve
-V1 sift
-V1 sigh
-N1 sight
-V2 sightread
-N2 sightscreen
-N2 sightseer
-N2 sigma
-N1 sign
-N3 signalbox
-V3 signalize
-N3 signalman
-N4 signatory
-N3 signature
-N2 signboard
-N2 signet
-N3 signetring
-N4 significance
-V3 signify
-N2 signor
-N3 signora
-N4 signorina
-N2 signpost
-N3 signwriter
-N1 sikh
-N2 silage
-N2 silence
-N3 silencer
-N3 silhouette
-N3 silica
-N3 silicate
-N3 silicon
-N3 silicone
-N4 silicosis
-N1 silk
-N2 silkworm
-N1 sill
-N2 silo
-N1 silt
-N2 silver
-N3 silverfish
-N3 silverside
-N3 silversmith
-N3 silverware
-N4 silviculture
-N3 simile
-N4 similitude
-V2 simmer
-N3 simony
-N2 simoom
-V2 simper
-N3 simpleton
-N4 simplicity
-V3 simplify
-D2 simply
-V3 simulate
-N1 sin
-P1 since
-D4 sincerely
-N1 sine
-N3 sinecure
-N2 sinew
-V1 sing
-V1 singe
-N5 singersongwriter
-N4 singledecker
-D5 singlehandedly
-N2 singlet
-N3 singleton
-N2 singsong
-V1 sink
-N2 sinker
-N2 sinner
-N4 sinology
-N2 sinus
-N4 sinusitis
-V1 sip
-N2 siphon
-N1 sir
-N1 sire
-N2 siren
-N3 sirenian
-N2 sirloin
-N3 sirocco
-N2 sirup
-N1 sis
-N2 sisal
-N2 siskin
-N2 sister
-N3 sisterhood
-N4 sisterinlaw
-V1 sit
-N2 sitar
-N2 sitcom
-N1 site
-N2 sitin
-N2 sitka
-N2 sitter
-N2 sitting
-N3 sittingroom
-V2 situate
-N3 situation
-N2 situp
-N3 situpon
-N2 sixer
-N2 sixpence
-N3 sixshooter
-N1 size
-V2 sizzle
-N1 ska
-N1 skate
-N3 skateboard
-V3 skedaddle
-N1 skein
-N3 skeleton
-N2 skeptic
-N2 skerry
-N1 sketch
-N2 sketchbook
-N2 sketchmap
-N2 skewer
-N1 ski
-V1 skid
-N2 skidpan
-N1 skiff
-N2 skijump
-N2 skilift
-N1 skill
-N2 skillet
-V1 skim
-N2 skimmia
-V1 skimp
-N1 skin
-N3 skindiver
-N2 skinflint
-N2 skinful
-N2 skingraft
-N2 skinhead
-N1 skip
-N2 skipjack
-N2 skipper
-N3 skippingrope
-N1 skirl
-N2 skirmish
-N1 skirt
-N3 skirtingboard
-N2 skirun
-N1 skit
-N2 skittle
-V1 skive
-N2 skivvy
-N1 skua
-N4 skulduggery
-V1 skulk
-N1 skull
-N2 skullcap
-N1 skunk
-N1 sky
-N3 skydiving
-V2 skyjack
-N2 skylark
-N2 skylight
-N2 skyline
-N3 skyrocket
-N3 skyscraper
-D3 skywardly
-N3 skywriting
-N1 slab
-N1 slack
-V2 slacken
-N2 slacker
-N1 slag
-N2 slagheap
-V1 slake
-N2 slalom
-N1 slam
-N2 slander
-N1 slang
-N3 slangingmatch
-V1 slant
-V1 slap
-N2 slapstick
-V1 slash
-N1 slat
-N1 slate
-N2 slattern
-V2 slaughter
-N3 slaughterhouse
-N1 slav
-N1 slave
-N4 slavedriver
-V2 slaver
-N3 slavery
-N3 slavetrade
-V1 slay
-N1 sleaze
-N1 sledge
-N4 sledgehammer
-N1 sleep
-N2 sleeper
-N3 sleepingbag
-N3 sleepingcar
-N3 sleepingpill
-V2 sleepwalk
-N1 sleet
-N1 sleeve
-N1 sleigh
-N1 slice
-V1 slide
-N4 sliderule
-N1 slime
-N1 sling
-N2 slingback
-V1 slink
-N1 slip
-N2 slipknot
-N2 slippage
-N2 slipper
-N2 sliproad
-N2 slipstream
-N2 slipup
-N2 slipway
-N1 slit
-V2 slither
-N2 sliver
-N1 sloane
-N1 slob
-V2 slobber
-N1 sloe
-V1 slog
-N2 slogan
-N1 sloop
-V1 slop
-N1 slope
-V1 slosh
-N1 slot
-N1 sloth
-N3 slotmachine
-V1 slouch
-N1 slough
-N2 slovak
-N2 sloven
-N2 slowcoach
-N2 slowdown
-N2 slowworm
-N1 sludge
-N1 slug
-N2 sluggard
-N1 sluice
-N1 slum
-V2 slumber
-N1 slump
-V1 slur
-N2 slurry
-N1 slush
-N1 slut
-N1 smack
-N2 smacker
-N3 smallholder
-N3 smallholding
-N2 smallpox
-V1 smarm
-V2 smarten
-V1 smash
-N3 smashandgrab
-N2 smasher
-N2 smashup
-N3 smattering
-V1 smear
-N1 smell
-N1 smelt
-N2 smidgen
-N2 smilax
-V2 smile
-V1 smirch
-N1 smirk
-V1 smite
-N1 smith
-N2 smithy
-N1 smock
-N2 smocking
-N1 smog
-N1 smoke
-N2 smoker
-N3 smokescreen
-N3 smokestack
-N2 smoothie
-N3 smorgasbord
-V2 smother
-N1 smudge
-V2 smuggle
-N1 smut
-N1 snack
-N2 snaffle
-N1 snag
-N1 snail
-N1 snake
-N4 snakecharmer
-N3 snakeskin
-V1 snap
-N3 snapdragon
-N4 snapfastener
-N2 snapper
-N2 snapshot
-N1 snare
-V1 snarl
-N2 snarlup
-V1 snatch
-V1 sneak
-N2 sneaker
-N2 sneakthief
-N1 sneer
-N1 sneeze
-V1 snick
-N2 snicker
-V1 sniff
-N2 sniffer
-N3 snifferdog
-V2 sniffle
-N2 snifter
-V1 snip
-N1 snipe
-N2 snippet
-V2 snivel
-N1 snob
-N1 snood
-N1 snook
-N2 snooker
-N1 snore
-N2 snorkel
-N1 snort
-N1 snot
-N1 snout
-N1 snow
-N2 snowball
-N3 snowballtree
-N3 snowberry
-N3 snowblower
-N2 snowcap
-N2 snowdrift
-N2 snowdrop
-N2 snowfall
-N2 snowflake
-N2 snowline
-N2 snowman
-N4 snowmobile
-N2 snowplough
-N2 snowplow
-N2 snowshoe
-N2 snowstorm
-V1 snub
-N1 snuff
-N2 snuffbox
-N2 snuffer
-V2 snuffle
-N3 snuggery
-V2 snuggle
-V1 soak
-N3 soakaway
-N2 soandso
-N1 soap
-N2 soapbox
-N2 soapstone
-N2 soapwort
-V1 soar
-V1 sob
-N3 sobriety
-N3 sobriquet
-N2 soccer
-N3 socialism
-N3 socialite
-V3 socialize
-N3 society
-N4 sociology
-N2 socket
-N1 sod
-N2 soda
-N2 sodium
-N3 sodomite
-N3 sodomy
-N2 sofa
-N2 soffit
-N2 softball
-V2 soften
-N2 softie
-N2 software
-N2 softwood
-N1 soh
-V1 soil
-N1 soire
-N4 soixanteneuf
-N2 sojourn
-N2 sola
-N2 solace
-N2 solan
-N3 solarium
-N2 solder
-N2 soldier
-N3 soldiery
-N3 solecism
-D3 solely
-N4 solemnity
-V3 solemnize
-N3 solenoid
-N2 solfa
-V3 solicit
-N4 solicitor
-N7 solicitorgeneral
-N4 solicitude
-N5 solidarity
-V4 solidify
-N4 solidity
-N3 solidus
-N4 soliloquy
-N3 solipsism
-N3 solitaire
-N3 solitude
-N2 solo
-N2 soloist
-N2 solstice
-N2 solute
-N3 solution
-V1 solve
-N3 sombrero
-D3 someday
-D3 somehow
-N2 someone
-D3 someplace
-N3 somersault
-N3 something
-D3 sometime
-D3 sometimes
-D3 somewhat
-D3 somewhen
-D3 somewhere
-N4 somnambulism
-N1 son
-N2 sonar
-N3 sonata
-N4 sonatina
-N1 song
-N2 songbird
-N2 songbook
-N2 songster
-N3 songwriter
-N3 soninlaw
-N2 sonnet
-N2 sonny
-D1 soon
-N1 soot
-N1 sooth
-V1 soothe
-N3 soothsayer
-N1 sop
-N2 sophism
-N2 sophist
-N4 sophisticate
-N3 sophistry
-N3 sophomore
-N3 soprano
-N2 sorbet
-N3 sorcerer
-D3 sorely
-N2 sorghum
-N4 sorority
-N2 sorrow
-N1 sort
-N2 sortie
-N1 sos
-N1 sot
-N1 sou
-N2 soubrette
-N1 souffl
-V1 sough
-N1 souk
-N1 soul
-N3 soulsearching
-N1 sound
-N2 soundbox
-N2 sounding
-N4 soundingballoon
-N3 soundingboard
-N3 soundingline
-N3 soundingrod
-N2 soundtrack
-N1 soup
-N3 soupkitchen
-N2 soupon
-N2 soupplate
-N2 soupspoon
-N1 source
-N2 sourpuss
-V1 souse
-N2 soutane
-N1 south
-N2 southeast
-N3 southeaster
-N3 southerner
-N3 southsoutheast
-N3 southsouthwest
-N2 southwest
-N3 southwester
-N3 souvenir
-N3 souwester
-N3 sovereign
-N4 sovereignty
-N1 sow
-N1 soy
-N2 soya
-N1 spa
-N1 space
-N3 spacecraft
-N3 spaceman
-N3 spaceship
-N3 spacesuit
-N3 spacetime
-N1 spade
-N3 spadework
-N3 spaghetti
-N1 spam
-N1 span
-N2 spandrel
-N2 spangle
-N2 spaniard
-N2 spaniel
-V1 spank
-N2 spanker
-N2 spanner
-N1 spar
-N3 sparerib
-N1 spark
-V2 sparkle
-N2 sparkler
-N2 sparkplug
-N2 sparrow
-N3 sparrowhawk
-N1 spasm
-N1 spat
-N1 spate
-N1 spathe
-V2 spatter
-N3 spatula
-V1 spawn
-V1 spay
-N3 speakeasy
-N2 speaker
-N1 spear
-N2 spearhead
-N2 spearmint
-N2 spearwort
-N1 spec
-N3 specialist
-N4 speciality
-V3 specialize
-N3 specialty
-N2 specie
-N2 species
-N5 specification
-V3 specify
-N3 specimen
-N1 speck
-N2 speckle
-N3 spectacle
-N3 spectator
-N2 specter
-N1 spectre
-N4 spectrometer
-N3 spectroscope
-N2 spectrum
-V3 speculate
-N3 speculum
-N1 speech
-V3 speechify
-N1 speed
-N2 speedboat
-N2 speedo
-N4 speedometer
-N2 speedway
-N2 speedwell
-N4 speleology
-N1 spell
-V2 spellbind
-N2 spelling
-N1 spelt
-V1 spend
-N2 spendthrift
-N1 sperm
-N4 spermaceti
-N4 spermatozoon
-N3 spermicide
-V1 spew
-N2 sphagnum
-N1 sphere
-N2 spheroid
-N2 sphincter
-N1 sphinx
-N1 spice
-N2 spider
-N1 spiel
-N2 spigot
-N1 spike
-N3 spikenard
-N1 spill
-N3 spillikin
-N2 spillway
-V1 spin
-N2 spinach
-N2 spindle
-N2 spindrier
-N2 spindrift
-N1 spine
-N4 spinechiller
-N2 spinet
-N3 spinnaker
-N2 spinner
-N3 spinneret
-N2 spinney
-N4 spinningjenny
-N2 spinoff
-N2 spinster
-N3 spiraea
-N1 spire
-N2 spirea
-N2 spirit
-N3 spiritlamp
-N4 spiritlevel
-N4 spiritualism
-N3 spirochaete
-N4 spirogyra
-N1 spit
-N1 spite
-N2 spitfire
-V2 spitroast
-N2 spittle
-N2 spittoon
-N1 spiv
-V1 splash
-N2 splashback
-N2 splashdown
-V2 splatter
-V1 splay
-N1 spleen
-N2 spleenwort
-N2 splendor
-N2 splendour
-V1 splice
-N1 splint
-N2 splinter
-V1 split
-N2 splitscreen
-N1 splotch
-V2 splutter
-V1 spoil
-N2 spoilage
-N2 spoiler
-N2 spoilsport
-N1 spoke
-N3 spokeshave
-N3 spokesman
-N4 spokesperson
-N3 spoliation
-N2 spondee
-N1 sponge
-N2 sponger
-N2 sponsor
-N1 spoof
-N1 spook
-N1 spool
-N1 spoon
-N2 spoonbill
-N3 spoonerism
-V2 spoonfeed
-N1 spoor
-N1 spore
-N2 sporran
-N1 sport
-N2 sportsman
-N2 sportswear
-N1 spot
-N2 spotlight
-N2 spotter
-V2 spotweld
-N1 spouse
-N1 spout
-V1 sprain
-N1 sprat
-V1 sprawl
-N1 spray
-N2 spraygun
-V1 spread
-N2 spreadsheet
-N1 spree
-N1 sprig
-V1 spring
-N2 springboard
-N2 springbok
-N2 springclean
-N2 springer
-N2 springtime
-V2 sprinkle
-N2 sprinkler
-N2 sprinkling
-V1 sprint
-N1 sprit
-N1 sprite
-N2 spritsail
-N2 spritzer
-N2 sprocket
-V1 sprout
-N1 spruce
-N1 spud
-N2 spumante
-N1 spume
-N1 spunk
-N1 spur
-N1 spurge
-V1 spurn
-V1 spurt
-N2 sputnik
-V2 sputter
-N2 sputum
-N1 spy
-N2 spyglass
-N3 spyhole
-N1 squab
-N2 squabble
-N1 squad
-N2 squaddie
-N2 squadron
-N1 squall
-N2 squalor
-V2 squander
-N1 square
-N4 squarebashing
-N1 squash
-V1 squat
-N2 squatter
-N1 squaw
-N1 squawk
-N2 squeak
-N2 squeal
-N3 squeegee
-V2 squeeze
-N4 squeezebox
-V1 squelch
-N1 squib
-N1 squid
-N2 squiggle
-N1 squill
-V1 squint
-N1 squire
-N3 squirearchy
-V1 squirm
-N2 squirrel
-V1 squirt
-V1 stab
-N4 stability
-V3 stabilize
-N4 stabilizer
-N5 stablecompanion
-N2 stabling
-N1 stack
-N2 stadium
-N1 staff
-N1 stag
-N1 stage
-N3 stagecoach
-N3 stagecraft
-N3 stagehand
-V4 stagemanage
-N5 stagemanager
-N3 stagflation
-V2 stagger
-N2 staghound
-N2 staging
-V2 stagnate
-N3 stagparty
-V1 stain
-N1 stair
-N2 staircase
-N2 stairrod
-N2 stairway
-N2 stairwell
-N1 stake
-N4 stakeholder
-N3 stakeout
-N4 stakhanovite
-N3 stalactite
-N3 stalagmite
-N3 stalemate
-N3 stalinism
-V1 stalk
-N3 stalkinghorse
-V1 stall
-N3 stallholder
-N2 stallion
-N2 stamen
-N3 stamina
-V2 stammer
-V1 stamp
-N4 stampcollector
-N3 stampduty
-N2 stampede
-N3 stampingground
-N1 stance
-V1 stanch
-N2 stanchion
-V1 stand
-N2 standard
-N4 standardbearer
-V3 standardize
-N2 standby
-N2 standin
-N2 standing
-N3 standingroom
-N2 standpipe
-N2 standpoint
-N2 standstill
-N2 stanza
-N5 staphylococcus
-N2 staple
-N1 star
-N2 starboard
-N1 starch
-N2 stardust
-V1 stare
-N2 starfish
-N3 stargazer
-N2 starlet
-N2 starlight
-N2 starling
-V1 start
-N2 starter
-N3 startingblock
-V2 startle
-V1 starve
-N3 starveling
-N2 stasis
-N1 state
-N3 statement
-N3 stateroom
-N3 statesman
-N2 station
-N3 stationer
-N4 stationery
-N4 stationmaster
-N4 stationwagon
-N3 statistic
-N2 statue
-N2 statuette
-N2 stature
-N2 status
-N2 statute
-N4 statutebook
-N1 stave
-N1 stay
-N2 stayer
-N2 staysail
-N1 stead
-N1 steak
-N2 steakhouse
-V1 steal
-N1 stealth
-N1 steam
-N2 steamboat
-N2 steamer
-N3 steamroller
-N2 steamship
-N2 steatite
-N1 steed
-N1 steel
-N2 steelyard
-V1 steep
-N2 steeple
-N3 steeplechase
-N3 steeplejack
-N1 steer
-N2 steerage
-N4 steeringcolumn
-N3 steeringwheel
-N2 steersman
-N4 stegosaurus
-N2 stela
-V1 stem
-N1 stench
-N2 stencil
-N4 stenographer
-N3 stepbrother
-N2 stepchild
-N3 stepdaughter
-N3 stepfather
-N4 stephanotis
-N3 stepladder
-N3 stepmother
-N3 stepparent
-N1 steppe
-N3 steppingstone
-N3 stepsister
-N2 stepson
-N3 stereoscope
-N3 stereotype
-V3 sterilize
-N1 stern
-N2 sternum
-N2 steroid
-N2 sterol
-V1 stet
-N3 stethoscope
-N2 stetson
-N3 stevedore
-V1 stew
-N2 steward
-N3 stewardess
-V1 stick
-N2 sticker
-N4 stickingplaster
-N4 stickinthemud
-N3 stickleback
-N2 stickler
-N2 stickup
-V2 stiffen
-V2 stifle
-N2 stigma
-V3 stigmatize
-N2 stile
-N3 stiletto
-N1 still
-N2 stillbirth
-N2 stillroom
-N1 stilt
-N2 stilton
-V3 stimulate
-N3 stimulus
-N1 sting
-N2 stinger
-N4 stingingnettle
-N2 stingray
-V1 stink
-N2 stinker
-V1 stint
-N2 stipend
-V2 stipple
-V3 stipulate
-N1 stir
-V2 stirfry
-N2 stirrup
-N3 stirrupcup
-N4 stirrupleather
-N3 stirruppump
-N1 stitch
-N1 stoat
-N1 stock
-N2 stockade
-N3 stockbreeder
-N3 stockbroker
-N2 stockcar
-N3 stockholder
-N3 stockinet
-N2 stocking
-N3 stockingstitch
-N3 stockintrade
-N2 stockist
-N3 stockjobber
-N3 stockpile
-N2 stockpot
-N2 stockroom
-N3 stocktaking
-N2 stockyard
-N1 stodge
-N1 stoic
-N2 stoicism
-V1 stoke
-N3 stokehold
-N4 stokehole
-N2 stoker
-N2 stole
-N2 stoma
-N2 stomach
-N3 stomachache
-N3 stomacher
-N3 stomachpump
-V1 stomp
-N1 stone
-N3 stonechat
-N3 stonecrop
-N3 stonefruit
-N4 stonemason
-V3 stonewall
-N3 stoneware
-N3 stonework
-N2 stonker
-N1 stook
-N1 stool
-N2 stoolball
-N3 stoolpigeon
-N1 stoop
-V1 stop
-N2 stopcock
-N2 stopgap
-N2 stopgo
-N2 stopoff
-N3 stopover
-N2 stoppage
-N2 stopper
-N2 stopwatch
-N2 storage
-N1 store
-N3 storehouse
-N4 storekeeper
-N3 storeman
-N3 storeroom
-N2 storey
-N1 stork
-N1 storm
-N2 stormdoor
-N2 story
-N4 storyteller
-N1 stoup
-N1 stove
-N3 stovepipe
-V1 stow
-N2 stowage
-N3 stowaway
-N3 strabismus
-V2 straddle
-V1 strafe
-V2 straggle
-D3 straightaway
-V2 straighten
-N1 strain
-N2 strainer
-N1 strait
-N3 straitjacket
-N1 strand
-N2 stranger
-V2 strangle
-N3 stranglehold
-V3 strangulate
-N4 strangulation
-N1 strap
-N3 straphanger
-N3 stratagem
-N3 strategy
-N2 strathspey
-V3 stratify
-N4 stratigraphy
-N3 stratosphere
-N2 stratum
-N1 straw
-N3 strawberry
-V1 stray
-N1 streak
-N1 stream
-N2 streamer
-V2 streamline
-N1 street
-N2 streetcar
-N3 streetwalker
-N2 streetwise
-N1 strength
-V2 strengthen
-N4 streptococcus
-N4 streptomycin
-N1 stress
-V1 stretch
-N2 stretcher
-V1 strew
-N1 stria
-N2 stricture
-V1 stride
-N1 strife
-V1 strike
-N4 strikebreaker
-N2 striker
-N1 strine
-N1 string
-N2 stringcourse
-N2 stringer
-N1 strip
-N1 stripe
-N2 stripling
-N2 stripper
-N2 stripsearch
-N2 striptease
-V1 strive
-N1 strobe
-N3 stroboscope
-N1 stroke
-V1 stroll
-N2 strongbox
-N2 stronghold
-N2 strongroom
-N2 strontium
-N1 strop
-N4 structuralism
-N2 structure
-N2 strudel
-V2 struggle
-V1 strum
-N2 strumpet
-N1 strut
-N2 strychnine
-N1 stub
-N2 stubble
-N2 stucco
-N1 stud
-N2 studbook
-N3 studdingsail
-N2 student
-N2 studfarm
-N2 studio
-N2 study
-N1 stuff
-N2 stuffing
-V3 stultify
-V2 stumble
-N3 stumblingblock
-N1 stump
-V1 stun
-N2 stunner
-N1 stunt
-V3 stupefy
-N2 stupor
-N2 sturgeon
-V2 stutter
-N1 sty
-N2 style
-N2 stylist
-N2 stylus
-N2 styrene
-N2 suasion
-N3 subaltern
-N4 subcommittee
-N4 subcontinent
-V3 subcontract
-N3 subculture
-V3 subdivide
-V2 subdue
-N4 subeditor
-N2 subgroup
-N3 subheading
-N2 subject
-V2 subjoin
-V3 subjugate
-N2 sublease
-N2 sublet
-N5 sublieutenant
-V3 sublimate
-N5 submachinegun
-N3 submarine
-V2 submerge
-N4 submersible
-N3 submission
-V2 submit
-N3 suborder
-V2 suborn
-N2 subplot
-N3 subpoena
-N3 subroutine
-V2 subscribe
-N3 subscriber
-N3 subscription
-N3 subsection
-N2 subset
-V2 subside
-V3 subsidize
-N3 subsidy
-V2 subsist
-N3 subsistence
-N2 subsoil
-N2 substance
-V3 substantiate
-N3 substitute
-N3 substratum
-N3 substructure
-V2 subsume
-N3 subtenant
-V2 subtend
-N3 subterfuge
-N2 subtext
-N3 subtitle
-N3 subtotal
-V2 subtract
-N2 suburb
-N3 suburbia
-N3 subvention
-V2 subvert
-N2 subway
-V2 succeed
-N2 success
-N3 succession
-N3 successor
-N3 succubus
-V2 succumb
-V1 suck
-N2 sucker
-V2 suckle
-N2 suckling
-N2 sucrose
-N2 suction
-V1 sue
-N1 suede
-N1 suet
-V2 suffer
-N3 sufferance
-V2 suffice
-N4 sufficiency
-N2 suffix
-V3 suffocate
-N3 suffragan
-N2 suffrage
-N3 suffragette
-V2 suffuse
-N2 sufi
-N2 sugar
-N4 sugardaddy
-V2 suggest
-N3 suggestion
-N2 suicide
-N1 suit
-N2 suitcase
-N1 suite
-N2 suitor
-N2 sulfa
-N2 sulfate
-N2 sulfide
-N2 sulfite
-N4 sulfonamide
-N2 sulfur
-V1 sulk
-V2 sully
-N2 sulpha
-N2 sulphate
-N2 sulphide
-N2 sulphite
-N4 sulphonamide
-N2 sulphur
-N2 sultan
-N3 sultana
-N1 sum
-N2 sumac
-V3 summarize
-N3 summary
-N3 summation
-N2 summer
-N3 summerhouse
-N3 summertime
-N3 summingup
-N2 summit
-V2 summon
-N2 summons
-N2 sumo
-N1 sump
-N1 sun
-V2 sunbathe
-N2 sunbeam
-N1 sunbed
-N2 sunblock
-N2 sunburn
-N2 sundae
-N2 sunday
-V2 sunder
-N2 sundew
-N2 sundial
-N2 sundown
-N2 sunfish
-N3 sunflower
-N2 sunlamp
-N2 sunlight
-N2 sunni
-N2 sunrise
-N2 sunroof
-N2 sunset
-N2 sunshade
-N2 sunshine
-N2 sunspot
-N2 sunstroke
-N2 suntan
-N2 suntrap
-N2 sunup
-V1 sup
-V4 superannuate
-N5 superannuation
-N4 supercargo
-V3 supercharge
-N4 supercharger
-N5 supercomputer
-N7 superconductivity
-N5 superconductor
-N4 superego
-N6 supererogation
-N4 superfluity
-N3 superglue
-N3 supergrass
-V4 superimpose
-V4 superintend
-N5 superintendent
-N3 superman
-N4 supermarket
-N4 supernova
-N4 superphosphate
-N4 superpower
-V3 supersede
-N3 superstar
-N4 superstition
-N3 superstore
-N4 superstructure
-N4 supertanker
-N3 supertax
-V3 supervene
-V3 supervise
-N4 superwoman
-N2 supper
-V2 supplant
-N3 supplement
-V3 supplicate
-V2 supply
-V2 support
-N3 supporter
-V2 suppose
-D4 supposedly
-N4 supposition
-N5 suppository
-V2 suppress
-V3 suppurate
-N4 supremacy
-N3 supremo
-N2 surcharge
-D3 surely
-N3 surety
-N1 surf
-N2 surface
-N2 surfboard
-N2 surfeit
-N2 surfing
-N1 surge
-N2 surgeon
-N3 surgery
-N2 surmise
-V2 surmount
-N2 surname
-V2 surpass
-N2 surplice
-N2 surplus
-N2 surprise
-N3 surrealism
-V3 surrender
-N3 surrogate
-V2 surround
-N2 surtax
-N3 surtitle
-N3 surveillance
-V2 survey
-N3 surveyor
-N3 survival
-V2 survive
-N6 susceptibility
-N2 sushi
-V2 suspect
-V2 suspend
-N3 suspender
-N2 suspense
-N3 suspension
-N3 suspicion
-V1 suss
-V2 sustain
-N3 sustenance
-N2 suttee
-N2 suture
-N3 suzerain
-N1 swab
-V2 swaddle
-N1 swag
-V2 swagger
-N3 swahili
-N1 swain
-N2 swallow
-N3 swallowdive
-N3 swallowtail
-N2 swami
-N1 swamp
-N1 swan
-N2 swansong
-N1 sward
-N1 swarf
-V1 swarm
-N3 swashbuckler
-N3 swastika
-V1 swat
-N1 swatch
-N1 swath
-V1 swathe
-V1 sway
-V1 swear
-N2 swearword
-N1 sweat
-N2 sweatband
-N2 sweater
-N2 sweatshirt
-N2 sweatshop
-N1 swede
-V1 sweep
-N2 sweeper
-N2 sweepstake
-N2 sweetbread
-N2 sweetbrier
-N2 sweetcorn
-V2 sweeten
-N3 sweetener
-N2 sweetheart
-N2 sweetie
-N2 sweetmeal
-N2 sweetmeat
-N2 sweetness
-N2 sweetshop
-V1 swell
-N2 swelling
-V2 swelter
-V1 swerve
-V1 swig
-V1 swill
-V1 swim
-N3 swimmingbath
-N4 swimmingcostume
-D3 swimmingly
-N2 swimsuit
-N2 swimwear
-V2 swindle
-N1 swine
-V1 swing
-N2 swingboat
-N2 swingbridge
-N2 swingdoor
-N2 swingwing
-V1 swirl
-V1 swish
-N1 switch
-N2 switchback
-N2 switchboard
-N2 swivel
-N1 swizz
-N2 swizzle
-N3 swizzlestick
-V1 swoon
-V1 swoop
-N1 sword
-N2 swordfish
-N2 swordplay
-N2 swordsman
-N2 swordstick
-N3 sybarite
-N3 sycamore
-N3 sycophant
-N4 syllabary
-N3 syllable
-N3 syllabub
-N3 syllabus
-N3 syllepsis
-N3 syllogism
-N1 sylph
-N3 symbiosis
-N2 symbol
-N3 symbolism
-V3 symbolize
-N3 symmetry
-V3 sympathize
-N3 sympathy
-N3 symphony
-N3 symposium
-N2 symptom
-N4 synagogue
-N2 synapse
-N3 synchromesh
-N3 synchronism
-V3 synchronize
-V3 syncopate
-N2 syncope
-V3 syncretize
-N2 syndic
-N4 syndicalism
-N3 syndicate
-N2 syndrome
-N3 synecdoche
-N2 synod
-N3 synonym
-N3 synopsis
-N3 synovia
-N2 syntax
-N1 synth
-N3 synthesis
-V3 synthesize
-N4 synthesizer
-N3 syphilis
-N2 syriac
-N2 syrian
-N3 syringa
-N2 syringe
-N2 syrup
-N2 system
-V4 systematize
-N1 tab
-N2 tabard
-N3 tabasco
-N2 tabby
-N4 tabernacle
-N2 tabla
-N2 table
-N3 tableau
-N3 tablecloth
-N3 tableland
-N3 tablespoon
-N2 tablet
-N3 tabletop
-N3 tableware
-N2 tabloid
-N2 tabor
-V3 tabulate
-N4 tabulator
-N2 tacho
-N3 tachograph
-N4 tachometer
-N1 tack
-N2 tackle
-N3 tackleblock
-N2 taco
-N1 tact
-N2 tactic
-N3 tadpole
-N3 taffeta
-N2 taffrail
-N2 taffy
-N1 tag
-N4 tagliatelle
-N1 tail
-N2 tailback
-N2 tailboard
-N2 tailcoat
-N2 tailend
-N2 tailgate
-N2 taillight
-N2 tailor
-N2 tailpiece
-N2 tailpipe
-N2 tailplane
-N2 tailspin
-N1 taint
-V1 take
-N2 takeoff
-N3 takeover
-N2 taker
-N2 takeup
-N1 talc
-N2 talcum
-N2 tale
-N2 talent
-N3 talentscout
-N3 talisman
-V1 talk
-N2 talkback
-N2 talkie
-N3 talkingpoint
-N3 talkingshop
-N3 talkingto
-N2 tallboy
-N2 tallow
-N2 tally
-N2 talmud
-N2 talon
-N2 talus
-N3 tamarind
-N3 tamarisk
-N2 tambour
-N3 tambourine
-N2 tamil
-N4 tamoshanter
-V1 tamp
-V2 tamper
-N2 tampon
-N2 tamtam
-N1 tan
-N2 tandem
-N2 tandoor
-N3 tandoori
-N1 tang
-N2 tangent
-N3 tangerine
-V2 tangle
-N2 tango
-N1 tank
-N2 tankard
-N2 tanker
-N2 tanner
-N3 tannery
-N2 tannin
-N2 tannoy
-N2 tansy
-V3 tantalize
-N3 tantalum
-N3 tantalus
-N2 tantra
-N2 tantrum
-N3 taoiseach
-N2 taoism
-V1 tap
-N2 tapdance
-N1 tape
-N4 tapemeasure
-N2 taper
-N3 tapestry
-N3 tapeworm
-N3 tapioca
-N2 tapir
-N2 tappet
-N2 taproom
-N1 tar
-N6 taramasalata
-N4 tarantella
-N4 tarantula
-N2 tarboosh
-N1 tare
-N2 target
-N2 tariff
-N3 tarlatan
-N2 tarmac
-N4 tarmacadam
-N1 tarn
-V2 tarnish
-N2 taro
-N2 tarot
-N3 tarpaulin
-N3 tarragon
-V2 tarry
-N2 tarsus
-N2 tartan
-N2 tartar
-N3 tartrazine
-N2 tarzan
-N1 task
-N3 taskmaster
-N1 tass
-N2 tassel
-N1 taste
-N2 taster
-N2 tasting
-V1 tat
-N2 tatter
-N2 tatting
-V2 tattle
-V2 tattoo
-N1 tau
-N1 taunt
-N2 taurus
-N4 tautology
-N2 tavern
-N3 taverna
-N1 tax
-N3 taxation
-N2 taxi
-N4 taxidermy
-N4 taximeter
-N2 taxman
-N2 taxon
-N4 taxonomy
-N3 taxpayer
-N3 tayberry
-N1 tbone
-N1 te
-N1 tea
-N2 teacake
-V1 teach
-N2 teacher
-N2 teaching
-N2 teacup
-N1 teak
-N1 teal
-N2 tealeaf
-N1 team
-N2 teammate
-N2 teamster
-N2 teamwork
-N3 teaplanter
-N2 teapot
-N1 tear
-N3 tearaway
-N2 teardrop
-N2 tearduct
-N2 teargas
-N3 tearjerker
-N2 tearoom
-V1 tease
-N2 teasel
-N2 teaser
-N2 teaset
-N2 teashop
-N2 teaspoon
-N1 teat
-N2 teatime
-N1 tec
-N1 tech
-N3 technetium
-N2 technic
-N5 technicality
-N3 technician
-N4 technicolor
-N3 technique
-N4 technocracy
-N3 technocrat
-N4 technology
-N1 ted
-N2 teddy
-N2 tedium
-N1 tee
-V1 teem
-N3 teenager
-N4 teenybopper
-V2 teeter
-V1 teethe
-N3 teethingring
-N1 teff
-N2 teflon
-N2 telead
-N3 telecast
-N7 telecommunication
-N5 teleconference
-N3 telefax
-N3 telegram
-N3 telegraph
-N4 telegraphy
-N5 telekinesis
-N5 telemarketing
-N4 telemessage
-N4 telemetry
-N4 teleology
-N4 telepathy
-N3 telephone
-N4 telephonist
-N4 telephony
-N4 telephoto
-N6 telephotography
-N4 teleprinter
-N4 teleprompter
-N3 telescope
-N3 teletext
-N3 telethon
-N3 teletype
-V3 televise
-N4 television
-V1 tell
-N2 teller
-N3 tellingoff
-N3 telltale
-N3 tellurium
-N2 telly
-N4 temerity
-N2 temper
-N3 tempera
-N4 temperament
-N3 temperance
-N4 temperature
-N2 tempest
-N2 template
-N2 temple
-N2 tempo
-V3 temporize
-V1 tempt
-N3 temptation
-N3 tempura
-N3 tenancy
-N2 tenant
-N3 tenantry
-N1 tench
-V1 tend
-N3 tendency
-N2 tender
-N3 tenderfoot
-V3 tenderize
-N3 tenderloin
-N2 tendon
-N2 tendril
-N3 tenement
-N2 tenet
-N2 tenner
-N2 tennis
-N2 tenon
-N2 tenor
-N6 tenosynovitis
-N2 tenpin
-N1 tense
-N2 tension
-N1 tent
-N3 tentacle
-N2 tenter
-N3 tenterhook
-N2 tentstitch
-N2 tenure
-N2 tepee
-N3 tequila
-N2 terbium
-N2 tercel
-N5 tercentenary
-N3 teredo
-V4 tergiversate
-N1 term
-N3 termagant
-V3 terminate
-N4 termination
-N5 terminology
-N3 terminus
-N2 termite
-N1 tern
-N2 terrace
-N4 terracotta
-N2 terrain
-N3 terrapin
-N3 terrarium
-N3 terrazzo
-D3 terribly
-N2 terrier
-V3 terrify
-N2 terrine
-N4 territory
-N2 terror
-N3 terrorist
-V3 terrorize
-N2 terry
-N3 terylene
-N2 tesla
-N4 tessellation
-N3 tessera
-N4 tessitura
-N1 test
-N2 testa
-N3 testament
-N3 testator
-N2 tester
-N3 testicle
-V3 testify
-N4 testimonial
-N4 testimony
-N2 testis
-N4 testosterone
-N2 testtube
-N3 tetanus
-N2 tether
-N2 tetrad
-N3 tetragon
-N4 tetrahedron
-N4 tetralogy
-N4 tetrameter
-N2 teuton
-N1 text
-N2 textbook
-N3 textile
-N2 texture
-N1 thai
-N4 thalidomide
-N2 thallium
-N1 thane
-V1 thank
-D3 thankfully
-N3 thanksgiving
-N1 thatch
-V1 thaw
-A1 the
-N2 theater
-N1 theatre
-N1 theft
-A1 their
-N1 theism
-N1 theme
-D1 then
-D3 thenceforth
-N3 theocracy
-N3 theodolite
-N3 theologian
-N3 theology
-N2 theorem
-N4 theoretician
-N2 theorist
-V2 theorize
-N2 theory
-N3 theosophy
-N3 therapy
-D1 there
-D3 thereafter
-D3 thereupon
-N1 therm
-N4 thermocouple
-N4 thermometer
-N2 thermos
-N3 thermosphere
-N3 thermostat
-N3 thesaurus
-N2 thesis
-N2 theta
-N2 thiamine
-V2 thicken
-N3 thickening
-N2 thicket
-N2 thickhead
-N2 thickness
-N1 thief
-V1 thieve
-N3 thievery
-N1 thigh
-N2 thighbone
-N2 thimble
-N3 thimbleful
-N1 thing
-N3 thingummy
-V1 think
-N2 thinker
-N2 thinktank
-N2 thinner
-N3 thiosulphate
-N1 thirst
-N2 thistle
-N3 thistledown
-D2 thither
-N2 thole
-N1 thong
-N2 thorax
-N2 thorium
-N1 thorn
-N3 thoroughfare
-N1 thou
-N1 thought
-N3 thoughtreader
-N1 thrall
-V1 thrash
-N1 thread
-N2 threadworm
-N1 threat
-V2 threaten
-N3 threedecker
-N2 threepence
-N2 threepiece
-N3 threequarter
-N2 threescore
-N2 threesome
-N3 threnody
-V1 thresh
-N3 threshingfloor
-N2 threshold
-D1 thrice
-N1 thrift
-N1 thrill
-N2 thriller
-N1 thrips
-V1 thrive
-N1 throat
-V1 throb
-N1 throe
-N3 thrombosis
-N1 throne
-N1 throng
-N2 throstle
-N2 throttle
-P2 throughout
-N2 throughput
-V1 throw
-N2 throwback
-N2 throwin
-N1 thrum
-N1 thrush
-V1 thrust
-N1 thud
-N1 thug
-N2 thulium
-N1 thumb
-N2 thumbnail
-N2 thumbprint
-N2 thumbscrew
-V1 thump
-N2 thunder
-N3 thunderbolt
-N3 thunderclap
-N3 thundercloud
-N3 thunderfly
-N3 thunderstorm
-N3 thurible
-N2 thursday
-D1 thus
-V1 thwack
-V1 thwart
-A1 thy
-N1 thyme
-N2 thymol
-N2 thymus
-N2 thyroid
-N2 tiara
-N2 tibia
-N1 tic
-N1 tick
-N2 ticker
-N3 tickertape
-N2 ticket
-N2 ticking
-V2 tickle
-N2 ticktack
-N2 ticktock
-N2 tidbit
-N2 tiddler
-N3 tiddlywink
-N1 tide
-N3 tidemark
-N4 tidetable
-N3 tideway
-N2 tidings
-V1 tie
-N2 tiebreak
-N2 tiedye
-N2 tiein
-N2 tiepin
-N1 tier
-N2 tieup
-N1 tiff
-N2 tiffin
-N2 tiger
-N3 tigercat
-V2 tighten
-N2 tightrope
-N2 tigress
-N1 tilde
-N2 tile
-N2 tiling
-V1 till
-N2 tillage
-N2 tiller
-V1 tilt
-N1 tilth
-N2 timber
-N3 timberline
-N1 timbre
-N2 timbrel
-N1 time
-N4 timekeeper
-N3 timelag
-N4 timelimit
-N3 timepiece
-N2 timer
-N4 timeserver
-N3 timeshare
-N4 timesharing
-V3 timeshift
-N4 timetable
-N2 timing
-N1 tin
-N2 tincture
-N2 tinder
-N3 tinderbox
-N1 tine
-N1 ting
-V1 tinge
-V2 tingle
-N2 tinker
-V2 tinkle
-N3 tinnitus
-N4 tinopener
-N2 tinsel
-N2 tinsmith
-N2 tinsnips
-N1 tint
-N2 tintack
-N6 tintinnabulation
-V1 tip
-N2 tipoff
-N2 tipper
-N2 tippet
-V2 tipple
-N2 tipstaff
-N2 tipster
-N2 tiptoe
-N2 tirade
-N1 tire
-N2 tiro
-N2 tissue
-N4 tissuepaper
-N1 tit
-N2 titan
-N3 titanium
-N2 titbit
-N2 titfer
-N1 tithe
-V3 titillate
-V3 titivate
-N2 title
-N3 titledeed
-N4 titleholder
-N3 titlepage
-N2 titmouse
-V2 titrate
-V2 titter
-N2 tittle
-N4 tittletattle
-V2 tittup
-N2 tizzy
-N2 tjunction
-N1 toad
-N2 toadflax
-N5 toadinthehole
-N2 toadstool
-N2 toady
-N1 toast
-N2 toaster
-N3 toastingfork
-N3 toastmaster
-N3 tobacco
-N4 tobacconist
-N3 toboggan
-N3 toccata
-N2 tocsin
-N1 tod
-D2 today
-V2 toddle
-N2 toddler
-N2 toddy
-N2 todo
-N1 toe
-N2 toecap
-N2 toehold
-N2 toenail
-N1 toff
-N2 toffee
-N4 toffeeapple
-N2 tofu
-N1 tog
-N2 toga
-D3 together
-N4 togetherness
-N2 toggle
-V1 toil
-N2 toilet
-N3 toiletry
-N2 toilette
-N4 toilettraining
-N2 tokay
-N2 token
-N3 tokenism
-N3 tolerance
-V3 tolerate
-N4 toleration
-V1 toll
-N2 tollbridge
-N2 tollgate
-N2 tollroad
-N2 toluene
-N1 tom
-N3 tomahawk
-N3 tomato
-N1 tomb
-N3 tombola
-N2 tomboy
-N2 tombstone
-N1 tome
-N2 tomfool
-N4 tomfoolery
-N2 tommy
-N3 tommygun
-N3 tommyrot
-N4 tomography
-D3 tomorrow
-N2 tomtit
-N2 tomtom
-N1 ton
-N4 tonality
-N1 tone
-N2 tongue
-N4 tongueandgroove
-N3 tonguetie
-N4 tonguetwister
-N2 tonic
-D2 tonight
-N2 tonnage
-N1 tonne
-N2 tonsil
-N5 tonsillectomy
-N4 tonsillitis
-N2 tonsure
-D1 too
-N1 tool
-N3 toolmaker
-N3 toolpusher
-N1 toot
-N1 tooth
-N2 toothache
-N2 toothbrush
-N2 toothcomb
-N2 toothpaste
-N2 toothpick
-V2 tootle
-N2 tootsy
-N1 top
-N2 topaz
-N2 topcoat
-V2 topdress
-V1 tope
-N3 topgallant
-N2 topi
-N2 topic
-N2 topknot
-N2 topmast
-N4 topography
-N4 topology
-N2 topper
-V2 topple
-N2 topsail
-N2 topside
-N2 topsoil
-N2 topspin
-D4 topsyturvy
-N2 topup
-N2 toque
-N1 tor
-N1 torch
-N2 torchlight
-N3 toreador
-N2 torment
-N3 tormentil
-N3 tornado
-N3 torpedo
-N4 torpedoboat
-N2 torpor
-N2 torque
-N1 torr
-N2 torrent
-N2 torsion
-N2 torso
-N1 tort
-N3 tortilla
-N2 tortoise
-N4 tortoiseshell
-N2 torture
-N2 tory
-N2 tosa
-N1 tosh
-V1 toss
-N2 tossup
-V1 tot
-N4 totality
-N5 totalizator
-V3 totalize
-D3 totally
-V1 tote
-N2 totem
-N4 totempole
-V2 totter
-N3 tottingup
-N2 toucan
-N2 touchdown
-N2 touchline
-N3 touchpaper
-N2 touchstone
-V2 touchtype
-N2 touchwood
-N2 toupee
-N1 tour
-N2 tourer
-N2 tourism
-N2 tourist
-N3 tourmaline
-N3 tournament
-N3 tournedos
-N2 tourney
-N3 tourniquet
-V2 tousle
-V1 tout
-N1 tow
-P2 toward
-N2 towbar
-N2 towel
-N3 towelling
-N2 tower
-N1 town
-N2 townie
-N2 townscape
-N2 townsfolk
-N2 township
-N2 townsman
-N2 towpath
-N3 toxaemia
-N3 toxemia
-N5 toxicology
-N2 toxin
-N4 toxocara
-N5 toxocariasis
-N1 toy
-N2 toyshop
-N1 trace
-N2 tracer
-N3 tracery
-N2 trachea
-N4 tracheotomy
-N2 tracing
-N4 tracingpaper
-N1 track
-N1 tract
-N2 traction
-N4 tractionengine
-N2 tractor
-N1 trade
-N2 tradein
-N2 tradeoff
-N2 trader
-N4 tradescantia
-N3 tradesman
-N2 trading
-N3 tradingstamp
-N3 tradition
-N5 traditionalism
-V2 traduce
-N2 traffic
-N3 trafficlight
-N3 tragedian
-N3 tragedy
-N5 tragicomedy
-N1 trail
-N3 trailblazer
-N2 trailer
-V1 train
-N3 trainbearer
-N2 trainer
-N2 training
-N3 trainspotter
-N1 trait
-N2 traitor
-N4 trajectory
-N1 tram
-N2 trammel
-V1 tramp
-V2 trample
-N3 trampoline
-N2 tramway
-N1 trance
-N2 tranny
-V3 tranquilize
-N4 tranquilizer
-V3 tranquillize
-N4 tranquillizer
-V2 transact
-N3 transaction
-N3 transceiver
-V2 transcend
-N5 transcendentalism
-V2 transcribe
-N2 transcript
-N3 transducer
-N2 transept
-V2 transfer
-N3 transference
-N5 transfiguration
-V3 transfigure
-V2 transfix
-V2 transform
-N3 transformer
-V2 transfuse
-V2 transgress
-N3 transistor
-V4 transistorize
-N2 transit
-N3 transition
-V2 translate
-V4 transliterate
-V3 transmigrate
-N3 transmission
-V2 transmit
-N3 transmitter
-V4 transmogrify
-V2 transmute
-N2 transom
-N4 transparency
-V2 transpire
-V2 transplant
-N3 transponder
-V2 transport
-N4 transportation
-N3 transporter
-V2 transpose
-N3 transputer
-V2 transship
-N5 transubstantiation
-N3 transvestite
-N1 trap
-N2 trapdoor
-N2 trapeze
-N3 trapezium
-N3 trapezoid
-N2 trapper
-N2 trappist
-N1 trash
-N3 trattoria
-N2 trauma
-V2 travel
-N3 traveler
-N3 traveller
-N4 travelogue
-V2 traverse
-N3 travesty
-V1 trawl
-N2 trawler
-N1 tray
-N3 treachery
-N2 treacle
-V1 tread
-N2 treadle
-N2 treadmill
-N2 treadwheel
-N2 treason
-N2 treasure
-N3 treasurer
-N3 treasury
-V1 treat
-N2 treatise
-N2 treatment
-N2 treaty
-N1 tree
-N3 treecreeper
-N2 treefern
-N2 treetop
-N2 trefoil
-N2 trellis
-N3 trematode
-V2 tremble
-N2 trembler
-N3 tremolo
-N2 tremor
-N1 trench
-N2 trencher
-N3 trencherman
-N1 trend
-N3 trendsetter
-N2 trepan
-N4 trepidation
-V2 trespass
-N1 tress
-N2 trestle
-N1 triad
-N1 trial
-N2 triangle
-V3 triangulate
-N2 triathlon
-N1 tribe
-N3 tribesman
-N4 tribology
-N4 tribulation
-N3 tribunal
-N2 tribune
-N4 tributary
-N2 tribute
-N1 trice
-N2 triceps
-N4 triceratops
-N4 trichinosis
-N4 trichology
-N1 trick
-N3 trickery
-V2 trickle
-N2 trickster
-N3 tricolor
-N3 tricolour
-N2 tricot
-N3 tricycle
-N2 trident
-N1 trier
-N2 trifle
-N3 triforium
-N1 trig
-N2 trigger
-N5 trigonometry
-N1 trike
-N2 trilby
-N1 trill
-N2 trillion
-N3 trilobite
-N3 trilogy
-V1 trim
-N3 trimaran
-N3 trimeter
-N2 trimming
-N4 trinitarian
-N5 trinitrotoluene
-N3 trinity
-N2 trinket
-N1 trio
-V1 trip
-N1 tripe
-N2 triplet
-N2 tripod
-N2 tripos
-N2 tripper
-N2 triptych
-N2 tripwire
-N2 trireme
-V2 trisect
-N2 tritium
-N1 triumph
-N3 triumphalism
-N3 triumvirate
-N2 trivet
-V3 trivialize
-N2 trochee
-N3 troglodyte
-N2 troika
-V1 troll
-N2 trolley
-N2 trollop
-N2 trombone
-N3 trompelil
-N1 troop
-N2 trooper
-N2 troopship
-N1 trope
-N2 trophy
-N2 tropic
-N3 troposphere
-V1 trot
-N1 troth
-N2 trotskyism
-N2 trotter
-N3 troubadour
-N2 trouble
-N4 troublemaker
-N4 troubleshooter
-N1 trough
-V1 trounce
-N1 troupe
-N2 trouper
-N3 trousseau
-N1 trout
-N1 trove
-N2 trowel
-N1 troy
-N1 truant
-N1 truce
-N1 truck
-N2 trucker
-N2 truckle
-V1 trudge
-N2 truelove
-N2 truffle
-N1 trug
-N1 truism
-D2 truly
-N1 trump
-N3 trumpery
-N2 trumpet
-N3 trumpetcall
-V2 truncate
-N2 truncheon
-V2 trundle
-N1 trunk
-N1 truss
-N1 trust
-N2 trustee
-N1 truth
-V1 try
-N1 tryon
-N2 tryout
-N1 tryst
-N1 tsar
-N1 tsetse
-N1 tshirt
-N1 tsquare
-N3 tsunami
-N1 ttette
-N1 tub
-N2 tuba
-N1 tube
-N2 tuber
-N3 tubercle
-N4 tuberculin
-N5 tuberculosis
-N3 tuberose
-N2 tubing
-N3 tubthumper
-N3 tubule
-V1 tuck
-N2 tucker
-N2 tuckin
-N1 tude
-N2 tuesday
-N2 tufa
-N1 tuff
-N2 tuffet
-N1 tuft
-V1 tug
-N2 tugboat
-N2 tuition
-N2 tulip
-N3 tuliptree
-N2 tulle
-N1 tum
-V2 tumble
-N3 tumbledrier
-N2 tumbler
-N2 tumbrel
-N2 tummy
-N4 tummybutton
-N2 tumor
-N2 tumour
-N2 tumult
-N3 tumulus
-N1 tun
-N2 tuna
-N2 tundra
-N1 tune
-N2 tuner
-N2 tungsten
-N2 tunic
-N3 tuningfork
-N2 tunnel
-N2 tunny
-N1 tup
-N2 tupi
-N2 tuppence
-N3 tupperware
-N2 turban
-N2 turbine
-N4 turbocharger
-N3 turbofan
-N3 turbojet
-N3 turboprop
-N2 turbot
-N1 turd
-N2 tureen
-N1 turf
-N1 turk
-N2 turkey
-N3 turkeycock
-N3 turmeric
-N2 turmoil
-V1 turn
-N3 turnabout
-N3 turnbuckle
-N2 turncoat
-N2 turner
-N3 turnery
-N2 turning
-N4 turningcircle
-N3 turningpoint
-N2 turnip
-N3 turniptop
-N2 turnkey
-N2 turnoff
-N2 turnon
-N2 turnout
-N3 turnover
-N2 turnpike
-N2 turnround
-N3 turnstile
-N3 turntable
-N2 turnup
-N3 turpentine
-N3 turpitude
-N3 turquoise
-N2 turret
-N2 turtle
-N3 turtledove
-N3 turtleneck
-N2 tuscan
-N1 tusk
-N2 tussle
-N2 tussock
-N3 tutelage
-N2 tutor
-N4 tuttifrutti
-N2 tutu
-N1 tux
-N3 tuxedo
-N2 twaddle
-N1 twang
-N1 twat
-V1 tweak
-N1 tweed
-N1 tweet
-N2 tweeter
-N3 twelvemonth
-N1 twerp
-D1 twice
-V2 twiddle
-V1 twig
-N2 twilight
-N1 twill
-N1 twin
-N1 twine
-N1 twinge
-V2 twinkle
-V1 twirl
-V1 twist
-N2 twister
-V1 twit
-V1 twitch
-N2 twitcher
-V2 twitter
-N2 twopence
-N2 twosome
-N2 twostep
-V2 twotime
-N2 tycoon
-N1 tyke
-N3 tympanum
-N2 tynwald
-N1 type
-V3 typecast
-N3 typeface
-N3 typescript
-N4 typesetter
-N4 typewriter
-N2 typhoid
-N2 typhoon
-N2 typhus
-V3 typify
-N2 typist
-N2 typo
-N4 typography
-V3 tyrannize
-N5 tyrannosaurus
-N3 tyranny
-N2 tyrant
-N1 tyre
-N3 tzatziki
-N2 uboat
-N2 udder
-N1 ufo
-N2 ugli
-V3 uglify
-N3 ukrainian
-N4 ukulele
-N2 ulcer
-V3 ulcerate
-N2 ullage
-N2 ulna
-N2 ulster
-N3 ulsterman
-N4 ultimatum
-N4 ultramarine
-N3 ultrasound
-V3 ululate
-N2 umbel
-N2 umber
-N4 umbilicus
-N2 umbra
-N2 umbrage
-N3 umbrella
-N2 umlaut
-N2 umpire
-D3 unawares
-V2 unban
-V2 unbar
-N3 unbelief
-V2 unbend
-V2 unbind
-V2 unblock
-V2 unbolt
-V3 unbosom
-V3 unbridle
-V3 unbuckle
-V3 unburden
-V3 unbutton
-V2 unchain
-V2 unclasp
-N2 uncle
-V2 unclench
-V2 unclothe
-V2 uncoil
-N3 unconcern
-V2 uncork
-V3 uncouple
-V3 uncover
-V2 uncross
-V2 uncrown
-N2 unction
-V2 uncurl
-V3 undeceive
-P2 under
-V4 underachieve
-V3 underact
-N4 underbelly
-V3 underbid
-N4 undercarriage
-V3 undercharge
-N4 underclothing
-N3 undercoat
-V3 undercook
-N3 undercroft
-N4 undercurrent
-V3 undercut
-N3 underdog
-V5 underestimate
-V4 underexpose
-N3 underfelt
-D3 underfoot
-N4 undergarment
-V3 undergo
-N4 undergraduate
-D3 underground
-N3 undergrowth
-V3 underlay
-V3 underlie
-V3 underline
-N3 underling
-V3 undermine
-P3 underneath
-N3 underpart
-N3 underpass
-V3 underpay
-V3 underpin
-V3 underplay
-V3 underprice
-V3 underrate
-V3 underscore
-V3 underseal
-N6 undersecretary
-V3 undersell
-N3 undershirt
-V3 undershoot
-N3 underside
-N3 underskirt
-V3 underspend
-V3 understand
-N4 understanding
-V3 understate
-N3 understeer
-N4 undersurface
-V3 undertake
-N4 undertaker
-N4 undertaking
-N3 undertone
-N3 undertow
-V4 undervalue
-N3 undervest
-N3 underwear
-V3 underwhelm
-N3 underworld
-V3 underwrite
-N2 undine
-V2 undo
-N2 undoing
-V2 undress
-V3 undulate
-V2 unearth
-N2 unease
-N4 unemployment
-V3 unfasten
-V3 unfetter
-V2 unfix
-V2 unfold
-D6 unfortunately
-V2 unfreeze
-V2 unfrock
-V2 unfurl
-V2 ungird
-N2 unguent
-V2 unhand
-V3 unharness
-V2 unhinge
-V2 unhitch
-V2 unhook
-V2 unhorse
-N3 unicorn
-N4 unicycle
-N5 unification
-V3 unify
-N6 unilateralism
-N2 union
-N4 unionbashing
-N3 unionist
-V3 unionize
-N3 unison
-N2 unit
-N4 unitarian
-V2 unite
-N3 unity
-N3 universe
-N5 university
-V2 unknot
-V2 unlace
-V2 unlatch
-V2 unlearn
-V2 unleash
-V2 unload
-V2 unlock
-V2 unloose
-V2 unmake
-V2 unman
-V2 unmask
-V2 unnerve
-V2 unpack
-N3 unperson
-V2 unpick
-V2 unpin
-V2 unplug
-V2 unquote
-V3 unravel
-N3 unreason
-V2 unreel
-N2 unrest
-V2 unroll
-V3 unsaddle
-V2 unsay
-V3 unscramble
-V2 unscrew
-V2 unseal
-V2 unseat
-V3 unsettle
-V2 unsex
-V3 unshackle
-V2 unsheathe
-V2 unstick
-V2 unstitch
-V2 unstop
-V2 unstrap
-V2 unstring
-V3 untangle
-V3 untether
-V2 unthread
-V2 unthrone
-V2 untie
-P2 until
-P2 unto
-N2 untruth
-V2 untuck
-V2 untwine
-V2 untwist
-V2 unveil
-V2 unwind
-V2 unwrap
-V2 unzip
-D1 up
-N2 upbeat
-V2 upbraid
-N3 upbringing
-D3 upcountry
-V2 update
-V2 upend
-D2 upfield
-V2 upgrade
-N3 upheaval
-D2 uphill
-V2 uphold
-V3 upholster
-N4 upholsterer
-N4 upholstery
-N2 upkeep
-N2 upland
-V2 uplift
-P2 upon
-N2 upper
-N3 uppercut
-N3 uprising
-N2 uproar
-V2 uproot
-N2 uprush
-V2 upset
-N2 upshot
-N3 upsilon
-D2 upstairs
-N2 upstart
-D2 upstream
-N2 upstroke
-N2 upsurge
-N2 upswing
-N2 uptake
-N2 upthrust
-N2 upturn
-D2 upward
-D3 upwardly
-N3 uranium
-V3 urbanize
-N2 urchin
-N2 urdu
-N2 urea
-N3 ureter
-N3 urethra
-V1 urge
-N3 urinal
-V3 urinate
-N2 urine
-N1 urn
-N4 urology
-N2 usage
-V1 use
-N2 user
-N2 usher
-N3 usherette
-N3 usurer
-V2 usurp
-N3 usury
-N3 utensil
-N3 uterus
-N6 utilitarianism
-N4 utility
-V3 utilize
-N3 utopia
-V2 utter
-N3 utterance
-N2 uturn
-N1 uvre
-N3 uvula
-N1 vac
-N3 vacancy
-V2 vacate
-N3 vacation
-V3 vaccinate
-N2 vaccine
-V3 vacillate
-N3 vacuole
-N2 vacuum
-N4 vademecum
-N3 vagabond
-N3 vagary
-N3 vagina
-N2 vagrant
-N3 vainglory
-N2 valance
-N2 vale
-N4 valediction
-N3 valency
-N3 valentine
-N3 valerian
-N2 valet
-N6 valetudinarian
-V3 validate
-N2 valise
-N2 valium
-N2 valley
-N2 valor
-N2 valour
-N3 valuation
-N2 value
-N1 valve
-V2 vamoose
-N2 vampire
-N1 van
-N3 vanadium
-N2 vandal
-V3 vandalize
-N1 vane
-N2 vanguard
-N3 vanilla
-V2 vanish
-N4 vanishingpoint
-N3 vanity
-V2 vanquish
-N2 vantage
-N2 vapor
-V3 vaporize
-N2 vapour
-N2 variance
-N3 variation
-N3 variety
-N2 varlet
-N2 varnish
-N3 varsity
-V2 vary
-N1 vas
-N1 vase
-N4 vasectomy
-N3 vaseline
-N2 vassal
-N1 vat
-N3 vatican
-N4 vaudeville
-N1 vault
-N2 vaulting
-N3 vaultinghorse
-V1 vaunt
-N1 veal
-N2 vector
-N2 veda
-V1 veer
-N1 veg
-N2 vegan
-N4 vegetable
-N4 vegetarian
-V3 vegetate
-N4 vegetation
-N2 veggie
-N3 vehicle
-N1 veil
-N1 vein
-N2 velcro
-N1 veld
-N3 veleta
-N2 vellum
-N4 velocity
-N3 velodrome
-N2 velour
-N2 velvet
-N3 velveteen
-V1 vend
-N3 vendetta
-N4 vendingmachine
-N2 vendor
-N2 veneer
-V3 venerate
-N3 venetian
-N2 vengeance
-N3 venison
-N2 venom
-N1 vent
-V3 ventilate
-N4 ventilator
-N3 ventricle
-N4 ventriloquism
-N2 venture
-N2 venue
-N3 veranda
-N1 verb
-V3 verbalize
-D3 verbatim
-N3 verbena
-N2 verbiage
-N2 verdict
-N3 verdigris
-N2 verdure
-V1 verge
-N2 verger
-V3 verify
-D3 verily
-N6 verisimilitude
-N3 verity
-N4 vermicelli
-N3 vermicide
-N4 vermiculite
-N3 vermilion
-N2 vermin
-N2 vermouth
-N4 vernacular
-N2 vernier
-N3 veronal
-N4 veronica
-N3 verruca
-N1 verse
-N3 versicle
-V3 versify
-N2 version
-N2 verso
-N3 vertebra
-N2 vertex
-N3 vertigo
-N2 vervain
-N1 verve
-D2 very
-N3 vesicle
-N2 vessel
-N1 vest
-N4 vestibule
-N2 vestige
-N2 vestment
-N2 vestry
-N1 vet
-N1 vetch
-N3 veteran
-N5 veterinarian
-N2 veto
-V1 vex
-N3 vexation
-P1 via
-N2 viaduct
-N1 vial
-N1 viand
-N3 viaticum
-N3 vibraphone
-V2 vibrate
-N3 vibration
-N3 vibrato
-N3 vibrator
-N3 viburnum
-N2 vicar
-N3 vicarage
-N5 vicechancellor
-N5 vicepresident
-N3 vicereine
-N3 viceroy
-N3 vichyssoise
-N4 vicinity
-N4 vicissitude
-N2 victim
-V3 victimize
-N2 victor
-N3 victory
-N2 victual
-N3 victualer
-N3 victualler
-N2 vicua
-V1 vide
-D4 videlicet
-N3 videodisc
-N3 videotape
-N3 videotex
-V1 vie
-N1 view
-N3 viewdata
-N2 viewer
-N3 viewfinder
-N2 viewpoint
-N2 vigil
-N3 vigilance
-N3 vigilante
-N2 vignette
-N2 vigor
-N2 viking
-V3 vilify
-N2 villa
-N2 village
-N2 villain
-N3 villainy
-N2 villein
-N1 vim
-N3 vinaigrette
-V3 vindicate
-N1 vine
-N3 vinegar
-N3 vineyard
-N3 vingtetun
-N2 vino
-N2 vintage
-N2 vintner
-N2 vinyl
-N1 viol
-N2 viola
-V2 violate
-N2 violence
-N2 violet
-N2 violin
-N2 violist
-N4 violoncello
-N2 viper
-N3 virago
-N2 virgin
-N4 virginity
-N2 virgo
-N4 virology
-D3 virtually
-N2 virtue
-N3 virtuoso
-N2 virus
-N2 visa
-N2 visage
-N2 viscose
-N2 viscount
-N3 viscountess
-N1 vise
-N5 visibility
-N2 vision
-V2 visit
-N3 visitant
-N4 visitation
-N3 visitor
-N2 visor
-N2 vista
-V3 visualize
-N4 vitality
-V3 vitalize
-N3 vitamin
-V4 vitaminize
-V2 vitiate
-N4 viticulture
-V3 vitrify
-N2 vitriol
-V4 vituperate
-D2 vivace
-N3 vivarium
-V3 vivify
-V3 vivisect
-N4 vivisection
-N2 vixen
-N2 vizier
-N1 vneck
-N3 vocable
-N5 vocabulary
-N3 vocalist
-V3 vocalize
-N3 vocation
-V4 vociferate
-N2 vodka
-N2 vogue
-N1 voice
-N3 voicebox
-N3 voiceover
-N2 voile
-V4 volatilize
-N3 volauvent
-N3 volcano
-N2 vole
-N3 volition
-N2 volley
-N3 volleyball
-N1 volt
-N2 voltage
-N3 volteface
-N3 voltmeter
-N2 volume
-N3 volunteer
-N4 voluptuary
-N2 volute
-V2 vomit
-N2 voodoo
-N2 vortex
-N3 vorticist
-N3 votary
-N1 vote
-N2 voter
-V1 vouch
-N2 voucher
-V2 vouchsafe
-N1 vow
-N2 vowel
-N2 voyage
-N2 voyeur
-N1 vsign
-N3 vulcanite
-V3 vulcanize
-N5 vulcanology
-N3 vulgarian
-N3 vulgarism
-N4 vulgarity
-V3 vulgarize
-N2 vulgate
-N2 vulture
-N2 vulva
-N1 wad
-N2 wadding
-V2 waddle
-V1 wade
-N2 wader
-N2 wadi
-N2 wafer
-N2 waffle
-N3 waffleiron
-V1 waft
-N1 wag
-N1 wage
-N4 wageearner
-N2 wager
-V2 waggle
-N2 wagon
-N3 wagoner
-N3 wagonload
-N2 wagtail
-N1 waif
-N1 wail
-N1 wain
-N2 wainscot
-N3 wainscoting
-N1 waist
-N2 waistband
-N2 waistcoat
-N2 waistline
-V1 wait
-N2 waiter
-N3 waitinglist
-N3 waitingroom
-N2 waitress
-V1 waive
-N2 waiver
-N1 wake
-V2 waken
-N2 wale
-V1 walk
-N3 walkabout
-N2 walker
-N4 walkietalkie
-N2 walking
-N3 walkingstick
-N2 walkman
-N2 walkon
-N2 walkout
-N3 walkover
-N2 walkway
-N1 wall
-N3 wallaby
-N2 wallah
-N2 wallet
-N3 walleye
-N3 wallflower
-N2 walloon
-V2 wallow
-N3 wallpaper
-N2 wally
-N2 walnut
-N2 walrus
-N1 waltz
-N2 wampum
-N1 wand
-V2 wander
-N3 wanderlust
-V1 wane
-N2 wanker
-N2 wannabe
-V1 want
-N3 wapiti
-N1 war
-V2 warble
-N2 warbler
-N1 ward
-N2 warden
-N2 warder
-N2 wardrobe
-N2 wardroom
-N2 wardship
-N1 ware
-N3 warehouse
-N2 warfare
-N2 wargame
-N2 warhead
-N2 warhorse
-N2 warlock
-N2 warlord
-N3 warmingpan
-N3 warmonger
-N2 warmup
-V1 warn
-N2 warning
-V1 warp
-N2 warpaint
-N2 warpath
-N2 warrant
-N5 warrantofficer
-N3 warranty
-N2 warren
-N2 warrior
-N2 warship
-N1 wart
-N2 warthog
-N2 wartime
-V1 wash
-N3 washbasin
-N2 washboard
-N2 washer
-N3 washerup
-N4 washerwoman
-N2 washing
-N4 washingmachine
-N4 washingpowder
-N4 washingsoda
-N3 washingup
-N2 washout
-N2 washroom
-N2 washstand
-N1 wasp
-N2 waspwaist
-N2 wastage
-V1 waste
-N3 wasteland
-N2 waster
-N2 wastrel
-V1 watch
-N2 watchdog
-N3 watchmaker
-N2 watchman
-N3 watchtower
-N2 watchword
-N2 water
-N2 waterbed
-N4 waterbiscuit
-N5 waterbuffalo
-N4 watercannon
-N4 watercarrier
-N3 waterclock
-N4 watercloset
-N4 watercolor
-N4 watercolour
-N3 watercourse
-N3 watercress
-N5 waterdiviner
-N3 waterfall
-N3 waterfowl
-N3 waterfront
-N3 waterglass
-N4 waterhammer
-N4 waterhole
-N3 waterice
-N4 wateringcan
-N5 wateringhole
-N4 wateringplace
-N4 waterlevel
-N3 waterline
-N3 waterloo
-N3 waterman
-N3 watermark
-N4 watermeadow
-N3 watermill
-N4 waterpistol
-N4 waterpower
-N2 watershed
-N3 waterside
-N3 waterski
-N5 watersoftener
-N3 waterspout
-N4 watertower
-N4 watervole
-N3 waterway
-N3 waterwheel
-N3 waterworks
-N1 watt
-N2 wattage
-N2 watthour
-N2 wattle
-V1 wave
-N3 waveband
-N3 waveform
-N3 wavelength
-N3 wavelet
-V2 waver
-V1 wax
-N2 waxwing
-N2 waxwork
-N1 way
-N2 waybill
-N3 wayfarer
-V2 waylay
-N2 wayside
-V2 weaken
-N2 weakling
-D2 weakly
-N2 weakness
-N1 weal
-N1 wealth
-V1 wean
-N2 weapon
-N3 weaponry
-V1 wear
-N2 weasel
-N2 weather
-N3 weatherboard
-N3 weathercock
-N3 weatherman
-N3 weathervane
-V1 weave
-N2 weaver
-N1 web
-N2 webbing
-N2 weber
-N2 wedding
-N1 wedge
-N2 wedgwood
-N2 wedlock
-N3 wednesday
-N1 wee
-N1 weed
-N3 weedkiller
-N1 week
-N2 weekday
-N2 weekend
-N3 weekender
-V1 weep
-N2 weepie
-N2 weevil
-N1 weft
-V1 weigh
-N2 weighbridge
-N2 weighin
-N1 weight
-N2 weighting
-N3 weightlifting
-N1 weir
-N2 weirdo
-N2 welcome
-V1 weld
-N2 welfare
-N2 welkin
-N2 wellbeing
-N2 wellhead
-N3 wellington
-D2 wellnigh
-N2 wellspring
-N3 wellwisher
-V1 welsh
-N2 welshman
-N3 welshwoman
-N1 welt
-N2 welter
-N3 welterweight
-N1 wen
-N1 wench
-V1 wend
-N3 werewolf
-N1 west
-N3 westerner
-V3 westernize
-N3 westnorthwest
-N3 westsouthwest
-N2 wether
-N2 wetland
-N2 wetnurse
-N2 whale
-N3 whalebone
-N3 whaleoil
-N2 whaler
-N1 wharf
-N2 wharfage
-Q1 what
-N2 whatnot
-N1 wheat
-N2 wheatear
-N2 wheatmeal
-V2 wheedle
-N1 wheel
-N3 wheelbarrow
-N2 wheelbase
-N2 wheelchair
-N2 wheelclamp
-N4 wheelerdealer
-N2 wheelhouse
-N2 wheelie
-N2 wheelspin
-N2 wheelwright
-V1 wheeze
-N1 whelk
-V1 whelm
-N1 whelp
-Q1 when
-Q1 where
-D3 wherefore
-D3 wherever
-N4 wherewithal
-N2 wherry
-V1 whet
-N2 whetstone
-N1 whey
-N1 whiff
-N1 whig
-N2 while
-D1 whilst
-N1 whim
-V2 whimper
-N2 whimsy
-N1 whin
-N2 whinchat
-N1 whine
-V1 whinge
-N2 whinny
-N1 whip
-N2 whipcord
-N2 whiplash
-N3 whipperin
-N4 whippersnapper
-N2 whippet
-N3 whippingtop
-N3 whippoorwill
-N2 whipround
-N2 whipstock
-V1 whirl
-N3 whirligig
-N2 whirlpool
-N2 whirlwind
-N1 whirr
-V1 whisk
-N2 whisker
-N2 whiskey
-N2 whisky
-V2 whisper
-N1 whist
-N2 whistle
-N3 whistlestop
-N1 whit
-N3 whitebait
-N3 whitehead
-V2 whiten
-N3 whiteout
-N3 whitewash
-N3 whitewood
-N2 whiting
-N2 whitlow
-N2 whitsun
-N3 whitsuntide
-V2 whittle
-N2 whizkid
-N3 whodunit
-N3 wholefood
-N3 wholemeal
-N4 wholesale
-N3 wholewheat
-D2 wholly
-N1 whoop
-V1 whop
-N2 whopper
-N1 whore
-N3 whorehouse
-N1 whorl
-N4 whortleberry
-D1 why
-N1 wick
-N2 wicker
-N3 wickerwork
-N2 wicket
-N4 wicketkeeper
-D3 widdershins
-D3 widely
-V2 widen
-N2 widgeon
-N2 widow
-N3 widower
-N1 width
-V1 wield
-N1 wife
-N1 wig
-N2 wigging
-N1 wight
-N2 wigwam
-N2 wildcat
-N3 wildebeest
-N3 wilderness
-N2 wildfire
-N2 wildfowl
-N2 wildlife
-N2 wile
-N1 will
-N4 willothewisp
-N2 willow
-N3 willowherb
-N4 willowpattern
-N4 willowwarbler
-N3 willpower
-N2 willy
-D4 willynilly
-V1 wilt
-N1 wimp
-N2 wimple
-V1 win
-N1 wince
-N2 wincey
-N3 winceyette
-N1 winch
-V1 wind
-N2 windbag
-N2 windbreak
-N2 windburn
-N3 windcheater
-N2 windcone
-N2 winddown
-N2 winder
-N2 windfall
-N3 windingsheet
-N3 windjammer
-N2 windlass
-N2 windmill
-N2 window
-N3 windowbox
-N4 windowdressing
-N3 windowpane
-N3 windowseat
-V3 windowshop
-N3 windowsill
-N2 windpipe
-N2 windscreen
-N2 windshield
-N2 windsock
-N3 windsurfing
-N3 windtunnel
-N2 windup
-N1 wine
-N4 winebibber
-N3 wineglass
-N3 winepress
-N1 wing
-N2 wingcase
-N2 wingchair
-N3 wingcollar
-N2 winger
-N2 wingnut
-N2 wingspan
-V1 wink
-N2 winkle
-N4 winklepicker
-N2 winner
-N3 winningpost
-V2 winnow
-N2 wino
-N2 winter
-N3 wintergreen
-N3 wintertime
-V1 wipe
-N2 wiper
-N1 wire
-N3 wireless
-N4 wiretapping
-N3 wireworm
-N2 wiring
-N2 wisdom
-N1 wise
-N2 wiseacre
-N2 wisent
-V1 wish
-N2 wishbone
-N4 wishfulfilment
-N3 wishingwell
-N1 wisp
-N3 wisteria
-N1 wit
-N1 witch
-N2 witchcraft
-N3 witchdoctor
-N3 witchery
-N3 witchhazel
-N2 witchhunt
-P1 with
-V2 withdraw
-N3 withdrawal
-N1 withe
-V2 wither
-V2 withhold
-D2 within
-P2 without
-V2 withstand
-N2 witness
-N3 witnessbox
-V2 witter
-N3 witticism
-D3 wittingly
-N2 wizard
-N1 woad
-V2 wobble
-N1 wodge
-N1 woe
-N1 wog
-N2 woggle
-N1 wok
-N1 wold
-N1 wolf
-N2 wolfhound
-N2 wolfram
-N2 wolfsbane
-N3 wolfwhistle
-N3 wolverine
-N2 woman
-N3 womanhood
-V3 womanize
-N3 womankind
-N1 womb
-N2 wombat
-N3 womenfolk
-N2 wonder
-N3 wonderland
-N3 wonderment
-V1 woo
-N1 wood
-N2 woodbine
-N2 woodchuck
-N2 woodcock
-N2 woodcraft
-N2 woodcut
-N3 woodcutter
-N2 woodland
-N2 woodlouse
-N2 woodman
-N3 woodpecker
-N3 woodpigeon
-N3 woodpile
-N2 woodruff
-N1 woodshed
-N2 woodwind
-N2 woodwork
-N2 woodworm
-N2 woodyard
-N1 woof
-N2 woofer
-N1 wool
-N4 woolgathering
-N2 woolsack
-N1 wop
-N1 word
-N3 wordblindness
-N2 wordgame
-N2 wording
-N2 wordplay
-N1 work
-N4 workaholic
-N3 workbasket
-N2 workbench
-N2 workbook
-N2 workbox
-N2 workday
-N2 worker
-N2 workforce
-N2 workhouse
-N2 workload
-N2 workman
-N3 workmanship
-N2 workmate
-N2 workout
-N2 workpiece
-N2 workplace
-N2 workroom
-N2 worksheet
-N2 workshop
-N3 workstation
-N2 worktop
-N4 worktorule
-N1 world
-N3 worldbeater
-N1 worm
-N2 wormcast
-N3 wormhole
-N2 wormwood
-V2 worry
-V2 worsen
-N2 worship
-N1 worsted
-N1 wort
-N1 wound
-N1 wow
-N1 wrack
-N1 wraith
-N2 wrangle
-V1 wrap
-N2 wrapper
-N2 wrapping
-N1 wrasse
-N1 wrath
-V1 wreak
-N1 wreath
-V1 wreathe
-N1 wreck
-N2 wreckage
-N2 wrecker
-N1 wren
-N1 wrench
-V1 wrest
-N2 wrestle
-N1 wretch
-V2 wriggle
-N1 wright
-V1 wring
-N2 wringer
-N2 wrinkle
-N1 wrist
-N2 wristlet
-N2 wristwatch
-N1 writ
-V1 write
-N2 writeoff
-N2 writer
-N2 writeup
-V1 writhe
-N2 writing
-N3 writingdesk
-N4 writingpaper
-N2 wrongdoer
-V2 wrongfoot
-N2 wryneck
-N2 xenon
-N4 xenophobia
-N4 xerography
-N2 xerox
-N1 xi
-N1 xmas
-N1 xray
-N2 xylem
-N3 xylophone
-N1 yacht
-N2 yachtsman
-N2 yahoo
-N2 yahweh
-N1 yak
-N1 yam
-N1 yang
-V1 yank
-N2 yankee
-V1 yap
-N3 yarborough
-N1 yard
-N2 yardage
-N2 yardarm
-N2 yardie
-N2 yardstick
-N2 yarmulke
-N1 yarn
-N2 yarrow
-N2 yashmak
-V1 yaw
-N1 yawl
-V1 yawn
-D1 yeah
-N1 year
-N2 yearbook
-N2 yearling
-V1 yearn
-N1 yeast
-N1 yell
-N4 yellowbelly
-N4 yellowhammer
-N1 yelp
-N2 yeoman
-N3 yeomanry
-D1 yep
-D1 yes
-N2 yesman
-D3 yesterday
-N4 yesteryear
-D1 yet
-N2 yeti
-N1 yew
-N1 yfronts
-N1 yid
-N2 yiddish
-V1 yield
-N1 yin
-N1 yob
-N2 yobbo
-V2 yodel
-N2 yoga
-N2 yoghurt
-N2 yogi
-N1 yoke
-N2 yokel
-N1 yolk
-N1 yore
-V1 york
-N2 yorker
-N2 yorkist
-N2 youngster
-A1 your
-N1 youth
-N1 yowl
-N2 yoyo
-N2 ytterbium
-N1 yttrium
-N1 yuan
-N2 yucca
-N2 yule
-N3 yulelog
-N2 yuppie
-N1 z
-N3 zabaglione
-N1 zeal
-N2 zealot
-N2 zebra
-N2 zebu
-N1 zed
-N1 zee
-N2 zeitgeist
-N1 zen
-N1 zend
-N4 zendavesta
-N2 zenith
-N2 zephyr
-N3 zeppelin
-N2 zero
-N1 zest
-N2 zeta
-N2 zeugma
-N3 ziggurat
-N1 zilch
-N2 zillion
-N1 zinc
-N2 zinnia
-N1 zion
-N2 zionism
-N1 zip
-N2 zipper
-N2 zircon
-N3 zirconium
-N1 zit
-N2 zither
-N2 zloty
-N2 zodiac
-N2 zombie
-N1 zone
-N1 zoo
-N3 zoology
-V1 zoom
-N2 zoophyte
-N3 zucchini
-N2 zulu
-N2 zygote
+@ S C WORD
+001 R a
+002 N aardvark
+003 N abacus
+003 V abandon
+003 A abandoned
+002 V abase
+002 V abate
+003 N abattoir
+003 N abbacy
+002 N abbess
+002 N abbey
+002 N abbot
+003 V abbreviate
+003 V abdicate
+003 N abdomen
+002 V abduct
+002 D abeam
+004 A aberdonian
+003 A aberrant
+004 N aberration
+002 V abet
+003 N abeyance
+002 V abhor
+003 N abhorrence
+003 A abhorrent
+002 V abide
+003 A abiding
+004 N ability
+002 A abject
+002 V abjure
+002 A able
+004 A ablebodied
+003 N ablution
+003 V abnegate
+004 N abnegation
+003 A abnormal
+002 D aboard
+002 N abode
+003 V abolish
+004 N abolition
+002 N abomb
+005 A abominable
+004 V abominate
+005 A aboriginal
+004 N aborigine
+002 V abort
+003 N abortion
+003 A abortive
+002 V abound
+002 P about
+002 P above
+002 V abrade
+003 N abrasion
+003 A abrasive
+002 D abreast
+002 V abridge
+002 D abroad
+003 V abrogate
+002 A abrupt
+002 N abscess
+002 V abseil
+002 N absence
+002 A absent
+003 N absentee
+004 N absenteeism
+003 A absentminded
+002 N absinth
+003 A absolute
+005 D absolutely
+004 N absolution
+004 N absolutism
+002 V absolve
+002 V absorb
+003 A absorbent
+003 N absorption
+002 V abstain
+004 A abstemious
+003 N abstention
+003 N abstinence
+002 A abstract
+002 A abstracted
+003 N abstraction
+002 A abstruse
+002 A absurd
+003 N abundance
+003 A abundant
+002 V abuse
+003 A abusive
+002 V abut
+003 N abutment
+002 D abuzz
+003 A abysmal
+002 N abyss
+003 N acacia
+004 N academia
+004 A academic
+005 N academician
+004 N academy
+003 N acanthus
+002 V accede
+004 V accelerate
+005 N accelerator
+002 N accent
+003 V accentuate
+002 V accept
+004 A acceptable
+003 N acceptance
+002 N access
+004 A accessible
+003 N accession
+004 N accessory
+003 N accident
+004 A accidental
+004 A accidentprone
+002 V acclaim
+004 N acclamation
+004 V acclimatize
+003 N accolade
+004 V accommodate
+005 A accommodating
+005 N accommodation
+005 N accompaniment
+004 V accompany
+003 N accomplice
+003 V accomplish
+003 A accomplished
+004 N accomplishment
+002 V accord
+003 N accordance
+003 D according
+004 D accordingly
+003 N accordion
+002 V accost
+002 N account
+004 A accountable
+003 N accountant
+003 V accredit
+003 A accredited
+003 N accretion
+002 V accrue
+004 V accumulate
+005 N accumulation
+005 N accumulator
+004 N accuracy
+003 A accurate
+002 A accursed
+004 N accusation
+005 A accusatory
+002 V accuse
+003 V accustom
+003 A accustomed
+001 N ace
+004 A acellular
+003 A acerbic
+005 N acetaldehyde
+003 N acetate
+003 A acetic
+003 N acetone
+004 N acetylene
+001 N ache
+002 V achieve
+004 N achievement
+004 A achromatic
+002 A achy
+002 N acid
+004 A acidulous
+003 V acknowledge
+005 N acknowledgement
+001 N acme
+001 N acne
+003 N acolyte
+003 N aconite
+002 N acorn
+003 A acoustic
+003 V acquaint
+004 N acquaintance
+003 V acquiesce
+002 V acquire
+004 N acquirement
+004 N acquisition
+004 A acquisitive
+002 V acquit
+001 N acre
+002 N acreage
+002 A acrid
+005 A acrimonious
+003 N acrobat
+003 N acronym
+004 N acropolis
+002 P across
+003 N acrostic
+003 A acrylic
+001 N act
+002 N acting
+003 N actinism
+003 N actinium
+002 N action
+004 A actionable
+003 A actionpacked
+003 V activate
+002 A active
+003 N activism
+004 N activity
+002 N actor
+002 N actress
+002 A actual
+004 N actuality
+003 D actually
+003 N actuary
+002 V actuate
+003 N acuity
+003 N acumen
+004 N acupuncture
+002 A acute
+001 N ad
+002 N adage
+002 N adam
+003 A adamant
+002 V adapt
+003 N adaptor
+001 V add
+003 N addendum
+002 N adder
+002 N addict
+002 A addicted
+003 A addictive
+003 N addition
+004 A additional
+003 N additive
+002 V addle
+002 N address
+003 N addressee
+002 V adduce
+002 A adept
+003 A adequate
+002 V adhere
+003 N adherent
+003 N adhesion
+003 A adhesive
+003 A adipose
+003 A adjacent
+003 N adjective
+002 V adjoin
+002 V adjourn
+002 V adjudge
+004 V adjudicate
+002 N adjunct
+002 V adjure
+002 V adjust
+003 N adjutant
+002 N admin
+004 V administer
+004 V administrate
+005 N administration
+005 A administrative
+005 N administrator
+004 A admirable
+003 N admiral
+004 N admiralty
+004 N admiration
+002 V admire
+004 A admissible
+003 N admission
+002 V admit
+003 N admittance
+004 D admittedly
+003 N admixture
+003 V admonish
+001 N ado
+002 N adobe
+004 A adolescent
+003 N adonis
+002 V adopt
+003 A adoptive
+004 A adorable
+002 V adore
+002 V adorn
+003 A adrenal
+004 N adrenalin
+002 A adroit
+002 V adsorb
+004 N adulation
+002 A adult
+004 V adulterate
+004 N adulterer
+004 N adultery
+003 V adumbrate
+002 V advance
+004 N advancement
+003 N advantage
+002 N advent
+003 N adventist
+005 A adventitious
+003 N adventure
+004 N adventurer
+004 A adventurous
+002 N adverb
+004 N adversary
+002 A adverse
+004 N adversity
+002 N advert
+003 V advertise
+005 N advertisement
+002 N advice
+004 A advisable
+002 V advise
+004 D advisedly
+003 N adviser
+004 A advisory
+003 N advocaat
+004 N advocacy
+003 N advocate
+001 N adz
+001 N adze
+002 N aegis
+002 N aeon
+002 V aerate
+002 N aerial
+003 N aerodrome
+003 N aerofoil
+003 N aeroplane
+003 N aerosol
+003 N aerospace
+002 N aesthete
+003 A aesthetic
+004 N aetiology
+002 D afar
+003 A affable
+002 N affair
+002 V affect
+004 N affectation
+002 A affected
+003 N affection
+004 A affectionate
+004 N affidavit
+003 V affiliate
+004 N affiliation
+004 N affinity
+002 V affirm
+004 A affirmative
+002 V affix
+002 V afflict
+003 N affliction
+002 A affluent
+002 V afford
+003 V afforest
+002 N affray
+002 N affront
+002 N afghan
+005 N aficionado
+002 D afield
+002 D aflame
+002 D afloat
+002 D afoot
+004 A aforethought
+002 D afresh
+003 N african
+003 N afrikaans
+004 N afrikaner
+005 A afroamerican
+005 N afrocaribbean
+001 D aft
+002 P after
+003 N afterbirth
+003 N aftercare
+004 N aftereffect
+003 N afterglow
+003 N afterlife
+003 N aftermath
+003 N afternoon
+003 N aftershave
+003 N aftertaste
+003 N afterthought
+003 D afterward
+003 D afterwards
+002 D again
+002 P against
+003 N agaric
+002 N agate
+002 N agave
+001 N age
+001 A aged
+002 N ageism
+003 A ageless
+003 A agelong
+003 N agency
+003 N agenda
+002 N agent
+002 A ageold
+004 V agglomerate
+004 V agglutinate
+003 V aggrandize
+003 V aggravate
+003 N aggregate
+003 N aggression
+003 A aggressive
+003 N aggressor
+002 A aggrieved
+002 N aggro
+003 A agile
+003 V agitate
+002 N agnail
+003 N agnostic
+001 D ago
+003 V agonize
+003 N agony
+005 N agoraphobia
+003 A agrarian
+002 V agree
+004 A agreeable
+003 N agreement
+004 N agriculture
+004 N agrimony
+004 N agronomy
+002 N ague
+002 D ahead
+001 N aid
+001 N aide
+004 N aidedecamp
+001 N aids
+001 V ail
+003 N aileron
+002 A ailing
+002 N ailment
+001 V aim
+002 A aimless
+001 N air
+002 N airbase
+001 N airbed
+002 A airborne
+002 N airbrick
+002 N airbus
+005 N airconditioning
+002 N aircraft
+004 N aircraftcarrier
+003 N aircraftman
+004 N aircraftwoman
+002 N aircrew
+003 N aircushion
+004 N airedale
+002 N airer
+002 N airfield
+002 N airgun
+002 N airhead
+002 A airless
+002 N airlift
+002 N airline
+003 N airliner
+002 N airlock
+002 N airmail
+002 N airman
+002 N airplane
+002 N airport
+002 N airscrew
+002 N airship
+002 A airsick
+002 N airspace
+002 N airstrip
+002 A airtight
+002 N airway
+003 N airwoman
+003 A airworthy
+002 A airy
+004 A airyfairy
+002 N aisle
+001 N aitch
+002 N aitchbone
+002 D ajar
+003 N akela
+004 N alabaster
+004 N alacrity
+002 N alarm
+003 N alarmist
+001 N alb
+003 N albatross
+003 N albino
+002 N album
+003 N albumen
+003 N albumin
+003 N alchemy
+003 N alcohol
+004 A alcoholic
+004 N alcoholism
+002 N alcove
+003 N aldehyde
+002 N alder
+003 N alderman
+001 N ale
+004 A aleatory
+003 N alehouse
+003 N alembic
+002 A alert
+004 A alexandrine
+003 N alfalfa
+003 D alfresco
+002 N alga
+003 N algebra
+002 N algol
+003 N algorithm
+002 D alias
+003 N alibi
+002 A alien
+004 A alienable
+003 V alienate
+002 V alight
+002 V align
+002 A alike
+005 A alimentary
+004 N alimony
+004 A aliphatic
+003 A aliquot
+002 A alive
+003 N alkali
+005 N alkalinity
+003 N alkaloid
+002 N alkane
+002 N alkene
+002 N alkyne
+001 A all
+002 N allah
+002 V allay
+002 N allclear
+004 N allegation
+002 V allege
+004 D allegedly
+003 N allegiance
+004 N allegory
+003 A allergic
+003 N allergy
+003 V alleviate
+002 N alley
+002 N alliance
+002 A allied
+004 N alligator
+005 N alliteration
+003 V allocate
+002 V allot
+003 N allotment
+004 N allotropy
+002 V allow
+003 N allowance
+002 N alloy
+003 N allrounder
+002 N allspice
+002 V allude
+002 V allure
+003 N allusion
+003 A alluvial
+003 N alluvium
+002 N ally
+003 N almanac
+003 A almighty
+002 N almond
+003 N almoner
+002 D almost
+002 N almshouse
+002 N aloe
+002 P along
+003 D alongside
+002 A aloof
+002 D aloud
+001 N alp
+003 N alpaca
+002 N alpha
+003 N alphabet
+005 A alphanumeric
+002 A alpine
+003 D already
+002 D alright
+003 N alsatian
+002 D also
+003 N alsoran
+002 N altar
+003 N altarpiece
+002 V alter
+003 V altercate
+003 V alternate
+004 A alternative
+004 N alternator
+004 N altimeter
+003 N altitude
+002 N alto
+004 D altogether
+002 N altruism
+002 N alum
+004 N alumina
+004 N aluminium
+004 V aluminize
+004 N aluminum
+003 N alumnus
+002 D always
+003 N alyssum
+003 N amalgam
+004 V amalgamate
+004 N amanuensis
+003 N amaranth
+004 N amaryllis
+002 V amass
+003 N amateur
+004 A amatory
+002 V amaze
+003 N amazon
+004 N ambassador
+002 N amber
+004 A ambidextrous
+002 N ambience
+002 A ambient
+004 A ambiguous
+002 N ambit
+003 N ambition
+004 A ambitious
+004 N ambivalence
+002 V amble
+003 N ambrosia
+003 N ambulance
+005 A ambulatory
+003 N ambuscade
+002 N ambush
+004 V ameliorate
+004 A amenable
+002 V amend
+003 N amendment
+002 N amends
+004 N amenity
+004 A american
+005 N americanism
+004 N americium
+003 A amerind
+003 N amethyst
+003 N amharic
+003 A amiable
+004 A amicable
+003 D amidships
+002 P amidst
+002 N amine
+003 N amity
+003 N ammeter
+002 N ammo
+003 N ammonia
+003 N ammonite
+004 N ammunition
+003 N amnesia
+003 N amnesty
+005 N amniocentesis
+002 N amnion
+003 N amoeba
+002 D amok
+002 P amongst
+003 A amoral
+003 A amorous
+003 A amorphous
+003 V amortize
+002 N amount
+002 N amour
+001 N amp
+004 N ampelopsis
+003 N amperage
+002 N ampere
+003 N ampersand
+004 N amphetamine
+003 A amphibian
+004 A amphibious
+003 N amphitheatre
+003 N amphora
+002 A ample
+003 N amplifier
+003 V amplify
+003 N amplitude
+003 N ampoule
+003 N ampulla
+003 V amputate
+003 N amulet
+002 V amuse
+004 N amusement
+004 N anabaptist
+004 N anabolism
+004 N anachronism
+004 N anaconda
+003 N anaemia
+003 A anaemic
+004 N anaesthesia
+004 N anaesthetist
+004 V anaesthetize
+003 N anagram
+002 A anal
+004 N analgesia
+004 A analgesic
+003 N analog
+004 V analogize
+004 A analogous
+004 N analogue
+004 N analogy
+003 V analyse
+004 N analysis
+003 N analyst
+005 A analytical
+003 N analyze
+003 N anapaest
+003 N anarchism
+003 N anarchist
+003 N anarchy
+004 N anathema
+005 V anathematize
+004 N anatomy
+003 N ancestor
+003 A ancestral
+003 N ancestry
+002 N anchor
+003 N anchorage
+003 N anchorite
+003 N anchorman
+003 N anchovy
+002 A ancient
+004 A ancillary
+003 N andiron
+004 A androgynous
+002 N android
+003 N anecdote
+003 N anemia
+003 A anemic
+005 N anemometer
+003 N anemone
+003 A aneroid
+004 N anesthesia
+003 N aneurysm
+002 D anew
+002 N angel
+003 N angelfish
+003 A angelic
+004 N angelica
+003 N angelus
+002 N anger
+003 N angina
+003 N angiosperm
+002 V angle
+003 A anglican
+003 N anglicism
+003 V anglicize
+005 A anglocatholic
+003 A anglofrench
+003 A angloindian
+004 A anglonorman
+004 N anglophile
+004 A anglosaxon
+003 N angora
+004 N angostura
+002 A angry
+001 N angst
+002 N angstrom
+002 N anguish
+003 A angular
+003 A anhydrous
+003 N aniline
+004 V animadvert
+003 N animal
+004 N animalism
+005 N animality
+004 V animalize
+003 A animate
+003 A animated
+004 N animation
+003 N animism
+005 N animosity
+003 N animus
+002 N anion
+002 N anise
+003 N aniseed
+002 N ankle
+002 N anklet
+004 N ankylosis
+003 N annatto
+002 V anneal
+003 N annelid
+002 V annex
+002 N annexe
+004 V annihilate
+005 N anniversary
+003 V annotate
+002 V announce
+003 N announcer
+002 V annoy
+002 A annual
+003 A annualized
+003 N annuity
+002 V annul
+003 A annular
+003 A annulate
+004 N annunciation
+002 N anode
+003 V anodize
+003 A anodyne
+002 V anoint
+004 A anomalous
+004 N anomaly
+002 D anon
+004 A anonymous
+003 N anorak
+004 N anorexia
+003 A another
+002 N answer
+004 A answerable
+003 N answerphone
+001 N ant
+003 A antacid
+004 N antagonism
+004 N antagonist
+004 V antagonize
+003 A antarctic
+001 N ante
+003 N anteater
+004 N antecedent
+004 N antechamber
+003 V antedate
+005 A antediluvian
+003 N antelope
+004 A antenatal
+003 N antenna
+006 A antepenultimate
+003 A antepost
+003 A anterior
+003 N anteroom
+002 N anthem
+002 N anther
+002 N anthill
+004 N anthology
+003 N anthracite
+002 N anthrax
+005 A anthropocentric
+003 A anthropoid
+005 N anthropology
+005 N anthropomorphism
+005 A anthropomorphous
+004 A antiabortion
+004 A antiaircraft
+004 N antibiotic
+004 N antibody
+002 N antic
+003 N antichrist
+004 V anticipate
+005 A anticlerical
+004 N anticlimax
+004 A anticlockwise
+004 N anticyclone
+005 N antidepressant
+003 N antidote
+003 N antifreeze
+003 N antigen
+004 N antihero
+005 N antihistamine
+003 N antiknock
+003 N antilog
+005 N antilogarithm
+005 N antimacassar
+004 N antimatter
+004 N antimony
+004 A antinomian
+004 N antinomy
+004 N antinovel
+004 A antinuclear
+005 N antiparticle
+004 N antipathy
+005 N antiperspirant
+003 N antiphon
+003 N antipope
+005 A antipyretic
+004 A antiquarian
+004 N antiquary
+003 A antiquated
+003 N antique
+004 N antiquity
+004 N antirrhinum
+004 N antisemite
+004 A antiseptic
+004 N antiserum
+004 A antisocial
+004 A antistatic
+005 A antitetanus
+004 N antithesis
+004 N antitoxin
+004 A antiviral
+002 N antler
+003 N antonym
+002 N antrum
+002 N anus
+002 N anvil
+003 N anxiety
+003 A anxious
+001 A any
+004 N anybody
+003 D anyhow
+003 D anyway
+003 D anywhere
+002 N aorta
+002 D apace
+002 N apache
+002 D apart
+003 N apartheid
+003 N apartment
+003 N apathy
+001 N ape
+003 N apeman
+003 A aperient
+004 N aperitif
+003 N aperture
+002 N apex
+003 N aphasia
+003 N aphelion
+002 N aphid
+002 N aphis
+003 N aphorism
+004 A aphrodisiac
+003 N apiary
+003 A apical
+004 N apiculture
+002 D apiece
+002 A apish
+002 N aplomb
+004 N apocalypse
+004 A apocryphal
+003 N apogee
+005 A apolitical
+005 A apologetic
+004 N apologia
+004 N apologist
+004 V apologize
+004 N apology
+003 N apophthegm
+004 A apoplectic
+004 N apoplexy
+004 N apostasy
+003 N apostate
+003 N apostle
+004 N apostolate
+004 A apostolic
+003 N apostrophe
+005 N apothecary
+004 N apotheosis
+002 V appal
+004 N apparatus
+003 N apparel
+003 A apparent
+004 N apparition
+002 V appeal
+002 V appear
+003 N appearance
+002 V appease
+003 N appellant
+004 N appellation
+004 A appellative
+002 V append
+003 N appendage
+005 N appendectomy
+005 N appendicitis
+003 N appendix
+003 V appertain
+003 N appetite
+004 N appetizer
+004 A appetizing
+002 V applaud
+002 N applause
+002 N apple
+002 N appliance
+004 A applicable
+003 N applicant
+004 N application
+004 N applicator
+002 A applied
+003 N appliqu
+002 V apply
+002 V appoint
+003 N appointment
+003 V apportion
+003 A apposite
+004 N apposition
+003 N appraisal
+002 V appraise
+004 A appreciable
+003 V appreciate
+004 N appreciation
+003 V apprehend
+004 N apprehension
+004 A apprehensive
+003 N apprentice
+002 V apprise
+002 N appro
+002 V approach
+004 A approachable
+004 N approbation
+003 A appropriate
+003 N approval
+002 V approve
+004 A approximate
+004 N appurtenance
+003 N apricot
+002 N april
+002 N apron
+003 A apropos
+002 N aprsski
+001 N apse
+002 N apsis
+001 A apt
+003 N aptitude
+002 N aqua
+003 N aqualung
+004 N aquamarine
+003 N aquaplane
+004 N aquarelle
+003 N aquarium
+003 N aquarius
+003 A aquatic
+003 N aquatint
+003 N aqueduct
+003 A aqueous
+004 N aquilegia
+003 A aquiline
+002 N arab
+004 N arabesque
+003 A arabian
+003 N arabic
+003 A arable
+003 N arachnid
+003 N araldite
+003 N aramaic
+003 N arbiter
+004 A arbitrary
+003 V arbitrate
+004 N arbitration
+004 N arbitrator
+002 N arbor
+003 A arboreal
+004 A arborescent
+004 N arboretum
+005 N arboriculture
+002 N arbour
+003 N arbutus
+001 N arc
+002 N arcade
+003 N arcadian
+002 A arcane
+005 N archaeology
+005 N archaeopteryx
+002 A archaic
+002 N archaism
+003 N archangel
+003 N archbishop
+004 N archbishopric
+003 N archdeacon
+003 N archdiocese
+002 N archduke
+004 N archenemy
+004 N archeology
+002 N archer
+003 N archery
+003 N archetype
+005 A archidiaconal
+005 A archiepiscopal
+004 N archimandrite
+005 N archipelago
+003 N architect
+005 A architectonic
+004 N architecture
+003 N architrave
+002 N archive
+003 N archivist
+002 N archway
+002 A arctic
+002 A ardent
+002 N ardor
+002 N ardour
+003 A arduous
+001 N are
+002 N area
+003 N arena
+003 N areola
+002 N argent
+002 N argon
+003 N argosy
+002 N argot
+002 V argue
+003 N argument
+005 N argumentation
+005 A argumentative
+002 N argus
+004 N argybargy
+002 N aria
+002 A arid
+002 N aries
+002 D aright
+002 V arise
+005 N aristocracy
+004 N aristocrat
+005 A aristocratic
+005 N aristotelian
+004 N arithmetic
+001 N ark
+001 N arm
+003 N armada
+004 N armadillo
+004 N armageddon
+003 N armament
+003 N armature
+002 N armband
+002 N armchair
+003 N armhole
+003 N armistice
+002 N armlet
+003 A armorial
+002 N armour
+003 N armourer
+003 N armoury
+002 N armpit
+002 N armrest
+003 N armwrestling
+002 N army
+003 N arnica
+003 N aroma
+006 N aromatherapy
+004 A aromatic
+002 D around
+002 V arouse
+003 N arpeggio
+002 N arrack
+002 V arraign
+002 V arrange
+004 N arrangement
+002 A arrant
+002 N arras
+002 N array
+002 V arrest
+003 N arrester
+004 N arrirepense
+002 N arris
+003 N arrival
+002 V arrive
+003 N arriviste
+003 A arrogant
+003 V arrogate
+002 N arrow
+003 N arrowhead
+003 N arrowroot
+001 N arse
+004 N arsehole
+003 N arsenal
+003 N arsenic
+002 N arson
+001 N art
+001 N arte
+003 N artefact
+003 A arterial
+006 N arteriosclerosis
+003 N artery
+002 A artful
+003 N arthritis
+003 N arthropod
+003 N artichoke
+003 N article
+004 A articular
+004 A articulate
+005 N articulation
+003 N artifice
+004 N artificer
+004 A artificial
+004 N artillery
+003 N artisan
+002 N artist
+002 N artiste
+003 A artistic
+002 A artless
+002 N artwork
+002 A arty
+002 N arum
+002 N aryan
+001 N as
+005 N asafetida
+005 N asafoetida
+003 N asbestos
+002 V ascend
+004 N ascendancy
+003 A ascendant
+003 N ascension
+002 N ascent
+003 V ascertain
+003 A ascetic
+002 V ascribe
+003 N asepsis
+003 A asexual
+001 N ash
+002 A ashamed
+002 N ashcan
+002 A ashen
+004 N ashkenazi
+002 N ashlar
+002 D ashore
+002 N ashram
+002 N ashtray
+002 A ashy
+002 N asian
+003 N asiatic
+002 D aside
+003 A asinine
+001 V ask
+002 D askance
+002 D askew
+002 D aslant
+001 N asp
+004 N asparagus
+002 N aspect
+002 N aspen
+004 N asperity
+003 N aspersion
+002 N asphalt
+003 N asphodel
+003 N asphyxia
+003 V asphyxiate
+002 N aspic
+004 N aspidistra
+003 A aspirant
+003 A aspirate
+004 N aspiration
+004 N aspirator
+002 V aspire
+003 N aspirin
+001 N ass
+002 V assail
+003 N assassin
+004 V assassinate
+002 N assault
+002 N assay
+003 N assegai
+003 N assemblage
+003 V assemble
+003 N assembler
+003 N assembly
+002 V assent
+002 V assert
+003 N assertion
+003 A assertive
+002 V assess
+003 N assessor
+002 N asset
+004 N assetstripping
+004 V asseverate
+003 N asshole
+004 A assiduous
+002 V assign
+004 N assignation
+003 N assignee
+003 N assignment
+004 V assimilate
+002 V assist
+003 N assistant
+003 V associate
+004 N association
+003 N assonance
+002 V assort
+002 A assorted
+003 N assortment
+002 V assuage
+002 V assume
+003 A assuming
+003 N assumption
+003 N assurance
+002 V assure
+004 D assuredly
+003 N astatine
+002 N aster
+003 N asterisk
+002 D astern
+003 N asteroid
+002 N asthma
+003 A asthmatic
+004 N astigmatism
+003 V astonish
+002 V astound
+003 D astraddle
+003 N astrakhan
+002 A astral
+002 D astray
+002 D astride
+003 A astringent
+003 N astrolabe
+004 N astrology
+003 N astronaut
+005 A astronomical
+004 N astronomy
+002 A astute
+003 D asunder
+003 N asylum
+004 N asymmetry
+001 P at
+003 N atavism
+003 N ataxia
+003 N atelier
+002 N atheism
+006 N atherosclerosis
+002 N athlete
+003 A athletic
+002 N athome
+003 A atlantic
+002 N atlas
+003 N atmosphere
+002 N atoll
+002 N atom
+003 A atomic
+003 V atomize
+004 N atomizer
+003 A atonal
+002 V atone
+004 N atonement
+002 N atrium
+004 A atrocious
+004 N atrocity
+003 N atrophy
+003 N atropine
+002 N attach
+003 N attachment
+002 V attack
+002 V attain
+003 N attainment
+002 N attar
+002 V attempt
+002 V attend
+003 N attendance
+003 N attendant
+003 N attendee
+003 N attention
+003 A attentive
+003 V attenuate
+002 V attest
+002 N attic
+003 N attitude
+005 V attitudinize
+003 N attorney
+006 N attorneygeneral
+002 V attract
+003 N attraction
+003 A attractive
+003 V attribute
+004 A attributive
+003 N attrition
+002 V attune
+004 A atypical
+003 N aubergine
+003 N aubrietia
+002 A auburn
+002 N auction
+003 N auctioneer
+004 A audacious
+003 A audible
+002 N audience
+003 N audiotape
+004 A audiovisual
+002 N audit
+003 N audition
+003 N auditor
+004 N auditorium
+004 A auditory
+002 A augean
+002 N auger
+001 N aught
+002 V augment
+004 A augmentative
+002 V augur
+003 N augury
+002 A august
+003 A augustan
+001 N auk
+001 N aunt
+002 N auntie
+002 N aura
+002 A aural
+002 A aureate
+003 N aureole
+003 N auricle
+004 N auricula
+004 A auriferous
+002 N aurochs
+003 N aurora
+004 N auscultation
+002 N auspice
+004 A auspicious
+002 A austere
+004 N austerity
+002 A austral
+004 A australasian
+003 N australian
+003 N autarchy
+003 N autarky
+003 A authentic
+004 V authenticate
+002 N author
+005 A authoritarian
+005 A authoritative
+004 N authority
+003 V authorize
+003 N authorship
+002 N autism
+003 N autobahn
+005 N autobiography
+003 N autoclave
+004 N autocracy
+003 N autocrat
+003 N autocross
+003 N autocue
+003 N autodaf
+003 N autograph
+003 A autoimmune
+003 N automat
+003 V automate
+004 A automatic
+004 N automation
+004 N automatism
+004 N automaton
+005 N automobile
+004 A automotive
+004 A autonomous
+004 N autonomy
+004 N autopilot
+003 N autopsy
+003 N autoroute
+004 N autostrada
+005 N autosuggestion
+002 N autumn
+004 A auxiliary
+002 N auxin
+002 V avail
+004 A available
+003 N avalanche
+003 N avantgarde
+003 N avarice
+003 N avatar
+001 N ave
+002 V avenge
+003 N avenue
+002 V aver
+003 N average
+003 N aversion
+002 V avert
+003 N avesta
+003 N aviary
+003 N aviation
+003 N aviator
+002 A avid
+004 N avocado
+003 N avocet
+002 V avoid
+004 N avoirdupois
+002 V avow
+004 A avuncular
+002 V await
+002 V awake
+003 V awaken
+002 V award
+002 D away
+001 N awe
+004 A aweinspiring
+003 A awesome
+002 A awful
+003 D awfully
+003 D awhile
+002 A awkward
+001 N awl
+001 N awn
+002 N awning
+002 D awry
+002 A axial
+002 N axil
+002 N axiom
+002 N axis
+002 N axle
+003 N axolotl
+004 N ayatollah
+001 D aye
+003 N azalea
+003 N azimuth
+002 N aztec
+002 N azure
+001 V baa
+002 V babble
+001 N babe
+002 N babel
+002 N baboon
+002 N baby
+003 N babygro
+003 V babysit
+004 N baccalaureate
+003 N baccarat
+003 N bacchanal
+002 N bacchant
+002 A bacchic
+002 N baccy
+003 N bachelor
+003 N bacillus
+001 N back
+002 N backache
+003 N backbencher
+003 N backbiting
+003 N backboiler
+002 N backbone
+003 A backbreaking
+003 N backburner
+002 N backchat
+002 N backcloth
+002 V backcomb
+002 N backcrawl
+002 V backdate
+002 N backdrop
+002 V backfire
+004 N backformation
+003 N backgammon
+002 N background
+002 A backhanded
+003 N backhander
+002 N backing
+002 N backlash
+002 N backlist
+002 N backlog
+002 N backpack
+002 N backrest
+002 N backside
+002 V backslide
+002 V backspace
+002 N backspin
+002 D backstage
+002 N backstitch
+002 N backstop
+002 N backstreet
+002 N backstroke
+003 A backtoback
+002 V backtrack
+002 N backup
+002 D backward
+002 D backwards
+002 N backwash
+003 N backwater
+002 N backyard
+002 N bacon
+005 N bacteriology
+003 N bacterium
+001 A bad
+002 N baddy
+001 N badge
+002 N badger
+003 N badinage
+002 D badly
+003 N badminton
+002 V badmouth
+003 A badtempered
+002 V baffle
+001 N bag
+004 N bagatelle
+002 N bagel
+002 N baggage
+002 A baggy
+002 N bagpipe
+002 N baguette
+002 N bahai
+001 V bail
+002 N bailey
+002 N bailiff
+003 N bailiwick
+003 N bainmarie
+001 N bairn
+001 N bait
+001 N baize
+001 V bake
+003 N bakelite
+002 N baker
+003 N bakery
+004 N bakingpowder
+004 N bakingsoda
+003 N baklava
+002 N baksheesh
+004 N balaclava
+004 N balalaika
+002 N balance
+003 N balcony
+001 A bald
+003 N balderdash
+002 N baleen
+003 A baleful
+002 A balkan
+001 N ball
+002 N ballad
+003 N balladry
+002 N ballast
+003 N ballbearing
+002 N ballboy
+002 N ballcock
+004 N ballerina
+002 N ballet
+004 N balletdancer
+003 N ballista
+003 A ballistic
+002 N balloon
+002 N ballot
+003 N ballotbox
+004 N ballotpaper
+002 N ballpark
+002 N ballpoint
+002 N ballroom
+002 N ballsup
+002 A bally
+003 N ballyhoo
+001 N balm
+002 A balmy
+002 N balsa
+002 N balsam
+003 N baluster
+003 N balustrade
+002 N bamboo
+003 V bamboozle
+001 V ban
+002 A banal
+003 N banana
+001 N band
+002 N bandage
+003 N bandanna
+002 N bandbox
+003 N bandeau
+004 N banderole
+003 N bandicoot
+002 N bandit
+003 N bandmaster
+002 N bandog
+003 N bandolier
+002 N bandsaw
+002 N bandsman
+002 N bandstand
+003 N bandwagon
+002 N bandwidth
+002 V bandy
+001 N bane
+001 N bang
+002 N banger
+002 N bangle
+002 V banish
+003 N banister
+002 N banjo
+001 N bank
+002 N banknote
+002 A bankrupt
+002 N banksia
+002 N banner
+002 N bannock
+002 N banquet
+002 N banquette
+002 N banshee
+002 N bantam
+003 N bantamweight
+002 N banter
+002 N bantu
+003 N bantustan
+002 N banyan
+002 N baobab
+001 N bap
+002 N baptism
+002 N baptist
+004 N baptistery
+002 V baptize
+001 N bar
+003 N barathea
+001 N barb
+003 N barbarian
+003 A barbaric
+003 N barbarism
+004 N barbarity
+003 A barbarous
+003 N barbecue
+002 N barbel
+002 N barbell
+002 N barber
+003 N barberry
+003 N barbershop
+003 N barbican
+002 N barbie
+004 N barbiturate
+002 N barbour
+004 N barcarole
+001 N bard
+001 A bare
+003 A bareback
+003 A barefaced
+003 A barefoot
+003 A bareheaded
+003 D barely
+002 N bargain
+001 N barge
+003 N bargeboard
+002 N bargee
+004 N bargepole
+003 N baritone
+002 N barium
+001 N bark
+002 N barker
+002 N barley
+001 N barm
+002 N barmaid
+002 N barman
+002 A barmy
+001 N barn
+003 N barnacle
+002 N barney
+002 N barnowl
+002 V barnstorm
+002 N barnyard
+003 N barograph
+004 N barometer
+002 N baron
+003 N baroness
+003 N baronet
+003 N barony
+003 A baroque
+002 N barque
+001 N barr
+002 V barrack
+004 N barracouta
+004 N barracuda
+002 N barrage
+003 N barratry
+001 N barre
+002 N barrel
+004 N barrelorgan
+002 A barren
+003 N barricade
+002 N barrier
+003 N barrister
+002 N barrow
+003 N bartender
+002 V barter
+002 N baryon
+003 N baryta
+002 N barytes
+002 A basal
+002 N basalt
+001 A base
+003 N baseball
+003 A baseless
+003 N baseline
+003 N basement
+001 V bash
+002 A bashful
+002 A basic
+002 N basil
+004 N basilica
+003 N basilisk
+002 N basin
+002 N basis
+001 V bask
+002 N basket
+003 N basketball
+003 N basketry
+003 N basketwork
+002 N basque
+003 N basrelief
+001 N bass
+002 N basset
+003 N bassinet
+002 N basso
+002 N bassoon
+001 N bast
+003 V bastardize
+001 V baste
+004 N bastinado
+002 N bastion
+001 V bat
+001 N batch
+001 A bated
+001 N bath
+001 V bathe
+002 N bathhouse
+004 N bathingcostume
+002 N bathos
+002 N bathrobe
+002 N bathroom
+003 N bathyscaphe
+003 N bathysphere
+002 N batik
+002 N batiste
+002 N batman
+002 N baton
+003 N batrachian
+002 N batsman
+003 N battalion
+002 V batten
+003 N battenberg
+002 N batter
+002 A battered
+004 N batteringram
+003 N battery
+002 N battle
+002 N battleaxe
+003 N battlebus
+004 N battlecruiser
+003 N battlecry
+003 N battledore
+003 N battledress
+003 N battlefield
+003 N battlement
+003 N battleship
+002 A batty
+002 N bauble
+002 N bauxite
+002 A bawdy
+003 N bawdyhouse
+001 V bawl
+001 V bay
+003 N bayberry
+002 N bayleaf
+003 N bayonet
+002 N bazaar
+003 N bazooka
+002 N bdellium
+001 V be
+002 P before
+002 P between
+002 P betwixt
+002 N bevel
+003 N beverage
+002 N bevy
+002 V bewail
+002 V beware
+003 V bewilder
+002 V bewitch
+002 P beyond
+002 N bezel
+003 N bezique
+001 N bhang
+002 A biannual
+001 N bias
+002 N biathlon
+001 N bib
+002 N bibcock
+002 N bible
+004 N biblebashing
+004 N bibliography
+004 N bibliophile
+003 A bibulous
+004 A bicameral
+002 N bicarb
+004 N bicarbonate
+005 N bicentenary
+002 N biceps
+002 V bicker
+003 A bicuspid
+003 N bicycle
+001 V bid
+003 A biddable
+002 N bidding
+002 N biddy
+001 V bide
+002 N bidet
+002 A biennial
+001 N bier
+002 A bifid
+003 A bifocal
+003 V bifurcate
+001 A big
+003 N bigamy
+002 N bighead
+002 A bighearted
+001 N bight
+002 N bigot
+002 N bigwig
+002 N bijou
+003 N bikini
+004 A bilateral
+003 N bilberry
+002 N bile
+001 N bilge
+003 N bilharzia
+003 A biliary
+003 A bilingual
+003 A bilious
+001 V bilk
+001 N bill
+003 N billabong
+002 N billboard
+002 N billet
+003 N billetdoux
+002 N billhook
+002 N billiards
+002 A billion
+003 N billionaire
+002 N billow
+003 N billposter
+002 N billy
+002 N bimbo
+004 A bimetallic
+001 N bin
+003 A binary
+003 A binaural
+001 V bind
+002 N binder
+003 N bindery
+002 N binding
+002 N bindweed
+001 N bine
+002 N bingo
+003 N binliner
+002 N binman
+003 N binnacle
+004 A binocular
+003 N binomial
+001 N bint
+004 N biochemistry
+005 A biodegradable
+005 N bioengineering
+004 N biogenesis
+003 N biography
+004 A biological
+003 N biology
+002 A bionic
+002 N biopsy
+002 N biorhythm
+002 N biosphere
+004 N biosynthesis
+005 N biotechnology
+002 N biotin
+004 A bipartisan
+003 A bipartite
+001 N biped
+002 N biplane
+003 A bipolar
+001 N birch
+001 N bird
+002 N birdbath
+002 N birdbrain
+002 N birdcage
+002 N birdie
+002 N birdlime
+003 N birdnesting
+002 N birdseed
+002 N birdsong
+003 N birdwatcher
+003 N biretta
+002 N biro
+001 N birth
+002 N birthday
+002 N birthmark
+002 N birthplace
+002 N birthright
+002 N birthstone
+002 N biscuit
+002 V bisect
+003 A bisexual
+002 N bishop
+003 N bishopric
+002 N bismuth
+002 N bison
+002 N bisque
+002 N bister
+001 N bistre
+002 N bistro
+001 N bit
+001 N bitch
+002 A bitchy
+001 V bite
+002 A bitter
+002 N bittern
+003 A bittersweet
+002 A bitty
+003 N bitumen
+004 A bituminous
+002 N bivalve
+003 N bivouac
+001 N biz
+002 A bizarre
+001 V blab
+002 N blabber
+001 A black
+002 V blackball
+003 N blackberry
+002 N blackbird
+002 N blackboard
+002 N blackcap
+003 N blackcurrant
+002 V blacken
+002 N blackfly
+002 N blackguard
+002 N blackhead
+002 N blacking
+002 N blackjack
+002 N blacklead
+002 N blackleg
+002 N blacklist
+002 N blackmail
+002 N blackout
+002 N blackshirt
+002 N blacksmith
+002 N blackthorn
+002 N bladder
+003 N bladderwrack
+001 N blade
+001 V blame
+001 V blanch
+002 N blancmange
+001 A bland
+002 V blandish
+001 A blank
+002 N blanket
+001 V blare
+002 N blarney
+001 A blas
+002 V blaspheme
+003 N blasphemy
+001 N blast
+003 N blastfurnace
+002 N blastoff
+002 A blatant
+001 N blaze
+002 N blazer
+002 V blazon
+001 V bleach
+001 A bleak
+002 A bleary
+003 A blearyeyed
+001 V bleat
+001 V bleed
+002 N bleeder
+002 A bleeding
+001 N bleep
+002 N bleeper
+002 N blemish
+001 V blench
+001 V blend
+002 N blender
+002 N blenny
+001 V bless
+001 A blessed
+002 N blessing
+001 N blight
+002 N blighter
+002 N blighty
+001 N blimp
+001 A blind
+002 V blindfold
+002 N blindworm
+001 V blink
+002 N blinker
+002 A blinking
+001 N blip
+001 N bliss
+002 N blister
+001 A blithe
+002 N blitzkrieg
+002 N blizzard
+001 V bloat
+002 N bloater
+001 N blob
+001 N bloc
+001 N block
+002 N blockade
+002 N blockage
+003 N blockbuster
+002 N blockhead
+002 N blockhouse
+001 N bloke
+001 N blood
+003 A bloodcurdling
+002 N bloodheat
+002 N bloodhound
+002 A bloodless
+003 N bloodletting
+003 N bloodmoney
+004 N bloodpoisoning
+001 N bloodshed
+002 A bloodshot
+002 N bloodstain
+002 N bloodstream
+003 N bloodsucker
+003 A bloodthirsty
+003 N bloodvessel
+002 A bloody
+003 A bloodyminded
+001 N bloom
+002 N bloomer
+002 A blooming
+002 N blossom
+001 N blot
+001 N blotch
+002 N blotter
+004 N blottingpaper
+002 A blotto
+001 N blouse
+002 N blouson
+001 N blow
+002 V blowdry
+002 N blower
+002 N blowfly
+003 N blowhole
+002 N blowjob
+002 N blowlamp
+002 N blowout
+002 N blowpipe
+002 N blowtorch
+002 N blowup
+002 A blowy
+002 A blowzy
+001 V blub
+002 N blubber
+002 N bludgeon
+001 A blue
+002 N bluebell
+003 N blueberry
+003 N bluebottle
+002 N bluegrass
+003 V bluepencil
+002 N blueprint
+003 N bluestocking
+001 A bluff
+001 A bluish
+002 N blunder
+003 N blunderbuss
+001 A blunt
+001 V blur
+001 N blurb
+001 V blurt
+001 V blush
+002 N blusher
+002 V bluster
+001 N bmx
+001 N boa
+001 N boar
+001 N board
+002 N boarder
+002 N boardgame
+003 N boardinghouse
+003 N boardingschool
+002 N boardroom
+001 V boast
+002 A boastful
+001 N boat
+002 N boater
+002 N boathook
+002 N boathouse
+002 N boating
+002 N boatman
+002 N boatswain
+002 N boattrain
+001 N bob
+002 N bobbin
+002 N bobble
+002 N bobby
+001 N bobsled
+002 N bobsleigh
+002 N bobtail
+001 N boche
+001 N bod
+001 V bode
+003 N bodega
+002 N bodice
+003 A bodily
+002 N bodkin
+002 N body
+003 N bodyblow
+004 N bodybuilding
+003 N bodyguard
+003 N bodysuit
+003 N bodywork
+001 N boer
+002 N boffin
+001 N bog
+002 N bogey
+003 N bogeyman
+002 V boggle
+002 N bogie
+002 A bogus
+003 N bohemian
+001 N boil
+002 N boiler
+003 N boilerroom
+002 A boiling
+003 A boisterous
+001 A bold
+002 N bole
+003 N bolero
+001 N boll
+002 N bollard
+003 N bollocking
+002 N bollocks
+003 N boloney
+003 N bolshevik
+002 N bolster
+001 V bolt
+003 N bolthole
+001 N bomb
+002 V bombard
+003 N bombardier
+002 N bombast
+003 N bombazine
+002 N bomber
+002 N bombshell
+002 N bombsite
+003 N bonanza
+002 N bonbon
+001 N bond
+002 N bondage
+001 A bonded
+002 N bondsman
+001 N bone
+003 A bonedry
+003 A boneidle
+004 N bonemarrow
+003 N bonemeal
+004 N boneshaker
+002 N bonfire
+002 N bongo
+003 N bonhomie
+001 V bonk
+002 N bonnet
+002 A bonny
+002 N bonsai
+002 N bonus
+002 A bony
+001 N boob
+002 N booby
+002 N boodle
+002 V boogie
+004 N boogiewoogie
+001 N book
+003 N bookbinder
+002 N bookcase
+002 N bookend
+002 N bookie
+002 N booking
+003 N bookinghall
+002 A bookish
+003 N bookkeeper
+002 N booklet
+003 N bookmaker
+002 N bookmark
+002 N bookplate
+003 N bookseller
+002 N bookshop
+002 N bookstall
+002 N bookworm
+002 A boolean
+001 N boom
+003 N boomerang
+001 A boon
+001 N boor
+002 N booster
+001 N boot
+002 N bootblack
+002 N bootee
+001 N booth
+002 A bootleg
+003 N bootlicker
+001 N boots
+002 N bootstrap
+002 N booty
+002 N boozer
+002 N boozeup
+003 A boracic
+002 N borage
+002 N borax
+003 N bordeaux
+002 N border
+003 N borderer
+003 N borderland
+003 N borderline
+001 N bore
+003 N boredom
+001 A born
+002 N boron
+002 N borough
+002 V borrow
+002 N borstal
+001 N bortsch
+002 N borzoi
+001 N bosh
+002 N bosom
+001 N boss
+002 A bosseyed
+002 A bossy
+003 N botany
+001 A both
+002 V bother
+004 N botheration
+003 A bothersome
+002 N bottle
+003 V bottlefeed
+003 N bottleneck
+002 N bottom
+003 A bottomless
+003 N botulism
+001 N boucl
+002 N boudoir
+002 A bouffant
+005 N bougainvillaea
+001 N bough
+003 N bouillon
+002 N boulder
+002 N boule
+003 N boulevard
+001 V bounce
+002 N bouncer
+002 A bouncing
+001 A bound
+003 N boundary
+002 N bounder
+002 A boundless
+003 A bounteous
+003 A bountiful
+002 N bounty
+002 N bouquet
+002 N bourbon
+004 N bourgeoisie
+001 N bourn
+001 N bourse
+001 N bout
+003 N boutique
+003 N bouzouki
+002 A bovine
+001 N bow
+003 V bowdlerize
+002 N bowel
+002 N bower
+003 N bowerbird
+002 N bowie
+001 N bowl
+002 N bowler
+002 N bowline
+002 N bowling
+004 N bowlingalley
+003 N bowlinggreen
+002 N bowman
+002 N bowsprit
+002 N bowstring
+002 N bowtie
+003 N bowwindow
+001 N box
+002 N boxer
+002 N boxing
+002 N boxroom
+002 N boxwood
+002 A boxy
+001 N boy
+002 V boycott
+002 N boyfriend
+002 N boyo
+001 N bra
+001 N brace
+003 N bracelet
+004 N brachiosaurus
+002 N bracken
+002 N bracket
+002 A brackish
+001 N bract
+001 N brad
+002 N bradawl
+001 N brae
+001 V brag
+002 N braggart
+002 N brahma
+002 N brahman
+001 N braid
+002 N braille
+001 N brain
+002 N brainchild
+002 A brainless
+003 N brainpower
+002 N brainstorm
+002 V brainwash
+002 N brainwave
+002 A brainy
+001 V braise
+001 N brake
+002 N bramble
+002 N brambling
+001 N bran
+001 N branch
+001 N brand
+002 V brandish
+002 A brandnew
+002 N brandy
+003 N brandysnap
+002 N brantub
+001 A brash
+001 N brass
+003 N brasserie
+003 N brassica
+002 N brassire
+003 N brassrubbing
+002 A brassy
+001 N brat
+003 N bravado
+001 A brave
+003 N bravura
+001 N brawl
+001 N brawn
+001 N bray
+001 V braze
+002 A brazen
+002 N brazier
+002 N brazil
+001 N breach
+001 N bread
+002 N breadboard
+002 N breadcrumb
+002 N breadfruit
+002 N breadline
+001 N breadth
+003 N breadwinner
+001 V break
+003 A breakable
+002 N breakage
+003 N breakaway
+003 N breakdancing
+002 N breakdown
+002 N breaker
+002 N breakfast
+002 N breakin
+003 N breakingpoint
+002 N breakout
+002 N breakthrough
+002 N breakup
+003 N breakwater
+001 N bream
+001 N breast
+002 N breastbone
+002 V breastfeed
+002 N breastplate
+002 N breaststroke
+002 N breastwork
+001 N breath
+004 N breathalyser
+001 V breathe
+002 N breather
+003 N breathingspace
+002 A breathless
+003 A breathtaking
+001 N breech
+001 V breed
+002 N breeding
+001 N breeze
+003 N breezeblock
+002 A breezy
+001 N bren
+001 N brent
+002 N breton
+001 N breve
+003 N breviary
+003 N brevity
+001 V brew
+003 N brewery
+002 N brewup
+001 V bribe
+002 N bricbrac
+001 N brick
+002 N brickbat
+002 N brickie
+003 N bricklayer
+002 N brickwork
+002 N brickyard
+002 A bridal
+001 N bride
+003 N bridegroom
+003 N bridesmaid
+001 N bridge
+003 N bridgehead
+003 N bridgework
+002 N bridle
+003 N bridlepath
+001 N brie
+001 A brief
+002 N briefcase
+001 N brier
+001 N brig
+002 N brigade
+003 N brigadier
+002 N brigand
+003 N brigantine
+001 A bright
+002 V brighten
+001 A brill
+002 A brilliant
+003 N brilliantine
+001 N brim
+002 A brimfull
+002 N brimstone
+001 A brindled
+001 N brine
+001 V bring
+001 N brink
+003 N brinkmanship
+002 A briny
+002 N briquette
+001 A brisk
+002 N brisket
+002 N brisling
+002 N bristle
+001 N brit
+003 N britannia
+003 A britannic
+003 N briticism
+002 A british
+002 N briton
+002 A brittle
+001 V broach
+001 A broad
+002 V broadcast
+002 N broadcloth
+002 V broaden
+002 A broadleaved
+002 A broadloom
+002 A broadminded
+002 N broadsheet
+002 N broadside
+002 N broadsword
+002 N brocade
+003 N broccoli
+002 N brochure
+002 N brogue
+001 V broil
+002 N broiler
+003 A brokendown
+003 A brokenhearted
+002 N broker
+003 N brokerage
+002 N brolly
+002 N bromide
+002 N bromine
+002 A bronchial
+003 N bronchitis
+002 N bronchus
+002 N bronco
+004 N brontosaurus
+001 N bronze
+001 N brooch
+001 N brood
+002 A broody
+001 V brook
+001 N broom
+002 N broomstick
+001 N broth
+002 N brothel
+002 N brother
+003 N brotherhood
+004 N brotherinlaw
+003 N brouhaha
+001 N brow
+002 V browbeat
+001 A brown
+002 N brownie
+002 N browning
+001 V browse
+004 N brucellosis
+001 N bruise
+002 N bruiser
+001 V bruit
+001 N brunch
+002 N brunette
+001 N brunt
+001 N brush
+002 N brushoff
+002 N brushup
+002 N brushwood
+002 N brushwork
+002 A brusque
+002 A brutal
+003 V brutalize
+001 N brute
+002 N bryony
+002 N bubble
+002 A bubbly
+002 N bubo
+003 N buccaneer
+001 N buck
+002 N bucket
+003 N bucketshop
+002 N buckle
+002 N buckler
+002 N buckram
+002 A buckshee
+002 N buckshot
+002 N buckskin
+002 N buckthorn
+002 N bucktooth
+002 N buckwheat
+003 A bucolic
+001 N bud
+002 N buddha
+002 N buddhism
+003 N buddleia
+002 N buddy
+001 V budge
+004 N budgerigar
+002 N budget
+002 N budgie
+001 A buff
+003 N buffalo
+002 N buffer
+002 V buffet
+002 N buffoon
+001 N bug
+002 N bugbear
+003 N buggery
+002 N buggy
+002 N bugle
+002 N bugloss
+001 V build
+002 N builder
+002 N building
+002 N buildup
+002 A builtin
+002 A builtup
+001 N bulb
+002 A bulbous
+001 N bulge
+003 N bulimia
+001 N bulk
+002 N bulkhead
+002 A bulky
+001 N bull
+002 N bulldog
+002 V bulldoze
+003 N bulldozer
+002 N bullet
+003 N bulletin
+003 A bulletproof
+002 N bullfight
+002 N bullfinch
+002 N bullfrog
+002 N bullheaded
+002 N bullion
+002 N bullock
+002 N bullring
+003 N bullseye
+003 N bullterrier
+002 N bully
+002 N bulrush
+002 N bulwark
+001 N bum
+002 N bumbag
+002 V bumble
+003 N bumblebee
+001 N bumf
+001 N bump
+002 N bumper
+002 N bumpkin
+003 A bumptious
+001 N bun
+001 N bunch
+002 N bundle
+001 N bung
+003 N bungalow
+002 N bungee
+002 V bungle
+002 N bunion
+001 N bunk
+001 N bunkbed
+002 N bunker
+002 N bunkum
+002 N bunny
+002 N bunting
+002 N buoy
+002 A buoyant
+001 N bur
+002 V burble
+002 N burbot
+002 N burden
+002 N burdock
+003 N bureau
+005 N bureaucracy
+004 N bureaucrat
+002 N buret
+002 N burette
+002 V burgeon
+002 N burger
+002 N burgher
+002 N burglar
+003 N burglary
+002 V burgle
+004 N burgomaster
+003 N burgundy
+002 N burial
+002 N burin
+003 N burlesque
+002 A burly
+001 N burn
+002 N burner
+002 A burning
+003 N burningglass
+002 V burnish
+002 N burnous
+002 N burnout
+001 N burr
+002 N burrow
+002 N bursar
+003 N bursary
+001 V burst
+002 N burton
+002 V bury
+001 N bus
+002 N busby
+001 N bush
+003 N bushbaby
+001 A bushed
+002 N bushel
+002 N bushfire
+002 N bushman
+002 A bushy
+003 N business
+004 A businesslike
+004 N businessman
+001 V busk
+002 N busman
+002 N busstop
+001 V bust
+002 N bustard
+002 N buster
+002 N bustier
+002 N bustle
+002 N bustup
+002 A busy
+004 N busybody
+002 N butane
+001 A butch
+002 N butcher
+003 N butchery
+002 N butler
+001 N butt
+002 N butter
+003 N butterbean
+003 N buttercream
+003 N buttercup
+003 N butterfat
+004 N butterfingers
+003 N butterfly
+004 N buttericing
+003 N buttermilk
+003 N butterscotch
+003 A buttery
+002 N buttock
+002 N button
+004 N buttonhole
+002 N buttress
+002 N butty
+002 N butyl
+002 A buxom
+001 V buy
+002 N buyer
+002 N buyout
+001 N buzz
+002 N buzzard
+002 N buzzer
+002 N buzzword
+001 P by
+003 N byelection
+002 A bygone
+002 N bylaw
+002 N byline
+002 N bypass
+002 N byplay
+003 N byproduct
+001 N byre
+002 N byroad
+004 N byssinosis
+003 N bystander
+001 N byte
+002 N byway
+002 N byword
+003 A byzantine
+001 V c
+001 N cab
+002 N cabal
+003 N cabaret
+002 N cabbage
+002 N cabby
+002 N caber
+002 N cabin
+003 N cabinboy
+003 N cabinet
+005 N cabinetmaker
+002 N cable
+003 N cablecar
+003 N cablegram
+002 N cabman
+003 N caboodle
+002 N caboose
+003 N cabriole
+003 N cabriolet
+002 N cacao
+001 N cache
+002 N cachet
+002 N cachou
+002 A cackhanded
+002 N cackle
+004 N cacophony
+002 N cactus
+001 N cad
+003 N cadaver
+004 A cadaverous
+003 N caddisfly
+003 N caddisworm
+002 N cadence
+003 N cadenza
+002 N cadet
+001 V cadge
+002 N cadi
+002 N cadmium
+001 N cadre
+002 N caecum
+003 N caerphilly
+002 N caesar
+003 N caesura
+001 N caf
+004 N cafeteria
+002 N caffeine
+002 N caftan
+001 N cage
+002 A cagey
+003 N cagoule
+001 N cain
+001 N cairn
+002 N cairngorm
+002 N caisson
+003 V cajole
+001 N cake
+003 N cakewalk
+003 N calabash
+003 N calabrese
+003 N calamine
+004 N calamity
+004 A calcareous
+004 N calceolaria
+004 N calciferol
+004 A calciferous
+003 V calcify
+002 V calcine
+002 N calcite
+002 N calcium
+003 V calculate
+003 A calculated
+004 A calculating
+004 N calculation
+004 N calculator
+003 N calculus
+003 N calendar
+003 N calender
+004 N calendula
+001 N calf
+002 N calflove
+002 N calfskin
+003 N caliber
+003 V calibrate
+002 N calibre
+003 N calico
+004 N californium
+002 N caliph
+001 V call
+002 N callbox
+002 N caller
+002 N callgirl
+004 N calligraphy
+002 N calling
+003 N calliper
+004 N callosity
+002 A callous
+002 A callow
+002 N callup
+002 N callus
+001 A calm
+003 N calomel
+003 A caloric
+003 N calorie
+004 A calorific
+005 N calorimeter
+003 V calumniate
+003 N calumny
+003 N calvados
+001 V calve
+003 N calvinism
+001 N calx
+003 N calypso
+002 N calyx
+001 N cam
+005 N camaraderie
+002 N camber
+002 A cambrian
+002 N cambric
+003 N camcorder
+002 N camel
+003 N camelhair
+003 N camellia
+003 N camembert
+002 N cameo
+003 N camera
+004 N cameraman
+004 N camisole
+004 N camomile
+003 N camouflage
+002 N campaign
+004 N campanile
+005 N campanology
+004 N campanula
+001 N campbed
+002 N camper
+004 N campfollower
+002 N camphor
+003 V camphorate
+002 N campion
+002 N campsite
+002 N campus
+002 N camshaft
+001 N can
+003 N canaille
+002 N canal
+003 V canalize
+002 N canap
+002 N canard
+003 N canary
+003 N canasta
+002 N cancan
+002 V cancel
+002 N cancer
+003 N candela
+004 N candelabrum
+002 A candid
+003 N candida
+003 N candidate
+002 N candle
+003 N candlelight
+003 N candlemas
+004 N candlepower
+003 N candlestick
+003 N candlewick
+002 N candor
+002 N candour
+002 N candy
+003 N candyfloss
+003 N candystripe
+003 N candytuft
+001 N cane
+002 A canine
+003 N canister
+002 N canker
+002 N canna
+003 N cannabis
+001 A canned
+003 N cannery
+003 N cannibal
+004 V cannibalize
+002 N cannon
+003 N cannonade
+003 N cannonball
+004 N cannonfodder
+002 A canny
+002 N canoe
+002 N canon
+004 A canonical
+003 N canonist
+003 V canonize
+003 V canoodle
+003 N canopy
+004 A cantabrigian
+003 N cantaloup
+004 A cantankerous
+003 N cantata
+002 N canteen
+002 N canter
+003 N canticle
+004 N cantilever
+002 N canto
+002 N canton
+003 N cantonment
+002 N cantor
+002 N canvas
+002 V canvass
+002 N canyon
+001 N cap
+005 N capability
+003 A capable
+004 A capacious
+004 N capacitance
+004 N capacitor
+004 N capacity
+001 N cape
+002 N caper
+004 N capercaillie
+005 N capillarity
+003 N capital
+004 N capitalism
+004 N capitalist
+004 V capitalize
+004 N capitation
+004 A capitular
+004 V capitulate
+002 N capo
+002 N capon
+004 N cappuccino
+002 N caprice
+004 A capricious
+003 N capricorn
+003 N capriole
+003 N capsicum
+002 V capsize
+002 N capstan
+003 N capsule
+003 V capsulize
+002 N captain
+002 N caption
+003 A captious
+003 V captivate
+002 N captive
+002 N captor
+002 V capture
+003 N capuchin
+004 N capybara
+001 N car
+002 N carafe
+003 N caramel
+003 N carapace
+002 N carat
+003 N caravan
+005 N caravanserai
+003 N caravel
+003 N caraway
+001 N carb
+002 N carbide
+002 N carbine
+004 N carbohydrate
+003 N carbolic
+002 N carbon
+005 A carbonaceous
+003 N carbonate
+003 A carbonic
+005 A carboniferous
+003 V carbonize
+004 N carborundum
+002 N carboy
+003 N carbuncle
+004 N carburettor
+002 N carcass
+004 N carcinogen
+004 N carcinoma
+001 N card
+003 N cardamom
+002 N cardboard
+003 A cardcarrying
+002 N cardgame
+002 A cardiac
+003 N cardigan
+003 A cardinal
+003 N cardiogram
+003 N cardiograph
+004 N cardiology
+005 A cardiovascular
+002 N cardoon
+002 N cardphone
+002 N cardsharp
+003 N cardtable
+001 N care
+002 V careen
+002 N career
+003 N careerist
+003 A carefree
+003 A careful
+003 A careless
+002 N carer
+002 V caress
+002 N caret
+004 N caretaker
+003 A careworn
+002 N cargo
+002 N carib
+003 A caribbean
+003 N caribou
+004 N caricature
+002 N caries
+003 N carillon
+002 A caring
+003 N carioca
+003 N carmelite
+004 A carminative
+002 A carmine
+002 N carnage
+002 A carnal
+003 N carnation
+002 N carnet
+003 N carnival
+003 N carnivore
+004 A carnivorous
+002 N carob
+002 N carol
+004 A carolingian
+003 N carotene
+003 N carotid
+002 V carouse
+003 N carousel
+001 V carp
+002 A carpal
+002 N carpel
+003 N carpenter
+002 N carpet
+003 N carpetbag
+004 N carpetbagger
+003 N carpeting
+004 N carpetsweeper
+002 N carport
+002 N carpus
+003 N carrageen
+002 N carrel
+002 N carriage
+004 N carriageway
+002 N carrier
+002 N carrion
+002 N carrot
+002 V carry
+002 A carsick
+001 N cart
+002 N cartel
+003 A cartesian
+002 N carthorse
+003 N carthusian
+003 N cartilage
+004 N cartography
+002 N carton
+002 N cartoon
+002 N cartouche
+002 N cartridge
+004 N cartridgebelt
+002 N cartwheel
+002 N cartwright
+001 V carve
+003 A carvelbuilt
+002 N carver
+003 N carvery
+002 N carveup
+002 N carving
+004 N casanova
+002 N cascade
+003 N cascara
+001 N case
+004 V caseharden
+002 N casein
+003 N caselaw
+003 N casemate
+003 N casement
+003 N casework
+001 N cash
+002 N cashbook
+002 N cashcard
+002 N cashew
+002 V cashier
+002 N cashmere
+002 N cashpoint
+002 N casing
+003 N casino
+001 N cask
+002 N casket
+003 N cassata
+003 N cassava
+004 N casserole
+002 N cassette
+002 N cassia
+002 N cassis
+002 N cassock
+003 N cassoulet
+004 N cassowary
+001 V cast
+003 N castanet
+003 N castaway
+001 N caste
+002 N casteism
+003 A castellated
+003 V castigate
+002 N casting
+003 A castiron
+002 N castle
+002 A castoff
+002 N castor
+002 V castrate
+003 N castrato
+002 A casual
+003 N casualty
+002 N casuist
+001 N cat
+004 N catabolism
+004 N catachresis
+003 N cataclysm
+003 N catacomb
+004 N catafalque
+003 N catalan
+004 N catalepsy
+003 N catalpa
+003 V catalyse
+004 N catalysis
+003 N catalyst
+004 A catalytic
+003 V catalyze
+004 N catamaran
+003 N catamite
+003 N catapult
+003 N cataract
+002 N catarrh
+003 N catastrophe
+004 N catatonia
+002 N catcall
+001 N catch
+002 N catchall
+004 N catchascatchcan
+002 A catching
+002 N catchline
+002 N catchment
+002 N catchphrase
+002 N catchword
+002 A catchy
+003 N catechism
+003 N catechist
+003 V catechize
+004 N catechumen
+005 A categorical
+004 V categorize
+004 N category
+002 V cater
+003 N caterer
+004 N caterpillar
+003 V caterwaul
+002 N catfish
+002 N catgut
+003 N catharsis
+003 A cathartic
+003 N cathedral
+003 N catheter
+002 N cathode
+003 A catholic
+002 N cation
+002 N catkin
+002 N catlick
+002 N catmint
+002 N catnap
+002 N catnip
+005 N catoninetails
+003 N catseye
+002 N catspaw
+002 N catsuit
+003 N cattery
+003 N cattlegrid
+002 A catty
+002 N catwalk
+003 A caucasian
+003 A caucasoid
+002 N caucus
+002 A caudal
+002 A caudate
+001 N caul
+002 N cauldron
+004 N cauliflower
+001 V caulk
+002 A causal
+004 N causality
+003 N causation
+003 A causative
+001 N cause
+003 N causerie
+003 N causeway
+002 A caustic
+003 V cauterize
+002 N caution
+004 A cautionary
+003 A cautious
+003 N cavalcade
+003 N cavalier
+003 N cavalry
+001 N cave
+002 N caveat
+003 N caveman
+002 N cavern
+002 N caviar
+002 N caviare
+002 V cavil
+003 N cavity
+002 V cavort
+002 N cavy
+001 N caw
+002 N cayenne
+002 N cayman
+002 N cdvideo
+003 N ceasefire
+003 A ceaseless
+002 N cecum
+002 N cedar
+001 V cede
+003 N cedilla
+002 N ceefax
+002 N ceilidh
+002 N ceiling
+003 N celandine
+003 N celebrant
+003 V celebrate
+004 N celebrity
+003 N celeriac
+004 N celerity
+003 N celery
+003 N celesta
+003 A celestial
+003 A celibate
+001 N cell
+002 N cellar
+002 N cello
+003 N cellophane
+002 N cellphone
+003 A cellular
+003 N cellulite
+003 N celluloid
+003 N cellulose
+002 A celsius
+001 N celt
+002 A celtic
+002 N cement
+004 N cemetery
+003 N cenobite
+003 N cenotaph
+002 N censer
+002 N censor
+004 A censorious
+002 V censure
+002 N census
+001 N cent
+002 N centaur
+004 N centenarian
+004 N centenary
+003 A centennial
+003 N centerboard
+003 N centerfold
+004 A centesimal
+003 A centigrade
+003 N centigram
+004 N centiliter
+003 N centilitre
+002 N centime
+004 N centimeter
+003 N centimetre
+003 N centipede
+002 A central
+003 N centralism
+003 V centralize
+003 N centreboard
+003 N centrefold
+003 N centrepiece
+002 A centric
+004 A centrifugal
+003 N centrifuge
+004 A centripetal
+002 N centrist
+003 N centurion
+003 N century
+003 A cephalic
+004 N cephalopod
+003 A ceramic
+002 N cereal
+004 N cerebellum
+003 A cerebral
+004 N cerebration
+005 A cerebrospinal
+003 N cerebrum
+004 A ceremonial
+005 A ceremonious
+004 N ceremony
+002 N cerise
+002 N cerium
+002 A certain
+003 D certainly
+003 N certainty
+004 A certifiable
+004 N certificate
+003 V certify
+003 N certitude
+003 A cerulean
+003 A cervical
+002 N cervix
+002 N cesium
+003 N cessation
+002 N cession
+002 N cesspit
+003 N cetacean
+002 N cetane
+002 N chablis
+002 N chacha
+002 N chaconne
+001 V chafe
+001 N chaff
+002 N chaffinch
+003 N chafingdish
+002 N chagrin
+001 N chain
+002 N chaingang
+002 N chainmail
+002 N chainsaw
+002 V chainsmoke
+001 N chair
+002 N chairlift
+002 N chairman
+003 N chairperson
+001 N chaise
+004 N chalcedony
+002 N chalet
+002 N chalice
+001 N chalk
+002 N challenge
+003 A chalybeate
+002 N chamber
+003 N chamberlain
+003 N chambermaid
+003 N chamberpot
+003 N chameleon
+002 V chamfer
+002 N chamois
+001 N champ
+002 N champagne
+002 N champers
+002 N champion
+003 N championship
+001 N chance
+002 N chancel
+004 N chancellery
+003 N chancellor
+003 N chancery
+002 A chancy
+003 N chandelier
+002 N chandler
+001 N change
+003 A changeable
+003 N changeling
+003 N changeover
+002 N channel
+001 N chant
+002 N chanter
+003 N chanticleer
+002 N chantry
+001 N chaos
+001 V chap
+003 N chaparral
+003 N chapatti
+002 N chapel
+003 N chaperon
+002 N chaplain
+002 N chaplet
+002 N chapman
+002 N chappie
+002 N chapter
+001 N char
+003 N charabanc
+003 N character
+005 A characteristic
+004 V characterize
+002 N charade
+002 N charcoal
+001 V charge
+004 N chargecapping
+002 N charger
+002 N chariot
+003 N charioteer
+003 N charisma
+004 A charitable
+003 N charity
+003 N charlady
+003 N charlatan
+003 N charleston
+002 N charlotte
+001 N charm
+002 A charming
+003 N charnelhouse
+001 N chart
+002 N charter
+002 N chartism
+002 N chartreuse
+003 N charwoman
+002 A chary
+001 V chase
+002 N chaser
+001 N chasm
+002 N chassis
+001 A chaste
+002 V chasten
+002 V chastise
+003 N chastity
+003 N chasuble
+001 V chat
+003 N chatelaine
+002 N chatline
+002 N chattel
+002 V chatter
+003 N chatterbox
+002 A chatty
+002 N chauffeur
+003 N chauvinism
+003 N chauvinist
+001 A cheap
+002 V cheapen
+002 N cheapjack
+002 N cheapskate
+001 V cheat
+001 V check
+001 A checked
+002 N checker
+002 N checkin
+002 N checkmate
+002 N checkout
+002 N checkpoint
+002 N checkup
+002 N cheddar
+001 N cheek
+002 N cheekbone
+002 A cheeky
+001 N cheep
+001 N cheer
+002 A cheerful
+003 N cheerleader
+002 A cheerless
+002 A cheery
+001 N cheese
+004 N cheeseburger
+003 N cheesecake
+003 N cheesecloth
+001 A cheesed
+004 A cheeseparing
+002 N cheetah
+001 N chef
+003 A chemical
+002 N chemise
+002 N chemist
+003 N chemistry
+005 N chemotherapy
+003 N chenille
+002 N cheque
+003 N chequebook
+002 N chequer
+002 V cherish
+002 N cheroot
+002 N cherry
+002 N cherub
+002 N chervil
+002 N cheshire
+001 N chess
+002 N chessboard
+002 N chessman
+001 N chest
+003 N chesterfield
+002 N chestnut
+002 A chesty
+003 N chevalglass
+003 N chevalier
+002 N chevron
+001 V chew
+003 N chewinggum
+002 A chewy
+001 N chi
+002 N chianti
+004 N chiaroscuro
+001 A chic
+002 N chicane
+004 N chicanery
+001 N chick
+002 N chicken
+003 N chickenfeed
+003 N chickenpox
+003 N chickenwire
+002 N chickpea
+002 N chickweed
+002 N chicle
+003 N chicory
+001 V chide
+001 N chief
+002 D chiefly
+002 N chieftain
+002 N chiffchaff
+002 N chiffon
+002 N chignon
+003 N chihuahua
+002 N chilblain
+001 N child
+002 N childbirth
+002 N childhood
+002 A childish
+002 A childlike
+003 N childminder
+001 N chill
+002 N chilli
+002 A chilly
+001 N chime
+003 N chimera
+002 N chimney
+003 N chimneybreast
+003 N chimneypot
+003 N chimneystack
+003 N chimneysweep
+001 N chimp
+003 N chimpanzee
+001 N chin
+002 N china
+003 N chinaman
+003 N chinchilla
+001 N chine
+002 A chinese
+001 V chink
+002 A chinless
+004 N chinoiserie
+001 N chintz
+002 A chintzy
+001 N chip
+002 N chipboard
+002 N chipmunk
+004 N chipolata
+004 A chippendale
+004 N chiromancy
+004 N chiropody
+004 N chiropractic
+001 V chirp
+002 A chirpy
+002 V chirrup
+002 N chisel
+001 N chit
+002 N chitchat
+003 A chivalrous
+003 N chivalry
+001 N chive
+002 V chivvy
+002 N chloral
+002 N chloride
+003 V chlorinate
+002 N chlorine
+003 N chloroform
+003 N chlorophyll
+001 N choc
+001 N chock
+003 N chocolate
+001 N choice
+001 N choir
+002 N choirboy
+001 V choke
+002 N choker
+006 N cholecalciferol
+002 N choler
+003 N cholera
+003 A choleric
+004 N cholesterol
+001 V chomp
+001 V choose
+002 A choosy
+001 V chop
+002 N chopper
+002 A choppy
+002 N chopstick
+003 N chopsuey
+002 A choral
+003 N chorale
+001 N chord
+002 N chordate
+001 N chore
+003 V choreograph
+004 N choreography
+003 N chorister
+002 N chortle
+002 N chorus
+001 N chough
+001 N chow
+001 N christ
+002 V christen
+003 N christendom
+002 A christian
+004 N christianity
+002 N christmas
+003 N christmasbox
+003 A chromatic
+003 N chromatin
+005 N chromatography
+001 N chrome
+002 N chromite
+002 N chromium
+003 N chromosome
+002 A chronic
+003 N chronicle
+005 A chronological
+004 N chronology
+004 N chronometer
+003 N chrysalis
+004 N chrysanthemum
+004 N chrysoberyl
+003 N chrysolite
+003 N chrysoprase
+002 N chteau
+001 N chub
+001 N chubb
+002 A chubby
+001 N chuck
+002 V chuckle
+001 V chuff
+001 A chuffed
+001 V chug
+002 N chukker
+001 N chum
+001 N chump
+001 N chunk
+002 A chunky
+002 V chunter
+001 N church
+002 N churchgoer
+002 N churchman
+003 N churchwarden
+002 N churchyard
+001 N churl
+002 A churlish
+001 N churn
+001 N chute
+002 N chutney
+002 N chutzpah
+002 N chyle
+001 N chyme
+003 N cicada
+003 N cicatrice
+003 N cicely
+003 N cicerone
+002 N cider
+002 N cigar
+003 N cigarette
+002 N cilium
+001 N cinch
+003 N cinchona
+002 N cincture
+002 N cinder
+004 N cinderella
+003 N cinema
+006 N cinematography
+004 N cineraria
+003 N cinnabar
+003 N cinnamon
+002 N cinque
+003 N cinquefoil
+003 A circadian
+002 N circle
+002 N circlet
+002 N circuit
+004 N circuitbreaker
+003 A circuitous
+003 N circuitry
+003 A circular
+004 V circularize
+003 V circulate
+004 N circulation
+005 A circulatory
+003 V circumcise
+004 N circumference
+003 N circumflex
+005 N circumlocution
+005 V circumnavigate
+003 V circumscribe
+003 A circumspect
+003 N circumstance
+004 A circumstantial
+003 V circumvent
+002 N circus
+003 N cirrhosis
+002 N cirrus
+003 A cisalpine
+003 N cistercian
+002 N cistern
+002 N cistus
+003 N citadel
+003 N citation
+001 V cite
+003 N citizen
+002 N citrate
+002 A citric
+002 N citron
+004 N citronella
+002 N citrus
+002 N city
+003 N citystate
+002 N civet
+002 A civic
+002 A civil
+003 N civilian
+004 N civility
+005 N civilization
+003 V civilize
+001 V clack
+001 A clad
+002 N cladding
+001 V claim
+002 N claimant
+001 N clair
+003 N clairvoyance
+001 N clam
+002 V clamber
+002 A clammy
+001 N clamp
+002 N clampdown
+001 N clan
+003 A clandestine
+001 N clang
+002 N clanger
+002 N clangor
+002 N clangour
+001 N clank
+002 A clannish
+002 N clansman
+001 N clap
+002 N clapper
+003 N clapperboard
+002 N claptrap
+002 N claque
+002 N claret
+003 V clarify
+003 N clarinet
+002 N clarion
+003 N clarity
+001 N clash
+001 N clasp
+002 N claspknife
+001 N class
+004 A classconscious
+002 A classic
+003 A classical
+003 N classicism
+003 V classify
+002 N classmate
+002 N classroom
+002 A classy
+001 N clat
+002 N clatter
+001 N clause
+004 N claustrophobia
+003 N clavichord
+003 N clavicle
+001 N claw
+003 N clawhammer
+001 N clay
+002 N claymore
+001 A clean
+002 A cleancut
+002 N cleaner
+002 A cleanly
+001 V cleanse
+003 A cleanshaven
+002 N cleanup
+001 A clear
+002 N clearance
+002 A clearcut
+002 A clearheaded
+002 N clearing
+003 N clearinghouse
+002 N clearout
+002 A clearsighted
+002 N clearup
+002 N clearway
+001 N cleat
+002 N cleavage
+001 V cleave
+002 N cleaver
+001 N clef
+001 N cleft
+003 N clematis
+002 A clement
+003 N clementine
+001 V clench
+004 N clerestory
+002 N clergy
+003 N clergyman
+002 N cleric
+003 A clerical
+003 N clerihew
+001 N clerk
+002 A clever
+001 N clich
+001 N click
+001 N client
+003 N clientele
+001 N cliff
+003 N cliffhanger
+004 N climacteric
+002 N climate
+002 N climax
+001 V climb
+002 N climbdown
+003 N climbingframe
+001 N clime
+001 V clinch
+002 N clincher
+001 V cling
+002 N clinic
+003 A clinical
+001 N clink
+002 N clinker
+003 A clinkerbuilt
+001 V clip
+002 N clipboard
+002 N clipjoint
+002 A clipon
+002 N clipper
+002 N clipping
+002 N clique
+003 N clitoris
+001 N cloak
+004 A cloakanddagger
+002 N cloakroom
+002 N clobber
+001 N cloche
+001 N clock
+002 A clockwise
+002 N clockwork
+001 N clod
+002 A cloddish
+003 N clodhopper
+001 N clog
+002 N cloister
+001 N clone
+001 N clonk
+001 V close
+004 A closedcircuit
+003 A closeknit
+002 N closet
+002 N closeup
+002 N closure
+001 N clot
+001 N cloth
+001 V clothe
+003 N clotheshorse
+003 N clothesline
+003 N clothespeg
+002 N clothier
+002 N clothing
+001 N cloud
+002 N cloudburst
+004 N cloudcuckooland
+002 A cloudy
+001 N clout
+001 N clove
+002 A cloven
+002 N clover
+001 N clown
+001 V cloy
+001 N club
+003 A clubbable
+002 N clubfoot
+002 N clubhouse
+002 N clubland
+002 N clubroot
+001 N cluck
+001 N clue
+002 A clueless
+001 N clump
+002 A clumsy
+001 N clunk
+002 N cluster
+001 N clutch
+002 N clutter
+001 N coach
+002 N coachload
+002 N coachman
+002 N coachwork
+003 V coagulate
+001 N coal
+002 V coalesce
+002 N coalface
+002 N coalfield
+003 N coalition
+002 N coalman
+002 N coalmine
+003 N coalscuttle
+002 N coaltit
+002 N coaming
+001 A coarse
+002 V coarsen
+001 N coast
+002 N coaster
+002 N coastguard
+002 N coastline
+001 N coat
+002 N coating
+002 N coattail
+001 V coax
+002 A coaxial
+001 N cob
+002 N cobalt
+002 N cobber
+002 V cobble
+002 N cobbler
+002 N cobol
+002 N cobra
+002 N cobweb
+002 N coca
+002 N cocaine
+002 N coccyx
+003 N cochineal
+001 N cock
+002 N cockade
+005 N cockadoodledoo
+003 A cockahoop
+004 N cockaleekie
+003 N cockatoo
+003 N cockchafer
+002 N cocker
+003 N cockerel
+002 A cockeyed
+002 N cockfight
+002 N cockle
+002 N cockney
+002 N cockpit
+002 N cockroach
+002 N cockscomb
+002 A cocksure
+002 N cocktail
+002 N cockup
+002 A cocky
+002 N coco
+002 N cocoa
+003 N coconut
+002 N cocoon
+002 N cocotte
+001 N cod
+002 N coda
+002 V coddle
+001 N code
+002 N codeine
+005 N codependency
+002 N coder
+002 N codex
+002 N codfish
+002 N codger
+003 N codicil
+003 V codify
+002 N codling
+002 N codpiece
+003 N codswallop
+004 N coeducation
+003 N coefficient
+003 N coelacanth
+004 N coelenterate
+003 N coenobite
+002 A coequal
+001 V coerce
+002 V coexist
+003 A coextensive
+002 N coffee
+003 N coffeemill
+004 N coffeetable
+002 N coffer
+003 N cofferdam
+002 N coffin
+001 N cog
+002 A cogent
+003 V cogitate
+002 N cognac
+002 A cognate
+003 N cognition
+003 N cognizance
+003 A cognizant
+003 N cognomen
+003 N cognoscente
+002 N cogwheel
+003 V cohabit
+002 V cohere
+003 A coherent
+003 N cohesion
+002 N cohort
+001 N coif
+001 V coiff
+002 N coiffeur
+002 N coiffure
+001 V coil
+001 N coin
+002 N coinage
+002 N coinbox
+002 V coincide
+003 N coincidence
+004 A coincidental
+001 N coir
+002 N coition
+002 N coitus
+001 N coke
+001 N col
+002 N cola
+003 N colander
+001 A cold
+002 A coldblooded
+002 A coldhearted
+002 N cole
+004 N coleopteron
+003 N coleslaw
+002 N coleus
+002 N coley
+002 N colic
+003 N colitis
+004 V collaborate
+002 N collage
+003 N collagen
+002 N collapse
+002 N collar
+003 N collarbone
+002 V collate
+004 N collateral
+003 N collation
+003 N colleague
+002 N collect
+003 N collection
+003 A collective
+004 N collectivism
+004 V collectivize
+003 N collector
+002 N colleen
+002 N college
+003 A collegiate
+002 V collide
+002 N collie
+002 N collier
+003 N colliery
+003 N collision
+003 V collocate
+002 N colloid
+004 A colloquial
+005 N colloquialism
+004 N colloquium
+003 N colloquy
+002 V collude
+002 N cologne
+002 N colon
+003 N colonel
+003 A colonial
+004 N colonialism
+003 N colonist
+003 V colonize
+003 N colonnade
+003 N colony
+003 N colophon
+004 N coloration
+005 N coloratura
+003 A colorful
+003 N coloring
+003 A colorless
+003 A colossal
+003 N colossus
+004 N colostomy
+003 A colourblind
+003 A colourful
+003 N colouring
+003 A colourless
+004 N coloursergeant
+004 N colposcopy
+001 N colt
+002 N colter
+002 N coltsfoot
+003 N columbine
+002 N column
+003 N columnist
+002 N coma
+003 A comatose
+001 N comb
+002 N combat
+003 N combatant
+003 A combative
+004 N combination
+002 V combine
+002 N combo
+004 A combustible
+003 N combustion
+001 V come
+003 N comeback
+003 N comecon
+003 N comedian
+003 N comedienne
+003 N comedown
+003 N comedy
+003 A comely
+002 N comeon
+002 N comer
+002 N comet
+003 N comeuppance
+002 N comfit
+002 N comfort
+004 A comfortable
+003 N comforter
+003 A comfortless
+002 N comfrey
+002 A comfy
+002 A comic
+003 N comity
+002 N comma
+002 V command
+003 N commandant
+003 V commandeer
+003 N commander
+005 N commanderinchief
+003 A commanding
+003 N commandment
+003 N commando
+004 V commemorate
+002 V commence
+004 N commencement
+002 V commend
+004 A commendable
+005 A commensurable
+004 A commensurate
+002 N comment
+004 N commentary
+003 V commentate
+004 N commentator
+002 N commerce
+003 A commercial
+004 N commercialism
+004 V commercialize
+002 N commie
+004 N commination
+003 V commingle
+003 V comminute
+004 V commiserate
+003 N commissar
+004 N commissariat
+004 N commissary
+003 N commission
+005 N commissionagent
+004 N commissionaire
+004 N commissioner
+002 V commit
+003 N commitment
+003 N committal
+003 N committee
+002 N commode
+004 A commodious
+004 N commodity
+003 N commodore
+002 A common
+005 N commonality
+004 N commonalty
+003 N commoner
+003 D commonly
+003 A commonplace
+003 N commonroom
+005 A commonsensical
+003 N commonwealth
+003 N commotion
+003 A communal
+002 V commune
+005 A communicable
+004 N communicant
+004 V communicate
+005 N communication
+005 A communicative
+003 N communion
+004 N communiqu
+003 N communism
+003 N communist
+004 N community
+002 V commute
+003 N commuter
+002 N compact
+003 N companion
+005 A companionable
+004 N companionship
+004 N companionway
+003 N company
+004 A comparable
+004 A comparative
+002 V compare
+004 N comparison
+003 N compartment
+004 A compartmental
+005 V compartmentalize
+002 N compass
+003 N compassion
+004 A compassionate
+004 A compatible
+003 N compatriot
+002 V compel
+004 A compendious
+003 N compendium
+003 V compensate
+004 N compensation
+002 V compete
+003 N competence
+003 A competent
+004 N competition
+004 A competitive
+004 N competitor
+003 V compile
+003 N compiler
+003 A complacent
+002 V complain
+003 N complainant
+002 N complaint
+003 A complaisant
+003 N complement
+005 A complementary
+002 A complete
+002 N complex
+003 N complexion
+002 N compliance
+002 A compliant
+003 V complicate
+004 N complication
+004 N complicity
+003 N compliment
+005 A complimentary
+002 N compline
+002 V comply
+003 N component
+002 V compose
+003 N composer
+003 A composite
+004 N composition
+004 N compositor
+002 N compost
+003 N composure
+002 N compote
+002 N compound
+001 N compre
+003 V comprehend
+005 A comprehensible
+004 N comprehension
+004 A comprehensive
+002 V compress
+003 N compression
+003 N compressor
+002 V comprise
+003 N compromise
+003 N comptroller
+003 N compulsion
+003 A compulsive
+004 A compulsory
+003 N compunction
+002 V compute
+003 N computer
+004 V computerize
+006 A computerliterate
+002 N comrade
+001 V con
+005 N concatenation
+002 A concave
+002 V conceal
+002 V concede
+002 N conceit
+002 A conceited
+004 A conceivable
+002 V conceive
+003 V concentrate
+004 N concentration
+003 A concentric
+002 N concept
+003 N conception
+003 A conceptual
+004 V conceptualize
+002 V concern
+002 A concerned
+002 N concert
+002 A concerted
+004 N concertina
+003 N concerto
+003 N concession
+003 A concessive
+001 N conch
+004 N conchology
+002 N concierge
+003 V conciliate
+002 A concise
+002 N conclave
+002 V conclude
+003 N conclusion
+003 A conclusive
+002 V concoct
+004 A concomitant
+002 N concord
+003 N concordance
+003 N concordat
+002 N concourse
+002 A concrete
+003 N concretion
+003 N concubine
+004 N concupiscence
+002 V concur
+003 A concurrent
+002 V concuss
+003 N concussion
+002 V condemn
+004 N condensation
+002 V condense
+003 N condenser
+003 V condescend
+002 A condign
+003 N condiment
+003 N condition
+004 A conditional
+004 N conditioner
+003 V condole
+003 N condolence
+002 N condom
+004 N condominium
+002 V condone
+002 N condor
+002 V conduce
+003 A conducive
+002 N conduct
+003 N conductance
+003 N conduction
+003 A conductive
+003 N conductor
+002 N conduit
+001 N cone
+004 V confabulate
+003 N confection
+004 N confectioner
+005 N confectionery
+005 N confederacy
+004 A confederate
+005 N confederation
+002 V confer
+003 N conference
+003 N conferment
+002 V confess
+004 D confessedly
+003 N confession
+004 N confessional
+003 N confessor
+003 N confetti
+003 N confidant
+002 V confide
+003 N confidence
+003 A confident
+004 A confidential
+005 N configuration
+002 V confine
+004 N confinement
+002 V confirm
+004 N confirmation
+002 A confirmed
+003 V confiscate
+004 N conflagration
+002 V conflate
+002 N conflict
+002 N confluence
+002 A confluent
+002 V conform
+004 A conformable
+004 N conformation
+003 N conformist
+004 N conformity
+002 V confound
+002 V confront
+003 A confucian
+002 V confuse
+003 N confusion
+002 V confute
+002 N conga
+002 V congeal
+003 A congenial
+004 A congenital
+002 N conger
+003 N congeries
+002 V congest
+003 N congestion
+004 A conglomerate
+004 V congratulate
+005 N congratulation
+003 V congregate
+004 N congregation
+005 A congregational
+006 N congregationalism
+002 N congress
+003 N congressman
+002 A congruent
+003 A congruous
+002 A conic
+003 A conical
+003 N conifer
+004 A conjectural
+003 N conjecture
+002 V conjoin
+002 A conjoint
+003 A conjugal
+003 V conjugate
+004 N conjugation
+002 A conjunct
+003 N conjunction
+004 N conjunctiva
+003 A conjunctive
+005 N conjunctivitis
+002 V conjure
+003 N conjuror
+001 V conk
+002 N conker
+001 V conn
+002 V connect
+004 N connectingrod
+003 N connection
+003 A connective
+003 N connector
+002 V connive
+003 N connoisseur
+002 V connote
+003 A connubial
+002 V conquer
+002 N conquest
+005 A consanguineous
+002 N conscience
+005 A consciencestricken
+004 A conscientious
+003 A conscious
+002 V conscript
+003 V consecrate
+004 A consecutive
+003 N consensus
+002 V consent
+003 N consequence
+003 A consequent
+004 A consequential
+004 D consequently
+004 N conservancy
+004 N conservation
+005 N conservationist
+004 A conservative
+004 N conservatoire
+005 N conservatory
+002 V conserve
+003 V consider
+005 A considerable
+004 A considerate
+005 N consideration
+002 V consign
+003 N consignment
+002 V consist
+004 N consistency
+003 A consistent
+004 N consistory
+004 N consolation
+003 N console
+004 V consolidate
+002 N consomm
+003 N consonance
+003 N consonant
+002 N consort
+003 N consortium
+004 A conspicuous
+004 N conspiracy
+004 N conspirator
+002 V conspire
+003 N constable
+005 N constabulary
+003 N constancy
+002 A constant
+004 N constellation
+004 N consternation
+003 V constipate
+004 N constipation
+004 N constituency
+003 A constituent
+003 V constitute
+004 N constitution
+005 A constitutional
+004 A constitutive
+002 V constrain
+002 N constraint
+002 V constrict
+003 N constrictor
+002 V construct
+003 N construction
+003 A constructive
+002 V construe
+004 A consubstantial
+005 N consubstantiation
+002 N consul
+003 N consulate
+002 V consult
+004 N consultancy
+003 N consultant
+004 N consultation
+002 V consume
+003 N consumer
+004 N consumerism
+003 V consummate
+003 N consumption
+002 N contact
+003 N contagion
+004 A contagious
+002 V contain
+003 N container
+004 V containerize
+003 N containment
+004 V contaminate
+003 V contemplate
+004 A contemplative
+006 A contemporaneous
+005 A contemporary
+002 N contempt
+004 A contemptible
+004 A contemptuous
+002 V contend
+002 N content
+002 A contented
+003 N contention
+004 A contentious
+003 N contentment
+002 N contest
+003 N contestant
+002 N context
+004 A contiguous
+003 A continent
+004 A continental
+004 N contingency
+003 A contingent
+003 A continual
+003 N continuance
+004 N continuation
+003 V continue
+004 N continuity
+003 N continuo
+004 A continuous
+003 N continuum
+002 V contort
+004 N contortionist
+002 N contour
+003 N contraband
+004 N contraception
+004 A contraceptive
+002 N contract
+004 A contractable
+004 A contractible
+004 A contractile
+003 N contraction
+003 N contractor
+003 A contractual
+003 V contradict
+005 N contradistinction
+003 N contraflow
+003 N contralto
+003 N contraption
+004 A contrapuntal
+004 D contrariwise
+003 A contrary
+002 N contrast
+003 V contravene
+003 N contretemps
+003 V contribute
+004 N contribution
+005 A contributory
+002 A contrite
+003 N contrivance
+002 V contrive
+002 A contrived
+002 N control
+003 N controller
+004 A controversial
+004 N controversy
+003 V controvert
+005 A contumacious
+004 N contumely
+002 V contuse
+003 N conundrum
+004 N conurbation
+003 V convalesce
+004 A convalescent
+003 N convection
+003 N convector
+002 V convene
+003 N convener
+003 N convenience
+003 A convenient
+002 N convent
+004 N conventicle
+003 N convention
+004 A conventional
+002 V converge
+003 A conversant
+004 N conversation
+005 A conversational
+006 N conversationalist
+002 A converse
+003 N conversion
+002 V convert
+004 A convertible
+002 A convex
+002 V convey
+003 N conveyance
+003 N conveyor
+002 V convict
+003 N conviction
+002 V convince
+003 A convivial
+004 N convocation
+002 V convoke
+003 A convoluted
+004 N convolution
+004 N convolvulus
+002 N convoy
+002 V convulse
+003 N convulsion
+002 N cony
+001 N coo
+002 N cooee
+001 V cook
+002 N cookbook
+002 N cooker
+003 N cookery
+002 N cookie
+001 A cool
+002 N coolant
+002 N coolbag
+002 N cooler
+002 N coolie
+001 N coomb
+001 N coon
+001 N coop
+002 N cooper
+003 V cooperate
+001 V coopt
+001 N coot
+002 N copal
+003 N copartner
+001 N cope
+002 N copeck
+002 N copier
+003 N copilot
+002 N coping
+003 N copingstone
+003 A copious
+002 N copout
+002 N copper
+004 A copperbottomed
+003 N copperhead
+003 N copperplate
+002 N coppice
+002 N copra
+001 N copse
+001 N copt
+002 N coptic
+003 N copula
+003 V copulate
+002 N copy
+003 N copybook
+003 N copycat
+002 N copyist
+003 N copyright
+004 N copytypist
+004 N copywriter
+002 N coquette
+003 N coracle
+002 N coral
+003 N coralline
+002 N corbel
+001 N cord
+002 A cordial
+002 N cordite
+002 A cordless
+002 N cordon
+003 N corduroy
+001 N core
+004 N corespondent
+002 N corgi
+003 N coriander
+003 A corinthian
+001 N cork
+002 N corkage
+001 A corked
+002 N corker
+002 N corkscrew
+001 N corm
+003 N cormorant
+001 N corn
+002 N corncob
+002 N corncrake
+002 N cornea
+001 A corned
+003 N cornelian
+002 N corner
+003 N cornerstone
+002 N cornet
+002 N cornflake
+002 N cornflour
+003 N cornflower
+002 N cornice
+002 A cornish
+004 N cornucopia
+002 A corny
+003 N corolla
+004 N corollary
+003 N corona
+004 A coronary
+004 N coronation
+003 N coroner
+003 N coronet
+003 A corporal
+003 A corporate
+004 N corporation
+004 A corporative
+003 A corporeal
+001 N corps
+001 N corpse
+003 A corpulent
+002 N corpus
+003 N corpuscle
+002 N corral
+002 A correct
+003 N correction
+004 N correctitude
+003 A corrective
+003 V correlate
+004 A correlative
+003 V correspond
+004 N correspondence
+004 N correspondent
+003 N corridor
+004 N corrigendum
+004 A corrigible
+004 V corroborate
+002 V corrode
+003 N corrosion
+003 V corrugate
+002 A corrupt
+002 N corsage
+002 N corsair
+003 N corselette
+002 N corset
+002 N cortex
+001 N cortge
+003 N cortisone
+003 N corundum
+003 V coruscate
+002 N corvette
+002 N corymb
+003 N cosecant
+005 N cosignatory
+002 N cosine
+003 A cosmetic
+002 A cosmic
+004 N cosmogony
+004 N cosmology
+003 N cosmonaut
+005 A cosmopolitan
+002 N cosmos
+002 N cossack
+002 V cosset
+001 V cost
+002 A costal
+004 A costeffective
+004 N costermonger
+002 N costing
+002 A costive
+002 A costly
+002 N costume
+003 N costumier
+001 N cot
+003 N cotangent
+002 N cotdeath
+001 N cote
+003 N coterie
+004 N cotoneaster
+002 N cottage
+003 N cottager
+002 N cotter
+002 N cotton
+004 N cotyledon
+001 N couch
+002 N couchette
+002 N cougar
+001 V cough
+002 N coulomb
+002 N coulter
+002 N council
+003 N councillor
+002 N counsel
+003 N counsellor
+003 N counselor
+001 N count
+003 A countable
+002 N countdown
+003 N countenance
+003 V counteract
+004 N counterattack
+004 N counterbalance
+004 D counterclockwise
+005 N counterespionage
+003 A counterfeit
+003 N counterfoil
+006 N counterintelligence
+003 V countermand
+004 N countermeasure
+003 N countermove
+003 N counterpane
+003 N counterpart
+003 N counterpoint
+003 N counterpoise
+005 A counterproductive
+006 N counterrevolution
+003 V countersign
+003 V countersink
+004 N countertenor
+003 V countervail
+003 N counterweight
+002 N countess
+002 A countless
+003 A countrified
+002 N country
+004 N countryandwestern
+003 N countryman
+003 N countryside
+003 A countrywide
+002 N county
+001 N coup
+001 N coupe
+002 N couple
+002 N couplet
+002 N coupling
+002 N coupon
+002 N courage
+004 A courageous
+002 N courgette
+002 N courier
+001 N course
+002 N courser
+001 N court
+002 N courtcard
+003 A courteous
+003 N courtesan
+003 N courtesy
+002 N courthouse
+002 N courtier
+002 A courtly
+002 N courtroom
+002 N courtship
+002 N courtyard
+002 N couscous
+002 N cousin
+002 N couture
+003 N couturier
+001 N cove
+002 N coven
+003 N covenant
+003 N coventry
+002 V cover
+003 N coverage
+003 N coverall
+003 N coverlet
+003 N coverpoint
+002 A covert
+003 N coverup
+002 V covet
+003 A covetous
+002 N covey
+001 V cow
+002 N coward
+003 N cowardice
+003 A cowardly
+002 N cowbell
+002 N cowboy
+002 V cower
+002 N cowherd
+002 N cowhide
+001 N cowl
+002 N cowlick
+002 N cowling
+003 N coworker
+003 N cowparsley
+002 N cowpat
+002 N cowpox
+002 N cowrie
+002 V cowrite
+002 N cowslip
+001 N cox
+002 N coxcomb
+002 N coxswain
+001 A coy
+002 N coyote
+002 N coypu
+002 V cozen
+001 V crab
+001 A crabbed
+002 A crabby
+002 D crabwise
+001 N crack
+002 A crackbrained
+002 N crackdown
+002 N cracker
+002 V crackle
+002 N crackling
+002 N cracknel
+002 N crackup
+002 N cradle
+004 N cradlesnatcher
+003 N cradlesong
+001 N craft
+002 N craftsman
+002 A crafty
+001 N crag
+002 A craggy
+001 N crake
+001 V cram
+002 N crammer
+001 N cramp
+001 A cramped
+002 N crampon
+002 N crampoon
+003 N cranberry
+001 N crane
+003 N cranefly
+003 N cranesbill
+002 N cranium
+001 N crank
+002 N crankcase
+002 N crankpin
+002 N crankshaft
+002 A cranky
+002 N cranny
+001 N crape
+003 A crapulent
+001 N crash
+002 V crashdive
+003 N crashhelmet
+002 A crashing
+002 V crashland
+001 A crass
+001 N crate
+002 N crater
+002 N cravat
+001 V crave
+002 A craven
+002 N craving
+001 N craw
+002 N crawfish
+001 V crawl
+002 N crayfish
+002 N crayon
+001 V craze
+002 A crazy
+000 N crche
+001 N creak
+002 A creaky
+001 N cream
+002 N creamer
+003 N creamery
+002 A creamy
+001 N crease
+001 V create
+002 N creation
+002 A creative
+002 N creator
+002 N creature
+002 N credence
+003 N credential
+005 N credibility
+003 A credible
+002 N credit
+004 A creditable
+003 N creditor
+004 A creditworthy
+002 N credo
+003 A credulous
+001 N creed
+001 N creek
+001 N creel
+001 V creep
+002 N creeper
+002 A creepy
+004 N creepycrawly
+002 V cremate
+004 N crematorium
+003 V crenelate
+003 V crenellate
+002 N creole
+002 N creosote
+004 A crepuscular
+003 N crescendo
+002 N crescent
+001 N cress
+001 N crest
+003 A crestfallen
+004 A cretaceous
+002 N cretin
+002 N cretonne
+002 N crevasse
+002 N crevice
+001 N crew
+002 N crewel
+003 N crewelwork
+001 N crib
+002 N cribbage
+001 N crick
+002 N cricket
+001 N crier
+001 N crime
+003 N criminal
+005 N criminology
+001 V crimp
+002 N crimplene
+002 A crimson
+001 V cringe
+002 N crinkle
+003 A crinklecut
+003 N crinoline
+002 N cripple
+002 N crisis
+001 A crisp
+002 N crispbread
+002 A crispy
+002 N crisscross
+003 N criterion
+002 N critic
+003 A critical
+003 N criticism
+003 V criticize
+003 N critique
+000 N crme
+001 N croak
+002 A croaky
+002 N crochet
+001 N crock
+003 N crockery
+004 N crocodile
+002 N crocus
+002 N croesus
+001 N croft
+002 N crofter
+002 N croissant
+002 N cromlech
+001 N crone
+002 N crony
+001 N crook
+001 A crooked
+001 V croon
+001 N crop
+002 A cropeared
+002 N cropper
+002 N croquet
+002 N croquette
+002 N crosier
+001 N cross
+002 N crossbar
+002 N crossbench
+002 N crossbill
+002 N crossbow
+002 N crossbreed
+002 V crosscheck
+003 A crosscountry
+002 A crosscut
+003 N crossdressing
+001 N crosse
+004 V crossexamine
+002 A crosseyed
+004 V crossfertilize
+002 N crossfire
+002 N crossgrain
+002 A crossgrained
+002 V crosshatch
+002 N crossing
+002 A crosslegged
+003 N crossover
+002 N crosspatch
+002 N crosspiece
+002 A crossply
+003 V crossquestion
+003 V crossrefer
+004 N crossreference
+002 N crossroad
+003 N crosssection
+002 N crossstitch
+002 N crosstalk
+002 D crossways
+002 N crosswind
+002 A crosswise
+002 N crossword
+001 N crotch
+002 N crotchet
+003 A crotchety
+002 N croton
+001 V crouch
+001 N croup
+002 N croupier
+001 V crow
+002 N crowbar
+001 N crowd
+001 N crown
+002 N crowsfoot
+002 N crowsnest
+000 N crpe
+001 N cru
+002 A crucial
+003 N crucible
+004 A cruciferous
+003 N crucifix
+004 N crucifixion
+003 A cruciform
+003 V crucify
+001 N crud
+001 A crude
+001 A cruel
+001 N cruet
+001 V cruise
+002 N cruiser
+003 N cruiserweight
+001 N crumb
+002 V crumble
+002 A crumbly
+002 A crumby
+002 A crummy
+002 N crumpet
+002 V crumple
+001 V crunch
+002 A crunchy
+002 N crupper
+002 N crusade
+001 N cruse
+001 V crush
+001 N crust
+003 N crustacean
+002 A crusty
+001 N crutch
+001 N crux
+003 N cruzado
+003 N cruzeiro
+001 V cry
+003 N crybaby
+003 N cryogenics
+001 N crypt
+002 A cryptic
+003 N cryptogam
+003 N cryptogram
+004 N cryptography
+002 N crystal
+004 N crystalgazing
+003 A crystalline
+003 V crystallize
+005 N crystallography
+003 N crystalloid
+001 N cub
+004 N cubbyhole
+001 N cube
+002 A cubic
+003 A cubical
+003 N cubicle
+002 N cubism
+002 N cubit
+002 A cuboid
+002 N cuckold
+002 N cuckoo
+003 N cuckoopint
+003 N cuckoospit
+003 N cucumber
+001 N cud
+002 V cuddle
+002 A cuddly
+002 N cudgel
+001 N cue
+002 N cueball
+001 V cuff
+002 N cufflink
+002 N cuirass
+002 N cuisine
+003 N culdesac
+004 A culinary
+001 V cull
+003 V culminate
+003 A culpable
+002 N culprit
+001 N cult
+003 N cultivar
+003 V cultivate
+004 N cultivator
+003 A cultural
+002 N culture
+002 A cultured
+002 N culvert
+003 A cumbersome
+002 N cumin
+003 N cummerbund
+004 A cumulative
+003 N cumulus
+003 A cuneiform
+004 N cunnilingus
+002 A cunning
+001 N cunt
+001 N cup
+002 N cupboard
+002 N cupful
+002 N cupid
+004 N cupidity
+003 N cupola
+002 N cuppa
+003 A cupreous
+002 A cupric
+004 N cupronickel
+002 N cuptie
+001 N cur
+003 N curaao
+003 A curable
+003 N curacy
+002 N curare
+002 N curate
+003 A curative
+003 N curator
+001 N curb
+001 N curd
+002 V curdle
+001 V cure
+002 N cureall
+002 N curette
+002 N curfew
+002 N curia
+002 N curie
+002 N curio
+004 N curiosity
+003 A curious
+002 N curium
+001 V curl
+002 N curler
+002 N curlew
+003 N curlicue
+002 N curling
+002 A curly
+003 N curmudgeon
+002 N currant
+003 N currency
+002 A current
+003 D currently
+004 N curriculum
+002 V curry
+003 N currycomb
+004 N currypowder
+001 N curse
+002 A cursive
+002 N cursor
+003 A cursory
+001 A curt
+002 V curtail
+002 N curtain
+003 N curtaincall
+004 N curtainraiser
+003 N curtilage
+004 A curvaceous
+003 N curvature
+001 N curve
+002 N curvet
+004 A curvilinear
+002 A curvy
+002 N cushion
+002 A cushy
+001 N cusp
+001 A cussed
+002 N custard
+003 N custodian
+003 N custody
+002 N custom
+004 A customary
+003 A custombuilt
+003 N customer
+003 N customhouse
+003 V customize
+001 V cut
+004 A cutaneous
+002 N cutback
+001 A cute
+003 N cuticle
+002 N cutis
+002 N cutlass
+002 N cutler
+003 N cutlery
+002 N cutlet
+002 N cutoff
+002 N cutout
+002 A cutprice
+002 N cutter
+002 N cutthroat
+002 N cutting
+003 N cuttlefish
+003 N cutwater
+001 N cuve
+001 N cwm
+002 N cyanide
+003 N cyanogen
+003 N cyanosis
+003 N cyberpunk
+002 N cycad
+003 N cyclamate
+003 N cyclamen
+002 N cycle
+003 N cycletrack
+002 A cyclic
+002 N cyclist
+002 N cyclone
+003 N cyclotron
+002 N cygnet
+003 N cylinder
+002 N cymbal
+001 N cyme
+002 A cymric
+002 N cynic
+003 N cynosure
+002 N cypress
+003 A cyrillic
+001 N cyst
+002 A cystic
+003 N cystitis
+004 N cytology
+003 N cytoplasm
+001 N czech
+001 V d
+001 N dab
+002 V dabble
+002 N dabchick
+001 N dace
+002 N dacha
+002 N dachshund
+002 N dactyl
+001 N dad
+002 N dada
+002 N daddy
+004 N daddylonglegs
+002 N dado
+001 N daff
+003 N daffodil
+001 A daft
+002 N dagger
+002 N dago
+004 N daguerreotype
+002 N dahlia
+002 A daily
+002 A dainty
+003 N daiquiri
+002 N dairy
+002 N dairying
+003 N dairymaid
+003 N dairyman
+001 N dais
+002 N daisy
+002 N dale
+002 V dally
+003 N dalmatian
+001 N dam
+002 N damage
+003 V damascene
+002 N damask
+001 N dame
+003 N dameschool
+001 V damn
+003 A damnable
+003 N damnation
+001 A damp
+002 V dampen
+002 N damper
+002 N damsel
+003 N damselfly
+002 N damson
+001 N dan
+001 V dance
+003 N dancehall
+003 N dandelion
+002 N dander
+003 V dandify
+002 V dandle
+002 N dandruff
+002 N dandy
+003 N dandybrush
+001 N dane
+003 A dangerous
+002 V dangle
+002 A danish
+001 A dank
+001 N daphne
+002 A dapper
+002 V dapple
+003 A dapplegrey
+001 V dare
+004 N daredevil
+002 N daring
+003 N dariole
+001 A dark
+002 V darken
+002 N darkroom
+002 N darky
+002 N darling
+001 V darn
+001 A darned
+002 N darnel
+002 N darner
+002 N darning
+001 N dart
+002 N dartboard
+003 A darwinian
+001 V dash
+002 N dashboard
+002 A dashing
+003 A dastardly
+003 N database
+003 A datable
+001 N date
+003 N dateline
+003 N datestamp
+001 V daub
+002 N daughter
+004 N daughterinlaw
+001 V daunt
+002 A dauntless
+002 N dauphin
+003 N davenport
+002 N davit
+002 N davy
+001 N daw
+002 V dawdle
+001 N dawn
+001 N day
+001 N daybed
+002 N dayboy
+002 N daybreak
+002 N daydream
+002 N daylight
+002 N dayroom
+002 N dayschool
+002 N daytime
+003 A daytoday
+002 N daytrip
+001 V daze
+002 V dazzle
+002 N deacon
+003 V deactivate
+001 A dead
+002 N deadbeat
+002 V deaden
+002 N deadhead
+002 N deadline
+002 N deadlock
+002 A deadly
+002 A deadpan
+002 V deafen
+001 N deal
+002 N dealer
+003 N deanery
+001 A dear
+002 N dearie
+001 N dearth
+001 N death
+001 N deathbed
+002 N deathblow
+002 A deathly
+002 N deathmask
+003 N deathrattle
+002 N deathtrap
+003 N deathwarrant
+002 N deathwatch
+002 N deathwish
+001 N deb
+003 N debacle
+002 V debark
+002 V debase
+004 A debatable
+002 V debate
+002 V debauch
+003 N debauchee
+004 N debauchery
+003 N debenture
+004 V debilitate
+004 N debility
+002 N debit
+003 A debonair
+002 V debouch
+002 V debrief
+002 N debris
+001 N debt
+002 N debtor
+002 V debug
+002 V debunk
+002 N debut
+003 N debutante
+002 N decade
+003 N decadence
+004 A decaffeinated
+003 N decagon
+004 N decahedron
+004 N decaliter
+003 N decalitre
+004 N decalogue
+004 N decameter
+003 N decametre
+002 V decamp
+003 A decanal
+002 V decant
+003 N decanter
+004 V decapitate
+003 N decapod
+004 V decarbonize
+003 N decathlon
+002 V decay
+002 N deceit
+003 A deceitful
+002 V deceive
+004 V decelerate
+003 N december
+003 N decency
+003 A decennial
+002 A decent
+004 V decentralize
+003 N deception
+003 A deceptive
+003 N decibel
+002 V decide
+002 A decided
+004 D decidedly
+003 N decider
+004 A deciduous
+003 N decigram
+004 N deciliter
+003 N decilitre
+003 A decimal
+004 V decimalize
+003 V decimate
+004 N decimeter
+003 N decimetre
+003 V decipher
+003 N decision
+003 A decisive
+001 N deck
+002 N deckchair
+002 N deckhand
+002 V declaim
+004 N declaration
+002 V declare
+004 V declassify
+003 N declension
+004 N declination
+002 V decline
+004 N declivity
+002 V declutch
+003 N decoction
+002 V decode
+003 V decompose
+003 V decompress
+004 N decompression
+004 N decongestant
+005 V decontaminate
+003 V decorate
+004 N decoration
+004 A decorative
+004 N decorator
+003 A decorous
+003 N decorum
+002 N decoy
+002 V decrease
+002 N decree
+003 A decrepit
+004 D decrescendo
+003 N decretal
+005 V decriminalize
+002 V decry
+003 V dedicate
+004 N dedication
+002 V deduce
+002 V deduct
+004 A deductible
+003 N deduction
+003 A deductive
+001 N dee
+001 N deed
+002 N deedbox
+001 V deem
+002 N deemster
+001 A deep
+002 V deepen
+002 N deepfreeze
+002 V deepfry
+002 A deeplaid
+002 A deeprooted
+001 N deer
+002 N deerskin
+003 N deerstalker
+003 V deescalate
+001 A def
+002 V deface
+003 V defalcate
+004 N defalcation
+002 V defame
+002 N default
+002 V defeat
+003 N defeatism
+003 V defecate
+002 N defect
+003 A defective
+002 N defence
+002 V defend
+003 N defendant
+002 N defense
+004 A defensible
+003 A defensive
+002 V defer
+003 N deference
+004 A deferential
+002 N defiance
+002 A defiant
+004 N deficiency
+003 A deficient
+003 N deficit
+003 N defile
+002 V define
+003 A definite
+004 N definition
+004 A definitive
+002 V deflate
+003 N deflation
+002 V deflect
+003 V deflower
+003 V defoliate
+003 V deforest
+002 V deform
+002 A deformed
+004 N deformity
+002 V defraud
+002 V defray
+002 V defrock
+002 V defrost
+001 A deft
+002 A defunct
+002 V defuse
+002 V defy
+004 A degenerate
+005 N degeneration
+002 V degrade
+002 N degree
+002 V dehisce
+004 V dehumanize
+003 V dehydrate
+001 V deice
+002 V deify
+001 V deign
+006 V deinstitutionalize
+001 N deism
+002 N deity
+002 V deject
+002 N dekko
+002 V delay
+004 A delectable
+004 N delectation
+003 N delegate
+004 N delegation
+002 V delete
+005 A deleterious
+001 N delft
+002 N deli
+004 A deliberate
+005 N deliberation
+005 A deliberative
+004 N delicacy
+003 A delicate
+005 N delicatessen
+004 A delicious
+002 V delight
+003 V delimit
+003 V delineate
+003 N delinquent
+003 V deliquesce
+004 A delirious
+003 N delirium
+003 V deliver
+004 N deliverance
+004 N delivery
+001 N dell
+002 V delouse
+002 A delphic
+003 N delphinium
+002 N delta
+002 V delude
+002 N deluge
+003 N delusion
+001 V delve
+004 V demagnetize
+003 N demagog
+004 N demagogue
+002 N demand
+004 N demarcation
+005 V dematerialize
+002 V demean
+003 N demeanor
+003 N demeanour
+002 A demented
+003 N dementia
+004 N demerara
+003 N demerger
+003 N demerit
+002 N demesne
+003 N demigod
+005 V demilitarize
+003 N demimonde
+002 N demise
+006 N demisemiquaver
+002 V demist
+002 N demo
+004 V demobilize
+004 N democracy
+003 N democrat
+004 A democratic
+004 V democratize
+004 V demodulate
+004 N demography
+003 V demolish
+002 N demon
+004 V demonetize
+003 A demoniac
+003 N demonism
+005 N demonolatry
+005 N demonology
+004 A demonstrable
+003 V demonstrate
+004 N demonstration
+004 A demonstrative
+004 N demonstrator
+004 V demoralize
+002 V demote
+003 N demotic
+004 V demotivate
+002 V demur
+002 A demure
+003 N demurrer
+004 V demystify
+001 N den
+003 N denarius
+003 A denary
+005 V denationalize
+003 V denature
+006 N dendrochronology
+004 N dendrology
+001 N dene
+002 N dengue
+003 A deniable
+002 N denial
+002 N denier
+003 V denigrate
+002 N denim
+003 N denizen
+004 V denominate
+005 N denomination
+005 N denominator
+002 V denote
+004 N denouement
+002 V denounce
+001 A dense
+003 N density
+001 N dent
+002 A dental
+002 A dentate
+003 N dentifrice
+002 N dentin
+002 N dentine
+002 N dentist
+003 N dentition
+002 N denture
+004 V denuclearize
+002 V denude
+004 N denunciation
+002 V deny
+002 N deodar
+003 N deodorant
+003 V deodorize
+002 V depart
+002 A departed
+003 N department
+004 A departmental
+003 N departure
+002 V depend
+004 A dependable
+003 N dependant
+003 N dependence
+004 N dependency
+003 A dependent
+002 V depict
+003 V depilate
+005 A depilatory
+002 V deplete
+004 A deplorable
+002 V deplore
+002 V deploy
+005 V depoliticize
+003 A deponent
+004 V depopulate
+002 V deport
+003 N deportee
+003 N deportment
+002 V depose
+003 N deposit
+005 N depositary
+004 N deposition
+004 N depositor
+005 N depository
+002 N depot
+002 V deprave
+004 N depravity
+003 V deprecate
+003 V depreciate
+004 N depreciation
+004 N depredation
+002 V depress
+003 A depressant
+003 N depression
+003 A depressive
+004 N deprivation
+002 V deprive
+001 N depth
+002 N depthcharge
+004 N deputation
+002 V depute
+003 V deputize
+003 N deputy
+002 V derail
+002 V derange
+002 N derby
+004 V derecognize
+004 V deregulate
+003 A derelict
+004 N dereliction
+003 V derestrict
+002 V deride
+003 A derisive
+004 A derisory
+004 N derivation
+004 A derivative
+002 V derive
+004 N dermatitis
+005 N dermatology
+002 N dermis
+003 V derogate
+005 A derogatory
+002 N derrick
+003 N derringdo
+002 N derris
+001 N derv
+002 N dervish
+004 V desalinate
+003 V descale
+002 N descant
+002 V descend
+003 N descendant
+002 N descent
+002 V describe
+003 N description
+003 A descriptive
+002 V descry
+003 V desecrate
+004 V desegregate
+003 V deselect
+004 V desensitize
+002 N desert
+006 N desertification
+002 V deserve
+003 A deserving
+003 V desiccate
+005 N desideratum
+002 N design
+003 V designate
+004 N designation
+004 D designedly
+003 N designer
+003 A designing
+004 A desirable
+002 N desire
+002 V desist
+001 N desk
+002 N desktop
+003 A desolate
+004 N desolation
+002 N despair
+004 N desperado
+003 A desperate
+004 A despicable
+002 V despise
+002 P despite
+002 V despoil
+003 A despondent
+002 N despot
+003 N despotism
+002 N dessert
+003 N dessertspoon
+004 V destabilize
+004 N destination
+002 V destine
+003 N destiny
+003 A destitute
+002 V destroy
+003 N destroyer
+004 A destructible
+003 N destruction
+003 A destructive
+003 N desuetude
+004 A desultory
+002 V detach
+003 N detachment
+002 N detail
+002 V detain
+003 N detainee
+002 V detect
+003 N detection
+003 N detective
+003 N detention
+002 V deter
+003 N detergent
+004 V deteriorate
+004 A determinant
+004 A determinate
+005 N determination
+003 V determine
+003 A determined
+004 N determinism
+003 A deterrent
+002 V detest
+004 A detestable
+002 V dethrone
+003 V detonate
+004 N detonator
+002 N detour
+004 V detoxify
+002 V detract
+003 N detractor
+003 N detriment
+003 N detritus
+001 N deuce
+003 N deuterium
+002 N deutschmark
+003 V devalue
+003 V devastate
+004 A devastating
+003 V develop
+004 N development
+002 A deviant
+002 V deviate
+002 N device
+002 N devil
+003 A devilish
+004 A devilmaycare
+003 N devilment
+003 N devilry
+003 A devious
+002 V devise
+004 N devolution
+002 V devolve
+003 A devonian
+002 V devote
+002 A devoted
+003 N devotee
+003 N devotion
+002 V devour
+002 A devout
+001 N dew
+003 N dewberry
+002 N dewclaw
+002 N dewdrop
+002 N dewlap
+002 A dexter
+004 N dexterity
+003 A dexterous
+002 N dextrin
+002 N dextrose
+001 N dhal
+002 N dharma
+002 N dhoti
+002 N diabetes
+003 A diabetic
+004 A diabolical
+003 N diabolism
+003 A diachronic
+003 A diaconal
+003 N diaconate
+003 N diacritic
+004 A diacritical
+002 N diadem
+004 N diaeresis
+002 V diagnose
+003 N diagnosis
+003 A diagnostic
+003 N diagnostics
+003 A diagonal
+002 N diagram
+001 N dial
+002 N dialect
+003 N dialectic
+004 A dialectical
+003 N dialectics
+002 N dialog
+003 N dialogue
+003 N dialysis
+002 A diamant
+003 N diameter
+004 A diametrical
+002 N diamond
+002 N dianthus
+003 N diapason
+002 N diaper
+003 A diaphanous
+002 N diaphragm
+004 N diapositive
+002 N diarist
+002 N diarrhea
+003 N diarrhoea
+002 N diary
+003 N diaspora
+002 N diastase
+002 N diatom
+003 A diatomic
+003 A diatonic
+002 N diatribe
+003 N diazepam
+002 N dibble
+002 A dicey
+004 N dichotomy
+004 A dichromatic
+001 N dick
+002 N dickens
+003 A dickensian
+002 N dickhead
+002 N dicky
+003 N dickybird
+005 N dicotyledon
+003 N dictaphone
+002 V dictate
+003 N dictator
+004 A dictatorial
+002 N diction
+004 N dictionary
+002 N dictum
+003 A didactic
+002 V diddle
+004 N didgeridoo
+001 N die
+003 N diecasting
+002 N diehard
+003 A dielectric
+003 N dieresis
+002 N diesel
+005 A dieselelectric
+003 N diesinker
+003 N diestamping
+001 N diet
+003 A dietetic
+003 N dietitian
+002 V differ
+003 N difference
+003 A different
+004 A differential
+004 V differentiate
+003 A difficult
+004 N difficulty
+003 A diffident
+002 V diffract
+002 A diffuse
+003 N diffusion
+001 V dig
+002 V digest
+003 N digestion
+003 A digestive
+002 N digger
+002 N digit
+003 A digital
+004 N digitalis
+003 V digitize
+003 A dignified
+003 V dignify
+004 N dignitary
+003 N dignity
+002 N digraph
+002 V digress
+002 N diktat
+001 N dil
+004 A dilapidated
+004 N dilatation
+002 V dilate
+004 A dilatory
+002 N dildo
+003 N dilemma
+003 N dilettante
+003 A diligent
+001 N dill
+004 V dillydally
+002 V dilute
+003 A diluvial
+001 A dim
+001 N dime
+003 N dimension
+003 V diminish
+004 N diminution
+004 A diminutive
+002 N dimmer
+002 N dimple
+002 N dimwit
+001 N din
+002 N dinar
+001 V dine
+002 N diner
+002 N dinette
+001 V ding
+002 N dingbat
+002 N dingdong
+002 N dinghy
+002 N dingle
+002 N dingo
+002 A dingy
+003 N diningcar
+003 N diningroom
+002 A dinkum
+002 A dinky
+002 N dinner
+003 N dinnerdance
+004 N dinnerjacket
+003 N dinosaur
+001 N dint
+002 N diocese
+001 N diode
+003 A dionysian
+002 N diopter
+001 N dioptre
+003 N diorama
+002 N dioxide
+003 N diphtheria
+002 N diphthong
+004 N diplodocus
+003 N diploma
+004 N diplomacy
+003 N diplomat
+004 A diplomatic
+004 N diplomatist
+003 N dipole
+002 N dipper
+002 A dippy
+002 N dipso
+004 N dipsomania
+002 N dipstick
+002 N dipswitch
+003 A dipterous
+002 N diptych
+001 A dire
+002 A direct
+003 N direction
+004 A directional
+003 N directive
+003 D directly
+003 N director
+004 N directorate
+006 N directorgeneral
+004 N directory
+003 N directress
+001 N dirge
+002 N dirham
+004 A dirigible
+001 N dirk
+001 N dirndl
+001 N dirt
+002 A dirty
+005 N disability
+003 V disable
+003 V disabuse
+004 N disadvantage
+004 A disadvantaged
+003 A disaffected
+003 V disagree
+005 A disagreeable
+003 V disallow
+003 V disappear
+003 V disappoint
+004 N disappointment
+005 N disapprobation
+003 V disapprove
+002 V disarm
+004 N disarmament
+003 V disarrange
+003 N disarray
+004 V disassociate
+003 N disaster
+003 V disavow
+002 V disband
+002 V disbar
+003 V disbelieve
+002 V disburse
+001 N disc
+002 V discard
+002 V discern
+003 A discerning
+002 V discharge
+003 N disciple
+005 N disciplinarian
+005 A disciplinary
+003 N discipline
+002 V disclaim
+003 N disclaimer
+002 V disclose
+003 V discolor
+003 V discolour
+003 V discomfit
+003 N discomfort
+003 V discompose
+003 V disconcert
+003 V disconnect
+003 A disconnected
+004 A disconsolate
+003 N discontent
+004 V discontinue
+005 A discontinuous
+002 N discord
+003 A discordant
+003 N discothque
+002 N discount
+004 V discountenance
+003 V discourage
+002 N discourse
+004 A discourteous
+003 V discover
+004 N discovery
+003 N discredit
+005 A discreditable
+002 A discreet
+004 N discrepancy
+002 A discrete
+003 N discretion
+004 V discriminate
+005 A discriminating
+005 N discrimination
+003 A discursive
+002 N discus
+002 V discuss
+002 N disdain
+002 N disease
+003 V disembark
+004 V disembarrass
+004 A disembodied
+004 V disembowel
+003 V disenchant
+004 V disencumber
+004 V disenfranchise
+003 V disengage
+004 V disentangle
+004 V disestablish
+003 V disfigure
+002 V disgorge
+002 N disgrace
+004 A disgraceful
+002 A disgruntled
+002 V disguise
+002 N disgust
+001 N dish
+004 N disharmony
+002 N dishcloth
+003 V dishearten
+003 A disheveled
+003 A dishevelled
+003 A dishonest
+005 A dishonorable
+005 A dishonourable
+003 N dishwasher
+002 A dishy
+004 V disillusion
+004 N disincentive
+003 V disincline
+003 V disinfect
+004 N disinfectant
+005 N disinformation
+005 A disingenuous
+004 V disinherit
+004 V disintegrate
+003 V disinter
+004 A disinterested
+003 V disinvest
+002 V disjoint
+003 N disjunction
+003 A disjunctive
+002 N diskette
+002 V dislike
+003 V dislocate
+002 V dislodge
+003 A disloyal
+002 A dismal
+003 V dismantle
+002 N dismay
+003 V dismember
+002 V dismiss
+003 A dismissive
+002 V dismount
+004 A disobedient
+003 V disobey
+003 V disoblige
+003 N disorder
+004 A disorderly
+004 V disorganize
+003 V disorient
+004 V disorientate
+002 V disown
+003 V disparage
+003 A disparate
+004 N disparity
+004 A dispassionate
+003 N dispatchbox
+004 N dispatchrider
+002 V dispel
+004 A dispensable
+004 N dispensary
+004 N dispensation
+002 V dispense
+003 N dispenser
+002 V disperse
+003 N dispersion
+003 V dispirit
+002 V displace
+004 N displacement
+002 V display
+002 V displease
+002 V disport
+004 A disposable
+003 N disposal
+002 V dispose
+004 N disposition
+003 V dispossess
+002 N disproof
+004 N disproportion
+005 A disproportionate
+002 V disprove
+004 A disputable
+003 N disputant
+004 N disputation
+005 A disputatious
+002 V dispute
+004 V disqualify
+003 V disquiet
+004 N disquietude
+004 N disquisition
+003 V disregard
+003 N disrepair
+005 A disreputable
+003 N disrepute
+003 N disrespect
+002 V disrobe
+002 V disrupt
+004 V dissatisfy
+002 V dissect
+003 V dissemble
+004 V disseminate
+003 N dissension
+002 V dissent
+003 N dissenter
+003 A dissentient
+004 N dissertation
+003 N disservice
+003 A dissident
+004 A dissimilar
+004 V dissimulate
+003 V dissipate
+004 N dissipation
+003 V dissociate
+004 A dissoluble
+003 A dissolute
+004 N dissolution
+002 V dissolve
+003 A dissonant
+002 V dissuade
+002 N distaff
+002 N distance
+002 A distant
+002 N distaste
+003 N distemper
+002 V distend
+002 N distich
+002 V distil
+002 V distill
+003 N distiller
+004 N distillery
+002 A distinct
+003 N distinction
+003 A distinctive
+003 A distingu
+003 V distinguish
+003 A distinguished
+002 V distort
+002 V distract
+003 N distraction
+002 V distrain
+002 N distraint
+002 A distrait
+002 A distraught
+002 N distress
+002 A distressed
+003 V distribute
+004 N distribution
+004 A distributive
+004 N distributor
+002 N district
+002 N distrust
+002 V disturb
+003 N disturbance
+003 N disunion
+003 V disunite
+002 N disuse
+004 N disyllable
+001 N ditch
+002 V dither
+003 N dithyramb
+002 N ditto
+002 N ditty
+003 A diuretic
+002 A diurnal
+002 N diva
+003 A divalent
+002 N divan
+001 V dive
+003 V divebomb
+002 N diver
+002 V diverge
+002 A divers
+002 A diverse
+004 V diversify
+003 N diversion
+004 N diversity
+002 V divert
+002 V divest
+002 V divide
+003 N dividend
+003 N divider
+004 N divination
+002 A divine
+003 N diviner
+003 N divingbell
+003 N divingboard
+003 N divingsuit
+004 N diviningrod
+004 N divinity
+004 A divisible
+003 N division
+003 A divisive
+003 N divisor
+002 N divorce
+003 N divorcee
+002 N divot
+002 V divulge
+003 N diwali
+002 N dixie
+003 N dixieland
+002 A dizzy
+003 N djellaba
+001 V do
+001 N doe
+001 N doer
+001 V doff
+001 N dog
+002 N dogcart
+003 N dogcollar
+001 N doge
+002 A dogeared
+003 A dogeatdog
+002 N dogend
+002 N dogfight
+002 N dogfish
+001 A dogged
+003 N doggerel
+002 D doggo
+002 A doggy
+004 N doggypaddle
+002 N doghouse
+002 N dogma
+003 A dogmatic
+003 N dogmatism
+003 V dogmatize
+003 N dogooder
+002 N dogrose
+003 N dogsbody
+002 N dogstar
+002 A dogtired
+002 N dogtooth
+002 N dogtrot
+002 N dogwatch
+002 N dogwood
+001 N doh
+002 N doily
+003 N doingover
+004 A doityourself
+002 N dolby
+002 N dole
+003 A doleful
+001 N doll
+002 N dollar
+002 N dollop
+002 N dolly
+003 N dollybird
+002 N dolma
+002 N dolmen
+003 N dolomite
+002 N dolor
+002 N dolour
+002 N dolphin
+004 N dolphinarium
+001 N dolt
+001 N dom
+002 N domain
+001 N dome
+003 A domestic
+004 V domesticate
+005 N domesticity
+004 N domicile
+005 A domiciliary
+003 A dominant
+003 V dominate
+003 V domineer
+004 A dominican
+003 N dominion
+003 N domino
+001 V don
+002 V donate
+003 N donation
+001 A done
+002 N donjon
+002 N donkey
+003 N donkeywork
+002 N donna
+002 A donnish
+002 N donor
+002 N donut
+002 V doodle
+001 N doom
+002 N doomsday
+001 N door
+002 N doorbell
+003 N doorkeeper
+002 N doorknob
+002 N doorman
+002 N doormat
+002 N doorpost
+002 N doorstep
+002 N doorstop
+003 A doortodoor
+002 N doorway
+001 N dope
+002 A dopey
+003 N doppelgnger
+003 N dorado
+002 A doric
+002 A dormant
+002 N dormer
+004 N dormitory
+004 N dormobile
+002 N dormouse
+002 A dorsal
+002 N dory
+002 N dosage
+001 N dose
+003 N dosedo
+001 N dosh
+001 V doss
+002 N dosser
+002 N dosshouse
+002 N dossier
+001 N dot
+002 N dotage
+002 N dotard
+001 V dote
+003 N dotterel
+002 N dottle
+002 A dotty
+002 A double
+004 A doublebarrelled
+003 N doublebass
+003 V doublebook
+003 A doublebreasted
+003 V doublecheck
+003 V doublecross
+004 N doubledealing
+004 N doubledecker
+002 A doubleedged
+003 A doublejointed
+003 V doublepark
+003 A doublequick
+002 N doublet
+003 N doubletalk
+003 N doublethink
+002 N doubloon
+001 N doubt
+002 A doubtful
+002 D doubtless
+001 N douche
+001 N dough
+002 N doughnut
+003 N doughnutting
+002 A doughty
+001 A dour
+001 V douse
+001 N dove
+003 N dovecote
+003 N dovetail
+003 N dowager
+002 A dowdy
+002 N dowel
+003 N dowelling
+002 N dower
+001 N down
+003 N downandout
+002 N downbeat
+002 A downcast
+002 N downer
+002 N downfall
+002 V downgrade
+002 A downhearted
+002 D downhill
+002 N downland
+003 A downmarket
+002 N downpipe
+002 N downpour
+002 A downright
+002 A downstage
+002 D downstairs
+002 D downstream
+003 A downtoearth
+003 A downtrodden
+002 N downturn
+002 D downward
+002 A downwind
+002 A downy
+002 N dowry
+003 N dowsingrod
+004 N doxology
+002 N doyen
+001 V doze
+002 N dozen
+002 A dozy
+001 A drab
+001 N drachm
+002 N drachma
+003 A draconian
+001 N draft
+002 N draftsman
+002 A drafty
+001 V drag
+002 V draggle
+002 N dragnet
+002 N dragon
+003 N dragonfly
+002 N dragoon
+001 V drain
+002 N drainage
+003 N drainingboard
+002 N drainpipe
+001 N drake
+002 N dralon
+001 N dram
+002 N drama
+003 A dramatic
+003 N dramatist
+003 V dramatize
+001 V drape
+002 N draper
+003 N drapery
+002 A drastic
+001 N draught
+002 N draughtboard
+002 N draughthorse
+002 N draughtsman
+002 A draughty
+001 V draw
+002 N drawback
+002 N drawbridge
+002 N drawer
+002 N drawing
+003 N drawingboard
+003 N drawingpin
+003 N drawingroom
+001 V drawl
+001 A drawn
+002 N drawstring
+001 N dray
+001 V dread
+002 A dreadful
+001 N dream
+002 N dreamboat
+002 N dreamland
+002 A dreamy
+002 A dreary
+001 V dredge
+002 N dredger
+001 V drench
+001 V dress
+002 N dressage
+002 N dresser
+002 N dressing
+003 N dressingdown
+003 N dressinggown
+003 N dressingroom
+004 N dressingtable
+003 N dressmaker
+002 N dressshield
+002 N dressshirt
+002 A dressy
+001 N drey
+002 V dribble
+002 N driblet
+001 N drier
+001 N drift
+002 N drifter
+002 N driftnet
+002 N driftwood
+001 N drill
+002 D drily
+001 V drink
+003 N drinkdriver
+001 V drip
+002 V dripdry
+002 V dripfeed
+002 N dripping
+002 A drippy
+001 V drive
+002 N drivel
+002 A driveon
+002 N driver
+003 N driveway
+004 N drivinglicence
+003 N drivingwheel
+002 N drizzle
+001 A droll
+004 N dromedary
+001 N drone
+001 V drool
+001 V droop
+001 N drop
+003 N dropcurtain
+002 N dropkick
+002 N dropout
+002 N dropper
+002 N dropshot
+002 N dropsy
+004 N drosophila
+001 N dross
+001 N drought
+001 N drove
+002 N drover
+001 V drown
+001 V drowse
+002 A drowsy
+001 V drub
+001 N drudge
+001 N drug
+002 N drugget
+002 N druggist
+002 N drugstore
+001 N druid
+001 N drum
+002 N drumbeat
+002 N drumhead
+002 N drummer
+002 N drumstick
+001 A drunk
+002 N drunkard
+002 A drunken
+001 N drupe
+001 A dry
+001 N dryad
+002 V dryclean
+002 A dryshod
+001 A dual
+001 V dub
+002 N dubbin
+003 N dubiety
+003 A dubious
+002 A ducal
+002 N ducat
+002 N duchess
+002 N duchy
+001 N duck
+002 N duckbill
+002 N duckboard
+002 N duckling
+002 N duckweed
+002 N ducky
+001 N duct
+003 A ductile
+001 N dude
+002 N dudgeon
+001 A due
+001 N duel
+002 N duenna
+001 N duet
+001 V duff
+002 N duffer
+002 N duffle
+003 N dufflecoat
+001 N dug
+002 N dugong
+002 N dugout
+001 N duke
+002 A dulcet
+003 N dulcimer
+001 A dull
+002 N dullard
+002 D duly
+001 A dumb
+002 N dumbbell
+002 V dumbfound
+002 N dumbo
+002 A dumbstruck
+002 N dumdum
+002 N dummy
+001 N dump
+002 N dumpling
+002 A dumpy
+001 A dun
+001 N dunce
+003 N dunderhead
+001 N dune
+001 N dung
+003 N dungaree
+003 N dungbeetle
+002 N dungeon
+002 N dunghill
+001 V dunk
+002 N dunlin
+002 N dunnock
+001 N duo
+004 A duodecimal
+003 N duodenum
+003 N duologue
+001 N dupe
+002 A duple
+002 N duplex
+003 A duplicate
+004 N duplicator
+004 N duplicity
+003 A durable
+003 N duration
+002 N duress
+002 N durex
+001 N dusk
+002 A dusky
+001 N dust
+002 N dustbin
+002 N dustcart
+002 N duster
+003 N dustjacket
+002 N dustman
+002 N dustpan
+002 N dustsheet
+002 N dustup
+002 A dusty
+001 N dutch
+002 N dutchman
+003 A duteous
+003 A dutiable
+003 A dutiful
+002 N duty
+003 A dutybound
+003 A dutyfree
+002 N duvet
+001 N dwarf
+001 V dwell
+002 N dwelling
+002 V dwindle
+001 N dye
+004 A dyedinthewool
+001 N dyke
+003 A dynamic
+003 N dynamism
+003 N dynamite
+003 N dynamo
+005 N dynamometer
+002 N dynast
+003 N dynasty
+001 N dyne
+004 N dysentery
+003 N dysfunction
+003 N dyslexia
+005 N dysmenorrhoea
+003 N dyspepsia
+003 N dysphasia
+003 N dysprosium
+003 N dystrophy
+001 N e
+001 A each
+002 A eager
+002 N eagle
+002 N eaglet
+001 N ear
+002 N earache
+002 N eardrum
+002 N earful
+001 N earl
+002 A early
+002 V earmark
+001 V earn
+002 A earnest
+002 N earphone
+002 N earpiece
+003 A earpiercing
+002 N earplug
+002 N earring
+002 N earshot
+003 A earsplitting
+001 N earth
+002 A earthbound
+002 A earthen
+003 N earthenware
+002 N earthling
+002 A earthly
+002 N earthquake
+004 A earthshattering
+002 N earthwork
+002 N earthworm
+002 A earthy
+003 N eartrumpet
+002 N earwig
+001 N ease
+002 N easel
+003 N easement
+003 D easily
+001 N east
+002 A eastbound
+002 N easter
+003 A easterly
+002 A eastern
+003 N easterner
+003 N eastnortheast
+003 N eastsoutheast
+002 A eastward
+002 A easy
+003 A easygoing
+001 V eat
+003 A eatable
+002 N eater
+005 N eaudecologne
+003 V eavesdrop
+001 N ebb
+003 N ebonite
+003 N ebony
+003 A ebullient
+003 A eccentric
+004 N ecclesiastic
+005 A ecclesiastical
+003 N echelon
+003 N echidna
+004 N echinoderm
+002 N echo
+002 A echoic
+005 N echolocation
+004 N echosounder
+001 A echt
+003 N eclampsia
+003 A eclectic
+002 N eclipse
+003 N ecliptic
+003 N eclogue
+004 N ecology
+004 A economic
+005 A economical
+004 N economist
+004 V economize
+004 N economy
+005 A economysize
+004 N ecosystem
+003 N ecstasy
+003 N ectomorph
+003 N ectoplasm
+001 N ecu
+005 A ecumenical
+003 N eczema
+002 N edam
+002 N eddy
+003 N edelweiss
+003 N edema
+002 N eden
+003 A edentate
+001 N edge
+003 D edgeways
+002 N edging
+002 A edgy
+003 A edible
+002 N edict
+003 N edifice
+003 V edify
+002 V edit
+003 N edition
+003 N editor
+004 A editorial
+003 V educate
+003 A educated
+004 N education
+005 N educationist
+002 V educe
+003 A edwardian
+001 N eel
+002 A eerie
+002 V efface
+002 N effect
+003 A effective
+003 A effectual
+004 A effeminate
+003 V effervesce
+002 A effete
+005 A efficacious
+003 A efficient
+003 N effigy
+003 V effloresce
+002 N effluence
+002 A effluent
+003 N effluvium
+002 N effort
+003 A effortless
+004 N effrontery
+003 A effulgent
+002 V effuse
+003 N effusion
+003 A effusive
+001 N eft
+002 N efta
+005 A egalitarian
+001 V egg
+002 N eggcup
+002 N eggflip
+002 N egghead
+002 N eggplant
+002 N eggshell
+002 N eggwhite
+003 N eglantine
+001 N ego
+004 A egocentric
+002 N egoism
+003 N egotism
+003 N egotrip
+004 A egregious
+002 N egress
+002 N egret
+003 A egyptian
+005 N egyptology
+002 N eider
+003 N eiderdown
+001 A eight
+002 A eighteen
+002 A eightfold
+001 A eighth
+002 N eightsome
+002 A eighty
+003 N einsteinium
+003 N eisteddfod
+002 A either
+004 V ejaculate
+002 V eject
+003 N ejector
+001 V eke
+004 A elaborate
+002 N eland
+002 V elapse
+003 A elastic
+004 A elasticated
+004 N elastomer
+002 V elate
+002 N elbow
+003 N elbowgrease
+003 N elbowroom
+002 N elder
+004 N elderberry
+003 A elderly
+002 A eldest
+004 N eldorado
+004 N elecampane
+002 V elect
+003 N election
+004 V electioneer
+003 A elective
+003 N elector
+004 N electorate
+003 A electric
+004 A electrical
+004 N electrician
+005 N electricity
+004 V electrify
+006 N electrocardiogram
+006 N electrocardiograph
+006 A electroconvulsive
+004 V electrocute
+003 N electrode
+007 N electroencephalogram
+007 N electroencephalograph
+004 V electrolyse
+005 N electrolysis
+004 N electrolyte
+004 V electrolyze
+005 N electromagnet
+006 A electromagnetic
+006 N electromagnetism
+005 A electromotive
+003 N electron
+004 A electronic
+004 N electronvolt
+004 V electroplate
+004 N electroscope
+007 N electrotechnology
+006 N electrotherapy
+003 A elegant
+003 A elegiac
+003 N elegy
+003 N element
+004 A elemental
+005 A elementary
+003 N elephant
+005 N elephantiasis
+004 A elephantine
+003 V elevate
+004 N elevation
+004 N elevator
+003 A eleven
+004 A elevenfold
+004 N elevenplus
+003 N elevenses
+003 A eleventh
+001 N elf
+002 A elfin
+003 V elicit
+002 V elide
+004 A eligible
+004 V eliminate
+003 N elision
+003 N elixir
+005 A elizabethan
+001 N elk
+001 N ell
+002 N ellipse
+003 N ellipsis
+003 N ellipsoid
+003 A elliptic
+001 N elm
+004 N elocution
+003 V elongate
+002 V elope
+003 N eloquence
+003 A eloquent
+001 D else
+003 D elsewhere
+004 V elucidate
+002 V elude
+003 A elusive
+002 N elver
+003 N elysium
+003 V emaciate
+002 N email
+003 V emanate
+004 V emancipate
+004 V emasculate
+002 V embalm
+003 N embankment
+003 N embargo
+002 V embark
+003 V embarrass
+003 N embassy
+002 A embattled
+001 V embed
+003 V embellish
+002 N ember
+003 V embezzle
+003 V embitter
+003 V emblazon
+002 N emblem
+003 V embody
+003 V embolden
+003 N embolism
+003 N embolus
+002 V emboss
+003 N embouchure
+002 V embrace
+003 N embrasure
+004 N embrocation
+003 V embroider
+004 N embroidery
+002 V embroil
+002 N embryo
+004 N embryology
+002 V emend
+003 N emerald
+002 V emerge
+004 N emergency
+004 A emeritus
+003 N emery
+004 N emeryboard
+003 A emetic
+003 N emigrant
+003 V emigrate
+003 N eminence
+003 A eminent
+002 N emir
+003 N emirate
+004 N emissary
+002 V emit
+003 A emollient
+004 N emolument
+002 V emote
+003 N emotion
+004 A emotional
+003 A emotive
+003 V empanel
+003 V empathize
+003 N empathy
+003 N emperor
+003 N emphasis
+003 V emphasize
+003 A emphatic
+004 N emphysema
+002 N empire
+005 N empirebuilding
+004 A empirical
+004 N emplacement
+002 V employ
+003 N employee
+003 N employment
+003 N emporium
+003 V empower
+002 N empress
+002 A empty
+003 A emptyhanded
+003 A emptyheaded
+003 N empyrean
+001 N emu
+003 V emulate
+004 V emulsify
+003 N emulsion
+001 N en
+003 V enable
+002 V enact
+003 N enactment
+003 N enamel
+003 V enamor
+003 V enamour
+002 V encamp
+004 V encapsulate
+002 V encase
+003 A encaustic
+005 N encephalitis
+005 N encephalogram
+005 N encephalograph
+002 V enchant
+003 N enchanter
+003 V encircle
+002 N enclave
+002 V enclose
+003 N enclosure
+002 V encode
+003 N encomium
+003 V encompass
+002 N encore
+003 V encounter
+003 V encourage
+002 V encroach
+002 V encrust
+003 V encumber
+003 N encumbrance
+004 A encyclical
+005 N encyclopedia
+005 A encyclopedic
+001 N end
+003 V endanger
+002 V endear
+003 N endearment
+003 A endemic
+002 N ending
+002 N endive
+002 A endless
+002 A endmost
+003 A endocrine
+004 A endogenous
+004 N endometrium
+003 N endomorph
+002 V endorse
+003 N endoscope
+002 V endow
+003 N endowment
+003 N endpaper
+003 N endproduct
+002 V endue
+003 N endurance
+002 V endure
+002 D endways
+003 N enema
+003 N enemy
+004 A energetic
+003 V energize
+003 N energy
+003 V enervate
+003 V enfeeble
+003 N enfilade
+002 V enfold
+002 V enforce
+003 V enfranchise
+002 V engage
+002 A engaged
+004 N engagement
+003 A engaging
+003 V engender
+002 N engine
+003 N engineer
+004 N engineering
+002 A english
+003 N englishman
+002 A engorged
+002 V engraft
+002 V engrave
+003 N engraving
+002 V engross
+002 V engulf
+002 V enhance
+003 N enigma
+002 V enjoin
+002 V enjoy
+004 A enjoyable
+004 N enkephalin
+003 V enkindle
+002 V enlarge
+003 N enlarger
+003 V enlighten
+004 N enlightenment
+002 V enlist
+003 V enliven
+002 V enmesh
+003 N enmity
+003 V ennoble
+002 N ennui
+004 N enormity
+003 A enormous
+002 A enough
+002 N enprint
+002 V enquire
+003 N enquiry
+002 V enrage
+003 V enrapture
+002 V enrich
+002 V enrol
+002 V enroll
+002 V ensconce
+003 N ensemble
+002 V enshrine
+002 V enshroud
+002 N ensign
+003 N ensilage
+002 V enslave
+002 V ensnare
+002 V ensue
+002 V ensure
+004 N entablature
+002 V entail
+003 V entangle
+002 N entente
+002 V enter
+003 A enteric
+003 N enterprise
+004 A enterprising
+003 V entertain
+004 N entertainer
+004 A entertaining
+004 N entertainment
+002 V enthral
+002 V enthrall
+002 V enthrone
+002 V enthuse
+003 N enthusiasm
+003 N enthusiast
+004 A enthusiastic
+002 V entice
+002 A entire
+004 D entirely
+004 N entirety
+003 V entitle
+003 N entity
+002 V entomb
+005 N entomology
+003 N entourage
+002 N entracte
+002 V entrance
+002 N entrant
+002 V entrap
+001 N entre
+002 V entreat
+003 N entreaty
+002 N entrecte
+002 V entrench
+004 N entrepreneur
+002 N entrept
+003 N entropy
+002 V entrust
+002 N entry
+003 N entryphone
+002 V entwine
+003 N enumber
+004 V enumerate
+005 N enumerator
+003 V enunciate
+004 N enuresis
+003 V envelop
+003 N envelope
+003 A enviable
+003 A envious
+004 N environment
+006 N environmentalist
+003 V envisage
+002 N envoy
+002 N envy
+002 V enwrap
+002 N enzyme
+003 A eolithic
+003 N epaulet
+003 N epaulette
+003 N ephedrine
+004 A ephemeral
+002 N epic
+003 A epicene
+004 N epicenter
+003 N epicentre
+003 N epicure
+004 N epicurean
+004 N epidemic
+006 N epidemiology
+004 N epidermis
+004 N epidiascope
+004 A epidural
+004 N epiglottis
+003 N epigram
+003 N epigraph
+004 N epilepsy
+004 A epileptic
+004 N epilogue
+004 N epiphany
+005 N episcopacy
+004 A episcopal
+005 A episcopalian
+004 N episcopate
+005 N episiotomy
+003 N episode
+004 A episodic
+006 N epistemology
+003 N epistle
+005 A epistolary
+003 N epitaph
+004 N epithelium
+003 N epithet
+003 N epitome
+004 V epitomize
+002 N epoch
+004 A epochmaking
+003 N eponym
+003 A epoxy
+003 N epsilon
+003 A equable
+002 A equal
+004 N equality
+003 V equalize
+004 N equalizer
+003 D equally
+005 N equanimity
+002 V equate
+003 N equation
+003 N equator
+004 A equatorial
+003 N equerry
+003 A equestrian
+005 A equiangular
+004 A equidistant
+005 A equilateral
+004 N equilibrium
+002 A equine
+004 A equinoctial
+003 N equinox
+002 V equip
+003 N equipage
+003 N equipment
+003 N equipoise
+004 A equitable
+004 N equitation
+003 N equity
+004 A equivalent
+004 A equivocal
+004 V equivocate
+001 N era
+004 V eradicate
+002 V erase
+003 N eraser
+003 N erasure
+002 N erbium
+002 A erect
+004 A erectile
+001 N erg
+002 D ergo
+004 N ergonomics
+002 N ergot
+002 N erin
+002 N ermine
+002 N ernie
+002 V erode
+004 A erogenous
+003 A erotic
+004 N eroticism
+001 V err
+002 N errand
+002 A errant
+003 A erratic
+003 N erratum
+004 A erroneous
+002 N error
+002 A ersatz
+001 A erse
+003 A erstwhile
+004 N eructation
+003 A erudite
+002 V erupt
+005 N erysipelas
+004 N erythrocyte
+003 V escalate
+004 N escalator
+003 N escalope
+003 N escapade
+002 V escape
+003 N escapee
+004 N escapement
+003 N escapism
+005 N escapology
+003 N escarpment
+005 N eschatology
+002 V eschew
+002 N escort
+003 N escritoire
+003 N escudo
+003 N escutcheon
+003 N eskimo
+004 N esophagus
+004 A esoteric
+004 N espadrille
+003 N espalier
+003 N esparto
+003 A especial
+004 D especially
+004 N esperanto
+003 N espionage
+003 N esplanade
+003 N espousal
+002 V espouse
+003 N espresso
+002 N esprit
+002 V espy
+002 N esquire
+002 N essay
+002 N essence
+003 A essential
+003 V establish
+004 N establishment
+002 N estate
+002 V esteem
+002 N ester
+004 A estimable
+003 N estimate
+004 N estimation
+003 N estonian
+002 V estrange
+003 N estrogen
+002 N estrus
+003 N estuary
+001 N eta
+001 V etch
+002 N etching
+003 A eternal
+004 N eternity
+003 N ethanal
+002 N ethane
+002 N ether
+003 A ethereal
+002 N ethic
+003 A ethical
+003 N ethiopian
+002 A ethnic
+004 N ethnology
+002 N ethos
+002 N ethyl
+003 N ethylene
+003 V etiolate
+004 N etiology
+003 N etiquette
+003 A etruscan
+005 N etymology
+004 N eucalyptus
+003 N eucharist
+003 N eukaryote
+003 V eulogize
+003 N eulogy
+002 N eunuch
+003 N euphemism
+003 N euphonium
+003 N euphony
+003 N euphoria
+003 A eurasian
+004 N eurodollar
+003 A european
+003 N europium
+004 N euthanasia
+003 V evacuate
+004 N evacuee
+002 V evade
+003 V evaluate
+003 V evanesce
+004 A evanescent
+005 A evangelical
+004 N evangelism
+004 N evangelist
+004 V evangelize
+004 V evaporate
+003 N evasion
+003 A evasive
+001 N eve
+002 N even
+003 A evenhanded
+003 N evening
+003 N evensong
+002 N event
+003 A eventful
+003 N eventide
+003 N eventing
+003 A eventual
+005 N eventuality
+003 V eventuate
+002 D ever
+003 A evergreen
+004 A everlasting
+003 D evermore
+003 A every
+004 N everyman
+004 D everywhere
+002 V evict
+003 N evidence
+003 A evident
+004 A evidential
+004 D evidently
+002 A evil
+003 N evildoer
+002 V evince
+004 V eviscerate
+004 A evocative
+002 V evoke
+004 N evolution
+005 N evolutionist
+002 V evolve
+001 N ewe
+002 N ewer
+001 N ex
+004 V exacerbate
+002 A exact
+003 A exacting
+003 N exaction
+004 N exactitude
+003 D exactly
+004 V exaggerate
+002 V exalt
+002 N exam
+005 N examination
+003 V examine
+003 N example
+004 V exasperate
+003 V excavate
+002 V exceed
+004 D exceedingly
+002 V excel
+003 N excellence
+004 N excellency
+003 A excellent
+002 V except
+003 N exception
+005 A exceptionable
+004 A exceptional
+002 N excerpt
+002 N excess
+003 A excessive
+002 N exchange
+003 N exchequer
+002 V excise
+004 A excitable
+002 V excite
+004 N excitement
+003 A exciting
+002 V exclaim
+004 N exclamation
+005 A exclamatory
+002 V exclude
+003 A exclusive
+005 V excommunicate
+003 V excoriate
+003 N excrement
+003 N excrescence
+002 V excrete
+004 A excruciating
+003 V exculpate
+003 N excursion
+003 A excursive
+002 V excuse
+005 A exdirectory
+004 A execrable
+003 V execrate
+003 V execute
+004 N execution
+005 N executioner
+004 N executive
+004 N executor
+004 N exegesis
+003 N exemplar
+004 A exemplary
+004 V exemplify
+002 A exempt
+003 N exercise
+002 V exert
+002 V exeunt
+003 V exfoliate
+003 V exhale
+002 V exhaust
+003 N exhaustion
+003 A exhaustive
+003 V exhibit
+004 N exhibition
+005 N exhibitioner
+005 N exhibitionism
+004 V exhilarate
+002 V exhort
+002 V exhume
+004 N exigency
+004 A exiguous
+003 N exile
+002 V exist
+003 N existence
+004 A existential
+005 N existentialism
+002 N exit
+003 A exocrine
+003 N exodus
+004 V exonerate
+004 A exorbitant
+003 V exorcize
+003 N exordium
+003 A exotic
+002 V expand
+002 N expanse
+004 A expansible
+003 N expansion
+004 N expansionism
+003 A expansive
+002 N expat
+003 V expatiate
+003 A expatriate
+002 V expect
+004 N expectancy
+003 A expectant
+004 N expectation
+004 A expectorant
+004 V expectorate
+003 A expedient
+003 V expedite
+004 N expedition
+006 A expeditionary
+005 A expeditious
+002 V expel
+002 V expend
+004 A expendable
+004 N expenditure
+002 N expense
+003 A expensive
+003 N experience
+003 A experienced
+004 A experiential
+004 N experiment
+005 A experimental
+002 A expert
+003 N expertise
+002 V expiate
+002 V expire
+003 N expiry
+002 V explain
+004 N explanation
+005 A explanatory
+003 N expletive
+004 A explicable
+003 V explicate
+003 A explicit
+002 V explode
+002 N exploit
+002 V explore
+003 N explosion
+003 A explosive
+002 N expo
+003 N exponent
+004 A exponential
+002 V export
+002 N expos
+002 V expose
+004 N exposition
+004 V expostulate
+003 N exposure
+002 V expound
+002 V express
+003 N expression
+004 N expressionism
+003 A expressive
+003 N expressway
+003 V expropriate
+003 N expulsion
+002 V expunge
+003 V expurgate
+003 A exquisite
+005 N exserviceman
+006 N exservicewoman
+002 A extant
+006 A extemporaneous
+005 A extemporary
+003 A extempore
+004 V extemporize
+002 V extend
+004 A extendedplay
+003 N extension
+003 A extensive
+002 N extent
+003 V extenuate
+003 A exterior
+004 V exterminate
+003 A external
+004 V externalize
+002 A extinct
+003 N extinction
+003 V extinguish
+004 N extinguisher
+003 V extirpate
+002 V extol
+002 V extort
+003 N extortion
+004 A extortionate
+002 V extract
+003 N extraction
+003 A extractive
+003 N extractor
+006 A extracurricular
+005 A extraditable
+003 V extradite
+005 A extramarital
+004 A extramural
+004 A extraneous
+005 A extraordinary
+004 V extrapolate
+005 A extrasensory
+005 A extraterrestrial
+004 A extravagant
+005 N extravaganza
+002 A extreme
+003 N extremist
+004 N extremity
+003 V extricate
+003 A extrinsic
+003 N extrovert
+002 V extrude
+004 A exuberant
+002 V exude
+002 V exult
+001 N eye
+003 N eyeball
+003 N eyebath
+003 N eyebright
+003 N eyebrow
+004 A eyecatching
+003 N eyeful
+003 N eyeglass
+004 N eyehole
+003 N eyelash
+003 N eyelet
+003 N eyelid
+004 N eyeliner
+004 N eyeopener
+003 N eyepiece
+003 N eyeshade
+004 N eyeshadow
+003 N eyesight
+003 N eyesore
+003 N eyetooth
+003 N eyewash
+004 N eyewitness
+002 N eyrie
+001 N faade
+001 A fab
+002 N fable
+001 A fabled
+002 N fabric
+003 V fabricate
+003 A fabulous
+001 N face
+003 N facecloth
+004 N faceflannel
+003 A faceless
+003 N facelift
+003 N facepack
+002 N facer
+002 N facet
+004 A facetious
+002 A facial
+003 A facile
+004 V facilitate
+004 N facility
+002 N facing
+004 N facsimile
+001 N fact
+003 A factious
+004 A factitious
+002 N factor
+003 N factorial
+003 V factorize
+003 N factory
+003 N factotum
+002 N factsheet
+002 A factual
+003 N faculty
+001 N fad
+002 A faddy
+001 V fade
+001 V faff
+001 N fag
+002 N fagend
+002 N faggot
+002 N fagot
+001 N fah
+003 A fahrenheit
+002 N faience
+001 V fail
+001 A failed
+002 N failing
+002 A failsafe
+002 N failure
+001 A faint
+002 A fainthearted
+001 N fair
+002 N fairground
+002 N fairing
+002 D fairly
+002 N fairway
+002 N fairy
+003 N fairyland
+001 N faith
+002 A faithful
+003 D faithfully
+002 A faithless
+001 N fake
+002 N fakir
+002 N falcon
+003 N falconry
+001 V fall
+003 N fallacy
+003 A fallible
+002 N fallout
+002 A fallow
+001 A false
+003 N falsehood
+003 N falsetto
+003 V falsify
+003 N falsity
+002 V falter
+001 N fame
+001 A famed
+003 A familial
+003 A familiar
+004 V familiarize
+003 N family
+002 N famine
+002 V famish
+002 A famous
+001 N fan
+003 N fanatic
+002 N fancier
+003 A fanciful
+002 N fancy
+003 A fancyfree
+003 N fandango
+002 N fanfare
+001 N fang
+002 N fanjet
+002 N fanlight
+002 N fanny
+002 N fantail
+003 N fantasia
+003 V fantasize
+003 A fantastic
+003 N fantasy
+002 N farad
+003 A faraway
+001 N farce
+001 N fare
+003 N farestage
+002 A farfetched
+002 A farflung
+003 N farina
+001 N farm
+002 N farmer
+002 N farmhand
+002 N farmhouse
+002 N farmstead
+002 N farmyard
+002 A faroff
+002 A farout
+003 N farrago
+003 A farreaching
+002 N farrier
+002 N farrow
+003 A farseeing
+002 N farsi
+002 A farsighted
+002 N farthing
+004 N farthingale
+002 N fascia
+003 N fascicle
+003 V fascinate
+002 N fascism
+002 N fashion
+004 A fashionable
+001 V fast
+002 N fastback
+002 V fasten
+003 N fastening
+004 A fastidious
+002 N fastness
+001 N fat
+002 A fatal
+003 N fatalism
+004 N fatality
+001 N fate
+003 A fateful
+002 N fathead
+002 A fatheaded
+002 N father
+004 N fatherfigure
+004 N fatherinlaw
+003 N fatherland
+003 A fatherly
+002 N fathom
+003 A fathomless
+003 N fatigue
+002 N fatstock
+002 V fatten
+002 A fatty
+003 A fatuous
+002 N fatwa
+002 N faucet
+001 N fault
+003 N faultfinder
+003 N faultfinding
+002 A faultless
+002 A faulty
+001 N faun
+002 N fauna
+004 A favorable
+004 N favoritism
+004 A favourable
+004 N favouritism
+001 V fawn
+001 N fax
+001 N fay
+001 V faze
+002 N fealty
+001 N fear
+002 A fearful
+002 A fearless
+002 A fearsome
+003 A feasible
+001 N feast
+001 N feat
+002 N feather
+002 V featherbed
+003 N featherbrain
+003 N feathering
+003 N featherweight
+002 N feature
+003 N febrifuge
+003 A febrile
+003 N february
+002 A feckless
+002 A fecund
+003 V fecundate
+003 A federal
+003 V federate
+004 N federation
+001 N fee
+002 A feeble
+003 A feebleminded
+001 V feed
+002 N feedback
+002 N feeder
+001 V feel
+002 N feeler
+002 N feeling
+001 V feign
+001 N feint
+002 N feldspar
+004 V felicitate
+004 A felicitous
+004 N felicity
+002 A feline
+001 N fell
+003 N fellatio
+002 N feller
+002 N felloe
+002 N fellow
+004 N fellowfeeling
+003 N fellowship
+005 N fellowtraveller
+002 N felon
+003 N felony
+001 N felt
+003 N felucca
+003 A female
+003 A feminine
+003 N feminism
+002 N femur
+001 N fen
+001 N fence
+002 N fencing
+001 V fend
+002 N fender
+002 N fennel
+003 N fenugreek
+002 A feral
+002 A ferial
+002 N ferment
+004 N fermentation
+002 N fermium
+001 N fern
+004 A ferocious
+002 N ferret
+002 A ferric
+004 N ferroconcrete
+002 A ferrous
+003 N ferrule
+002 N ferry
+003 A fertile
+003 V fertilize
+004 N fertilizer
+002 A fervent
+002 A fervid
+002 N fervor
+002 N fervour
+002 N fescue
+002 A festal
+002 V fester
+003 N festival
+002 A festive
+004 N festivity
+002 N festoon
+002 N festschrift
+002 N feta
+001 V fetch
+002 A fetching
+002 A fetid
+002 N fetish
+002 N fetlock
+002 N fetter
+002 N fettle
+002 N fetus
+001 N feud
+002 A feudal
+002 N fever
+003 N feverfew
+003 A feverish
+001 A few
+001 A fey
+001 N fez
+001 N fhrer
+001 N fianc
+002 N fiasco
+001 N fiat
+001 N fib
+002 N fiber
+003 N fiberboard
+003 N fiberglass
+001 N fibre
+003 N fibreboard
+003 N fibreglass
+002 N fibril
+002 A fibroid
+003 N fibrosis
+004 N fibrositis
+002 A fibrous
+003 N fibula
+001 N fiche
+002 A fickle
+002 N fiction
+004 A fictitious
+002 N fiddle
+004 N fiddlefaddle
+002 N fiddler
+002 A fiddling
+002 A fiddly
+004 N fidelity
+002 V fidget
+004 A fiduciary
+001 N fief
+001 N field
+002 N fieldday
+002 N fielder
+002 N fieldfare
+002 N fieldsman
+002 N fieldwork
+001 N fiend
+001 A fierce
+002 A fiery
+002 N fiesta
+001 N fife
+002 A fifteen
+001 A fifth
+002 A fifty
+004 A fiftyfifty
+001 N fig
+001 V fight
+002 N fighter
+002 N figleaf
+002 N figment
+004 N figuration
+004 A figurative
+002 N figure
+004 N figurehead
+005 N figureskating
+003 N figurine
+003 N filament
+002 N filbert
+001 V filch
+002 N file
+002 A filial
+004 N filibuster
+003 N filigree
+002 N filing
+004 N filipino
+001 V fill
+002 N filler
+002 N fillet
+002 N filling
+004 N fillingstation
+002 N fillip
+002 N filly
+001 N film
+002 N filmgoer
+003 N filmsetting
+002 N filmstrip
+002 A filmy
+003 N filofax
+002 N filter
+004 N filterpaper
+001 N filth
+002 A filthy
+002 V filtrate
+001 N fin
+003 V finagle
+002 A final
+003 N finale
+003 N finalist
+004 N finality
+003 V finalize
+002 N finance
+003 A financial
+003 N financier
+001 N finch
+001 V find
+002 N finder
+002 N finding
+001 N fine
+003 N finery
+003 A finespun
+002 N finesse
+003 V finetune
+002 N finger
+003 N fingerboard
+003 N fingerbowl
+003 V fingerdry
+003 N fingering
+003 N fingermark
+003 N fingernail
+003 N fingerplate
+003 N fingerprint
+003 N fingerstall
+003 N fingertip
+002 N finial
+003 A finicky
+002 N finis
+002 V finish
+004 N finishingschool
+002 A finite
+001 N finn
+002 N finnan
+002 A finnic
+002 A finnish
+002 N fino
+001 N fiord
+002 N fipple
+001 N fir
+002 N fircone
+001 N fire
+003 N firealarm
+002 N firearm
+003 N fireball
+003 N firebomb
+003 N firebox
+003 N firebrand
+003 N firebreak
+003 N firebrick
+003 N fireclay
+004 N firecracker
+003 N firedamp
+003 N firedog
+003 N firedrill
+004 N fireeater
+003 N fireengine
+003 N fireescape
+004 N firefighter
+003 N firefly
+003 N fireguard
+003 N firelight
+004 N firelighter
+003 N fireman
+003 N fireplace
+004 N firepower
+004 N firepractice
+003 A fireproof
+004 N fireraiser
+003 N firescreen
+003 N fireship
+003 N fireside
+003 N firestorm
+003 N firetrap
+004 N firewatcher
+004 N firewater
+003 N firewood
+003 N firework
+002 N firing
+003 N firingline
+003 N firingsquad
+001 N firm
+003 N firmament
+002 N firmware
+001 A first
+002 A firstborn
+003 A firstdegree
+002 N firstfruit
+002 A firsthand
+002 D firstly
+002 A firstrate
+001 N firth
+002 A fiscal
+001 N fish
+002 N fishbowl
+002 N fisher
+003 N fisherman
+003 N fishery
+002 N fishhook
+002 N fishing
+003 N fishingline
+003 N fishingrod
+003 N fishkettle
+002 N fishknife
+002 N fishmeal
+003 N fishmonger
+002 N fishnet
+002 N fishplate
+002 N fishslice
+002 N fishtail
+002 N fishwife
+002 A fishy
+003 A fissile
+002 N fission
+002 N fissure
+001 N fist
+003 N fistula
+001 N fit
+002 A fitful
+002 N fitment
+001 A fitted
+002 N fitter
+002 N fitting
+001 A five
+003 A fivefold
+002 N fiver
+001 N fives
+003 A fivestar
+003 N fivestones
+001 V fix
+002 V fixate
+003 N fixation
+003 A fixative
+003 D fixedly
+002 N fixer
+003 N fixity
+002 N fixture
+001 V fizz
+002 V fizzle
+002 A fizzy
+001 N flab
+003 V flabbergast
+002 A flabby
+002 A flaccid
+001 N flag
+002 N flagday
+003 N flagellant
+003 V flagellate
+003 N flagellum
+003 N flageolet
+004 N flagofficer
+002 N flagon
+003 N flagpole
+002 A flagrant
+002 N flagship
+002 N flagstaff
+002 N flagstone
+003 N flagwaving
+001 N flail
+001 N flair
+001 N flak
+001 N flake
+002 A flaky
+001 A flamb
+003 A flamboyant
+001 N flame
+003 N flamenco
+004 N flamethrower
+002 A flaming
+003 N flamingo
+003 A flammable
+001 N flan
+001 N flange
+001 N flank
+002 N flannel
+003 N flannelette
+001 V flap
+003 N flapdoodle
+002 N flapjack
+002 N flapper
+001 V flare
+003 N flarepath
+002 N flareup
+001 V flash
+002 N flashback
+002 N flashcube
+002 N flasher
+002 N flashgun
+002 N flashing
+002 N flashlamp
+002 N flashlight
+002 N flashpoint
+002 A flashy
+001 N flask
+001 N flat
+002 N flatfish
+002 N flatfooted
+003 N flatiron
+002 N flatmate
+002 V flatten
+002 V flatter
+003 N flattery
+003 A flatulent
+002 N flatworm
+001 V flaunt
+002 N flautist
+003 N flavoring
+003 N flavouring
+001 N flaw
+001 N flax
+002 A flaxen
+002 N flaxseed
+001 V flay
+001 N flea
+002 N fleabag
+002 N fleabite
+003 A fleabitten
+002 N fleapit
+001 N fleck
+002 N flection
+001 V fledge
+002 N fledgling
+001 V flee
+001 N fleece
+001 N fleet
+002 A fleeting
+002 N fleming
+002 A flemish
+001 N flesh
+002 A fleshly
+002 N fleshwound
+002 A fleshy
+003 N fleurdelis
+001 N flex
+003 A flexible
+002 N flexion
+003 N flexitime
+005 N flibbertigibbet
+001 N flick
+002 V flicker
+002 N flickknife
+001 N flight
+002 N flightdeck
+002 A flightless
+004 N flightrecorder
+002 A flighty
+002 A flimsy
+001 V flinch
+001 V fling
+001 N flint
+002 N flintlock
+001 N flip
+002 N flipflop
+002 A flippant
+002 N flipper
+002 A flipping
+001 V flirt
+001 V flit
+001 N flitch
+002 V flitter
+003 N flittermouse
+001 V float
+002 A floating
+002 A floaty
+003 A flocculent
+001 N flock
+003 N flockpaper
+001 N floe
+001 V flog
+001 N flood
+002 N floodgate
+002 N floodlight
+002 N floodtide
+001 N floor
+002 N floorboard
+002 N floorcloth
+002 N flooring
+002 N floozie
+001 V flop
+002 A floppy
+002 N flora
+002 A floral
+003 A florentine
+002 N floret
+004 N floribunda
+002 A florid
+002 N florin
+002 N florist
+002 V floruit
+001 N floss
+003 N flotation
+003 N flotilla
+002 N flotsam
+001 N flounce
+002 N flounder
+001 N flour
+002 V flourish
+001 V flout
+001 V flow
+002 N flower
+002 N flowerbed
+003 N flowerhead
+003 N flowerpot
+003 A flowery
+002 A flowing
+001 N flu
+002 V fluctuate
+001 N flue
+001 A fluent
+001 N fluff
+003 N flugelhorn
+001 N fluid
+001 N fluke
+003 N flummery
+002 V flummox
+001 V flunk
+002 N flunkey
+002 V fluoresce
+003 N fluorescence
+003 A fluorescent
+003 V fluoridate
+002 N fluoride
+003 V fluorinate
+002 N fluorine
+002 N fluorite
+004 N fluorocarbon
+002 N fluorspar
+002 N flurry
+001 V flush
+002 V fluster
+001 N flute
+002 V flutter
+002 A fluvial
+001 N flux
+001 A fly
+002 A flyaway
+002 A flyblown
+003 A flybynight
+003 N flycatcher
+001 N flyer
+002 V flyfish
+002 N flyhalf
+001 A flying
+002 N flyleaf
+002 N flyover
+003 N flypaper
+002 N flypast
+002 V flypost
+002 N flysheet
+002 V flytip
+002 N flytrap
+002 N flyweight
+002 N flywheel
+002 N fnumber
+001 N foal
+001 N foam
+001 V fob
+002 A focal
+002 N focus
+002 N fodder
+001 N foe
+002 N foetus
+001 N fog
+002 N fogbank
+002 A fogbound
+002 A foggy
+002 N foghorn
+002 N foglamp
+002 N fogy
+002 N foible
+001 N foil
+001 V foist
+001 N fold
+002 N folder
+004 A foliaceous
+002 N foliage
+002 A foliar
+002 A foliate
+002 N folio
+001 N folk
+002 N folkdance
+002 N folklore
+003 N folksinger
+002 N folksong
+002 A folksy
+003 N folktale
+002 N folkweave
+003 N follicle
+002 V follow
+003 N follower
+003 N followon
+003 N followthrough
+003 N followup
+002 N folly
+002 V foment
+001 A fond
+002 N fondant
+002 V fondle
+002 N fondue
+003 N fontanel
+004 N fontanelle
+001 N food
+002 N foodchain
+002 N foodie
+002 N foodstuff
+001 N fool
+003 N foolery
+003 A foolhardy
+002 A foolish
+002 A foolproof
+002 N foolscap
+001 N foot
+002 N footage
+002 N football
+002 N footbrake
+002 N footbridge
+002 N footfall
+002 N footfault
+002 N foothill
+002 N foothold
+002 N footing
+002 V footle
+002 A footling
+002 A footloose
+002 N footman
+002 N footmark
+002 N footnote
+002 N footpad
+002 N footpath
+002 N footplate
+002 N footprint
+002 N footrest
+002 N footsie
+002 A footsore
+002 N footstep
+002 N footstool
+002 N footway
+002 N footwear
+002 N footwork
+001 N fop
+002 N forage
+002 N foray
+003 N forbearance
+002 V forbid
+003 A forbidding
+001 N force
+003 V forcefeed
+003 A forceful
+003 N forcemeat
+002 N forceps
+003 A forcible
+001 N ford
+001 A fore
+002 V forearm
+003 N forebear
+003 V forebode
+004 N foreboding
+003 V forecast
+004 N forecastle
+003 V foreclose
+003 N forecourt
+004 N forefather
+004 N forefinger
+003 N forefoot
+003 N forefront
+003 A foregoing
+003 N foreground
+003 N forehand
+003 N forehead
+002 A foreign
+003 N foreigner
+003 V foreknow
+003 N foreland
+003 N foreleg
+003 N forelimb
+003 N forelock
+003 N foreman
+003 N foremast
+003 A foremost
+003 N forename
+003 N forenoon
+003 A forensic
+003 V foreordain
+003 N forepaw
+003 N foreplay
+004 N forerunner
+003 N foresail
+003 V foresee
+004 V foreshadow
+003 N foreshore
+004 V foreshorten
+003 N foresight
+003 N foreskin
+002 N forest
+003 V forestall
+003 N forester
+003 N forestry
+003 N foretaste
+003 V foretell
+003 N forethought
+003 D forever
+003 V forewarn
+004 N forewoman
+003 N foreword
+002 N forfeit
+003 V forgather
+001 V forge
+003 N forgery
+002 V forget
+003 A forgetful
+004 N forgetmenot
+002 V forgive
+004 N forgiveness
+003 A forgiving
+002 V forgo
+001 N fork
+002 A forlorn
+002 A formal
+004 N formaldehyde
+003 N formalin
+003 N formalism
+004 N formality
+003 V formalize
+002 N format
+003 N formation
+003 A formative
+001 N forme
+003 D formerly
+003 N formica
+004 A formidable
+002 A formless
+003 N formula
+004 N formulary
+003 V formulate
+003 V fornicate
+002 V forsake
+002 D forsooth
+002 V forswear
+003 N forsythia
+001 N fort
+001 D forth
+003 A forthcoming
+002 A forthright
+002 D forthwith
+005 N fortification
+003 V fortify
+003 N fortitude
+002 N fortnight
+003 A fortnightly
+002 N fortran
+002 N fortress
+003 A fortuitous
+003 A fortunate
+002 N fortune
+005 N fortuneteller
+002 A forty
+002 N forum
+002 A forward
+001 N fosse
+002 N fossil
+002 V foster
+001 A foul
+002 A foulmouthed
+002 N foulup
+001 V found
+003 N foundation
+004 N foundationstone
+002 V founder
+002 N foundling
+002 N foundry
+001 N fount
+002 N fountain
+003 N fountainhead
+003 N fountainpen
+001 A four
+002 A fourfold
+003 N fourinhand
+003 N fourposter
+002 N foursome
+002 A foursquare
+002 A fourstroke
+002 A fourteen
+001 A fourth
+001 N fowl
+001 N fox
+002 N foxglove
+003 N foxhole
+002 N foxhound
+003 N foxhunting
+003 N foxterrier
+002 N foxtrot
+002 A foxy
+002 N foyer
+002 N fracas
+002 N fraction
+003 A fractious
+002 N fracture
+003 A fragile
+002 N fragment
+002 N fragrance
+002 A fragrant
+001 A frail
+002 N frailty
+001 N frame
+002 N frameup
+003 N framework
+001 N franc
+002 N franchise
+003 A franciscan
+002 N francium
+002 N franglais
+001 A frank
+003 N frankenstein
+003 N frankfurter
+003 N frankincense
+002 A frantic
+001 A frapp
+003 A fraternal
+004 N fraternity
+003 V fraternize
+003 N fratricide
+001 N frau
+001 N fraud
+003 A fraudulent
+001 A fraught
+001 N fray
+001 N freak
+002 N freckle
+002 N freebie
+002 N freeboard
+003 N freebooter
+002 A freeborn
+002 N freedman
+002 N freedom
+002 N freefone
+003 N freeforall
+002 A freehand
+002 A freehanded
+002 N freehold
+002 N freelance
+003 N freeloader
+002 N freeman
+003 N freemason
+002 N freepost
+002 A freerange
+002 N freesia
+003 A freespoken
+003 A freestanding
+003 N freestyle
+003 N freethinker
+002 N freeway
+002 V freewheel
+001 V freeze
+003 V freezedry
+002 N freezer
+002 N freezeup
+001 N freight
+002 N freighter
+003 N freightliner
+001 A french
+003 V frenchify
+002 N frenchman
+003 N frenchwoman
+003 A frenetic
+002 N frenzy
+003 N frequency
+002 A frequent
+002 N fresco
+001 A fresh
+002 V freshen
+002 N fresher
+002 N freshet
+002 N freshman
+001 N fret
+002 A fretful
+002 N fretsaw
+002 N fretwork
+002 A freudian
+002 A friable
+001 N friar
+002 N friary
+003 N fricassee
+003 A fricative
+002 N friction
+002 N friday
+001 N fridge
+004 N fridgefreezer
+001 N friend
+002 A friendly
+002 N friendship
+002 N friesian
+001 N frieze
+001 V frig
+002 N frigate
+001 N fright
+002 V frighten
+002 A frightful
+002 A frigid
+001 N frill
+001 N fringe
+003 N frippery
+002 N frisbee
+002 A frisian
+001 V frisk
+002 A frisky
+002 N frisson
+004 N fritillary
+002 N fritter
+003 A frivolous
+001 V frizz
+002 V frizzle
+002 A frizzy
+001 N frock
+002 N frockcoat
+001 N frog
+002 N frogman
+002 V frogmarch
+002 N frogspawn
+002 V frolic
+003 A frolicsome
+001 P from
+001 N frond
+001 N front
+002 N frontage
+002 A frontal
+003 N frontbencher
+002 N frontier
+003 N frontispiece
+001 N frost
+002 N frostbite
+002 N frosting
+002 A frosty
+001 N froth
+001 V frown
+002 A frowsty
+002 A frowzy
+003 V fructify
+002 N fructose
+002 A frugal
+001 N fruit
+003 N fruiterer
+002 A fruitful
+002 N fruition
+002 A fruitless
+002 A fruity
+002 N frulein
+001 N frump
+002 V frustrate
+002 N frustum
+001 V fry
+001 N fryer
+002 N fryingpan
+001 N fryup
+001 N fte
+002 N fuchsia
+002 N fuckup
+002 V fuddle
+001 N fudge
+001 N fuel
+001 N fug
+003 N fugitive
+002 N fugue
+002 N fulcrum
+002 V fulfil
+002 V fulfill
+001 V full
+002 A fullblooded
+002 A fullblown
+003 A fullbodied
+002 N fuller
+003 A fullfrontal
+002 A fulllength
+002 N fullness
+003 A fullscale
+002 A fulltime
+003 N fulltimer
+002 D fully
+004 A fullyfashioned
+002 N fulmar
+003 A fulminant
+003 V fulminate
+002 A fulsome
+002 V fumble
+001 N fume
+003 V fumigate
+001 N fun
+002 N function
+003 A functional
+004 N functionalism
+004 N functionary
+001 N fund
+004 A fundamental
+005 N fundamentalism
+003 N fundraiser
+003 N funeral
+004 A funerary
+003 A funereal
+002 N funfair
+003 N fungicide
+002 A fungoid
+002 N fungus
+004 A funicular
+001 N funk
+002 A funky
+002 N funnel
+002 A funny
+003 N funnybone
+001 N fur
+003 N furbelow
+002 V furbish
+002 A furcate
+003 A furious
+001 V furl
+002 N furlong
+002 N furlough
+002 N furnace
+002 V furnish
+002 A furnished
+003 N furnisher
+003 N furniture
+002 N furor
+002 N furore
+002 N furrier
+002 N furrow
+002 A furry
+002 D further
+003 N furtherance
+003 D furthermore
+002 A furtive
+002 N fury
+001 N furze
+001 V fuse
+003 N fuselage
+003 A fusible
+002 N fusil
+003 N fusilier
+003 N fusillade
+002 N fusion
+001 N fuss
+002 N fusspot
+002 A fussy
+002 N fustian
+002 A fusty
+003 A futile
+002 N futon
+002 A future
+003 N futurism
+004 A futuristic
+004 N futurity
+005 N futurology
+001 N fuzz
+002 A fuzzy
+001 N gab
+003 N gabardine
+002 V gabble
+002 N gable
+001 V gad
+003 N gadabout
+002 N gadfly
+002 N gadget
+004 N gadolinium
+002 N gadwall
+001 N gael
+002 N gaelic
+001 N gaff
+001 N gaffe
+002 N gaffer
+001 N gag
+002 A gaga
+002 N gaggle
+003 N gaiety
+002 D gaily
+001 V gain
+002 A gainful
+002 V gainsay
+001 N gait
+002 N gaiter
+001 N gal
+002 N gala
+003 A galactic
+003 N galantine
+003 N galaxy
+002 N gale
+001 N gall
+002 A gallant
+003 N gallantry
+002 N galleon
+003 N galleria
+003 N gallery
+002 N galley
+003 N galleyslave
+002 A gallic
+003 N gallicism
+005 A gallinaceous
+002 N gallium
+003 V gallivant
+002 N gallon
+002 N gallop
+002 N gallstone
+002 D galore
+002 N galosh
+002 V galumph
+003 A galvanic
+003 V galvanize
+005 N galvanometer
+002 N gambit
+002 V gamble
+002 N gamboge
+002 V gambol
+001 A game
+003 N gamecock
+004 N gamekeeper
+003 N gamelan
+004 N gamesmanship
+003 N gamester
+002 N gamete
+002 N gamin
+002 N gamine
+002 N gamma
+002 N gammon
+002 A gammy
+002 N gamut
+002 A gamy
+002 N gander
+001 N gang
+002 N ganger
+002 A gangling
+002 N ganglion
+002 A gangly
+002 N gangplank
+002 N gangrene
+002 N gangster
+002 N gangue
+002 N gangway
+002 N gannet
+002 N gantry
+001 N gap
+001 V gape
+002 N garage
+001 N garb
+002 N garbage
+002 V garble
+002 N garden
+003 N gardener
+003 N gardenia
+002 N garfish
+003 A gargantuan
+002 V gargle
+003 N gargoyle
+004 N garibaldi
+002 A garish
+002 N garland
+002 N garlic
+002 N garment
+002 V garner
+002 N garnet
+002 V garnish
+002 N garret
+003 N garrison
+003 A garrulous
+002 N garter
+001 N gas
+002 N gasbag
+003 A gaseous
+002 A gasfired
+001 N gash
+003 N gasholder
+003 V gasify
+002 N gasket
+002 N gaslight
+002 N gasman
+003 N gasoline
+004 N gasometer
+001 V gasp
+002 A gassy
+002 A gastric
+003 N gastritis
+005 N gastroenteritis
+003 N gastronome
+004 N gastronomy
+003 N gastropod
+002 N gasworks
+001 N gate
+003 N gateau
+004 N gatecrasher
+003 N gatehouse
+003 N gateleg
+003 N gatepost
+003 N gateway
+002 V gather
+003 N gathering
+001 A gauche
+003 N gaucherie
+002 N gaucho
+002 A gaudy
+001 N gaul
+002 A gaulish
+001 A gaunt
+002 N gauntlet
+001 N gauss
+001 N gauze
+002 N gavel
+002 N gavotte
+001 V gawk
+002 A gawky
+001 V gawp
+001 A gay
+003 N gayety
+001 V gaze
+003 N gazebo
+003 N gazelle
+002 N gazette
+003 N gazetteer
+003 N gazpacho
+002 V gazump
+003 V gazunder
+001 N gear
+002 N gearbox
+002 N gearing
+002 N gearwheel
+002 N gecko
+002 N geegee
+002 N geezer
+002 N geisha
+001 N gel
+003 N gelatin
+004 A gelatinous
+001 V geld
+002 N gelding
+003 N gelignite
+001 N gem
+003 A geminate
+003 N gemini
+002 N gemma
+002 N gemstone
+002 N gendarme
+002 N gender
+001 N gene
+004 N genealogy
+003 A general
+006 N generalissimo
+005 N generality
+004 V generalize
+004 D generally
+003 V generate
+004 N generation
+004 A generative
+004 N generator
+003 A generic
+003 A generous
+003 N genesis
+003 A genetic
+002 A genial
+002 N genie
+003 A genital
+002 N genius
+003 N genocide
+002 N genome
+001 N genre
+001 N gent
+002 A genteel
+002 N gentian
+003 A gentile
+004 N gentility
+002 A gentle
+003 N gentleman
+004 A gentlemanly
+004 N gentlewoman
+005 N gentrification
+003 V genuflect
+002 A genuine
+002 N genus
+003 A geocentric
+001 N geode
+003 A geodesic
+003 N geodesy
+004 A geographical
+003 N geography
+003 N geology
+003 A geometric
+003 N geometry
+002 N geordie
+002 N georgette
+002 A georgian
+003 N geranium
+002 N gerbil
+003 A geriatric
+001 N germ
+002 A german
+003 N germander
+002 A germane
+003 A germanic
+003 N germanium
+003 N germicide
+003 A germinal
+003 V germinate
+005 N gerontology
+004 V gerrymander
+002 N gerund
+002 N gesso
+003 N gestapo
+003 N gestation
+004 V gesticulate
+002 N gesture
+001 V get
+004 A getatable
+003 N getaway
+002 N getout
+004 N gettogether
+002 N getup
+004 N getupandgo
+002 N geyser
+002 A ghastly
+001 N ghee
+002 N gherkin
+002 N ghetto
+004 N ghettoblaster
+001 N ghost
+002 N ghosting
+003 N ghostwriter
+001 N ghoul
+001 N gi
+001 N giant
+002 V gibber
+003 N gibberish
+002 N gibbet
+002 N gibbon
+002 A gibbous
+002 A giddy
+001 N gift
+001 A gifted
+002 V giftwrap
+003 A gigantic
+002 V giggle
+003 N gigolo
+001 N gill
+002 N gillie
+004 N gillyflower
+001 N gilt
+002 A giltedged
+002 A gimcrack
+002 N gimlet
+002 N gimmick
+001 N gimp
+001 N gin
+002 N ginger
+003 N gingerbread
+003 D gingerly
+003 N gingernut
+002 N gingham
+004 N gingivitis
+002 N ginkgo
+003 A ginormous
+002 N ginseng
+002 N giraffe
+001 V gird
+002 N girder
+002 N girdle
+001 N girl
+002 N girlfriend
+002 A girlie
+002 N giro
+001 N girth
+002 N gismo
+001 N gist
+001 N git
+001 V give
+003 N giveaway
+002 N gizzard
+001 A glac
+002 A glacial
+002 A glaciated
+002 N glacier
+001 A glad
+002 V gladden
+001 N glade
+003 N gladiator
+003 N gladiolus
+002 A gladsome
+001 N glair
+001 A glam
+002 N glamor
+003 V glamorize
+002 N glamour
+001 V glance
+001 N gland
+003 A glandular
+001 V glare
+002 A glaring
+002 N glasnost
+001 N glass
+003 N glassblowing
+002 N glasshouse
+003 N glasspaper
+002 N glassware
+002 A glassy
+003 A glaswegian
+003 N glaucoma
+001 V glaze
+002 N glazier
+001 N gleam
+001 V glean
+001 N glebe
+001 N glee
+002 A gleeful
+001 N glen
+003 N glengarry
+001 A glib
+001 V glide
+002 N glider
+002 V glimmer
+001 N glimpse
+001 V glint
+002 N glissade
+003 N glissando
+002 V glisten
+001 N glitch
+002 V glitter
+001 N glitz
+002 N gloaming
+001 V gloat
+001 N glob
+002 A global
+001 N globe
+004 N globetrotter
+003 A globular
+003 N globule
+003 N globulin
+003 N glockenspiel
+001 N gloom
+002 A gloomy
+003 V glorify
+003 A glorious
+002 N glory
+004 N gloryhole
+001 N gloss
+003 N glossary
+002 A glossy
+002 A glottal
+002 N glottis
+003 N gloucester
+001 N glove
+002 N glover
+001 V glow
+002 V glower
+002 N glowworm
+003 N gloxinia
+002 N glucose
+001 N glue
+003 N gluesniffing
+001 A glum
+001 V glut
+003 N glutamate
+002 N gluten
+003 A glutinous
+002 N glutton
+003 N gluttony
+003 N glycerin
+003 N glycerine
+003 N glycerol
+003 N glycogen
+004 N glycolysis
+001 N gman
+001 A gnarled
+001 V gnash
+001 N gnat
+001 V gnaw
+001 N gneiss
+001 N gnome
+002 A gnomic
+002 N gnomon
+002 A gnostic
+001 N gnu
+001 V go
+001 V goad
+002 N goahead
+001 N goal
+002 N goalie
+003 N goalkeeper
+002 N goalpost
+001 N goat
+002 N goatee
+002 N goatherd
+002 N goatskin
+001 N gob
+002 N gobbet
+002 V gobble
+004 N gobbledegook
+003 N gobetween
+002 N goblet
+002 N goblin
+002 A gobsmacked
+003 N gobstopper
+002 N goby
+002 N gocart
+001 N god
+002 N godchild
+003 N goddaughter
+002 N goddess
+003 N godfather
+003 A godfearing
+004 A godforsaken
+002 N godhead
+002 A godless
+002 A godlike
+002 A godly
+003 N godmother
+003 N godparent
+002 N godsend
+002 N godson
+001 N goer
+003 N gogetter
+002 V goggle
+003 N gogglebox
+002 A gogo
+001 N going
+003 N goingover
+002 N goiter
+001 N goitre
+002 N gokart
+001 N gold
+002 N goldcrest
+003 N golddigger
+002 N golddust
+002 A golden
+002 N goldfield
+002 N goldfinch
+002 N goldfish
+002 N goldmine
+002 V goldplate
+002 N goldrush
+002 N goldsmith
+001 N golf
+002 N golfcourse
+003 N golliwog
+002 N golly
+002 N gonad
+003 N gondola
+003 N gondolier
+001 A gone
+002 N goner
+001 N gong
+003 N gonorrhea
+004 N gonorrhoea
+001 N goo
+001 A good
+004 A goodfornothing
+002 A goodhearted
+003 A goodhumoured
+003 A goodlooking
+002 A goodly
+003 A goodnatured
+002 N goodness
+003 A goodtempered
+002 N goodwill
+002 N goody
+002 A gooey
+002 A goofy
+002 N googly
+001 N goon
+001 N goose
+004 N gooseberry
+003 N gooseflesh
+003 N goosestep
+002 N gopher
+002 A gordian
+001 N gore
+001 N gorge
+003 A gorgeous
+002 N gorgon
+004 N gorgonzola
+003 N gorilla
+002 A gormless
+001 N gorse
+002 N gorsedd
+002 A gory
+002 N goshawk
+002 N gosling
+002 N goslow
+002 N gospel
+003 N gossamer
+002 N gossip
+001 N goth
+002 A gothic
+002 N gouache
+002 N gouda
+001 N gouge
+002 N goulash
+001 N gourd
+002 N gourmand
+003 N gourmandise
+002 N gourmet
+001 N gout
+002 V govern
+003 N governance
+003 N governess
+003 N government
+003 N governor
+006 N governorgeneral
+001 N gown
+001 N goy
+001 V grab
+001 N grace
+003 A graceful
+003 A graceless
+003 N gracenote
+003 A gracious
+002 V gradate
+003 N gradation
+001 N grade
+002 N gradient
+002 A gradual
+003 N gradualism
+002 N graduate
+004 A graecoroman
+001 N grail
+001 N grain
+005 A graminaceous
+005 A graminivorous
+002 N grammar
+003 N grammarian
+004 A grammatical
+003 N gramophone
+002 N grampus
+001 N gran
+004 N granadilla
+003 N granary
+001 A grand
+002 N grandad
+002 N grandchild
+003 N granddaughter
+002 N grandee
+002 N grandeur
+003 N grandfather
+004 A grandiloquent
+002 A grandiose
+002 N grandma
+003 N grandmother
+002 N grandpa
+003 N grandparent
+002 N grandsire
+002 N grandson
+002 N grandstand
+001 N grange
+004 A graniferous
+002 N granite
+004 A granivorous
+002 N granny
+001 V grant
+003 A grantmaintained
+003 A granular
+003 V granulate
+003 N granule
+001 N grape
+003 N grapefruit
+003 N grapeshot
+003 N grapevine
+002 N graphite
+004 N graphology
+002 N grapnel
+002 V grapple
+004 N grapplingiron
+001 V grasp
+002 A grasping
+001 N grass
+003 N grasshopper
+002 N grassland
+001 N grate
+003 A grateful
+003 V gratify
+002 N grating
+002 D gratis
+003 N gratitude
+003 A gratuitous
+003 N gratuity
+001 V grave
+004 N gravedigger
+002 N gravel
+003 A gravelly
+001 N graves
+003 N gravestone
+003 N graveyard
+002 A gravid
+004 N gravimeter
+004 N gravimetry
+003 V gravitate
+004 N gravitation
+003 N gravity
+002 N gravy
+003 N gravyboat
+002 N grayling
+001 V graze
+002 N grazier
+002 N grazing
+001 N grease
+003 N greasepaint
+003 A greaseproof
+002 N greaser
+002 A greasy
+001 A great
+002 N greatcoat
+002 D greatly
+001 N greave
+001 N grebe
+002 A grecian
+001 N greed
+002 A greedy
+001 N greek
+001 A green
+003 N greenery
+002 A greeneyed
+002 N greenfinch
+002 N greenfly
+002 N greengage
+003 N greengrocer
+004 N greengrocery
+002 N greenhorn
+002 N greenhouse
+002 N greenroom
+002 N greenstuff
+002 N greensward
+002 N greenwood
+002 A greeny
+001 V greet
+002 N greeting
+004 A gregarious
+002 N gremlin
+002 N grenade
+003 N grenadier
+002 N greyhound
+002 N greylag
+001 N grid
+002 N griddle
+003 N gridiron
+001 N grief
+002 N grievance
+001 V grieve
+002 A grievous
+002 N griffin
+002 N griffon
+001 N grill
+002 N grille
+001 N grilse
+001 A grim
+002 N grimace
+001 N grime
+001 V grin
+001 V grind
+002 N grinder
+002 N grindstone
+001 V grip
+001 V gripe
+002 A grisly
+001 N grist
+002 N gristle
+001 N grit
+002 V grizzle
+001 A grizzled
+002 A grizzly
+001 V groan
+001 N groat
+002 N grocer
+003 N grocery
+001 N grog
+002 A groggy
+001 N groin
+002 N grommet
+001 N groom
+001 N groove
+002 A groovy
+001 V grope
+002 N grosgrain
+001 A gross
+003 A grotesque
+002 N grotto
+002 A grotty
+001 N ground
+002 N grounding
+002 A groundless
+002 N groundnut
+002 N groundplan
+002 N groundrent
+002 N groundsel
+002 N groundsheet
+002 N groundsman
+003 N groundwater
+002 N groundwork
+001 N group
+002 N groupie
+001 N grout
+001 N grove
+002 V grovel
+001 V grow
+002 N grower
+001 V growl
+002 A grownup
+001 N growth
+001 N groyne
+001 N grub
+002 A grubby
+001 N grudge
+001 N gruel
+002 A grueling
+002 A gruelling
+002 A gruesome
+001 A gruff
+002 V grumble
+002 A grumpy
+001 N grunt
+001 N gruyre
+001 N gstring
+001 N gsuit
+001 N gt
+001 N gte
+002 N guano
+003 N guarantee
+003 N guarantor
+003 N guaranty
+001 V guard
+001 A guarded
+002 N guardhouse
+002 N guardian
+002 N guardroom
+002 N guardsman
+002 N guava
+005 A gubernatorial
+002 N gudgeon
+002 N guernsey
+003 N guerrilla
+001 V guess
+002 N guesswork
+001 N guest
+002 N guesthouse
+003 N guestimate
+001 N guff
+002 N guffaw
+002 N guidance
+001 N guide
+003 N guidebook
+003 N guidedog
+003 N guideline
+002 N guider
+001 N guild
+002 N guilder
+002 N guildhall
+002 N guile
+003 N guillemot
+003 N guillotine
+001 N guilt
+002 A guiltless
+002 A guilty
+002 N guinea
+003 N guineafowl
+003 N guineapig
+002 N guipure
+001 N guise
+002 N guitar
+001 N gulch
+001 N gulf
+001 V gull
+002 N gullet
+003 A gullible
+002 N gully
+001 V gulp
+001 N gum
+002 N gumboil
+002 N gumboot
+002 N gumdrop
+002 A gummy
+002 N gumption
+002 N gumtree
+001 N gun
+002 N gunboat
+003 N guncarriage
+003 N guncotton
+002 N gunfight
+002 N gunfire
+002 A gungho
+002 N gunman
+003 N gunmetal
+002 N gunner
+003 N gunnery
+002 N gunny
+002 N gunpoint
+003 N gunpowder
+003 N gunrunner
+002 N gunshot
+003 N gunslinger
+002 N gunsmith
+003 N gunwale
+002 N guppy
+002 V gurgle
+002 N gurkha
+002 N gurnard
+002 N guru
+001 V gush
+002 N gusher
+002 N gusset
+001 N gust
+002 N gusto
+001 N gut
+002 A gutless
+002 A gutsy
+004 N guttapercha
+001 A gutted
+002 N gutter
+003 N guttering
+003 N guttersnipe
+003 A guttural
+001 N guv
+001 N guy
+002 V guzzle
+001 V gybe
+001 N gym
+003 N gymkhana
+003 N gymnasium
+002 N gymnast
+003 A gymnastic
+003 N gymnosperm
+002 N gymslip
+002 N gynae
+005 N gynaecology
+005 N gynecology
+002 N gypsum
+002 N gypsy
+002 V gyrate
+003 N gyrfalcon
+004 N gyrocompass
+003 N gyroscope
+004 N haberdasher
+004 N habiliment
+002 N habit
+004 A habitable
+003 N habitat
+004 N habitation
+004 A habitforming
+003 N habitu
+003 A habitual
+003 V habituate
+003 N hacienda
+001 N hack
+002 N hacker
+002 N hackle
+002 N hackney
+002 A hackneyed
+002 N hacksaw
+002 N haddock
+001 N hades
+002 A haemal
+003 N haematite
+005 N haematology
+004 N haemoglobin
+004 N haemophilia
+004 N haemophiliac
+002 N hafnium
+001 N haft
+001 N hag
+002 A haggard
+002 N haggis
+002 V haggle
+004 N hagiography
+004 N hagiology
+003 A hagridden
+002 N haha
+002 N hahnium
+002 N haiku
+001 V hail
+005 A hailfellowwellmet
+002 N hailstone
+002 N hailstorm
+001 N hair
+002 N hairbrush
+002 N haircloth
+002 N haircut
+002 N hairdo
+003 N hairdresser
+002 N hairdrier
+002 N hairgrip
+002 N hairline
+002 N hairnet
+002 N hairpiece
+002 N hairpin
+003 A hairraising
+002 N hairslide
+003 A hairsplitting
+002 N hairspray
+002 N hairspring
+003 N hairstyle
+003 N hairtrigger
+002 A hairy
+001 N hajj
+002 N hajji
+002 N haka
+001 N hake
+002 N halal
+002 N halberd
+002 A halcyon
+002 A hale
+001 N half
+003 A halfandhalf
+002 N halfback
+002 A halfbaked
+002 N halfbreed
+003 N halfbrother
+002 N halfcaste
+002 N halfcrown
+002 A halfcut
+003 N halfdozen
+003 N halfduplex
+003 A halfhardy
+002 A halfhearted
+002 N halfhour
+002 N halflife
+002 N halflight
+002 N halfmast
+003 N halfpenny
+003 N halfsister
+002 N halfterm
+003 A halftimbered
+002 N halftime
+003 N halftitle
+002 N halftone
+002 N halftruth
+003 N halfvolley
+002 D halfway
+002 N halfwit
+003 N halibut
+004 N halitosis
+001 N hall
+002 N hallmark
+002 V hallow
+003 N halloween
+004 V hallucinate
+005 N hallucination
+005 N hallucinogen
+002 N hallway
+002 N halo
+003 N halogen
+002 N halon
+001 V halt
+002 N halter
+002 N halva
+001 V halve
+002 N halyard
+001 N ham
+003 N hamburger
+002 A hamfisted
+003 N hamitic
+002 N hamlet
+002 N hammer
+003 N hammerhead
+003 N hammerlock
+003 N hammertoe
+002 N hammock
+002 A hammy
+002 V hamper
+002 N hamster
+002 N hamstring
+001 N hand
+002 N handbag
+002 N handball
+002 N handbell
+002 N handbill
+002 N handbook
+002 N handbrake
+002 N handcart
+002 N handclap
+002 N handcraft
+002 N handcuff
+002 N handful
+002 N handgun
+002 N handhold
+003 N handicap
+003 A handicapped
+003 N handicraft
+003 N handiwork
+003 N handkerchief
+002 N handle
+003 N handlebar
+002 N handler
+002 A handmade
+002 N handmaid
+003 N handmedown
+002 N handout
+003 N handover
+004 D handoverfist
+002 V handpick
+002 N handrail
+002 N handsaw
+002 N handset
+002 N handshake
+002 A handsome
+002 N handspring
+002 N handstand
+003 A handtohand
+002 N handwork
+003 N handwriting
+002 A handy
+003 N handyman
+001 V hang
+002 N hangar
+002 A hangdog
+002 N hanger
+003 N hangeron
+003 N hangglider
+002 N hanging
+002 N hangman
+002 N hangnail
+002 N hangout
+003 N hangover
+002 N hangup
+001 N hank
+002 V hanker
+002 N hanky
+004 N hankypanky
+004 A hanoverian
+002 N hansard
+002 N hansom
+003 N hanukkah
+003 A haphazard
+002 A hapless
+002 A haploid
+002 V happen
+003 N happening
+002 A happy
+005 A happygolucky
+004 N harakiri
+003 N harangue
+002 V harass
+003 N harbinger
+004 N harbourmaster
+001 A hard
+002 A hardback
+003 A hardbitten
+002 N hardboard
+002 A hardboiled
+002 A hardcore
+004 A harddoneby
+002 V harden
+002 A hardheaded
+002 A hardhearted
+003 N hardihood
+002 D hardly
+002 A hardnosed
+002 N hardon
+002 A hardpressed
+002 N hardship
+002 N hardtop
+002 N hardware
+003 A hardwearing
+002 N hardwood
+003 A hardworking
+002 A hardy
+001 N hare
+003 N harebell
+003 A harebrained
+003 N harelip
+002 N harem
+003 N haricot
+001 V hark
+003 N harlequin
+004 N harlequinade
+002 N harlot
+001 N harm
+002 A harmful
+002 A harmless
+003 A harmonic
+004 N harmonica
+004 A harmonious
+003 N harmonium
+003 V harmonize
+003 N harmony
+002 N harness
+001 N harp
+002 N harpoon
+003 N harpsichord
+002 N harpy
+003 N harridan
+002 N harrier
+002 N harrow
+001 A harsh
+001 N hart
+003 N hartebeest
+002 N harvest
+003 N harvester
+002 N hasbeen
+001 N hash
+002 N hashish
+002 N haslet
+001 N hasp
+002 N hassock
+001 N haste
+002 V hasten
+002 A hasty
+001 N hat
+002 N hatband
+002 N hatbox
+001 V hatch
+002 N hatchback
+002 N hatchet
+002 N hatchway
+001 V hate
+003 A hateful
+002 N hatpin
+001 N hatred
+002 N hatstand
+002 N hatter
+002 A haughty
+001 V haul
+002 N haulage
+002 N haulier
+001 N haulm
+001 N haunch
+001 V haunt
+002 A haunting
+002 N hauteur
+001 V have
+002 N haven
+003 N havenot
+002 V haver
+003 N haversack
+002 N havoc
+001 N haw
+002 N hawfinch
+001 V hawk
+002 N hawker
+002 A hawkeyed
+002 N hawser
+002 N hawthorn
+001 N hay
+002 N haycock
+003 N haymaking
+002 N haystack
+002 A haywire
+002 N hazard
+003 A hazardous
+001 N haze
+002 N hazel
+003 N hazelnut
+002 A hazy
+001 N hbomb
+001 N hcek
+001 N head
+002 N headache
+002 N headband
+003 N headbanger
+002 N headboard
+002 N headbutt
+002 N headcount
+002 N headdress
+002 N header
+002 N headgear
+003 N headhunting
+002 N heading
+002 N headlamp
+002 N headland
+002 N headlight
+002 N headline
+002 N headlock
+002 D headlong
+002 N headman
+003 N headmaster
+002 A headon
+003 N headquarters
+002 N headrest
+002 N headroom
+002 N headscarf
+002 N headset
+002 N headship
+003 N headshrinker
+002 N headstall
+002 N headstone
+002 A headstrong
+002 N headway
+002 N headword
+002 A heady
+001 V heal
+001 N health
+002 A healthful
+002 A healthy
+001 N heap
+001 V hear
+002 N hearing
+003 N hearingaid
+002 V hearken
+002 N hearsay
+001 N hearse
+001 N heart
+002 N heartache
+002 N heartbeat
+002 N heartbreak
+002 N heartburn
+002 V hearten
+002 A heartfelt
+001 N hearth
+002 N hearthrug
+003 D heartily
+002 N heartland
+002 A heartless
+003 A heartrending
+003 N heartsearching
+002 A heartsick
+002 N heartthrob
+003 A heartwarming
+002 N heartwood
+002 A hearty
+001 N heat
+001 A heated
+002 N heater
+001 N heath
+002 N heathen
+002 N heather
+002 N heating
+002 A heatproof
+002 N heatwave
+001 V heave
+002 N heaven
+003 A heavenly
+003 A heavensent
+002 A heavy
+004 A heavyduty
+003 A heavyhanded
+003 A heavyhearted
+003 N heavyweight
+004 A hebdomadal
+001 N hebe
+002 A hebraic
+002 N hebrew
+002 V heckle
+002 N hectare
+002 A hectic
+003 N hectogram
+002 V hector
+001 N hedge
+003 N hedgehog
+003 V hedgehop
+003 N hedgerow
+003 N hedonism
+001 V heed
+002 N heehaw
+002 N heelball
+002 A hefty
+004 N hegemony
+003 N hegira
+002 N heifer
+001 N height
+002 V heighten
+002 A heinous
+001 N heir
+002 N heirloom
+002 V hele
+003 A helical
+004 N helicopter
+004 A heliocentric
+003 N heliograph
+003 N heliotrope
+003 N heliport
+002 N helium
+002 N helix
+002 A hellbent
+003 N hellebore
+002 N hellene
+003 N hellenism
+004 A hellenistic
+002 N hellfire
+003 N hellhole
+002 A hellish
+001 N helm
+002 N helmet
+002 N helmsman
+002 N helot
+001 V help
+002 A helpful
+002 N helping
+002 A helpless
+002 N helpline
+002 N helpmate
+004 D helterskelter
+002 A hemal
+002 N heman
+003 N hematite
+005 N hematology
+004 A hemipterous
+003 N hemisphere
+002 N hemline
+002 N hemlock
+004 N hemoglobin
+004 N hemophilia
+004 N hemophiliac
+001 N hemp
+002 A hempen
+002 N hemstitch
+001 N hen
+002 N henbane
+001 D hence
+003 D henceforth
+002 N henchman
+001 N henge
+002 N henna
+003 N henparty
+002 V henpeck
+002 N henry
+003 A hepatic
+004 N hepatitis
+003 N heptagon
+001 R her
+002 N herald
+003 N heraldry
+001 N herb
+004 A herbaceous
+002 N herbage
+002 A herbal
+003 N herbalist
+003 N herbarium
+003 N herbicide
+003 N herbivore
+003 A herculean
+001 N herd
+002 N herdsman
+001 D here
+003 D hereabouts
+003 D hereafter
+003 D hereby
+005 A hereditable
+005 A hereditary
+004 N heredity
+003 N hereford
+002 D herein
+004 D hereinafter
+002 D hereof
+003 N heresy
+003 N heretic
+003 D hereto
+004 D heretofore
+003 D hereupon
+003 D herewith
+004 A heritable
+003 N heritage
+004 N hermaphrodite
+003 A hermetic
+002 N hermit
+003 N hermitage
+003 N hermitcrab
+002 N hernia
+002 N hero
+002 A heroic
+002 N heroin
+002 N heroine
+002 N heroism
+002 N heron
+004 N heroworship
+001 N herpes
+001 N herr
+002 N herring
+003 N herringbone
+003 N herringgull
+001 N hertz
+003 A hesitant
+003 V hesitate
+002 N hessian
+004 A heterodox
+004 A heterodyne
+006 A heterogeneous
+005 A heteromorphic
+005 A heterosexual
+003 A heuristic
+001 V hew
+001 V hex
+005 A hexadecimal
+003 N hexagon
+003 N hexagram
+004 N hexameter
+002 N heyday
+003 N hezbollah
+002 N hiatus
+003 V hibernate
+003 N hibiscus
+001 N hick
+003 N hickory
+001 N hide
+003 N hideandseek
+003 N hideaway
+003 A hidebound
+003 A hideous
+003 N hideout
+002 N hiding
+003 N hidingplace
+003 N hierarchy
+003 A hieratic
+003 N hieroglyph
+004 A hieroglyphic
+006 D higgledypiggledy
+001 A high
+002 N highball
+002 A highclass
+004 A highfalutin
+002 A highflown
+002 N highflyer
+002 A highhanded
+002 N highland
+003 A highlevel
+002 N highlight
+003 N highlighter
+002 D highly
+003 A highlystrung
+002 A highminded
+002 N highness
+003 A highoctane
+002 A highpitched
+003 A highpowered
+003 A highranking
+003 A highspirited
+002 A hightech
+002 N highup
+002 N highway
+003 N highwayman
+002 V hijack
+001 N hike
+004 A hilarious
+001 N hill
+003 N hillbilly
+002 N hillock
+002 N hillside
+002 N hilltop
+003 N hillwalking
+002 A hilly
+001 N hilt
+001 N hind
+002 A hinder
+002 N hindi
+002 A hindmost
+002 N hindrance
+002 N hindsight
+002 N hindu
+002 N hinduism
+004 N hindustani
+001 N hinge
+002 N hinny
+001 N hint
+003 N hinterland
+001 A hip
+002 N hipbath
+002 N hipbone
+002 N hipflask
+002 N hippie
+002 N hippo
+003 N hippocket
+003 N hippodrome
+005 N hippopotamus
+002 A hippy
+002 N hipster
+001 V hire
+003 N hireling
+002 A hirsute
+001 R his
+003 A hispanic
+001 V hiss
+003 N histamine
+003 N histogram
+004 N histology
+003 N historian
+003 A historic
+004 A historical
+004 N historicism
+005 N historicity
+005 N historiography
+003 N history
+003 A histrionic
+001 V hit
+001 V hitch
+002 V hitchhike
+002 A hitech
+002 D hither
+003 D hitherto
+003 A hitormiss
+002 N hittite
+001 N hive
+001 N hoard
+002 N hoarding
+002 N hoarfrost
+001 A hoarse
+002 A hoary
+001 N hoax
+001 N hob
+002 V hobble
+002 N hobby
+003 N hobbyhorse
+003 N hobgoblin
+002 N hobnail
+002 V hobnob
+002 N hobo
+001 V hock
+002 N hockey
+004 N hocuspocus
+001 N hod
+001 N hoe
+001 N hog
+003 N hogmanay
+002 N hogshead
+002 N hogwash
+001 V hoick
+001 V hoist
+004 A hoitytoity
+002 N hokum
+001 N hold
+002 N holdall
+002 N holding
+002 N holdup
+002 N hole
+004 A holeandcorner
+003 N holiday
+005 N holidaymaker
+004 A holierthanthou
+003 N holiness
+002 N holism
+002 V holler
+002 A hollow
+002 N holly
+003 N hollyhock
+001 N holm
+002 N holmium
+003 N holocaust
+003 N hologram
+003 A holograph
+004 N holography
+002 N holster
+002 A holy
+002 N homage
+002 N homburg
+001 N home
+003 N homebrew
+004 N homecoming
+003 A homegrown
+003 N homeland
+003 A homeless
+003 A homely
+003 A homemade
+004 N homeopathy
+003 A homeric
+003 A homesick
+003 A homespun
+003 N homestead
+003 D homeward
+003 N homework
+002 A homey
+003 N homicide
+003 N homily
+003 A hominid
+003 A hominoid
+005 N homoeopathy
+005 A homogeneous
+004 V homogenize
+003 N homograph
+004 A homologous
+004 N homology
+003 N homonym
+004 N homophobia
+003 N homophone
+004 A homosexual
+001 N hone
+002 A honest
+003 D honestly
+003 N honesty
+002 N honey
+003 N honeybee
+003 N honeycomb
+003 N honeydew
+002 A honeyed
+003 N honeymoon
+004 N honeysuckle
+001 N honk
+003 N honkytonk
+004 A honorable
+004 N honorarium
+004 A honorary
+004 A honorific
+004 A honourable
+001 N hooch
+001 N hood
+001 A hooded
+002 N hoodlum
+002 N hoodoo
+002 V hoodwink
+001 N hoof
+002 N hooha
+001 N hook
+002 N hookah
+001 A hooked
+002 N hooker
+002 N hookey
+002 N hookup
+002 N hookworm
+003 N hooligan
+001 N hoop
+002 N hoopla
+002 N hoopoe
+001 N hoot
+002 N hooter
+002 N hoover
+001 N hop
+001 N hope
+003 A hopeful
+004 D hopefully
+003 A hopeless
+002 N hopper
+002 N hopscotch
+001 N horde
+003 N horehound
+003 N horizon
+004 A horizontal
+002 N hormone
+001 N horn
+002 N hornbeam
+002 N hornbill
+002 N hornblende
+002 N hornet
+002 N hornpipe
+002 A hornrimmed
+002 A horny
+004 N horology
+003 N horoscope
+003 A horrendous
+003 A horrible
+002 A horrid
+003 A horrific
+003 V horrify
+002 N horror
+001 N horse
+003 N horseback
+003 N horsebox
+003 N horsebrass
+003 A horsedrawn
+003 N horseflesh
+003 N horsefly
+003 N horsehair
+003 N horseman
+003 N horseplay
+004 N horsepower
+003 N horserace
+004 N horseradish
+003 N horseshoe
+003 N horsetail
+003 N horsewhip
+004 N horsewoman
+002 A horsy
+004 N horticulture
+003 N hosanna
+001 N hose
+002 N hosier
+003 N hosiery
+002 N hospice
+004 A hospitable
+003 N hospital
+005 N hospitality
+004 V hospitalize
+001 N host
+002 N hostage
+002 N hostel
+003 N hosteling
+003 N hostelling
+003 N hostelry
+002 N hostess
+003 A hostile
+004 N hostility
+001 A hot
+001 N hotbed
+002 A hotblooded
+002 N hotchpotch
+002 N hotel
+003 N hotelier
+002 D hotfoot
+002 N hothead
+002 N hothouse
+002 N hotplate
+002 N hotpot
+003 A hottempered
+003 N hottentot
+001 N hound
+001 N hour
+002 N hourglass
+002 N houri
+002 A hourly
+001 N house
+003 N houseagent
+003 N houseboat
+003 A housebound
+004 N housebreaking
+003 N housecoat
+003 N housefly
+003 N household
+004 N householder
+004 N househunting
+004 N househusband
+004 N housekeeper
+004 N housekeeping
+003 N housemaid
+003 N houseman
+004 N housemartin
+004 N housemaster
+003 N houseplant
+003 A houseproud
+003 N houseroom
+003 N housetop
+003 A housetrained
+004 N housewarming
+003 N housewife
+003 N housework
+004 N houseyhousey
+002 N housing
+002 N hovel
+002 V hover
+003 N hovercraft
+003 N hoverport
+001 Q how
+002 D howbeit
+002 N howdah
+003 D however
+003 N howitzer
+001 N howl
+002 N howler
+003 D howsoever
+002 N hoyden
+001 N hub
+004 N hubblebubble
+002 N hubbub
+002 N hubby
+002 N hubris
+004 N huckleberry
+002 N huckster
+002 V huddle
+001 N hue
+001 N huff
+002 A huffy
+001 V hug
+001 A huge
+003 D hugely
+004 A huggermugger
+003 N huguenot
+002 N hula
+001 N hulk
+002 A hulking
+001 N hull
+004 N hullabaloo
+001 V hum
+002 A human
+002 A humane
+003 N humanism
+005 N humanitarian
+004 N humanity
+003 V humanize
+003 N humankind
+003 D humanly
+002 A humble
+002 N humbug
+003 N humdinger
+002 A humdrum
+003 N humerus
+002 A humid
+004 N humidifier
+004 V humidify
+004 N humidity
+003 V humiliate
+004 N humility
+003 N hummingbird
+002 N hummock
+002 N hummus
+004 N humoresque
+003 N humorist
+003 A humorous
+001 N hump
+002 N humpback
+002 N humus
+001 N hun
+001 V hunch
+002 N hunchback
+001 A hundred
+003 N hundredweight
+003 N hungarian
+002 N hunger
+003 A hungover
+002 A hungry
+001 N hunk
+004 A hunkydory
+001 V hunt
+002 N hunter
+002 N huntsman
+002 N hurdle
+002 N hurdler
+004 N hurdygurdy
+001 V hurl
+002 N hurley
+004 N hurlyburly
+003 N hurricane
+005 N hurricanelamp
+002 N hurry
+001 V hurt
+002 A hurtful
+002 V hurtle
+002 N husband
+003 N husbandry
+001 V hush
+002 A hushhush
+001 N husk
+002 N husky
+001 N huss
+002 N hussar
+002 N hussy
+002 N hustings
+002 V hustle
+001 N hut
+001 N hutch
+002 N hyacinth
+002 N hybrid
+003 V hybridize
+002 N hydra
+003 N hydrangea
+002 N hydrant
+002 N hydrate
+003 A hydraulic
+002 N hydride
+004 N hydrocarbon
+005 N hydrocephalus
+004 A hydroelectric
+003 N hydrofoil
+003 N hydrogen
+004 V hydrogenate
+004 N hydrography
+004 N hydrology
+003 V hydrolyse
+004 N hydrolysis
+003 V hydrolyze
+004 N hydrometer
+004 N hydropathy
+004 A hydrophilic
+004 N hydrophobia
+003 N hydroplane
+004 N hydroponics
+003 N hydrosphere
+004 A hydrostatic
+005 N hydrotherapy
+002 A hydrous
+003 N hydroxide
+003 N hydroxyl
+002 N hyena
+002 N hygiene
+004 N hygrometer
+003 N hygroscope
+004 A hygroscopic
+002 N hymen
+005 A hymenopterous
+001 N hymn
+002 N hymnal
+004 N hymnology
+002 N hyoscine
+002 A hyper
+004 A hyperactive
+004 N hyperbola
+004 N hyperbole
+005 A hypercritical
+005 N hyperglycaemia
+005 N hyperglycemia
+004 N hypermarket
+004 N hypermedia
+005 A hypersensitive
+004 A hypersonic
+004 N hypertension
+003 N hypertext
+004 N hyperthermia
+005 N hyperthyroidism
+006 N hyperventilation
+002 N hyphen
+003 V hyphenate
+003 N hypnosis
+005 N hypnotherapy
+003 A hypnotic
+003 N hypnotism
+003 V hypnotize
+002 N hypo
+003 N hypocaust
+004 N hypochondria
+004 N hypochondriac
+004 N hypocrisy
+003 N hypocrite
+004 A hypodermic
+004 N hypotension
+004 N hypotenuse
+005 N hypothalamus
+004 N hypothermia
+004 N hypothesis
+004 V hypothesize
+005 A hypothetical
+005 N hypothyroidism
+006 N hypoventilation
+002 N hyssop
+005 N hysterectomy
+004 N hysteresis
+003 N hysteria
+003 N hysteric
+004 A hysterical
+002 N iambus
+003 A iberian
+002 N ibex
+002 N ibis
+001 N ibo
+001 N ice
+002 N iceaxe
+003 N iceberg
+003 N icebox
+004 N icebreaker
+003 N icecream
+003 N icecube
+003 N icefield
+004 N icelander
+004 A icelandic
+003 N icepack
+003 N icepick
+003 N iceplant
+003 N icerink
+003 N iceskate
+003 N ichneumon
+004 N ichthyology
+004 N ichthyosaurus
+003 N icicle
+002 N icing
+002 N icon
+004 N iconoclast
+005 N iconography
+005 N iconostasis
+005 N icosahedron
+001 A icy
+002 N idea
+002 A ideal
+003 N idealism
+003 V idealize
+003 D ideally
+004 A identical
+006 N identification
+004 V identify
+004 N identikit
+004 N identity
+003 N ideogram
+003 N ideograph
+004 N ideologue
+004 N ideology
+003 N idiocy
+002 N idiom
+004 A idiomatic
+005 N idiosyncrasy
+002 N idiot
+002 A idle
+002 N idol
+004 N idolater
+003 V idolize
+002 N idyll
+003 A idyllic
+002 A iffy
+002 N igloo
+003 A igneous
+002 V ignite
+003 N ignition
+003 A ignoble
+005 A ignominious
+004 N ignominy
+004 N ignoramus
+003 N ignorance
+003 A ignorant
+002 V ignore
+003 N iguana
+004 N iguanodon
+004 N ikebana
+002 N ileum
+002 N ilex
+002 A iliac
+001 N ilk
+003 A illadvised
+003 A illassorted
+001 A illbred
+003 A illdefined
+003 A illdisposed
+003 A illegal
+004 A illegible
+005 A illegitimate
+002 A illfated
+003 A illfavoured
+002 A illfounded
+003 A illgotten
+004 A illiberal
+003 A illicit
+004 A illiterate
+003 A illmannered
+003 A illnatured
+002 N illness
+004 A illogical
+003 A illomened
+003 A illtempered
+002 A illtimed
+002 V illtreat
+004 V illuminate
+003 V illumine
+002 V illuse
+003 N illusion
+004 N illusionist
+003 V illustrate
+004 N illustration
+004 A illustrative
+004 A illustrious
+002 N image
+004 N imagery
+005 A imaginary
+005 N imagination
+005 A imaginative
+003 V imagine
+003 N imago
+002 N imam
+003 N imbalance
+004 N imbecile
+002 V imbibe
+003 N imbroglio
+002 V imbue
+003 V imitate
+004 N imitation
+004 A imitative
+004 A immaculate
+003 A immanent
+004 A immaterial
+003 A immature
+005 A immeasurable
+003 A immediate
+005 D immediately
+004 A immemorial
+002 A immense
+004 D immensely
+002 V immerse
+003 N immersion
+003 N immigrant
+003 V immigrate
+003 A imminent
+004 A immiscible
+004 A immobile
+004 V immobilize
+004 A immoderate
+003 A immodest
+003 V immolate
+003 A immoral
+003 A immortal
+004 A immovable
+002 A immune
+004 N immunity
+003 V immunize
+007 N immunodeficiency
+006 N immunoglobulin
+005 N immunology
+006 N immunotherapy
+002 V immure
+004 A immutable
+001 N imp
+002 N impact
+002 V impair
+003 N impala
+003 V impale
+004 A impalpable
+002 V impart
+003 A impartial
+004 A impassable
+002 N impasse
+004 A impassible
+003 A impassioned
+003 A impassive
+003 N impasto
+003 N impatiens
+003 A impatient
+002 V impeach
+004 A impeccable
+005 A impecunious
+003 N impedance
+002 V impede
+004 N impediment
+002 V impel
+002 V impend
+005 A impenetrable
+004 A impenitent
+004 A imperative
+005 A imperceptible
+003 A imperfect
+004 N imperfection
+003 A imperial
+004 N imperialism
+003 V imperil
+004 A imperious
+005 A imperishable
+004 A impermanent
+004 A impermeable
+005 A impermissible
+004 A impersonal
+004 V impersonate
+004 A impertinent
+005 A imperturbable
+004 A impervious
+004 N impetigo
+004 A impetuous
+003 N impetus
+003 N impiety
+002 V impinge
+003 A impious
+002 A impish
+004 A implacable
+002 V implant
+004 A implausible
+003 N implement
+003 V implicate
+004 N implication
+003 A implicit
+002 V implode
+002 V implore
+002 V imply
+003 A impolite
+004 A impolitic
+005 A imponderable
+002 V import
+003 A important
+004 A importunate
+003 V importune
+002 V impose
+003 A imposing
+004 N imposition
+004 A impossible
+002 N impost
+003 N impostor
+003 N imposture
+003 A impotent
+002 V impound
+004 V impoverish
+005 A impracticable
+004 A impractical
+004 N imprecation
+003 A imprecise
+004 A impregnable
+003 V impregnate
+004 N impresario
+002 V impress
+003 N impression
+005 A impressionable
+004 N impressionism
+003 A impressive
+004 N imprimatur
+002 V imprint
+003 V imprison
+004 A improbable
+004 N improbity
+003 A impromptu
+003 A improper
+004 N impropriety
+002 V improve
+004 A improvident
+003 V improvise
+003 A imprudent
+003 A impudent
+002 V impugn
+002 N impulse
+003 N impulsion
+003 A impulsive
+004 N impunity
+002 A impure
+004 N impurity
+002 V impute
+001 P in
+005 N inability
+005 A inaccessible
+004 A inaccurate
+003 N inaction
+003 A inactive
+004 A inadequate
+005 A inadmissible
+004 A inadvertent
+005 A inadvisable
+005 A inalienable
+005 N inamorato
+002 A inane
+004 A inanimate
+005 A inapplicable
+004 A inapposite
+004 A inappropriate
+002 A inapt
+005 A inarticulate
+004 A inattentive
+004 A inaudible
+004 A inaugural
+004 V inaugurate
+005 A inauspicious
+002 D inboard
+002 A inborn
+001 A inbred
+003 N inbreeding
+002 A inbuilt
+002 N inca
+005 A incalculable
+003 V incandesce
+004 A incandescent
+004 N incantation
+004 A incapable
+005 V incapacitate
+005 N incapacity
+004 V incarcerate
+003 A incarnate
+004 N incarnation
+004 A incautious
+004 A incendiary
+002 V incense
+003 N incentive
+003 N inception
+003 A inceptive
+003 A incessant
+002 N incest
+004 A incestuous
+001 N inch
+002 A inchoate
+003 N incidence
+003 N incident
+004 A incidental
+005 D incidentally
+004 V incinerate
+005 N incinerator
+003 A incipient
+002 V incise
+003 N incision
+003 A incisive
+003 N incisor
+002 V incite
+005 N incivility
+003 A inclement
+004 N inclination
+002 V incline
+002 V include
+003 A inclusive
+004 A incognizant
+004 A incoherent
+005 A incombustible
+002 N income
+003 A incoming
+006 A incommensurable
+005 A incommensurate
+003 V incommode
+005 A incommodious
+006 A incommunicable
+006 A incommunicado
+006 A incommunicative
+005 A incomparable
+005 A incompatible
+004 A incompetent
+003 A incomplete
+006 A incomprehensible
+005 N incomprehension
+005 A inconceivable
+004 A inconclusive
+004 A incongruous
+004 A inconsequent
+005 A inconsequential
+006 A inconsiderable
+005 A inconsiderate
+004 A inconsistent
+005 A inconsolable
+005 A inconspicuous
+003 A inconstant
+005 A incontestable
+004 A incontinent
+006 A incontrovertible
+004 N inconvenience
+004 A inconvenient
+004 V incorporate
+004 A incorporeal
+003 A incorrect
+005 A incorrigible
+005 A incorruptible
+002 V increase
+004 D increasingly
+004 A incredible
+004 A incredulous
+003 N increment
+004 V incriminate
+004 N incrustation
+003 V incubate
+004 N incubation
+004 N incubator
+003 N incubus
+003 V inculcate
+004 N incumbency
+003 A incumbent
+005 N incunabulum
+002 V incur
+004 A incurable
+004 A incurious
+003 N incursion
+002 V incurve
+002 A indebted
+003 A indecent
+006 A indecipherable
+004 N indecision
+004 A indecisive
+005 A indeclinable
+004 A indecorous
+002 D indeed
+006 A indefatigable
+005 A indefeasible
+005 A indefensible
+005 A indefinable
+004 A indefinite
+006 D indefinitely
+004 A indelible
+004 A indelicate
+004 V indemnify
+004 N indemnity
+002 V indent
+004 N indentation
+003 N indention
+003 N indenture
+004 A independent
+002 A indepth
+005 A indescribable
+005 A indestructible
+006 A indeterminable
+005 A indeterminate
+002 N index
+003 A indexlinked
+003 N indiaman
+002 N indian
+004 N indiarubber
+003 V indicate
+004 A indicative
+004 N indicator
+005 A indicatory
+002 V indict
+004 A indictable
+003 N indictment
+004 N indifference
+004 A indifferent
+004 A indigenous
+003 A indigent
+005 A indigestible
+004 N indigestion
+003 A indignant
+004 N indignation
+004 N indignity
+003 N indigo
+003 A indirect
+005 A indiscernible
+004 N indiscipline
+003 A indiscreet
+004 N indiscretion
+005 A indiscriminate
+005 A indispensable
+003 A indisposed
+005 A indisputable
+005 A indissoluble
+003 A indistinct
+006 A indistinguishable
+002 V indite
+002 N indium
+004 A individual
+005 N individualism
+006 N individuality
+005 V individualize
+005 D individually
+005 A indivisible
+004 V indoctrinate
+005 A indoeuropean
+003 A indolent
+005 A indomitable
+002 A indoor
+002 D indoors
+002 A indrawn
+005 A indubitable
+002 V induce
+004 N inducement
+002 V induct
+003 N inductance
+003 N induction
+003 A inductive
+003 N inductor
+002 V indulge
+003 N indulgence
+003 A indulgent
+003 A industrial
+004 N industrialism
+004 N industrialist
+004 V industrialize
+004 A industrious
+003 N industry
+003 V inebriate
+004 A inedible
+005 A ineducable
+004 A ineffable
+004 A ineffective
+004 A ineffectual
+004 A inefficient
+004 A inelegant
+005 A ineligible
+005 A ineluctable
+002 A inept
+004 A inequable
+005 N inequality
+005 A inequitable
+004 N inequity
+006 A ineradicable
+002 A inert
+003 N inertia
+005 A inescapable
+004 A inessential
+005 A inestimable
+005 A inevitable
+003 A inexact
+005 A inexcusable
+005 A inexhaustible
+005 A inexorable
+004 A inexpedient
+004 A inexpensive
+004 N inexperience
+003 A inexpert
+004 A inexpiable
+005 A inexplicable
+005 A inexpressible
+006 A inextinguishable
+005 A inextricable
+004 A infallible
+003 A infamous
+002 N infant
+003 N infanta
+004 N infanticide
+004 A infantile
+003 N infantry
+004 N infantryman
+002 N infarct
+003 V infatuate
+002 V infect
+003 N infection
+004 A infectious
+005 N infelicity
+002 V infer
+003 N inference
+003 A inferior
+005 N inferiority
+003 A infernal
+003 N inferno
+004 A infertile
+002 V infest
+003 N infidel
+005 N infidelity
+002 N infield
+003 N infighting
+002 N infill
+003 N infilling
+003 V infiltrate
+003 A infinite
+006 A infinitesimal
+004 N infinitive
+004 N infinitude
+004 N infinity
+002 A infirm
+004 N infirmary
+004 N infirmity
+002 V infix
+002 V inflame
+004 A inflammable
+004 N inflammation
+005 A inflammatory
+004 A inflatable
+002 V inflate
+003 N inflation
+002 V inflect
+003 N inflection
+004 A inflexible
+002 V inflict
+004 N inflorescence
+002 N inflow
+002 N influence
+003 A influential
+003 N influenza
+002 N influx
+002 N info
+002 V inform
+003 A informal
+003 N informant
+004 N information
+004 A informative
+002 A informed
+003 N informer
+003 N infraction
+002 A infrared
+004 N infrastructure
+003 A infrequent
+002 V infringe
+003 V infuriate
+002 V infuse
+004 A infusible
+003 N infusion
+004 A ingenious
+004 N ingenuity
+004 A ingenuous
+002 V ingest
+003 N inglenook
+004 A inglorious
+002 N ingnue
+002 A ingoing
+002 N ingot
+002 A ingrained
+004 N ingratitude
+003 N ingredient
+002 N ingress
+003 A ingrowing
+003 A inguinal
+003 V inhabit
+004 N inhabitant
+003 N inhalant
+003 V inhale
+003 N inhaler
+002 V inhere
+003 A inherent
+003 V inherit
+004 N inheritance
+003 V inhibit
+004 N inhibition
+005 A inhospitable
+002 A inhouse
+003 A inhuman
+003 A inhumane
+004 A inimical
+005 A inimitable
+004 N iniquity
+003 A initial
+003 V initiate
+004 N initiative
+002 V inject
+005 A injudicious
+003 N injunction
+002 V injure
+002 A injured
+004 A injurious
+003 N injury
+003 N injustice
+001 N ink
+002 N inkling
+002 N inkstand
+002 N inkwell
+002 A inky
+002 A inland
+002 N inlaw
+002 V inlay
+002 N inlet
+002 N inmate
+002 A inmost
+001 N inn
+002 A innate
+002 A inner
+002 N innings
+003 N innkeeper
+003 A innocent
+004 A innocuous
+003 V innovate
+003 N innuendo
+005 A innumerable
+004 A innumerate
+004 V inoculate
+004 A inoffensive
+005 A inoperable
+005 A inoperative
+004 A inopportune
+004 A inordinate
+004 A inorganic
+003 N inpatient
+002 N input
+002 N inquest
+004 N inquietude
+002 V inquire
+003 N inquiry
+004 N inquisition
+004 A inquisitive
+004 N inquisitor
+005 A inquisitorial
+003 A inquorate
+002 N inroad
+002 N inrush
+005 A insalubrious
+002 A insane
+005 A insanitary
+004 A insatiable
+003 A insatiate
+002 V inscribe
+003 N inscription
+004 A inscrutable
+002 N insect
+004 N insecticide
+004 N insectivore
+003 A insecure
+004 V inseminate
+003 A insensate
+004 A insensible
+004 A insensitive
+003 A insentient
+005 A inseparable
+002 V insert
+003 N insertion
+002 N inset
+002 D inshore
+002 N inside
+003 N insider
+004 A insidious
+002 N insight
+003 N insignia
+005 A insignificant
+003 A insincere
+003 V insinuate
+003 A insipid
+002 V insist
+003 A insistent
+004 N insobriety
+003 D insofar
+003 N insole
+003 A insolent
+004 A insoluble
+003 A insolvent
+003 N insomnia
+003 N insomniac
+003 D insomuch
+003 A insouciant
+002 V inspect
+003 N inspector
+004 N inspiration
+002 V inspire
+003 V inspirit
+005 N instability
+002 V install
+003 N installment
+003 N instalment
+002 N instance
+002 A instant
+005 A instantaneous
+003 D instantly
+002 D instead
+002 N instep
+003 V instigate
+002 V instil
+002 V instill
+002 N instinct
+003 N institute
+004 N institution
+005 A institutional
+006 V institutionalize
+002 V instruct
+003 N instruction
+003 A instructive
+003 N instrument
+004 A instrumental
+005 N instrumentalist
+006 N instrumentality
+005 N instrumentation
+005 A insubordinate
+004 A insubstantial
+005 A insufferable
+004 A insufficient
+003 A insular
+003 V insulate
+003 N insulin
+002 V insult
+005 A insuperable
+005 A insupportable
+003 N insurance
+002 V insure
+002 N insured
+003 N insurer
+003 A insurgent
+005 A insurmountable
+004 N insurrection
+005 A insusceptible
+002 A intact
+003 N intaglio
+002 N intake
+004 A intangible
+003 N integer
+003 A integral
+003 V integrate
+004 N integrity
+004 N integument
+003 N intellect
+004 A intellectual
+004 N intelligence
+004 A intelligent
+005 N intelligentsia
+005 A intelligible
+004 A intemperate
+002 V intend
+002 A intended
+002 A intense
+004 N intensifier
+004 V intensify
+004 N intensity
+003 A intensive
+002 N intent
+003 N intention
+004 A intentional
+003 V interact
+004 A interactive
+003 V interbreed
+003 V intercede
+003 V intercept
+004 N intercession
+003 V interchange
+005 A interchangeable
+004 A intercity
+003 N intercom
+006 V intercommunicate
+005 N intercommunion
+004 V interconnect
+006 A intercontinental
+003 N intercourse
+008 A interdenominational
+006 A interdepartmental
+005 A interdependent
+003 N interdict
+007 A interdisciplinary
+003 N interest
+004 A interesting
+003 N interface
+004 N interfacing
+003 V interfere
+004 N interference
+004 N interferon
+003 V interfuse
+005 A intergalactic
+003 N interim
+003 A interior
+003 V interject
+004 N interjection
+003 V interlace
+003 V interlard
+003 V interleave
+003 V interline
+003 V interlink
+003 V interlock
+005 N interlocutor
+006 A interlocutory
+004 N interloper
+003 N interlude
+004 V intermarry
+005 N intermediary
+004 A intermediate
+003 N interment
+004 N intermezzo
+005 A interminable
+004 V intermingle
+004 N intermission
+004 A intermittent
+003 V intermix
+002 N intern
+003 A internal
+004 V internalize
+005 A international
+006 N internationalism
+006 V internationalize
+004 A internecine
+003 N internee
+005 V interpenetrate
+005 A interpersonal
+006 A interplanetary
+003 N interplay
+003 N interpol
+004 V interpolate
+003 V interpose
+003 V interpret
+004 N interpreter
+004 A interracial
+004 N interregnum
+004 V interrelate
+004 V interrogate
+005 A interrogative
+006 A interrogatory
+003 V interrupt
+004 N interrupter
+003 V intersect
+004 N intersection
+003 V intersperse
+003 A interstate
+004 A interstellar
+003 N interstice
+004 A interstitial
+003 V intertwine
+003 N interval
+003 V intervene
+004 N intervention
+005 N interventionist
+003 N interview
+003 V interweave
+003 A intestate
+003 N intestine
+004 N intifada
+004 N intimacy
+003 V intimate
+004 V intimidate
+002 P into
+005 A intolerable
+004 A intolerant
+004 N intonation
+002 V intone
+004 A intoxicant
+004 V intoxicate
+004 A intractable
+004 A intramural
+005 A intramuscular
+004 A intransigent
+004 A intransitive
+004 A intrauterine
+004 A intravenous
+002 N intray
+003 A intrepid
+003 A intricate
+003 V intrigue
+003 A intrinsic
+003 V introduce
+004 N introduction
+005 A introductory
+002 N introit
+004 N introspection
+003 N introvert
+002 V intrude
+003 N intruder
+003 N intrusion
+003 N intuition
+003 A intuitive
+002 N inuit
+003 V inundate
+002 V inure
+002 V invade
+003 A invalid
+004 V invalidate
+004 A invaluable
+004 A invariable
+003 N invasion
+003 A invasive
+003 N invective
+002 V inveigh
+003 V inveigle
+002 V invent
+003 N invention
+003 A inventive
+004 N inventory
+002 A inverse
+003 N inversion
+002 V invert
+004 A invertebrate
+002 V invest
+004 V investigate
+004 N investiture
+003 N investment
+004 A inveterate
+004 A invidious
+004 V invigilate
+004 V invigorate
+004 A invincible
+004 A inviolable
+003 A inviolate
+004 A invisible
+004 N invitation
+002 V invite
+003 A inviting
+004 N invocation
+002 N invoice
+002 V invoke
+005 A involuntary
+003 A involute
+003 A involuted
+004 N involution
+002 V involve
+005 A invulnerable
+002 A inward
+003 D inwardly
+002 A inwrought
+002 N iodide
+002 N iodine
+001 N ion
+002 A ionic
+002 V ionize
+003 N ionizer
+003 N ionosphere
+002 N iota
+001 N iou
+005 N ipecacuanha
+003 A iranian
+003 A iraqi
+004 A irascible
+002 A irate
+001 N ire
+005 A iridaceous
+004 A iridescent
+003 N iridium
+002 N iris
+002 A irish
+003 N irishman
+004 N irishwoman
+001 V irk
+002 A irksome
+002 N iron
+003 A ironclad
+003 A ironic
+003 N ironing
+004 N ironingboard
+004 N ironmaster
+004 N ironmonger
+003 N ironstone
+003 N ironware
+003 N ironwork
+003 N ironworks
+003 N irony
+003 V irradiate
+004 A irrational
+006 A irreconcilable
+006 A irrecoverable
+005 A irredeemable
+004 N irredentist
+005 A irreducible
+005 A irrefutable
+004 A irregular
+004 A irrelevant
+005 A irreligious
+005 A irremediable
+005 A irremovable
+005 A irreparable
+005 A irreplaceable
+005 A irrepressible
+005 A irreproachable
+005 A irresistible
+004 A irresolute
+004 A irrespective
+005 A irresponsible
+005 A irretrievable
+004 A irreverent
+005 A irreversible
+005 A irrevocable
+003 V irrigate
+004 A irritable
+003 A irritant
+003 V irritate
+002 V irrupt
+003 N isinglass
+002 N islam
+002 N island
+003 N islander
+002 N isle
+002 N islet
+003 N isobar
+004 A isochronous
+003 V isolate
+005 N isolationism
+003 N isomer
+004 A isometric
+004 A isomorphic
+004 A isosceles
+003 N isotherm
+003 N isotope
+004 A isotropic
+003 A israeli
+003 N israelite
+002 N issue
+002 N isthmus
+003 N italian
+004 A italianate
+003 A italic
+004 V italicize
+001 N itch
+002 A itchy
+002 N item
+003 V itemize
+003 V iterate
+004 A itinerant
+005 N itinerary
+003 N ivory
+001 N ivy
+001 N j
+001 V jab
+002 V jabber
+002 N jabot
+004 N jacaranda
+002 N jacinth
+001 N jack
+002 N jackal
+003 N jackanapes
+002 N jackass
+002 N jackboot
+002 N jackdaw
+002 N jacket
+004 N jackinthebox
+002 N jackknife
+004 N jackolantern
+002 N jackpot
+003 N jackrabbit
+002 N jackstone
+003 A jacobean
+003 N jacobite
+002 N jacquard
+003 N jacuzzi
+001 N jade
+001 A jaded
+001 N jag
+001 A jagged
+002 N jaguar
+002 N jailbird
+002 N jailbreak
+002 N jailer
+001 N jain
+002 N jalap
+003 N jalopy
+003 N jalousie
+001 N jam
+001 N jamb
+003 N jamboree
+002 N jamjar
+002 A jammy
+002 A jampacked
+002 V jangle
+003 N janitor
+003 N january
+001 N jap
+002 N japan
+003 N japanese
+001 N jape
+004 N japonica
+001 N jar
+003 N jardinire
+002 N jargon
+002 N jasmine
+002 N jasper
+002 N jaundice
+001 N jaunt
+002 A jaunty
+003 N javanese
+003 N javelin
+001 N jaw
+002 N jawbone
+003 N jawbreaker
+001 N jay
+002 V jaywalk
+001 N jazz
+002 N jazzman
+002 A jazzy
+001 N jcb
+002 A jealous
+003 N jealousy
+001 N jeep
+001 V jeer
+003 N jehovah
+002 A jejune
+003 N jejunum
+001 V jell
+003 V jellify
+002 N jelly
+003 N jellyfish
+002 N jemmy
+002 N jenny
+003 N jennywren
+003 V jeopardize
+003 N jeopardy
+002 N jerboa
+003 N jeremiad
+003 N jeremiah
+001 V jerk
+002 N jerkin
+002 A jerky
+003 N jeroboam
+002 N jerry
+004 N jerrybuilder
+003 N jerrycan
+002 N jersey
+001 N jest
+002 N jester
+002 N jesuit
+004 A jesuitical
+001 N jet
+003 A jetpropelled
+002 N jetsam
+003 V jettison
+002 N jetty
+001 N jew
+002 N jewel
+003 N jeweler
+003 N jeweller
+004 N jewellery
+002 N jewess
+002 A jewish
+002 N jewry
+003 N jezebel
+001 V jib
+001 V jibe
+001 N jiff
+001 N jig
+002 N jigger
+002 A jiggered
+006 N jiggerypokery
+002 V jiggle
+002 N jigsaw
+002 N jihad
+001 V jilt
+002 N jingle
+002 N jingo
+001 V jink
+002 N jinnee
+003 N jitterbug
+001 N jive
+001 N job
+002 N jobber
+003 N jobbery
+002 N jobcentre
+002 V jobhunt
+002 A jobless
+003 N jobsharing
+002 N jobsheet
+001 N jock
+002 N jockey
+002 N jockstrap
+002 A jocose
+003 A jocular
+002 A jocund
+001 V jog
+002 N jogger
+002 V joggle
+002 N jogtrot
+001 N john
+002 N johnny
+007 N johnnycomelately
+001 V join
+002 N joiner
+001 N joint
+002 N jointure
+001 N joist
+003 N jojoba
+001 N joke
+002 N joker
+003 V jollify
+003 N jollity
+002 N jolly
+001 V jolt
+002 N jonah
+002 N jonquil
+001 N joss
+002 N jossstick
+002 V jostle
+001 V jot
+002 N jotter
+002 N jotting
+002 N joule
+002 N journal
+003 N journalese
+003 N journalism
+003 N journalist
+002 N journey
+003 N journeyman
+001 N jove
+002 A jovial
+001 N jowl
+001 N joy
+002 N joystick
+003 A jubilant
+003 N jubilee
+002 A judaic
+002 N judaism
+002 N judas
+002 V judder
+001 N judge
+003 N judgement
+004 A judgemental
+004 N judicature
+003 A judicial
+004 N judiciary
+004 A judicious
+002 N judo
+001 N jug
+003 N juggernaut
+002 V juggle
+003 A jugular
+001 N juice
+002 A juicy
+003 N jujitsu
+002 N juju
+002 N jujube
+003 N jukebox
+002 N julep
+002 A julian
+002 N julienne
+002 N july
+002 V jumble
+002 N jumbo
+001 V jump
+003 A jumpedup
+002 N jumper
+002 N jumpjet
+002 N jumplead
+002 N jumpoff
+002 V jumpstart
+002 A jumpy
+002 N junction
+002 N juncture
+001 N june
+002 A jungian
+002 N jungle
+002 A junior
+003 N juniper
+001 N junk
+002 N junket
+002 N junkie
+002 N junta
+002 A jural
+004 N juridical
+004 N jurisdiction
+004 N jurisprudence
+002 N jurist
+002 N juror
+002 N jury
+003 N jurybox
+003 A juryrigged
+001 A just
+002 N justice
+004 A justifiable
+003 V justify
+001 V jut
+001 N jute
+004 A juvenile
+003 V juxtapose
+002 N kaffir
+003 A kafkaesque
+002 N kaiser
+004 N kalashnikov
+002 N kale
+004 N kaleidoscope
+003 N kaleyard
+003 N kamikaze
+003 N kangaroo
+002 N kaolin
+002 N kapok
+002 N kappa
+004 N karabiner
+003 N karakul
+002 N karaoke
+002 N karate
+002 N karma
+002 N kauri
+002 N kayak
+002 N kazoo
+001 N kea
+002 N kebab
+001 V kedge
+003 N kedgeree
+001 N keel
+002 V keelhaul
+002 N keelson
+001 N keen
+001 V keep
+002 N keeper
+002 N keepfit
+002 N keeping
+002 N keepsake
+001 N keg
+001 N kelp
+002 N kelpie
+001 N kelt
+002 N kelvin
+001 N ken
+002 N kendo
+002 N kennel
+002 A kenyan
+002 N kepi
+003 N keratin
+001 N kerb
+003 N kerbcrawling
+002 N kerbstone
+002 N kerchief
+003 N kerfuffle
+001 N kermes
+002 N kernel
+003 N kerosene
+002 N kestrel
+001 N ketch
+002 N ketchup
+002 N ketone
+002 N kettle
+003 N kettledrum
+001 N key
+002 N keyboard
+003 N keyhole
+003 A keynesian
+002 N keynote
+002 N keypad
+002 N keypunch
+002 N keyring
+002 N keystone
+002 N keystroke
+002 N keyword
+001 N kgb
+002 A khaki
+001 N khan
+002 N kibbutz
+002 N kibosh
+001 V kick
+002 N kickback
+002 N kickoff
+002 N kickstand
+002 N kickstart
+001 V kid
+002 N kiddie
+002 N kiddo
+002 V kidnap
+002 N kidney
+003 A kidneyshaped
+001 V kill
+002 N killer
+002 N killing
+002 N killjoy
+001 N kiln
+003 N kilobyte
+005 N kilocalorie
+004 N kilocycle
+003 N kilogram
+003 N kilohertz
+004 N kilojoule
+004 N kiloliter
+003 N kilolitre
+004 N kilometer
+003 N kilometre
+003 N kiloton
+003 N kilovolt
+003 N kilowatt
+004 N kilowatthour
+001 N kilt
+002 N kilter
+003 N kimono
+001 N kin
+001 N kind
+004 N kindergarten
+002 A kindhearted
+002 V kindle
+002 N kindling
+002 A kindly
+002 N kindness
+001 A kindred
+003 A kinetic
+001 N king
+002 N kingcup
+002 N kingdom
+003 N kingfisher
+002 N kingpin
+002 N kingpost
+002 A kingsize
+001 N kink
+002 A kinky
+002 N kinship
+002 N kinsman
+001 N kiosk
+002 N kipper
+001 N kir
+003 N kirbygrip
+001 N kirk
+003 N kirksession
+001 N kirsch
+002 N kismet
+001 V kiss
+002 N kisscurl
+002 N kisser
+003 N kissogram
+001 N kit
+002 N kitbag
+002 N kitchen
+003 N kitchenette
+003 N kitchenware
+001 N kite
+003 N kitemark
+001 N kith
+001 N kitsch
+002 N kitten
+003 A kittenish
+003 N kittiwake
+002 N kitty
+002 N kiwi
+002 N klaxon
+002 N kleenex
+004 N kleptomania
+001 N kmmel
+001 N knack
+002 N knacker
+002 N knapsack
+002 N knapweed
+001 N knave
+001 V knead
+001 N knee
+002 N kneebend
+002 N kneecap
+002 A kneedeep
+002 A kneehigh
+002 N kneejerk
+001 V kneel
+002 A kneelength
+002 N kneeler
+002 N kneesup
+001 N knell
+004 N knickerbocker
+002 N knickknack
+001 N knife
+002 N knifeedge
+003 N knifepleat
+001 N knight
+001 V knit
+002 N knitting
+004 N knittingmachine
+004 N knittingneedle
+002 N knitwear
+001 N knob
+002 A knobbly
+001 V knock
+002 N knocker
+003 N knockingshop
+002 N knockout
+002 N knockup
+001 N knoll
+001 N knot
+002 N knotgrass
+003 N knothole
+002 A knotty
+001 V know
+002 N knowall
+002 N knowhow
+002 A knowing
+003 D knowingly
+002 N knowledge
+004 A knowledgeable
+002 N knuckle
+004 N knuckleduster
+001 N knurl
+002 N koala
+001 N kohl
+003 N kohlrabi
+002 N kolkhoz
+001 N kook
+004 N kookaburra
+002 N koppie
+002 N koran
+002 N korean
+002 A kosher
+002 N kowtow
+001 N kraal
+001 N kraut
+002 N kremlin
+001 N krill
+002 N krona
+001 N krone
+003 N krugerrand
+002 N krummhorn
+002 N krypton
+002 N kudos
+002 N kudu
+002 N kumquat
+004 N kurchatovium
+002 N kyle
+001 N l
+001 N lab
+002 N label
+002 A labial
+002 N labium
+005 N laboratory
+003 N laborer
+004 A laborious
+003 N labourer
+004 A laboursaving
+003 N labrador
+003 N laburnum
+003 N labyrinth
+001 N lac
+001 N lace
+003 V lacerate
+002 N laceup
+003 A lachrymal
+003 A lachrymose
+001 N lack
+005 A lackadaisical
+002 N lackey
+002 A lacking
+003 A lackluster
+002 A lacklustre
+003 A laconic
+002 N lacquer
+002 N lacrosse
+002 N lactate
+003 N lactation
+002 A lacteal
+002 A lactic
+002 N lactose
+003 N lacuna
+002 A lacy
+001 N lad
+002 N ladder
+003 N ladderback
+001 V lade
+003 A ladida
+002 N ladle
+002 N lady
+003 N ladybird
+004 N ladyinwaiting
+004 N ladykiller
+003 A ladylike
+003 N ladyship
+001 N lag
+002 N lager
+002 N laggard
+002 N lagging
+002 N lagoon
+001 N lah
+002 A laidback
+001 N lair
+001 N laird
+003 N laissezfaire
+002 N laity
+001 N lake
+001 N lakh
+001 N lam
+002 N lama
+004 N lamasery
+001 N lamb
+003 N lambada
+002 V lambaste
+002 N lambda
+002 A lambent
+002 N lambswool
+001 A lame
+002 N lament
+004 A lamentable
+004 N lamentation
+003 N lamina
+003 V laminate
+002 N lammas
+001 N lamp
+002 N lampblack
+002 N lamplight
+003 N lamplighter
+002 N lampoon
+002 N lamppost
+002 N lamprey
+002 N lampshade
+001 N lan
+003 N lancastrian
+001 N lance
+005 N lancecorporal
+003 A lanceolate
+002 N lancer
+002 N lancet
+001 N land
+003 N landagent
+002 N landau
+001 A landed
+002 N landfall
+002 N landfill
+002 N landgirl
+002 N landing
+003 N landingcraft
+003 N landinggear
+003 N landingstage
+003 N landlady
+002 A landlocked
+002 N landlord
+003 N landlubber
+002 N landmark
+002 N landmine
+003 N landowner
+002 N landscape
+002 N landslide
+002 N landslip
+001 N lane
+002 N language
+002 A languid
+002 V languish
+002 N languor
+001 A lank
+002 A lanky
+003 N lanolin
+002 N lantern
+003 N lanthanide
+003 N lanthanum
+002 N lanyard
+001 V lap
+002 N lapdog
+002 N lapel
+004 A lapidary
+003 N laplander
+001 N lapp
+002 N lappet
+001 N lapse
+002 N laptop
+002 N lapwing
+002 N larboard
+003 N larceny
+001 N larch
+001 N lard
+002 N larder
+002 A lardy
+003 N lardycake
+001 A large
+003 D largely
+004 A largescale
+002 N largesse
+002 N lariat
+002 N larkspur
+002 N larva
+003 A laryngeal
+004 N laryngitis
+002 N larynx
+002 N lasagne
+004 A lascivious
+002 N laser
+001 V lash
+001 N lass
+003 N lassitude
+002 N lasso
+001 N last
+002 A lasting
+002 D lastly
+001 N latch
+002 N latchkey
+001 A late
+004 N latecomer
+002 A lateen
+003 D lately
+002 A latent
+003 A lateral
+002 N latex
+001 N lath
+001 N lathe
+002 N lather
+002 N latin
+003 A latinate
+003 V latinize
+002 A latish
+003 N latitude
+006 A latitudinarian
+002 N latrine
+002 A latter
+003 D latterly
+002 N lattice
+002 N latvian
+001 V laud
+003 A laudable
+003 N laudanum
+004 A laudatory
+001 V laugh
+003 A laughable
+002 N laughing
+003 N laughinggas
+002 N laughter
+001 N launch
+002 N launcher
+002 V launder
+003 N launderette
+002 N laundress
+002 N laundry
+002 A laureate
+002 N laurel
+001 N lav
+002 N lava
+004 A lavatorial
+004 N lavatory
+001 V lave
+003 N lavender
+005 N lavenderwater
+002 N laver
+002 A lavish
+001 N law
+004 A lawabiding
+003 N lawbreaker
+002 N lawcourt
+002 A lawful
+003 N lawgiver
+002 A lawless
+003 N lawmaker
+001 N lawn
+003 N lawnmower
+003 N lawrencium
+002 N lawsuit
+002 N lawyer
+001 A lax
+003 A laxative
+001 N lay
+003 N layabout
+002 N layby
+002 N layer
+002 N layette
+002 N layman
+002 N layoff
+002 N layout
+001 V laze
+002 A lazy
+003 N lazybones
+001 N lea
+001 V leach
+001 N lead
+002 A leaden
+002 N leader
+002 A leadfree
+002 N leadin
+002 N leading
+004 N leadpoisoning
+001 N leaf
+002 N leaflet
+002 N leafmould
+002 N leafstalk
+002 N league
+001 N leak
+002 N leakage
+001 A lean
+002 N leaning
+002 N leanto
+001 V leap
+002 N leapfrog
+001 V learn
+001 A learned
+002 N learner
+002 N learning
+001 N lease
+003 N leasehold
+001 N leash
+001 A least
+002 N leather
+003 N leatherback
+003 A leatherbound
+003 N leatherette
+004 N leatherjacket
+003 A leathery
+001 N leave
+001 A leaved
+002 N leaven
+004 N leavetaking
+003 A lebanese
+002 N lecher
+003 A lecherous
+003 N lechery
+002 N lectern
+002 N lecture
+003 N lecturer
+001 N ledge
+002 N ledger
+001 N lee
+001 N leech
+001 N leek
+001 V leer
+002 A leery
+002 A leeward
+002 N leeway
+001 A left
+002 A lefthanded
+003 N lefthander
+002 N leftism
+002 A leftmost
+003 N leftover
+002 D leftward
+002 N lefty
+001 N leg
+003 N legacy
+002 A legal
+003 N legalese
+004 A legalistic
+004 N legality
+003 V legalize
+002 N legate
+003 N legatee
+003 N legation
+002 N legbye
+002 N legend
+004 A legendary
+004 N legerdemain
+002 N legging
+002 A leggy
+003 A legible
+002 N legion
+004 A legionary
+003 N legionnaire
+003 V legislate
+004 N legislation
+004 A legislative
+004 N legislature
+002 A legit
+004 A legitimate
+005 V legitimatize
+004 V legitimize
+002 A legless
+002 N lego
+002 N legpull
+002 N legroom
+002 N legume
+004 A leguminous
+001 N lei
+002 N leisure
+002 A leisured
+004 A leisurely
+004 N leisurewear
+003 N leitmotif
+002 N lemming
+002 N lemon
+003 N lemonade
+002 N lemur
+001 V lend
+001 N length
+002 V lengthen
+002 D lengthways
+002 D lengthwise
+002 A lengthy
+002 A lenient
+001 N lens
+001 N lent
+002 N lentil
+001 N leo
+002 A leonine
+002 N leopard
+002 N leotard
+002 N leper
+005 A lepidopterous
+003 N leprechaun
+003 N leprosy
+002 N lesbian
+005 N lesemajesty
+002 N lesion
+001 A less
+002 N lessee
+002 V lessen
+002 A lesser
+002 N lesson
+002 N lessor
+001 N let
+002 N letdown
+002 A lethal
+003 N lethargy
+002 N letout
+002 N letter
+003 N letterbomb
+003 N letterbox
+002 A lettered
+003 N letterhead
+003 N letterpress
+002 N lettuce
+002 N letup
+003 N leucocyte
+003 N leukaemia
+003 N leukemia
+002 N levant
+003 A levantine
+002 N levee
+002 N level
+003 N leveler
+003 A levelheaded
+003 N leveller
+002 N lever
+003 N leverage
+003 N leveret
+003 N leviathan
+003 V levitate
+003 N levity
+002 V levy
+001 A lewd
+003 A lexical
+005 N lexicography
+003 N lexicon
+004 N liability
+002 V liaise
+003 N liaison
+002 N liana
+001 N liar
+001 N lib
+003 N libation
+002 N libel
+003 A liberal
+004 V liberalize
+003 V liberate
+003 N libertine
+003 N liberty
+004 A libidinous
+003 N libido
+002 N libra
+003 N librarian
+003 N library
+003 N libretto
+002 N licence
+002 V license
+003 N licensee
+003 N licentiate
+004 A licentious
+002 N lichen
+002 N lichgate
+002 A licit
+001 V lick
+001 N lid
+002 N lido
+001 N lie
+001 N lied
+004 N liedetector
+002 N liedown
+002 N liein
+001 N lien
+002 N lieu
+004 N lieutenant
+001 N life
+003 N lifebelt
+003 N lifeblood
+003 N lifeboat
+004 N lifebuoy
+003 N lifeguard
+004 N lifejacket
+003 A lifeless
+003 A lifelike
+003 N lifeline
+003 A lifelong
+005 N lifepreserver
+002 N lifer
+003 A lifesize
+004 N lifestyle
+003 N lifetime
+001 V lift
+002 N liftoff
+003 N ligament
+003 N ligature
+001 A light
+002 N lightbulb
+002 V lighten
+002 N lighter
+003 A lightfingered
+002 A lightfooted
+002 A lightheaded
+002 A lighthearted
+002 N lighthouse
+002 N lighting
+002 N lightning
+005 N lightningconductor
+002 N lightship
+002 A lightweight
+003 N lightyear
+003 A ligneous
+002 N lignite
+003 A likeable
+004 N likelihood
+003 A likely
+003 A likeminded
+002 V liken
+003 N likeness
+003 D likewise
+002 N liking
+002 N lilac
+004 A liliaceous
+004 N lilliputian
+002 N lilo
+001 N lilt
+002 N lily
+004 A lilylivered
+001 N limb
+002 N limber
+002 N limbo
+001 N lime
+003 N limekiln
+003 N limelight
+003 N limerick
+003 N limestone
+002 N limey
+002 N limit
+004 N limitation
+002 A limited
+001 V limn
+002 N limo
+003 N limousine
+001 A limp
+002 N limpet
+002 A limpid
+002 N linage
+002 N linchpin
+002 N linctus
+002 N linden
+001 V line
+002 N lineage
+002 A lineal
+003 N lineament
+002 A linear
+003 N lineation
+004 N linedrawing
+002 N linen
+003 N lineout
+002 N liner
+003 N linesman
+002 N lineup
+001 N ling
+002 V linger
+003 N lingerie
+002 N lingo
+002 A lingual
+002 N linguist
+003 A linguistic
+003 N linguistics
+003 N liniment
+002 N lining
+001 N link
+002 N linkage
+002 N linkman
+002 N linkup
+003 A linnaean
+002 N linnet
+002 N lino
+003 N linocut
+003 N linoleum
+002 N linseed
+004 N linseywoolsey
+001 N lint
+002 N lintel
+001 N lion
+002 N lionheart
+002 V lionize
+001 N lip
+002 N lipid
+004 N liposuction
+002 V lipread
+003 N lipservice
+002 N lipstick
+003 V liquefy
+003 N liqueur
+002 A liquid
+003 V liquidate
+004 N liquidation
+004 N liquidity
+003 V liquidize
+004 N liquidizer
+002 N liquor
+003 N liquorice
+002 N lira
+002 N lisle
+001 N lisp
+002 A lissom
+001 V list
+002 V listen
+003 N listener
+003 N listeria
+002 A listless
+003 N litany
+001 N lite
+002 N liter
+004 N literacy
+003 A literal
+004 N literalism
+004 A literary
+003 A literate
+004 N literature
+001 A lithe
+002 N lithium
+003 N lithograph
+004 N lithography
+003 N lithuanian
+003 N litigant
+003 V litigate
+004 A litigious
+002 N litism
+002 N litmus
+002 N litotes
+001 N litre
+002 N litter
+003 N litterbug
+003 N litterlout
+002 A little
+003 A littoral
+003 N liturgy
+001 A live
+003 A liveable
+003 A livedin
+004 N livelihood
+003 A livelong
+003 A lively
+002 V liven
+002 N liver
+003 A liveried
+003 A liverish
+004 N liverpudlian
+003 N liverwort
+003 N livery
+003 N livestock
+002 A livid
+002 N living
+003 N livingroom
+002 N lizard
+001 V ll
+002 N llama
+001 N lloyds
+001 N loach
+001 N load
+001 A loaded
+002 N loader
+001 V loaf
+002 N loafer
+001 N loam
+001 N loan
+001 V loathe
+002 A loathsome
+001 V lob
+002 A lobar
+002 A lobate
+002 N lobby
+002 N lobbyist
+001 N lobe
+003 N lobelia
+004 N lobotomy
+002 N lobscouse
+002 N lobster
+003 N lobsterpot
+002 N lobworm
+002 A local
+003 N locale
+004 N locality
+003 V localize
+002 V locate
+003 N location
+001 N loch
+001 N lock
+002 N locker
+002 N locket
+002 N lockjaw
+003 N lockkeeper
+002 N lockout
+002 N locksmith
+002 N lockup
+004 N locomotion
+004 N locomotive
+002 N locus
+002 N locust
+003 N locution
+001 N lode
+003 N lodestar
+003 N lodestone
+001 N lodge
+002 N lodger
+002 N lodging
+001 N loess
+001 N loft
+002 A lofty
+001 N log
+002 N logan
+004 N loganberry
+003 N logarithm
+002 N logbook
+002 N logger
+003 N loggerhead
+002 N loggia
+002 N logging
+003 A logical
+002 N logjam
+002 N logo
+001 N loin
+002 N loincloth
+002 V loiter
+001 V loll
+003 N lollipop
+002 V lollop
+002 N lolly
+003 N londoner
+003 A lonely
+002 N loner
+003 A lonesome
+001 V long
+002 N longboat
+002 N longbow
+002 A longdrawn
+003 N longeron
+004 N longevity
+002 N longhand
+002 N longing
+003 N longitude
+005 A longitudinal
+002 A longlife
+002 A longlived
+003 A longplaying
+002 A longrange
+003 A longrunning
+004 N longshoreman
+002 A longsighted
+003 A longstanding
+004 A longsuffering
+002 A longterm
+002 D longways
+002 A longwinded
+001 N loo
+002 N loofah
+001 V look
+003 N lookalike
+002 N looker
+003 N lookeron
+002 N lookin
+003 N lookingglass
+002 N lookout
+001 V loom
+001 N loon
+003 N loonybin
+001 N loop
+003 N loophole
+002 A loopy
+001 A loose
+003 A looseleaf
+002 V loosen
+001 N loot
+001 V lop
+001 V lope
+002 A lopeared
+002 A lopsided
+004 A loquacious
+002 N loquat
+001 N lord
+002 A lordly
+002 N lordship
+001 N lore
+002 N lorgnette
+001 A lorn
+002 N lorry
+001 V lose
+002 N loser
+001 N loss
+003 N lossleader
+001 N lot
+003 N lothario
+002 N lotion
+003 N lottery
+002 N lotto
+002 N lotus
+004 N lotuseater
+001 A loud
+003 N loudspeaker
+001 N lough
+001 V lounge
+001 V lour
+001 N louse
+002 A lousy
+001 N lout
+001 N louvre
+003 A lovable
+002 N lovage
+002 N lovat
+001 N love
+003 N lovebird
+003 N lovechild
+004 N loveinamist
+003 A loveless
+005 N loveliesbleeding
+003 A lovelorn
+003 A lovely
+004 N lovemaking
+003 N lovenest
+002 N lover
+003 N loveseat
+003 A lovesick
+004 A loveydovey
+002 A loving
+003 N lovingcup
+001 N low
+002 A lowborn
+002 A lowbrow
+002 A lowclass
+002 A lowdown
+002 A lowest
+002 A lowgrade
+002 A lowkey
+002 N lowland
+003 A lowlevel
+002 A lowly
+002 A lowlying
+002 A lowpitched
+002 A lowrise
+002 A loyal
+003 N loyalist
+002 N lozenge
+001 N lplate
+001 N lsd
+002 N lubber
+003 N lubricant
+003 V lubricate
+004 A lubricious
+002 N lucerne
+002 A lucid
+003 N lucifer
+001 N luck
+002 A luckless
+002 A lucky
+003 A lucrative
+001 N lucre
+002 N luddite
+003 A ludicrous
+002 N ludo
+001 V luff
+001 V lug
+002 N luggage
+002 N lugger
+003 N lughole
+002 N lugsail
+004 A lugubrious
+002 N lugworm
+003 A lukewarm
+001 V lull
+003 N lullaby
+003 N lumbago
+002 A lumbar
+002 N lumber
+003 N lumberjack
+004 N lumberjacket
+003 N lumberroom
+004 N luminary
+004 N luminescence
+003 A luminous
+001 V lump
+004 N lumpectomy
+002 A lumpish
+002 A lumpy
+003 N lunacy
+002 A lunar
+002 A lunate
+003 N lunatic
+003 N lunation
+001 N lunch
+002 N luncheon
+001 N lung
+001 N lunge
+002 N lupin
+002 A lupine
+002 N lupus
+001 N lurch
+002 N lurcher
+001 V lure
+002 N lurex
+002 A lurid
+001 V lurk
+003 A luscious
+001 N lush
+001 N lust
+002 N luster
+001 N lustre
+002 A lusty
+001 N lute
+003 N lutenist
+003 N lutetium
+003 N lutheran
+001 N lux
+003 A luxuriant
+003 V luxuriate
+004 A luxurious
+003 N luxury
+002 N lychee
+002 N lycra
+001 N lye
+001 N lymph
+003 A lymphatic
+003 N lymphoma
+001 V lynch
+001 N lynx
+002 A lynxeyed
+001 N lyre
+003 N lyrebird
+002 A lyric
+003 A lyrical
+003 N lyricism
+003 N lyricist
+001 N m
+001 N ma
+001 N maam
+002 D maana
+001 N mac
+002 A macabre
+003 N macadam
+004 N macadamia
+003 N macaque
+004 N macaroni
+003 N macaroon
+002 N macaw
+002 N macdoine
+001 N mace
+003 V macerate
+001 N mach
+002 N machete
+004 A machiavellian
+004 N machination
+002 N machine
+004 N machinegun
+006 A machinereadable
+004 N machinery
+003 N machinist
+003 N machismo
+002 A macho
+003 N mackerel
+003 N mackintosh
+002 N macram
+004 A macrobiotic
+004 N macrocarpa
+003 N macrocosm
+005 N macroeconomics
+002 N macron
+004 A macroscopic
+003 N macula
+001 A mad
+002 N madam
+002 N madame
+002 A madcap
+002 V madden
+002 N madder
+003 N madeira
+005 N mademoiselle
+002 N madhouse
+002 D madly
+002 N madman
+003 N madonna
+003 N madrigal
+003 N madwoman
+002 N maelstrom
+002 N maenad
+002 N maestro
+002 N mafia
+003 N mafioso
+001 N mag
+003 N magazine
+003 N magenta
+002 N maggot
+002 N magic
+003 A magical
+003 N magician
+004 A magisterial
+004 N magistracy
+003 N magistrate
+002 N magma
+004 A magnanimous
+002 N magnate
+003 N magnesia
+003 N magnesium
+002 N magnet
+003 A magnetic
+003 N magnetism
+003 V magnetize
+003 N magneto
+004 N magnificat
+005 N magnification
+004 A magnificent
+003 V magnify
+003 N magnitude
+003 N magnolia
+002 N magnox
+002 N magnum
+002 N magpie
+002 N magus
+002 N magyar
+004 N maharaja
+004 N maharanee
+004 N maharishi
+003 N mahatma
+002 N mahjong
+004 N mahogany
+003 N mahonia
+002 N mahout
+001 N maid
+002 N maiden
+003 N maidenhair
+003 N maidenhead
+003 N maidservant
+001 N mail
+002 N mailbag
+002 N mailbox
+002 N mailshot
+001 V maim
+001 A main
+002 N mainframe
+002 N mainland
+002 V mainline
+002 D mainly
+002 N mainmast
+002 N mainsail
+002 N mainspring
+002 N mainstay
+002 N mainstream
+002 V maintain
+003 N maintenance
+002 N maintop
+003 N maintopmast
+004 N maiolica
+003 N maisonette
+001 N maize
+003 A majestic
+003 N majesty
+002 A major
+004 N majordomo
+003 N majorette
+005 N majorgeneral
+004 N majority
+001 V make
+004 N makebelieve
+002 N maker
+003 A makeshift
+002 N makeup
+003 N makeweight
+002 N making
+003 N malachite
+003 A maladjusted
+005 V maladminister
+003 A maladroit
+003 N malady
+002 N malaise
+004 N malapropism
+003 N malaria
+003 N malarkey
+002 N malay
+003 N malcontent
+002 A male
+004 N malediction
+004 N malefactor
+004 A malevolent
+003 N malfeasance
+004 N malformation
+003 N malfunction
+002 N malice
+004 A malicious
+002 A malign
+003 A malignant
+003 V malinger
+001 N mall
+002 N mallard
+003 A malleable
+002 N mallet
+002 N mallow
+002 N malmsey
+003 A malnourished
+004 N malnutrition
+004 A malodorous
+003 N malpractice
+001 N malt
+002 N maltese
+003 A malthusian
+002 N maltose
+002 V maltreat
+002 N mama
+002 N mamba
+002 N mambo
+002 N mammal
+003 A mammary
+003 N mammogram
+004 N mammography
+002 N mammon
+002 N mammoth
+001 N man
+003 N manacle
+002 V manage
+004 N management
+003 N manager
+004 N manageress
+003 N manatarms
+003 N manatee
+003 N mancunian
+003 N mandala
+003 N mandamus
+003 N mandarin
+002 N mandate
+004 A mandatory
+003 N mandible
+003 N mandolin
+002 N mandrake
+002 N mandrel
+002 N mandrill
+001 N mane
+002 A manful
+003 N manganese
+001 N mange
+004 N mangelwurzel
+002 N manger
+003 N mangetout
+002 V mangle
+002 N mango
+002 N mangrove
+002 A mangy
+003 V manhandle
+003 N manhole
+002 N manhood
+002 N manhour
+002 N manhunt
+002 A manic
+005 A manicdepressive
+003 N manicure
+003 A manifest
+004 N manifesto
+003 A manifold
+003 N manikin
+003 N manila
+004 V manipulate
+005 A manipulative
+002 N mankind
+002 A manky
+002 A manly
+002 A manmade
+002 N manna
+001 A manned
+003 N mannequin
+002 N manner
+002 A mannered
+003 N mannerism
+003 A mannerly
+002 A mannish
+003 N manofwar
+002 N manor
+003 N manpower
+002 A manqu
+002 N mansard
+001 N manse
+003 N manservant
+002 N mansion
+003 N manslaughter
+002 N mantel
+003 N mantelpiece
+003 N mantelshelf
+003 N mantilla
+002 N mantis
+003 N mantissa
+002 N mantle
+002 N mantra
+002 N mantrap
+002 A manual
+004 N manufacture
+002 N manure
+003 N manuscript
+001 A manx
+002 A many
+002 N maoism
+002 N maori
+001 N map
+002 N maple
+003 N mapleleaf
+002 N maquette
+002 N maquis
+001 V mar
+003 N marabou
+003 N maraca
+004 N maraschino
+003 N marathon
+002 V maraud
+002 N marble
+002 N marbling
+003 N marcasite
+001 N march
+003 N marchioness
+001 N mare
+003 N margarine
+001 N marge
+002 N margin
+003 A marginal
+004 V marginalize
+003 N marguerite
+003 N marigold
+004 N marijuana
+003 N marimba
+003 N marina
+003 N marinade
+003 V marinate
+002 A marine
+003 N mariner
+003 N marionette
+003 A marital
+003 A maritime
+003 N marjoram
+001 N mark
+002 N markdown
+001 A marked
+002 N marker
+002 N market
+004 A marketable
+003 N marketday
+003 N marketeer
+003 N marketplace
+002 N marking
+002 N marksman
+002 N markup
+001 N marl
+002 N marlin
+003 N marlinspike
+003 N marmalade
+002 N marmite
+003 A marmoreal
+003 N marmoset
+002 N marmot
+003 N marocain
+002 V maroon
+002 N marque
+003 N marquee
+002 N marquess
+003 N marquetry
+002 N marquis
+002 N marquise
+002 N marram
+002 N marriage
+004 A marriageable
+002 A married
+002 N marrow
+003 N marrowbone
+003 N marrowfat
+002 V marry
+003 N marsala
+003 N marseillaise
+001 N marsh
+002 N marshal
+002 N marshland
+003 N marshmallow
+003 N marsupial
+001 N mart
+003 N martello
+002 N marten
+002 A martial
+002 A martian
+002 N martin
+003 N martinet
+004 N martingale
+003 N martini
+003 N martinmas
+002 N martyr
+002 N marvel
+003 A marvellous
+003 A marvelous
+002 N marxism
+005 N marxismleninism
+003 N marzipan
+003 N mascara
+002 N mascot
+003 A masculine
+002 N maser
+001 N mash
+001 N mask
+003 N masochism
+002 N mason
+003 A masonic
+003 N masonry
+002 N masque
+003 N masquerade
+001 N mass
+002 N massacre
+002 N massage
+002 N masseur
+002 N massif
+002 A massive
+001 N mast
+004 N mastectomy
+002 N master
+003 N masterclass
+003 A masterful
+003 N masterkey
+003 A masterly
+003 N mastermind
+003 N masterpiece
+003 N masterstroke
+003 N masterswitch
+003 N mastery
+002 N masthead
+002 N mastic
+003 V masticate
+002 N mastiff
+003 N mastitis
+003 N mastodon
+002 A mastoid
+003 V masturbate
+003 N matador
+001 N match
+002 N matchboard
+002 N matchbox
+002 A matchless
+003 N matchmaker
+002 N matchstick
+002 N matchwood
+001 N mate
+002 N mater
+003 N material
+004 N materialism
+004 V materialize
+004 D materially
+003 A maternal
+004 N maternity
+001 N math
+005 A mathematical
+001 N maths
+002 N matine
+003 N matinee
+002 N matins
+002 N matriarch
+003 N matriarchy
+003 N matricide
+004 V matriculate
+002 N matriel
+004 N matrimony
+002 N matrix
+002 N matron
+003 A matronly
+002 N matter
+004 A matteroffact
+002 N matting
+002 N mattock
+002 N mattress
+003 V maturate
+004 N maturation
+002 A mature
+004 A matutinal
+002 A maudlin
+001 V maul
+002 N maulstick
+002 V maunder
+002 N maundy
+003 N mausoleum
+001 A mauve
+003 N maverick
+001 N maw
+002 A mawkish
+003 N maxilla
+002 N maxim
+003 A maximal
+003 V maximize
+003 N maximum
+002 N maya
+001 D maybe
+002 N mayday
+003 N mayflower
+002 N mayfly
+002 N mayhem
+003 N mayonnaise
+002 N mayor
+004 N mayoralty
+003 N mayoress
+003 N maypole
+001 N maze
+003 N mazurka
+002 N mccarthyism
+001 N mccoy
+001 N me
+001 N mead
+002 N meadow
+003 N meadowsweet
+002 A meager
+001 A meagre
+001 N meal
+003 N mealticket
+002 N mealtime
+002 A mealy
+003 A mealymouthed
+001 N mean
+002 V meander
+002 N meanie
+002 N meaning
+003 A meaningful
+003 A meaningless
+002 D meantime
+003 D meanwhile
+002 A measly
+002 N measure
+002 A measured
+004 A measureless
+004 N measurement
+001 N meat
+002 N meatball
+002 A meaty
+002 N mecca
+003 N mechanic
+004 A mechanical
+003 N mechanism
+003 V mechanize
+001 N med
+002 N medal
+003 N medalist
+003 N medallion
+003 N medallist
+002 V meddle
+003 A meddlesome
+002 A medial
+002 A median
+002 V mediate
+002 N medic
+003 A medical
+004 N medicament
+003 N medicare
+003 V medicate
+004 N medication
+004 A medicinal
+003 N medicine
+003 A medieval
+002 A mediocre
+004 N mediocrity
+003 V meditate
+004 A meditative
+005 A mediterranean
+002 N medium
+003 A mediumrange
+002 N medlar
+002 N medley
+003 N medulla
+003 N medusa
+001 A meek
+002 N meerkat
+002 N meerschaum
+001 A meet
+002 N meeting
+003 N megabuck
+003 N megabyte
+003 N megadeath
+003 N megahertz
+003 N megalith
+005 N megalomania
+005 N megalosaurus
+003 N megaphone
+003 N megastar
+003 N megaton
+003 N megavolt
+003 N megawatt
+002 N megohm
+003 N meiosis
+003 N melamine
+004 N melancholia
+004 N melancholy
+003 N melanin
+004 N melanoma
+001 V meld
+002 N melee
+004 A mellifluous
+002 A mellow
+003 N melodeon
+003 A melodic
+004 A melodious
+004 N melodrama
+003 N melody
+002 N melon
+001 V melt
+002 N meltdown
+003 N meltingpot
+002 N member
+003 N membership
+002 N membrane
+003 N memento
+002 N memo
+002 N memoir
+004 A memorable
+004 N memorandum
+003 N memorial
+003 V memorize
+003 N memory
+003 N memsahib
+002 N menace
+004 N menagerie
+001 V mend
+004 A mendacious
+004 N mendelevium
+003 A mendelian
+003 A mendicant
+002 N mending
+002 N menhir
+002 A menial
+004 N meningitis
+003 N meniscus
+003 N menopause
+003 N menorah
+002 A menstrual
+002 V menstruate
+003 N menstruation
+004 N mensuration
+002 N menswear
+002 A mental
+004 N mentality
+002 N menthol
+003 A mentholated
+002 V mention
+002 N mentor
+002 N menu
+005 A mephistophelean
+004 A mercantile
+004 A mercenary
+002 N mercer
+003 V mercerize
+003 N merchandise
+002 N merchant
+004 A merchantable
+003 N merchantman
+003 A merciful
+004 D mercifully
+003 A merciless
+003 A mercurial
+003 N mercury
+002 N mercy
+001 N mere
+005 A meretricious
+003 N merganser
+001 V merge
+002 N merger
+003 N meridian
+004 A meridional
+003 N meringue
+003 N merino
+002 N merit
+005 N meritocracy
+005 A meritorious
+002 N merlin
+002 N mermaid
+002 A merry
+004 N merrygoround
+004 N merrymaking
+002 N mescal
+003 N mescaline
+005 N mesembryanthemum
+001 N mesh
+003 V mesmerize
+004 A mesolithic
+003 N mesomorph
+002 N meson
+003 N mesosphere
+003 A mesozoic
+001 N mess
+002 N message
+003 N messenger
+002 N messiah
+003 A messianic
+002 A messy
+001 A met
+004 N metabolism
+004 N metabolite
+004 V metabolize
+004 N metacarpus
+002 N metal
+004 N metalanguage
+003 A metallic
+005 A metalliferous
+003 V metallize
+005 N metallography
+003 N metalloid
+004 N metallurgy
+003 N metalwork
+004 A metamorphic
+004 V metamorphose
+005 N metamorphosis
+003 N metaphor
+004 N metaphysic
+005 A metaphysical
+004 N metastasis
+004 N metatarsus
+001 V mete
+002 N meteor
+003 A meteoric
+003 N meteorite
+003 N meteoroid
+005 N meteorology
+003 N methadone
+003 N methanal
+002 N methane
+003 N methanol
+002 V methinks
+002 N method
+004 A methodical
+003 N methodist
+005 N methodology
+001 N meths
+002 N methyl
+003 V methylate
+004 A meticulous
+004 N metonymy
+001 N metre
+007 N metrekilogramsecond
+003 A metrical
+003 V metricate
+002 N metro
+003 N metronome
+004 N metropolis
+005 A metropolitan
+002 N mettle
+001 N mew
+001 V mewl
+001 N mews
+003 N mexican
+003 N mezzanine
+003 N mezzotint
+002 N miaow
+002 N miasma
+002 N mica
+003 N michaelmas
+001 N mick
+002 N mickey
+002 N mickle
+002 N microbe
+005 N microbiology
+003 N microchip
+004 N microcircuit
+004 N microclimate
+005 N microcomputer
+003 N microcosm
+003 N microdot
+005 N microelectronics
+003 N microfiche
+003 N microfilm
+003 N microlight
+003 N micromesh
+004 N micrometer
+002 N micron
+004 N microorganism
+003 N microphone
+005 N microphotograph
+005 N microprocessor
+003 N microscope
+004 A microscopic
+004 N microscopy
+004 N microsecond
+005 N microsurgery
+003 N microwave
+004 N micturition
+002 N midday
+002 N midden
+003 N middleman
+004 A middleoftheroad
+003 A middlesized
+003 N middleweight
+002 A middling
+002 N midfield
+001 N midge
+002 N midget
+002 N midi
+002 N midland
+002 N midlife
+002 N midnight
+002 N midoff
+002 N midon
+002 N midriff
+003 N midshipman
+002 D midships
+002 N midstream
+003 N midsummer
+002 D midway
+002 N midwest
+003 N midwicket
+002 N midwife
+003 N midwinter
+001 N mien
+001 V miff
+001 N might
+004 N mighthavebeen
+002 A mighty
+003 N mignonette
+001 N migr
+002 N migraine
+002 A migrant
+002 V migrate
+003 N mikado
+001 N mike
+001 N mil
+003 N milady
+001 A milch
+001 A mild
+002 N mildew
+002 D mildly
+003 A mildmannered
+002 N mile
+002 N mileage
+002 N miler
+003 N milestone
+002 N milfoil
+003 N milieu
+003 A militant
+004 N militarism
+004 V militarize
+004 A military
+003 V militate
+003 N militia
+001 N milk
+002 N milkmaid
+002 N milkman
+003 N milkpowder
+002 N milksop
+002 A milky
+001 N mill
+005 N millefeuille
+003 N millennium
+002 N miller
+004 A millesimal
+002 N millet
+003 N milletgrass
+002 N milliard
+003 N millibar
+003 N milligram
+004 N milliliter
+003 N millilitre
+004 N millimeter
+003 N millimetre
+003 N milliner
+002 N million
+003 N millionaire
+003 N millipede
+004 N millisecond
+002 N millpond
+002 N millrace
+002 N millstone
+002 N millwheel
+003 N millworker
+002 N millwright
+004 N milometer
+002 N milord
+001 N milt
+001 N mime
+003 N mimeograph
+003 A mimetic
+002 V mimic
+003 N mimosa
+003 N minaret
+004 A minatory
+001 V mince
+003 N mincemeat
+001 N mind
+003 A mindblowing
+003 A mindboggling
+001 A minded
+002 N minder
+002 A mindful
+002 A mindless
+002 V mindread
+001 N mine
+003 N minefield
+004 N minelayer
+002 N miner
+003 N mineral
+004 V mineralize
+005 N mineralogy
+003 N minestrone
+004 N minesweeper
+004 N mineworker
+001 N ming
+002 V mingle
+002 A mingy
+003 A miniature
+004 V miniaturize
+003 N minibus
+003 N minicab
+005 N minicomputer
+002 N minim
+003 A minimal
+004 N minimalism
+003 V minimize
+002 N minion
+003 N minipill
+004 N miniseries
+003 N miniskirt
+003 N minister
+004 N ministration
+003 N ministry
+001 N mink
+002 N minnow
+002 A minoan
+002 A minor
+004 N minority
+002 N minster
+002 N minstrel
+001 N mint
+002 N minuet
+004 A minuscule
+002 A minute
+001 N minx
+003 N miracle
+004 A miraculous
+002 N mirage
+001 N mire
+002 N mirror
+001 N mirth
+004 N misadventure
+003 N misalliance
+003 N misanthrope
+004 N misanthropy
+003 V misapply
+004 V misapprehend
+004 V misappropriate
+004 A misbegotten
+003 V misbehave
+004 V miscalculate
+003 N miscarriage
+003 V miscarry
+002 V miscast
+005 N miscegenation
+005 A miscellaneous
+004 N miscellany
+002 N mischance
+002 N mischief
+003 A mischievous
+003 A miscible
+003 V misconceive
+003 N misconduct
+003 V misconstrue
+003 V miscopy
+002 V miscount
+002 N miscreant
+002 N misdeed
+004 N misdemeanor
+004 N misdemeanour
+003 V misdiagnose
+002 V misdial
+003 V misdirect
+002 N misdoing
+002 N miser
+004 A miserable
+004 N misericord
+003 N misery
+002 V misfield
+002 V misfire
+002 N misfit
+003 N misfortune
+002 V misgive
+003 N misgiving
+003 V misgovern
+002 A misguided
+003 V mishandle
+002 N mishap
+002 V mishear
+002 V mishit
+002 N mishmash
+003 V misinform
+004 V misinterpret
+002 V misjudge
+002 V miskey
+002 V mislay
+002 V mislead
+003 V mismanage
+002 V mismatch
+003 N misnomer
+004 N misogyny
+002 V misplace
+002 N misprint
+003 N misprision
+003 V mispronounce
+002 V misquote
+002 V misread
+004 V misrepresent
+003 N misrule
+001 N miss
+002 N missal
+003 A misshapen
+003 N missile
+002 A missing
+002 N mission
+004 A missionary
+002 N missis
+002 N missive
+002 V misspell
+002 V misspend
+002 V misstate
+001 N mist
+002 N mistake
+003 A mistaken
+002 N mister
+002 V mistime
+003 N mistletoe
+002 N mistral
+002 V mistreat
+002 N mistress
+002 N mistrial
+002 V mistrust
+002 A misty
+004 V misunderstand
+005 N misunderstanding
+003 N misusage
+002 V misuse
+001 N mite
+003 V mitigate
+003 N mitosis
+001 N mitt
+001 V mix
+001 A mixed
+003 A mixedup
+002 N mixer
+002 N mixture
+002 N mixup
+002 N mizen
+003 N mizenmast
+001 N mlange
+001 N mle
+001 N mnage
+003 A mnemonic
+001 N mo
+001 N moa
+001 N moan
+001 N moat
+001 N mob
+002 N mobcap
+003 A mobile
+003 V mobilize
+002 N mobster
+003 N moccasin
+002 N mocha
+001 V mock
+002 N mocker
+003 N mockery
+003 N mockingbird
+002 N mockup
+002 A modal
+001 N mode
+002 N model
+002 N modem
+003 A moderate
+004 N moderation
+004 A moderato
+004 N moderator
+002 A modern
+003 N modernism
+003 V modernize
+002 A modest
+003 N modicum
+005 N modification
+003 V modify
+002 A modish
+002 N modiste
+003 V modulate
+003 N module
+003 N modulus
+001 N mog
+003 N mogadon
+002 N mogul
+002 N mohair
+003 A mohican
+003 N moiety
+001 A moir
+001 N moire
+001 A moist
+002 V moisten
+002 N moisture
+003 V moisturize
+002 A molar
+001 N mold
+002 V molder
+002 N molding
+002 A moldy
+002 N mole
+004 A molecular
+004 N molecule
+003 N molehill
+002 V molest
+001 N moll
+003 V mollify
+002 N mollusc
+002 N mollusk
+004 V mollycoddle
+002 A molten
+002 D molto
+004 N molybdenum
+001 N mom
+002 N moment
+004 A momentary
+003 A momentous
+003 N momentum
+002 N momma
+002 N mommy
+002 N monad
+002 N monarch
+003 N monarchism
+003 N monarchy
+004 N monastery
+003 A monastic
+002 N monday
+004 N monetarism
+004 A monetary
+002 N money
+002 A moneyed
+004 N moneygrubber
+004 N moneylender
+004 N moneymaker
+004 N moneyspinner
+002 N monger
+002 A mongol
+003 N mongolian
+003 N mongolism
+003 A mongoloid
+002 N mongoose
+002 N mongrel
+002 N monism
+003 N monitor
+004 A monitory
+001 N monk
+002 N monkey
+003 N monkeynut
+004 N monkeypuzzle
+002 N monkshood
+005 A monochromatic
+003 N monochrome
+003 N monocle
+006 N monocotyledon
+004 A monocular
+003 N monody
+004 N monogamy
+003 N monogram
+003 N monograph
+004 A monolingual
+003 N monolith
+004 N monologue
+004 N monomania
+004 A monophonic
+003 N monoplane
+004 N monopolist
+004 V monopolize
+004 N monopoly
+003 N monorail
+005 N monosyllable
+003 N monotheism
+003 N monotone
+004 A monotonous
+004 A monovalent
+003 N monoxide
+003 N monseigneur
+003 N monsieur
+003 N monsignor
+002 N monsoon
+002 N monster
+002 N monstrance
+004 N monstrosity
+002 A monstrous
+002 N montage
+001 N month
+002 A monthly
+003 N monument
+004 A monumental
+001 N moo
+001 V mooch
+001 N mood
+002 A moody
+001 N moon
+002 N moonbeam
+002 N moonface
+002 N moonie
+002 N moonlight
+002 A moonlit
+002 N moonscape
+002 N moonshine
+002 N moonshot
+002 N moonstone
+002 A moonstruck
+002 A moony
+001 V moor
+002 N moorhen
+002 N mooring
+002 N moorland
+001 N moose
+001 A moot
+001 N mop
+001 V mope
+001 N moped
+002 N moquette
+002 N moraine
+002 A moral
+003 N morale
+003 N moralist
+004 N morality
+003 V moralize
+002 N morass
+004 N moratorium
+002 A morbid
+002 A mordant
+001 A more
+002 A moreish
+003 N morello
+003 D moreover
+004 A morganatic
+002 N morgue
+003 A moribund
+002 N mormon
+001 N morn
+002 N mornay
+002 N morning
+003 N morocco
+002 N moron
+002 A morose
+002 N morpheme
+002 N morphia
+002 N morphine
+004 N morphology
+002 N morrow
+001 N morse
+002 N morsel
+002 A mortal
+004 N mortality
+002 N mortar
+003 N mortarboard
+002 N mortgage
+003 N mortgagee
+003 N mortgager
+003 N mortician
+003 V mortify
+003 N mortuary
+002 N mosaic
+003 N moselle
+002 V mosey
+002 N mosque
+003 N mosquito
+004 N mosquitonet
+001 N moss
+001 A most
+002 D mostly
+001 N mot
+001 N mote
+002 N motel
+002 N motet
+001 N moth
+002 N mothball
+003 A motheaten
+002 N mother
+004 N motherinlaw
+003 N motherland
+003 A motherly
+004 N motherofpearl
+002 A mothproof
+002 N motif
+002 N motion
+003 V motivate
+002 N motive
+002 A motley
+003 N motocross
+002 N motor
+003 N motorcade
+003 N motorist
+003 V motorize
+003 N motorman
+003 N motorway
+002 N motown
+002 V mottle
+002 N motto
+001 N mould
+002 V moulder
+002 N moulding
+002 A mouldy
+001 N mound
+001 N mount
+002 N mountain
+003 N mountaineer
+003 A mountainous
+003 N mountainside
+003 N mountebank
+002 N mountie
+002 N mounting
+001 V mourn
+002 N mourner
+002 A mournful
+002 N mourning
+001 N mouse
+003 N mousetrap
+003 N moussaka
+001 N mousse
+002 N moustache
+002 A mousy
+001 N mouth
+002 N mouthful
+003 N mouthorgan
+002 N mouthpiece
+003 A mouthtomouth
+002 N mouthwash
+004 A mouthwatering
+003 A movable
+001 V move
+003 N movement
+002 N mover
+002 N movie
+002 A moving
+001 V mow
+004 N mozzarella
+001 N mr
+001 N mrs
+001 N ms
+002 N msalliance
+001 N mtier
+001 N mu
+001 A much
+003 N mucilage
+001 N muck
+002 N mucker
+002 V muckrake
+003 N muckspreader
+002 A mucky
+002 A mucous
+002 N mucus
+001 N mud
+002 V muddle
+003 A muddleheaded
+002 A muddy
+002 N mudflap
+002 N mudflat
+002 N mudguard
+003 N mudslinger
+002 N muesli
+002 N muezzin
+001 V muff
+002 N muffin
+002 V muffle
+002 N muffler
+002 N mufti
+001 V mug
+002 N muggins
+002 A muggy
+004 N muhammadan
+003 N mulatto
+003 N mulberry
+001 N mulch
+002 N mule
+003 N muleteer
+002 A mulish
+001 N mull
+002 N mullah
+002 N mullet
+005 N mulligatawny
+002 N mullion
+003 A multiaccess
+004 A multicoloured
+005 A multicultural
+006 A multidirectional
+005 A multifarious
+003 A multiform
+005 A multilateral
+004 A multilingual
+005 N multimillionaire
+005 A multinational
+003 A multiple
+004 A multiplechoice
+003 A multiplex
+004 N multiplicand
+005 N multiplication
+005 N multiplicity
+003 N multiplier
+003 V multiply
+004 A multiracial
+003 N multitude
+005 A multitudinous
+001 A mum
+002 V mumble
+004 N mumbojumbo
+002 N mummer
+003 N mummery
+003 V mummify
+002 N mummy
+001 V munch
+002 A mundane
+001 N mung
+004 A municipal
+006 N municipality
+004 A munificent
+003 N muniment
+003 N munition
+001 N muon
+002 N mural
+002 N murder
+003 A murderous
+001 N murk
+002 A murky
+002 N murmur
+002 N murrain
+003 N muscadet
+002 N muscat
+003 N muscatel
+002 N muscle
+003 A musclebound
+003 N muscleman
+003 N muscovite
+003 A muscular
+004 N musculature
+001 N muse
+002 N museum
+001 N mush
+002 N mushroom
+002 A mushy
+002 N music
+003 A musical
+003 N musichall
+003 N musician
+005 N musicology
+001 N musk
+002 N musket
+003 N musketeer
+003 N musketry
+002 N muskrat
+002 N muskrose
+002 N muslin
+002 N musquash
+002 N mussel
+001 N must
+002 N mustache
+002 N mustang
+002 N mustard
+002 V muster
+002 A musty
+003 A mutable
+003 N mutagen
+002 A mutant
+002 V mutate
+003 N mutation
+001 A mute
+003 V mutilate
+003 N mutineer
+003 A mutinous
+003 N mutiny
+001 N mutt
+002 V mutter
+002 N mutton
+003 N muttonhead
+002 A mutual
+002 N muzak
+002 N muzzle
+002 A muzzy
+001 R my
+002 N myalgia
+004 A mycenaean
+004 N mycology
+002 N myna
+002 N myopia
+001 N myrrh
+002 N myrtle
+004 A mysterious
+003 N mystery
+002 N mystic
+003 A mystical
+003 V mystify
+003 N mystique
+001 N myth
+004 N mythology
+005 N myxomatosis
+001 V nab
+002 N nacho
+001 N nacre
+002 N nadir
+002 N naevus
+001 A naff
+001 N nag
+002 N naiad
+001 N nail
+003 N nailfile
+001 A naked
+004 A nambypamby
+001 N name
+003 N nameday
+004 N namedropping
+003 A nameless
+003 D namely
+003 N nameplate
+003 N namesake
+001 N nan
+002 N nancy
+002 N nanny
+001 N nap
+002 N napalm
+001 N nape
+002 N naphtha
+003 N naphthalene
+002 N napkin
+002 N nappy
+003 N narcissism
+003 N narcissus
+003 N narcosis
+003 A narcotic
+002 V narrate
+003 N narrative
+002 A narrow
+003 A narrowminded
+002 N narwhal
+002 A nasal
+002 A nascent
+003 N nasturtium
+002 A nasty
+002 A natal
+002 N nation
+003 A national
+004 N nationalism
+005 N nationality
+004 V nationalize
+003 A nationwide
+002 N native
+004 N nativity
+003 N natterjack
+002 A natty
+003 A natural
+004 N naturalism
+004 N naturalist
+004 V naturalize
+004 D naturally
+002 N nature
+002 A natured
+003 N naturism
+002 A naughty
+002 N nausea
+002 V nauseate
+003 A nauseous
+003 A nautical
+003 N nautilus
+002 A naval
+001 N nave
+002 N navel
+004 A navigable
+003 V navigate
+004 N navigation
+002 N navvy
+002 N navy
+001 D nay
+003 N nazarene
+002 N nazi
+001 A ne
+003 A neanderthal
+001 N neap
+004 N neapolitan
+001 D near
+002 A nearby
+002 D nearly
+002 N nearside
+002 A nearsighted
+001 A neat
+002 V neaten
+003 N nebula
+003 A nebulous
+004 A necessary
+005 N necessitarian
+004 V necessitate
+004 A necessitous
+004 N necessity
+001 N neck
+002 N neckband
+003 N neckerchief
+002 N necklace
+002 N neckline
+002 N necktie
+004 N necromancy
+004 N necrophilia
+004 N necropolis
+003 N necrosis
+002 N nectar
+003 N nectarine
+002 N neddy
+001 A nee
+001 V need
+002 A needful
+002 N needle
+003 N needlecord
+003 N needlepoint
+002 A needless
+004 N needlewoman
+003 N needlework
+002 A needy
+003 N neerdowell
+004 A nefarious
+002 V negate
+003 N negation
+003 A negative
+004 N negativism
+002 V neglect
+002 N neglige
+003 N negligence
+004 A negligible
+004 A negotiable
+003 V negotiate
+001 N neigh
+003 N neighborhood
+003 A neighborly
+003 N neighbourhood
+003 A neighbourly
+002 A neither
+002 N nelson
+003 N nematode
+003 N nemesis
+004 N neoclassicism
+003 N neodymium
+003 A neolithic
+003 N neologism
+001 N neon
+002 N neophyte
+002 N nephew
+003 A nephritic
+003 N nephritis
+003 N nepotism
+003 N neptunium
+001 N nerd
+002 N nereid
+001 N nerve
+003 N nervecell
+003 N nervecentre
+003 A nerveless
+004 A nerveracking
+002 A nervous
+002 A nervy
+002 A nescient
+001 N nest
+002 V nestle
+002 N nestling
+001 N net
+002 N netball
+002 A nether
+002 N netting
+002 N nettle
+003 N nettlerash
+002 N network
+002 A neural
+003 N neuralgia
+003 N neuritis
+004 N neurology
+002 N neuron
+003 N neurosis
+005 N neurosurgery
+003 A neurotic
+002 A neuter
+002 A neutral
+003 V neutralize
+003 N neutrino
+002 N neutron
+002 D never
+003 D nevermore
+004 N nevernever
+004 D nevertheless
+002 N nevus
+001 A new
+002 A newborn
+003 N newcomer
+002 N newel
+002 A newfangled
+002 D newly
+002 N newlywed
+003 N newsagent
+002 N newscast
+003 N newscaster
+002 N newsflash
+003 N newsletter
+003 N newspaper
+002 N newspeak
+002 N newsprint
+003 N newsreader
+002 N newsreel
+002 N newssheet
+002 N newsstand
+003 N newsvendor
+003 A newsworthy
+002 A newsy
+001 N newt
+002 N newton
+001 A next
+002 A nextbest
+002 N nexus
+002 N niacin
+001 N nib
+002 V nibble
+001 N nibs
+001 A nice
+003 N nicety
+001 N niche
+001 N nick
+002 N nickel
+002 N nicker
+002 N nickname
+003 N nicotine
+003 V nictitate
+001 N niece
+001 N niff
+002 A nifty
+001 D nigh
+001 N night
+002 N nightbird
+002 N nightcap
+002 N nightclub
+002 N nightdress
+002 N nightfall
+002 N nightgown
+002 N nightie
+004 N nightingale
+002 N nightjar
+002 N nightlife
+002 N nightlight
+002 A nightlong
+002 A nightly
+002 N nightmare
+002 N nightshade
+002 N nightshirt
+002 N nightspot
+002 N nighttime
+003 N nightwatchman
+003 N nihilism
+001 N nil
+002 A nimble
+002 N nimbus
+002 A nimby
+003 N nincompoop
+001 A nine
+003 A ninefold
+003 N ninepin
+003 A nineteen
+003 A ninety
+002 N ninny
+001 A ninth
+002 N niobium
+001 N nip
+002 N nipper
+002 N nipple
+002 A nippy
+003 N nirvana
+001 N nit
+002 N niter
+003 N nitpicking
+002 N nitrate
+001 N nitre
+002 A nitric
+002 N nitride
+003 V nitrify
+002 N nitrite
+003 N nitrogen
+005 N nitroglycerin
+005 N nitroglycerine
+004 N nittygritty
+002 N nitwit
+001 D no
+001 N nob
+002 N noball
+002 V nobble
+003 N nobelium
+004 N nobility
+002 A noble
+003 N nobleman
+004 N noblewoman
+003 A nocturnal
+002 N nocturne
+001 V nod
+002 N noddle
+002 N noddy
+001 N node
+003 N nodule
+001 N noel
+002 N noggin
+001 N noh
+001 N noise
+003 A noiseless
+002 A noisome
+002 A noisy
+002 N nomad
+002 N nomen
+004 N nomenclature
+003 A nominal
+004 N nominalism
+003 V nominate
+003 N nominee
+005 N nonagenarian
+004 N nonaggression
+003 N nonagon
+005 A nonalcoholic
+003 A nonaligned
+005 A nonbelligerent
+001 N nonce
+003 N nonceword
+003 A nonchalant
+002 N noncom
+004 N noncombatant
+004 A noncommissioned
+004 A noncommittal
+004 N nonconductor
+004 N nonconformist
+005 N nonconformity
+006 A noncontributory
+005 N noncooperation
+003 A nondescript
+003 N nondrinker
+003 N nondriver
+004 N nonentity
+004 A nonessential
+004 D nonetheless
+003 N nonevent
+004 A nonexistent
+004 A nonfattening
+003 A nonferrous
+003 N nonfiction
+004 A nonflammable
+005 N noninterference
+005 N nonintervention
+003 N nonmember
+003 A nonnuclear
+004 N nonobservance
+006 A nonoperational
+003 A nonpareil
+004 A nonpartisan
+003 A nonparty
+003 N nonpayment
+002 V nonplus
+005 A nonprofitmaking
+006 N nonproliferation
+004 A nonresident
+004 N nonresistance
+005 A nonreturnable
+004 A nonsectarian
+002 N nonsense
+002 A nonslip
+003 N nonsmoker
+004 N nonspecialist
+004 A nonspecific
+003 A nonstandard
+003 N nonstarter
+002 A nonstick
+002 A nonstop
+003 N nonswimmer
+003 A nontoxic
+005 A nontransferable
+002 A nonu
+003 A nonunion
+003 A nonverbal
+003 N nonviolence
+003 A nonvoting
+002 A nonwhite
+002 N noodle
+001 N nook
+001 N noon
+002 N noonday
+001 N noose
+001 N nor
+002 A nordic
+001 N norm
+002 A normal
+003 V normalize
+003 D normally
+002 N norman
+003 A normative
+001 N norn
+001 N norse
+001 N north
+002 A northbound
+002 N northeast
+003 N northeaster
+004 A northeasterly
+003 A northeastern
+003 A northerly
+002 A northern
+003 N northerner
+002 N northman
+003 N northnortheast
+003 N northnorthwest
+002 A northward
+002 N northwest
+003 N northwester
+004 A northwesterly
+003 A northwestern
+003 N norwegian
+003 N norwester
+001 N nose
+003 N nosebag
+003 N noseband
+003 N nosebleed
+003 N nosedive
+003 N nosegay
+004 A nosetotail
+002 N noshup
+003 N nostalgia
+002 N nostril
+002 N nostrum
+002 A nosy
+001 D not
+003 A notable
+003 N notary
+003 N notation
+001 N notch
+001 N note
+003 N notebook
+003 N notecase
+003 N notelet
+004 N notepaper
+004 A noteworthy
+002 N nothing
+003 N nothingness
+002 N notice
+004 A noticeable
+004 N noticeboard
+004 A notifiable
+003 V notify
+002 N notion
+003 A notional
+004 A notorious
+002 N nougat
+001 N nought
+001 N noun
+002 V nourish
+003 N nourishment
+001 N nous
+002 N nova
+002 A novel
+003 N novelette
+003 N novelist
+003 N novella
+003 N novelty
+003 N november
+003 N novena
+002 N novice
+003 N noviciate
+001 D now
+003 D nowadays
+002 D nowhere
+001 N nowt
+003 A noxious
+002 N nozzle
+001 N nu
+001 N nuance
+001 N nub
+003 A nubile
+002 A nuclear
+002 A nucleate
+002 N nucleon
+002 N nucleus
+001 A nude
+001 V nudge
+002 N nudist
+004 A nugatory
+002 N nugget
+002 N nuisance
+001 A null
+003 V nullify
+001 A numb
+002 N number
+003 A numberless
+003 N numberplate
+004 A numerable
+003 N numeral
+003 A numerate
+004 N numeration
+004 N numerator
+004 A numerical
+005 N numerology
+003 A numerous
+003 A numinous
+004 A numismatic
+002 N numskull
+001 N nun
+002 N nuncio
+003 N nunnery
+002 A nuptial
+001 N nurse
+003 N nursemaid
+003 N nursery
+004 N nurseryman
+002 N nursling
+002 N nurture
+001 N nut
+002 N nutcase
+003 N nutcracker
+002 N nuthatch
+002 N nutmeg
+002 N nutria
+002 N nutrient
+003 N nutriment
+003 N nutrition
+004 A nutritious
+003 A nutritive
+002 N nutshell
+002 N nutter
+002 A nutty
+002 V nuzzle
+002 N nylon
+001 N nymph
+002 N nympho
+004 N nymphomania
+001 N oaf
+001 N oak
+003 N oakapple
+002 N oakum
+001 N oar
+002 N oarsman
+002 N oasis
+001 N oast
+002 N oasthouse
+001 N oat
+002 N oatcake
+001 N oath
+002 N oatmeal
+004 N obbligato
+003 A obdurate
+003 A obedient
+003 N obeisance
+003 N obelisk
+003 N obelus
+002 A obese
+002 V obey
+003 V obfuscate
+004 N obituary
+002 N object
+004 V objectify
+003 N objection
+005 A objectionable
+003 A objective
+004 N objectlesson
+002 A oblate
+003 N oblation
+003 V obligate
+004 N obligation
+005 A obligatory
+002 V oblige
+003 A obliging
+003 A oblique
+004 V obliterate
+003 N oblivion
+004 A oblivious
+002 A oblong
+003 N obloquy
+004 A obnoxious
+002 N oboe
+002 A obscene
+004 N obscurantism
+002 A obscure
+004 A obsequious
+003 N observance
+003 A observant
+004 N observation
+005 N observatory
+002 V observe
+003 N observer
+002 V obsess
+003 N obsession
+003 N obsidian
+004 A obsolescent
+003 A obsolete
+003 N obstacle
+004 N obstetrician
+003 A obstinate
+004 A obstreperous
+002 V obstruct
+003 N obstruction
+003 A obstructive
+002 V obtain
+002 V obtrude
+003 A obtrusive
+002 A obtuse
+002 N obverse
+002 V obviate
+003 A obvious
+004 N ocarina
+003 N occasion
+004 A occasional
+003 N occident
+004 A occidental
+003 N occiput
+002 V occlude
+002 A occult
+003 N occupant
+004 N occupation
+005 A occupational
+003 N occupier
+003 V occupy
+002 V occur
+003 N occurrence
+002 N ocean
+003 A oceangoing
+005 N oceanography
+003 N ocelot
+002 N ocher
+001 N ochre
+003 N octagon
+004 N octahedron
+002 N octane
+002 N octave
+003 N octavo
+002 N octet
+003 N october
+005 N octogenarian
+003 N octopus
+003 A ocular
+003 N oculist
+001 A odd
+002 N oddball
+003 N oddity
+002 N oddment
+002 N oddson
+001 N ode
+003 A odious
+002 N odium
+004 N odometer
+002 N odor
+005 A odoriferous
+002 N odour
+003 N odyssey
+003 N oedema
+004 N oesophagus
+003 N oestrogen
+002 N oestrus
+001 P of
+001 D off
+002 N offal
+002 A offbeat
+002 A offcentre
+002 N offcut
+002 N offday
+002 N offence
+002 V offend
+002 N offense
+003 A offensive
+002 V offer
+003 N offering
+004 N offertory
+002 A offhand
+002 N office
+003 N officer
+003 A official
+004 N officialese
+003 V officiate
+004 A officious
+002 N offing
+002 A offkey
+003 N offlicence
+002 V offload
+002 A offpeak
+002 A offpiste
+002 N offprint
+002 A offscreen
+003 N offseason
+002 N offset
+002 N offshoot
+002 A offshore
+002 A offside
+002 N offspring
+002 A offstage
+002 A offstreet
+003 A offthewall
+002 D often
+002 N ogee
+002 N ogive
+002 V ogle
+001 N ogre
+001 N ohm
+001 N oil
+002 N oilcake
+002 N oilcan
+002 N oilcloth
+001 A oiled
+002 N oilfield
+002 A oilfired
+002 N oilpaint
+002 N oilskin
+002 N oilstone
+002 A oily
+002 N ointment
+003 N okapi
+002 N okra
+001 A old
+003 A oldfashioned
+002 N oldie
+004 A oleaginous
+003 N oleander
+004 A olfactory
+003 N oligarch
+004 N oligarchy
+004 A oligocene
+002 N olive
+003 N olivine
+003 N olympiad
+003 A olympian
+003 A olympic
+003 N ombudsman
+003 N omega
+003 N omelette
+002 N omen
+003 N omicron
+003 A ominous
+003 N omission
+002 V omit
+003 N omnibus
+004 A omnipotent
+004 A omnipresent
+003 A omniscient
+004 A omnivorous
+001 P on
+003 N onanism
+001 D once
+003 N onceover
+003 N oncogene
+004 N oncology
+003 A oncoming
+001 A one
+004 N oneliner
+003 N oneness
+003 A onerous
+003 A onesided
+003 A onetoone
+002 A oneup
+003 A oneway
+002 A ongoing
+002 N onion
+003 N onlooker
+002 D only
+006 N onomatopoeia
+002 N onrush
+002 A onscreen
+002 N onset
+002 A onshore
+002 A onside
+002 N onslaught
+002 A onstreet
+002 P onto
+004 N ontology
+002 N onus
+002 D onward
+002 N onyx
+002 N oolite
+002 N oompah
+001 N oomph
+001 N ooze
+004 N opacity
+002 N opal
+004 A opalescent
+003 A opaline
+003 A opaque
+002 A open
+004 A openandshut
+003 A opencast
+003 A openended
+003 N opener
+003 A openhanded
+003 A openhearted
+003 N opening
+004 N openingtime
+003 D openly
+003 A openminded
+003 A openmouthed
+003 A openplan
+003 N openwork
+003 N opera
+004 A operable
+004 N operahouse
+003 V operate
+004 A operatic
+004 N operation
+005 A operational
+004 A operative
+004 N operator
+004 N operculum
+004 N operetta
+003 N ophidian
+003 N ophthalmia
+003 A ophthalmic
+005 N ophthalmology
+004 N ophthalmoscope
+002 A opiate
+002 V opine
+003 N opinion
+004 A opinionated
+002 N opium
+003 N opossum
+003 N opponent
+003 A opportune
+004 N opportunism
+005 N opportunity
+004 A opposable
+002 V oppose
+003 A opposite
+004 N opposition
+002 V oppress
+003 A oppressive
+004 A opprobrious
+003 N opprobrium
+002 V oppugn
+001 V opt
+002 A optic
+003 A optical
+003 N optician
+003 A optimal
+003 N optimism
+003 V optimize
+003 N optimum
+002 N option
+003 A optional
+003 A opulent
+002 N opus
+001 N or
+003 N oracle
+002 A oral
+002 N orange
+003 N orangeade
+004 N orangeman
+004 N orangery
+004 N orangutan
+003 N oration
+003 N orator
+004 N oratorio
+004 N oratory
+001 N orb
+004 A orbicular
+002 N orbit
+003 A orbital
+002 N orca
+003 A orcadian
+002 N orchard
+003 N orchestra
+003 V orchestrate
+002 N orchid
+002 V ordain
+002 N ordeal
+002 N order
+003 A orderly
+004 N orderpaper
+003 N ordinal
+003 N ordinance
+003 N ordinand
+004 A ordinary
+003 N ordinate
+004 N ordination
+002 N ordnance
+004 A ordovician
+002 N ordure
+001 N ore
+004 N oregano
+002 N organ
+003 N organdie
+004 N organgrinder
+003 A organic
+003 N organism
+003 N organist
+005 N organization
+003 V organize
+003 N organloft
+003 N organza
+002 N orgasm
+002 N orgy
+002 N oriel
+002 N orient
+003 V orientate
+004 N orientation
+004 N orienteering
+003 N orifice
+004 N origami
+003 N origan
+003 N origin
+004 A original
+004 V originate
+003 N oriole
+003 N ormolu
+003 N ornament
+002 A ornate
+005 N ornithology
+003 A orotund
+002 N orphan
+003 N orphanage
+003 N orrery
+002 N orris
+003 A orthodox
+004 N orthography
+003 N ortolan
+002 N oscar
+003 V oscillate
+004 N oscilloscope
+002 N osier
+002 N osmium
+003 N osmosis
+002 N osprey
+003 A osseous
+003 N ossicle
+003 V ossify
+004 A ostensible
+003 A ostensive
+004 N ostentation
+005 N osteoarthritis
+004 N osteopathy
+005 N osteoporosis
+002 N ostler
+003 V ostracize
+002 N ostrich
+002 A other
+003 D otherwise
+004 A otherworldly
+002 A otiose
+002 N otter
+003 A ottoman
+002 N oubliette
+003 N ouija
+001 N ounce
+001 R our
+001 V oust
+001 D out
+002 N outage
+002 N outback
+003 V outbalance
+002 V outbid
+002 N outbreak
+003 N outbuilding
+002 N outburst
+002 N outcast
+002 V outclass
+002 N outcome
+002 N outcrop
+002 N outcry
+002 A outdated
+003 V outdistance
+002 V outdo
+002 D outdoors
+002 A outer
+002 V outface
+002 N outfall
+002 N outfield
+002 N outfit
+003 N outfitter
+002 V outflank
+002 N outflow
+002 V outfox
+002 A outgoing
+002 V outgrow
+002 N outgrowth
+002 N outhouse
+002 N outing
+003 A outlandish
+002 V outlast
+002 N outlaw
+002 N outlay
+002 N outlet
+002 N outline
+002 V outlive
+002 N outlook
+002 A outlying
+004 V outmaneuver
+004 V outmanoeuvre
+002 V outmatch
+002 A outmoded
+003 V outnumber
+002 V outpace
+003 N outpatient
+004 N outplacement
+002 N outpost
+003 N outpouring
+002 N output
+001 A outr
+002 N outrage
+004 A outrageous
+002 V outrank
+003 N outrider
+003 N outrigger
+002 D outright
+002 V outrun
+002 V outsell
+002 N outset
+002 V outshine
+002 N outside
+003 N outsider
+002 A outsize
+002 V outsmart
+003 A outspoken
+002 A outspread
+003 A outstanding
+003 N outstation
+002 V outstay
+002 A outstretched
+002 V outstrip
+002 N outtake
+002 N outtray
+002 V outvote
+002 A outward
+003 N outwardness
+002 V outweigh
+002 V outwit
+002 N outwork
+002 N ouzel
+002 N ouzo
+002 A oval
+003 N ovary
+003 N ovation
+002 N oven
+003 A ovenproof
+004 A ovenready
+003 N ovenware
+002 D over
+005 N overabundance
+003 V overact
+004 A overactive
+006 A overambitious
+005 A overanxious
+003 A overarm
+003 V overawe
+004 V overbalance
+003 V overbear
+003 V overbid
+003 A overblown
+003 V overbook
+004 V overburden
+003 A overcast
+005 A overcautious
+003 V overcharge
+003 N overcoat
+003 V overcome
+005 V overcompensate
+005 A overconfident
+003 V overcook
+003 V overcrowd
+005 V overdevelop
+003 V overdo
+003 N overdose
+003 N overdraft
+003 V overdraw
+003 V overdress
+003 N overdrive
+003 A overdue
+004 A overeager
+003 V overeat
+005 V overemphasize
+005 N overenthusiasm
+005 V overestimate
+004 V overexcite
+004 V overexert
+004 V overexpose
+003 V overfeed
+003 V overfill
+003 V overfish
+003 V overflow
+003 V overfly
+003 A overfond
+003 A overfull
+003 A overground
+003 A overgrown
+003 V overhang
+003 V overhaul
+003 V overhear
+003 V overheat
+004 V overindulge
+003 A overjoyed
+003 N overkill
+003 A overland
+003 V overlap
+003 A overlarge
+003 V overlay
+003 V overlie
+003 V overload
+003 A overlong
+003 V overlook
+003 N overlord
+003 D overly
+003 V overman
+003 D overnight
+006 A overparticular
+003 N overpass
+003 V overpay
+003 V overplay
+005 A overpopulated
+004 V overpower
+003 V overprice
+003 V overprint
+004 V overproduce
+005 A overprotective
+005 A overqualified
+003 V overrate
+003 V overreach
+003 V overreact
+003 V override
+004 N overrider
+003 A overripe
+004 V overrule
+003 V overrun
+003 V oversee
+005 A oversensitive
+003 V oversew
+003 A oversexed
+004 V overshadow
+003 N overshoe
+003 V overshoot
+003 N oversight
+005 V oversimplify
+003 A oversize
+003 V oversleep
+005 V overspecialize
+003 V overspend
+003 N overspill
+003 V overspread
+003 V overstate
+003 V overstay
+003 N oversteer
+003 V overstep
+003 V overstock
+003 V overstrain
+003 V overstretch
+003 A overstrung
+003 A overstuffed
+004 V oversubscribe
+002 A overt
+003 V overtake
+003 V overtax
+004 A overthetop
+003 V overthrow
+003 N overtime
+003 N overtone
+003 N overture
+003 V overturn
+003 V overuse
+003 N overview
+004 A overweening
+003 A overweight
+003 V overwhelm
+004 A overwhelming
+003 V overwind
+003 V overwork
+003 A overwrought
+003 N oviduct
+003 A oviform
+002 A ovine
+004 A oviparous
+002 A ovoid
+003 V ovulate
+003 N ovule
+002 N ovum
+001 V owe
+001 N owl
+002 N owlet
+001 A own
+002 N owner
+005 N owneroccupier
+001 N owt
+001 N ox
+002 N oxbow
+002 N oxbridge
+002 N oxhide
+004 N oxidation
+002 N oxide
+003 V oxidize
+003 A oxonian
+002 N oxtail
+005 A oxyacetylene
+003 N oxygen
+004 V oxygenate
+004 N oxymoron
+002 N oyster
+004 N oystercatcher
+002 N ozone
+005 A ozonefriendly
+001 N pa
+003 N pabulum
+004 N pacemaker
+004 N pacesetter
+003 N pachyderm
+003 A pacific
+003 N pacifier
+003 N pacifism
+003 V pacify
+001 V pack
+002 N package
+003 N packaging
+002 N packer
+002 N packet
+002 N packhorse
+002 N packing
+002 N packthread
+001 N pact
+001 V pad
+002 N padding
+002 V paddle
+003 N paddleboat
+003 N paddlewheel
+002 N paddock
+002 N paddy
+002 N padlock
+001 N padre
+002 N paean
+004 N paedophile
+004 N paedophilia
+002 N paella
+002 N pagan
+001 N page
+002 N pageant
+003 N pageantry
+003 N pageboy
+002 N pager
+003 V paginate
+003 N pagoda
+002 A paidup
+001 N pail
+001 N pain
+002 A painful
+003 N painkiller
+002 A painless
+003 A painstaking
+001 N paint
+002 N paintbox
+002 N paintbrush
+002 N painter
+003 A painterly
+002 N painting
+002 N paintwork
+002 A painty
+001 N pair
+002 N paisley
+002 N paki
+004 N pakistani
+001 N pal
+002 N palace
+005 N palaeography
+005 A palaeolithic
+006 N palaeontology
+002 N palais
+003 N palanquin
+004 A palatable
+003 A palatal
+002 N palate
+003 A palatial
+004 N palatinate
+003 A palatine
+003 N palaver
+002 N pale
+003 N paleface
+004 N paleography
+004 A paleolithic
+005 N paleontology
+004 A palestinian
+002 N palette
+004 N paletteknife
+004 N palimony
+003 N palimpsest
+003 N palindrome
+002 N paling
+003 N palisade
+003 N palladium
+003 N pallbearer
+002 N pallet
+002 N palliasse
+002 V palliate
+002 A pallid
+002 N pallor
+002 A pally
+001 N palm
+002 A palmate
+003 N palmetto
+003 N palmistry
+002 A palmy
+004 N palomino
+003 A palpable
+002 V palpate
+003 V palpitate
+004 N palpitation
+002 N palsy
+002 A paltry
+003 N pampasgrass
+002 V pamper
+002 N pamphlet
+003 N pamphleteer
+003 N panacea
+002 N panache
+003 N panama
+004 N panatella
+002 N pancake
+004 A panchromatic
+002 N pancreas
+002 N panda
+003 A pandemic
+004 N pandemonium
+002 V pander
+001 N pane
+004 N panegyric
+002 N panel
+004 N panelbeater
+003 N paneling
+003 N panelist
+003 N panelling
+003 N panellist
+001 N pang
+003 N pangolin
+002 N panic
+003 N panicle
+004 A panicstricken
+003 N panjandrum
+002 N pannier
+003 N panoply
+004 N panorama
+002 N pansy
+001 V pant
+004 N pantechnicon
+002 N pantheism
+002 N pantheon
+002 N panther
+004 N pantiegirdle
+003 N pantihose
+003 N pantile
+002 N panto
+003 N pantograph
+003 N pantomime
+002 N pantry
+001 N pap
+002 N papa
+003 N papacy
+002 A papal
+004 N paparazzo
+002 N paper
+003 N paperback
+003 N paperboy
+003 N paperchase
+003 N paperclip
+004 N paperhanger
+003 N paperknife
+003 N papermill
+003 N paperweight
+003 N paperwork
+003 A papery
+003 N papilla
+002 N papist
+002 N papoose
+003 N paprika
+003 N papyrus
+003 N parable
+004 N parabola
+005 N paracetamol
+003 N parachute
+002 N parade
+004 N paradeground
+004 N paradiddle
+003 N paradigm
+003 N paradise
+003 N paradox
+003 N paraffin
+003 N paragon
+003 N paragraph
+003 N parakeet
+003 N parallax
+003 A parallel
+005 N parallelepiped
+005 N parallelogram
+003 V paralyse
+004 N paralysis
+004 A paralytic
+003 V paralyze
+004 N paramedic
+005 A paramedical
+004 N parameter
+006 A paramilitary
+003 A paramount
+003 N paramour
+004 N paranoia
+004 A paranormal
+003 N parapet
+003 N paraphrase
+004 N paraplegia
+006 N parapsychology
+003 N paraquat
+004 N parascending
+003 N parasite
+003 N parasol
+004 N paratrooper
+004 N paratyphoid
+002 V parboil
+002 N parcel
+001 V parch
+002 N parchment
+002 N pardon
+001 V pare
+002 N parent
+003 N parentage
+004 N parenthesis
+003 N parenting
+002 N parfait
+002 N pariah
+003 A parietal
+002 N paring
+002 N parish
+004 N parishioner
+003 N parity
+001 N park
+002 N parka
+002 N parkin
+003 N parkinglot
+004 N parkingmeter
+004 N parkingticket
+002 N parkland
+002 A parky
+002 N parlance
+002 N parley
+003 N parliament
+005 N parliamentarian
+005 A parliamentary
+002 N parlor
+002 N parlour
+002 A parlous
+003 N parmesan
+003 A parochial
+003 N parody
+003 N parole
+003 A parotid
+003 N paroxysm
+002 N parquet
+003 N parquetry
+001 N parr
+003 N parricide
+002 N parrot
+002 V parry
+001 V parse
+002 N parsec
+004 N parsimony
+002 N parsley
+002 N parsnip
+002 N parson
+003 N parsonage
+001 N part
+002 V partake
+002 N parterre
+003 N partexchange
+006 N parthenogenesis
+002 A partial
+004 N participant
+004 V participate
+004 N participle
+003 N particle
+004 A particolored
+004 A particoloured
+004 A particular
+006 N particularity
+005 V particularize
+005 D particularly
+002 N parting
+003 N partition
+003 A partitive
+002 D partly
+002 N partner
+003 N partnership
+002 N partridge
+002 N partsong
+002 A parttime
+003 N parttimer
+003 A parturient
+004 N parturition
+002 N party
+003 N partywall
+003 N parvenu
+001 N pas
+002 N pascal
+002 A paschal
+001 N pash
+002 N pasha
+002 N pashto
+004 N pasqueflower
+001 A pass
+003 A passable
+002 N passage
+004 N passageway
+002 N passbook
+003 N passenger
+003 N passerby
+003 N passerine
+002 N passion
+003 A passionate
+004 N passionflower
+003 N passionfruit
+003 N passionplay
+002 A passive
+002 N passkey
+002 N passmark
+003 N passover
+002 N passport
+002 N password
+001 A past
+002 N pasta
+001 N paste
+003 N pasteboard
+002 N pastel
+002 N pastern
+002 N pasteup
+003 V pasteurize
+002 N pastiche
+003 N pastille
+002 N pastime
+002 N pastor
+003 A pastoral
+004 N pastorale
+003 N pastorate
+003 N pastrami
+002 N pastry
+003 N pastrycook
+003 N pasturage
+002 N pasture
+002 A pasty
+001 A pat
+001 N patch
+002 N patchboard
+003 N patchouli
+002 N patchwork
+002 A patchy
+001 N pate
+003 N patella
+002 N paten
+002 N patent
+003 N patentee
+002 N pater
+005 N paterfamilias
+003 A paternal
+004 N paternalism
+004 N paternity
+004 N paternoster
+001 N path
+003 A pathetic
+003 N pathfinder
+003 N pathogen
+005 A pathological
+004 N pathology
+002 N pathos
+002 N pathway
+002 N patience
+002 A patient
+003 N patina
+002 N patio
+004 N patisserie
+002 N patois
+002 N patriarch
+003 N patriarchate
+003 N patriarchy
+003 N patrician
+003 N patricide
+004 N patrimony
+002 N patriot
+003 A patristic
+002 N patrol
+002 N patron
+003 N patronage
+003 V patronize
+004 N patronymic
+002 N patten
+002 N patter
+002 N pattern
+002 N patty
+003 N paucity
+001 N paunch
+002 N pauper
+001 N pause
+002 N pavane
+001 V pave
+003 N pavement
+003 N pavilion
+003 N pavingstone
+003 N pavlova
+003 A pavlovian
+001 N paw
+001 N pawl
+001 V pawn
+003 N pawnbroker
+002 N pawnshop
+002 N pawpaw
+001 N pax
+001 V pay
+003 A payable
+005 N payasyouearn
+001 N paybed
+002 N payclaim
+002 N payday
+002 N payload
+003 N paymaster
+002 N payment
+002 N payoff
+003 N payola
+003 N paypacket
+002 N payroll
+001 N pe
+001 N pea
+001 N peace
+003 A peaceable
+003 A peaceful
+004 N peacemaker
+004 N peaceoffering
+003 N peacepipe
+003 N peacetime
+001 V peach
+002 N peacock
+002 N peafowl
+002 N peahen
+001 V peak
+002 N peakload
+002 A peaky
+001 N peal
+001 N pean
+002 N peanut
+001 N pear
+001 N pearl
+003 N pearldiver
+002 A pearly
+002 N peasant
+004 N peasepudding
+003 N peashooter
+003 N peasouper
+001 N peat
+002 N peatbog
+002 N pebble
+003 N pebbledash
+002 N pecan
+004 N peccadillo
+001 N peck
+002 N pecker
+002 A peckish
+002 N pectin
+003 A pectoral
+003 V peculate
+003 A peculiar
+005 N peculiarity
+004 D peculiarly
+004 A pecuniary
+004 N pedagogue
+004 N pedagogy
+002 N pedal
+003 N pedalo
+002 N pedant
+002 V peddle
+002 N peddler
+003 N pederast
+004 N pederasty
+003 N pedestal
+003 N pedestrian
+003 N pedicure
+003 N pedigree
+003 N pediment
+002 N pedlar
+004 N pedometer
+004 N pedophile
+004 N pedophilia
+003 N peduncle
+001 V peek
+001 V peel
+002 N peeling
+001 N peen
+001 V peep
+003 N peephole
+002 N peepshow
+001 N peer
+002 N peerage
+002 A peerless
+002 A peevish
+002 N peewit
+001 N peg
+002 N pegboard
+002 N pegleg
+004 A pejorative
+001 N peke
+003 N pekingese
+004 N pelargonium
+001 N pelf
+003 N pelican
+002 N pelisse
+003 N pellagra
+002 N pellet
+003 N pellicle
+003 A pellucid
+002 N pelmet
+001 N pelt
+002 N pelvis
+001 N pen
+002 A penal
+003 V penalize
+003 N penalty
+002 N penance
+002 N penchant
+002 N pencil
+002 N pendant
+002 A pendent
+003 A pendulous
+003 N pendulum
+003 V penetrate
+002 N penfriend
+002 N penguin
+004 N penicillin
+004 N peninsula
+002 N penis
+003 A penitent
+004 A penitential
+005 N penitentiary
+002 N penknife
+002 N penname
+002 N pennant
+003 A penniless
+002 N pennon
+002 N penny
+004 N pennypinching
+004 N pennyroyal
+003 N pennywort
+003 N pennyworth
+004 N penology
+002 N penpal
+003 N penpushing
+002 N pension
+004 A pensionable
+003 N pensioner
+002 A pensive
+001 A pent
+003 N pentacle
+003 N pentagon
+003 N pentagram
+004 N pentameter
+003 N pentateuch
+003 N pentathlon
+004 A pentatonic
+003 N pentecost
+004 A pentecostal
+002 N penthouse
+004 A penultimate
+003 N penumbra
+004 A penurious
+003 N penury
+001 N peon
+002 N peony
+002 N pepper
+004 A pepperandsalt
+003 N peppercorn
+003 N peppermill
+003 N peppermint
+004 N pepperoni
+003 N pepperpot
+003 A peppery
+002 A peppy
+002 N pepsin
+002 A peptic
+002 N peptide
+004 V perambulate
+005 N perambulator
+003 N percale
+002 V perceive
+003 N percentage
+004 N percentile
+004 A perceptible
+003 N perception
+003 A perceptive
+001 N perch
+002 D perchance
+003 A percipient
+003 V percolate
+004 N percolator
+003 N percussion
+003 N perdition
+003 N peregrine
+004 A peremptory
+003 A perennial
+004 N perestroika
+002 A perfect
+003 N perfection
+004 N perfectionism
+003 D perfectly
+003 N perfidy
+003 V perforate
+002 D perforce
+002 V perform
+003 N performance
+002 N perfume
+003 N perfumer
+004 A perfunctory
+003 N pergola
+002 D perhaps
+002 N perianth
+004 N pericardium
+003 N perigee
+004 N perihelion
+002 N peril
+004 N perimeter
+003 N perineum
+002 N period
+003 A periodic
+004 N periodical
+005 A peripatetic
+004 A peripheral
+004 N periphery
+004 N periphrasis
+003 N periscope
+002 V perish
+004 A perishable
+003 N perisher
+004 N peristalsis
+004 N peritoneum
+005 N peritonitis
+003 N periwig
+004 N periwinkle
+003 N perjury
+001 N perk
+002 A perky
+002 N perlite
+003 N permafrost
+003 A permanent
+003 A permeable
+002 V permeate
+002 A permian
+004 A permissible
+003 N permission
+003 A permissive
+002 V permit
+004 N permutation
+004 A pernicious
+004 A pernickety
+004 N peroration
+003 N peroxide
+005 A perpendicular
+003 V perpetrate
+003 A perpetual
+003 V perpetuate
+004 N perpetuity
+002 V perplex
+004 N perplexity
+003 N perquisite
+002 N perry
+003 V persecute
+003 V persevere
+002 N persian
+003 N persiflage
+003 N persimmon
+002 V persist
+002 N person
+003 N persona
+004 A personable
+003 N personage
+003 A personal
+005 N personality
+004 V personalize
+004 D personally
+004 V personify
+003 N personnel
+003 N perspective
+002 N perspex
+005 A perspicacious
+004 A perspicuous
+004 N perspiration
+002 V perspire
+002 V persuade
+003 N persuasion
+003 A persuasive
+001 A pert
+002 V pertain
+005 A pertinacious
+003 A pertinent
+002 V perturb
+002 N peruke
+002 V peruse
+002 V pervade
+002 A perverse
+003 N perversion
+002 V pervert
+003 A pervious
+003 N peseta
+002 A pesky
+002 N peso
+003 N pessary
+003 N pessimism
+001 N pest
+002 V pester
+003 N pesticide
+003 N pestilence
+003 A pestilent
+004 A pestilential
+002 N pestle
+001 N pet
+002 N petal
+002 N petard
+002 V peter
+003 N petersham
+003 N pethidine
+003 N petiole
+002 A petite
+003 N petition
+002 N petrel
+003 V petrify
+005 N petrochemical
+004 N petrodollar
+002 N petrol
+003 N petroleum
+003 N petticoat
+003 V pettifog
+002 A pettish
+002 A petty
+003 A petulant
+003 N petunia
+001 N pew
+002 N pewter
+002 N peyote
+002 N pfennig
+001 N ph
+003 N phagocyte
+002 N phalanx
+002 N phallus
+002 N phantasm
+005 N phantasmagoria
+002 N phantom
+002 N pharaoh
+003 N pharisee
+005 A pharmaceutical
+003 N pharmacist
+005 N pharmacology
+005 N pharmacopoeia
+003 N pharmacy
+002 N pharynx
+001 N phase
+002 N pheasant
+005 N phenobarbitone
+002 N phenol
+004 A phenomenal
+004 N phenomenon
+003 N pheromone
+001 N phi
+001 N phial
+004 N philadelphus
+003 V philander
+004 N philanthropy
+004 N philately
+004 A philharmonic
+003 N philippic
+003 N philistine
+002 N phillips
+004 N philodendron
+004 N philology
+004 N philosopher
+005 A philosophical
+004 V philosophize
+004 N philosophy
+002 N philter
+001 N philtre
+003 N phlebitis
+001 N phlegm
+003 A phlegmatic
+001 N phloem
+001 N phlox
+002 N phoenix
+001 N phone
+003 N phonecard
+002 N phonein
+002 N phoneme
+003 A phonetic
+002 A phonic
+003 N phonograph
+004 N phonology
+002 N phosphate
+002 N phosphor
+004 N phosphorescence
+003 N phosphorus
+005 N photochemistry
+004 N photocopier
+004 N photocopy
+004 A photoelectric
+003 N photofit
+004 A photogenic
+003 N photograph
+004 N photography
+004 N photogravure
+005 N photojournalism
+006 N photolithography
+004 N photometer
+002 N photon
+005 A photosensitive
+003 N photostat
+005 N photosynthesis
+001 N phrase
+004 N phraseology
+004 N phrenology
+001 N phut
+004 N phylactery
+002 N phylum
+002 N physic
+003 A physical
+003 N physician
+003 N physicist
+002 N physio
+004 N physiognomy
+004 N physiology
+005 N physiotherapy
+003 N physique
+001 N pi
+002 N pianist
+004 N pianoaccordion
+003 N pianoforte
+003 N pianola
+002 N piazza
+002 N pibroch
+002 N pica
+003 N picador
+004 A picaresque
+004 N piccalilli
+004 N piccaninny
+003 N piccolo
+001 N pick
+004 N pickaninny
+002 N pickax
+002 N pickaxe
+002 N picket
+002 N pickle
+002 N pickmeup
+003 N pickpocket
+002 N pickup
+002 A picky
+004 A pickyourown
+002 N picnic
+001 N pict
+003 N pictograph
+003 A pictorial
+002 N picture
+004 A picturesque
+002 V piddle
+002 N pidgin
+001 N pie
+002 A piebald
+001 N piece
+003 N piecework
+002 N piecrust
+001 A pied
+002 N piedterre
+002 A pieeyed
+001 N pier
+001 V pierce
+002 N pierglass
+002 N pierrot
+001 N piet
+002 N pietism
+002 N piety
+002 A piffling
+001 N pig
+002 N pigeon
+004 N pigeonhole
+003 A pigeontoed
+003 N piggery
+002 A piggish
+002 N piggy
+002 A pigheaded
+003 N pigiron
+002 N piglet
+002 N pigment
+004 N pigmentation
+002 N pigskin
+002 N pigsty
+002 N pigswill
+002 N pigtail
+001 N pike
+003 N pikestaff
+003 N pilaster
+002 N pilau
+002 N pilchard
+002 N pile
+004 N piledriver
+002 N pileup
+002 V pilfer
+002 N pilgrim
+003 N pilgrimage
+001 N pill
+002 V pillage
+002 N pillar
+003 N pillarbox
+002 N pillbox
+002 N pillion
+003 N pillory
+002 N pillow
+003 N pillowcase
+002 N pilot
+003 N pilotlight
+003 N pimento
+003 N pimiento
+001 N pimp
+003 N pimpernel
+002 N pimple
+001 N pin
+003 N pinafore
+002 N pinball
+003 N pincenez
+001 V pinch
+002 N pinchbeck
+003 N pincushion
+001 V pine
+002 A pineal
+003 N pineapple
+001 N ping
+002 N pingpong
+002 N pinhead
+003 N pinhole
+002 N pinion
+001 V pink
+002 A pinko
+003 N pinmoney
+002 N pinnace
+003 N pinnacle
+002 A pinnate
+002 N pinny
+002 N pinpoint
+002 N pinprick
+002 N pinstripe
+001 N pint
+002 N pinta
+003 N pintable
+002 N pintail
+002 N pintle
+002 A pintsized
+002 N pintuck
+002 N pinup
+002 N pinwheel
+002 N pinyin
+001 N pion
+002 N pioneer
+002 A pious
+001 N pip
+001 N pipe
+003 N pipeclay
+004 N pipecleaner
+003 N pipedream
+003 N pipeline
+002 N piper
+002 N pipette
+002 N piping
+002 N pipit
+002 N pippin
+003 N pipsqueak
+002 A piquant
+002 V pique
+002 N piquet
+003 N piracy
+003 N piranha
+002 N pirate
+003 N pirouette
+004 A piscatorial
+001 N pisces
+003 N piscina
+003 N pisstaking
+002 N pissup
+003 N pistachio
+001 N piste
+002 N pistil
+002 N pistol
+002 N piston
+003 N pistonring
+003 N pistonrod
+001 V pit
+001 N pitch
+002 A pitchblack
+002 N pitchblende
+002 N pitcher
+002 N pitchfork
+002 N pitchpine
+003 A piteous
+002 N pitfall
+001 N pith
+002 N pithead
+002 A pithy
+003 A pitiable
+003 A pitiful
+003 A pitiless
+002 N piton
+002 N pitta
+002 N pittance
+004 N pituitary
+002 N pity
+002 N pivot
+002 N pixel
+002 N pixie
+002 N pizza
+003 N pizzeria
+003 A placable
+002 N placard
+002 V placate
+001 N place
+003 N placebo
+003 N placekick
+003 N placemat
+003 N placename
+003 N placenta
+002 N placer
+004 N placesetting
+002 A placid
+002 N placket
+003 V plagiarize
+002 N plague
+001 N plaice
+001 N plaid
+001 A plain
+002 N plainchant
+002 N plainsong
+003 A plainspoken
+001 N plaint
+002 N plaintiff
+002 A plaintive
+001 N plait
+001 N plan
+002 N planchette
+001 N plane
+002 N planet
+004 N planetarium
+002 A plangent
+001 N plank
+002 N planking
+002 N plankton
+002 N planner
+001 N plant
+002 N plantain
+003 N plantation
+002 N planter
+002 N plaque
+002 N plasma
+002 N plaster
+003 N plasterboard
+002 N plastic
+003 N plasticine
+001 N plate
+003 N plateau
+004 N platelayer
+003 N platelet
+002 N platen
+003 N platerack
+002 N platform
+003 N platinum
+003 N platitude
+003 A platonic
+003 N platonism
+002 N platoon
+002 N platter
+003 N platypus
+002 N plaudit
+003 A plausible
+001 V play
+002 V playact
+002 N playback
+002 N playbill
+002 N playboy
+002 N player
+003 N playfellow
+002 A playful
+002 N playgoer
+002 N playground
+002 N playgroup
+002 N playhouse
+003 N playingcard
+003 N playingfield
+002 N playlet
+002 N playmate
+002 N playoff
+002 N playpen
+002 N plaything
+002 N playtime
+002 N playwright
+001 N plea
+001 V pleach
+001 V plead
+002 N pleading
+002 A pleasant
+003 N pleasantry
+001 V please
+004 A pleasurable
+002 N pleasure
+001 N pleat
+001 N pleb
+003 N plebeian
+003 N plebiscite
+002 N plectrum
+001 N pledge
+003 A plenary
+006 N plenipotentiary
+003 N plenitude
+003 A plenteous
+003 A plentiful
+002 N plenty
+002 N plenum
+002 N pleonasm
+003 N plethora
+002 N pleura
+003 N pleurisy
+002 N plexus
+002 A pliable
+001 A pliant
+001 V plight
+002 N plimsoll
+001 N plinth
+001 V plod
+001 N plonk
+002 N plonker
+001 N plop
+002 A plosive
+001 N plot
+002 N ploughman
+002 N ploughshare
+002 N plover
+002 N plowman
+002 N plowshare
+001 N ploy
+001 V pluck
+002 A plucky
+001 N plug
+003 N plughole
+001 N plum
+002 N plumage
+001 N plumb
+002 N plumber
+002 N plumbing
+002 N plumbline
+001 N plume
+002 N plummet
+002 A plummy
+001 V plump
+002 A plumy
+002 V plunder
+001 V plunge
+002 N plunger
+002 A plural
+003 N pluralism
+004 N plurality
+003 V pluralize
+001 N plush
+002 A plushy
+002 N pluto
+004 N plutocracy
+003 N plutocrat
+003 A plutonic
+003 N plutonium
+002 A pluvial
+001 V ply
+002 N plywood
+003 A pneumatic
+005 N pneumoconiosis
+003 N pneumonia
+001 N po
+001 V poach
+001 N pock
+002 N pocket
+003 N pocketbook
+003 N pocketful
+001 N pod
+002 A podgy
+002 N podium
+001 N poem
+002 N poesy
+001 N poet
+003 N poetaster
+002 A poetic
+002 N poetry
+002 A pofaced
+002 N pogo
+002 N pogrom
+002 A poignant
+003 N poinsettia
+001 N point
+002 A pointblank
+003 N pointduty
+001 A pointed
+002 N pointer
+003 N pointillism
+002 N pointing
+002 A pointless
+004 A pointofsale
+003 N pointtopoint
+001 N poise
+001 A poised
+002 N poison
+001 N poke
+002 N poker
+003 N pokerface
+002 A poky
+004 N polarity
+003 V polarize
+003 N polaroid
+002 N polder
+002 N pole
+003 N polecat
+003 N polemic
+002 N police
+004 N policeman
+003 N policy
+005 N policyholder
+002 N polio
+005 N poliomyelitis
+002 V polish
+002 A polite
+003 A politic
+004 A political
+004 N politician
+004 V politicize
+004 N politico
+003 N polity
+002 N polka
+001 N poll
+002 N pollack
+002 N pollard
+002 N pollen
+003 V pollinate
+002 N polling
+003 N pollingbooth
+003 N pollingday
+004 N pollingstation
+002 N pollster
+002 V pollute
+002 N polo
+003 N polonaise
+003 N poloneck
+003 N polonium
+003 N poltergeist
+002 N poltroon
+003 N polyandry
+003 N polyanthus
+005 A polychromatic
+003 A polychrome
+003 N polyester
+003 N polyethene
+004 N polyethylene
+004 N polygamy
+003 A polyglot
+003 N polygon
+003 N polygraph
+004 N polygyny
+004 N polyhedron
+003 N polymath
+003 N polymer
+004 A polymorphous
+004 N polynomial
+002 N polyp
+004 N polyphony
+004 N polypropene
+005 N polypropylene
+005 N polysaccharide
+004 N polystyrene
+005 A polysyllabic
+005 N polysyllable
+004 N polytechnic
+003 N polytheism
+003 N polythene
+005 A polyunsaturated
+004 N polyurethane
+001 N pom
+002 N pomace
+002 N pomade
+003 N pomander
+004 N pomegranate
+003 N pomelo
+002 N pommel
+002 N pommy
+001 N pomp
+002 N pompom
+002 N pompon
+002 N pompous
+002 N poncho
+001 N pond
+002 V ponder
+004 A ponderable
+003 A ponderous
+002 N pondweed
+001 V pong
+002 N poniard
+002 N pontiff
+004 A pontifical
+004 V pontificate
+002 N pontoon
+002 N pony
+003 N ponytail
+004 N ponytrekking
+002 N poodle
+001 N poof
+002 V poohpooh
+001 N pool
+001 N poop
+001 A poor
+002 N poorhouse
+002 D poorly
+001 N pop
+002 N popcorn
+001 N pope
+003 N popery
+002 A popeyed
+002 N popgun
+003 N popinjay
+002 A popish
+002 N poplar
+002 N poplin
+003 N poppadam
+002 N popper
+002 N poppet
+003 N poppingcrease
+002 N poppy
+003 N poppycock
+003 N populace
+003 A popular
+004 V popularize
+003 V populate
+004 N population
+003 N populist
+003 A populous
+002 A popup
+003 N porcelain
+001 N porch
+002 A porcine
+003 N porcupine
+001 V pore
+001 N pork
+002 N porker
+002 A porky
+004 N pornography
+002 A porous
+003 N porphyry
+002 N porpoise
+002 N porridge
+003 N porringer
+001 N port
+003 A portable
+002 N portage
+004 N portakabin
+002 N portal
+003 N portcullis
+002 V portend
+002 N portent
+003 A portentous
+002 N porter
+003 N porterage
+003 N portfolio
+003 N porthole
+003 N portico
+002 N portion
+002 A portly
+004 N portmanteau
+002 N portrait
+003 N portraiture
+002 V portray
+003 N portuguese
+001 V pose
+002 N poser
+002 N poseur
+002 V posit
+003 N position
+003 A positive
+004 N positivism
+003 N positron
+001 N posse
+002 V possess
+003 N possession
+003 A possessive
+005 N possibility
+003 A possible
+003 D possibly
+002 N possum
+001 N post
+002 N postage
+002 A postal
+002 N postbag
+002 N postbox
+002 N postcard
+002 N postcode
+003 A postcoital
+002 V postdate
+002 N poster
+003 A posterior
+004 N posterity
+002 N postern
+002 A postfree
+003 N postgraduate
+003 A posthumous
+003 N postilion
+005 N postimpressionism
+004 A postindustrial
+002 N postman
+002 N postmark
+003 N postmaster
+003 A postmodern
+003 N postmortem
+003 A postnatal
+002 A postpaid
+002 V postpone
+003 A postprandial
+002 N postscript
+003 N postulant
+003 V postulate
+002 N posture
+002 A postwar
+002 N posy
+001 N pot
+003 A potable
+002 N potage
+002 N potash
+003 N potassium
+003 N potation
+003 N potato
+003 N potbelly
+003 N potboiler
+002 A potbound
+002 N poteen
+002 A potent
+003 N potentate
+003 A potential
+002 N pother
+002 N potherb
+003 N pothole
+002 N pothook
+003 N pothunter
+002 N potion
+003 N potpourri
+002 N potsherd
+002 N potshot
+002 N pottage
+002 N potter
+003 N pottery
+002 N potty
+001 N pouch
+001 N pouffe
+001 N poult
+003 N poulterer
+002 N poultice
+002 N poultry
+001 V pounce
+001 N pound
+002 N poundage
+002 N pounder
+001 V pour
+002 N pourboire
+001 V pout
+002 N pouter
+003 N poverty
+005 A povertystricken
+002 N powder
+003 N powderpuff
+003 N powderroom
+002 N power
+003 N powerboat
+003 A powerful
+003 N powerhouse
+003 A powerless
+003 N powerplant
+004 N powersharing
+002 N powwow
+001 N pox
+002 A poxy
+004 A practicable
+003 A practical
+004 D practically
+002 N practice
+002 V practise
+004 N practitioner
+003 N praenomen
+002 N praetor
+003 A pragmatic
+003 N pragmatism
+002 N prairie
+001 V praise
+004 A praiseworthy
+002 N praline
+001 N pram
+001 V prance
+001 N prank
+002 N prankster
+004 N praseodymium
+001 N prat
+001 V prate
+002 V prattle
+001 N prawn
+001 V pray
+002 N prayer
+003 N prayerbook
+003 N prayermat
+003 N prayerwheel
+001 N prcis
+001 V preach
+002 N preamble
+001 N preamp
+003 N preamplifier
+002 V prearrange
+002 N prebend
+004 N prebendary
+004 A precarious
+002 A precast
+003 N precaution
+002 V precede
+003 N precedence
+003 N precedent
+003 N precentor
+002 N precept
+003 N preceptor
+003 N precession
+003 A prechristian
+002 N precinct
+004 N preciosity
+003 A precious
+003 N precipice
+004 V precipitate
+005 N precipitation
+004 A precipitous
+002 A precise
+004 D precisely
+003 N precision
+004 A preclinical
+002 V preclude
+004 A precocious
+004 N precognition
+003 V preconceive
+004 N preconception
+004 N precondition
+003 N precursor
+002 V predate
+003 N predator
+004 A predatory
+003 V predecease
+004 N predecessor
+003 V predestine
+004 V predetermine
+004 N predicament
+003 V predicate
+004 A predicative
+002 V predict
+004 A predictable
+003 N prediction
+004 N predilection
+003 V predispose
+004 A predominant
+004 V predominate
+002 N preecho
+002 N preembryo
+003 A preeminent
+001 V preempt
+002 N preemption
+002 A preemptive
+001 V preen
+002 N prefab
+004 V prefabricate
+002 N preface
+002 N prefect
+003 N prefecture
+002 V prefer
+004 A preferable
+003 N preference
+004 A preferential
+003 N preferment
+003 V prefigure
+002 N prefix
+002 A pregnant
+002 V preheat
+004 A prehensile
+004 A prehistoric
+002 V prejudge
+003 N prejudice
+004 A prejudicial
+003 N prelacy
+002 N prelate
+002 N prelim
+005 A preliminary
+002 N prelude
+004 A premarital
+003 A premature
+001 N premed
+005 N premedication
+004 V premeditate
+003 A premenstrual
+002 N premier
+002 N premire
+002 N premise
+002 N premiss
+002 N premium
+003 N premolar
+004 N premonition
+003 A prenatal
+003 V preoccupy
+002 V preordain
+001 N prep
+002 V prepack
+004 N preparation
+005 A preparatory
+002 V prepare
+004 N preparedness
+002 V prepay
+002 V preplan
+004 V preponderate
+004 N preposition
+003 V prepossess
+004 A preposterous
+002 N preppy
+002 N prepuce
+004 N preraphaelite
+003 V prerecord
+004 A prerequisite
+004 N prerogative
+002 N presage
+003 N presbyopia
+003 N presbyter
+004 A presbyterian
+004 N presbytery
+002 A preschool
+002 A prescient
+002 V prescribe
+002 N prescript
+003 N prescription
+003 A prescriptive
+002 N presence
+002 N present
+004 A presentable
+004 N presentation
+004 N presentiment
+003 D presently
+004 N preservative
+002 V preserve
+002 V preset
+002 A preshrunk
+002 V preside
+004 N presidency
+003 N president
+003 N presidium
+001 V press
+002 N pressgang
+002 N pressie
+002 A pressing
+002 N pressstud
+002 N pressup
+002 N pressure
+005 N pressurecooker
+003 V pressurize
+002 N prestel
+006 N prestidigitator
+002 N prestige
+002 A prestressed
+004 D presumably
+002 V presume
+003 N presumption
+003 A presumptive
+004 A presumptuous
+003 V presuppose
+002 A pretax
+002 N pretence
+002 V pretend
+003 N pretender
+002 N pretense
+003 N pretension
+004 A pretentious
+005 A preternatural
+002 N pretext
+003 V prettify
+002 A pretty
+004 A prettypretty
+002 N pretzel
+002 V prevail
+003 A prevalent
+004 V prevaricate
+002 V prevent
+004 A preventative
+003 A preventive
+002 N preview
+003 A previous
+002 A prewar
+001 N prey
+001 N price
+004 N pricefixing
+003 A priceless
+002 A pricey
+001 V prick
+002 N prickle
+002 A prickly
+001 N pride
+003 N priedieu
+001 N priest
+001 N prig
+001 A prim
+003 N primacy
+002 A primal
+003 A primary
+002 N primate
+001 V prime
+002 N primer
+003 A primeval
+003 A primitive
+005 N primogeniture
+003 A primordial
+001 V primp
+002 N primrose
+003 N primula
+002 N primus
+001 N prince
+003 N princeling
+003 A princely
+002 N princess
+003 A principal
+005 N principality
+003 N principle
+002 A principled
+001 V prink
+001 V print
+002 N printer
+002 N printing
+003 N printingpress
+002 N printout
+001 A prior
+003 N priority
+002 N priory
+001 V prise
+001 N prism
+003 A prismatic
+002 N prison
+003 N prisoner
+002 A prissy
+002 A pristine
+003 N privacy
+002 A private
+003 N privateer
+003 N privation
+003 A privative
+003 V privatize
+002 N privet
+003 N privilege
+002 A privy
+003 N prizefight
+004 N prizegiving
+004 N prizewinner
+001 A pro
+002 A proactive
+005 N probability
+003 A probable
+002 N probate
+003 N probation
+004 N probationer
+003 A probative
+001 N probe
+003 N probity
+002 N problem
+004 A problematic
+003 N proboscis
+003 N procedure
+002 V proceed
+003 N proceeding
+002 V process
+003 N procession
+004 A processional
+003 N processor
+002 V proclaim
+004 N proclivity
+004 V procrastinate
+002 V procreate
+003 A procrustean
+002 N proctor
+004 N procuration
+004 N procurator
+002 V procure
+003 N procurer
+001 V prod
+003 A prodigal
+004 A prodigious
+003 N prodigy
+002 V produce
+003 N producer
+002 N product
+003 N production
+003 A productive
+005 N productivity
+001 N proem
+002 A profane
+004 N profanity
+002 V profess
+002 A professed
+003 N profession
+004 A professional
+005 N professionalism
+003 N professor
+002 V proffer
+003 A proficient
+003 N profile
+002 N profit
+004 A profitable
+003 V profiteer
+005 N profiterole
+004 N profitsharing
+003 A profligate
+002 A profound
+002 A profuse
+004 N progenitor
+003 N progeny
+004 N progesterone
+004 N progestogen
+003 N prognosis
+003 N prognostic
+004 V prognosticate
+002 N progress
+003 N progression
+003 A progressive
+003 V prohibit
+004 N prohibition
+004 A prohibitive
+002 N project
+004 N projectile
+003 N projection
+003 N projector
+003 N prokaryote
+003 N prolactin
+002 N prolapse
+002 A prolate
+002 A prole
+005 N prolegomenon
+004 A proletarian
+004 N proletariat
+004 V proliferate
+003 A prolific
+002 A prolix
+003 N prologue
+002 V prolong
+001 N prom
+003 N promenade
+004 N promenader
+003 A promethean
+003 N promethium
+003 N prominence
+003 A prominent
+004 A promiscuous
+002 N promise
+003 A promising
+004 A promissory
+002 N promo
+004 N promontory
+002 V promote
+003 N promoter
+001 A prompt
+002 N prompter
+003 V promulgate
+001 A prone
+001 N prong
+004 A pronominal
+002 N pronoun
+002 V pronounce
+002 A pronounced
+002 D pronto
+004 N pronunciation
+001 N proof
+002 V proofread
+001 N prop
+004 N propaganda
+003 V propagate
+004 N propagator
+002 N propane
+003 N propanone
+002 V propel
+003 N propeller
+002 N propene
+004 N propensity
+002 A proper
+003 D properly
+003 A propertied
+003 N property
+003 N prophecy
+003 V prophesy
+002 N prophet
+003 A prophetic
+004 A prophylactic
+004 N prophylaxis
+004 N propinquity
+003 V propitiate
+004 A propitious
+003 N proponent
+003 N proportion
+004 A proportional
+004 A proportionate
+003 N proposal
+002 V propose
+004 N proposition
+002 V propound
+004 A proprietary
+003 N proprietor
+003 N propriety
+003 N propulsion
+003 N propylene
+003 V prorogue
+002 A prosaic
+003 N proscenium
+002 V proscribe
+001 N prose
+003 V prosecute
+004 N prosecution
+003 N proselyte
+004 V proselytize
+003 N prosody
+002 N prospect
+003 A prospective
+003 N prospectus
+002 V prosper
+004 N prosperity
+003 A prosperous
+002 N prostate
+003 N prosthesis
+003 N prostitute
+002 A prostrate
+002 A prosy
+004 N protactinium
+004 N protagonist
+002 A protean
+002 V protect
+003 N protection
+003 A protective
+003 N protector
+004 N protectorate
+002 N protein
+002 N protest
+003 N protestant
+004 N protestation
+001 N protg
+002 N protium
+003 N protocol
+002 N proton
+003 N protoplasm
+003 N prototype
+003 N protozoan
+002 V protract
+003 N protractor
+002 V protrude
+004 A protuberant
+001 A proud
+001 V prove
+003 A provenal
+003 N provenance
+003 N provender
+002 N proverb
+003 A proverbial
+002 V provide
+003 N providence
+003 A provident
+004 A providential
+002 N province
+003 A provincial
+003 N provision
+004 A provisional
+003 N proviso
+002 N provo
+004 N provocation
+004 A provocative
+002 V provoke
+002 N provost
+001 N prow
+002 N prowess
+001 V prowl
+003 A proximate
+004 N proximity
+003 A proximo
+002 N proxy
+001 N prude
+002 A prudent
+003 A prudential
+001 V prune
+002 A prurient
+002 A prussian
+001 V pry
+001 N psalm
+002 N psalmist
+003 N psalmody
+002 N psalter
+003 N psaltery
+004 N psephology
+003 N pseudonym
+001 N psi
+004 N psittacosis
+003 N psoriasis
+001 V psych
+001 N psyche
+004 A psychedelic
+003 N psychiatry
+002 A psychic
+003 A psychical
+005 N psychoanalysis
+005 N psychokinesis
+005 A psychological
+004 N psychology
+003 N psychopath
+006 N psychopathology
+004 N psychopathy
+003 N psychosis
+005 A psychosomatic
+005 N psychotherapy
+003 A psychotic
+003 N ptarmigan
+004 N pteridophyte
+004 N pterodactyl
+003 N pterosaur
+003 A ptolemaic
+002 N ptomaine
+001 N pub
+002 N pubcrawl
+003 N puberty
+001 N pubes
+003 N pubescence
+002 A pubic
+002 N pubis
+002 A public
+003 N publican
+004 N publication
+003 N publicist
+004 N publicity
+003 V publicize
+002 V publish
+003 N publisher
+001 A puce
+001 N puck
+002 V pucker
+001 N pud
+002 N pudding
+002 N puddle
+003 N pudendum
+002 A pudgy
+003 A puerile
+003 A puerperal
+001 N puff
+003 N puffadder
+002 N puffball
+002 N puffin
+002 A puffy
+001 N pug
+003 N pugilist
+004 A pugnacious
+002 N pugnose
+002 N puissance
+002 A puissant
+001 V puke
+002 A pukka
+003 N pulchritude
+002 V pule
+001 V pull
+002 N pullet
+002 N pulley
+002 N pullin
+002 N pullman
+002 N pullout
+003 N pullover
+003 V pullulate
+004 A pulmonary
+001 N pulp
+002 N pulpit
+002 N pulpwood
+002 N pulsar
+002 V pulsate
+001 N pulse
+003 V pulverize
+002 N puma
+002 N pumice
+002 V pummel
+001 N pump
+004 N pumpernickel
+002 N pumpkin
+001 N pun
+001 N punch
+002 N punchball
+002 N punchbowl
+002 A punchdrunk
+002 N punchline
+002 N punchup
+002 A punchy
+003 N punctilio
+004 A punctilious
+002 A punctual
+002 V punctuate
+003 N punctuation
+002 N puncture
+002 N pundit
+002 A pungent
+002 V punish
+003 N punishment
+003 A punitive
+003 N punjabi
+001 N punk
+002 N punkah
+002 N punnet
+002 N punster
+001 N punt
+002 N punter
+002 A puny
+001 N pup
+002 N pupa
+002 N pupil
+002 N puppet
+002 N puppy
+003 N puppyfat
+002 A purblind
+002 V purchase
+002 N purdah
+001 N pure
+003 D purely
+003 A purgative
+004 N purgatory
+001 V purge
+003 V purify
+002 N purist
+003 N puritan
+005 A puritanical
+003 N purity
+001 V purl
+002 N purler
+003 N purlieu
+002 N purlin
+002 V purloin
+002 N purple
+002 V purport
+002 N purpose
+004 A purposebuilt
+004 A purposeful
+004 A purposeless
+004 D purposely
+003 A purposive
+001 V purr
+001 N purse
+002 N purser
+002 N pursuance
+002 V pursue
+002 N pursuit
+003 N pursuivant
+003 A purulent
+002 V purvey
+002 N purview
+001 N pus
+001 V push
+003 N pushbutton
+002 N pushchair
+002 N pusher
+002 A pushful
+002 A pushing
+003 N pushover
+002 N pushstart
+002 N pushtu
+002 N pushup
+002 A pushy
+005 A pusillanimous
+001 N puss
+002 N pussy
+003 V pussyfoot
+003 V pustulate
+003 N pustule
+001 V put
+003 A putative
+002 N putdown
+002 N puton
+003 V putrefy
+003 A putrescent
+002 A putrid
+001 N putsch
+001 V putt
+002 N puttee
+002 V putter
+003 N puttinggreen
+002 N putty
+002 N puzzle
+002 N puzzler
+003 N pyaemia
+002 N pyemia
+002 N pygmy
+002 N pylon
+002 N pyorrhea
+003 N pyorrhoea
+004 N pyracantha
+003 N pyramid
+001 N pyre
+003 N pyrethrum
+003 A pyretic
+002 N pyrex
+003 N pyrexia
+002 N pyrites
+004 N pyromania
+002 A pyrrhic
+002 N python
+001 N pyx
+001 N quack
+005 N quadragesima
+003 N quadrangle
+002 N quadrant
+004 A quadraphonic
+002 A quadrate
+003 N quadriceps
+005 A quadrilateral
+003 N quadrille
+004 N quadriplegia
+002 N quadruped
+003 A quadruple
+003 N quadruplet
+004 A quadruplicate
+001 V quaff
+002 N quagmire
+002 V quail
+002 A quaint
+001 V quake
+002 N quaker
+005 N qualification
+003 V qualify
+004 A qualitative
+003 N quality
+001 N qualm
+003 N quandary
+002 N quango
+003 V quantify
+004 A quantitative
+003 N quantity
+002 N quantum
+003 N quarantine
+001 N quark
+002 N quarrel
+003 A quarrelsome
+002 N quarry
+001 N quart
+002 N quarter
+003 N quarterback
+003 N quarterdeck
+004 N quarterfinal
+003 N quarterhour
+003 N quarterlight
+003 A quarterly
+004 N quartermaster
+003 N quarterstaff
+002 N quartet
+002 N quarto
+001 N quartz
+002 N quasar
+001 V quash
+004 A quaternary
+002 N quatrain
+003 N quatrefoil
+004 N quattrocento
+002 V quaver
+002 N quay
+003 N quayside
+003 A queasy
+002 N queen
+003 N queenanne
+003 N queenpost
+002 A queer
+001 V quell
+001 V quench
+001 N quern
+003 A querulous
+002 N query
+001 N quest
+002 N question
+004 A questionable
+004 N questionmaster
+003 N questionnaire
+002 N queue
+003 V queuejump
+002 N quibble
+001 N quiche
+001 A quick
+002 V quicken
+002 V quickfreeze
+002 N quickie
+002 N quicklime
+002 N quicksand
+003 N quicksilver
+002 N quickstep
+003 A quicktempered
+002 A quickwitted
+001 N quid
+003 N quiddity
+003 A quiescent
+002 A quiet
+003 V quieten
+003 N quietism
+003 N quietude
+003 N quietus
+001 N quiff
+001 N quill
+001 N quilt
+001 N quim
+001 N quin
+001 N quince
+005 N quincentenary
+002 N quincunx
+002 N quinine
+005 N quinquagesima
+003 A quinquennial
+003 N quinquereme
+003 N quintessence
+002 N quintet
+003 A quintuple
+003 N quintuplet
+004 A quintuplicate
+001 N quip
+001 N quire
+001 N quirk
+002 N quisling
+001 V quit
+001 N quitch
+001 D quite
+002 N quitter
+002 N quiver
+003 A quixotic
+001 N quiz
+003 A quizzical
+001 N quod
+002 N quoin
+002 N quoit
+002 A quorate
+002 N quorum
+002 N quota
+003 A quotable
+003 N quotation
+001 V quote
+001 V quoth
+003 A quotidian
+002 N quotient
+001 N r
+002 N rabbet
+002 N rabbi
+002 N rabbit
+002 N rabble
+004 N rabblerouser
+004 A rabelaisian
+002 A rabid
+002 N rabies
+001 N race
+003 N racecourse
+003 N racegoer
+003 N racehorse
+002 N raceme
+003 N racetrack
+002 A racial
+003 N racialism
+002 N racism
+001 V rack
+002 N racket
+003 N racketeer
+002 N rackrent
+003 N raconteur
+002 N racoon
+002 A racy
+001 N rad
+002 N radar
+002 N raddle
+002 A radial
+002 N radian
+002 A radiant
+002 V radiate
+003 N radiation
+003 N radiator
+003 A radical
+003 N radicchio
+003 N radicle
+004 A radioactive
+006 N radioactivity
+004 N radiocarbon
+004 A radiocontrolled
+003 N radiogram
+003 N radiograph
+005 N radioisotope
+004 N radiology
+004 A radiophonic
+004 N radioscopy
+006 N radiotelegraphy
+006 N radiotelephony
+005 N radiotherapy
+002 N radish
+002 N radium
+002 N radius
+002 N radix
+002 N radon
+002 N raffia
+002 A raffish
+002 N raffle
+001 N raft
+002 N rafter
+001 N rag
+004 N ragamuffin
+002 N ragbag
+001 N rage
+001 A ragged
+002 A raglan
+002 N ragout
+002 N ragtag
+002 N ragtime
+002 N ragwort
+001 N raid
+001 N rail
+002 N railcar
+002 N railcard
+002 N railing
+003 N raillery
+002 N railman
+002 N railroad
+002 N railway
+003 N railwayman
+002 N raiment
+001 N rain
+002 N rainbow
+002 N raincoat
+002 N raindrop
+002 N rainfall
+003 N rainforest
+002 A rainproof
+002 N rainstorm
+003 N rainwater
+002 N rainwear
+002 A rainy
+001 V raise
+002 N raisin
+001 N raj
+002 N raja
+001 V rake
+002 N rakeoff
+002 A rakish
+002 V rally
+003 N rallycross
+001 N ram
+003 N ramadan
+002 V ramble
+002 N rambler
+002 A rambling
+003 N rambutan
+003 N ramekin
+005 N ramification
+003 V ramify
+001 N ramp
+002 V rampage
+002 A rampant
+002 N rampart
+002 N ramrod
+003 A ramshackle
+001 N ranch
+002 A rancid
+002 N rancor
+002 N rancour
+001 N rand
+002 A random
+004 A randomaccess
+002 A randy
+002 N ranee
+001 N range
+004 N rangefinder
+002 N ranger
+002 A rangy
+001 A rank
+002 V rankle
+002 V ransack
+002 N ransom
+001 V rant
+004 N ranunculus
+001 N rap
+004 A rapacious
+001 N rape
+002 A rapid
+002 N rapier
+002 N rapine
+002 N rapist
+002 N rapport
+004 N rapprochement
+003 N rapscallion
+001 A rapt
+002 N rapture
+001 A rare
+003 N rarebit
+003 V rarefy
+003 D rarely
+002 A raring
+003 N rarity
+002 N rascal
+001 N rash
+002 N rasher
+001 N rasp
+003 N raspberry
+004 N raspberrycane
+001 N rat
+005 N ratatouille
+002 N ratbag
+002 N ratchet
+001 V rate
+003 A rateable
+004 N ratecapping
+004 N ratepayer
+002 D rather
+003 V ratify
+002 N rating
+002 N ratio
+004 V ratiocinate
+002 N ration
+003 A rational
+004 N rationale
+004 N rationalism
+004 V rationalize
+002 N ratline
+002 N ratsbane
+002 N rattan
+002 N rattat
+002 V rattle
+003 N rattlesnake
+002 A rattling
+002 A ratty
+002 A raucous
+002 A raunchy
+002 V ravage
+001 V rave
+002 V ravel
+002 N raven
+003 A ravening
+003 A ravenous
+002 N raver
+002 N ravine
+002 N raving
+003 N ravioli
+002 V ravish
+003 A ravishing
+001 A raw
+002 A rawboned
+002 N rawhide
+002 N rawlplug
+001 N ray
+002 N rayon
+001 V raze
+002 N razor
+003 N razorbill
+003 N razorblade
+003 N razoredge
+004 N razzledazzle
+003 N razzmatazz
+001 V reach
+003 N reachmedown
+003 V reacquaint
+001 V react
+002 N reaction
+004 A reactionary
+003 V reactivate
+002 A reactive
+002 N reactor
+001 V read
+003 A readable
+002 V readdress
+002 N reader
+003 N readership
+003 D readily
+003 N readiness
+002 N reading
+002 V readjust
+002 V readmit
+002 V readopt
+002 A ready
+003 A readymade
+002 V reaffirm
+003 V reafforest
+002 N reagent
+001 N real
+002 V realign
+002 N realism
+003 A realistic
+003 N reality
+002 V realize
+003 V reallocate
+002 D really
+001 N realm
+002 N realty
+001 N ream
+003 V reanimate
+001 V reap
+002 N reaper
+002 V reappear
+002 V reapply
+002 V reappoint
+003 V reapportion
+002 V reappraise
+001 V rear
+002 N rearguard
+002 N rearlamp
+001 V rearm
+002 A rearmost
+002 V rearrange
+002 V rearrest
+002 N rearward
+002 N reason
+004 A reasonable
+003 V reassemble
+002 V reassert
+002 V reassess
+002 V reassign
+002 V reassure
+003 V reawaken
+002 N rebate
+002 N rebel
+003 N rebellion
+004 A rebellious
+002 V rebid
+002 V rebind
+002 N rebirth
+002 V reboot
+002 V rebound
+003 V rebroadcast
+002 N rebuff
+002 V rebuild
+002 V rebuke
+002 N rebus
+002 V rebut
+001 N rec
+004 A recalcitrant
+002 V recall
+002 V recant
+005 V recapitulate
+006 N recapitulation
+003 V recapture
+002 V recast
+002 V recede
+002 N receipt
+002 V receive
+003 N receiver
+004 N receivership
+002 A recent
+004 N receptacle
+003 N reception
+004 N receptionist
+003 A receptive
+002 N recess
+003 N recession
+004 A recessional
+003 A recessive
+002 V recharge
+002 V recheck
+002 A recherch
+003 V rechristen
+004 N recidivist
+002 N recipe
+003 N recipient
+004 A reciprocal
+004 V reciprocate
+005 N reciprocity
+003 N recital
+004 N recitation
+004 N recitative
+002 V recite
+002 A reckless
+002 V reckon
+003 N reckoning
+002 V reclaim
+004 V reclassify
+002 V recline
+002 V reclothe
+002 N recluse
+004 N recognition
+004 N recognizance
+003 V recognize
+002 V recoil
+003 V recollect
+004 N recollection
+003 V recolour
+003 V recombine
+003 V recommence
+003 V recommend
+003 V recompense
+004 V reconcile
+003 A recondite
+004 V recondition
+004 N reconnaissance
+003 V reconnect
+004 V reconnoiter
+003 V reconnoitre
+003 V reconquer
+004 V reconsider
+004 V reconstitute
+003 V reconstruct
+003 V reconvene
+003 V reconvert
+003 V recopy
+002 N record
+003 N recorder
+004 N recordholder
+003 N recording
+003 N recordist
+004 N recordplayer
+002 V recount
+002 V recoup
+002 N recourse
+003 V recover
+004 N recovery
+002 V recreate
+003 N recreation
+004 V recriminate
+002 V recross
+003 V recrudesce
+002 N recruit
+002 A rectal
+003 N rectangle
+003 V rectify
+004 A rectilinear
+003 N rectitude
+002 N recto
+002 N rector
+003 N rectory
+002 N rectum
+003 A recumbent
+004 V recuperate
+002 V recur
+003 A recurrent
+003 N recusant
+003 V recycle
+001 A red
+002 A redblooded
+002 N redbreast
+002 A redbrick
+002 N redcap
+002 N redcoat
+003 N redcurrant
+002 V redden
+004 V redecorate
+002 V redeem
+003 N redeemer
+003 V redefine
+003 N redemption
+003 V redeploy
+003 V redesign
+004 V redevelop
+002 N redhead
+002 A redhot
+002 V redial
+004 N rediffusion
+003 V redirect
+004 V rediscover
+004 V redistribute
+003 V redivide
+002 N redneck
+002 V redo
+003 A redolent
+003 V redouble
+002 N redoubt
+004 A redoubtable
+002 V redound
+002 N redpoll
+002 V redraft
+002 V redraw
+002 V redress
+002 N redshank
+002 N redshift
+002 N redskin
+002 N redstart
+002 V reduce
+003 N reduction
+003 A redundant
+004 V reduplicate
+002 N redwing
+002 N redwood
+002 V reecho
+001 N reed
+001 N reedbed
+003 V reeducate
+002 A reedy
+001 N reef
+002 N reefer
+002 N reefknot
+001 V reek
+001 N reel
+002 V reelect
+002 V reembark
+002 V reemerge
+003 V reemphasize
+002 V reemploy
+002 V reenact
+002 V reengage
+002 V reenlist
+002 V reenter
+002 A reentrant
+002 N reentry
+002 V reequip
+003 V reestablish
+001 N reeve
+003 V reexamine
+001 N ref
+002 V reface
+003 V refashion
+004 N refectory
+002 V refer
+003 N referee
+003 N reference
+004 N referendum
+003 N referral
+002 V refill
+002 V refine
+002 A refined
+004 N refinement
+003 N refiner
+004 N refinery
+002 V refit
+002 V reflate
+003 N reflation
+002 V reflect
+003 N reflection
+003 A reflective
+003 N reflector
+002 A reflex
+005 N reflexology
+002 V refloat
+003 V refocus
+003 V reforest
+002 V reforge
+002 V reform
+003 V reformat
+004 N reformation
+005 N reformatory
+003 N reformer
+003 N reformism
+004 V reformulate
+002 V refract
+003 N refractor
+004 A refractory
+002 N refrain
+004 A refrangible
+002 V refreeze
+002 V refresh
+003 N refresher
+003 N refreshment
+004 N refrigerant
+004 V refrigerate
+005 N refrigerator
+002 V refuel
+002 N refuge
+003 N refugee
+003 A refulgent
+002 V refund
+003 V refurbish
+003 V refurnish
+003 N refusal
+002 N refuse
+004 N refusenik
+002 V refute
+001 N reg
+002 V regain
+002 A regal
+003 V regale
+002 V regard
+003 A regardful
+003 A regardless
+003 N regatta
+003 N regency
+004 V regenerate
+002 N regent
+002 N reggae
+003 N regicide
+002 N regime
+003 N regimen
+003 N regiment
+004 A regimental
+003 N regina
+002 N region
+003 N register
+003 N registrar
+004 N registration
+003 N registry
+002 V regrade
+002 V regress
+002 V regret
+003 A regretful
+004 A regrettable
+002 V regroup
+002 V regrow
+003 A regular
+003 V regulate
+004 N regulation
+003 N regulo
+004 V regurgitate
+005 V rehabilitate
+002 V rehang
+002 V rehash
+002 V rehear
+003 N rehearsal
+002 V rehearse
+002 V reheat
+002 V rehouse
+001 N reich
+001 V reign
+002 V reimburse
+002 V reimpose
+001 N rein
+004 N reincarnation
+002 N reindeer
+002 V reinforce
+004 N reinforcement
+002 V reinsert
+002 V reinstate
+002 V reinsure
+003 V reinterpret
+003 V reintroduce
+002 V reinvest
+002 V reissue
+003 V reiterate
+002 V reject
+002 V rejig
+002 V rejoice
+002 V rejoin
+003 N rejoinder
+004 V rejuvenate
+003 V rekindle
+003 V relabel
+002 V relapse
+002 V relate
+002 A related
+003 N relation
+004 N relationship
+003 A relative
+005 N relativity
+002 V relax
+004 N relaxation
+002 V relay
+002 V relearn
+002 V release
+003 V relegate
+002 V relent
+003 A relentless
+002 V relet
+003 A relevant
+003 A reliable
+002 N reliance
+002 N relic
+002 N relict
+002 N relief
+002 V relieve
+003 N relievo
+002 V relight
+003 N religion
+005 N religiosity
+004 A religious
+002 V reline
+003 V relinquish
+004 N reliquary
+002 N relish
+002 V relive
+002 V reload
+003 V relocate
+003 A reluctant
+002 V rely
+002 V remain
+003 N remainder
+002 V remake
+002 V remand
+002 V remark
+004 A remarkable
+003 V remarry
+003 V remeasure
+003 A remedial
+003 N remedy
+003 V remember
+003 N remembrance
+002 V remind
+003 N reminder
+003 V reminisce
+004 N reminiscence
+004 A reminiscent
+002 A remiss
+003 N remission
+002 V remit
+003 N remittance
+003 A remittent
+002 V remix
+002 N remnant
+003 V remodel
+003 V remonstrate
+002 N remorse
+004 A remorseful
+004 A remorseless
+003 V remortgage
+002 A remote
+003 N removal
+002 V remove
+004 V remunerate
+003 N renaissance
+002 A renal
+002 V rename
+003 A renascent
+005 V renationalize
+001 V rend
+002 V render
+003 N rendezvous
+003 N rendition
+003 N renegade
+002 V renege
+004 V renegotiate
+002 V renew
+002 N rennet
+002 V renounce
+003 V renovate
+002 N renown
+002 A renowned
+001 N rent
+002 N rental
+002 N rentboy
+002 N rentier
+003 V renumber
+004 N renunciation
+003 V reoccupy
+002 V reoccur
+002 V reopen
+002 V reorder
+003 V reorganize
+002 V reorient
+003 V reorientate
+001 N rep
+002 V repack
+003 V repackage
+002 V repaint
+002 V repair
+003 V repaper
+004 A reparable
+004 N reparation
+003 N repartee
+002 N repast
+003 V repatriate
+002 V repay
+002 V repeal
+002 V repeat
+003 N repeater
+002 V repel
+002 V repent
+004 N repercussion
+003 N repertoire
+004 N repertory
+004 N repetition
+002 V rephrase
+002 V repine
+002 V replace
+004 N replacement
+002 V replant
+002 V replay
+003 V replenish
+002 A replete
+003 N replica
+002 V reply
+002 V repoint
+004 V repopulate
+002 V report
+003 N reportage
+003 N reporter
+002 V repose
+004 A reposeful
+004 V reposition
+005 N repository
+003 V repossess
+002 V repot
+003 V reprehend
+005 A reprehensible
+003 V represent
+005 N representation
+006 A representational
+005 A representative
+002 V repress
+002 V reprice
+002 V reprieve
+003 N reprimand
+002 V reprint
+003 N reprisal
+002 N reprise
+002 N repro
+002 V reproach
+003 A reproachful
+003 N reprobate
+003 V reprocess
+003 V reproduce
+004 N reproduction
+003 V reprogram
+002 N reproof
+002 V reprove
+003 N reptile
+003 N republic
+004 A republican
+003 V republish
+003 V repudiate
+003 N repugnance
+003 A repugnant
+002 V repulse
+003 N repulsion
+003 A repulsive
+003 V repurchase
+004 A reputable
+004 N reputation
+002 N repute
+002 N request
+003 N requiem
+002 V require
+003 A requisite
+004 N requisition
+002 V requite
+002 V reread
+003 V rerecord
+003 N reredos
+003 V rerelease
+002 V reroute
+002 V rerun
+003 N resale
+004 V reschedule
+002 V rescind
+002 N rescript
+002 V rescue
+002 V reseal
+002 N research
+002 V resell
+003 N resemblance
+003 V resemble
+002 V resent
+003 A resentful
+003 N resentment
+004 N reservation
+002 V reserve
+002 A reserved
+003 N reservist
+003 N reservoir
+002 V reset
+003 V resettle
+002 V reshape
+003 V reshuffle
+002 V reside
+003 N residence
+004 N residency
+003 N resident
+004 A residential
+003 A residual
+004 A residuary
+003 N residue
+003 N residuum
+002 V resign
+004 N resignation
+002 A resigned
+003 A resilient
+002 N resin
+002 V resist
+003 N resistance
+003 N resistor
+002 V resit
+004 A resoluble
+003 A resolute
+004 N resolution
+002 V resolve
+002 A resolved
+003 A resonant
+003 V resonate
+002 V resort
+002 V resound
+003 A resounding
+002 N resource
+002 N respect
+004 A respectable
+003 A respectful
+003 A respective
+005 D respectively
+002 V respell
+004 N respiration
+004 N respirator
+002 V respire
+002 N respite
+003 A resplendent
+002 V respond
+003 N respondent
+002 N response
+006 N responsibility
+004 A responsible
+003 A responsive
+002 V respray
+001 N rest
+002 V restart
+002 V restate
+003 N restaurant
+004 N restaurateur
+002 N restcure
+002 A restful
+004 N restitution
+002 A restive
+002 A restless
+002 V restock
+004 N restoration
+004 A restorative
+002 V restore
+002 V restrain
+002 N restraint
+002 V restrict
+003 A restrictive
+003 V restructure
+003 V restyle
+002 N result
+003 A resultant
+002 V resume
+003 N resumption
+003 V resurface
+003 A resurgent
+003 V resurrect
+004 N resurrection
+004 V resuscitate
+002 N retail
+002 V retain
+003 N retainer
+002 V retake
+003 V retaliate
+002 V retard
+002 A retarded
+001 V retch
+002 V retell
+003 N retention
+003 A retentive
+003 V retexture
+002 V rethink
+003 N reticence
+004 V reticulate
+002 V retie
+003 N retina
+003 N retinue
+002 V retire
+002 A retired
+004 N retirement
+003 A retiring
+002 N retort
+002 V retouch
+002 V retrace
+002 V retract
+004 A retractile
+002 V retrain
+002 V retread
+002 V retreat
+002 V retrench
+002 N retrial
+004 N retribution
+002 V retrieve
+003 N retriever
+003 A retroactive
+003 A retrograde
+003 V retrogress
+004 N retrorocket
+003 N retrospect
+004 N retrospection
+004 A retrospective
+002 A retrouss
+003 A retroverted
+004 N retrovirus
+002 V retry
+003 N retsina
+002 V retune
+002 V return
+003 N returnee
+002 V retype
+003 V reunify
+002 N reunion
+002 V reunite
+003 V reupholster
+001 V reuse
+003 V revalue
+002 V revamp
+002 V reveal
+003 N reveille
+002 V revel
+004 N revelation
+002 N revenge
+004 A revengeful
+003 N revenue
+004 V reverberate
+002 V revere
+003 N reverence
+003 A reverend
+003 A reverent
+004 N reverential
+003 N reverie
+002 N revers
+002 V reverse
+003 N reversion
+002 V revert
+002 N review
+003 V revile
+002 V revise
+003 N revision
+004 N revisionism
+003 V revisit
+004 V revitalize
+003 N revival
+004 N revivalism
+002 V revive
+004 V revivify
+002 V revoke
+002 V revolt
+003 A revolting
+004 N revolution
+006 A revolutionary
+005 V revolutionize
+002 V revolve
+003 N revolver
+002 N revue
+003 N revulsion
+002 N reward
+003 A rewarding
+002 V rewind
+002 V rewire
+002 V reword
+002 V rework
+002 V rewrite
+001 N rex
+003 V rhapsodize
+003 N rhapsody
+001 N rhea
+002 N rhenium
+002 N rheostat
+002 N rhesus
+003 N rhetoric
+004 A rhetorical
+003 A rheumatic
+003 N rheumatism
+003 A rheumatoid
+003 N rhinestone
+002 N rhino
+004 N rhinoceros
+002 N rhizome
+001 N rho
+002 N rhodium
+004 N rhododendron
+002 A rhomboid
+002 N rhombus
+002 N rhubarb
+001 N rhyme
+003 N rhymester
+001 N rhythm
+001 N rib
+002 A ribald
+003 N ribaldry
+002 N riband
+001 A ribbed
+002 N ribbing
+002 N ribbon
+002 N ribcage
+004 N riboflavin
+003 N ribtickler
+001 N rice
+004 N ricepaper
+001 A rich
+001 N rick
+002 N rickets
+003 A rickety
+002 N rickshaw
+003 N ricochet
+003 N ricotta
+002 N ricrac
+001 V rid
+002 N riddance
+002 V riddle
+001 V ride
+002 N rider
+001 N ridge
+004 N ridgepole
+003 N ridgeway
+004 N ridicule
+004 A ridiculous
+002 N riding
+003 N ridinglight
+003 N ridingschool
+002 N riesling
+001 N riff
+002 V riffle
+002 N riffraff
+002 V rifle
+003 N rifleman
+003 N riflerange
+003 N rifleshot
+002 N rifling
+001 N rift
+003 N riftvalley
+001 V rig
+002 N rigger
+002 N rigging
+001 A right
+002 V righten
+003 A righteous
+002 A rightful
+002 A righthanded
+003 N righthander
+002 N rightism
+002 D rightly
+002 A rightminded
+002 A rightmost
+002 D rightward
+002 A rigid
+004 N rigmarole
+002 N rigor
+003 A rigorous
+002 N rigour
+002 N rigout
+002 V rile
+001 N rill
+001 N rim
+001 N rime
+001 N rind
+001 V ring
+003 N ringbinder
+002 N ringdove
+002 N ringer
+002 V ringfence
+003 N ringleader
+002 N ringlet
+003 N ringmaster
+002 N ringside
+002 N ringworm
+001 N rink
+001 V rinse
+001 N riot
+001 N rip
+003 A riparian
+002 N ripcord
+001 A ripe
+002 V ripen
+002 N ripoff
+002 N riposte
+002 N ripper
+002 N ripple
+003 A riproaring
+002 N ripsaw
+001 V rise
+002 N riser
+003 A risible
+002 A rising
+001 N risk
+002 A risky
+003 N risotto
+002 A risqu
+003 N rissole
+004 D ritardando
+001 N rite
+002 N ritual
+003 N ritualism
+002 A ritzy
+002 N rival
+003 N rivalry
+002 A riven
+002 N river
+003 N riverside
+002 N rivet
+003 N riviera
+003 N rivulet
+001 N roach
+001 N road
+001 N roadbed
+002 N roadblock
+002 N roadhog
+003 N roadholding
+002 N roadhouse
+002 N roadie
+003 N roadmetal
+002 N roadshow
+002 N roadside
+002 N roadstead
+002 N roadster
+002 N roadway
+003 A roadworthy
+001 V roam
+001 A roan
+001 N roar
+001 V roast
+002 N roaster
+002 A roasting
+001 V rob
+003 N robbery
+001 N robe
+002 N robin
+003 N robinia
+002 N robot
+002 A robust
+001 N roc
+002 N rochet
+001 V rock
+004 N rockabilly
+003 A rockbottom
+002 N rockcake
+003 N rockcrystal
+002 N rocker
+003 N rockery
+002 N rocket
+003 N rocketry
+002 N rockface
+002 N rockfall
+003 N rockgarden
+003 N rockingchair
+003 N rockinghorse
+002 N rockplant
+003 N rocksalmon
+002 N rocksalt
+002 A rocky
+003 A rococo
+001 N rod
+002 N rodent
+002 N rodeo
+004 N rodomontade
+001 N roe
+002 N roebuck
+002 N roentgen
+003 N rogation
+002 N rogue
+003 N roguery
+002 A roguish
+002 V roister
+002 N role
+004 N roleplaying
+001 V roll
+002 N rollcall
+002 N roller
+004 N rollercoaster
+003 N rollerskate
+003 A rollicking
+003 N rollingmill
+003 N rollingpin
+003 N rollingstock
+002 N rollmop
+002 A rollneck
+002 N rollup
+004 N rolypoly
+001 N rom
+002 A roman
+002 N romance
+004 N romanesque
+003 N romanic
+003 V romanize
+003 A romantic
+004 N romanticism
+004 N romanticist
+004 V romanticize
+003 N romany
+002 N romeo
+001 V romp
+002 N rompers
+003 N rondeau
+002 N rondel
+002 N rondo
+001 N rood
+002 N roodscreen
+001 N roof
+003 N roofgarden
+002 N roofing
+002 N roofrack
+002 N rooftop
+002 N rooftree
+001 N rook
+003 N rookery
+002 N rookie
+001 N room
+003 N roominghouse
+002 N roommate
+002 A roomy
+001 N roost
+002 N rooster
+001 N root
+002 N rootstock
+001 N rope
+004 N ropeladder
+002 A ropy
+003 N roquefort
+002 N rorqual
+001 N ros
+004 A rosaceous
+003 N rosary
+001 N rose
+003 N rosebowl
+003 N rosebud
+003 N rosebush
+004 A rosecoloured
+003 N rosehip
+004 N rosemary
+002 N rosette
+004 N rosewater
+004 N rosewindow
+003 N rosewood
+002 N rosin
+002 N roster
+002 N rostrum
+002 A rosy
+001 V rot
+002 N rota
+003 N rotarian
+003 A rotary
+002 V rotate
+003 N rotation
+004 N rotavator
+001 N rote
+002 N rotgut
+004 N rotisserie
+002 N rotor
+002 A rotten
+002 N rotter
+003 N rottweiler
+002 A rotund
+003 N rotunda
+001 N rou
+002 N rouble
+001 N rouge
+001 A rough
+002 N roughage
+004 A roughandready
+004 A roughandtumble
+002 N roughcast
+002 V roughdry
+002 V roughen
+002 A roughhewn
+002 D roughly
+002 N roughneck
+003 N roughrider
+002 A roughshod
+002 N roulade
+002 N roulette
+001 A round
+002 N roundel
+003 N roundelay
+002 N rounder
+002 N roundhead
+002 D roundly
+003 A roundshouldered
+002 N roundsman
+002 N roundup
+002 N roundworm
+001 V rouse
+002 A rousing
+003 N roustabout
+001 V rout
+001 N route
+002 N routine
+001 N roux
+001 V rove
+002 N rover
+002 N rowan
+002 N rowboat
+002 A rowdy
+002 N rowel
+003 N rowingboat
+002 N rowlock
+002 A royal
+003 N royalist
+003 N royalty
+001 N rsum
+001 V rub
+003 N rubato
+002 N rubber
+003 V rubberize
+002 N rubbing
+002 N rubbish
+002 N rubble
+002 N rubdown
+003 N rubella
+003 N rubicon
+003 A rubicund
+003 N rubidium
+002 N rubric
+002 N ruby
+001 N ruche
+001 V ruck
+002 N rucksack
+002 N ruckus
+002 N rudder
+002 A ruddy
+001 A rude
+003 N rudiment
+001 N rue
+002 A rueful
+001 V ruff
+002 N ruffian
+002 V ruffle
+002 A rufous
+001 N rug
+002 N rugby
+001 A rugged
+002 N rugger
+001 N ruin
+003 N ruination
+002 A ruinous
+002 N rule
+002 N ruler
+002 N ruling
+001 A rum
+002 N rumba
+002 V rumble
+004 A rumbustious
+003 N ruminant
+003 V ruminate
+002 V rummage
+002 N rummy
+001 N rump
+002 V rumple
+002 N rumpus
+001 V run
+003 N runabout
+003 N runaround
+003 N runaway
+002 N rundown
+001 N rune
+001 N rung
+002 N runin
+002 N runnel
+002 N runner
+003 N runnerup
+002 N running
+003 N runningboard
+002 A runny
+002 N runoff
+004 A runofthemill
+002 N runout
+001 N runt
+002 N runthrough
+002 N runup
+002 N runway
+002 N rupee
+002 N rupiah
+002 N rupture
+002 A rural
+001 N ruse
+001 N rush
+002 N rushlight
+001 N rusk
+002 A russet
+002 N russian
+001 N rust
+002 A rustic
+003 V rusticate
+002 V rustle
+002 A rustproof
+002 A rusty
+001 N rut
+003 N ruthenium
+004 N rutherfordium
+002 A ruthless
+001 N rye
+002 N ryegrass
+002 N sabbath
+004 A sabbatical
+002 N saber
+002 N sable
+002 N sabot
+003 N sabotage
+003 N saboteur
+001 N sabre
+004 N sabrerattling
+001 N sac
+003 N saccharin
+003 A saccharine
+004 A sacerdotal
+002 N sachet
+001 N sack
+002 N sackbut
+002 N sackcloth
+002 N sacking
+002 A sacral
+003 N sacrament
+001 A sacred
+003 N sacrifice
+003 N sacrilege
+003 N sacristan
+003 N sacristy
+003 A sacrosanct
+002 N sacrum
+001 A sad
+002 N saddle
+003 N saddleback
+003 N saddlebag
+002 N saddler
+003 N saddlery
+003 N sadducee
+002 N sadhu
+002 N sadism
+005 N sadomasochism
+003 N safari
+001 A safe
+003 N safeguard
+003 N safety
+004 N safetybelt
+004 N safetycatch
+004 N safetyvalve
+002 N saffron
+001 V sag
+002 N saga
+004 A sagacious
+001 N sage
+003 N sagebrush
+004 N sagittarius
+002 N sago
+002 N sahib
+001 N sail
+002 N sailboard
+002 N sailcloth
+003 N sailingboat
+002 N sailor
+002 N sailplane
+002 N sainfoin
+001 N saint
+002 A saintly
+001 N sake
+002 N salaam
+004 A salacious
+002 N salad
+004 N saladdressing
+004 N salamander
+003 N salami
+003 N salary
+002 N sale
+003 A saleable
+003 N saleroom
+003 N salesman
+004 N salesmanship
+004 N salesperson
+004 N saleswoman
+002 A salient
+002 A saline
+003 N saliva
+003 V salivate
+002 N sallow
+002 N salmon
+004 N salmonella
+002 N salon
+002 N saloon
+002 N salsa
+003 N salsify
+001 N salt
+003 N saltcellar
+002 N salting
+002 N saltire
+002 N saltlick
+002 N saltmine
+002 N saltpan
+003 N saltpeter
+002 N saltpetre
+003 A saltwater
+002 A salty
+004 A salubrious
+003 N saluki
+004 A salutary
+004 N salutation
+002 N salute
+002 N salvage
+003 N salvation
+001 V salve
+002 N salver
+002 N salvia
+002 N salvo
+004 N samaritan
+003 N samarium
+002 N samba
+001 A same
+003 N samizdat
+003 N samosa
+003 N samovar
+002 N samoyed
+002 N sampan
+002 N samphire
+002 N sample
+002 N sampler
+002 N sampling
+002 N samson
+003 N samurai
+004 N sanatorium
+003 V sanctify
+005 A sanctimonious
+002 N sanction
+003 N sanctity
+003 N sanctuary
+002 N sanctum
+001 N sand
+002 N sandal
+003 N sandaltree
+003 N sandalwood
+002 N sandbag
+002 N sandbank
+002 V sandblast
+002 N sandboy
+003 N sandcastle
+002 N sanddune
+002 N sander
+002 N sandman
+003 N sandmartin
+003 N sandpaper
+003 N sandpiper
+002 N sandpit
+002 N sandstone
+002 N sandstorm
+002 N sandwich
+003 N sandwichboard
+002 A sandy
+001 A sane
+002 N sangfroid
+002 N sangria
+004 A sanguinary
+002 A sanguine
+003 N sanhedrin
+004 N sanitarium
+004 A sanitary
+004 N sanitation
+003 V sanitize
+003 N sanity
+003 N sansculotte
+003 N sanserif
+002 N sanskrit
+001 N sap
+002 A sapient
+002 N sapling
+002 N sapper
+002 A sapphic
+002 N sapphire
+002 A sappy
+003 N saprophyte
+003 N saraband
+003 N saracen
+002 N sarcasm
+003 N sarcoma
+004 N sarcophagus
+002 N sardine
+003 A sardonic
+003 N sardonyx
+003 N sargasso
+001 N sarge
+002 N sari
+002 A sarky
+002 N sarnie
+002 N sarong
+005 N sarsaparilla
+002 N sarsen
+003 N sarsenet
+003 A sartorial
+001 N sash
+002 V sashay
+002 N sashcord
+002 N sashweight
+003 N sashwindow
+003 N sassafras
+003 N sassenach
+002 A sassy
+002 N satan
+003 A satanic
+003 N satanism
+002 N satchel
+001 V sate
+002 N sateen
+003 N satellite
+002 V satiate
+003 N satiety
+002 N satin
+003 N satinwood
+002 N satire
+003 N satirist
+003 V satirize
+004 N satisfaction
+005 A satisfactory
+003 V satisfy
+002 N satrap
+003 N satsuma
+003 V saturate
+004 N saturation
+003 N saturday
+004 N saturnalia
+003 A saturnine
+002 N satyr
+001 N sauce
+003 N sauceboat
+003 N saucepan
+002 N saucer
+002 A saucy
+003 N sauerkraut
+002 N sauna
+002 V saunter
+002 A saurian
+002 N sausage
+002 N sauternes
+002 A savage
+003 N savannah
+002 N savant
+001 V save
+003 N saveloy
+002 N saver
+002 A saving
+002 N savior
+003 N saviour
+002 N savoy
+001 N saw
+002 N sawdust
+002 N sawfish
+002 N sawmill
+002 A sawnoff
+002 A sawtooth
+002 N sawyer
+001 N sax
+001 N saxe
+003 N saxifrage
+002 N saxon
+003 N saxophone
+001 V say
+002 N saying
+002 N sayso
+001 N scab
+002 N scabbard
+002 N scabies
+003 N scabious
+002 A scabrous
+002 N scaffold
+003 N scaffolding
+001 V scald
+002 N scale
+002 A scalene
+002 N scallion
+003 N scallywag
+001 N scalp
+002 N scalpel
+001 N scam
+001 N scamp
+002 V scamper
+001 V scan
+002 N scandal
+003 V scandalize
+004 N scandalmonger
+004 N scandinavian
+002 N scandium
+002 N scanner
+002 N scansion
+001 A scant
+002 A scanty
+003 N scapegoat
+003 N scapula
+003 A scapular
+001 N scar
+002 N scarab
+001 A scarce
+003 D scarcely
+003 N scarcity
+001 V scare
+003 N scarecrow
+004 N scaremonger
+001 V scarf
+003 V scarify
+004 N scarlatina
+002 A scarlet
+001 N scarp
+002 V scarper
+002 A scary
+001 N scat
+002 A scathing
+004 N scatology
+002 V scatter
+003 N scatterbrain
+002 A scatty
+002 V scavenge
+003 N scavenger
+003 N scenario
+001 N scene
+003 N scenery
+004 N sceneshifter
+002 A scenic
+001 N scent
+002 N scepter
+002 N sceptic
+003 A sceptical
+001 N sceptre
+003 N schadenfreude
+003 N schedule
+002 N schema
+003 A schematic
+003 V schematize
+001 N scheme
+002 N scherzo
+001 N schism
+001 N schist
+002 A schizoid
+004 N schizophrenia
+001 N schlock
+001 N schmaltz
+001 N schmuck
+001 N schnapps
+002 N schnitzel
+002 N scholar
+003 N scholarship
+003 A scholastic
+004 N scholasticism
+001 N school
+002 N schoolboy
+002 N schoolchild
+002 N schoolgirl
+002 N schoolhouse
+002 N schooling
+003 N schoolleaver
+003 N schoolmaster
+003 N schoolmistress
+002 N schoolroom
+003 N schoolteacher
+002 N schooner
+002 N schottische
+002 A sciatic
+003 N sciatica
+001 N science
+003 A scientific
+002 N scientist
+004 N scientology
+002 N scifi
+003 N scimitar
+003 N scintilla
+003 V scintillate
+001 N scion
+003 N sclerosis
+001 V scold
+001 N sconce
+001 N scone
+001 N scoop
+001 V scoot
+002 N scooter
+003 A scorbutic
+001 V scorch
+002 N scorcher
+001 N score
+003 N scoreboard
+003 N scorebook
+002 N scoria
+001 N scorn
+002 A scornful
+002 N scorpio
+002 N scorpion
+001 N scot
+001 V scotch
+002 N scotsman
+002 N scottie
+002 N scoundrel
+001 V scour
+001 N scourge
+001 N scout
+002 N scouter
+003 N scoutmaster
+001 N scow
+001 N scowl
+002 V scrabble
+001 N scrag
+002 A scraggy
+001 V scram
+002 V scramble
+002 N scrambler
+002 N scrapbook
+001 V scrape
+002 N scraper
+002 N scrapie
+002 N scraping
+002 A scrappy
+002 N scrapyard
+001 V scratch
+002 A scratchy
+001 V scrawl
+002 A scrawny
+001 N scream
+001 N scree
+001 N screech
+002 N screechowl
+001 N screed
+001 N screen
+002 N screenplay
+003 N screenwriter
+001 N screw
+002 N screwball
+003 N screwdriver
+002 N screwup
+002 A screwy
+002 V scribble
+001 N scribe
+001 N scrim
+002 N scrimmage
+001 V scrimp
+001 N scrip
+001 N script
+002 N scripture
+003 N scriptwriter
+003 N scrivener
+003 N scrofula
+001 N scroll
+001 A scrolled
+001 N scrooge
+002 N scrotum
+001 V scrounge
+001 N scrub
+002 N scrubber
+001 N scruff
+002 A scruffy
+001 N scrum
+002 N scrumhalf
+002 N scrummage
+001 V scrump
+003 A scrumptious
+002 N scrumpy
+001 V scrunch
+002 N scruple
+003 A scrupulous
+003 N scrutineer
+003 V scrutinize
+003 N scrutiny
+002 N scuba
+004 N scubadiving
+001 V scud
+001 V scuff
+002 N scuffle
+001 N scull
+002 N sculler
+003 N scullery
+002 N scullion
+001 V sculpt
+002 N sculptor
+002 N sculpture
+001 N scum
+002 N scumbag
+002 V scupper
+001 N scurf
+003 A scurrilous
+002 V scurry
+002 N scurvy
+001 N scut
+002 V scutter
+002 N scuttle
+001 N scythe
+001 N sea
+001 N seabed
+002 N seaboard
+002 A seaborne
+003 N seafarer
+002 N seafood
+002 A seagoing
+002 N seagull
+003 N seakale
+001 N seal
+002 N sealant
+003 N sealingwax
+002 N sealskin
+001 N seam
+002 N seaman
+003 N seamanship
+002 N seamstress
+002 A seamy
+001 N seance
+002 N seaplane
+002 N seaport
+001 V sear
+001 V search
+002 N searchlight
+003 N searchparty
+002 N seascape
+002 N seashell
+002 N seashore
+002 A seasick
+002 N seaside
+002 N season
+004 A seasonable
+003 A seasonal
+003 N seasoning
+001 N seat
+002 N seatbelt
+002 N seating
+002 N seaway
+002 N seaweed
+003 A seaworthy
+004 A sebaceous
+001 A sec
+002 N secant
+002 V secede
+003 N secession
+002 V seclude
+003 N seclusion
+002 V second
+004 A secondary
+003 A secondbest
+004 A seconddegree
+003 V secondguess
+003 A secondhand
+003 D secondly
+003 A secondrate
+003 N secrecy
+002 A secret
+003 N secretaire
+004 N secretariat
+004 N secretary
+007 N secretarygeneral
+002 V secrete
+003 N secretion
+003 A secretive
+001 N sect
+003 A sectarian
+002 N section
+003 A sectional
+002 N sector
+003 A secular
+002 A secure
+004 N security
+002 N sedan
+002 A sedate
+003 N sedation
+003 N sedative
+004 A sedentary
+001 N sedge
+003 N sediment
+003 N sedition
+002 V seduce
+003 N seduction
+003 A seductive
+003 N seductress
+003 A sedulous
+002 N sedum
+001 N see
+001 N seed
+001 N seedbed
+002 N seedling
+002 N seedpearl
+004 N seedpotato
+002 N seedsman
+002 A seedy
+001 V seek
+002 A seeming
+002 A seemly
+001 V seep
+002 N seepage
+001 N seer
+003 N seersucker
+002 N seesaw
+001 V seethe
+002 A seethrough
+002 N segment
+003 V segregate
+004 N segregation
+002 N seigneur
+001 N seine
+002 A seismic
+003 N seismogram
+003 N seismograph
+004 N seismology
+001 V seize
+002 N seizure
+003 D seldomly
+002 V select
+003 N selection
+003 A selective
+003 N selector
+003 N selenium
+005 N selfabasement
+004 N selfabsorption
+003 N selfabuse
+003 A selfaddressed
+004 A selfadhesive
+005 N selfadvancement
+006 N selfaggrandizement
+005 N selfanalysis
+003 A selfappointed
+004 A selfassembly
+004 A selfassertive
+003 N selfassured
+003 A selfaware
+004 A selfcatering
+004 N selfcensorship
+003 A selfcentered
+002 A selfcentred
+003 A selfcleaning
+003 N selfconceit
+003 A selfconfessed
+004 A selfconfident
+007 A selfcongratulatory
+004 A selfconscious
+004 A selfconsistent
+003 A selfcontained
+003 N selfcontrol
+004 A selfcritical
+004 N selfdeception
+004 A selfdefeating
+003 N selfdefence
+003 N selfdefense
+004 N selfdelusion
+003 N selfdenial
+005 N selfdeprecation
+003 V selfdestruct
+004 N selfdestruction
+006 N selfdetermination
+004 N selfdiscipline
+005 N selfdiscovery
+002 N selfdoubt
+002 A selfdrive
+004 A selfeducated
+004 A selfeffacing
+003 A selfemployed
+003 N selfesteem
+004 A selfevident
+006 N selfexamination
+006 A selfexplanatory
+004 N selfexpression
+004 A selffinancing
+004 A selffulfilling
+004 N selffulfilment
+004 A selfgoverning
+002 N selfhelp
+003 N selfimage
+004 A selfimportant
+003 A selfimposed
+005 N selfimprovement
+003 A selfinduced
+004 A selfindulgent
+003 A selfinflicted
+004 N selfinterest
+002 A selfish
+006 N selfjustification
+003 N selfknowledge
+002 A selfless
+002 A selfmade
+005 A selfopinionated
+005 A selfperpetuating
+003 N selfpity
+005 N selfpollination
+003 N selfportrait
+003 A selfpossessed
+005 N selfpreservation
+003 A selfproclaimed
+003 A selfpropelled
+003 A selfraising
+005 N selfrealization
+003 N selfregard
+005 A selfregulating
+003 N selfreliance
+003 N selfreproach
+003 N selfrespect
+003 N selfrestraint
+004 A selfrighteous
+003 N selfrule
+004 N selfsacrifice
+002 A selfsame
+004 A selfsatisfied
+003 A selfsealing
+002 V selfseed
+003 A selfseeking
+003 A selfservice
+003 N selfstarter
+002 A selfstyled
+004 A selfsufficient
+004 A selfsupporting
+002 A selftaught
+002 A selfwilled
+002 N selfworth
+001 V sell
+002 N seller
+003 N sellingpoint
+003 N sellotape
+002 N sellout
+002 N selvage
+003 A semantic
+003 N semaphore
+002 N semblance
+002 N semen
+003 N semester
+002 N semi
+003 N semibreve
+004 N semicircle
+004 N semicolon
+005 N semiconductor
+005 A semiconscious
+004 A semidetached
+004 N semifinal
+003 A seminal
+003 N seminar
+004 N seminary
+003 N semiotics
+005 A semipermeable
+005 A semiprecious
+006 A semiprofessional
+004 N semiquaver
+003 A semiskilled
+003 A semiskimmed
+002 N semite
+003 A semitic
+003 N semitone
+005 A semitropical
+004 N semivowel
+004 N semolina
+002 N semtex
+002 N senate
+003 N senator
+001 V send
+002 N sendoff
+002 N sendup
+003 A senescent
+003 N seneschal
+003 A senile
+002 A senior
+002 N senna
+003 N sensation
+004 A sensational
+005 N sensationalism
+001 N sense
+003 A senseless
+003 N senseorgan
+005 N sensibility
+003 A sensible
+003 A sensitive
+003 V sensitize
+002 N sensor
+003 A sensory
+002 A sensual
+004 N sensuality
+003 A sensuous
+002 N sentence
+004 A sententious
+002 A sentient
+003 N sentiment
+004 A sentimental
+003 N sentinel
+002 N sentry
+003 N sentrybox
+001 N seor
+002 N seora
+003 N seorita
+002 N sepal
+004 A separable
+003 A separate
+004 N separation
+004 N separatist
+004 N separator
+003 N sephardi
+002 N sepia
+002 N sepoy
+002 N sepsis
+001 N sept
+003 N september
+003 A septennial
+002 N septet
+002 A septic
+004 N septicaemia
+004 N septicemia
+005 N septuagenarian
+005 N septuagesima
+003 N septuagint
+002 N septum
+003 A septuple
+003 A sepulchral
+003 N sepulture
+002 N sequel
+002 N sequence
+003 N sequencer
+003 A sequential
+003 V sequester
+003 V sequestrate
+002 N sequin
+003 N sequoia
+003 N seraglio
+002 N seraph
+001 N serb
+002 N serbian
+003 N serenade
+005 N serendipity
+002 A serene
+001 N serf
+001 N serge
+002 N sergeant
+004 N sergeantmajor
+002 N serial
+003 V serialize
+002 N series
+002 N serif
+004 A seriocomic
+003 A serious
+002 N serjeant
+004 N serjeantatarms
+002 N sermon
+003 V sermonize
+002 A serous
+002 N serpent
+003 A serpentine
+002 A serrated
+002 A serried
+002 N serum
+002 N servant
+001 V serve
+002 N server
+003 N servery
+002 N service
+004 A serviceable
+004 N serviceman
+005 N servicewoman
+002 N serviette
+003 A servile
+002 N serving
+003 N servitor
+003 N servitude
+002 N servo
+002 N sesame
+003 A sessile
+002 N session
+002 N sestet
+001 N set
+002 N setback
+002 N settee
+002 N setter
+002 N setting
+002 N settle
+003 N settlement
+002 N settler
+002 N setto
+002 N setup
+002 A seven
+003 A sevenfold
+003 A seventeen
+002 A seventh
+003 A seventy
+002 V sever
+003 A several
+003 N severance
+002 A severe
+001 V sew
+002 N sewage
+002 N sewer
+003 N sewerage
+002 N sewing
+004 N sewingmachine
+001 N sex
+005 N sexagenarian
+005 N sexagesima
+002 N sexism
+002 A sexless
+004 N sexology
+002 N sextant
+002 N sextet
+002 N sexton
+003 A sextuple
+003 N sextuplet
+002 A sexual
+002 A sexy
+002 A shabby
+001 N shack
+002 N shackle
+001 N shad
+002 N shaddock
+001 N shade
+002 N shading
+002 N shadow
+004 N shadowboxing
+003 A shadowy
+002 A shady
+001 N shaft
+001 V shag
+002 A shaggy
+002 N shagreen
+001 N shah
+001 V shake
+002 N shaker
+004 A shakespearian
+002 N shakeup
+002 N shako
+002 A shaky
+002 N shale
+002 N shallot
+002 A shallow
+002 N shalom
+001 V sham
+002 N shaman
+002 V shamble
+003 A shambolic
+001 N shame
+003 A shamefaced
+003 A shameful
+003 A shameless
+002 N shammy
+002 N shampoo
+002 N shamrock
+002 N shandy
+002 V shanghai
+001 N shank
+002 N shantung
+002 N shanty
+001 N shape
+003 A shapeless
+003 A shapely
+001 N shard
+001 N share
+004 N shareholder
+003 N shareout
+001 N shark
+002 N sharkskin
+001 A sharp
+002 V sharpen
+002 N sharper
+003 N sharpshooter
+002 A sharpwitted
+002 V shatter
+001 V shave
+002 N shaver
+002 A shavian
+002 N shaving
+001 N shawl
+001 N sheaf
+001 V shear
+001 N sheath
+001 V sheathe
+001 V sheave
+002 N shebeen
+001 N sheen
+001 N sheep
+002 N sheepdip
+002 N sheepdog
+002 N sheepfold
+002 A sheepish
+002 N sheepshank
+002 N sheepskin
+001 V sheer
+001 N sheet
+002 N sheeting
+001 N sheikh
+002 N sheila
+002 N shekel
+002 N shelduck
+001 N shelf
+002 N shelflife
+002 N shelfmark
+002 N shellac
+001 A shelled
+002 N shellfish
+002 N shellshock
+002 N shelta
+002 N shelter
+001 V shelve
+003 N shemozzle
+004 N shenanigan
+002 N shepherd
+003 N sheraton
+002 N sherbet
+001 N sherd
+002 N sheriff
+002 N sherpa
+002 N sherry
+002 N shiatsu
+003 N shibboleth
+001 N shield
+001 V shift
+002 A shiftless
+002 A shifty
+001 N shiite
+003 N shillelagh
+002 N shilling
+004 V shillyshally
+001 N shim
+002 V shimmer
+001 N shin
+002 N shinbone
+002 N shindig
+002 N shindy
+001 V shine
+002 N shiner
+002 N shingle
+002 N shinto
+002 N shinty
+002 A shiny
+001 N ship
+003 N shipbuilder
+003 N shipcanal
+002 N shipload
+002 N shipmate
+002 N shipment
+003 N shipowner
+002 N shipper
+002 N shipping
+002 N shipwreck
+002 N shipwright
+002 N shipyard
+001 N shire
+003 N shirehorse
+001 V shirk
+001 N shirr
+001 N shirt
+002 N shirtsleeve
+002 N shirttail
+003 N shirtwaister
+002 A shirty
+002 A shitty
+002 N shiver
+001 N shoal
+001 N shock
+002 N shocker
+002 A shocking
+002 A shockproof
+002 A shoddy
+001 N shoe
+002 N shoehorn
+002 N shoelace
+003 N shoemaker
+002 N shoestring
+002 N shoetree
+001 V shoot
+003 N shootingbrake
+003 N shootingstick
+001 N shop
+002 N shopfloor
+003 N shopkeeper
+002 V shoplift
+002 N shopping
+002 A shopsoiled
+003 N shopwalker
+001 N shore
+003 N shoreline
+001 A short
+002 N shortage
+002 N shortbread
+002 N shortcake
+002 V shortchange
+003 N shortcoming
+002 N shortcrust
+002 V shorten
+003 N shortening
+002 N shortfall
+002 N shorthand
+002 A shorthanded
+002 N shorthorn
+002 A shortlived
+002 D shortly
+002 A shortrange
+002 A shortsighted
+002 A shortstaffed
+002 A shortterm
+002 A shortwinded
+002 N shorty
+001 N shot
+002 N shotgun
+002 N shotput
+002 N shoulder
+003 N shoulderblade
+003 A shoulderlength
+003 N shoulderpad
+003 N shoulderstrap
+001 V shout
+001 V shove
+005 N shovehalfpenny
+002 N shovel
+003 N shovelboard
+003 N shoveller
+001 V show
+002 N showbiz
+002 N showcase
+002 N showdown
+002 N shower
+003 A showerproof
+002 N showgirl
+002 N showing
+003 N showjumping
+002 N showman
+002 N showoff
+002 N showpiece
+002 N showplace
+002 N showroom
+003 N showstopper
+002 A showy
+002 N shrapnel
+000 N shred
+001 N shrew
+001 A shrewd
+001 N shriek
+001 N shrike
+001 A shrill
+001 N shrimp
+001 N shrine
+001 V shrink
+002 N shrinkage
+002 V shrinkwrap
+001 V shrive
+002 V shrivel
+001 N shroud
+003 N shrovetide
+001 N shrub
+003 N shrubbery
+001 V shrug
+002 V shudder
+002 V shuffle
+002 N shufti
+001 V shun
+001 V shunt
+001 V shut
+002 N shutdown
+003 N shuteye
+002 N shutter
+002 N shuttle
+003 N shuttlecock
+001 V shy
+002 N shylock
+002 N shyster
+001 N si
+002 N siamese
+003 A sibilant
+002 N sibling
+002 N sibyl
+003 A sibylline
+001 A sick
+002 N sickbay
+001 N sickbed
+002 V sicken
+002 N sickle
+002 N sickleave
+003 N sicklecell
+002 A sickly
+002 N sickness
+002 N sickpay
+001 N side
+003 N sideboard
+003 N sidecar
+001 A sided
+003 N sidedoor
+003 N sidedrum
+003 N sideeffect
+003 N sidekick
+003 N sidelight
+003 N sideline
+003 A sidelong
+003 A sidereal
+003 N sideroad
+004 N sidesaddle
+003 N sideshow
+003 N sidesman
+004 A sidesplitting
+003 N sidestep
+003 N sideswipe
+003 V sidetrack
+003 N sidewalk
+002 N siding
+002 V sidle
+001 N siege
+002 N siemens
+002 N sienna
+002 N sierra
+002 N siesta
+001 N sieve
+001 V sift
+001 V sigh
+001 N sight
+001 A sighted
+002 A sightless
+002 A sightly
+002 V sightread
+002 N sightscreen
+002 N sightseer
+002 N sigma
+001 N sign
+003 N signalbox
+003 V signalize
+003 N signalman
+004 N signatory
+003 N signature
+002 N signboard
+002 N signet
+003 N signetring
+004 N significance
+004 A significant
+003 V signify
+002 N signor
+003 N signora
+004 N signorina
+002 N signpost
+003 N signwriter
+001 N sikh
+002 N silage
+002 N silence
+003 N silencer
+002 A silent
+003 N silhouette
+003 N silica
+003 N silicate
+003 N silicon
+003 N silicone
+004 N silicosis
+001 N silk
+002 A silken
+002 N silkworm
+002 A silky
+001 N sill
+002 A silly
+002 N silo
+001 N silt
+002 N silver
+003 N silverfish
+003 N silverside
+003 N silversmith
+003 N silverware
+003 A silvery
+004 N silviculture
+002 A simian
+003 A similar
+003 N simile
+004 N similitude
+002 V simmer
+003 N simony
+002 N simoom
+002 V simper
+002 A simple
+003 A simpleminded
+003 N simpleton
+004 N simplicity
+003 V simplify
+003 A simplistic
+002 D simply
+003 V simulate
+005 A simultaneous
+001 N sin
+001 P since
+002 A sincere
+004 D sincerely
+001 N sine
+003 N sinecure
+002 N sinew
+002 A sinful
+001 V sing
+001 V singe
+005 N singersongwriter
+002 A single
+003 A singlebreasted
+004 N singledecker
+005 D singlehandedly
+003 A singleminded
+002 N singlet
+003 N singleton
+002 N singsong
+003 A singular
+003 A sinister
+001 V sink
+002 N sinker
+002 N sinner
+004 N sinology
+003 A sinuous
+002 N sinus
+004 N sinusitis
+001 V sip
+002 N siphon
+001 N sir
+001 N sire
+002 N siren
+003 N sirenian
+002 N sirloin
+003 N sirocco
+002 N sirup
+001 N sis
+002 N sisal
+002 N siskin
+002 N sister
+003 N sisterhood
+004 N sisterinlaw
+003 A sisyphean
+001 V sit
+002 N sitar
+002 N sitcom
+001 N site
+002 N sitin
+002 N sitka
+002 N sitter
+002 N sitting
+003 N sittingroom
+002 V situate
+003 N situation
+002 N situp
+003 N situpon
+001 A six
+002 N sixer
+002 A sixfold
+002 N sixpence
+003 A sixpenny
+003 N sixshooter
+002 A sixteen
+001 A sixth
+002 A sixty
+001 N size
+003 A sizeable
+002 V sizzle
+001 N ska
+001 N skate
+003 N skateboard
+003 V skedaddle
+001 N skein
+003 N skeleton
+002 N skeptic
+003 A skeptical
+002 N skerry
+001 N sketch
+002 N sketchbook
+002 N sketchmap
+002 A sketchy
+001 A skew
+002 A skewbald
+002 N skewer
+002 A skewwhiff
+001 N ski
+001 V skid
+002 N skidpan
+001 N skiff
+002 N skijump
+002 A skilful
+002 N skilift
+001 N skill
+001 A skilled
+002 N skillet
+002 A skillful
+001 V skim
+002 N skimmia
+001 V skimp
+002 A skimpy
+001 N skin
+002 A skindeep
+003 N skindiver
+002 N skinflint
+002 N skinful
+002 N skingraft
+002 N skinhead
+002 A skinny
+001 A skint
+002 A skintight
+001 N skip
+002 N skipjack
+002 N skipper
+003 N skippingrope
+001 N skirl
+002 N skirmish
+001 N skirt
+003 N skirtingboard
+002 N skirun
+001 N skit
+002 A skittish
+002 N skittle
+001 V skive
+002 N skivvy
+001 N skua
+004 N skulduggery
+001 V skulk
+001 N skull
+002 N skullcap
+001 N skunk
+001 N sky
+003 N skydiving
+002 V skyjack
+002 N skylark
+002 N skylight
+002 N skyline
+003 N skyrocket
+003 N skyscraper
+003 D skywardly
+003 N skywriting
+001 N slab
+001 N slack
+002 V slacken
+002 N slacker
+001 N slag
+002 N slagheap
+001 V slake
+002 N slalom
+001 N slam
+002 N slander
+001 N slang
+003 N slangingmatch
+001 V slant
+001 V slap
+002 A slapdash
+003 A slaphappy
+002 N slapstick
+001 V slash
+001 N slat
+001 N slate
+002 N slattern
+002 V slaughter
+003 N slaughterhouse
+001 N slav
+001 N slave
+004 N slavedriver
+002 V slaver
+003 N slavery
+003 N slavetrade
+002 A slavic
+002 A slavish
+003 A slavonic
+001 V slay
+001 N sleaze
+002 A sleazy
+001 N sledge
+004 N sledgehammer
+001 A sleek
+001 N sleep
+002 N sleeper
+003 N sleepingbag
+003 N sleepingcar
+003 N sleepingpill
+002 A sleepless
+002 V sleepwalk
+002 A sleepy
+001 N sleet
+001 N sleeve
+001 N sleigh
+002 A slender
+001 N slice
+001 A slick
+001 V slide
+004 N sliderule
+001 A slight
+001 A slim
+001 N slime
+002 A slimline
+002 A slimy
+001 N sling
+002 N slingback
+001 V slink
+002 A slinky
+001 N slip
+002 N slipknot
+002 N slippage
+002 N slipper
+003 A slippery
+002 A slippy
+002 N sliproad
+002 A slipshod
+002 N slipstream
+002 N slipup
+002 N slipway
+001 N slit
+002 V slither
+002 N sliver
+001 N sloane
+001 N slob
+002 V slobber
+001 N sloe
+001 V slog
+002 N slogan
+001 N sloop
+001 V slop
+001 N slope
+002 A sloppy
+001 V slosh
+001 N slot
+001 N sloth
+002 A slothful
+003 N slotmachine
+001 V slouch
+001 N slough
+002 N slovak
+002 N sloven
+003 A slovenly
+001 A slow
+002 N slowcoach
+002 N slowdown
+002 N slowworm
+001 N sludge
+001 N slug
+002 N sluggard
+002 A sluggish
+001 N sluice
+001 N slum
+002 V slumber
+001 N slump
+001 V slur
+002 N slurry
+001 N slush
+001 N slut
+001 A sly
+001 N smack
+002 N smacker
+001 A small
+003 N smallholder
+003 N smallholding
+002 A smallminded
+002 N smallpox
+003 A smallscale
+002 A smalltime
+001 V smarm
+002 A smarmy
+001 A smart
+002 V smarten
+001 V smash
+003 N smashandgrab
+002 N smasher
+002 A smashing
+002 N smashup
+003 N smattering
+001 V smear
+001 N smell
+002 A smelly
+001 N smelt
+002 N smidgen
+002 N smilax
+002 V smile
+001 V smirch
+001 N smirk
+001 V smite
+001 N smith
+002 N smithy
+001 N smock
+002 N smocking
+001 N smog
+001 N smoke
+003 A smokefree
+003 A smokeless
+002 N smoker
+003 N smokescreen
+003 N smokestack
+002 A smoky
+001 A smooth
+002 N smoothie
+003 A smoothtongued
+003 N smorgasbord
+002 V smother
+001 N smudge
+001 A smug
+002 V smuggle
+001 N smut
+001 N snack
+002 N snaffle
+001 N snag
+001 N snail
+001 N snake
+004 N snakecharmer
+003 N snakeskin
+002 A snaky
+001 V snap
+003 N snapdragon
+004 N snapfastener
+002 N snapper
+002 A snappish
+002 A snappy
+002 N snapshot
+001 N snare
+001 V snarl
+002 N snarlup
+001 V snatch
+002 A snazzy
+001 V sneak
+002 N sneaker
+002 N sneakthief
+001 N sneer
+001 N sneeze
+001 V snick
+002 N snicker
+001 A snide
+001 V sniff
+002 N sniffer
+003 N snifferdog
+002 V sniffle
+002 A sniffy
+002 N snifter
+001 V snip
+001 N snipe
+002 N snippet
+002 V snivel
+001 N snob
+001 N snood
+001 N snook
+002 N snooker
+002 A snooty
+001 N snore
+002 N snorkel
+001 N snort
+001 N snot
+002 A snotty
+001 N snout
+001 N snow
+002 N snowball
+003 N snowballtree
+003 N snowberry
+002 A snowblind
+003 N snowblower
+002 A snowbound
+002 N snowcap
+002 N snowdrift
+002 N snowdrop
+002 N snowfall
+002 N snowflake
+002 N snowline
+002 N snowman
+004 N snowmobile
+002 N snowplough
+002 N snowplow
+002 N snowshoe
+002 N snowstorm
+002 A snowy
+001 V snub
+001 N snuff
+002 N snuffbox
+002 N snuffer
+002 V snuffle
+001 A snug
+003 N snuggery
+002 V snuggle
+001 V soak
+003 N soakaway
+002 A soaking
+002 N soandso
+001 N soap
+002 N soapbox
+002 N soapstone
+002 N soapwort
+002 A soapy
+001 V soar
+001 V sob
+002 A sober
+003 N sobriety
+003 N sobriquet
+002 A socalled
+002 N soccer
+003 A sociable
+002 A social
+003 N socialism
+003 N socialite
+003 V socialize
+003 N society
+004 N sociology
+002 N socket
+003 A socratic
+001 N sod
+002 N soda
+002 A sodden
+002 N sodium
+003 N sodomite
+003 N sodomy
+002 N sofa
+002 N soffit
+001 A soft
+002 N softball
+002 A softboiled
+002 A softcentred
+002 V soften
+002 A softhearted
+002 N softie
+004 A softlysoftly
+003 A softspoken
+002 N software
+002 N softwood
+002 A soggy
+001 N soh
+001 A soign
+001 V soil
+001 N soire
+004 N soixanteneuf
+002 N sojourn
+002 N sola
+002 N solace
+002 N solan
+002 A solar
+003 N solarium
+002 N solder
+002 N soldier
+003 N soldiery
+002 A sole
+003 N solecism
+003 D solely
+002 A solemn
+004 N solemnity
+003 V solemnize
+003 N solenoid
+002 N solfa
+003 V solicit
+004 N solicitor
+007 N solicitorgeneral
+004 A solicitous
+004 N solicitude
+002 A solid
+005 N solidarity
+004 V solidify
+004 N solidity
+003 A solidstate
+003 N solidus
+004 N soliloquy
+003 N solipsism
+003 N solitaire
+004 A solitary
+003 N solitude
+002 N solo
+002 N soloist
+002 N solstice
+003 A soluble
+002 N solute
+003 N solution
+001 V solve
+002 A solvent
+003 A somatic
+002 A somber
+001 A sombre
+003 N sombrero
+001 A some
+003 D someday
+003 D somehow
+002 N someone
+003 D someplace
+003 N somersault
+003 N something
+003 D sometime
+003 D sometimes
+003 D somewhat
+003 D somewhen
+003 D somewhere
+004 N somnambulism
+003 A somnolent
+001 N son
+002 N sonar
+003 N sonata
+004 N sonatina
+001 N song
+002 N songbird
+002 N songbook
+002 N songster
+003 N songwriter
+002 A sonic
+003 N soninlaw
+002 N sonnet
+002 N sonny
+003 A sonorous
+001 D soon
+001 N soot
+001 N sooth
+001 V soothe
+003 N soothsayer
+002 A sooty
+001 N sop
+002 N sophism
+002 N sophist
+004 N sophisticate
+004 A sophisticated
+003 N sophistry
+003 N sophomore
+004 A soporific
+002 A soppy
+003 N soprano
+002 N sorbet
+003 N sorcerer
+002 A sordid
+001 A sore
+003 D sorely
+002 N sorghum
+004 N sorority
+002 A sorrel
+002 N sorrow
+003 A sorrowful
+002 A sorry
+001 N sort
+002 N sortie
+001 N sos
+001 N sot
+001 N sou
+002 N soubrette
+001 N souffl
+001 V sough
+003 A soughtafter
+001 N souk
+001 N soul
+004 A souldestroying
+002 A soulful
+002 A soulless
+003 N soulsearching
+001 N sound
+002 N soundbox
+002 N sounding
+004 N soundingballoon
+003 N soundingboard
+003 N soundingline
+003 N soundingrod
+002 A soundproof
+002 N soundtrack
+001 N soup
+003 N soupkitchen
+002 N soupon
+002 N soupplate
+002 N soupspoon
+002 A soupy
+001 A sour
+001 N source
+002 N sourpuss
+001 V souse
+002 N soutane
+001 N south
+002 A southbound
+002 N southeast
+003 N southeaster
+004 A southeasterly
+003 A southeastern
+003 A southerly
+002 A southern
+003 N southerner
+003 N southsoutheast
+003 N southsouthwest
+002 A southward
+002 N southwest
+003 N southwester
+004 A southwesterly
+003 A southwestern
+003 N souvenir
+003 N souwester
+003 N sovereign
+004 N sovereignty
+001 N sow
+001 N soy
+002 N soya
+001 A sozzled
+001 N spa
+001 N space
+003 N spacecraft
+003 N spaceman
+004 A spacesaving
+003 N spaceship
+003 N spacesuit
+003 N spacetime
+003 A spacious
+001 N spade
+003 N spadework
+003 N spaghetti
+001 N spam
+001 N span
+002 N spandrel
+002 N spangle
+002 N spaniard
+002 N spaniel
+002 A spanish
+001 V spank
+002 N spanker
+002 A spanking
+002 N spanner
+001 N spar
+001 A spare
+003 N sparerib
+002 A sparing
+001 N spark
+002 V sparkle
+002 N sparkler
+002 N sparkplug
+002 N sparrow
+003 N sparrowhawk
+001 A sparse
+002 A spartan
+001 N spasm
+003 A spasmodic
+002 A spastic
+001 N spat
+001 N spate
+001 N spathe
+002 A spatial
+002 V spatter
+003 N spatula
+001 V spawn
+001 V spay
+003 N speakeasy
+002 N speaker
+001 N spear
+002 N spearhead
+002 N spearmint
+002 N spearwort
+001 N spec
+002 A special
+003 N specialist
+004 N speciality
+003 V specialize
+003 N specialty
+002 N specie
+002 N species
+003 A specific
+005 N specification
+003 V specify
+003 N specimen
+003 A specious
+001 N speck
+002 N speckle
+003 N spectacle
+002 A spectacled
+004 A spectacular
+003 N spectator
+002 N specter
+002 A spectral
+001 N spectre
+004 N spectrometer
+003 N spectroscope
+002 N spectrum
+003 V speculate
+003 N speculum
+001 N speech
+003 V speechify
+002 A speechless
+001 N speed
+002 N speedboat
+002 N speedo
+004 N speedometer
+002 N speedway
+002 N speedwell
+002 A speedy
+004 N speleology
+001 N spell
+002 V spellbind
+002 N spelling
+001 N spelt
+001 V spend
+002 N spendthrift
+001 N sperm
+004 N spermaceti
+004 N spermatozoon
+003 N spermicide
+001 V spew
+002 N sphagnum
+001 N sphere
+003 A spherical
+002 N spheroid
+002 N sphincter
+001 N sphinx
+001 N spice
+002 A spicy
+002 N spider
+003 A spidery
+001 N spiel
+002 N spigot
+001 N spike
+003 N spikenard
+002 A spiky
+001 N spill
+003 N spillikin
+002 N spillway
+001 V spin
+002 N spinach
+002 A spinal
+002 N spindle
+002 A spindly
+002 N spindrier
+002 N spindrift
+001 N spine
+004 N spinechiller
+003 A spineless
+002 N spinet
+003 N spinnaker
+002 N spinner
+003 N spinneret
+002 N spinney
+004 N spinningjenny
+002 N spinoff
+002 N spinster
+002 A spiny
+003 N spiraea
+002 A spiral
+002 A spirant
+001 N spire
+002 N spirea
+002 N spirit
+002 A spirited
+003 N spiritlamp
+003 A spiritless
+004 N spiritlevel
+003 A spiritual
+004 N spiritualism
+004 A spirituous
+003 N spirochaete
+004 N spirogyra
+001 N spit
+001 N spite
+003 A spiteful
+002 N spitfire
+002 V spitroast
+002 N spittle
+002 N spittoon
+001 N spiv
+001 V splash
+002 N splashback
+002 N splashdown
+002 V splatter
+001 V splay
+001 N spleen
+002 N spleenwort
+002 A splendid
+004 A splendiferous
+002 N splendor
+002 N splendour
+003 A splenetic
+002 A splenic
+001 V splice
+001 N splint
+002 N splinter
+001 V split
+003 A splitlevel
+002 N splitscreen
+001 N splotch
+002 V splutter
+001 V spoil
+002 N spoilage
+002 N spoiler
+002 N spoilsport
+001 N spoke
+003 N spokeshave
+003 N spokesman
+004 N spokesperson
+003 N spoliation
+002 N spondee
+001 N sponge
+002 N sponger
+002 A spongy
+002 N sponsor
+004 A spontaneous
+001 N spoof
+001 N spook
+002 A spooky
+001 N spool
+001 N spoon
+002 N spoonbill
+003 N spoonerism
+002 V spoonfeed
+001 N spoor
+003 A sporadic
+001 N spore
+002 N sporran
+001 N sport
+002 A sporting
+002 A sportive
+002 N sportsman
+002 N sportswear
+002 A sporty
+001 N spot
+002 A spotless
+002 N spotlight
+002 N spotter
+002 A spotty
+002 V spotweld
+001 N spouse
+001 N spout
+001 V sprain
+001 N sprat
+001 V sprawl
+001 N spray
+002 N spraygun
+001 V spread
+002 N spreadsheet
+001 N spree
+001 N sprig
+002 A sprightly
+001 V spring
+002 N springboard
+002 N springbok
+002 N springclean
+002 N springer
+002 N springtime
+002 A springy
+002 V sprinkle
+002 N sprinkler
+002 N sprinkling
+001 V sprint
+001 N sprit
+001 N sprite
+002 N spritsail
+002 N spritzer
+002 N sprocket
+001 V sprout
+001 N spruce
+001 A spry
+001 N spud
+002 N spumante
+001 N spume
+001 N spunk
+002 A spunky
+001 N spur
+001 N spurge
+003 A spurious
+001 V spurn
+001 V spurt
+002 N sputnik
+002 V sputter
+002 N sputum
+001 N spy
+002 N spyglass
+003 N spyhole
+001 N squab
+002 N squabble
+001 N squad
+002 N squaddie
+002 N squadron
+002 A squalid
+001 N squall
+002 N squalor
+002 V squander
+001 N square
+004 N squarebashing
+003 A squarerigged
+001 N squash
+001 V squat
+002 N squatter
+001 N squaw
+001 N squawk
+002 N squeak
+003 A squeaky
+002 N squeal
+003 A squeamish
+003 N squeegee
+002 V squeeze
+004 N squeezebox
+001 V squelch
+001 N squib
+001 N squid
+002 A squidgy
+002 A squiffy
+002 N squiggle
+001 N squill
+001 V squint
+001 N squire
+003 N squirearchy
+001 V squirm
+002 N squirrel
+001 V squirt
+001 V stab
+004 N stability
+003 V stabilize
+004 N stabilizer
+002 A stable
+005 N stablecompanion
+002 N stabling
+001 N stack
+002 N stadium
+001 N staff
+001 N stag
+001 N stage
+003 N stagecoach
+003 N stagecraft
+003 N stagehand
+004 V stagemanage
+005 N stagemanager
+003 A stagestruck
+003 N stagflation
+002 V stagger
+003 A staggering
+002 N staghound
+002 N staging
+002 A stagnant
+002 V stagnate
+003 N stagparty
+002 A stagy
+001 A staid
+001 V stain
+002 A stainless
+001 N stair
+002 N staircase
+002 N stairrod
+002 N stairway
+002 N stairwell
+001 N stake
+004 N stakeholder
+003 N stakeout
+004 N stakhanovite
+003 N stalactite
+003 N stalagmite
+002 A stale
+003 N stalemate
+003 N stalinism
+001 V stalk
+003 N stalkinghorse
+001 V stall
+003 N stallholder
+002 N stallion
+002 A stalwart
+002 N stamen
+003 N stamina
+002 V stammer
+001 V stamp
+004 N stampcollector
+003 N stampduty
+002 N stampede
+003 N stampingground
+001 N stance
+001 V stanch
+002 N stanchion
+001 V stand
+002 N standard
+004 N standardbearer
+003 V standardize
+002 N standby
+002 N standin
+002 N standing
+003 N standingroom
+003 A standoffish
+002 N standpipe
+002 N standpoint
+002 N standstill
+002 N stanza
+005 N staphylococcus
+002 N staple
+001 N star
+002 N starboard
+001 N starch
+002 A starchy
+002 N stardust
+001 V stare
+002 N starfish
+003 N stargazer
+001 A stark
+002 N starlet
+002 N starlight
+002 N starling
+002 A starlit
+002 A starry
+003 A starryeyed
+002 A starstudded
+001 V start
+002 N starter
+003 N startingblock
+002 V startle
+001 V starve
+003 N starveling
+002 N stasis
+001 N state
+003 A stateless
+003 A stately
+003 N statement
+003 N stateroom
+003 N statesman
+002 A static
+002 N station
+004 A stationary
+003 N stationer
+004 N stationery
+004 N stationmaster
+004 N stationwagon
+003 N statistic
+004 A statistical
+003 A statuary
+002 N statue
+003 A statuesque
+002 N statuette
+002 N stature
+002 N status
+002 N statute
+004 N statutebook
+004 A statutory
+001 N stave
+001 N stay
+002 N stayer
+002 N staysail
+001 N stead
+002 A steadfast
+002 A steady
+001 N steak
+002 N steakhouse
+001 V steal
+001 N stealth
+002 A stealthy
+001 N steam
+002 N steamboat
+002 N steamer
+003 N steamroller
+002 N steamship
+002 A steamy
+002 N steatite
+001 N steed
+001 N steel
+002 A steely
+002 N steelyard
+001 V steep
+002 N steeple
+003 N steeplechase
+003 N steeplejack
+001 N steer
+002 N steerage
+004 N steeringcolumn
+003 N steeringwheel
+002 N steersman
+004 N stegosaurus
+002 N stela
+002 A stellar
+001 V stem
+001 N stench
+002 N stencil
+004 N stenographer
+003 A stentorian
+003 N stepbrother
+002 N stepchild
+003 N stepdaughter
+003 N stepfather
+004 N stephanotis
+003 N stepladder
+003 N stepmother
+003 N stepparent
+001 N steppe
+003 N steppingstone
+003 N stepsister
+002 N stepson
+004 A stereophonic
+003 N stereoscope
+003 N stereotype
+003 A sterile
+003 V sterilize
+002 A sterling
+001 N stern
+002 N sternum
+002 N steroid
+002 N sterol
+003 A stertorous
+001 V stet
+003 N stethoscope
+002 N stetson
+003 N stevedore
+001 V stew
+002 N steward
+003 N stewardess
+001 V stick
+002 N sticker
+004 N stickingplaster
+004 N stickinthemud
+003 N stickleback
+002 N stickler
+002 N stickup
+002 A sticky
+001 A stiff
+002 V stiffen
+002 A stiffnecked
+002 V stifle
+002 N stigma
+003 V stigmatize
+002 N stile
+003 N stiletto
+001 N still
+002 N stillbirth
+002 A stillborn
+002 N stillroom
+001 N stilt
+001 A stilted
+002 N stilton
+003 A stimulant
+003 V stimulate
+003 N stimulus
+001 N sting
+002 N stinger
+004 N stingingnettle
+002 N stingray
+002 A stingy
+001 V stink
+002 N stinker
+002 A stinking
+001 V stint
+002 N stipend
+004 A stipendiary
+002 V stipple
+003 V stipulate
+001 N stir
+002 V stirfry
+002 N stirrup
+003 N stirrupcup
+004 N stirrupleather
+003 N stirruppump
+001 N stitch
+001 N stoat
+001 N stock
+002 N stockade
+003 N stockbreeder
+003 N stockbroker
+002 N stockcar
+003 N stockholder
+003 N stockinet
+002 N stocking
+003 N stockingstitch
+003 N stockintrade
+002 N stockist
+003 N stockjobber
+003 N stockpile
+002 N stockpot
+002 N stockroom
+002 A stockstill
+003 N stocktaking
+002 A stocky
+002 N stockyard
+001 N stodge
+002 A stodgy
+001 N stoic
+002 A stoical
+002 N stoicism
+001 V stoke
+003 N stokehold
+004 N stokehole
+002 N stoker
+002 N stole
+002 A stolid
+002 N stoma
+002 N stomach
+003 N stomachache
+003 N stomacher
+003 N stomachpump
+001 V stomp
+001 N stone
+003 N stonechat
+003 A stonecold
+003 N stonecrop
+001 A stoned
+003 A stonedead
+003 A stonedeaf
+003 N stonefruit
+003 A stoneground
+004 N stonemason
+003 V stonewall
+003 N stoneware
+003 A stonewashed
+003 N stonework
+002 N stonker
+002 A stony
+003 A stonybroke
+001 N stook
+001 N stool
+002 N stoolball
+003 N stoolpigeon
+001 N stoop
+001 V stop
+002 N stopcock
+002 N stopgap
+002 N stopgo
+002 N stopoff
+003 N stopover
+002 N stoppage
+002 N stopper
+002 N stopwatch
+002 N storage
+001 N store
+003 N storehouse
+004 N storekeeper
+003 N storeman
+003 N storeroom
+002 N storey
+002 A storied
+001 N stork
+001 N storm
+002 N stormdoor
+002 A stormy
+002 N story
+004 N storyteller
+001 N stoup
+001 A stout
+002 A stouthearted
+001 N stove
+003 N stovepipe
+001 V stow
+002 N stowage
+003 N stowaway
+003 N strabismus
+002 V straddle
+001 V strafe
+002 V straggle
+001 A straight
+003 D straightaway
+002 V straighten
+003 A straightforward
+001 N strain
+001 A strained
+002 N strainer
+001 N strait
+002 A straitened
+003 N straitjacket
+002 A straitlaced
+001 N strand
+001 A strange
+002 N stranger
+002 V strangle
+003 N stranglehold
+003 V strangulate
+004 N strangulation
+001 N strap
+003 N straphanger
+002 A strapping
+003 N stratagem
+003 A strategic
+003 N strategy
+002 N strathspey
+003 V stratify
+004 N stratigraphy
+003 N stratosphere
+002 N stratum
+001 N straw
+003 N strawberry
+001 V stray
+001 N streak
+002 A streaky
+001 N stream
+002 N streamer
+002 V streamline
+001 N street
+002 N streetcar
+003 N streetwalker
+002 N streetwise
+001 N strength
+002 V strengthen
+003 A strenuous
+004 N streptococcus
+004 N streptomycin
+001 N stress
+002 A stressful
+001 V stretch
+002 N stretcher
+001 V strew
+001 N stria
+001 A striate
+002 A stricken
+001 A strict
+002 N stricture
+001 V stride
+002 A strident
+001 N strife
+001 V strike
+004 N strikebreaker
+002 N striker
+002 A striking
+001 N strine
+001 N string
+002 N stringcourse
+001 A stringed
+002 A stringent
+002 N stringer
+002 A stringy
+001 N strip
+001 N stripe
+001 A striped
+002 N stripling
+002 N stripper
+002 N stripsearch
+002 N striptease
+002 A stripy
+001 V strive
+001 N strobe
+003 N stroboscope
+001 N stroke
+001 V stroll
+001 A strong
+002 N strongbox
+002 N stronghold
+002 A strongminded
+002 N strongroom
+002 N strontium
+001 N strop
+002 A stroppy
+003 A structural
+004 N structuralism
+002 N structure
+002 N strudel
+002 V struggle
+001 V strum
+002 N strumpet
+001 N strut
+002 N strychnine
+001 N stub
+002 N stubble
+002 A stubborn
+002 A stubby
+002 N stucco
+002 A stuckup
+001 N stud
+002 N studbook
+003 N studdingsail
+002 N student
+002 N studfarm
+002 N studio
+003 A studious
+002 N study
+001 N stuff
+002 N stuffing
+002 A stuffy
+003 V stultify
+002 V stumble
+003 N stumblingblock
+001 N stump
+002 A stumpy
+001 V stun
+002 N stunner
+002 A stunning
+001 N stunt
+003 V stupefy
+003 A stupendous
+002 A stupid
+002 N stupor
+002 A sturdy
+002 N sturgeon
+002 V stutter
+001 N sty
+002 A stygian
+002 N style
+002 A stylish
+002 N stylist
+003 A stylistic
+002 A stylized
+002 N stylus
+002 A styptic
+002 N styrene
+002 N suasion
+001 A suave
+003 N subaltern
+003 A subaqua
+004 A subaquatic
+004 A subatomic
+004 N subcommittee
+004 A subconscious
+004 N subcontinent
+003 V subcontract
+003 N subculture
+005 A subcutaneous
+003 V subdivide
+002 V subdue
+004 N subeditor
+002 A subfusc
+002 N subgroup
+003 N subheading
+003 A subhuman
+002 N subject
+003 A subjective
+002 V subjoin
+003 V subjugate
+002 N sublease
+002 N sublet
+005 N sublieutenant
+003 V sublimate
+002 A sublime
+004 A subliminal
+005 N submachinegun
+003 N submarine
+002 V submerge
+004 N submersible
+005 A submicroscopic
+003 N submission
+003 A submissive
+002 V submit
+003 A subnormal
+003 N suborder
+004 A subordinate
+002 V suborn
+002 N subplot
+003 N subpoena
+003 N subroutine
+002 V subscribe
+003 N subscriber
+002 A subscript
+003 N subscription
+003 N subsection
+003 A subsequent
+003 A subservient
+002 N subset
+002 V subside
+004 A subsidiary
+003 V subsidize
+003 N subsidy
+002 V subsist
+003 N subsistence
+002 N subsoil
+003 A subsonic
+002 N substance
+003 A substandard
+003 A substantial
+003 V substantiate
+003 A substantive
+003 N substitute
+003 N substratum
+003 N substructure
+002 V subsume
+003 N subtenant
+002 V subtend
+003 N subterfuge
+004 A subterranean
+002 N subtext
+003 N subtitle
+002 A subtle
+003 N subtotal
+002 V subtract
+002 N suburb
+003 A suburban
+003 N suburbia
+003 N subvention
+003 A subversive
+002 V subvert
+002 N subway
+003 A subzero
+002 V succeed
+002 N success
+003 A successful
+003 N succession
+003 A successive
+003 N successor
+002 A succinct
+003 N succubus
+003 A succulent
+002 V succumb
+001 A such
+001 V suck
+002 N sucker
+002 V suckle
+002 N suckling
+002 N sucrose
+002 N suction
+003 A sudanese
+002 A sudden
+004 A sudorific
+001 V sue
+001 N suede
+001 N suet
+002 V suffer
+003 N sufferance
+002 V suffice
+004 N sufficiency
+003 A sufficient
+002 N suffix
+003 V suffocate
+003 N suffragan
+002 N suffrage
+003 N suffragette
+002 V suffuse
+002 N sufi
+002 N sugar
+004 N sugardaddy
+003 A sugary
+002 V suggest
+004 A suggestible
+003 N suggestion
+003 A suggestive
+003 A suicidal
+002 N suicide
+001 N suit
+003 A suitable
+002 N suitcase
+001 N suite
+002 N suitor
+002 N sulfa
+002 N sulfate
+002 N sulfide
+002 N sulfite
+004 N sulfonamide
+002 N sulfur
+004 A sulfureous
+003 A sulfuric
+003 A sulfurous
+001 V sulk
+002 A sulky
+002 A sullen
+002 V sully
+002 N sulpha
+002 N sulphate
+002 N sulphide
+002 N sulphite
+004 N sulphonamide
+002 N sulphur
+004 A sulphureous
+003 A sulphuric
+003 A sulphurous
+002 N sultan
+003 N sultana
+002 A sultry
+001 N sum
+002 N sumac
+003 V summarize
+003 N summary
+003 N summation
+002 N summer
+003 N summerhouse
+003 N summertime
+003 N summingup
+002 N summit
+002 V summon
+002 N summons
+002 N sumo
+001 N sump
+003 A sumptuary
+003 A sumptuous
+001 N sun
+002 V sunbathe
+002 N sunbeam
+001 N sunbed
+002 N sunblock
+002 N sunburn
+002 N sundae
+002 N sunday
+002 V sunder
+002 N sundew
+002 N sundial
+002 N sundown
+002 A sundry
+002 N sunfish
+003 N sunflower
+002 A sunken
+002 N sunlamp
+002 N sunlight
+002 A sunlit
+002 N sunni
+002 A sunny
+002 N sunrise
+002 N sunroof
+002 N sunset
+002 N sunshade
+002 N sunshine
+002 N sunspot
+002 N sunstroke
+002 N suntan
+002 N suntrap
+002 N sunup
+001 V sup
+005 A superabundant
+004 V superannuate
+005 N superannuation
+002 A superb
+004 N supercargo
+003 V supercharge
+004 N supercharger
+005 A supercilious
+005 N supercomputer
+007 N superconductivity
+005 N superconductor
+004 N superego
+006 N supererogation
+004 A superficial
+003 A superfine
+004 N superfluity
+004 A superfluous
+003 N superglue
+003 N supergrass
+004 A superhuman
+004 V superimpose
+004 V superintend
+005 N superintendent
+003 A superior
+004 A superlative
+003 N superman
+004 N supermarket
+005 A supernatural
+004 N supernova
+006 A supernumerary
+004 N superphosphate
+004 N superpower
+003 A superscript
+003 V supersede
+004 A supersonic
+003 N superstar
+004 N superstition
+003 N superstore
+004 N superstructure
+004 N supertanker
+003 N supertax
+003 V supervene
+003 V supervise
+004 N superwoman
+002 A supine
+002 N supper
+002 V supplant
+002 A supple
+003 N supplement
+002 A suppliant
+003 V supplicate
+002 V supply
+002 V support
+003 N supporter
+003 A supportive
+002 V suppose
+004 D supposedly
+004 N supposition
+005 A suppositious
+005 N suppository
+002 V suppress
+003 V suppurate
+005 A supranational
+004 N supremacy
+002 A supreme
+003 N supremo
+002 N surcharge
+001 A sure
+003 A surefooted
+003 D surely
+003 N surety
+001 N surf
+002 N surface
+002 N surfboard
+002 N surfeit
+002 N surfing
+001 N surge
+002 N surgeon
+003 N surgery
+003 A surgical
+002 A surly
+002 N surmise
+002 V surmount
+002 N surname
+002 V surpass
+002 N surplice
+002 N surplus
+002 N surprise
+002 A surreal
+003 N surrealism
+003 V surrender
+005 A surreptitious
+003 N surrogate
+002 V surround
+002 N surtax
+003 N surtitle
+003 N surveillance
+002 V survey
+003 N surveyor
+003 N survival
+002 V survive
+006 N susceptibility
+004 A susceptible
+002 N sushi
+002 V suspect
+002 V suspend
+003 N suspender
+002 N suspense
+003 N suspension
+003 N suspicion
+004 A suspicious
+001 V suss
+002 V sustain
+003 N sustenance
+002 N suttee
+002 N suture
+003 N suzerain
+001 A svelte
+001 N swab
+002 V swaddle
+001 N swag
+002 V swagger
+003 N swahili
+001 N swain
+002 N swallow
+003 N swallowdive
+003 N swallowtail
+002 N swami
+001 N swamp
+001 N swan
+002 N swansong
+001 N sward
+001 N swarf
+001 V swarm
+002 A swarthy
+003 N swashbuckler
+003 N swastika
+001 V swat
+001 N swatch
+001 N swath
+001 V swathe
+001 V sway
+001 V swear
+002 N swearword
+001 N sweat
+002 N sweatband
+002 N sweater
+002 N sweatshirt
+002 N sweatshop
+001 N swede
+002 A swedish
+001 V sweep
+002 N sweeper
+002 A sweeping
+002 N sweepstake
+001 A sweet
+002 N sweetbread
+002 N sweetbrier
+002 N sweetcorn
+002 V sweeten
+003 N sweetener
+002 N sweetheart
+002 N sweetie
+002 N sweetmeal
+002 N sweetmeat
+002 N sweetness
+002 N sweetshop
+001 V swell
+002 N swelling
+002 V swelter
+001 V swerve
+001 A swift
+001 V swig
+001 V swill
+001 V swim
+003 N swimmingbath
+004 N swimmingcostume
+003 D swimmingly
+002 N swimsuit
+002 N swimwear
+002 V swindle
+001 N swine
+001 V swing
+002 N swingboat
+002 N swingbridge
+002 N swingdoor
+002 A swingeing
+002 N swingwing
+001 V swirl
+001 V swish
+001 A swiss
+001 N switch
+002 N switchback
+002 N switchboard
+003 A switchedon
+002 N swivel
+001 N swizz
+002 N swizzle
+003 N swizzlestick
+001 V swoon
+001 V swoop
+001 N sword
+002 N swordfish
+002 N swordplay
+002 N swordsman
+002 N swordstick
+003 N sybarite
+003 N sycamore
+003 N sycophant
+004 N syllabary
+003 A syllabic
+003 N syllable
+003 N syllabub
+003 N syllabus
+003 N syllepsis
+003 N syllogism
+001 N sylph
+002 A sylvan
+003 N symbiosis
+002 N symbol
+003 N symbolism
+003 V symbolize
+003 N symmetry
+004 A sympathetic
+003 V sympathize
+003 N sympathy
+003 N symphony
+003 N symposium
+002 N symptom
+004 N synagogue
+002 N synapse
+003 N synchromesh
+003 A synchronic
+003 N synchronism
+003 V synchronize
+003 A synchronous
+003 V syncopate
+002 N syncope
+003 V syncretize
+002 N syndic
+004 N syndicalism
+003 N syndicate
+002 N syndrome
+003 N synecdoche
+002 N synod
+003 N synonym
+004 A synonymous
+003 N synopsis
+003 A synoptic
+003 N synovia
+002 N syntax
+001 N synth
+003 N synthesis
+003 V synthesize
+004 N synthesizer
+003 A synthetic
+003 N syphilis
+002 N syriac
+002 N syrian
+003 N syringa
+002 N syringe
+002 N syrup
+002 N system
+004 A systematic
+004 V systematize
+003 A systemic
+001 N tab
+002 N tabard
+003 N tabasco
+002 N tabby
+004 N tabernacle
+002 N tabla
+002 N table
+003 N tableau
+003 N tablecloth
+003 N tableland
+003 N tablespoon
+002 N tablet
+003 N tabletop
+003 N tableware
+002 N tabloid
+002 N tabor
+003 A tabular
+003 V tabulate
+004 N tabulator
+002 N tacho
+003 N tachograph
+004 N tachometer
+002 A tacit
+003 A taciturn
+001 N tack
+002 N tackle
+003 N tackleblock
+002 A tacky
+002 N taco
+001 N tact
+002 A tactful
+002 N tactic
+003 A tactical
+003 A tactile
+002 A tactless
+003 N tadpole
+003 N taffeta
+002 N taffrail
+002 N taffy
+001 N tag
+004 N tagliatelle
+001 N tail
+002 N tailback
+002 N tailboard
+002 N tailcoat
+002 N tailend
+002 N tailgate
+002 N taillight
+002 N tailor
+002 A tailored
+003 A tailormade
+002 N tailpiece
+002 N tailpipe
+002 N tailplane
+002 N tailspin
+001 N taint
+001 V take
+002 N takeoff
+003 N takeover
+002 N taker
+002 N takeup
+002 A taking
+001 N talc
+002 N talcum
+002 N tale
+002 N talent
+003 N talentscout
+003 N talisman
+001 V talk
+003 A talkative
+002 N talkback
+002 N talkie
+002 A talking
+003 N talkingpoint
+003 N talkingshop
+003 N talkingto
+001 A tall
+002 N tallboy
+002 N tallow
+002 N tally
+002 N talmud
+002 N talon
+002 N talus
+003 N tamarind
+003 N tamarisk
+002 N tambour
+003 N tambourine
+001 A tame
+002 N tamil
+004 N tamoshanter
+001 V tamp
+002 V tamper
+002 N tampon
+002 N tamtam
+001 N tan
+002 N tandem
+002 N tandoor
+003 N tandoori
+001 N tang
+002 N tangent
+003 A tangential
+003 N tangerine
+003 A tangible
+002 V tangle
+002 A tangly
+002 N tango
+002 A tangy
+001 N tank
+002 N tankard
+002 N tanker
+002 N tanner
+003 N tannery
+002 A tannic
+002 N tannin
+002 N tannoy
+002 N tansy
+003 V tantalize
+003 N tantalum
+003 N tantalus
+002 N tantra
+002 N tantrum
+003 N taoiseach
+002 N taoism
+001 V tap
+002 N tapdance
+001 N tape
+004 N tapemeasure
+002 N taper
+003 N tapestry
+003 N tapeworm
+003 N tapioca
+002 N tapir
+002 N tappet
+002 N taproom
+001 N tar
+006 N taramasalata
+004 N tarantella
+004 N tarantula
+002 N tarboosh
+002 A tardy
+001 N tare
+002 N target
+002 N tariff
+003 N tarlatan
+002 N tarmac
+004 N tarmacadam
+001 N tarn
+002 V tarnish
+002 N taro
+002 N tarot
+003 N tarpaulin
+003 N tarragon
+002 V tarry
+002 A tarsal
+002 N tarsus
+001 A tart
+002 N tartan
+002 N tartar
+002 A tartare
+003 A tartaric
+003 N tartrazine
+002 A tarty
+002 N tarzan
+001 N task
+003 N taskmaster
+001 N tass
+002 N tassel
+001 N taste
+003 A tasteful
+003 A tasteless
+002 N taster
+002 N tasting
+002 A tasty
+001 V tat
+002 N tatter
+002 A tattered
+002 N tatting
+002 V tattle
+002 V tattoo
+002 A tatty
+001 N tau
+001 N taunt
+001 A taupe
+002 N taurus
+001 A taut
+004 N tautology
+002 N tavern
+003 N taverna
+002 A tawdry
+002 A tawny
+001 N tax
+003 N taxation
+005 A taxdeductible
+002 A taxfree
+002 N taxi
+004 N taxidermy
+004 N taximeter
+002 N taxman
+002 N taxon
+004 N taxonomy
+003 N taxpayer
+003 N tayberry
+001 N tbone
+001 N te
+001 N tea
+002 N teacake
+001 V teach
+002 N teacher
+002 N teaching
+002 N teacup
+001 N teak
+001 N teal
+002 N tealeaf
+001 N team
+002 N teammate
+002 N teamster
+002 N teamwork
+003 N teaplanter
+002 N teapot
+001 N tear
+003 N tearaway
+002 N teardrop
+002 N tearduct
+002 A tearful
+002 N teargas
+003 N tearjerker
+002 N tearoom
+001 V tease
+002 N teasel
+002 N teaser
+002 N teaset
+002 N teashop
+002 N teaspoon
+001 N teat
+002 N teatime
+001 N tec
+001 N tech
+003 N technetium
+002 N technic
+003 A technical
+005 N technicality
+003 N technician
+004 N technicolor
+003 N technique
+004 N technocracy
+003 N technocrat
+004 N technology
+003 A tectonic
+001 N ted
+002 N teddy
+003 A tedious
+002 N tedium
+001 N tee
+001 V teem
+003 N teenager
+002 A teensy
+002 A teeny
+004 N teenybopper
+004 A teenyweeny
+002 V teeter
+001 V teethe
+003 N teethingring
+003 A teetotal
+001 N teff
+002 N teflon
+002 N telead
+003 N telecast
+007 N telecommunication
+005 N teleconference
+003 N telefax
+003 N telegram
+003 N telegraph
+004 A telegraphic
+004 N telegraphy
+005 N telekinesis
+005 N telemarketing
+004 N telemessage
+004 N telemetry
+004 N teleology
+004 N telepathy
+003 N telephone
+004 N telephonist
+004 N telephony
+004 N telephoto
+006 N telephotography
+004 N teleprinter
+004 N teleprompter
+003 N telescope
+004 A telescopic
+003 N teletext
+003 N telethon
+003 N teletype
+003 V televise
+004 N television
+001 V tell
+002 N teller
+002 A telling
+003 N tellingoff
+003 N telltale
+003 N tellurium
+002 N telly
+004 N temerity
+002 N temper
+003 N tempera
+004 N temperament
+005 A temperamental
+003 N temperance
+003 A temperate
+004 N temperature
+002 N tempest
+004 A tempestuous
+002 N template
+002 N temple
+002 N tempo
+003 A temporal
+004 A temporary
+003 V temporize
+001 V tempt
+003 N temptation
+002 A tempting
+003 N tempura
+001 A ten
+003 A tenable
+004 A tenacious
+003 N tenancy
+002 N tenant
+003 N tenantry
+001 N tench
+001 V tend
+003 N tendency
+004 A tendentious
+002 N tender
+003 N tenderfoot
+003 A tenderhearted
+003 V tenderize
+003 N tenderloin
+002 N tendon
+002 N tendril
+003 A tenebrous
+003 N tenement
+002 N tenet
+002 A tenfold
+002 N tenner
+002 N tennis
+002 N tenon
+002 N tenor
+006 N tenosynovitis
+002 N tenpin
+001 N tense
+003 A tensile
+002 N tension
+001 N tent
+003 N tentacle
+003 A tentative
+002 N tenter
+003 N tenterhook
+001 A tenth
+002 N tentstitch
+003 A tenuous
+002 N tenure
+002 N tepee
+002 A tepid
+003 N tequila
+002 N terbium
+002 N tercel
+005 N tercentenary
+003 N teredo
+004 V tergiversate
+001 N term
+003 N termagant
+004 A terminable
+003 A terminal
+003 V terminate
+004 N termination
+005 N terminology
+003 N terminus
+002 N termite
+001 N tern
+003 A ternary
+002 N terrace
+004 N terracotta
+002 N terrain
+003 N terrapin
+003 N terrarium
+003 N terrazzo
+002 A terrene
+003 A terrestrial
+003 A terrible
+003 D terribly
+002 N terrier
+003 A terrific
+003 V terrify
+002 N terrine
+004 A territorial
+004 N territory
+002 N terror
+003 N terrorist
+003 V terrorize
+004 A terrorstricken
+002 N terry
+001 A terse
+003 A tertiary
+003 A tervalent
+003 N terylene
+002 N tesla
+003 A tessellated
+004 N tessellation
+003 N tessera
+004 N tessitura
+001 N test
+002 N testa
+004 A testaceous
+003 N testament
+005 A testamentary
+002 A testate
+003 N testator
+002 N tester
+003 N testicle
+003 V testify
+004 N testimonial
+004 N testimony
+002 N testis
+004 N testosterone
+002 N testtube
+002 A testy
+003 N tetanus
+002 A tetchy
+002 N tether
+002 N tetrad
+003 N tetragon
+004 N tetrahedron
+004 N tetralogy
+004 N tetrameter
+002 N teuton
+003 A teutonic
+001 N text
+002 N textbook
+003 N textile
+002 A textual
+002 N texture
+001 N thai
+004 N thalidomide
+002 N thallium
+001 N thane
+001 V thank
+002 A thankful
+003 D thankfully
+002 A thankless
+003 N thanksgiving
+001 N thatch
+001 V thaw
+001 R the
+002 N theater
+001 N theatre
+003 A theatrical
+001 N theft
+001 R their
+001 N theism
+001 N theme
+001 D then
+003 D thenceforth
+003 N theocracy
+003 N theodolite
+003 N theologian
+003 N theology
+002 N theorem
+004 A theoretical
+004 N theoretician
+002 N theorist
+002 V theorize
+002 N theory
+003 N theosophy
+004 A therapeutic
+003 N therapy
+001 D there
+003 D thereafter
+003 D thereupon
+001 N therm
+002 A thermal
+003 A thermionic
+004 N thermocouple
+004 A thermoelectric
+004 N thermometer
+004 A thermonuclear
+004 A thermoplastic
+002 N thermos
+004 A thermosetting
+003 N thermosphere
+003 N thermostat
+003 N thesaurus
+002 N thesis
+002 A thespian
+002 N theta
+002 N thiamine
+001 A thick
+002 V thicken
+003 N thickening
+002 N thicket
+002 N thickhead
+002 N thickness
+002 A thickset
+002 A thickskinned
+001 N thief
+001 V thieve
+003 N thievery
+002 A thievish
+001 N thigh
+002 N thighbone
+002 N thimble
+003 N thimbleful
+001 A thin
+001 N thing
+003 N thingummy
+001 V think
+002 N thinker
+002 N thinktank
+002 N thinner
+002 A thinskinned
+003 N thiosulphate
+001 A third
+002 A thirdrate
+001 N thirst
+002 A thirsty
+002 A thirteen
+002 A thirty
+002 N thistle
+003 N thistledown
+002 A thistly
+002 D thither
+002 N thole
+001 N thong
+002 N thorax
+002 N thorium
+001 N thorn
+002 A thorny
+002 A thorough
+002 A thoroughbred
+003 N thoroughfare
+001 N thou
+001 N thought
+002 A thoughtful
+002 A thoughtless
+003 N thoughtreader
+002 A thousand
+001 N thrall
+001 V thrash
+001 N thread
+002 A threadbare
+002 N threadworm
+001 N threat
+002 V threaten
+001 A three
+003 A threecornered
+003 N threedecker
+002 A threefold
+002 N threepence
+002 N threepiece
+002 A threeply
+003 N threequarter
+002 N threescore
+002 N threesome
+002 A threeway
+003 N threnody
+001 V thresh
+003 N threshingfloor
+002 N threshold
+001 D thrice
+001 N thrift
+002 A thriftless
+002 A thrifty
+001 N thrill
+002 N thriller
+001 N thrips
+001 V thrive
+001 N throat
+002 A throaty
+001 V throb
+001 N throe
+003 N thrombosis
+001 N throne
+001 N throng
+002 N throstle
+002 N throttle
+002 P throughout
+002 N throughput
+001 V throw
+002 N throwback
+002 N throwin
+001 N thrum
+001 N thrush
+001 V thrust
+001 N thud
+001 N thug
+002 N thulium
+001 N thumb
+002 N thumbnail
+002 N thumbprint
+002 N thumbscrew
+001 V thump
+002 A thumping
+002 N thunder
+003 N thunderbolt
+003 N thunderclap
+003 N thundercloud
+003 N thunderfly
+003 A thundering
+003 A thunderous
+003 N thunderstorm
+003 N thurible
+002 N thursday
+001 D thus
+001 V thwack
+001 V thwart
+001 R thy
+001 N thyme
+002 N thymol
+002 N thymus
+002 N thyroid
+002 N tiara
+002 N tibia
+001 N tic
+001 N tick
+002 N ticker
+003 N tickertape
+002 N ticket
+002 N ticking
+002 V tickle
+002 A ticklish
+002 N ticktack
+002 N ticktock
+002 A tidal
+002 N tidbit
+002 N tiddler
+002 A tiddly
+003 N tiddlywink
+001 N tide
+003 N tidemark
+004 N tidetable
+003 N tideway
+002 N tidings
+002 A tidy
+001 V tie
+002 N tiebreak
+002 N tiedye
+002 N tiein
+002 N tiepin
+001 N tier
+002 N tieup
+001 N tiff
+002 N tiffin
+002 N tiger
+003 N tigercat
+001 A tight
+002 V tighten
+002 A tightfisted
+002 A tightlipped
+002 N tightrope
+002 N tigress
+001 N tilde
+002 N tile
+002 N tiling
+001 V till
+002 N tillage
+002 N tiller
+001 V tilt
+001 N tilth
+002 N timber
+002 A timbered
+003 N timberline
+001 N timbre
+002 N timbrel
+001 N time
+004 A timehonoured
+004 N timekeeper
+003 N timelag
+003 A timeless
+004 N timelimit
+003 A timely
+003 N timepiece
+002 N timer
+003 A timeserved
+004 N timeserver
+003 N timeshare
+004 N timesharing
+003 V timeshift
+004 N timetable
+002 A timid
+002 N timing
+003 A timorous
+001 N tin
+002 N tincture
+002 N tinder
+003 N tinderbox
+001 N tine
+001 N ting
+001 V tinge
+002 V tingle
+002 N tinker
+002 V tinkle
+003 N tinnitus
+002 A tinny
+004 N tinopener
+002 N tinsel
+002 N tinsmith
+002 N tinsnips
+001 N tint
+002 N tintack
+006 N tintinnabulation
+002 A tiny
+001 V tip
+002 N tipoff
+002 N tipper
+002 N tippet
+002 V tipple
+002 N tipstaff
+002 N tipster
+002 A tipsy
+002 N tiptoe
+002 N tirade
+001 N tire
+001 A tired
+003 A tireless
+003 A tiresome
+002 N tiro
+002 N tissue
+004 N tissuepaper
+001 N tit
+002 N titan
+003 A titanic
+003 N titanium
+002 N titbit
+002 A titchy
+002 N titfer
+001 N tithe
+002 A titian
+003 V titillate
+003 V titivate
+002 N title
+001 A titled
+003 N titledeed
+004 N titleholder
+003 N titlepage
+002 N titmouse
+002 V titrate
+002 V titter
+002 N tittle
+004 N tittletattle
+002 V tittup
+003 A titular
+002 N tizzy
+002 N tjunction
+001 N toad
+002 N toadflax
+005 N toadinthehole
+002 N toadstool
+002 N toady
+001 N toast
+002 N toaster
+003 N toastingfork
+003 N toastmaster
+003 N tobacco
+004 N tobacconist
+003 N toboggan
+003 N toccata
+002 N tocsin
+001 N tod
+002 D today
+002 V toddle
+002 N toddler
+002 N toddy
+002 N todo
+001 N toe
+002 N toecap
+002 N toehold
+002 N toenail
+001 N toff
+002 N toffee
+004 N toffeeapple
+003 A toffeenosed
+002 N tofu
+001 N tog
+002 N toga
+003 D together
+004 N togetherness
+002 N toggle
+001 V toil
+002 N toilet
+003 N toiletry
+002 N toilette
+004 N toilettraining
+002 A toilsome
+002 N tokay
+002 N token
+003 N tokenism
+004 A tolerable
+003 N tolerance
+003 A tolerant
+003 V tolerate
+004 N toleration
+001 V toll
+002 N tollbridge
+002 N tollgate
+002 N tollroad
+002 N toluene
+001 N tom
+003 N tomahawk
+003 N tomato
+001 N tomb
+003 N tombola
+002 N tomboy
+002 N tombstone
+001 N tome
+002 N tomfool
+004 N tomfoolery
+002 N tommy
+003 N tommygun
+003 N tommyrot
+004 N tomography
+003 D tomorrow
+002 N tomtit
+002 N tomtom
+001 N ton
+002 A tonal
+004 N tonality
+001 N tone
+003 A tonedeaf
+002 N tongue
+004 N tongueandgroove
+004 A tongueincheek
+003 N tonguetie
+003 A tonguetied
+004 N tonguetwister
+002 N tonic
+002 D tonight
+002 N tonnage
+001 N tonne
+002 N tonsil
+005 N tonsillectomy
+004 N tonsillitis
+003 A tonsorial
+002 N tonsure
+001 D too
+001 N tool
+003 N toolmaker
+003 N toolpusher
+001 N toot
+001 N tooth
+002 N toothache
+002 N toothbrush
+002 N toothcomb
+002 N toothpaste
+002 N toothpick
+002 A toothsome
+002 A toothy
+002 V tootle
+002 N tootsy
+001 N top
+002 N topaz
+002 N topcoat
+002 V topdress
+001 V tope
+002 A topflight
+003 N topgallant
+003 A topheavy
+002 N topi
+003 A topiary
+002 N topic
+003 A topical
+002 N topknot
+002 A topless
+003 A toplevel
+002 N topmast
+002 A topnotch
+004 N topography
+004 N topology
+002 N topper
+002 A topping
+002 V topple
+002 N topsail
+002 N topside
+002 N topsoil
+002 N topspin
+004 D topsyturvy
+002 N topup
+002 N toque
+001 N tor
+001 N torch
+002 N torchlight
+003 N toreador
+002 N torment
+003 N tormentil
+003 N tornado
+003 N torpedo
+004 N torpedoboat
+002 A torpid
+002 N torpor
+002 N torque
+001 N torr
+002 N torrent
+002 A torrid
+002 N torsion
+002 N torso
+001 N tort
+003 N tortilla
+002 N tortoise
+004 N tortoiseshell
+003 A tortuous
+002 N torture
+002 N tory
+002 N tosa
+001 N tosh
+001 V toss
+002 N tossup
+001 V tot
+002 A total
+005 A totalitarian
+004 N totality
+005 N totalizator
+003 V totalize
+003 D totally
+001 V tote
+002 N totem
+004 N totempole
+002 A tother
+002 V totter
+003 N tottingup
+002 N toucan
+003 A touchandgo
+002 N touchdown
+002 A touching
+002 N touchline
+003 N touchpaper
+002 N touchstone
+002 V touchtype
+002 N touchwood
+002 A touchy
+001 A tough
+002 N toupee
+001 N tour
+002 N tourer
+002 N tourism
+002 N tourist
+003 A touristy
+003 N tourmaline
+003 N tournament
+003 N tournedos
+002 N tourney
+003 N tourniquet
+002 V tousle
+001 V tout
+001 N tow
+002 P toward
+002 N towbar
+002 N towel
+003 N towelling
+002 N tower
+002 A towheaded
+001 N town
+002 N townie
+002 N townscape
+002 N townsfolk
+002 N township
+002 N townsman
+002 N towpath
+003 N toxaemia
+003 N toxemia
+002 A toxic
+005 N toxicology
+002 N toxin
+004 N toxocara
+005 N toxocariasis
+001 N toy
+002 N toyshop
+001 N trace
+002 N tracer
+003 N tracery
+002 N trachea
+004 N tracheotomy
+002 N tracing
+004 N tracingpaper
+001 N track
+001 N tract
+003 A tractable
+002 N traction
+004 N tractionengine
+002 N tractor
+001 N trade
+002 N tradein
+002 N tradeoff
+002 N trader
+004 N tradescantia
+003 N tradesman
+002 N trading
+003 N tradingstamp
+003 N tradition
+004 A traditional
+005 N traditionalism
+002 V traduce
+002 N traffic
+003 N trafficlight
+003 N tragedian
+003 N tragedy
+002 A tragic
+005 N tragicomedy
+001 N trail
+003 N trailblazer
+002 N trailer
+001 V train
+003 N trainbearer
+002 N trainer
+002 N training
+003 N trainspotter
+001 N trait
+002 N traitor
+004 N trajectory
+001 N tram
+002 N trammel
+001 V tramp
+002 V trample
+003 N trampoline
+002 N tramway
+001 N trance
+002 N tranny
+002 A tranquil
+003 V tranquilize
+004 N tranquilizer
+003 V tranquillize
+004 N tranquillizer
+002 V transact
+003 N transaction
+003 A transalpine
+004 A transatlantic
+003 N transceiver
+002 V transcend
+003 A transcendent
+004 A transcendental
+005 N transcendentalism
+005 A transcontinental
+002 V transcribe
+002 N transcript
+003 N transducer
+002 N transept
+002 V transfer
+003 N transference
+005 N transfiguration
+003 V transfigure
+002 V transfix
+002 V transform
+003 N transformer
+002 V transfuse
+002 V transgress
+002 A transient
+003 N transistor
+004 V transistorize
+002 N transit
+003 N transition
+003 A transitive
+004 A transitory
+002 V translate
+004 V transliterate
+003 A translucent
+003 V transmigrate
+003 N transmission
+002 V transmit
+003 N transmitter
+004 V transmogrify
+002 V transmute
+004 A transoceanic
+002 N transom
+004 N transparency
+003 A transparent
+002 V transpire
+002 V transplant
+003 N transponder
+002 V transport
+004 N transportation
+003 N transporter
+002 V transpose
+003 N transputer
+002 V transship
+005 N transubstantiation
+004 A transuranic
+002 A transverse
+003 N transvestite
+001 N trap
+002 N trapdoor
+002 N trapeze
+003 N trapezium
+003 N trapezoid
+002 N trapper
+002 N trappist
+001 N trash
+003 N trattoria
+002 N trauma
+003 A traumatic
+002 V travel
+002 A traveled
+003 N traveler
+002 A travelled
+003 N traveller
+004 N travelogue
+003 A travelsick
+002 V traverse
+003 N travesty
+001 V trawl
+002 N trawler
+001 N tray
+003 A treacherous
+003 N treachery
+002 N treacle
+001 V tread
+002 N treadle
+002 N treadmill
+002 N treadwheel
+002 N treason
+004 A treasonable
+002 N treasure
+003 N treasurer
+003 N treasury
+001 V treat
+002 N treatise
+002 N treatment
+002 N treaty
+002 A treble
+001 N tree
+003 N treecreeper
+002 N treefern
+002 N treetop
+002 N trefoil
+002 N trellis
+003 N trematode
+002 V tremble
+002 N trembler
+002 A trembly
+003 A tremendous
+003 N tremolo
+002 N tremor
+003 A tremulous
+001 N trench
+002 A trenchant
+002 N trencher
+003 N trencherman
+001 N trend
+003 N trendsetter
+002 N trepan
+004 N trepidation
+002 V trespass
+001 N tress
+002 N trestle
+001 N triad
+001 N trial
+002 N triangle
+003 V triangulate
+002 N triathlon
+001 N tribe
+003 N tribesman
+004 N tribology
+004 N tribulation
+003 N tribunal
+002 N tribune
+004 N tributary
+002 N tribute
+001 N trice
+002 N triceps
+004 N triceratops
+004 N trichinosis
+004 N trichology
+004 A trichromatic
+001 N trick
+003 N trickery
+002 V trickle
+002 N trickster
+002 A tricksy
+002 A tricky
+003 N tricolor
+003 N tricolour
+002 N tricot
+003 N tricycle
+002 N trident
+003 A tridentine
+002 A triennial
+001 N trier
+002 N trifle
+002 A trifling
+003 N triforium
+001 N trig
+002 N trigger
+004 A triggerhappy
+005 N trigonometry
+001 N trike
+004 A trilateral
+002 N trilby
+003 A trilingual
+001 N trill
+002 N trillion
+003 N trilobite
+003 N trilogy
+001 V trim
+003 N trimaran
+003 N trimeter
+002 N trimming
+004 N trinitarian
+005 N trinitrotoluene
+003 N trinity
+002 N trinket
+001 N trio
+001 V trip
+003 A tripartite
+001 N tripe
+002 A triple
+002 N triplet
+002 A triplex
+003 A triplicate
+002 N tripod
+002 N tripos
+002 N tripper
+002 N triptych
+002 N tripwire
+002 N trireme
+002 V trisect
+001 A trite
+002 N tritium
+001 N triumph
+003 N triumphalism
+002 A triumphant
+003 N triumvirate
+003 A trivalent
+002 N trivet
+002 A trivial
+003 V trivialize
+002 N trochee
+003 N troglodyte
+002 N troika
+002 A trojan
+001 V troll
+002 N trolley
+002 N trollop
+002 N trombone
+003 N trompelil
+001 N troop
+002 N trooper
+002 N troopship
+001 N trope
+002 N trophy
+002 N tropic
+003 A tropical
+003 N troposphere
+001 V trot
+001 N troth
+002 N trotskyism
+002 N trotter
+003 N troubadour
+002 N trouble
+004 N troublemaker
+004 N troubleshooter
+003 A troublesome
+001 N trough
+001 V trounce
+001 N troupe
+002 N trouper
+003 N trousseau
+001 N trout
+001 N trove
+002 N trowel
+001 N troy
+001 N truant
+001 N truce
+001 N truck
+002 N trucker
+002 N truckle
+003 A truculent
+001 V trudge
+001 A true
+002 A trueblue
+002 N truelove
+002 N truffle
+001 N trug
+001 N truism
+002 D truly
+001 N trump
+003 N trumpery
+002 N trumpet
+003 N trumpetcall
+002 V truncate
+002 N truncheon
+002 V trundle
+001 N trunk
+001 N truss
+001 N trust
+002 N trustee
+002 A trustful
+002 A trusting
+003 A trustworthy
+002 A trusty
+001 N truth
+002 A truthful
+001 V try
+001 A trying
+001 N tryon
+002 N tryout
+001 N tryst
+001 N tsar
+001 N tsetse
+001 N tshirt
+001 N tsquare
+003 N tsunami
+001 N ttette
+001 N tub
+002 N tuba
+002 A tubby
+001 N tube
+002 N tuber
+003 N tubercle
+004 A tubercular
+004 N tuberculin
+005 A tuberculintested
+005 N tuberculosis
+003 N tuberose
+003 A tuberous
+002 N tubing
+003 N tubthumper
+003 A tubular
+003 N tubule
+001 V tuck
+002 N tucker
+002 N tuckin
+001 N tude
+002 A tudor
+002 N tuesday
+002 N tufa
+001 N tuff
+002 N tuffet
+001 N tuft
+001 V tug
+002 N tugboat
+002 N tuition
+002 N tulip
+003 N tuliptree
+002 N tulle
+001 N tum
+002 V tumble
+003 A tumbledown
+003 N tumbledrier
+002 N tumbler
+002 N tumbrel
+003 A tumescent
+002 A tumid
+002 N tummy
+004 N tummybutton
+002 N tumor
+002 N tumour
+002 N tumult
+004 A tumultuous
+003 N tumulus
+001 N tun
+002 N tuna
+002 N tundra
+001 N tune
+003 A tuneful
+003 A tuneless
+002 N tuner
+002 N tungsten
+002 N tunic
+003 N tuningfork
+002 N tunnel
+002 N tunny
+001 N tup
+002 N tupi
+002 N tuppence
+003 A tuppenny
+003 N tupperware
+002 N turban
+002 A turbid
+002 N turbine
+004 N turbocharger
+003 N turbofan
+003 N turbojet
+003 N turboprop
+002 N turbot
+003 A turbulent
+001 N turd
+002 N tureen
+001 N turf
+003 A turgescent
+002 A turgid
+001 N turk
+002 N turkey
+003 N turkeycock
+002 A turki
+002 A turkish
+003 N turmeric
+002 N turmoil
+001 V turn
+003 N turnabout
+003 N turnbuckle
+002 N turncoat
+002 N turner
+003 N turnery
+002 N turning
+004 N turningcircle
+003 N turningpoint
+002 N turnip
+003 N turniptop
+002 N turnkey
+002 N turnoff
+002 N turnon
+002 N turnout
+003 N turnover
+002 N turnpike
+002 N turnround
+003 N turnstile
+003 N turntable
+002 N turnup
+003 N turpentine
+003 N turpitude
+003 N turquoise
+002 N turret
+002 N turtle
+003 N turtledove
+003 N turtleneck
+002 N tuscan
+001 N tusk
+002 N tussle
+002 N tussock
+003 N tutelage
+004 A tutelary
+002 N tutor
+003 A tutorial
+004 N tuttifrutti
+002 N tutu
+001 N tux
+003 N tuxedo
+002 N twaddle
+001 A twain
+001 N twang
+001 N twat
+001 V tweak
+001 A twee
+001 N tweed
+002 A tweedy
+001 N tweet
+002 N tweeter
+001 A twelfth
+001 A twelve
+003 A twelvefold
+003 N twelvemonth
+002 A twenty
+001 N twerp
+001 D twice
+002 V twiddle
+001 V twig
+002 N twilight
+002 A twilit
+001 N twill
+001 N twin
+001 N twine
+003 A twinengined
+001 N twinge
+002 V twinkle
+001 V twirl
+001 V twist
+002 N twister
+001 V twit
+001 V twitch
+002 N twitcher
+002 V twitter
+001 A two
+005 A twodimensional
+001 A twoedged
+002 A twofaced
+002 A twofold
+002 A twohanded
+002 N twopence
+002 A twopiece
+002 A twoply
+002 N twosome
+002 N twostep
+002 V twotime
+002 A twotone
+002 A twoway
+002 N tycoon
+001 N tyke
+003 N tympanum
+002 N tynwald
+001 N type
+003 V typecast
+003 N typeface
+003 N typescript
+004 N typesetter
+004 N typewriter
+004 A typewritten
+002 N typhoid
+002 N typhoon
+002 N typhus
+003 A typical
+003 V typify
+002 N typist
+002 N typo
+004 N typography
+004 A tyrannical
+003 V tyrannize
+005 N tyrannosaurus
+003 N tyranny
+002 N tyrant
+001 N tyre
+002 A tyrian
+003 N tzatziki
+004 A ubiquitous
+002 N uboat
+002 N udder
+001 N ufo
+002 N ugli
+003 V uglify
+002 A ugly
+003 N ukrainian
+004 N ukulele
+002 N ulcer
+003 V ulcerate
+002 N ullage
+002 N ulna
+002 N ulster
+003 N ulsterman
+003 A ulterior
+003 A ultimate
+004 N ultimatum
+003 A ultimo
+003 A ultrahigh
+004 N ultramarine
+006 A ultramicroscopic
+004 A ultramontane
+004 A ultrasonic
+003 N ultrasound
+004 A ultraviolet
+003 V ululate
+002 N umbel
+005 A umbelliferous
+002 N umber
+004 A umbilical
+004 N umbilicus
+002 N umbra
+002 N umbrage
+003 N umbrella
+002 N umlaut
+002 N umpire
+003 A unabashed
+003 A unabated
+003 A unabridged
+005 A unacademic
+005 A unacceptable
+005 A unaccompanied
+004 A unaccomplished
+005 A unaccountable
+003 A unaccounted
+004 A unaccustomed
+004 A unacknowledged
+004 A unacquainted
+003 A unadopted
+003 A unadorned
+005 A unadulterated
+005 A unadventurous
+003 A unadvised
+003 A unaffected
+004 A unaffiliated
+003 A unafraid
+002 A unaided
+003 A unalike
+003 A unalloyed
+005 A unalterable
+003 A unaltered
+005 A unambiguous
+005 A unambitious
+005 A unamerican
+003 A unamused
+004 A unanimous
+003 A unannounced
+005 A unanswerable
+003 A unanswered
+005 A unanticipated
+004 A unappealing
+005 A unappetizing
+004 A unappreciated
+005 A unappreciative
+005 A unapproachable
+002 A unarmed
+003 A unashamed
+005 A unassailable
+004 A unassuming
+003 A unattached
+005 A unattainable
+003 A unattended
+004 A unattractive
+006 A unattributable
+004 A unauthorized
+005 A unavailable
+004 A unavailing
+005 A unavoidable
+003 A unaware
+003 D unawares
+003 A unbalanced
+002 V unban
+002 V unbar
+004 A unbearable
+004 A unbeatable
+003 A unbeaten
+004 A unbecoming
+003 A unbeknown
+003 N unbelief
+005 A unbelievable
+002 V unbend
+003 A unbending
+002 A unbiased
+003 A unbidden
+002 V unbind
+002 A unbleached
+003 A unblemished
+003 A unblinking
+002 V unblock
+003 A unblushing
+002 V unbolt
+002 A unborn
+003 V unbosom
+002 A unbound
+002 A unbounded
+004 A unbreakable
+004 A unbridgeable
+003 V unbridle
+003 A unbroken
+003 V unbuckle
+003 V unburden
+005 A unbusinesslike
+003 V unbutton
+004 A uncalledfor
+003 A uncanny
+002 A uncapped
+004 A uncaredfor
+003 A uncaring
+003 A unceasing
+003 A uncensored
+006 A unceremonious
+003 A uncertain
+002 V unchain
+005 A unchallengeable
+003 A unchallenged
+004 A unchangeable
+002 A unchanged
+003 A unchanging
+004 A unchaperoned
+006 A uncharacteristic
+005 A uncharitable
+002 A uncharted
+002 A unchecked
+004 A unchivalrous
+003 A unchristian
+002 A uncial
+004 A uncircumcised
+003 A uncivil
+004 A uncivilized
+002 A unclaimed
+002 V unclasp
+004 A unclassified
+002 N uncle
+002 A unclean
+002 A unclear
+002 V unclench
+002 V unclothe
+002 A unclouded
+003 A uncluttered
+002 V uncoil
+003 A uncoloured
+002 A uncombed
+005 A uncomfortable
+004 A uncommercial
+003 A uncommitted
+003 A uncommon
+006 A uncommunicative
+005 A uncompetitive
+004 A uncomplaining
+003 A uncompleted
+004 A uncomplicated
+006 A uncomplimentary
+005 A uncomprehending
+005 A uncompromising
+003 A unconcealed
+003 N unconcern
+005 A unconditional
+003 A unconfined
+003 A unconfirmed
+004 A uncongenial
+003 A unconnected
+005 A unconquerable
+005 A unconscionable
+004 A unconscious
+004 A unconsidered
+006 A unconstitutional
+003 A unconstrained
+005 A uncontaminated
+003 A uncontested
+005 A uncontrollable
+003 A uncontrolled
+005 A uncontroversial
+005 A unconventional
+003 A unconvinced
+004 A unconvincing
+002 A uncooked
+005 A uncooperative
+004 A uncoordinated
+002 V uncork
+005 A uncorroborated
+004 A uncountable
+003 V uncouple
+002 A uncouth
+003 V uncover
+004 A uncritical
+002 V uncross
+002 V uncrown
+002 N unction
+003 A unctuous
+004 A uncultivated
+002 A uncured
+002 V uncurl
+002 A uncut
+003 A undamaged
+002 A undated
+002 A undaunted
+003 V undeceive
+003 A undecided
+003 A undeclared
+003 A undefeated
+003 A undefended
+003 A undefined
+004 A undemanding
+005 A undemocratic
+005 A undemonstrative
+004 A undeniable
+002 P under
+004 V underachieve
+003 V underact
+003 A underage
+003 A underarm
+004 N underbelly
+003 V underbid
+004 N undercarriage
+003 V undercharge
+004 N underclothing
+003 N undercoat
+003 V undercook
+004 A undercover
+003 N undercroft
+004 N undercurrent
+003 V undercut
+005 A underdeveloped
+003 N underdog
+003 A underdone
+004 A underemployed
+005 V underestimate
+004 V underexpose
+002 A underfed
+003 N underfelt
+003 D underfoot
+003 A underfunded
+004 N undergarment
+003 V undergo
+004 N undergraduate
+003 D underground
+003 N undergrowth
+003 A underhand
+003 V underlay
+003 V underlie
+003 V underline
+003 N underling
+003 A undermanned
+004 A undermentioned
+003 V undermine
+003 P underneath
+004 A undernourished
+003 N underpart
+003 N underpass
+003 V underpay
+003 V underpin
+003 V underplay
+005 A underpopulated
+003 V underprice
+005 A underprivileged
+003 V underrate
+003 V underscore
+003 A undersea
+003 V underseal
+006 N undersecretary
+003 V undersell
+003 A undersexed
+003 N undershirt
+003 V undershoot
+003 A undershot
+003 N underside
+003 A undersigned
+003 A undersized
+003 N underskirt
+003 A underslung
+003 V underspend
+003 A understaffed
+003 V understand
+004 N understanding
+003 V understate
+003 N understeer
+004 A undersubscribed
+004 N undersurface
+003 V undertake
+004 N undertaker
+004 N undertaking
+003 N undertone
+003 N undertow
+003 A underused
+004 V undervalue
+003 N undervest
+004 A underwater
+003 N underwear
+003 A underweight
+003 V underwhelm
+003 N underworld
+003 V underwrite
+003 A undescended
+003 A undeserved
+004 A undeserving
+003 A undesigned
+005 A undesirable
+005 A undetectable
+003 A undetected
+004 A undetermined
+003 A undeterred
+004 A undeveloped
+005 A undifferentiated
+003 A undigested
+004 A undignified
+003 A undiluted
+004 A undiminished
+002 N undine
+005 A undiplomatic
+004 A undisciplined
+003 A undisclosed
+004 A undiscovered
+006 A undiscriminating
+003 A undisguised
+003 A undismayed
+003 A undisputed
+004 A undistinguished
+003 A undisturbed
+003 A undivided
+002 V undo
+002 N undoing
+002 A undone
+002 A undoubted
+002 A undreamed
+002 V undress
+002 A undressed
+004 A undrinkable
+002 A undue
+003 V undulate
+002 A undying
+002 A unearned
+002 V unearth
+003 A unearthly
+002 N unease
+003 A uneasy
+004 A uneatable
+003 A uneaten
+005 A uneconomic
+006 A uneconomical
+004 A unedifying
+003 A unedited
+004 A uneducated
+004 A unembarrassed
+005 A unemotional
+004 A unemphatic
+005 A unemployable
+003 A unemployed
+004 N unemployment
+004 A unencumbered
+003 A unending
+005 A unendurable
+004 A unenlightened
+005 A unenterprising
+005 A unenthusiastic
+004 A unenviable
+003 A unequal
+003 A unequaled
+003 A unequalled
+005 A unequivocal
+003 A unerring
+004 A unethical
+003 A uneven
+004 A uneventful
+003 A unexampled
+006 A unexceptionable
+005 A unexceptional
+004 A unexciting
+003 A unexpected
+003 A unexplained
+003 A unexplored
+003 A unexposed
+003 A unexpressed
+004 A unexpurgated
+003 A unfading
+003 A unfailing
+002 A unfair
+003 A unfaithful
+004 A unfamiliar
+005 A unfashionable
+003 V unfasten
+005 A unfathomable
+005 A unfavorable
+005 A unfavourable
+004 A unfeasible
+003 A unfeeling
+002 A unfeigned
+004 A unfertilized
+003 V unfetter
+002 A unfilled
+003 A unfinished
+002 A unfit
+002 A unfitted
+003 A unfitting
+002 V unfix
+003 A unflagging
+004 A unflappable
+004 A unflattering
+002 A unfledged
+003 A unflinching
+002 V unfold
+002 A unforced
+006 A unforeseeable
+004 A unforeseen
+005 A unforgettable
+005 A unforgivable
+004 A unforgiving
+002 A unformed
+004 A unforthcoming
+004 A unfortunate
+006 D unfortunately
+002 A unfounded
+002 V unfreeze
+003 A unfrequented
+003 A unfriendly
+002 V unfrock
+003 A unfulfilled
+003 A unfunny
+002 V unfurl
+003 A unfurnished
+003 A ungainly
+004 A ungenerous
+005 A ungentlemanly
+005 A ungetatable
+002 V ungird
+003 A ungodly
+005 A ungovernable
+004 A ungraceful
+004 A ungracious
+005 A ungrammatical
+004 A ungrateful
+002 A ungreen
+003 A ungrudging
+002 A unguarded
+002 N unguent
+003 A ungulate
+003 A unhallowed
+003 A unhampered
+002 V unhand
+003 A unhappy
+002 A unharmed
+003 V unharness
+003 A unhealthy
+002 A unheard
+002 A unheeded
+003 A unhelpful
+005 A unhesitating
+003 A unhindered
+002 V unhinge
+005 A unhistorical
+002 V unhitch
+003 A unholy
+002 V unhook
+004 A unhopedfor
+002 V unhorse
+003 A unhurried
+002 A unhurt
+004 A unhygienic
+005 A unicameral
+005 A unicellular
+003 N unicorn
+004 N unicycle
+005 A unidentified
+005 N unification
+003 A uniform
+003 V unify
+005 A unilateral
+006 N unilateralism
+006 A unimaginable
+006 A unimaginative
+003 A unimpaired
+005 A unimpeachable
+003 A unimpeded
+004 A unimportant
+003 A unimpressed
+004 A unimpressive
+003 A uninformed
+006 A uninhabitable
+004 A uninhabited
+004 A uninhibited
+004 A uninitiated
+003 A uninjured
+003 A uninspired
+004 A uninspiring
+005 A unintelligent
+006 A unintelligible
+003 A unintended
+005 A unintentional
+004 A uninterested
+005 A uninteresting
+004 A uninterrupted
+003 A uninvited
+004 A uninviting
+002 N union
+004 N unionbashing
+003 N unionist
+003 V unionize
+003 A unique
+003 A unisex
+003 N unison
+002 N unit
+004 N unitarian
+004 A unitary
+002 V unite
+003 N unity
+004 A univalent
+004 A universal
+003 N universe
+005 N university
+002 A unjust
+005 A unjustifiable
+004 A unjustified
+002 A unkempt
+002 A unkind
+002 V unknot
+004 A unknowable
+003 A unknowing
+002 A unknown
+003 A unlabeled
+003 A unlabelled
+002 V unlace
+003 A unladen
+004 A unladylike
+002 V unlatch
+003 A unlawful
+002 A unleaded
+002 V unlearn
+002 A unlearned
+002 V unleash
+003 A unleavened
+003 A unlettered
+003 A unlicensed
+002 A unlike
+004 A unlikely
+003 A unlimited
+002 A unlined
+002 A unlisted
+002 A unlit
+002 V unload
+002 V unlock
+004 A unlookedfor
+002 V unloose
+004 A unlovable
+002 A unloved
+004 A unlovely
+003 A unloving
+003 A unlucky
+002 A unmade
+002 V unmake
+002 V unman
+005 A unmanageable
+003 A unmanly
+002 A unmanned
+004 A unmannerly
+002 A unmarked
+003 A unmarried
+002 V unmask
+002 A unmatched
+005 A unmentionable
+004 A unmerciful
+003 A unmerited
+002 A unmet
+005 A unmethodical
+003 A unmindful
+004 A unmissable
+005 A unmistakable
+004 A unmitigated
+002 A unmixed
+004 A unmodified
+003 A unmoral
+002 A unmoved
+004 A unmusical
+004 A unnameable
+002 A unnamed
+004 A unnatural
+005 A unnecessary
+002 A unneeded
+002 V unnerve
+005 A unnoticeable
+003 A unnoticed
+003 A unnumbered
+006 A unobjectionable
+004 A unobservant
+003 A unobserved
+005 A unobtainable
+004 A unobtrusive
+004 A unoccupied
+004 A unofficial
+003 A unopened
+003 A unopposed
+004 A unorganized
+005 A unoriginal
+004 A unorthodox
+002 V unpack
+002 A unpaid
+002 A unpainted
+002 A unpaired
+005 A unpalatable
+004 A unparalleled
+005 A unpardonable
+006 A unparliamentary
+004 A unpasteurized
+004 A unpatriotic
+003 N unperson
+003 A unperturbed
+002 V unpick
+002 V unpin
+002 A unplaced
+002 A unplanned
+004 A unplayable
+003 A unpleasant
+003 A unpleasing
+002 V unplug
+002 A unplumbed
+002 A unpointed
+003 A unpolished
+005 A unpolitical
+004 A unpopular
+004 A unpopulated
+004 A unpractical
+003 A unpracticed
+003 A unpractised
+004 A unprecedented
+005 A unpredictable
+004 A unprejudiced
+005 A unpremeditated
+003 A unprepared
+005 A unprepossessing
+005 A unpretentious
+002 A unpriced
+003 A unprincipled
+004 A unprintable
+004 A unproductive
+005 A unprofessional
+005 A unprofitable
+004 A unprogressive
+004 A unpromising
+002 A unprompted
+005 A unpronounceable
+005 A unpropitious
+003 A unprotected
+004 A unprovable
+002 A unproved
+003 A unprovoked
+003 A unpublished
+003 A unpunctual
+003 A unpunished
+005 A unputdownable
+004 A unqualified
+004 A unquenchable
+005 A unquestionable
+003 A unquestioned
+004 A unquestioning
+003 A unquiet
+002 V unquote
+003 V unravel
+002 A unread
+004 A unreadable
+003 A unready
+002 A unreal
+004 A unrealistic
+005 A unrealizable
+003 A unrealized
+003 N unreason
+005 A unreasonable
+004 A unreasoning
+006 A unrecognizable
+004 A unrecognized
+003 A unrecorded
+003 A unredeemed
+002 V unreel
+003 A unrefined
+004 A unreflecting
+003 A unreformed
+005 A unregenerate
+004 A unregistered
+004 A unregulated
+003 A unrehearsed
+003 A unrelated
+004 A unrelenting
+004 A unreliable
+003 A unrelieved
+005 A unremarkable
+003 A unremarked
+004 A unremitting
+006 A unremunerative
+005 A unrepeatable
+004 A unrepentant
+006 A unrepresentative
+004 A unrepresented
+003 A unrequited
+003 A unreserved
+004 A unresisting
+003 A unresolved
+004 A unresponsive
+002 N unrest
+003 A unrestrained
+003 A unrestricted
+003 A unrewarded
+004 A unrewarding
+004 A unrighteous
+002 A unripe
+003 A unrivaled
+003 A unrivalled
+002 V unroll
+004 A unromantic
+002 A unruffled
+003 A unruly
+003 V unsaddle
+002 A unsafe
+002 A unsaid
+004 A unsaleable
+002 A unsalted
+006 A unsatisfactory
+004 A unsatisfied
+004 A unsatisfying
+004 A unsaturated
+004 A unsavory
+004 A unsavoury
+002 V unsay
+004 A unscalable
+002 A unscarred
+002 A unscathed
+003 A unscheduled
+002 A unschooled
+004 A unscientific
+003 V unscramble
+002 A unscreened
+002 V unscrew
+002 A unscripted
+004 A unscrupulous
+002 V unseal
+005 A unseasonable
+004 A unseasonal
+002 V unseat
+002 A unseeded
+003 A unseeing
+003 A unseemly
+002 A unseen
+005 A unselfconscious
+003 A unselfish
+005 A unsentimental
+003 V unsettle
+002 A unsettled
+002 V unsex
+003 V unshackle
+004 A unshakeable
+003 A unshaken
+003 A unshaven
+002 V unsheathe
+004 A unshockable
+003 A unshrinking
+002 A unsighted
+003 A unsightly
+002 A unsigned
+004 A unsinkable
+003 A unskilful
+002 A unskilled
+003 A unskillful
+002 A unsliced
+003 A unsmiling
+002 A unsmoked
+004 A unsociable
+003 A unsocial
+002 A unsoiled
+002 A unsold
+004 A unsolicited
+002 A unsolved
+005 A unsophisticated
+002 A unsorted
+002 A unsought
+002 A unsound
+003 A unsparing
+004 A unspeakable
+004 A unspecific
+004 A unspecified
+005 A unspectacular
+002 A unspoiled
+003 A unspoken
+003 A unsporting
+004 A unsportsmanlike
+003 A unstable
+002 A unstained
+002 A unstated
+003 A unsteady
+002 V unstick
+002 A unstinted
+003 A unstinting
+002 V unstitch
+002 V unstop
+004 A unstoppable
+002 V unstrap
+002 A unstressed
+002 V unstring
+003 A unstructured
+003 A unstudied
+004 A unsubstantial
+004 A unsubstantiated
+003 A unsubtle
+004 A unsuccessful
+004 A unsuitable
+002 A unsuited
+003 A unsullied
+002 A unsung
+004 A unsupervised
+003 A unsupported
+002 A unsure
+003 A unsurpassed
+003 A unsurprised
+004 A unsurprising
+004 A unsuspecting
+005 A unsustainable
+003 A unsweetened
+002 A unswept
+003 A unswerving
+005 A unsymmetrical
+005 A unsympathetic
+005 A unsystematic
+002 A untainted
+003 A untalented
+004 A untameable
+002 A untamed
+003 V untangle
+002 A untapped
+003 A untarnished
+002 A untaught
+002 A untaxed
+004 A unteachable
+004 A untenable
+002 A untested
+003 V untether
+004 A unthinkable
+003 A unthinking
+002 V unthread
+002 V unthrone
+003 A untidy
+002 V untie
+002 P until
+004 A untimely
+003 A untiring
+002 A untitled
+002 P unto
+002 A untold
+004 A untouchable
+002 A untouched
+003 A untoward
+004 A untraceable
+002 A untrained
+003 A untrammelled
+005 A untranslatable
+002 A untreated
+002 A untried
+002 A untroubled
+002 A untrue
+004 A untrustworthy
+002 N untruth
+003 A untruthful
+002 V untuck
+002 A unturned
+003 A untutored
+002 V untwine
+002 V untwist
+004 A unusable
+002 A unused
+003 A unusual
+005 A unutterable
+003 A unvarnished
+003 A unvarying
+002 V unveil
+004 A unverified
+002 A unversed
+003 A unviable
+002 A unvoiced
+002 A unwaged
+002 A unwanted
+005 A unwarrantable
+003 A unwarranted
+003 A unwary
+002 A unwashed
+004 A unwavering
+002 A unweaned
+003 A unwearying
+003 A unwelcome
+002 A unwell
+004 A unwholesome
+003 A unwieldy
+003 A unwilling
+002 V unwind
+003 A unwinking
+002 A unwise
+002 A unwished
+003 A unwitting
+002 A unwonted
+004 A unworkable
+004 A unworkmanlike
+003 A unworldly
+002 A unworn
+003 A unworried
+003 A unworthy
+002 V unwrap
+003 A unwritten
+004 A unyielding
+002 V unzip
+001 D up
+004 A upandcoming
+004 A upandover
+002 N upbeat
+002 V upbraid
+003 N upbringing
+003 D upcountry
+002 A upcurved
+002 V update
+002 V upend
+002 D upfield
+002 V upgrade
+003 N upheaval
+002 D uphill
+002 V uphold
+003 V upholster
+004 N upholsterer
+004 N upholstery
+002 N upkeep
+002 N upland
+002 V uplift
+003 A upmarket
+002 P upon
+002 N upper
+003 N uppercut
+003 A uppermost
+002 A uppish
+003 A uppity
+002 A upright
+003 N uprising
+002 N uproar
+004 A uproarious
+002 V uproot
+002 N uprush
+002 V upset
+002 N upshot
+003 N upsilon
+002 A upstage
+002 D upstairs
+003 A upstanding
+002 N upstart
+002 D upstream
+002 N upstroke
+002 N upsurge
+002 A upswept
+002 N upswing
+002 N uptake
+002 N upthrust
+002 A uptight
+002 N upturn
+002 D upward
+003 D upwardly
+002 A upwind
+003 N uranium
+002 A urban
+002 A urbane
+003 V urbanize
+002 N urchin
+002 N urdu
+002 N urea
+003 N ureter
+003 N urethra
+001 V urge
+002 A urgent
+002 A uric
+003 N urinal
+004 A urinary
+003 V urinate
+002 N urine
+001 N urn
+005 A urogenital
+004 N urology
+002 A ursine
+003 A usable
+002 N usage
+001 V use
+003 A useful
+003 A useless
+002 N user
+004 A userfriendly
+002 N usher
+003 N usherette
+002 A usual
+003 N usurer
+002 V usurp
+003 N usury
+003 N utensil
+003 A uterine
+003 N uterus
+005 A utilitarian
+006 N utilitarianism
+004 N utility
+003 V utilize
+003 N utopia
+002 V utter
+003 N utterance
+002 N uturn
+001 N uvre
+003 N uvula
+003 A uxorial
+004 A uxorious
+001 N vac
+003 N vacancy
+002 A vacant
+002 V vacate
+003 N vacation
+003 V vaccinate
+002 N vaccine
+003 V vacillate
+003 N vacuole
+003 A vacuous
+002 N vacuum
+003 A vacuumpacked
+004 N vademecum
+003 N vagabond
+003 N vagary
+003 N vagina
+002 N vagrant
+002 A vague
+001 A vain
+003 N vainglory
+002 N valance
+002 N vale
+004 N valediction
+003 N valency
+003 N valentine
+003 N valerian
+002 N valet
+006 N valetudinarian
+002 A valiant
+002 A valid
+003 V validate
+002 N valise
+002 N valium
+002 N valley
+002 N valor
+002 N valour
+003 A valuable
+003 N valuation
+002 N value
+001 N valve
+002 V vamoose
+002 N vampire
+001 N van
+003 N vanadium
+002 N vandal
+003 V vandalize
+001 N vane
+002 N vanguard
+003 N vanilla
+002 V vanish
+004 N vanishingpoint
+003 N vanity
+002 V vanquish
+002 N vantage
+002 A vapid
+002 N vapor
+003 V vaporize
+002 N vapour
+003 A variable
+002 N variance
+002 A variant
+003 N variation
+004 A varicolored
+004 A varicoloured
+003 A varicose
+002 A varied
+003 A variegated
+003 N variety
+003 A various
+002 N varlet
+002 N varnish
+003 N varsity
+002 V vary
+001 N vas
+003 A vascular
+001 N vase
+004 N vasectomy
+003 N vaseline
+002 N vassal
+001 A vast
+001 N vat
+003 N vatican
+004 N vaudeville
+001 N vault
+002 N vaulting
+003 N vaultinghorse
+001 V vaunt
+001 N veal
+002 N vector
+002 N veda
+001 V veer
+001 N veg
+002 N vegan
+004 N vegetable
+003 A vegetal
+004 N vegetarian
+003 V vegetate
+004 N vegetation
+004 A vegetative
+002 N veggie
+003 A vehement
+003 N vehicle
+001 N veil
+001 N vein
+002 N velcro
+001 N veld
+003 N veleta
+002 N vellum
+004 N velocity
+003 N velodrome
+002 N velour
+002 N velvet
+003 N velveteen
+002 A venal
+001 V vend
+003 N vendetta
+004 N vendingmachine
+002 N vendor
+002 N veneer
+004 A venerable
+003 V venerate
+003 A venereal
+003 N venetian
+002 N vengeance
+003 A vengeful
+002 A venial
+003 N venison
+002 N venom
+002 A venous
+001 N vent
+003 V ventilate
+004 N ventilator
+002 A ventral
+003 N ventricle
+004 N ventriloquism
+002 N venture
+004 A venturesome
+002 N venue
+004 A veracious
+003 N veranda
+001 N verb
+002 A verbal
+003 V verbalize
+003 D verbatim
+003 N verbena
+002 N verbiage
+002 A verbose
+002 A verdant
+002 N verdict
+003 N verdigris
+002 N verdure
+001 V verge
+002 N verger
+003 V verify
+003 D verily
+006 N verisimilitude
+004 A veritable
+003 N verity
+004 N vermicelli
+003 N vermicide
+004 N vermiculite
+003 A vermiform
+003 N vermilion
+002 N vermin
+002 N vermouth
+004 N vernacular
+002 A vernal
+002 N vernier
+003 N veronal
+004 N veronica
+003 N verruca
+004 A versatile
+001 N verse
+001 A versed
+003 N versicle
+003 V versify
+002 N version
+002 N verso
+003 N vertebra
+003 A vertebrate
+002 N vertex
+003 A vertical
+004 A vertiginous
+003 N vertigo
+002 N vervain
+001 N verve
+002 D very
+003 N vesicle
+002 N vessel
+001 N vest
+004 N vestibule
+002 N vestige
+002 N vestment
+002 N vestry
+001 N vet
+001 N vetch
+003 N veteran
+005 N veterinarian
+005 A veterinary
+002 N veto
+001 V vex
+003 N vexation
+004 A vexatious
+001 A vexed
+001 P via
+002 A viable
+002 N viaduct
+001 N vial
+001 N viand
+003 N viaticum
+002 A vibrant
+003 N vibraphone
+002 V vibrate
+003 N vibration
+003 N vibrato
+003 N vibrator
+003 N viburnum
+002 N vicar
+003 N vicarage
+004 A vicarious
+005 N vicechancellor
+005 N vicepresident
+004 A viceregal
+003 N vicereine
+003 N viceroy
+003 N vichyssoise
+004 N vicinity
+003 A vicious
+004 N vicissitude
+002 N victim
+003 V victimize
+002 N victor
+003 A victorian
+004 A victorious
+003 N victory
+002 N victual
+003 N victualer
+003 N victualler
+002 N vicua
+001 V vide
+004 D videlicet
+002 A video
+003 N videodisc
+003 N videotape
+003 N videotex
+001 V vie
+003 A vietnamese
+001 N view
+003 N viewdata
+002 N viewer
+003 N viewfinder
+002 N viewpoint
+002 N vigil
+003 N vigilance
+003 N vigilante
+002 N vignette
+002 N vigor
+002 N viking
+002 A vile
+003 V vilify
+002 N villa
+002 N village
+002 N villain
+003 A villainous
+003 N villainy
+002 N villein
+001 N vim
+003 N vinaigrette
+003 V vindicate
+003 A vindictive
+001 N vine
+003 N vinegar
+003 N vineyard
+003 N vingtetun
+002 N vino
+002 A vinous
+002 N vintage
+002 N vintner
+002 N vinyl
+001 N viol
+002 N viola
+002 V violate
+002 N violence
+002 A violent
+002 N violet
+002 N violin
+002 N violist
+004 N violoncello
+002 N viper
+003 N virago
+002 A viral
+002 N virgin
+003 A virginal
+004 N virginity
+002 N virgo
+003 A virile
+004 N virology
+002 A virtual
+003 D virtually
+002 N virtue
+003 N virtuoso
+003 A virtuous
+003 A virulent
+002 N virus
+002 N visa
+002 N visage
+003 A visceral
+002 A viscid
+002 N viscose
+002 N viscount
+003 N viscountess
+002 A viscous
+001 N vise
+005 N visibility
+003 A visible
+002 N vision
+004 A visionary
+002 V visit
+003 N visitant
+004 N visitation
+003 N visitor
+002 N visor
+002 N vista
+002 A visual
+003 V visualize
+002 A vital
+004 N vitality
+003 V vitalize
+003 N vitamin
+004 V vitaminize
+002 V vitiate
+004 N viticulture
+003 A vitreous
+003 V vitrify
+002 N vitriol
+003 A vitriolic
+004 V vituperate
+002 D vivace
+004 A vivacious
+003 N vivarium
+002 A vivid
+003 V vivify
+004 A viviparous
+003 V vivisect
+004 N vivisection
+002 N vixen
+002 N vizier
+001 N vneck
+003 N vocable
+005 N vocabulary
+002 A vocal
+003 N vocalist
+003 V vocalize
+003 N vocation
+004 V vociferate
+004 A vociferous
+002 N vodka
+002 N vogue
+001 N voice
+003 N voicebox
+003 A voiceless
+003 N voiceover
+001 A void
+002 N voile
+004 A volatile
+004 V volatilize
+003 N volauvent
+003 A volcanic
+003 N volcano
+002 N vole
+003 N volition
+002 N volley
+003 N volleyball
+001 N volt
+002 N voltage
+003 N volteface
+003 N voltmeter
+003 A voluble
+002 N volume
+004 A volumetric
+004 A voluminous
+004 A voluntary
+003 N volunteer
+004 N voluptuary
+004 A voluptuous
+002 N volute
+002 V vomit
+002 N voodoo
+004 A voracious
+002 N vortex
+003 N vorticist
+003 N votary
+001 N vote
+002 N voter
+002 A votive
+001 V vouch
+002 N voucher
+002 V vouchsafe
+001 N vow
+002 N vowel
+002 N voyage
+002 N voyeur
+001 N vsign
+003 N vulcanite
+003 V vulcanize
+005 N vulcanology
+002 A vulgar
+003 N vulgarian
+003 N vulgarism
+004 N vulgarity
+003 V vulgarize
+002 N vulgate
+004 A vulnerable
+002 A vulpine
+002 N vulture
+002 N vulva
+002 A wacky
+001 N wad
+002 N wadding
+002 V waddle
+001 V wade
+002 N wader
+002 N wadi
+002 N wafer
+003 A waferthin
+002 N waffle
+003 N waffleiron
+001 V waft
+001 N wag
+001 N wage
+001 A waged
+004 N wageearner
+002 N wager
+002 A waggish
+002 V waggle
+002 A waggly
+002 N wagon
+003 N wagoner
+003 N wagonload
+002 N wagtail
+001 N waif
+001 N wail
+001 N wain
+002 N wainscot
+003 N wainscoting
+001 N waist
+002 N waistband
+002 N waistcoat
+002 A waistdeep
+002 N waistline
+001 V wait
+002 N waiter
+003 N waitinglist
+003 N waitingroom
+002 N waitress
+001 V waive
+002 N waiver
+001 N wake
+003 A wakeful
+002 V waken
+002 N wale
+001 V walk
+003 N walkabout
+002 N walker
+004 N walkietalkie
+002 N walking
+003 N walkingstick
+002 N walkman
+002 N walkon
+002 N walkout
+003 N walkover
+002 N walkway
+001 N wall
+003 N wallaby
+002 N wallah
+002 N wallet
+003 N walleye
+003 N wallflower
+002 N walloon
+002 V wallow
+003 N wallpaper
+003 A walltowall
+002 N wally
+002 N walnut
+002 N walrus
+001 N waltz
+002 N wampum
+001 A wan
+001 N wand
+002 V wander
+003 N wanderlust
+001 V wane
+002 N wanker
+002 N wannabe
+001 V want
+002 A wanting
+002 A wanton
+003 N wapiti
+001 N war
+002 V warble
+002 N warbler
+001 N ward
+002 N warden
+002 N warder
+002 N wardrobe
+002 N wardroom
+002 N wardship
+001 N ware
+003 N warehouse
+002 N warfare
+002 N wargame
+002 N warhead
+002 N warhorse
+002 A warlike
+002 N warlock
+002 N warlord
+001 A warm
+002 A warmblooded
+002 A warmhearted
+003 N warmingpan
+003 N warmonger
+002 N warmup
+001 V warn
+002 N warning
+001 V warp
+002 N warpaint
+002 N warpath
+002 N warrant
+005 N warrantofficer
+003 N warranty
+002 N warren
+002 N warrior
+002 N warship
+001 N wart
+002 N warthog
+002 N wartime
+002 A wary
+001 V wash
+003 N washbasin
+002 N washboard
+002 N washer
+003 N washerup
+004 N washerwoman
+002 N washing
+004 N washingmachine
+004 N washingpowder
+004 N washingsoda
+003 N washingup
+002 N washout
+002 N washroom
+002 N washstand
+002 A washy
+001 N wasp
+002 A waspish
+002 N waspwaist
+002 N wastage
+001 V waste
+003 A wasteful
+003 N wasteland
+002 N waster
+002 N wastrel
+001 V watch
+002 N watchdog
+002 A watchful
+003 N watchmaker
+002 N watchman
+003 N watchtower
+002 N watchword
+002 N water
+002 N waterbed
+004 N waterbiscuit
+005 N waterbuffalo
+004 N watercannon
+004 N watercarrier
+003 N waterclock
+004 N watercloset
+004 N watercolor
+004 N watercolour
+003 A watercooled
+003 N watercourse
+003 N watercress
+005 N waterdiviner
+003 N waterfall
+003 N waterfowl
+003 N waterfront
+003 N waterglass
+004 N waterhammer
+004 N waterhole
+003 N waterice
+004 N wateringcan
+005 N wateringhole
+004 N wateringplace
+004 N waterlevel
+003 N waterline
+003 A waterlogged
+003 N waterloo
+003 N waterman
+003 N watermark
+004 N watermeadow
+003 N watermill
+004 N waterpistol
+004 N waterpower
+003 A waterproof
+002 N watershed
+003 N waterside
+003 N waterski
+005 N watersoftener
+003 N waterspout
+003 A watertight
+004 N watertower
+004 N watervole
+003 N waterway
+003 N waterwheel
+003 N waterworks
+003 A watery
+001 N watt
+002 N wattage
+002 N watthour
+002 N wattle
+001 V wave
+003 N waveband
+003 N waveform
+003 N wavelength
+003 N wavelet
+002 V waver
+002 A wavy
+001 V wax
+002 A waxen
+002 N waxwing
+002 N waxwork
+001 N way
+002 N waybill
+003 N wayfarer
+002 V waylay
+002 A wayout
+002 N wayside
+002 A wayward
+001 A weak
+002 V weaken
+002 A weakkneed
+002 N weakling
+002 D weakly
+002 A weakminded
+002 N weakness
+001 N weal
+001 N wealth
+002 A wealthy
+001 V wean
+002 N weapon
+003 N weaponry
+001 V wear
+003 A wearisome
+002 A weary
+002 N weasel
+002 N weather
+004 A weatherbeaten
+003 N weatherboard
+003 N weathercock
+003 N weatherman
+003 A weatherproof
+003 N weathervane
+001 V weave
+002 N weaver
+001 N web
+002 N webbing
+002 N weber
+002 A webfooted
+002 N wedding
+001 N wedge
+002 N wedgwood
+002 N wedlock
+003 N wednesday
+001 N wee
+001 N weed
+003 N weedkiller
+002 A weedy
+001 N week
+002 N weekday
+002 N weekend
+003 N weekender
+002 A weekly
+002 A weeny
+001 V weep
+002 N weepie
+002 A weepy
+002 N weevil
+001 N weft
+001 V weigh
+002 N weighbridge
+002 N weighin
+001 N weight
+002 N weighting
+002 A weightless
+003 N weightlifting
+002 A weighty
+001 N weir
+001 A weird
+002 N weirdo
+002 N welcome
+001 V weld
+002 N welfare
+002 N welkin
+003 A welladjusted
+003 A welladvised
+003 A wellappointed
+003 A wellattended
+003 A wellbalanced
+003 A wellbehaved
+002 N wellbeing
+002 A wellborn
+001 A wellbred
+002 A wellbuilt
+003 A wellconnected
+003 A welldisposed
+002 A welldressed
+002 A wellearned
+002 A wellfounded
+002 A wellgroomed
+002 N wellhead
+002 A wellheeled
+003 A wellinformed
+003 N wellington
+004 A wellintentioned
+002 A welljudged
+002 A wellkept
+002 A wellknown
+002 A wellmade
+003 A wellmannered
+003 A wellmeaning
+002 D wellnigh
+002 A welloiled
+002 A wellpaid
+003 A wellpreserved
+002 A wellread
+003 A wellreceived
+002 A wellrounded
+003 A wellspoken
+002 N wellspring
+003 A welltodo
+002 A welltried
+003 A welltrodden
+003 N wellwisher
+002 A wellworn
+001 V welsh
+002 N welshman
+003 N welshwoman
+001 N welt
+002 N welter
+003 N welterweight
+001 N wen
+001 N wench
+001 V wend
+003 N werewolf
+003 A wesleyan
+001 N west
+002 A westbound
+003 A westering
+003 A westerly
+002 A western
+003 N westerner
+003 V westernize
+003 N westnorthwest
+003 N westsouthwest
+002 A westward
+001 A wet
+002 N wether
+002 N wetland
+002 N wetnurse
+002 N whale
+003 N whalebone
+003 N whaleoil
+002 N whaler
+001 N wharf
+002 N wharfage
+001 Q what
+003 A whatever
+002 N whatnot
+003 A whatsoever
+001 N wheat
+002 N wheatear
+002 A wheaten
+002 N wheatmeal
+002 V wheedle
+001 N wheel
+003 N wheelbarrow
+002 N wheelbase
+002 N wheelchair
+002 N wheelclamp
+004 N wheelerdealer
+002 N wheelhouse
+002 N wheelie
+002 N wheelspin
+002 N wheelwright
+001 V wheeze
+001 N whelk
+001 V whelm
+001 N whelp
+001 Q when
+001 Q where
+003 D wherefore
+003 D wherever
+004 N wherewithal
+002 N wherry
+001 V whet
+002 N whetstone
+001 N whey
+003 A whichever
+001 N whiff
+001 N whig
+002 N while
+001 D whilst
+001 N whim
+002 V whimper
+003 A whimsical
+002 N whimsy
+001 N whin
+002 N whinchat
+001 N whine
+001 V whinge
+002 N whinny
+001 N whip
+002 N whipcord
+002 N whiplash
+003 N whipperin
+004 N whippersnapper
+002 N whippet
+003 N whippingtop
+003 N whippoorwill
+002 N whipround
+002 N whipstock
+001 V whirl
+003 N whirligig
+002 N whirlpool
+002 N whirlwind
+001 N whirr
+001 V whisk
+002 N whisker
+002 N whiskey
+002 N whisky
+002 V whisper
+001 N whist
+002 N whistle
+003 N whistlestop
+001 N whit
+001 A white
+003 N whitebait
+003 N whitehead
+002 V whiten
+003 N whiteout
+003 N whitewash
+003 N whitewood
+002 N whiting
+002 N whitlow
+002 N whitsun
+003 N whitsuntide
+002 V whittle
+002 N whizkid
+003 N whodunit
+002 A whole
+003 N wholefood
+003 A wholehearted
+003 N wholemeal
+004 N wholesale
+003 A wholesome
+003 N wholewheat
+002 D wholly
+001 N whoop
+001 V whop
+002 N whopper
+002 A whopping
+001 N whore
+003 N whorehouse
+001 N whorl
+004 N whortleberry
+001 D why
+001 N wick
+001 A wicked
+002 N wicker
+003 N wickerwork
+002 N wicket
+004 N wicketkeeper
+003 D widdershins
+001 A wide
+003 A wideeyed
+003 D widely
+002 V widen
+003 A widespread
+002 N widgeon
+002 N widow
+003 N widower
+001 N width
+001 V wield
+001 N wife
+001 N wig
+002 N wigging
+001 N wight
+002 N wigwam
+001 A wild
+002 N wildcat
+003 N wildebeest
+003 N wilderness
+002 N wildfire
+002 N wildfowl
+002 N wildlife
+002 N wile
+002 A wilful
+001 N will
+002 A willful
+002 A willing
+004 N willothewisp
+002 N willow
+003 N willowherb
+004 N willowpattern
+004 N willowwarbler
+003 A willowy
+003 N willpower
+002 N willy
+004 D willynilly
+001 V wilt
+002 A wily
+001 N wimp
+002 N wimple
+001 V win
+001 N wince
+002 N wincey
+003 N winceyette
+001 N winch
+001 V wind
+002 N windbag
+002 N windbreak
+002 N windburn
+003 N windcheater
+002 N windcone
+002 N winddown
+002 N winder
+002 N windfall
+003 N windingsheet
+003 N windjammer
+002 N windlass
+002 N windmill
+002 N window
+003 N windowbox
+004 N windowdressing
+003 N windowpane
+003 N windowseat
+003 V windowshop
+003 N windowsill
+002 N windpipe
+002 N windscreen
+002 N windshield
+002 N windsock
+003 N windsurfing
+002 A windswept
+003 N windtunnel
+002 N windup
+002 A windward
+002 A windy
+001 N wine
+004 N winebibber
+003 N wineglass
+003 N winepress
+001 N wing
+002 N wingcase
+002 N wingchair
+003 N wingcollar
+002 N winger
+002 N wingnut
+002 N wingspan
+001 V wink
+002 N winkle
+004 N winklepicker
+002 N winner
+002 A winning
+003 N winningpost
+002 V winnow
+002 N wino
+002 A winsome
+002 N winter
+003 N wintergreen
+003 N wintertime
+002 A wintry
+002 A winy
+001 V wipe
+002 N wiper
+001 N wire
+003 A wirehaired
+003 N wireless
+004 N wiretapping
+003 N wireworm
+002 N wiring
+002 A wiry
+002 N wisdom
+001 N wise
+002 N wiseacre
+002 N wisent
+001 V wish
+002 N wishbone
+002 A wishful
+004 N wishfulfilment
+003 N wishingwell
+004 A wishywashy
+001 N wisp
+003 N wisteria
+002 A wistful
+001 N wit
+001 N witch
+002 N witchcraft
+003 N witchdoctor
+003 N witchery
+003 N witchhazel
+002 N witchhunt
+001 P with
+002 V withdraw
+003 N withdrawal
+001 N withe
+002 V wither
+002 V withhold
+002 D within
+002 P without
+002 V withstand
+002 A witless
+002 N witness
+003 N witnessbox
+002 V witter
+003 N witticism
+003 D wittingly
+002 A witty
+002 N wizard
+002 A wizened
+001 N woad
+002 V wobble
+002 A wobbly
+001 N wodge
+001 N woe
+003 A woebegone
+002 A woeful
+001 N wog
+002 N woggle
+001 N wok
+001 N wold
+001 N wolf
+002 N wolfhound
+002 N wolfram
+002 N wolfsbane
+003 N wolfwhistle
+003 N wolverine
+002 N woman
+003 N womanhood
+003 A womanish
+003 V womanize
+003 N womankind
+003 A womanly
+001 N womb
+002 N wombat
+003 N womenfolk
+002 N wonder
+003 A wonderful
+003 N wonderland
+003 N wonderment
+002 A wonky
+001 V woo
+001 N wood
+002 N woodbine
+002 N woodchuck
+002 N woodcock
+002 N woodcraft
+002 N woodcut
+003 N woodcutter
+001 A wooded
+002 A wooden
+002 N woodland
+002 N woodlouse
+002 N woodman
+003 N woodpecker
+003 N woodpigeon
+003 N woodpile
+002 N woodruff
+001 N woodshed
+002 N woodwind
+002 N woodwork
+002 N woodworm
+002 A woody
+002 N woodyard
+001 N woof
+002 N woofer
+001 N wool
+004 N woolgathering
+002 A woolly
+002 N woolsack
+002 A woozy
+001 N wop
+001 N word
+003 N wordblindness
+002 N wordgame
+002 N wording
+003 A wordperfect
+002 N wordplay
+002 A wordy
+001 N work
+003 A workable
+003 A workaday
+004 N workaholic
+003 N workbasket
+002 N workbench
+002 N workbook
+002 N workbox
+002 N workday
+002 N worker
+002 N workforce
+002 N workhouse
+002 N workload
+002 N workman
+003 A workmanlike
+003 N workmanship
+002 N workmate
+002 N workout
+002 N workpiece
+002 N workplace
+002 N workroom
+002 N worksheet
+002 N workshop
+002 A workshy
+003 N workstation
+002 N worktop
+004 N worktorule
+001 N world
+003 N worldbeater
+002 A worldclass
+003 A worldfamous
+002 A worldly
+003 A worldlywise
+003 A worldweary
+002 A worldwide
+001 N worm
+002 N wormcast
+003 A wormeaten
+003 N wormhole
+002 N wormwood
+002 A wormy
+003 A worrisome
+002 V worry
+001 A worse
+002 V worsen
+002 N worship
+003 A worshipful
+001 A worst
+001 N worsted
+001 N wort
+002 A worthless
+003 A worthwhile
+001 N wound
+001 N wow
+001 N wrack
+001 N wraith
+002 N wrangle
+001 V wrap
+003 A wraparound
+002 N wrapper
+002 N wrapping
+001 N wrasse
+001 N wrath
+002 A wrathful
+001 V wreak
+001 N wreath
+001 V wreathe
+001 N wreck
+002 N wreckage
+002 N wrecker
+001 N wren
+001 N wrench
+001 V wrest
+002 N wrestle
+001 N wretch
+001 A wretched
+002 V wriggle
+001 N wright
+001 V wring
+002 N wringer
+002 A wringing
+002 N wrinkle
+002 A wrinkly
+001 N wrist
+002 N wristlet
+002 N wristwatch
+001 N writ
+001 V write
+002 N writeoff
+002 N writer
+002 N writeup
+001 V writhe
+002 N writing
+003 N writingdesk
+004 N writingpaper
+001 A wrong
+002 N wrongdoer
+002 V wrongfoot
+002 A wrongful
+002 A wrongheaded
+001 A wry
+002 N wryneck
+004 A wykehamist
+003 A wysiwyg
+002 N xenon
+004 N xenophobia
+004 N xerography
+002 N xerox
+001 N xi
+001 N xmas
+001 N xray
+002 N xylem
+003 N xylophone
+001 N yacht
+002 N yachtsman
+002 N yahoo
+002 N yahweh
+001 N yak
+001 N yam
+001 N yang
+001 V yank
+002 N yankee
+001 V yap
+003 N yarborough
+001 N yard
+002 N yardage
+002 N yardarm
+002 N yardie
+002 N yardstick
+002 N yarmulke
+001 N yarn
+002 N yarrow
+002 N yashmak
+001 V yaw
+001 N yawl
+001 V yawn
+001 A ye
+001 D yeah
+001 N year
+002 N yearbook
+002 N yearling
+002 A yearly
+001 V yearn
+001 N yeast
+002 A yeasty
+001 N yell
+002 A yellow
+004 N yellowbelly
+004 N yellowhammer
+001 N yelp
+002 N yeoman
+003 N yeomanry
+001 D yep
+001 D yes
+002 N yesman
+003 D yesterday
+004 N yesteryear
+002 N yeti
+001 N yew
+001 N yfronts
+001 N yid
+002 N yiddish
+001 V yield
+001 N yin
+001 N yob
+002 N yobbo
+002 V yodel
+002 N yoga
+002 N yoghurt
+002 N yogi
+001 N yoke
+002 N yokel
+001 N yolk
+001 A yon
+001 N yore
+001 V york
+002 N yorker
+002 N yorkist
+001 A young
+002 N youngster
+001 R your
+001 N youth
+002 A youthful
+001 N yowl
+002 N yoyo
+002 N ytterbium
+001 N yttrium
+001 N yuan
+002 N yucca
+002 A yucky
+002 N yule
+003 N yulelog
+002 A yummy
+002 N yuppie
+001 N z
+003 N zabaglione
+002 A zany
+002 A zappy
+001 N zeal
+002 N zealot
+002 A zealous
+002 N zebra
+002 N zebu
+001 N zed
+001 N zee
+002 N zeitgeist
+001 N zen
+001 N zend
+004 N zendavesta
+002 N zenith
+002 N zephyr
+003 N zeppelin
+002 N zero
+003 A zerorated
+001 N zest
+002 N zeta
+002 N zeugma
+003 N ziggurat
+002 A zigzag
+001 N zilch
+002 N zillion
+001 N zinc
+002 N zinnia
+001 N zion
+002 N zionism
+001 N zip
+002 N zipper
+002 A zippy
+002 N zircon
+003 N zirconium
+001 N zit
+002 N zither
+002 N zloty
+002 N zodiac
+002 N zombie
+001 N zone
+001 A zonked
+001 N zoo
+004 A zoological
+003 N zoology
+001 V zoom
+002 N zoophyte
+003 N zucchini
+002 N zulu
+002 N zygote

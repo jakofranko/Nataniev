@@ -272,7 +272,7 @@ PREFIXES
   PUGN    : fight
   PUL     : urge
   PURG    : clean
-  PUT     : think
+  PUT     : thought
   PYR     : fire
   QUAD    : four
   QUART   : fourth
@@ -352,6 +352,7 @@ PREFIXES
   XYL     : wood
   ZO      : animal life
   ZYG     : pair
+
 SUFFIXES
   ABLE    : capable to do
   AC      : pertaining to
@@ -376,13 +377,10 @@ SUFFIXES
   CRAT    : someone who has power over
   CULE    : diminutive for
   CY      : state of
-  CYCLE   : circles of
-  DOM     : realm of
+  CYCLE   : circle
+  DOM     : realm
   DOX     : belief in
   ECTOMY  : surgical removal of
-  ED      : past tense of
-  EE      : receiver of
-  EER     : engaged with
   EMIA    : blood condition of
   ENCE    : state or condition of
   ENCY    : condition or quality of
@@ -467,7 +465,7 @@ SUFFIXES
   ULAR    : relation to
   UOUS    : quality of
   URE     : action of
-  WARD    : specifying direction to
-  WARE    : things of the same type as
+  WARD    : direction toward
+  WARE    : same type as
   WISE    : manner of
   Y       : characterized by
