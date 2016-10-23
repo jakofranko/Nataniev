@@ -55,6 +55,8 @@ class Nataniev
 
   def operate actor, action, params
 
+    require("action",action)
+
     actor_vessel = actor.to_i > 0 ? make_vessel(actor) : make_anonym(actor)
 
     if !actor_vessel then return "? #{actor} is not a valid vessel id." else @actor = actor_vessel end
@@ -95,28 +97,31 @@ class Nataniev
   def make_vessel id
 
     line = parade.line(id.to_i) ; if !line then return nil end
-    if line['CODE']
-      instance = line['CODE'].split("-")[3].downcase
-      if File.exist?("#{$nataniev.path}/vessels/#{instance}.rb")
-        load("#{$nataniev.path}/vessels/#{instance}.rb")
-        return Object.const_get(instance.capitalize).new(id.to_i,line)
-      end
-    end
-    require("vessel","ghost")
-    return Ghost.new(id.to_i,line)
+    instance = line['CODE'] ? line['CODE'].split("-")[3].downcase : "ghost"
+    return make_vessel_type(instance).new(id.to_i,line)
 
   end
 
   def make_anonym vessel_name
 
+    return make_vessel_type(vessel_name).new
+
+  end
+
+  def make_vessel_type vessel_name
+
     Dir["#{path}/core/vessel/*"].each do |vessel_file_path|
       vessel_file = vessel_file_path.split("/").last
       if vessel_file.like("vessel.#{vessel_name}")
         load("#{path}/core/vessel/vessel.#{vessel_name.downcase}/vessel.rb")
-        return Object.const_get(vessel_name.capitalize).new
+        return Object.const_get(vessel_name.capitalize)
       end
     end
-    return Ghost.new
+
+    # Default to ghost
+
+    require "vessel","ghost"
+    return Ghost
 
   end
 
@@ -124,11 +129,15 @@ class Nataniev
 
     if File.exist?("core/#{cat}/#{cat}.#{name}/#{cat}.rb")
       require_relative "core/#{cat}/#{cat}.#{name}/#{cat}.rb"
-    end    
+    end
 
     if File.exist?("core/#{cat}/#{cat}.#{name}.rb")
       require_relative "core/#{cat}/#{cat}.#{name}.rb"
-    end    
+    end
+
+    if File.exist?("core/#{cat}/core.#{name}.rb")
+      require_relative "core/#{cat}/core.#{name}.rb"
+    end
     
   end
 

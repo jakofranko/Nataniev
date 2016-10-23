@@ -183,9 +183,10 @@ module Vessel
     # include ActionExamine
   end
 
+  
+
   class DefaultActions
     include ActionCollection
-    include ActionHelp
   end
 
   class PresenceActions
@@ -284,10 +285,4 @@ module Vessel
 
   end
 
-end
-
-class Ghost # TODO
-
-  include Vessel
-  
 end
