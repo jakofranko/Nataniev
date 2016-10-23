@@ -6,7 +6,6 @@
 require_relative "nataniev.rb"
 
 $nataniev = Nataniev.new
-$nataniev.start
 minute = Time.now.strftime("%M").to_i
 
 # Bots

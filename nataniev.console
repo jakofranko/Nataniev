@@ -8,7 +8,6 @@ begin
 require_relative "nataniev.rb"
 	
 $nataniev = Nataniev.new
-$nataniev.start
 $nataniev.console.start ARGV.first
 $nataniev.console.listen while(true)
 

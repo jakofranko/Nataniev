@@ -1,16 +1,7 @@
 #!/bin/env ruby
 # encoding: utf-8
 
-require 'date'
-
 module Vessel
-
-    load "#{$nataniev.path}/system/wildcard.rb"
-    load "#{$nataniev.path}/system/program.rb"
-    load "#{$nataniev.path}/system/action.rb"
-    load "#{$nataniev.path}/system/corpse.rb"
-    load_folder "#{$nataniev.path}/actions/*"
-    load_folder "#{$nataniev.path}/corpses/*"
 
   def initialize id = 0,line = {}
 
@@ -189,12 +180,12 @@ module Vessel
 
   class TargetActions
     include ActionCollection
-    include ActionExamine
+    # include ActionExamine
   end
 
   class DefaultActions
     include ActionCollection
-    include ActionHelp
+    # include ActionHelp
   end
 
   class PresenceActions
@@ -203,7 +194,7 @@ module Vessel
 
   class PassiveActions
     include ActionCollection
-    include ActionAnswer
+    # include ActionAnswer
   end
 
   def actions ; return Actions.new($nataniev.actor,self) end
@@ -293,4 +284,10 @@ module Vessel
 
   end
 
+end
+
+class Ghost # TODO
+
+  include Vessel
+  
 end

@@ -5,31 +5,28 @@
 
 class Nataniev
 
+  attr_accessor :time
+  attr_accessor :path
+  attr_accessor :actor
+
   def initialize
 
     @time    = Time.new
     @path    = File.expand_path(File.join(File.dirname(__FILE__), "/"))
 
-    load "#{@path}/system/tools.rb"
-
     @id      = nil
     @player  = nil
     @parade  = nil 
-    @estate  = 30000
+
+    load path+"/system/tools.rb"
+
+    load path+"/core/action.rb"
+    load path+"/core/corpse.rb"
+    load path+"/core/vessel.rb"
+
+    load_folder path+"/system/*"
 
   end
-
-  def start
-
-    load_folder "#{path}/system/*"
-    load "#{@path}/vessels/ghost.rb"
-    load "#{@path}/vessels/basic.rb"
-
-  end
-
-  attr_accessor :time
-  attr_accessor :path
-  attr_accessor :actor
 
   def console
     
@@ -38,7 +35,12 @@ class Nataniev
 
   end
 
-  def parade  ; @parade = !@parade ? Di.new("paradise") : @parade ; return @parade  end
+  def parade
+
+    @parade = @parade ? @parade : Di.new("paradise")
+    return @parade
+
+  end
 
   def answer q = nil
 
@@ -100,21 +102,28 @@ class Nataniev
         return Object.const_get(instance.capitalize).new(id.to_i,line)
       end
     end
+    require("vessel","ghost")
     return Ghost.new(id.to_i,line)
 
   end
 
-  def make_anonym instance
+  def make_anonym vessel_name
 
-    if File.exist?("#{$nataniev.path}/vessels/#{instance}.rb")
-      load("#{$nataniev.path}/vessels/#{instance}.rb")
-      return Object.const_get(instance.capitalize).new
-    elsif File.exist?("#{$nataniev.path}/instances/instance.#{instance}/vessel.rb")
-      load "#{$nataniev.path}/instances/instance.#{instance}/vessel.rb"
-      return Object.const_get(instance.capitalize).new
+    Dir["#{path}/core/vessel/*"].each do |vessel_file_path|
+      vessel_file = vessel_file_path.split("/").last
+      if vessel_file.like("vessel.#{vessel_name}")
+        load("#{path}/core/vessel/vessel.#{vessel_name.downcase}/vessel.rb")
+        return Object.const_get(vessel_name.capitalize).new
+      end
     end
     return Ghost.new
 
+  end
+
+  def require cat,name
+
+    require_relative "core/#{cat}/#{name}.rb"
+    
   end
 
 end
