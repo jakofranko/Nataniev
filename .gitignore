@@ -1,5 +1,5 @@
-core/vessel/*
-core/corpse/*
-core/action/*
+core/vessel/vessel.*
+core/corpse/corpse.*
+core/action/action.*
 secrets/*
 .secret

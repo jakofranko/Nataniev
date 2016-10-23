@@ -185,7 +185,7 @@ module Vessel
 
   class DefaultActions
     include ActionCollection
-    # include ActionHelp
+    include ActionHelp
   end
 
   class PresenceActions

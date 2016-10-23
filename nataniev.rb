@@ -122,7 +122,13 @@ class Nataniev
 
   def require cat,name
 
-    require_relative "core/#{cat}/#{name}.rb"
+    if File.exist?("core/#{cat}/#{cat}.#{name}/#{cat}.rb")
+      require_relative "core/#{cat}/#{cat}.#{name}/#{cat}.rb"
+    end    
+
+    if File.exist?("core/#{cat}/#{cat}.#{name}.rb")
+      require_relative "core/#{cat}/#{cat}.#{name}.rb"
+    end    
     
   end
 
