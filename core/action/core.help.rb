@@ -7,7 +7,7 @@ module ActionHelp
   
   def help q = nil
 
-    text = "& Something here\n"
+    text = "& #{self.class}\n"
 
     text += "# Vessel Actions:\n"
     @actor.actions.available.each do |action|

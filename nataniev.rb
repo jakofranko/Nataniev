@@ -23,6 +23,7 @@ class Nataniev
     load path+"/core/action.rb"
     load path+"/core/corpse.rb"
     load path+"/core/vessel.rb"
+    load path+"/core/memory.rb"
 
     load_folder path+"/system/*"
 
@@ -54,8 +55,6 @@ class Nataniev
   end
 
   def operate actor, action, params
-
-    require("action",action)
 
     actor_vessel = actor.to_i > 0 ? make_vessel(actor) : make_anonym(actor)
 
