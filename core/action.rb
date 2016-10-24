@@ -3,6 +3,18 @@
 
 module Action
 
+  attr_accessor :host
+  attr_accessor :name
+  attr_accessor :docs
+
+  def initialize host
+
+    @host = host
+    @name = "Unknown"
+    @docs = "No documentation"
+
+  end
+
   private
 
   def find_present_vessel name

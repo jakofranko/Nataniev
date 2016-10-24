@@ -1,23 +1,16 @@
 #!/bin/env ruby
 # encoding: utf-8
 
-require $nataniev.path+"/core/vessel.rb"
-
-$nataniev.require("action","help")
-
-class Ghost # TODO
+class VesselGhost # TODO
 
   include Vessel
 
-  attr_accessor :default_actions
+  def initialize id = 0
 
-  class DefaultActions
-    
-    include ActionCollection
-    include ActionHelp
+    super
+    install(:default,:help)
+    install(:test,:help)
 
   end
-
-  def default_actions ; return DefaultActions.new($nataniev.actor,self) end
 
 end

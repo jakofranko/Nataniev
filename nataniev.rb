@@ -14,12 +14,7 @@ class Nataniev
     @time    = Time.new
     @path    = File.expand_path(File.join(File.dirname(__FILE__), "/"))
 
-    @id      = nil
-    @player  = nil
-    @parade  = nil 
-
     load path+"/system/tools.rb"
-
     load path+"/core/action.rb"
     load path+"/core/corpse.rb"
     load path+"/core/vessel.rb"
@@ -47,67 +42,28 @@ class Nataniev
 
     parts  = q.split(" ")
     actor  = parts[0]
-    action = parts[1] ? parts[1] : "look"
+    action = parts[1] ? parts[1].to_sym : :look
     params = q.sub("#{actor}","").sub("#{action}","").strip
+    vessel = actor.to_i > 0 ? make_registered(actor) : make_anonym(actor)
 
-    return operate(actor,action,params)
-
-  end
-
-  def operate actor, action, params
-
-    actor_vessel = actor.to_i > 0 ? make_vessel(actor) : make_anonym(actor)
-
-    if !actor_vessel then return "? #{actor} is not a valid vessel id." else @actor = actor_vessel end
-
-    # Default
-    vessel = actor_vessel
-    if vessel && vessel.default_actions.respond_to?("#{action}") then return vessel.default_actions.send("#{action}",params).strip end
-    # Self
-    vessel = actor_vessel
-    if vessel && vessel.actions.respond_to?("#{action}") then return vessel.actions.send("#{action}",params).strip end
-    # Parent
-    vessel = actor_vessel.parent_vessel
-    if vessel && vessel.parent_actions.respond_to?("#{action}") then return vessel.parent_actions.send("#{action}",params).strip end
-    # Target
-    vessel = actor_vessel.target_vessel(params)
-    if vessel && vessel.target_actions.respond_to?("#{action}") then return vessel.target_actions.send("#{action}",params).strip end
-    # Presence
-    vessel = actor_vessel.presence_vessel(action)
-    if vessel then return vessel.presence_actions.send("#{action}",params).strip end
-    
-    return "? #{action} is not a valid action. Use {{help}} to find the valid actions for the #{actor_vessel.class.to_s.downcase} vessel."
+    return vessel.act(action,params)
 
   end
 
-  def find_available_id
+  def make_registered id
 
-    id = 0
-    while id < 30000
-      id +=1
-      if parade.to_a[id]['CODE'] then next end
-      return id
-    end
-
-    return nil
-
-  end
-
-  def make_vessel id
-
-    line = parade.line(id.to_i) ; if !line then return nil end
-    instance = line['CODE'] ? line['CODE'].split("-")[3].downcase : "ghost"
-    return make_vessel_type(instance).new(id.to_i,line)
+    # TODO
+    return make_vessel(instance).new(id.to_i)
 
   end
 
   def make_anonym vessel_name
 
-    return make_vessel_type(vessel_name).new
+    return make_vessel(vessel_name).new
 
   end
 
-  def make_vessel_type vessel_name
+  def make_vessel vessel_name
 
     Dir["#{path}/core/vessel/*"].each do |vessel_file_path|
       vessel_file = vessel_file_path.split("/").last
@@ -118,11 +74,12 @@ class Nataniev
     end
 
     # Default to ghost
-
-    require "vessel","ghost"
-    return Ghost
+    require :vessel,:ghost
+    return VesselGhost
 
   end
+
+  #
 
   def require cat,name
 

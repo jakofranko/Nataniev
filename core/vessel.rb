@@ -3,6 +3,40 @@
 
 module Vessel
 
+  attr_accessor :actions
+
+  def initialize id = 0
+
+    @actions = {}
+
+  end
+
+  # Action
+
+  def act action_name, params
+
+    if Kernel.const_defined?("Action#{action_name.capitalize}") == false then puts "Cannot use action #{action_name}." ; return end
+
+    return Object.const_get("Action#{action_name.capitalize}").new(self).act(params)
+
+  end
+
+  def install category,action_name
+
+    $nataniev.require("action",action_name)
+
+    if Kernel.const_defined?("Action#{action_name.capitalize}") == false then puts "Cannot install #{action_name}." ; return end
+
+    if !actions[category] then actions[category] = [] end
+
+    actions[category].push(Object.const_get("Action#{action_name.capitalize}"))
+
+  end
+
+  # Old
+
+
+=begin
   def initialize id = 0,line = {}
 
     @id = id.to_i
@@ -282,5 +316,6 @@ module Vessel
     return v
 
   end
+=end
 
 end
