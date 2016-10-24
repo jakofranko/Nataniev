@@ -14,13 +14,15 @@ module ActionHelp
       text += "- _ #{action}\n"
     end
 
-    text += "# Parent Actions:\n"
-    @actor.parent_vessel.parent_actions.available.each do |action|
+    text += "# Default Actions:\n"
+    @actor.default_actions.available.each do |action|
       text += "- _ #{action}\n"
     end
 
-    text += "# Default Actions:\n"
-    @actor.default_actions.available.each do |action|
+    if @actor.id < 1 then return text end
+
+    text += "# Parent Actions:\n"
+    @actor.parent_vessel.parent_actions.available.each do |action|
       text += "- _ #{action}\n"
     end
 

@@ -9,7 +9,7 @@ class Lexio
 
   def display
 
-    @lexicon = En.new("lexicon").to_h
+    @lexicon = Memory_Hash.new("lexicon").to_h
 
     hash = {}
 

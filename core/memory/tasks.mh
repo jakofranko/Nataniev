@@ -3,8 +3,6 @@
 ~ AUTH : Devine Lu Linvega
 
 NATANIEV
-  Migrate dictionary to .DI file
-  Migrate memory to .DI file
   Actions
     Documentation
       Find good system
@@ -28,7 +26,6 @@ NATANIEV
       Warn for long notes in the <hint>
   Etc
     Documentation(README.md, etc..)
-    Fix twitter bots
   Tutorial
     Implement the ghost guide
     Implement the teapot guide
@@ -39,12 +36,8 @@ NATANIEV
     Enums Class
     Save Logs
     Fix monitor
-    EN Parser saving?
   Twitter Client
-    Migrate to @actor/@target
     Create bot that serves API commands
-    Allow for answers
-    Automate responses to neauoire
   Corpse
     Move html error to corpse
   EN Parser
@@ -76,8 +69,6 @@ OSCEAN
     Atobe basics
   Repositories page
   Surperstition short
-  Migrate dictionary
-  Diary page
 
 BELDAM
   Rebuild website
@@ -118,6 +109,7 @@ PINO
 GLOSS
   Generally improve
   Make functional
+  Fix issue with twitter secret
 
 BABELFUCK
   Make nice

@@ -183,8 +183,6 @@ module Vessel
     # include ActionExamine
   end
 
-  
-
   class DefaultActions
     include ActionCollection
   end

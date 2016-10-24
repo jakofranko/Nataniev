@@ -9,6 +9,8 @@ class Ghost # TODO
 
   include Vessel
 
+  attr_accessor :default_actions
+
   class DefaultActions
     
     include ActionCollection
@@ -17,5 +19,5 @@ class Ghost # TODO
   end
 
   def default_actions ; return DefaultActions.new($nataniev.actor,self) end
-  
+
 end
