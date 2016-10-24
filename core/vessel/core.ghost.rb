@@ -8,8 +8,8 @@ class VesselGhost # TODO
   def initialize id = 0
 
     super
+    install(:default,:look)
     install(:default,:help)
-    install(:test,:help)
 
   end
 

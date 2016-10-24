@@ -10,7 +10,7 @@ class ActionHelp
     super
 
     @name = "Help"
-    @docs = "help me what!!"
+    @docs = "[TODO]"
 
   end
 
