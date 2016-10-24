@@ -96,35 +96,34 @@ class Memory_Array
 
   def make_render file
 
-    key  = make_key(file)
-
     array = []
+    key = nil
+
     file.each do |line|
       if line[0,1] == "~" then next end
-      array.push(parse_line(key,line))
+      if line[0,1] == "@"
+        key = make_key(line)
+      elsif key
+        array.push(parse_line(key,line))
+      end       
     end
     return array
 
   end
 
-  def make_key file
+  def make_key key_line
 
-    file.each do |line|
-      if line.strip[0,1] != "@" then next end
-
-      key_line = line.sub("@ ","").strip.sub(" ","   ")
-      key = {}
-      parts = key_line.split(" ")
-      i = 0
-      parts.each do |part|
-        open  = key_line.index(part)
-        close = parts[i+1] ? key_line.index(parts[i+1]) : 0
-        key[part] = [open,close-open-1]
-        i += 1
-      end
-      return key
-
+    key_line = key_line.sub("@ ","").strip.sub(" ","   ")
+    key = {}
+    parts = key_line.split(" ")
+    i = 0
+    parts.each do |part|
+      open  = key_line.index(part)
+      close = parts[i+1] ? key_line.index(parts[i+1]) : 0
+      key[part] = [open,close-open-1]
+      i += 1
     end
+    return key
 
   end
 
