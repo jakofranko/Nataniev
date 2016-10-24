@@ -61,7 +61,7 @@ class Memory_Array
 
   def ext ; return "ma" end
 
-  # Filters
+  # Methods
 
   def filter field, value, type
 
@@ -83,8 +83,6 @@ class Memory_Array
     return a
 
   end
-
-  # Editor
 
   def append line
 
@@ -143,39 +141,24 @@ class Memory_Array
 
 end
 
-class En
+#
 
-  attr_accessor :name
-  attr_accessor :path
-  attr_accessor :note
-  attr_accessor :lines
+class Memory_Hash
 
-  def initialize query = nil, path = $nataniev.path
+  include Memory
 
-    @name = query.gsub(" ",".").downcase
-    @path = path
+  def ext ; return "mh" end
 
-    @lines = []
-    @notes = []
+  def filter field, value, type
 
-    @tree = {}
-
-    if File.exist?("#{path}/memory/#{name}.en")
-      @file_path = "#{path}/memory/#{name}.en"
-    else
-      @file_path = "#{$nataniev.path}/core/memory/#{name}.en"
-    end
-
-    if File.exist?(@file_path)
-      @GRID = render(name)  
-    end
+    return Object.const_get(type.capitalize).new(value.capitalize,@render[value.upcase])
 
   end
 
   def to_h type = nil
     
     h = {}
-    @GRID.each do |k,v|
+    @render.each do |k,v|
       if type
         h[k] = Object.const_get(type.capitalize).new(k,v)
       else
@@ -186,19 +169,13 @@ class En
 
   end
 
-  def length
-
-    return @GRID.length
-
-  end
-
   def save
 
     # Add notes
     content = @note.join("\n")+"\n\n"
 
     # Create lines
-    @GRID.sort.reverse.each do |key,values|
+    @render.sort.reverse.each do |key,values|
       content += "#{key}\n"
       values.each do |k,v|
         if v.kind_of?(Array)
@@ -213,27 +190,13 @@ class En
       content += "\n"
     end
 
-    # Create temp file
-    out_file = File.new("#{path}/core/memory/#{name}.txt", "w")
-    out_file.puts(content)
-    out_file.close
-
-    # Replace file
-    File.rename("#{path}/core/memory/temp.#{name}.txt", "#{path}/core/memory/#{name}.en")
-
-  end
-
-  # Filters
-
-  def filter field, value, type
-
-    return Object.const_get(type.capitalize).new(value.capitalize,@GRID[value.upcase])
+    overwrite(content)
 
   end
 
   private
 
-  def render file
+  def make_render file
 
     @lines, @notes = make_lines_notes(file)
     @tree = make_tree
@@ -252,18 +215,16 @@ class En
     notes_a = []
     lines_a = []
 
-    File.open(@file_path,"r:UTF-8") do |f|
-      number = 0
-      f.each_line do |line|
-        depth = line[/\A */].size
-        line = line.strip
-        if line == "" then next end
-        if line[0,1] == "~"
-          notes_a.push(line)
-        else
-          lines_a.push([number,depth,line])
-          number += 1
-        end
+    number = 0
+    get_file.each do |line|
+      depth = line[/\A */].size
+      line = line.strip
+      if line == "" then next end
+      if line[0,1] == "~"
+        notes_a.push(line)
+      else
+        lines_a.push([number,depth,line])
+        number += 1
       end
     end
 
