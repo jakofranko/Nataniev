@@ -9,7 +9,7 @@ module Memory
   def initialize name = nil, dir
 
     @name    = name
-    @path    = make_path(dir)
+    @path    = make_path(dir,ext)
     @render  = make_render(get_file)
 
   end
@@ -34,12 +34,12 @@ module Memory
 
   private
 
-  def make_path dir
+  def make_path dir,ext
 
-    if File.exist?("#{dir}/memory/#{name}.di")
-      return "#{dir}/memory/#{name}.di"
-    elsif File.exist?("#{$nataniev.path}/core/memory/#{name}.di")
-      return "#{$nataniev.path}/core/memory/#{name}.di"
+    if File.exist?("#{dir}/memory/#{name}.#{ext}")
+      return "#{dir}/memory/#{name}.#{ext}"
+    elsif File.exist?("#{$nataniev.path}/core/memory/#{name}.#{ext}")
+      return "#{$nataniev.path}/core/memory/#{name}.#{ext}"
     end
     return nil
 
@@ -53,15 +53,13 @@ module Memory
 
 end
 
-
-
-
-
-
+# 
 
 class Memory_Array
 
   include Memory
+
+  def ext ; return "ma" end
 
   # Filters
 
