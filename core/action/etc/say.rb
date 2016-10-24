@@ -13,7 +13,7 @@ module ActionSay
 
     flatten = "#{_room}-#{_id}-#{Timestamp.new.to_s} #{_name} #{q}\n"
 
-    Di.new("forum").add(flatten)
+    Memory_Array.new("forum").append(flatten)
     return "+ Added message: #{q}"
 
   end

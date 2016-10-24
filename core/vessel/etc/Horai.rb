@@ -3,7 +3,7 @@
 
 def list_available
 
-  @horaire = Di.new("horaire","#{$nataniev.path}/instances/instance.oscea").to_a
+  @horaire = Memory_Array.new("horaire","#{$nataniev.path}/instances/instance.oscea").to_a
 
   array = []
   diaries = []
@@ -121,7 +121,7 @@ class Horai
 
     def browse q = nil
 
-      @horaire = Di.new("horaire","#{$nataniev.path}/instances/instance.oscea").to_a
+      @horaire = Memory_Array.new("horaire","#{$nataniev.path}/instances/instance.oscea").to_a
 
       hash = {}
 
@@ -147,7 +147,7 @@ class Horai
   
   def display
 
-    @horaire = Di.new("horaire","#{$nataniev.path}/instances/instance.oscea").to_a
+    @horaire = Memory_Array.new("horaire","#{$nataniev.path}/instances/instance.oscea").to_a
     
     return "> #{print.capitalize}, contains #{@horaire.length} logs.\n"
 

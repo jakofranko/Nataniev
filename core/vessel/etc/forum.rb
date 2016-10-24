@@ -31,7 +31,7 @@ class Forum
   
   def note
 
-    @forum = Di.new("forum")
+    @forum = Memory_Array.new("forum")
     
     sorted = {}
     count = 0

@@ -1,139 +1,145 @@
 #!/bin/env ruby
 # encoding: utf-8
 
-class Memory
+module Memory
 
-  def initialize name = nil
-
-  end
-
-end
-
-class Di
-
-  attr_accessor :path
   attr_accessor :name
+  attr_accessor :path
 
-  def initialize query = nil, path = $nataniev.path
+  def initialize name = nil, dir
 
-    @name = query.gsub(" ",".").downcase
-    @path = path
-
-    if File.exist?("#{path}/memory/#{name}.di")
-      @file_path = "#{path}/memory/#{name}.di"
-    else
-      @file_path = "#{$nataniev.path}/core/memory/#{name}.di"
-    end
-
-    @TEXT = File.read(@file_path, :encoding => 'UTF-8').split("\n")
-
-    content = []
-    @TEXT.each do |line|
-        if line.strip[0,1] == "@" then @KEY = parseKey(line) ; next end
-        if !@KEY then next end
-        content.push(parseLine(line))
-    end
-
-    @DICT = content
-
-  end
-
-  def parseKey keyString
-
-    keyString = keyString.sub("@ ","").strip.sub(" ","   ")
-    key = {}
-    parts = keyString.split(" ")
-    i = 0
-    parts.each do |part|
-      open  = keyString.index(part)
-      close = parts[i+1] ? keyString.index(parts[i+1]) : 0
-      key[part] = [open,close-open-1]
-      i += 1
-    end
-    return key
-
-  end
-
-  def parseLine line
-
-    value = {}
-    @KEY.each do |index,position|
-      data = position.last < 0 ? line[position.first,line.length - position.first].to_s.strip : line[position.first,position.last].to_s.strip
-      if data != "" then value[index] = data end
-    end
-    return value
-
-  end
-
-  # Edits
-
-  def add line
-
-    open("#{path}/core/memory/#{@NAME}.di", 'a') do |f|
-      f.puts line
-    end
-
-  end
-
-  def save_line id, content
-
-    save_lines([[id,content]])
-
-  end
-
-  def save_lines lines_array # [[id,content],[id,content]..]
-
-    # Save
-    headerLength = 5
-    lines_array.each do |id,content|
-      @TEXT[id+headerLength] = content.strip
-    end
-    
-    # Create temp file
-    out_file = File.new("#{path}/core/memory/temp.#{@NAME}.di", "w")
-    out_file.puts(@TEXT.join("\n"))
-    out_file.close
-
-    # Replace file
-    File.rename("#{path}/core/memory/temp.#{@NAME}.di", "#{$nataniev.path}/core/memory/#{@NAME}.di")
-
-  end
-
-  # Accessors
-
-  def to_a type = nil
-
-    a = []
-    @DICT.each do |line|
-      if type then a.push(Object.const_get(type.capitalize).new(line))
-      else a.push(line) end
-    end
-    return a
-
-  end
-
-  def line id
-
-    return @DICT[id]
+    @name    = name
+    @path    = make_path(dir)
+    @render  = make_render(get_file)
 
   end
 
   def length
 
-    return @DICT.length
+    return @render.length
 
   end
+
+  def overwrite content
+    
+    # Create temp file
+    out_file = File.new("#{$nataniev.path}/core/memory/#{@name}.tmp", "w")
+    out_file.puts(content)
+    out_file.close
+
+    # Replace file
+    File.rename("#{$nataniev.path}/core/memory/#{@name}.tmp", @path)
+
+  end
+
+  private
+
+  def make_path dir
+
+    if File.exist?("#{dir}/memory/#{name}.di")
+      return "#{dir}/memory/#{name}.di"
+    elsif File.exist?("#{$nataniev.path}/core/memory/#{name}.di")
+      return "#{$nataniev.path}/core/memory/#{name}.di"
+    end
+    return nil
+
+  end
+
+  def get_file
+
+    return File.read(@path, :encoding => 'UTF-8').split("\n")
+
+  end
+
+end
+
+
+
+
+
+
+
+class Memory_Array
+
+  include Memory
 
   # Filters
 
   def filter field, value, type
 
     a = []
-    @DICT.each do |line|
+    @render.each do |line|
       if !line[field.upcase].to_s.like(value) && value != "*" then next end
-      a.push(Object.const_get(type.capitalize).new(line))
+      a.push(type ? Object.const_get(type.capitalize).new(line) : line)
     end
     return a
+
+  end
+
+  def to_a type = nil
+
+    a = []
+    @render.each do |line|
+      a.push(type ? Object.const_get(type.capitalize).new(line) : line)
+    end
+    return a
+
+  end
+
+  # Editor
+
+  def append line
+
+    open(path, 'a') do |f|
+      f.puts line
+    end
+
+  end
+
+  private
+
+  def make_render file
+
+    key  = make_key(file)
+
+    array = []
+    file.each do |line|
+      if line[0,1] == "~" then next end
+      array.push(parse_line(key,line))
+    end
+    return array
+
+  end
+
+  def make_key file
+
+    file.each do |line|
+      if line.strip[0,1] != "@" then next end
+
+      key_line = line.sub("@ ","").strip.sub(" ","   ")
+      key = {}
+      parts = key_line.split(" ")
+      i = 0
+      parts.each do |part|
+        open  = key_line.index(part)
+        close = parts[i+1] ? key_line.index(parts[i+1]) : 0
+        key[part] = [open,close-open-1]
+        i += 1
+      end
+      return key
+
+    end
+
+  end
+
+  def parse_line key,line
+
+    value = {}
+    key.each do |index,position|
+      data = position.last < 0 ? line[position.first,line.length - position.first].to_s.strip : line[position.first,position.last].to_s.strip
+      if data != "" then value[index] = data end
+    end
+    return value
 
   end
 
@@ -318,69 +324,6 @@ class En
     end
 
     return t
-
-  end
-
-end
-
-class Ra
-
-  attr_accessor :name
-  attr_accessor :path
-  attr_accessor :payload
-
-  def initialize query = nil, path = $nataniev.path
-
-    @name = query.gsub(" ",".").downcase
-    @path = File.exist?("#{path}/core/memory/#{name}.ra") ? path : $nataniev.path
-    @payload = get_payload
-    
-  end
-
-  def to_a type = nil
-    
-    return @payload
-
-  end
-
-  def to_s
-
-    return @payload.join("\n")
-
-  end
-
-  def length
-
-    return @payload.length
-
-  end
-
-  def replace text
-
-    # Create temp file
-    out_file = File.new("#{path}/core/memory/temp.#{@name}.ra", "w")
-    out_file.puts(text)
-    out_file.close
-
-    # Replace file
-    File.rename("#{path}/core/memory/temp.#{@name}.ra", "#{@path}/core/memory/#{@name}.ra")
-
-  end
-
-  # Filters
-
-  private
-
-  def get_payload
-
-    lines = []
-    File.read("#{@path}/core/memory/#{name}.ra", :encoding => 'UTF-8').split("\n").each do |line|
-      if line[0,1] == "~" then next end
-      if line.strip == "" then next end
-      lines.push(line)
-    end
-
-    return lines
 
   end
 

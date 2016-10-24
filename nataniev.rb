@@ -38,7 +38,7 @@ class Nataniev
 
   def parade
 
-    @parade = @parade ? @parade : Di.new("paradise")
+    @parade = @parade ? @parade : Memory_Array.new("paradise")
     return @parade
 
   end
