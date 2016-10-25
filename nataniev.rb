@@ -69,7 +69,9 @@ class Nataniev
       vessel_file = vessel_file_path.split("/").last
       if vessel_file.like("vessel.#{vessel_name}")
         load("#{path}/core/vessel/vessel.#{vessel_name.downcase}/vessel.rb")
-        return Object.const_get(vessel_name.capitalize)
+        if Kernel.const_defined?("Vessel#{vessel_name.capitalize}") == true
+          return Object.const_get("Vessel"+vessel_name.capitalize)
+        end
       end
     end
 
