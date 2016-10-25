@@ -9,7 +9,9 @@ $nataniev = Nataniev.new
 minute = Time.now.strftime("%M").to_i
 
 # Bots
-if minute == 16 then $nataniev.make_anonym("disms").actions.tweet_auto end
-if minute == 26 then $nataniev.make_anonym("willw").actions.tweet_auto end
+if minute == 16 then puts $nataniev.make_anonym("dictionarism").act(:tweet) end
+if minute == 26 then puts $nataniev.make_anonym("thewillthewisp").act(:tweet) end
 
-puts $nataniev.make_anonym("willw").actions.tweet_reply_auto
+# puts $nataniev.make_anonym("willw").actions.tweet_reply_auto
+
+# puts $nataniev.make_anonym("dictionarism").act(:tweet)

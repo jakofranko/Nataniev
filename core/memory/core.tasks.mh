@@ -54,6 +54,9 @@ ADVENTV
 
 LIETAL
   Translate introduction
+  Migrate to new Actions
+  Fix documentation for Oscean
+  Fix API for Tekgo
 
 OSCEAN
   Add flags(TODO/STUB)

@@ -17,7 +17,7 @@ module Vessel
 
   # Action
 
-  def act action_name, params
+  def act action_name, params = nil
 
     if Kernel.const_defined?("Action#{action_name.capitalize}") == false then puts "#{self.name.capitalize} cannot #{action_name}." ; return end
 
