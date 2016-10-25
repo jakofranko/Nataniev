@@ -116,10 +116,3 @@ BABELFUCK
 
 VOYNICH
   Redo
-
-
-
-
-p __callee__
-p Module
-p Module.nesting

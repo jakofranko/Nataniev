@@ -6,7 +6,7 @@ module Memory
   attr_accessor :name
   attr_accessor :path
 
-  def initialize name = nil, dir
+  def initialize name = nil, dir = "#{$nataniev.path}/core"
 
     @name    = name
     @path    = make_path(dir,ext)
@@ -38,9 +38,8 @@ module Memory
 
     if File.exist?("#{dir}/memory/#{name}.#{ext}")
       return "#{dir}/memory/#{name}.#{ext}"
-    elsif File.exist?("#{$nataniev.path}/core/memory/#{name}.#{ext}")
-      return "#{$nataniev.path}/core/memory/#{name}.#{ext}"
     end
+    puts "Cannot locate #{dir}."
     return nil
 
   end
@@ -128,6 +127,8 @@ class Memory_Array
   end
 
   def parse_line key,line
+
+    if key.length == 1 then return line end
 
     value = {}
     key.each do |index,position|

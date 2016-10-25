@@ -3,9 +3,13 @@
 
 module Corpse
 
-  def initialize q = nil
+  attr_accessor :host
+  attr_accessor :query
 
-    @query = q
+  def initialize host, query = nil
+
+    @host = host
+    @query = query
     
   end
 

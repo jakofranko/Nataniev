@@ -17414,7 +17414,6 @@
 003 A pneumatic
 005 N pneumoconiosis
 003 N pneumonia
-001 N po
 001 V poach
 001 N pock
 002 N pocket
