@@ -8,7 +8,7 @@ module Memory
 
   def initialize name = nil, dir = "#{$nataniev.path}/core"
 
-    @name    = name
+    @name    = name.downcase
     @path    = make_path(dir,ext)
     @render  = make_render(get_file)
 
@@ -39,7 +39,7 @@ module Memory
     if File.exist?("#{dir}/memory/#{name}.#{ext}")
       return "#{dir}/memory/#{name}.#{ext}"
     end
-    puts "Cannot locate #{dir}."
+    puts "Cannot locate #{dir}/memory/#{name}.#{ext}"
     return nil
 
   end
