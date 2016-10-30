@@ -147,6 +147,8 @@ class Memory_Hash
 
   include Memory
 
+  attr_accessor :render
+
   def ext ; return "mh" end
 
   def filter field, value, type

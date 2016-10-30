@@ -12,6 +12,7 @@ module Vessel
     @actions = {}
     @path = nil
     @name = "Unknown"
+    @docs = "No description"
 
   end
 

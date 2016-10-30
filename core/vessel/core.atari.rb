@@ -1,7 +1,7 @@
 #!/bin/env ruby
 # encoding: utf-8
 
-class VesselGhost # TODO
+class VesselAtari
 
   include Vessel
 
@@ -9,9 +9,9 @@ class VesselGhost # TODO
 
     super
 
-    @name = "A ghost"
+    @name = "Atari"
 
-    install(:default,:look)
+    install(:default,:document)
     install(:default,:help)
 
   end
