@@ -12,6 +12,4 @@ minute = Time.now.strftime("%M").to_i
 if minute == 16 then puts $nataniev.make_anonym("dictionarism").act(:tweet) end
 if minute == 26 then puts $nataniev.make_anonym("thewillthewisp").act(:tweet) end
 
-# puts $nataniev.make_anonym("willw").actions.tweet_reply_auto
-
-# puts $nataniev.make_anonym("dictionarism").act(:tweet)
+# puts $nataniev.make_anonym("thewillthewisp").act(:tweet,:reply)
