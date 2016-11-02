@@ -161,11 +161,7 @@ class Memory_Hash
     
     h = {}
     @render.each do |k,v|
-      if type
-        h[k] = Object.const_get(type.capitalize).new(k,v)
-      else
-        h[k] = v
-      end
+      h[k] = type ? Object.const_get(type.capitalize).new(k,v) : v
     end
     return h
 
