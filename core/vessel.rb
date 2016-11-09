@@ -5,12 +5,14 @@ module Vessel
 
   attr_accessor :name
   attr_accessor :path
+  attr_accessor :media_path
   attr_accessor :actions
 
   def initialize id = 0
 
     @actions = {}
     @path = nil
+    @media_path = nil
     @name = "Unknown"
     @docs = "No description"
 
