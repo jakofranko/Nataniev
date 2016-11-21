@@ -67,12 +67,12 @@ class Nataniev
 
     Dir["#{path}/core/vessel/*"].each do |vessel_file_path|
       vessel_file = vessel_file_path.split("/").last
-      if vessel_file.like("core.#{vessel_name}.rb")
+      if vessel_file.like("core.#{vessel_name}.rb") && File.exist?("#{path}/core/vessel/core.#{vessel_name.downcase}.rb")
         load("#{path}/core/vessel/core.#{vessel_name.downcase}.rb")
         if Kernel.const_defined?("Vessel#{vessel_name.capitalize}") == true
           return Object.const_get("Vessel"+vessel_name.capitalize)
         end
-      elsif vessel_file.like("vessel.#{vessel_name}")
+      elsif vessel_file.like("vessel.#{vessel_name}") && File.exist?("#{path}/core/vessel/vessel.#{vessel_name.downcase}/vessel.rb")
         load("#{path}/core/vessel/vessel.#{vessel_name.downcase}/vessel.rb")
         if Kernel.const_defined?("Vessel#{vessel_name.capitalize}") == true
           return Object.const_get("Vessel"+vessel_name.capitalize)
