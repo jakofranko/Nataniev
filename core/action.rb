@@ -7,7 +7,7 @@ module Action
   attr_accessor :name
   attr_accessor :docs
 
-  def initialize host
+  def initialize host = nil
 
     @host = host
     @name = "Unknown"

@@ -10,7 +10,7 @@ class ActionHelp
     super
 
     @name = "Help"
-    @docs = "[TODO]"
+    @docs = "List available commands."
 
   end
 
@@ -22,7 +22,7 @@ class ActionHelp
       t += "> #{category.capitalize}\n"
       actions.each do |action|
         action = action.new
-        t += "#{action.name} | #{action.docs}\n"
+        t += "#{action.name.append(' ',14)} | #{action.docs}\n"
       end
     end
 
