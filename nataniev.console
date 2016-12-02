@@ -8,10 +8,28 @@ begin
 require_relative "nataniev.rb"
 	
 $nataniev = Nataniev.new
+bind = ""
+
+print "\nNataniev is listening..\n> "
 
 while a = gets.strip
-  if a == "exit" then exit 0; return false; end
-  puts $nataniev.answer(a)
+
+  # Exit
+  if a == "exit"
+    exit 0
+    return false
+  
+  # Bind
+  elsif a.split(" ").first == "bind"
+    bind = a.sub("bind","").strip
+    print bind != "" ? "<#{bind}> " : "> "
+
+  # Answer
+  else
+    puts $nataniev.answer(bind != "" ? "#{bind} #{a}" : a)
+    print bind != "" ? "<#{bind}> " : "> "
+  end
+
 end
 
 rescue Exception
