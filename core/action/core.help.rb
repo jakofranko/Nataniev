@@ -19,7 +19,7 @@ class ActionHelp
     t = ""
 
     host.actions.each do |category,actions|
-      t += "> #{category.capitalize}\n"
+      t += "#{category.capitalize}\n"
       actions.each do |action|
         action = action.new
         t += "#{action.name.append(' ',14)} | #{action.docs}\n"
