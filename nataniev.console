@@ -8,8 +8,11 @@ begin
 require_relative "nataniev.rb"
 	
 $nataniev = Nataniev.new
-$nataniev.console.start ARGV.first
-$nataniev.console.listen while(true)
+
+while a = gets.strip
+  if a == "exit" then exit 0; return false; end
+  puts $nataniev.answer(a)
+end
 
 rescue Exception
 
