@@ -6,6 +6,7 @@ module Vessel
   attr_accessor :name
   attr_accessor :docs
   attr_accessor :path
+  attr_accessor :site
   attr_accessor :media_path
   attr_accessor :actions
 
@@ -16,6 +17,7 @@ module Vessel
     @media_path = nil
     @name = "Unknown"
     @docs = "No description"
+    @site = "htp://google.com"
 
   end
 
