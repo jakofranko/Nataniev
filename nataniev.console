@@ -7,8 +7,16 @@ begin
 
 require_relative "nataniev.rb"
 	
+class Nataniev
+
+  attr_accessor :console_memory
+  attr_accessor :console_bind
+
+end
+
 $nataniev = Nataniev.new
-bind = ""
+$nataniev.console_bind = ""
+$nataniev.console_memory = {}
 
 print "\nNataniev is listening..\n> "
 
@@ -21,13 +29,13 @@ while a = gets.strip
   
   # Bind
   elsif a.split(" ").first == "bind"
-    bind = a.sub("bind","").strip
-    print bind != "" ? "<#{bind}> " : "> "
+    $nataniev.console_bind = a.sub("bind","").strip
+    print $nataniev.console_bind != "" ? "<#{$nataniev.console_bind}> " : "> "
 
   # Answer
   else
-    puts $nataniev.answer(bind != "" ? "#{bind} #{a}" : a)
-    print bind != "" ? "<#{bind}> " : "> "
+    puts $nataniev.answer($nataniev.console_bind != "" ? "#{$nataniev.console_bind} #{a}" : a)
+    print $nataniev.console_bind != "" ? "<#{$nataniev.console_bind}> " : "> "
   end
 
 end

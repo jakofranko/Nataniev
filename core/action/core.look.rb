@@ -16,7 +16,7 @@ class ActionLook
 
   def act q = nil
 
-    return "Missing"
+    return "Missing?"
 
   end
 
