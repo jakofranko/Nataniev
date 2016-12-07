@@ -33,7 +33,7 @@ module Vessel
 
   def install category,action_name
 
-    $nataniev.require("action",action_name)
+    if category == :generic then $nataniev.require("action",action_name) end
 
     if Kernel.const_defined?("Action#{action_name.capitalize}") == false then puts "Cannot install #{action_name}." ; return end
 

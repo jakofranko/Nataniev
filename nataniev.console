@@ -18,7 +18,8 @@ $nataniev = Nataniev.new
 $nataniev.console_bind = ""
 $nataniev.console_memory = {}
 
-print "\nNataniev is listening..\n> "
+puts  "\n#{Desamber.new}"
+print "Nataniev is listening..\n> "
 
 while a = gets.strip
 
