@@ -75,8 +75,19 @@ class String
     while filled.length < length
       filled = filler+filled
     end
-    return "#{filled}" 
+    return "#{filled}"
     
   end
 
+end
+
+class Float
+  
+  def percent_of val
+    
+    f = ((self/val.to_f) * 1000).to_i
+    return f/10.0
+    
+  end
+  
 end
