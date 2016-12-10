@@ -19,7 +19,7 @@ class ActionDocument
     content_actions = ""
     
     @host.actions.each do |cat,a|
-      content_actions += "#{cat}\n"
+      content_actions += "#{cat.capitalize}\n"
       a.each do |action|
         action = action.new
         content_actions += "  #{action.name.append(' ',14)} | #{action.docs}\n"
@@ -37,7 +37,7 @@ class ActionDocument
 
 ## Documentation
 
-Generated with [Nataniev](http://wiki.xxiivv.com/Nataniev) on **#{Desamber.new}**, read the full [project documentation](#{@host.site}).
+Generated with [Nataniev](http://wiki.xxiivv.com/Nataniev) on **#{Desamber.new}**, view the [project site](#{@host.site}).
 
 ##License
 

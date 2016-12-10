@@ -18,8 +18,9 @@ $nataniev = Nataniev.new
 $nataniev.console_bind = ""
 $nataniev.console_memory = {}
 
-puts  "\n#{Desamber.new}"
-print "Nataniev is listening..\n> "
+puts "".rainbow
+puts  "\n  #{Desamber.new}"
+print "  Nataniev is listening..\n\n> "
 
 while a = gets.strip
 
@@ -31,12 +32,12 @@ while a = gets.strip
   # Bind
   elsif a.split(" ").first == "bind"
     $nataniev.console_bind = a.sub("bind","").strip
-    print $nataniev.console_bind != "" ? "<#{$nataniev.console_bind}> " : "> "
+    print $nataniev.console_bind != "" ? "<#{$nataniev.console_bind.colorize(2)}> " : "> "
 
   # Answer
   else
     puts $nataniev.answer($nataniev.console_bind != "" ? "#{$nataniev.console_bind} #{a}" : a)
-    print $nataniev.console_bind != "" ? "<#{$nataniev.console_bind}> " : "> "
+    print $nataniev.console_bind != "" ? "<#{$nataniev.console_bind.colorize(2)}> " : "> "
   end
 
 end

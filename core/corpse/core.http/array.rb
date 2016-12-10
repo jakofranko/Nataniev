@@ -44,7 +44,7 @@ class Array
       else
         html += "<#{tag}>#{text}</#{tag}>"
       end
-
+      
       prev = rune
     end
 

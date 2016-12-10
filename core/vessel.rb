@@ -34,7 +34,10 @@ module Vessel
   def install category,action_name
 
     if category == :generic then $nataniev.require("action",action_name) end
-
+  
+    # Load action folder
+    load_folder("#{@path}/actions/*")
+    
     if Kernel.const_defined?("Action#{action_name.capitalize}") == false then puts "Cannot install #{action_name}." ; return end
 
     if !actions[category] then actions[category] = [] end

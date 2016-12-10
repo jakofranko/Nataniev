@@ -78,6 +78,18 @@ class String
     return "#{filled}"
     
   end
+  
+  def colorize(color_code)
+    "\e[#{color_code}m#{self}\e[0m"
+  end
+
+  def rainbow
+    i = 0
+    while i < 50
+      puts "#{i}".colorize(i)
+      i += 1
+    end
+  end
 
 end
 
@@ -85,8 +97,8 @@ class Float
   
   def percent_of val
     
-    f = ((self/val.to_f) * 1000).to_i
-    return f/10.0
+    v = (self/val.to_f) * 100
+    return v.to_i
     
   end
   
