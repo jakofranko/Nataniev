@@ -3,7 +3,7 @@
 
 # You see nothing, enter the nothing.
 
-require_relative "nataniev.rb"
+require_relative "system/nataniev.rb"
 
 $nataniev = Nataniev.new
 minute = Time.now.strftime("%M").to_i

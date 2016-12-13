@@ -3,7 +3,7 @@
 
 require 'sinatra'
 
-require_relative "nataniev.rb"
+require_relative "system/nataniev.rb"
 
 get '/:task' do
   $nataniev = Nataniev.new

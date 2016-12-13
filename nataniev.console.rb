@@ -5,7 +5,7 @@
 
 begin
 
-require_relative "nataniev.rb"
+require_relative "system/nataniev.rb"
 	
 class Nataniev
 

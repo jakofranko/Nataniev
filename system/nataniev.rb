@@ -8,12 +8,13 @@ class Nataniev
   attr_accessor :time
   attr_accessor :path
   attr_accessor :actor
+  attr_accessor :vessel
 
   def initialize
 
     @time    = Time.new
-    @path    = File.expand_path(File.join(File.dirname(__FILE__), "/"))
-
+    @path    = File.expand_path(File.join(File.dirname(__FILE__), "/"))+"/.."
+    
     load path+"/system/tools.rb"
     load path+"/core/action.rb"
     load path+"/core/corpse.rb"
@@ -40,11 +41,11 @@ class Nataniev
 
   def answer q = nil
 
-    parts  = q.split(" ")
-    actor  = parts[0]
-    action = parts[1] ? parts[1].to_sym : :look
-    params = q.sub("#{actor}","").sub("#{action}","").strip
-    vessel = actor.to_i > 0 ? make_registered(actor) : make_anonym(actor)
+    parts   = q.split(" ")
+    actor   = parts[0]
+    action  = parts[1] ? parts[1].to_sym : :look
+    params  = q.sub("#{actor}","").sub("#{action}","").strip
+    @vessel = actor.to_i > 0 ? make_registered(actor) : make_anonym(actor)
 
     return vessel.act(action,params)
 
@@ -92,16 +93,16 @@ class Nataniev
 
     # Target file
     if File.exist?("#{path}/core/#{cat}/#{cat}.#{name}.rb")
-      require_relative "core/#{cat}/#{cat}.#{name}.rb"
+      require_relative "#{path}/core/#{cat}/#{cat}.#{name}.rb"
     # Target folder
     elsif File.exist?("#{path}/core/#{cat}/#{cat}.#{name}/#{cat}.rb")
-      require_relative "core/#{cat}/#{cat}.#{name}/#{cat}.rb"
+      require_relative "#{path}/core/#{cat}/#{cat}.#{name}/#{cat}.rb"
     # Core file
     elsif File.exist?("#{path}/core/#{cat}/core.#{name}.rb")
-      require_relative "core/#{cat}/core.#{name}.rb"
+      require_relative "#{path}/core/#{cat}/core.#{name}.rb"
     # Core folder
     elsif File.exist?("#{path}/core/#{cat}/core.#{name}/#{cat}.rb")
-      require_relative "core/#{cat}/core.#{name}/#{cat}.rb"
+      require_relative "#{path}/core/#{cat}/core.#{name}/#{cat}.rb"
     else
       puts "MISSING #{cat} : #{name}"
     end
