@@ -2,4 +2,5 @@ core/vessel/vessel.*
 core/corpse/corpse.*
 core/action/action.*
 core/action/memory.*
+public/public.*
 .secret

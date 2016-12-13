@@ -45,7 +45,7 @@ class CorpseHttp
   def add_script name
 
     @scripts = !@scripts ? "" : @scripts
-    @scripts += "<script src='scripts/#{name}'></script>"
+    @scripts += "<script src='public.#{@host.name.downcase}/scripts/#{name}'></script>"
 
   end
 
@@ -60,7 +60,7 @@ class CorpseHttp
   def add_link rel = 'stylesheet', type = 'text/css', name
 
     @links = !@links ? "" : @links
-    @links += name.include?("http") ? "<link rel='#{rel}' type='#{type}' href='#{name}' />" :  "<link rel='#{rel}' type='#{type}' href='links/#{name}' />"
+    @links += name.include?("http") ? "<link rel='#{rel}' type='#{type}' href='#{name}' />" :  "<link rel='#{rel}' type='#{type}' href='public.#{@host.name.downcase}/links/#{name}' />"
 
   end
 

@@ -30,7 +30,7 @@ class Array
       text = line.sub(rune,"").strip
       tag  = collection[rune] ? collection[rune]['tag'] : "unknown"
 
-      if rune == "%" then html += Media.new(cat,text).to_s ; next end
+      if rune == "%" then html += Media.new(@host,cat,text).to_s ; next end
       if rune == "$" then html += (n = Nataniev.new ; n.answer(text) ) ; next end
 
       if stash != "" && rune != prev

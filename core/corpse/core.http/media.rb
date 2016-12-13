@@ -3,11 +3,12 @@
 
 class Media
 
-  def initialize(cat,id,url = nil)
+  def initialize(host,cat,id,url = nil)
 
       @id  = id.to_s.gsub(" ",".").downcase
       @cat = cat.to_s.downcase.gsub(" ",".")
-      @path = $vessel ? $vessel.media_path : "/var/www/client.oscean/media"
+      @path = "#{$nataniev.path}/public/public.#{host.name.downcase}/media"
+      @host = host
       @class = nil
 
   end
@@ -17,13 +18,13 @@ class Media
 
   def exists
 
-    if File.exist?("#{path}/#{@cat}/#{@id}.jpg")
+    if File.exist?("#{@path}/#{@cat}/#{@id}.jpg")
       return "jpg"
-    elsif File.exist?("#{path}/#{@cat}/#{@id}.png")
+    elsif File.exist?("#{@path}/#{@cat}/#{@id}.png")
       return "png"
-    elsif File.exist?("#{path}/#{@cat}/#{@id}.mp4")
+    elsif File.exist?("#{@path}/#{@cat}/#{@id}.mp4")
       return "mp4"
-    elsif File.exist?("#{path}/#{@cat}/#{@id}.svg")
+    elsif File.exist?("#{@path}/#{@cat}/#{@id}.svg")
       return "svg"
     end
     return nil
@@ -46,23 +47,23 @@ class Media
 
     if @id.include?("youtube")
       return "<iframe src='https://www.youtube.com/embed/#{@id.split('v=').last}' frameborder='0' allowfullscreen style='#{@style}'></iframe>"
-    elsif File.exist?("#{path}/#{@cat}/#{@id}.mp4")
-      return "<video #{@class ? "class='#{@class}'" : ""} style='#{@style}' autoplay loop><source src='/media/#{@cat}/#{@id}.mp4' type='video/mp4'>Your browser does not support the video tag.</video>"
-    elsif File.exist?("#{path}/#{@cat}/#{@id}.jpg")
-      return "<media #{@class ? "class='#{@class}'" : ""}  style='background-image:url(/media/#{@cat}/#{@id}.jpg);#{@style}'></media>" 
-    elsif File.exist?("#{path}/#{@cat}/#{@id}.png")
-      return "<media #{@class ? "class='#{@class}'" : ""} style='background-image:url(/media/#{@cat}/#{@id}.png);#{@style}'></media>" 
-    elsif File.exist?("#{path}/#{@cat}/#{@id}.svg")
-      return "<media #{@class ? "class='#{@class}'" : ""} style='background-image:url(/media/#{@cat}/#{@id}.svg);#{@style}'></media>" 
+    elsif File.exist?("#{@path}/#{@cat}/#{@id}.mp4")
+      return "<video #{@class ? "class='#{@class}'" : ""} style='#{@style}' autoplay loop><source src='public.#{@host.name.downcase}/media/#{@cat}/#{@id}.mp4' type='video/mp4'>Your browser does not support the video tag.</video>"
+    elsif File.exist?("#{@path}/#{@cat}/#{@id}.jpg")
+      return "<media #{@class ? "class='#{@class}'" : ""}  style='background-image:url(public.#{@host.name.downcase}/media/#{@cat}/#{@id}.jpg);#{@style}'></media>"
+    elsif File.exist?("#{@path}/#{@cat}/#{@id}.png")
+      return "<media #{@class ? "class='#{@class}'" : ""} style='background-image:url(public.#{@host.name.downcase}/media/#{@cat}/#{@id}.png);#{@style}'></media>"
+    elsif File.exist?("#{@path}/#{@cat}/#{@id}.svg")
+      return "<media #{@class ? "class='#{@class}'" : ""} style='background-image:url(public.#{@host.name.downcase}/media/#{@cat}/#{@id}.svg);#{@style}'></media>"
     end
-    puts "<alert>Missing: #{path}/#{@cat}/#{@id}</alert>"
-    return ""
+    puts "<alert>Missing: #{@path}/#{@cat}/#{@id}</alert>"
+    return "#{@path}/#{@cat}/#{@id}"
 
   end
 
   def debug
 
-    return "[missing:#{path}/#{@cat}/#{@id}:#{@class}]" 
+    return "[missing:#{@path}/#{@cat}/#{@id}:#{@class}]"
 
   end
 
