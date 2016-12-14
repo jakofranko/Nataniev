@@ -10,8 +10,8 @@ There are 3 main ways of launching Nataniev.
 ruby nataniev.operator (query)  # Will return a response and alt.
 ruby nataniev.console  (query)  # Will return a response and keep the STDIN loop active.
 ruby nataniev.auto              # Will not return a response, instead, write logs.
+ruby nataniev.server            # Will start sinatra and serve the vessels.
 ```
-
 ## Paradigm
 
 An application is made of 4 parts.
@@ -39,4 +39,4 @@ A **memory** is either a array or hash type file, containing data accessible by 
 
 ### Vessel
 
-A **vessel** is an application type.
+A **vessel** is an application type, that can contain actions, corpses and memories.
