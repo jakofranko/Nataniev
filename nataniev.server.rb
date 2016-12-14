@@ -16,6 +16,8 @@ get '/' do
   if request.base_url.include? "xxiivv" then v = "oscean" end
   if request.base_url.include? "grimgrains" then v = "grimgrains" end
   if request.base_url.include? "100r" then v = "hundredrabbits" end
+    
+  puts v
   a = $nataniev.answer("#{v} serve home")
   "#{a}"
 end
@@ -29,6 +31,8 @@ get '/:task' do
   if request.base_url.include? "xxiivv" then v = "oscean" end
   if request.base_url.include? "grimgrains" then v = "grimgrains" end
   if request.base_url.include? "100r" then v = "hundredrabbits" end
-  
-  "#{$nataniev.answer("#{v} serve "+params[:task])}"
+    
+  puts v
+  a = $nataniev.answer("#{v} serve "+params[:task])
+  "#{a}"
 end
