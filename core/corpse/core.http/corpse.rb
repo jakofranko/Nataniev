@@ -113,16 +113,16 @@ class CorpseHttp
 <!DOCTYPE html>
 <html>
   <head>
-    #{@metas}
-    #{@scripts}
-    #{@links}
-    #{@title}
-    #{@style}
+    #{metas}
+    #{scripts}
+    #{links}
+    #{title}
+    #{style}
   </head>
   <body>
-    #{@body}
+    #{body}
   </body>
-  #{@footers}
+  #{footers}
 </html>"
 
   end
