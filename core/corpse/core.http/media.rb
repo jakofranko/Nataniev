@@ -57,7 +57,7 @@ class Media
       return "<media #{@class ? "class='#{@class}'" : ""} style='background-image:url(public.#{@host.name.downcase}/media/#{@cat}/#{@id}.svg);#{@style}'></media>"
     end
     puts "<alert>Missing: #{@path}/#{@cat}/#{@id}</alert>"
-    return "#{@path}/#{@cat}/#{@id}"
+    return ""
 
   end
 
