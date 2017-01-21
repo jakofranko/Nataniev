@@ -42,7 +42,7 @@ class Timestamp
     if timeDiff >  60 then return (timeDiff/30).to_s+" months ago" end
     if timeDiff >  30 then return "a month ago" end
 
-    return "#{elapsed} / #{timeDiff}"
+    return "#{timeDiff/7} weeks ago"
 
   end
 
