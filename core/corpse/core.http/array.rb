@@ -11,6 +11,7 @@ class Array
       "#" => {"tag" => "code", "stash" => true},
       "?" => {"tag" => "nt"},
       "*" => {"tag" => "h2"},
+      "=" => {"tag" => "h3"},
       "+" => {"tag" => "hs"},
       ">" => {"tag" => ""}
     }
@@ -41,6 +42,8 @@ class Array
 
       if collection[rune] && collection[rune]["stash"]
         stash += "#{text}<br />"
+      elsif tag == ""
+        html += "#{text}"
       else
         html += "<#{tag}>#{text}</#{tag}>"
       end
