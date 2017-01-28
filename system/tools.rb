@@ -38,7 +38,7 @@ class String
 
   def like target
 
-    if target.downcase == self.downcase then return true end
+    if target.to_s.downcase.gsub(/[^a-z0-9\s]/i, '') == self.to_s.downcase.gsub(/[^a-z0-9\s]/i, '') then return true end
 
   end
 

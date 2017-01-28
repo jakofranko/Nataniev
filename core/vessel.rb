@@ -36,7 +36,7 @@ module Vessel
 
     @actions.each do |cat,list|
       list.each do |action|
-        if action.to_s.sub("Action","").downcase == action_name.downcase.to_s then return true end
+        if "#{action}".like("Action"+action_name.to_s) then return true end
       end
     end
 
