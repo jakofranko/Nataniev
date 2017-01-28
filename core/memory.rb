@@ -32,6 +32,14 @@ module Memory
 
   end
 
+  def overwrite_line id, line
+
+    lines = File.readlines(@path)
+    lines[id] = line << $/
+    File.open(@path, 'w') { |f| f.write(lines.join) }
+
+  end
+
   private
 
   def make_path dir,ext
