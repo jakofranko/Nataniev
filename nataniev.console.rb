@@ -18,7 +18,6 @@ $nataniev = Nataniev.new
 $nataniev.console_bind = ""
 $nataniev.console_memory = {}
 
-puts "".rainbow
 puts  "\n  #{Desamber.new}"
 print "  Nataniev is listening..\n\n> "
 

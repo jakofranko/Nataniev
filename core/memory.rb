@@ -5,6 +5,7 @@ module Memory
 
   attr_accessor :name
   attr_accessor :path
+  attr_accessor :render
 
   def initialize name = nil, dir = "#{$nataniev.path}/core"
 

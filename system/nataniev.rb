@@ -103,8 +103,6 @@ class Nataniev
     # Core folder
     elsif File.exist?("#{path}/core/#{cat}/core.#{name}/#{cat}.rb")
       require_relative "#{path}/core/#{cat}/core.#{name}/#{cat}.rb"
-    else
-      puts "MISSING #{cat} : #{name}"
     end
     
   end
