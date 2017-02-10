@@ -160,9 +160,9 @@ class Memory_Hash
 
   def ext ; return "mh" end
 
-  def filter field, value, type
+  def filter field = "", value = "", type = ""
 
-    return Object.const_get(type.capitalize).new(value.capitalize,@render[value.upcase])
+    return Object.const_get(type.to_s.capitalize).new(value.to_s.capitalize,@render[value.to_s.upcase])
 
   end
 
