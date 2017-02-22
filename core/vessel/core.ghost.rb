@@ -11,8 +11,8 @@ class VesselGhost # TODO
 
     @name = "A ghost"
 
-    install(:default,:look)
-    install(:default,:help)
+    install(:generic,:look)
+    install(:generic,:help)
 
   end
 

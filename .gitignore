@@ -4,3 +4,4 @@ core/action/action.*
 core/action/memory.*
 public/public.*
 .secret
+*.sublime-*
