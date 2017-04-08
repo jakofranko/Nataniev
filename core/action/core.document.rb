@@ -21,8 +21,7 @@ class ActionDocument
     @host.actions.each do |cat,a|
       content_actions += "#{cat.capitalize}\n"
       a.each do |action|
-        action = action.new
-        content_actions += "  #{action.name.append(' ',14)} | #{action.docs}\n"
+        content_actions += "  #{action.new.name.append(' ',14)} | #{action.new.docs}\n"
       end
     end
     
