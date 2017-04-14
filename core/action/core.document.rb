@@ -39,7 +39,7 @@ class ActionDocument
 
 Generated with [Nataniev](http://wiki.xxiivv.com/Nataniev) on **#{Desamber.new}**, view the [project site](#{@host.site}).
 
-##License
+## License
 
 See the [LICENSE](https://github.com/neauoire/License/README.md) file for license rights and limitations (CC)."
 
