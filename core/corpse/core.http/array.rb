@@ -31,7 +31,7 @@ class Array
       text = line.sub(rune,"").strip
       tag  = collection[rune] ? collection[rune]['tag'] : "unknown"
 
-      if rune == "%" then html += Media.new(cat,text).to_s ; next end
+      if rune == "%" then html += Media.new(cat,text.split(" ").first,text.split(" ")[1,3].join(" ")).to_s ; next end
       if rune == "$" then html += (n = Nataniev.new ; n.answer(text) ) ; next end
 
       if stash != "" && rune != prev

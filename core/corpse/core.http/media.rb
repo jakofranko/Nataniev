@@ -3,13 +3,13 @@
 
 class Media
 
-  def initialize(cat,id,url = nil)
+  def initialize(cat,id,cl = "")
 
     @id  = id.to_s.gsub(" ",".").downcase
     @cat = cat.to_s.downcase.gsub(" ",".")
     @host = $nataniev.vessel
     @path = "#{$nataniev.path}/public/public.#{@host.name.downcase}/media"
-    @class = nil
+    @class = cl
 
   end
 
