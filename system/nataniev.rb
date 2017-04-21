@@ -83,7 +83,6 @@ class Nataniev
 
     # Default to ghost
     require :vessel,:ghost
-    return VesselGhost
 
   end
 

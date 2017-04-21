@@ -33,4 +33,20 @@ class String
 
   end
 
+  def has_badword
+
+    ["dick","pussy","asshole","nigger","cock","jizz","faggot","nazi","cunt","sucker","bitch","fag","jew","nigga","anus","fuck"].each do |bad_word|
+      if self.include?(bad_word) then return bad_word end
+    end
+    return nil
+
+  end
+
+  def is_alphabetic
+
+    if self.gsub(/[^a-z]/i, '').downcase == self.downcase then return true end
+    return nil
+
+  end
+
 end
