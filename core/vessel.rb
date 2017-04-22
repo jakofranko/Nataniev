@@ -26,7 +26,7 @@ module Vessel
 
   def act action_name, params = nil
 
-    if !can(action_name) then p "Test Failed, for #{action_name}!" ; return "#{self.name.capitalize} cannot #{action_name}." end
+    if !can(action_name) then return "#{self.name.capitalize} cannot #{action_name}." end
 
     action = Object.const_get("Action#{action_name.capitalize}").new
     action.host = self
