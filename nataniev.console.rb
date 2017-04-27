@@ -1,6 +1,3 @@
-#!/bin/env ruby
-# encoding: utf-8
-
 # You see nothing, enter the nothing.
 
 begin
