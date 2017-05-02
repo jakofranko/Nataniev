@@ -5,6 +5,13 @@ require 'date'
 
 class Timestamp
 
+  attr_accessor :y
+  attr_accessor :m
+  attr_accessor :d
+  attr_accessor :H
+  attr_accessor :M
+  attr_accessor :S
+
   def initialize stamp = nil
 
     @stamp = !stamp || stamp.to_i < 1 ? DateTime.parse(Time.now.to_s).strftime("%Y%m%d%H%M%S") : stamp
