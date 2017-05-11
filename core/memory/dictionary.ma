@@ -9,6 +9,7 @@
 ~ P : PREP
 ~ R : ARTICLE
 ~ Q : INTERROG
+~ C : CONJUNCTION
 
 @ S C WORD
 001 R a
@@ -4253,7 +4254,6 @@
 005 N communication
 005 A communicative
 003 N communion
-004 N communiqu
 003 N communism
 003 N communist
 004 N community
@@ -6247,7 +6247,6 @@
 002 N dirham
 004 A dirigible
 001 N dirk
-001 N dirndl
 001 N dirt
 002 A dirty
 005 N disability
@@ -6552,7 +6551,6 @@
 002 N dogfish
 001 A dogged
 003 N doggerel
-002 D doggo
 002 A doggy
 004 N doggypaddle
 002 N doghouse
@@ -7972,7 +7970,6 @@
 003 N eyewash
 004 N eyewitness
 002 N eyrie
-001 N faade
 001 A fab
 002 N fable
 001 A fabled
@@ -7981,7 +7978,6 @@
 003 A fabulous
 001 N face
 003 N facecloth
-004 N faceflannel
 003 A faceless
 003 N facelift
 003 N facepack
@@ -8075,7 +8071,6 @@
 003 V fantasize
 003 A fantastic
 003 N fantasy
-002 N farad
 003 A faraway
 001 N farce
 001 N fare
@@ -12336,7 +12331,6 @@
 001 N jig
 002 N jigger
 002 A jiggered
-006 N jiggerypokery
 002 V jiggle
 002 N jigsaw
 002 N jihad
@@ -12344,7 +12338,6 @@
 002 N jingle
 002 N jingo
 001 V jink
-002 N jinnee
 003 N jitterbug
 001 N jive
 001 N job
@@ -12364,10 +12357,8 @@
 001 V jog
 002 N jogger
 002 V joggle
-002 N jogtrot
 001 N john
 002 N johnny
-007 N johnnycomelately
 001 V join
 002 N joiner
 001 N joint
@@ -18182,7 +18173,6 @@
 002 N protest
 003 N protestant
 004 N protestation
-001 N protg
 002 N protium
 003 N protocol
 002 N proton
@@ -20972,7 +20962,6 @@
 002 N shelta
 002 N shelter
 001 V shelve
-003 N shemozzle
 004 N shenanigan
 002 N shepherd
 003 N sheraton
@@ -20987,10 +20976,7 @@
 001 V shift
 002 A shiftless
 002 A shifty
-001 N shiite
-003 N shillelagh
 002 N shilling
-004 V shillyshally
 001 N shim
 002 V shimmer
 001 N shin
@@ -21039,8 +21025,6 @@
 002 N shoestring
 002 N shoetree
 001 V shoot
-003 N shootingbrake
-003 N shootingstick
 001 N shop
 002 N shopfloor
 003 N shopkeeper
@@ -26909,8 +26893,6 @@
 002 A youthful
 001 N yowl
 002 N yoyo
-002 N ytterbium
-001 N yttrium
 001 N yuan
 002 N yucca
 002 A yucky
@@ -26918,7 +26900,6 @@
 003 N yulelog
 002 A yummy
 002 N yuppie
-001 N z
 003 N zabaglione
 002 A zany
 002 A zappy
@@ -26969,3 +26950,7 @@
 003 N zucchini
 002 N zulu
 002 N zygote
+001 C but
+001 C and
+001 C or
+001 C nor
