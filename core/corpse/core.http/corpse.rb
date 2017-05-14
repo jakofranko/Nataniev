@@ -3,6 +3,7 @@
 
 require_relative "media.rb"
 require_relative "string.rb"
+require_relative "float.rb"
 require_relative "array.rb"
 
 class CorpseHttp

@@ -7,7 +7,7 @@ class Desamber
 
   def initialize(date = Date.today.to_s)
 
-    @date = date
+    @date = date.gsub("-","")
     @dict = ['Unesamber', 'Dutesamber', 'Trisesamber', 'Tetresamber', 'Pentesamber', 'Hexesamber', 'Sevesamber', 'Octesamber', 'Novesamber', 'Desamber', 'Undesamber', 'Dodesamber', 'Tridesamber']
     @time = Time.now + (3600 * 13) # server offset(+13 hours:Japan)
 
@@ -15,13 +15,13 @@ class Desamber
 
   def month
 
-    return @date[5,2].to_i
+    return @date[4,2].to_i
 
   end
 
   def day
 
-    return @date[8,2].to_i
+    return @date[6,2].to_i
 
   end
 
