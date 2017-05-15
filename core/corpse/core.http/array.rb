@@ -36,6 +36,7 @@ class Array
 
       if rune == "%" then html += Media.new(cat,text.split(" ").first,text.split(" ")[1,3].join(" ")).to_s ; next end
       if rune == "$" then html += (n = Nataniev.new ; n.answer(text) ) ; next end
+      if rune == "@" then html += query(text) ; next end
 
       if stash != "" && rune != prev
         prev_tag = collection[prev][:tag]
@@ -66,6 +67,23 @@ class Array
     end
 
     return html.markup
+
+  end
+
+  def query text
+
+    @host = $nataniev.vessel
+    @path = "#{$nataniev.path}/core/vessel/vessel.#{@host.name.downcase}"
+
+    memory_name = text.split(" ").first.downcase.gsub(" ",".")
+    memory_target = text.sub(memory_name,"").strip
+    memory = Memory_Hash.new(memory_name,@path).to_h
+
+    if memory[memory_target.upcase]
+      return memory[memory_target.upcase].runes
+    end
+    
+    return "<p>Could not locate #{memory_target} entry in #{memory_name}.</p>"
 
   end
 
