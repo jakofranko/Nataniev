@@ -45,7 +45,7 @@ class Array
       end
 
       if collection[rune] && collection[rune][:stash]
-        stash += "#{text}<br />"
+        stash += "<ln>#{text}</ln>"
       elsif collection[rune] && collection[rune][:rep]
         rep = ""
         text.split("|").each do |seg|
