@@ -15,7 +15,9 @@ class Timestamp
   def initialize stamp = nil
 
     @stamp = !stamp || stamp.to_i < 1 ? DateTime.parse(Time.now.to_s).strftime("%Y%m%d%H%M%S") : stamp
-      
+    
+    @stamp = @stamp.gsub("-","")
+    
     @y = @stamp[0,4].to_i
     @m = @stamp[4,2].to_i
     @d = @stamp[6,2].to_i

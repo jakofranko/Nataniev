@@ -21,6 +21,7 @@ class String
 
   def parser macro
 
+    if macro[0,1] == "$" then return Nataniev.new.answer(macro[1,macro.length-1].strip) end
     if macro == "!clock" then return "<a href='/Desamber'>#{Desamber.new.clock}</a>" end
     if macro == "!desamber" then return "<a href='/Desamber'>#{Desamber.new}</a>" end
 

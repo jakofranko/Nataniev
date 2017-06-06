@@ -9,7 +9,7 @@ class Array
       "&" => {:tag => "p"},
       "-" => {:tag => "list", :stash => true},
       "#" => {:tag => "code", :stash => true},
-      "?" => {:tag => "nt"},
+      "?" => {:tag => "note"},
       "*" => {:tag => "h2"},
       "=" => {:tag => "h3"},
       "+" => {:tag => "hs"},
