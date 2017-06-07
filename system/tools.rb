@@ -105,5 +105,11 @@ class Float
     return v.to_i
     
   end
+
+  def trim lenght = 2
+
+    return sprintf('%.'+lenght.to_s+'f', self)
+
+  end
   
 end
