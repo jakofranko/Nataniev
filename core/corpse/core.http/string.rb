@@ -15,6 +15,7 @@ class String
     end
     content = content.gsub("{_","<i>").gsub("_}","</i>")
     content = content.gsub("{*","<b>").gsub("*}","</b>")
+    content = content.gsub("{#","<c>").gsub("#}","</c>")
     return "#{content}"
 
   end
