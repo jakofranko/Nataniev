@@ -27,9 +27,15 @@ class Timestamp
 
   end
 
+  def unix
+
+    return Date.new(@y,@m,@d).to_time.to_i
+
+  end
+
   def elapsed
 
-    return Time.new.to_i - (Date.new(@y,@m,@d).to_time.to_i + (60 * 60 * @H) + (60 * @M) + (@S) )
+    return Time.new.to_i - (unix + (60 * 60 * @H) + (60 * @M) + (@S) )
 
   end
 
