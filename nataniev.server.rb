@@ -25,8 +25,6 @@ options "*" do
 end
 
 get '/' do
-  cross_origin
-  
   $nataniev = Nataniev.new
   
   v = ARGV.first ? ARGV.first : "ghost"
