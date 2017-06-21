@@ -4,8 +4,13 @@
 require 'sinatra'
 
 require_relative "system/nataniev.rb"
+require_relative "system/crossorigin.rb"
 
 set :port, 8888
+
+configure do
+  enable :cross_origin
+end
 
 get '/' do
   $nataniev = Nataniev.new
