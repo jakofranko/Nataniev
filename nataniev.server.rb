@@ -2,11 +2,12 @@
 # encoding: utf-8
 
 require 'sinatra'
+require 'sinatra/cross_origin'
 
 require_relative "system/nataniev.rb"
-require_relative "system/crossorigin.rb"
 
 set :port, 8888
+set :allow_origin, :any
 
 configure do
   enable :cross_origin
