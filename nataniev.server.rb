@@ -6,12 +6,17 @@ require 'sinatra/cross_origin'
 
 require_relative "system/nataniev.rb"
 
-set :port, 8888
-set :allow_origin, :any
-
 configure do
   enable :cross_origin
 end
+
+set :port, 8888
+
+set :allow_origin, :any
+set :allow_methods, [:get, :post, :options]
+set :allow_credentials, true
+set :max_age, "1728000"
+set :expose_headers, ['Content-Type']
 
 get '/' do
   $nataniev = Nataniev.new
