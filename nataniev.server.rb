@@ -18,7 +18,15 @@ set :allow_credentials, true
 set :max_age, "1728000"
 set :expose_headers, ['Content-Type']
 
+options "*" do
+  response.headers["Allow"] = "HEAD,GET,PUT,POST,DELETE,OPTIONS"
+  response.headers["Access-Control-Allow-Headers"] = "X-Requested-With, X-HTTP-Method-Override, Content-Type, Cache-Control, Accept"
+  200
+end
+
 get '/' do
+  cross_origin
+  
   $nataniev = Nataniev.new
   
   v = ARGV.first ? ARGV.first : "ghost"
