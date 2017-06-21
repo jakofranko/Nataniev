@@ -16,6 +16,7 @@ get '/' do
   if request.base_url.include? "grimgrains" then v = "grimgrains" end
   if request.base_url.include? "100r" then v = "hundredrabbits" end
   if request.base_url.include? "paradise" then v = "paradise" end
+  if request.base_url.include? "rotonde" then v = "rotonde" end
   
   a = $nataniev.answer("#{v} serve home")
   "#{a}"
@@ -31,6 +32,7 @@ get '/:task' do
   if request.base_url.include? "grimgrains" then v = "grimgrains" end
   if request.base_url.include? "100r" then v = "hundredrabbits" end
   if request.base_url.include? "paradise" then v = "paradise" end
+  if request.base_url.include? "rotonde" then v = "rotonde" end
     
   a = $nataniev.answer("#{v} serve "+params[:task])
   "#{a}"
