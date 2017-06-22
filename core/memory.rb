@@ -279,7 +279,7 @@ class Memory_Hash
         if !t.kind_of?(Hash) then t = {} end
         t[child] = value 
       else
-        if child.include?(" : ")
+        if child.include?(" : ") && t.kind_of?(Hash)
           if !t.kind_of?(Hash) then t = {} end
           t[child.split(" : ").first.strip] = child.split(" : ").last.strip
         else

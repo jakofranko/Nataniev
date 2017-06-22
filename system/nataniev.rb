@@ -53,7 +53,6 @@ class Nataniev
 
   def make_registered id
 
-    # TODO
     return make_vessel(instance).new(id.to_i)
 
   end
@@ -83,7 +82,6 @@ class Nataniev
 
     # Default to ghost
     require :vessel,:ghost
-    return VesselGhost
 
   end
 

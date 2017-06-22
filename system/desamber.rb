@@ -7,20 +7,21 @@ class Desamber
 
   def initialize(date = Date.today.to_s)
 
-    @date = date
+    @date = date.gsub("-","")
     @dict = ['Unesamber', 'Dutesamber', 'Trisesamber', 'Tetresamber', 'Pentesamber', 'Hexesamber', 'Sevesamber', 'Octesamber', 'Novesamber', 'Desamber', 'Undesamber', 'Dodesamber', 'Tridesamber']
+    @time = Time.now + (3600 * 13) # server offset(+13 hours:Japan)
 
   end
 
   def month
 
-    return @date[5,2].to_i
+    return @date[4,2].to_i
 
   end
 
   def day
 
-    return @date[8,2].to_i
+    return @date[6,2].to_i
 
   end
 
@@ -66,6 +67,44 @@ class Desamber
   def to_s
 
     return "#{@dict[equalMonth-1]} #{equalDay}, #{year}"
+
+  end
+
+  # Clock
+
+  def elapsed
+
+    return ((@time.hour) * 60 * 60) + (@time.min * 60) + @time.sec
+
+  end
+
+  def to_i
+
+    return ((elapsed / 86400.0) * 1000000).to_i
+
+  end
+
+  def timeStr
+
+    return "#{to_i}".append("0",6)
+
+  end
+
+  def above
+
+    return timeStr[0,3]
+    
+  end
+
+  def below
+
+    return timeStr[3,3]
+    
+  end
+
+  def clock
+
+    return "#{above}:#{below}"
 
   end
 

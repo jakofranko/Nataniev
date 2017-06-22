@@ -5,3 +5,5 @@ core/action/memory.*
 public/public.*
 .secret
 *.sublime-*
+secret.*
+disk/

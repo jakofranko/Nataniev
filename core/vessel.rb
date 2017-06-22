@@ -28,7 +28,10 @@ module Vessel
 
     if !can(action_name) then return "#{self.name.capitalize} cannot #{action_name}." end
 
-    return Object.const_get("Action#{action_name.capitalize}").new(self).act(params)
+    action = Object.const_get("Action#{action_name.capitalize}").new
+    action.host = self
+
+    return action.act(params)
 
   end
 
@@ -39,7 +42,6 @@ module Vessel
         if "#{action}".like("Action"+action_name.to_s) then return true end
       end
     end
-
     return false
     
     # Override installation

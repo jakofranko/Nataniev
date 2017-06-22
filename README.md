@@ -18,7 +18,12 @@ An application is made of 4 parts.
 
 ### Vessel
 
-A **vessel** is an application type, that can contain actions, corpses and memories.
+A **vessel** is an application type, that can contain actions, corpses and memories. Vessels can also have public files.
+
+```
+/core/vessel/vessel.oscean
+/public/public.oscean
+```
 
 ### Action
 

@@ -12,6 +12,8 @@ end
 def load_folder path
 
   Dir[path].each do |file_name|
+    if file_name.to_s.length < 5 then next end  
+    if file_name[-3,3] != ".rb" then next end
     load file_name
   end
 
@@ -28,6 +30,8 @@ end
 def require_folder path
 
   Dir[path].each do |file_name|
+    if file_name.to_s.length < 5 then next end  
+    if file_name[-3,3] != ".rb" then next end
     require file_name
   end
 
@@ -100,6 +104,12 @@ class Float
     v = (self/val.to_f) * 100
     return v.to_i
     
+  end
+
+  def trim lenght = 2
+
+    return sprintf('%.'+lenght.to_s+'f', self)
+
   end
   
 end

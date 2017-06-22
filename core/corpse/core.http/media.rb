@@ -3,13 +3,13 @@
 
 class Media
 
-  def initialize(cat,id,url = nil)
+  def initialize(cat,id,cl = "")
 
     @id  = id.to_s.gsub(" ",".").downcase
     @cat = cat.to_s.downcase.gsub(" ",".")
     @host = $nataniev.vessel
-    @path = "#{$nataniev.path}/public/public.#{@host.name.downcase}/media"
-    @class = nil
+    @path = @host && @host.name ? "#{$nataniev.path}/public/public.#{@host.name.downcase}/media" : ""
+    @class = cl
 
   end
 
@@ -45,9 +45,7 @@ class Media
 
   def to_s
 
-    if @id.include?("youtube")
-      return "<iframe src='https://www.youtube.com/embed/#{@id.split('v=').last}' frameborder='0' allowfullscreen style='#{@style}'></iframe>"
-    elsif File.exist?("#{@path}/#{@cat}/#{@id}.mp4")
+    if File.exist?("#{@path}/#{@cat}/#{@id}.mp4")
       return "<video #{@class ? "class='#{@class}'" : ""} style='#{@style}' autoplay loop><source src='public.#{@host.name.downcase}/media/#{@cat}/#{@id}.mp4' type='video/mp4'>Your browser does not support the video tag.</video>"
     elsif File.exist?("#{@path}/#{@cat}/#{@id}.jpg")
       return "<media #{@class ? "class='#{@class}'" : ""}  style='background-image:url(public.#{@host.name.downcase}/media/#{@cat}/#{@id}.jpg);#{@style}'></media>"

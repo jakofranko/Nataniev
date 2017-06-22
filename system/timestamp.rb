@@ -5,10 +5,19 @@ require 'date'
 
 class Timestamp
 
+  attr_accessor :y
+  attr_accessor :m
+  attr_accessor :d
+  attr_accessor :H
+  attr_accessor :M
+  attr_accessor :S
+
   def initialize stamp = nil
 
     @stamp = !stamp || stamp.to_i < 1 ? DateTime.parse(Time.now.to_s).strftime("%Y%m%d%H%M%S") : stamp
-      
+    
+    @stamp = @stamp.gsub("-","")
+    
     @y = @stamp[0,4].to_i
     @m = @stamp[4,2].to_i
     @d = @stamp[6,2].to_i
@@ -18,9 +27,15 @@ class Timestamp
 
   end
 
+  def unix
+
+    return Date.new(@y,@m,@d).to_time.to_i
+
+  end
+
   def elapsed
 
-    return Time.new.to_i - (Date.new(@y,@m,@d).to_time.to_i + (60 * 60 * @H) + (60 * @M) + (@S) )
+    return Time.new.to_i - (unix + (60 * 60 * @H) + (60 * @M) + (@S) )
 
   end
 
