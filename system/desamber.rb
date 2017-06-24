@@ -37,6 +37,12 @@ class Desamber
 
   end
 
+  def month_name
+
+    return "#{@dict[equalMonth-1]}".to_sym
+
+  end
+
   def span
 
     return Date.new(y=year,m=month,d=day).yday
