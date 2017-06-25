@@ -10,7 +10,7 @@ class VesselGhost # TODO
     super
 
     @name = "A ghost"
-
+    @docs = "The Ghost vessel cannot act."
     install(:default,:look)
     install(:default,:help)
 

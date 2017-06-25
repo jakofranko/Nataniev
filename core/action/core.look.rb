@@ -10,7 +10,7 @@ class ActionLook
     super
 
     @name = "Look"
-    @docs = "[TODO]"
+    @docs = "Does nothing at the moment."
 
   end
 

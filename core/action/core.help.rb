@@ -16,7 +16,7 @@ class ActionHelp
 
   def act q = nil
 
-    t = ""
+    t = "#{host.docs}\n"
 
     host.actions.each do |category,actions|
       t += "#{category.capitalize}\n"
