@@ -17,6 +17,10 @@ public/public.*
 !public/public.lobby
 !action/action.tweet
 
+!action/action.document.rb
+!action/action.help.rb
+!action/action.look.rb
+
 # Private
 
 secret.*
