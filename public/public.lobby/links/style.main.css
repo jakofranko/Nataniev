@@ -1,0 +1,87 @@
+body {}
+yu { display: block; font-family: 'input_mono_medium'; font-size:11px; line-height: 30px}
+ln { display: block;}
+ln i { color:#999; }
+hl { line-height: 29px; font-family: 'input_mono_regular'; display: block; border-bottom:1px solid black; }
+textarea { background:none; padding:15px 0px; line-height: 15px; overflow: hidden}
+b { font-weight: normal; font-family: 'input_mono_regular'}
+#lobby { width:calc(100vw - 60px); height:calc(100vh - 60px);background:black; margin:30px auto 0px auto; position:relative; border-radius: 2px; overflow: hidden}
+#grid { background-image:url(../media/graphics/grid.svg); width:100%; height:100%; background-position: 15px 15px; position:absolute; opacity: 0.5}
+#lobby { background-size:cover; background-position: center center; background-color: #efefef}
+
+#commander { background:white; height:30px; width:30px; position:absolute; bottom:0px; width:100%; vertical-align: top; border-top:1px solid black; z-index:9000; }
+#commander > .icon { display: inline-block; background-size:20px 20px; background-position: center center; background-repeat: no-repeat; background-image:url(../media/icons/nataniev.svg);}
+#commander > .icon.twitter { background-image:url(../media/icons/twitter.png);  }
+#commander > .icon.player { background-image:url(../media/icons/player.svg);  }
+#commander > input { display: inline-block; line-height: 20px; padding:5px 0px; position:absolute;top:0px;left:30px; width:calc(100vw - 90px); font-size:11px; z-index:9002; background:transparent;}
+#commander > .hint { position: absolute; top:0px; z-index: 9001; left:30px; line-height: 20px; padding:5px 0px;}
+#commander > .hint .input { color:white; display: inline-block; margin-right: 5px }
+#commander > .hint .application { font-family: 'input_mono_regular'; color:#999; }
+#commander > .hint .method { font-family: 'input_mono_regular' }
+#commander > .hint .method.global { color:#999; }
+#commander > .hint .param { color:#999; }
+#commander > .clock { position: absolute; right:0px; top:0px;line-height: 20px; padding:5px 0px; }
+#commander > .size { position: absolute; right:60px; top:0px;line-height: 20px; padding:5px 0px; color:#999;}
+
+.icon { width:30px; height:30px; }
+.full { width:100%; height:calc(100% - 60px);}
+
+ln.half { line-height: 15px }
+
+.app { display: block; width:30px; height:30px; background:RGBA(255,255,255,1); position: absolute; top:60px; left:60px; padding:30px; color:black; overflow: hidden}
+.app .wrapper { overflow: hidden; height:100%; overflow: hidden;height: 100%}
+.app.selected { z-index:8001; }
+.app.dragged { background-color:RGBA(255,255,255,0.3) !important; z-index:8002;}
+.app.hidden { display: none }
+.app.ghost { background:none; color:black; z-index:10; }
+
+.app.noir { background: black; color:white; }
+.app.noir hl { border-bottom:1px solid white; }
+
+.app.twitter .tweet { line-height: 15px; margin-bottom:15px; }
+.app.twitter .tweet t { display: inline-block; vertical-align: top; }
+.app.twitter .tweet:hover { background:#efefef; }
+.app.twitter .tweet .account { font-family: 'input_mono_regular'; }
+.app.twitter .tweet .text {}
+.app.twitter .tweet .text span, .app.twitter .tweet .text a { padding:0px 5px; display: inline-block; }
+.app.twitter .tweet .text .account { background:#ddd; }
+.app.twitter .tweet .text .filter { background: #72dec2; }
+.app.twitter .tweet .text .hashtag { color:#777; }
+.app.twitter .tweet .text .highlight { background:#72dec2; }
+.app.twitter .tweet .text .url { background:#ddd;}
+.app.twitter .tweet .text .url:hover { background:#000;color:white; }
+.app.twitter .tweet .time { color:#ddd; }
+.app.twitter .tweet.retweet { display: none }
+.app.twitter .tweet.mention { }
+.app.twitter .tweet.reply { border-left:1px solid black; padding-left:14px;}
+.app.twitter list ln { display: block; width:210px; line-height: 15px; float:left; }
+.app.twitter list ln span { color:#999; float:right; display: inline-block; margin-right:30px; }
+
+.app.player .search { font-family: 'input_mono_regular'; }
+.app.player .time { color:#999; display: inline; }
+.app.player .track { display: inline; }
+.app.player .album { display: inline-block; }
+.app.player .stats { display: inline; }
+.app.player list { display: block; }
+.app.player list ln { display: block; width:210px; line-height: 15px; float:left; }
+.app.player list ln span { color:#999; float:right; display: inline-block; margin-right:30px; }
+
+.ib { display: inline-block; }
+.w4 { width:120px; }
+.w6 { width:180px; }
+
+/* Foreground */
+
+.fu { text-decoration: underline; }
+.f9 { color: #999; }
+.ff { color:white; }
+.fc { color:#ccc; }
+
+/* Background */
+
+.b0 { background: #000 }
+.b9 { background: #999; }
+.bc { background: #ccc; }
+
+.mb { margin-bottom:15px; }
+.ml { margin-left:15px; }

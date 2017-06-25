@@ -1,7 +1,15 @@
-core/vessel/vessel.*
-core/corpse/corpse.*
-core/action/action.*
-core/action/memory.*
+vessel/vessel.*
+corpse/corpse.*
+action/action.*
+action/memory.*
 public/public.*
+
+# Core modules
+!vessel/vessel.ghost
+!vessel/vessel.rotonde
+!vessel/vessel.lobby
+!corpse/corpse.base
+!corpse/corpse.http
+!public/public.lobby
+
 secret.*
-disk/
