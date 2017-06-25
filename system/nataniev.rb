@@ -30,7 +30,7 @@ class Nataniev
     parts   = q.split(" ")
     vessel  = parts[0] ? parts[0] : "ghost"
     action  = parts[1] ? parts[1].to_sym : :help
-    params  = q.sub("#{actor}","").sub("#{action}","").strip
+    params  = q.sub("#{vessel} #{action}","").strip
 
     # Summon
     spirit  = summon(vessel)

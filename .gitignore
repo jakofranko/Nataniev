@@ -1,15 +1,22 @@
+
+# User Tools
+
 vessel/vessel.*
 corpse/corpse.*
 action/action.*
 action/memory.*
 public/public.*
 
-# Core modules
+# Core Tools
+
 !vessel/vessel.ghost
 !vessel/vessel.rotonde
 !vessel/vessel.lobby
 !corpse/corpse.base
 !corpse/corpse.http
 !public/public.lobby
+!action/action.tweet
+
+# Private
 
 secret.*
