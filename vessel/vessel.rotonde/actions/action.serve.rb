@@ -33,10 +33,10 @@ class ActionServe
     ro.portal.push("rotonde.monochromatic.co")
     ro.portal.push("rotonde.cblgh.org")
     ro.portal.push("rotonde.anxl.faith")
-    ro.portal.push("johnakers.network/rotonde.json")
-    ro.portal.push("rotonde.electricgecko.de")
-    ro.portal.push("rotonde.attilam.com")
-    ro.portal.push("rotonde.brennan.pizza")
+    # ro.portal.push("johnakers.network/rotonde.json")
+    # ro.portal.push("rotonde.electricgecko.de")
+    # ro.portal.push("rotonde.attilam.com")
+    # ro.portal.push("rotonde.brennan.pizza")
     
     return ro.to_json
     

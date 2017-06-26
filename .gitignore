@@ -20,6 +20,7 @@ public/public.*
 !action/action.document.rb
 !action/action.help.rb
 !action/action.look.rb
+!action/action.tweet.rb
 
 # Private
 
