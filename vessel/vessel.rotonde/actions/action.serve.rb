@@ -55,6 +55,7 @@ class ActionServe
 
       entry = {}
       entry[:time] = Timestamp.new(log["DATE"]).unix.to_s
+      entry[:focus] = log["CODE"][3,1].to_i/10.0
 
       if text then entry[:text] = text.gsub("{{","").gsub("}}","") end
       if media > 0 then entry[:media] = "http://wiki.xxiivv.com/public.oscean/media/diary/#{media}.jpg" end
