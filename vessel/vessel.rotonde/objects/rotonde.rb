@@ -7,6 +7,7 @@ class Rotonde
 
   attr_accessor :name
   attr_accessor :location
+  attr_accessor :position
   attr_accessor :avatar
   attr_accessor :color
   attr_accessor :glyph
@@ -31,6 +32,7 @@ class Rotonde
       :profile => {
         :name => @name, 
         :location => @location,
+        :position => @position,
         :avatar => @avatar,
         :color => @color,
         :glyph => @glyph
