@@ -25,9 +25,9 @@ class ActionTweet
     cached_payload = payload
     if !cached_payload then return "#{@host.name} has no payload." end
     if !account then return "#{@host.name} has no account." end
-    if !File.exist?("#{$nataniev.path}/secret.twitter.#{account}.config.rb") then return "#{@host.name} has no config file." end
+    if !File.exist?("#{$nataniev.path}/secret.twitter.#{account}.rb") then return "#{@host.name} has no config file." end
 
-    load "#{$nataniev.path}/secret.twitter.#{account}.config.rb"
+    load "#{$nataniev.path}/secret.twitter.#{account}.rb"
 
     client = Twitter::REST::Client.new($twitter_config)
     client.update(cached_payload)

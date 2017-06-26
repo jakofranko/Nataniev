@@ -7,7 +7,7 @@ module Memory
   attr_accessor :path
   attr_accessor :render
 
-  def initialize name = nil, dir = "#{$nataniev.path}/core"
+  def initialize name = nil, dir = "#{$nataniev.path}"
 
     @name    = name.downcase
     @path    = make_path(dir,ext)
