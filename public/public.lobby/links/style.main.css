@@ -7,7 +7,7 @@ textarea { background:none; padding:15px 0px; line-height: 15px; overflow: hidde
 b { font-weight: normal; font-family: 'input_mono_regular'}
 #lobby { width:calc(100vw - 60px); height:calc(100vh - 60px);background:black; margin:30px auto 0px auto; position:relative; border-radius: 2px; overflow: hidden}
 #grid { background-image:url(../media/graphics/grid.svg); width:100%; height:100%; background-position: 15px 15px; position:absolute; opacity: 0.5}
-#lobby { background-size:cover; background-position: center center; background-color: #efefef}
+#lobby { background-image:url(../media/images/wallpaper2.jpg); background-size:cover; background-position: center center; background-color: #efefef}
 
 #commander { background:white; height:30px; width:30px; position:absolute; bottom:0px; width:100%; vertical-align: top; border-top:1px solid black; z-index:9000; }
 #commander > .icon { display: inline-block; background-size:20px 20px; background-position: center center; background-repeat: no-repeat; background-image:url(../media/icons/nataniev.svg);}
@@ -21,7 +21,7 @@ b { font-weight: normal; font-family: 'input_mono_regular'}
 #commander > .hint .method.global { color:#999; }
 #commander > .hint .param { color:#999; }
 #commander > .clock { position: absolute; right:0px; top:0px;line-height: 20px; padding:5px 0px; }
-#commander > .size { position: absolute; right:60px; top:0px;line-height: 20px; padding:5px 0px; color:#999;}
+#commander > .size { position: absolute; right:30px; top:0px;line-height: 20px; padding:5px 0px; color:#999;}
 
 .icon { width:30px; height:30px; }
 .full { width:100%; height:calc(100% - 60px);}

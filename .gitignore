@@ -11,6 +11,7 @@ public/public.*
 
 !vessel/vessel.ghost
 !vessel/vessel.rotonde
+!vessel/vessel.maeve
 !vessel/vessel.lobby
 !corpse/corpse.base
 !corpse/corpse.http

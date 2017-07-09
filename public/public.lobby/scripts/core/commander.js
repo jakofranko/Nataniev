@@ -111,20 +111,20 @@ function Commander()
 		input_change();
 	}
 
-	this.clock = function()
+	this.clock = function(show_all = false)
 	{
 		var d = new Date(), e = new Date(d);
 		var msSinceMidnight = e - d.setHours(0,0,0,0);
 		var val = (msSinceMidnight/864) * 10;
 		var val_s = new String(val);
-		return val_s.substr(0,3)+":"+val_s.substr(3,3);
+		return val_s.substr(0,3)+(show_all ? ":"+val_s.substr(3,3) : '');
 	}
 
 	this.update_clock = function()
 	{
 		this.clock_el.innerHTML = this.clock();
 
-		setTimeout(function(){ lobby.commander.update_clock(); }, 500);
+		setTimeout(function(){ lobby.commander.update_clock(); }, 8640);
 	}
 
 	this.is_typing = function()

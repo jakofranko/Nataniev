@@ -46,6 +46,15 @@ function Lobby()
 		this.try_install("Twitter");
 		this.try_install("Editor");
 		this.try_install("Rotonde");
+		this.try_install("Marabu");
+
+		setTimeout(function(){ lobby.on_ready(); }, 1000);
+	}
+
+	this.on_ready = function()
+	{
+		console.log(this.apps.util);
+		this.apps.util.launch();
 	}
 
 	function on_resize()

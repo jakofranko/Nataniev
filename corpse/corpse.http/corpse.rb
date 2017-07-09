@@ -58,10 +58,10 @@ class CorpseHttp
 
   end
 
-  def add_script name
+  def add_script name, vessel_name = @host.name
 
     @scripts = !@scripts ? "" : @scripts
-    @scripts += "<script src='public.#{@host.name.downcase}/scripts/#{name}'></script>"
+    @scripts += "<script src='public.#{vessel_name.downcase}/scripts/#{name}'></script>"
 
   end
 
@@ -73,10 +73,10 @@ class CorpseHttp
 
   end
 
-  def add_link rel = 'stylesheet', type = 'text/css', name
+  def add_link name, vessel_name = @host.name
 
     @links = !@links ? "" : @links
-    @links += name.include?("http") ? "<link rel='#{rel}' type='#{type}' href='#{name}' />" :  "<link rel='#{rel}' type='#{type}' href='public.#{@host.name.downcase}/links/#{name}' />"
+    @links += "<link rel='stylesheet' type='text/css' href='public.#{vessel_name.downcase}/links/#{name}' />"
 
   end
 

@@ -1,0 +1,9 @@
+#terminal { background:black; z-index:9999; color:white; position: fixed; top:0px; width:100vw; left:0px; transition: all 150ms; overflow:hidden; padding: 0px 0px; font-family: 'input_mono_medium'; font-size:11px;}
+#terminal list { margin-bottom: 5px }
+#terminal list ln { display:block;line-height: 15px; max-width: 800px; margin:0px auto; font-family: 'input_mono_medium'; clear:both;}
+#terminal list ln .host { color:#999; }
+#terminal list ln .timestamp { color:#999; }
+#terminal list ln:hover .host { color:#fff; }
+#terminal wr { max-width: 800px; display: block; margin:0px auto; }
+#terminal input { display:inline-block; line-height: 15px; width: 400px; max-width: 50%; margin:0px auto; color:white; background:transparent;}
+#terminal t.who { color:#999; }

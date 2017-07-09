@@ -52,4 +52,9 @@ class String
 
   end
 
+  def to_url
+
+    return self.downcase.gsub(" ","+")
+  end
+
 end

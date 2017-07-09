@@ -4,7 +4,7 @@ function Util()
 
   this.name = "util";
   this.size = {width:420,height:90};
-  this.origin = {x:30,y:120};
+  this.origin = {x:120,y:120};
   this.theme = "noir";
   this.methods.set_wallpaper = {name:"set_wallpaper"};
 
