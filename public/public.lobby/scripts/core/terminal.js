@@ -31,19 +31,18 @@ function Terminal()
 
   this.append = function(entry)
   {
-    console.log(entry);
     this.queue.push(entry);
   }
 
   this.update = function()
   {
-    if(this.queue.length > 0){
-      var line = document.createElement("ln");
-      var entry = this.queue[0];
-      line.innerHTML = "<t class='timestamp'>"+this.clock(true)+"</t> <t class='host'>@"+entry.host+" </t><t class='text'>"+entry.text+"</t>";
-      this.history_el.appendChild(line);    
-      this.queue.shift();  
-    }
+    if(this.queue.length < 1){ return ; }
+
+    var line = document.createElement("ln");
+    var entry = this.queue[0];
+    line.innerHTML = "<t class='timestamp'>"+this.clock(true)+"</t> <t class='host'>@"+entry.host+" </t><t class='text'>"+entry.text+"</t>";
+    this.history_el.appendChild(line);    
+    this.queue.shift();  
   }
 
   this.refresh = function()
@@ -53,16 +52,14 @@ function Terminal()
     setTimeout(function(){ terminal.refresh(); }, 500);
   }
 
-  this.command = function(val)
-  {
-    this.append({host:"oscean.ghost",text:val,class:"client"});
-    this.input_el.value = "";
-    this.call(val.replace(/ /g, '+'));
-    this.update();
-  }
-
   this.call = function(val)
   {
+    val = val.replace(/ /g, '+');
+    this.append({host:"oscean.ghost",text:val,class:"client"});
+    this.input_el.value = "";
+
+    this.update();
+
     var url = ("http://localhost:8888/:maeve+"+val); 
     $.get(url).done(function(response){
       try {
@@ -89,12 +86,11 @@ function Terminal()
   {
     if(e.keyCode == 14 || e.key == "Enter"){
       if(this.input_el.value){
-        this.command(this.input_el.value);
+        this.call(this.input_el.value);
         e.preventDefault();
         return false;
       }
     }
-
   }
 
   this.toggle = function()
@@ -116,8 +112,7 @@ function Terminal()
 
     this.is_active = true;
     document.body.appendChild(this.el);
-    this.append({host:"nataniev",text:"Connecting.."});
-    this.append({host:"nataniev.maeve",text:"Welcome back."});
+    this.call("init");
 
     this.refresh();
   }
