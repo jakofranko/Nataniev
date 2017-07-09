@@ -35,7 +35,7 @@ function Terminal()
     this.queue.push(entry);
   }
 
-  this.refresh = function()
+  this.update = function()
   {
     if(this.queue.length > 0){
       var line = document.createElement("ln");
@@ -44,6 +44,11 @@ function Terminal()
       this.history_el.appendChild(line);    
       this.queue.shift();  
     }
+  }
+
+  this.refresh = function()
+  {
+    this.update();
 
     setTimeout(function(){ terminal.refresh(); }, 500);
   }
@@ -52,6 +57,21 @@ function Terminal()
   {
     this.append({host:"oscean.ghost",text:val,class:"client"});
     this.input_el.value = "";
+    this.call(val.replace(/ /g, '+'));
+    this.update();
+  }
+
+  this.call = function(val)
+  {
+    var url = ("http://localhost:8888/:maeve+"+val); 
+    $.get(url).done(function(response){
+      try {
+        a = JSON.parse(response);
+      } catch(e) {
+        console.log(e,response);
+      }
+      terminal.append(a);
+    },"json");
   }
 
   // 
