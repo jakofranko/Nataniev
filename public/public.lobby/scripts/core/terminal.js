@@ -67,7 +67,10 @@ function Terminal()
       } catch(e) {
         console.log(e,response);
       }
-      terminal.append(a);
+
+      for(entry in a){
+        terminal.append(a[entry]);
+      }
     },"json");
   }
 
@@ -75,7 +78,7 @@ function Terminal()
 
   this.on_keydown = function(e)
   {
-    if(e.keyCode == 192 && e.key == "~"){
+    if(e.keyCode == 192 || e.key == "~"){
       this.toggle();
       e.preventDefault();
       return false;

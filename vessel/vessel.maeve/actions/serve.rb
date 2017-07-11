@@ -20,7 +20,14 @@ class ActionServe
 
     q = q.sub(":maeve+",'').gsub("+"," ")
 
-    return {:host => "nataniev.maeve",:text => "Request(#{q})"}.to_json
+    if q.like("init")
+      return [
+        {:host => "nataniev.maeve",:text => "Today is #{Desamber.new}."},
+        {:host => "nataniev.maeve", :text => "The time is #{Desamber.new.clock}."}
+      ].to_json
+    else
+      return [{:host => "nataniev.maeve",:text => "Unknown request"}].to_json
+    end
 
   end
 
