@@ -14,9 +14,9 @@ class Timestamp
 
   def initialize stamp = nil
 
-    @stamp = !stamp || stamp.to_i < 1 ? DateTime.parse(Time.now.to_s).strftime("%Y%m%d%H%M%S") : stamp
-    
+    @stamp = !stamp || stamp.to_i < 1 ? DateTime.parse(Time.now.to_s).strftime("%Y%m%d%H%M%S") : stamp    
     @stamp = @stamp.gsub("-","")
+    @dict = ["January", "February", "March", "April", "May", "June", "July", "August", "September",  "October",  "November",  "December"]
     
     @y = @stamp[0,4].to_i
     @m = @stamp[4,2].to_i
@@ -24,6 +24,12 @@ class Timestamp
     @H = @stamp[8,2].to_i
     @M = @stamp[10,2].to_i
     @S = @stamp[12,2].to_i
+
+  end
+
+  def month_name
+
+    return @dict[@m-1]
 
   end
 

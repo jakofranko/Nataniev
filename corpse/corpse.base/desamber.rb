@@ -8,38 +8,29 @@ class Desamber
   def initialize(date = Date.today.to_s)
 
     @date = date.gsub("-","")
-    @dict = ['Unesamber', 'Dutesamber', 'Trisesamber', 'Tetresamber', 'Pentesamber', 'Hexesamber', 'Sevesamber', 'Octesamber', 'Novesamber', 'Desamber', 'Undesamber', 'Dodesamber', 'Tridesamber']
+    @dict = ['Unesamber', 'Dutesamber', 'Trisesamber', 'Tetresamber', 'Pentesamber', 'Hexesamber', 'Sevesamber', 'Octesamber', 'Novesamber', 'Desamber', 'Undesamber', 'Dodesamber', 'Tridesamber', 'Year Day']
     @time = Time.now + (3600 * 13) # server offset(+13 hours:Japan)
 
   end
 
-  def month
+  def m
 
-    return @date[4,2].to_i
-
-  end
-
-  def day
-
-    return @date[6,2].to_i
+    if span >= 365 then return 0 end
+    return (span/28.to_f).ceil
 
   end
 
-  def year
+  def d
 
-    return @date[0,4].to_i
-
-  end
-
-  def monthName
-
-    return "#{@dict[equalMonth-1]}"
+    if span == 365 then return "Year Day" end
+    if span == 366 then return "Leap Day" end
+    return (span % 28) == 0 ? 28 : span % 28
 
   end
 
   def month_name
 
-    return "#{@dict[equalMonth-1]}".to_sym
+    return "#{@dict[m-1]}".to_sym
 
   end
 
@@ -49,30 +40,15 @@ class Desamber
 
   end
 
-  def equalMonth
-    
-    if span >= 365 then return 0 end
-    return (span/28.to_f).ceil
-
-  end
-
-  def equalDay
-
-    if span == 365 then return "Year Day" end
-    if span == 366 then return "Leap Day" end
-    return (span % 28) == 0 ? 28 : span % 28
-
-  end
-
   def default_month_year
 
-    return "#{@dict[equalMonth-1]} #{year}"
+    return "#{@dict[m-1]} #{year}"
 
   end
 
   def to_s
 
-    return "#{@dict[equalMonth-1]} #{equalDay}, #{year}"
+    return "#{@dict[m-1]} #{d}, #{year}"
 
   end
 
