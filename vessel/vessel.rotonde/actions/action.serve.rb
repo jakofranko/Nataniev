@@ -48,7 +48,6 @@ class ActionServe
     count = 0
     Memory_Array.new("horaire","#{@host.path}/../vessel.oscean").to_a.each do |log|
       if count > 30 then break end
-      if !log["TEXT"] then next end
       topic = log["TERM"]
       text = log["TEXT"]
       media = log["PICT"].to_i
@@ -56,10 +55,10 @@ class ActionServe
       entry = {}
       entry[:time] = Timestamp.new(log["DATE"]).unix.to_s
       entry[:focus] = log["CODE"][3,1].to_i/10.0
+      entry[:text] = text ? text.gsub("{{","").gsub("}}","") : "#{log["TASK"]} on #{log["TERM"]}."
 
-      if text then entry[:text] = text.gsub("{{","").gsub("}}","") end
       if media > 0 then entry[:media] = "http://wiki.xxiivv.com/public.oscean/media/diary/#{media}.jpg" end
-      if topic.to_s != "" then entry[:url] = "http://wiki.xxiivv.com/#{topic}}" end
+      if topic.to_s != "" then entry[:url] = "http://wiki.xxiivv.com/#{topic}" end
 
       a.push(entry)
       count += 1 
