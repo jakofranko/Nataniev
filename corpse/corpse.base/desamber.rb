@@ -13,6 +13,12 @@ class Desamber
 
   end
 
+  def y
+
+    return @date[0,4].to_i
+    
+  end
+
   def m
 
     if span >= 365 then return 0 end
@@ -36,19 +42,19 @@ class Desamber
 
   def span
 
-    return Date.new(y=year,m=month,d=day).yday
+    return Date.new(y=@date[0,4].to_i,m=@date[4,2].to_i,d=@date[6,2].to_i).yday
 
   end
 
   def default_month_year
 
-    return "#{@dict[m-1]} #{year}"
+    return "#{@dict[m-1]} #{y}"
 
   end
 
   def to_s
 
-    return "#{@dict[m-1]} #{d}, #{year}"
+    return "#{@dict[m-1]} #{d}, #{y}"
 
   end
 
