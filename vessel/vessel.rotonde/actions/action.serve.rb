@@ -51,11 +51,13 @@ class ActionServe
       topic = log["TERM"]
       text = log["TEXT"]
       media = log["PICT"].to_i
+      focus = log["CODE"][3,1].to_i
+      sector = sector(log["CODE"][2,1].to_i).capitalize
 
       entry = {}
       entry[:time] = Timestamp.new(log["DATE"]).unix.to_s
-      entry[:focus] = log["CODE"][3,1].to_i/10.0
-      entry[:text] = text ? text.gsub("{{","").gsub("}}","") : "#{log["TASK"]} on #{log["TERM"]}."
+      entry[:text] = text ? text.gsub("{{","").gsub("}}","") : "#{sector} day, #{focus}h of #{log["TASK"]} on #{log["TERM"]}."
+      entry[:data] = {:focus => focus/10.0, :nutrition => 0.33, :exercise => 0.33, :sleep => 0.33, :mood => 0.33}
 
       if media > 0 then entry[:media] = "http://wiki.xxiivv.com/public.oscean/media/diary/#{media}.jpg" end
       if topic.to_s != "" then entry[:url] = "http://wiki.xxiivv.com/#{topic}" end
@@ -65,6 +67,16 @@ class ActionServe
     end
     return a
 
+  end
+
+  def sector code
+
+    if code == 1 then return :audio end
+    if code == 2 then return :visual end
+    if code == 3 then return :research end
+
+    return :misc
+    
   end
 
 end
