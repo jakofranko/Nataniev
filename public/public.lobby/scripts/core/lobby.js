@@ -47,14 +47,15 @@ function Lobby()
 		this.try_install("Editor");
 		this.try_install("Rotonde");
 		this.try_install("Marabu");
+		this.try_install("Clock");
 
 		setTimeout(function(){ lobby.on_ready(); }, 1000);
 	}
 
 	this.on_ready = function()
 	{
-		console.log(this.apps.util);
-		this.apps.util.launch();
+		// console.log(this.apps.util);
+		this.apps.clock.launch();
 	}
 
 	function on_resize()

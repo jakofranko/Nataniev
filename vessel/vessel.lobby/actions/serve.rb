@@ -158,9 +158,9 @@ class CorpseHttp
     add_meta("viewport","width=device-width, initial-scale=1, maximum-scale=1")
     add_meta("apple-mobile-web-app-capable","yes")
 
-    add_link("style.reset.css")
-    add_link("style.fonts.css")
-    add_link("style.main.css")
+    add_link("reset.css",:lobby)
+    add_link("font.input_mono.css",:lobby)
+    add_link("main.css",:lobby) 
 
     add_script("core/jquery.js")
     add_script("core/lobby.js")

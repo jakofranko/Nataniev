@@ -5,8 +5,10 @@ function Commander()
 	this.el = document.createElement("yu"); this.el.id = "commander";
 	this.input_el = document.createElement("input"); this.input_el.id = "commander_input";
 	this.app_icon_el = document.createElement("yu"); this.app_icon_el.id = "app_icon"; this.app_icon_el.className = "icon";
+	this.widgets_el = document.createElement("yu"); this.widgets_el.className = "widgets";
 	this.hint_el = document.createElement("yu"); this.hint_el.className = "hint";
 	this.clock_el = document.createElement("yu"); this.clock_el.className = "clock";
+
 	this.size_el = document.createElement("yu"); this.size_el.className = "size";
 
 	this.input_el.setAttribute("autocomplete","off")
@@ -15,11 +17,13 @@ function Commander()
 	this.input_el.setAttribute("spellcheck","false")
 	this.input_el.setAttribute("type","text")
 
+	this.el.appendChild(this.widgets_el);
+
 	this.el.appendChild(this.app_icon_el);
 	this.el.appendChild(this.input_el);
 	this.el.appendChild(this.hint_el);
 	this.el.appendChild(this.clock_el);
-	this.el.appendChild(this.size_el);
+	// this.el.appendChild(this.size_el);
 
 	this.input_el.addEventListener('input', input_change, false);
 
@@ -125,6 +129,12 @@ function Commander()
 		this.clock_el.innerHTML = this.clock();
 
 		setTimeout(function(){ lobby.commander.update_clock(); }, 8640);
+	}
+
+	this.install_widget = function(el)
+	{
+		console.log("installing widget",el);
+		this.widgets_el.appendChild(el);
 	}
 
 	this.is_typing = function()
