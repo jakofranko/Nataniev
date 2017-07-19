@@ -56,7 +56,10 @@ ln.half { line-height: 15px }
 .bc { background: #ccc; }
 
 .mb { margin-bottom:15px; }
+.mb30 { margin-bottom:30px; }
 .ml { margin-left:15px; }
+.ml30 { margin-left:30px; }
+.ml45 { margin-left:45px; }
 
 /* Positioning */
 .pa { position: absolute; }

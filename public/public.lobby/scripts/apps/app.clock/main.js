@@ -11,74 +11,6 @@ function Clock()
   this.circ = this.radius * 2 * Math.PI;
   this.center = 105;
 
-  this.face = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-  this.needle_1 = document.createElementNS("http://www.w3.org/2000/svg","circle");
-  this.needle_2 = document.createElementNS("http://www.w3.org/2000/svg","circle");
-  this.needle_3 = document.createElementNS("http://www.w3.org/2000/svg","circle");
-  this.needle_4 = document.createElementNS("http://www.w3.org/2000/svg","circle");
-  this.needle_5 = document.createElementNS("http://www.w3.org/2000/svg","circle");
-  this.needle_6 = document.createElementNS("http://www.w3.org/2000/svg","circle");
-
-  this.circle_1 = document.createElementNS("http://www.w3.org/2000/svg","circle");
-  this.circle_2 = document.createElementNS("http://www.w3.org/2000/svg","circle");
-
-  this.display_el = document.createElement("t")
-  this.display_el.setAttribute("class","pa pb pl ml")
-
-  this.wrapper_el.appendChild(this.face);
-  this.wrapper_el.appendChild(this.display_el);
-
-  this.face.appendChild(this.circle_1);
-  this.face.appendChild(this.circle_2);
-
-  this.face.appendChild(this.needle_1);
-  this.face.appendChild(this.needle_2);
-  this.face.appendChild(this.needle_3);
-  this.face.appendChild(this.needle_4);
-  this.face.appendChild(this.needle_5);
-  this.face.appendChild(this.needle_6);
-
-  this.face.setAttributeNS(null,"width","210");
-  this.face.setAttributeNS(null,"height","210");
-  this.face.setAttribute("style","stroke:black; fill:none; stroke-width:14; stroke-linecap:butt;transform: rotate(90deg); stroke-dasharray:0,99999")
-
-  this.circle_1.setAttributeNS(null,"cx",this.center);
-  this.circle_1.setAttributeNS(null,"cy",this.center);
-  this.circle_1.setAttributeNS(null,"r","90");
-  this.circle_1.setAttributeNS(null,"stroke-dasharray","1,1");
-
-  this.circle_2.setAttributeNS(null,"cx",this.center);
-  this.circle_2.setAttributeNS(null,"cy",this.center);
-  // this.circle_2.setAttributeNS(null,"r","45");
-  // this.circle_2.setAttributeNS(null,"stroke-dasharray","1,1");
-
-  this.needle_1.setAttributeNS(null,"cx",this.center);
-  this.needle_1.setAttributeNS(null,"cy",this.center);
-  this.needle_1.setAttributeNS(null,"r","90");
-
-  this.needle_2.setAttributeNS(null,"cx",this.center);
-  this.needle_2.setAttributeNS(null,"cy",this.center);
-  this.needle_2.setAttributeNS(null,"r","75");
-
-  this.needle_3.setAttributeNS(null,"cx",this.center);
-  this.needle_3.setAttributeNS(null,"cy",this.center);
-  this.needle_3.setAttributeNS(null,"r","60");
-
-  this.needle_4.setAttributeNS(null,"cx",this.center);
-  this.needle_4.setAttributeNS(null,"cy",this.center);
-  this.needle_4.setAttributeNS(null,"stroke-width","1");
-  this.needle_4.setAttributeNS(null,"r","45");
-
-  this.needle_5.setAttributeNS(null,"cx",this.center);
-  this.needle_5.setAttributeNS(null,"cy",this.center);
-  this.needle_5.setAttributeNS(null,"stroke-width","1");
-  this.needle_5.setAttributeNS(null,"r","48");
-
-  this.needle_6.setAttributeNS(null,"cx",this.center);
-  this.needle_6.setAttributeNS(null,"cy",this.center);
-  this.needle_6.setAttributeNS(null,"stroke-width","1");
-  this.needle_6.setAttributeNS(null,"r","42");
-
   this.on_launch = function()
   {
     lobby.commander.install_widget(this.widget_el);
@@ -95,31 +27,28 @@ function Clock()
 
   this.update = function()
   {
-    var t = this.time();
-    var t_s = new String(t);
-    var t_a = [t_s.substr(0,3),t_s.substr(3,3)];
+    var t        = this.time();
+    var t_s      = new String(t);
+    var t_a      = [t_s.substr(0,3),t_s.substr(3,3)];
+    var w        = 210;
+    var needle_1 = parseInt(((t/1000000) % 1) * w);
+    var needle_2 = parseInt(((t/100000) % 1) * w);
+    var needle_3 = needle_1 + parseInt(((t/10000) % 1) * (w - needle_1));
+    var needle_4 = needle_2 + parseInt(((t/10000) % 1) * (w - needle_2));
+    var needle_5 = needle_3 + parseInt(((t/1000) % 1) * (w - needle_3));
+    var needle_6 = needle_4 + parseInt(((t/100) % 1) * (w - needle_4));
 
-    this.widget_el.innerHTML = t_a[0];
+    var n_1_el = '<line x1="'+needle_1+'" x2="'+needle_1+'" y1="0" y2="'+w+'"></line>';
+    var n_2_el = '<line x1="'+needle_1+'" x2="'+w+'" y1="'+needle_2+'" y2="'+needle_2+'"></line>';
+    var n_3_el = '<line x1="'+needle_3+'" x2="'+needle_3+'" y1="'+needle_2+'" y2="'+w+'"></line>';
+    var n_4_el = '<line x1="'+needle_3+'" x2="'+w+'" y1="'+needle_4+'" y2="'+needle_4+'"></line>';
+    var n_5_el = '<line x1="'+needle_5+'" x2="'+needle_5+'" y1="'+needle_4+'" y2="'+w+'"></line>';
+    var n_6_el = '<line x1="'+needle_5+'" x2="'+w+'" y1="'+needle_6+'" y2="'+needle_6+'"></line>';
 
-    this.update_needle(this.needle_1,t/1000000);
-    this.update_needle(this.needle_2,t/100000);
-    this.update_needle(this.needle_3,t/10000);
-    this.update_needle(this.needle_4,t/1000);
-    this.update_needle(this.needle_5,t/100);
-    this.update_needle(this.needle_6,t/10);
+    this.widget_el.innerHTML = t_a[0]+":"+t_a[1];
+    this.wrapper_el.innerHTML = '<svg width="210" height="210" style="stroke:black; fill:none; stroke-width:1; stroke-linecap:butt;outline-color: black;outline-width: 1px;outline-offset: -1px;outline-style:solid">'+n_1_el+''+n_2_el+''+n_3_el+''+n_4_el+''+n_5_el+''+n_6_el+'</svg>';
 
-    this.display_el.innerHTML = "<b>"+t_a[0]+"</b>:"+t_a[1];
-    setTimeout(function(){ lobby.apps.clock.update(); }, 86.40);
-  }
-
-  this.update_needle = function(needle,v)
-  {
-    if(v > 0){
-      var trim = parseInt(v);
-      v -= trim;
-    }
-    var circ = parseFloat(needle.getAttribute("r")) * 2 * Math.PI;
-    needle.setAttributeNS(null,"stroke-dasharray",(v * circ)+",999");
+    setTimeout(function(){ lobby.apps.clock.update(); }, 8.640);
   }
 }
 

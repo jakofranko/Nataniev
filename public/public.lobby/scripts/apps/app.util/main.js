@@ -18,11 +18,12 @@ function Util()
 
   this.log = function(content)
   {
+    if(!lobby.apps.clock){ return; }
     this.logs.push(content);
 
     html = "";
     for(log_id in this.logs){
-      html += "<ln class='half'><t class='f9'>"+lobby.commander.clock()+"</t> <t class=''>"+this.logs[log_id]+"</t></ln>\n";
+      html += "<ln class='half'><t class='f9'>"+lobby.apps.clock.time()+"</t> <t class=''>"+this.logs[log_id]+"</t></ln>\n";
     }
     this.wrapper_el.innerHTML += html;
   }

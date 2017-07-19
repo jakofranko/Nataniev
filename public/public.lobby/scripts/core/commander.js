@@ -7,7 +7,6 @@ function Commander()
 	this.app_icon_el = document.createElement("yu"); this.app_icon_el.id = "app_icon"; this.app_icon_el.className = "icon";
 	this.widgets_el = document.createElement("yu"); this.widgets_el.className = "widgets";
 	this.hint_el = document.createElement("yu"); this.hint_el.className = "hint";
-	this.clock_el = document.createElement("yu"); this.clock_el.className = "clock";
 
 	this.size_el = document.createElement("yu"); this.size_el.className = "size";
 
@@ -22,7 +21,6 @@ function Commander()
 	this.el.appendChild(this.app_icon_el);
 	this.el.appendChild(this.input_el);
 	this.el.appendChild(this.hint_el);
-	this.el.appendChild(this.clock_el);
 	// this.el.appendChild(this.size_el);
 
 	this.input_el.addEventListener('input', input_change, false);
@@ -32,7 +30,6 @@ function Commander()
 	this.install = function()
 	{
 		this.update_hint();
-		this.update_clock();
 		this.input_el.focus();
 	}
 
@@ -113,22 +110,6 @@ function Commander()
 	{
 		this.input_el.value = val;
 		input_change();
-	}
-
-	this.clock = function(show_all = false)
-	{
-		var d = new Date(), e = new Date(d);
-		var msSinceMidnight = e - d.setHours(0,0,0,0);
-		var val = (msSinceMidnight/864) * 10;
-		var val_s = new String(val);
-		return val_s.substr(0,3)+(show_all ? ":"+val_s.substr(3,3) : '');
-	}
-
-	this.update_clock = function()
-	{
-		this.clock_el.innerHTML = this.clock();
-
-		setTimeout(function(){ lobby.commander.update_clock(); }, 8640);
 	}
 
 	this.install_widget = function(el)
