@@ -9,6 +9,7 @@ function App()
   this.methods.exit = {name:"exit",is_global:true};
   this.methods.hide = {name:"hide",is_global:true};
   this.methods.show = {name:"show",is_global:true};
+  this.methods.full = {name:"full",is_global:true};
   this.methods.ghost = {name:"ghost",is_global:true};
 
 	this.el = document.createElement("yu"); 
@@ -142,6 +143,12 @@ function App()
     $(this.el).removeClass("noir");
     $(this.el).removeClass("hidden");
     $(this.el).removeClass("ghost");
+  }
+
+  this.full = function()
+  {
+    this.resize_window_to(lobby.size.width,lobby.size.height);
+    this.move_window_to(-30,-30)
   }
 
   //
@@ -335,27 +342,34 @@ function App()
 		this.move_window(0,30);
 	}
 
-	this.move_window = function(x,y)
-	{
-		var new_position = {x: parseInt(this.el.style.left) + x, y: parseInt(this.el.style.top) + y}
+  this.move_window = function(x,y)
+  {
+    var new_position = {x: parseInt(this.el.style.left) + x, y: parseInt(this.el.style.top) + y}
 
-		if(new_position.x < -30){ new_position.x = -30; }
-		if(new_position.y < -30){ new_position.y = -30; }
+    if(new_position.x < -30){ new_position.x = -30; }
+    if(new_position.y < -30){ new_position.y = -30; }
 
-		new_position.x = (parseInt(new_position.x / 30) * 30)+"px";
-		new_position.y = (parseInt(new_position.y / 30) * 30)+"px";
-		$(this.el).animate({ left: new_position.x, top: new_position.y }, 50);
-	}
+    new_position.x = (parseInt(new_position.x / 30) * 30)+"px";
+    new_position.y = (parseInt(new_position.y / 30) * 30)+"px";
+    $(this.el).animate({ left: new_position.x, top: new_position.y }, 50);
+  }
+
+  this.move_window_to = function(x,y)
+  {
+    $(this.el).animate({ left: x, top: y }, 50);
+  }
 
   this.resize_window = function(x,y)
   {
-    var app_size = {width:parseInt(this.el.style.width), height:parseInt(this.el.style.height)};
-    if(app_size.height + y < 30){ return; }
+    if(this.size.width + x < 30 || this.size.height + y < 30){ return; }
+    var app_size = this.size;
     $(this.el).animate({ width: app_size.width + x, height: app_size.height + y }, 50);
+    this.size = {width:app_size.width+x,height:app_size.height+y};
   }
 
   this.resize_window_to = function(x,y)
   {
-    $(this.el).animate({ width: x, height: y }, 50);
+    var app = this;
+    $(this.el).animate({ width: x, height: y }, 50, function(){ app.size = {width:x,height:y}; });
   }
 }

@@ -2,7 +2,7 @@ function Lobby()
 {
 	this.el = document.createElement("yu"); this.el.id = "lobby";
 	this.grid_el = document.createElement("yu"); this.grid_el.id = "grid";
-
+	this.size = {width:0,height:0};
 	this.commander = new Commander();
 	this.keyboard = new Keyboard();
 	this.apps = {};
@@ -70,6 +70,7 @@ function Lobby()
 		lobby.el.style.width = new_size.width+"px";
 		lobby.el.style.height = new_size.height+"px";
 		lobby.commander.size_el.innerHTML = new_size.width+"x"+new_size.height;
+		this.size = new_size;
 	}
 
 	this.screen_center = function()
