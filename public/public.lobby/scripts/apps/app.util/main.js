@@ -10,6 +10,19 @@ function Util()
 
   this.logs = [];
 
+  this.widget_el = document.createElement("t");
+
+  this.on_launch = function()
+  {
+    lobby.commander.install_widget(this.widget_el);
+    this.on_window_resize();
+  }
+
+  this.on_window_resize = function()
+  {
+    this.widget_el.innerHTML = lobby.size.width+"x"+lobby.size.height;
+  }
+
   this.set_wallpaper = function(image_url)
   {
     lobby.el.style.backgroundImage = "url("+image_url+")";

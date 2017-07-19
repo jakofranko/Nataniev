@@ -62,6 +62,10 @@ function Lobby()
 	function on_resize()
 	{
 		lobby.update_size();
+
+		for(app in lobby.apps){
+			lobby.apps[app].on_window_resize();
+		}
 	}
 
 	this.update_size = function()
@@ -69,7 +73,6 @@ function Lobby()
 		var new_size = {width: parseInt(window.innerWidth/30.0) * 30 - 60,height: parseInt(window.innerHeight/30.0) * 30 - 30}
 		lobby.el.style.width = new_size.width+"px";
 		lobby.el.style.height = new_size.height+"px";
-		lobby.commander.size_el.innerHTML = new_size.width+"x"+new_size.height;
 		this.size = new_size;
 	}
 

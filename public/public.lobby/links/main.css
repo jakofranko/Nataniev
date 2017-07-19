@@ -21,7 +21,10 @@ b { font-weight: normal; font-family: 'input_mono_medium'}
 #commander > .hint .method.global { color:#999; }
 #commander > .hint .param { color:#999; }
 #commander > .size { position: absolute; right:30px; top:0px;line-height: 20px; padding:5px 0px; color:#999;}
-#commander > .widgets { text-align: right }
+#commander > .widgets { text-align: right; position: relative; z-index:9003;float:right; }
+#commander > .widgets t { margin-left:15px; color:#999; }
+#commander > .widgets t.toggle { color:#000; }
+#commander > .widgets t.toggle:hover { text-decoration: underline; cursor: pointer;  }
 
 .icon { width:30px; height:30px; }
 .full { width:100%; height:calc(100% - 60px);}

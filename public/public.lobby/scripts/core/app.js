@@ -12,6 +12,7 @@ function App()
   this.methods.full = {name:"full",is_global:true};
   this.methods.ghost = {name:"ghost",is_global:true};
 
+  this.is_visible = false;
 	this.el = document.createElement("yu"); 
 	this.el.className = "app";
 	this.wrapper_el = document.createElement("yu"); 
@@ -96,15 +97,6 @@ function App()
     this.launch();
   }
 
-  this.launch = function()
-  {
-    console.log("Launching "+this.name);
-    $(this.el).css("width",0).css("height",0).css("top",this.origin.y).css("left",this.origin.x);
-    lobby.el.appendChild(this.el);
-
-    $(this.el).animate({ left: this.origin.x, top: this.origin.y, width: this.size.width, height: this.size.height }, 300, this.on_launch());
-  }
-
   this.on_launch = function()
   {
 
@@ -116,12 +108,44 @@ function App()
   }
 
   this.on_exit = function(){}
+  this.on_resize = function(){}
+  this.on_move = function(){}
+  this.on_window_resize = function(){}
 
   // Change styles
+
+  this.launch = function()
+  {
+    console.log("Launching "+this.name);
+    $(this.el).css("width",0).css("height",0).css("top",this.origin.y).css("left",this.origin.x);
+    lobby.el.appendChild(this.el);
+
+    $(this.el).animate({ left: this.origin.x, top: this.origin.y, width: this.size.width, height: this.size.height }, 300, this.on_launch());
+    this.is_visible = true;
+  }
+
+  this.toggle = function()
+  {
+    if(this.is_visible){
+      this.hide();
+    }
+    else{
+      this.show();
+    }
+  }
+
+  this.show = function()
+  {
+    $(this.el).removeClass("noir");
+    $(this.el).removeClass("hidden");
+    $(this.el).removeClass("ghost");
+    this.is_visible = true;
+  }
 
   this.hide = function()
   {
     $(this.el).addClass("hidden");
+    this.is_visible = false;
   }
 
   this.ghost = function()
@@ -138,12 +162,6 @@ function App()
     $(this.el).addClass("noir");
   }
 
-  this.show = function()
-  {
-    $(this.el).removeClass("noir");
-    $(this.el).removeClass("hidden");
-    $(this.el).removeClass("ghost");
-  }
 
   this.full = function()
   {
@@ -352,11 +370,13 @@ function App()
     new_position.x = (parseInt(new_position.x / 30) * 30)+"px";
     new_position.y = (parseInt(new_position.y / 30) * 30)+"px";
     $(this.el).animate({ left: new_position.x, top: new_position.y }, 50);
+    this.on_move();
   }
 
   this.move_window_to = function(x,y)
   {
     $(this.el).animate({ left: x, top: y }, 50);
+    this.on_move();
   }
 
   this.resize_window = function(x,y)
@@ -365,11 +385,13 @@ function App()
     var app_size = this.size;
     $(this.el).animate({ width: app_size.width + x, height: app_size.height + y }, 50);
     this.size = {width:app_size.width+x,height:app_size.height+y};
+    this.on_resize();
   }
 
   this.resize_window_to = function(x,y)
   {
     var app = this;
     $(this.el).animate({ width: x, height: y }, 50, function(){ app.size = {width:x,height:y}; });
+    this.on_resize();
   }
 }

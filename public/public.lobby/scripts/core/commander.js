@@ -8,8 +8,6 @@ function Commander()
 	this.widgets_el = document.createElement("yu"); this.widgets_el.className = "widgets";
 	this.hint_el = document.createElement("yu"); this.hint_el.className = "hint";
 
-	this.size_el = document.createElement("yu"); this.size_el.className = "size";
-
 	this.input_el.setAttribute("autocomplete","off")
 	this.input_el.setAttribute("autocorrect","off")
 	this.input_el.setAttribute("autocapitalize","off")
@@ -21,7 +19,6 @@ function Commander()
 	this.el.appendChild(this.app_icon_el);
 	this.el.appendChild(this.input_el);
 	this.el.appendChild(this.hint_el);
-	// this.el.appendChild(this.size_el);
 
 	this.input_el.addEventListener('input', input_change, false);
 

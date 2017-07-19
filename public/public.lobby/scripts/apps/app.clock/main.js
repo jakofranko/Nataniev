@@ -5,7 +5,7 @@ function Clock()
   this.name = "clock";
   this.size = {width:210,height:210};
   this.origin = {x:120,y:120};
-  this.widget_el = document.createElement("t");
+  this.widget_el = document.createElement("t"); this.widget_el.className = "toggle";
 
   this.radius = 90;
   this.circ = this.radius * 2 * Math.PI;
@@ -15,6 +15,9 @@ function Clock()
   {
     lobby.commander.install_widget(this.widget_el);
     lobby.apps.clock.update();
+
+    var app = this;
+    this.widget_el.addEventListener("mousedown", function(){ app.toggle() }, true);
   }
 
   this.time = function()
@@ -27,6 +30,29 @@ function Clock()
 
   this.update = function()
   {
+    this.redraw_app();
+    this.redraw_widget();
+
+    setTimeout(function(){ lobby.apps.clock.update(); }, 86.40);
+  }
+
+  this.redraw_widget = function()
+  {
+    var t        = this.time();
+    var t_s      = new String(t);
+    var t_a      = [t_s.substr(0,3),t_s.substr(3,3)];
+
+    var target   = t_a[0]+(this.is_visible ? ":"+t_a[1] : '');
+
+    if(this.widget_el.innerHTML != target){
+      this.widget_el.innerHTML = target;
+    }    
+  }
+
+  this.redraw_app = function()
+  {
+    if(!this.is_visible){ return; }
+
     var t        = this.time();
     var t_s      = new String(t);
     var t_a      = [t_s.substr(0,3),t_s.substr(3,3)];
@@ -48,8 +74,11 @@ function Clock()
 
     this.widget_el.innerHTML = t_a[0]+":"+t_a[1];
     this.wrapper_el.innerHTML = '<svg width="'+w+'" height="'+h+'" style="stroke:black; fill:none; stroke-width:1; stroke-linecap:butt;outline-color: black;outline-width: 1px;outline-offset: -1px;outline-style:solid">'+n_1_el+''+n_2_el+''+n_3_el+''+n_4_el+''+n_5_el+''+n_6_el+'</svg>';
+  }
 
-    setTimeout(function(){ lobby.apps.clock.update(); }, 8.640);
+  this.on_resize = function()
+  {
+    this.redraw_app();
   }
 }
 
