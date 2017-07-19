@@ -41,22 +41,20 @@ function Lobby()
 		this.commander.install();
 		lobby.update_size();
 
-		this.try_install("Clock");
 		this.try_install("Util");
+		this.try_install("Clock");
+		this.try_install("Calendar");
+
 		this.try_install("Oscean");
 		this.try_install("Twitter");
 		this.try_install("Editor");
 		this.try_install("Rotonde");
-		this.try_install("Marabu");
-		this.try_install("Calendar");
 
 		setTimeout(function(){ lobby.on_ready(); }, 1000);
 	}
 
 	this.on_ready = function()
 	{
-		// console.log(this.apps.util);
-		// this.apps.clock.launch();
 	}
 
 	function on_resize()

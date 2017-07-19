@@ -12,7 +12,7 @@ function Util()
 
   this.widget_el = document.createElement("t");
 
-  this.on_launch = function()
+  this.on_start = function()
   {
     lobby.commander.install_widget(this.widget_el);
     this.on_window_resize();

@@ -10,9 +10,12 @@ function App()
   this.methods.hide = {name:"hide",is_global:true};
   this.methods.show = {name:"show",is_global:true};
   this.methods.full = {name:"full",is_global:true};
+  this.methods.mini = {name:"mini",is_global:true};
   this.methods.ghost = {name:"ghost",is_global:true};
 
   this.is_visible = false;
+  this.has_launched = false;
+
 	this.el = document.createElement("yu"); 
 	this.el.className = "app";
 	this.wrapper_el = document.createElement("yu"); 
@@ -37,6 +40,7 @@ function App()
     if(this.includes.length > 0){
       this.install_includes(this.includes);
     }
+    this.start();
   }
 
   this.install_includes = function(files)
@@ -107,12 +111,18 @@ function App()
     
   }
 
+  this.on_start = function(){}
   this.on_exit = function(){}
   this.on_resize = function(){}
   this.on_move = function(){}
   this.on_window_resize = function(){}
 
   // Change styles
+
+  this.start = function()
+  {
+    this.on_start();
+  }
 
   this.launch = function()
   {
@@ -122,6 +132,7 @@ function App()
 
     $(this.el).animate({ left: this.origin.x, top: this.origin.y, width: this.size.width, height: this.size.height }, 300, this.on_launch());
     this.is_visible = true;
+    this.has_launched = true;
   }
 
   this.toggle = function()
@@ -130,7 +141,12 @@ function App()
       this.hide();
     }
     else{
-      this.show();
+      if(!this.has_launched){
+        this.launch();
+      }
+      else{
+        this.show();
+      }
     }
   }
 
@@ -167,6 +183,12 @@ function App()
   {
     this.resize_window_to(lobby.size.width,lobby.size.height);
     this.move_window_to(-30,-30)
+  }
+
+  this.mini = function()
+  {
+    this.resize_window_to(180,180);
+    this.move_window_to(30,30)
   }
 
   //
