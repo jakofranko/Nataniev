@@ -3,7 +3,7 @@ yu { display: block; font-family: 'input_mono_regular'; font-size:11px; line-hei
 ln { display: block;}
 ln i { color:#999; }
 hl { line-height: 29px; font-family: 'input_mono_medium'; display: block; border-bottom:1px solid black; }
-textarea { background:none; padding:15px 0px; line-height: 15px; overflow: hidden}
+textarea { background:none; padding:px 0px; line-height: 15px; overflow: hidden}
 b { font-weight: normal; font-family: 'input_mono_medium'}
 #lobby { width:calc(100vw - 60px); height:calc(100vh - 60px);background:black; margin:30px auto 0px auto; position:relative; border-radius: 2px; overflow: hidden}
 #grid { background-image:url(../media/graphics/grid.svg); width:100%; height:100%; background-position: 15px 15px; position:absolute; opacity: 0.5}
@@ -89,6 +89,7 @@ ln.half { line-height: 15px }
 /* Strokes */
 
 .sb { border-bottom: 1px solid black; }
+.sr { border-bottom: 1px solid black; }
 
 /* Margins */
 
@@ -97,11 +98,23 @@ ln.half { line-height: 15px }
 .ml { margin-left:15px; }
 .ml30 { margin-left:30px; }
 .ml45 { margin-left:45px; }
+.ml90 { margin-left:90px; }
+.ml120 { margin-left:120px; }
+.ml150 { margin-left:150px; }
 .mr30 { margin-right: 30px }
 
 /* Positioning */
 
 .pa { position: absolute; }
 .pb { bottom:0px; }
+.pt { top:0px; }
 .pl { left:0px; }
+.pt30 { top:30px; }
+.pl30 { top:30px; }
+
+
+.noir .sr { border-right: 1px solid white; }
+
+
+
 

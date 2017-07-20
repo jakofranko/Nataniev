@@ -13,11 +13,13 @@ function Editor()
   this.tree = null;
 
   this.browser_el = document.createElement("yu"); this.browser_el.className = "full";
+  this.navi_el = document.createElement("yu"); this.navi_el.className = "pa pt30 pl30 lh30 w4 sr"
 
-  this.textarea_el = document.createElement("textarea"); this.textarea_el.className = "full";
+  this.textarea_el = document.createElement("textarea"); this.textarea_el.className = "full ml150";
   this.textarea_el.style.display = "none";
   this.wrapper_el.appendChild(this.textarea_el);
   this.wrapper_el.appendChild(this.browser_el);
+  this.wrapper_el.appendChild(this.navi_el);
 
   this.textarea_el.setAttribute("autocomplete","off")
   this.textarea_el.setAttribute("autocorrect","off")
@@ -46,6 +48,7 @@ function Editor()
     this.browser_el.innerHTML = html;
 
     this.textarea_el.style.display = "none";
+    this.navi_el.style.display = "none";
     this.browser_el.style.display = "block";
   }
 
@@ -59,26 +62,18 @@ function Editor()
     this.call("get_tree");
   }
 
-  this.list = function(p)
-  {
-    if(!p){ this.location = ""; }
-    this.location += p+"/";
-    this.call("list",(this.location).replace(/\//g, '-'));
-  }
-
   this.load = function(value)
   {
     var targets = value.trim().split(" ");
     var candidates = this.candidates_from_string(targets);
     var target = candidates[candidates.length-1];
 
-    this.location += target;
+    this.location = target;
     this.call("load_file",(this.location).replace(/\//g, '-'));
   }
 
   this.call_back = function(m,r)
   {
-    if(m == "list"){ this.callback_list(r); }
     if(m == "load_file"){ this.callback_load(r); }
     if(m == "get_tree"){ this.callback_tree(r); }
   }
@@ -94,23 +89,40 @@ function Editor()
     this.textarea_el.value = html;
   }
 
-  this.callback_list = function(r)
-  {
-    html = "";
-    for(file_id in r){
-      html += r[file_id]+"\n";
-    }
-    this.textarea_el.value = html;
-    this.resize_window_to(this.size.width,(r.length * 15) + 90);
-  }
-
   this.callback_load = function(r)
   {
     this.textarea_el.value = r[0].payload;
     this.textarea_el.style.display = "block";
+    this.navi_el.style.display = "block";
     this.browser_el.style.display = "none";
     this.resize_window_to(690,lobby.size.height-60);
     this.move_window_to(270,0);
+
+    this.update_navi();
+  }
+
+  this.update_navi = function()
+  {
+    var lines = this.textarea_el.value.split("\n");
+
+    var html = "";
+
+    for(line_id in lines)
+    {
+      var line = lines[line_id];
+      var marker = line.trim().split(" ")[0];
+      var targets_minor = ["def"];
+      var targets_major = ["class","module"];
+      if(targets_major.indexOf(marker) > -1){
+        var name = line.replace(marker,"").trim().split(" ")[0];
+        html += "<ln>"+name+"</ln>";
+      }
+      if(targets_minor.indexOf(marker) > -1){
+        var name = line.replace(marker,"").trim().split(" ")[0];
+        html += "<ln class='f9'>"+name+"</ln>";
+      }
+    }
+    this.navi_el.innerHTML = html;
   }
 
   this.candidates_from_string = function(targets)
