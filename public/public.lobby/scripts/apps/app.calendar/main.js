@@ -58,11 +58,21 @@ function Calendar()
 
   this.update = function()
   {
-    this.widget_el.innerHTML = new Date().desamber()
+    this.widget_el.innerHTML = new Date().desamber_month_name().substr(0,3)+" "+new Date().desamber_day();
   }
 }
 
 Date.prototype.desamber_dict = ['Unesamber', 'Dutesamber', 'Trisesamber', 'Tetresamber', 'Pentesamber', 'Hexesamber', 'Sevesamber', 'Octesamber', 'Novesamber', 'Desamber', 'Undesamber', 'Dodesamber', 'Tridesamber', 'Year Day'];
+
+Date.prototype.desamber_month_name = function()
+{
+  return this.desamber_dict[parseInt(this.day_of_year()/28)];
+}
+
+Date.prototype.desamber_day = function()
+{
+  return (this.day_of_year()%28 + 1);
+}
 
 Date.prototype.desamber_stamp = function()
 {
@@ -75,9 +85,8 @@ Date.prototype.desamber_stamp = function()
 Date.prototype.desamber = function()
 {
   var month_number = parseInt(this.day_of_year()/28);
-  var month_names = ['Unesamber', 'Dutesamber', 'Trisesamber', 'Tetresamber', 'Pentesamber', 'Hexesamber', 'Sevesamber', 'Octesamber', 'Novesamber', 'Desamber', 'Undesamber', 'Dodesamber', 'Tridesamber', 'Year Day'];
   var day_number = (this.day_of_year()%28 + 1);
-  return month_names[month_number]+" "+day_number;
+  return this.desamber_dict[month_number]+" "+day_number;
 }
 
 Date.prototype.is_leap_year = function()

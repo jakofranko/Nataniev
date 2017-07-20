@@ -64,7 +64,7 @@ function App()
   this.call = function(method,params = null,vessel = this.name)
   {
     var app = this;
-    var url = ("http://localhost:8888/:maeve "+vessel+"."+method+" "+(params ? params : "")).trim().replace(/ /g, '+'); 
+    var url = ("http://localhost:8888/:maeve "+(vessel ? vessel+"."+method+' ' : '')+(params ? params : "")).trim().replace(/ /g, '+'); 
     console.log("Calling..",url)
     $.get(url).done(function(response){
       try {

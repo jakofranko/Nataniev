@@ -26,7 +26,8 @@ class ActionServe
         {:host => "nataniev.maeve", :text => "The time is #{Desamber.new.clock}."}
       ].to_json
     elsif q.like("calendar.get_logs")
-      return [{:host => "nataniev.maeve",:text => "Found logs", :data =>calendar_logs}].to_json
+      payload = calendar_logs
+      return [{:host => "nataniev.maeve",:text => "Found #{payload.length} logs.", :data =>payload}].to_json
     else
       return [{:host => "nataniev.maeve",:text => "Unknown request: #{q}"}].to_json
     end
