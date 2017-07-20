@@ -34,6 +34,12 @@ class Desamber
 
   end
 
+  def stamp
+
+    return "#{y}#{m.to_s.prepend('0',2)}#{d.to_s.prepend('0',2)}"
+
+  end
+
   def month_name
 
     return "#{@dict[m-1]}".to_sym

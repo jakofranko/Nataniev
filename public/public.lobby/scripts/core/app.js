@@ -61,18 +61,21 @@ function App()
 
   // AJAX
 
-  this.call = function(method,params = null)
+  this.call = function(method,params = null,vessel = this.name)
   {
     var app = this;
-    var url = ("http://localhost:8888/call:"+app.name+"."+method+" "+(params ? params : "")).trim().replace(/ /g, '+'); 
-    lobby.apps.util.log(url);
+    var url = ("http://localhost:8888/:maeve "+vessel+"."+method+" "+(params ? params : "")).trim().replace(/ /g, '+'); 
+    console.log("Calling..",url)
     $.get(url).done(function(response){
       try {
-        a = JSON.parse(response);
+        var a = JSON.parse(response);
       } catch(e) {
         console.log(e,response);
       }
-      app.call_back(method,a)
+      if(a){
+        app.call_back(method,a)  
+      }
+      
     },"json");
   }
 
@@ -152,7 +155,6 @@ function App()
 
   this.show = function()
   {
-    $(this.el).removeClass("noir");
     $(this.el).removeClass("hidden");
     $(this.el).removeClass("ghost");
     this.is_visible = true;

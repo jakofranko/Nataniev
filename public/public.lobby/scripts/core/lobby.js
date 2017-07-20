@@ -55,6 +55,7 @@ function Lobby()
 
 	this.on_ready = function()
 	{
+		this.apps.calendar.launch();
 	}
 
 	function on_resize()
