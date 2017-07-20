@@ -5,7 +5,7 @@ require 'sinatra'
 
 require_relative "system/nataniev.rb"
 
-set :port, 8888
+set :port, (ARGV.first == "lobby" ? 8668 : 8888)
 
 configure do
   enable :cross_origin

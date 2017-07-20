@@ -41,7 +41,7 @@ function Lobby()
 		this.commander.install();
 		lobby.update_size();
 
-		this.try_install("Util");
+		this.try_install("Terminal");
 		this.try_install("Clock");
 		this.try_install("Calendar");
 
@@ -55,7 +55,7 @@ function Lobby()
 
 	this.on_ready = function()
 	{
-		this.apps.util.launch();
+		this.apps.terminal.launch();
 	}
 
 	function on_resize()

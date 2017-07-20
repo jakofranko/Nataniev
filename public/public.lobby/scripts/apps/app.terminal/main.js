@@ -1,8 +1,8 @@
-function Util()
+function Terminal()
 {
 	App.call(this);
 
-  this.name = "util";
+  this.name = "terminal";
   this.size = {width:lobby.size.width,height:300};
   this.origin = {x:0,y:0};
   this.theme = "ghost";
@@ -20,6 +20,7 @@ function Util()
 
   this.say = function(q)
   {
+    this.log(q,">");
     this.call(null,q,null);  
   }
 
@@ -27,21 +28,20 @@ function Util()
   {
     var lines = r;
     for(r_id in lines){
-      console.log(r_id)
       this.log(lines[r_id].text);
     }
   }
 
-  this.log = function(content)
+  this.log = function(content,glyph = " ")
   {
     if(!lobby.apps.clock){ return; }
-    this.logs.push(content);
+    this.logs.push({time: lobby.apps.clock.time(),text:content,glyph:glyph});
 
     this.wrapper_el.innerHTML = "";
 
     html = "";
     for(log_id in this.logs){
-      html += "<ln class='half'><t class='f9 w2 di'>"+lobby.apps.clock.time()+"</t> <t class='ff'>"+this.logs[log_id]+"</t></ln>\n";
+      html += "<ln class='half ff'><t class='f9 w2 di'> "+this.logs[log_id].time+"</t><t class='di w1'>"+this.logs[log_id].glyph+"</t><t>"+this.logs[log_id].text+"</t></ln>\n";
     }
     this.wrapper_el.innerHTML += html;
   }
@@ -64,4 +64,4 @@ function Util()
   }
 }
 
-lobby.install_callback("Util");
+lobby.install_callback("Terminal");

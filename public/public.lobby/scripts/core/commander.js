@@ -40,7 +40,9 @@ function Commander()
 
 	this.deselect = function()
 	{
-		if(this.app){ this.app.deselect(); }
+		for(app_id in lobby.apps){
+			lobby.apps[app_id].deselect();
+		}
 		this.app = null;
 		this.app_icon_el.className = "icon ";
 	}

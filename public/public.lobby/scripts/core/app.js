@@ -64,7 +64,7 @@ function App()
   this.call = function(method,params = null,vessel = this.name)
   {
     var app = this;
-    var url = ("http://localhost:8888/:maeve "+(vessel ? vessel+"."+method+' ' : '')+(params ? params : "")).trim().replace(/ /g, '+'); 
+    var url = ("http://localhost:8668/:maeve "+(vessel ? vessel+"."+method+' ' : '')+(params ? params : "")).trim().replace(/ /g, '+'); 
     console.log("Calling..",url)
     $.get(url).done(function(response){
       try {
@@ -138,6 +138,18 @@ function App()
     this.has_launched = true;
   }
 
+  this.select = function()
+  {
+    lobby.commander.deselect();
+    $(this.el).addClass("selected");
+    lobby.commander.select(this);
+  }
+
+  this.deselect = function()
+  {
+    $(this.el).removeClass("selected");
+  }
+
   this.toggle = function()
   {
     if(this.is_visible){
@@ -158,12 +170,14 @@ function App()
     $(this.el).removeClass("hidden");
     $(this.el).removeClass("ghost");
     this.is_visible = true;
+    this.select();
   }
 
   this.hide = function()
   {
     $(this.el).addClass("hidden");
     this.is_visible = false;
+    this.deselect();
   }
 
   this.ghost = function()
@@ -260,19 +274,6 @@ function App()
 		this.touch = null;
 		this.align_to_grid();
 		e.preventDefault();
-	}
-
-	// SELECTION
-
-	this.select = function()
-	{
-		$(this.el).addClass("selected");
-		lobby.commander.select(this);
-	}
-
-	this.deselect = function()
-	{
-		$(this.el).removeClass("selected");
 	}
 
   this.is_typing = function()

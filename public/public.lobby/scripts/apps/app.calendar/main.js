@@ -19,7 +19,7 @@ function Calendar()
 
   this.on_launch = function()
   {
-    this.call("get_logs",null);  
+    this.call("get_calendar",null);  
   }
 
   this.draw = function(logs = null)
@@ -44,8 +44,8 @@ function Calendar()
     }
     html += "<yu class='di w7 mr30 lh15'>";
     html += "<yu>Year Days</yu>";
-    html += "<t class='di w1'>LP</t>";
-    html += "<t class='di w1'>YD</t>";
+    html += "<t class='di w1 f9'>LP</t>";
+    html += "<t class='di w1 f9'>YD</t>";
     html += "</yu>";
 
     this.el.innerHTML = html;
@@ -104,7 +104,7 @@ Date.prototype.day_of_year = function()
   var dn = this.getDate();
   var dayOfYear = dayCount[mn] + dn;
   if(mn > 1 && this.is_leap_year()) dayOfYear++;
-  return dayOfYear;
+  return dayOfYear - 1;
 };
 
 lobby.install_callback("Calendar");
