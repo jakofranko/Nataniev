@@ -114,6 +114,7 @@ function App()
     
   }
 
+  this.on_input_change = function(value){}
   this.on_start = function(){}
   this.on_exit = function(){}
   this.on_resize = function(){}

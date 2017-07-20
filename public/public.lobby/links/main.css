@@ -31,7 +31,7 @@ b { font-weight: normal; font-family: 'input_mono_medium'}
 
 ln.half { line-height: 15px }
 
-.app { display: block; width:30px; height:30px; background:RGBA(255,255,255,1); position: absolute; top:60px; left:60px; padding:30px; color:black; overflow: hidden}
+.app { display: block; width:30px; height:30px; background:RGBA(255,255,255,1); position: absolute; top:60px; left:60px; padding:30px; color:black; overflow: hidden; z-index:20;}
 .app .wrapper { overflow: hidden; height:100%; overflow: hidden;height: 100%}
 .app.selected { z-index:8001; }
 .app.dragged { background-color:RGBA(255,255,255,0.3) !important; z-index:8002;}
@@ -104,3 +104,4 @@ ln.half { line-height: 15px }
 .pa { position: absolute; }
 .pb { bottom:0px; }
 .pl { left:0px; }
+

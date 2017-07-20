@@ -20,6 +20,11 @@ class ActionServe
 
     q = q.sub(":maeve+",'').gsub("+"," ")
 
+    target = q.split(" ").first
+    app = target.split(".").first
+    met = target.split(".").last
+    params = q.sub(target,"").strip
+
     if q.like("init")
       return [
         {:host => "nataniev.maeve",:text => "Today is #{Desamber.new}."},
@@ -31,6 +36,8 @@ class ActionServe
       return get_tasks.to_json
     elsif q.include?("get_tree")
       return get_tree.to_json
+    elsif q.include?("load_file")
+      return load_file(params).to_json
     elsif q.like("help")
       return [{:host => "nataniev.maeve",:text => "Current options are get_calendar and get_tasks."}].to_json
     else
@@ -69,6 +76,16 @@ class ActionServe
 
     payload = $nataniev.summon("oscean").new.act(:query,"calendar")
     return [{:host => "nataniev.maeve",:text => "Found #{payload.length} logs.", :payload =>payload}]
+
+  end
+
+  def load_file path
+
+    if File.exist?(path.gsub("-","/"))
+      payload = File.read(path.gsub("-","/"), :encoding => 'UTF-8')
+      return [{:host => "nataniev.maeve",:text => "Found file .", :payload =>payload}]
+    end
+    return [{:host => "nataniev.maeve",:text => "File not found."}]
 
   end
 

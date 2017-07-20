@@ -68,7 +68,7 @@ function Commander()
 		var value = lobby.commander.input_el.value;
 		var target_app = value.indexOf(".") > -1 ? lobby.apps[value.split(".")[0]] : lobby.apps[value];
 
-		if(target_app){ lobby.commander.select(target_app); }
+		if(target_app){ lobby.commander.select(target_app); target_app.on_input_change(value); }
 		else{ lobby.commander.deselect(); }
 
 		lobby.commander.update_hint();
