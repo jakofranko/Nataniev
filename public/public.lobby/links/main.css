@@ -42,9 +42,10 @@ ln.half { line-height: 15px }
 .app.noir hl { border-bottom:1px solid white; }
 
 .di { display: inline-block; }
-.dp { display: block; }
+.db { display: block; }
 
 .lh15 { line-height: 15px }
+.lh30 { line-height: 15px }
 
 .w1 { width:30px; }
 .w2 { width:60px; }
@@ -75,6 +76,7 @@ ln.half { line-height: 15px }
 
 /* Background */
 
+.b_ { background: transparent; }
 .b0 { background: #000 }
 .bf { background: #fff }
 .b9 { background: #999; }

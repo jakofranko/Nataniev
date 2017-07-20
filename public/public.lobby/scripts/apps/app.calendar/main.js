@@ -4,7 +4,7 @@ function Calendar()
 
   this.name = "calendar";
   this.size = {width:720,height:450};
-  this.origin = {x:30,y:30};
+  this.origin = {x:90,y:90};
   this.theme = "noir"
   this.widget_el = document.createElement("t"); this.widget_el.className = "toggle";
 
@@ -33,10 +33,9 @@ function Calendar()
       while(d <= 28){
         var stamp = "2017"+(m < 10 ? '0'+m : m)+(d < 10 ? '0'+d : d);
         var cl = "f9 ";
-        cl += stamp == new Date().desamber_stamp() ? 'fr ' : '';
         var day_number = (d < 10 ? '0'+d : d);
         day_number += logs && logs[stamp] ? "<t class='f"+logs[stamp].value+"'>"+logs[stamp].value+"</t>" : '';
-        html += "<t class='di w1 "+(logs && logs[stamp] ? 'ff ' : 'f9')+" "+(stamp == new Date().desamber_stamp() ? 'bf f0' : '')+"'>"+day_number+"</t>";
+        html += "<t class='di w1 "+(logs && logs[stamp] ? 'ff ' : 'f9')+" "+(stamp == new Date().desamber_stamp() ? 'fu' : '')+"'>"+day_number+"</t>";
         d += 1;
       }
       html += "</yu>";
@@ -53,7 +52,7 @@ function Calendar()
 
   this.call_back = function(m,r)
   {
-    this.draw(r[0].data);
+    this.draw(r[0].payload);
   }
 
   this.update = function()

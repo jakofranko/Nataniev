@@ -44,11 +44,7 @@ function Lobby()
 		this.try_install("Terminal");
 		this.try_install("Clock");
 		this.try_install("Calendar");
-
-		// this.try_install("Oscean");
-		// this.try_install("Twitter");
-		// this.try_install("Editor");
-		// this.try_install("Rotonde");
+		this.try_install("Editor");
 
 		setTimeout(function(){ lobby.on_ready(); }, 1000);
 	}
@@ -56,6 +52,7 @@ function Lobby()
 	this.on_ready = function()
 	{
 		this.apps.terminal.launch();
+		this.apps.editor.launch();
 	}
 
 	function on_resize()

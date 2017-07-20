@@ -26,15 +26,29 @@ class ActionServe
         {:host => "nataniev.maeve", :text => "The time is #{Desamber.new.clock}."}
       ].to_json
     elsif q.include?("get_calendar")
-      payload = get_calendar
-      return [{:host => "nataniev.maeve",:text => "Found #{payload.length} logs.", :data =>payload}].to_json
+      return get_calendar.to_json
     elsif q.include?("get_tasks")
       return get_tasks.to_json
+    elsif q.include?("get_tree")
+      return get_tree.to_json
     elsif q.like("help")
       return [{:host => "nataniev.maeve",:text => "Current options are get_calendar and get_tasks."}].to_json
     else
       return [{:host => "nataniev.maeve",:text => "Unknown request: #{q}"}].to_json
     end
+
+  end
+
+  def get_tree
+
+    payload = []
+
+    Dir['**/*'].each do |file|
+      ext = file.split(".").last
+      if !["ma","mh","rb","js","css","html"].include?(ext) then next end
+      payload.push(file)
+    end
+    return [{:host => "nataniev.maeve",:text => "Found #{payload.length} files in tree.", :payload =>payload}]
 
   end
 
@@ -45,7 +59,7 @@ class ActionServe
     a = []
     a.push({:host => "nataniev.maeve",:text => "Found #{payload.length} tasks.", :payload =>payload})
     payload.each do |text|
-      a.push({:host => "nataniev.maeve",:text => "#{text}"})
+      a.push({:host => "nataniev.maeve",:text => "#{text}",:glyph => "-"})
     end
     return a
 
@@ -53,7 +67,8 @@ class ActionServe
 
   def get_calendar
 
-    return $nataniev.summon("oscean").new.act(:query,"calendar")
+    payload = $nataniev.summon("oscean").new.act(:query,"calendar")
+    return [{:host => "nataniev.maeve",:text => "Found #{payload.length} logs.", :payload =>payload}]
 
   end
 

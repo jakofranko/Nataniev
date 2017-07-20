@@ -136,6 +136,7 @@ function App()
     $(this.el).animate({ left: this.origin.x, top: this.origin.y, width: this.size.width, height: this.size.height }, 300, this.on_launch());
     this.is_visible = true;
     this.has_launched = true;
+    this.select();
   }
 
   this.select = function()
