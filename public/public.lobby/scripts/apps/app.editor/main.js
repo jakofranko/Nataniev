@@ -8,7 +8,6 @@ function Editor()
   this.theme = "noir";
   this.methods.new = {name:"new"};
   this.methods.load = {name:"load"};
-  this.methods.list = {name:"list"};
   this.methods.save = {name:"save"};
 
   this.tree = null;
@@ -35,10 +34,31 @@ function Editor()
     lobby.apps.editor.update_navi();
   }
 
-
   this.location = "";
 
+  this.clear = function()
+  {
+    this.location = null;
+    this.browser_el.innerHTML = "Nothing to see..";    
+    this.resize_window_to(600,30);
+  }
+
   this.on_input_change = function(value)
+  {
+    if(value.split(" ")[0] == "editor.save"){
+      if(this.location){
+        this.browser_el.innerHTML = "Overwrite "+this.location;
+      }
+      else{
+        this.browser_el.innerHTML = "No file selected.";  
+      }
+    }
+    else{
+      this.view_browser(value);      
+    }
+  }
+
+  this.view_browser = function(value)
   {
     var targets = value.trim().split(" "); targets.shift();
     var candidates = this.candidates_from_string(targets);
@@ -78,12 +98,44 @@ function Editor()
     var target = candidates[candidates.length-1];
 
     this.location = target;
+
+    var app = this;
+    $.ajax({url: '/editor.load',
+      type: 'POST', 
+      data: { file_path: this.location },
+      success: function(data) {
+        app.textarea_el.value = data;
+        app.textarea_el.style.display = "block";
+        app.navi_el.style.display = "block";
+        app.browser_el.style.display = "none";
+        app.organize_window_center();
+        app.update_navi();
+      }
+    })
+
     this.call("load_file",(this.location).replace(/\//g, '-'));
+  }
+
+  this.save = function()
+  {
+    if(!this.location){ return; }
+
+    $.ajax({url: '/editor.save',
+      type: 'POST', 
+      data: { file_path: this.location, file_content: this.textarea_el.value },
+      success: function(data) {
+        console.log(data);
+      }
+    })
+
+    this.textarea_el.style.display = "block";
+    this.navi_el.style.display = "block";
+    this.browser_el.style.display = "none";
+    this.organize_window_center();
   }
 
   this.call_back = function(m,r)
   {
-    if(m == "load_file"){ this.callback_load(r); }
     if(m == "get_tree"){ this.callback_tree(r); }
   }
 
@@ -98,18 +150,6 @@ function Editor()
     this.textarea_el.value = html;
   }
 
-  this.callback_load = function(r)
-  {
-    this.textarea_el.value = r[0].payload;
-    this.textarea_el.style.display = "block";
-    this.navi_el.style.display = "block";
-    this.browser_el.style.display = "none";
-    this.resize_window_to(690,lobby.size.height-90);
-    this.move_window_to(270,0);
-
-    this.update_navi();
-  }
-
   this.update_navi = function()
   {
     var lines = this.textarea_el.value.split("\n");
@@ -120,7 +160,7 @@ function Editor()
     {
       var line = lines[line_id];
       var marker = line.trim().split(" ")[0];
-      var targets_minor = ["def","attr_accessor"];
+      var targets_minor = ["def","attr_accessor","function"];
       var targets_major = ["class","module"];
       var targets_miscs = ["private"];
       if(targets_major.indexOf(marker) > -1){

@@ -421,4 +421,10 @@ function App()
     $(this.el).animate({ width: x, height: y }, 50, function(){ app.size = {width:x,height:y}; });
     this.on_resize();
   }
+
+  this.organize_window_center = function()
+  {
+    this.resize_window_to(lobby.size.width-180,lobby.size.height-210);
+    this.move_window_to(60,60);
+  }
 }

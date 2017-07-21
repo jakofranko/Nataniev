@@ -46,3 +46,26 @@ get '/:task' do
   "#{a}"
   
 end
+
+post '/editor.save' do
+
+  path = params["file_path"]
+  code = params["file_content"]
+
+  # Create temp file
+  out_file = File.new("#{path}.tmp", "w")
+  out_file.puts(code)
+  out_file.close
+
+  # Replace file
+  File.rename("#{path}.tmp", path)
+
+end
+
+post '/editor.load' do
+
+  path = params["file_path"]
+
+  "#{File.read(path, :encoding => 'UTF-8')}"
+
+end

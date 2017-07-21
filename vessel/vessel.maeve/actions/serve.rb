@@ -36,8 +36,6 @@ class ActionServe
       return get_tasks.to_json
     elsif q.include?("get_tree")
       return get_tree.to_json
-    elsif q.include?("load_file")
-      return load_file(params).to_json
     elsif q.like("help")
       return [{:host => "nataniev.maeve",:text => "Current options are get_calendar and get_tasks."}].to_json
     else
