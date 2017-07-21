@@ -45,13 +45,21 @@ ln.half { line-height: 15px }
 .db { display: block; }
 
 .lh15 { line-height: 15px }
-.lh30 { line-height: 15px }
+.lh30 { line-height: 30px }
 
 .w1 { width:30px; }
 .w2 { width:60px; }
 .w4 { width:120px; }
 .w6 { width:180px; }
 .w7 { width:210px; }
+.w18 { width:540px; }
+
+.wf_4 { width: calc(100% - 120px) }
+.wf_6 { width: calc(100% - 180px) }
+.wf_7 { width: calc(100% - 210px) }
+
+.hf_2 { height: calc(100% - 60px) }
+.hf_3 { height: calc(100% - 90px) }
 
 /* Foreground */
 
@@ -102,6 +110,7 @@ ln.half { line-height: 15px }
 .ml120 { margin-left:120px; }
 .ml150 { margin-left:150px; }
 .mr30 { margin-right: 30px }
+.mt { margin-top: 30px }
 
 /* Positioning */
 
@@ -111,9 +120,16 @@ ln.half { line-height: 15px }
 .pl { left:0px; }
 .pt30 { top:30px; }
 .pl30 { top:30px; }
+.pl5 { left:150px; }
+
+.at { top:0px; }
+.al { left:0px; }
+
+.pdl { padding-left:30px; }
 
 
-.noir .sr { border-right: 1px solid white; }
+.noir .sr { border-right: 1px solid #555; }
+.noir .sl { border-left: 1px solid #555; }
 
 
 

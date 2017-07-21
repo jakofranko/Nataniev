@@ -9,13 +9,14 @@ function Editor()
   this.methods.new = {name:"new"};
   this.methods.load = {name:"load"};
   this.methods.list = {name:"list"};
+  this.methods.save = {name:"save"};
 
   this.tree = null;
 
   this.browser_el = document.createElement("yu"); this.browser_el.className = "full";
-  this.navi_el = document.createElement("yu"); this.navi_el.className = "pa pt30 pl30 lh30 w4 sr"
+  this.navi_el = document.createElement("yu"); this.navi_el.className = "at al lh15 w4"
 
-  this.textarea_el = document.createElement("textarea"); this.textarea_el.className = "full ml150";
+  this.textarea_el = document.createElement("textarea"); this.textarea_el.className = "wf_7 pl5 pa hf_2 sl pdl";
   this.textarea_el.style.display = "none";
   this.wrapper_el.appendChild(this.textarea_el);
   this.wrapper_el.appendChild(this.browser_el);
@@ -26,6 +27,14 @@ function Editor()
   this.textarea_el.setAttribute("autocapitalize","off")
   this.textarea_el.setAttribute("spellcheck","false")
   this.textarea_el.setAttribute("type","text")
+
+  this.textarea_el.addEventListener('input', text_change, false);
+
+  function text_change()
+  {
+    lobby.apps.editor.update_navi();
+  }
+
 
   this.location = "";
 
@@ -95,7 +104,7 @@ function Editor()
     this.textarea_el.style.display = "block";
     this.navi_el.style.display = "block";
     this.browser_el.style.display = "none";
-    this.resize_window_to(690,lobby.size.height-60);
+    this.resize_window_to(690,lobby.size.height-90);
     this.move_window_to(270,0);
 
     this.update_navi();
@@ -111,17 +120,24 @@ function Editor()
     {
       var line = lines[line_id];
       var marker = line.trim().split(" ")[0];
-      var targets_minor = ["def"];
+      var targets_minor = ["def","attr_accessor"];
       var targets_major = ["class","module"];
+      var targets_miscs = ["private"];
       if(targets_major.indexOf(marker) > -1){
-        var name = line.replace(marker,"").trim().split(" ")[0];
+        var name = line.replace(marker,"").trim().split(" ")[0].substr(0,14);
         html += "<ln>"+name+"</ln>";
       }
       if(targets_minor.indexOf(marker) > -1){
-        var name = line.replace(marker,"").trim().split(" ")[0];
+        var name = line.replace(marker,"").trim().split(" ")[0].substr(0,14);
         html += "<ln class='f9'>"+name+"</ln>";
       }
+      if(targets_miscs.indexOf(marker) > -1){
+        var name = line.trim().split(" ")[0].substr(0,14);
+        html += "<ln class='f5'>"+name+"</ln>";
+      }
     }
+
+    html += "<ln class='di mt f3'>L"+lines.length+"</ln>"
     this.navi_el.innerHTML = html;
   }
 

@@ -3,7 +3,7 @@
 
 class Media
 
-  def initialize(cat,id,cl = "")
+  def initialize cat, id ,cl = ""
 
     @id  = id.to_s.gsub(" ",".").downcase
     @cat = cat.to_s.downcase.gsub(" ",".")
