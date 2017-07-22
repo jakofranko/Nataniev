@@ -382,18 +382,34 @@ function App()
 	}
 	this.key_arrow_up = function()
 	{
+    if(lobby.keyboard.alt_held){ this.key_alt_up(); return; }
+
     if(lobby.commander.is_typing() || this.is_typing()){ return; }
 		this.move_window(0,-30);
 	}
+
 	this.key_arrow_down = function()
 	{
+    if(lobby.keyboard.alt_held){ this.key_alt_down(); return; }
     if(lobby.commander.is_typing() || this.is_typing()){ return; }
 		this.move_window(0,30);
 	}
 
+  this.key_alt_up = function()
+  {
+
+  }
+
+  this.key_alt_down = function()
+  {
+    
+  }
+
   this.key_back_quote = function()
   {
-    console.log("!!!!")// TODO
+    if(lobby.commander.is_typing() || this.is_typing()){ return; }
+    lobby.commander.inject(this.name+".")
+    lobby.commander.input_el.focus();
   }
 
   this.move_window = function(x,y)
@@ -435,5 +451,11 @@ function App()
   {
     this.resize_window_to(lobby.size.width-180,lobby.size.height-210);
     this.move_window_to(60,60);
+  }
+
+  this.organize_window_vertical = function()
+  {
+    this.resize_window_to(this.size.width,lobby.size.height-90);
+    this.move_window_to(this.el.style.left,0);
   }
 }

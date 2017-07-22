@@ -18,14 +18,19 @@ function Keyboard()
     }
     if(event.altKey == true){
       this.alt_held = true;
+
+      switch (event.key || event.keyCode || event.which)
+      {
+        case "ArrowUp": event.preventDefault(); break;
+        case "ArrowDown": event.preventDefault(); break;
+        case "ArrowLeft": event.preventDefault(); break;
+        case "ArrowRight": event.preventDefault(); break;
+      }
     }
   }
 
   this.listen_onkeyup = function(event)
   {
-    this.shift_held = false;
-    this.alt_held = false;
-
     event.preventDefault();
 
     this.host = !lobby.commander.app ? lobby.commander : lobby.commander.app;
@@ -50,6 +55,7 @@ function Keyboard()
       case 192: this.host.key_back_quote(); break;
       case "`": this.host.key_back_quote(); break;
     }
-
+    this.shift_held = false;
+    this.alt_held = false;
   }
 }

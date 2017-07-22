@@ -47,7 +47,7 @@ get '/:task' do
   
 end
 
-post '/editor.save' do
+post '/ide.save' do
 
   path = params["file_path"]
   code = params["file_content"]
@@ -62,7 +62,7 @@ post '/editor.save' do
 
 end
 
-post '/editor.load' do
+post '/ide.load' do
 
   path = params["file_path"]
 
