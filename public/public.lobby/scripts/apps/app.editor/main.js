@@ -13,13 +13,15 @@ function Editor()
   this.tree = null;
 
   this.browser_el = document.createElement("yu"); this.browser_el.className = "full";
-  this.navi_el = document.createElement("yu"); this.navi_el.className = "at al lh15 w4"
+  this.navi_el = document.createElement("yu"); this.navi_el.className = "at al lh15 w4";
+  this.status_el = document.createElement("yu"); this.status_el.className = "pa ab al lh30 w4 mb15 ml wf f9";
 
-  this.textarea_el = document.createElement("textarea"); this.textarea_el.className = "wf_7 pl5 pa hf_2 sl pdl";
+  this.textarea_el = document.createElement("textarea"); this.textarea_el.className = "wf_7 pl5 pa hf_3 sl pdl";
   this.textarea_el.style.display = "none";
   this.wrapper_el.appendChild(this.textarea_el);
   this.wrapper_el.appendChild(this.browser_el);
   this.wrapper_el.appendChild(this.navi_el);
+  this.wrapper_el.appendChild(this.status_el);
 
   this.textarea_el.setAttribute("autocomplete","off")
   this.textarea_el.setAttribute("autocorrect","off")
@@ -53,12 +55,31 @@ function Editor()
         this.browser_el.innerHTML = "No file selected.";  
       }
     }
-    else{
-      this.view_browser(value);      
+    else if(value.split(" ")[0] == "editor.load"){
+      this.update_browser(value);    
+      this.view_browser();  
     }
   }
 
-  this.view_browser = function(value)
+  this.view_editor = function()
+  {
+    this.textarea_el.style.display = "block";
+    this.navi_el.style.display = "block";
+    this.status_el.style.display = "block";  
+    this.browser_el.style.display = "none";    
+
+    this.organize_window_center();
+    this.update_navi();
+  }
+
+  this.view_browser = function()
+  {
+    this.textarea_el.style.display = "none";
+    this.navi_el.style.display = "none";
+    this.browser_el.style.display = "block";
+  }
+
+  this.update_browser = function(value = null)
   {
     var targets = value.trim().split(" "); targets.shift();
     var candidates = this.candidates_from_string(targets);
@@ -75,10 +96,6 @@ function Editor()
       this.resize_window_to(420,target_height > 300 ? 300 : target_height)
     }
     this.browser_el.innerHTML = html;
-
-    this.textarea_el.style.display = "none";
-    this.navi_el.style.display = "none";
-    this.browser_el.style.display = "block";
   }
 
   this.on_launch = function()
@@ -112,8 +129,6 @@ function Editor()
         app.update_navi();
       }
     })
-
-    this.call("load_file",(this.location).replace(/\//g, '-'));
   }
 
   this.save = function()
@@ -179,6 +194,13 @@ function Editor()
 
     html += "<ln class='di mt f3'>L"+lines.length+"</ln>"
     this.navi_el.innerHTML = html;
+
+    this.update_status();
+  }
+
+  this.update_status = function()
+  {
+    this.status_el.innerHTML = this.location;
   }
 
   this.candidates_from_string = function(targets)
@@ -197,6 +219,17 @@ function Editor()
       }
     }
     return candidates;
+  }
+
+  this.key_escape = function()
+  { 
+    if(this.location){
+      this.view_editor();
+    }
+    else{
+      this.view_browser();
+    }
+    lobby.commander.notify("hello!");
   }
 }
 

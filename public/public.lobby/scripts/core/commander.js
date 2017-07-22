@@ -6,6 +6,7 @@ function Commander()
 	this.input_el = document.createElement("input"); this.input_el.id = "commander_input";
 	this.app_icon_el = document.createElement("yu"); this.app_icon_el.id = "app_icon"; this.app_icon_el.className = "icon";
 	this.widgets_el = document.createElement("yu"); this.widgets_el.className = "widgets";
+	this.notification_el = document.createElement("yu"); this.notification_el.className = "notification";
 	this.hint_el = document.createElement("yu"); this.hint_el.className = "hint";
 
 	this.input_el.setAttribute("autocomplete","off")
@@ -19,6 +20,7 @@ function Commander()
 	this.el.appendChild(this.app_icon_el);
 	this.el.appendChild(this.input_el);
 	this.el.appendChild(this.hint_el);
+	this.el.appendChild(this.notification_el);
 
 	this.input_el.addEventListener('input', input_change, false);
 
@@ -115,6 +117,12 @@ function Commander()
 	{
 		console.log("installing widget",el);
 		this.widgets_el.appendChild(el);
+	}
+
+	this.notify = function(content)
+	{
+		console.log(content);
+		this.notification_el.innerHTML = content;
 	}
 
 	this.is_typing = function()
