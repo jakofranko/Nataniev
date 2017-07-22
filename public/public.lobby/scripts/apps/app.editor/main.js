@@ -145,6 +145,7 @@ function Editor()
       data: { file_path: this.location, file_content: this.textarea_el.value },
       success: function(data) {
         console.log(data);
+        lobby.commander.notify("Saved.");
       }
     })
 
