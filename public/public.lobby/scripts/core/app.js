@@ -354,14 +354,18 @@ function App()
   this.key_arrow_left  = function(){ }
   this.key_arrow_right = function(){ }
   // Etc
-  this.key_escape      = function(){ 
+  this.key_escape = function()
+  { 
     lobby.commander.deselect(); lobby.commander.input_el.blur(); 
   }
-  this.key_delete      = function(){
+
+  this.key_delete = function()
+  {
 
   }
-  this.key_enter       = function(){ 
 
+  this.key_enter = function()
+  { 
     lobby.commander.validate(); 
   }
 
@@ -386,6 +390,11 @@ function App()
     if(lobby.commander.is_typing() || this.is_typing()){ return; }
 		this.move_window(0,30);
 	}
+
+  this.key_back_quote = function()
+  {
+    console.log("!!!!")// TODO
+  }
 
   this.move_window = function(x,y)
   {

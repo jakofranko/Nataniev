@@ -46,6 +46,9 @@ function Keyboard()
       case "[": this.host.key_square_bracket_left(); break;
       case "}": this.host.key_curly_bracket_right(); break;
       case "{": this.host.key_curly_bracket_left(); break;
+
+      case 192: this.host.key_back_quote(); break;
+      case "`": this.host.key_back_quote(); break;
     }
 
   }

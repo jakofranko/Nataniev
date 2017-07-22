@@ -9,6 +9,8 @@ function Editor()
   this.methods.new = {name:"new"};
   this.methods.load = {name:"load"};
   this.methods.save = {name:"save"};
+  this.methods.replace = {name:"replace"};
+  this.methods.end = {name:"end"};
 
   this.tree = null;
 
@@ -38,11 +40,13 @@ function Editor()
 
   this.location = "";
 
-  this.clear = function()
+  this.end = function()
   {
     this.location = null;
     this.browser_el.innerHTML = "Nothing to see..";    
     this.resize_window_to(600,30);
+    this.view_browser();
+    this.update_status();
   }
 
   this.on_input_change = function(value)
@@ -70,6 +74,7 @@ function Editor()
 
     this.organize_window_center();
     this.update_navi();
+    this.update_status();
   }
 
   this.view_browser = function()
@@ -147,6 +152,11 @@ function Editor()
     this.navi_el.style.display = "block";
     this.browser_el.style.display = "none";
     this.organize_window_center();
+  }
+
+  this.replace = function(val)
+  {
+    console.log(val)
   }
 
   this.call_back = function(m,r)
