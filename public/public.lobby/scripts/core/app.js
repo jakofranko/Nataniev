@@ -169,6 +169,10 @@ function App()
 
   this.show = function()
   {
+    if(!this.has_launched){
+      this.launch();
+    }
+
     $(this.el).removeClass("hidden");
     $(this.el).removeClass("ghost");
     this.is_visible = true;
@@ -368,6 +372,7 @@ function App()
   this.key_escape = function()
   { 
     lobby.commander.deselect(); lobby.commander.input_el.blur(); 
+    lobby.commander.hide_browser();
   }
 
   this.key_delete = function()

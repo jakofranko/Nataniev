@@ -70,6 +70,9 @@ function Ide()
       lobby.commander.browse_candidates(val,this.formats);
     }
     else{
+      if(!this.has_launched){
+        this.launch();
+      }
       lobby.commander.hide_browser();
       this.load_file(lobby.commander.select_candidate(val,this.formats));
     }
@@ -137,6 +140,7 @@ function Ide()
     this.textarea_el.style.display = "block";
     this.navi_el.style.display = "block";
     this.organize_window_vertical();
+    this.update_status();
   }
 
   this.replace = function(val)
@@ -182,11 +186,6 @@ function Ide()
     var size = "<t class='f5'>"+this.size.width+"x"+this.size.height+"</t>"
 
     this.status_el.innerHTML = this.location+" "+selection+"/"+this.textarea_el.textLength+" "+size;
-  }
-
-  this.key_escape = function()
-  { 
-    lobby.commander.notify("hello!");
   }
   
   this.key_alt_up = function()

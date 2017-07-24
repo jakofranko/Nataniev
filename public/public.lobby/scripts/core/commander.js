@@ -196,8 +196,8 @@ function Commander()
 
 	this.notify = function(content)
 	{
-		console.log(content);
 		this.notification_el.innerHTML = content;
+    $(this.notification_el).css('opacity','1').delay(1000).animate({ opacity: 0 }, 300);
 	}
 
 	this.is_typing = function()
