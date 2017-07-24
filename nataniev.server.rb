@@ -2,6 +2,7 @@
 # encoding: utf-8
 
 require 'sinatra'
+require 'json'
 
 require_relative "system/nataniev.rb"
 
@@ -67,5 +68,18 @@ post '/ide.load' do
   path = params["file_path"]
 
   "#{File.read(path, :encoding => 'UTF-8')}"
+
+end
+
+post '/ide.tree' do
+
+  a = []
+
+  Dir['**/*'].each do |file|
+    ext = file.split(".").last
+    if !["ma","mh","rb","js","css","html"].include?(ext) then next end
+    a.push(file)
+  end
+  return a.to_json
 
 end

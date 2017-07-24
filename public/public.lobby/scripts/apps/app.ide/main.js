@@ -12,16 +12,14 @@ function Ide()
   this.methods.replace = {name:"replace"};
   this.methods.end = {name:"end"};
 
-  this.tree = null;
+  this.formats = ["js","rb","html","css","ma","mh"];
 
-  this.browser_el = document.createElement("yu"); this.browser_el.className = "full";
   this.navi_el = document.createElement("yu"); this.navi_el.className = "at al lh15 w4";
   this.status_el = document.createElement("yu"); this.status_el.className = "pa ab al lh30 w4 mb15 ml wf f9";
 
   this.textarea_el = document.createElement("textarea"); this.textarea_el.className = "wf_7 pl5 pa hf_3 sl pdl";
   this.textarea_el.style.display = "none";
   this.wrapper_el.appendChild(this.textarea_el);
-  this.wrapper_el.appendChild(this.browser_el);
   this.wrapper_el.appendChild(this.navi_el);
   this.wrapper_el.appendChild(this.status_el);
 
@@ -65,30 +63,32 @@ function Ide()
 
   this.location = "";
 
-  this.end = function()
+  this.load = function(val, is_passive = false)
   {
-    this.location = null;
-    this.browser_el.innerHTML = "Nothing to see..";    
-    this.resize_window_to(this.size.width,30);
-    this.view_browser();
-    this.update_status();
+    if(is_passive){
+      lobby.commander.show_browser();
+      lobby.commander.browse_candidates(val,this.formats);
+    }
+    else{
+      lobby.commander.hide_browser();
+      this.load_file(lobby.commander.select_candidate(val,this.formats));
+    }
+    return val;
   }
 
   this.on_input_change = function(value)
   {
     if(value.split(" ")[0] == "ide.save"){
       if(this.location){
-        this.browser_el.innerHTML = "Overwrite "+this.location;
-        this.view_browser();  
+        this.status_el.innerHTML = "Overwrite <b class='ff'>"+this.location+"</b>?";
       }
       else{
-        this.browser_el.innerHTML = "No file selected.";  
-        this.view_browser();  
+        this.status_el.innerHTML = "No file selected.";  
       }
     }
     else if(value.split(" ")[0] == "ide.load"){
-      this.update_browser(value);    
-      this.view_browser();  
+      var val = value.split(" "); val.shift(); val = val.join(" ").trim();
+      this.load(val,true);
     }
   }
 
@@ -97,56 +97,15 @@ function Ide()
     this.textarea_el.style.display = "block";
     this.navi_el.style.display = "block";
     this.status_el.style.display = "block";  
-    this.browser_el.style.display = "none";    
 
     this.organize_window_vertical();
     this.update_navi();
     this.update_status();
   }
 
-  this.view_browser = function()
+  this.load_file = function(file_path)
   {
-    this.textarea_el.style.display = "none";
-    this.navi_el.style.display = "none";
-    this.browser_el.style.display = "block";
-  }
-
-  this.update_browser = function(value = null)
-  {
-    var targets = value.trim().split(" "); targets.shift();
-    var candidates = this.candidates_from_string(targets);
-
-    var html = "";
-    if(candidates.length < 1){
-      html += "No candidates found."
-    }
-    else{
-      for(candidate_id in candidates){
-        html += "<ln class='lh15 "+(candidate_id == candidates.length-1 ? 'bf f0' : 'ff')+"'>"+candidates[candidate_id]+'</ln>';
-      }  
-      var target_height = (candidates.length * 15)+60;
-      this.resize_window_to(this.size.width,target_height > 300 ? 300 : target_height)
-    }
-    this.browser_el.innerHTML = html;
-  }
-
-  this.on_launch = function()
-  {
-    this.update_tree();
-  }
-
-  this.update_tree = function()
-  {
-    this.call("get_tree");
-  }
-
-  this.load = function(value)
-  {
-    var targets = value.trim().split(" ");
-    var candidates = this.candidates_from_string(targets);
-    var target = candidates[candidates.length-1];
-
-    this.location = target;
+    this.location = file_path;
 
     var app = this;
     $.ajax({url: '/ide.load',
@@ -156,7 +115,6 @@ function Ide()
         app.textarea_el.value = data;
         app.textarea_el.style.display = "block";
         app.navi_el.style.display = "block";
-        app.browser_el.style.display = "none";
         app.organize_window_vertical();
         app.update_navi();
       }
@@ -178,29 +136,12 @@ function Ide()
 
     this.textarea_el.style.display = "block";
     this.navi_el.style.display = "block";
-    this.browser_el.style.display = "none";
     this.organize_window_vertical();
   }
 
   this.replace = function(val)
   {
     console.log(val)
-  }
-
-  this.call_back = function(m,r)
-  {
-    if(m == "get_tree"){ this.callback_tree(r); }
-  }
-
-  this.callback_tree = function(r)
-  {
-    this.tree = r[0].payload;
-
-    var html = "";
-    for(file_id in this.tree){
-      html += this.tree[file_id]+"\n";
-    }
-    this.textarea_el.value = html;
   }
 
   this.update_navi = function()
@@ -243,32 +184,8 @@ function Ide()
     this.status_el.innerHTML = this.location+" "+selection+"/"+this.textarea_el.textLength+" "+size;
   }
 
-  this.candidates_from_string = function(targets)
-  {
-    var candidates = [];
-    for(file_id in this.tree){
-      var file_name = this.tree[file_id];
-
-      var found = 0;
-      for(target_id in targets){
-        var target = targets[target_id];
-        if(file_name.indexOf(target) > -1){ found += 1; }
-      } 
-      if(found == targets.length){
-        candidates.push(file_name);   
-      }
-    }
-    return candidates;
-  }
-
   this.key_escape = function()
   { 
-    if(this.location){
-      this.view_editor();
-    }
-    else{
-      this.view_browser();
-    }
     lobby.commander.notify("hello!");
   }
   

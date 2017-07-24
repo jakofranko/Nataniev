@@ -196,6 +196,12 @@ function App()
     $(this.el).addClass("noir");
   }
 
+  this.blanc = function()
+  {
+    $(this.el).removeClass("hidden");
+    $(this.el).removeClass("ghost");
+    $(this.el).addClass("blanc");
+  }
 
   this.full = function()
   {
@@ -207,6 +213,11 @@ function App()
   {
     this.resize_window_to(180,180);
     this.move_window_to(30,30)
+  }
+
+  this.fuzzy = function(targets)
+  {
+    console.log(targets);
   }
 
   //
@@ -408,7 +419,7 @@ function App()
   this.key_back_quote = function()
   {
     if(lobby.commander.is_typing() || this.is_typing()){ return; }
-    lobby.commander.inject(this.name+".")
+    lobby.commander.inject(this.name+":")
     lobby.commander.input_el.focus();
   }
 
