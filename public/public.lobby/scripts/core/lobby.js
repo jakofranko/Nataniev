@@ -45,6 +45,7 @@ function Lobby()
 		this.try_install("Clock");
 		this.try_install("Calendar");
 		this.try_install("Ide");
+		this.try_install("Afk");
 
 		setTimeout(function(){ lobby.on_ready(); }, 1000);
 	}
@@ -52,7 +53,7 @@ function Lobby()
 	this.on_ready = function()
 	{
 		this.apps.terminal.launch();
-		this.apps.ide.launch();
+		// this.apps.ide.launch();
 	}
 
 	function on_resize()

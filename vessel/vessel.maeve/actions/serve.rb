@@ -34,26 +34,11 @@ class ActionServe
       return get_calendar.to_json
     elsif q.include?("get_tasks")
       return get_tasks.to_json
-    elsif q.include?("get_tree")
-      return get_tree.to_json
     elsif q.like("help")
       return [{:host => "nataniev.maeve",:text => "Current options are get_calendar and get_tasks."}].to_json
     else
       return [{:host => "nataniev.maeve",:text => "Unknown request: #{q}"}].to_json
     end
-
-  end
-
-  def get_tree
-
-    payload = []
-
-    Dir['**/*'].each do |file|
-      ext = file.split(".").last
-      if !["ma","mh","rb","js","css","html"].include?(ext) then next end
-      payload.push(file)
-    end
-    return [{:host => "nataniev.maeve",:text => "Found #{payload.length} files in tree.", :payload =>payload}]
 
   end
 

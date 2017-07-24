@@ -130,10 +130,10 @@ function Ide()
       data: { file_path: this.location, file_content: this.textarea_el.value },
       success: function(data) {
         console.log(data);
-        lobby.commander.notify("Saved.");
       }
     })
-
+    
+    lobby.commander.notify("Saved.");
     this.textarea_el.style.display = "block";
     this.navi_el.style.display = "block";
     this.organize_window_vertical();

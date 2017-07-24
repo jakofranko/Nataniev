@@ -80,6 +80,7 @@ post '/ide.tree' do
     if !["ma","mh","rb","js","css","html"].include?(ext) then next end
     a.push(file)
   end
+  
   return a.to_json
 
 end
