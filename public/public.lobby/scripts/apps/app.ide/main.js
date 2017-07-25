@@ -5,7 +5,7 @@ function Ide()
   this.name = "ide";
   this.size = {width:780,height:420};
   this.origin = {x:120,y:120};
-  this.theme = "noir";
+  // this.theme = "noir";
   this.methods.new = {name:"new"};
   this.methods.load = {name:"load"};
   this.methods.save = {name:"save"};
@@ -37,7 +37,6 @@ function Ide()
   this.textarea_el.addEventListener('keydown', key_down, false);
   this.textarea_el.addEventListener('mousedown', mouse_down, false);
   this.textarea_el.addEventListener('mouseup', mouse_up, false);
-  this.textarea_el.addEventListener('mousemove', mouse_move, false);
 
   function key_down(e)
   {
@@ -49,10 +48,6 @@ function Ide()
     lobby.apps.ide.update_status();
   }
   function mouse_up()
-  {
-    lobby.apps.ide.update_status();
-  }
-  function mouse_move()
   {
     lobby.apps.ide.update_status();
   }
@@ -93,9 +88,7 @@ function Ide()
       lobby.commander.browse_candidates(val,this.formats);
     }
     else{
-      if(!this.has_launched){
-        this.launch();
-      }
+      this.show();
       lobby.commander.hide_browser();
       this.load_file(lobby.commander.select_candidate(val,this.formats));
     }
@@ -106,7 +99,7 @@ function Ide()
   {
     if(value.split(" ")[0] == "ide.save"){
       if(this.location){
-        this.status_el.innerHTML = "Overwrite <b class='ff'>"+this.location+"</b>?";
+        this.status_el.innerHTML = "Overwrite <b class='f0'>"+this.location+"</b>?";
       }
       else{
         this.status_el.innerHTML = "No file selected.";  
@@ -147,6 +140,7 @@ function Ide()
         app.navi_el.style.display = "block";
         app.organize_window_vertical();
         app.update_navi();
+        app.update_status();
       }
     })
   }
@@ -181,32 +175,32 @@ function Ide()
 
     var html = "";
 
+    var count = 0
     for(line_id in lines)
     {
+      if(count > 30){ break; }
       var line = lines[line_id];
       var marker = line.trim().split(" ")[0];
-      var targets_minor = ["def","attr_accessor","function"];
       var targets_major = ["class","module"];
+      var targets_minor = ["def","attr_accessor","function"];
       var targets_miscs = ["private"];
       if(targets_major.indexOf(marker) > -1){
         var name = line.replace(marker,"").trim().split(" ")[0].substr(0,14);
-        html += "<ln>"+name+"</ln>";
+        html += "<ln>"+name+" "+line_id+"</ln>";
+        count += 1;
       }
       if(targets_minor.indexOf(marker) > -1){
         var name = line.replace(marker,"").trim().split(" ")[0].substr(0,14);
-        html += "<ln class='f9'>"+name+"</ln>";
+        html += "<ln class='f9'>"+name+" "+line_id+"</ln>";
+        count += 1;
       }
       if(targets_miscs.indexOf(marker) > -1){
         var name = line.trim().split(" ")[0].substr(0,14);
-        html += "<ln class='f5'>"+name+"</ln>";
-      }
-      if(line.substr(0,2) != "  " && marker == marker.toUpperCase()){
-        html += "<ln class='f5'>"+marker+"</ln>"; 
+        html += "<ln class='f5'>"+name+" "+line_id+"</ln>";
+        count += 1;
       }
     }
     this.navi_el.innerHTML = html;
-
-    this.update_status();
   }
 
   this.update_status = function()

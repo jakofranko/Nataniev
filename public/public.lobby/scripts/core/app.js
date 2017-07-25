@@ -209,8 +209,8 @@ function App()
 
   this.full = function()
   {
-    this.resize_window_to(lobby.size.width - 30,lobby.size.height - 30);
-    this.move_window_to(0,0)
+    this.resize_window_to(lobby.size.width,lobby.size.height - 30);
+    this.move_window_to(-30,-30)
   }
 
   this.mini = function()
@@ -447,8 +447,7 @@ function App()
     document.activeElement.blur();
 
     if(lobby.commander.is_typing() || this.is_typing()){ return; }
-    lobby.commander.inject(this.name+".hide ")
-    lobby.commander.input_el.focus();
+    lobby.commander.app.toggle();
   }
 
   this.on_ctrl_m = function()
