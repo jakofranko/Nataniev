@@ -27,6 +27,26 @@ function Keyboard()
         case "ArrowRight": event.preventDefault(); break;
       }
     }
+    if(event.key == "f" && event.ctrlKey == true){
+      event.preventDefault();
+      this.host.on_ctrl_f();
+    }
+    if(event.key == "s" && event.ctrlKey == true){
+      event.preventDefault();
+      this.host.on_ctrl_s();
+    }
+    if(event.key == "w" && event.ctrlKey == true){
+      event.preventDefault();
+      this.host.on_ctrl_w();
+    }
+    if(event.key == "l" && event.ctrlKey == true){
+      event.preventDefault();
+      this.host.on_ctrl_l();
+    }
+    if(event.key == "m" && event.ctrlKey == true){
+      event.preventDefault();
+      this.host.on_ctrl_m();
+    }
   }
 
   this.listen_onkeyup = function(event)
@@ -53,7 +73,6 @@ function Keyboard()
       case "{": this.host.key_curly_bracket_left(); break;
 
       case 192: this.host.key_back_quote(); break;
-      case "`": this.host.key_back_quote(); break;
     }
     this.shift_held = false;
     this.alt_held = false;

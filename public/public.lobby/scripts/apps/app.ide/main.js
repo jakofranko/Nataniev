@@ -11,6 +11,7 @@ function Ide()
   this.methods.save = {name:"save"};
   this.methods.replace = {name:"replace"};
   this.methods.end = {name:"end"};
+  this.methods.find = {name:"find"};
 
   this.formats = ["js","rb","html","css","ma","mh"];
 
@@ -38,7 +39,7 @@ function Ide()
   this.textarea_el.addEventListener('mouseup', mouse_up, false);
   this.textarea_el.addEventListener('mousemove', mouse_move, false);
 
-  function key_down()
+  function key_down(e)
   {
     lobby.apps.ide.update_status();
   }
@@ -62,6 +63,28 @@ function Ide()
   }
 
   this.location = "";
+
+  this.find = function(val, is_passive = false)
+  {
+    var lines = this.textarea_el.value.split("\n");
+
+    for(line_id in lines)
+    {
+      var line = lines[line_id];
+      if(line.indexOf(val) > -1){
+
+        if(!is_passive){
+          var from = this.textarea_el.value.indexOf(val);
+          var to   = from + val.length;
+          this.textarea_el.setSelectionRange(from,to);
+          this.textarea_el.focus();
+        }
+        
+        $(this.textarea_el).animate({scrollTop: line_id * 15}, 250, function() {});
+        break;
+      }
+    }
+  }
 
   this.load = function(val, is_passive = false)
   {
@@ -92,6 +115,10 @@ function Ide()
     else if(value.split(" ")[0] == "ide.load"){
       var val = value.split(" "); val.shift(); val = val.join(" ").trim();
       this.load(val,true);
+    }
+    else if(value.split(" ")[0] == "ide.find"){
+      var val = value.split(" "); val.shift(); val = val.join(" ").trim();
+      this.find(val,true);
     }
   }
 
@@ -172,6 +199,9 @@ function Ide()
       if(targets_miscs.indexOf(marker) > -1){
         var name = line.trim().split(" ")[0].substr(0,14);
         html += "<ln class='f5'>"+name+"</ln>";
+      }
+      if(line.substr(0,2) != "  " && marker == marker.toUpperCase()){
+        html += "<ln class='f5'>"+marker+"</ln>"; 
       }
     }
     this.navi_el.innerHTML = html;

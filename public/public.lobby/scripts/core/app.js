@@ -209,19 +209,14 @@ function App()
 
   this.full = function()
   {
-    this.resize_window_to(lobby.size.width,lobby.size.height);
-    this.move_window_to(-30,-30)
+    this.resize_window_to(lobby.size.width - 30,lobby.size.height - 30);
+    this.move_window_to(0,0)
   }
 
   this.mini = function()
   {
     this.resize_window_to(180,180);
     this.move_window_to(30,30)
-  }
-
-  this.fuzzy = function(targets)
-  {
-    console.log(targets);
   }
 
   //
@@ -371,7 +366,6 @@ function App()
   // Etc
   this.key_escape = function()
   { 
-    lobby.commander.deselect(); lobby.commander.input_el.blur(); 
     lobby.commander.hide_browser();
   }
 
@@ -421,11 +415,54 @@ function App()
     
   }
 
-  this.key_back_quote = function()
+  this.on_ctrl_f = function()
   {
+    document.activeElement.blur();
+
     if(lobby.commander.is_typing() || this.is_typing()){ return; }
-    lobby.commander.inject(this.name+":")
+    lobby.commander.inject(this.name+".find ")
     lobby.commander.input_el.focus();
+  }
+
+  this.on_ctrl_s = function()
+  {
+    document.activeElement.blur();
+
+    if(lobby.commander.is_typing() || this.is_typing()){ return; }
+    lobby.commander.inject(this.name+".save ")
+    lobby.commander.input_el.focus();
+  }
+
+  this.on_ctrl_l = function()
+  {
+    document.activeElement.blur();
+
+    if(lobby.commander.is_typing() || this.is_typing()){ return; }
+    lobby.commander.inject(this.name+".load ")
+    lobby.commander.input_el.focus();
+  }
+
+  this.on_ctrl_w = function()
+  {
+    document.activeElement.blur();
+
+    if(lobby.commander.is_typing() || this.is_typing()){ return; }
+    lobby.commander.inject(this.name+".hide ")
+    lobby.commander.input_el.focus();
+  }
+
+  this.on_ctrl_m = function()
+  {
+    document.activeElement.blur();
+
+    if(lobby.commander.is_typing() || this.is_typing()){ return; }
+    lobby.commander.inject(this.name+".full ")
+    lobby.commander.input_el.focus();
+  }
+
+  this.on_alt_f = function()
+  {
+    console.log("!")
   }
 
   this.move_window = function(x,y)
