@@ -8,7 +8,7 @@ function Calendar()
   this.theme = "noir"
   this.widget_el = document.createElement("t"); this.widget_el.className = "toggle";
 
-  this.on_start = function()
+  this.on_installation_complete = function()
   {
     lobby.commander.install_widget(this.widget_el);
     this.update();

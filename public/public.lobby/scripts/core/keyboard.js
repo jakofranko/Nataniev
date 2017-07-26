@@ -28,7 +28,7 @@ function Keyboard()
       }
     }
 
-    if(event.ctrlKey){
+    if(event.ctrlKey && event.key.toLowerCase() != "control"){
       this.host.on_shortcut(event.key.toLowerCase());
     }
   }
@@ -49,13 +49,6 @@ function Keyboard()
       case "Escape" || 27:  this.host.key_escape(); break;
       // case "Backspace" || 8:  this.host.key_delete(); break;
       case "Enter" :  this.host.key_enter(); break;
-
-      // Pattern Mods
-      case "]": this.host.key_square_bracket_right(); break;
-      case "[": this.host.key_square_bracket_left(); break;
-      case "}": this.host.key_curly_bracket_right(); break;
-      case "{": this.host.key_curly_bracket_left(); break;
-
       case 192: this.host.key_back_quote(); break;
     }
     this.shift_held = false;

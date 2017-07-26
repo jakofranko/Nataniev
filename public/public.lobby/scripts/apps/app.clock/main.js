@@ -11,7 +11,7 @@ function Clock()
   this.circ = this.radius * 2 * Math.PI;
   this.center = 105;
 
-  this.on_start = function()
+  this.on_installation_complete = function()
   {
     lobby.commander.install_widget(this.widget_el);
     lobby.apps.clock.update();

@@ -5,14 +5,20 @@ function App()
 	this.origin = {x:0,y:0};
   this.theme = "";
   this.methods = {};
-  this.methods.start = {name:"start",is_global:true};
   this.methods.exit = {name:"exit",is_global:true,shortcut:"w",run_shortcut:true};
+
+  this.methods.toggle = {name:"toggle",is_global:true,shortcut:"h",run_shortcut:true};
   this.methods.hide = {name:"hide",is_global:true};
   this.methods.show = {name:"show",is_global:true};
+
   this.methods.full = {name:"full",is_global:true};
   this.methods.mini = {name:"mini",is_global:true};
   this.methods.ghost = {name:"ghost",is_global:true};
-  this.methods.toggle = {name:"toggle",is_global:true,shortcut:"h",run_shortcut:true};
+
+
+  this.methods.warp_right = {name:"warp_right",is_global:true,shortcut:"]",run_shortcut:true};
+  this.methods.warp_left = {name:"warp_left",is_global:true,shortcut:"[",run_shortcut:true};
+  this.methods.fill = {name:"fill",is_global:true,shortcut:"m",run_shortcut:true};
 
   this.is_visible = false;
   this.has_launched = false;
@@ -41,7 +47,7 @@ function App()
     if(this.includes.length > 0){
       this.install_includes(this.includes);
     }
-    this.start();
+    this.on_installation_complete();
   }
 
   this.install_includes = function(files)
@@ -116,18 +122,13 @@ function App()
   }
 
   this.on_input_change = function(value){}
-  this.on_start = function(){}
+  this.on_installation_complete = function(){}
   this.on_exit = function(){}
   this.on_resize = function(){}
   this.on_move = function(){}
   this.on_window_resize = function(){}
 
   // Change styles
-
-  this.start = function()
-  {
-    this.on_start();
-  }
 
   this.launch = function()
   {
@@ -206,18 +207,6 @@ function App()
     $(this.el).removeClass("hidden");
     $(this.el).removeClass("ghost");
     $(this.el).addClass("blanc");
-  }
-
-  this.full = function()
-  {
-    this.resize_window_to(lobby.size.width,lobby.size.height - 30);
-    this.move_window_to(-30,-30)
-  }
-
-  this.mini = function()
-  {
-    this.resize_window_to(180,180);
-    this.move_window_to(30,30)
   }
 
   //
@@ -349,10 +338,10 @@ function App()
   this.key_letter_x = function(){ }
   this.key_letter_z = function(){ }
   // Brackets
-  this.key_square_bracket_right = function(){ this.resize_window(30,0); }
-  this.key_square_bracket_left  = function(){ this.resize_window(-30,0); }
-  this.key_curly_bracket_right  = function(){ this.resize_window(0,30); }
-  this.key_curly_bracket_left   = function(){ this.resize_window(0,-30);}
+  // this.key_square_bracket_right = function(){ this.resize_window(30,0); }
+  // this.key_square_bracket_left  = function(){ this.resize_window(-30,0); }
+  // this.key_curly_bracket_right  = function(){ this.resize_window(0,30); }
+  // this.key_curly_bracket_left   = function(){ this.resize_window(0,-30);}
   // Keyboard Hex
   this.key_letter_a = function(){ }
   this.key_letter_b = function(){ }
@@ -382,43 +371,74 @@ function App()
   }
 
 	// Keyboard controls
-	this.key_arrow_right = function()
-	{
-    if(lobby.commander.is_typing() || this.is_typing()){ return; }
-		this.move_window(30,0);
-	}
-	this.key_arrow_left = function()
-	{
-    if(lobby.commander.is_typing() || this.is_typing()){ return; }
-		this.move_window(-30,0);
-	}
-	this.key_arrow_up = function()
-	{
-    if(lobby.keyboard.alt_held){ this.key_alt_up(); return; }
+	// this.key_arrow_right = function()
+	// {
+ //    if(lobby.commander.is_typing() || this.is_typing()){ return; }
+	// 	this.move_window(30,0);
+	// }
+	// this.key_arrow_left = function()
+	// {
+ //    if(lobby.commander.is_typing() || this.is_typing()){ return; }
+	// 	this.move_window(-30,0);
+	// }
+	// this.key_arrow_up = function()
+	// {
+ //    if(lobby.keyboard.alt_held){ this.key_alt_up(); return; }
 
-    if(lobby.commander.is_typing() || this.is_typing()){ return; }
-		this.move_window(0,-30);
-	}
+ //    if(lobby.commander.is_typing() || this.is_typing()){ return; }
+	// 	this.move_window(0,-30);
+	// }
 
-	this.key_arrow_down = function()
-	{
-    if(lobby.keyboard.alt_held){ this.key_alt_down(); return; }
-    if(lobby.commander.is_typing() || this.is_typing()){ return; }
-		this.move_window(0,30);
-	}
+	// this.key_arrow_down = function()
+	// {
+ //    if(lobby.keyboard.alt_held){ this.key_alt_down(); return; }
+ //    if(lobby.commander.is_typing() || this.is_typing()){ return; }
+	// 	this.move_window(0,30);
+	// }
+
+  this.warp_left = function()
+  {
+    console.log("!!");
+    this.move_window_to(-30,-30);
+    this.resize_window_to(lobby.size.width/2 - 30,lobby.size.height-30);
+  }
+  this.warp_right = function()
+  {
+    console.log("!!");
+    this.move_window_to(lobby.size.width/2 - 30,-30);
+    this.resize_window_to(lobby.size.width/2,lobby.size.height-30);
+  }
+
+  this.fill = function()
+  {
+    this.resize_window_to(lobby.size.width,lobby.size.height - 30);
+    this.move_window_to(-30,-30)
+  }
+
+  this.mini = function()
+  {
+    this.resize_window_to(180,180);
+    this.move_window_to(30,30)
+  }
 
   this.on_shortcut = function(key)
   {
+    if(!lobby.commander.app){ return; }
+    console.log(this.name) 
     for(method_id in this.methods){
       var method = this.methods[method_id];
       if(method.shortcut != key){ continue; }
       if(method.run_shortcut){
         this[method.name](); 
+        return;
       }
       else{
         lobby.commander.inject(this.name+"."+method.name+" ");
+        lobby.commander.input_el.focus()
+        return;
       }
     }
+    console.log("Unknown shortcut:",key);
   }
 
   this.move_window = function(x,y)
