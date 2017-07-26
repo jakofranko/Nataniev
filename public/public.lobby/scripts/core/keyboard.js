@@ -31,6 +31,9 @@ function Keyboard()
     if(event.ctrlKey && event.key.toLowerCase() != "control"){
       this.host.on_shortcut(event.key.toLowerCase());
     }
+    if(event.altKey && event.key.toLowerCase() != "alt"){
+      this.host.on_option(event.key.toLowerCase());
+    }
   }
 
   this.listen_onkeyup = function(event)

@@ -398,13 +398,11 @@ function App()
 
   this.warp_left = function()
   {
-    console.log("!!");
     this.move_window_to(-30,-30);
     this.resize_window_to(lobby.size.width/2 - 30,lobby.size.height-30);
   }
   this.warp_right = function()
   {
-    console.log("!!");
     this.move_window_to(lobby.size.width/2 - 30,-30);
     this.resize_window_to(lobby.size.width/2,lobby.size.height-30);
   }
@@ -421,10 +419,21 @@ function App()
     this.move_window_to(30,30)
   }
 
+  this.on_option = function(key)
+  {
+    switch(key)
+    {
+      case "arrowup": this.move_window(0,30); event.preventDefault(); break;
+      case "arrowdown": this.move_window(0,-30); event.preventDefault(); break;
+      case "arrowleft": this.move_window(-30,0); event.preventDefault(); break;
+      case "arrowright": this.move_window(30,0); event.preventDefault(); break;
+    }
+  }
+
   this.on_shortcut = function(key)
   {
     if(!lobby.commander.app){ return; }
-    console.log(this.name) 
+
     for(method_id in this.methods){
       var method = this.methods[method_id];
       if(method.shortcut != key){ continue; }

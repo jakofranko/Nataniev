@@ -47,6 +47,7 @@ function Lobby()
 		this.try_install("Ide");
 		this.try_install("Ronin");
 		this.try_install("System");
+		this.try_install("Dict");
 
 		setTimeout(function(){ lobby.on_ready(); }, 1000);
 	}

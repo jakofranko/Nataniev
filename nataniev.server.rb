@@ -77,7 +77,7 @@ post '/ide.tree' do
 
   Dir['**/*'].each do |file|
     ext = file.split(".").last
-    if !["ma","mh","rb","js","css","html"].include?(ext) then next end
+    # if !["ma","mh","rb","js","css","html"].include?(ext) then next end
     a.push(file)
   end
   

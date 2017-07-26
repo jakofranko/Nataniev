@@ -6,7 +6,6 @@ function Terminal()
   this.size = {width:lobby.size.width,height:30};
   this.origin = {x:0,y:0};
   this.theme = "ghost";
-  this.methods.set_wallpaper = {name:"set_wallpaper"};
   this.methods.say = {name:"say"};
 
   this.logs = [];

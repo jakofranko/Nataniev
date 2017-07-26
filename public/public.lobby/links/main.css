@@ -1,5 +1,6 @@
 body {}
 yu { display: block; font-family: 'input_mono_regular'; font-size:11px; line-height: 30px; vertical-align: top}
+list { display: block }
 ln { display: block;}
 ln i { color:#999; }
 hl { line-height: 29px; font-family: 'input_mono_medium'; display: block; border-bottom:1px solid black; }
