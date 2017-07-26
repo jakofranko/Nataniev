@@ -51,23 +51,6 @@ function Terminal()
     this.wrapper_el.innerHTML += html;
     this.resize_window_to(lobby.size.width - 60,this.logs.length * 15)
   }
-
-  this.on_start = function()
-  {
-    lobby.commander.install_widget(this.widget_el);
-    this.on_window_resize();
-  }
-
-  this.on_window_resize = function()
-  {
-    this.widget_el.innerHTML = lobby.size.width+"x"+lobby.size.height;
-  }
-
-  this.set_wallpaper = function(image_url)
-  {
-    lobby.el.style.backgroundImage = "url("+image_url+")";
-    this.log("Updated wallpaper.")
-  }
 }
 
 lobby.install_callback("Terminal");

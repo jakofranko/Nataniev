@@ -46,6 +46,7 @@ function Lobby()
 		this.try_install("Calendar");
 		this.try_install("Ide");
 		this.try_install("Ronin");
+		this.try_install("System");
 
 		setTimeout(function(){ lobby.on_ready(); }, 1000);
 	}

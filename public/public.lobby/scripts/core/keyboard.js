@@ -27,25 +27,9 @@ function Keyboard()
         case "ArrowRight": event.preventDefault(); break;
       }
     }
-    if(event.key == "f" && event.ctrlKey == true){
-      event.preventDefault();
-      this.host.on_ctrl_f();
-    }
-    if(event.key == "s" && event.ctrlKey == true){
-      event.preventDefault();
-      this.host.on_ctrl_s();
-    }
-    if(event.key == "w" && event.ctrlKey == true){
-      event.preventDefault();
-      this.host.on_ctrl_w();
-    }
-    if(event.key == "l" && event.ctrlKey == true){
-      event.preventDefault();
-      this.host.on_ctrl_l();
-    }
-    if(event.key == "m" && event.ctrlKey == true){
-      event.preventDefault();
-      this.host.on_ctrl_m();
+
+    if(event.ctrlKey){
+      this.host.on_shortcut(event.key.toLowerCase());
     }
   }
 

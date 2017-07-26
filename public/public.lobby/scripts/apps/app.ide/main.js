@@ -7,11 +7,11 @@ function Ide()
   this.origin = {x:120,y:120};
   // this.theme = "noir";
   this.methods.new = {name:"new"};
-  this.methods.load = {name:"load"};
-  this.methods.save = {name:"save"};
-  this.methods.replace = {name:"replace"};
+  this.methods.load = {name:"load", shortcut:"l"};
+  this.methods.save = {name:"save", shortcut:"s"};
+  this.methods.replace = {name:"replace", shortcut:"r"};
   this.methods.end = {name:"end"};
-  this.methods.find = {name:"find"};
+  this.methods.find = {name:"find", shortcut:"f"};
 
   this.formats = ["js","rb","html","css","ma","mh"];
 

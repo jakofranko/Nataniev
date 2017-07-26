@@ -6,12 +6,13 @@ function App()
   this.theme = "";
   this.methods = {};
   this.methods.start = {name:"start",is_global:true};
-  this.methods.exit = {name:"exit",is_global:true};
+  this.methods.exit = {name:"exit",is_global:true,shortcut:"w",run_shortcut:true};
   this.methods.hide = {name:"hide",is_global:true};
   this.methods.show = {name:"show",is_global:true};
   this.methods.full = {name:"full",is_global:true};
   this.methods.mini = {name:"mini",is_global:true};
   this.methods.ghost = {name:"ghost",is_global:true};
+  this.methods.toggle = {name:"toggle",is_global:true,shortcut:"h",run_shortcut:true};
 
   this.is_visible = false;
   this.has_launched = false;
@@ -101,7 +102,7 @@ function App()
 
   this.default = function()
   {
-    this.launch();
+    this.show();
   }
 
   this.on_launch = function()
@@ -242,8 +243,9 @@ function App()
       html += "<span class='method'>."+method_id+"</span> ";
     }
     for(method_id in this.methods){
-      if(!this.methods[method_id].is_global){ continue; }
-      html += "<span class='method global'>."+method_id+"</span> ";
+      var method = this.methods[method_id];
+      if(!method.is_global){ continue; }
+      html += "<span class='method global'>."+method_id+(method.shortcut ? '('+method.shortcut+')' :'')+"</span> ";
     }
     return html;
   }
@@ -405,63 +407,18 @@ function App()
 		this.move_window(0,30);
 	}
 
-  this.key_alt_up = function()
+  this.on_shortcut = function(key)
   {
-
-  }
-
-  this.key_alt_down = function()
-  {
-    
-  }
-
-  this.on_ctrl_f = function()
-  {
-    document.activeElement.blur();
-
-    if(lobby.commander.is_typing() || this.is_typing()){ return; }
-    lobby.commander.inject(this.name+".find ")
-    lobby.commander.input_el.focus();
-  }
-
-  this.on_ctrl_s = function()
-  {
-    document.activeElement.blur();
-
-    if(lobby.commander.is_typing() || this.is_typing()){ return; }
-    lobby.commander.inject(this.name+".save ")
-    lobby.commander.input_el.focus();
-  }
-
-  this.on_ctrl_l = function()
-  {
-    document.activeElement.blur();
-
-    if(lobby.commander.is_typing() || this.is_typing()){ return; }
-    lobby.commander.inject(this.name+".load ")
-    lobby.commander.input_el.focus();
-  }
-
-  this.on_ctrl_w = function()
-  {
-    document.activeElement.blur();
-
-    if(lobby.commander.is_typing() || this.is_typing()){ return; }
-    lobby.commander.app.toggle();
-  }
-
-  this.on_ctrl_m = function()
-  {
-    document.activeElement.blur();
-
-    if(lobby.commander.is_typing() || this.is_typing()){ return; }
-    lobby.commander.inject(this.name+".full ")
-    lobby.commander.input_el.focus();
-  }
-
-  this.on_alt_f = function()
-  {
-    console.log("!")
+    for(method_id in this.methods){
+      var method = this.methods[method_id];
+      if(method.shortcut != key){ continue; }
+      if(method.run_shortcut){
+        this[method.name](); 
+      }
+      else{
+        lobby.commander.inject(this.name+"."+method.name+" ");
+      }
+    }
   }
 
   this.move_window = function(x,y)
