@@ -1,13 +1,13 @@
 function Lobby()
 {
-	this.el = document.createElement("yu"); this.el.id = "lobby";
-	this.grid_el = document.createElement("yu"); this.grid_el.id = "grid";
-	this.size = {width:0,height:0};
-	this.commander = new Commander();
-	this.keyboard = new Keyboard();
-	this.apps = {};
+  this.el = document.createElement("yu"); this.el.id = "lobby";
+  this.grid_el = document.createElement("yu"); this.grid_el.id = "grid";
+  this.size = {width:0,height:0};
+  this.commander = new Commander();
+  this.keyboard = new Keyboard();
+  this.apps = {};
 
-	window.addEventListener('resize', on_resize, false);
+  window.addEventListener('resize', on_resize, false);
 
 	this.init = function()
 	{
@@ -48,6 +48,7 @@ function Lobby()
 		this.try_install("Ronin");
 		this.try_install("System");
 		this.try_install("Dict");
+		this.try_install("Diary");
 
 		setTimeout(function(){ lobby.on_ready(); }, 1000);
 	}

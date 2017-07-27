@@ -423,8 +423,8 @@ function App()
   {
     switch(key)
     {
-      case "arrowup": this.move_window(0,30); event.preventDefault(); break;
-      case "arrowdown": this.move_window(0,-30); event.preventDefault(); break;
+      case "arrowup": this.move_window(0,-30); event.preventDefault(); break;
+      case "arrowdown": this.move_window(0,30); event.preventDefault(); break;
       case "arrowleft": this.move_window(-30,0); event.preventDefault(); break;
       case "arrowright": this.move_window(30,0); event.preventDefault(); break;
     }
