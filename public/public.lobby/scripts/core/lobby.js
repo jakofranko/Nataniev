@@ -49,6 +49,7 @@ function Lobby()
 		this.try_install("System");
 		this.try_install("Dict");
 		this.try_install("Diary");
+		this.try_install("Pong");
 
 		setTimeout(function(){ lobby.on_ready(); }, 1000);
 	}

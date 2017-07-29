@@ -6,6 +6,7 @@ function Diary()
   this.size = {width:300,height:120};
   this.origin = {x:0,y:420};
   this.theme = "ghost";
+  this.methods.refresh = {name:"refresh",shortcut:"r",run_shortcut:true};
 
   this.on_launch = function()
   {
