@@ -43,7 +43,7 @@ ln.half { line-height: 15px }
 .app.dragged { background-color:RGBA(255,255,255,0.3) !important; z-index:8002;}
 .app.hidden { display: none }
 
-.app.ghost { background:none; color:black; z-index:10; }
+.app.ghost { background:none; color:white; z-index:10; }
 .app.noir { background: black; color:white; }
 .app.noir hl { border-bottom:1px solid white; }
 
@@ -145,9 +145,12 @@ ln.half { line-height: 15px }
 .pl5 { left:150px; }
 .pl6 { left:180px; }
 
-.at { top:0px; }
-.al { left:0px; }
-.ab { bottom:0px; }
+.rel { position: relative }
+
+.at { position:absolute; top:0px; }
+.al { position:absolute; left:0px; }
+.ab { position:absolute; bottom:0px; }
+.ar { position:absolute; right:0px; }
 
 .pdl { padding-left:30px; }
 

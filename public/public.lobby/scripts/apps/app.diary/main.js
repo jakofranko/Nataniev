@@ -21,15 +21,12 @@ function Diary()
   this.refresh = function()
   {
     var app = this;
-
     $.ajax({url: '/diary.load',
       type: 'POST', 
       data: { date:"20170101" },
       success: function(response) {
         var a = JSON.parse(response);
-        app.el.innerHTML = "";
-        app.el.innerHTML += app.draw(a.oscean);
-        app.el.innerHTML += app.draw(a.grimgrains);
+        app.el.innerHTML = app.draw(a.oscean)+app.draw(a.grimgrains);
       }
     })
   }

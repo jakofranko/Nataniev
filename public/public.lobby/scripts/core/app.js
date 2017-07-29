@@ -18,7 +18,7 @@ function App()
   this.methods.warp_right = {name:"warp_right",is_global:true,shortcut:"]",run_shortcut:true};
   this.methods.warp_left = {name:"warp_left",is_global:true,shortcut:"[",run_shortcut:true};
 
-  this.methods.warp_center = {name:"warp_center",is_global:true,shortcut:"-",run_shortcut:true};
+  this.methods.warp_center = {name:"warp_center",is_global:true,shortcut:"=",run_shortcut:true};
 
   this.methods.scale_right = {name:"scale_right",is_global:true,shortcut:"}",run_shortcut:true};
   this.methods.scale_left = {name:"scale_left",is_global:true,shortcut:"{",run_shortcut:true};

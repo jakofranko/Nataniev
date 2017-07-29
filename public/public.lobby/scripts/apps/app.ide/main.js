@@ -15,7 +15,7 @@ function Ide()
 
   this.formats = ["js","rb","html","css","ma","mh"];
 
-  this.navi_el = document.createElement("yu"); this.navi_el.className = "at al lh15 w4";
+  this.navi_el = document.createElement("yu"); this.navi_el.className = "at al lh15 w4 ml mt";
   this.status_el = document.createElement("yu"); this.status_el.className = "pa ab al lh30 w4 mb15 ml wf f9";
 
   this.textarea_el = document.createElement("textarea"); this.textarea_el.className = "wf_7 pl5 pa hf_3 sl pdl";
@@ -138,7 +138,6 @@ function Ide()
         app.textarea_el.value = data;
         app.textarea_el.style.display = "block";
         app.navi_el.style.display = "block";
-        app.organize_window_vertical();
         app.update_navi();
         app.update_status();
       }
@@ -185,21 +184,21 @@ function Ide()
       var targets_miscs = ["private"];
       if(targets_major.indexOf(marker) > -1){
         var name = line.replace(marker,"").trim().split(" ")[0].substr(0,14);
-        html += "<ln>"+name+" "+line_id+"</ln>";
+        html += "<ln class='rel block'>"+name+" <t class='ar'>"+line_id+"</t></ln>";
         count += 1;
       }
       if(targets_minor.indexOf(marker) > -1){
         var name = line.replace(marker,"").trim().split(" ")[0].substr(0,14);
-        html += "<ln class='f9'>"+name+" "+line_id+"</ln>";
+        html += "<ln class='f9 rel block'>"+name+" <t class='ar'>"+line_id+"</t></ln>";
         count += 1;
       }
       if(targets_miscs.indexOf(marker) > -1){
         var name = line.trim().split(" ")[0].substr(0,14);
-        html += "<ln class='f5'>"+name+" "+line_id+"</ln>";
+        html += "<ln class='f5 rel block'>"+name+" <t class='ar'>"+line_id+"</t></ln>";
         count += 1;
       }
     }
-    this.navi_el.innerHTML = html;
+    this.navi_el.innerHTML = count == 0 ? "No Markers" : html;
   }
 
   this.update_status = function()

@@ -3,7 +3,7 @@ function Pong()
   App.call(this);
 
   this.name = "pong";
-  this.size = {width:300,height:210};
+  this.size = {width:330,height:210};
   this.origin = {x:120,y:30};
   this.theme = "noir";
   this.methods.new = {name:"new",shortcut:"n",run_shortcut:true};
@@ -21,7 +21,7 @@ function Pong()
     if(this.paddle  && this.paddle.is_alive){ this.paddle.is_alive = false; return; }
 
     this.paddle = {x:(this.size.width/2)-15,is_alive:true,score:0};
-    this.ball = {x:this.size.width/2,y:this.size.height/2,prev_x:0,prev_y:0,old_x:0,old_y:0,direction:{v:true,h:null},speed:3, fx:{x:1,y:1}};
+    this.ball = {x:this.size.width/2,y:this.size.height/2,prev_x:0,prev_y:0,old_x:0,old_y:0,direction:{v:true,h:null},speed:4, fx:{x:1,y:1}};
 
     this.update();
   }
