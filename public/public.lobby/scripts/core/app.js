@@ -17,6 +17,13 @@ function App()
 
   this.methods.warp_right = {name:"warp_right",is_global:true,shortcut:"]",run_shortcut:true};
   this.methods.warp_left = {name:"warp_left",is_global:true,shortcut:"[",run_shortcut:true};
+
+  this.methods.warp_center = {name:"warp_center",is_global:true,shortcut:"-",run_shortcut:true};
+
+  this.methods.scale_right = {name:"scale_right",is_global:true,shortcut:"}",run_shortcut:true};
+  this.methods.scale_left = {name:"scale_left",is_global:true,shortcut:"{",run_shortcut:true};
+
+
   this.methods.fill = {name:"fill",is_global:true,shortcut:"m",run_shortcut:true};
 
   this.is_visible = false;
@@ -368,32 +375,6 @@ function App()
     lobby.commander.validate(); 
   }
 
-	// Keyboard controls
-	// this.key_arrow_right = function()
-	// {
- //    if(lobby.commander.is_typing() || this.is_typing()){ return; }
-	// 	this.move_window(30,0);
-	// }
-	// this.key_arrow_left = function()
-	// {
- //    if(lobby.commander.is_typing() || this.is_typing()){ return; }
-	// 	this.move_window(-30,0);
-	// }
-	// this.key_arrow_up = function()
-	// {
- //    if(lobby.keyboard.alt_held){ this.key_alt_up(); return; }
-
- //    if(lobby.commander.is_typing() || this.is_typing()){ return; }
-	// 	this.move_window(0,-30);
-	// }
-
-	// this.key_arrow_down = function()
-	// {
- //    if(lobby.keyboard.alt_held){ this.key_alt_down(); return; }
- //    if(lobby.commander.is_typing() || this.is_typing()){ return; }
-	// 	this.move_window(0,30);
-	// }
-
   this.warp_left = function()
   {
     this.move_window_to(-30,-30);
@@ -403,6 +384,22 @@ function App()
   {
     this.move_window_to(lobby.size.width/2 - 30,-30);
     this.resize_window_to(lobby.size.width/2,lobby.size.height-30);
+  }
+  this.warp_center = function()
+  {
+    this.move_window_to(30,30);
+    this.resize_window_to(lobby.size.width - 120,lobby.size.height - 150);
+  }
+
+  this.scale_left = function()
+  {
+    this.move_window(30,30);
+    this.resize_window(-30,-30);
+  }
+  this.scale_right = function()
+  {
+    this.move_window(-30,-30);
+    this.resize_window(60,60);
   }
 
   this.fill = function()

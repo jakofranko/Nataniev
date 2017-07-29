@@ -160,7 +160,6 @@ function Ide()
     lobby.commander.notify("Saved.");
     this.textarea_el.style.display = "block";
     this.navi_el.style.display = "block";
-    this.organize_window_vertical();
     this.update_status();
   }
 

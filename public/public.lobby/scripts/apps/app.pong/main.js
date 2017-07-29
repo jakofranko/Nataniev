@@ -1,6 +1,6 @@
 function Pong()
 {
-	App.call(this);
+  App.call(this);
 
   this.name = "pong";
   this.size = {width:210,height:210};
@@ -35,44 +35,30 @@ function Pong()
     this.ball.prev_y = this.ball.y;
 
     // Update Ball
+    if(this.ball.direction.v == true){ this.ball.y += this.ball.speed * this.ball.fx.y; }
+    if(this.ball.direction.v == false){ this.ball.y -= this.ball.speed * this.ball.fx.y; }
+    if(this.ball.direction.h == true){ this.ball.x += this.ball.speed * this.ball.fx.x; }
+    if(this.ball.direction.h == false){ this.ball.x -= this.ball.speed * this.ball.fx.x; }
 
-    if(this.ball.direction.v == true){
-      this.ball.y += this.ball.speed * this.ball.fx.y;  
-    }
-    if(this.ball.direction.v == false){
-      this.ball.y -= this.ball.speed * this.ball.fx.y;  
-    }
-
-    if(this.ball.direction.h == true){
-      this.ball.x += this.ball.speed * this.ball.fx.x;  
-    }
-    if(this.ball.direction.h == false){
-      this.ball.x -= this.ball.speed * this.ball.fx.x;  
-    }
-
-    if(this.ball.y <= 0){
-      this.ball.direction.v = true;
-    }
-    if(this.ball.x <= 0){
-      this.ball.direction.h = true;
-    }
-    if(this.ball.x >= this.size.width){
-      this.ball.direction.h = false;
-    }
-    if(this.ball.y >= this.size.height){ // Collide with Paddle
+    // Collide Ball
+    if(this.ball.y <= 0){ this.ball.direction.v = true; }
+    if(this.ball.x <= 0){ this.ball.direction.h = true; }
+    if(this.ball.x >= this.size.width){ this.ball.direction.h = false; }
+    
+    // Collide with Paddle
+    if(this.ball.y >= this.size.height){ 
       if(this.paddle.x < this.ball.x && this.paddle.x+30 > this.ball.x){
         this.ball.direction.v = false;
         if( this.ball.direction.h == null){ this.ball.direction.h = true; }
         this.ball.speed += 0.25;
         this.paddle.score += 1;
         lobby.commander.notify("Pong +"+this.paddle.score);
-
         this.ball.fx.x = (1 + Math.random() + Math.random())/3;
         this.ball.fx.y = (1 + Math.random() + Math.random())/3;
       }
       else{
         this.paddle.is_alive = false;
-        console.log("DIED, ",this.paddle.score)
+        lobby.commander.notify("Died "+this.paddle.score,5);
       }
     }
 
@@ -91,6 +77,7 @@ function Pong()
     path += "M"+this.paddle.x+","+(this.size.height-1)+" l30,0 ";
     // Draw Ball
     path += "M"+this.ball.x+","+this.ball.y+" L"+this.ball.prev_x+","+this.ball.prev_y+" L"+this.ball.old_x+","+this.ball.old_y+" ";
+    // Generate
     this.wrapper_el.innerHTML = '<svg width="'+this.size.width+'" height="'+this.size.height+'" style="stroke:white; fill:none; stroke-width:1; stroke-linecap:butt"><path d="'+path+'"></path></svg>';
   }
 
@@ -102,7 +89,6 @@ function Pong()
   this.key_arrow_right = function()
   {
     this.move_paddle(1);
-    this.draw();
   }
 
   this.move_paddle = function(mod)
