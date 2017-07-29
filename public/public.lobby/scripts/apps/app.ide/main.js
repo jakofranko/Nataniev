@@ -205,11 +205,19 @@ function Ide()
 
   this.update_status = function()
   {
+    var lines_active = this.textarea_el.value.substr(0,this.textarea_el.selectionEnd).split("\n").length;
     var lines_count = this.textarea_el.value.split("\n").length;
-    var selection = this.textarea_el.selectionStart != this.textarea_el.selectionEnd ? this.textarea_el.selectionStart+":"+this.textarea_el.selectionEnd : this.textarea_el.selectionStart;
+    var lines_display = lines_active+"/"+lines_count+"L ";
+
+    var chars_active = this.textarea_el.selectionStart != this.textarea_el.selectionEnd ? this.textarea_el.selectionStart+":"+this.textarea_el.selectionEnd : this.textarea_el.selectionStart;
+    var chars_count = this.textarea_el.textLength;
+    var chars_display = chars_active+"/"+chars_count+"C ";
+
     var size = "<t class='f5'>"+this.size.width+"x"+this.size.height+"</t>"
 
-    this.status_el.innerHTML = this.location+" "+selection+"/"+this.textarea_el.textLength+" "+size;
+    var scroll_position = parseInt(lines_active/parseFloat(lines_count) * 100);
+
+    this.status_el.innerHTML = this.location+" "+lines_display+chars_display+" <b class='di'>"+scroll_position+"%</b> - "+size;
   }
   
   this.key_alt_up = function()

@@ -84,3 +84,19 @@ post '/ide.tree' do
   return a.to_json
 
 end
+
+post '/diary.load' do
+
+  date = params["date"]
+
+  h = {}
+
+  # Oscean Diary
+  h[:oscean] = $nataniev.summon(:oscean).new.act(:query,"diary")
+
+  # Grimgrains Diary
+  h[:grimgrains] = $nataniev.summon(:grimgrains).new.act(:query,"diary")
+  
+  return h.to_json
+
+end

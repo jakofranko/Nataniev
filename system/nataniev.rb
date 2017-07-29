@@ -48,7 +48,7 @@ class Nataniev
 
     if !Kernel.const_defined?("Vessel#{vessel_name.capitalize}") then puts "Could not create the #{vessel_name} vessel." ; return nil end
 
-    return Object.const_get("Vessel"+vessel_name.capitalize)
+    return Object.const_get("Vessel"+vessel_name.to_s.capitalize)
 
   end
 

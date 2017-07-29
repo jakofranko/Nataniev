@@ -55,7 +55,7 @@ function Lobby()
 
 	this.on_ready = function()
 	{
-		this.apps.terminal.launch();
+		// this.apps.terminal.launch();
 		// this.apps.ide.launch();
 	}
 

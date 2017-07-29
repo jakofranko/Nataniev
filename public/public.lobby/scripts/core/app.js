@@ -3,7 +3,7 @@ function App()
 	this.name = "global";
 	this.size = {width:60,height:60};
 	this.origin = {x:0,y:0};
-  this.theme = "";
+  this.theme = "default";
   this.methods = {};
   this.methods.exit = {name:"exit",is_global:true,shortcut:"w",run_shortcut:true};
 
@@ -14,7 +14,6 @@ function App()
   this.methods.full = {name:"full",is_global:true};
   this.methods.mini = {name:"mini",is_global:true};
   this.methods.ghost = {name:"ghost",is_global:true};
-
 
   this.methods.warp_right = {name:"warp_right",is_global:true,shortcut:"]",run_shortcut:true};
   this.methods.warp_left = {name:"warp_left",is_global:true,shortcut:"[",run_shortcut:true};
@@ -42,7 +41,7 @@ function App()
   this.install = function()
   {
     console.log("Installing "+this.name);
-    this.el.className += " "+this.name+" "+this.theme;
+    this.el.className = "app "+this.name+" "+this.theme;
     this.el.id = this.name;
     if(this.includes.length > 0){
       this.install_includes(this.includes);
@@ -132,7 +131,7 @@ function App()
 
   this.launch = function()
   {
-    console.log("Launching "+this.name);
+    console.log("Launching "+this.name+", theme: "+this.theme);
     $(this.el).css("width",0).css("height",0).css("top",this.origin.y).css("left",this.origin.x);
     lobby.el.appendChild(this.el);
 
@@ -176,7 +175,6 @@ function App()
     }
 
     $(this.el).removeClass("hidden");
-    $(this.el).removeClass("ghost");
     this.is_visible = true;
     this.select();
   }
