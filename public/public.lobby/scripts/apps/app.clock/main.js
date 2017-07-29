@@ -65,15 +65,16 @@ function Clock()
     var needle_5 = needle_3 + parseInt(((t/1000) % 1) * (w - needle_3));
     var needle_6 = needle_4 + parseInt(((t/100) % 1) * (h - needle_4));
 
-    var n_1_el = '<line x1="'+needle_1+'" x2="'+needle_1+'" y1="0" y2="'+h+'"></line>';
-    var n_2_el = '<line x1="'+needle_1+'" x2="'+w+'" y1="'+needle_2+'" y2="'+needle_2+'"></line>';
-    var n_3_el = '<line x1="'+needle_3+'" x2="'+needle_3+'" y1="'+needle_2+'" y2="'+h+'"></line>';
-    var n_4_el = '<line x1="'+needle_3+'" x2="'+w+'" y1="'+needle_4+'" y2="'+needle_4+'"></line>';
-    var n_5_el = '<line x1="'+needle_5+'" x2="'+needle_5+'" y1="'+needle_4+'" y2="'+h+'"></line>';
-    var n_6_el = '<line x1="'+needle_5+'" x2="'+w+'" y1="'+needle_6+'" y2="'+needle_6+'"></line>';
+    var path = "";
+    path += "M"+needle_1+","+0+" L"+needle_1+","+h+" ";
+    path += "M"+needle_1+","+needle_2+" L"+w+","+needle_2+" ";
+    path += "M"+needle_3+","+needle_2+" L"+needle_3+","+h+" ";
+    path += "M"+needle_3+","+needle_4+" L"+w+","+needle_4+" ";
+    path += "M"+needle_5+","+needle_4+" L"+needle_5+","+h+" ";
+    path += "M"+needle_5+","+needle_6+" L"+w+","+needle_6+" ";
 
     this.widget_el.innerHTML = t_a[0]+":"+t_a[1];
-    this.wrapper_el.innerHTML = '<svg width="'+w+'" height="'+h+'" style="stroke:black; fill:none; stroke-width:1; stroke-linecap:butt;outline-color: black;outline-width: 1px;outline-offset: -1px;outline-style:solid">'+n_1_el+''+n_2_el+''+n_3_el+''+n_4_el+''+n_5_el+''+n_6_el+'</svg>';
+    this.wrapper_el.innerHTML = '<svg width="'+w+'" height="'+h+'" style="stroke:black; fill:none; stroke-width:1; stroke-linecap:butt;outline-color: black;outline-width: 1px;outline-offset: -1px;outline-style:solid"><path d="'+path+'"></path></svg>';
   }
 
   this.on_resize = function()
