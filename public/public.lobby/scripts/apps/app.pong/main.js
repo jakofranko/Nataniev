@@ -3,7 +3,7 @@ function Pong()
   App.call(this);
 
   this.name = "pong";
-  this.size = {width:210,height:210};
+  this.size = {width:300,height:210};
   this.origin = {x:120,y:30};
   this.theme = "noir";
   this.methods.new = {name:"new",shortcut:"n",run_shortcut:true};

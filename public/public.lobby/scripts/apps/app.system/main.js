@@ -3,7 +3,7 @@ function System()
   App.call(this);
 
   this.name = "system";
-  this.size = {width:300,height:500};
+  this.size = {width:420,height:300};
   this.origin = {x:300,y:30};
   this.methods.set_wallpaper = {name:"set_wallpaper"};
   this.methods.set_theme = {name:"set_theme"};
@@ -39,7 +39,15 @@ function System()
         html += "<ln class='lh15 w6 f9 pdl'>."+method.name+" "+(method.shortcut ? '[ctrl+'+method.shortcut+']' : '')+"</ln> ";
       }
     }
-    this.el.innerHTML = "<list>"+html+"</list>";
+
+    html += "<ln class='lh15'>GLOBALS</ln> ";
+    for(method_id in this.methods){
+      var method = this.methods[method_id];
+      if(!method.is_global){ continue; }
+      html += "<ln class='lh15 w6 f9 pdl'>."+method.name+" "+(method.shortcut ? '[ctrl+'+method.shortcut+']' : '')+"</ln> ";
+    }
+
+    this.el.innerHTML = "<list style='column-count:2'>"+html+"</list>";
   }
 
   this.on_input_change = function(value)

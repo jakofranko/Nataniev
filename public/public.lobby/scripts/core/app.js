@@ -393,13 +393,11 @@ function App()
 
   this.scale_left = function()
   {
-    this.move_window(30,30);
     this.resize_window(-30,-30);
   }
   this.scale_right = function()
   {
-    this.move_window(-30,-30);
-    this.resize_window(60,60);
+    this.resize_window(30,30);
   }
 
   this.fill = function()

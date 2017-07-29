@@ -90,13 +90,24 @@ post '/diary.load' do
   date = params["date"]
 
   h = {}
-
-  # Oscean Diary
   h[:oscean] = $nataniev.summon(:oscean).new.act(:query,"diary")
-
-  # Grimgrains Diary
   h[:grimgrains] = $nataniev.summon(:grimgrains).new.act(:query,"diary")
   
+  return h.to_json
+
+end
+
+post '/dict.load' do
+
+  h = {}
+  Memory_Array.new("dict.russian",Nataniev.new.path).to_a.each do |word|
+    if !h[word["ENGLISH"]] then h[word["ENGLISH"]] = {} end
+    h[word["ENGLISH"]][:russian] = word["RUSSIAN"]
+  end
+  Memory_Array.new("dict.lietal",Nataniev.new.path).to_a.each do |word|
+    if !h[word["ENGLISH"]] then h[word["ENGLISH"]] = {} end
+    h[word["ENGLISH"]][:lietal] = word["LIETAL"]
+  end  
   return h.to_json
 
 end
