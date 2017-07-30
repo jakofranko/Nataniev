@@ -3,7 +3,7 @@ function Dict()
   App.call(this);
 
   this.name = "dict";
-  this.size = {width:600,height:420};
+  this.size = {width:600,height:360};
   this.origin = {x:120,y:120};
   this.methods.find = {name:"find", shortcut:"f"};
 
@@ -17,7 +17,7 @@ function Dict()
   this.reload = function()
   {
     var app = this;
-    app.el.innerHTML = "Loading. ";
+    app.wrapper_el.innerHTML = "Loading. ";
 
     $.ajax({url: '/dict.load',
       type: 'POST', 
@@ -25,8 +25,9 @@ function Dict()
       success: function(response) {
         var a = JSON.parse(response);
         app.payload = a;
-        app.el.innerHTML = "Ready. ";
-        app.refresh();
+        app.wrapper_el.innerHTML = "Ready. ";
+        // app.refresh();
+        app.find("");
       }
     })
   }
@@ -38,7 +39,7 @@ function Dict()
     for(english in this.payload){
       count += 1;
     }
-    this.el.innerHTML = "<list>Found "+count+" words.</li>";
+    this.wrapper_el.innerHTML = "<list>Found "+count+" words.</li>";
   }
 
   this.on_input_change = function(val)
@@ -57,10 +58,13 @@ function Dict()
     for(english in this.payload){
       var word = this.payload[english];
       if(english.indexOf(q) == -1){ continue; }
+      if(q == "" && (!word.lietal || !word.russian)){ continue; }
       html += this.print_word(english,word,q);
       count += 1;
     }
-    this.el.innerHTML = "<hl style='margin-bottom:15px'>Found "+count+" results for \""+q+"\".</hl><list style='column-count:3'>"+html+"</list>";
+
+    var header = q == "" ? "<hl style='margin-bottom:15px'>English - Lietal - Russian Dictionary</hl>" : "<hl style='margin-bottom:15px'>Found "+count+" results for \""+q+"\".</hl>";
+    this.wrapper_el.innerHTML = header+"<list style='column-count:3'>"+html+"</list>";
   }
 
   this.print_word = function(en,word,q)

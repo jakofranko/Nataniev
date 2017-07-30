@@ -8,11 +8,7 @@ function App()
   this.methods.exit = {name:"exit",is_global:true,shortcut:"w",run_shortcut:true};
 
   this.methods.toggle = {name:"toggle",is_global:true,shortcut:"h",run_shortcut:true};
-  this.methods.hide = {name:"hide",is_global:true};
-  this.methods.show = {name:"show",is_global:true};
 
-  this.methods.full = {name:"full",is_global:true};
-  this.methods.mini = {name:"mini",is_global:true};
   this.methods.ghost = {name:"ghost",is_global:true};
 
   this.methods.warp_right = {name:"warp_right",is_global:true,shortcut:"]",run_shortcut:true};
@@ -404,12 +400,6 @@ function App()
   {
     this.resize_window_to(lobby.size.width,lobby.size.height - 30);
     this.move_window_to(-30,-30)
-  }
-
-  this.mini = function()
-  {
-    this.resize_window_to(180,180);
-    this.move_window_to(30,30)
   }
 
   this.on_option = function(key)

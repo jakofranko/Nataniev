@@ -1,10 +1,7 @@
 function Commander()
 {
-	App.call(this);
-
 	this.el = document.createElement("yu"); this.el.id = "commander";
 	this.input_el = document.createElement("input"); this.input_el.id = "commander_input";
-	this.app_icon_el = document.createElement("yu"); this.app_icon_el.id = "app_icon"; this.app_icon_el.className = "icon";
 	this.widgets_el = document.createElement("yu"); this.widgets_el.className = "widgets";
 	this.notification_el = document.createElement("yu"); this.notification_el.className = "notification";
 	this.hint_el = document.createElement("yu"); this.hint_el.className = "hint";
@@ -17,8 +14,6 @@ function Commander()
 	this.input_el.setAttribute("type","text")
 
 	this.el.appendChild(this.widgets_el);
-
-	this.el.appendChild(this.app_icon_el);
 	this.el.appendChild(this.input_el);
 	this.el.appendChild(this.hint_el);
 	this.el.appendChild(this.notification_el);
@@ -111,7 +106,6 @@ function Commander()
 	{
 		this.app = app;
 		this.update();
-		this.app_icon_el.className = "icon "+app.name;
 		lobby.commander.update_hint();
 	}
 
@@ -121,7 +115,6 @@ function Commander()
 			lobby.apps[app_id].deselect();
 		}
 		this.app = null;
-		this.app_icon_el.className = "icon ";
 	}
 
 	this.validate = function()

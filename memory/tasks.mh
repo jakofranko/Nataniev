@@ -1,0 +1,142 @@
+~ NAME : System
+~ NOTE : YAML
+~ AUTH : Devine Lu Linvega
+
+~ Nataniev
+
+LOBBY
+  Generic
+    Save lobby settings into file
+    Load lobby settings on launch
+    Give warning on window close
+    .set_theme
+    Add soyuz theme(orange/black)
+  Commander
+    Update tree
+    Autocomplete
+    Stasis & Recipes
+  Branding
+    Record video
+    Video -> AFK
+    Video -> Calendar
+    Video -> Ronin
+    Video -> Marabu
+    Video -> Ide(intro)
+    Video -> Ide(Update Grimgrains)
+    Video -> Twitter client
+  App
+    .reload
+    Migrate CSS to highlights/backgrounds/etc.. and themes
+    Highlight color
+
+TWITTER
+  Generic
+    Rebuild APIs
+    Rebuild frontend with new templates
+
+IDE
+  Browser
+    Hint view with line numbers
+    Hide navi if no navigation is found
+    Display file lines length
+    Display line numbers at Navi Markers
+  Editor
+    .replace
+    .new[file/folder]
+    .rename
+
+MARABU
+  Generic
+    Make completely OOP
+    Make Nataniev native version
+  Sequencer
+    Make longer tracks
+    New design without tables
+  Pattern
+    Merge with MOD
+    Animate MOD
+    Preserve pattern data on pattern lenghts change
+    Change time signature
+  Instrument
+    Fix issue with MOD
+    On slider release, animate to position
+
+RONIN
+  Generic
+    Make Nataniev native version
+    Implement Incantation() invocation
+  Tools
+    Zoom in/out
+    Export with size
+    Half-tone painting
+
+ROTONDE
+  Generic
+    Inject 100R events
+    Create Rotonde specific .ma file with injection
+  Client
+    Build time based timeline
+    Add location to entries
+
+OSCEAN
+  Generic
+    Write Lobby docs
+  Horaire
+    Migrate to equal-month calendar
+
+FULCRUM(Mt. Eyn)
+  Generic
+    Complete album
+
+UNTITLED?
+  Generic
+    Build 3d software
+
+THOUSAND ROOMS
+  Generic
+    Fix Amazon Version
+  Translation
+    Complete Portugese
+    Complete Hungarian
+
+CORTEGE
+  Large Maze
+  iPhone Ratio maze
+
+DONSOL
+  Generic
+    Port to Ionic
+
+ENGLISH
+  Generic
+    Basic notes
+    Verb tenses timeline
+    Adjective sequence order
+
+OQUONIE
+  Generic
+    Port to Ionic
+
+ALICEFFEKT
+  Hundred Rabbits
+    Release 17Q1
+
+NEAUISMETICA
+  Generic
+    Complete draft of Two Mansion
+
+INSTRUMENT
+  Generic
+    Display Position
+    Display Course
+    Display Speed(knots)
+    Display Orientation
+    Display Keeling
+  Features
+    Night mode
+    Display battery warning
+    Set Anchor mode
+
+CHILDREN KNOT BOOK
+  Draft
+    Choose knots
