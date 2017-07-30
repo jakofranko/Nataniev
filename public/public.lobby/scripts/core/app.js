@@ -6,20 +6,13 @@ function App()
   this.theme = "default";
   this.methods = {};
   this.methods.exit = {name:"exit",is_global:true,shortcut:"w",run_shortcut:true};
-
   this.methods.toggle = {name:"toggle",is_global:true,shortcut:"h",run_shortcut:true};
-
   this.methods.ghost = {name:"ghost",is_global:true};
-
   this.methods.warp_right = {name:"warp_right",is_global:true,shortcut:"]",run_shortcut:true};
   this.methods.warp_left = {name:"warp_left",is_global:true,shortcut:"[",run_shortcut:true};
-
   this.methods.warp_center = {name:"warp_center",is_global:true,shortcut:"=",run_shortcut:true};
-
   this.methods.scale_right = {name:"scale_right",is_global:true,shortcut:"}",run_shortcut:true};
   this.methods.scale_left = {name:"scale_left",is_global:true,shortcut:"{",run_shortcut:true};
-
-
   this.methods.fill = {name:"fill",is_global:true,shortcut:"m",run_shortcut:true};
 
   this.is_visible = false;

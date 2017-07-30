@@ -2,13 +2,12 @@
 ~ NOTE : YAML
 ~ AUTH : Devine Lu Linvega
 
-~ Nataniev
-
 LOBBY
   Generic
     Save lobby settings into file
     Load lobby settings on launch
     Give warning on window close
+    Splash
     .set_theme
     Add soyuz theme(orange/black)
   Commander
@@ -28,6 +27,7 @@ LOBBY
     .reload
     Migrate CSS to highlights/backgrounds/etc.. and themes
     Highlight color
+    Implement invoke
 
 TWITTER
   Generic
