@@ -13,7 +13,6 @@ LOBBY
   Commander
     Update tree
     Autocomplete
-    Stasis & Recipes
   Branding
     Record video
     Video -> AFK
@@ -35,11 +34,6 @@ TWITTER
     Rebuild frontend with new templates
 
 IDE
-  Browser
-    Hint view with line numbers
-    Hide navi if no navigation is found
-    Display file lines length
-    Display line numbers at Navi Markers
   Editor
     .replace
     .new[file/folder]

@@ -3,7 +3,7 @@ function System()
   App.call(this);
 
   this.name = "system";
-  this.size = {width:420,height:300};
+  this.size = {width:420,height:420};
   this.origin = {x:300,y:30};
   this.methods.set_wallpaper = {name:"set_wallpaper"};
   this.methods.set_theme = {name:"set_theme"};

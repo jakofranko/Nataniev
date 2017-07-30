@@ -18,7 +18,7 @@ function Ide()
   this.navi_el = document.createElement("yu"); this.navi_el.className = "at al lh15 w4 ml mt";
   this.status_el = document.createElement("yu"); this.status_el.className = "pa ab al lh30 w4 mb15 ml wf f9";
 
-  this.textarea_el = document.createElement("textarea"); this.textarea_el.className = "wf_7 pl5 pa hf_3 sl pdl";
+  this.textarea_el = document.createElement("textarea"); this.textarea_el.className = "wf_7 pl5 pa hf_3 pdl";
   this.textarea_el.style.display = "none";
   this.wrapper_el.appendChild(this.textarea_el);
   this.wrapper_el.appendChild(this.navi_el);
@@ -140,6 +140,7 @@ function Ide()
         app.navi_el.style.display = "block";
         app.update_navi();
         app.update_status();
+        app.textarea_el.scrollTop = 0;
       }
     })
   }
