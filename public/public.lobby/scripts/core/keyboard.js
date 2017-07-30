@@ -28,10 +28,10 @@ function Keyboard()
       }
     }
 
-    if(event.ctrlKey && event.key.toLowerCase() != "control"){
+    if(event.ctrlKey && event.key.toLowerCase() != "control" && this.host){
       this.host.on_shortcut(event.key.toLowerCase());
     }
-    if(event.altKey && event.key.toLowerCase() != "alt"){
+    if(event.altKey && event.key.toLowerCase() != "alt" && this.host){
       this.host.on_option(event.key.toLowerCase());
     }
   }
