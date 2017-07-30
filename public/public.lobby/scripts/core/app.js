@@ -218,17 +218,29 @@ function App()
     var html = "";
     var method = value.indexOf(".") > -1 ? value.split(".")[1].split(" ")[0] : null;
 
+    // Autocomplete
+    for(method_id in this.methods){
+      if(this.methods[method_id].is_global){continue; }
+      var method_name = this.methods[method_id].name;
+      if(method_name.indexOf(method) > -1){
+        html += "<t class='autocomplete'>"+method_name.replace(method,'')+"</t>";
+        lobby.commander.autocomplete = this.name+"."+method_name+" ";
+        break;
+      }
+    }
+
     if(this.methods[method]){
-      return "<span class='param'>"+this.methods[method].name+"</span> ";
+      return "<span class='param'> > </span> ";
     }
     for(method_id in this.methods){
-      if(this.methods[method_id].is_global){ continue; }
-      html += "<span class='method'>."+method_id+"</span> ";
+      var method = this.methods[method_id];
+      if(method.is_global){ continue; }
+      html += " <span class='method'>."+method_id+(method.shortcut ? '('+method.shortcut+')' :'')+"</span> ";
     }
     for(method_id in this.methods){
       var method = this.methods[method_id];
       if(!method.is_global){ continue; }
-      html += "<span class='method global'>."+method_id+(method.shortcut ? '('+method.shortcut+')' :'')+"</span> ";
+      html += " <span class='method global'>."+method_id+(method.shortcut ? '('+method.shortcut+')' :'')+"</span> ";
     }
     return html;
   }

@@ -13,7 +13,7 @@ function Ide()
   this.methods.end = {name:"end"};
   this.methods.find = {name:"find", shortcut:"f"};
 
-  this.formats = ["js","rb","html","css","ma","mh"];
+  this.formats = ["js","rb","html","css","ma","mh","rin","mar"];
 
   this.navi_el = document.createElement("yu"); this.navi_el.className = "at al lh15 w4 ml mt";
   this.status_el = document.createElement("yu"); this.status_el.className = "pa ab al lh30 w4 mb15 ml wf f9";

@@ -4,7 +4,7 @@ function Terminal()
 
   this.name = "terminal";
   this.size = {width:lobby.size.width,height:30};
-  this.origin = {x:0,y:0};
+  this.origin = {x:0,y:150};
   this.theme = "ghost";
   this.methods.say = {name:"say"};
 
@@ -40,7 +40,7 @@ function Terminal()
 
     html = "";
     for(log_id in this.logs){
-      html += "<ln class='half ff'><t class='f9 w2 di'> "+this.logs[log_id].time+"</t><t class='di w1 f9'>"+this.logs[log_id].glyph+"</t><t>"+this.logs[log_id].text+"</t></ln>\n";
+      html += "<ln class='half ff'><t class='ff w2 di'> "+this.logs[log_id].time+"</t><t class='di w1 f9'>"+this.logs[log_id].glyph+"</t><t>"+this.logs[log_id].text+"</t></ln>\n";
     }
 
     while(this.logs.length > 20){

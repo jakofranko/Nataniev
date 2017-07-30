@@ -56,9 +56,6 @@ MARABU
     On slider release, animate to position
 
 RONIN
-  Generic
-    Make Nataniev native version
-    Implement Incantation() invocation
   Tools
     Zoom in/out
     Export with size

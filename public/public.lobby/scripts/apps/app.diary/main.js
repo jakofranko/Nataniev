@@ -4,7 +4,7 @@ function Diary()
 
   this.name = "diary";
   this.size = {width:300,height:120};
-  this.origin = {x:0,y:420};
+  this.origin = {x:0,y:0};
   this.theme = "ghost";
   this.methods.refresh = {name:"refresh",shortcut:"r",run_shortcut:true};
 

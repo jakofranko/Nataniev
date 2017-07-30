@@ -6,29 +6,45 @@ function Ronin()
   this.size = {width:300,height:300};
   this.origin = {x:120,y:120};
 
-  this.includes = ["layer","new","fill","brush","path","import","load","resize","type","magnet","load"];
+  this.includes = ["layer","new","fill","brush","path","load","resize","type","magnet","import","export"];
   this.project = {};
-  this.project.size = {width:600,height:600};
+  this.project.size = {width:300,height:300};
+  this.tools = {};
+
+  this.formats = ["rin"];
+
+  this.on_launch = function()
+  {
+    this.new();
+  }
+
+  this.on_input_change = function(value)
+  {
+    if(value.split(" ")[0] == "ronin.load"){
+      var val = value.split(" "); val.shift(); val = val.join(" ").trim();
+      this.load(val,true);
+    }
+  }
 
   this.mouse_down = function(e)
   {
     this.mouse_is_down = true;
+
+    lobby.apps.ronin.tools.brush.mouse_down(e.offsetX*2,e.offsetY*2);
   }
 
   this.mouse_move = function(e)
   {
     if(!this.mouse_is_down){ return; }
 
-    lobby.apps.ronin.layers.main.mark(e.offsetX * 2,e.offsetY * 2);
+    lobby.apps.ronin.tools.brush.mouse_move(e.offsetX*2,e.offsetY*2);
   }
+
   this.mouse_up = function(e)
   {
     this.mouse_is_down = false;
-  }
 
-  this.on_launch = function()
-  {
-    this.new();
+    lobby.apps.ronin.tools.brush.mouse_move(e.offsetX*2,e.offsetY*2);
   }
 
   this.wrapper_el.addEventListener('mousedown', this.mouse_down, false);

@@ -34,13 +34,22 @@ function Keyboard()
     if(event.altKey && event.key.toLowerCase() != "alt" && this.host){
       this.host.on_option(event.key.toLowerCase());
     }
+
+    if(event.key == "Tab" && lobby.commander.is_typing()){
+      event.preventDefault();
+      if(lobby.commander.autocomplete){
+        lobby.commander.inject(lobby.commander.autocomplete);
+      }
+    }
   }
 
   this.listen_onkeyup = function(event)
   {
     event.preventDefault();
 
-    this.host = !lobby.commander.app ? lobby.commander : lobby.commander.app;
+    this.host = lobby.commander.app;
+
+    if(!this.host){ return; }
 
     switch (event.key || event.keyCode || event.which)
     {

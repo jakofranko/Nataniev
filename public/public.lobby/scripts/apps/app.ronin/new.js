@@ -6,7 +6,7 @@ lobby.apps.ronin.new = function(param)
 
   this.wrapper_el.innerHTML = "";
 
-  this.resize_window_to(this.project.size.width/2,this.project.size.height/2)
+  this.resize_window_to(this.project.size.width,this.project.size.height);
 
   // Setup
 

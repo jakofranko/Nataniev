@@ -23,6 +23,7 @@ function Commander()
 
 	this.app = null;
 	this.tree = [];
+  this.autocomplete = null;
 
 	this.install = function()
 	{
@@ -131,6 +132,8 @@ function Commander()
 		this.app[method_name](value);
 		this.input_el.value = "";
 		this.update_hint();
+
+    lobby.apps.terminal.log(input,">");
 	}
 
 	function input_change()
@@ -150,7 +153,7 @@ function Commander()
 		var value = this.input_el.value;
 		var app_name = value.split(".")[0].toLowerCase();
 
-		html += value != "" ? "<span class='input'>"+value+"</span> " : "";
+		html += value != "" ? "<span class='input'>"+value+"</span>" : "";
 
 		if(lobby.apps[app_name]){
 			html += lobby.apps[app_name].hint(value);
@@ -161,12 +164,26 @@ function Commander()
 		this.hint_el.innerHTML = html;
 	}
 
-	this.hint = function()
+	this.hint = function(val)
 	{
 		html = "";
-		for(app_id in lobby.apps){
-			html += "<span class='application'>"+lobby.apps[app_id].name+"</span> ";
-		}
+
+    if(val.trim() == ""){
+      for(app_id in lobby.apps){
+        html += "<span class='application'>"+lobby.apps[app_id].name+"</span> ";
+      }  
+    }
+    else{ 
+      for(app_id in lobby.apps){
+        var app_name = lobby.apps[app_id].name;
+        if(app_name.indexOf(val) > -1){
+          html += "<t class='autocomplete'>"+app_name.replace(val,'')+"</t>";
+          this.autocomplete = app_name+".";
+          break;
+        }
+      }
+    }
+
 		return html
 	}
 
@@ -177,6 +194,7 @@ function Commander()
 
 	this.inject = function(val)
 	{
+    this.autocomplete = null;
 		this.input_el.value = val;
 		input_change();
 	}
@@ -191,6 +209,7 @@ function Commander()
 	{
 		this.notification_el.innerHTML = content;
     $(this.notification_el).css('opacity','1').delay(1000).animate({ opacity: 0 }, 300);
+    lobby.apps.terminal.log(content,"!");
 	}
 
 	this.is_typing = function()

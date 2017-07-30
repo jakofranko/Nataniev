@@ -50,14 +50,15 @@ function Lobby()
 		this.try_install("Dict");
 		this.try_install("Diary");
 		this.try_install("Pong");
+		this.try_install("Marabu");
 
 		setTimeout(function(){ lobby.on_ready(); }, 1000);
 	}
 
 	this.on_ready = function()
 	{
-		// this.apps.terminal.launch();
-		// this.apps.ide.launch();
+		this.apps.terminal.launch();
+		this.apps.diary.launch();
 	}
 
 	function on_resize()

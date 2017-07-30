@@ -7,6 +7,7 @@ function Pong()
   this.origin = {x:120,y:30};
   this.theme = "noir";
   this.methods.new = {name:"new",shortcut:"n",run_shortcut:true};
+  this.methods.stop = {name:"stop",shortcut:"q",run_shortcut:true};
 
   this.on_launch = function()
   {
@@ -18,12 +19,17 @@ function Pong()
 
   this.new = function()
   {
-    if(this.paddle  && this.paddle.is_alive){ this.paddle.is_alive = false; return; }
+    if(this.paddle && this.paddle.is_alive){ this.paddle.is_alive = false; return; }
 
     this.paddle = {x:(this.size.width/2)-15,is_alive:true,score:0};
     this.ball = {x:this.size.width/2,y:this.size.height/2,prev_x:0,prev_y:0,old_x:0,old_y:0,direction:{v:true,h:null},speed:4, fx:{x:1,y:1}};
 
     this.update();
+  }
+
+  this.stop = function()
+  {
+    this.paddle.is_alive = false;
   }
 
   this.update = function()
