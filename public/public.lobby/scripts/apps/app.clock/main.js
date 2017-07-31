@@ -3,8 +3,8 @@ function Clock()
 	App.call(this);
 
   this.name = "clock";
-  this.size = {width:210,height:210};
-  this.origin = {x:120,y:120};
+  this.window.size = {width:210,height:210};
+  this.window.origin = {x:120,y:120};
   this.widget_el = document.createElement("t"); this.widget_el.className = "toggle";
 
   this.radius = 90;
@@ -56,8 +56,8 @@ function Clock()
     var t        = this.time();
     var t_s      = new String(t);
     var t_a      = [t_s.substr(0,3),t_s.substr(3,3)];
-    var w        = this.size.width;
-    var h        = this.size.height;
+    var w        = this.window.size.width;
+    var h        = this.window.size.height;
     var needle_1 = parseInt(((t/1000000) % 1) * w);
     var needle_2 = parseInt(((t/100000) % 1) * h);
     var needle_3 = needle_1 + parseInt(((t/10000) % 1) * (w - needle_1));

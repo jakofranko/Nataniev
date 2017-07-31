@@ -1,8 +1,6 @@
 function App()
 {
 	this.name = "global";
-	this.size = {width:60,height:60};
-	this.origin = {x:0,y:0};
   this.theme = "default";
   this.methods = {};
   this.methods.exit = {name:"exit",is_global:true,shortcut:"w",run_shortcut:true};
@@ -18,10 +16,8 @@ function App()
   this.is_visible = false;
   this.has_launched = false;
 
-	this.el = document.createElement("yu"); 
-	this.el.className = "app";
-	this.wrapper_el = document.createElement("yu"); 
-	this.wrapper_el.className = "wrapper";
+	this.el = document.createElement("yu"); this.el.className = "app";
+	this.wrapper_el = document.createElement("yu"); this.wrapper_el.className = "wrapper";
 	this.el.appendChild(this.wrapper_el);
 
   this.el.addEventListener("mousedown", mouse_down, false);
@@ -108,7 +104,6 @@ function App()
 
   this.on_launch = function()
   {
-
   }
 
   this.exit = function()
@@ -128,10 +123,9 @@ function App()
   this.launch = function()
   {
     console.log("Launching "+this.name+", theme: "+this.theme);
-    $(this.el).css("width",0).css("height",0).css("top",this.origin.y).css("left",this.origin.x);
     lobby.el.appendChild(this.el);
+    this.window.start();
 
-    $(this.el).animate({ left: this.origin.x, top: this.origin.y, width: this.size.width, height: this.size.height }, 300, this.on_launch());
     this.is_visible = true;
     this.has_launched = true;
     this.select();
@@ -285,6 +279,11 @@ function App()
 		e.preventDefault();
 	}
 
+  this.on_key = function(k)
+  {
+    // console.log(k)
+  }
+
   this.is_typing = function()
   {
     if(document.activeElement.type == "textarea"){ return true; }
@@ -411,10 +410,10 @@ function App()
   {
     switch(key)
     {
-      case "arrowup": this.move_window(0,-30); event.preventDefault(); break;
-      case "arrowdown": this.move_window(0,30); event.preventDefault(); break;
-      case "arrowleft": this.move_window(-30,0); event.preventDefault(); break;
-      case "arrowright": this.move_window(30,0); event.preventDefault(); break;
+      case "arrowup": this.window.move_by({x:0,y:-30}); event.preventDefault(); break;
+      case "arrowdown": this.window.move_by({x:0,y:30}); event.preventDefault(); break;
+      case "arrowleft": this.window.move_by({x:-30,y:0}); event.preventDefault(); break;
+      case "arrowright": this.window.move_by({x:30,y:0}); event.preventDefault(); break;
     }
   }
 
@@ -438,50 +437,53 @@ function App()
     console.log("Unknown shortcut:",key);
   }
 
-  this.move_window = function(x,y)
+  var target = this;
+  
+  // 
+  // Window
+  // 
+
+  this.window = 
   {
-    var new_position = {x: parseInt(this.el.style.left) + x, y: parseInt(this.el.style.top) + y}
+    app : target,
+    size : { width:200, height:200 },
+    pos : { x: 0, y: 0 },
+    theme : "blanc",
+    speed : 50,
 
-    if(new_position.x < -30){ new_position.x = -30; }
-    if(new_position.y < -30){ new_position.y = -30; }
-
-    new_position.x = (parseInt(new_position.x / 30) * 30)+"px";
-    new_position.y = (parseInt(new_position.y / 30) * 30)+"px";
-    $(this.el).animate({ left: new_position.x, top: new_position.y }, 50);
-    this.on_move();
-  }
-
-  this.move_window_to = function(x,y)
-  {
-    $(this.el).animate({ left: x, top: y }, 50);
-    this.on_move();
-  }
-
-  this.resize_window = function(x,y)
-  {
-    if(this.size.width + x < 30 || this.size.height + y < 30){ return; }
-    var app_size = this.size;
-    $(this.el).animate({ width: app_size.width + x, height: app_size.height + y }, 50);
-    this.size = {width:app_size.width+x,height:app_size.height+y};
-    this.on_resize();
-  }
-
-  this.resize_window_to = function(x,y)
-  {
-    var app = this;
-    $(this.el).animate({ width: x, height: y }, 50, function(){ app.size = {width:x,height:y}; });
-    this.on_resize();
-  }
-
-  this.organize_window_center = function()
-  {
-    this.resize_window_to(lobby.size.width-180,lobby.size.height-210);
-    this.move_window_to(60,60);
-  }
-
-  this.organize_window_vertical = function()
-  {
-    this.resize_window_to(this.size.width,lobby.size.height-90);
-    this.move_window_to(this.el.style.left,0);
+    start : function()
+    {
+      this.move_to(this.pos);
+      this.resize_to(this.size);
+    },
+    move_by : function(pos)
+    {
+      this.pos = { x: this.pos.x + pos.x, y: this.pos.y + pos.y};
+      this.update();
+      this.app.on_move();
+    },
+    move_to : function(pos)
+    {
+      this.pos = pos;
+      this.update();
+      this.app.on_move();
+    },
+    resize_by : function(size)
+    {
+      this.size = { width: this.size.width + size.width, height: this.size.height + size.height};
+      this.update();
+      this.app.on_resize();
+    },
+    resize_to : function(size)
+    {
+      this.size = size;
+      this.update();
+      this.app.on_resize();
+    },
+    update : function()
+    {
+      $(this.app.el).animate({ left: this.pos.x, top: this.pos.y }, this.speed);
+      $(this.app.el).animate({ width: this.size.width, height: this.size.height }, this.speed);
+    }
   }
 }

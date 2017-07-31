@@ -216,4 +216,9 @@ function Commander()
 	{
 		return this.input_el === document.activeElement ? true : false;
 	}
+
+  this.on_key = function(k)
+  {
+    if(k == "Escape"){ this.hide_browser(); this.inject(""); }
+  }
 }

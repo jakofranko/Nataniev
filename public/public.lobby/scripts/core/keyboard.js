@@ -51,6 +51,8 @@ function Keyboard()
 
     if(!this.host){ return; }
 
+    this.host.on_key(event.key);
+
     switch (event.key || event.keyCode || event.which)
     {
       case "ArrowUp": this.host.key_arrow_up(); break;
