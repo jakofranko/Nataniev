@@ -9,4 +9,4 @@ function Marabu()
 
 }
 
-lobby.install_callback("Marabu");
+lobby.summon.confirm("Marabu");

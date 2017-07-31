@@ -92,4 +92,4 @@ function Twitter()
 	}
 }
 
-lobby.install_callback("Twitter");
+lobby.summon.confirm("Twitter");

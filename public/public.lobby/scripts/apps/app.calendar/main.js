@@ -3,9 +3,10 @@ function Calendar()
 	App.call(this);
 
   this.name = "calendar";
-  this.size = {width:720,height:450};
-  this.origin = {x:90,y:90};
-  this.theme = "noir"
+
+  this.window.size = {width:720,height:450};
+  this.window.pos = {x:90,y:90};
+
   this.widget_el = document.createElement("t"); this.widget_el.className = "toggle";
 
   this.on_installation_complete = function()
@@ -19,6 +20,7 @@ function Calendar()
 
   this.on_launch = function()
   {
+    console.log("!")
     this.call("get_calendar",null);  
   }
 
@@ -106,4 +108,4 @@ Date.prototype.day_of_year = function()
   return dayOfYear - 1;
 };
 
-lobby.install_callback("Calendar");
+lobby.summon.confirm("Calendar");

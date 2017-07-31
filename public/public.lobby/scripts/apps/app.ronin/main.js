@@ -6,7 +6,7 @@ function Ronin()
   this.size = {width:795,height:450};
   this.origin = {x:60,y:60};
 
-  this.includes = ["layer","new","fill","brush","path","load","resize","type","magnet","import","export"];
+  this.setup.includes = ["layer","new","fill","brush","path","load","resize","type","magnet","import","export"];
   this.project = {};
   this.project.size = this.size;
   this.tools = {};
@@ -56,4 +56,4 @@ function Ronin()
   this.wrapper_el.addEventListener('mousemove', this.mouse_move, false);
 }
 
-lobby.install_callback("Ronin");
+lobby.summon.confirm("Ronin");

@@ -232,4 +232,4 @@ function Ide()
   }
 }
 
-lobby.install_callback("Ide");
+lobby.summon.confirm("Ide");

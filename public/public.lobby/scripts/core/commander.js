@@ -201,7 +201,6 @@ function Commander()
 
 	this.install_widget = function(el)
 	{
-		console.log("installing widget",el);
 		this.widgets_el.appendChild(el);
 	}
 

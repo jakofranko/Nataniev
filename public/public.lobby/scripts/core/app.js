@@ -26,36 +26,7 @@ function App()
 
   this.wrapper_el.addEventListener("mousedown", function(e){ e.stopPropagation(); }, false);
 
-  this.includes = [];
-
   // Installation
-
-  this.install = function()
-  {
-    console.log("Installing "+this.name);
-    this.el.className = "app "+this.name+" "+this.theme;
-    this.el.id = this.name;
-    if(this.includes.length > 0){
-      this.install_includes(this.includes);
-    }
-    this.on_installation_complete();
-  }
-
-  this.install_includes = function(files)
-  {
-    for(file_id in files){
-      this.try_include(files[file_id]);
-    }
-  }
-
-  this.try_include = function(file_name)
-  {
-    console.log("Including "+file_name+" to "+this.name);
-    var s = document.createElement('script');
-    s.type = 'text/javascript';
-    s.src = 'public.lobby/scripts/apps/app.'+this.name+'/'+file_name+'.js';
-    document.getElementsByTagName('head')[0].appendChild(s);
-  }
 
   // AJAX
 
@@ -102,10 +73,6 @@ function App()
     this.show();
   }
 
-  this.on_launch = function()
-  {
-  }
-
   this.exit = function()
   {
     
@@ -122,13 +89,17 @@ function App()
 
   this.launch = function()
   {
-    console.log("Launching "+this.name+", theme: "+this.theme);
     lobby.el.appendChild(this.el);
     this.window.start();
 
     this.is_visible = true;
     this.has_launched = true;
     this.select();
+    this.on_launch();
+  }
+
+  this.on_launch = function()
+  {
   }
 
   this.select = function()
@@ -440,6 +411,56 @@ function App()
   var target = this;
   
   // 
+  // Setup
+  //   
+
+  this.setup = 
+  {
+    app : target,
+    includes : [],
+
+    install : function()
+    {
+      console.log("install",this.app.name)
+      this.register();
+
+      for(file_id in this.includes){
+        this.inject(this.includes[file_id]);
+      }
+      this.ready();
+    },
+
+    register : function()
+    {
+      lobby.apps[this.app.name] = this.app;
+    },
+
+    inject : function(name)
+    {
+      console.log("inject",this.app.name+" > "+name);
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.src = 'public.lobby/scripts/apps/app.'+this.app.name+'/'+name+'.js';
+      document.getElementsByTagName('head')[0].appendChild(s);
+    },
+
+    ready : function()
+    {
+
+    },
+
+    launch : function()
+    {
+
+    },
+
+    exit : function()
+    {
+
+    }
+  }
+
+  // 
   // Window
   // 
 
@@ -456,30 +477,35 @@ function App()
       this.move_to(this.pos);
       this.resize_to(this.size);
     },
+
     move_by : function(pos)
     {
       this.pos = { x: this.pos.x + pos.x, y: this.pos.y + pos.y};
       this.update();
       this.app.on_move();
     },
+
     move_to : function(pos)
     {
       this.pos = pos;
       this.update();
       this.app.on_move();
     },
+
     resize_by : function(size)
     {
       this.size = { width: this.size.width + size.width, height: this.size.height + size.height};
       this.update();
       this.app.on_resize();
     },
+
     resize_to : function(size)
     {
       this.size = size;
       this.update();
       this.app.on_resize();
     },
+    
     update : function()
     {
       $(this.app.el).animate({ left: this.pos.x, top: this.pos.y }, this.speed);

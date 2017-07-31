@@ -82,4 +82,4 @@ function System()
   }
 }
 
-lobby.install_callback("System");
+lobby.summon.confirm("System");

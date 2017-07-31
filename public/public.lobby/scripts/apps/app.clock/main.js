@@ -3,21 +3,23 @@ function Clock()
 	App.call(this);
 
   this.name = "clock";
+
   this.window.size = {width:210,height:210};
-  this.window.origin = {x:120,y:120};
+  this.window.pos = {x:120,y:120};
+
   this.widget_el = document.createElement("t"); this.widget_el.className = "toggle";
 
   this.radius = 90;
   this.circ = this.radius * 2 * Math.PI;
   this.center = 105;
 
-  this.on_installation_complete = function()
+  this.setup.ready = function()
   {
-    lobby.commander.install_widget(this.widget_el);
+    lobby.commander.install_widget(this.app.widget_el);
     lobby.apps.clock.update();
 
     var app = this;
-    this.widget_el.addEventListener("mousedown", function(){ app.toggle() }, true);
+    this.app.widget_el.addEventListener("mousedown", function(){ app.toggle() }, true);
   }
 
   this.time = function()
@@ -83,4 +85,4 @@ function Clock()
   }
 }
 
-lobby.install_callback("Clock");
+lobby.summon.confirm("Clock");

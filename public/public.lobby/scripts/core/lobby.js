@@ -18,42 +18,68 @@ function Lobby()
 		this.start();
 	}
 
-	this.try_install = function(app_name)
-	{
-		var s = document.createElement('script');
-		s.type = 'text/javascript';
-		s.src = 'public.lobby/scripts/apps/app.'+app_name.toLowerCase()+'/main.js';
-	  document.getElementsByTagName('head')[0].appendChild(s);
-	}
-
-	this.install_callback = function(app_name)
-	{
-		var app = new window[app_name]();
-
-		this.apps[app.name.toLowerCase()] = app;
-		app.install();
-		this.commander.update_hint();
-	}
-
 	this.start = function()
 	{
 		this.keyboard.start();
 		this.commander.install();
 		lobby.update_size();
 
-		this.try_install("Terminal");
-		this.try_install("Clock");
-		this.try_install("Calendar");
-		this.try_install("Ide");
-		this.try_install("Ronin");
-		this.try_install("System");
-		this.try_install("Dict");
-		this.try_install("Diary");
-		this.try_install("Pong");
-		this.try_install("Marabu");
+		this.summon.invoke("Terminal");
+		this.summon.invoke("Clock");
+		this.summon.invoke("Calendar");
+		this.summon.invoke("Ide");
+		this.summon.invoke("Ronin");
+		this.summon.invoke("System");
+		this.summon.invoke("Dict");
+		this.summon.invoke("Diary");
+		this.summon.invoke("Pong");
+		this.summon.invoke("Marabu");
 
 		setTimeout(function(){ lobby.on_ready(); }, 1000);
 	}
+
+	this.summon = 
+	{
+		queue : [],
+		known : [],
+
+		invoke : function(name)
+		{
+			console.log("invoke",name);
+			this.queue.push(name);
+			this.inject(name);
+		},
+
+		confirm : function(name)
+		{
+			console.log("confirm",name);
+			this.known.push(name);
+			var q = [];
+			for(app_id in this.queue){
+				if(name == this.queue[app_id]){ continue; }
+				q.push(this.queue[app_id]);
+			}
+			this.queue = q;
+			if(this.queue.length == 0){ this.complete(); }
+		},
+
+		inject : function(name)
+		{
+			var s = document.createElement('script');
+			s.type = 'text/javascript';
+			s.src = 'public.lobby/scripts/apps/app.'+name.toLowerCase()+'/main.js';
+		  document.getElementsByTagName('head')[0].appendChild(s);
+		},
+
+		complete : function()
+		{
+			for(app_id in this.known){
+				var app = new window[this.known[app_id]]();
+				app.setup.install();
+			}
+		}
+	}
+	
 
 	this.on_ready = function()
 	{

@@ -79,4 +79,4 @@ function Dict()
   }
 }
 
-lobby.install_callback("Dict");
+lobby.summon.confirm("Dict");

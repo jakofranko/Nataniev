@@ -59,4 +59,4 @@ function Diary()
   }
 }
 
-lobby.install_callback("Diary");
+lobby.summon.confirm("Diary");

@@ -48,8 +48,8 @@ function Terminal()
     }
 
     this.wrapper_el.innerHTML += html;
-    this.resize_window_to(lobby.size.width - 60,this.logs.length * 15)
+    this.window.resize_to({width:lobby.size.width - 60,height:this.logs.length * 15})
   }
 }
 
-lobby.install_callback("Terminal");
+lobby.summon.confirm("Terminal");
