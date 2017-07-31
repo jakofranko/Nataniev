@@ -57,8 +57,8 @@ function Lobby()
 
 	this.on_ready = function()
 	{
-		this.apps.terminal.launch();
-		this.apps.diary.launch();
+		// this.apps.terminal.launch();
+		// this.apps.diary.launch();
 	}
 
 	function on_resize()

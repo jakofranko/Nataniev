@@ -6,7 +6,7 @@ function Layer(size)
   {
     this.el.width = size.width * 2;
     this.el.height = size.height * 2;
-    this.el.style.width = size.height+"px";
+    this.el.style.width = size.width+"px";
     this.el.style.height = size.height+"px";
     this.el.style.position = "absolute";
   }

@@ -230,7 +230,7 @@ function App()
     }
 
     if(this.methods[method]){
-      return "<span class='param'> > </span> ";
+      return "<span class='param'> "+(this.methods[method].params ? ' > '+this.methods[method].params : ' > ')+"</span> ";
     }
     for(method_id in this.methods){
       var method = this.methods[method_id];

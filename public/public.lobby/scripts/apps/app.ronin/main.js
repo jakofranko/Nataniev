@@ -3,12 +3,12 @@ function Ronin()
   App.call(this);
 
   this.name = "ronin";
-  this.size = {width:300,height:300};
-  this.origin = {x:120,y:120};
+  this.size = {width:795,height:450};
+  this.origin = {x:60,y:60};
 
   this.includes = ["layer","new","fill","brush","path","load","resize","type","magnet","import","export"];
   this.project = {};
-  this.project.size = {width:300,height:300};
+  this.project.size = this.size;
   this.tools = {};
 
   this.formats = ["rin"];
@@ -23,6 +23,10 @@ function Ronin()
     if(value.split(" ")[0] == "ronin.load"){
       var val = value.split(" "); val.shift(); val = val.join(" ").trim();
       this.load(val,true);
+    }
+    if(value.split(" ")[0] == "ronin.import"){
+      var val = value.split(" "); val.shift(); val = val.join(" ").trim();
+      this.import(val,true);
     }
   }
 
