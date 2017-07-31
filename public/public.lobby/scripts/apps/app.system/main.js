@@ -12,13 +12,13 @@ function System()
 
   this.widget_el = document.createElement("t"); this.widget_el.className = "toggle";
 
-  this.on_installation_complete = function()
+  this.setup.ready = function()
   {
-    lobby.commander.install_widget(this.widget_el);
-    this.on_window_resize();
+    lobby.commander.install_widget(this.app.widget_el);
+    this.app.on_window_resize();
 
-    var app = this;
-    this.widget_el.addEventListener("mousedown", function(){ app.toggle() }, true);
+    var app = this.app;
+    this.app.widget_el.addEventListener("mousedown", function(){ app.toggle() }, true);
   }
 
   this.on_launch = function()

@@ -18,7 +18,7 @@ function Clock()
     lobby.commander.install_widget(this.app.widget_el);
     lobby.apps.clock.update();
 
-    var app = this;
+    var app = this.app;
     this.app.widget_el.addEventListener("mousedown", function(){ app.toggle() }, true);
   }
 

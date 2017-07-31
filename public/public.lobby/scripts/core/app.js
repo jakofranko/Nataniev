@@ -446,17 +446,17 @@ function App()
 
     ready : function()
     {
-
+      console.log("ready",this.app.name)
     },
 
     launch : function()
     {
-
+      console.log("launch",this.app.name)
     },
 
     exit : function()
     {
-
+      console.log("exit",this.app.name)
     }
   }
 
