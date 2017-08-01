@@ -6,13 +6,14 @@ function Pong()
 
   this.window.size = {width:330,height:210};
   this.window.pos = {x:120,y:30};
+  
   this.theme = "noir";
   this.methods.new = {name:"new",shortcut:"n",run_shortcut:true};
   this.methods.stop = {name:"stop",shortcut:"q",run_shortcut:true};
 
-  this.on_launch = function()
+  this.setup.ready = function()
   {
-    this.new();
+    // this.app.new();
   }
 
   this.paddle = null;

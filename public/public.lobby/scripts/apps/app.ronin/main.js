@@ -13,9 +13,9 @@ function Ronin()
 
   this.formats = ["rin"];
 
-  this.on_launch = function()
+  this.setup.ready = function()
   {
-    this.new();
+    // this.app.new();
   }
 
   this.on_input_change = function(value)

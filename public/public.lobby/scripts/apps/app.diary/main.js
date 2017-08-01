@@ -3,19 +3,17 @@ function Diary()
   App.call(this);
 
   this.name = "diary";
-  this.size = {width:300,height:120};
-  this.origin = {x:0,y:0};
-  this.theme = "ghost";
+
+  this.window.size = {width:300,height:120};
+  this.window.pos = {x:0,y:0};
+  this.window.theme = "ghost";
+
   this.methods.refresh = {name:"refresh",shortcut:"r",run_shortcut:true};
 
-  this.on_launch = function()
+  this.setup.launch = function()
   {
-    this.refresh();
-  }
-
-  this.on_installation_complete = function()
-  {
-    this.ghost();
+    this.app.refresh();
+    this.app.ghost();
   }
 
   this.refresh = function()

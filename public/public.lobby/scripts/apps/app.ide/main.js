@@ -3,9 +3,10 @@ function Ide()
 	App.call(this);
 
   this.name = "ide";
-  this.size = {width:780,height:420};
-  this.origin = {x:120,y:120};
-  // this.theme = "noir";
+
+  this.window.size = {width:780,height:420};
+  this.window.pos = {x:120,y:120};
+
   this.methods.new = {name:"new"};
   this.methods.load = {name:"load", shortcut:"l"};
   this.methods.save = {name:"save", shortcut:"s"};
@@ -38,6 +39,11 @@ function Ide()
   this.textarea_el.addEventListener('mousedown', mouse_down, false);
   this.textarea_el.addEventListener('mouseup', mouse_up, false);
 
+  this.setup.ready = function()
+  {
+
+  }
+  
   function key_down(e)
   {
     lobby.apps.ide.update_status();
@@ -212,7 +218,7 @@ function Ide()
     var chars_count = this.textarea_el.textLength;
     var chars_display = chars_active+"/"+chars_count+"C ";
 
-    var size = "<t class='f5'>"+this.size.width+"x"+this.size.height+"</t>"
+    var size = "<t class='f5'>"+this.window.size.width+"x"+this.window.size.height+"</t>"
 
     var scroll_position = parseInt(lines_active/parseFloat(lines_count) * 100);
 

@@ -3,15 +3,16 @@ function Dict()
   App.call(this);
 
   this.name = "dict";
-  this.size = {width:600,height:360};
-  this.origin = {x:120,y:120};
+  this.window.size = {width:600,height:360};
+  this.window.pos = {x:120,y:120};
+
   this.methods.find = {name:"find", shortcut:"f"};
 
   this.payload = null;
 
-  this.on_launch = function()
+  this.setup.ready = function()
   {
-    this.reload();
+    // this.app.reload();
   }
 
   this.reload = function()

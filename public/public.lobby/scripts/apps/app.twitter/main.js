@@ -23,7 +23,7 @@ function Twitter()
 
 	this.includes = ["tweet"];
 
-	this.on_launch = function()
+  this.setup.ready = function()
 	{
 		this.wrapper_el.innerHTML = "Loading feed..";
 		this.call("feed","neauoire");

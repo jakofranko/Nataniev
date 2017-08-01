@@ -12,9 +12,9 @@ function Terminal()
 
   this.widget_el = document.createElement("t");
 
-  this.on_launch = function()
+  this.setup.ready = function()
   {
-    this.say("init");
+    // this.app.say("init");
   }
 
   this.say = function(q)

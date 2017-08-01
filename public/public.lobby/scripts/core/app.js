@@ -68,105 +68,7 @@ function App()
     console.log(this.name+"."+url+" answered",r);
   }
 
-  this.default = function()
-  {
-    this.show();
-  }
-
-  this.exit = function()
-  {
-    
-  }
-
-  this.on_input_change = function(value){}
-  this.on_installation_complete = function(){}
-  this.on_exit = function(){}
-  this.on_resize = function(){}
-  this.on_move = function(){}
-  this.on_window_resize = function(){}
-
-  // Change styles
-
-  this.launch = function()
-  {
-    lobby.el.appendChild(this.el);
-    this.window.start();
-
-    this.is_visible = true;
-    this.has_launched = true;
-    this.select();
-    this.on_launch();
-  }
-
-  this.on_launch = function()
-  {
-  }
-
-  this.select = function()
-  {
-    lobby.commander.deselect();
-    $(this.el).addClass("selected");
-    lobby.commander.select(this);
-  }
-
-  this.deselect = function()
-  {
-    $(this.el).removeClass("selected");
-  }
-
-  this.toggle = function()
-  {
-    if(this.is_visible){
-      this.hide();
-    }
-    else{
-      if(!this.has_launched){
-        this.launch();
-      }
-      else{
-        this.show();
-      }
-    }
-  }
-
-  this.show = function()
-  {
-    if(!this.has_launched){
-      this.launch();
-    }
-
-    $(this.el).removeClass("hidden");
-    this.is_visible = true;
-    this.select();
-  }
-
-  this.hide = function()
-  {
-    $(this.el).addClass("hidden");
-    this.is_visible = false;
-    this.deselect();
-  }
-
-  this.ghost = function()
-  {
-    $(this.el).removeClass("hidden");
-    $(this.el).removeClass("noir");
-    $(this.el).addClass("ghost");
-  }
-
-  this.noir = function()
-  {
-    $(this.el).removeClass("hidden");
-    $(this.el).removeClass("ghost");
-    $(this.el).addClass("noir");
-  }
-
-  this.blanc = function()
-  {
-    $(this.el).removeClass("hidden");
-    $(this.el).removeClass("ghost");
-    $(this.el).addClass("blanc");
-  }
+  
 
   //
 
@@ -346,37 +248,6 @@ function App()
     lobby.commander.validate(); 
   }
 
-  this.warp_left = function()
-  {
-    this.move_window_to(-30,-30);
-    this.resize_window_to(lobby.size.width/2 - 30,lobby.size.height-30);
-  }
-  this.warp_right = function()
-  {
-    this.move_window_to(lobby.size.width/2 - 30,-30);
-    this.resize_window_to(lobby.size.width/2,lobby.size.height-30);
-  }
-  this.warp_center = function()
-  {
-    this.move_window_to(30,30);
-    this.resize_window_to(lobby.size.width - 120,lobby.size.height - 150);
-  }
-
-  this.scale_left = function()
-  {
-    this.resize_window(-30,-30);
-  }
-  this.scale_right = function()
-  {
-    this.resize_window(30,30);
-  }
-
-  this.fill = function()
-  {
-    this.resize_window_to(lobby.size.width,lobby.size.height - 30);
-    this.move_window_to(-30,-30)
-  }
-
   this.on_option = function(key)
   {
     switch(key)
@@ -409,6 +280,146 @@ function App()
   }
 
   var target = this;
+
+  // MESS ==========================
+
+  this.default = function()
+  {
+    this.show();
+  }
+
+  this.exit = function()
+  {
+    
+  }
+
+  this.on_input_change = function(value){}
+  this.on_installation_complete = function(){}
+  this.on_exit = function(){}
+  this.on_resize = function(){}
+  this.on_move = function(){}
+  this.on_window_resize = function(){}
+
+  // Change styles
+
+  this.launch = function()
+  {
+    lobby.el.appendChild(this.el);
+    this.window.start();
+
+    this.is_visible = true;
+    this.has_launched = true;
+    this.select();
+    this.on_launch();
+  }
+
+  this.on_launch = function()
+  {
+  }
+
+  this.select = function()
+  {
+    lobby.commander.deselect();
+    $(this.el).addClass("selected");
+    lobby.commander.select(this);
+  }
+
+  this.deselect = function()
+  {
+    $(this.el).removeClass("selected");
+  }
+
+  this.toggle = function()
+  {
+    if(this.is_visible){
+      this.hide();
+    }
+    else{
+      if(!this.has_launched){
+        this.launch();
+      }
+      else{
+        this.show();
+      }
+    }
+  }
+
+  this.show = function()
+  {
+    if(!this.has_launched){
+      this.launch();
+      this.setup.launch();
+    }
+
+    $(this.el).removeClass("hidden");
+    this.is_visible = true;
+    this.select();
+  }
+
+  this.hide = function()
+  {
+    $(this.el).addClass("hidden");
+    this.is_visible = false;
+    this.deselect();
+  }
+
+  this.ghost = function()
+  {
+    $(this.el).removeClass("hidden");
+    $(this.el).removeClass("noir");
+    $(this.el).addClass("ghost");
+  }
+
+  this.noir = function()
+  {
+    $(this.el).removeClass("hidden");
+    $(this.el).removeClass("ghost");
+    $(this.el).addClass("noir");
+  }
+
+  this.blanc = function()
+  {
+    $(this.el).removeClass("hidden");
+    $(this.el).removeClass("ghost");
+    $(this.el).addClass("blanc");
+  }
+
+  this.warp_left = function()
+  {
+    this.move_window_to(-30,-30);
+    this.resize_window_to(lobby.size.width/2 - 30,lobby.size.height-30);
+  }
+  this.warp_right = function()
+  {
+    this.move_window_to(lobby.size.width/2 - 30,-30);
+    this.resize_window_to(lobby.size.width/2,lobby.size.height-30);
+  }
+  this.warp_center = function()
+  {
+    this.move_window_to(30,30);
+    this.resize_window_to(lobby.size.width - 120,lobby.size.height - 150);
+  }
+
+  this.scale_left = function()
+  {
+    this.resize_window(-30,-30);
+  }
+  this.scale_right = function()
+  {
+    this.resize_window(30,30);
+  }
+
+  this.fill = function()
+  {
+    this.resize_window_to(lobby.size.width,lobby.size.height - 30);
+    this.move_window_to(-30,-30)
+  }
+
+
+
+  // MESS ==========================
+
+
   
   // 
   // Setup
@@ -510,6 +521,21 @@ function App()
     {
       $(this.app.el).animate({ left: this.pos.x, top: this.pos.y }, this.speed);
       $(this.app.el).animate({ width: this.size.width, height: this.size.height }, this.speed);
+    },
+
+    organize : 
+    {
+      app : target,
+
+      fill : function()
+      {
+
+      },
+
+      full : function()
+      {
+
+      }
     }
   }
 }

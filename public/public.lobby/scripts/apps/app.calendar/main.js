@@ -36,8 +36,8 @@ function Calendar()
         var stamp = "2017"+(m < 10 ? '0'+m : m)+(d < 10 ? '0'+d : d);
         var cl = "f9 ";
         var day_number = (d < 10 ? '0'+d : d);
-        day_number += logs && logs[stamp] ? "<t class='f"+logs[stamp].value+"'>"+logs[stamp].value+"</t>" : '';
-        html += "<t class='di w1 "+(logs && logs[stamp] ? 'ff ' : 'f9')+" "+(stamp == new Date().desamber_stamp() ? 'fu' : '')+"'>"+day_number+"</t>";
+        day_number += logs && logs[stamp] ? "<t class='fc'>"+logs[stamp].value+"</t>" : '';
+        html += "<t class='di w1 "+(logs && logs[stamp] ? 'f0 ' : 'f9')+" "+(stamp == new Date().desamber_stamp() ? 'fu' : '')+"'>"+day_number+"</t>";
         d += 1;
       }
       html += "</yu>";

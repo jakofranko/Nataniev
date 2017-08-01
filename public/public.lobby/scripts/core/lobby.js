@@ -77,6 +77,7 @@ function Lobby()
 				var app = new window[this.known[app_id]]();
 				app.setup.install();
 			}
+			lobby.commander.update_hint();
 		}
 	}
 	
