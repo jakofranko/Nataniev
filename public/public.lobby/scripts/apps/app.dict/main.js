@@ -12,7 +12,7 @@ function Dict()
 
   this.setup.ready = function()
   {
-    // this.app.reload();
+    this.app.reload();
   }
 
   this.reload = function()
@@ -27,7 +27,7 @@ function Dict()
         var a = JSON.parse(response);
         app.payload = a;
         app.wrapper_el.innerHTML = "Ready. ";
-        // app.refresh();
+        app.refresh();
         app.find("");
       }
     })

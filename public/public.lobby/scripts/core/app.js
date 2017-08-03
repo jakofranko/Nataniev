@@ -1,7 +1,7 @@
 function App()
 {
 	this.name = "global";
-  this.theme = "default";
+
   this.methods = {};
   this.methods.exit = {name:"exit",is_global:true,shortcut:"w",run_shortcut:true};
   this.methods.toggle = {name:"toggle",is_global:true,shortcut:"h",run_shortcut:true};
@@ -19,12 +19,6 @@ function App()
 	this.el = document.createElement("yu"); this.el.className = "app";
 	this.wrapper_el = document.createElement("yu"); this.wrapper_el.className = "wrapper";
 	this.el.appendChild(this.wrapper_el);
-
-  this.el.addEventListener("mousedown", mouse_down, false);
-  this.el.addEventListener("mouseup", mouse_up, false);
-  this.el.addEventListener("mousemove", mouse_move, false);
-
-  this.wrapper_el.addEventListener("mousedown", function(e){ e.stopPropagation(); }, false);
 
   // Installation
 
@@ -68,18 +62,6 @@ function App()
     console.log(this.name+"."+url+" answered",r);
   }
 
-  
-
-  //
-
-	this.align_to_grid = function()
-	{
-		var target = {x:parseInt(this.el.style.left),y:parseInt(this.el.style.top)};
-		target.x = (parseInt(target.x / 30) * 30)+"px"
-		target.y = (parseInt(target.y / 30) * 30)+"px"
-		$(this.el).animate({ left: target.x, top: target.y }, 300);
-	}
-
   this.hint = function(value)
   {
     var html = "";
@@ -112,46 +94,6 @@ function App()
     return html;
   }
 
-	// MOUSE
-
-	this.touch = null;
-
-	this.on_mouse_down = function(e)
-	{
-    event.stopPropagation();
-    $(this.el).addClass("dragged");
-		this.touch = {x: e.clientX, y: e.clientY};
-		this.select();
-		e.preventDefault();
-	}
-
-	this.on_mouse_move = function(e)
-	{
-		if(this.touch === null){ return; }
-
-		var position = {x: parseInt(this.el.style.left), y: parseInt(this.el.style.top)}
-		var offset = {x: e.clientX - this.touch.x,y: e.clientY - this.touch.y}
-		var new_position = {x: (position.x + offset.x), y:(position.y + offset.y)};
-
-		if(new_position.x < -30){ new_position.x = -30; }
-		if(new_position.y < 0){ new_position.y = 0; }
-		// if((new_position.y + this.size.height) > window.innerHeight - 120){ new_position.y = window.innerHeight - 180; }
-
-		this.el.style.top = new_position.y+"px";
-		this.el.style.left = new_position.x+"px";
-
-		this.touch = {x: e.clientX, y: e.clientY};
-		e.preventDefault();
-	}
-
-	this.on_mouse_up = function(e)
-	{
-    $(this.el).removeClass("dragged");
-		this.touch = null;
-		this.align_to_grid();
-		e.preventDefault();
-	}
-
   this.on_key = function(k)
   {
     // console.log(k)
@@ -163,26 +105,6 @@ function App()
     if(document.activeElement.type == "input"){ return true; }
     return false;
   }
-
-	function mouse_down(e)
-	{
-		if(!lobby.apps[this.id]){ return; }
-		lobby.apps[this.id].on_mouse_down(e);
-    lobby.commander.input_el.blur();
-	}
-
-	function mouse_move(e)
-	{
-		if(!lobby.apps[this.id]){ return; }
-		lobby.apps[this.id].on_mouse_move(e);
-	}
-
-	function mouse_up(e)
-	{
-		if(!lobby.apps[this.id]){ return; }
-		lobby.apps[this.id].on_mouse_up(e);
-	}
-
 
   // Keyboard Numbers
   this.key_number_0 = function(){ }
@@ -278,8 +200,6 @@ function App()
     }
     console.log("Unknown shortcut:",key);
   }
-
-  var target = this;
 
   // MESS ==========================
 
@@ -386,40 +306,41 @@ function App()
 
   this.warp_left = function()
   {
-    this.move_window_to(-30,-30);
-    this.resize_window_to(lobby.size.width/2 - 30,lobby.size.height-30);
+    this.window.move_by(-30,-30);
+    this.window.resize_to(lobby.size.width/2 - 30,lobby.size.height-30);
   }
   this.warp_right = function()
   {
-    this.move_window_to(lobby.size.width/2 - 30,-30);
-    this.resize_window_to(lobby.size.width/2,lobby.size.height-30);
+    this.window.move_by(lobby.size.width/2 - 30,-30);
+    this.window.resize_to(lobby.size.width/2,lobby.size.height-30);
   }
   this.warp_center = function()
   {
-    this.move_window_to(30,30);
-    this.resize_window_to(lobby.size.width - 120,lobby.size.height - 150);
+    this.window.move_by(30,30);
+    this.window.resize_to(lobby.size.width - 120,lobby.size.height - 150);
   }
 
   this.scale_left = function()
   {
-    this.resize_window(-30,-30);
+    this.window.resize_by(-30,-30);
   }
+
   this.scale_right = function()
   {
-    this.resize_window(30,30);
+    this.window.resize_by(30,30);
   }
 
   this.fill = function()
   {
-    this.resize_window_to(lobby.size.width,lobby.size.height - 30);
-    this.move_window_to(-30,-30)
+    this.window.resize_to(lobby.size.width,lobby.size.height - 30);
+    this.window.move_to(-30,-30)
   }
 
 
 
   // MESS ==========================
 
-
+  var target = this;
   
   // 
   // Setup
@@ -517,10 +438,24 @@ function App()
       this.app.on_resize();
     },
     
-    update : function()
+    update : function(animate = true)
     {
-      $(this.app.el).animate({ left: this.pos.x, top: this.pos.y }, this.speed);
-      $(this.app.el).animate({ width: this.size.width, height: this.size.height }, this.speed);
+      if(animate){
+        $(this.app.el).animate({ left: this.pos.x, top: this.pos.y }, this.speed);
+        $(this.app.el).animate({ width: this.size.width, height: this.size.height }, this.speed);  
+      }
+      else{
+        $(this.app.el).css("left",this.pos.x).css("top",this.pos.y);
+        $(this.app.el).css("width",this.size.width).css("height",this.size.height);
+      }
+    },
+
+    align : function()
+    {
+      var target_pos = this.pos;
+      target_pos.x = (parseInt(this.pos.x / 30) * 30)+"px"
+      target_pos.y = (parseInt(this.pos.y / 30) * 30)+"px"
+      $(this.app.el).animate({ left: target_pos.x, top: target_pos.y }, 300);
     },
 
     organize : 
@@ -538,4 +473,38 @@ function App()
       }
     }
   }
+
+  // 
+  // Touch
+  // 
+
+  this.touch = 
+  {
+    app : target,
+    from : null,
+
+    down : function(e)
+    {
+      lobby.touch.bind(target);
+      $(target.el).addClass("dragged");
+    },
+
+    move : function(e)
+    {
+
+    },
+
+    up : function(e)
+    {
+      lobby.touch.release(target);
+      $(target.el).removeClass("dragged");
+    }
+
+  }
+
+  this.el.addEventListener("mousedown", this.touch.down, false);
+  this.el.addEventListener("mouseup", this.touch.up, false);
+  this.el.addEventListener("mousemove", this.touch.move, false);
+  
+  this.wrapper_el.addEventListener("mousedown", function(e){ e.stopPropagation(); }, false);
 }

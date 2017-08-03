@@ -84,7 +84,7 @@ function Lobby()
 
 	this.on_ready = function()
 	{
-		// this.apps.terminal.launch();
+		this.apps.system.launch();
 		// this.apps.diary.launch();
 	}
 
@@ -109,4 +109,67 @@ function Lobby()
 	{
 		return {width: parseInt(window.innerWidth/2/230.0) * 30 - 60,height: parseInt(window.innerHeight/2/30.0) * 30 - 30}
 	}
+
+
+  // 
+  // Touch
+  // 
+
+	this.touch = 
+	{
+		app : null,
+    from : null,
+
+		bind : function(app)
+		{
+			console.log("bind",app.name);
+			lobby.touch.app = app;
+		},
+
+		release : function()
+		{
+    	if(!lobby.touch.app){ return; }
+
+			console.log("released",lobby.touch.app.name);
+			lobby.touch.app.window.align();
+			lobby.touch.app = null;
+		},
+
+		down : function(e)
+    {
+    	lobby.touch.from = {x: e.clientX, y: e.clientY};
+    	e.preventDefault();
+    },
+
+    move : function(e)
+    {
+    	if(!lobby.touch.app){ return; }
+
+    	var position = lobby.touch.app.window.pos;
+			var offset = {x: e.clientX - lobby.touch.from.x,y: e.clientY - lobby.touch.from.y}
+			var new_position = {x: parseInt(position.x + offset.x), y:parseInt(position.y + offset.y)};
+
+			if(new_position.x < -30){ new_position.x = -30; }
+			if(new_position.y < -30){ new_position.y = -30; }
+
+			lobby.touch.app.window.pos = new_position;
+			lobby.touch.app.window.update(false);
+
+			lobby.touch.from = {x: e.clientX, y: e.clientY};
+
+    	e.preventDefault();
+    },
+
+    up : function(e)
+    {
+    	e.preventDefault();
+    	lobby.touch.release();
+    	lobby.touch.from = null;
+    }
+
+	}
+
+  this.el.addEventListener("mousedown", this.touch.down, false);
+  this.el.addEventListener("mouseup", this.touch.up, false);
+  this.el.addEventListener("mousemove", this.touch.move, false);
 }
