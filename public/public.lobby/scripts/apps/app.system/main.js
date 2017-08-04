@@ -19,13 +19,12 @@ function System()
     lobby.commander.install_widget(this.app.widget_el);
     this.app.on_window_resize();
 
-    var app = this.app;
-    this.app.widget_el.addEventListener("mousedown", function(){ app.toggle() }, true);
+    this.app.widget_el.addEventListener("mousedown", function(){ this.app.toggle() }, true);
   }
 
-  this.on_launch = function()
+  this.setup.start = function()
   {
-    this.update();
+    this.app.update();
   }
 
   this.update = function()

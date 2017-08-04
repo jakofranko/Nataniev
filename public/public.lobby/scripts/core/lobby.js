@@ -84,7 +84,7 @@ function Lobby()
 
 	this.on_ready = function()
 	{
-		this.apps.system.launch();
+		this.apps.system.setup.launch();
 		// this.apps.diary.launch();
 	}
 

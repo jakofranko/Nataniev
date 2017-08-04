@@ -213,6 +213,7 @@ function Commander()
 
 	this.is_typing = function()
 	{
+    // if(document.activeElement.type == "input"){ return true; }
 		return this.input_el === document.activeElement ? true : false;
 	}
 
