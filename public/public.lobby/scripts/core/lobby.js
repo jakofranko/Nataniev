@@ -124,6 +124,7 @@ function Lobby()
 		{
 			console.log("bind",app.name);
 			lobby.touch.app = app;
+			lobby.commander.input_el.blur();
 		},
 
 		release : function()

@@ -14,9 +14,9 @@ function Keyboard()
   this.listen_onkeydown = function(event)
   {
     if(lobby.commander.is_typing() ){
-      event.preventDefault();
       if(lobby.commander.autocomplete && event.key == "Tab"){
         lobby.commander.inject(lobby.commander.autocomplete);
+        event.preventDefault();
       }
     }
     else if(lobby.commander.app){ 
@@ -31,6 +31,6 @@ function Keyboard()
 
   this.listen_onkeyup = function(event)
   {
-    event.preventDefault();
+    
   }
 }
