@@ -1,0 +1,39 @@
+[submodule "vessel/vessel.oscean"]
+	path = vessel/vessel.oscean
+	url = git@github.com:XXIIVV/vessel.oscean.git
+
+[submodule "public/public.oscean"]
+    path = public/public.oscean
+    url = git@github.com:XXIIVV/public.oscean.git
+
+[submodule "vessel/vessel.lietal"]
+    path = vessel/vessel.lietal
+    url = git@github.com:XXIIVV/vessel.lietal.git
+
+[submodule "vessel/vessel.paradise"]
+    path = vessel/vessel.paradise
+    url = git@github.com:XXIIVV/vessel.paradise.git
+
+[submodule "vessel/vessel.paradise"]
+    path = vessel/vessel.paradise
+    url = git@github.com:XXIIVV/vessel.paradise.git
+
+[submodule "public/public.paradise"]
+    path = public/public.paradise
+    url = git@github.com:XXIIVV/public.paradise.git
+
+[submodule "vessel/vessel.grimgrains"]
+    path = vessel/vessel.grimgrains
+    url = git@github.com:XXIIVV/vessel.grimgrains.git
+
+[submodule "public/public.grimgrains"]
+    path = public/public.grimgrains
+    url = git@github.com:XXIIVV/public.grimgrains.git
+
+[submodule "vessel/vessel.grimgrains"]
+    path = vessel/vessel.grimgrains
+    url = git@github.com:XXIIVV/vessel.grimgrains.git
+
+[submodule "vessel/vessel.yuri"]
+    path = vessel/vessel.yuri
+    url = git@github.com:jakofranko/vessel.yuri.git
