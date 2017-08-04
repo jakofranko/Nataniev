@@ -18,6 +18,11 @@ function Calendar()
     this.app.widget_el.addEventListener("mousedown", function(){ app.toggle() }, true);
   }
 
+  this.setup.start = function()
+  {
+    this.app.call("get_calendar",null);  
+  }
+
   this.on_launch = function()
   {
     console.log("!")

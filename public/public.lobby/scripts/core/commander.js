@@ -19,11 +19,52 @@ function Commander()
 	this.el.appendChild(this.notification_el);
 	this.el.appendChild(this.browser_el);
 
-	this.input_el.addEventListener('input', input_change, false);
-
 	this.app = null;
 	this.tree = [];
   this.autocomplete = null;
+
+  this.key_down = function(e)
+  {
+    if(e.key == "Enter"){
+      lobby.commander.validate();
+    }
+    lobby.commander.update_hint();
+  }
+
+  this.input_el.onkeydown = this.key_down;
+
+
+  this.validate = function()
+  {
+    var input = this.input_el.value;
+    var app_name = input.indexOf(".") > -1 ? input.split(".")[0] : input.split(" ")[0];
+    var app = lobby.apps[app_name];
+
+    if(!app){ console.log("Unknown app",app_name); return; }
+
+    var method_name = input.indexOf(".") < 1 ? "default" : input.split(" ")[0].split(".")[1];
+
+    if(!app.methods[method_name]){ console.warn("Unknown method "+method_name); return; }
+
+    var value = input.replace(app.name+"."+method_name,"").trim();
+    app[method_name](value);
+    this.input_el.value = "";
+    this.update_hint();
+
+    lobby.apps.terminal.log(input,">");
+  }
+
+
+  this.input_change = function()
+  {
+    // var value = lobby.commander.input_el.value;
+    // var target_app = value.indexOf(".") > -1 ? lobby.apps[value.split(".")[0]] : lobby.apps[value];
+
+    // if(target_app){ lobby.commander.select(target_app); target_app.on_input_change(value); }
+    // else{ lobby.commander.deselect(); }
+
+    // lobby.commander.update_hint();
+  }
 
 	this.install = function()
 	{
@@ -118,35 +159,6 @@ function Commander()
 		this.app = null;
 	}
 
-	this.validate = function()
-	{
-		if(!this.app){ console.warn("No app selected"); return; }
-		if(this.input_el !== document.activeElement){ return; }
-
-		var input = this.input_el.value;
-		var method_name = input.indexOf(".") < 1 ? "default" : input.split(" ")[0].split(".")[1];
-
-		if(!this.app[method_name]){ console.warn("Unknown method "+method_name); return; }
-
-		var value = input.replace(this.app.name+"."+method_name,"").trim();
-		this.app[method_name](value);
-		this.input_el.value = "";
-		this.update_hint();
-
-    lobby.apps.terminal.log(input,">");
-	}
-
-	function input_change()
-	{
-		var value = lobby.commander.input_el.value;
-		var target_app = value.indexOf(".") > -1 ? lobby.apps[value.split(".")[0]] : lobby.apps[value];
-
-		if(target_app){ lobby.commander.select(target_app); target_app.on_input_change(value); }
-		else{ lobby.commander.deselect(); }
-
-		lobby.commander.update_hint();
-	}
-
 	this.update_hint = function()
 	{
 		var html = "";
@@ -221,4 +233,6 @@ function Commander()
   {
     if(k == "Escape"){ this.hide_browser(); this.inject(""); }
   }
+
+  this.input_el.addEventListener('input', this.input_change, false);
 }

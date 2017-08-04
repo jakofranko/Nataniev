@@ -13,23 +13,18 @@ function Keyboard()
   
   this.listen_onkeydown = function(event)
   {
-    if(lobby.commander.app){ 
+    if(lobby.commander.is_typing() ){
+      event.preventDefault();
+      if(lobby.commander.autocomplete && event.key == "Tab"){
+        lobby.commander.inject(lobby.commander.autocomplete);
+      }
+    }
+    else if(lobby.commander.app){ 
       if(event.ctrlKey && event.key.toLowerCase() != "control"){
         lobby.commander.app.when.control_key(event.key.toLowerCase());
       }
       if(event.altKey && event.key.toLowerCase() != "alt"){
         lobby.commander.app.when.option_key(event.key.toLowerCase());
-      }
-      return;
-    }
-    console.log("no app selected")
-
-    return;
-
-    if(event.key == "Tab" && lobby.commander.is_typing()){
-      event.preventDefault();
-      if(lobby.commander.autocomplete){
-        lobby.commander.inject(lobby.commander.autocomplete);
       }
     }
   }

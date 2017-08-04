@@ -3,6 +3,7 @@ function App()
 	this.name = "global";
 
   this.methods = {};
+  this.methods.default = {name:"default",is_global:true};
   this.methods.exit = {name:"exit",is_global:true,shortcut:"w",run_shortcut:true};
   this.methods.toggle = {name:"toggle",is_global:true,shortcut:"h",run_shortcut:true};
   this.methods.ghost = {name:"ghost",is_global:true};
@@ -16,6 +17,11 @@ function App()
 	this.el = document.createElement("yu"); this.el.className = "app";
 	this.wrapper_el = document.createElement("yu"); this.wrapper_el.className = "wrapper";
 	this.el.appendChild(this.wrapper_el);
+
+  this.default = function()
+  {
+    this.window.show();
+  }
 
   this.hint = function(value)
   {
@@ -111,6 +117,7 @@ function App()
       this.has_launched = true;
       this.app.window.start();
       this.app.select();
+      this.start();
     },
 
     start : function()
@@ -197,7 +204,7 @@ function App()
       }
       else{
         if(!this.app.setup.has_launched){
-          this.launch();
+          this.app.setup.launch();
         }
         else{
           this.show();
@@ -207,6 +214,10 @@ function App()
 
     show : function()
     {
+      if(!this.app.setup.has_launched){
+        this.app.setup.launch();
+      }
+
       $(this.app.el).removeClass("hidden");
     },
 
@@ -351,7 +362,6 @@ function App()
   {
     console.log(this.name+"."+url+" answered",r);
   }
-
 
   this.el.addEventListener("mousedown", this.touch.down, false);
   this.el.addEventListener("mouseup", this.touch.up, false);
