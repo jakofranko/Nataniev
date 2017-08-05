@@ -10,7 +10,7 @@ function Dict()
 
   this.payload = null;
 
-  this.setup.ready = function()
+  this.setup.start = function()
   {
     this.app.reload();
   }

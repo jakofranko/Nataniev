@@ -64,7 +64,7 @@ function Commander()
   {
     var value = lobby.commander.input_el.value;
     var app_name = value.split(" ")[0].split(".")[0];
-    var method_name = value.split(" ")[0].split(".")[1];
+    var method_name = value.split(" ")[0].split(".")[1] ? value.split(" ")[0].split(".")[1] : "default";
     var param = value.split(" "); param.shift(); param = param.join(" ").trim();
     var app = lobby.apps[app_name];
 

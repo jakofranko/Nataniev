@@ -5,15 +5,19 @@ function Pong()
   this.name = "pong";
 
   this.window.size = {width:330,height:210};
-  this.window.pos = {x:120,y:30};
-  
-  this.theme = "noir";
+  this.window.pos = {x:120,y:30};  
+  this.window.theme = "noir";
+
   this.methods.new = {name:"new",shortcut:"n",run_shortcut:true};
   this.methods.stop = {name:"stop",shortcut:"q",run_shortcut:true};
 
-  this.setup.ready = function()
+  this.methods.move_left = {name:"move_left",shortcut:"arrowleft",run_shortcut:true};
+  this.methods.move_right = {name:"move_right",shortcut:"arrowright",run_shortcut:true};
+
+  this.setup.start = function()
   {
-    // this.app.new();
+    this.app.new();
+    lobby.commander.input_el.blur();
   }
 
   this.paddle = null;
@@ -21,10 +25,10 @@ function Pong()
 
   this.new = function()
   {
-    if(this.paddle && this.paddle.is_alive){ this.paddle.is_alive = false; return; }
+    // if(this.paddle && this.paddle.is_alive){ this.paddle.is_alive = false; return; }
 
     this.paddle = {x:(this.window.size.width/2)-15,is_alive:true,score:0};
-    this.ball = {x:this.window.size.width/2,y:this.window.size.height/2,prev_x:0,prev_y:0,old_x:0,old_y:0,direction:{v:true,h:null},speed:4, fx:{x:1,y:1}};
+    this.ball = {x:this.window.size.width/2,y:this.window.size.height/2,prev_x:0,prev_y:0,old_x:0,old_y:0,direction:{v:true,h:null},speed:2, fx:{x:1,y:1}};
 
     this.update();
   }
@@ -89,12 +93,12 @@ function Pong()
     this.wrapper_el.innerHTML = '<svg width="'+this.window.size.width+'" height="'+this.window.size.height+'" style="stroke:white; fill:none; stroke-width:1; stroke-linecap:butt"><path d="'+path+'"></path></svg>';
   }
 
-  this.key_arrow_left  = function()
+  this.move_left = function()
   {
     this.move_paddle(-1);
   }
 
-  this.key_arrow_right = function()
+  this.move_right = function()
   {
     this.move_paddle(1);
   }

@@ -10,10 +10,9 @@ function Diary()
 
   this.methods.refresh = {name:"refresh",shortcut:"r",run_shortcut:true};
 
-  this.setup.launch = function()
+  this.setup.start = function()
   {
     this.app.refresh();
-    this.app.ghost();
   }
 
   this.refresh = function()
@@ -24,7 +23,7 @@ function Diary()
       data: { date:"20170101" },
       success: function(response) {
         var a = JSON.parse(response);
-        app.el.innerHTML = app.draw(a.oscean)+app.draw(a.grimgrains);
+        app.wrapper_el.innerHTML = app.draw(a.oscean)+app.draw(a.grimgrains);
       }
     })
   }

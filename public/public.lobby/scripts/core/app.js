@@ -14,7 +14,7 @@ function App()
   this.methods.scale_left = {name:"scale_left",is_global:true,shortcut:"{",run_shortcut:true};
   this.methods.fill = {name:"fill",is_global:true,shortcut:"m",run_shortcut:true};
 
-	this.el = document.createElement("yu"); this.el.className = "app";
+	this.el = document.createElement("app");
 	this.wrapper_el = document.createElement("yu"); this.wrapper_el.className = "wrapper";
 	this.el.appendChild(this.wrapper_el);
 
@@ -111,7 +111,7 @@ function App()
 
     start : function()
     {
-      console.log("start",this.app.name)
+      console.info("start",this.app.name)
     },
 
     exit : function()
@@ -134,6 +134,8 @@ function App()
 
     start : function()
     {
+      console.info("start",this.app.name)
+      this.app.el.className = this.theme;
       this.move_to(this.pos);
       this.resize_to(this.size);
     },
@@ -169,6 +171,7 @@ function App()
     update : function(animate = true)
     {
       if(animate){
+        console.log(this.pos)
         $(this.app.el).animate({ left: this.pos.x, top: this.pos.y }, this.speed);
         $(this.app.el).animate({ width: this.size.width, height: this.size.height }, this.speed);  
       }
@@ -298,6 +301,23 @@ function App()
         if(method.shortcut != key){ continue; }
         console.log(this.app)
         console.log("Shortcut",method);
+        if(method.run_shortcut){
+          this.app[method.name](); 
+          return;
+        }
+        else{
+          lobby.commander.inject(this.app.name+"."+method.name+" ");
+          lobby.commander.input_el.focus()
+          return;
+        }
+      }
+    },
+
+    key : function(key)
+    {
+      for(method_id in this.app.methods){
+        var method = this.app.methods[method_id];
+        if(method.shortcut != key){ continue; }
         if(method.run_shortcut){
           this.app[method.name](); 
           return;

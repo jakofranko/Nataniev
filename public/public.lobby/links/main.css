@@ -33,17 +33,16 @@ b { font-weight: normal; font-family: 'input_mono_medium'}
 
 ln.half { line-height: 15px }
 
-.app { display: block; width:30px; height:30px; background:RGBA(255,255,255,1); position: absolute; top:60px; left:60px; padding:30px; color:black; overflow: hidden; z-index:20;}
-/*.app { transition: all 150ms;}*/
+app { display: block; width:30px; height:30px; background:RGBA(255,255,255,1); position: absolute; top:60px; left:60px; padding:30px; color:black; overflow: hidden; z-index:20;}
+app { transition: background-color 150ms;}
 
-.app .wrapper { overflow: hidden; height:100%; overflow: hidden;height: 100%}
-.app.selected { z-index:8001; }
-.app.dragged { background-color:RGBA(255,255,255,0.3) !important; z-index:8002;}
-.app.hidden { display: none }
-
-.app.ghost { background:none; color:white; z-index:10; }
-.app.noir { background: black; color:white; }
-.app.noir hl { border-bottom:1px solid white; }
+app .wrapper { overflow: hidden; height:100%; overflow: hidden;height: 100%}
+app.selected { z-index:8001; }
+app.dragged { background-color:RGBA(255,255,255,0.3) !important; z-index:8002;}
+app.hidden { display: none }
+app.ghost { background:none; color:white; z-index:10; }
+app.noir { background: black; color:white; }
+app.noir hl { border-bottom:1px solid white; }
 
 .di { display: inline-block; }
 .db { display: block; }
