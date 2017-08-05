@@ -55,18 +55,6 @@ function App()
     return html;
   }
 
-  this.select = function()
-  {
-    lobby.commander.deselect();
-    $(this.el).addClass("selected");
-    lobby.commander.select(this);
-  }
-
-  this.deselect = function()
-  {
-    $(this.el).removeClass("selected");
-  }
-
   var target = this;
   
   // 
@@ -111,12 +99,13 @@ function App()
 
     launch : function()
     {
+      if(this.has_launched){ return; }
+
       console.log("launch",this.app.name)
       lobby.el.appendChild(this.app.el);
       this.start();
       this.has_launched = true;
       this.app.window.start();
-      this.app.select();
       this.start();
     },
 
@@ -233,13 +222,13 @@ function App()
       fill : function()
       {
         this.app.window.move_to({x:30,y:30});
-        this.app.window.resize_to({width:lobby.size.width - 120, height: lobby.size.height - 150});
+        this.app.window.resize_to({width:lobby.window.size.width - 120, height: lobby.window.size.height - 150});
       },
 
       full : function()
       {
         this.app.window.move_to({x:-30,y:-30});
-        this.app.window.resize_to(lobby.size);
+        this.app.window.resize_to(lobby.window.size);
       }
     }
   }
@@ -279,7 +268,7 @@ function App()
   this.when = 
   {
     app : target,
-
+    
     move : function()
     {
       console.log("moved")
@@ -307,6 +296,7 @@ function App()
       for(method_id in this.app.methods){
         var method = this.app.methods[method_id];
         if(method.shortcut != key){ continue; }
+        console.log(this.app)
         console.log("Shortcut",method);
         if(method.run_shortcut){
           this.app[method.name](); 

@@ -3,7 +3,7 @@ function Terminal()
 	App.call(this);
 
   this.name = "terminal";
-  this.size = {width:lobby.size.width,height:30};
+  this.size = {width:lobby.window.size.width,height:30};
   this.origin = {x:0,y:150};
   this.theme = "ghost";
   this.methods.say = {name:"say"};
@@ -12,9 +12,9 @@ function Terminal()
 
   this.widget_el = document.createElement("t");
 
-  this.setup.ready = function()
+  this.setup.start = function()
   {
-    // this.app.say("init");
+    this.app.say("init");
   }
 
   this.say = function(q)
@@ -48,7 +48,7 @@ function Terminal()
     }
 
     this.wrapper_el.innerHTML += html;
-    this.window.resize_to({width:lobby.size.width - 60,height:this.logs.length * 15})
+    this.window.resize_to({width:lobby.window.size.width - 60,height:this.logs.length * 15})
   }
 }
 

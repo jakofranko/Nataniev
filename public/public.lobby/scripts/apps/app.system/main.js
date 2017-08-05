@@ -17,9 +17,8 @@ function System()
   this.setup.ready = function()
   {
     lobby.commander.install_widget(this.app.widget_el);
-    this.app.on_window_resize();
-
-    this.app.widget_el.addEventListener("mousedown", function(){ this.app.toggle() }, true);
+    this.app.widget_el.addEventListener("mousedown", function(){ this.app.window.toggle() }, true);
+    this.app.when.resize();
   }
 
   this.setup.start = function()
@@ -59,9 +58,9 @@ function System()
     }
   }
 
-  this.on_window_resize = function()
+  this.when.resize = function()
   {
-    this.widget_el.innerHTML = lobby.size.width+"x"+lobby.size.height;
+    this.app.widget_el.innerHTML = lobby.window.size.width+"x"+lobby.window.size.height;
   }
 
   this.set_wallpaper = function(val, is_passive = false)

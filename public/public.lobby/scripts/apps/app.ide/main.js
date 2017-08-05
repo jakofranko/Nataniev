@@ -8,11 +8,11 @@ function Ide()
   this.window.pos = {x:120,y:120};
 
   this.methods.new = {name:"new"};
-  this.methods.load = {name:"load", shortcut:"l"};
-  this.methods.save = {name:"save", shortcut:"s"};
   this.methods.replace = {name:"replace", shortcut:"r"};
   this.methods.end = {name:"end"};
   this.methods.find = {name:"find", shortcut:"f"};
+
+  this.setup.includes = ["load","save"];
 
   this.formats = ["js","rb","html","css","ma","mh","rin","mar"];
 
@@ -39,9 +39,9 @@ function Ide()
   this.textarea_el.addEventListener('mousedown', mouse_down, false);
   this.textarea_el.addEventListener('mouseup', mouse_up, false);
 
-  this.setup.ready = function()
+  this.setup.start = function()
   {
-
+    console.log("!")
   }
   
   function key_down(e)
@@ -87,40 +87,6 @@ function Ide()
     }
   }
 
-  this.load = function(val, is_passive = false)
-  {
-    if(is_passive){
-      lobby.commander.show_browser();
-      lobby.commander.browse_candidates(val,this.formats);
-    }
-    else{
-      this.show();
-      lobby.commander.hide_browser();
-      this.load_file(lobby.commander.select_candidate(val,this.formats));
-    }
-    return val;
-  }
-
-  this.on_input_change = function(value)
-  {
-    if(value.split(" ")[0] == "ide.save"){
-      if(this.location){
-        this.status_el.innerHTML = "Overwrite <b class='f0'>"+this.location+"</b>?";
-      }
-      else{
-        this.status_el.innerHTML = "No file selected.";  
-      }
-    }
-    else if(value.split(" ")[0] == "ide.load"){
-      var val = value.split(" "); val.shift(); val = val.join(" ").trim();
-      this.load(val,true);
-    }
-    else if(value.split(" ")[0] == "ide.find"){
-      var val = value.split(" "); val.shift(); val = val.join(" ").trim();
-      this.find(val,true);
-    }
-  }
-
   this.view_editor = function()
   {
     this.textarea_el.style.display = "block";
@@ -149,24 +115,6 @@ function Ide()
         app.textarea_el.scrollTop = 0;
       }
     })
-  }
-
-  this.save = function()
-  {
-    if(!this.location){ return; }
-
-    $.ajax({url: '/ide.save',
-      type: 'POST', 
-      data: { file_path: this.location, file_content: this.textarea_el.value },
-      success: function(data) {
-        console.log(data);
-      }
-    })
-    
-    lobby.commander.notify("Saved.");
-    this.textarea_el.style.display = "block";
-    this.navi_el.style.display = "block";
-    this.update_status();
   }
 
   this.replace = function(val)

@@ -23,47 +23,60 @@ function Commander()
 	this.tree = [];
   this.autocomplete = null;
 
-  this.key_down = function(e)
+  this.bind = function(app)
   {
-    if(e.key == "Enter"){
+    this.release();
+    console.log("bind",app.name);
+    this.app = app;
+  }
+
+  this.release = function()
+  {
+    if(!this.app){ return; }
+    console.log("release",this.app.name);
+    this.app = null;
+  }
+
+  this.key_down = function(e = null)
+  {
+    if(e && e.key == "Enter"){
       lobby.commander.validate();
     }
+
+    // Check for passive
+    var value = lobby.commander.input_el.value;
+    if(value.indexOf(".") > -1 && value.indexOf(" ")){
+      var app_name = value.split(" ")[0].split(".")[0];
+      var method_name = value.split(" ")[0].split(".")[1];
+      var param = value.split(" "); param.shift(); param = param.join(" ").trim();
+      var app = lobby.apps[app_name];
+      
+      if(app && app.methods[method_name] && app.methods[method_name].passive){
+        app[method_name](param,true);
+        lobby.commander.bind(app);
+      }
+    }
+
     lobby.commander.update_hint();
   }
 
-  this.input_el.onkeydown = this.key_down;
-
-
   this.validate = function()
   {
-    var input = this.input_el.value;
-    var app_name = input.indexOf(".") > -1 ? input.split(".")[0] : input.split(" ")[0];
+    var value = lobby.commander.input_el.value;
+    var app_name = value.split(" ")[0].split(".")[0];
+    var method_name = value.split(" ")[0].split(".")[1];
+    var param = value.split(" "); param.shift(); param = param.join(" ").trim();
     var app = lobby.apps[app_name];
 
     if(!app){ console.log("Unknown app",app_name); return; }
-
-    var method_name = input.indexOf(".") < 1 ? "default" : input.split(" ")[0].split(".")[1];
-
     if(!app.methods[method_name]){ console.warn("Unknown method "+method_name); return; }
 
-    var value = input.replace(app.name+"."+method_name,"").trim();
-    app[method_name](value);
+    app[method_name](param);
+    lobby.commander.bind(app);
     this.input_el.value = "";
     this.update_hint();
 
-    lobby.apps.terminal.log(input,">");
-  }
-
-
-  this.input_change = function()
-  {
-    // var value = lobby.commander.input_el.value;
-    // var target_app = value.indexOf(".") > -1 ? lobby.apps[value.split(".")[0]] : lobby.apps[value];
-
-    // if(target_app){ lobby.commander.select(target_app); target_app.on_input_change(value); }
-    // else{ lobby.commander.deselect(); }
-
-    // lobby.commander.update_hint();
+    lobby.apps.terminal.log(value,">");
   }
 
 	this.install = function()
@@ -147,7 +160,6 @@ function Commander()
 	this.select = function(app)
 	{
 		this.app = app;
-		this.update();
 		lobby.commander.update_hint();
 	}
 
@@ -199,16 +211,11 @@ function Commander()
 		return html
 	}
 
-	this.update = function()
-	{
-
-	}
-
 	this.inject = function(val)
 	{
     this.autocomplete = null;
 		this.input_el.value = val;
-		input_change();
+    this.key_down();
 	}
 
 	this.install_widget = function(el)
@@ -234,5 +241,5 @@ function Commander()
     if(k == "Escape"){ this.hide_browser(); this.inject(""); }
   }
 
-  this.input_el.addEventListener('input', this.input_change, false);
+  this.input_el.onkeydown = this.key_down;
 }

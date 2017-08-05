@@ -2,27 +2,19 @@ function Lobby()
 {
   this.el = document.createElement("yu"); this.el.id = "lobby";
   this.grid_el = document.createElement("yu"); this.grid_el.id = "grid";
-  this.size = {width:0,height:0};
   this.commander = new Commander();
   this.keyboard = new Keyboard();
   this.apps = {};
 
-  window.addEventListener('resize', on_resize, false);
-
 	this.init = function()
 	{
-		document.body.appendChild(this.el);
-		this.el.appendChild(this.grid_el);
-		this.el.appendChild(this.commander.el);
+    document.body.appendChild(this.el);
+    this.el.appendChild(this.grid_el);
+    this.el.appendChild(this.commander.el);
 
-		this.start();
-	}
-
-	this.start = function()
-	{
 		this.keyboard.start();
 		this.commander.install();
-		lobby.update_size();
+		lobby.window.update();
 
 		this.summon.invoke("Terminal");
 		this.summon.invoke("Clock");
@@ -34,9 +26,11 @@ function Lobby()
 		this.summon.invoke("Diary");
 		this.summon.invoke("Pong");
 		this.summon.invoke("Marabu");
-
-		setTimeout(function(){ lobby.on_ready(); }, 1000);
 	}
+
+  // 
+  // Summon
+  // 
 
 	this.summon = 
 	{
@@ -73,42 +67,57 @@ function Lobby()
 
 		complete : function()
 		{
+      console.log("complete",this.known);
 			for(app_id in this.known){
 				var app = new window[this.known[app_id]]();
 				app.setup.install();
 			}
 			lobby.commander.update_hint();
-		}
-	}
-	
+		},
 
-	this.on_ready = function()
-	{
-		// this.apps.system.setup.launch();
-		// this.apps.diary.launch();
-	}
-
-	function on_resize()
-	{
-		lobby.update_size();
-
-		for(app in lobby.apps){
-			lobby.apps[app].on_window_resize();
-		}
+    ready : function()
+    {
+      lobby.apps.system.setup.launch();
+      lobby.app.diary.setup.launch();
+    }
 	}
 
-	this.update_size = function()
-	{
-		var new_size = {width: parseInt(window.innerWidth/30.0) * 30 - 60,height: parseInt(window.innerHeight/30.0) * 30 - 30}
-		lobby.el.style.width = new_size.width+"px";
-		lobby.el.style.height = new_size.height+"px";
-		this.size = new_size;
-	}
+  // 
+  // Window
+  // 
 
-	this.screen_center = function()
-	{
-		return {width: parseInt(window.innerWidth/2/230.0) * 30 - 60,height: parseInt(window.innerHeight/2/30.0) * 30 - 30}
-	}
+  this.window = 
+  {
+    size : {width: parseInt(window.innerWidth/30.0) * 30 - 60,height: parseInt(window.innerHeight/30.0) * 30 - 30},
+
+    update : function()
+    {
+      var new_size = {width: parseInt(window.innerWidth/30.0) * 30 - 60,height: parseInt(window.innerHeight/30.0) * 30 - 30}
+      lobby.el.style.width = new_size.width+"px";
+      lobby.el.style.height = new_size.height+"px";
+      this.size = new_size;
+    },
+
+    center : function()
+    {
+      return {width: parseInt(window.innerWidth/2/230.0) * 30 - 60,height: parseInt(window.innerHeight/2/30.0) * 30 - 30}
+    }
+  }
+
+  // 
+  // WHEN
+  // 
+
+  this.when = 
+  {
+    resize : function()
+    {
+      lobby.window.update();
+      for(app in lobby.apps){
+        lobby.apps[app].when.resize();
+      }
+    }
+  }
 
 
   // 
@@ -168,9 +177,12 @@ function Lobby()
     	lobby.touch.from = null;
     }
 
+
 	}
 
   this.el.addEventListener("mousedown", this.touch.down, false);
   this.el.addEventListener("mouseup", this.touch.up, false);
   this.el.addEventListener("mousemove", this.touch.move, false);
+
+  window.addEventListener('resize', this.when.resize, false);
 }

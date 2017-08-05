@@ -2,9 +2,13 @@
 ~ NOTE : YAML
 ~ AUTH : Devine Lu Linvega
 
+GRIMGRAINS
+  Diary
+    Merge daily results into a graph
+    Move logo at the top
+
 HUNDRED RABBITS
   Video
-    Niue Capsule
     August Episode
     Nataniev Capsule
   Soundtrack
@@ -20,28 +24,13 @@ LOBBY
     Splash
     .set_theme
     Add soyuz theme(orange/black)
-  Commander
-    Update tree
-    Autocomplete
-  Branding
-    Record video
-    Video -> AFK
-    Video -> Calendar
-    Video -> Ronin
-    Video -> Marabu
-    Video -> Ide(intro)
-    Video -> Ide(Update Grimgrains)
-    Video -> Twitter client
+    Update tree from commander
   App
-    .reload
+    Dynamic reload
     Migrate CSS to highlights/backgrounds/etc.. and themes
     Highlight color
     Implement invoke
-
-TWITTER
-  Generic
-    Rebuild APIs
-    Rebuild frontend with new templates
+    Improve launch animation with background color fade
 
 IDE
   Editor
@@ -82,6 +71,8 @@ ROTONDE
 OSCEAN
   Generic
     Write Lobby docs
+    Write sailing notes docs
+    Write breathing exercises
   Horaire
     Migrate to equal-month calendar
 
@@ -103,6 +94,7 @@ THOUSAND ROOMS
 CORTEGE
   Large Maze
   iPhone Ratio maze
+  Send invoice
 
 DONSOL
   Generic
