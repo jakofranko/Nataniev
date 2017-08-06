@@ -17,7 +17,7 @@ function Ide()
   this.formats = ["js","rb","html","css","ma","mh","rin","mar"];
 
   this.navi_el = document.createElement("yu"); this.navi_el.className = "at al lh15 w4 ml mt";
-  this.status_el = document.createElement("yu"); this.status_el.className = "pa ab al lh30 w4 mb15 ml wf f9";
+  this.status_el = document.createElement("yu"); this.status_el.className = "pa ab al lh30 w4 mb ml wf f9";
 
   this.textarea_el = document.createElement("textarea"); this.textarea_el.className = "wf_7 pl5 pa hf_3 pdl";
   this.textarea_el.style.display = "none";

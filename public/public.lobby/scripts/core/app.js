@@ -5,14 +5,8 @@ function App()
   this.methods = {};
   this.methods.default = {name:"default",is_global:true};
   this.methods.exit = {name:"exit",is_global:true,shortcut:"w",run_shortcut:true};
-  this.methods.toggle = {name:"toggle",is_global:true,shortcut:"h",run_shortcut:true};
+  // this.methods.toggle = {name:"toggle",is_global:true,shortcut:"h",run_shortcut:true}; // TODO
   this.methods.ghost = {name:"ghost",is_global:true};
-  this.methods.warp_right = {name:"warp_right",is_global:true,shortcut:"]",run_shortcut:true};
-  this.methods.warp_left = {name:"warp_left",is_global:true,shortcut:"[",run_shortcut:true};
-  this.methods.warp_center = {name:"warp_center",is_global:true,shortcut:"=",run_shortcut:true};
-  this.methods.scale_right = {name:"scale_right",is_global:true,shortcut:"}",run_shortcut:true};
-  this.methods.scale_left = {name:"scale_left",is_global:true,shortcut:"{",run_shortcut:true};
-  this.methods.fill = {name:"fill",is_global:true,shortcut:"m",run_shortcut:true};
 
 	this.el = document.createElement("app");
 	this.wrapper_el = document.createElement("yu"); this.wrapper_el.className = "wrapper";
@@ -99,14 +93,13 @@ function App()
 
     launch : function()
     {
-      if(this.has_launched){ return; }
+      if(this.has_launched == true){ return; }
 
       console.log("launch",this.app.name)
       lobby.el.appendChild(this.app.el);
       this.start();
       this.has_launched = true;
       this.app.window.start();
-      this.start();
     },
 
     start : function()
@@ -131,13 +124,14 @@ function App()
     pos : { x: 0, y: 0 },
     theme : "blanc",
     speed : 50,
+    is_visible : false,
 
     start : function()
     {
-      console.info("start",this.app.name)
       this.app.el.className = this.theme;
       this.move_to(this.pos);
       this.resize_to(this.size);
+      this.show();
     },
 
     move_by : function(pos)
@@ -167,19 +161,6 @@ function App()
       this.update();
       this.app.when.resize();
     },
-    
-    update : function(animate = true)
-    {
-      if(animate){
-        console.log(this.pos)
-        $(this.app.el).animate({ left: this.pos.x, top: this.pos.y }, this.speed);
-        $(this.app.el).animate({ width: this.size.width, height: this.size.height }, this.speed);  
-      }
-      else{
-        $(this.app.el).css("left",this.pos.x).css("top",this.pos.y);
-        $(this.app.el).css("width",this.size.width).css("height",this.size.height);
-      }
-    },
 
     align : function()
     {
@@ -189,18 +170,34 @@ function App()
       $(this.app.el).animate({ left: target_pos.x, top: target_pos.y }, 300);
     },
 
+    set_theme : function(theme_name)
+    {
+      this.theme = theme_name;
+      this.app.el.className = theme_name;
+    },
+    
+    update : function(animate = true)
+    {
+      if(animate){
+        $(this.app.el).animate({ left: this.pos.x, top: this.pos.y }, this.speed);
+        $(this.app.el).animate({ width: this.size.width, height: this.size.height }, this.speed);  
+      }
+      else{
+        $(this.app.el).css("left",this.pos.x).css("top",this.pos.y);
+        $(this.app.el).css("width",this.size.width).css("height",this.size.height);
+      }
+    },
+
     toggle : function()
     {
-      if(this.is_visible){
+      if(this.is_visible == true){
         this.hide();
       }
       else{
         if(!this.app.setup.has_launched){
           this.app.setup.launch();
         }
-        else{
-          this.show();
-        }
+        this.show();
       }
     },
 
@@ -209,13 +206,18 @@ function App()
       if(!this.app.setup.has_launched){
         this.app.setup.launch();
       }
+      if(this.app.window.is_visible == true){
+        return;
+      }
 
       $(this.app.el).removeClass("hidden");
+      this.is_visible = true;
     },
 
     hide : function()
     {
       $(this.app.el).addClass("hidden");
+      this.is_visible = false;
     },
 
     organize : 
@@ -232,6 +234,18 @@ function App()
       {
         this.app.window.move_to({x:-30,y:-30});
         this.app.window.resize_to(lobby.window.size);
+      },
+
+      left : function()
+      {
+        this.app.window.move_to({x:-30,y:-30});
+        this.app.window.resize_to(lobby.window.horizontal_half());
+      },
+
+      right : function()
+      {
+        this.app.window.move_to({x:lobby.window.center().x,y:-30});
+        this.app.window.resize_to(lobby.window.horizontal_half());
       }
     }
   }
@@ -291,6 +305,11 @@ function App()
         case "arrowleft": this.app.window.move_by({x:-30,y:0}); break;
         case "arrowright": this.app.window.move_by({x:30,y:0}); break;
         case "escape": this.app.window.organize.fill(); break;
+        case "‘": this.app.window.organize.right(); break;
+        case "“": this.app.window.organize.left(); break;
+        case "˙": this.app.window.toggle(); break;
+        case "…": this.app.window.set_theme("noir"); break;
+        case "æ": this.app.window.set_theme("blanc"); break;
       }
     },
 

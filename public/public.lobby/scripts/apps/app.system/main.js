@@ -17,7 +17,10 @@ function System()
   this.setup.ready = function()
   {
     lobby.commander.install_widget(this.app.widget_el);
-    this.app.widget_el.addEventListener("mousedown", function(){ this.app.window.toggle() }, true);
+
+    var app = this.app;
+    app.widget_el.addEventListener("mousedown", function(){ app.window.toggle() }, true);
+    
     this.app.when.resize();
   }
 

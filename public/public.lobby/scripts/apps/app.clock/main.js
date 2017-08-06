@@ -16,10 +16,11 @@ function Clock()
   this.setup.ready = function()
   {
     lobby.commander.install_widget(this.app.widget_el);
-    lobby.apps.clock.update();
 
     var app = this.app;
-    this.app.widget_el.addEventListener("mousedown", function(){ app.toggle() }, true);
+    app.widget_el.addEventListener("mousedown", function(){ app.window.toggle() }, true);
+
+    lobby.apps.clock.update();
   }
 
   this.time = function()
@@ -44,7 +45,7 @@ function Clock()
     var t_s      = new String(t);
     var t_a      = [t_s.substr(0,3),t_s.substr(3,3)];
 
-    var target   = t_a[0]+(this.is_visible ? ":"+t_a[1] : '');
+    var target   = t_a[0]+(this.window.is_visible ? ":"+t_a[1] : '');
 
     if(this.widget_el.innerHTML != target){
       this.widget_el.innerHTML = target;
@@ -53,7 +54,7 @@ function Clock()
 
   this.redraw_app = function()
   {
-    if(!this.is_visible){ return; }
+    if(!this.window.is_visible){ return; }
 
     var t        = this.time();
     var t_s      = new String(t);
@@ -75,8 +76,14 @@ function Clock()
     path += "M"+needle_5+","+needle_4+" L"+needle_5+","+h+" ";
     path += "M"+needle_5+","+needle_6+" L"+w+","+needle_6+" ";
 
+    // Outline
+    path += "M0.5,0.5 L"+(w-0.5)+",0.5 ";
+    path += "M0.5,0.5 L0.5,"+(h-0.5)+" ";
+    path += "M"+(w-0.5)+","+(h-0.5)+" L0.5,"+(h-0.5)+" ";
+    path += "M"+(w-0.5)+","+(h-0.5)+" L"+(w-0.5)+",0.5 ";
+
     this.widget_el.innerHTML = t_a[0]+":"+t_a[1];
-    this.wrapper_el.innerHTML = '<svg width="'+w+'" height="'+h+'" style="stroke:black; fill:none; stroke-width:1; stroke-linecap:butt;outline-color: black;outline-width: 1px;outline-offset: -1px;outline-style:solid"><path d="'+path+'"></path></svg>';
+    this.wrapper_el.innerHTML = '<svg width="'+w+'" height="'+h+'" style="fill:none; stroke-width:1; stroke-linecap:butt;"><path class="fh" d="'+path+'"></path></svg>';
   }
 
   this.on_resize = function()

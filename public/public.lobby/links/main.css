@@ -157,5 +157,12 @@ app.noir hl { border-bottom:1px solid white; }
 .noir .sl { border-left: 1px solid #555; }
 
 
+/* HIGHLIGHTS */
+
+app.noir .fh { color:white; stroke:white; }
+app.noir .bh { background:black;}
+
+app.blanc .fh { color:black; stroke:black; }
+app.blanc .bh { background:white;}
 
 
