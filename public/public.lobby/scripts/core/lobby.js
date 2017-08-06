@@ -161,19 +161,24 @@ function Lobby()
 	{
 		app : null,
     from : null,
+    history : 100,
 
 		bind : function(app)
 		{
-			console.log("bind",app.name);
+			console.log("lobby.bind",app.name);
 			lobby.touch.app = app;
+      app.window.depth = this.history;
+      app.window.update(false);
 			lobby.commander.input_el.blur();
+
+      this.history += this.history > 4000 ? 0 : 1;
 		},
 
 		release : function()
 		{
     	if(!lobby.touch.app){ return; }
 
-			console.log("released",lobby.touch.app.name);
+			console.log("lobby.release",lobby.touch.app.name);
 			lobby.touch.app.window.align();
 			lobby.touch.app = null;
 		},

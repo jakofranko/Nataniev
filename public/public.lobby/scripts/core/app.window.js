@@ -9,6 +9,7 @@ function App_Window()
     pos : { x: 0, y: 0 },
     theme : "blanc",
     speed : 50,
+    depth : 0,
     is_visible : false,
 
     start : function()
@@ -71,6 +72,7 @@ function App_Window()
         $(this.app.el).css("left",this.pos.x).css("top",this.pos.y);
         $(this.app.el).css("width",this.size.width).css("height",this.size.height);
       }
+      $(this.app.el).css("z-index",this.depth);
     },
 
     toggle : function()

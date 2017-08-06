@@ -28,14 +28,14 @@ function Commander()
   this.bind = function(app)
   {
     this.release();
-    console.log("bind",app.name);
+    console.log("commander.bind",app.name);
     this.app = app;
   }
 
   this.release = function()
   {
     if(!this.app){ return; }
-    console.log("release",this.app.name);
+    console.log("commander.release",this.app.name);
     this.app = null;
   }
 
