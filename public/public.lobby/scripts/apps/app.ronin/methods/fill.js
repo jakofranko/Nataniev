@@ -11,4 +11,4 @@ lobby.apps.ronin.fill = function(color)
   context.closePath();
 }
 
-lobby.apps.ronin.setup.confirm("fill");
+lobby.apps.ronin.setup.confirm("methods/fill");

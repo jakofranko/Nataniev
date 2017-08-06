@@ -1,21 +1,50 @@
+function Layer(size)
+{
+  this.el = document.createElement("canvas");
+
+  this.setup = function(size)
+  {
+    this.el.width = size.width;
+    this.el.height = size.height;
+    this.el.style.width = (size.width/2)+"px";
+    this.el.style.height = (size.height/2)+"px";
+    this.el.style.position = "absolute";
+  }
+
+  this.context = function()
+  {
+    return this.el.getContext('2d');
+  }
+
+  this.mark = function(x,y)
+  {
+    this.context().beginPath();
+    this.context().rect(x,y,2,2);
+    this.context().fillStyle = "red";
+    this.context().fill();
+    this.context().closePath();
+  }
+}
+
 function Ronin()
 {
   App.call(this);
 
   this.name = "ronin";
-  this.size = {width:795,height:450};
-  this.origin = {x:60,y:60};
+  this.window.size = {width:300,height:300};
+  this.window.pos = {x:60,y:60};
 
-  this.setup.includes = ["layer","new","fill","brush","path","load","resize","type","magnet","import","export"];
+  this.setup.includes = ["methods/clear","methods/fill","methods/brush","methods/path","methods/load","methods/resize","methods/type","methods/magnet","methods/import","methods/export"];
   this.project = {};
-  this.project.size = this.size;
+  this.project.size = this.window.size;
+  this.project.zoom = 2;
   this.tools = {};
 
   this.formats = ["rin"];
 
-  this.setup.ready = function()
+  this.setup.start = function()
   {
-    // this.app.new();
+    this.app.clear();
   }
 
   this.on_input_change = function(value)
@@ -49,6 +78,11 @@ function Ronin()
     this.mouse_is_down = false;
 
     lobby.apps.ronin.tools.brush.mouse_move(e.offsetX*2,e.offsetY*2);
+  }
+
+  this.status = function()
+  {
+    return this.project.size.width+"x"+this.project.size.height+"[*"+this.project.zoom+"]";
   }
 
   this.wrapper_el.addEventListener('mousedown', this.mouse_down, false);

@@ -10,6 +10,8 @@ function Diary()
 
   this.methods.refresh = {name:"refresh",shortcut:"r",run_shortcut:true};
 
+  this.payload = null;
+
   this.setup.start = function()
   {
     this.app.refresh();
@@ -23,7 +25,9 @@ function Diary()
       data: { date:"20170101" },
       success: function(response) {
         var a = JSON.parse(response);
+        app.payload = a;
         app.wrapper_el.innerHTML = app.draw(a.oscean)+app.draw(a.grimgrains);
+        lobby.commander.update_status();
       }
     })
   }
@@ -52,6 +56,18 @@ function Diary()
     html += "<t style='line-height: 30px;font-size: 15px;position: absolute;top:25px'>"+d.unit+"</t>";
     html += "</yu>";
 
+    return html;
+  }
+
+  this.status = function()
+  {
+    var html = "";
+
+    for(project_id in this.payload){
+      var project = this.payload[project_id];
+      if(!project.tips){ continue; }
+      html += "<b>"+project_id.toUpperCase()+"</b> > "+project.tips+" | ";
+    }
     return html;
   }
 }

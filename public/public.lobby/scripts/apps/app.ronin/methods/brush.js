@@ -38,4 +38,4 @@ lobby.apps.ronin.tools.brush =
   },
 }
 
-lobby.apps.ronin.setup.confirm("brush");
+lobby.apps.ronin.setup.confirm("methods/brush");

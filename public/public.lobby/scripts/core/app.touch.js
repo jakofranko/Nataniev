@@ -12,6 +12,7 @@ function App_Touch()
       lobby.touch.bind(target);
       $(target.el).addClass("dragged");
       lobby.commander.bind(target);
+      lobby.commander.update_status();
     },
 
     move : function(e)

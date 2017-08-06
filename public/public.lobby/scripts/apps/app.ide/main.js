@@ -12,7 +12,7 @@ function Ide()
   this.methods.end = {name:"end"};
   this.methods.find = {name:"find", shortcut:"f"};
 
-  this.setup.includes = ["load","save"];
+  this.setup.includes = ["methods/load","methods/save"];
 
   this.formats = ["js","rb","html","css","ma","mh","rin","mar"];
 

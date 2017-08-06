@@ -1,4 +1,4 @@
-lobby.apps.ronin.methods.import = {name:"import",params:"path [width:200,height:200]",shortcut:"i"}
+lobby.apps.ronin.methods.import = {name:"import",params:"path [width:200,height:200]",shortcut:"i",passive:true}
 
 lobby.apps.ronin.import = function(param)
 {
@@ -7,12 +7,12 @@ lobby.apps.ronin.import = function(param)
     if(is_passive){
       lobby.commander.show_browser();
       lobby.commander.browse_candidates(val,["jpg","png"]);
+      return;
     }
-    else{
-      this.show();
-      lobby.commander.hide_browser();
-      this.import_file(lobby.commander.select_candidate(val,["jpg","png"]));
-    }
+
+    this.window.show();
+    lobby.commander.hide_browser();
+    this.import_file(lobby.commander.select_candidate(val,["jpg","png"]));
     return val;
   }
 
@@ -31,13 +31,17 @@ lobby.apps.ronin.import = function(param)
     {
       var width = base_image.naturalWidth;
       var height = base_image.naturalHeight;
+      
+      lobby.apps.ronin.project.size = {width:width,height:height};
+      lobby.apps.ronin.clear();
       // Scale with only 1 unit
       width  = isNaN(width) && height > 0 ? (height*base_image.naturalWidth)/base_image.naturalHeight : width;
       height = isNaN(height) && width > 0 ? (width*base_image.naturalHeight)/base_image.naturalWidth : height;
+
       
       lobby.apps.ronin.layers.main.context().drawImage(base_image, position.x, position.y, width, height);
     }
   }
 }
 
-lobby.apps.ronin.setup.confirm("import");
+lobby.apps.ronin.setup.confirm("methods/import");

@@ -30,7 +30,6 @@ function Commander()
     this.release();
     console.log("bind",app.name);
     this.app = app;
-    this.update_status();
   }
 
   this.release = function()
@@ -42,6 +41,8 @@ function Commander()
 
   this.key_down = function(e = null)
   {
+    lobby.commander.hide_browser();
+
     if(e && e.key == "Enter"){
       lobby.commander.validate();
     }
@@ -78,6 +79,7 @@ function Commander()
     lobby.commander.bind(app);
     this.input_el.value = "";
     this.update_hint();
+    this.update_status();
 
     lobby.apps.terminal.log(value,">");
   }
@@ -187,7 +189,6 @@ function Commander()
 
 	this.update_hint = function(injection = null)
 	{
-    console.log(injection)
 		var html = "";
 		var value = this.input_el.value;
 		var app_name = value.split(".")[0].toLowerCase();

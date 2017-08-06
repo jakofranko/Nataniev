@@ -25,7 +25,6 @@ LOBBY
     .set_theme
     Add soyuz theme(orange/black)
     Update tree from commander
-    Add status bar to commander
   App
     Dynamic reload
 

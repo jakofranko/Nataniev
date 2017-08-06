@@ -13,4 +13,4 @@ lobby.apps.ide.load = function(val, is_passive = false)
   this.load_file(lobby.commander.select_candidate(val,this.formats));
 }
 
-lobby.apps.ide.setup.confirm("load");
+lobby.apps.ide.setup.confirm("methods/load");

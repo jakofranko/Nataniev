@@ -12,4 +12,4 @@ lobby.apps.ronin.path = function(stroke)
   context.closePath();
 }
 
-lobby.apps.ronin.setup.confirm("path");
+lobby.apps.ronin.setup.confirm("methods/path");

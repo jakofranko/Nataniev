@@ -5,4 +5,4 @@ lobby.apps.ronin.export = function(param)
 
 }
 
-lobby.apps.ronin.setup.confirm("export");
+lobby.apps.ronin.setup.confirm("methods/export");
