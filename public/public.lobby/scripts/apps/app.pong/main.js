@@ -93,14 +93,10 @@ function Pong()
     this.wrapper_el.innerHTML = '<svg width="'+this.window.size.width+'" height="'+this.window.size.height+'" class="fh" style=" fill:none; stroke-width:1; stroke-linecap:butt"><path d="'+path+'"></path></svg>';
   }
 
-  this.move_left = function()
+  this.when.key = function(key)
   {
-    this.move_paddle(-1);
-  }
-
-  this.move_right = function()
-  {
-    this.move_paddle(1);
+    if(key == "arrowright"){ this.app.move_paddle(1); }
+    if(key == "arrowleft"){ this.app.move_paddle(-1); }
   }
 
   this.move_paddle = function(mod)

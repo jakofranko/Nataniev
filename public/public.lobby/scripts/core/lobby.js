@@ -2,6 +2,7 @@ function Lobby()
 {
   this.el = document.createElement("yu"); this.el.id = "lobby";
   this.grid_el = document.createElement("yu"); this.grid_el.id = "grid";
+  this.wallpaper_el = document.createElement("yu"); this.wallpaper_el.id = "wallpaper";
   this.commander = new Commander();
   this.keyboard = new Keyboard();
   this.apps = {};
@@ -12,7 +13,9 @@ function Lobby()
 
     document.body.appendChild(this.el);
     this.el.appendChild(this.grid_el);
+    this.el.appendChild(this.wallpaper_el);
     this.el.appendChild(this.commander.el);
+    
 
 		this.keyboard.start();
 		this.commander.install();
@@ -49,7 +52,6 @@ function Lobby()
 
 		confirm : function(name)
 		{
-			console.log("confirm",name);
 			this.known.push(name);
 			var q = [];
 			for(app_id in this.queue){
@@ -90,7 +92,6 @@ function Lobby()
       for(app_id in lobby.apps){
         var app = lobby.apps[app_id];
         if(app.setup.is_complete == false){
-          console.log("waiting for "+app.name,app.setup.queue)
           return;
         }
       }
@@ -100,6 +101,7 @@ function Lobby()
     ready : function()
     {
       console.info("Ready.");
+      lobby.el.className = "ready";
       lobby.commander.update_hint();
     
       // lobby.apps.system.setup.launch();
