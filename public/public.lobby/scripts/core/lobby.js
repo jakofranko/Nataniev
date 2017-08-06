@@ -128,12 +128,12 @@ function Lobby()
 
     center : function()
     {
-      return {x: parseInt(window.innerWidth/2/30.0) * 30 - 60,y: parseInt(window.innerHeight/2/30.0) * 30 - 30}
+      return {x: parseInt(window.innerWidth/2/30.0) * 30 - 30,y: parseInt(window.innerHeight/2/30.0) * 30 - 30}
     },
 
     horizontal_half : function()
     {
-      return {width: parseInt(window.innerWidth/2/30.0) * 30 - 60,height: parseInt(window.innerHeight/30) * 30 - 60}
+      return {width: parseInt(window.innerWidth/2/30.0) * 30 - 60,height: parseInt(window.innerHeight/30) * 30 - 120}
     }
   }
 

@@ -16,7 +16,7 @@ function App_Events()
       
     },
 
-    option_key : function(key) // Global
+    option_key : function(key,code) // Global
     {
       switch(key)
       {
@@ -24,13 +24,29 @@ function App_Events()
         case "arrowdown": this.app.window.move_by({x:0,y:30}); break;
         case "arrowleft": this.app.window.move_by({x:-30,y:0}); break;
         case "arrowright": this.app.window.move_by({x:30,y:0}); break;
-        case "escape": this.app.window.organize.fill(); break;
         case "‘": this.app.window.organize.right(); break;
         case "“": this.app.window.organize.left(); break;
-        case "˙": this.app.window.toggle(); break;
-        case "…": this.app.window.set_theme("blanc"); break;
-        case "æ": this.app.window.set_theme("noir"); break;
-        case "¬": this.app.window.set_theme("ghost"); break;
+      }
+
+      switch(code)
+      {
+        // WASD
+        case 87: this.app.window.resize_by({width:0,height:-30}); break; 
+        case 65: this.app.window.resize_by({width:-30,height:0}); break; 
+        case 83: this.app.window.resize_by({width:0,height:30}); break; 
+        case 68: this.app.window.resize_by({width:30,height:0}); break; 
+        // Q < - > E
+        case 81: this.app.window.organize.left(); break;         
+        case 69: this.app.window.organize.right(); break;         
+        case 67: this.app.window.organize.center(); break;         
+        case 192: this.app.window.organize.full(); break;         
+        case 27: this.app.window.organize.fill(); break;   
+        // Hide(H)
+        case 72: this.app.window.toggle(); break;   
+        // Themes (1,2,3)
+        case 49: this.app.window.set_theme("blanc"); break;
+        case 50: this.app.window.set_theme("noir"); break;
+        case 51: this.app.window.set_theme("ghost"); break;
       }
     },
 
@@ -50,6 +66,7 @@ function App_Events()
           return;
         }
       }
+      console.log("Unknown shortcut <"+key+"> for "+this.app.name);
     },
 
     key : function(key)

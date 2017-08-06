@@ -80,7 +80,7 @@ function Clock()
     path += "M0.5,0.5 L"+(w-0.5)+",0.5 ";
     path += "M0.5,0.5 L0.5,"+(h-0.5)+" ";
     path += "M"+(w-0.5)+","+(h-0.5)+" L0.5,"+(h-0.5)+" ";
-    path += "M"+(w-0.5)+","+(h-0.5)+" L"+(w-0.5)+",0.5 ";
+    path += "M"+(w-1)+","+(h-0.5)+" L"+(w-1)+",0.5 ";
 
     this.widget_el.innerHTML = t_a[0]+":"+t_a[1];
     this.wrapper_el.innerHTML = '<svg width="'+w+'" height="'+h+'" style="fill:none; stroke-width:1; stroke-linecap:butt;"><path class="fh" d="'+path+'"></path></svg>';

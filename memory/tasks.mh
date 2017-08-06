@@ -25,12 +25,9 @@ LOBBY
     .set_theme
     Add soyuz theme(orange/black)
     Update tree from commander
+    Add status bar to commander
   App
     Dynamic reload
-    Migrate CSS to highlights/backgrounds/etc.. and themes
-    Highlight color
-    Implement invoke
-    Improve launch animation with background color fade
 
 IDE
   Editor

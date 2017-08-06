@@ -23,7 +23,7 @@ function Keyboard()
         event.preventDefault();
       }
       else if(event.altKey && event.key.toLowerCase() != "alt"){
-        lobby.commander.app.when.option_key(event.key.toLowerCase());
+        lobby.commander.app.when.option_key(event.key.toLowerCase(),event.keyCode);
         event.preventDefault();
       }
       else if(!lobby.commander.is_typing()){

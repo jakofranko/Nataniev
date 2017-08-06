@@ -6,6 +6,7 @@ function Commander()
 	this.notification_el = document.createElement("yu"); this.notification_el.className = "notification";
 	this.hint_el = document.createElement("yu"); this.hint_el.className = "hint";
 	this.browser_el = document.createElement("yu"); this.browser_el.className = "browser";
+  this.status_el = document.createElement("yu"); this.status_el.className = "status";
 
 	this.input_el.setAttribute("autocomplete","off")
 	this.input_el.setAttribute("autocorrect","off")
@@ -17,7 +18,8 @@ function Commander()
 	this.el.appendChild(this.input_el);
 	this.el.appendChild(this.hint_el);
 	this.el.appendChild(this.notification_el);
-	this.el.appendChild(this.browser_el);
+  this.el.appendChild(this.browser_el);
+  this.el.appendChild(this.status_el);
 
 	this.app = null;
 	this.tree = [];
@@ -28,6 +30,7 @@ function Commander()
     this.release();
     console.log("bind",app.name);
     this.app = app;
+    this.update_status();
   }
 
   this.release = function()
@@ -128,13 +131,17 @@ function Commander()
 
     var html = "";
     if(candidates.length < 1){
-      html += "No candidates found."
+      html += "No candidates found in "+this.tree.length+" files.";
     }
     else{
     	var i = 0;
       for(candidate_id in candidates){
       	if(i > 7){ break; }
-        html += "<ln class='lh15 "+(candidate_id == candidates.length-1 ? 'b0 ff' : 'f0')+"'>"+candidates[candidate_id]+'</ln>';
+        var file_path = candidates[candidate_id];
+        var path_part = file_path.split("/");
+        var file_name = path_part[path_part.length-1].replace("/","");
+        var file_loca = file_path.replace(file_name,"");
+        html += "<ln class='lh15 "+(candidate_id == 0 ? 'b0 ff' : 'f0')+"'><t>"+file_loca+"</t><b>"+file_name+"</b></ln>";
         i += 1;
       }  
     }
@@ -144,7 +151,7 @@ function Commander()
 	this.select_candidate = function(t,formats)
 	{
 		var candidates = this.find_candidates(t,formats);
-		return candidates[candidates.length-1];
+		return candidates[0];
 	}
 
 	this.hide_browser = function()
@@ -171,15 +178,26 @@ function Commander()
 		this.app = null;
 	}
 
-	this.update_hint = function()
+  this.update_status = function(text = null)
+  {
+    if(!this.app){ return; }
+
+    this.status_el.innerHTML = "<b>"+this.app.name+"</b> "+(text ? text : this.app.status());
+  }
+
+	this.update_hint = function(injection = null)
 	{
+    console.log(injection)
 		var html = "";
 		var value = this.input_el.value;
 		var app_name = value.split(".")[0].toLowerCase();
 
 		html += value != "" ? "<span class='input'>"+value+"</span>" : "";
 
-		if(lobby.apps[app_name]){
+    if(injection){
+      html += injection;
+    }
+		else if(lobby.apps[app_name]){
 			html += lobby.apps[app_name].hint(value);
 		}
 		else{

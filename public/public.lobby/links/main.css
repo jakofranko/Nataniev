@@ -19,8 +19,8 @@ b         { font-weight: normal; font-family: 'input_mono_medium'}
 #lobby { background-color: #222}
 
 #commander { background:white; height:30px; width:30px; position:absolute; bottom:0px; width:100%; vertical-align: top; z-index:9000; }
-#commander > input { display: inline-block; line-height: 20px; padding:5px 0px; position:absolute;top:0px;left:0px; width:calc(100vw - 90px); font-size:11px; z-index:9002; background:transparent;}
-#commander > .hint { position: absolute; top:0px; z-index: 9001; left:0px; line-height: 20px; padding:5px 0px;}
+#commander > input { display: inline-block; line-height: 20px; padding:5px 0px; position:absolute;top:0px;left:15px; width:calc(100vw - 90px); font-size:11px; z-index:9002; background:transparent;}
+#commander > .hint { position: absolute; top:0px; z-index: 9001; left:15px; line-height: 20px; padding:5px 0px;}
 #commander > .hint .input { color:white; display: inline-block; }
 #commander > .hint .application { font-family: 'input_mono_medium'; color:#999; }
 #commander > .hint .autocomplete { color:#999; text-decoration: underline; }
@@ -28,12 +28,13 @@ b         { font-weight: normal; font-family: 'input_mono_medium'}
 #commander > .hint .method.global { color:#999; }
 #commander > .hint .param { color:#999; }
 #commander > .size { position: absolute; right:30px; top:0px;line-height: 20px; padding:5px 0px; color:#999;}
-#commander > .widgets { text-align: right; position: relative; z-index:9003;float:right;background:white }
+#commander > .widgets { text-align: right; position: relative; z-index:9003;float:right;background:white; margin-right:15px; }
 #commander > .widgets t { margin-left:15px; color:#999; }
 #commander > .widgets t.toggle { color:#000; }
 #commander > .widgets t.toggle:hover { text-decoration: underline; cursor: pointer;  }
 #commander > .notification { text-align: right; position: relative; z-index:9003;float:right; }
-#commander > .browser { display: none; background: white; position: absolute; bottom: 15px; left: 0px; width: 100%; max-height: 119px; color: black; padding:15px 0px; overflow:hidden;}
+#commander > .browser { display: none;background: white;position: absolute;bottom: 30px;left: 0px;width: 100%;max-height: 119px;color: black;padding: 15px 0px 0px 15px;overflow: hidden; z-index:60; }
+#commander > .status { position: absolute; top:-30px; width: calc(100% - 30px); padding-left:15px; color:white; }
 
 .full { width:100%; height:calc(100% - 60px);}
 
@@ -76,6 +77,7 @@ app.noir hl { border-bottom:1px solid white; }
 .wf_6 { width: calc(100% - 180px) }
 .wf_7 { width: calc(100% - 210px) }
 
+.hf   { height:100%; }
 .hf_1 { height: calc(100% - 30px) }
 .hf_2 { height: calc(100% - 60px) }
 .hf_3 { height: calc(100% - 90px) }
@@ -161,6 +163,8 @@ app.noir hl { border-bottom:1px solid white; }
 
 .noir .sr { border-right: 1px solid #555; }
 .noir .sl { border-left: 1px solid #555; }
+
+.right { float:right; }
 
 /* HIGHLIGHTS/LOWLIGHTS */
 

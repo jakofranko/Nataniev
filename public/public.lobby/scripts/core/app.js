@@ -10,7 +10,6 @@ function App()
   this.methods = {};
   this.methods.default = {name:"default",is_global:true};
   this.methods.exit = {name:"exit",is_global:true,shortcut:"w",run_shortcut:true};
-  this.methods.toggle = {name:"toggle",is_global:true,shortcut:"h",run_shortcut:true}; // TODO
 
 	this.el = document.createElement("app");
 	this.wrapper_el = document.createElement("yu"); this.wrapper_el.className = "wrapper";
@@ -56,6 +55,11 @@ function App()
       html += " <span class='method global'>."+method_id+(method.shortcut ? '('+method.shortcut+')' :'')+"</span> ";
     }
     return html;
+  }
+
+  this.status = function()
+  {
+    return "Idle.";
   }
 
   this.call = function(method,params = null,vessel = this.name)

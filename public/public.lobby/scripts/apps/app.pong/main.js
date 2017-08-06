@@ -31,6 +31,8 @@ function Pong()
     this.ball = {x:this.window.size.width/2,y:this.window.size.height/2,prev_x:0,prev_y:0,old_x:0,old_y:0,direction:{v:true,h:null},speed:2, fx:{x:1,y:1}};
 
     this.update();
+
+    lobby.commander.update_status();
   }
 
   this.stop = function()
@@ -62,9 +64,7 @@ function Pong()
       if(this.paddle.x < this.ball.x && this.paddle.x+30 > this.ball.x){
         this.ball.direction.v = false;
         if( this.ball.direction.h == null){ this.ball.direction.h = true; }
-        this.ball.speed += 0.25;
-        this.paddle.score += 1;
-        lobby.commander.notify("Pong +"+this.paddle.score);
+        this.point();
         this.ball.fx.x = (1 + Math.random() + Math.random())/3;
         this.ball.fx.y = (1 + Math.random() + Math.random())/3;
       }
@@ -105,6 +105,19 @@ function Pong()
     if(this.paddle.x < 0){ this.paddle.x = 0; }
     if(this.paddle.x > this.window.size.width - 30){ this.paddle.x = this.window.size.width - 30; }
     this.draw();
+  }
+
+  this.point = function()
+  {
+    this.ball.speed += 0.25;
+    this.paddle.score += 1;
+    lobby.commander.notify("+"+this.paddle.score);
+    lobby.commander.update_status();
+  }
+
+  this.status = function()
+  {
+    return "Score: "+this.paddle.score;
   }
 }
 

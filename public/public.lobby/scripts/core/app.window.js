@@ -65,8 +65,7 @@ function App_Window()
     update : function(animate = true)
     {
       if(animate){
-        $(this.app.el).animate({ left: this.pos.x, top: this.pos.y }, this.speed);
-        $(this.app.el).animate({ width: this.size.width, height: this.size.height }, this.speed);  
+        $(this.app.el).animate({ left: this.pos.x, top: this.pos.y, width: this.size.width, height: this.size.height }, this.speed);
       }
       else{
         $(this.app.el).css("left",this.pos.x).css("top",this.pos.y);
@@ -119,19 +118,26 @@ function App_Window()
       full : function()
       {
         this.app.window.move_to({x:-30,y:-30});
-        this.app.window.resize_to(lobby.window.size);
+        this.app.window.resize_to({width:lobby.window.size.width,height:lobby.window.size.height-90});
       },
 
       left : function()
       {
-        this.app.window.move_to({x:-30,y:-30});
-        this.app.window.resize_to(lobby.window.horizontal_half());
+        this.app.window.move_to({x:0,y:this.app.window.pos.y});
       },
 
       right : function()
       {
-        this.app.window.move_to({x:lobby.window.center().x,y:-30});
-        this.app.window.resize_to(lobby.window.horizontal_half());
+        this.app.window.move_to({x:lobby.window.size.width - this.app.window.size.width - 60,y:this.app.window.pos.y});
+      },
+
+      center : function()
+      {
+        var x = lobby.window.center().x - (this.app.window.size.width/2);
+        var y = lobby.window.center().y - (this.app.window.size.height/2);
+        x = parseInt(x/30) * 30; y = parseInt(y/30) * 30;
+
+        this.app.window.move_to({x:x-30,y:y});
       }
     }
   }

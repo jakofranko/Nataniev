@@ -4,10 +4,10 @@ lobby.apps.ide.save = function(val, is_passive = false)
 {
   if(is_passive){
     if(this.location){
-      this.status_el.innerHTML = "Overwrite <b class='f0'>"+this.location+"</b>?";
+      lobby.commander.update_status("Overwrite <b class='f0'>"+this.location+"</b>?");
     }
     else{
-      this.status_el.innerHTML = "No file selected!";  
+      lobby.commander.update_status("No file selected!");
     }
     return;
   }
@@ -25,7 +25,7 @@ lobby.apps.ide.save = function(val, is_passive = false)
   lobby.commander.notify("Saved.");
   this.textarea_el.style.display = "block";
   this.navi_el.style.display = "block";
-  this.update_status();
+  lobby.commander.update_status();
 }
 
 lobby.apps.ide.setup.confirm("save");
