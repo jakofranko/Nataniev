@@ -1,39 +1,48 @@
 [submodule "vessel/vessel.oscean"]
 	path = vessel/vessel.oscean
 	url = git@github.com:XXIIVV/vessel.oscean.git
-
 [submodule "public/public.oscean"]
-    path = public/public.oscean
-    url = git@github.com:XXIIVV/public.oscean.git
-
+	path = public/public.oscean
+	url = git@github.com:XXIIVV/public.oscean.git
+[submodule "vessel/vessel.grimgrains"]
+    path = vessel/vessel.grimgrains
+    url = git@github.com:XXIIVV/vessel.grimgrains.git
 [submodule "vessel/vessel.lietal"]
-    path = vessel/vessel.lietal
-    url = git@github.com:XXIIVV/vessel.lietal.git
-
-[submodule "vessel/vessel.paradise"]
-    path = vessel/vessel.paradise
-    url = git@github.com:XXIIVV/vessel.paradise.git
-
-[submodule "vessel/vessel.paradise"]
-    path = vessel/vessel.paradise
-    url = git@github.com:XXIIVV/vessel.paradise.git
-
-[submodule "public/public.paradise"]
-    path = public/public.paradise
-    url = git@github.com:XXIIVV/public.paradise.git
-
-[submodule "vessel/vessel.grimgrains"]
-    path = vessel/vessel.grimgrains
-    url = git@github.com:XXIIVV/vessel.grimgrains.git
-
+	path = vessel/vessel.lietal
+	url = git@github.com:XXIIVV/vessel.lietal.git
 [submodule "public/public.grimgrains"]
-    path = public/public.grimgrains
-    url = git@github.com:XXIIVV/public.grimgrains.git
-
-[submodule "vessel/vessel.grimgrains"]
-    path = vessel/vessel.grimgrains
-    url = git@github.com:XXIIVV/vessel.grimgrains.git
-
-[submodule "vessel/vessel.yuri"]
-    path = vessel/vessel.yuri
-    url = git@github.com:jakofranko/vessel.yuri.git
+	path = public/public.grimgrains
+	url = git@github.com:XXIIVV/public.grimgrains.git
+[submodule "vessel/vessel.paradise"]
+	path = vessel/vessel.paradise
+	url = git@github.com:XXIIVV/vessel.paradise.git
+[submodule "vessel/vessel.thewillthewisp"]
+	path = vessel/vessel.thewillthewisp
+	url = git@github.com:XXIIVV/vessel.thewillthewisp.git
+[submodule "public/public.paradise"]
+	path = public/public.paradise
+	url = git@github.com:XXIIVV/public.paradise.git
+[submodule "vessel/vessel.landing"]
+	path = vessel/vessel.landing
+	url = git@github.com:XXIIVV/vessel.landing.git
+[submodule "public/public.landing"]
+	path = public/public.landing
+	url = git@github.com:XXIIVV/public.landing.git
+[submodule "vessel/vessel.russian"]
+	path = vessel/vessel.russian
+	url = git@github.com:XXIIVV/vessel.russian.git
+[submodule "vessel/vessel.dictionarism"]
+	path = vessel/vessel.dictionarism
+	url = git@github.com:XXIIVV/vessel.dictionarism.git
+[submodule "vessel/vessel.glossolaliarium"]
+	path = vessel/vessel.glossolaliarium
+	url = git@github.com:XXIIVV/vessel.glossolaliarium.git
+[submodule "vessel/vessel.adventv"]
+	path = vessel/vessel.adventv
+	url = git@github.com:XXIIVV/vessel.adventv.git
+[submodule "vessel/vessel.hundredrabbits"]
+	path = vessel/vessel.hundredrabbits
+	url = git@github.com:XXIIVV/vessel.hundredrabbits.git
+[submodule "public/public.hundredrabbits"]
+	path = public/public.hundredrabbits
+	url = git@github.com:XXIIVV/public.hundredrabbits.git
