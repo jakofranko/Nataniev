@@ -80,6 +80,16 @@ function System()
   {
 
   }
+
+  this.status = function()
+  {
+    var app_count = 0;
+    for(app_id in lobby.apps){
+      app_count += 1;
+    }
+
+    return app_count+" Applications";
+  }
 }
 
 lobby.summon.confirm("System");
