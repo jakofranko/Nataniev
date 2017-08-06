@@ -46,3 +46,6 @@
 [submodule "public/public.hundredrabbits"]
 	path = public/public.hundredrabbits
 	url = git@github.com:XXIIVV/public.hundredrabbits.git
+[submodule "vessel/vessel.yuri"]
+	path = vessel/vessel.yuri
+	url = git@github.com:jakofranko/vessel.yuri.git
