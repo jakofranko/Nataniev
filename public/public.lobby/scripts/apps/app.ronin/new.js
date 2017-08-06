@@ -19,3 +19,5 @@ lobby.apps.ronin.new = function(param)
   // lobby.apps.ronin.fill("#ccc");
   // lobby.apps.ronin.path("M60,60 l120,0 a60,60 0 0,1 60,60 a-60,60 0 0,1 -60,60 l-120,0 M180,180 a60,60 0 0,1 60,60");
 }
+
+lobby.apps.ronin.setup.confirm("new");

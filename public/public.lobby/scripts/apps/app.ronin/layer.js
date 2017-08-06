@@ -25,3 +25,5 @@ function Layer(size)
     this.context().closePath();
   }
 }
+
+lobby.apps.ronin.setup.confirm("layer");

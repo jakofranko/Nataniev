@@ -39,3 +39,5 @@ lobby.apps.ronin.import = function(param)
     }
   }
 }
+
+lobby.apps.ronin.setup.confirm("import");

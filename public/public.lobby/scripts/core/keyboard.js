@@ -20,9 +20,11 @@ function Keyboard()
     else if(lobby.commander.app){ 
       if(event.ctrlKey && event.key.toLowerCase() != "control"){
         lobby.commander.app.when.control_key(event.key.toLowerCase());
+        event.preventDefault();
       }
       else if(event.altKey && event.key.toLowerCase() != "alt"){
         lobby.commander.app.when.option_key(event.key.toLowerCase());
+        event.preventDefault();
       }
       else if(!lobby.commander.is_typing()){
         lobby.commander.app.when.key(event.key.toLowerCase())

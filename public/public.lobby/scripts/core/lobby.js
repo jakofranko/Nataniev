@@ -8,6 +8,8 @@ function Lobby()
 
 	this.init = function()
 	{
+    console.info("Init.");
+
     document.body.appendChild(this.el);
     this.el.appendChild(this.grid_el);
     this.el.appendChild(this.commander.el);
@@ -25,7 +27,8 @@ function Lobby()
 		this.summon.invoke("Dict");
 		this.summon.invoke("Diary");
 		this.summon.invoke("Pong");
-		this.summon.invoke("Marabu");
+    // this.summon.invoke("Marabu");
+		// this.summon.invoke("Typographer");
 	}
 
   // 
@@ -54,7 +57,7 @@ function Lobby()
 				q.push(this.queue[app_id]);
 			}
 			this.queue = q;
-			if(this.queue.length == 0){ this.complete(); }
+			if(this.queue.length == 0){ this.install(); }
 		},
 
 		inject : function(name)
@@ -65,20 +68,43 @@ function Lobby()
 		  document.getElementsByTagName('head')[0].appendChild(s);
 		},
 
-		complete : function()
+		install : function()
 		{
-      console.log("complete",this.known);
+      console.info("Installing "+this.known.length+" apps.");
+      
+      // Register
 			for(app_id in this.known){
 				var app = new window[this.known[app_id]]();
-				app.setup.install();
+        lobby.apps[app.name] = app;
 			}
-			lobby.commander.update_hint();
+
+      // Install
+      for(app_id in lobby.apps){
+        var app = lobby.apps[app_id];
+        app.setup.install();
+      }
 		},
+
+    update : function()
+    {
+      for(app_id in lobby.apps){
+        var app = lobby.apps[app_id];
+        if(app.setup.is_complete == false){
+          console.log("waiting for "+app.name,app.setup.queue)
+          return;
+        }
+      }
+      this.ready();
+    },
 
     ready : function()
     {
-      lobby.apps.system.setup.launch();
-      lobby.app.diary.setup.launch();
+      console.info("Ready.");
+      lobby.commander.update_hint();
+    
+      // lobby.apps.system.setup.launch();
+      // lobby.apps.diary.setup.launch();
+      // lobby.apps.typographer.setup.launch();
     }
 	}
 

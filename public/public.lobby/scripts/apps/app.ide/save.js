@@ -27,3 +27,5 @@ lobby.apps.ide.save = function(val, is_passive = false)
   this.navi_el.style.display = "block";
   this.update_status();
 }
+
+lobby.apps.ide.setup.confirm("save");

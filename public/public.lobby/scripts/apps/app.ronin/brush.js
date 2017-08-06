@@ -36,5 +36,6 @@ lobby.apps.ronin.tools.brush =
   {
     this.mouse_prev = null;
   },
-
 }
+
+lobby.apps.ronin.setup.confirm("brush");

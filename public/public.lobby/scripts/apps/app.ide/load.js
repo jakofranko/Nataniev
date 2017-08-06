@@ -12,3 +12,5 @@ lobby.apps.ide.load = function(val, is_passive = false)
   lobby.commander.hide_browser();
   this.load_file(lobby.commander.select_candidate(val,this.formats));
 }
+
+lobby.apps.ide.setup.confirm("load");

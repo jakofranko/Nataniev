@@ -4,3 +4,5 @@ lobby.apps.ronin.type = function(param)
 {
 
 }
+
+lobby.apps.ronin.setup.confirm("type");

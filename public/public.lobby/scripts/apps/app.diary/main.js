@@ -4,7 +4,7 @@ function Diary()
 
   this.name = "diary";
 
-  this.window.size = {width:300,height:120};
+  this.window.size = {width:180,height:120};
   this.window.pos = {x:0,y:0};
   this.window.theme = "ghost";
 
@@ -32,7 +32,7 @@ function Diary()
   {
     var html = "";
 
-    html += "<yu style='position:relative; margin-bottom:0px; color:white; height:60px'>"
+    html += "<yu style='position:relative; margin-bottom:0px; height:60px' class='fh'>"
 
     var path = "";
     var svg_height = 45;
@@ -45,7 +45,7 @@ function Diary()
       path += "M"+((line_spacing * log_id) + line_width/2)+","+svg_height+" L"+((line_spacing * log_id) + line_width/2)+","+bar_height+" ";
     }
 
-    html += "<svg style='width:"+(line_spacing * 7)+";height:"+svg_height+"px; stroke:white; stroke-dasharray:1,1; fill:none; stroke-width:"+line_width+"; stroke-linecap:butt; margin-right:10px'><path d='"+path+"'></path></svg>";
+    html += "<svg class='fh' style='width:"+(line_spacing * 7)+";height:"+svg_height+"px; stroke-dasharray:1,1; fill:none; stroke-width:"+line_width+"; stroke-linecap:butt; margin-right:10px'><path d='"+path+"'></path></svg>";
 
     html += "<t class='t_thin' style='line-height:60px; font-size:45px; display:inline-block; width:50px; text-align:center; margin-right:5px'>"+parseInt(d.percentage)+"</t>";
     html += "<t style='line-height: 30px;font-size: 15px;position: absolute;top:5px'>"+(d.difference > 0 ? '+' : '')+parseInt(d.difference)+"</t>";

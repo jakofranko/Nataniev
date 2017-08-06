@@ -31,3 +31,5 @@ lobby.apps.ronin.load = function(param)
     })
   }
 }
+
+lobby.apps.ronin.setup.confirm("load");

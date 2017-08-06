@@ -5,8 +5,7 @@ function App()
   this.methods = {};
   this.methods.default = {name:"default",is_global:true};
   this.methods.exit = {name:"exit",is_global:true,shortcut:"w",run_shortcut:true};
-  // this.methods.toggle = {name:"toggle",is_global:true,shortcut:"h",run_shortcut:true}; // TODO
-  this.methods.ghost = {name:"ghost",is_global:true};
+  this.methods.toggle = {name:"toggle",is_global:true,shortcut:"h",run_shortcut:true}; // TODO
 
 	this.el = document.createElement("app");
 	this.wrapper_el = document.createElement("yu"); this.wrapper_el.className = "wrapper";
@@ -15,6 +14,11 @@ function App()
   this.default = function()
   {
     this.window.show();
+  }
+
+  this.toggle = function()
+  {
+    this.window.toggle();
   }
 
   this.hint = function(value)
@@ -59,22 +63,23 @@ function App()
   {
     app : target,
     includes : [],
+    queue : [],
     has_launched : false,
+    is_complete : false,
 
     install : function()
     {
       console.log("install",this.app.name)
-      this.register();
+
+      this.queue = this.includes;
 
       for(file_id in this.includes){
         this.inject(this.includes[file_id]);
       }
-      this.ready();
-    },
 
-    register : function()
-    {
-      lobby.apps[this.app.name] = this.app;
+      if(this.includes.length == 0){
+        this.complete();
+      }
     },
 
     inject : function(name)
@@ -86,6 +91,28 @@ function App()
       document.getElementsByTagName('head')[0].appendChild(s);
     },
 
+    confirm : function(name)
+    {
+      console.log("confirm",this.app.name+" > "+name);
+
+      var q = [];
+      for(module_id in this.queue){
+        if(name == this.queue[module_id]){ continue; }
+        q.push(this.queue[module_id]);
+      }
+      this.queue = q;
+      if(this.queue.length == 0){ this.complete();  }
+    },
+
+    complete : function()
+    {
+      console.log("completed",this.app.name+" with "+this.includes.length+" modules");
+
+      this.is_complete = true;
+      this.ready();
+      lobby.summon.update();
+    },
+
     ready : function()
     {
       console.log("ready",this.app.name)
@@ -95,7 +122,8 @@ function App()
     {
       if(this.has_launched == true){ return; }
 
-      console.log("launch",this.app.name)
+      console.log("launch",this.app.name);
+
       lobby.el.appendChild(this.app.el);
       this.start();
       this.has_launched = true;
@@ -136,7 +164,6 @@ function App()
 
     move_by : function(pos)
     {
-      console.log(pos,this.app.window)
       this.pos = { x: parseInt(this.pos.x) + parseInt(pos.x), y: parseInt(this.pos.y) + parseInt(pos.y)};
       this.update();
       this.app.when.move();
@@ -321,7 +348,6 @@ function App()
       for(method_id in this.app.methods){
         var method = this.app.methods[method_id];
         if(method.shortcut != key){ continue; }
-        console.log(this.app)
         console.log("Shortcut",method);
         if(method.run_shortcut){
           this.app[method.name](); 
@@ -337,19 +363,7 @@ function App()
 
     key : function(key)
     {
-      for(method_id in this.app.methods){
-        var method = this.app.methods[method_id];
-        if(method.shortcut != key){ continue; }
-        if(method.run_shortcut){
-          this.app[method.name](); 
-          return;
-        }
-        else{
-          lobby.commander.inject(this.app.name+"."+method.name+" ");
-          lobby.commander.input_el.focus()
-          return;
-        }
-      }
+
     }
   }
 

@@ -4,3 +4,5 @@ lobby.apps.ronin.magnet = function(param)
 {
 
 }
+
+lobby.apps.ronin.setup.confirm("magnet");

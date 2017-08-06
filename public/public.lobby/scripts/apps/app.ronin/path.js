@@ -11,3 +11,5 @@ lobby.apps.ronin.path = function(stroke)
   context.stroke(new Path2D(stroke));
   context.closePath();
 }
+
+lobby.apps.ronin.setup.confirm("path");
