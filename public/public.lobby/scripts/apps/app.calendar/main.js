@@ -15,7 +15,7 @@ function Calendar()
     this.app.update();
 
     var app = this.app;
-    this.app.widget_el.addEventListener("mousedown", function(){ app.toggle() }, true);
+    this.app.widget_el.addEventListener("mousedown", function(){ app.window.toggle() }, true);
   }
 
   this.setup.start = function()
@@ -41,8 +41,8 @@ function Calendar()
         var stamp = "2017"+(m < 10 ? '0'+m : m)+(d < 10 ? '0'+d : d);
         var cl = "f9 ";
         var day_number = (d < 10 ? '0'+d : d);
-        day_number += logs && logs[stamp] ? "<t class='fc'>"+logs[stamp].value+"</t>" : '';
-        html += "<t class='di w1 "+(logs && logs[stamp] ? 'f0 ' : 'f9')+" "+(stamp == new Date().desamber_stamp() ? 'fu' : '')+"'>"+day_number+"</t>";
+        day_number += logs && logs[stamp] ? "<t class='fl'>"+logs[stamp].value+"</t>" : '';
+        html += "<t class='di w1 "+(logs && logs[stamp] ? 'fh ' : 'fl')+" "+(stamp == new Date().desamber_stamp() ? 'fu' : '')+"'>"+day_number+"</t>";
         d += 1;
       }
       html += "</yu>";
@@ -50,8 +50,8 @@ function Calendar()
     }
     html += "<yu class='di w7 mr30 lh15'>";
     html += "<yu>Year Days</yu>";
-    html += "<t class='di w1 f9'>LP</t>";
-    html += "<t class='di w1 f9'>YD</t>";
+    html += "<t class='di w1 fl'>LP</t>";
+    html += "<t class='di w1 fl'>YD</t>";
     html += "</yu>";
 
     this.el.innerHTML = html;

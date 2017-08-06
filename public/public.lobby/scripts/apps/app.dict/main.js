@@ -6,7 +6,7 @@ function Dict()
   this.window.size = {width:600,height:360};
   this.window.pos = {x:120,y:120};
 
-  this.methods.find = {name:"find", shortcut:"f"};
+  this.methods.find = {name:"find", shortcut:"f", passive:true};
 
   this.payload = null;
 
@@ -43,15 +43,7 @@ function Dict()
     this.wrapper_el.innerHTML = "<list>Found "+count+" words.</li>";
   }
 
-  this.on_input_change = function(val)
-  {
-    if(val.split(" ")[0] != "dict.find"){ return; }
-
-    query = val.split(" "); query.shift(); query = query.join(" ").trim();
-    this.find(query);
-  }
-
-  this.find = function(q)
+  this.find = function(q, is_passive = false)
   {
     var html = "";
     var count = 0;

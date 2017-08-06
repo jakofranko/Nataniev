@@ -90,7 +90,7 @@ function Pong()
     // Draw Ball
     path += "M"+this.ball.x+","+this.ball.y+" L"+this.ball.prev_x+","+this.ball.prev_y+" L"+this.ball.old_x+","+this.ball.old_y+" ";
     // Generate
-    this.wrapper_el.innerHTML = '<svg width="'+this.window.size.width+'" height="'+this.window.size.height+'" style="stroke:white; fill:none; stroke-width:1; stroke-linecap:butt"><path d="'+path+'"></path></svg>';
+    this.wrapper_el.innerHTML = '<svg width="'+this.window.size.width+'" height="'+this.window.size.height+'" class="fh" style=" fill:none; stroke-width:1; stroke-linecap:butt"><path d="'+path+'"></path></svg>';
   }
 
   this.move_left = function()

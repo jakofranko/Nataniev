@@ -136,6 +136,7 @@ function App()
 
     move_by : function(pos)
     {
+      console.log(pos,this.app.window)
       this.pos = { x: parseInt(this.pos.x) + parseInt(pos.x), y: parseInt(this.pos.y) + parseInt(pos.y)};
       this.update();
       this.app.when.move();
@@ -165,9 +166,10 @@ function App()
     align : function()
     {
       var target_pos = this.pos;
-      target_pos.x = (parseInt(this.pos.x / 30) * 30)+"px"
-      target_pos.y = (parseInt(this.pos.y / 30) * 30)+"px"
-      $(this.app.el).animate({ left: target_pos.x, top: target_pos.y }, 300);
+      target_pos.x = (parseInt(this.pos.x / 30) * 30);
+      target_pos.y = (parseInt(this.pos.y / 30) * 30);
+      $(this.app.el).animate({ left: target_pos.x+"px", top: target_pos.y+"px" }, 300);
+      this.pos = target_pos;
     },
 
     set_theme : function(theme_name)
@@ -308,8 +310,9 @@ function App()
         case "‘": this.app.window.organize.right(); break;
         case "“": this.app.window.organize.left(); break;
         case "˙": this.app.window.toggle(); break;
-        case "…": this.app.window.set_theme("noir"); break;
-        case "æ": this.app.window.set_theme("blanc"); break;
+        case "…": this.app.window.set_theme("blanc"); break;
+        case "æ": this.app.window.set_theme("noir"); break;
+        case "¬": this.app.window.set_theme("ghost"); break;
       }
     },
 
