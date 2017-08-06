@@ -7,10 +7,8 @@ function System()
   this.window.size = {width:420,height:420};
   this.window.pos = {x:300,y:30};
 
-  this.methods.set_wallpaper = {name:"set_wallpaper"};
+  this.methods.set_wallpaper = {name:"set_wallpaper",passive:true};
   this.methods.set_theme = {name:"set_theme"};
-
-  this.formats = ["jpg","png"];
 
   this.widget_el = document.createElement("t"); this.widget_el.className = "toggle";
 
@@ -70,13 +68,12 @@ function System()
   {
     if(is_passive){
       lobby.commander.show_browser();
-      lobby.commander.browse_candidates(val,this.formats);
+      lobby.commander.browse_candidates(val,["jpg","png"]);
+      return;
     }
-    else{
-      lobby.commander.hide_browser();
-      lobby.el.style.backgroundImage = "url(/"+lobby.commander.select_candidate(val,this.formats).replace('/public','')+")";
-      lobby.commander.notify("Updated Wallpaper")
-    }    
+    lobby.commander.hide_browser();
+    lobby.wallpaper_el.style.backgroundImage = "url(/"+lobby.commander.select_candidate(val,["jpg","png"]).replace('/public','')+")";
+    lobby.commander.notify("Updated Wallpaper")   
   }
 
   this.set_theme = function()
