@@ -30,6 +30,7 @@ function Commander()
     this.release();
     console.log("commander.bind",app.name);
     this.app = app;
+    this.app.when.bind();
   }
 
   this.release = function()
@@ -37,6 +38,11 @@ function Commander()
     if(!this.app){ return; }
     console.log("commander.release",this.app.name);
     this.app = null;
+  }
+
+  this.next_app = function()
+  {
+    console.log("!!")
   }
 
   this.key_down = function(e = null)

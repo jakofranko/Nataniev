@@ -6,6 +6,13 @@ function App_Events()
   {
     app : target,
     
+    bind : function()
+    {
+      lobby.touch.depth += 1;
+      this.app.window.depth = lobby.touch.depth;
+      this.app.window.update(false);
+    },
+
     move : function()
     {
       
@@ -47,6 +54,8 @@ function App_Events()
         case 49: this.app.window.set_theme("blanc"); break;
         case 50: this.app.window.set_theme("noir"); break;
         case 51: this.app.window.set_theme("ghost"); break;
+        // Tab
+        case 9: lobby.commander.next_app(); break;
       }
     },
 

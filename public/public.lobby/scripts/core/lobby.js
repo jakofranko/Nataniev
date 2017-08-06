@@ -161,17 +161,14 @@ function Lobby()
 	{
 		app : null,
     from : null,
-    history : 100,
+    depth : 100,
 
 		bind : function(app)
 		{
 			console.log("lobby.bind",app.name);
 			lobby.touch.app = app;
-      app.window.depth = this.history;
-      app.window.update(false);
 			lobby.commander.input_el.blur();
-
-      this.history += this.history > 4000 ? 0 : 1;
+      app.when.bind();
 		},
 
 		release : function()
@@ -214,8 +211,6 @@ function Lobby()
     	lobby.touch.release();
     	lobby.touch.from = null;
     }
-
-
 	}
 
   this.el.addEventListener("mousedown", this.touch.down, false);

@@ -34,5 +34,11 @@ function Keyboard()
 
   this.listen_onkeyup = function(event)
   {
+    // Tab
+    if(event.keyCode == 9){
+      lobby.commander.input_el.focus();
+      lobby.commander.update_hint();
+      event.preventDefault();
+    }
   }
 }
