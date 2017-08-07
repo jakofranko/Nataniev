@@ -150,6 +150,20 @@ function Ide()
     if(key == "escape"){
       this.app.textarea_el.blur();
     }
+    if(key == "tab"){
+      this.app.inject("  ");
+    }
+  }
+
+  this.inject = function(characters = "__")
+  {
+    var pos = this.textarea_el.selectionStart;
+    var before = this.textarea_el.value.substr(0,pos);
+    var middle = characters;
+    var after  = this.textarea_el.value.substr(pos,this.textarea_el.value.length);
+
+    this.textarea_el.value = before+middle+after;
+    this.textarea_el.focus();
   }
 
   this.go_up = function()

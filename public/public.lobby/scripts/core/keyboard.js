@@ -27,7 +27,8 @@ function Keyboard()
         event.preventDefault();
       }
       else if(!lobby.commander.is_typing()){
-        lobby.commander.app.when.key(event.key.toLowerCase())
+        lobby.commander.app.when.key(event.key.toLowerCase());
+        if(event.key == "Tab"){ event.preventDefault(); }
       }
     }
   }
@@ -35,7 +36,7 @@ function Keyboard()
   this.listen_onkeyup = function(event)
   {
     // Tab
-    if(event.keyCode == 9){
+    if(event.keyCode == 9 && event.ctrlKey){
       lobby.commander.input_el.focus();
       lobby.commander.update_hint();
       event.preventDefault();

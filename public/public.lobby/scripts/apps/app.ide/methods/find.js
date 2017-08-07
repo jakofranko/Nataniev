@@ -8,7 +8,7 @@ lobby.apps.ide.find = function(val, is_passive = false)
   {
     var line = lines[line_id];
 
-    if(line.indexOf(val) == -1){ return; }
+    if(line.indexOf(val) == -1){  continue; }
 
     var from = this.textarea_el.value.indexOf(val);
     var to   = from + val.length;
