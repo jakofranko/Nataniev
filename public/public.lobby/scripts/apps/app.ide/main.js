@@ -7,15 +7,14 @@ function Ide()
   this.window.size = {width:780,height:420};
   this.window.pos = {x:120,y:120};
 
-  this.methods.new = {name:"new"};
+  this.methods.create = {name:"create"};
   this.methods.replace = {name:"replace", shortcut:"r"};
   this.methods.end = {name:"end"};
-  this.methods.find = {name:"find", shortcut:"f"};
 
   this.methods.go_up = {name:"go_up", shortcut:"z", run_shortcut:true};
   this.methods.go_down = {name:"go_down", shortcut:"x", run_shortcut:true};
 
-  this.setup.includes = ["methods/load","methods/save"];
+  this.setup.includes = ["methods/load","methods/save","methods/create","methods/find"];
 
   this.formats = ["js","rb","html","css","ma","mh","rin","mar"];
 
@@ -34,10 +33,10 @@ function Ide()
   this.textarea_el.style.resize = "none";
   this.textarea_el.style.wrap = "soft";
 
-  this.textarea_el.addEventListener('input', text_change, false);
-  this.textarea_el.addEventListener('keydown', key_down, false);
-  this.textarea_el.addEventListener('mousedown', mouse_down, false);
-  this.textarea_el.addEventListener('mouseup', mouse_up, false);
+  this.setup.start = function()
+  {
+    this.app.create();
+  }
   
   function key_down(e)
   {
@@ -56,40 +55,21 @@ function Ide()
   function text_change()
   {
     lobby.commander.update_status();
+    lobby.apps.ide.update_navi();
   }
 
   this.location = "";
-
-  this.find = function(val, is_passive = false)
-  {
-    var lines = this.textarea_el.value.split("\n");
-
-    for(line_id in lines)
-    {
-      var line = lines[line_id];
-      if(line.indexOf(val) > -1){
-
-        if(!is_passive){
-          var from = this.textarea_el.value.indexOf(val);
-          var to   = from + val.length;
-          this.textarea_el.setSelectionRange(from,to);
-          this.textarea_el.focus();
-        }
-        
-        $(this.textarea_el).animate({scrollTop: line_id * 15}, 250, function() {});
-        break;
-      }
-    }
-  }
 
   this.view_editor = function()
   {
     this.textarea_el.style.display = "block";
     this.navi_el.style.display = "block";
 
-    this.organize_window_vertical();
+    this.window.organize.fill();
     this.update_navi();
     lobby.commander.update_status();
+    this.textarea_el.value = "";
+    this.textarea_el.focus();
   }
 
   this.load_file = function(file_path)
@@ -193,6 +173,11 @@ function Ide()
     this.textarea_el.focus();
     $(this.textarea_el).animate({scrollTop: (line_id + 3) * 15}, 100, function() {});
   }
+
+  this.textarea_el.addEventListener('input', text_change, false);
+  this.textarea_el.addEventListener('keydown', key_down, false);
+  this.textarea_el.addEventListener('mousedown', mouse_down, false);
+  this.textarea_el.addEventListener('mouseup', mouse_up, false);
 }
 
 lobby.summon.confirm("Ide");
