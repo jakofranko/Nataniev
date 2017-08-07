@@ -163,7 +163,7 @@ function Ide()
     var after  = this.textarea_el.value.substr(pos,this.textarea_el.value.length);
 
     this.textarea_el.value = before+middle+after;
-    this.textarea_el.focus();
+    this.textarea_el.setSelectionRange(pos+characters.length,pos+characters.length);
   }
 
   this.go_up = function()
