@@ -146,12 +146,13 @@ b         { font-weight: normal; font-family: 'input_mono_medium'}
 
 /* HIGHLIGHTS/LOWLIGHTS */
 
-app { display: block; width:30px; height:30px; background:RGBA(255,255,255,1); position: absolute; top:60px; left:60px; padding:30px; color:black; overflow: hidden; z-index:20;}
+app { display: block; width:30px; height:30px; background:RGBA(0,0,0,1); position: absolute; top:60px; left:60px; padding:30px; color:black; overflow: hidden; z-index:20;}
 app { transition: background-color 150ms;}
 app .wrapper { overflow: hidden; height:100%; overflow: hidden;height: 100%}
 app.selected { z-index:8001; }
 app.dragged { background-color:RGBA(255,255,255,0.3) !important; z-index:8002;}
 
+app.blanc     { background:white; color:black;  }
 app.blanc .fh { color:black; stroke:black; }
 app.blanc .bh { background:white;}
 app.blanc .fl { color:#ccc; stroke:#ccc; }

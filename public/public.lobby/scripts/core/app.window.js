@@ -15,8 +15,8 @@ function App_Window()
     start : function()
     {
       this.app.el.className = this.theme;
-      this.move_to(this.pos);
-      this.resize_to(this.size);
+      $(this.app.el).css("left",this.pos.x).css("top",this.pos.y - 5).animate({ left: this.pos.x, top: this.pos.y }, this.speed);
+      $(this.app.el).css("width",this.size.width).css("height",this.size.height);
       this.show();
     },
 

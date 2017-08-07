@@ -66,11 +66,19 @@ function Commander()
     if(value.indexOf(".") > -1 && value.indexOf(" ")){
       var app_name = value.split(" ")[0].split(".")[0];
       var method_name = value.split(" ")[0].split(".")[1];
-      var param = value.split(" "); param.shift(); param = param.join(" ").trim();
       var app = lobby.apps[app_name];
+
+      var param = value.split(" "); param.shift(); param = param.join(" ").trim();
+      var settings = null;
+
+      // Parse Settings
+      if(param.indexOf("<") > -1 && param.indexOf(">") > -1){
+        settings = param.split("<")[1].replace(">","").trim();
+        param = param.split("<")[0];
+      }
       
       if(app && app.methods[method_name] && app.methods[method_name].passive){
-        app[method_name](param,true);
+        app[method_name](param,true,settings);
         lobby.commander.bind(app);
       }
     }
@@ -83,13 +91,21 @@ function Commander()
     var value = lobby.commander.input_el.value;
     var app_name = value.split(" ")[0].split(".")[0];
     var method_name = value.split(" ")[0].split(".")[1] ? value.split(" ")[0].split(".")[1] : "default";
-    var param = value.split(" "); param.shift(); param = param.join(" ").trim();
     var app = lobby.apps[app_name];
 
     if(!app){ console.log("Unknown app",app_name); return; }
     if(!app.methods[method_name]){ console.warn("Unknown method "+method_name); return; }
 
-    app[method_name](param);
+    var param = value.split(" "); param.shift(); param = param.join(" ").trim();
+    var settings = null;
+
+    // Parse Settings
+    if(param.indexOf("<") > -1 && param.indexOf(">") > -1){
+      settings = param.split("<")[1].replace(">","").trim();
+      param = param.split("<")[0];
+    }
+
+    app[method_name](param,false,settings);
     lobby.commander.bind(app);
     this.input_el.value = "";
     this.update_hint();
