@@ -53,6 +53,14 @@ function Commander()
       lobby.commander.validate();
     }
 
+    if(e && e.key == "Escape"){
+      if(lobby.commander.input_el.value == ""){
+        lobby.commander.input_el.blur();
+      }
+      lobby.commander.inject("");
+      lobby.commander.update_hint();
+    }
+
     // Check for passive
     var value = lobby.commander.input_el.value;
     if(value.indexOf(".") > -1 && value.indexOf(" ")){
