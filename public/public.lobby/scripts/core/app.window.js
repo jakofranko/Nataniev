@@ -15,7 +15,6 @@ function App_Window()
     start : function()
     {
       this.app.el.className = this.theme;
-      $(this.app.el).css("left",this.pos.x).css("top",this.pos.y - 5).animate({ left: this.pos.x, top: this.pos.y }, this.speed);
       $(this.app.el).css("width",this.size.width).css("height",this.size.height);
       this.show();
     },
@@ -97,13 +96,13 @@ function App_Window()
         return;
       }
 
-      $(this.app.el).removeClass("hidden");
+      $(this.app.el).css("left",this.pos.x).css("top",this.pos.y - 5).animate({ left: this.pos.x, top: this.pos.y, opacity: 1 }, this.speed);
       this.is_visible = true;
     },
 
     hide : function()
     {
-      $(this.app.el).addClass("hidden");
+      $(this.app.el).animate({ left: this.pos.x, top: this.pos.y - 5, opacity: 0 }, this.speed);
       this.is_visible = false;
     },
 

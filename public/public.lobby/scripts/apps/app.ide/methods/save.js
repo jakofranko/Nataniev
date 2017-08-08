@@ -25,7 +25,7 @@ lobby.apps.ide.save = function(val, is_passive = false)
   lobby.commander.notify("Saved.");
   this.textarea_el.style.display = "block";
   this.navi_el.style.display = "block";
-  // lobby.commander.update_status();
+  lobby.commander.update_status();
 }
 
 lobby.apps.ide.setup.confirm("methods/save");

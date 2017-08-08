@@ -275,7 +275,7 @@ function Commander()
 	this.notify = function(content)
 	{
 		this.notification_el.innerHTML = content;
-    $(this.notification_el).css('opacity','1').delay(1000).animate({ opacity: 0 }, 300);
+    $(this.notification_el).css('opacity','1').delay(2000).animate({ opacity: 0 }, 300);
     lobby.apps.terminal.log(content,"!");
 	}
 
