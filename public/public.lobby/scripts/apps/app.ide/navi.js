@@ -35,12 +35,17 @@ lobby.apps.ide.navi =
     var file_parts = lobby.apps.ide.location.split(".");
     var file_ext = file_parts[file_parts.length-1];
 
+    var count = 0;
+    var limit = (lobby.apps.ide.window.size.height/15) - lobby.apps.ide.history.length - 2;
+    console.log(limit);
     for(line_id in lines)
     {
       var should_parse = this.parse(file_ext,lines[line_id]);
       if(!should_parse){ continue; }
+      if(count > limit){ break; }
       var cmd_el = lobby.commander.create_cmd(should_parse+"<t class='ar'>"+line_id+"</t>","ide.goto "+line_id,"lh15 db cu fl");
       lobby.apps.ide.markers_el.appendChild(cmd_el);
+      count += 1;
     }
   },
 
