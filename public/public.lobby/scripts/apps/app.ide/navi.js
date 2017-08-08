@@ -9,38 +9,39 @@ lobby.apps.ide.navi =
     this.update_markers();
   },
 
-  markers : function()
+  parse : function(ext,line)
   {
-    var lines = lobby.apps.ide.textarea_el.value.split("\n");
-    var html = "";
+    if(ext == "rb"){
+      if(line.trim().split(" ")[0] == "def"){ return line.trim().split(" ")[1]; }
+      if(line.trim().split(" ")[0] == "class"){ return line.trim().split(" ")[1]; }
+    }
+    if(ext == "js"){
+      if(line.trim().split(" ")[0] == "function"){ return line.trim().split(" ")[1].split("(")[0]; }
+    }
+    if(ext == "mh"){
+      if(line == line.toUpperCase().trim() && line.indexOf(" : ") == -1){ return line; }
+    }
 
-    var count = 0
+    return null;
+
+  },
+
+  update_markers : function()
+  {
+    // Build HTML
+    lobby.apps.ide.markers_el.innerHTML = "";
+
+    var lines = lobby.apps.ide.textarea_el.value.split("\n");
+    var file_parts = lobby.apps.ide.location.split(".");
+    var file_ext = file_parts[file_parts.length-1];
+
     for(line_id in lines)
     {
-      if(count > 30){ break; }
-      var line = lines[line_id];
-      var marker = line.trim().split(" ")[0];
-      var targets_major = ["class","module"];
-      var targets_minor = ["def","attr_accessor","function"];
-      var targets_miscs = ["private"];
-      if(targets_major.indexOf(marker) > -1){
-        var name = line.replace(marker,"").trim().split(" ")[0].substr(0,14);
-        html += "<ln class='rel block'>"+name+" <t class='ar'>"+line_id+"</t></ln>";
-        count += 1;
-      }
-      if(targets_minor.indexOf(marker) > -1){
-        var name = line.replace(marker,"").trim().split(" ")[0].substr(0,14);
-        html += "<ln class='f9 rel block'>"+name+" <t class='ar'>"+line_id+"</t></ln>";
-        count += 1;
-      }
-      if(targets_miscs.indexOf(marker) > -1){
-        var name = line.trim().split(" ")[0].substr(0,14);
-        html += "<ln class='f5 rel block'>"+name+" <t class='ar'>"+line_id+"</t></ln>";
-        count += 1;
-      }
+      var should_parse = this.parse(file_ext,lines[line_id]);
+      if(!should_parse){ continue; }
+      var cmd_el = lobby.commander.create_cmd(should_parse+"<t class='ar'>"+line_id+"</t>","ide.goto "+line_id,"lh15 db cu fl");
+      lobby.apps.ide.markers_el.appendChild(cmd_el);
     }
-    return html;
-
   },
 
   update_history : function()

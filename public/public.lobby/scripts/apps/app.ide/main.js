@@ -10,6 +10,7 @@ function Ide()
 
   this.methods.create = {name:"create"};
   this.methods.replace = {name:"replace", shortcut:"r"};
+  this.methods.goto = {name:"goto", shortcut:"g"};
   this.methods.end = {name:"end"};
 
   this.methods.go_up = {name:"go_up", shortcut:"z", run_shortcut:true};
@@ -75,6 +76,16 @@ function Ide()
     lobby.commander.update_status();
     this.textarea_el.value = "";
     this.textarea_el.focus();
+  }
+
+  this.goto = function(line_id)
+  {
+    var lines = this.textarea_el.value.split("\n");
+    var target_block = lines.splice(0,line_id).join("\n");
+    lobby.apps.ide.textarea_el.focus();
+    $(lobby.apps.ide.textarea_el).animate({scrollTop: (line_id - 3) * 15}, 100, function(){ 
+      lobby.apps.ide.textarea_el.setSelectionRange(target_block.length+1,target_block.length+1); 
+    });
   }
 
   this.replace = function(val)
