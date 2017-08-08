@@ -1,9 +1,17 @@
 lobby.apps.ide.navi = 
 {
+  marker_el : document.createElement("yu"),
+  history_el : document.createElement("yu"),
+
   update : function()
   {
-    var lines = lobby.apps.ide.textarea_el.value.split("\n");
+    this.update_history();
+    this.update_markers();
+  },
 
+  markers : function()
+  {
+    var lines = lobby.apps.ide.textarea_el.value.split("\n");
     var html = "";
 
     var count = 0
@@ -31,20 +39,33 @@ lobby.apps.ide.navi =
         count += 1;
       }
     }
+    return html;
 
-    var history_html = "";
+  },
+
+  update_history : function()
+  {
+    // Remove duplicates
+    var updated_history = [];
+    for(file_id in lobby.apps.ide.history){
+      if(updated_history.indexOf(lobby.apps.ide.history[file_id]) > -1){ continue; }
+      updated_history.push(lobby.apps.ide.history[file_id]);
+    }
+    lobby.apps.ide.history = updated_history;
+
+    // Build HTML
+    lobby.apps.ide.history_el.innerHTML = "";
+
+    var html = "";
 
     for(file_id in lobby.apps.ide.history){
       var file_path = lobby.apps.ide.history[file_id]
       var file_parts = file_path.split("/");
       var file_name = file_parts[file_parts.length-1];
-      history_html += "<ln class='lh15 w6'>"+file_name+"</ln>";
+      var cmd_el = lobby.commander.create_cmd(file_name,"ide.load "+file_path,"lh15 db cu fl");
+      lobby.apps.ide.history_el.appendChild(cmd_el);
     }
-
-    html += "<yu class='ab'>"+history_html+"</yu>";
-
-    lobby.apps.ide.navi_el.innerHTML = count == 0 ? "No Markers" : html;
-  },
+  }
 }
 
 lobby.apps.ide.setup.confirm("navi");

@@ -71,7 +71,6 @@ function Dict()
   {
     var html = "";
     var count = {sum:0,russian:0,lietal:0};
-    console.log(this.payload)
     for(english in this.payload){
       count.sum += 1;
       if(this.payload[english].lietal){ count.lietal += 1; }

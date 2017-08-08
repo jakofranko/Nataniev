@@ -50,7 +50,7 @@ function Commander()
     lobby.commander.hide_browser();
 
     if(e && e.key == "Enter"){
-      lobby.commander.validate();
+      lobby.commander.run();
     }
 
     if(e && e.key == "Escape"){
@@ -86,9 +86,9 @@ function Commander()
     lobby.commander.update_hint();
   }
 
-  this.validate = function()
+  this.run = function(cmd = lobby.commander.input_el.value)
   {
-    var value = lobby.commander.input_el.value;
+    var value = cmd;
     var app_name = value.split(" ")[0].split(".")[0];
     var method_name = value.split(" ")[0].split(".")[1] ? value.split(" ")[0].split(".")[1] : "default";
     var app = lobby.apps[app_name];
@@ -288,6 +288,21 @@ function Commander()
   this.on_key = function(k)
   {
     if(k == "Escape"){ this.hide_browser(); this.inject(""); }
+  }
+
+  this.touch_cmd = function(e)
+  {
+    lobby.commander.run(e.target.command);
+  }
+
+  this.create_cmd = function(html,cmd = null,class_name = "")
+  {
+    var cmd_el = document.createElement("cmd");
+    cmd_el.innerHTML = html;
+    cmd_el.command = cmd;
+    cmd_el.className = class_name;
+    cmd_el.addEventListener('mousedown', this.touch_cmd, false);
+    return cmd_el;
   }
 
   this.input_el.onkeydown = this.key_down;

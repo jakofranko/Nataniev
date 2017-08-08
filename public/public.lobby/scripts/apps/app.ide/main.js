@@ -20,6 +20,9 @@ function Ide()
   this.formats = ["js","rb","html","css","ma","mh","rin","mar"];
 
   this.navi_el = document.createElement("yu"); this.navi_el.className = "at al lh15 w6 ml mt hf_2";
+  this.markers_el = document.createElement("yu"); this.markers_el.className = "w6"; this.navi_el.appendChild(this.markers_el);
+  this.history_el = document.createElement("yu"); this.history_el.className = "ab w6 lh15"; this.navi_el.appendChild(this.history_el);
+
   this.textarea_el = document.createElement("textarea"); this.textarea_el.className = "wf_9 al7 pa hf_2 pdl";
   this.textarea_el.style.display = "none";
   this.wrapper_el.appendChild(this.textarea_el);
