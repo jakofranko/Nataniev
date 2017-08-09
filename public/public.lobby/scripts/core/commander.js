@@ -114,15 +114,15 @@ function Commander()
     lobby.apps.terminal.log(value,">");
   }
 
-	this.install = function()
-	{
-		this.update_hint();
-		this.input_el.focus();
-		this.get_tree();
-	}
+  this.install = function()
+  {
+    this.update_hint();
+    this.input_el.focus();
+    this.get_tree();
+  }
 
-	this.get_tree = function()
-	{
+  this.get_tree = function()
+  {
     var app = this;
     $.ajax({url: '/ide.tree',
       type: 'POST', 
@@ -132,7 +132,7 @@ function Commander()
         app.tree = a;
       }
     })
-	}
+  }
 
 	// Fuzzy
 

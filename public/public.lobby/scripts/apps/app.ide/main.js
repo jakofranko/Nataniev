@@ -10,13 +10,9 @@ function Ide()
 
   this.methods.create = {name:"create"};
   this.methods.replace = {name:"replace", shortcut:"r"};
-  this.methods.goto = {name:"goto", shortcut:"g"};
   this.methods.end = {name:"end"};
 
-  this.methods.go_up = {name:"go_up", shortcut:"z", run_shortcut:true};
-  this.methods.go_down = {name:"go_down", shortcut:"x", run_shortcut:true};
-
-  this.setup.includes = ["navi","methods/load","methods/save","methods/create","methods/find"];
+  this.setup.includes = ["navi","methods/load","methods/save","methods/create","methods/find","methods/goto","methods/spellcheck"];
 
   this.formats = ["js","rb","html","css","ma","mh","rin","mar"];
 
@@ -83,16 +79,6 @@ function Ide()
     this.textarea_el.focus();
   }
 
-  this.goto = function(line_id)
-  {
-    var lines = this.textarea_el.value.split("\n");
-    var target_block = lines.splice(0,line_id).join("\n");
-    lobby.apps.ide.textarea_el.focus();
-    $(lobby.apps.ide.textarea_el).animate({scrollTop: (line_id - 3) * 15}, 100, function(){ 
-      lobby.apps.ide.textarea_el.setSelectionRange(target_block.length+1,target_block.length+1); 
-    });
-  }
-
   this.replace = function(val)
   {
     console.log(val)
@@ -132,28 +118,6 @@ function Ide()
 
     this.textarea_el.value = before+middle+after;
     this.textarea_el.setSelectionRange(pos+characters.length,pos+characters.length);
-  }
-
-  this.go_up = function()
-  {
-    var lines = this.textarea_el.value.split("\n");
-    var line_id = this.textarea_el.value.substr(0,this.textarea_el.selectionEnd).split("\n").length;
-    var target_block = lines.splice(0,line_id - 5).join("\n");
-
-    this.textarea_el.setSelectionRange(target_block.length+1,target_block.length+1);
-    this.textarea_el.focus();
-    $(this.textarea_el).animate({scrollTop: (line_id - 8) * 15}, 100, function() {});
-  }
-
-  this.go_down = function()
-  {
-    var lines = this.textarea_el.value.split("\n");
-    var line_id = this.textarea_el.value.substr(0,this.textarea_el.selectionEnd).split("\n").length;
-    var target_block = lines.splice(0,line_id + 5).join("\n");
-
-    this.textarea_el.setSelectionRange(target_block.length+1,target_block.length+1);
-    this.textarea_el.focus();
-    $(this.textarea_el).animate({scrollTop: (line_id + 3) * 15}, 100, function() {});
   }
 
   this.textarea_el.addEventListener('input', text_change, false);

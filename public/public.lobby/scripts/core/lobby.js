@@ -7,8 +7,8 @@ function Lobby()
   this.keyboard = new Keyboard();
   this.apps = {};
 
-	this.init = function()
-	{
+  this.init = function()
+  {
     console.info("Init.");
 
     document.body.appendChild(this.el);
@@ -17,22 +17,22 @@ function Lobby()
     this.el.appendChild(this.commander.el);
     
 
-		this.keyboard.start();
-		this.commander.install();
-		lobby.window.update();
+    this.keyboard.start();
+    this.commander.install();
+    lobby.window.update();
 
-		this.summon.invoke("Terminal");
-		this.summon.invoke("Clock");
-		this.summon.invoke("Calendar");
-		this.summon.invoke("Ide");
-		this.summon.invoke("Ronin");
-		this.summon.invoke("System");
-		this.summon.invoke("Dict");
-		this.summon.invoke("Diary");
-		this.summon.invoke("Pong");
+    this.summon.invoke("Terminal");
+    this.summon.invoke("Clock");
+    this.summon.invoke("Calendar");
+    this.summon.invoke("Ide");
+    this.summon.invoke("Ronin");
+    this.summon.invoke("System");
+    this.summon.invoke("Dict");
+    this.summon.invoke("Diary");
+    this.summon.invoke("Pong");
     // this.summon.invoke("Marabu");
-		// this.summon.invoke("Typographer");
-	}
+    // this.summon.invoke("Typographer");
+  }
 
   // 
   // Summon

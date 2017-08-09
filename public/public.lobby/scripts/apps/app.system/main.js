@@ -9,6 +9,7 @@ function System()
 
   this.methods.set_wallpaper = {name:"set_wallpaper",passive:true};
   this.methods.set_theme = {name:"set_theme"};
+  this.methods.aquire = {name:"aquire"};
 
   this.widget_el = document.createElement("t"); this.widget_el.className = "toggle";
 
@@ -25,6 +26,11 @@ function System()
   this.setup.start = function()
   {
     this.app.update();
+  }
+
+  this.aquire = function()
+  {
+    lobby.commander.get_tree();
   }
 
   this.update = function()
