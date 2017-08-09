@@ -28,7 +28,7 @@ b         { font-weight: normal; font-family: 'input_mono_medium'}
 #commander > .widgets t { margin-left:15px; color:#999; }
 #commander > .widgets t.toggle { color:#000; }
 #commander > .widgets t.toggle:hover { text-decoration: underline; cursor: pointer;  }
-#commander > .notification { text-align: right; position: relative; z-index:9003;float:right; }
+#commander > .notification { text-align: right; position: relative; z-index:9003;float:right; font-family: 'input_mono_medium'; }
 #commander > .browser { display: none;background: white;position: absolute;bottom: 30px;left: 0px;width: 100%;max-height: 119px;color: black;padding: 15px 0px 0px 15px;overflow: hidden; z-index:60; }
 #commander > .status { position: absolute; top:-30px; width: calc(100% - 30px); padding-left:15px; color:white; }
 

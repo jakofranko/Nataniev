@@ -27,16 +27,15 @@ LOBBY
     Update tree from commander
   App
     Dynamic reload
-    .exit
+    .end
     application descriptions
 
 IDE
-  Generic
-    close
+  Navi
+    Display file with changes
   Editor
     .replace
-    .rename
-    .save <path>
+    .save/rename <path>
 
 MARABU
   Generic

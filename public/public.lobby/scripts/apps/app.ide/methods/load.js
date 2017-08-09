@@ -28,6 +28,7 @@ lobby.apps.ide.load_file = function(file_path)
       app.history.push(app.location);
       app.navi.update();
       app.textarea_el.scrollTop = 0;
+      app.textarea_el.scrollLeft = 0;
       lobby.commander.update_status();
     }
   })

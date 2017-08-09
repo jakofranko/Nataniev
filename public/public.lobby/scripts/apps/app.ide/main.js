@@ -42,6 +42,11 @@ function Ide()
   {
     this.app.create();
   }
+
+  this.when.resize = function()
+  {
+    this.app.navi.update();
+  }
   
   function key_down(e)
   {

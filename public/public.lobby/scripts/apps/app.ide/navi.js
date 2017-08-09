@@ -9,7 +9,7 @@ lobby.apps.ide.navi =
     this.update_markers();
   },
 
-  parse : function(ext,line)
+  parse : function(ext,line,line_id)
   {
     if(ext == "rb"){
       if(line.trim().split(" ")[0] == "def"){ return line.trim().split(" ")[1]; }
@@ -21,9 +21,10 @@ lobby.apps.ide.navi =
     if(ext == "mh"){
       if(line == line.toUpperCase().trim() && line.indexOf(" : ") == -1){ return line; }
     }
-
+    if(ext == "ma"){
+      if(line_id % 30 == 0){ return line.split(" ")[0]; }
+    }
     return null;
-
   },
 
   update_markers : function()
@@ -37,13 +38,13 @@ lobby.apps.ide.navi =
 
     var count = 0;
     var limit = (lobby.apps.ide.window.size.height/15) - lobby.apps.ide.history.length - 2;
-    console.log(limit);
+    
     for(line_id in lines)
     {
-      var should_parse = this.parse(file_ext,lines[line_id]);
+      var should_parse = this.parse(file_ext,lines[line_id],line_id);
       if(!should_parse){ continue; }
       if(count > limit){ break; }
-      var cmd_el = lobby.commander.create_cmd(should_parse+"<t class='ar'>"+line_id+"</t>","ide.goto "+line_id,"lh15 db cu fl");
+      var cmd_el = lobby.commander.create_cmd(should_parse.substr(0,20)+"<t class='ar'>"+line_id+"</t>","ide.goto "+line_id,"lh15 db cu fl");
       lobby.apps.ide.markers_el.appendChild(cmd_el);
       count += 1;
     }
