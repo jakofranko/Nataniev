@@ -23,12 +23,6 @@ function Calendar()
     this.app.call("get_calendar",null);  
   }
 
-  this.on_launch = function()
-  {
-    console.log("!")
-    this.call("get_calendar",null);  
-  }
-
   this.draw = function(logs = null)
   {
     var html = "";

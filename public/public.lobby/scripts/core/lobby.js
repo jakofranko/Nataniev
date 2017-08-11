@@ -30,6 +30,7 @@ function Lobby()
     this.summon.invoke("Diary");
     this.summon.invoke("Pong");
     this.summon.invoke("Twitter");
+    this.summon.invoke("Marabu");
     // this.summon.invoke("Typographer");
   }
 
