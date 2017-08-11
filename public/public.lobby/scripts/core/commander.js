@@ -31,6 +31,7 @@ function Commander()
     console.log("commander.bind",app.name);
     this.app = app;
     this.app.when.bind();
+    document.title = "NAT | "+app.title();
   }
 
   this.release = function()
@@ -42,6 +43,7 @@ function Commander()
 
   this.next_app = function()
   {
+    this.input_el.focus();
     console.log("!!")
   }
 

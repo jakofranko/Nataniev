@@ -16,7 +16,6 @@ function Lobby()
     this.el.appendChild(this.wallpaper_el);
     this.el.appendChild(this.commander.el);
     
-
     this.keyboard.start();
     this.commander.install();
     lobby.window.update();
@@ -30,7 +29,7 @@ function Lobby()
     this.summon.invoke("Dict");
     this.summon.invoke("Diary");
     this.summon.invoke("Pong");
-    // this.summon.invoke("Marabu");
+    this.summon.invoke("Twitter");
     // this.summon.invoke("Typographer");
   }
 
@@ -210,12 +209,38 @@ function Lobby()
     	e.preventDefault();
     	lobby.touch.release();
     	lobby.touch.from = null;
+    },
+
+    drag_over : function(e)
+    {
+      e.stopPropagation(); 
+      e.preventDefault();
+      e.dataTransfer.dropEffect = 'copy';
+    },
+
+    drop_over : function(e)
+    {
+      e.stopPropagation(); 
+      e.preventDefault();
+
+      var files = e.dataTransfer.files;
+      var file = files[0];
+
+      console.log("Looking for handler",file)
+
+      for(app_id in lobby.apps){
+        var result = lobby.apps[app_id].when.file(file);
+        if(result){ break; }
+      }
+
     }
 	}
 
   this.el.addEventListener("mousedown", this.touch.down, false);
   this.el.addEventListener("mouseup", this.touch.up, false);
   this.el.addEventListener("mousemove", this.touch.move, false);
+  this.el.addEventListener('dragover', this.touch.drag_over, false);
+  this.el.addEventListener('drop', this.touch.drop_over, false);
 
   window.addEventListener('resize', this.when.resize, false);
 }

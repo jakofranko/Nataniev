@@ -81,6 +81,11 @@ function App_Events()
     key : function(key)
     {
       // Override
+    },
+
+    file : function(file)
+    {
+      return false;
     }
   }
 }

@@ -1,5 +1,10 @@
 lobby.apps.ronin.methods.import = {name:"import",params:"path [width:200,height:200]",shortcut:"i",passive:true}
 
+lobby.apps.ronin.draw_image = function(base_image,pos,size)
+{
+  lobby.apps.ronin.layers.main.context().drawImage(base_image, pos.x,pos.y, size.width, size.height);
+}
+
 lobby.apps.ronin.import = function(param)
 {
   this.import = function(val, is_passive = false)
@@ -38,8 +43,10 @@ lobby.apps.ronin.import = function(param)
       width  = isNaN(width) && height > 0 ? (height*base_image.naturalWidth)/base_image.naturalHeight : width;
       height = isNaN(height) && width > 0 ? (width*base_image.naturalHeight)/base_image.naturalWidth : height;
 
-      
-      lobby.apps.ronin.layers.main.context().drawImage(base_image, position.x, position.y, width, height);
+      var pos = {x:0,y:0};
+      var size = {width:width,height:height};
+
+      lobby.apps.ronin.draw_image(base_image,pos,size);
     }
   }
 }

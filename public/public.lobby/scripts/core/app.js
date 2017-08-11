@@ -62,6 +62,11 @@ function App()
     return "Idle.";
   }
 
+  this.title = function()
+  {
+    return this.name;
+  }
+
   this.call = function(method,params = null,vessel = this.name)
   {
     var app = this;

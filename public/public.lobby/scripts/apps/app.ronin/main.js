@@ -47,6 +47,29 @@ function Ronin()
     this.app.clear();
   }
 
+  this.when.file = function(file)
+  {
+    if (!file.type.match(/image.*/)) { return false; }
+
+    var reader = new FileReader();
+    
+    reader.onload = function(event)
+    {
+      base_image = new Image();
+      base_image.src = event.target.result;
+
+      var width = base_image.naturalWidth;
+      var height = base_image.naturalHeight;
+      var pos = {x:0,y:0};
+      var size = {width:width,height:height};
+
+      lobby.apps.ronin.draw_image(base_image,pos,size);
+    }
+    reader.readAsDataURL(file);
+
+    return true;
+  }
+
   this.on_input_change = function(value)
   {
     if(value.split(" ")[0] == "ronin.load"){

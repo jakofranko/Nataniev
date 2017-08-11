@@ -42,9 +42,8 @@ class Nataniev
 
   def summon vessel_name
 
-    if !File.exist?("#{path}/vessel/vessel.#{vessel_name.downcase}/vessel.rb") then puts "Missing #{vessel_name} vessel file." ; return nil end
-
-    load("#{path}/vessel/vessel.#{vessel_name.downcase}/vessel.rb")
+    if File.exist?("#{path}/vessel/vessel.#{vessel_name.downcase}/vessel.rb") then load("#{path}/vessel/vessel.#{vessel_name.downcase}/vessel.rb") end    
+    if File.exist?("#{path}/vessel/vessel.#{vessel_name.downcase}.rb") then load("#{path}/vessel/vessel.#{vessel_name.downcase}.rb") end    
 
     if !Kernel.const_defined?("Vessel#{vessel_name.capitalize}") then puts "Could not create the #{vessel_name} vessel." ; return nil end
 

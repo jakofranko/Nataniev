@@ -99,6 +99,11 @@ function Ide()
     return this.location+" "+lines_display+chars_display+" <b class='di'>"+scroll_position+"%</b> <t class='right'>"+this.window.size.width+"x"+this.window.size.height+"</t>";
   }
 
+  this.title = function()
+  {
+    return this.location ? "Ide("+this.location.split("/")[this.location.split("/").length-1]+")" : "Ide";
+  }
+
   this.when.key = function(key)
   {
     if(key == "escape"){
