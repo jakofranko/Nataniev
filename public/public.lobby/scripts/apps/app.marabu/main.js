@@ -8,8 +8,8 @@ function Marabu()
 
   this.name = "marabu";
 
-  this.window.size = {width:780,height:420};
-  this.window.pos = {x:120,y:120};
+  this.window.size = {width:780,height:510};
+  this.window.pos = {x:30,y:30};
   this.window.theme = "noir";
 
   this.setup.includes = [
@@ -46,7 +46,13 @@ function Marabu()
   {
     var html = "";
 
-    html += "  <div class='sequencer' id='sequence_controller' style='background:red; width:180px; display:inline-block; vertical-align:top'>";
+    html += "<style>";
+    html += ".everything { color:white; }";
+    html += ".tracks tr {  line-height:15px}";
+    html += ".tracks tr td { width:15px; text-align:center}";
+    html += "</style>";
+
+    html += "  <div class='sequencer' id='sequence_controller' style='width:150px; display:inline-block; vertical-align:top'>";
     html += "    <h1 class='title'>SEQ";
     html += "      <span class='status' id='sequence_controller_status'></span>";
     html += "      <input id='bpm' type='text' size='3' value='' title='Beats per minute (song speed)'/>";
@@ -63,7 +69,7 @@ function Marabu()
     html += "      <table class='tracks' id='sequencer-table'></table>";
     html += "    </div>";
     html += "  </div>";
-    html += "  <div class='pattern' id='pattern_controller' style='background:red; width:180px; display:inline-block; vertical-align:top'>";
+    html += "  <div class='pattern' id='pattern_controller' style='width:105px; display:inline-block; vertical-align:top; border-left:1px solid #333; padding-left:30px; margin-left:-5px'>";
     html += "    <h1 class='title'>PAT";
     html += "      <span class='status' id='pattern_controller_status'></span>";
     html += "      <input id='rpp' type='text' size='3' value='' title='Rows per pattern' />";
@@ -71,7 +77,7 @@ function Marabu()
     html += "      <span class='icon recording'></span>";
     html += "      <hr />";
     html += "    </h1>";
-    html += "    <div id='pattern'>";
+    html += "    <div id='pattern' style='float:left'>";
     html += "      <table class='tracks' id='pattern-table' title='Use the piano or keyboard to enter notes'></table>";
     html += "    </div>";
     html += "    <div id='fxtrack'>";
@@ -85,7 +91,7 @@ function Marabu()
     html += "      <hr />";
     html += "    </h1>";
     html += "  </div>";
-    html += "  <div class='instrument' style='background:red; width:300px; display:inline-block; vertical-align:top'>";
+    html += "  <div class='instrument' style='width:300px; display:inline-block; vertical-align:top; border-left:1px solid #333; padding-left:30px; margin-left:-5px'>";
     html += "    <h1 class='title'>INS ";
     html += "      <span class='status' id='instrument_controller_status'></span>";
     html += "      <input id='instrument_name' type='text' size='20' value='' title='Instrument Name' />";
@@ -171,7 +177,7 @@ function Marabu()
     html += "    <hr />";
     html += "  </div>";
 
-    return "<yu style='vertical-align:top'>"+html+"</yu>";
+    return "<yu style='vertical-align:top' class='everything'>"+html+"</yu>";
   }
 }
 

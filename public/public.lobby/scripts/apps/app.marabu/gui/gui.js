@@ -20,24 +20,6 @@
 */
 
 //------------------------------------------------------------------------------
-// External dependencies
-//------------------------------------------------------------------------------
-
-// include("core/rle.js");
-
-// include("core/demo-songs.js");
-// include("core/player.js");
-// include("core/player-worker.js");
-// include("core/jammer.js");
-// include("core/rle.js");
-
-// include("inc/deflate.js");
-// include("inc/inflate.js");
-// include("inc/Blob.js");
-// include("inc/FileSaver.js");
-// include("inc/WebMIDIAPI.js");
-
-//------------------------------------------------------------------------------
 // Local classes for easy access to binary data
 //------------------------------------------------------------------------------
 
@@ -214,7 +196,7 @@ var CGUI = function()
       EDIT_FXTRACK = 3;
 
   // Misc constants
-  var MAX_SONG_ROWS = 16,
+  var MAX_SONG_ROWS = 32,
       MAX_PATTERNS = 16;
 
   // Edit/gui state
@@ -400,7 +382,7 @@ var CGUI = function()
     song.endPattern = 2;
 
     // Rows per pattern
-    song.patternLen = 16;
+    song.patternLen = 32;
 
     // Select the default instrument from the presets
     var defaultInstr = { name: "FORM sin", i: [3,255,128,0,2,23,152,0,0,0,0,72,129,0,0,3,121,57,0,2,180,50,0,31,47,3,55,8] };
@@ -2806,12 +2788,12 @@ var CGUI = function()
         tr.className = "beat";
       th = document.createElement("th");
       th.id = "spr" + row;
-      th.textContent = "" + row;
+      // th.textContent = "" + row;
       tr.appendChild(th);
       for (var col = 0; col < 8; col++) {
         td = document.createElement("td");
         td.id = "sc" + col + "r" + row;
-        td.textContent = " ";
+        td.textContent = "- ";
         td.addEventListener("mousedown", sequencerMouseDown, false);
         td.addEventListener("mouseover", sequencerMouseOver, false);
         td.addEventListener("mouseup", sequencerMouseUp, false);
@@ -2848,7 +2830,8 @@ var CGUI = function()
     return beatDistance;
   };
 
-  var buildPatternTable = function () {
+  var buildPatternTable = function () 
+  {
     var beatDistance = getBeatDistance();
     var table = document.getElementById("pattern-table");
     if (table.children.length === mSong.patternLen && getCurrentBeatDistance(table) === beatDistance)
@@ -2862,12 +2845,12 @@ var CGUI = function()
         tr.className = "beat";
       th = document.createElement("th");
       th.id = "ppr" + row;
-      th.textContent = "" + row;
+      // th.textContent = "" + row;
       tr.appendChild(th);
       for (col = 0; col < 4; col++) {
         td = document.createElement("td");
         td.id = "pc" + col + "r" + row;
-        td.textContent = " ";
+        td.textContent = "- ";
         td.addEventListener("mousedown", patternMouseDown, false);
         td.addEventListener("mouseover", patternMouseOver, false);
         td.addEventListener("mouseup", patternMouseUp, false);
