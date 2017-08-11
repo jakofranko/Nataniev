@@ -31,7 +31,7 @@ var CPlayer = function () {
 
     var mGeneratedBuffer;
 
-    var mWorker = new Worker("scripts/core/player-worker.js");
+    var mWorker = new Worker("public.lobby/scripts/apps/app.marabu/core/player-worker.js");
 
     mWorker.onmessage = function (event) {
         if (event.data.cmd === "progress") {
@@ -102,7 +102,4 @@ var CPlayer = function () {
     };
 };
 
-
-
 lobby.apps.marabu.setup.confirm("core/player");
-

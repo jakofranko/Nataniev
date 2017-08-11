@@ -9,7 +9,6 @@ function Slider(id,name = "UNK",min = 0,max = 255)
   this.name_el = null;
   this.value_el = null;
   this.slide_el = null;
-  this.handle_el = null;
 
   this.is_selected = false;
 
@@ -19,33 +18,29 @@ function Slider(id,name = "UNK",min = 0,max = 255)
 
     // Name Span
     this.name_el = document.createElement("span");
-    this.name_el.setAttribute("class","name");
+    this.name_el.setAttribute("class","name w2 di");
+    this.name_el.style.height = "15px";
+    this.name_el.style.width = "30px";
+    this.name_el.style.verticalAlign = "top";
     this.name_el.innerHTML = this.name;
     this.el.appendChild(this.name_el);
-
-    // Value Input
-    this.value_el = document.createElement("input");
-    this.value_el.setAttribute("class","value");
-    this.value_el.value = this.min+"/"+this.max;
-    this.el.appendChild(this.value_el);
 
     // Slide Div
     this.slide_el = document.createElement("div");
     this.slide_el.setAttribute("class","slide");
-    this.slide_el.style.marginLeft = 0;
+    this.slide_el.style.height = "15px";
+    this.slide_el.style.width = "30px";
+    this.slide_el.style.display = "inline-block";
+    this.slide_el.style.verticalAlign = "top";
     this.el.appendChild(this.slide_el);
 
-    // Progress Div
-    this.progress_el = document.createElement("div");
-    this.progress_el.setAttribute("class","progress");
-    this.progress_el.style.width = 100;
-    this.el.appendChild(this.progress_el);
-
-    // Handle Div
-    this.handle_el = document.createElement("div");
-    this.handle_el.setAttribute("class","handle");
-    this.handle_el.style.marginLeft = 0;
-    this.slide_el.appendChild(this.handle_el);
+    // Value Input
+    this.value_el = document.createElement("input");
+    this.value_el.className = "value w2";
+    this.value_el.style.backgroundColor = "black";
+    this.value_el.style.marginLeft = "15px";
+    this.value_el.value = this.min+"/"+this.max;
+    this.el.appendChild(this.value_el);
 
     this.slide_el.addEventListener("mousedown", mouse_down, false);
     this.slide_el.addEventListener("mouseup", mouse_up, false);
@@ -62,8 +57,6 @@ function Slider(id,name = "UNK",min = 0,max = 255)
     this.value = parseInt(v);
     var range = parseInt(this.max) - parseInt(this.min);
     var mar_left = (((this.value - parseInt(this.min))/parseFloat(range)) * 120)+"px"
-    this.handle_el.style.marginLeft = mar_left;
-    this.progress_el.style.width = mar_left;
     this.value_el.value = this.value;
     this.update();
   }
@@ -90,10 +83,17 @@ function Slider(id,name = "UNK",min = 0,max = 255)
   this.update = function()
   {
     if(parseInt(this.value_el.value) == this.min){ this.value_el.style.color = "#333"; }
-    else if(parseInt(this.value_el.value) == this.max){ this.value_el.style.color = "#72dec2"; }
-    else{ this.value_el.style.color = "#fff"; }
+    else if(parseInt(this.value_el.value) == this.max){ this.value_el.style.color = "#fff"; }
+    else{ this.value_el.style.color = "#999"; }
 
     GUI.update_status("Updated <b>"+this.id+"</b> to "+this.value+"/"+this.max);
+
+    this.slide_el.innerHTML = "<svg class='fh' style='width:30px;height:15px; stroke-dasharray:1,1; fill:none; stroke-width:10px; stroke-linecap:butt;'><line x1='0' y1='7.5' x2='30' y2='7.5' stroke='#999'/><line x1='0' y1='7.5' x2='"+parseInt(this.percentage() * 30)+"' y2='7.5' stroke='#fff'/></svg>";
+  }
+
+  this.percentage = function()
+  {
+    return ((parseInt(this.value_el.value) + parseInt(this.min))/parseFloat(this.max));
   }
 
   function select(e)
@@ -114,8 +114,6 @@ function Slider(id,name = "UNK",min = 0,max = 255)
     target_obj.value = parseInt(target_val);
 
     var mar_left = ((target_obj.value/parseFloat(target_obj.max)) * 120)+"px"
-    target_obj.handle_el.style.marginLeft = mar_left;
-    target_obj.progress_el.style.width = mar_left;
     target_obj.update();
     target_obj.save();
   }
@@ -125,8 +123,6 @@ function Slider(id,name = "UNK",min = 0,max = 255)
     var target_pos = offset-15;
     target_pos = target_pos < 0 ? 0 : target_pos;
     target_pos = target_pos > 115 ? 120 : target_pos;
-    target_obj.handle_el.style.marginLeft = target_pos+"px";
-    target_obj.progress_el.style.width = target_pos+"px";
 
     var ratio = target_pos/120.0;
     var range = parseInt(target_obj.max) - parseInt(target_obj.min);

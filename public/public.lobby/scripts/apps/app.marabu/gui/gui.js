@@ -421,6 +421,8 @@ var CGUI = function()
     }
 
     // Default instruments
+
+    song.songData[0].name = "SYNTH A";
     song.songData[4].name = "Kick";
     song.songData[4].i = [2,0,92,0,0,255,92,23,1,0,14,0,74,0,0,0,89,0,1,1,16,0,21,255,49,6,0,0];
     song.songData[5].name = "Snare";

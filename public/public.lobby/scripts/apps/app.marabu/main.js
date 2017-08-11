@@ -8,17 +8,15 @@ function Marabu()
 
   this.name = "marabu";
 
-  this.window.size = {width:780,height:510};
-  this.window.pos = {x:30,y:30};
+  this.window.size = {width:600,height:540};
+  this.window.pos = {x:30,y:0};
   this.window.theme = "noir";
 
   this.setup.includes = [
-    "core/common",
-    "core/demo-songs",
     "core/jammer",
     "core/keyboard",
     "core/player-small",
-    "core/player-worker",
+    // "core/player-worker",
     "core/player",
     "core/rle",
 
@@ -53,9 +51,8 @@ function Marabu()
     html += "</style>";
 
     html += "  <div class='sequencer' id='sequence_controller' style='width:150px; display:inline-block; vertical-align:top'>";
-    html += "    <h1 class='title'>SEQ";
-    html += "      <span class='status' id='sequence_controller_status'></span>";
-    html += "      <input id='bpm' type='text' size='3' value='' title='Beats per minute (song speed)'/>";
+    html += "    <h1 class='lh30'>SEQ";
+    html += "      <input id='bpm' type='text' size='3' value='' title='Beats per minute (song speed)' class='bh fh'/>";
     html += "      <span id='sequencerCopy' class='icon copy hide'></span>";
     html += "      <span id='sequencerPaste' class='icon paste hide'></span>";
     html += "      <span id='sequencerPatDown' class='icon remove hide'></span>";
@@ -68,11 +65,11 @@ function Marabu()
     html += "    <div id='sequencer' title='Enter pattern numbers, 0-9'>";
     html += "      <table class='tracks' id='sequencer-table'></table>";
     html += "    </div>";
+    html += "    <span class='status fl' id='sequence_controller_status'></span>";
     html += "  </div>";
     html += "  <div class='pattern' id='pattern_controller' style='width:105px; display:inline-block; vertical-align:top; border-left:1px solid #333; padding-left:30px; margin-left:-5px'>";
-    html += "    <h1 class='title'>PAT";
-    html += "      <span class='status' id='pattern_controller_status'></span>";
-    html += "      <input id='rpp' type='text' size='3' value='' title='Rows per pattern' />";
+    html += "    <h1 class='lh30'>PAT";
+    html += "      <input id='rpp' type='text' size='3' value='' title='Rows per pattern' class='bh fh' />";
     html += "      <span id='playRange' class='icon play_range' title='Play selected range (SPACE)'></span>";
     html += "      <span class='icon recording'></span>";
     html += "      <hr />";
@@ -83,6 +80,7 @@ function Marabu()
     html += "    <div id='fxtrack'>";
     html += "      <table class='tracks' id='fxtrack-table' title='Use instrument and effect controls to edit'></table>";
     html += "    </div>";
+    html += "    <span class='status' id='pattern_controller_status'></span>";
     html += "  </div>";
     html += "  <div class='effects hide' style='display:none'>";
     html += "    <h1>MOD";
@@ -91,10 +89,9 @@ function Marabu()
     html += "      <hr />";
     html += "    </h1>";
     html += "  </div>";
-    html += "  <div class='instrument' style='width:300px; display:inline-block; vertical-align:top; border-left:1px solid #333; padding-left:30px; margin-left:-5px'>";
-    html += "    <h1 class='title'>INS ";
+    html += "  <div class='instrument' style='width:90px; display:inline-block; vertical-align:top; border-left:1px solid #333; padding-left:30px; margin-left:-5px; line-height:15px'>";
+    html += "    <h1 class='lh30'><input id='instrument_name' type='text' size='10' value='' title='Instrument Name' class='bh fh' style='text-transform:uppercase' /> ";
     html += "      <span class='status' id='instrument_controller_status'></span>";
-    html += "      <input id='instrument_name' type='text' size='20' value='' title='Instrument Name' />";
     html += "      <span id='exportINSTRUMENT' title='Export .instrument' class='icon export_instrument'></span>";
     html += "      <span id='exportKIT' title='Export .kit' class='icon export_kit'></span>";
     html += "      <select id='midiInput' title='Select a MIDI source' style='margin-left: 10px; display: none'>";
@@ -102,47 +99,47 @@ function Marabu()
     html += "      </select>";
     html += "      <hr />";
     html += "    </h1>";
-    html += "    <div class='osc'>";
+    html += "    <div class='osc' style='width:180px; margin-bottom:15px'>";
     html += "      <h1>OSC1";
-    html += "        <img id='osc1_wave_saw' title='Saw' src='media/graphics/wave_saw.svg' alt='Saw' />";
-    html += "        <img id='osc1_wave_sqr' title='Square' src='media/graphics/wave_sqr.svg' alt='Sqr' />";
-    html += "        <img id='osc1_wave_tri' title='Triangle' src='media/graphics/wave_tri.svg' alt='Tri' />";
-    html += "        <img id='osc1_wave_sin' title='Sine' src='media/graphics/wave_sin.svg' alt='Sin' />";
-    html += "        <img id='osc1_xenv' class='box' src='media/graphics/toggle_off.svg' width='10' height='12' alt='' />";
+    html += "        <t id='osc1_wave_saw'>SAW</t>";
+    html += "        <t id='osc1_wave_sqr'>SQR</t>";
+    html += "        <t id='osc1_wave_tri'>TRI</t>";
+    html += "        <t id='osc1_wave_sin'>SIN</t>";
+    html += "        <t id='osc1_xenv' class='box'>?</t>";
     html += "      </h1>";
     html += "      <div id='osc1_vol'></div>";
     html += "      <div id='osc1_semi'></div>";
     html += "      <div id='noise_vol'></div>";
     html += "    </div>";
-    html += "    <div class='osc'>";
+    html += "    <div class='osc' style='width:180px; margin-bottom:15px'>";
     html += "      <h1>OSC2";
-    html += "        <img id='osc2_wave_saw' title='Saw' src='media/graphics/wave_saw.svg' alt='Saw' />";
-    html += "        <img id='osc2_wave_sqr' title='Square' src='media/graphics/wave_sqr.svg' alt='Sqr' />";
-    html += "        <img id='osc2_wave_tri' title='Triangle' src='media/graphics/wave_tri.svg' alt='Tri' />";
-    html += "        <img id='osc2_wave_sin' title='Sine' src='media/graphics/wave_sin.svg' alt='Sin' />";
-    html += "        <img id='osc2_xenv' class='box' src='media/graphics/toggle_off.svg' width='10' height='12' alt='' />";
+    html += "        <t id='osc2_wave_saw'>SAW</t>";
+    html += "        <t id='osc2_wave_sqr'>SQR</t>";
+    html += "        <t id='osc2_wave_tri'>TRI</t>";
+    html += "        <t id='osc2_wave_sin'>SIN</t>";
+    html += "        <t id='osc2_xenv' class='box'>?</t>";
     html += "      </h1>";
     html += "      <div id='osc2_vol'></div>";
     html += "      <div id='osc2_semi'></div>";
     html += "      <div id='osc2_det'></div>";
     html += "    </div>";
-    html += "    <div class='env'>";
+    html += "    <div class='env' style='width:180px; margin-bottom:15px'>";
     html += "      <h1>ENV</h1>";
     html += "      <div id='env_att'></div>";
     html += "      <div id='env_sust'></div>";
     html += "      <div id='env_rel'></div>";
     html += "    </div>";
-    html += "    <div class='arp'>";
+    html += "    <div class='arp' style='width:180px; margin-bottom:15px'>";
     html += "      <h1>ARP</h1>";
     html += "      <div id='arp_note1'></div>";
     html += "      <div id='arp_note2'></div>";
     html += "      <div id='arp_speed'></div>";
     html += "    </div>";
-    html += "    <div class='efx'>";
+    html += "    <div class='efx' style='width:180px; margin-bottom:15px'>";
     html += "      <h1>EFX";
-    html += "        <img id='fx_filt_lp' src='media/graphics/wave_lp.svg' alt='Saw' />";
-    html += "        <img id='fx_filt_bp' src='media/graphics/wave_bp.svg' alt='Saw' />";
-    html += "        <img id='fx_filt_hp' src='media/graphics/wave_hp.svg' alt='Saw' />";
+    html += "        <t id='fx_filt_lp'>LP</t>";
+    html += "        <t id='fx_filt_bp'>BP</t>";
+    html += "        <t id='fx_filt_hp'>HP</t>";
     html += "      </h1>";
     html += "      <div id='fx_freq'></div>";
     html += "      <div id='fx_res'></div>";
@@ -151,18 +148,18 @@ function Marabu()
     html += "      <div id='fx_pan_amt'></div>";
     html += "      <div id='fx_pan_freq'></div>";
     html += "    </div>";
-    html += "    <div class='lfo'>";
+    html += "    <div class='lfo' style='width:180px; margin-bottom:15px'>";
     html += "      <h1>LFO";
-    html += "        <img id='lfo_wave_saw' title='Saw' src='media/graphics/wave_saw.svg' alt='Saw' style='margin-right: 10px' />";
-    html += "        <img id='lfo_wave_sqr' title='Square' src='media/graphics/wave_sqr.svg' alt='Sqr' />";
-    html += "        <img id='lfo_wave_tri' title='Triangle' src='media/graphics/wave_tri.svg' alt='Tri' style='margin-right: 10px' />";
-    html += "        <img id='lfo_wave_sin' title='Sine' src='media/graphics/wave_sin.svg' alt='Sin' style='margin-right: 10px' />";
+    html += "        <t id='lfo_wave_saw'>SAW</t>";
+    html += "        <t id='lfo_wave_sqr'>SQR</t>";
+    html += "        <t id='lfo_wave_tri'>TRI</t>";
+    html += "        <t id='lfo_wave_sin'>SIN</t>";
     html += "      </h1>";
     html += "      <div id='lfo_amt'></div>";
     html += "      <div id='lfo_freq'></div>";
     html += "      <div id='lfo_fxfreq'></div>";
     html += "    </div>";
-    html += "    <div class='noi'>";
+    html += "    <div class='noi' style='width:180px; vertical-align:top;'>";
     html += "      <h1>NOI</h1>";
     html += "      <div id='fx_drive'></div>";
     html += "      <div id='fx_dist'></div>";
