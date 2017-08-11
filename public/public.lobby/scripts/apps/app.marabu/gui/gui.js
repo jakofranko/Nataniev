@@ -1265,12 +1265,12 @@ var CGUI = function()
     for (var i = 0; i < mSong.patternLen; ++i) {
       var o = document.getElementById("fxr" + i);
       if (!selectionOnly) {
-        var fxTxt = ":";
+        var fxTxt = "0000";
         if (pat >= 0) {
           var fxCmd = GUI.instrument().c[pat].f[i];
           if (fxCmd) {
             var fxVal = GUI.instrument().c[pat].f[i+mSong.patternLen];
-            fxTxt = toHex(fxCmd,2) + ":" + toHex(fxVal,2);
+            fxTxt = toHex(fxCmd,2) + "" + toHex(fxVal,2);
           }
         }
         if (o.innerHTML != fxTxt)
@@ -1432,25 +1432,29 @@ var CGUI = function()
     var instr = GUI.instrument();
 
     // Oscillator 1
-    document.getElementById("osc1_wave_sin").src = instr.i[OSC1_WAVEFORM] == 0 ? "media/graphics/wave_sin_sel.svg" : "media/graphics/wave_sin.svg";
-    document.getElementById("osc1_wave_sqr").src = instr.i[OSC1_WAVEFORM] == 1 ? "media/graphics/wave_sqr_sel.svg" : "media/graphics/wave_sqr.svg";
-    document.getElementById("osc1_wave_saw").src = instr.i[OSC1_WAVEFORM] == 2 ? "media/graphics/wave_saw_sel.svg" : "media/graphics/wave_saw.svg";
-    document.getElementById("osc1_wave_tri").src = instr.i[OSC1_WAVEFORM] == 3 ? "media/graphics/wave_tri_sel.svg" : "media/graphics/wave_tri.svg";
 
-    // Oscillator 2
-    document.getElementById("osc2_wave_sin").src = instr.i[OSC2_WAVEFORM] == 0 ? "media/graphics/wave_sin_sel.svg" : "media/graphics/wave_sin.svg";
-    document.getElementById("osc2_wave_sqr").src = instr.i[OSC2_WAVEFORM] == 1 ? "media/graphics/wave_sqr_sel.svg" : "media/graphics/wave_sqr.svg";
-    document.getElementById("osc2_wave_saw").src = instr.i[OSC2_WAVEFORM] == 2 ? "media/graphics/wave_saw_sel.svg" : "media/graphics/wave_saw.svg";
-    document.getElementById("osc2_wave_tri").src = instr.i[OSC2_WAVEFORM] == 3 ? "media/graphics/wave_tri_sel.svg" : "media/graphics/wave_tri.svg";
+    // TODO
+    // if(instr.i[OSC1_WAVEFORM] == 0){ document.getElementById("osc1_wave_select"). }
 
-    document.getElementById("lfo_wave_sin").src = instr.i[LFO_WAVEFORM] == 0 ? "media/graphics/wave_sin_sel.svg" : "media/graphics/wave_sin.svg";
-    document.getElementById("lfo_wave_sqr").src = instr.i[LFO_WAVEFORM] == 1 ? "media/graphics/wave_sqr_sel.svg" : "media/graphics/wave_sqr.svg";
-    document.getElementById("lfo_wave_saw").src = instr.i[LFO_WAVEFORM] == 2 ? "media/graphics/wave_saw_sel.svg" : "media/graphics/wave_saw.svg";
-    document.getElementById("lfo_wave_tri").src = instr.i[LFO_WAVEFORM] == 3 ? "media/graphics/wave_tri_sel.svg" : "media/graphics/wave_tri.svg";
+    // document.getElementById("osc1_wave_sin").src = instr.i[OSC1_WAVEFORM] == 0 ? "media/graphics/wave_sin_sel.svg" : "media/graphics/wave_sin.svg";
+    // document.getElementById("osc1_wave_sqr").src = instr.i[OSC1_WAVEFORM] == 1 ? "media/graphics/wave_sqr_sel.svg" : "media/graphics/wave_sqr.svg";
+    // document.getElementById("osc1_wave_saw").src = instr.i[OSC1_WAVEFORM] == 2 ? "media/graphics/wave_saw_sel.svg" : "media/graphics/wave_saw.svg";
+    // document.getElementById("osc1_wave_tri").src = instr.i[OSC1_WAVEFORM] == 3 ? "media/graphics/wave_tri_sel.svg" : "media/graphics/wave_tri.svg";
 
-    document.getElementById("fx_filt_lp").src = instr.i[FX_FILTER] == 2 ? "media/graphics/wave_lp_sel.svg" : "media/graphics/wave_lp.svg";
-    document.getElementById("fx_filt_hp").src = instr.i[FX_FILTER] == 1 ? "media/graphics/wave_hp_sel.svg" : "media/graphics/wave_hp.svg";
-    document.getElementById("fx_filt_bp").src = instr.i[FX_FILTER] == 3 ? "media/graphics/wave_bp_sel.svg" : "media/graphics/wave_bp.svg";
+    // // Oscillator 2
+    // document.getElementById("osc2_wave_sin").src = instr.i[OSC2_WAVEFORM] == 0 ? "media/graphics/wave_sin_sel.svg" : "media/graphics/wave_sin.svg";
+    // document.getElementById("osc2_wave_sqr").src = instr.i[OSC2_WAVEFORM] == 1 ? "media/graphics/wave_sqr_sel.svg" : "media/graphics/wave_sqr.svg";
+    // document.getElementById("osc2_wave_saw").src = instr.i[OSC2_WAVEFORM] == 2 ? "media/graphics/wave_saw_sel.svg" : "media/graphics/wave_saw.svg";
+    // document.getElementById("osc2_wave_tri").src = instr.i[OSC2_WAVEFORM] == 3 ? "media/graphics/wave_tri_sel.svg" : "media/graphics/wave_tri.svg";
+
+    // document.getElementById("lfo_wave_sin").src = instr.i[LFO_WAVEFORM] == 0 ? "media/graphics/wave_sin_sel.svg" : "media/graphics/wave_sin.svg";
+    // document.getElementById("lfo_wave_sqr").src = instr.i[LFO_WAVEFORM] == 1 ? "media/graphics/wave_sqr_sel.svg" : "media/graphics/wave_sqr.svg";
+    // document.getElementById("lfo_wave_saw").src = instr.i[LFO_WAVEFORM] == 2 ? "media/graphics/wave_saw_sel.svg" : "media/graphics/wave_saw.svg";
+    // document.getElementById("lfo_wave_tri").src = instr.i[LFO_WAVEFORM] == 3 ? "media/graphics/wave_tri_sel.svg" : "media/graphics/wave_tri.svg";
+
+    // document.getElementById("fx_filt_lp").src = instr.i[FX_FILTER] == 2 ? "media/graphics/wave_lp_sel.svg" : "media/graphics/wave_lp.svg";
+    // document.getElementById("fx_filt_hp").src = instr.i[FX_FILTER] == 1 ? "media/graphics/wave_hp_sel.svg" : "media/graphics/wave_hp.svg";
+    // document.getElementById("fx_filt_bp").src = instr.i[FX_FILTER] == 3 ? "media/graphics/wave_bp_sel.svg" : "media/graphics/wave_bp.svg";
 
     updateCheckBox(document.getElementById("osc1_xenv"), instr.i[OSC1_XENV]);
     updateCheckBox(document.getElementById("osc2_xenv"), instr.i[OSC2_XENV]);
@@ -2340,14 +2344,15 @@ var CGUI = function()
     }
   };
 
-  var osc1WaveMouseDown = function (e)
+  this.osc1_update = function(wave_name)
   {
-    var o = getEventElement(e);
+    console.log(wave_name);
     var wave = 0;
-    if (o.id === "osc1_wave_sin") wave = 0;
-    else if (o.id === "osc1_wave_sqr") wave = 1;
-    else if (o.id === "osc1_wave_saw") wave = 2;
-    else if (o.id === "osc1_wave_tri") wave = 3;
+    if (wave_name == "SIN") wave = 0;
+    else if (wave_name === "SQR") wave = 1;
+    else if (wave_name === "SAW") wave = 2;
+    else if (wave_name === "TRI") wave = 3;
+
     if (GUI.pattern_controller.is_mod_selected) {
       var pat = GUI.instrument().p[mSeqRow] - 1;
       if (pat >= 0) {
@@ -2358,80 +2363,69 @@ var CGUI = function()
     }
     GUI.instrument().i[OSC1_WAVEFORM] = wave;
     updateInstrument();
-    unfocusHTMLInputElements();
-    e.preventDefault();
-  };
+  }
 
-  var osc2WaveMouseDown = function (e) {
-    if (!e) var e = window.event;
-    if (mSeqCol == mSeqCol2) {
-      var o = getEventElement(e);
-      var wave = 0;
-      if (o.id === "osc2_wave_sin") wave = 0;
-      else if (o.id === "osc2_wave_sqr") wave = 1;
-      else if (o.id === "osc2_wave_saw") wave = 2;
-      else if (o.id === "osc2_wave_tri") wave = 3;
-      if (GUI.pattern_controller.is_mod_selected) {
-        var pat = GUI.instrument().p[mSeqRow] - 1;
-        if (pat >= 0) {
-          GUI.instrument().c[pat].f[mFxTrackRow] = OSC2_WAVEFORM + 1;
-          GUI.instrument().c[pat].f[mFxTrackRow+mSong.patternLen] = wave;
-          updateFxTrack();
-        }
-      }
-      GUI.instrument().i[OSC2_WAVEFORM] = wave;
-      updateInstrument(true);
-      unfocusHTMLInputElements();
-      e.preventDefault();
-    }
-  };
+  this.osc2_update = function(wave_name)
+  {
+    console.log(wave_name);
+    var wave = 0;
+    if (wave_name == "SIN") wave = 0;
+    else if (wave_name === "SQR") wave = 1;
+    else if (wave_name === "SAW") wave = 2;
+    else if (wave_name === "TRI") wave = 3;
 
-  var lfoWaveMouseDown = function (e) {
-    if (!e) var e = window.event;
-    if (mSeqCol == mSeqCol2) {
-      var o = getEventElement(e);
-      var wave = 0;
-      if (o.id === "lfo_wave_sin") wave = 0;
-      else if (o.id === "lfo_wave_sqr") wave = 1;
-      else if (o.id === "lfo_wave_saw") wave = 2;
-      else if (o.id === "lfo_wave_tri") wave = 3;
-      if (GUI.pattern_controller.is_mod_selected) {
-        var pat = GUI.instrument().p[mSeqRow] - 1;
-        if (pat >= 0) {
-          GUI.instrument().c[pat].f[mFxTrackRow] = LFO_WAVEFORM + 1;
-          GUI.instrument().c[pat].f[mFxTrackRow+mSong.patternLen] = wave;
-          updateFxTrack();
-        }
+    if (GUI.pattern_controller.is_mod_selected) {
+      var pat = GUI.instrument().p[mSeqRow] - 1;
+      if (pat >= 0) {
+        GUI.instrument().c[pat].f[mFxTrackRow] = OSC2_WAVEFORM + 1;
+        GUI.instrument().c[pat].f[mFxTrackRow+mSong.patternLen] = wave;
+        updateFxTrack();
       }
-      GUI.instrument().i[LFO_WAVEFORM] = wave;
-      updateInstrument(true);
-      unfocusHTMLInputElements();
-      e.preventDefault();
     }
-  };
+    GUI.instrument().i[OSC2_WAVEFORM] = wave;
+    updateInstrument();
+  }
 
-  var fxFiltMouseDown = function (e) {
-    if (!e) var e = window.event;
-    if (mSeqCol == mSeqCol2) {
-      var o = getEventElement(e);
-      var filt = 2;
-      if (o.id === "fx_filt_hp") filt = 1;
-      else if (o.id === "fx_filt_lp") filt = 2;
-      else if (o.id === "fx_filt_bp") filt = 3;
-      if (GUI.pattern_controller.is_mod_selected) {
-        var pat = GUI.instrument().p[mSeqRow] - 1;
-        if (pat >= 0) {
-          GUI.instrument().c[pat].f[mFxTrackRow] = FX_FILTER + 1
-          GUI.instrument().c[pat].f[mFxTrackRow+mSong.patternLen] = filt;
-          updateFxTrack();
-        }
+  this.lfo_update = function(wave_name)
+  {
+    console.log(wave_name);
+    var wave = 0;
+    if (wave_name == "SIN") wave = 0;
+    else if (wave_name === "SQR") wave = 1;
+    else if (wave_name === "SAW") wave = 2;
+    else if (wave_name === "TRI") wave = 3;
+
+    if (GUI.pattern_controller.is_mod_selected) {
+      var pat = GUI.instrument().p[mSeqRow] - 1;
+      if (pat >= 0) {
+        GUI.instrument().c[pat].f[mFxTrackRow] = LFO_WAVEFORM + 1;
+        GUI.instrument().c[pat].f[mFxTrackRow+mSong.patternLen] = wave;
+        updateFxTrack();
       }
-      GUI.instrument().i[FX_FILTER] = filt;
-      updateInstrument(true);
-      unfocusHTMLInputElements();
-      e.preventDefault();
     }
-  };
+    GUI.instrument().i[LFO_WAVEFORM] = wave;
+    updateInstrument(true);
+  }
+
+  var fx_update = function(filt_name)
+  {
+    console.log(filt_name);
+    var filt = 2;
+    if (o.id === "fx_filt_hp") filt = 1;
+    else if (o.id === "fx_filt_lp") filt = 2;
+    else if (o.id === "fx_filt_bp") filt = 3;
+    if (GUI.pattern_controller.is_mod_selected) {
+      var pat = GUI.instrument().p[mSeqRow] - 1;
+      if (pat >= 0) {
+        GUI.instrument().c[pat].f[mFxTrackRow] = FX_FILTER + 1
+        GUI.instrument().c[pat].f[mFxTrackRow+mSong.patternLen] = filt;
+        updateFxTrack();
+      }
+    }
+    GUI.instrument().i[FX_FILTER] = filt;
+    updateInstrument(true);
+
+  }
 
   var fxTrackMouseDown = function (e)
   {
@@ -2852,7 +2846,7 @@ var CGUI = function()
       for (col = 0; col < 4; col++) {
         td = document.createElement("td");
         td.id = "pc" + col + "r" + row;
-        td.textContent = "- ";
+        td.textContent = "-- ";
         td.addEventListener("mousedown", patternMouseDown, false);
         td.addEventListener("mouseover", patternMouseOver, false);
         td.addEventListener("mouseup", patternMouseUp, false);
@@ -2891,6 +2885,7 @@ var CGUI = function()
   //--------------------------------------------------------------------------
 
   this.sliders = {};
+  this.choices = {};
 
   this.setup_sliders = function(sliders)
   {
@@ -2915,6 +2910,17 @@ var CGUI = function()
     GUI.sequence_controller.deselect();
     GUI.instrument_controller.deselect();
   }
+
+  this.setup_choices = function(choices)
+  {
+    for(id in choices){
+      var c = choices[id];
+      var choice = new UI_Choice(c.id,c.name,c.choices);
+      this.choices[new String(c.id)] = choice;
+      choice.install();
+    }
+  }
+
 
   this.get_storage = function(id)
   {
@@ -2966,36 +2972,6 @@ var CGUI = function()
     // Build the UI tables
     buildSequencerTable();
 
-    this.setup_sliders([
-      {id: "osc1_vol", name: "VOL", min: 0, max: 255, percent: true },
-      {id: "osc1_semi", name: "FRQ", min: 92, max: 164 },
-      {id: "noise_vol", name: "NOI", min: 0, max: 255 },
-
-      {id: "osc2_vol", name: "VOL", min: 0, max: 255, percent: true },
-      {id: "osc2_semi", name: "FRQ", min: 92, max: 164 },
-      {id: "osc2_det", name: "DET", min: 0, max: 255, percent: true, nonLinear: true },
-
-      {id: "env_att", name: "ATK", min: 0, max: 255 },
-      {id: "env_sust", name: "SUS", min: 0, max: 255 },
-      {id: "env_rel", name: "REL", min: 0, max: 255 },
-
-      {id: "arp_note1", name: "NT1", min: 0, max: 12 },
-      {id: "arp_note2", name: "NT2", min: 0, max: 12 },
-      {id: "arp_speed", name: "SPD", min: 0, max: 7 },
-
-      {id: "lfo_amt", name: "AMT", min: 0, max: 255 },
-      {id: "lfo_freq", name: "FRQ", min: 0, max: 254 },
-      {id: "lfo_fxfreq", name: "MOD", min: 0, max: 255 },
-
-      {id: "fx_freq", name: "FRQ", min: 0, max: 255, nonLinear: true },
-      {id: "fx_res", name: "RES", min: 0, max: 254 },
-      {id: "fx_dly_amt", name: "DLY", min: 0, max: 255 },
-      {id: "fx_dly_time", name: "SPD", min: 0, max: 16 },
-      {id: "fx_pan_amt", name: "PAN", min: 0, max: 255 },
-      {id: "fx_pan_freq", name: "FRQ", min: 0, max: 16 },
-      {id: "fx_dist", name: "DIS", min: 0, max: 255, nonLinear: true },
-      {id: "fx_drive", name: "DRV", min: 0, max: 255 },
-    ]);
 
     // Create audio element, and always play the audio as soon as it's ready
     try
@@ -3013,6 +2989,44 @@ var CGUI = function()
     var songData = getURLSongData(mGETParams && mGETParams.data && mGETParams.data[0]);
     var song = songData ? binToSong(songData) : null;
     mSong = song ? song : makeNewSong();
+
+    this.setup_sliders([
+      {id: "osc1_vol", name: "VOL", min: 0, max: 255, percent: true },
+      {id: "osc1_semi", name: "FRQ", min: 92, max: 164 },
+      {id: "noise_vol", name: "NOI", min: 0, max: 255 },
+
+      {id: "osc2_vol", name: "VOL", min: 0, max: 255, percent: true },
+      {id: "osc2_semi", name: "FRQ", min: 92, max: 164 },
+      {id: "osc2_det", name: "DET", min: 0, max: 255, percent: true, nonLinear: true },
+
+      {id: "env_att", name: "ATK", min: 0, max: 255 },
+      {id: "env_sust", name: "SUS", min: 0, max: 255 },
+      {id: "env_rel", name: "REL", min: 0, max: 255 },
+
+      {id: "arp_note1", name: "ARP", min: 0, max: 12 },
+      {id: "arp_note2", name: "SEC", min: 0, max: 12 },
+      {id: "arp_speed", name: "SPD", min: 0, max: 7 },
+
+      {id: "lfo_amt", name: "AMT", min: 0, max: 255 },
+      {id: "lfo_freq", name: "FRQ", min: 0, max: 254 },
+      {id: "lfo_fxfreq", name: "MOD", min: 0, max: 255 },
+
+      {id: "fx_freq", name: "FRQ", min: 0, max: 255, nonLinear: true },
+      {id: "fx_res", name: "RES", min: 0, max: 254 },
+      {id: "fx_dly_amt", name: "DLY", min: 0, max: 255 },
+      {id: "fx_dly_time", name: "SPD", min: 0, max: 16 },
+      {id: "fx_pan_amt", name: "PAN", min: 0, max: 255 },
+      {id: "fx_pan_freq", name: "FRQ", min: 0, max: 16 },
+      {id: "fx_dist", name: "DIS", min: 0, max: 255, nonLinear: true },
+      {id: "fx_drive", name: "DRV", min: 0, max: 255 },
+    ]);
+
+    this.setup_choices([
+      {id: "osc1_wave_select", name: "OSC1", choices: ["SAW","SQR","TRI","SIN"]},
+      {id: "osc2_wave_select", name: "OSC2", choices: ["SAW","SQR","TRI","SIN"]},
+      {id: "fx_filter_select", name: "EFX", choices: ["HP","BP","LP"]},
+      {id: "lfo_wave_select", name: "LFO", choices: ["SAW","SQR","TRI","SIN"]}
+    ])
 
     // Update UI according to the loaded song
     updateSongInfo();
@@ -3042,42 +3056,11 @@ var CGUI = function()
     document.getElementById("fxCopy").onmousedown = fxCopyMouseDown;
     document.getElementById("fxPaste").onmousedown = fxPasteMouseDown;
 
-    document.getElementById("osc1_wave_sin").addEventListener("mousedown", osc1WaveMouseDown, false);
-    document.getElementById("osc1_wave_sin").addEventListener("touchstart", osc1WaveMouseDown, false);
-    document.getElementById("osc1_wave_sqr").addEventListener("mousedown", osc1WaveMouseDown, false);
-    document.getElementById("osc1_wave_sqr").addEventListener("touchstart", osc1WaveMouseDown, false);
-    document.getElementById("osc1_wave_saw").addEventListener("mousedown", osc1WaveMouseDown, false);
-    document.getElementById("osc1_wave_saw").addEventListener("touchstart", osc1WaveMouseDown, false);
-    document.getElementById("osc1_wave_tri").addEventListener("mousedown", osc1WaveMouseDown, false);
-    document.getElementById("osc1_wave_tri").addEventListener("touchstart", osc1WaveMouseDown, false);
     document.getElementById("osc1_xenv").addEventListener("mousedown", boxMouseDown, false);
     document.getElementById("osc1_xenv").addEventListener("touchstart", boxMouseDown, false);
 
-    document.getElementById("osc2_wave_sin").addEventListener("mousedown", osc2WaveMouseDown, false);
-    document.getElementById("osc2_wave_sin").addEventListener("touchstart", osc2WaveMouseDown, false);
-    document.getElementById("osc2_wave_sqr").addEventListener("mousedown", osc2WaveMouseDown, false);
-    document.getElementById("osc2_wave_sqr").addEventListener("touchstart", osc2WaveMouseDown, false);
-    document.getElementById("osc2_wave_saw").addEventListener("mousedown", osc2WaveMouseDown, false);
-    document.getElementById("osc2_wave_saw").addEventListener("touchstart", osc2WaveMouseDown, false);
-    document.getElementById("osc2_wave_tri").addEventListener("mousedown", osc2WaveMouseDown, false);
-    document.getElementById("osc2_wave_tri").addEventListener("touchstart", osc2WaveMouseDown, false);
     document.getElementById("osc2_xenv").addEventListener("mousedown", boxMouseDown, false);
     document.getElementById("osc2_xenv").addEventListener("touchstart", boxMouseDown, false);
-
-    document.getElementById("lfo_wave_sin").addEventListener("mousedown", lfoWaveMouseDown, false);
-    document.getElementById("lfo_wave_sin").addEventListener("touchstart", lfoWaveMouseDown, false);
-    document.getElementById("lfo_wave_sqr").addEventListener("mousedown", lfoWaveMouseDown, false);
-    document.getElementById("lfo_wave_sqr").addEventListener("touchstart", lfoWaveMouseDown, false);
-    document.getElementById("lfo_wave_saw").addEventListener("mousedown", lfoWaveMouseDown, false);
-    document.getElementById("lfo_wave_saw").addEventListener("touchstart", lfoWaveMouseDown, false);
-    document.getElementById("lfo_wave_tri").addEventListener("mousedown", lfoWaveMouseDown, false);
-    document.getElementById("lfo_wave_tri").addEventListener("touchstart", lfoWaveMouseDown, false);
-    document.getElementById("fx_filt_lp").addEventListener("mousedown", fxFiltMouseDown, false);
-    document.getElementById("fx_filt_lp").addEventListener("touchstart", fxFiltMouseDown, false);
-    document.getElementById("fx_filt_hp").addEventListener("mousedown", fxFiltMouseDown, false);
-    document.getElementById("fx_filt_hp").addEventListener("touchstart", fxFiltMouseDown, false);
-    document.getElementById("fx_filt_bp").addEventListener("mousedown", fxFiltMouseDown, false);
-    document.getElementById("fx_filt_bp").addEventListener("touchstart", fxFiltMouseDown, false);
 
     // Initialize the MIDI handler
     initMIDI();

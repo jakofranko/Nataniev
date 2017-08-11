@@ -5,10 +5,12 @@ function Slider(id,name = "UNK",min = 0,max = 255)
   this.min = min;
   this.max = max;
 
+  this.width = 60;
+
   this.el = document.getElementById(id);
-  this.name_el = null;
-  this.value_el = null;
-  this.slide_el = null;
+  this.name_el = document.createElement("span");
+  this.value_el = document.createElement("input");
+  this.slide_el = document.createElement("div");
 
   this.is_selected = false;
 
@@ -17,30 +19,28 @@ function Slider(id,name = "UNK",min = 0,max = 255)
     this.el.setAttribute("class","slider");
 
     // Name Span
-    this.name_el = document.createElement("span");
-    this.name_el.setAttribute("class","name w2 di");
+    this.name_el.setAttribute("class","w2 di");
     this.name_el.style.height = "15px";
     this.name_el.style.width = "30px";
     this.name_el.style.verticalAlign = "top";
     this.name_el.innerHTML = this.name;
-    this.el.appendChild(this.name_el);
 
     // Slide Div
-    this.slide_el = document.createElement("div");
-    this.slide_el.setAttribute("class","slide");
     this.slide_el.style.height = "15px";
     this.slide_el.style.width = "30px";
     this.slide_el.style.display = "inline-block";
     this.slide_el.style.verticalAlign = "top";
-    this.el.appendChild(this.slide_el);
 
     // Value Input
-    this.value_el = document.createElement("input");
-    this.value_el.className = "value w2";
+    this.value_el.className = "w2";
     this.value_el.style.backgroundColor = "black";
-    this.value_el.style.marginLeft = "15px";
+    this.value_el.style.marginLeft = "10px";
     this.value_el.value = this.min+"/"+this.max;
+
+    this.el.appendChild(this.name_el);
+    this.el.appendChild(this.slide_el);
     this.el.appendChild(this.value_el);
+
 
     this.slide_el.addEventListener("mousedown", mouse_down, false);
     this.slide_el.addEventListener("mouseup", mouse_up, false);
@@ -48,7 +48,7 @@ function Slider(id,name = "UNK",min = 0,max = 255)
     this.value_el.addEventListener('input', value_update, false);
 
     this.value_el.addEventListener("mousedown", select, false);
-
+    
     console.log("Installed",this.id);
   }
 
@@ -56,7 +56,7 @@ function Slider(id,name = "UNK",min = 0,max = 255)
   {
     this.value = parseInt(v);
     var range = parseInt(this.max) - parseInt(this.min);
-    var mar_left = (((this.value - parseInt(this.min))/parseFloat(range)) * 120)+"px"
+    var mar_left = (((this.value - parseInt(this.min))/parseFloat(range)) * this.width)+"px"
     this.value_el.value = this.value;
     this.update();
   }
@@ -113,18 +113,19 @@ function Slider(id,name = "UNK",min = 0,max = 255)
 
     target_obj.value = parseInt(target_val);
 
-    var mar_left = ((target_obj.value/parseFloat(target_obj.max)) * 120)+"px"
+    var mar_left = ((target_obj.value/parseFloat(target_obj.max)) * this.width)+"px"
     target_obj.update();
     target_obj.save();
   }
 
   function mouse_update(target_obj,offset)
   {
+    console.log(offset);
     var target_pos = offset-15;
     target_pos = target_pos < 0 ? 0 : target_pos;
-    target_pos = target_pos > 115 ? 120 : target_pos;
+    target_pos = target_pos > 115 ? 60 : target_pos;
 
-    var ratio = target_pos/120.0;
+    var ratio = target_pos/60.0;
     var range = parseInt(target_obj.max) - parseInt(target_obj.min);
     target_obj.value = target_obj.min + parseInt(ratio * range);
 

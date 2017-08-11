@@ -153,6 +153,8 @@ b         { font-weight: normal; font-family: 'input_mono_medium'}
 .oh { overflow: hidden }
 
 .right { float:right; }
+.left { float:left; }
+.pointer { cursor:pointer; }
 
 /* HIGHLIGHTS/LOWLIGHTS */
 
