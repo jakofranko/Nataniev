@@ -182,8 +182,8 @@ var CAudioTimer = function () {
 
 var CGUI = function()
 {
-  this.sequence_controller = new Sequence_Controller();
-  this.pattern_controller = new Pattern_Controller();
+  this.sequence_controller = lobby.apps.marabu.sequencer;
+  this.pattern_controller = lobby.apps.marabu.editor;
   this.instrument_controller = new Instrument_Controller();
 
   keyboard = new Keyboard();
@@ -2356,7 +2356,7 @@ var CGUI = function()
     updatePattern();
     updateFxTrack();
     setSelectedSequencerCell(0,0);
-    GUI.sequence_controller.select(0,0);
+    GUI.sequence_controller.selection = {x1:0,y1:0,x2:0,y2:0};
   }
 
   this.erase_pattern_positions = function(x1,y1,x2,y2)
@@ -2690,8 +2690,8 @@ var CGUI = function()
     updateFxTrack();
     updateInstrument(true);
 
-    GUI.pattern_controller.select_pattern(0);
-    GUI.sequence_controller.select(0,0);
+    GUI.pattern_controller.load();
+    GUI.sequence_controller.select();
 
     // Misc event handlers
     document.getElementById("exportJS").onmousedown = exportJS;

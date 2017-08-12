@@ -31,8 +31,6 @@ function Marabu()
 
     "controllers/controller",
     "controllers/instrument_controller",
-    "controllers/pattern_controller",
-    "controllers/sequence_controller",
 
     "instrument",
     "editor",

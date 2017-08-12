@@ -4,7 +4,10 @@ function Editor()
   var target = this;
 
   this.selection = {x1:0,y1:0,x2:0,y2:0};
-  this.pattern = {beat:4,length:32};
+  this.pattern = {id:0,beat:4,length:32};
+
+  this.rpp_el = document.getElementById("rpp");
+  // this.rpp_el.addEventListener('input', rpp_update, false);
 
   this.status = function()
   {
@@ -23,6 +26,33 @@ function Editor()
     html += "  </div>";
 
     return html;
+  }
+
+  this.load = function(pattern_id = 0)
+  {
+    this.pattern.id = pattern_id;
+    this.select(0,0,0,0);
+  }
+
+  this.select = function(x1 = 0,y1 = 0,x2 = 0,y2 = 0)
+  {
+    GUI.deselect_all();
+    this.selection = {x1:x1,y1:y1,x2:x2,y2};
+    this.refresh_table();
+  }
+
+  this.deselect = function()
+  {
+    this.selection = {x1:-1,y1:-1,x2:-1,y2:-1};
+  }
+
+  function rpp_update()
+  {
+    if(GUI.pattern_controller.rpp_el.value == ""){ return; }
+    var new_rpp = parseInt(GUI.pattern_controller.rpp_el.value);
+    if(new_rpp < 4){ new_rpp = 4; }
+    if(new_rpp > 16){ new_rpp = 16; }
+    GUI.update_rpp(new_rpp);
   }
 
   this.pattern_mouse_down = function(e)

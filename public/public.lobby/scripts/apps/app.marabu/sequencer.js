@@ -6,6 +6,8 @@ function Sequencer()
   this.selection = {x1:0,y1:0,x2:0,y2:0};
   this.sequence = {length:32}
 
+  this.bpm_el = document.getElementById("bpm");
+
   this.status = function()
   {
     var html = "";
@@ -18,11 +20,41 @@ function Sequencer()
     var html = "";
 
     html += "  <div class='sequencer' id='sequence_controller' style='width:120px; display:inline-block; vertical-align:top'>";
-    html += "    <h1 class='lh30'><b>SEQ</b><input id='bpm' type='text' size='3' value='' title='Beats per minute (song speed)' class='bh fh'/></h1>";
+    html += "    <h1 class='lh30'><b>SEQ</b> <input id='bpm' type='text' size='3' value='' title='Beats per minute (song speed)' class='bh fh'/></h1>";
     html += "    <div id='sequencer'><table class='tracks' id='sequencer-table'></table></div>";
     html += "  </div>";
 
     return html;
+  }
+
+  this.pattern_id_at = function(x,y)
+  {
+    var instrument_id = GUI.instrument_controller.instrument_id;
+    var pattern_id = GUI.song().songData[instrument_id].p[this.selection.y1];
+    return pattern_id - 1;
+  }
+
+  this.select = function(x1 = 0,y1 = 0,x2 = 0,y2 = 0)
+  {
+    GUI.deselect_all();
+    this.selection = {x1:x1,y1:y1,x2:x2,y2};
+
+    app.instrument.load(this.selection.x2);
+    app.editor.load(this.pattern_id_at(this.selection.x2,this.selection.y2));
+  }
+
+  this.deselect = function()
+  {
+    this.selection = {x1:-1,y1:-1,x2:-1,y2:-1};
+  }
+
+  function bpm_update(e)
+  {
+    // if(GUI.sequence_controller.bpm_el.value == ""){ return; }
+    // var new_bpm = parseInt(GUI.sequence_controller.bpm_el.value);
+    // if(new_bpm < 20){ new_bpm = 10; }
+    // if(new_bpm > 800){ new_bpm = 800;}
+    // GUI.update_bpm(new_bpm);
   }
 
   // 
@@ -43,7 +75,7 @@ function Sequencer()
 
     target.refresh_table();
     app.editor.refresh_table();
-    app.instrument.select(col);
+    app.instrument.load(col);
   }
 
   this.sequence_mouse_move = function()

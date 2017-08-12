@@ -2,10 +2,9 @@ function Instrument()
 {
   this.id = 0;
 
-  this.select = function(id)
+  this.load = function(instrument_id)
   {
-    this.is = id;
-    console.log("instrument",id);
+    this.is = instrument_id;
   }
 
   this.build = function()
