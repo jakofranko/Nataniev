@@ -139,7 +139,7 @@ function UI_Choice(id,name = "UNK",choices = [])
   this.update = function()
   {
     var target = this.choices[this.index % this.choices.length];
-    this.el.innerHTML = target;
+    this.el.innerHTML = this.name+" <b>"+target+"</b>";
 
     if(this.id == "osc1_wave_select"){
       GUI.osc1_update(target);  

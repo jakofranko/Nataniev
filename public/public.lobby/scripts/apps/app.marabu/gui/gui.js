@@ -3022,8 +3022,8 @@ var CGUI = function()
     ]);
 
     this.setup_choices([
-      {id: "osc1_wave_select", name: "OSC1", choices: ["SAW","SQR","TRI","SIN"]},
-      {id: "osc2_wave_select", name: "OSC2", choices: ["SAW","SQR","TRI","SIN"]},
+      {id: "osc1_wave_select", name: "OSC", choices: ["SAW","SQR","TRI","SIN"]},
+      {id: "osc2_wave_select", name: "OSC", choices: ["SAW","SQR","TRI","SIN"]},
       {id: "fx_filter_select", name: "EFX", choices: ["HP","BP","LP"]},
       {id: "lfo_wave_select", name: "LFO", choices: ["SAW","SQR","TRI","SIN"]}
     ])

@@ -55,6 +55,17 @@ function Sequence_Controller()
     this.status_el.innerHTML += this.selection.x2+":"+this.selection.y2;
   }
 
+  this.status = function()
+  {
+    var html = (GUI.pattern_controller.pattern_id > 0 ? GUI.pattern_controller.pattern_id : "")+" "+this.selection.x1+":"+this.selection.y1+" ";
+
+    if(this.selection.x2 == null || this.selection.y2 == null){ return html; }
+    if(this.selection.x2 == this.selection.x1 && this.selection.y2 == this.selection.y1){ return html; }
+    
+    html += this.selection.x2+":"+this.selection.y2;
+    return html;
+  }
+
   this.pattern_id_at = function(x,y)
   {
     var instrument_id = GUI.instrument_controller.instrument_id;
