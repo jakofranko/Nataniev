@@ -391,34 +391,24 @@ var mPatternCol = 0,
           col.f[k] = 0;
         instr.c[j] = col;
       }
-
       song.songData[i] = instr;
-      song.songData[i].p[0] = 1;
-      song.songData[i].p[1] = 1;
-      song.songData[i].p[2] = 1;
-      song.songData[i].p[3] = 1;
-      song.songData[i].c[0].n[0] = 87;
-      song.songData[i].c[0].n[1] = 87;
-      song.songData[i].c[0].n[2] = 87;
-      song.songData[i].c[0].n[3] = 87;
-      song.songData[i].c[0].n[4] = 87;
-      song.songData[i].c[0].n[5] = 87;
-
-      song.songData[i].c[1].n[0] = 87;
-      song.songData[i].c[1].n[1] = 87;
-      song.songData[i].c[1].n[2] = 87;
-      song.songData[i].c[1].n[3] = 87;
-      song.songData[i].c[1].n[4] = 87;
-      song.songData[i].c[1].n[5] = 87;
-
-      song.songData[i].c[2].n[0] = 87;
-      song.songData[i].c[2].n[1] = 87;
-      song.songData[i].c[2].n[2] = 87;
-      song.songData[i].c[2].n[3] = 87;
-      song.songData[i].c[2].n[4] = 87;
-      song.songData[i].c[2].n[5] = 87;
-
     }
+
+    song.songData[0].p[0] = 1;
+    song.songData[0].p[1] = 2;
+    song.songData[0].c[0].n[0] = 87;
+    song.songData[0].c[0].n[1] = 87;
+    song.songData[0].c[0].n[2] = 87;
+    song.songData[0].c[0].n[3] = 87;
+    song.songData[0].c[0].n[4] = 87;
+    song.songData[0].c[0].n[5] = 87;
+
+    song.songData[0].c[1].n[0] = 89;
+    song.songData[0].c[1].n[1] = 89;
+    song.songData[0].c[1].n[2] = 89;
+    song.songData[0].c[1].n[3] = 89;
+    song.songData[0].c[1].n[4] = 89;
+    song.songData[0].c[1].n[5] = 89;
 
     // Default instruments
     song.songData[4].name = "Kick";
@@ -1634,8 +1624,8 @@ var mPatternCol = 0,
     this.update_bpm(120);
     this.update_rpp(32);
 
-    // stopAudio();
-    // updateSongRanges();
+    stopAudio();
+    updateSongRanges();
 
     mFollowerFirstRow = 0;
     mFollowerLastRow = mSong.endPattern - 2;

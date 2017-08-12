@@ -86,8 +86,10 @@ function Sequencer()
 
     this.refresh_table();
     this.edit(false);
-    app.editor.pattern.id = parseInt(v);
-    app.editor.edit();
+    if(v != 0){
+      app.editor.pattern.id = parseInt(v);
+      app.editor.edit();      
+    }
   }
 
   this.play = function()
@@ -177,12 +179,14 @@ function Sequencer()
       if(key == "escape"){ target.edit(false); }
       if(!target.edit_mode){ return; }
 
-      if(["0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f","escape"].indexOf(key) == -1){ console.log("SEQ: Unknown Key",key); return; }
-      else{ 
-        var i = target.selection.x2;
-        var p = target.selection.y2;
-        target.edit_sequence(i,p,key); 
-      }
+      if(["0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f","escape","backspace"].indexOf(key) == -1){ console.log("SEQ: Unknown Key",key); return; }
+      
+      if(key == "backspace"){ key = 0; }
+
+      var i = target.selection.x2;
+      var p = target.selection.y2;
+      target.edit_sequence(i,p,key); 
+      
     }
   }
 
