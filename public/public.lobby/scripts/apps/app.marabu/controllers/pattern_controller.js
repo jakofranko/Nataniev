@@ -4,7 +4,6 @@ function Pattern_Controller()
   
   this.name = "Pattern";
   this.el = document.getElementById("pattern_controller");  
-  this.status_el = document.getElementById("pattern_controller_status");
   this.is_selected = false;
   this.is_mod_selected = false;
   this.pattern_id = -1;
@@ -43,7 +42,6 @@ function Pattern_Controller()
   this.deselect = function()
   {
     this.el.setAttribute("class","pattern");
-    this.status_el.innerHTML = "";
     this.is_selected = false;
     this.rpp_el.blur();
   }
@@ -55,9 +53,6 @@ function Pattern_Controller()
     if(this.pattern_id == -1){
       this.el.setAttribute("class","pattern inactive");
     }
-    else{
-      this.status_el.innerHTML = this.pattern_id;
-    }
   }
 
   this.edit_pattern = function(pattern_id,col = 0,row = 0)
@@ -68,19 +63,12 @@ function Pattern_Controller()
 
     this.pattern_id = pattern_id;
     this.el.setAttribute("class","pattern edit");
-    this.status_el.innerHTML = this.pattern_id+" "+col+":"+row;
     this.is_selected = true;
     GUI.update_status("Editing Pattern "+this.pattern_id);
   }
 
   this.update = function()
   {
-    this.status_el.innerHTML = this.selection.x1+":"+this.selection.y1+" ";
-
-    if(this.selection.x2 == null || this.selection.y2 == null){ return; }
-    if(this.selection.x2 == this.selection.x1 && this.selection.y2 == this.selection.y1){ return; }
-    
-    this.status_el.innerHTML += this.selection.x2+":"+this.selection.y2;
   }
 
   // MOD

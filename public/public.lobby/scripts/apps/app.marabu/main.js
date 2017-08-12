@@ -38,6 +38,9 @@ function Marabu()
     "sequencer"
   ];
 
+  // TODO
+  // Add methods for play_range, play_song, stop
+
   this.setup.start = function()
   {
     this.app.sequencer = new Sequencer();
@@ -59,6 +62,10 @@ function Marabu()
     html += ".everything { color:white; }";
     html += ".tracks tr {  line-height:15px}";
     html += ".tracks tr td { text-align:center; padding-right:5px}";
+    html += ".tracks tr:hover { color:#999}";
+    html += ".tracks td:hover { cursor:pointer}";
+    html += ".tracks td.selected { color:#f00}";
+    html += ".tracks tr.beat th { color:#999}";
     html += "</style>";
 
     return "<yu style='vertical-align:top' class='everything'>"+html+"</yu>";
@@ -67,8 +74,7 @@ function Marabu()
   this.status = function()
   {
     var html = "";
-    // html += GUI.sequence_controller.status();
-    // console.log(GUI.sequence_controller);
+    html += this.sequencer.status();
     return html;
   }
 }

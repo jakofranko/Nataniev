@@ -1200,24 +1200,14 @@ var CGUI = function()
 
   var updateSequencer = function (scrollIntoView, selectionOnly)
   {
-    for (var i = 0; i < MAX_SONG_ROWS; ++i)
-    {
-      for (var j = 0; j < 8; ++j)
-      {
-        var o = document.getElementById("sc" + j + "r" + i);
-        var pat = mSong.songData[j].p[i];
-        var classes = "";
-        if(pat > 0){ classes += "pattern_"+pat+" "; }
-        if (i >= mSeqRow && i <= mSeqRow2 && j >= mSeqCol && j <= mSeqCol2){ classes += "selected "; }
-        if(j == GUI.instrument_controller.instrument_id){ classes += "instr "; }
-        o.className = classes;
-      }
-    }
+    lobby.apps.marabu.sequencer.refresh_sequence_table();
   };
 
   var updatePattern = function (scrollIntoView, selectionOnly)
   {
-    buildPatternTable();
+    lobby.apps.marabu.sequencer.build_pattern_table();
+    lobby.apps.marabu.sequencer.refresh_pattern_table();
+
     var singlePattern = (mSeqCol == mSeqCol2 && mSeqRow == mSeqRow2);
     var pat = singlePattern ? GUI.instrument().p[mSeqRow] - 1 : -1;
     for (var i = 0; i < mSong.patternLen; ++i)
@@ -1259,7 +1249,8 @@ var CGUI = function()
 
   var updateFxTrack = function (scrollIntoView, selectionOnly)
   {
-    buildFxTable();
+    lobby.apps.marabu.sequencer.build_pattern_table();
+
     var singlePattern = (mSeqCol == mSeqCol2 && mSeqRow == mSeqRow2);
     var pat = singlePattern ? GUI.instrument().p[mSeqRow] - 1 : -1;
     for (var i = 0; i < mSong.patternLen; ++i) {
@@ -1559,8 +1550,7 @@ var CGUI = function()
       setPatternLength(rpp);
 
       // Update UI
-      buildPatternTable();
-      buildFxTable();
+      lobby.apps.marabu.sequencer.build_pattern_table();
       updatePattern();
       updateFxTrack();
     }
@@ -2775,30 +2765,6 @@ var CGUI = function()
     document.onkeydown = null;
   };
 
-  var buildSequencerTable = function () {
-    var table = document.getElementById("sequencer-table");
-    var tr, th, td;
-    for (var row = 0; row < MAX_SONG_ROWS; row++) {
-      tr = document.createElement("tr");
-      if (row % 4 === 0)
-        tr.className = "beat";
-      th = document.createElement("th");
-      th.id = "spr" + row;
-      // th.textContent = "" + row;
-      tr.appendChild(th);
-      for (var col = 0; col < 8; col++) {
-        td = document.createElement("td");
-        td.id = "sc" + col + "r" + row;
-        td.textContent = "- ";
-        td.addEventListener("mousedown", sequencerMouseDown, false);
-        td.addEventListener("mouseover", sequencerMouseOver, false);
-        td.addEventListener("mouseup", sequencerMouseUp, false);
-        tr.appendChild(td);
-      }
-      table.appendChild(tr);
-    }
-  };
-
   var getCurrentBeatDistance = function (table) {
     var beatDistance = 1;
     while (beatDistance < table.children.length) {
@@ -2825,60 +2791,6 @@ var CGUI = function()
 
     return beatDistance;
   };
-
-  var buildPatternTable = function () 
-  {
-    var beatDistance = getBeatDistance();
-    var table = document.getElementById("pattern-table");
-    if (table.children.length === mSong.patternLen && getCurrentBeatDistance(table) === beatDistance)
-      return;
-    while (table.firstChild)
-      table.removeChild(table.firstChild);
-    var tr, th, td;
-    for (var row = 0; row < mSong.patternLen; row++) {
-      tr = document.createElement("tr");
-      if (row % beatDistance === 0)
-        tr.className = "beat";
-      th = document.createElement("th");
-      th.id = "ppr" + row;
-      // th.textContent = "" + row;
-      tr.appendChild(th);
-      for (col = 0; col < 4; col++) {
-        td = document.createElement("td");
-        td.id = "pc" + col + "r" + row;
-        td.textContent = "-- ";
-        td.addEventListener("mousedown", patternMouseDown, false);
-        td.addEventListener("mouseover", patternMouseOver, false);
-        td.addEventListener("mouseup", patternMouseUp, false);
-        tr.appendChild(td);
-      }
-      table.appendChild(tr);
-    }
-  };
-
-  var buildFxTable = function () {
-    var beatDistance = getBeatDistance();
-    var table = document.getElementById("fxtrack-table");
-    if (table.children.length === mSong.patternLen && getCurrentBeatDistance(table) === beatDistance)
-      return;
-    while (table.firstChild)
-      table.removeChild(table.firstChild);
-    var tr, td;
-    for (var row = 0; row < mSong.patternLen; row++) {
-      tr = document.createElement("tr");
-      if (row % beatDistance === 0)
-        tr.className = "beat";
-      td = document.createElement("td");
-      td.id = "fxr" + row;
-      td.textContent = String.fromCharCode(160);  // &nbsp;
-      td.addEventListener("mousedown", fxTrackMouseDown, false);
-      td.addEventListener("mouseover", fxTrackMouseOver, false);
-      td.addEventListener("mouseup", fxTrackMouseUp, false);
-      tr.appendChild(td);
-      table.appendChild(tr);
-    }
-  };
-
 
   //--------------------------------------------------------------------------
   // Initialization
@@ -2970,7 +2882,7 @@ var CGUI = function()
     // mPlayGfxLedOnImg.src = "gui/led-on.png";
 
     // Build the UI tables
-    buildSequencerTable();
+    lobby.apps.marabu.sequencer.build_sequence_table();
 
 
     // Create audio element, and always play the audio as soon as it's ready
@@ -3044,17 +2956,17 @@ var CGUI = function()
     document.getElementById("exportBINARY").onmousedown = exportBINARY;
     document.getElementById("exportINSTRUMENT").onmousedown = export_instrument;
     document.getElementById("exportKIT").onmousedown = export_kit;
-    document.getElementById("playSong").onmousedown = playSong;
-    document.getElementById("playRange").onmousedown = playRange;
-    document.getElementById("stopPlaying").onmousedown = stopPlaying;
+    // document.getElementById("playSong").onmousedown = playSong;
+    // document.getElementById("playRange").onmousedown = playRange;
+    // document.getElementById("stopPlaying").onmousedown = stopPlaying;
 
-    document.getElementById("sequencerCopy").onmousedown = sequencerCopyMouseDown;
-    document.getElementById("sequencerPaste").onmousedown = sequencerPasteMouseDown;
-    document.getElementById("sequencerPatUp").onmousedown = sequencerPatUpMouseDown;
-    document.getElementById("sequencerPatDown").onmousedown = sequencerPatDownMouseDown;
+    // document.getElementById("sequencerCopy").onmousedown = sequencerCopyMouseDown;
+    // document.getElementById("sequencerPaste").onmousedown = sequencerPasteMouseDown;
+    // document.getElementById("sequencerPatUp").onmousedown = sequencerPatUpMouseDown;
+    // document.getElementById("sequencerPatDown").onmousedown = sequencerPatDownMouseDown;
 
-    document.getElementById("fxCopy").onmousedown = fxCopyMouseDown;
-    document.getElementById("fxPaste").onmousedown = fxPasteMouseDown;
+    // document.getElementById("fxCopy").onmousedown = fxCopyMouseDown;
+    // document.getElementById("fxPaste").onmousedown = fxPasteMouseDown;
 
     document.getElementById("osc1_xenv").addEventListener("mousedown", boxMouseDown, false);
     document.getElementById("osc1_xenv").addEventListener("touchstart", boxMouseDown, false);
@@ -3062,17 +2974,9 @@ var CGUI = function()
     document.getElementById("osc2_xenv").addEventListener("mousedown", boxMouseDown, false);
     document.getElementById("osc2_xenv").addEventListener("touchstart", boxMouseDown, false);
 
-    // Initialize the MIDI handler
     initMIDI();
-
-    // Set up master event handlers
     activateMasterEvents();
-
-    // Start the jammer
     mJammer.start();
-
-    // Update the jammer rowLen (BPM) - requires that the jammer has been
-    // started.
     mJammer.updateRowLen(mSong.rowLen);
   };
 

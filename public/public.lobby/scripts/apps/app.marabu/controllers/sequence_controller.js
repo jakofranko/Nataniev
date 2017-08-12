@@ -4,7 +4,6 @@ function Sequence_Controller()
 
   this.name = "Sequencer";
   this.el = document.getElementById("sequence_controller");
-  this.status_el = document.getElementById("sequence_controller_status");
   this.bpm_el = document.getElementById("bpm");
   this.is_selected = false;
   this.bpm_el.addEventListener('input', bpm_update, false);
@@ -40,30 +39,12 @@ function Sequence_Controller()
   this.deselect = function()
   {
     this.el.setAttribute("class","sequencer");
-    this.status_el.innerHTML = "";
     this.is_selected = false;
     this.bpm_el.blur();
   }
 
   this.update = function()
   {
-    this.status_el.innerHTML = (GUI.pattern_controller.pattern_id > 0 ? GUI.pattern_controller.pattern_id : "")+" "+this.selection.x1+":"+this.selection.y1+" ";
-
-    if(this.selection.x2 == null || this.selection.y2 == null){ return; }
-    if(this.selection.x2 == this.selection.x1 && this.selection.y2 == this.selection.y1){ return; }
-    
-    this.status_el.innerHTML += this.selection.x2+":"+this.selection.y2;
-  }
-
-  this.status = function()
-  {
-    var html = (GUI.pattern_controller.pattern_id > 0 ? GUI.pattern_controller.pattern_id : "")+" "+this.selection.x1+":"+this.selection.y1+" ";
-
-    if(this.selection.x2 == null || this.selection.y2 == null){ return html; }
-    if(this.selection.x2 == this.selection.x1 && this.selection.y2 == this.selection.y1){ return html; }
-    
-    html += this.selection.x2+":"+this.selection.y2;
-    return html;
   }
 
   this.pattern_id_at = function(x,y)
