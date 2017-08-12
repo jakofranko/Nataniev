@@ -24,16 +24,11 @@ function Sequencer()
     var html = "";
 
     html += "  <div class='sequencer' id='sequence_controller' style='width:120px; display:inline-block; vertical-align:top'>";
-    html += "    <h1 class='lh30'><b>SEQ</b>";
-    html += "      <input id='bpm' type='text' size='3' value='' title='Beats per minute (song speed)' class='bh fh'/>";
-    html += "    </h1>";
+    html += "    <h1 class='lh30'><b>SEQ</b><input id='bpm' type='text' size='3' value='' title='Beats per minute (song speed)' class='bh fh'/></h1>";
     html += "    <div id='sequencer'><table class='tracks' id='sequencer-table'></table></div>";
     html += "  </div>";
     html += "  <div class='pattern' id='pattern_controller' style='width:130px; display:inline-block; vertical-align:top; border-left:1px solid #333; padding-left:30px; margin-left:-5px'>";
-    html += "    <h1 class='lh30'><b>PAT</b>";
-    html += "      <input id='rpp' type='text' size='3' value='' title='Rows per pattern' class='bh fh' />";
-    html += "      <hr />";
-    html += "    </h1>";
+    html += "    <h1 class='lh30'><b>PAT</b> <input id='rpp' type='text' size='3' value='' title='Rows per pattern' class='bh fh' /></h1>";
     html += "    <div id='pattern'><table class='tracks' id='pattern-table'></table>";
     html += "  </div>";
 

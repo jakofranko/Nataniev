@@ -1207,36 +1207,6 @@ var CGUI = function()
   {
     lobby.apps.marabu.sequencer.build_pattern_table();
     lobby.apps.marabu.sequencer.refresh_pattern_table();
-
-    var singlePattern = (mSeqCol == mSeqCol2 && mSeqRow == mSeqRow2);
-    var pat = singlePattern ? GUI.instrument().p[mSeqRow] - 1 : -1;
-    for (var i = 0; i < mSong.patternLen; ++i)
-    {
-      for (var j = 0; j < 4; ++j)
-      {
-        var o = document.getElementById("pc" + j + "r" + i);
-
-        var classes = "";
-
-        if (i >= GUI.pattern_controller.selection.y1 && i <= GUI.pattern_controller.selection.y2 && j >= GUI.pattern_controller.selection.x1 && j <= GUI.pattern_controller.selection.x2){
-          classes += "selected ";
-        }
-
-        if(GUI.instrument().c[pat]){
-          var n = GUI.instrument().c[pat].n[i+j*mSong.patternLen] - 87;
-          if(n > 0){
-            var octaveName = Math.floor(n / 12);
-            var noteName = mNoteNames[n % 12];
-            var sharp = noteName.substr(1,1) == "#" ? true : false;
-
-            classes += "octave_"+octaveName+" ";
-            classes += "note_"+noteName.substr(0,1)+" ";
-            classes += sharp ? "sharp " : "";
-          }
-        }
-        o.className = classes;
-      }
-    }
   };
 
   var toHex = function (num, count) {
@@ -1274,95 +1244,6 @@ var CGUI = function()
     }
   };
 
-  var setSelectedPatternCell = function (col, row) {
-    mPatternCol = col;
-    mPatternRow = row;
-    mPatternCol2 = col;
-    mPatternRow2 = row;
-    updatePattern(true, true);
-  };
-
-  var setSelectedPatternCell2 = function (col, row) {
-    mPatternCol2 = col >= mPatternCol ? col : mPatternCol;
-    mPatternRow2 = row >= mPatternRow ? row : mPatternRow;
-    for (var i = 0; i < mSong.patternLen; ++i) {
-      for (var j = 0; j < 4; ++j) {
-        var o = document.getElementById("pc" + j + "r" + i);
-        if (i >= mPatternRow && i <= mPatternRow2 &&
-            j >= mPatternCol && j <= mPatternCol2)
-          o.className ="selected";
-        else
-          o.className = "";
-      }
-    }
-    updatePattern(false, true);
-  };
-
-  this.select_pattern_cell = function(from_col,from_row,to_col = null,to_row = null)
-  {
-    mPatternCol = from_col;
-    mPatternRow = from_row;
-    mPatternCol2 = to_col ? to_col : from_col;
-    mPatternRow2 = to_row ? to_row : from_row;
-    updatePattern(true, true);
-  }
-
-  this.select_sequencer_cell = function(from_col,from_row,to_col = null,to_row = null)
-  {
-    mSeqCol = from_col;
-    mSeqRow = from_row;
-    mSeqCol2 = to_col ? to_col : from_col;
-    mSeqRow2 = to_row ? to_row : from_row;
-    updateSequencer(true, true);
-  }
-
-  var setSelectedSequencerCell = function (col, row)
-  {
-    mSeqCol = col;
-    mSeqRow = row;
-    mSeqCol2 = col;
-    mSeqRow2 = row;
-    updateSequencer(true, true);
-  };
-
-  var setSelectedSequencerCell2 = function (col, row) {
-    mSeqCol2 = col >= mSeqCol ? col : mSeqCol;
-    mSeqRow2 = row >= mSeqRow ? row : mSeqRow;
-    updateSequencer(false, true);
-  };
-
-  this.select_mod_row = function(row)
-  {
-    setSelectedFxTrackRow(row);
-  }
-
-  var setSelectedFxTrackRow = function (row)
-  {
-    mFxTrackRow = row;
-    mFxTrackRow2 = row;
-    for (var i = 0; i < mSong.patternLen; ++i) {
-      var o = document.getElementById("fxr" + i);
-      if (row && i >= mFxTrackRow && i <= mFxTrackRow2)
-        o.className ="selected";
-      else
-        o.className = "";
-    }
-    updateFxTrack(true, true);
-  };
-
-  var setSelectedFxTrackRow2 = function (row)
-  {
-    mFxTrackRow2 = row >= mFxTrackRow ? row : mFxTrackRow;
-    for (var i = 0; i < mSong.patternLen; ++i) {
-      var o = document.getElementById("fxr" + i);
-      if (row && i >= mFxTrackRow && i <= mFxTrackRow2)
-        o.className ="selected";
-      else
-        o.className = "";
-    }
-    updateFxTrack(false, true);
-  };
-
   var playNote = function (n)
   {
     // Don't play if editing sequencer
@@ -1379,7 +1260,6 @@ var CGUI = function()
       var pat = GUI.instrument().p[mSeqRow] - 1;
       if (pat >= 0) {
         GUI.instrument().c[pat].n[mPatternRow + mPatternCol*mSong.patternLen] = note;
-        setSelectedPatternCell(mPatternCol, (mPatternRow + 1) % mSong.patternLen);
         GUI.pattern_controller.select(mPatternCol, (mPatternRow) % mSong.patternLen);
         updatePattern();
         GUI.update_status("Wrote <b>"+note+"</b> in PATTERN "+GUI.pattern_controller.pattern_id+" <i>at "+mPatternCol+","+mPatternRow+"</i>");
@@ -1604,9 +1484,6 @@ var CGUI = function()
 
     // Initialize the song
     setEditMode(EDIT_PATTERN);
-    setSelectedPatternCell(0, 0);
-    setSelectedSequencerCell(0, 0);
-    setSelectedFxTrackRow(0);
     return false;
   };
 
@@ -2417,140 +2294,7 @@ var CGUI = function()
 
   }
 
-  var fxTrackMouseDown = function (e)
-  {
-    var o = getEventElement(e);
-    var row = parseInt(o.id.slice(3));
-
-    setSelectedFxTrackRow(row);
-    e.preventDefault();
-
-    GUI.pattern_controller.select_mod(row,row);
-  };
-
-  var fxTrackMouseOver = function (e)
-  {
-    if(!mSelectingFxRange){ return; }
-  
-    var o = getEventElement(e);
-    var row = parseInt(o.id.slice(3));
-
-    setSelectedFxTrackRow2(row);
-    e.preventDefault();
-    GUI.pattern_controller.select_mod(null,row);
-  };
-
-  var fxTrackMouseUp = function (e)
-  {
-    if(!mSelectingFxRange){ return; }
-
-    var o = getEventElement(e);
-    var row = parseInt(o.id.slice(3));
-
-    setSelectedFxTrackRow2(row);
-    e.preventDefault();
-    GUI.pattern_controller.select_mod(null,row);
-  };
-
   // Pattern
-
-  var patternMouseDown = function (e)
-  {
-    var o = getEventElement(e);
-    var col = parseInt(o.id.slice(2,3));
-    var row = parseInt(o.id.slice(4));
-
-    setSelectedPatternCell(col, row);
-    mSelectingPatternRange = true;
-    e.preventDefault();
-
-    GUI.pattern_controller.select(col,row,col,row);
-  };
-
-  var patternMouseOver = function (e)
-  {
-    if(!mSelectingPatternRange){ return; }
-
-    var o = getEventElement(e);
-    var col = parseInt(o.id.slice(2,3));
-    var row = parseInt(o.id.slice(4));
-
-    setSelectedPatternCell2(col, row);
-    e.preventDefault();
-
-    GUI.pattern_controller.select(null,null,col,row);
-  };
-
-  var patternMouseUp = function (e)
-  {
-    if(!mSelectingPatternRange){ return; }
-
-    var o = getEventElement(e);
-    var col = parseInt(o.id.slice(2,3));
-    var row = parseInt(o.id.slice(4));
-
-    setSelectedPatternCell2(col, row);
-    mSelectingPatternRange = false;
-    e.preventDefault();
-
-    GUI.pattern_controller.select(null,null,col,row);
-  };
-
-  var sequencerMouseDown = function (e)
-  {
-    var o = getEventElement(e);
-    var col = parseInt(o.id.slice(2,3));
-    var row = parseInt(o.id.slice(4));
-
-    setSelectedSequencerCell(col, row);
-
-    mSelectingSeqRange = true;
-
-    updatePattern();
-    updateFxTrack();
-    e.preventDefault();
-
-    GUI.sequence_controller.select(col,row,col,row);
-    GUI.instrument_controller.select_instrument(col);
-  };
-
-  var sequencerMouseOver = function (e)
-  {
-    if(!mSelectingSeqRange){ return; }
-
-    var o = getEventElement(e);
-    var col = parseInt(o.id.slice(2,3));
-    var row = parseInt(o.id.slice(4));
-
-    setSelectedSequencerCell2(col, row);
-
-    updatePattern();
-    updateFxTrack();
-    updateInstrument(true);
-    e.preventDefault();
-
-    GUI.sequence_controller.select(null,null,col,row);
-  };
-
-  var sequencerMouseUp = function (e)
-  {
-    if(!mSelectingSeqRange){ return; }
-    
-    var o = getEventElement(e);
-    var col = parseInt(o.id.slice(2,3));
-    var row = parseInt(o.id.slice(4));
-
-    setSelectedSequencerCell2(col, row);
-
-    mSelectingSeqRange = false;
-
-    updatePattern();
-    updateFxTrack();
-    e.preventDefault();
-
-    GUI.sequence_controller.select(null,null,col,row);
-    GUI.instrument_controller.select_instrument(col);
-  };
 
   this.update_instrument = function(cmdNo,value,id)
   {
@@ -2647,7 +2391,6 @@ var CGUI = function()
     updateSequencer();
     updatePattern();
     updateFxTrack();
-    setSelectedFxTrackRow(y1);
 
     GUI.update_status("Erased Mod <b>"+y1+"</b>")
   }
