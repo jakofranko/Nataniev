@@ -5,6 +5,7 @@ function Instrument()
   
   this.id = 1;
   this.name = "unknown";
+  this.octave = 5;
   this.name_el = document.getElementById("instrument_name");
   this.edit_mode = false;
 
@@ -30,9 +31,11 @@ function Instrument()
 
   this.refresh = function()
   {
+    this.name = GUI.instrument().name ? GUI.instrument().name : "unnamed";
+
     this.name_el = document.getElementById("instrument_name");
     this.name_el.value = this.name;
-    this.name = GUI.instrument().name ? GUI.instrument().name : "unnamed";
+
     GUI.update_instr();
     GUI.update_status("Selected <b>"+(GUI.instrument().name ? GUI.instrument().name : "Instrument #"+this.id)+"</b>")
   }
@@ -100,9 +103,22 @@ function Instrument()
     return html;
   }
 
+  this.set_octave = function(mod)
+  {
+    this.octave += mod;
+    if(this.octave > 8){ this.octave = 8; }
+    if(this.octave < 1){ this.octave = 1; }
+    lobby.commander.update_status();
+  }
+
   this.status = function()
   {
-    return "INS()";
+    return "INS(octave:"+this.octave+")";
+  }
+
+  this.play = function(note)
+  {
+    GUI.play_note(note + this.octave * 12);
   }
 
   // Keyboard Events
@@ -111,9 +127,12 @@ function Instrument()
   {
     key : function(key)
     {
-      if(!target.edit_mode){ return; }
-
-      console.log("ins",key);
+      if(key == "x"){
+        target.set_octave(1);
+      }
+      if(key == "z"){
+        target.set_octave(-1);
+      }
     }
   }
 }

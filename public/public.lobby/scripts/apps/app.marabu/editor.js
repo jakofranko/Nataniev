@@ -155,8 +155,6 @@ function Editor()
 
     document.getElementById("pattern-table").className = l.p == -1 ? "tracks inactive" : "tracks";
 
-    console.log(l);
-
     for (var r = 0; r < this.pattern.length; ++r)
     {
       if(GUI.instrument().c[l.p]){
@@ -208,7 +206,7 @@ function Editor()
     {
       if(!target.edit_mode){ return; }
 
-      var note = 0;
+      var note = -1;
 
       switch (key)
       {
@@ -227,9 +225,16 @@ function Editor()
         case "u": note = 10; break;
       }
 
-      var note_val = note + 87;
-
-      target.inject(note_val);
+      if(key == "escape"){ 
+        target.edit(false);
+      }
+      if(key == " "){
+        target.inject(0); // erase
+      }
+      if(note >= 0){
+        target.inject(note + 87);  
+        app.instrument.play(note);
+      }
     }
   }
 

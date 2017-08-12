@@ -43,10 +43,10 @@ function Sequencer()
     var target_instrument_id = x2;
     var target_pattern_id = target_pattern_value == "-" ? -1 : parseInt(target_pattern_value);    
 
-    app.sequencer.refresh_table();
     app.editor.pattern.id = target_pattern_id;
     app.instrument.id = target_instrument_id;
 
+    app.sequencer.refresh();
     app.editor.refresh();
     app.instrument.refresh();
   }
@@ -70,7 +70,7 @@ function Sequencer()
   this.edit_note = function(i,p,n,v)
   {
     GUI.song().songData[i].c[p].n[n] = v;
-    console.info("INJECT","i:"+i,"p:"+p,"n:"+n,"v:"+v,GUI.song().songData);
+    // console.info("INJECT","i:"+i,"p:"+p,"n:"+n,"v:"+v,GUI.song().songData);
   }
 
   this.inject = function(value)
@@ -112,6 +112,11 @@ function Sequencer()
     target.edit();
     target.select(col,row,col,row);
     lobby.commander.update_status();
+  }
+
+  this.refresh = function()
+  {
+    this.refresh_table();
   }
 
   this.build_sequence_table = function()

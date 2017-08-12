@@ -984,88 +984,6 @@ var CGUI = function()
     return jsData;
   };
 
-  //----------------------------------------------------------------------------
-  // Midi interaction.
-  // Based on example code by Chris Wilson.
-  //----------------------------------------------------------------------------
-
-  var mSelectMIDI;
-  var mMIDIAccess;
-  var mMIDIIn;
-
-  var midiMessageReceived = function (ev) {
-    var cmd = ev.data[0] >> 4;
-    var channel = ev.data[0] & 0xf;
-    var noteNumber = ev.data[1];
-    var velocity = ev.data[2];
-
-    if (channel == 9) {
-      return;
-    }
-
-    if (cmd == 9 && velocity > 0) {
-      // Note on (note on with velocity zero is the same as note off).
-      // NOTE: Note no. 69 is A4 (440 Hz), which is note no. 57 in SoundBox.
-      playNote(noteNumber - 12);
-    } else if (cmd == 14) {
-      // Pitch wheel
-      var pitch = ((velocity * 128.0 + noteNumber)-8192) / 8192.0;
-      // TODO(m): We could use this for controlling something. I think it would
-      // be neat to use the pitch wheel for moving up/down in the pattern
-      // editor.
-    }
-  };
-
-  var selectMIDIIn = function (ev) {
-    mMIDIIn = mMIDIAccess.inputs()[mSelectMIDI.selectedIndex];
-    mMIDIIn.onmidimessage = midiMessageReceived;
-  };
-
-  var onMIDIStarted = function (midi) {
-    mMIDIAccess = midi;
-
-    var list = mMIDIAccess.inputs();
-
-    // Detect preferred device.
-    var preferredIndex = 0;
-    for (var i = 0; i < list.length; i++) {
-      var str = list[i].name.toString().toLowerCase();
-      if ((str.indexOf("keyboard") != -1)) {
-        preferredIndex = i;
-        break;
-      }
-    }
-
-    // Populate the MIDI input selection drop down box.
-    mSelectMIDI.options.length = 0;
-    if (list.length) {
-      for (var i = 0; i < list.length; i++) {
-        mSelectMIDI.options[i] = new Option(list[i].name, list[i].fingerprint,
-            i == preferredIndex, i == preferredIndex);
-      }
-
-      mMIDIIn = list[preferredIndex];
-      mMIDIIn.onmidimessage = midiMessageReceived;
-
-      mSelectMIDI.onchange = selectMIDIIn;
-
-      // Show the MIDI input selection box.
-      mSelectMIDI.style.display = "inline";
-    }
-  };
-
-  var onMIDISystemError = function (err) {
-    // TODO(m): Log an error message somehow (err.code)...
-  };
-
-  var initMIDI = function () {
-    if (navigator.requestMIDIAccess) {
-      mSelectMIDI = document.getElementById("midiInput");
-      navigator.requestMIDIAccess().then(onMIDIStarted, onMIDISystemError);
-    }
-  };
-
-
   //--------------------------------------------------------------------------
   // Helper functions
   //--------------------------------------------------------------------------
@@ -1147,30 +1065,10 @@ var CGUI = function()
     lobby.apps.marabu.editor.build_table();
   };
 
-  var playNote = function (n)
+  this.play_note = function(note)
   {
-    // Don't play if editing sequencer
-    if(GUI.sequence_controller.is_selected){
-      return false;
-    }
-
-    // Calculate note number and trigger a new note in the jammer.
-    var note = n + 87;
-    mJammer.addNote(note);
-
-    // Record only if pattern is selected
-    if(GUI.pattern_controller.is_selected && mSeqCol == mSeqCol2 && mSeqRow == mSeqRow2 && mPatternCol == mPatternCol2 && mPatternRow == mPatternRow2){
-      var pat = GUI.instrument().p[mSeqRow] - 1;
-      if (pat >= 0) {
-        GUI.instrument().c[pat].n[mPatternRow + mPatternCol*mSong.patternLen] = note;
-        GUI.pattern_controller.select(mPatternCol, (mPatternRow) % mSong.patternLen);
-        updatePattern();
-        GUI.update_status("Wrote <b>"+note+"</b> in PATTERN "+GUI.pattern_controller.pattern_id+" <i>at "+mPatternCol+","+mPatternRow+"</i>");
-        return true;
-      }
-    }
-    return false;
-  };
+    mJammer.addNote(note+87);
+  }
 
   var updateCheckBox = function (o, check) {
     o.src = check ? "media/graphics/toggle_on.svg" : "media/graphics/toggle_off.svg";
@@ -1285,11 +1183,6 @@ var CGUI = function()
     GUI.update_status("Updated RPP to <b>"+rpp+"</b>")
   }
 
-  this.update_instrument_name = function(name)
-  {
-    GUI.instrument().name = name;
-  }
-
   var setPatternLength = function (length) {
     if (mSong.patternLen === length)
       return;
@@ -1375,35 +1268,6 @@ var CGUI = function()
   // Event handlers
   //--------------------------------------------------------------------------
 
-  var newSong = function (e) {
-    mSong = makeNewSong();
-
-    // Update GUI
-    updateSongInfo();
-    updateSequencer();
-    updatePattern();
-    updateFxTrack();
-    updateInstrument();
-
-    // Initialize the song
-    setEditMode(EDIT_PATTERN);
-    return false;
-  };
-
-  var openSong = function (e) {
-    e.preventDefault();
-    showOpenDialog();
-  };
-
-  var saveSong = function (e) {
-    // Update song ranges
-    updateSongRanges();
-
-    showSaveDialog();
-
-    e.preventDefault();
-  };
-
   var exportBINARY = function()
   {
     var dataURI = "data:application/octet-stream;base64," + btoa(songToBin(mSong));
@@ -1418,7 +1282,7 @@ var CGUI = function()
     updateSongRanges();
 
     // Generate audio data
-    var doneFun = function (wave)
+    var doneFun = function(wave)
     {
       var blob = new Blob([wave], {type: "application/octet-stream"});
       saveAs(blob, "render.wav");
@@ -1630,7 +1494,8 @@ var CGUI = function()
     }
   };
 
-  var updateFollower = function () {
+  var updateFollower = function ()
+  {
     if (mAudio == null)
       return;
 
@@ -1737,54 +1602,25 @@ var CGUI = function()
   // (end of playback follower)
   //----------------------------------------------------------------------------
 
-
-  var playSong = function (e)
+  this.play_song = function()
   {
-    if (!e) var e = window.event;
-    e.preventDefault();
-    GUI.deselect_all();
-
-    // Stop the currently playing audio
     stopAudio();
-
-    // Update song ranges
     updateSongRanges();
 
-    // Select range to play
     mFollowerFirstRow = 0;
     mFollowerLastRow = mSong.endPattern - 2;
     mFollowerFirstCol = 0;
     mFollowerLastCol = 7;
 
-    // Generate audio data
-    var doneFun = function (wave)
+    var doneFun = function(wave)
     {
-      if (mAudio == null)
-      {
-         alert("Audio element unavailable.");
-         return;
-      }
-
-      try
-      {
-        // Start the follower
-        startFollower();
-
-        // Load the data into the audio element (it will start playing as soon
-        // as the data has been loaded)
-        mAudio.src = URL.createObjectURL(new Blob([wave], {type: "audio/wav"}));
-
-        // Hack
-        mAudioTimer.reset();
-        mAudio.play();
-      }
-      catch (err)
-      {
-        alert("Error playing: " + err.message);
-      }
+      startFollower();
+      mAudio.src = URL.createObjectURL(new Blob([wave], {type: "audio/wav"}));
+      mAudioTimer.reset();
+      mAudio.play();
     };
     generateAudio(doneFun);
-  };
+  }
 
   var playRange = function (e)
   {
@@ -1860,221 +1696,6 @@ var CGUI = function()
   {
     document.getElementById("statusText").innerHTML = log;
   }
-
-  this.keyboard_play = function(n = 1)
-  {
-    playNote(n + mKeyboardOctave * 12);
-  }
-
-  this.keyboard_octave_up = function()
-  {
-    if (mKeyboardOctave < 8){
-      mKeyboardOctave++;
-      this.update_status("Keyboard Octave <b>"+mKeyboardOctave+"</b>");
-    }
-  }
-
-  this.keyboard_octave_down = function()
-  {
-    if (mKeyboardOctave > 1)
-    {
-      mKeyboardOctave--;
-      this.update_status("Keyboard Octave <b>"+mKeyboardOctave+"</b>");
-    }
-  }
-
-  this.pattern_copy = function(from_x,from_y,to_x,to_y)
-  {
-    mPatCopyBuffer = [];
-    count = 0;
-    for (var row = from_y; row <= to_y; ++row) {
-      var arr = [];
-      for (var col = from_x; col <= to_x; ++col) {
-        arr.push(this.pattern().n[row+col*mSong.patternLen]);
-        count += 1;
-      }
-      mPatCopyBuffer.push(arr);
-    }
-    this.update_status("Copied <b>"+count+"</b> notes");
-    this.deselect_all();
-  }
-
-  this.pattern_paste = function(from_x,from_y,to_x,to_y)
-  {
-    var count = 0;
-    for (var row = from_y, i = 0; row < mSong.patternLen && i < mPatCopyBuffer.length; ++row, ++i) {
-      for (var col = from_x, j = 0; col < 4 && j < mPatCopyBuffer[i].length; ++col, ++j) {
-        GUI.pattern().n[row+col*mSong.patternLen] = mPatCopyBuffer[i][j];
-        count += 1;
-      }
-    }
-    updatePattern();
-    this.deselect_all();
-    this.update_status("Pasted <b>"+count+"</b> notes");
-  }
-
-  this.pattern_note_up = function(from_x,from_y,to_x,to_y)
-  {
-    for (var row = from_y; row <= to_y; ++row) {
-      for (var col = from_x; col <= to_x; ++col) {
-        var n = this.pattern().n[row+col*mSong.patternLen];
-        if (n > 0)
-          GUI.pattern().n[row+col*mSong.patternLen] = n + 1;
-      }
-    }
-    updatePattern();
-    this.update_status("Note <b>+1</b>");
-  }
-
-  this.pattern_note_down = function(from_x,from_y,to_x,to_y)
-  {
-    for (var row = from_y; row <= to_y; ++row) {
-      for (var col = from_x; col <= to_x; ++col) {
-        var n = this.pattern().n[row+col*mSong.patternLen];
-        if (n > 1)
-          GUI.pattern().n[row+col*mSong.patternLen] = n - 1;
-      }
-    }
-    updatePattern();
-    this.update_status("Note <b>-1</b>");
-  }
-
-  this.pattern_octave_up = function(from_x,from_y,to_x,to_y)
-  {
-    for (var row = from_y; row <= to_y; ++row) {
-      for (var col = from_x; col <= to_x; ++col) {
-        var n = this.pattern().n[row+col*mSong.patternLen];
-        if (n > 0)
-          GUI.pattern().n[row+col*mSong.patternLen] = n + 12;
-      }
-    }
-    updatePattern();
-    this.update_status("Octave <b>+1</b>");
-  }
-
-  this.pattern_octave_down = function(from_x,from_y,to_x,to_y)
-  {
-    for (var row = from_y; row <= to_y; ++row) {
-      for (var col = from_x; col <= to_x; ++col) {
-        var n = this.pattern().n[row+col*mSong.patternLen];
-        if (n > 12)
-          GUI.pattern().n[row+col*mSong.patternLen] = n - 12;
-      }
-    }
-    updatePattern();
-    this.update_status("Octave <b>-1</b>");
-  }
-
-  //
-
-  var sequencerCopyMouseDown = function (e)
-  {
-    if (!e) var e = window.event;
-    e.preventDefault();
-
-    mSeqCopyBuffer = [];
-    for (var row = mSeqRow; row <= mSeqRow2; ++row)
-    {
-      var arr = [];
-      for (var col = mSeqCol; col <= mSeqCol2; ++col)
-      {
-        arr.push(mSong.songData[col].p[row]);
-      }
-      mSeqCopyBuffer.push(arr);
-    }
-  };
-
-  var sequencerPasteMouseDown = function (e)
-  {
-    if (!e) var e = window.event;
-    e.preventDefault();
-
-    for (var row = mSeqRow, i = 0; row < MAX_SONG_ROWS && i < mSeqCopyBuffer.length; ++row, ++i)
-    {
-      for (var col = mSeqCol, j = 0; col < 8 && j < mSeqCopyBuffer[i].length; ++col, ++j)
-      {
-        mSong.songData[col].p[row] = mSeqCopyBuffer[i][j];
-      }
-    }
-    updateSequencer();
-  };
-
-  var sequencerPatUpMouseDown = function (e)
-  {
-    if (!e) var e = window.event;
-    e.preventDefault();
-
-    for (var row = mSeqRow; row <= mSeqRow2; ++row)
-    {
-      for (var col = mSeqCol; col <= mSeqCol2; ++col)
-      {
-        var pat = mSong.songData[col].p[row];
-        if (pat < MAX_PATTERNS)
-        {
-          mSong.songData[col].p[row] = pat + 1;
-        }
-      }
-    }
-    updateSequencer();
-    updatePattern();
-    updateFxTrack();
-  };
-
-  var sequencerPatDownMouseDown = function (e)
-  {
-    if (!e) var e = window.event;
-    e.preventDefault();
-
-    for (var row = mSeqRow; row <= mSeqRow2; ++row)
-    {
-      for (var col = mSeqCol; col <= mSeqCol2; ++col)
-      {
-        var pat = mSong.songData[col].p[row];
-        if (pat > 0)
-        {
-          mSong.songData[col].p[row] = pat - 1;
-        }
-      }
-    }
-    updateSequencer();
-    updatePattern();
-    updateFxTrack();
-  };
-
-  var fxCopyMouseDown = function (e) {
-    if (!e) var e = window.event;
-    e.preventDefault();
-
-    if (mSeqRow == mSeqRow2 && mSeqCol == mSeqCol2) {
-      var pat = GUI.instrument().p[mSeqRow] - 1;
-      if (pat >= 0) {
-        mFxCopyBuffer = [];
-        for (var row = mFxTrackRow; row <= mFxTrackRow2; ++row) {
-          var arr = [];
-          arr.push(GUI.instrument().c[pat].f[row]);
-          arr.push(GUI.instrument().c[pat].f[row + mSong.patternLen]);
-          mFxCopyBuffer.push(arr);
-        }
-      }
-    }
-  };
-
-  var fxPasteMouseDown = function (e) {
-    if (!e) var e = window.event;
-    e.preventDefault();
-
-    if (mSeqRow == mSeqRow2 && mSeqCol == mSeqCol2) {
-      var pat = GUI.instrument().p[mSeqRow] - 1;
-      if (pat >= 0) {
-        for (var row = mFxTrackRow, i = 0; row < mSong.patternLen && i < mFxCopyBuffer.length; ++row, ++i) {
-          var arr = mFxCopyBuffer[i];
-          GUI.instrument().c[pat].f[row] = arr[0];
-          GUI.instrument().c[pat].f[row + mSong.patternLen] = arr[1];
-        }
-        updateFxTrack();
-      }
-    }
-  };
 
   var boxMouseDown = function (e) {
     if (!e) var e = window.event;
@@ -2614,8 +2235,6 @@ var CGUI = function()
     document.getElementById("osc2_xenv").addEventListener("mousedown", boxMouseDown, false);
     document.getElementById("osc2_xenv").addEventListener("touchstart", boxMouseDown, false);
 
-    initMIDI();
-    activateMasterEvents();
     mJammer.start();
     mJammer.updateRowLen(mSong.rowLen);
   };
