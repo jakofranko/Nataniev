@@ -184,10 +184,7 @@ var CGUI = function()
 {
   this.sequence_controller = lobby.apps.marabu.sequencer;
   this.pattern_controller = lobby.apps.marabu.editor;
-  this.instrument_controller = new Instrument_Controller();
-
-  keyboard = new Keyboard();
-  keyboard.install();
+  this.instrument_controller = lobby.apps.marabu.instrument;
 
   // Edit modes
   var EDIT_NONE = 0,
@@ -1109,13 +1106,6 @@ var CGUI = function()
   // Helper functions
   //--------------------------------------------------------------------------
 
-  var preloadImage = function (url)
-  {
-    var img = new Image();
-    img.src = url;
-    mPreload.push(img);
-  };
-
   var getElementPos = function (o)
   {
     var left = 0, top = 0;
@@ -1140,35 +1130,6 @@ var CGUI = function()
     if (o.nodeType == 3) // defeat Safari bug
       o = o.parentNode;
     return o;
-  };
-
-  var getMousePos = function (e, rel)
-  {
-    // Get the mouse document position
-    var p = [0, 0];
-    if (e.pageX && e.pageY)
-    {
-      p = [e.pageX, e.pageY];
-    }
-    else if (e.clientX && e.clientY)
-    {
-      p = [e.clientX + document.body.scrollLeft +
-           document.documentElement.scrollLeft,
-           e.clientY + document.body.scrollTop +
-           document.documentElement.scrollTop];
-    }
-    else if (e.touches && e.touches.length > 0) {
-      p = [e.touches[0].clientX + document.body.scrollLeft +
-           document.documentElement.scrollLeft,
-           e.touches[0].clientY + document.body.scrollTop +
-           document.documentElement.scrollTop];
-    }
-
-    if (!rel) return p;
-
-    // Get the element document position
-    var pElem = getElementPos(getEventElement(e));
-    return [p[0] - pElem[0], p[1] - pElem[1]];
   };
 
   var unfocusHTMLInputElements = function ()
@@ -1256,7 +1217,7 @@ var CGUI = function()
     mJammer.addNote(note);
 
     // Record only if pattern is selected
-    if (GUI.pattern_controller.is_selected && mSeqCol == mSeqCol2 && mSeqRow == mSeqRow2 && mPatternCol == mPatternCol2 && mPatternRow == mPatternRow2){
+    if(GUI.pattern_controller.is_selected && mSeqCol == mSeqCol2 && mSeqRow == mSeqRow2 && mPatternCol == mPatternCol2 && mPatternRow == mPatternRow2){
       var pat = GUI.instrument().p[mSeqRow] - 1;
       if (pat >= 0) {
         GUI.instrument().c[pat].n[mPatternRow + mPatternCol*mSong.patternLen] = note;
@@ -1285,7 +1246,7 @@ var CGUI = function()
 
   this.instrument = function()
   {
-    return this.song().songData[GUI.instrument_controller.instrument_id];
+    return this.song().songData[this.instrument_controller.id];
   }
 
   this.pattern = function()
@@ -1960,7 +1921,6 @@ var CGUI = function()
 
   this.keyboard_play = function(n = 1)
   {
-    if(GUI.sequence_controller.is_selected){ return; }
     playNote(n + mKeyboardOctave * 12);
   }
 
@@ -2228,6 +2188,7 @@ var CGUI = function()
         updateFxTrack();
       }
     }
+    console.log(GUI.instrument())
     GUI.instrument().i[OSC1_WAVEFORM] = wave;
     updateInstrument();
   }
@@ -2487,9 +2448,6 @@ var CGUI = function()
     // Set up the master mouse event handlers
     document.onmousedown = null;
 
-    // Set up the master key event handler
-    document.onkeydown = keyDown;
-
     // Set up the drag'n'drop handler
     var dropElement = document.body.parentNode;
     dropElement.addEventListener("dragenter", function dragenter(e) { e.stopPropagation(); e.preventDefault(); }, false);
@@ -2503,9 +2461,6 @@ var CGUI = function()
     document.onmousedown = function () { return true; };
     document.onmousemove = null;
     document.onmouseup = null;
-
-    // Set up the master key event handler
-    document.onkeydown = null;
   };
 
   var getCurrentBeatDistance = function (table) {

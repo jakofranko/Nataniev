@@ -1,6 +1,5 @@
 
 var GUI = null;
-var keyboard = null;
 
 function Marabu()
 {
@@ -16,7 +15,6 @@ function Marabu()
 
   this.setup.includes = [
     "core/jammer",
-    "core/keyboard",
     "core/player-small",
     // "core/player-worker",
     "core/player",
@@ -28,9 +26,6 @@ function Marabu()
     "inc/deflate",
     "inc/FileSaver",
     "inc/inflate",
-
-    "controllers/controller",
-    "controllers/instrument_controller",
 
     "instrument",
     "editor",
@@ -67,6 +62,9 @@ function Marabu()
     html += ".tracks td:hover { cursor:pointer}";
     html += ".tracks td.selected { color:#f00}";
     html += ".tracks tr.beat th { color:#999}";
+    html += ".tracks.inactive tr td { color:#555}";
+    html += ".tracks.inactive tr th { color:#555}";
+    html += ".tracks.edit { border-top:1px solid #f00 }";
     html += "</style>";
 
     return "<yu style='vertical-align:top' class='everything'>"+html+"</yu>";
@@ -76,7 +74,16 @@ function Marabu()
   {
     var html = "";
     html += this.sequencer.status();
+    html += this.editor.status();
+    html += this.instrument.status();
     return html;
+  }
+
+  this.when.key = function(key)
+  {
+    this.app.instrument.when.key(key);
+    this.app.editor.when.key(key);
+    this.app.sequencer.when.key(key);
   }
 }
 

@@ -3,6 +3,7 @@ function Sequencer()
   var app = lobby.apps.marabu;
   var target = this;
 
+  this.edit_mode = false;
   this.selection = {x1:0,y1:0,x2:0,y2:0};
   this.sequence = {length:32}
 
@@ -29,23 +30,48 @@ function Sequencer()
 
   this.pattern_id_at = function(x,y)
   {
-    var instrument_id = GUI.instrument_controller.instrument_id;
+    var instrument_id = GUI.instrument_controller.id;
     var pattern_id = GUI.song().songData[instrument_id].p[this.selection.y1];
     return pattern_id - 1;
   }
 
   this.select = function(x1 = 0,y1 = 0,x2 = 0,y2 = 0)
   {
-    GUI.deselect_all();
     this.selection = {x1:x1,y1:y1,x2:x2,y2};
 
-    app.instrument.load(this.selection.x2);
-    app.editor.load(this.pattern_id_at(this.selection.x2,this.selection.y2));
+    var target_pattern_value = document.getElementById("sc"+x2+"r"+y2).textContent;
+    var target_instrument_id = x2;
+    var target_pattern_id = target_pattern_value == "-" ? -1 : parseInt(target_pattern_value);    
+
+    app.sequencer.refresh_table();
+    app.editor.load(target_pattern_id);
+    app.instrument.load(target_instrument_id);
   }
 
   this.deselect = function()
   {
     this.selection = {x1:-1,y1:-1,x2:-1,y2:-1};
+  }
+
+  this.edit = function(toggle = true)
+  {
+    this.edit_mode = toggle;
+
+    var table = document.getElementById("sequencer-table");
+    table.className = toggle ? "tracks edit" : "tracks";
+  }
+
+  this.inject = function(value)
+  {
+    var target_instrument_id = this.selection.x2;
+    var target_pattern_id = this.selection.y2;
+
+    GUI.song().songData[target_instrument_id].p[target_pattern_id] = parseInt(value);
+
+    this.refresh_table();
+    this.edit(false);
+    app.editor.pattern.id = value;
+    app.editor.edit();
   }
 
   function bpm_update(e)
@@ -66,27 +92,9 @@ function Sequencer()
     var col = parseInt(e.target.id.slice(2,3));
     var row = parseInt(e.target.id.slice(4));
 
-    target.selection.x1 = col;
-    target.selection.x2 = col;
-    target.selection.y1 = row;
-    target.selection.y2 = row;
-
+    target.edit();
+    target.select(col,row,col,row);
     lobby.commander.update_status();
-
-    target.refresh_table();
-    app.editor.refresh_table();
-    app.instrument.load(col);
-  }
-
-  this.sequence_mouse_move = function()
-  {
-    
-  }
-
-  this.sequence_mouse_up = function()
-  {
-    lobby.commander.update_status();
-    app.editor.refresh_table();
   }
 
   this.build_sequence_table = function()
@@ -105,8 +113,6 @@ function Sequencer()
         td.id = "sc" + col + "r" + row;
         td.textContent = "-";
         td.addEventListener("mousedown", this.sequence_mouse_down, false);
-        td.addEventListener("mouseover", this.sequence_mouse_move, false);
-        td.addEventListener("mouseup", this.sequence_mouse_up, false);
         tr.appendChild(td);
       }
       table.appendChild(tr);
@@ -127,6 +133,19 @@ function Sequencer()
         o.className = classes;
         o.textContent = pat ? pat : "-";
       }
+    }
+  }
+
+  // Keyboard Events
+
+  this.when = 
+  {
+    key : function(key)
+    {
+      if(!target.edit_mode){ return; }
+      if(["0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f"].indexOf(key) == -1){ console.log("SEQ: Unknown Key"); return; }
+
+      target.inject(key);
     }
   }
 

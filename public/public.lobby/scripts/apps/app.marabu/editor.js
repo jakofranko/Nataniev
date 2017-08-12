@@ -3,6 +3,7 @@ function Editor()
   var app = lobby.apps.marabu;
   var target = this;
 
+  this.edit_mode = false;
   this.selection = {x1:0,y1:0,x2:0,y2:0};
   this.pattern = {id:0,beat:4,length:32};
 
@@ -12,7 +13,7 @@ function Editor()
   this.status = function()
   {
     var html = "";
-    html += "PAT("+this.selection.x1+":"+this.selection.y1+" "+this.selection.x2+":"+this.selection.y2+") ";
+    html += "PAT(#"+this.pattern.id+" "+this.selection.x1+":"+this.selection.y1+" "+this.selection.x2+":"+this.selection.y2+") ";
     return html;
   }
 
@@ -31,19 +32,42 @@ function Editor()
   this.load = function(pattern_id = 0)
   {
     this.pattern.id = pattern_id;
-    this.select(0,0,0,0);
+    this.selection = {x1:0,y1:0,x2:0,y2:0};
+    this.refresh_table();
+
+    document.getElementById("pattern-table").className = pattern_id == -1 ? "tracks inactive" : "tracks";
   }
 
   this.select = function(x1 = 0,y1 = 0,x2 = 0,y2 = 0)
   {
     GUI.deselect_all();
-    this.selection = {x1:x1,y1:y1,x2:x2,y2};
+    this.selection = {x1:x1,y1:y1,x2:x2,y2:0};
     this.refresh_table();
   }
 
   this.deselect = function()
   {
     this.selection = {x1:-1,y1:-1,x2:-1,y2:-1};
+  }
+
+  this.edit = function(toggle = true)
+  {
+    this.edit_mode = toggle;
+
+    var table = document.getElementById("pattern-table");
+    table.className = toggle ? "tracks edit" : "tracks";
+  }
+
+  this.inject = function(value)
+  {
+    var target_instrument_id = app.instrument.id;
+    var target_pattern_id = this.pattern.id;
+
+    var target_note_id = this.selection.y2 + (this.selection.x2 * this.pattern.length);
+
+    GUI.song().songData[target_instrument_id].c[target_pattern_id].n[target_note_id] = value;
+
+    this.refresh_table();
   }
 
   function rpp_update()
@@ -69,22 +93,9 @@ function Editor()
     target.refresh_table();
   }
 
-  this.pattern_mouse_move = function()
-  {
-    target.refresh_table();
-  }
-
-  this.pattern_mouse_up = function()
-  {
-    target.refresh_table();
-    lobby.commander.update_status();
-  }
-
   this.effect_mouse_down = function(e)
   {
     var row = parseInt(e.target.id.slice(3));
-
-    console.log(row);
   }
 
   this.build_table = function()
@@ -104,8 +115,6 @@ function Editor()
         td.id = "pc" + col + "r" + row;
         td.textContent = "--";
         td.addEventListener("mousedown", this.pattern_mouse_down, false);
-        td.addEventListener("mouseover", this.pattern_mouse_move, false);
-        td.addEventListener("mouseup", this.pattern_mouse_up, false);
         tr.appendChild(td);
       }
       // FX
@@ -121,7 +130,7 @@ function Editor()
 
   this.refresh_table = function()
   {
-    var pat = GUI.instrument().p[app.instrument.id] - 1;
+    var pat = this.pattern.id;
 
     for (var r = 0; r < this.pattern.length; ++r)
     {
@@ -133,10 +142,10 @@ function Editor()
         if (r >= this.selection.y1 && r <= this.selection.y2 && c >= this.selection.x1 && c <= this.selection.x2){ classes += "selected "; }
 
         if(GUI.instrument().c[pat]){
-          var n = GUI.instrument().c[pat].n[r+c*GUI.song().patternLen] - 87;
-          if(n > 0){
+          var n = GUI.instrument().c[pat].n[r+c*this.pattern.length] - 87;
+          if(n >= 0){
             var octaveName = Math.floor(n / 12);
-            var noteName = mNoteNames[n % 12];
+            var noteName = ['C', 'C', 'D', 'D', 'E', 'F', 'F', 'G', 'G', 'A', 'A', 'B'][n % 12];
             var sharp = noteName.substr(1,1) == "#" ? true : false;
 
             classes += "octave_"+octaveName+" ";
@@ -148,8 +157,44 @@ function Editor()
             o.textContent = "--";
           }
         }
+        else{
+          console.log("nope")
+        }
         o.className = classes;
       }
+    }
+  }
+
+  // Keyboard Events
+
+  this.when = 
+  {
+    key : function(key)
+    {
+      if(!target.edit_mode){ return; }
+
+      var note = 0;
+
+      switch (key)
+      {
+        case "a": note = 0; break;
+        case "s": note = 2; break;
+        case "d": note = 4; break;
+        case "f": note = 5; break;
+        case "g": note = 7; break;
+        case "h": note = 9; break;
+        case "j": note = 11; break;
+
+        case "w": note = 1; break;
+        case "e": note = 3; break;
+        case "t": note = 6; break;
+        case "y": note = 8; break;
+        case "u": note = 10; break;
+      }
+
+      var note_val = note + 87;
+
+      target.inject(note_val);
     }
   }
 

@@ -1,10 +1,33 @@
 function Instrument()
 {
-  this.id = 0;
+  var app = lobby.apps.marabu;
+  var target = this;
+  
+  this.id = 1;
+  this.name = "unknown";
+  this.name_el = document.getElementById("instrument_name");
+  this.edit_mode = false;
 
-  this.load = function(instrument_id)
+  this.load = function(instrument_id = 1)
+  {    
+    if(instrument_id == this.id){ return; }
+
+    this.id = instrument_id;
+    this.name = GUI.instrument().name ? GUI.instrument().name : "unnamed";
+    GUI.update_instr();
+    GUI.update_status("Selected <b>"+(GUI.instrument().name ? GUI.instrument().name : "Instrument #"+this.id)+"</b>")
+    this.refresh();
+  }
+
+  this.deselect = function()
   {
-    this.is = instrument_id;
+
+  }
+
+  this.refresh = function()
+  {
+    this.name_el = document.getElementById("instrument_name");
+    this.name_el.value = this.name;
   }
 
   this.build = function()
@@ -68,6 +91,23 @@ function Instrument()
     html += "    <hr />";
     html += "  </div>";
     return html;
+  }
+
+  this.status = function()
+  {
+    return "INS()";
+  }
+
+  // Keyboard Events
+
+  this.when = 
+  {
+    key : function(key)
+    {
+      if(!target.edit_mode){ return; }
+
+      console.log("ins",key);
+    }
   }
 }
 
