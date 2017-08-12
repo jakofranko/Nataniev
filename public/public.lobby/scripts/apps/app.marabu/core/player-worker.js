@@ -164,7 +164,7 @@ var CPlayerWorker = function() {
   };
 
   // Generate audio data for a single track
-  this.generate = function () {
+  this.generate = function (){
     // Local variables
     var i, j, b, p, row, col, currentCol, n, cp,
         k, t, lfor, e, x, rsample, rowStartSample, f, da;
@@ -335,9 +335,3 @@ onmessage = function (event) {
     });
   }
 };
-
-
-
-
-lobby.apps.marabu.setup.confirm("core/player-worker");
-

@@ -113,7 +113,7 @@ function Instrument()
 
   this.status = function()
   {
-    return "INS(octave:"+this.octave+")";
+    return "INS(id:"+this.id+" octave:"+this.octave+")";
   }
 
   this.play = function(note)

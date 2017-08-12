@@ -67,23 +67,33 @@ function Sequencer()
     table.className = toggle ? "tracks edit" : "tracks";
   }
 
-  this.edit_note = function(i,p,n,v)
+  this.edit_note = function(i,c,n,v)
   {
-    GUI.song().songData[i].c[p].n[n] = v;
-    // console.info("INJECT","i:"+i,"p:"+p,"n:"+n,"v:"+v,GUI.song().songData);
+    console.info("edit_node","i:"+i,"c:"+c,"n:"+n,"v:"+v,GUI.song().songData);
+    GUI.song().songData[i].c[c].n[n] = v;
+
+    console.info("edit_node","i:"+i,"c:"+c,"n:"+n,"v:"+v,GUI.song().songData);
   }
 
-  this.inject = function(value)
+  this.edit_sequence = function(i,p,v)
   {
-    var target_instrument_id = this.selection.x2;
-    var target_pattern_id = this.selection.y2;
+    var i = this.selection.x2;
+    var p = this.selection.y2;
 
-    GUI.song().songData[target_instrument_id].p[target_pattern_id] = parseInt(value);
+    GUI.song().songData[i].p[p] = parseInt(v);
+
+    console.info("edit_sequence","i:"+i,"p:"+p,"v:"+v,GUI.song().songData);
 
     this.refresh_table();
     this.edit(false);
-    app.editor.pattern.id = value;
+    app.editor.pattern.id = parseInt(v);
     app.editor.edit();
+  }
+
+  this.play = function()
+  {
+    console.log("play!");
+    GUI.play_song();
   }
 
   function bpm_update(e)
@@ -164,11 +174,15 @@ function Sequencer()
   {
     key : function(key)
     {
-      if(!target.edit_mode){ return; }
-      if(["0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f","escape"].indexOf(key) == -1){ console.log("SEQ: Unknown Key",key); return; }
-
       if(key == "escape"){ target.edit(false); }
-      else{ target.inject(key); }
+      if(!target.edit_mode){ return; }
+
+      if(["0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f","escape"].indexOf(key) == -1){ console.log("SEQ: Unknown Key",key); return; }
+      else{ 
+        var i = target.selection.x2;
+        var p = target.selection.y2;
+        target.edit_sequence(i,p,key); 
+      }
     }
   }
 

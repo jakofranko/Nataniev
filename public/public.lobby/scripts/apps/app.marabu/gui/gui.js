@@ -186,6 +186,20 @@ var CGUI = function()
   this.pattern_controller = lobby.apps.marabu.editor;
   this.instrument_controller = lobby.apps.marabu.instrument;
 
+  var MAX_SONG_ROWS = 16,
+      MAX_PATTERNS = 16;
+
+var mPatternCol = 0,
+      mPatternRow = 0,
+      mPatternCol2 = 0,
+      mPatternRow2 = 0,
+      mSeqCol = 0,
+      mSeqRow = 0,
+      mSeqCol2 = 0,
+      mSeqRow2 = 0,
+      mFxTrackRow = 0,
+      mFxTrackRow2 = 0;
+
   // Parsed URL data
   var mBaseURL;
   var mGETParams;
@@ -361,12 +375,12 @@ var CGUI = function()
 
       // Sequence
       instr.p = [];
-      for (j = 0; j < 32; j++) // TODO replace 32 with sequence lenght
+      for (j = 0; j < MAX_SONG_ROWS; j++)
         instr.p[j] = 0;
 
       // Patterns
       instr.c = [];
-      for (j = 0; j < 32; j++) // TODO replace 32 with pattern length
+      for (j = 0; j < MAX_PATTERNS; j++)
       {
         col = {};
         col.n = [];
@@ -379,11 +393,34 @@ var CGUI = function()
       }
 
       song.songData[i] = instr;
+      song.songData[i].p[0] = 1;
+      song.songData[i].p[1] = 1;
+      song.songData[i].p[2] = 1;
+      song.songData[i].p[3] = 1;
+      song.songData[i].c[0].n[0] = 87;
+      song.songData[i].c[0].n[1] = 87;
+      song.songData[i].c[0].n[2] = 87;
+      song.songData[i].c[0].n[3] = 87;
+      song.songData[i].c[0].n[4] = 87;
+      song.songData[i].c[0].n[5] = 87;
+
+      song.songData[i].c[1].n[0] = 87;
+      song.songData[i].c[1].n[1] = 87;
+      song.songData[i].c[1].n[2] = 87;
+      song.songData[i].c[1].n[3] = 87;
+      song.songData[i].c[1].n[4] = 87;
+      song.songData[i].c[1].n[5] = 87;
+
+      song.songData[i].c[2].n[0] = 87;
+      song.songData[i].c[2].n[1] = 87;
+      song.songData[i].c[2].n[2] = 87;
+      song.songData[i].c[2].n[3] = 87;
+      song.songData[i].c[2].n[4] = 87;
+      song.songData[i].c[2].n[5] = 87;
+
     }
 
     // Default instruments
-
-    song.songData[0].name = "SYNTH A";
     song.songData[4].name = "Kick";
     song.songData[4].i = [2,0,92,0,0,255,92,23,1,0,14,0,74,0,0,0,89,0,1,1,16,0,21,255,49,6,0,0];
     song.songData[5].name = "Snare";
@@ -463,7 +500,7 @@ var CGUI = function()
         bin.putUBYTE(instr.p[j]);
 
       // Columns
-      for (j = 0; j < MAX_PATTERNS; j++) {
+      for (j = 0; j < MAX_PATTERNS; j++) { // 32 for MAX_PATTERNS
         col = instr.c[j];
         for (k = 0; k < song.patternLen * 4; k++)
           bin.putUBYTE(col.n[k]);
@@ -676,7 +713,7 @@ var CGUI = function()
         instr.p[j] = 0;
 
       // Columns
-      var num_patterns = version < 9 ? 10 : MAX_PATTERNS;
+      var num_patterns = version < 9 ? 10 : MAX_PATTERNS; // 32 for MAX_PATTERNS
       instr.c = [];
       for (j = 0; j < num_patterns; j++) {
         col = {};
@@ -711,7 +748,7 @@ var CGUI = function()
         }
         instr.c[j] = col;
       }
-      for (j = num_patterns; j < MAX_PATTERNS; j++) {
+      for (j = num_patterns; j < MAX_PATTERNS; j++) { // 32 for MAX_PATTERNS
         col = {};
         col.n = [];
         for (k = 0; k < song.patternLen * 4; k++)
@@ -839,7 +876,7 @@ var CGUI = function()
           col.f[k] = 0;
         instr.c[j] = col;
       }
-      for (j = 10; j < MAX_PATTERNS; j++) {
+      for (j = 10; j < MAX_PATTERNS; j++) { // 32 for MAX_PATTERNS
         col = {};
         col.n = [];
         for (k = 0; k < 32 * 4; k++)
@@ -900,6 +937,7 @@ var CGUI = function()
 
   var songToJS = function (song)
   {
+    console.log(song)
     var i, j, k;
     var jsData = "";
 
@@ -987,19 +1025,6 @@ var CGUI = function()
   //--------------------------------------------------------------------------
   // Helper functions
   //--------------------------------------------------------------------------
-
-  var getElementPos = function (o)
-  {
-    var left = 0, top = 0;
-    if (o.offsetParent)
-    {
-      do {
-        left += o.offsetLeft;
-        top += o.offsetTop;
-      } while (o = o.offsetParent);
-    }
-    return [left, top];
-  };
 
   var getEventElement = function (e)
   {
@@ -1194,7 +1219,7 @@ var CGUI = function()
     // Truncate/extend patterns
     var i, j, k, col, notes, fx;
     for (i = 0; i < 8; i++) {
-      for (j = 0; j < MAX_PATTERNS; j++) {
+      for (j = 0; j < MAX_PATTERNS; j++) { // TODO 32 for MAX_PATTERNS
         col = mSong.songData[i].c[j];
         notes = [];
         fx = [];
@@ -1219,14 +1244,15 @@ var CGUI = function()
     mSong.patternLen = length;
   };
 
-  var updatePatternLength = function () {
+  var updatePatternLength = function ()
+  {
     var rpp = parseInt(document.getElementById("rpp").value);
+    rpp = 32;
     if (rpp && (rpp >= 1) && (rpp <= 256)) {
       // Update the pattern length of the song data
       setPatternLength(rpp);
 
       // Update UI
-      lobby.apps.marabu.sequencer.build_pattern_table();
       updatePattern();
       updateFxTrack();
     }
@@ -1274,10 +1300,18 @@ var CGUI = function()
     window.open(dataURI);
   }
 
+  this.export_wav = function()
+  {
+    exportWAV();
+  }
+
+  this.export_js = function()
+  {
+    exportJS();
+  }
+
   var exportWAV = function(e)
   {
-    e.preventDefault();
-
     // Update song ranges
     updateSongRanges();
 
@@ -1309,27 +1343,18 @@ var CGUI = function()
 
   var generateAudio = function (doneFun, opts)
   {
-    // Start time measurement
+    console.log("Generating..",mSong);
     var d1 = new Date();
-
-    // Generate audio data in a worker.
     mPlayer = new CPlayer();
-    mPlayer.generate(mSong, opts, function (progress) {
-      // Update progress bar
-	  // NOTE: THIS ELEMENT DOESN'T EXIST!
-      // var o = document.getElementById("progressBar");
-      // o.style.width = Math.floor(200 * progress) + "px";
-
+    mPlayer.generate(mSong, opts, function (progress){
       if (progress >= 1) {
-        // Create the wave file
         var wave = mPlayer.createWave();
-
-        // Stop time measurement
         var d2 = new Date();
-        setStatus("Rendered " + (d2.getTime() - d1.getTime())/1000 + "s");
-
-        // Call the callback function
+        console.log("complete!",progress);
         doneFun(wave);
+      }
+      else{
+        console.log("rendering:",progress);
       }
     });
   };
@@ -1535,7 +1560,7 @@ var CGUI = function()
       }
       for (var i = 0; i < MAX_SONG_ROWS; ++i) {
         var o = document.getElementById("spr" + i);
-        o.className = (i == seqPos ? "playpos" : "");
+        // o.className = (i == seqPos ? "playpos" : "");
       }
     }
 
@@ -1551,7 +1576,7 @@ var CGUI = function()
       }
       for (var i = 0; i < mSong.patternLen; ++i) {
         var o = document.getElementById("ppr" + i);
-        o.className = (i == patPos ? "playpos" : "");
+        // o.className = (i == patPos ? "playpos" : ""); // TODO
       }
     }
 
@@ -1559,11 +1584,12 @@ var CGUI = function()
     redrawPlayerGfx(t);
   };
 
-  var startFollower = function () {
+  var startFollower = function ()
+  { // TODO!!!!!
     // Update the sequencer selection
     mSeqRow = mFollowerFirstRow;
     mSeqRow2 = mFollowerFirstRow;
-    mSeqCol2 = mSeqCol;
+    mSeqCol2 = 0;
     updateSequencer(true, true);
     updatePattern();
     updateFxTrack();
@@ -1575,6 +1601,7 @@ var CGUI = function()
 
   var stopFollower = function ()
   {
+    // TODO
     if (mFollowerActive)
     {
       // Stop the follower
@@ -1585,10 +1612,10 @@ var CGUI = function()
 
       // Clear the follower markers
       for (var i = 0; i < MAX_SONG_ROWS; ++i) {
-        document.getElementById("spr" + i).className = "";
+        // document.getElementById("spr" + i).className = ""; //
       }
       for (var i = 0; i < mSong.patternLen; ++i) {
-        document.getElementById("ppr" + i).className = "";
+        // document.getElementById("ppr" + i).className = ""; // TODO
       }
 
       // Clear player gfx
@@ -1604,8 +1631,11 @@ var CGUI = function()
 
   this.play_song = function()
   {
-    stopAudio();
-    updateSongRanges();
+    this.update_bpm(120);
+    this.update_rpp(32);
+
+    // stopAudio();
+    // updateSongRanges();
 
     mFollowerFirstRow = 0;
     mFollowerLastRow = mSong.endPattern - 2;
@@ -1614,10 +1644,12 @@ var CGUI = function()
 
     var doneFun = function(wave)
     {
+      console.log("playing..")
       startFollower();
       mAudio.src = URL.createObjectURL(new Blob([wave], {type: "audio/wav"}));
       mAudioTimer.reset();
       mAudio.play();
+      console.log(mAudio)
     };
     generateAudio(doneFun);
   }
@@ -1869,61 +1901,6 @@ var CGUI = function()
     GUI.update_sequencer();
   }
 
-  this.erase_sequence_positions = function(x1,y1,x2,y2)
-  {
-    for (row = y1; row <= y2; ++row){
-      for (col = x1; col <= x2; ++col){
-        mSong.songData[col].p[row] = 0;
-      }
-    }
-    updateSequencer();
-    updatePattern();
-    updateFxTrack();
-    setSelectedSequencerCell(0,0);
-    GUI.sequence_controller.selection = {x1:0,y1:0,x2:0,y2:0};
-  }
-
-  this.erase_pattern_positions = function(x1,y1,x2,y2)
-  {
-    if(GUI.pattern_controller.is_mod_selected){ return; }
-
-    var pat = GUI.pattern_controller.pattern_id;
-    
-    for(row = y1; row <= y2; ++row) {
-      for (col = x1; col <= x2; ++col){
-        GUI.instrument().c[pat].n[row+col*mSong.patternLen] = 0;
-      }
-    }
-    updateSequencer();
-    updatePattern();
-    updateFxTrack();
-    GUI.deselect_all();
-    GUI.pattern_controller.select(0,0,0,0);
-
-    GUI.update_status("Erased Pattern <b>"+x1+":"+y1+"</b> <i>"+x2+":"+y2+"</i>");
-  }
-
-  this.erase_mod_positions = function(y1,y2)
-  {
-    if(!GUI.pattern_controller.is_mod_selected){ return; }
-
-    var pat = GUI.pattern_controller.pattern_id;
-
-    GUI.instrument().c[pat].f[y1] = 0;
-    GUI.instrument().c[pat].f[y1 + mSong.patternLen] = 0;
-
-    updateSequencer();
-    updatePattern();
-    updateFxTrack();
-
-    GUI.update_status("Erased Mod <b>"+y1+"</b>")
-  }
-
-  var keyDown = function (e)
-  {
-    return;
-  };
-
   var onFileDrop = function (e)
   {
     e.stopPropagation();
@@ -2006,26 +1983,6 @@ var CGUI = function()
     GUI.instrument_controller.export_kit();
   }
 
-  var activateMasterEvents = function ()
-  {
-    // Set up the master mouse event handlers
-    document.onmousedown = null;
-
-    // Set up the drag'n'drop handler
-    var dropElement = document.body.parentNode;
-    dropElement.addEventListener("dragenter", function dragenter(e) { e.stopPropagation(); e.preventDefault(); }, false);
-    dropElement.addEventListener("dragover", function dragenter(e) { e.stopPropagation(); e.preventDefault(); }, false);
-    dropElement.addEventListener("drop", onFileDrop, false);
-  };
-
-  var deactivateMasterEvents = function ()
-  {
-    // Set up the master mouse event handlers
-    document.onmousedown = function () { return true; };
-    document.onmousemove = null;
-    document.onmouseup = null;
-  };
-
   var getCurrentBeatDistance = function (table) {
     var beatDistance = 1;
     while (beatDistance < table.children.length) {
@@ -2094,7 +2051,6 @@ var CGUI = function()
     }
   }
 
-
   this.get_storage = function(id)
   {
     if      (id == "osc1_vol")    { return OSC1_VOL; }
@@ -2138,30 +2094,16 @@ var CGUI = function()
     mPlayGfxLedOffImg.onload = function () {
       redrawPlayerGfx(-1);
     };
-    // mPlayGfxVUImg.src = "gui/playGfxBg.png";
-    // mPlayGfxLedOffImg.src = "gui/led-off.png";
-    // mPlayGfxLedOnImg.src = "gui/led-on.png";
 
     // Build the UI tables
     lobby.apps.marabu.sequencer.build_sequence_table();
 
-
     // Create audio element, and always play the audio as soon as it's ready
-    try
-    {
-      mAudio = new Audio();
-      mAudioTimer.setAudioElement(mAudio);
-      mAudio.addEventListener("canplay", function () { this.play(); }, true);
-    }
-    catch (err)
-    {
-      mAudio = null;
-    }
+    mAudio = new Audio();
+    mAudioTimer.setAudioElement(mAudio);
+    mAudio.addEventListener("canplay", function () { this.play(); }, true);
 
-    // Load the song
-    var songData = getURLSongData(mGETParams && mGETParams.data && mGETParams.data[0]);
-    var song = songData ? binToSong(songData) : null;
-    mSong = song ? song : makeNewSong();
+    mSong = makeNewSong();
 
     this.setup_sliders([
       {id: "osc1_vol", name: "VOL", min: 0, max: 255, percent: true },
@@ -2217,17 +2159,6 @@ var CGUI = function()
     document.getElementById("exportBINARY").onmousedown = exportBINARY;
     document.getElementById("exportINSTRUMENT").onmousedown = export_instrument;
     document.getElementById("exportKIT").onmousedown = export_kit;
-    // document.getElementById("playSong").onmousedown = playSong;
-    // document.getElementById("playRange").onmousedown = playRange;
-    // document.getElementById("stopPlaying").onmousedown = stopPlaying;
-
-    // document.getElementById("sequencerCopy").onmousedown = sequencerCopyMouseDown;
-    // document.getElementById("sequencerPaste").onmousedown = sequencerPasteMouseDown;
-    // document.getElementById("sequencerPatUp").onmousedown = sequencerPatUpMouseDown;
-    // document.getElementById("sequencerPatDown").onmousedown = sequencerPatDownMouseDown;
-
-    // document.getElementById("fxCopy").onmousedown = fxCopyMouseDown;
-    // document.getElementById("fxPaste").onmousedown = fxPasteMouseDown;
 
     document.getElementById("osc1_xenv").addEventListener("mousedown", boxMouseDown, false);
     document.getElementById("osc1_xenv").addEventListener("touchstart", boxMouseDown, false);
@@ -2238,7 +2169,6 @@ var CGUI = function()
     mJammer.start();
     mJammer.updateRowLen(mSong.rowLen);
   };
-
 };
 
 
@@ -2252,6 +2182,4 @@ function gui_init()
   GUI.init();
 }
 
-
 lobby.apps.marabu.setup.confirm("gui/gui");
-
