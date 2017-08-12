@@ -52,22 +52,27 @@ function Editor()
 
   this.edit = function(toggle = true)
   {
+    app.sequencer.edit_mode = false;
+    app.instrument.edit_mode = false;
+    
     this.edit_mode = toggle;
 
     var table = document.getElementById("pattern-table");
     table.className = toggle ? "tracks edit" : "tracks";
+
+    console.log("instrument:"+app.instrument.id,"pattern:"+this.pattern.id);
   }
 
-  this.inject = function(value)
+  this.inject = function(v)
   {
-    var target_instrument_id = app.instrument.id;
-    var target_pattern_id = this.pattern.id;
+    var l = this.location();
+    app.sequencer.edit_note(l.i,l.p,l.n,v);
+    this.refresh_table();    
+  }
 
-    var target_note_id = this.selection.y2 + (this.selection.x2 * this.pattern.length);
-
-    GUI.song().songData[target_instrument_id].c[target_pattern_id].n[target_note_id] = value;
-
-    this.refresh_table();
+  this.location = function()
+  {
+    return {i:app.instrument.id,p:this.pattern.id,n:this.selection.y2 + (this.selection.x2 * this.pattern.length)};
   }
 
   function rpp_update()
@@ -128,9 +133,18 @@ function Editor()
     }
   }
 
+  this.refresh = function()
+  {
+    this.refresh_table();
+  }
+
   this.refresh_table = function()
   {
-    var pat = this.pattern.id;
+    var l = this.location();
+
+    document.getElementById("pattern-table").className = l.p == -1 ? "tracks inactive" : "tracks";
+
+    console.log(l);
 
     for (var r = 0; r < this.pattern.length; ++r)
     {
@@ -141,8 +155,8 @@ function Editor()
 
         if (r >= this.selection.y1 && r <= this.selection.y2 && c >= this.selection.x1 && c <= this.selection.x2){ classes += "selected "; }
 
-        if(GUI.instrument().c[pat]){
-          var n = GUI.instrument().c[pat].n[r+c*this.pattern.length] - 87;
+        if(GUI.instrument().c[l.p]){
+          var n = GUI.instrument().c[l.p].n[r+c*this.pattern.length] - 87;
           if(n >= 0){
             var octaveName = Math.floor(n / 12);
             var noteName = ['C', 'C', 'D', 'D', 'E', 'F', 'F', 'G', 'G', 'A', 'A', 'B'][n % 12];
@@ -158,7 +172,7 @@ function Editor()
           }
         }
         else{
-          console.log("nope")
+          o.textContent = "--";
         }
         o.className = classes;
       }

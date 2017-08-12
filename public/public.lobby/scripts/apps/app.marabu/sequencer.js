@@ -44,8 +44,11 @@ function Sequencer()
     var target_pattern_id = target_pattern_value == "-" ? -1 : parseInt(target_pattern_value);    
 
     app.sequencer.refresh_table();
-    app.editor.load(target_pattern_id);
-    app.instrument.load(target_instrument_id);
+    app.editor.pattern.id = target_pattern_id;
+    app.instrument.id = target_instrument_id;
+
+    app.editor.refresh();
+    app.instrument.refresh();
   }
 
   this.deselect = function()
@@ -55,10 +58,19 @@ function Sequencer()
 
   this.edit = function(toggle = true)
   {
+    app.editor.edit_mode = false;
+    app.instrument.edit_mode = false;
+
     this.edit_mode = toggle;
 
     var table = document.getElementById("sequencer-table");
     table.className = toggle ? "tracks edit" : "tracks";
+  }
+
+  this.edit_note = function(i,p,n,v)
+  {
+    GUI.song().songData[i].c[p].n[n] = v;
+    console.info("INJECT","i:"+i,"p:"+p,"n:"+n,"v:"+v,GUI.song().songData);
   }
 
   this.inject = function(value)
@@ -81,6 +93,11 @@ function Sequencer()
     // if(new_bpm < 20){ new_bpm = 10; }
     // if(new_bpm > 800){ new_bpm = 800;}
     // GUI.update_bpm(new_bpm);
+  }
+
+  this.location = function()
+  {
+    return {i:app.instrument.id};
   }
 
   // 
@@ -143,9 +160,10 @@ function Sequencer()
     key : function(key)
     {
       if(!target.edit_mode){ return; }
-      if(["0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f"].indexOf(key) == -1){ console.log("SEQ: Unknown Key"); return; }
+      if(["0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f","escape"].indexOf(key) == -1){ console.log("SEQ: Unknown Key",key); return; }
 
-      target.inject(key);
+      if(key == "escape"){ target.edit(false); }
+      else{ target.inject(key); }
     }
   }
 

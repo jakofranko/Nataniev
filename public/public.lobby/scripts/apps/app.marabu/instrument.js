@@ -12,10 +12,6 @@ function Instrument()
   {    
     if(instrument_id == this.id){ return; }
 
-    this.id = instrument_id;
-    this.name = GUI.instrument().name ? GUI.instrument().name : "unnamed";
-    GUI.update_instr();
-    GUI.update_status("Selected <b>"+(GUI.instrument().name ? GUI.instrument().name : "Instrument #"+this.id)+"</b>")
     this.refresh();
   }
 
@@ -24,10 +20,21 @@ function Instrument()
 
   }
 
+  this.edit = function(toggle = true)
+  {
+    app.sequencer.edit_mode = false;
+    app.editor.edit_mode = false;
+    
+    this.edit_mode = toggle;
+  }
+
   this.refresh = function()
   {
     this.name_el = document.getElementById("instrument_name");
     this.name_el.value = this.name;
+    this.name = GUI.instrument().name ? GUI.instrument().name : "unnamed";
+    GUI.update_instr();
+    GUI.update_status("Selected <b>"+(GUI.instrument().name ? GUI.instrument().name : "Instrument #"+this.id)+"</b>")
   }
 
   this.build = function()
