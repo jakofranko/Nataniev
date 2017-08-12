@@ -1,5 +1,13 @@
 function Instrument()
 {
+  this.id = 0;
+
+  this.select = function(id)
+  {
+    this.is = id;
+    console.log("instrument",id);
+  }
+
   this.build = function()
   {
     var html = "";

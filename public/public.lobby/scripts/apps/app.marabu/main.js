@@ -35,6 +35,7 @@ function Marabu()
     "controllers/sequence_controller",
 
     "instrument",
+    "editor",
     "sequencer"
   ];
 
@@ -44,11 +45,13 @@ function Marabu()
   this.setup.start = function()
   {
     this.app.sequencer = new Sequencer();
+    this.app.editor = new Editor();
     this.app.instrument = new Instrument();
 
     this.app.wrapper_el.innerHTML = this.app.draw();
 
     this.app.wrapper_el.innerHTML += this.app.sequencer.build();
+    this.app.wrapper_el.innerHTML += this.app.editor.build();
     this.app.wrapper_el.innerHTML += this.app.instrument.build();
 
     setTimeout(function(){ gui_init(); }, 100); 

@@ -1200,13 +1200,13 @@ var CGUI = function()
 
   var updateSequencer = function (scrollIntoView, selectionOnly)
   {
-    lobby.apps.marabu.sequencer.refresh_sequence_table();
+    lobby.apps.marabu.sequencer.refresh_table();
   };
 
   var updatePattern = function (scrollIntoView, selectionOnly)
   {
-    lobby.apps.marabu.sequencer.build_pattern_table();
-    lobby.apps.marabu.sequencer.refresh_pattern_table();
+    lobby.apps.marabu.editor.build_table();
+    lobby.apps.marabu.editor.refresh_table();
   };
 
   var toHex = function (num, count) {
@@ -1219,7 +1219,7 @@ var CGUI = function()
 
   var updateFxTrack = function (scrollIntoView, selectionOnly)
   {
-    lobby.apps.marabu.sequencer.build_pattern_table();
+    lobby.apps.marabu.editor.build_table();
 
     var singlePattern = (mSeqCol == mSeqCol2 && mSeqRow == mSeqRow2);
     var pat = singlePattern ? GUI.instrument().p[mSeqRow] - 1 : -1;
