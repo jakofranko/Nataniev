@@ -394,22 +394,6 @@ var mPatternCol = 0,
       song.songData[i] = instr;
     }
 
-    song.songData[0].p[0] = 1;
-    song.songData[0].p[1] = 2;
-    song.songData[0].c[0].n[0] = 87;
-    song.songData[0].c[0].n[1] = 87;
-    song.songData[0].c[0].n[2] = 87;
-    song.songData[0].c[0].n[3] = 87;
-    song.songData[0].c[0].n[4] = 87;
-    song.songData[0].c[0].n[5] = 87;
-
-    song.songData[0].c[1].n[0] = 89;
-    song.songData[0].c[1].n[1] = 89;
-    song.songData[0].c[1].n[2] = 89;
-    song.songData[0].c[1].n[3] = 89;
-    song.songData[0].c[1].n[4] = 89;
-    song.songData[0].c[1].n[5] = 89;
-
     // Default instruments
     song.songData[4].name = "Kick";
     song.songData[4].i = [2,0,92,0,0,255,92,23,1,0,14,0,74,0,0,0,89,0,1,1,16,0,21,255,49,6,0,0];

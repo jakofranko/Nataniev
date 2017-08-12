@@ -66,7 +66,7 @@ function Editor()
   this.inject = function(v)
   {
     var l = this.location();
-    app.sequencer.edit_note(l.i,l.p,l.n,v);
+    app.sequencer.edit_note(l.i,l.p-1,l.n,v + (app.instrument.octave * 12));
 
     this.selection = {x1:this.selection.x1,y1:this.selection.y2+1,x2:this.selection.x2,y2:this.selection.y2+1};
     this.refresh_table();    
@@ -173,9 +173,9 @@ function Editor()
 
         if (r >= this.selection.y1 && r <= this.selection.y2 && c >= this.selection.x1 && c <= this.selection.x2){ classes += "selected "; }
 
-        if(GUI.instrument().c[l.p]){
+        if(GUI.instrument().c[l.p-1]){
 
-          var n = GUI.instrument().c[l.p].n[r+c*this.pattern.length] - 87;
+          var n = GUI.instrument().c[l.p-1].n[r+c*this.pattern.length] - 87;
         
           if(n >= 0){
             var octaveName = Math.floor(n / 12);
