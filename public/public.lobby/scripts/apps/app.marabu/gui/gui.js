@@ -186,37 +186,6 @@ var CGUI = function()
   this.pattern_controller = lobby.apps.marabu.editor;
   this.instrument_controller = lobby.apps.marabu.instrument;
 
-  // Edit modes
-  var EDIT_NONE = 0,
-      EDIT_SEQUENCE = 1,
-      EDIT_PATTERN = 2,
-      EDIT_FXTRACK = 3;
-
-  // Misc constants
-  var MAX_SONG_ROWS = 32,
-      MAX_PATTERNS = 16;
-
-  // Edit/gui state
-  var mEditMode = EDIT_PATTERN,
-      mKeyboardOctave = 5,
-      mPatternCol = 0,
-      mPatternRow = 0,
-      mPatternCol2 = 0,
-      mPatternRow2 = 0,
-      mSeqCol = 0,
-      mSeqRow = 0,
-      mSeqCol2 = 0,
-      mSeqRow2 = 0,
-      mFxTrackRow = 0,
-      mFxTrackRow2 = 0,
-      mSelectingSeqRange = false,
-      mSelectingPatternRange = false,
-      mSelectingFxRange = false,
-      mSeqCopyBuffer = [],
-      mPatCopyBuffer = [],
-      mFxCopyBuffer = [],
-      mInstrCopyBuffer = [];
-
   // Parsed URL data
   var mBaseURL;
   var mGETParams;
@@ -232,11 +201,6 @@ var CGUI = function()
   var mJammer = new CJammer();
 
   this.mJammer = mJammer;
-
-  // Constant look-up-tables
-  var mNoteNames = [
-    'C-', 'C#', 'D-', 'D#', 'E-', 'F-', 'F#', 'G-', 'G#', 'A-', 'A#', 'B-'
-  ];
 
   var mBlackKeyPos = [
     26, 1, 63, 3, 116, 6, 150, 8, 184, 10, 238, 13, 274, 15, 327, 18, 362, 20, 394, 22
@@ -397,12 +361,12 @@ var CGUI = function()
 
       // Sequence
       instr.p = [];
-      for (j = 0; j < MAX_SONG_ROWS; j++)
+      for (j = 0; j < 32; j++) // TODO replace 32 with sequence lenght
         instr.p[j] = 0;
 
       // Patterns
       instr.c = [];
-      for (j = 0; j < MAX_PATTERNS; j++)
+      for (j = 0; j < 32; j++) // TODO replace 32 with pattern length
       {
         col = {};
         col.n = [];
@@ -1181,28 +1145,6 @@ var CGUI = function()
   var updateFxTrack = function (scrollIntoView, selectionOnly)
   {
     lobby.apps.marabu.editor.build_table();
-
-    var singlePattern = (mSeqCol == mSeqCol2 && mSeqRow == mSeqRow2);
-    var pat = singlePattern ? GUI.instrument().p[mSeqRow] - 1 : -1;
-    for (var i = 0; i < mSong.patternLen; ++i) {
-      var o = document.getElementById("fxr" + i);
-      if (!selectionOnly) {
-        var fxTxt = "0000";
-        if (pat >= 0) {
-          var fxCmd = GUI.instrument().c[pat].f[i];
-          if (fxCmd) {
-            var fxVal = GUI.instrument().c[pat].f[i+mSong.patternLen];
-            fxTxt = toHex(fxCmd,2) + "" + toHex(fxVal,2);
-          }
-        }
-        if (o.innerHTML != fxTxt)
-          o.innerHTML = fxTxt;
-      }
-      if (GUI.pattern_controller.is_mod_selected && i >= mFxTrackRow && i <= mFxTrackRow2)
-        o.className ="selected";
-      else
-        o.className = "";
-    }
   };
 
   var playNote = function (n)

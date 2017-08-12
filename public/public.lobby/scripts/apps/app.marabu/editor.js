@@ -67,6 +67,8 @@ function Editor()
   {
     var l = this.location();
     app.sequencer.edit_note(l.i,l.p,l.n,v);
+
+    this.selection = {x1:this.selection.x1,y1:this.selection.y2+1,x2:this.selection.x2,y2:this.selection.y2+1};
     this.refresh_table();    
   }
 
@@ -138,6 +140,15 @@ function Editor()
     this.refresh_table();
   }
 
+  var toHex = function (num, count)
+  {
+    var s = num.toString(16).toUpperCase();
+    var leadingZeros = count - s.length;
+    for (var i = 0; i < leadingZeros; ++i)
+      s = "0" + s;
+    return s;
+  };
+
   this.refresh_table = function()
   {
     var l = this.location();
@@ -148,15 +159,25 @@ function Editor()
 
     for (var r = 0; r < this.pattern.length; ++r)
     {
+      if(GUI.instrument().c[l.p]){
+        var o_f = document.getElementById("fxr"+r);
+        var f_cmd = GUI.instrument().c[l.p].f[r];
+        var f_val = GUI.instrument().c[l.p].f[r+this.pattern.length];
+        o_f.textContent = toHex(f_cmd,2) + "" + toHex(f_val,2);
+      }
+
       for (var c = 0; c < 4; ++c)
       {
-        var o = document.getElementById("pc" + c + "r" + r);
+        var o_n = document.getElementById("pc" + c + "r" + r);
+        
         var classes = "";
 
         if (r >= this.selection.y1 && r <= this.selection.y2 && c >= this.selection.x1 && c <= this.selection.x2){ classes += "selected "; }
 
         if(GUI.instrument().c[l.p]){
+
           var n = GUI.instrument().c[l.p].n[r+c*this.pattern.length] - 87;
+        
           if(n >= 0){
             var octaveName = Math.floor(n / 12);
             var noteName = ['C', 'C', 'D', 'D', 'E', 'F', 'F', 'G', 'G', 'A', 'A', 'B'][n % 12];
@@ -165,16 +186,16 @@ function Editor()
             classes += "octave_"+octaveName+" ";
             classes += "note_"+noteName.substr(0,1)+" ";
             classes += sharp ? "sharp " : "";
-            o.textContent = noteName+octaveName;
+            o_n.textContent = noteName+octaveName;
           }
           else{
-            o.textContent = "--";
+            o_n.textContent = "--";
           }
         }
         else{
-          o.textContent = "--";
+          o_n.textContent = "--";
         }
-        o.className = classes;
+        o_n.className = classes;
       }
     }
   }
