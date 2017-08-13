@@ -40,7 +40,6 @@ function Editor()
 
   this.select = function(x1 = 0,y1 = 0,x2 = 0,y2 = 0)
   {
-    GUI.deselect_all();
     this.selection = {x1:x1,y1:y1,x2:x2,y2:0};
     this.refresh_table();
   }
@@ -235,7 +234,7 @@ function Editor()
           target.inject(note + 87);  
         }
       }
-      
+
       app.instrument.play(note);     
     }
   }

@@ -9,7 +9,6 @@ function Instrument()
   this.name_el = document.getElementById("instrument_name");
   this.edit_mode = false;
 
-  this.controls = {};
   this.sliders = {};
   this.choices = {};
 
@@ -57,25 +56,11 @@ function Instrument()
   this.setup_sliders = function(sliders)
   {
     for(id in sliders){
-      var slider = new Slider(sliders[id].id,sliders[id].name,sliders[id].min,sliders[id].max);
-      this.sliders[new String(sliders[id].id)] = slider;
+      var s = sliders[id];
+      var slider = new Slider(s.id,s.name,s.min,s.max);
+      this.sliders[new String(s.id)] = slider;
       slider.install();
     }
-  }
-
-  this.deselect_sliders = function()
-  {
-    for(id in this.sliders){
-      this.sliders[id].deselect();
-    }
-  }
-
-  this.deselect_all = function()
-  {
-    GUI.deselect_sliders();
-    GUI.pattern_controller.deselect();
-    GUI.sequence_controller.deselect();
-    GUI.instrument_controller.deselect();
   }
 
   this.setup_choices = function(choices)
@@ -90,140 +75,53 @@ function Instrument()
 
   this.get_storage = function(id)
   {
-    var OSC1_WAVEFORM = 0,
-      OSC1_VOL = 1,
-      OSC1_SEMI = 2,
-      OSC1_XENV = 3,
+    if      (id == "osc1_vol")    { return 1; }
+    else if (id == "osc1_semi")   { return 2; }
+    else if (id == "noise_vol")   { return 9; }
+    else if (id == "osc1_wave_select") { return 0; }
 
-      OSC2_WAVEFORM = 4,
-      OSC2_VOL = 5,
-      OSC2_SEMI = 6,
-      OSC2_DETUNE = 7,
-      OSC2_XENV = 8,
+    else if (id == "osc2_vol")    { return 5; }
+    else if (id == "osc2_semi")   { return 6; }
+    else if (id == "osc2_det")    { return 7; }
+    else if (id == "osc2_wave_select") { return 4; }
 
-      NOISE_VOL = 9,
+    else if (id == "env_att")     { return 10; }
+    else if (id == "env_sust")    { return 11; }
+    else if (id == "env_rel")     { return 12; }
 
-      ENV_ATTACK = 10,
-      ENV_SUSTAIN = 11,
-      ENV_RELEASE = 12,
+    else if (id == "arp_note1")   { return 13; }
+    else if (id == "arp_note2")   { return 13; }
+    else if (id == "arp_speed")   { return 14; }
 
-      ARP_CHORD = 13,
-      ARP_SPEED = 14,
+    else if (id == "lfo_amt")     { return 16; }
+    else if (id == "lfo_freq")    { return 17; }
+    else if (id == "lfo_fxfreq") { return 18; }
+    else if (id == "lfo_wave_select") { return 15; }
 
-      LFO_WAVEFORM = 15,
-      LFO_AMT = 16,
-      LFO_FREQ = 17,
-      LFO_FX_FREQ = 18,
-
-      FX_FILTER = 19,
-      FX_FREQ = 20,
-      FX_RESONANCE = 21,
-      FX_DIST = 22,
-      FX_DRIVE = 23,
-      FX_PAN_AMT = 24,
-      FX_PAN_FREQ = 25,
-      FX_DELAY_AMT = 26,
-      FX_DELAY_TIME = 27;
-
-    if      (id == "osc1_vol")    { return OSC1_VOL; }
-    else if (id == "osc1_semi")   { return OSC1_SEMI; }
-    else if (id == "noise_vol")   { return NOISE_VOL; }
-    else if (id == "osc1_wave_select") { return OSC1_WAVEFORM; }
-
-    else if (id == "osc2_vol")    { return OSC2_VOL; }
-    else if (id == "osc2_semi")   { return OSC2_SEMI; }
-    else if (id == "osc2_det")    { return OSC2_DETUNE; }
-    else if (id == "osc2_wave_select") { return OSC2_WAVEFORM; }
-
-    else if (id == "env_att")     { return ENV_ATTACK; }
-    else if (id == "env_sust")    { return ENV_SUSTAIN; }
-    else if (id == "env_rel")     { return ENV_RELEASE; }
-
-    else if (id == "arp_note1")   { return ARP_CHORD; }
-    else if (id == "arp_note2")   { return ARP_CHORD; }
-    else if (id == "arp_speed")   { return ARP_SPEED; }
-
-    else if (id == "lfo_amt")     { return LFO_AMT; }
-    else if (id == "lfo_freq")    { return LFO_FREQ; }
-    else if (id == "lfo_wave_select") { return LFO_WAVEFORM; }
-
-    else if (id == "fx_filter_select")   { return FX_FILTER; }
-    else if (id == "fx_freq")     { return FX_FREQ; }
-    else if (id == "fx_res")      { return FX_RESONANCE; }
-    else if (id == "fx_dist")     { return FX_DIST; }
-    else if (id == "fx_drive")    { return FX_DRIVE; }
-    else if (id == "fx_pan_amt")  { return FX_PAN_AMT; }
-    else if (id == "fx_pan_freq") { return FX_PAN_FREQ; }
-    else if (id == "fx_dly_amt")  { return FX_DELAY_AMT; }
-    else if (id == "fx_dly_time") { return FX_DELAY_TIME; }
+    else if (id == "fx_filter_select")   { return 19; }
+    else if (id == "fx_freq")     { return 20; }
+    else if (id == "fx_res")      { return 21; }
+    else if (id == "fx_dist")     { return 22; }
+    else if (id == "fx_drive")    { return 23; }
+    else if (id == "fx_pan_amt")  { return 24; }
+    else if (id == "fx_pan_freq") { return 25; }
+    else if (id == "fx_dly_amt")  { return 26; }
+    else if (id == "fx_dly_time") { return 27; }
     return -1;
   }
 
   this.update_controls = function()
   {
-    var OSC1_WAVEFORM = 0,
-      OSC1_VOL = 1,
-      OSC1_SEMI = 2,
-      OSC1_XENV = 3,
-
-      OSC2_WAVEFORM = 4,
-      OSC2_VOL = 5,
-      OSC2_SEMI = 6,
-      OSC2_DETUNE = 7,
-      OSC2_XENV = 8,
-
-      NOISE_VOL = 9,
-
-      ENV_ATTACK = 10,
-      ENV_SUSTAIN = 11,
-      ENV_RELEASE = 12,
-
-      ARP_CHORD = 13,
-      ARP_SPEED = 14,
-
-      LFO_WAVEFORM = 15,
-      LFO_AMT = 16,
-      LFO_FREQ = 17,
-      LFO_FX_FREQ = 18,
-
-      FX_FILTER = 19,
-      FX_FREQ = 20,
-      FX_RESONANCE = 21,
-      FX_DIST = 22,
-      FX_DRIVE = 23,
-      FX_PAN_AMT = 24,
-      FX_PAN_FREQ = 25,
-      FX_DELAY_AMT = 26,
-      FX_DELAY_TIME = 27;
-      
     var instr = GUI.instrument();
-    this.sliders["osc1_vol"].override(instr.i[OSC1_VOL]);
-    this.sliders["osc1_semi"].override(instr.i[OSC1_SEMI]);
-    this.sliders["osc2_vol"].override(instr.i[OSC2_VOL]);
-    this.sliders["osc2_semi"].override(instr.i[OSC2_SEMI]);
-    this.sliders["osc2_det"].override(instr.i[OSC2_DETUNE]);
-    this.sliders["noise_vol"].override(instr.i[NOISE_VOL]);
 
-    this.sliders["env_att"].override(instr.i[ENV_ATTACK]);
-    this.sliders["env_sust"].override(instr.i[ENV_SUSTAIN]);
-    this.sliders["env_rel"].override(instr.i[ENV_RELEASE]);
+    // Replace with this
 
-    this.sliders["arp_note1"].override(instr.i[ARP_CHORD] >> 4);
-    this.sliders["arp_note2"].override(instr.i[ARP_CHORD] & 15);
-    this.sliders["arp_speed"].override(instr.i[ARP_SPEED]);
+    for(slider_id in this.sliders){
+      var slider = this.sliders[slider_id];
+      var value = instr.i[this.get_storage(slider_id)];
+      slider.override(value);
+    }
 
-    this.sliders["lfo_amt"].override(instr.i[LFO_AMT]);
-    this.sliders["lfo_freq"].override(instr.i[LFO_FREQ]);
-    this.sliders["lfo_fxfreq"].override(instr.i[LFO_FX_FREQ]);
-
-    this.sliders["fx_freq"].override(instr.i[FX_FREQ]);
-    this.sliders["fx_res"].override(instr.i[FX_RESONANCE]);
-    this.sliders["fx_dly_amt"].override(instr.i[FX_DELAY_AMT]);
-    this.sliders["fx_dly_time"].override(instr.i[FX_DELAY_TIME]);
-    this.sliders["fx_pan_amt"].override(instr.i[FX_PAN_AMT]);
-    this.sliders["fx_pan_freq"].override(instr.i[FX_PAN_FREQ]);
-    this.sliders["fx_dist"].override(instr.i[FX_DIST]);
-    this.sliders["fx_drive"].override(instr.i[FX_DRIVE]);
   }
 
   this.load = function(instrument_id = 1)
