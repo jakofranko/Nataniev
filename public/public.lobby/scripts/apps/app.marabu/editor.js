@@ -49,6 +49,24 @@ function Editor()
     this.selection = {x1:-1,y1:-1,x2:-1,y2:-1};
   }
 
+  this.select_move = function(x,y)
+  {
+    var s = this.selection;
+
+    s.x2 += x;
+    s.y2 += y;
+
+    if(s.x2 < 0){ s.x2 = 0; }
+    if(s.y2 < 0){ s.y2 = 0; }
+    if(s.x2 > 3){ s.x2 = 3; }
+    if(s.y2 > 31){ s.y2 = 31; }
+
+    s.x1 = s.x2;
+    s.y1 = s.y2;
+
+    this.select(s.x1,s.y1,s.x2,s.y2);
+  }
+
   this.edit = function(toggle = true)
   {
     app.sequencer.edit_mode = false;
@@ -146,7 +164,7 @@ function Editor()
   {
     var html = "PAT ";
 
-    if(this.edit_mode){ html += this.selection.x2+":"+this.selection.y2; }
+    if(this.edit_mode){ html += this.pattern.id+":"+this.selection.x2+":"+this.selection.y2; }
 
     document.getElementById("pat_title").innerHTML = html;
   }
@@ -234,6 +252,12 @@ function Editor()
       }
 
       if(target.edit_mode){ 
+
+        if(key == "arrowleft"){ target.select_move(-1,0); return; }
+        if(key == "arrowright"){ target.select_move(1,0); return; }
+        if(key == "arrowup"){ target.select_move(0,-1); return; }
+        if(key == "arrowdown"){ target.select_move(0,1); return; }
+
         if(key == "escape"){ 
           target.edit(false);
         }

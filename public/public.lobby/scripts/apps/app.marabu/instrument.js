@@ -192,19 +192,30 @@ function Instrument()
     var i = GUI.song().songData[this.id];
     console.log("Refresh Instrument",i.i);
 
-    this.name = GUI.instrument().name ? GUI.instrument().name : "unnamed";
+    this.name = GUI.instrument().name ? GUI.instrument().name : "--";
 
     this.name_el = document.getElementById("instrument_name");
     this.name_el.value = this.name;
 
     this.update_controls();
+
+    this.refresh_title();
+  }
+
+  this.refresh_title = function()
+  {
+    var html = "INS ";
+
+    html += this.id;
+
+    document.getElementById("ins_title").innerHTML = html;
   }
 
   this.build = function()
   {
     var html = "";
     html += "  <div class='instrument' style='width:90px; display:inline-block; vertical-align:top; border-left:1px solid #333; padding-left:30px; margin-left:-5px; line-height:15px'>";
-    html += "    <h1 class='lh30'><input id='instrument_name' type='text' size='10' value='' title='Instrument Name' class='bh fh' style='text-transform:uppercase' /><hr /></h1>";
+    html += "    <h1 class='lh30' style='width:90px'><b id='ins_title'></b><input id='instrument_name' type='text' size='10' value='' title='Instrument Name' class='bh fh' style='float:right; text-align:right; height:30px; color:#999; line-height:30px; text-transform:uppercase; width:45px' /><hr /></h1>";
     html += "    <div class='osc' style='width:180px; margin-bottom:15px'><t id='osc1_wave_select'>ERROR</t><t id='osc1_xenv'>X</t>";
     html += "      <div id='osc1_vol'></div>";
     html += "      <div id='osc1_semi'></div>";
