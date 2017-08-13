@@ -11,6 +11,8 @@ function Marabu()
   this.window.pos = {x:30,y:0};
   this.window.theme = "noir";
 
+  this.sequencer = null;
+  this.editor = null;
   this.instrument = null;
 
   this.setup.includes = [
@@ -25,8 +27,6 @@ function Marabu()
     "core/player",
     "core/rle",
 
-    "gui/gui",
-
     "inc/Blob",
     "inc/deflate",
     "inc/FileSaver",
@@ -35,7 +35,8 @@ function Marabu()
     "song",
     "instrument",
     "editor",
-    "sequencer"
+    "sequencer",
+    "sequencer.follower"
   ];
 
   // TODO
@@ -46,6 +47,8 @@ function Marabu()
     this.app.sequencer = new Sequencer();
     this.app.editor = new Editor();
     this.app.instrument = new Instrument();
+
+    this.app.sequencer.follower = new Sequencer_Follower();
 
     this.app.wrapper_el.innerHTML = this.app.draw();
 
@@ -63,15 +66,14 @@ function Marabu()
     html += "<style>";
     html += ".everything { color:white; }";
     html += ".tracks tr {  line-height:15px; position:relative}";
-    html += ".tracks tr td { text-align:center; padding-right:5px}";
+    html += ".tracks tr td { padding-right:5px}";
     html += ".tracks tr:hover { color:#999}";
     html += ".tracks tr td { position:relative}";
     html += ".tracks td:hover { cursor:pointer}";
-    html += ".tracks td.selected { color:#f00}";
+    html += ".tracks td.selected { color:#fff}";
     html += ".tracks tr.beat th { color:#999}";
     html += ".tracks.inactive tr td { color:#555}";
     html += ".tracks.inactive tr th { color:#555}";
-    html += ".tracks.edit { border-top:1px solid #f00 }";
     html += ".tracks.playing tr td {color:#555}";
     html += ".tracks.playing tr th {color:#555}";
     html += ".tracks.playing tr.played td {color:#fff}";

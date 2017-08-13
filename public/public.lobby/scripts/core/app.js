@@ -238,15 +238,12 @@ function UI_Slider(id,name = "UNK",min = 0,max = 255)
     this.el.appendChild(this.slide_el);
     this.el.appendChild(this.value_el);
 
-
     this.slide_el.addEventListener("mousedown", mouse_down, false);
     this.slide_el.addEventListener("mouseup", mouse_up, false);
     this.slide_el.addEventListener("mousemove", mouse_move, false);
     this.value_el.addEventListener('input', value_update, false);
 
     this.value_el.addEventListener("mousedown", select, false);
-    
-    console.log("Installed",this.id);
   }
 
   this.override = function(v)

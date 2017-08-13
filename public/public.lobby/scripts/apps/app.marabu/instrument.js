@@ -128,6 +128,11 @@ function Instrument()
     return -1;
   }
 
+  this.refresh = function()
+  {
+    this.update_controls();
+  }
+
   this.update_controls = function()
   {
     var instr = GUI.instrument();

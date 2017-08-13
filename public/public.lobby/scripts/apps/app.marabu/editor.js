@@ -22,7 +22,7 @@ function Editor()
     var html = "";
 
     html += "  <div class='pattern' id='pattern_controller' style='width:130px; display:inline-block; vertical-align:top; border-left:1px solid #333; padding-left:30px; margin-left:-5px'>";
-    html += "    <h1 class='lh30'><b>PAT</b> <input id='rpp' type='text' size='3' value='' title='Rows per pattern' class='bh fh' /></h1>";
+    html += "    <h1 class='lh30' style='width:105px'><b id='pat_title'>PAT</b> <input id='rpp' type='text' size='3' value='' title='Rows per pattern' class='bh fh'  style='float:right; text-align:right; height:30px; color:#999; line-height:30px'/></h1>";
     html += "    <div id='pattern'><table class='tracks' id='pattern-table'></table>";
     html += "  </div>";
 
@@ -33,15 +33,15 @@ function Editor()
   {
     this.pattern.id = pattern_id;
     this.selection = {x1:0,y1:0,x2:0,y2:0};
-    this.refresh_table();
+    this.refresh();
 
     document.getElementById("pattern-table").className = pattern_id == -1 ? "tracks inactive" : "tracks";
   }
 
   this.select = function(x1 = 0,y1 = 0,x2 = 0,y2 = 0)
   {
-    this.selection = {x1:x1,y1:y1,x2:x2,y2:0};
-    this.refresh_table();
+    this.selection = {x1:x1,y1:y1,x2:x2,y2:y2};
+    this.refresh();
   }
 
   this.deselect = function()
@@ -68,7 +68,7 @@ function Editor()
     app.sequencer.edit_note(l.i,l.p-1,l.n,v + (app.instrument.octave * 12));
 
     this.selection = {x1:this.selection.x1,y1:this.selection.y2+1,x2:this.selection.x2,y2:this.selection.y2+1};
-    this.refresh_table();    
+    this.refresh();    
     lobby.commander.update_status();
   }
 
@@ -97,7 +97,7 @@ function Editor()
     app.editor.selection.y2 = row;
 
     lobby.commander.update_status();
-    target.refresh_table();
+    target.refresh();
   }
 
   this.effect_mouse_down = function(e)
@@ -139,6 +139,16 @@ function Editor()
   this.refresh = function()
   {
     this.refresh_table();
+    this.refresh_title();
+  }
+
+  this.refresh_title = function()
+  {
+    var html = "PAT ";
+
+    if(this.edit_mode){ html += this.selection.x2+":"+this.selection.y2; }
+
+    document.getElementById("pat_title").innerHTML = html;
   }
 
   var toHex = function (num, count)
@@ -174,7 +184,6 @@ function Editor()
         if (r >= this.selection.y1 && r <= this.selection.y2 && c >= this.selection.x1 && c <= this.selection.x2){ classes += "selected "; }
 
         if(GUI.instrument().c[l.p-1]){
-
           var n = GUI.instrument().c[l.p-1].n[r+c*this.pattern.length] - 87;
         
           if(n >= 0){
@@ -185,10 +194,10 @@ function Editor()
             classes += "octave_"+octaveName+" ";
             classes += "note_"+noteName.substr(0,1)+" ";
             classes += sharp ? "sharp " : "";
-            o_n.textContent = noteName+octaveName;
+            o_n.textContent = (r == this.selection.y2 && c == this.selection.x2) ? ">"+octaveName : noteName+octaveName;
           }
           else{
-            o_n.textContent = "--";
+            o_n.textContent = (r == this.selection.y2 && c == this.selection.x2) ? ">" : "--";
           }
         }
         else{
