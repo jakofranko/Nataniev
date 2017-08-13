@@ -14,6 +14,10 @@ function Marabu()
   this.instrument = null;
 
   this.setup.includes = [
+    "methods/export",
+    "methods/import",
+    "methods/save",
+    
     "core/jammer",
     "core/player-small",
     // "core/player-worker",

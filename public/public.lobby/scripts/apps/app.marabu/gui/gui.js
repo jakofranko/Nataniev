@@ -64,61 +64,6 @@ var CBinParser = function (d) {
   };
 };
 
-var CBinWriter = function () {
-  var mData = "";
-
-  this.putUBYTE = function (x) {
-    mData += String.fromCharCode(x);
-  };
-
-  this.putUSHORT = function (x) {
-    mData += String.fromCharCode(
-               x & 255,
-               (x >> 8) & 255
-             );
-  };
-
-  this.putULONG = function (x) {
-    mData += String.fromCharCode(
-               x & 255,
-               (x >> 8) & 255,
-               (x >> 16) & 255,
-               (x >> 24) & 255
-             );
-  };
-
-  this.putFLOAT = function (x) {
-    var l = 0;
-    if (x != 0)
-    {
-      var s = 0;
-      if (x < 0) s = 0x80000000, x = -x;
-      var e = 127 + 23;
-      while (x < 0x00800000)
-      {
-        x *= 2;
-        e--;
-      }
-      while (x >= 0x01000000)
-      {
-        x /= 2;
-        e++;
-      }
-      l = s | ((e & 255) << 23) | (x & 0x007fffff);
-    }
-    this.putULONG(l);
-  };
-
-  this.append = function (x) {
-    mData += x;
-  };
-
-  this.getData = function () {
-    return mData;
-  };
-};
-
-
 //------------------------------------------------------------------------------
 // Helper class for getting high precision timing info from an audio element
 // (e.g. Firefox Audio.currentTime has < 60 Hz precision, leading to choppy
@@ -189,7 +134,7 @@ var CGUI = function()
   var MAX_SONG_ROWS = 16,
       MAX_PATTERNS = 16;
 
-var mPatternCol = 0,
+  var mPatternCol = 0,
       mPatternRow = 0,
       mPatternCol2 = 0,
       mPatternRow2 = 0,
@@ -199,10 +144,6 @@ var mPatternCol = 0,
       mSeqRow2 = 0,
       mFxTrackRow = 0,
       mFxTrackRow2 = 0;
-
-  // Parsed URL data
-  var mBaseURL;
-  var mGETParams;
 
   // Resources
   var mSong = {};
@@ -216,9 +157,7 @@ var mPatternCol = 0,
 
   this.mJammer = mJammer;
 
-  var mBlackKeyPos = [
-    26, 1, 63, 3, 116, 6, 150, 8, 184, 10, 238, 13, 274, 15, 327, 18, 362, 20, 394, 22
-  ];
+  var mBlackKeyPos = [26, 1, 63, 3, 116, 6, 150, 8, 184, 10, 238, 13, 274, 15, 327, 18, 362, 20, 394, 22];
 
   // Prealoaded resources
   var mPreload = [];
@@ -410,592 +349,6 @@ var mPatternCol = 0,
     return song;
   };
 
-  var songToBin = function (song) {
-    var bin = new CBinWriter();
-
-    // Row length (i.e. song speed)
-    bin.putULONG(song.rowLen);
-
-    // Last pattern to play
-    bin.putUBYTE(song.endPattern - 2);
-
-    // Rows per pattern
-    bin.putUBYTE(song.patternLen);
-
-    // All 8 instruments
-    var i, j, k, instr, col;
-    for (i = 0; i < 8; i++) {
-      instr = song.songData[i];
-
-      // Oscillator 1
-      bin.putUBYTE(instr.i[OSC1_WAVEFORM]);
-      bin.putUBYTE(instr.i[OSC1_VOL]);
-      bin.putUBYTE(instr.i[OSC1_SEMI]);
-      bin.putUBYTE(instr.i[OSC1_XENV]);
-
-      // Oscillator 2
-      bin.putUBYTE(instr.i[OSC2_WAVEFORM]);
-      bin.putUBYTE(instr.i[OSC2_VOL]);
-      bin.putUBYTE(instr.i[OSC2_SEMI]);
-      bin.putUBYTE(instr.i[OSC2_DETUNE]);
-      bin.putUBYTE(instr.i[OSC2_XENV]);
-
-      // Noise oscillator
-      bin.putUBYTE(instr.i[NOISE_VOL]);
-
-      // Envelope
-      bin.putUBYTE(instr.i[ENV_ATTACK]);
-      bin.putUBYTE(instr.i[ENV_SUSTAIN]);
-      bin.putUBYTE(instr.i[ENV_RELEASE]);
-
-      // Arpeggio
-      bin.putUBYTE(instr.i[ARP_CHORD]);
-      bin.putUBYTE(instr.i[ARP_SPEED]);
-
-      // LFO
-      bin.putUBYTE(instr.i[LFO_WAVEFORM]);
-      bin.putUBYTE(instr.i[LFO_AMT]);
-      bin.putUBYTE(instr.i[LFO_FREQ]);
-      bin.putUBYTE(instr.i[LFO_FX_FREQ]);
-
-      // Effects
-      bin.putUBYTE(instr.i[FX_FILTER]);
-      bin.putUBYTE(instr.i[FX_FREQ]);
-      bin.putUBYTE(instr.i[FX_RESONANCE]);
-      bin.putUBYTE(instr.i[FX_DIST]);
-      bin.putUBYTE(instr.i[FX_DRIVE]);
-      bin.putUBYTE(instr.i[FX_PAN_AMT]);
-      bin.putUBYTE(instr.i[FX_PAN_FREQ]);
-      bin.putUBYTE(instr.i[FX_DELAY_AMT]);
-      bin.putUBYTE(instr.i[FX_DELAY_TIME]);
-
-      // Patterns
-      for (j = 0; j < MAX_SONG_ROWS; j++)
-        bin.putUBYTE(instr.p[j]);
-
-      // Columns
-      for (j = 0; j < MAX_PATTERNS; j++) { // 32 for MAX_PATTERNS
-        col = instr.c[j];
-        for (k = 0; k < song.patternLen * 4; k++)
-          bin.putUBYTE(col.n[k]);
-        for (k = 0; k < song.patternLen * 2; k++)
-          bin.putUBYTE(col.f[k]);
-      }
-    }
-
-    // Pack the song data
-    // FIXME: To avoid bugs, we try different compression methods here until we
-    // find something that works (this should not be necessary).
-    var unpackedData = bin.getData(), packedData, testData, compressionMethod = 0;
-    for (i = 9; i > 0; i--) {
-      packedData = RawDeflate.deflate(unpackedData, i);
-      testData = RawDeflate.inflate(packedData);
-      if (unpackedData === testData) {
-        compressionMethod = 2;
-        break;
-      }
-    }
-    if (compressionMethod == 0) {
-      packedData = rle_encode(bin.getData());
-      testData = rle_decode(packedData);
-      if (unpackedData === testData)
-        compressionMethod = 1;
-      else
-        packedData = unpackedData;
-    }
-
-    // Create a new binary stream - this is the actual file
-    bin = new CBinWriter();
-
-    // Signature ("SBox")
-    bin.putULONG(2020557395);
-
-    // Format version
-    bin.putUBYTE(11);
-
-    // Compression method
-    //  0: none
-    //  1: RLE
-    //  2: DEFLATE
-    bin.putUBYTE(compressionMethod);
-
-    // Append packed data
-    bin.append(packedData);
-
-    return bin.getData();
-  };
-
-  var soundboxBinToSong = function (d) {
-    var bin = new CBinParser(d);
-    var song = {};
-
-    // Signature
-    var signature = bin.getULONG();
-
-    // Format version
-    var version = bin.getUBYTE();
-
-    // Check if this is a SoundBox song
-    if (signature != 2020557395 || (version < 1 || version > 11))
-      return undefined;
-
-    if (version >= 8) {
-      // Get compression method
-      //  0: none
-      //  1: RLE
-      //  2: DEFLATE
-      var compressionMethod = bin.getUBYTE();
-
-      // Unpack song data
-      var packedData = bin.getTail(), unpackedData;
-      switch (compressionMethod) {
-      default:
-      case 0:
-        unpackedData = packedData;
-        break;
-      case 1:
-        unpackedData = rle_decode(packedData);
-        break;
-      case 2:
-        unpackedData = RawDeflate.inflate(packedData);
-        break;
-      }
-      bin = new CBinParser(unpackedData);
-    }
-
-    // Row length
-    song.rowLen = bin.getULONG();
-
-    // Last pattern to play
-    song.endPattern = bin.getUBYTE() + 2;
-
-    // Number of rows per pattern
-    if (version >= 10)
-      song.patternLen = bin.getUBYTE();
-    else
-      song.patternLen = 32;
-
-    // All 8 instruments
-    song.songData = [];
-    var i, j, k, instr, col;
-    for (i = 0; i < 8; i++) {
-      instr = {};
-      instr.i = [];
-
-      // Oscillator 1
-      if (version < 6) {
-        instr.i[OSC1_SEMI] = bin.getUBYTE();
-        instr.i[OSC1_XENV] = bin.getUBYTE();
-        instr.i[OSC1_VOL] = bin.getUBYTE();
-        instr.i[OSC1_WAVEFORM] = bin.getUBYTE();
-      }
-      else {
-        instr.i[OSC1_WAVEFORM] = bin.getUBYTE();
-        instr.i[OSC1_VOL] = bin.getUBYTE();
-        instr.i[OSC1_SEMI] = bin.getUBYTE();
-        instr.i[OSC1_XENV] = bin.getUBYTE();
-      }
-
-      // Oscillator 2
-      if (version < 6) {
-        instr.i[OSC2_SEMI] = bin.getUBYTE();
-        instr.i[OSC2_DETUNE] = bin.getUBYTE();
-        instr.i[OSC2_XENV] = bin.getUBYTE();
-        instr.i[OSC2_VOL] = bin.getUBYTE();
-        instr.i[OSC2_WAVEFORM] = bin.getUBYTE();
-      }
-      else {
-        instr.i[OSC2_WAVEFORM] = bin.getUBYTE();
-        instr.i[OSC2_VOL] = bin.getUBYTE();
-        instr.i[OSC2_SEMI] = bin.getUBYTE();
-        instr.i[OSC2_DETUNE] = bin.getUBYTE();
-        instr.i[OSC2_XENV] = bin.getUBYTE();
-      }
-
-      // Noise oscillator
-      instr.i[NOISE_VOL] = bin.getUBYTE();
-
-      // Envelope
-      if (version < 5) {
-        instr.i[ENV_ATTACK] = Math.round(Math.sqrt(bin.getULONG()) / 2);
-        instr.i[ENV_SUSTAIN] = Math.round(Math.sqrt(bin.getULONG()) / 2);
-        instr.i[ENV_RELEASE] = Math.round(Math.sqrt(bin.getULONG()) / 2);
-      }
-      else {
-        instr.i[ENV_ATTACK] = bin.getUBYTE();
-        instr.i[ENV_SUSTAIN] = bin.getUBYTE();
-        instr.i[ENV_RELEASE] = bin.getUBYTE();
-      }
-
-      // Arpeggio
-      if (version < 11) {
-        instr.i[ARP_CHORD] = 0;
-        instr.i[ARP_SPEED] = 0;
-      }
-      else {
-        instr.i[ARP_CHORD] = bin.getUBYTE();
-        instr.i[ARP_SPEED] = bin.getUBYTE();
-      }
-
-      if (version < 6) {
-        // Effects
-        instr.i[FX_FILTER] = bin.getUBYTE();
-        if (version < 5)
-          instr.i[FX_FREQ] = Math.round(bin.getUSHORT() / 43.23529);
-        else
-          instr.i[FX_FREQ] = bin.getUBYTE();
-        instr.i[FX_RESONANCE] = bin.getUBYTE();
-
-        instr.i[FX_DELAY_TIME] = bin.getUBYTE();
-        instr.i[FX_DELAY_AMT] = bin.getUBYTE();
-        instr.i[FX_PAN_FREQ] = bin.getUBYTE();
-        instr.i[FX_PAN_AMT] = bin.getUBYTE();
-        instr.i[FX_DIST] = bin.getUBYTE();
-        instr.i[FX_DRIVE] = bin.getUBYTE();
-
-        // LFO
-        instr.i[LFO_FX_FREQ] = bin.getUBYTE();
-        instr.i[LFO_FREQ] = bin.getUBYTE();
-        instr.i[LFO_AMT] = bin.getUBYTE();
-        instr.i[LFO_WAVEFORM] = bin.getUBYTE();
-      }
-      else {
-        // LFO
-        instr.i[LFO_WAVEFORM] = bin.getUBYTE();
-        instr.i[LFO_AMT] = bin.getUBYTE();
-        instr.i[LFO_FREQ] = bin.getUBYTE();
-        instr.i[LFO_FX_FREQ] = bin.getUBYTE();
-
-        // Effects
-        instr.i[FX_FILTER] = bin.getUBYTE();
-        instr.i[FX_FREQ] = bin.getUBYTE();
-        instr.i[FX_RESONANCE] = bin.getUBYTE();
-        instr.i[FX_DIST] = bin.getUBYTE();
-        instr.i[FX_DRIVE] = bin.getUBYTE();
-        instr.i[FX_PAN_AMT] = bin.getUBYTE();
-        instr.i[FX_PAN_FREQ] = bin.getUBYTE();
-        instr.i[FX_DELAY_AMT] = bin.getUBYTE();
-        instr.i[FX_DELAY_TIME] = bin.getUBYTE();
-      }
-
-      // Patterns
-      var song_rows = version < 9 ? 48 : MAX_SONG_ROWS;
-      instr.p = [];
-      for (j = 0; j < song_rows; j++)
-        instr.p[j] = bin.getUBYTE();
-      for (j = song_rows; j < MAX_SONG_ROWS; j++)
-        instr.p[j] = 0;
-
-      // Columns
-      var num_patterns = version < 9 ? 10 : MAX_PATTERNS; // 32 for MAX_PATTERNS
-      instr.c = [];
-      for (j = 0; j < num_patterns; j++) {
-        col = {};
-        col.n = [];
-        if (version == 1) {
-          for (k = 0; k < song.patternLen; k++) {
-            col.n[k] = bin.getUBYTE();
-            col.n[k+song.patternLen] = 0;
-            col.n[k+2*song.patternLen] = 0;
-            col.n[k+3*song.patternLen] = 0;
-          }
-        }
-        else {
-          for (k = 0; k < song.patternLen * 4; k++)
-            col.n[k] = bin.getUBYTE();
-        }
-        col.f = [];
-        if (version < 4) {
-          for (k = 0; k < song.patternLen * 2; k++)
-            col.f[k] = 0;
-        }
-        else {
-          for (k = 0; k < song.patternLen; k++) {
-            var fxCmd = bin.getUBYTE();
-            // We inserted two new commands in version 11
-            if (version < 11 && fxCmd >= 14)
-              fxCmd += 2;
-            col.f[k] = fxCmd;
-          }
-          for (k = 0; k < song.patternLen; k++)
-            col.f[song.patternLen + k] = bin.getUBYTE();
-        }
-        instr.c[j] = col;
-      }
-      for (j = num_patterns; j < MAX_PATTERNS; j++) { // 32 for MAX_PATTERNS
-        col = {};
-        col.n = [];
-        for (k = 0; k < song.patternLen * 4; k++)
-          col.n[k] = 0;
-        col.f = [];
-        for (k = 0; k < song.patternLen * 2; k++)
-          col.f[k] = 0;
-        instr.c[j] = col;
-      }
-
-      // Fixup conversions
-      if (version < 3) {
-        if (instr.i[OSC1_WAVEFORM] == 2)
-          instr.i[OSC1_VOL] = Math.round(instr.i[OSC1_VOL]/2);
-        if (instr.i[OSC2_WAVEFORM] == 2)
-          instr.i[OSC2_VOL] = Math.round(instr.i[OSC2_VOL]/2);
-        if (instr.i[LFO_WAVEFORM] == 2)
-          instr.i[LFO_AMT] = Math.round(instr.i[LFO_AMT]/2);
-        instr.i[FX_DRIVE] = instr.i[FX_DRIVE] < 224 ? instr.i[FX_DRIVE] + 32 : 255;
-      }
-      if (version < 7)
-        instr.i[FX_RESONANCE] = 255 - instr.i[FX_RESONANCE];
-
-      song.songData[i] = instr;
-    }
-
-    return song;
-  };
-
-  var sonantBinToSong = function (d) {
-    // Check if this is a sonant song (correct length & reasonable end pattern)
-    if (d.length != 3333)
-      return undefined;
-    if ((d.charCodeAt(3332) & 255) > 48)
-      return undefined;
-
-    var bin = new CBinParser(d);
-    var song = {};
-
-    // Row length
-    song.rowLen = bin.getULONG();
-
-    // Number of rows per pattern
-    song.patternLen = 32;
-
-    // All 8 instruments
-    song.songData = [];
-    var i, j, k, instr, col, master;
-    for (i = 0; i < 8; i++) {
-      instr = {};
-      instr.i = [];
-
-      // Oscillator 1
-      instr.i[OSC1_SEMI] = 12 * (bin.getUBYTE() - 8) + 128;
-      instr.i[OSC1_SEMI] += bin.getUBYTE();
-      bin.getUBYTE(); // Skip (detune)
-      instr.i[OSC1_XENV] = bin.getUBYTE();
-      instr.i[OSC1_VOL] = bin.getUBYTE();
-      instr.i[OSC1_WAVEFORM] = bin.getUBYTE();
-
-      // Oscillator 2
-      instr.i[OSC2_SEMI] = 12 * (bin.getUBYTE() - 8) + 128;
-      instr.i[OSC2_SEMI] += bin.getUBYTE();
-      instr.i[OSC2_DETUNE] = bin.getUBYTE();
-      instr.i[OSC2_XENV] = bin.getUBYTE();
-      instr.i[OSC2_VOL] = bin.getUBYTE();
-      instr.i[OSC2_WAVEFORM] = bin.getUBYTE();
-
-      // Noise oscillator
-      instr.i[NOISE_VOL] = bin.getUBYTE();
-      bin.getUBYTE(); // Pad!
-      bin.getUBYTE(); // Pad!
-      bin.getUBYTE(); // Pad!
-
-      // Envelope
-      instr.i[ENV_ATTACK] = Math.round(Math.sqrt(bin.getULONG()) / 2);
-      instr.i[ENV_SUSTAIN] = Math.round(Math.sqrt(bin.getULONG()) / 2);
-      instr.i[ENV_RELEASE] = Math.round(Math.sqrt(bin.getULONG()) / 2);
-      master = bin.getUBYTE(); // env_master
-
-      // Effects
-      instr.i[FX_FILTER] = bin.getUBYTE();
-      bin.getUBYTE(); // Pad!
-      bin.getUBYTE(); // Pad!
-      instr.i[FX_FREQ] = Math.round(bin.getFLOAT() / 43.23529);
-      instr.i[FX_RESONANCE] = 255 - bin.getUBYTE();
-      instr.i[FX_DELAY_TIME] = bin.getUBYTE();
-      instr.i[FX_DELAY_AMT] = bin.getUBYTE();
-      instr.i[FX_PAN_FREQ] = bin.getUBYTE();
-      instr.i[FX_PAN_AMT] = bin.getUBYTE();
-      instr.i[FX_DIST] = 0;
-      instr.i[FX_DRIVE] = 32;
-
-      // Arpeggio
-      instr.i[ARP_CHORD] = 0;
-      instr.i[ARP_SPEED] = 0;
-
-      // LFO
-      bin.getUBYTE(); // Skip! (lfo_osc1_freq)
-      instr.i[LFO_FX_FREQ] = bin.getUBYTE();
-      instr.i[LFO_FREQ] = bin.getUBYTE();
-      instr.i[LFO_AMT] = bin.getUBYTE();
-      instr.i[LFO_WAVEFORM] = bin.getUBYTE();
-
-      // Patterns
-      instr.p = [];
-      for (j = 0; j < 48; j++)
-        instr.p[j] = bin.getUBYTE();
-      for (j = 48; j < MAX_SONG_ROWS; j++)
-        instr.p[j] = 0;
-
-      // Columns
-      instr.c = [];
-      for (j = 0; j < 10; j++) {
-        col = {};
-        col.n = [];
-        for (k = 0; k < 32; k++) {
-          col.n[k] = bin.getUBYTE();
-          col.n[k+32] = 0;
-          col.n[k+64] = 0;
-          col.n[k+96] = 0;
-        }
-        col.f = [];
-        for (k = 0; k < 32 * 2; k++)
-          col.f[k] = 0;
-        instr.c[j] = col;
-      }
-      for (j = 10; j < MAX_PATTERNS; j++) { // 32 for MAX_PATTERNS
-        col = {};
-        col.n = [];
-        for (k = 0; k < 32 * 4; k++)
-          col.n[k] = 0;
-        col.f = [];
-        for (k = 0; k < 32 * 2; k++)
-          col.f[k] = 0;
-        instr.c[j] = col;
-      }
-
-      bin.getUBYTE(); // Pad!
-      bin.getUBYTE(); // Pad!
-
-      // Fixup conversions
-      if (instr.i[FX_FILTER] < 1 || instr.i[FX_FILTER] > 3) {
-        instr.i[FX_FILTER] = 2;
-        instr.i[FX_FREQ] = 255; // 11025;
-      }
-      instr.i[OSC1_VOL] *= master / 255;
-      instr.i[OSC2_VOL] *= master / 255;
-      instr.i[NOISE_VOL] *= master / 255;
-      if (instr.i[OSC1_WAVEFORM] == 2)
-        instr.i[OSC1_VOL] /= 2;
-      if (instr.i[OSC2_WAVEFORM] == 2)
-        instr.i[OSC2_VOL] /= 2;
-      if (instr.i[LFO_WAVEFORM] == 2)
-        instr.i[LFO_AMT] /= 2;
-      instr.i[OSC1_VOL] = Math.round(instr.i[OSC1_VOL]);
-      instr.i[OSC2_VOL] = Math.round(instr.i[OSC2_VOL]);
-      instr.i[NOISE_VOL] = Math.round(instr.i[NOISE_VOL]);
-      instr.i[LFO_AMT] = Math.round(instr.i[LFO_AMT]);
-
-      song.songData[i] = instr;
-    }
-
-    // Last pattern to play
-    song.endPattern = bin.getUBYTE() + 2;
-
-    return song;
-  };
-
-  var binToSong = function (d) {
-    // Try to parse the binary data as a SoundBox song
-    var song = soundboxBinToSong(d);
-
-    // Try to parse the binary data as a Sonant song
-    if (!song)
-      song = sonantBinToSong(d);
-
-    // If we couldn't parse the song, just make a clean new song
-    if (!song) {
-      alert("Song format not recognized.");
-      return undefined;
-    }
-
-    return song;
-  };
-
-  var songToJS = function (song)
-  {
-    console.log(song)
-    var i, j, k;
-    var jsData = "";
-
-    jsData += "    var song = {\n";
-
-    jsData += "      songData: [\n";
-    for (i = 0; i < 8; i++) {
-      var instr = song.songData[i];
-      jsData += "        { // Instrument " + i + "\n";
-      jsData += "          i: ["+ instr.i[OSC1_WAVEFORM] + ","+ instr.i[OSC1_VOL] + ","+ instr.i[OSC1_SEMI] + ","+ instr.i[OSC1_XENV] + ","+ instr.i[OSC2_WAVEFORM] + ","+ instr.i[OSC2_VOL] + ","+ instr.i[OSC2_SEMI] + ","+ instr.i[OSC2_DETUNE] + ","+ instr.i[OSC2_XENV] + ","+ instr.i[NOISE_VOL] + ","+ instr.i[ENV_ATTACK] + ","+ instr.i[ENV_SUSTAIN] + ","+ instr.i[ENV_RELEASE] + ","+ instr.i[ARP_CHORD] + ","+ instr.i[ARP_SPEED] + ","+ instr.i[LFO_WAVEFORM] + ","+ instr.i[LFO_AMT] + ","+ instr.i[LFO_FREQ] + ","+ instr.i[LFO_FX_FREQ] + ","+ instr.i[FX_FILTER] + ","+ instr.i[FX_FREQ] + ","+ instr.i[FX_RESONANCE] + ","+ instr.i[FX_DIST] + ","+ instr.i[FX_DRIVE] + ","+ instr.i[FX_PAN_AMT] + ","+ instr.i[FX_PAN_FREQ] + ","+ instr.i[FX_DELAY_AMT] + ","+ instr.i[FX_DELAY_TIME] + "],\n";
-
-      // Sequencer data for this instrument
-      jsData += "          // Patterns\n";
-      jsData += "          p: [";
-      var lastRow = song.endPattern - 2;
-      var maxPattern = 0, lastNonZero = 0;
-      for (j = 0; j <= lastRow; j++) {
-        var pattern = instr.p[j];
-        if (pattern > maxPattern)
-          maxPattern = pattern;
-        if (pattern)
-          lastNonZero = j;
-      }
-      for (j = 0; j <= lastNonZero; j++) {
-        var pattern = instr.p[j];
-        if (pattern)
-          jsData += pattern;
-        if (j < lastNonZero)
-          jsData += ",";
-      }
-      jsData += "],\n";
-
-      // Pattern data for this instrument
-      jsData += "          // Columns\n";
-      jsData += "          c: [\n";
-      for (j = 0; j < maxPattern; j++) {
-        jsData += "            {n: [";
-        lastNonZero = 0;
-        for (k = 0; k < song.patternLen * 4; k++) {
-          if (instr.c[j].n[k])
-            lastNonZero = k;
-        }
-        for (k = 0; k <= lastNonZero; k++) {
-          var note = instr.c[j].n[k];
-          if (note)
-            jsData += note;
-          if (k < lastNonZero)
-            jsData += ",";
-        }
-        jsData += "],\n";
-        jsData += "             f: [";
-        lastNonZero = 0;
-        for (k = 0; k < song.patternLen * 2; k++) {
-          if (instr.c[j].f[k])
-            lastNonZero = k;
-        }
-        for (k = 0; k <= lastNonZero; k++) {
-          var fx = instr.c[j].f[k];
-          if (fx)
-            jsData += fx;
-          if (k < lastNonZero)
-            jsData += ",";
-        }
-        jsData += "]}";
-        if (j < maxPattern - 1)
-          jsData += ",";
-        jsData += "\n";
-      }
-      jsData += "          ]\n";
-      jsData += "        }";
-      if (i < 7)
-        jsData += ",";
-      jsData += "\n";
-    }
-
-    jsData += "      ],\n";
-    jsData += "      rowLen: " + song.rowLen + ",   // In sample lengths\n";
-    jsData += "      patternLen: " + song.patternLen + ",  // Rows per pattern\n";
-    jsData += "      endPattern: " + song.endPattern + "  // End pattern\n";
-    jsData += "    };\n";
-
-    return jsData;
-  };
-
   //--------------------------------------------------------------------------
   // Helper functions
   //--------------------------------------------------------------------------
@@ -1019,21 +372,6 @@ var mPatternCol = 0,
     document.getElementById("rpp").blur();
   };
 
-  var setEditMode = function (mode)
-  {
-    if(mode === mEditMode){ return; }
-
-    GUI.update_status("Mode: "+mode);
-    mEditMode = mode;
-
-    // Unfocus any focused input elements
-    if (mEditMode != EDIT_NONE)
-    {
-      unfocusHTMLInputElements();
-      updatePatternLength();
-    }
-  };
-
   var updateSongInfo = function()
   {
     document.getElementById("bpm").value = getBPM();
@@ -1049,14 +387,6 @@ var mPatternCol = 0,
   {
     lobby.apps.marabu.editor.build_table();
     lobby.apps.marabu.editor.refresh_table();
-  };
-
-  var toHex = function (num, count) {
-    var s = num.toString(16).toUpperCase();
-    var leadingZeros = count - s.length;
-    for (var i = 0; i < leadingZeros; ++i)
-      s = "0" + s;
-    return s;
   };
 
   var updateFxTrack = function (scrollIntoView, selectionOnly)
@@ -1172,17 +502,16 @@ var mPatternCol = 0,
   {
     mSong.rowLen = calcSamplesPerRow(bpm);
     mJammer.updateRowLen(mSong.rowLen);
-    GUI.update_status("Updated song BPM to <b>"+bpm+"</b>")
   }
 
   this.update_rpp = function(rpp)
   {
     setPatternLength(rpp);
     updatePatternLength();
-    GUI.update_status("Updated RPP to <b>"+rpp+"</b>")
   }
 
-  var setPatternLength = function (length) {
+  var setPatternLength = function (length)
+  {
     if (mSong.patternLen === length)
       return;
 
@@ -1218,7 +547,7 @@ var mPatternCol = 0,
     mSong.patternLen = length;
   };
 
-  var updatePatternLength = function ()
+  var updatePatternLength = function()
   {
     var rpp = parseInt(document.getElementById("rpp").value);
     rpp = 32;
@@ -1232,7 +561,8 @@ var mPatternCol = 0,
     }
   };
 
-  var updateSongRanges = function () {
+  var updateSongRanges = function ()
+  {
     var i, j, emptyRow;
 
     // Determine the last song pattern
@@ -1307,12 +637,6 @@ var mPatternCol = 0,
     var dataURI = "data:text/javascript;base64," + btoa(songToJS(mSong));
     window.open(dataURI);
     return false;
-  };
-
-  var setStatus = function (msg)
-  {
-    document.getElementById("statusText").innerHTML = msg;
-//    window.status = msg;
   };
 
   var generateAudio = function (doneFun, opts)
@@ -1630,14 +954,7 @@ var mPatternCol = 0,
 
   var playRange = function (e)
   {
-    if (!e) var e = window.event;
-    e.preventDefault();
-    GUI.deselect_all();
-
-    // Stop the currently playing audio
     stopAudio();
-
-    // Update song ranges
     updateSongRanges();
 
     // Select range to play
@@ -1652,56 +969,20 @@ var mPatternCol = 0,
     mFollowerFirstCol = mSeqCol;
     mFollowerLastCol = mSeqCol2;
 
-    // Generate audio data
     var doneFun = function (wave)
     {
-      if (mAudio == null)
-      {
-         alert("Audio element unavailable.");
-         return;
-      }
-
-      try
-      {
-        // Restart the follower
-        startFollower();
-
-        // Load the data into the audio element (it will start playing as soon
-        // as the data has been loaded)
-        mAudio.src = URL.createObjectURL(new Blob([wave], {type: "audio/wav"}));
-
-        // Hack
-        mAudio.play();
-        mAudioTimer.reset();
-      }
-      catch (err)
-      {
-        alert("Error playing: " + err.message);
-      }
+      startFollower();
+      mAudio.src = URL.createObjectURL(new Blob([wave], {type: "audio/wav"}));
+      mAudio.play();
+      mAudioTimer.reset();
     };
     generateAudio(doneFun, opts);
   };
 
   var stopPlaying = function (e)
   {
-    if (!e) var e = window.event;
-    e.preventDefault();
-
-    if (mAudio == null)
-    {
-       alert("Audio element unavailable.");
-       return;
-    }
-
     stopAudio();
   };
-
-  // New methods
-
-  this.update_status = function(log)
-  {
-    document.getElementById("statusText").innerHTML = log;
-  }
 
   var boxMouseDown = function (e) {
     if (!e) var e = window.event;
@@ -1930,7 +1211,6 @@ var mPatternCol = 0,
     GUI.instrument().i = instr_data;
     GUI.instrument().name = instr_name;
     updateInstrument(true);
-    GUI.update_status("Loaded Instrument <b>"+instr_name+"</b>");
     this.instrument_controller.instrument_name_el.value = instr_name;
   }
 
@@ -1944,17 +1224,6 @@ var mPatternCol = 0,
     }
 
     updateInstrument(true);
-    GUI.update_status("Loaded Kit");
-  }
-
-  var export_instrument = function()
-  {
-    GUI.instrument_controller.export_instrument();
-  }
-
-  var export_kit = function()
-  {
-    GUI.instrument_controller.export_kit();
   }
 
   var getCurrentBeatDistance = function (table) {
@@ -2057,18 +1326,6 @@ var mPatternCol = 0,
   {
     var i, j, o;
 
-    // Parse URL
-    mBaseURL = getURLBase(window.location.href);
-    mGETParams = parseURLGetData(window.location.href);
-
-    // Load images for the play graphics canvas
-    mPlayGfxVUImg.onload = function () {
-      redrawPlayerGfx(-1);
-    };
-    mPlayGfxLedOffImg.onload = function () {
-      redrawPlayerGfx(-1);
-    };
-
     // Build the UI tables
     lobby.apps.marabu.sequencer.build_sequence_table();
 
@@ -2126,13 +1383,6 @@ var mPatternCol = 0,
 
     GUI.pattern_controller.load();
     GUI.sequence_controller.select();
-
-    // Misc event handlers
-    document.getElementById("exportJS").onmousedown = exportJS;
-    document.getElementById("exportWAV").onmousedown = exportWAV;
-    document.getElementById("exportBINARY").onmousedown = exportBINARY;
-    document.getElementById("exportINSTRUMENT").onmousedown = export_instrument;
-    document.getElementById("exportKIT").onmousedown = export_kit;
 
     document.getElementById("osc1_xenv").addEventListener("mousedown", boxMouseDown, false);
     document.getElementById("osc1_xenv").addEventListener("touchstart", boxMouseDown, false);

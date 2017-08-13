@@ -37,21 +37,13 @@ function Instrument()
     this.name_el.value = this.name;
 
     GUI.update_instr();
-    GUI.update_status("Selected <b>"+(GUI.instrument().name ? GUI.instrument().name : "Instrument #"+this.id)+"</b>")
   }
 
   this.build = function()
   {
     var html = "";
     html += "  <div class='instrument' style='width:90px; display:inline-block; vertical-align:top; border-left:1px solid #333; padding-left:30px; margin-left:-5px; line-height:15px'>";
-    html += "    <h1 class='lh30'><input id='instrument_name' type='text' size='10' value='' title='Instrument Name' class='bh fh' style='text-transform:uppercase' /> ";
-    html += "      <span id='exportINSTRUMENT' title='Export .instrument' class='icon export_instrument'></span>";
-    html += "      <span id='exportKIT' title='Export .kit' class='icon export_kit'></span>";
-    html += "      <select id='midiInput' title='Select a MIDI source' style='margin-left: 10px; display: none'>";
-    html += "        <option value=''>(select MIDI)</option>";
-    html += "      </select>";
-    html += "      <hr />";
-    html += "    </h1>";
+    html += "    <h1 class='lh30'><input id='instrument_name' type='text' size='10' value='' title='Instrument Name' class='bh fh' style='text-transform:uppercase' /><hr /></h1>";
     html += "    <div class='osc' style='width:180px; margin-bottom:15px'><t id='osc1_wave_select'>ERROR</t><t id='osc1_xenv' class='box' style='display:none'>X</t>";
     html += "      <div id='osc1_vol'></div>";
     html += "      <div id='osc1_semi'></div>";

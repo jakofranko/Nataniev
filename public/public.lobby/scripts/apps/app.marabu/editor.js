@@ -162,7 +162,7 @@ function Editor()
         var o_f = document.getElementById("fxr"+r);
         var f_cmd = GUI.instrument().c[l.p].f[r];
         var f_val = GUI.instrument().c[l.p].f[r+this.pattern.length];
-        // o_f.textContent = toHex(f_cmd,2) + "" + toHex(f_val,2); //  TODO
+        o_f.textContent = toHex(f_cmd,2) + "" + toHex(f_val,2); //  TODO
       }
 
       for (var c = 0; c < 4; ++c)

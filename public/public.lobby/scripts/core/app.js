@@ -253,8 +253,6 @@ function Slider(id,name = "UNK",min = 0,max = 255)
     else if(parseInt(this.value_el.value) == this.max){ this.value_el.style.color = "#fff"; }
     else{ this.value_el.style.color = "#999"; }
 
-    GUI.update_status("Updated <b>"+this.id+"</b> to "+this.value+"/"+this.max);
-
     this.slide_el.innerHTML = "<svg class='fh' style='width:30px;height:15px; stroke-dasharray:1,1; fill:none; stroke-width:10px; stroke-linecap:butt;'><line x1='0' y1='7.5' x2='30' y2='7.5' stroke='#999'/><line x1='0' y1='7.5' x2='"+parseInt(this.percentage() * 30)+"' y2='7.5' stroke='#fff'/></svg>";
   }
 
