@@ -305,7 +305,7 @@ var CGUI = function()
     return this.song().songData;
   }
 
-  var updateInstrument = function(resetPreset)
+  var updateInstrument = function()
   {
     var instr = GUI.instrument();
 
@@ -337,34 +337,11 @@ var CGUI = function()
     updateCheckBox(document.getElementById("osc1_xenv"), instr.i[OSC1_XENV]);
     updateCheckBox(document.getElementById("osc2_xenv"), instr.i[OSC2_XENV]);
 
+
+
     // PART 1
-    GUI.sliders["osc1_vol"].override(instr.i[OSC1_VOL]);
-    GUI.sliders["osc1_semi"].override(instr.i[OSC1_SEMI]);
-    GUI.sliders["osc2_vol"].override(instr.i[OSC2_VOL]);
-    GUI.sliders["osc2_semi"].override(instr.i[OSC2_SEMI]);
-    GUI.sliders["osc2_det"].override(instr.i[OSC2_DETUNE]);
-    GUI.sliders["noise_vol"].override(instr.i[NOISE_VOL]);
 
-    GUI.sliders["env_att"].override(instr.i[ENV_ATTACK]);
-    GUI.sliders["env_sust"].override(instr.i[ENV_SUSTAIN]);
-    GUI.sliders["env_rel"].override(instr.i[ENV_RELEASE]);
-
-    GUI.sliders["arp_note1"].override(instr.i[ARP_CHORD] >> 4);
-    GUI.sliders["arp_note2"].override(instr.i[ARP_CHORD] & 15);
-    GUI.sliders["arp_speed"].override(instr.i[ARP_SPEED]);
-
-    GUI.sliders["lfo_amt"].override(instr.i[LFO_AMT]);
-    GUI.sliders["lfo_freq"].override(instr.i[LFO_FREQ]);
-    GUI.sliders["lfo_fxfreq"].override(instr.i[LFO_FX_FREQ]);
-
-    GUI.sliders["fx_freq"].override(instr.i[FX_FREQ]);
-    GUI.sliders["fx_res"].override(instr.i[FX_RESONANCE]);
-    GUI.sliders["fx_dly_amt"].override(instr.i[FX_DELAY_AMT]);
-    GUI.sliders["fx_dly_time"].override(instr.i[FX_DELAY_TIME]);
-    GUI.sliders["fx_pan_amt"].override(instr.i[FX_PAN_AMT]);
-    GUI.sliders["fx_pan_freq"].override(instr.i[FX_PAN_FREQ]);
-    GUI.sliders["fx_dist"].override(instr.i[FX_DIST]);
-    GUI.sliders["fx_drive"].override(instr.i[FX_DRIVE]);
+    lobby.apps.marabu.instrument.update_controls();
 
     // Update the jammer instrument
     mJammer.updateInstr(instr.i);
@@ -1016,74 +993,6 @@ var CGUI = function()
   // Initialization
   //--------------------------------------------------------------------------
 
-  this.sliders = {};
-  this.choices = {};
-
-  this.setup_sliders = function(sliders)
-  {
-    for(id in sliders){
-      var slider = new Slider(sliders[id].id,sliders[id].name,sliders[id].min,sliders[id].max);
-      this.sliders[new String(sliders[id].id)] = slider;
-      slider.install();
-    }
-  }
-
-  this.deselect_sliders = function()
-  {
-    for(id in this.sliders){
-      this.sliders[id].deselect();
-    }
-  }
-
-  this.deselect_all = function()
-  {
-    GUI.deselect_sliders();
-    GUI.pattern_controller.deselect();
-    GUI.sequence_controller.deselect();
-    GUI.instrument_controller.deselect();
-  }
-
-  this.setup_choices = function(choices)
-  {
-    for(id in choices){
-      var c = choices[id];
-      var choice = new UI_Choice(c.id,c.name,c.choices);
-      this.choices[new String(c.id)] = choice;
-      choice.install();
-    }
-  }
-
-  this.get_storage = function(id)
-  {
-    if      (id == "osc1_vol")    { return OSC1_VOL; }
-    else if (id == "osc1_semi")   { return OSC1_SEMI; }
-    else if (id == "osc1_wave_select") { return OSC1_WAVEFORM; }
-
-    else if (id == "osc2_vol")    { return OSC2_VOL; }
-    else if (id == "osc2_semi")   { return OSC2_SEMI; }
-    else if (id == "osc2_det")    { return OSC2_DETUNE; }
-    else if (id == "osc2_wave_select") { return OSC2_WAVEFORM; }
-
-    else if (id == "noise_vol")   { return NOISE_VOL; }
-    else if (id == "env_att")     { return ENV_ATTACK; }
-    else if (id == "env_sust")    { return ENV_SUSTAIN; }
-    else if (id == "env_rel")     { return ENV_RELEASE; }
-    else if (id == "arp_note1")   { return ARP_CHORD; }
-    else if (id == "arp_note2")   { return ARP_CHORD; }
-    else if (id == "arp_speed")   { return ARP_SPEED; }
-    else if (id == "lfo_amt")     { return LFO_AMT; }
-    else if (id == "lfo_freq")    { return LFO_FREQ; }
-    else if (id == "fx_freq")     { return FX_FREQ; }
-    else if (id == "fx_res")      { return FX_RESONANCE; }
-    else if (id == "fx_dist")     { return FX_DIST; }
-    else if (id == "fx_drive")    { return FX_DRIVE; }
-    else if (id == "fx_pan_amt")  { return FX_PAN_AMT; }
-    else if (id == "fx_pan_freq") { return FX_PAN_FREQ; }
-    else if (id == "fx_dly_amt")  { return FX_DELAY_AMT; }
-    else if (id == "fx_dly_time") { return FX_DELAY_TIME; }
-    return -1;
-  }
-
   this.init = function ()
   {
     var i, j, o;
@@ -1098,59 +1007,23 @@ var CGUI = function()
 
     mSong = makeNewSong();
 
-    this.setup_sliders([
-      {id: "osc1_vol", name: "VOL", min: 0, max: 255, percent: true },
-      {id: "osc1_semi", name: "FRQ", min: 92, max: 164 },
-      {id: "noise_vol", name: "NOI", min: 0, max: 255 },
-
-      {id: "osc2_vol", name: "VOL", min: 0, max: 255, percent: true },
-      {id: "osc2_semi", name: "FRQ", min: 92, max: 164 },
-      {id: "osc2_det", name: "DET", min: 0, max: 255, percent: true, nonLinear: true },
-
-      {id: "env_att", name: "ATK", min: 0, max: 255 },
-      {id: "env_sust", name: "SUS", min: 0, max: 255 },
-      {id: "env_rel", name: "REL", min: 0, max: 255 },
-
-      {id: "arp_note1", name: "ARP", min: 0, max: 12 },
-      {id: "arp_note2", name: "SEC", min: 0, max: 12 },
-      {id: "arp_speed", name: "SPD", min: 0, max: 7 },
-
-      {id: "lfo_amt", name: "AMT", min: 0, max: 255 },
-      {id: "lfo_freq", name: "FRQ", min: 0, max: 254 },
-      {id: "lfo_fxfreq", name: "MOD", min: 0, max: 255 },
-
-      {id: "fx_freq", name: "FRQ", min: 0, max: 255, nonLinear: true },
-      {id: "fx_res", name: "RES", min: 0, max: 254 },
-      {id: "fx_dly_amt", name: "DLY", min: 0, max: 255 },
-      {id: "fx_dly_time", name: "SPD", min: 0, max: 16 },
-      {id: "fx_pan_amt", name: "PAN", min: 0, max: 255 },
-      {id: "fx_pan_freq", name: "FRQ", min: 0, max: 16 },
-      {id: "fx_dist", name: "DIS", min: 0, max: 255, nonLinear: true },
-      {id: "fx_drive", name: "DRV", min: 0, max: 255 },
-    ]);
-
-    this.setup_choices([
-      {id: "osc1_wave_select", name: "OSC", choices: ["SIN","SQR","SAW","TRI"]},
-      {id: "osc2_wave_select", name: "OSC", choices: ["SIN","SQR","SAW","TRI"]},
-      {id: "fx_filter_select", name: "EFX", choices: ["HP","BP","LP"]},
-      {id: "lfo_wave_select", name: "LFO", choices: ["SIN","SQR","SAW","TRI"]}
-    ])
-
     // Update UI according to the loaded song
     updateSongInfo();
     updateSequencer();
     updatePattern();
     updateFxTrack();
-    updateInstrument(true);
 
-    GUI.pattern_controller.load();
-    GUI.sequence_controller.select();
+    // GUI.pattern_controller.load();
+    // GUI.sequence_controller.select();
 
     document.getElementById("osc1_xenv").addEventListener("mousedown", boxMouseDown, false);
     document.getElementById("osc1_xenv").addEventListener("touchstart", boxMouseDown, false);
 
     document.getElementById("osc2_xenv").addEventListener("mousedown", boxMouseDown, false);
     document.getElementById("osc2_xenv").addEventListener("touchstart", boxMouseDown, false);
+
+    lobby.apps.marabu.instrument.install();
+    updateInstrument(true);
 
     mJammer.start();
     mJammer.updateRowLen(mSong.rowLen);

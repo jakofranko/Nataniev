@@ -215,17 +215,25 @@ function Slider(id,name = "UNK",min = 0,max = 255)
     var range = parseInt(this.max) - parseInt(this.min);
     var mar_left = (((this.value - parseInt(this.min))/parseFloat(range)) * this.width)+"px"
     this.value_el.value = this.value;
+    this.save();
     this.update();
   }
 
   this.save = function()
   {
-    GUI.update_instrument(GUI.get_storage(this.id),this.value,this.id);
+    var value = this.value;
+    var instr = GUI.instrument();
+    var ARP_CHORD = lobby.apps.marabu.instrument.get_storage("arp_chord");
+
+    if (this.id == "arp_note1" || this.id == "arp_note2") {  // The arpeggio chord notes are combined into a single byte    
+      value = id == "arp_note1" ? (instr.i[ARP_CHORD] & 15) | (value << 4) : (instr.i[ARP_CHORD] & 240) | value;
+    }
+
+    lobby.apps.marabu.instrument.set_control(this.id,this.value);
   }
 
   this.select = function()
   {
-    GUI.deselect_all();
     this.is_selected = true;
     this.el.setAttribute("class","slider active");
   }
@@ -260,7 +268,7 @@ function Slider(id,name = "UNK",min = 0,max = 255)
   function value_update(e)
   {
     var id = this.parentNode.id;
-    var target_obj = GUI.sliders[id];
+    var target_obj = lobby.apps.marabu.instrument.sliders[id];
     var target_val = parseInt(target_obj.value_el.value)
 
     if(target_val > target_obj.max){target_val = target_obj.max; }
@@ -291,7 +299,7 @@ function Slider(id,name = "UNK",min = 0,max = 255)
   function mouse_down(e)
   {
     var id = this.parentNode.id;
-    var target_obj = GUI.sliders[id];
+    var target_obj = lobby.apps.marabu.instrument.sliders[id];
 
     e.preventDefault();
     e.stopPropagation();
@@ -303,7 +311,7 @@ function Slider(id,name = "UNK",min = 0,max = 255)
   function mouse_up(e)
   {
     var id = this.parentNode.id;
-    var target_obj = GUI.sliders[id];
+    var target_obj = lobby.apps.marabu.instrument.sliders[id];
 
     e.preventDefault();
     e.stopPropagation();
@@ -315,7 +323,7 @@ function Slider(id,name = "UNK",min = 0,max = 255)
   function mouse_move(e)
   {
     var id = this.parentNode.id;
-    var target_obj = GUI.sliders[id];
+    var target_obj = lobby.apps.marabu.instrument.sliders[id];
     if(!target_obj.is_selected){ return; }
 
     e.preventDefault();
