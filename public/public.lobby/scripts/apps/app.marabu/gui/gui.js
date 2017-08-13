@@ -20,57 +20,13 @@
 */
 
 //------------------------------------------------------------------------------
-// Local classes for easy access to binary data
-//------------------------------------------------------------------------------
-
-var CBinParser = function (d) {
-  var mData = d;
-  var mPos = 0;
-
-  this.getUBYTE = function () {
-    return mData.charCodeAt(mPos++) & 255;
-  };
-
-  this.getUSHORT = function () {
-    var l = (mData.charCodeAt(mPos) & 255) |
-            ((mData.charCodeAt(mPos + 1) & 255) << 8);
-    mPos += 2;
-    return l;
-  };
-
-  this.getULONG = function () {
-    var l = (mData.charCodeAt(mPos) & 255) |
-            ((mData.charCodeAt(mPos + 1) & 255) << 8) |
-            ((mData.charCodeAt(mPos + 2) & 255) << 16) |
-            ((mData.charCodeAt(mPos + 3) & 255) << 24);
-    mPos += 4;
-    return l;
-  };
-
-  this.getFLOAT = function () {
-    var l = this.getULONG();
-    if (l == 0) return 0;
-    var s = l & 0x80000000;                       // Sign
-    var e = (l >> 23) & 255;                      // Exponent
-    var m = 1 + ((l & 0x007fffff) / 0x00800000);  // Mantissa
-    var x = m * Math.pow(2, e - 127);
-    return s ? -x : x;
-  };
-
-  this.getTail = function () {
-    var str = mData.slice(mPos);
-    mPos = mData.length;
-    return str;
-  };
-};
-
-//------------------------------------------------------------------------------
 // Helper class for getting high precision timing info from an audio element
 // (e.g. Firefox Audio.currentTime has < 60 Hz precision, leading to choppy
 // animations etc).
 //------------------------------------------------------------------------------
 
-var CAudioTimer = function () {
+var CAudioTimer = function ()
+{
   var mAudioElement = null;
   var mStartT = 0;
   var mErrHist = [0, 0, 0, 0, 0, 0];
@@ -150,101 +106,23 @@ var CGUI = function()
   var mAudio = null;
   var mAudioTimer = new CAudioTimer();
   var mPlayer = new CPlayer();
-  var mPlayGfxVUImg = new Image();
-  var mPlayGfxLedOffImg = new Image();
-  var mPlayGfxLedOnImg = new Image();
   var mJammer = new CJammer();
 
   this.mJammer = mJammer;
 
-  var mBlackKeyPos = [26, 1, 63, 3, 116, 6, 150, 8, 184, 10, 238, 13, 274, 15, 327, 18, 362, 20, 394, 22];
-
-  // Prealoaded resources
   var mPreload = [];
-
-
-  //--------------------------------------------------------------------------
-  // URL parsing & generation
-  //--------------------------------------------------------------------------
-
-  var getURLBase = function (url) {
-    var queryStart = url.indexOf("?");
-    return url.slice(0, queryStart >= 0 ? queryStart : url.length);
-  };
-
-  var parseURLGetData = function (url) {
-    var queryStart = url.indexOf("?") + 1;
-    var queryEnd   = url.indexOf("#") + 1 || url.length + 1;
-    var query      = url.slice(queryStart, queryEnd - 1);
-
-    var params = {};
-    if (query === url || query === "")
-      return params;
-
-    var nvPairs = query.replace(/\+/g, " ").split("&");
-
-    for (var i=0; i<nvPairs.length; i++) {
-      var nv = nvPairs[i].split("=");
-      var n  = decodeURIComponent(nv[0]);
-      var v  = decodeURIComponent(nv[1]);
-      if ( !(n in params) ) {
-        params[n] = [];
-      }
-      params[n].push(nv.length === 2 ? v : null);
-    }
-    return params;
-  };
-
-  var getURLSongData = function (dataParam) {
-    var songData = undefined;
-    if (dataParam) {
-      var str = dataParam, str2 = "";
-      if (str.indexOf("data:") == 0) {
-        // This is a data: URI (e.g. data:application/x-extension-sbx;base64,....)
-        var idx = str.indexOf("base64,");
-        if (idx > 0)
-          str2 = str.substr(idx + 7);
-      } else {
-        // This is GET data from an http URL
-        for (var i = 0; i < str.length; ++i) {
-          var chr = str[i];
-          if (chr === "-") chr = "+";
-          if (chr === "_") chr = "/";
-          str2 += chr;
-        }
-      }
-      try {
-        songData = atob(str2);
-      }
-      catch (err) {
-        songData = undefined;
-      }
-    }
-    return songData;
-  };
-
-  var makeURLSongData = function (data) {
-    var str = btoa(data), str2 = "";
-    for (var i = 0; i < str.length; ++i) {
-      var chr = str[i];
-      if (chr === "+") chr = "-";
-      if (chr === "/") chr = "_";
-      if (chr === "=") chr = "";
-      str2 += chr;
-    }
-    return mBaseURL + "?data=" + str2;
-  };
-
 
   //--------------------------------------------------------------------------
   // Song import/export functions
   //--------------------------------------------------------------------------
 
-  var calcSamplesPerRow = function (bpm) {
+  var calcSamplesPerRow = function(bpm)
+  {
     return Math.round((60 * 44100 / 4) / bpm);
   };
 
-  var getBPM = function () {
+  var getBPM = function()
+  {
     return Math.round((60 * 44100 / 4) / mSong.rowLen);
   };
 
@@ -285,7 +163,7 @@ var CGUI = function()
       FX_DELAY_TIME = 27;
 
 
-  var makeNewSong = function ()
+  var makeNewSong = function()
   {
     var song = {}, i, j, k, instr, col;
 
@@ -366,12 +244,6 @@ var CGUI = function()
     return o;
   };
 
-  var unfocusHTMLInputElements = function ()
-  {
-    document.getElementById("bpm").blur();
-    document.getElementById("rpp").blur();
-  };
-
   var updateSongInfo = function()
   {
     document.getElementById("bpm").value = getBPM();
@@ -411,6 +283,11 @@ var CGUI = function()
   this.song = function()
   {
     return mSong;
+  }
+
+  this.mJammer_update = function()
+  {
+    return mJammer.updateInstr(GUI.instrument().i);
   }
 
   this.instrument = function()
@@ -712,14 +589,11 @@ var CGUI = function()
     return;
     // TODO
     var o = document.getElementById("playGfxCanvas");
-    var w = mPlayGfxVUImg.width > 0 ? mPlayGfxVUImg.width : o.width;
-    var h = mPlayGfxVUImg.height > 0 ? mPlayGfxVUImg.height : 51;
+    var w = 100;
+    var h = 100;
     var ctx = o.getContext("2d");
     if (ctx)
     {
-      // Draw the VU meter BG
-      ctx.drawImage(mPlayGfxVUImg, 0, 0);
-
       // Calculate singal powers
       var pl = 0, pr = 0;
       if (mFollowerActive && t >= 0)
@@ -779,7 +653,6 @@ var CGUI = function()
       {
         // Draw un-lit led
         var x = Math.round(26 + 23.0 * i);
-        ctx.drawImage(mPlayGfxLedOffImg, x, h);
 
         if (i >= mFollowerFirstCol && i <= mFollowerLastCol)
         {
@@ -809,7 +682,6 @@ var CGUI = function()
 
             // Draw lit led with alpha blending
             ctx.globalAlpha = alpha * alpha;
-            ctx.drawImage(mPlayGfxLedOnImg, x, h);
             ctx.globalAlpha = 1.0;
           }
         }
@@ -1016,74 +888,9 @@ var CGUI = function()
       }
 
       updateInstrument(true);
-      unfocusHTMLInputElements();
       e.preventDefault();
     }
   };
-
-  this.osc1_update = function(wave_name)
-  {
-    console.log(wave_name);
-    var wave = 0;
-    if (wave_name == "SIN") wave = 0;
-    else if (wave_name === "SQR") wave = 1;
-    else if (wave_name === "SAW") wave = 2;
-    else if (wave_name === "TRI") wave = 3;
-
-    if (GUI.pattern_controller.is_mod_selected) {
-      var pat = GUI.instrument().p[mSeqRow] - 1;
-      if (pat >= 0) {
-        GUI.instrument().c[pat].f[mFxTrackRow] = OSC1_WAVEFORM + 1;
-        GUI.instrument().c[pat].f[mFxTrackRow+mSong.patternLen] = wave;
-        updateFxTrack();
-      }
-    }
-    console.log(GUI.instrument())
-    GUI.instrument().i[OSC1_WAVEFORM] = wave;
-    updateInstrument();
-  }
-
-  this.osc2_update = function(wave_name)
-  {
-    console.log(wave_name);
-    var wave = 0;
-    if (wave_name == "SIN") wave = 0;
-    else if (wave_name === "SQR") wave = 1;
-    else if (wave_name === "SAW") wave = 2;
-    else if (wave_name === "TRI") wave = 3;
-
-    if (GUI.pattern_controller.is_mod_selected) {
-      var pat = GUI.instrument().p[mSeqRow] - 1;
-      if (pat >= 0) {
-        GUI.instrument().c[pat].f[mFxTrackRow] = OSC2_WAVEFORM + 1;
-        GUI.instrument().c[pat].f[mFxTrackRow+mSong.patternLen] = wave;
-        updateFxTrack();
-      }
-    }
-    GUI.instrument().i[OSC2_WAVEFORM] = wave;
-    updateInstrument();
-  }
-
-  this.lfo_update = function(wave_name)
-  {
-    console.log(wave_name);
-    var wave = 0;
-    if (wave_name == "SIN") wave = 0;
-    else if (wave_name === "SQR") wave = 1;
-    else if (wave_name === "SAW") wave = 2;
-    else if (wave_name === "TRI") wave = 3;
-
-    if (GUI.pattern_controller.is_mod_selected) {
-      var pat = GUI.instrument().p[mSeqRow] - 1;
-      if (pat >= 0) {
-        GUI.instrument().c[pat].f[mFxTrackRow] = LFO_WAVEFORM + 1;
-        GUI.instrument().c[pat].f[mFxTrackRow+mSong.patternLen] = wave;
-        updateFxTrack();
-      }
-    }
-    GUI.instrument().i[LFO_WAVEFORM] = wave;
-    updateInstrument(true);
-  }
 
   var fx_update = function(filt_name)
   {
@@ -1133,27 +940,6 @@ var CGUI = function()
 
     if (cmdNo >= 0){ instr.i[cmdNo] = value;}
     mJammer.updateInstr(instr.i);  
-  }
-
-  this.update_sequencer = function()
-  {
-    updateSequencer();
-  }
-
-  this.update_pattern = function()
-  {
-    updatePattern();
-  }
-
-  this.update_pattern_mod = function()
-  {
-    updateFxTrack();
-  }
-
-  this.update_sequencer_position = function(val)
-  {
-    GUI.instrument().p[mSeqRow] = val;
-    GUI.update_sequencer();
   }
 
   var onFileDrop = function (e)
@@ -1226,33 +1012,6 @@ var CGUI = function()
     updateInstrument(true);
   }
 
-  var getCurrentBeatDistance = function (table) {
-    var beatDistance = 1;
-    while (beatDistance < table.children.length) {
-      if (table.children[beatDistance].className === "beat")
-        break;
-      beatDistance++;
-    }
-    return beatDistance;
-  };
-
-  var getBeatDistance = function () {
-    var bpm = getBPM();
-    var beatDistance = 4;
-    if (mSong.patternLen % 3 === 0)
-      beatDistance = 3;
-    else if (mSong.patternLen % 4 === 0)
-      beatDistance = 4;
-    else if (mSong.patternLen % 2 === 0)
-      beatDistance = 2;
-    else if (mSong.patternLen % 5 === 0)
-      beatDistance = 5;
-    if ((bpm / beatDistance) >= 40 && mSong.patternLen > 24 && (mSong.patternLen % (beatDistance * 2) === 0))
-      beatDistance *= 2;
-
-    return beatDistance;
-  };
-
   //--------------------------------------------------------------------------
   // Initialization
   //--------------------------------------------------------------------------
@@ -1298,9 +1057,13 @@ var CGUI = function()
   {
     if      (id == "osc1_vol")    { return OSC1_VOL; }
     else if (id == "osc1_semi")   { return OSC1_SEMI; }
+    else if (id == "osc1_wave_select") { return OSC1_WAVEFORM; }
+
     else if (id == "osc2_vol")    { return OSC2_VOL; }
     else if (id == "osc2_semi")   { return OSC2_SEMI; }
     else if (id == "osc2_det")    { return OSC2_DETUNE; }
+    else if (id == "osc2_wave_select") { return OSC2_WAVEFORM; }
+
     else if (id == "noise_vol")   { return NOISE_VOL; }
     else if (id == "env_att")     { return ENV_ATTACK; }
     else if (id == "env_sust")    { return ENV_SUSTAIN; }
@@ -1318,7 +1081,6 @@ var CGUI = function()
     else if (id == "fx_pan_freq") { return FX_PAN_FREQ; }
     else if (id == "fx_dly_amt")  { return FX_DELAY_AMT; }
     else if (id == "fx_dly_time") { return FX_DELAY_TIME; }
-
     return -1;
   }
 
@@ -1368,10 +1130,10 @@ var CGUI = function()
     ]);
 
     this.setup_choices([
-      {id: "osc1_wave_select", name: "OSC", choices: ["SAW","SQR","TRI","SIN"]},
-      {id: "osc2_wave_select", name: "OSC", choices: ["SAW","SQR","TRI","SIN"]},
+      {id: "osc1_wave_select", name: "OSC", choices: ["SIN","SQR","SAW","TRI"]},
+      {id: "osc2_wave_select", name: "OSC", choices: ["SIN","SQR","SAW","TRI"]},
       {id: "fx_filter_select", name: "EFX", choices: ["HP","BP","LP"]},
-      {id: "lfo_wave_select", name: "LFO", choices: ["SAW","SQR","TRI","SIN"]}
+      {id: "lfo_wave_select", name: "LFO", choices: ["SIN","SQR","SAW","TRI"]}
     ])
 
     // Update UI according to the loaded song

@@ -14,10 +14,11 @@ function Marabu()
   this.instrument = null;
 
   this.setup.includes = [
+    "methods/create",
     "methods/export",
     "methods/import",
     "methods/save",
-    
+
     "core/jammer",
     "core/player-small",
     // "core/player-worker",
@@ -31,6 +32,7 @@ function Marabu()
     "inc/FileSaver",
     "inc/inflate",
 
+    "song",
     "instrument",
     "editor",
     "sequencer"

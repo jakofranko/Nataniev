@@ -9,11 +9,22 @@ function Instrument()
   this.name_el = document.getElementById("instrument_name");
   this.edit_mode = false;
 
+  this.controls = {};
+
   this.load = function(instrument_id = 1)
   {    
     if(instrument_id == this.id){ return; }
 
     this.refresh();
+  }
+
+  this.set_control = function(id,value)
+  {
+    var storage_id = GUI.get_storage(id);
+    GUI.instrument().i[storage_id] = value;
+    console.log("set "+id+"("+storage_id+")",value);
+
+    GUI.mJammer_update();
   }
 
   this.deselect = function()
@@ -31,6 +42,9 @@ function Instrument()
 
   this.refresh = function()
   {
+    var i = GUI.song().songData[this.id];
+    console.log("Refresh Instrument",i.i);
+
     this.name = GUI.instrument().name ? GUI.instrument().name : "unnamed";
 
     this.name_el = document.getElementById("instrument_name");

@@ -141,28 +141,18 @@ function UI_Choice(id,name = "UNK",choices = [])
     var target = this.choices[this.index % this.choices.length];
     this.el.innerHTML = this.name+" <b>"+target+"</b>";
 
-    if(this.id == "osc1_wave_select"){
-      GUI.osc1_update(target);  
-    }
-    else if(this.id == "osc2_wave_select"){
-      GUI.osc2_update(target);
-    }
-    else if(this.id == "lfo_wave_select"){
-      GUI.lfo_update(target);
-    }
+    lobby.apps.marabu.instrument.set_control(this.id,this.index);
   }
 
   this.mouse_down = function()
   {
     target.index += 1;
+    target.index = target.index % target.choices.length;
     target.update();
   }
 
   this.el.addEventListener("mousedown", this.mouse_down, false);
 }
-
-
-
 
 function Slider(id,name = "UNK",min = 0,max = 255)
 {
@@ -320,7 +310,6 @@ function Slider(id,name = "UNK",min = 0,max = 255)
 
     mouse_update(target_obj,e.offsetX);
     target_obj.deselect();
-    GUI.pattern_controller.deselect_mod();
   }
 
   function mouse_move(e)

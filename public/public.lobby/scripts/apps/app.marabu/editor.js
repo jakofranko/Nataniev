@@ -205,8 +205,6 @@ function Editor()
   {
     key : function(key)
     {
-      if(!target.edit_mode){ return; }
-
       var note = -1;
 
       switch (key)
@@ -226,16 +224,19 @@ function Editor()
         case "u": note = 10; break;
       }
 
-      if(key == "escape"){ 
-        target.edit(false);
+      if(target.edit_mode){ 
+        if(key == "escape"){ 
+          target.edit(false);
+        }
+        if(key == " "){
+          target.inject(0); // erase
+        }
+        if(note >= 0){
+          target.inject(note + 87);  
+        }
       }
-      if(key == " "){
-        target.inject(0); // erase
-      }
-      if(note >= 0){
-        target.inject(note + 87);  
-        app.instrument.play(note);
-      }
+      
+      app.instrument.play(note);     
     }
   }
 
