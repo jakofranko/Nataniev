@@ -444,6 +444,8 @@ function gui_init()
 {
   GUI = new CGUI();
   GUI.init();
+
+  lobby.apps.marabu.sequencer.select();
 }
 
 
@@ -507,6 +509,24 @@ function Sequencer()
   {
     this.selection = {x1:-1,y1:-1,x2:-1,y2:-1};
     app.sequencer.refresh();
+  }
+
+  this.select_move = function(x,y)
+  {
+    var s = this.selection;
+
+    s.x2 += x;
+    s.y2 += y;
+
+    if(s.x2 < 0){ s.x2 = 0; }
+    if(s.y2 < 0){ s.y2 = 0; }
+    if(s.x2 > 7){ s.x2 = 7; }
+    if(s.y2 > 31){ s.y2 = 31; }
+
+    s.x1 = s.x2;
+    s.y1 = s.y2;
+
+    this.select(s.x1,s.y1,s.x2,s.y2);
   }
 
   this.edit = function(toggle = true)
@@ -652,6 +672,11 @@ function Sequencer()
     {
       if(key == "escape"){ target.edit(false); }
       if(!target.edit_mode){ return; }
+
+      if(key == "arrowleft"){ target.select_move(-1,0); return; }
+      if(key == "arrowright"){ target.select_move(1,0); return; }
+      if(key == "arrowup"){ target.select_move(0,-1); return; }
+      if(key == "arrowdown"){ target.select_move(0,1); return; }
 
       if(["0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f","escape","backspace"].indexOf(key) == -1){ console.log("SEQ: Unknown Key",key); return; }
       
