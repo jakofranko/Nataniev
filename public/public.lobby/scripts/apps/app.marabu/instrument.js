@@ -132,14 +132,25 @@ function Instrument()
   {
     var instr = GUI.instrument();
 
-    // Replace with this
-
     for(slider_id in this.sliders){
       var slider = this.sliders[slider_id];
       var value = instr.i[this.get_storage(slider_id)];
       slider.override(value);
     }
 
+    for(choice_id in this.choices){
+      var choice = this.choices[choice_id];
+      var value = instr.i[this.get_storage(choice_id)];
+      choice.override(value);
+    }
+
+    for(toggle_id in this.toggles){
+      var toggle = this.toggles[toggle_id];
+      var value = instr.i[this.get_storage(toggle_id)];
+      toggle.override(value);
+    }
+
+    GUI.mJammer_update();
   }
 
   this.load = function(instrument_id = 1)
@@ -181,7 +192,7 @@ function Instrument()
     this.name_el = document.getElementById("instrument_name");
     this.name_el.value = this.name;
 
-    GUI.update_instr();
+    this.update_controls();
   }
 
   this.build = function()

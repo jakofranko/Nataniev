@@ -134,6 +134,12 @@ function UI_Toggle(id,name = "UNK")
     lobby.apps.marabu.instrument.set_control(this.id,this.value);
   }
 
+  this.override = function(value)
+  {
+    this.value = value;
+    this.update();
+  }
+
   this.mouse_down = function()
   {
     target.value = target.value == 1 ? 0 : 1;

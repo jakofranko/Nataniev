@@ -235,53 +235,6 @@ var CGUI = function()
     return this.song().songData;
   }
 
-  var updateInstrument = function()
-  {
-    var instr = GUI.instrument();
-
-    // Oscillator 1
-
-    // TODO
-    // if(instr.i[OSC1_WAVEFORM] == 0){ document.getElementById("osc1_wave_select"). }
-
-    // document.getElementById("osc1_wave_sin").src = instr.i[OSC1_WAVEFORM] == 0 ? "media/graphics/wave_sin_sel.svg" : "media/graphics/wave_sin.svg";
-    // document.getElementById("osc1_wave_sqr").src = instr.i[OSC1_WAVEFORM] == 1 ? "media/graphics/wave_sqr_sel.svg" : "media/graphics/wave_sqr.svg";
-    // document.getElementById("osc1_wave_saw").src = instr.i[OSC1_WAVEFORM] == 2 ? "media/graphics/wave_saw_sel.svg" : "media/graphics/wave_saw.svg";
-    // document.getElementById("osc1_wave_tri").src = instr.i[OSC1_WAVEFORM] == 3 ? "media/graphics/wave_tri_sel.svg" : "media/graphics/wave_tri.svg";
-
-    // // Oscillator 2
-    // document.getElementById("osc2_wave_sin").src = instr.i[OSC2_WAVEFORM] == 0 ? "media/graphics/wave_sin_sel.svg" : "media/graphics/wave_sin.svg";
-    // document.getElementById("osc2_wave_sqr").src = instr.i[OSC2_WAVEFORM] == 1 ? "media/graphics/wave_sqr_sel.svg" : "media/graphics/wave_sqr.svg";
-    // document.getElementById("osc2_wave_saw").src = instr.i[OSC2_WAVEFORM] == 2 ? "media/graphics/wave_saw_sel.svg" : "media/graphics/wave_saw.svg";
-    // document.getElementById("osc2_wave_tri").src = instr.i[OSC2_WAVEFORM] == 3 ? "media/graphics/wave_tri_sel.svg" : "media/graphics/wave_tri.svg";
-
-    // document.getElementById("lfo_wave_sin").src = instr.i[LFO_WAVEFORM] == 0 ? "media/graphics/wave_sin_sel.svg" : "media/graphics/wave_sin.svg";
-    // document.getElementById("lfo_wave_sqr").src = instr.i[LFO_WAVEFORM] == 1 ? "media/graphics/wave_sqr_sel.svg" : "media/graphics/wave_sqr.svg";
-    // document.getElementById("lfo_wave_saw").src = instr.i[LFO_WAVEFORM] == 2 ? "media/graphics/wave_saw_sel.svg" : "media/graphics/wave_saw.svg";
-    // document.getElementById("lfo_wave_tri").src = instr.i[LFO_WAVEFORM] == 3 ? "media/graphics/wave_tri_sel.svg" : "media/graphics/wave_tri.svg";
-
-    // document.getElementById("fx_filt_lp").src = instr.i[FX_FILTER] == 2 ? "media/graphics/wave_lp_sel.svg" : "media/graphics/wave_lp.svg";
-    // document.getElementById("fx_filt_hp").src = instr.i[FX_FILTER] == 1 ? "media/graphics/wave_hp_sel.svg" : "media/graphics/wave_hp.svg";
-    // document.getElementById("fx_filt_bp").src = instr.i[FX_FILTER] == 3 ? "media/graphics/wave_bp_sel.svg" : "media/graphics/wave_bp.svg";
-
-    updateCheckBox(document.getElementById("osc1_xenv"), instr.i[OSC1_XENV]);
-    updateCheckBox(document.getElementById("osc2_xenv"), instr.i[OSC2_XENV]);
-
-
-
-    // PART 1
-
-    lobby.apps.marabu.instrument.update_controls();
-
-    // Update the jammer instrument
-    mJammer.updateInstr(instr.i);
-  };
-
-  this.update_instr = function()
-  {
-    updateInstrument();
-  }
-
   this.update_bpm = function(bpm)
   {
     mSong.rowLen = calcSamplesPerRow(bpm);
@@ -372,7 +325,7 @@ var CGUI = function()
       updateSongInfo();
       updateSequencer();
       updatePattern();
-      updateInstrument(true);
+      lobby.apps.marabu.instrument.update_controls();
     }
   };
 
@@ -735,7 +688,7 @@ var CGUI = function()
       }
     }
     GUI.instrument().i[FX_FILTER] = filt;
-    updateInstrument(true);
+    lobby.apps.marabu.instrument.update_controls();
 
   }
 
@@ -822,7 +775,7 @@ var CGUI = function()
   {
     GUI.instrument().i = instr_data;
     GUI.instrument().name = instr_name;
-    updateInstrument(true);
+    lobby.apps.marabu.instrument.update_controls();
     this.instrument_controller.instrument_name_el.value = instr_name;
   }
 
@@ -835,7 +788,7 @@ var CGUI = function()
       id += 1;
     }
 
-    updateInstrument(true);
+    lobby.apps.marabu.instrument.update_controls();
   }
 
   //--------------------------------------------------------------------------
@@ -865,7 +818,7 @@ var CGUI = function()
     // GUI.sequence_controller.select();
 
     lobby.apps.marabu.instrument.install();
-    updateInstrument(true);
+    lobby.apps.marabu.instrument.update_controls();
 
     mJammer.start();
     mJammer.updateRowLen(mSong.rowLen);
