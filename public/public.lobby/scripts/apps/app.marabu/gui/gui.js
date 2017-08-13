@@ -162,71 +162,6 @@ var CGUI = function()
       FX_DELAY_AMT = 26,
       FX_DELAY_TIME = 27;
 
-
-  var makeNewSong = function()
-  {
-    var song = {}, i, j, k, instr, col;
-
-    // Row length
-    song.rowLen = calcSamplesPerRow(120);
-
-    // Last pattern to play
-    song.endPattern = 2;
-
-    // Rows per pattern
-    song.patternLen = 32;
-
-    // Select the default instrument from the presets
-    var defaultInstr = { name: "FORM sin", i: [3,255,128,0,2,23,152,0,0,0,0,72,129,0,0,3,121,57,0,2,180,50,0,31,47,3,55,8] };
-
-    // All 8 instruments
-    song.songData = [];
-    for (i = 0; i < 8; i++) {
-      instr = {};
-      instr.i = [];
-
-      // Copy the default instrument
-      for (j = 0; j <= defaultInstr.i.length; ++j) {
-        instr.i[j] = defaultInstr.i[j];
-      }
-
-      // Sequence
-      instr.p = [];
-      for (j = 0; j < MAX_SONG_ROWS; j++)
-        instr.p[j] = 0;
-
-      // Patterns
-      instr.c = [];
-      for (j = 0; j < MAX_PATTERNS; j++)
-      {
-        col = {};
-        col.n = [];
-        for (k = 0; k < song.patternLen * 4; k++)
-          col.n[k] = 0;
-        col.f = [];
-        for (k = 0; k < song.patternLen * 2; k++)
-          col.f[k] = 0;
-        instr.c[j] = col;
-      }
-      song.songData[i] = instr;
-    }
-
-    // Default instruments
-    song.songData[4].name = "Kick";
-    song.songData[4].i = [2,0,92,0,0,255,92,23,1,0,14,0,74,0,0,0,89,0,1,1,16,0,21,255,49,6,0,0];
-    song.songData[5].name = "Snare";
-    song.songData[5].i = [0,221,92,1,0,210,92,0,1,192,4,0,46,0,0,1,97,141,1,3,93,0,4,57,20,0,0,6];
-    song.songData[6].name = "Hihat"
-    song.songData[6].i = [0,0,140,0,0,0,140,0,0,60,4,10,34,0,0,0,187,5,0,1,239,135,0,170,87,5,0,4];
-    song.songData[7].name = "Tom"
-    song.songData[7].i = [0,192,104,1,0,80,99,0,0,0,4,0,66,0,0,3,0,0,0,1,0,1,2,32,37,4,0,0];
-
-    // Make a first empty pattern
-    song.songData[0].p[0] = 1;
-
-    return song;
-  };
-
   //--------------------------------------------------------------------------
   // Helper functions
   //--------------------------------------------------------------------------
@@ -259,11 +194,6 @@ var CGUI = function()
   {
     lobby.apps.marabu.editor.build_table();
     lobby.apps.marabu.editor.refresh_table();
-  };
-
-  var updateFxTrack = function (scrollIntoView, selectionOnly)
-  {
-    lobby.apps.marabu.editor.build_table();
   };
 
   this.play_note = function(note)
@@ -411,7 +341,6 @@ var CGUI = function()
 
       // Update UI
       updatePattern();
-      updateFxTrack();
     }
   };
 
@@ -443,7 +372,6 @@ var CGUI = function()
       updateSongInfo();
       updateSequencer();
       updatePattern();
-      updateFxTrack();
       updateInstrument(true);
     }
   };
@@ -666,26 +594,36 @@ var CGUI = function()
     }
   };
 
-  var updateFollower = function ()
+  var startFollower = function()
   {
-    if (mAudio == null)
-      return;
+    // Update the sequencer selection
+    mSeqRow = mFollowerFirstRow;
+    mSeqRow2 = mFollowerFirstRow;
+    mSeqCol2 = 0;
+    updateSequencer(true, true);
+    updatePattern();
 
+    // Start the follower
+    mFollowerActive = true;
+    mFollowerTimerID = setInterval(updateFollower, 16);
+
+    var table = document.getElementById("pattern-table");
+    table.className = "tracks playing";
+  };
+
+  var updateFollower = function()
+  {
     // Get current time
     var t = mAudioTimer.currentTime();
 
     // Are we past the play range (i.e. stop the follower?)
     if (mAudio.ended || (mAudio.duration && ((mAudio.duration - t) < 0.1))) {
       stopFollower();
-
-      // Reset pattern position
       mPatternRow = 0;
       mPatternRow2 = 0;
-      updatePattern();
       mFxTrackRow = 0;
       mFxTrackRow2 = 0;
-      updateFxTrack();
-
+      updatePattern();
       return;
     }
 
@@ -694,61 +632,19 @@ var CGUI = function()
     var seqPos = Math.floor(n / mSong.patternLen) + mFollowerFirstRow;
     var patPos = n % mSong.patternLen;
 
-    // Have we stepped?
-    var newSeqPos = (seqPos != mSeqRow);
-    var newPatPos = newSeqPos || (patPos != mPatternRow);
-
-    // Update the sequencer
-    if (newSeqPos) {
-      if (seqPos >= 0) {
-        mSeqRow = seqPos;
-        mSeqRow2 = seqPos;
-        updateSequencer(true, true);
-      }
-      for (var i = 0; i < MAX_SONG_ROWS; ++i) {
-        var o = document.getElementById("spr" + i);
-        // o.className = (i == seqPos ? "playpos" : "");
-      }
+    if(patPos === 0){
+      // updatePattern();
     }
 
-    // Update the pattern
-    if (newPatPos) {
-      if (patPos >= 0) {
-        mPatternRow = patPos;
-        mPatternRow2 = patPos;
-        updatePattern(true, !newSeqPos);
-        mFxTrackRow = patPos;
-        mFxTrackRow2 = patPos;
-        updateFxTrack(true, !newSeqPos);
-      }
-      for (var i = 0; i < mSong.patternLen; ++i) {
-        var o = document.getElementById("ppr" + i);
-        // o.className = (i == patPos ? "playpos" : ""); // TODO
-      }
-    }
+    document.getElementById("spr"+seqPos).className = "played";
+    document.getElementById("ppr"+patPos).className = "played";
 
     // Player graphics
     redrawPlayerGfx(t);
   };
 
-  var startFollower = function ()
-  { // TODO!!!!!
-    // Update the sequencer selection
-    mSeqRow = mFollowerFirstRow;
-    mSeqRow2 = mFollowerFirstRow;
-    mSeqCol2 = 0;
-    updateSequencer(true, true);
-    updatePattern();
-    updateFxTrack();
-
-    // Start the follower
-    mFollowerActive = true;
-    mFollowerTimerID = setInterval(updateFollower, 16);
-  };
-
-  var stopFollower = function ()
+  var stopFollower = function()
   {
-    // TODO
     if (mFollowerActive)
     {
       // Stop the follower
@@ -757,17 +653,8 @@ var CGUI = function()
         mFollowerTimerID = -1;
       }
 
-      // Clear the follower markers
-      for (var i = 0; i < MAX_SONG_ROWS; ++i) {
-        // document.getElementById("spr" + i).className = ""; //
-      }
-      for (var i = 0; i < mSong.patternLen; ++i) {
-        // document.getElementById("ppr" + i).className = ""; // TODO
-      }
-
       // Clear player gfx
       redrawPlayerGfx(-1);
-
       mFollowerActive = false;
     }
   };
@@ -828,45 +715,9 @@ var CGUI = function()
     generateAudio(doneFun, opts);
   };
 
-  var stopPlaying = function (e)
+  var stopPlaying = function(e)
   {
     stopAudio();
-  };
-
-  var boxMouseDown = function (e) {
-    if (!e) var e = window.event;
-    if (mSeqCol == mSeqCol2) {
-      var o = getEventElement(e);
-
-      // Check which instrument parameter was changed
-      var fxCmd = -1;
-      if (o.id === "osc1_xenv")
-        fxCmd = OSC1_XENV;
-      else if (o.id === "osc2_xenv")
-        fxCmd = OSC2_XENV;
-      else if (o.id === "lfo_fxfreq")
-        fxCmd = LFO_FX_FREQ;
-
-      // Update the instrument (toggle boolean)
-      var fxValue;
-      if (fxCmd >= 0) {
-        fxValue = GUI.instrument().i[fxCmd] ? 0 : 1;
-        GUI.instrument().i[fxCmd] = fxValue;
-      }
-
-      // Edit the fx track
-      if (GUI.pattern_controller.is_mod_selected) {
-        var pat = GUI.instrument().p[mSeqRow] - 1;
-        if (pat >= 0) {
-          GUI.instrument().c[pat].f[mFxTrackRow] = fxCmd + 1;
-          GUI.instrument().c[pat].f[mFxTrackRow+mSong.patternLen] = fxValue;
-          updateFxTrack();
-        }
-      }
-
-      updateInstrument(true);
-      e.preventDefault();
-    }
   };
 
   var fx_update = function(filt_name)
@@ -881,7 +732,6 @@ var CGUI = function()
       if (pat >= 0) {
         GUI.instrument().c[pat].f[mFxTrackRow] = FX_FILTER + 1
         GUI.instrument().c[pat].f[mFxTrackRow+mSong.patternLen] = filt;
-        updateFxTrack();
       }
     }
     GUI.instrument().i[FX_FILTER] = filt;
@@ -910,7 +760,6 @@ var CGUI = function()
         if (pat >= 0) {
           GUI.instrument().c[pat].f[mFxTrackRow] = cmdNo + 1;
           GUI.instrument().c[pat].f[mFxTrackRow+mSong.patternLen] = value;
-          updateFxTrack();
         }
       }
     }
@@ -1005,22 +854,15 @@ var CGUI = function()
     mAudioTimer.setAudioElement(mAudio);
     mAudio.addEventListener("canplay", function () { this.play(); }, true);
 
-    mSong = makeNewSong();
+    mSong = lobby.apps.marabu.new_song();
 
     // Update UI according to the loaded song
     updateSongInfo();
     updateSequencer();
     updatePattern();
-    updateFxTrack();
 
     // GUI.pattern_controller.load();
     // GUI.sequence_controller.select();
-
-    document.getElementById("osc1_xenv").addEventListener("mousedown", boxMouseDown, false);
-    document.getElementById("osc1_xenv").addEventListener("touchstart", boxMouseDown, false);
-
-    document.getElementById("osc2_xenv").addEventListener("mousedown", boxMouseDown, false);
-    document.getElementById("osc2_xenv").addEventListener("touchstart", boxMouseDown, false);
 
     lobby.apps.marabu.instrument.install();
     updateInstrument(true);

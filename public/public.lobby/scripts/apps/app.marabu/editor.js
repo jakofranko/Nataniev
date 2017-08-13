@@ -115,7 +115,8 @@ function Editor()
     var tr, td;
     for (var row = 0; row < this.pattern.length; row++) {
       tr = document.createElement("tr");
-      tr.className = row % this.pattern.beat == 0 ? "beat" : "";
+      tr.id = "ppr"+row;
+      tr.className = row % this.pattern.beat == 0 ? " beat" : "";
       // Pattern
       for (col = 0; col < 4; col++) {
         td = document.createElement("td");
@@ -230,12 +231,14 @@ function Editor()
         if(key == " "){
           target.inject(0); // erase
         }
-        if(note >= 0){
+        if(note > -1){
           target.inject(note + 87);  
         }
       }
 
-      app.instrument.play(note);     
+      if(note > -1){
+        app.instrument.play(note); 
+      }
     }
   }
 

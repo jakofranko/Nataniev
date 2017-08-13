@@ -1,4 +1,4 @@
-lobby.apps.ide.methods.import = {name:"import", shortcut:"i"}
+lobby.apps.marabu.methods.import = {name:"import", shortcut:"i"}
 
 var binToSong = function (d)
 {

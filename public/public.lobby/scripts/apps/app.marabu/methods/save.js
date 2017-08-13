@@ -1,6 +1,6 @@
-lobby.apps.ide.methods.save = {name:"save", shortcut:"s"}
+lobby.apps.marabu.methods.save = {name:"save", shortcut:"s"}
 
-lobby.apps.ide.save = function(val, is_passive = false)
+lobby.apps.marabu.save = function(val, is_passive = false)
 {
   console.log(song)
   return;

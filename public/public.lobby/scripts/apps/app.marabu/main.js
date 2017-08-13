@@ -62,15 +62,21 @@ function Marabu()
 
     html += "<style>";
     html += ".everything { color:white; }";
-    html += ".tracks tr {  line-height:15px}";
+    html += ".tracks tr {  line-height:15px; position:relative}";
     html += ".tracks tr td { text-align:center; padding-right:5px}";
     html += ".tracks tr:hover { color:#999}";
+    html += ".tracks tr td { position:relative}";
     html += ".tracks td:hover { cursor:pointer}";
     html += ".tracks td.selected { color:#f00}";
     html += ".tracks tr.beat th { color:#999}";
     html += ".tracks.inactive tr td { color:#555}";
     html += ".tracks.inactive tr th { color:#555}";
     html += ".tracks.edit { border-top:1px solid #f00 }";
+    html += ".tracks.playing tr td {color:#555}";
+    html += ".tracks.playing tr th {color:#555}";
+    html += ".tracks.playing tr.played td {color:#fff}";
+    html += ".tracks.playing tr.played th {color:#fff}";
+    html += ".tracks tr.playpos td:first-child:before { content:'>'; color:#999; position:absolute; left:-15px;}";
     html += "</style>";
 
     return "<yu style='vertical-align:top' class='everything'>"+html+"</yu>";

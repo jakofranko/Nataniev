@@ -1,4 +1,4 @@
-lobby.apps.ide.methods.export = {name:"export", shortcut:"s"}
+lobby.apps.marabu.methods.export = {name:"export", shortcut:"s"}
 
 var CBinWriter = function ()
 {

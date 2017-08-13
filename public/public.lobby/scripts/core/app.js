@@ -112,6 +112,36 @@ function App()
   this.wrapper_el.addEventListener("mousedown", function(e){ e.stopPropagation(); }, false);
 }
 
+function UI_Toggle(id,name = "UNK")
+{
+  this.id = id;
+  this.name = name;
+  this.el = document.getElementById(id);
+  this.value = 0;
+  this.el.style.cursor = "pointer";
+
+  var target = this;
+
+  this.install = function()
+  {
+    this.el.innerHTML = this.name;
+    this.update();
+  }
+
+  this.update = function()
+  {
+    this.el.style.color = this.value == 1 ? "#fff" : "#555";
+    lobby.apps.marabu.instrument.set_control(this.id,this.value);
+  }
+
+  this.mouse_down = function()
+  {
+    target.value = target.value == 1 ? 0 : 1;
+    target.update();
+  }
+
+  this.el.addEventListener("mousedown", this.mouse_down, false);
+}
 
 function UI_Choice(id,name = "UNK",choices = [])
 {
@@ -119,6 +149,10 @@ function UI_Choice(id,name = "UNK",choices = [])
   this.name = name;
   this.choices = choices;
   this.el = document.getElementById(id);
+  this.el.style.width = "60px";
+  this.el.style.display = "inline-block";
+  this.el.style.marginRight = "10px";
+  this.el.style.cursor = "pointer";
 
   this.index = 0;
 
@@ -154,7 +188,7 @@ function UI_Choice(id,name = "UNK",choices = [])
   this.el.addEventListener("mousedown", this.mouse_down, false);
 }
 
-function Slider(id,name = "UNK",min = 0,max = 255)
+function UI_Slider(id,name = "UNK",min = 0,max = 255)
 {
   this.id = id;
   this.name = name;

@@ -11,6 +11,7 @@ function Instrument()
 
   this.sliders = {};
   this.choices = {};
+  this.toggles = {};
 
   this.install = function()
   {
@@ -51,13 +52,18 @@ function Instrument()
       {id: "fx_filter_select", name: "EFX", choices: ["","HP","LP","BP"]},
       {id: "lfo_wave_select", name: "LFO", choices: ["SIN","SQR","SAW","TRI"]}
     ])
+
+    this.setup_toggles([
+      {id: "osc1_xenv", name: "MOD"},
+      {id: "osc2_xenv", name: "MOD"},
+    ])
   }
 
   this.setup_sliders = function(sliders)
   {
     for(id in sliders){
       var s = sliders[id];
-      var slider = new Slider(s.id,s.name,s.min,s.max);
+      var slider = new UI_Slider(s.id,s.name,s.min,s.max);
       this.sliders[new String(s.id)] = slider;
       slider.install();
     }
@@ -73,16 +79,28 @@ function Instrument()
     }
   }
 
+  this.setup_toggles = function(toggles)
+  {
+    for(id in toggles){
+      var t = toggles[id];
+      var toggle = new UI_Toggle(t.id,t.name);
+      this.toggles[new String(t.id)] = toggle;
+      toggle.install();
+    }    
+  }
+
   this.get_storage = function(id)
   {
     if      (id == "osc1_vol")    { return 1; }
     else if (id == "osc1_semi")   { return 2; }
+    else if (id == "osc1_xenv")   { return 3; }
     else if (id == "noise_vol")   { return 9; }
     else if (id == "osc1_wave_select") { return 0; }
 
     else if (id == "osc2_vol")    { return 5; }
     else if (id == "osc2_semi")   { return 6; }
     else if (id == "osc2_det")    { return 7; }
+    else if (id == "osc2_xenv")   { return 8; }
     else if (id == "osc2_wave_select") { return 4; }
 
     else if (id == "env_att")     { return 10; }
@@ -171,12 +189,12 @@ function Instrument()
     var html = "";
     html += "  <div class='instrument' style='width:90px; display:inline-block; vertical-align:top; border-left:1px solid #333; padding-left:30px; margin-left:-5px; line-height:15px'>";
     html += "    <h1 class='lh30'><input id='instrument_name' type='text' size='10' value='' title='Instrument Name' class='bh fh' style='text-transform:uppercase' /><hr /></h1>";
-    html += "    <div class='osc' style='width:180px; margin-bottom:15px'><t id='osc1_wave_select'>ERROR</t><t id='osc1_xenv' class='box' style='display:none'>X</t>";
+    html += "    <div class='osc' style='width:180px; margin-bottom:15px'><t id='osc1_wave_select'>ERROR</t><t id='osc1_xenv'>X</t>";
     html += "      <div id='osc1_vol'></div>";
     html += "      <div id='osc1_semi'></div>";
     html += "      <div id='noise_vol'></div>";
     html += "    </div>";
-    html += "    <div class='osc' style='width:180px; margin-bottom:15px'><t id='osc2_wave_select'>ERROR</t><t id='osc2_xenv' class='box' style='display:none'>?</t>";
+    html += "    <div class='osc' style='width:180px; margin-bottom:15px'><t id='osc2_wave_select'>ERROR</t><t id='osc2_xenv'>?</t>";
     html += "      <div id='osc2_vol'></div>";
     html += "      <div id='osc2_semi'></div>";
     html += "      <div id='osc2_det'></div>";
