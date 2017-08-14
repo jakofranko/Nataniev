@@ -47,6 +47,7 @@ function Editor()
   this.deselect = function()
   {
     this.selection = {x1:-1,y1:-1,x2:-1,y2:-1};
+    this.refresh();
   }
 
   this.select_move = function(x,y)
@@ -68,10 +69,8 @@ function Editor()
   }
 
   this.edit = function(toggle = true)
-  {
-    app.sequencer.edit_mode = false;
-    app.instrument.edit_mode = false;
-    
+  { 
+    console.log("editor.edit",toggle);
     this.edit_mode = toggle;
 
     var table = document.getElementById("pattern-table");
@@ -232,6 +231,7 @@ function Editor()
   {
     key : function(key)
     {
+      console.log("editor.key",target.edit_mode)
       var note = -1;
 
       switch (key)
@@ -251,7 +251,7 @@ function Editor()
         case "u": note = 10; break;
       }
 
-      if(target.edit_mode){ 
+      if(target.edit_mode == true){ 
 
         if(key == "arrowleft"){ target.select_move(-1,0); return; }
         if(key == "arrowright"){ target.select_move(1,0); return; }
@@ -259,9 +259,14 @@ function Editor()
         if(key == "arrowdown"){ target.select_move(0,1); return; }
 
         if(key == "escape"){ 
+          console.log("escape")
           target.edit(false);
+          target.deselect();
+          app.sequencer.edit(true);
+          app.sequencer.select(app.instrument.id,0,app.instrument.id,0);
+          return;
         }
-        if(key == " "){
+        if(key == " " || key == "backspace"){
           target.inject(0); // erase
         }
         if(note > -1){

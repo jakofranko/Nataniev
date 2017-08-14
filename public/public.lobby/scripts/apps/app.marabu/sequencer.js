@@ -393,9 +393,7 @@ function Sequencer()
 
   this.edit = function(toggle = true)
   {
-    app.editor.edit_mode = false;
-    app.instrument.edit_mode = false;
-
+    console.log("sequencer.edit",toggle);
     this.edit_mode = toggle;
 
     var table = document.getElementById("sequencer-table");
@@ -412,9 +410,6 @@ function Sequencer()
 
   this.edit_sequence = function(i,p,v)
   {
-    var i = this.selection.x2;
-    var p = this.selection.y2;
-
     GUI.song().songData[i].p[p] = parseInt(v);
 
     console.info("edit_sequence","i:"+i,"p:"+p,"v:"+v,GUI.song().songData);
@@ -528,8 +523,7 @@ function Sequencer()
   {
     key : function(key)
     {
-      if(key == "escape"){ target.edit(false); }
-      if(!target.edit_mode){ return; }
+      if(target.edit_mode != true){ return; }
 
       if(key == "arrowleft"){ target.select_move(-1,0); return; }
       if(key == "arrowright"){ target.select_move(1,0); return; }
@@ -538,11 +532,14 @@ function Sequencer()
 
       if(["0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f","escape","backspace","enter"].indexOf(key) == -1){ console.log("SEQ: Unknown Key",key); return; }
       
+      if(key == "escape"){ return; }
       if(key == "backspace"){ key = 0; }
-      if(key == "enter"){ console.log(app.editor.pattern.id) }
 
       var i = target.selection.x2;
       var p = target.selection.y2;
+
+      if(key == "enter"){ target.edit_sequence(i,p,app.editor.pattern.id); return; }
+
       target.edit_sequence(i,p,key); 
       
     }
