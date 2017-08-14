@@ -100,47 +100,27 @@ var CGUI = function()
     return Math.round((60 * 44100 / 4) / bpm);
   };
 
-  var getBPM = function()
+  this.get_bpm = function()
   {
     return Math.round((60 * 44100 / 4) / mSong.rowLen);
   };
 
-  //--------------------------------------------------------------------------
-  // Helper functions
-  //--------------------------------------------------------------------------
-
-  var getEventElement = function (e)
+  this.update_bpm = function(bpm)
   {
-    var o = null;
-    if (!e) var e = window.event;
-    if (e.target)
-      o = e.target;
-    else if (e.srcElement)
-      o = e.srcElement;
-    if (o.nodeType == 3) // defeat Safari bug
-      o = o.parentNode;
-    return o;
-  };
+    mSong.rowLen = calcSamplesPerRow(bpm);
+    mJammer.updateRowLen(mSong.rowLen);
+  }
 
-  var updateSongInfo = function()
+  this.update_rpp = function(rpp)
   {
-    document.getElementById("bpm").value = getBPM();
-    document.getElementById("rpp").value = mSong.patternLen;
-  };
+    setPatternLength(rpp);
+    updatePatternLength();
+  }
 
   this.play_note = function(note)
   {
     mJammer.addNote(note+87);
   }
-
-  var updateCheckBox = function (o, check) {
-    o.src = check ? "media/graphics/toggle_on.svg" : "media/graphics/toggle_off.svg";
-  };
-
-  var clearPresetSelection = function () {
-    var o = document.getElementById("instrPreset");
-    o.selectedIndex = 0;
-  };
 
   this.song = function()
   {
@@ -155,18 +135,6 @@ var CGUI = function()
   this.instrument = function()
   {
     return this.song().songData[this.instrument_controller.id];
-  }
-
-  this.update_bpm = function(bpm)
-  {
-    mSong.rowLen = calcSamplesPerRow(bpm);
-    mJammer.updateRowLen(mSong.rowLen);
-  }
-
-  this.update_rpp = function(rpp)
-  {
-    setPatternLength(rpp);
-    updatePatternLength();
   }
 
 
@@ -279,60 +247,6 @@ var CGUI = function()
     }
   };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  //----------------------------------------------------------------------------
-  // Playback follower
-  //----------------------------------------------------------------------------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  //----------------------------------------------------------------------------
-  // (end of playback follower)
-  //----------------------------------------------------------------------------
-
   this.stop_song = function()
   {
     stopAudio();
@@ -363,46 +277,6 @@ var CGUI = function()
   }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   //--------------------------------------------------------------------------
   // Initialization
   //--------------------------------------------------------------------------
@@ -422,11 +296,10 @@ var CGUI = function()
 
     mSong = lobby.apps.marabu.new_song();
 
-    // Update UI according to the loaded song
-    updateSongInfo();
-
     lobby.apps.marabu.sequencer.refresh();
     lobby.apps.marabu.editor.refresh();
+
+    document.getElementById("rpp").innerHTML = mSong.patternLen;
 
     lobby.apps.marabu.instrument.install();
     lobby.apps.marabu.instrument.refresh();
@@ -436,21 +309,9 @@ var CGUI = function()
   };
 };
 
-
 //------------------------------------------------------------------------------
 // Program start
 //------------------------------------------------------------------------------
-
-function gui_init()
-{
-  GUI = new CGUI();
-  GUI.init();
-
-  lobby.apps.marabu.sequencer.select();
-}
-
-
-
 
 function Sequencer()
 {
@@ -476,7 +337,7 @@ function Sequencer()
     var html = "";
 
     html += "  <div class='sequencer' id='sequence_controller' style='width:120px; display:inline-block; vertical-align:top'>";
-    html += "    <h1 class='lh30' style='width:90px'><b id='seq_title'>SEQ</b> <input id='bpm' type='text' size='3' value='' title='Beats per minute (song speed)' class='bh fh' style='float:right; text-align:right; height:30px; color:#999; line-height:30px; background:transparent'/><hr /></h1>";
+    html += "    <h1 class='lh30' style='width:90px'><b id='seq_title'>SEQ</b> <t id='bpm' class='bh fh' style='float:right; text-align:right; height:30px; color:#999; line-height:30px; background:transparent'/><hr /></h1>";
     html += "    <div id='sequencer'><table class='tracks' id='sequencer-table'></table></div>";
     html += "  </div>";
 
@@ -598,6 +459,8 @@ function Sequencer()
 
   this.refresh = function()
   {
+    document.getElementById("bpm").innerHTML = GUI.get_bpm();
+
     this.refresh_table();
     this.refresh_title();
   }

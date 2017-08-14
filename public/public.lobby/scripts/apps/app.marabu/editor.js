@@ -22,7 +22,7 @@ function Editor()
     var html = "";
 
     html += "  <div class='pattern' id='pattern_controller' style='width:130px; display:inline-block; vertical-align:top; border-left:1px solid #333; padding-left:30px; margin-left:-5px'>";
-    html += "    <h1 class='lh30' style='width:105px'><b id='pat_title'>PAT</b> <input id='rpp' type='text' size='3' value='' title='Rows per pattern' class='bh fh'  style='float:right; text-align:right; height:30px; color:#999; line-height:30px; background:transparent'/></h1>";
+    html += "    <h1 class='lh30' style='width:105px'><b id='pat_title'>PAT</b> <t id='rpp' class='bh fh' style='float:right; text-align:right; height:30px; color:#999; line-height:30px; background:transparent'/></h1>";
     html += "    <div id='pattern'><table class='tracks' id='pattern-table'></table>";
     html += "  </div>";
 

@@ -22,6 +22,7 @@ function Marabu()
     "methods/save",
     "methods/play",
     "methods/stop",
+    "methods/set",
 
     "core/jammer",
     "core/player-small",
@@ -58,7 +59,10 @@ function Marabu()
     this.app.wrapper_el.innerHTML += this.app.editor.build();
     this.app.wrapper_el.innerHTML += this.app.instrument.build();
 
-    setTimeout(function(){ gui_init(); }, 100); 
+    GUI = new CGUI();
+    GUI.init();
+
+    lobby.apps.marabu.sequencer.select();
   }
 
   this.draw = function()
@@ -89,6 +93,7 @@ function Marabu()
   this.status = function()
   {
     var html = "";
+    
     html += this.sequencer.status();
     html += this.editor.status();
     html += this.instrument.status();
