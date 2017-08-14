@@ -84,6 +84,9 @@ var CGUI = function()
   var mPlayer = new CPlayer();
   var mJammer = new CJammer();
 
+  this.mAudio = function(){ return mAudio; }
+  this.mAudio_timer = function(){ return mAudioTimer; }
+
   this.mJammer = mJammer;
 
   var mPreload = [];
@@ -269,7 +272,7 @@ var CGUI = function()
 
   var stopAudio = function ()
   {
-    stopFollower();
+    lobby.apps.marabu.sequencer.follower.stop();
     if (mAudio) {
       mAudio.pause();
       mAudioTimer.reset();
@@ -330,6 +333,11 @@ var CGUI = function()
   // (end of playback follower)
   //----------------------------------------------------------------------------
 
+  this.stop_song = function()
+  {
+    stopAudio();
+  }
+
   this.play_song = function()
   {
     this.update_bpm(120);
@@ -346,20 +354,13 @@ var CGUI = function()
     var doneFun = function(wave)
     {
       console.log("playing..")
-      startFollower();
+      lobby.apps.marabu.sequencer.follower.start();
       mAudio.src = URL.createObjectURL(new Blob([wave], {type: "audio/wav"}));
       mAudioTimer.reset();
       mAudio.play();
-      console.log(mAudio)
     };
     generateAudio(doneFun);
   }
-
-  var stopPlaying = function(e)
-  {
-    stopAudio();
-  };
-
 
 
 
@@ -475,7 +476,7 @@ function Sequencer()
     var html = "";
 
     html += "  <div class='sequencer' id='sequence_controller' style='width:120px; display:inline-block; vertical-align:top'>";
-    html += "    <h1 class='lh30' style='width:90px'><b id='seq_title'>SEQ</b> <input id='bpm' type='text' size='3' value='' title='Beats per minute (song speed)' class='bh fh' style='float:right; text-align:right; height:30px; color:#999; line-height:30px'/><hr /></h1>";
+    html += "    <h1 class='lh30' style='width:90px'><b id='seq_title'>SEQ</b> <input id='bpm' type='text' size='3' value='' title='Beats per minute (song speed)' class='bh fh' style='float:right; text-align:right; height:30px; color:#999; line-height:30px; background:transparent'/><hr /></h1>";
     html += "    <div id='sequencer'><table class='tracks' id='sequencer-table'></table></div>";
     html += "  </div>";
 
@@ -565,12 +566,6 @@ function Sequencer()
       app.editor.select(0,0,0,0);
       app.sequencer.deselect();
     }
-  }
-
-  this.play = function()
-  {
-    console.log("play!");
-    GUI.play_song();
   }
 
   function bpm_update(e)

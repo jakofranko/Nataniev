@@ -208,6 +208,8 @@ function UI_Slider(id,name = "UNK",min = 0,max = 255)
   this.value_el = document.createElement("input");
   this.slide_el = document.createElement("div");
 
+  this.value_el.style.backgroundColor = "transparent";
+
   this.is_selected = false;
 
   this.install = function()
@@ -230,7 +232,6 @@ function UI_Slider(id,name = "UNK",min = 0,max = 255)
 
     // Value Input
     this.value_el.className = "w2";
-    this.value_el.style.backgroundColor = "black";
     this.value_el.style.marginLeft = "10px";
     this.value_el.value = this.min+"/"+this.max;
 
@@ -288,7 +289,7 @@ function UI_Slider(id,name = "UNK",min = 0,max = 255)
     else if(parseInt(this.value_el.value) == this.max){ this.value_el.style.color = "#fff"; }
     else{ this.value_el.style.color = "#999"; }
 
-    this.slide_el.innerHTML = "<svg class='fh' style='width:30px;height:15px; stroke-dasharray:1,1; fill:none; stroke-width:10px; stroke-linecap:butt;'><line x1='0' y1='7.5' x2='30' y2='7.5' stroke='#999'/><line x1='0' y1='7.5' x2='"+parseInt(this.percentage() * 30)+"' y2='7.5' stroke='#fff'/></svg>";
+    this.slide_el.innerHTML = "<svg class='fh' style='width:30px;height:15px; stroke-dasharray:1,1; fill:none; stroke-width:10px; stroke-linecap:butt;'><line x1='0' y1='7.5' x2='30' y2='7.5' class='fl'/><line x1='0' y1='7.5' x2='"+parseInt(this.percentage() * 30)+"' y2='7.5' class='fh'/></svg>";
   }
 
   this.percentage = function()

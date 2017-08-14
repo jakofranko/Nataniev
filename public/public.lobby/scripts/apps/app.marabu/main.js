@@ -20,6 +20,8 @@ function Marabu()
     "methods/export",
     "methods/import",
     "methods/save",
+    "methods/play",
+    "methods/stop",
 
     "core/jammer",
     "core/player-small",
@@ -98,18 +100,6 @@ function Marabu()
     this.app.instrument.when.key(key);
     this.app.editor.when.key(key);
     this.app.sequencer.when.key(key);
-
-    if(this.app.sequencer.edit_mode == false && this.app.editor.edit_mode == false && this.app.instrument.edit_mode == false){
-      if(key == " "){
-        this.app.sequencer.play();
-      }
-      if(key == "p"){
-        GUI.export_wav();
-      }
-      if(key == "o"){
-        GUI.export_js();
-      }
-    }
   }
 }
 
