@@ -156,15 +156,15 @@ function Editor()
 
   this.refresh = function()
   {
-    this.refresh_table();
     this.refresh_title();
+    this.refresh_table();
   }
 
   this.refresh_title = function()
   {
-    var html = "PAT ";
+    var html = "PAT "+(this.pattern.id > -1 ? this.pattern.id : "");
 
-    if(this.edit_mode){ html += this.pattern.id+":"+this.selection.x2+":"+this.selection.y2; }
+    if(this.edit_mode){ html += " "+this.selection.x2+":"+this.selection.y2; }
 
     document.getElementById("pat_title").innerHTML = html;
   }

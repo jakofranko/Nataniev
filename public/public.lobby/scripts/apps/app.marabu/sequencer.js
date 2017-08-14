@@ -469,7 +469,7 @@ function Sequencer()
   {
     var html = "SEQ ";
 
-    if(this.edit_mode){ html += this.selection.x2+":"+this.selection.y2; }
+    if(this.edit_mode){ html += this.selection.y2; }
 
     document.getElementById("seq_title").innerHTML = html;
   }
@@ -536,9 +536,10 @@ function Sequencer()
       if(key == "arrowup"){ target.select_move(0,-1); return; }
       if(key == "arrowdown"){ target.select_move(0,1); return; }
 
-      if(["0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f","escape","backspace"].indexOf(key) == -1){ console.log("SEQ: Unknown Key",key); return; }
+      if(["0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f","escape","backspace","enter"].indexOf(key) == -1){ console.log("SEQ: Unknown Key",key); return; }
       
       if(key == "backspace"){ key = 0; }
+      if(key == "enter"){ console.log(app.editor.pattern.id) }
 
       var i = target.selection.x2;
       var p = target.selection.y2;
