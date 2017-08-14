@@ -3,8 +3,8 @@ function Terminal()
 	App.call(this);
 
   this.name = "terminal";
-  this.size = {width:lobby.size.width,height:30};
-  this.origin = {x:0,y:0};
+  this.size = {width:lobby.window.size.width,height:30};
+  this.origin = {x:0,y:150};
   this.theme = "ghost";
   this.methods.say = {name:"say"};
 
@@ -12,9 +12,9 @@ function Terminal()
 
   this.widget_el = document.createElement("t");
 
-  this.on_launch = function()
+  this.setup.start = function()
   {
-    this.say("init");
+    this.app.say("init");
   }
 
   this.say = function(q)
@@ -40,7 +40,7 @@ function Terminal()
 
     html = "";
     for(log_id in this.logs){
-      html += "<ln class='half ff'><t class='f9 w2 di'> "+this.logs[log_id].time+"</t><t class='di w1 f9'>"+this.logs[log_id].glyph+"</t><t>"+this.logs[log_id].text+"</t></ln>\n";
+      html += "<ln class='half ff'><t class='ff w2 di'> "+this.logs[log_id].time+"</t><t class='di w1 f9'>"+this.logs[log_id].glyph+"</t><t>"+this.logs[log_id].text+"</t></ln>\n";
     }
 
     while(this.logs.length > 20){
@@ -48,8 +48,8 @@ function Terminal()
     }
 
     this.wrapper_el.innerHTML += html;
-    this.resize_window_to(lobby.size.width - 60,this.logs.length * 15)
+    this.window.resize_to({width:lobby.window.size.width - 60,height:this.logs.length * 15})
   }
 }
 
-lobby.install_callback("Terminal");
+lobby.summon.confirm("Terminal");

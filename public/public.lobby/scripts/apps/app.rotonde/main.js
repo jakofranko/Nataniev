@@ -55,4 +55,4 @@ function Rotonde()
   }
 }
 
-lobby.install_callback("Rotonde");
+lobby.summon.confirm("Rotonde");

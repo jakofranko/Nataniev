@@ -2,6 +2,20 @@
 ~ NOTE : YAML
 ~ AUTH : Devine Lu Linvega
 
+GRIMGRAINS
+  Diary
+    Merge daily results into a graph
+    Move logo at the top
+
+HUNDRED RABBITS
+  Video
+    August Episode
+    Nataniev Capsule
+  Soundtrack
+    Release 17Q1  
+  Misc
+    Draft sailing notes book
+
 LOBBY
   Generic
     Save lobby settings into file
@@ -10,61 +24,33 @@ LOBBY
     Splash
     .set_theme
     Add soyuz theme(orange/black)
-  Commander
-    Update tree
-    Autocomplete
-    Stasis & Recipes
-  Branding
-    Record video
-    Video -> AFK
-    Video -> Calendar
-    Video -> Ronin
-    Video -> Marabu
-    Video -> Ide(intro)
-    Video -> Ide(Update Grimgrains)
-    Video -> Twitter client
+    Update tree from commander
   App
-    .reload
-    Migrate CSS to highlights/backgrounds/etc.. and themes
-    Highlight color
-    Implement invoke
-
-TWITTER
-  Generic
-    Rebuild APIs
-    Rebuild frontend with new templates
+    Dynamic reload
+    .end
+    application descriptions
 
 IDE
-  Browser
-    Hint view with line numbers
-    Hide navi if no navigation is found
-    Display file lines length
-    Display line numbers at Navi Markers
+  Navi
+    Display file with changes
   Editor
     .replace
-    .new[file/folder]
-    .rename
+    .save/rename <path>
 
 MARABU
-  Generic
-    Make completely OOP
-    Make Nataniev native version
   Sequencer
     Make longer tracks
-    New design without tables
   Pattern
     Merge with MOD
     Animate MOD
     Preserve pattern data on pattern lenghts change
     Change time signature
+    Effect -> Re-implement
+    Follower -> Fix
   Instrument
     Fix issue with MOD
-    On slider release, animate to position
 
 RONIN
-  Generic
-    Make Nataniev native version
-    Implement Incantation() invocation
   Tools
     Zoom in/out
     Export with size
@@ -81,6 +67,8 @@ ROTONDE
 OSCEAN
   Generic
     Write Lobby docs
+    Write sailing notes docs
+    Write breathing exercises
   Horaire
     Migrate to equal-month calendar
 
@@ -102,6 +90,7 @@ THOUSAND ROOMS
 CORTEGE
   Large Maze
   iPhone Ratio maze
+  Send invoice
 
 DONSOL
   Generic
@@ -116,10 +105,6 @@ ENGLISH
 OQUONIE
   Generic
     Port to Ionic
-
-ALICEFFEKT
-  Hundred Rabbits
-    Release 17Q1
 
 NEAUISMETICA
   Generic

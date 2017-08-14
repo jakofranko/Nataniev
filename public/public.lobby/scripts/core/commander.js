@@ -6,6 +6,7 @@ function Commander()
 	this.notification_el = document.createElement("yu"); this.notification_el.className = "notification";
 	this.hint_el = document.createElement("yu"); this.hint_el.className = "hint";
 	this.browser_el = document.createElement("yu"); this.browser_el.className = "browser";
+  this.status_el = document.createElement("yu"); this.status_el.className = "status";
 
 	this.input_el.setAttribute("autocomplete","off")
 	this.input_el.setAttribute("autocorrect","off")
@@ -17,22 +18,113 @@ function Commander()
 	this.el.appendChild(this.input_el);
 	this.el.appendChild(this.hint_el);
 	this.el.appendChild(this.notification_el);
-	this.el.appendChild(this.browser_el);
-
-	this.input_el.addEventListener('input', input_change, false);
+  this.el.appendChild(this.browser_el);
+  this.el.appendChild(this.status_el);
 
 	this.app = null;
 	this.tree = [];
+  this.autocomplete = null;
 
-	this.install = function()
-	{
-		this.update_hint();
-		this.input_el.focus();
-		this.get_tree();
-	}
+  this.bind = function(app)
+  {
+    this.release();
+    console.log("commander.bind",app.name);
+    this.app = app;
+    this.app.when.bind();
+    document.title = "NAT | "+app.title();
+  }
 
-	this.get_tree = function()
-	{
+  this.release = function()
+  {
+    if(!this.app){ return; }
+    console.log("commander.release",this.app.name);
+    this.app = null;
+  }
+
+  this.next_app = function()
+  {
+    this.input_el.focus();
+    console.log("!!")
+  }
+
+  this.key_down = function(e = null)
+  {
+    lobby.commander.hide_browser();
+
+    if(e && e.key == "Enter"){
+      lobby.commander.run();
+    }
+
+    if(e && e.key == "Escape"){
+      if(lobby.commander.input_el.value == ""){
+        lobby.commander.input_el.blur();
+      }
+      lobby.commander.inject("");
+      lobby.commander.update_hint();
+    }
+
+    // Check for passive
+    var value = lobby.commander.input_el.value;
+    if(value.indexOf(".") > -1 && value.indexOf(" ")){
+      var app_name = value.split(" ")[0].split(".")[0];
+      var method_name = value.split(" ")[0].split(".")[1];
+      var app = lobby.apps[app_name];
+
+      var param = value.split(" "); param.shift(); param = param.join(" ").trim();
+      var settings = null;
+
+      // Parse Settings
+      if(param.indexOf("<") > -1 && param.indexOf(">") > -1){
+        settings = param.split("<")[1].replace(">","").trim();
+        param = param.split("<")[0];
+      }
+      
+      if(app && app.methods[method_name] && app.methods[method_name].passive){
+        app[method_name](param,true,settings);
+        lobby.commander.bind(app);
+      }
+    }
+
+    lobby.commander.update_hint();
+  }
+
+  this.run = function(cmd = lobby.commander.input_el.value)
+  {
+    var value = cmd;
+    var app_name = value.split(" ")[0].split(".")[0];
+    var method_name = value.split(" ")[0].split(".")[1] ? value.split(" ")[0].split(".")[1] : "default";
+    var app = lobby.apps[app_name];
+
+    if(!app){ console.log("Unknown app",app_name); return; }
+    if(!app.methods[method_name]){ console.warn("Unknown method "+method_name); return; }
+
+    var param = value.split(" "); param.shift(); param = param.join(" ").trim();
+    var settings = null;
+
+    // Parse Settings
+    if(param.indexOf("<") > -1 && param.indexOf(">") > -1){
+      settings = param.split("<")[1].replace(">","").trim();
+      param = param.split("<")[0];
+    }
+
+    app[method_name](param,false,settings);
+    lobby.commander.bind(app);
+    this.input_el.value = "";
+    this.update_hint();
+    this.update_status();
+
+    lobby.apps.terminal.log(value,">");
+  }
+
+  this.install = function()
+  {
+    this.update_hint();
+    this.input_el.focus();
+    this.get_tree();
+  }
+
+  this.get_tree = function()
+  {
     var app = this;
     $.ajax({url: '/ide.tree',
       type: 'POST', 
@@ -42,7 +134,7 @@ function Commander()
         app.tree = a;
       }
     })
-	}
+  }
 
 	// Fuzzy
 
@@ -73,13 +165,17 @@ function Commander()
 
     var html = "";
     if(candidates.length < 1){
-      html += "No candidates found."
+      html += "No candidates found in "+this.tree.length+" files.";
     }
     else{
     	var i = 0;
       for(candidate_id in candidates){
       	if(i > 7){ break; }
-        html += "<ln class='lh15 "+(candidate_id == candidates.length-1 ? 'b0 ff' : 'f0')+"'>"+candidates[candidate_id]+'</ln>';
+        var file_path = candidates[candidate_id];
+        var path_part = file_path.split("/");
+        var file_name = path_part[path_part.length-1].replace("/","");
+        var file_loca = file_path.replace(file_name,"");
+        html += "<ln class='lh15 "+(candidate_id == 0 ? 'b0 ff' : 'f0')+"'><t>"+file_loca+"</t><b>"+file_name+"</b></ln>";
         i += 1;
       }  
     }
@@ -89,7 +185,7 @@ function Commander()
 	this.select_candidate = function(t,formats)
 	{
 		var candidates = this.find_candidates(t,formats);
-		return candidates[candidates.length-1];
+		return candidates[0];
 	}
 
 	this.hide_browser = function()
@@ -105,7 +201,6 @@ function Commander()
 	this.select = function(app)
 	{
 		this.app = app;
-		this.update();
 		lobby.commander.update_hint();
 	}
 
@@ -117,42 +212,25 @@ function Commander()
 		this.app = null;
 	}
 
-	this.validate = function()
-	{
-		if(!this.app){ console.warn("No app selected"); return; }
-		if(this.input_el !== document.activeElement){ return; }
+  this.update_status = function(text = null)
+  {
+    if(!this.app){ return; }
 
-		var input = this.input_el.value;
-		var method_name = input.indexOf(".") < 1 ? "default" : input.split(" ")[0].split(".")[1];
+    this.status_el.innerHTML = "<b>"+this.app.name+"</b> "+(text ? text : this.app.status());
+  }
 
-		if(!this.app[method_name]){ console.warn("Unknown method "+method_name); return; }
-
-		var value = input.replace(this.app.name+"."+method_name,"").trim();
-		this.app[method_name](value);
-		this.input_el.value = "";
-		this.update_hint();
-	}
-
-	function input_change()
-	{
-		var value = lobby.commander.input_el.value;
-		var target_app = value.indexOf(".") > -1 ? lobby.apps[value.split(".")[0]] : lobby.apps[value];
-
-		if(target_app){ lobby.commander.select(target_app); target_app.on_input_change(value); }
-		else{ lobby.commander.deselect(); }
-
-		lobby.commander.update_hint();
-	}
-
-	this.update_hint = function()
+	this.update_hint = function(injection = null)
 	{
 		var html = "";
 		var value = this.input_el.value;
 		var app_name = value.split(".")[0].toLowerCase();
 
-		html += value != "" ? "<span class='input'>"+value+"</span> " : "";
+		html += value != "" ? "<span class='input'>"+value+"</span>" : "";
 
-		if(lobby.apps[app_name]){
+    if(injection){
+      html += injection;
+    }
+		else if(lobby.apps[app_name]){
 			html += lobby.apps[app_name].hint(value);
 		}
 		else{
@@ -161,40 +239,73 @@ function Commander()
 		this.hint_el.innerHTML = html;
 	}
 
-	this.hint = function()
+	this.hint = function(val)
 	{
 		html = "";
-		for(app_id in lobby.apps){
-			html += "<span class='application'>"+lobby.apps[app_id].name+"</span> ";
-		}
+
+    if(val.trim() == ""){
+      for(app_id in lobby.apps){
+        html += "<span class='application'>"+lobby.apps[app_id].name+"</span> ";
+      }  
+    }
+    else{ 
+      for(app_id in lobby.apps){
+        var app_name = lobby.apps[app_id].name;
+        if(app_name.indexOf(val) > -1){
+          html += "<t class='autocomplete'>"+app_name.replace(val,'')+"</t>";
+          this.autocomplete = app_name+".";
+          break;
+        }
+      }
+    }
+
 		return html
-	}
-
-	this.update = function()
-	{
-
 	}
 
 	this.inject = function(val)
 	{
+    this.autocomplete = null;
 		this.input_el.value = val;
-		input_change();
+    this.key_down();
 	}
 
 	this.install_widget = function(el)
 	{
-		console.log("installing widget",el);
 		this.widgets_el.appendChild(el);
 	}
 
 	this.notify = function(content)
 	{
 		this.notification_el.innerHTML = content;
-    $(this.notification_el).css('opacity','1').delay(1000).animate({ opacity: 0 }, 300);
+    $(this.notification_el).css('opacity','1').delay(2000).animate({ opacity: 0 }, 300);
+    lobby.apps.terminal.log(content,"!");
 	}
 
 	this.is_typing = function()
 	{
+    // if(document.activeElement.type == "input"){ return true; }
 		return this.input_el === document.activeElement ? true : false;
 	}
+
+  this.on_key = function(k)
+  {
+    if(k == "Escape"){ this.hide_browser(); this.inject(""); }
+  }
+
+  this.touch_cmd = function(e)
+  {
+    lobby.commander.run(e.target.command);
+  }
+
+  this.create_cmd = function(html,cmd = null,class_name = "")
+  {
+    var cmd_el = document.createElement("cmd");
+    cmd_el.innerHTML = html;
+    cmd_el.command = cmd;
+    cmd_el.className = class_name;
+    cmd_el.addEventListener('mousedown', this.touch_cmd, false);
+    return cmd_el;
+  }
+
+  this.input_el.onkeydown = this.key_down;
 }

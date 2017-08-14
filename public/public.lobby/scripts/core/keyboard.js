@@ -13,48 +13,34 @@ function Keyboard()
   
   this.listen_onkeydown = function(event)
   {
-    if(event.shiftKey == true){
-      this.shift_held = true;
+    if(lobby.commander.is_typing() && lobby.commander.autocomplete && event.key == "Tab" ){
+      lobby.commander.inject(lobby.commander.autocomplete);
+      event.preventDefault();
     }
-    if(event.altKey == true){
-      this.alt_held = true;
-
-      switch (event.key || event.keyCode || event.which)
-      {
-        case "ArrowUp": event.preventDefault(); break;
-        case "ArrowDown": event.preventDefault(); break;
-        case "ArrowLeft": event.preventDefault(); break;
-        case "ArrowRight": event.preventDefault(); break;
+    else if(lobby.commander.app){ 
+      if(event.ctrlKey && event.key.toLowerCase() != "control"){
+        lobby.commander.app.when.control_key(event.key.toLowerCase());
+        event.preventDefault();
       }
-    }
-
-    if(event.ctrlKey && event.key.toLowerCase() != "control" && this.host){
-      this.host.on_shortcut(event.key.toLowerCase());
-    }
-    if(event.altKey && event.key.toLowerCase() != "alt" && this.host){
-      this.host.on_option(event.key.toLowerCase());
+      else if(event.altKey && event.key.toLowerCase() != "alt"){
+        lobby.commander.app.when.option_key(event.key.toLowerCase(),event.keyCode);
+        event.preventDefault();
+      }
+      else if(!lobby.commander.is_typing()){
+        lobby.commander.app.when.key(event.key.toLowerCase());
+        if(event.altKey && event.key == "Tab"){ lobby.commander.input_el.focus(); event.preventDefault(); }
+        if(event.key == "Tab"){ event.preventDefault(); }
+      }
     }
   }
 
   this.listen_onkeyup = function(event)
   {
-    event.preventDefault();
-
-    this.host = !lobby.commander.app ? lobby.commander : lobby.commander.app;
-
-    switch (event.key || event.keyCode || event.which)
-    {
-      case "ArrowUp": this.host.key_arrow_up(); break;
-      case "ArrowDown": this.host.key_arrow_down(); break;
-      case "ArrowLeft": this.host.key_arrow_left(); break;
-      case "ArrowRight": this.host.key_arrow_right(); break;
-
-      case "Escape" || 27:  this.host.key_escape(); break;
-      // case "Backspace" || 8:  this.host.key_delete(); break;
-      case "Enter" :  this.host.key_enter(); break;
-      case 192: this.host.key_back_quote(); break;
+    // Tab
+    if(event.keyCode == 9 && event.ctrlKey){
+      lobby.commander.input_el.focus();
+      lobby.commander.update_hint();
+      event.preventDefault();
     }
-    this.shift_held = false;
-    this.alt_held = false;
   }
 }

@@ -4,3 +4,5 @@ lobby.apps.ronin.resize = function(param)
 {
 
 }
+
+lobby.apps.ronin.setup.confirm("methods/resize");

@@ -166,6 +166,11 @@ class CorpseHttp
     add_script("core/lobby.js")
     add_script("core/commander.js")
     add_script("core/keyboard.js")
+    
+    add_script("core/app.setup.js")
+    add_script("core/app.window.js")
+    add_script("core/app.touch.js")
+    add_script("core/app.events.js")
     add_script("core/app.js")
 
   end

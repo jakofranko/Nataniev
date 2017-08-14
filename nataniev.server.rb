@@ -111,3 +111,13 @@ post '/dict.load' do
   return h.to_json
 
 end
+
+
+post '/twitter.feed' do
+
+  account = params["account"]
+
+  require_relative "vessel/vessel.twitter.rb"
+  return $nataniev.summon(:twitter).new.act(:feed,account)
+
+end

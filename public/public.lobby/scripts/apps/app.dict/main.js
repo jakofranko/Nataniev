@@ -3,15 +3,17 @@ function Dict()
   App.call(this);
 
   this.name = "dict";
-  this.size = {width:600,height:360};
-  this.origin = {x:120,y:120};
-  this.methods.find = {name:"find", shortcut:"f"};
+  this.window.size = {width:600,height:360};
+  this.window.pos = {x:120,y:120};
+
+  this.methods.find = {name:"find", shortcut:"f", passive:true};
+  this.methods.reset = {name:"reset", shortcut:"r", run_shortcut:true};
 
   this.payload = null;
 
-  this.on_launch = function()
+  this.setup.start = function()
   {
-    this.reload();
+    this.app.reload();
   }
 
   this.reload = function()
@@ -26,31 +28,17 @@ function Dict()
         var a = JSON.parse(response);
         app.payload = a;
         app.wrapper_el.innerHTML = "Ready. ";
-        // app.refresh();
         app.find("");
       }
     })
   }
 
-  this.refresh = function()
+  this.reset = function()
   {
-    var html = "";
-    var count = 0;
-    for(english in this.payload){
-      count += 1;
-    }
-    this.wrapper_el.innerHTML = "<list>Found "+count+" words.</li>";
+    this.find("");
   }
 
-  this.on_input_change = function(val)
-  {
-    if(val.split(" ")[0] != "dict.find"){ return; }
-
-    query = val.split(" "); query.shift(); query = query.join(" ").trim();
-    this.find(query);
-  }
-
-  this.find = function(q)
+  this.find = function(q, is_passive = false)
   {
     var html = "";
     var count = 0;
@@ -65,6 +53,7 @@ function Dict()
 
     var header = q == "" ? "<hl style='margin-bottom:15px'>English - Lietal - Russian Dictionary</hl>" : "<hl style='margin-bottom:15px'>Found "+count+" results for \""+q+"\".</hl>";
     this.wrapper_el.innerHTML = header+"<list style='column-count:3'>"+html+"</list>";
+    lobby.commander.update_status();
   }
 
   this.print_word = function(en,word,q)
@@ -77,6 +66,18 @@ function Dict()
     }
     return "<ln class='lh15'>"+html+"</ln>";
   }
+
+  this.status = function()
+  {
+    var html = "";
+    var count = {sum:0,russian:0,lietal:0};
+    for(english in this.payload){
+      count.sum += 1;
+      if(this.payload[english].lietal){ count.lietal += 1; }
+      if(this.payload[english].russian){ count.russian += 1; }
+    }
+    return count.sum+" words "+count.lietal+" lietal "+count.russian+" russian";
+  }
 }
 
-lobby.install_callback("Dict");
+lobby.summon.confirm("Dict");

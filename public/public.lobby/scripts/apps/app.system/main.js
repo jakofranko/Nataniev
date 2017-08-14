@@ -3,27 +3,34 @@ function System()
   App.call(this);
 
   this.name = "system";
-  this.size = {width:420,height:300};
-  this.origin = {x:300,y:30};
-  this.methods.set_wallpaper = {name:"set_wallpaper"};
-  this.methods.set_theme = {name:"set_theme"};
+  
+  this.window.size = {width:420,height:420};
+  this.window.pos = {x:300,y:30};
 
-  this.formats = ["jpg","png"];
+  this.methods.set_wallpaper = {name:"set_wallpaper",passive:true};
+  this.methods.set_theme = {name:"set_theme"};
+  this.methods.aquire = {name:"aquire"};
 
   this.widget_el = document.createElement("t"); this.widget_el.className = "toggle";
 
-  this.on_installation_complete = function()
+  this.setup.ready = function()
   {
-    lobby.commander.install_widget(this.widget_el);
-    this.on_window_resize();
+    lobby.commander.install_widget(this.app.widget_el);
 
-    var app = this;
-    this.widget_el.addEventListener("mousedown", function(){ app.toggle() }, true);
+    var app = this.app;
+    app.widget_el.addEventListener("mousedown", function(){ app.window.toggle() }, true);
+    
+    this.app.when.resize();
   }
 
-  this.on_launch = function()
+  this.setup.start = function()
   {
-    this.update();
+    this.app.update();
+  }
+
+  this.aquire = function()
+  {
+    lobby.commander.get_tree();
   }
 
   this.update = function()
@@ -58,28 +65,37 @@ function System()
     }
   }
 
-  this.on_window_resize = function()
+  this.when.resize = function()
   {
-    this.widget_el.innerHTML = lobby.size.width+"x"+lobby.size.height;
+    this.app.widget_el.innerHTML = lobby.window.size.width+"x"+lobby.window.size.height;
   }
 
   this.set_wallpaper = function(val, is_passive = false)
   {
     if(is_passive){
       lobby.commander.show_browser();
-      lobby.commander.browse_candidates(val,this.formats);
+      lobby.commander.browse_candidates(val,["jpg","png"]);
+      return;
     }
-    else{
-      lobby.commander.hide_browser();
-      lobby.el.style.backgroundImage = "url(/"+lobby.commander.select_candidate(val,this.formats).replace('/public','')+")";
-      lobby.commander.notify("Updated Wallpaper")
-    }    
+    lobby.commander.hide_browser();
+    lobby.wallpaper_el.style.backgroundImage = "url(/"+lobby.commander.select_candidate(val,["jpg","png"]).replace('/public','')+")";
+    lobby.commander.notify("Updated Wallpaper")   
   }
 
   this.set_theme = function()
   {
 
   }
+
+  this.status = function()
+  {
+    var app_count = 0;
+    for(app_id in lobby.apps){
+      app_count += 1;
+    }
+
+    return app_count+" Applications";
+  }
 }
 
-lobby.install_callback("System");
+lobby.summon.confirm("System");

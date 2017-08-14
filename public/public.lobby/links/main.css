@@ -1,47 +1,36 @@
-body {}
-yu { display: block; font-family: 'input_mono_regular'; font-size:11px; line-height: 30px; vertical-align: top}
-list { display: block }
-ln { display: block;}
-ln i { color:#999; }
-hl { line-height: 29px; font-family: 'input_mono_medium'; display: block; border-bottom:1px solid black; }
-t { vertical-align: top; display: inline-block; }
-svg { display: inline-block; vertical-align: top }
-textarea { background:none; padding:px 0px; line-height: 15px; overflow: hidden}
-b { font-weight: normal; font-family: 'input_mono_medium'}
-#lobby { width:calc(100vw - 60px); height:calc(100vh - 60px);background:black; margin:30px auto 0px auto; position:relative; border-radius: 2px; overflow: hidden}
-#grid { background-image:url(../media/graphics/grid.svg); width:100%; height:100%; background-position: 15px 15px; position:absolute; opacity: 0.5}
-#lobby { background-image:url(../media/images/wallpaper2.jpg); background-size:cover; background-position: center center; background-color: #efefef}
+body      {}
+yu        { display: block; font-family: 'input_mono_regular'; font-size:11px; line-height: 30px; vertical-align: top}
+list      { display: block }
+ln        { display: block;}
+ln i      { color:#999; }
+hl        { line-height: 29px; font-family: 'input_mono_medium'; display: block; border-bottom:1px solid black; }
+t         { vertical-align: top; display: inline-block; }
+svg       { display: inline-block; vertical-align: top }
+textarea  { background:none; padding:px 0px; line-height: 15px; overflow: hidden}
+b         { font-weight: normal; font-family: 'input_mono_medium'}
+
+#lobby                  { width:calc(100vw - 60px); height:calc(100vh - 60px);background:black; margin:30px auto 0px auto; position:relative; border-radius: 2px; overflow: hidden;}
+#lobby.ready #wallpaper { opacity: 1 }
+#lobby #wallpaper       { width:100%; height:100%; background-image:url(../media/images/wallpaper2.jpg); background-size:cover; background-position: center center; opacity: 0; transition: opacity 500ms;}
+#lobby #grid            { background-image:url(../media/graphics/grid.svg); width:100%; height:100%; background-position: 15px 15px; position:absolute; opacity: 0.5}
 
 #commander { background:white; height:30px; width:30px; position:absolute; bottom:0px; width:100%; vertical-align: top; z-index:9000; }
-#commander > input { display: inline-block; line-height: 20px; padding:5px 0px; position:absolute;top:0px;left:0px; width:calc(100vw - 90px); font-size:11px; z-index:9002; background:transparent;}
-#commander > .hint { position: absolute; top:0px; z-index: 9001; left:0px; line-height: 20px; padding:5px 0px;}
-#commander > .hint .input { color:white; display: inline-block; margin-right: 5px }
+#commander > input { display: inline-block; line-height: 20px; padding:5px 0px; position:absolute;top:0px;left:15px; width:calc(100vw - 90px); font-size:11px; z-index:9002; background:transparent;}
+#commander > .hint { position: absolute; top:0px; z-index: 9001; left:15px; line-height: 20px; padding:5px 0px;}
+#commander > .hint .input { color:white; display: inline-block; }
 #commander > .hint .application { font-family: 'input_mono_medium'; color:#999; }
+#commander > .hint .autocomplete { color:#999; text-decoration: underline; }
 #commander > .hint .method { font-family: 'input_mono_medium' }
 #commander > .hint .method.global { color:#999; }
 #commander > .hint .param { color:#999; }
 #commander > .size { position: absolute; right:30px; top:0px;line-height: 20px; padding:5px 0px; color:#999;}
-#commander > .widgets { text-align: right; position: relative; z-index:9003;float:right; }
+#commander > .widgets { text-align: right; position: relative; z-index:9003;float:right;background:white; margin-right:15px; }
 #commander > .widgets t { margin-left:15px; color:#999; }
 #commander > .widgets t.toggle { color:#000; }
 #commander > .widgets t.toggle:hover { text-decoration: underline; cursor: pointer;  }
-#commander > .notification { text-align: right; position: relative; z-index:9003;float:right; }
-#commander > .browser { display: none;
-background: white; position: absolute; bottom: 31px; left: 0px; width: 100%; max-height: 119px; color: black; padding:15px 0px; padding-left:30px; overflow:hidden;}
-
-.full { width:100%; height:calc(100% - 60px);}
-
-ln.half { line-height: 15px }
-
-.app { display: block; width:30px; height:30px; background:RGBA(255,255,255,1); position: absolute; top:60px; left:60px; padding:30px; color:black; overflow: hidden; z-index:20;}
-.app .wrapper { overflow: hidden; height:100%; overflow: hidden;height: 100%}
-.app.selected { z-index:8001; }
-.app.dragged { background-color:RGBA(255,255,255,0.3) !important; z-index:8002;}
-.app.hidden { display: none }
-
-.app.ghost { background:none; color:white; z-index:10; }
-.app.noir { background: black; color:white; }
-.app.noir hl { border-bottom:1px solid white; }
+#commander > .notification { text-align: right; position: relative; z-index:9003;float:right; font-family: 'input_mono_medium'; }
+#commander > .browser { display: none;background: white;position: absolute;bottom: 30px;left: 0px;width: 100%;max-height: 119px;color: black;padding: 15px 0px 0px 15px;overflow: hidden; z-index:60; }
+#commander > .status { position: absolute; top:-30px; width: calc(100% - 30px); padding-left:15px; color:white; }
 
 .di { display: inline-block; }
 .db { display: block; }
@@ -68,7 +57,10 @@ ln.half { line-height: 15px }
 .wf_4 { width: calc(100% - 120px) }
 .wf_6 { width: calc(100% - 180px) }
 .wf_7 { width: calc(100% - 210px) }
+.wf_8 { width: calc(100% - 240px) }
+.wf_9 { width: calc(100% - 270px) }
 
+.hf   { height:100%; }
 .hf_1 { height: calc(100% - 30px) }
 .hf_2 { height: calc(100% - 60px) }
 .hf_3 { height: calc(100% - 90px) }
@@ -144,7 +136,15 @@ ln.half { line-height: 15px }
 .rel { position: relative }
 
 .at { position:absolute; top:0px; }
-.al { position:absolute; left:0px; }
+.al  { position:absolute; left:0px; }
+.al1 { position:absolute; left:30px; }
+.al2 { position:absolute; left:60px; }
+.al3 { position:absolute; left:90px; }
+.al4 { position:absolute; left:120px; }
+.al5 { position:absolute; left:150px; }
+.al6 { position:absolute; left:180px; }
+.al7 { position:absolute; left:210px; }
+.al8 { position:absolute; left:240px; }
 .ab { position:absolute; bottom:0px; }
 .ar { position:absolute; right:0px; }
 
@@ -152,9 +152,41 @@ ln.half { line-height: 15px }
 
 .oh { overflow: hidden }
 
-.noir .sr { border-right: 1px solid #555; }
-.noir .sl { border-left: 1px solid #555; }
+.right { float:right; }
+.left { float:left; }
+.pointer { cursor:pointer; }
 
+/* HIGHLIGHTS/LOWLIGHTS */
 
+app { display: block; width:30px; height:30px; background:RGBA(0,0,0,1); position: absolute; top:60px; left:60px; padding:30px; color:black; overflow: hidden; z-index:20;}
+app { transition: background-color 150ms;}
+app .wrapper { overflow: hidden; height:100%; overflow: hidden;height: 100%}
+app.selected { z-index:8001; }
+app.dragged { background-color:RGBA(255,255,255,0.3) !important; z-index:8002;}
 
+app.blanc ::selection       { background: #eee; opacity:1.0; color:#000; }
+app.blanc     { background:white; color:black;  }
+app.blanc .fh { color:black; stroke:black; }
+app.blanc .bh { background:white;}
+app.blanc .fl { color:#ccc; stroke:#ccc; }
+app.blanc .bl { background:#A1A1A1;}
+app.blanc .cu:hover { background:#000; color:#fff; cursor:pointer;}
+
+app.noir ::selection       { background: #888; opacity:1.0; color:#999; }
+app.noir     { background: black; color:white; }
+app.noir .fh { color:white; stroke:white; }
+app.noir .bh { background:black;}
+app.noir .fl { color:#999; stroke:#999; }
+app.noir .bl { background:#A1A1A1;}
+app.noir .cu:hover { background:#fff; color:#000; cursor:pointer;}
+
+app.ghost ::selection       { background: #888; opacity:1.0; color:#999; }
+app.ghost     { background:none; color:white; z-index:10; }
+app.ghost .fh { color:white; stroke:white; }
+app.ghost .bh { background:black;}
+app.ghost .fl { color:#ccc; stroke:#ccc; }
+app.ghost .bl { background:#A1A1A1;}
+app.ghost .cu:hover { background:#fff; color:#000; cursor:pointer;}
+
+app.hidden { display: none }
 

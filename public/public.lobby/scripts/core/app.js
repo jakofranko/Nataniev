@@ -1,67 +1,71 @@
 function App()
 {
+  App_Setup.call(this);
+  App_Window.call(this);
+  App_Touch.call(this);
+  App_Events.call(this);
+
 	this.name = "global";
-	this.size = {width:60,height:60};
-	this.origin = {x:0,y:0};
-  this.theme = "default";
+
   this.methods = {};
+  this.methods.default = {name:"default",is_global:true};
   this.methods.exit = {name:"exit",is_global:true,shortcut:"w",run_shortcut:true};
-  this.methods.toggle = {name:"toggle",is_global:true,shortcut:"h",run_shortcut:true};
-  this.methods.ghost = {name:"ghost",is_global:true};
-  this.methods.warp_right = {name:"warp_right",is_global:true,shortcut:"]",run_shortcut:true};
-  this.methods.warp_left = {name:"warp_left",is_global:true,shortcut:"[",run_shortcut:true};
-  this.methods.warp_center = {name:"warp_center",is_global:true,shortcut:"=",run_shortcut:true};
-  this.methods.scale_right = {name:"scale_right",is_global:true,shortcut:"}",run_shortcut:true};
-  this.methods.scale_left = {name:"scale_left",is_global:true,shortcut:"{",run_shortcut:true};
-  this.methods.fill = {name:"fill",is_global:true,shortcut:"m",run_shortcut:true};
 
-  this.is_visible = false;
-  this.has_launched = false;
-
-	this.el = document.createElement("yu"); 
-	this.el.className = "app";
-	this.wrapper_el = document.createElement("yu"); 
-	this.wrapper_el.className = "wrapper";
+	this.el = document.createElement("app");
+	this.wrapper_el = document.createElement("yu"); this.wrapper_el.className = "wrapper";
 	this.el.appendChild(this.wrapper_el);
 
-  this.el.addEventListener("mousedown", mouse_down, false);
-  this.el.addEventListener("mouseup", mouse_up, false);
-  this.el.addEventListener("mousemove", mouse_move, false);
-
-  this.wrapper_el.addEventListener("mousedown", function(e){ e.stopPropagation(); }, false);
-
-  this.includes = [];
-
-  // Installation
-
-  this.install = function()
+  this.default = function()
   {
-    console.log("Installing "+this.name);
-    this.el.className = "app "+this.name+" "+this.theme;
-    this.el.id = this.name;
-    if(this.includes.length > 0){
-      this.install_includes(this.includes);
+    this.window.show();
+  }
+
+  this.toggle = function()
+  {
+    this.window.toggle();
+  }
+
+  this.hint = function(value)
+  {
+    var html = "";
+    var method = value.indexOf(".") > -1 ? value.split(".")[1].split(" ")[0] : null;
+
+    // Autocomplete
+    for(method_id in this.methods){
+      if(this.methods[method_id].is_global){continue; }
+      var method_name = this.methods[method_id].name;
+      if(method_name.indexOf(method) > -1){
+        html += "<t class='autocomplete'>"+method_name.replace(method,'')+"</t>";
+        lobby.commander.autocomplete = this.name+"."+method_name+" ";
+        break;
+      }
     }
-    this.on_installation_complete();
-  }
 
-  this.install_includes = function(files)
-  {
-    for(file_id in files){
-      this.try_include(files[file_id]);
+    if(this.methods[method]){
+      return "<span class='param'> "+(this.methods[method].params ? ' > '+this.methods[method].params : ' > ')+"</span> ";
     }
+    for(method_id in this.methods){
+      var method = this.methods[method_id];
+      if(method.is_global){ continue; }
+      html += " <span class='method'>."+method_id+(method.shortcut ? '('+method.shortcut+')' :'')+"</span> ";
+    }
+    for(method_id in this.methods){
+      var method = this.methods[method_id];
+      if(!method.is_global){ continue; }
+      html += " <span class='method global'>."+method_id+(method.shortcut ? '('+method.shortcut+')' :'')+"</span> ";
+    }
+    return html;
   }
 
-  this.try_include = function(file_name)
+  this.status = function()
   {
-    console.log("Including "+file_name+" to "+this.name);
-    var s = document.createElement('script');
-    s.type = 'text/javascript';
-    s.src = 'public.lobby/scripts/apps/app.'+this.name+'/'+file_name+'.js';
-    document.getElementsByTagName('head')[0].appendChild(s);
+    return "Idle.";
   }
 
-  // AJAX
+  this.title = function()
+  {
+    return this.name;
+  }
 
   this.call = function(method,params = null,vessel = this.name)
   {
@@ -101,375 +105,268 @@ function App()
     console.log(this.name+"."+url+" answered",r);
   }
 
-  this.default = function()
+  this.el.addEventListener("mousedown", this.touch.down, false);
+  this.el.addEventListener("mouseup", this.touch.up, false);
+  this.el.addEventListener("mousemove", this.touch.move, false);
+
+  this.wrapper_el.addEventListener("mousedown", function(e){ e.stopPropagation(); }, false);
+}
+
+function UI_Toggle(id,name = "UNK")
+{
+  this.id = id;
+  this.name = name;
+  this.el = document.getElementById(id);
+  this.value = 0;
+  this.el.style.cursor = "pointer";
+
+  var target = this;
+
+  this.install = function()
   {
-    this.show();
+    this.el.innerHTML = this.name;
+    this.update();
   }
 
-  this.on_launch = function()
+  this.update = function()
   {
-
+    this.el.style.color = this.value == 1 ? "#fff" : "#555";
+    lobby.apps.marabu.instrument.set_control(this.id,this.value);
   }
 
-  this.exit = function()
+  this.override = function(value)
   {
-    
+    this.value = value;
+    this.update();
   }
 
-  this.on_input_change = function(value){}
-  this.on_installation_complete = function(){}
-  this.on_exit = function(){}
-  this.on_resize = function(){}
-  this.on_move = function(){}
-  this.on_window_resize = function(){}
-
-  // Change styles
-
-  this.launch = function()
+  this.mouse_down = function()
   {
-    console.log("Launching "+this.name+", theme: "+this.theme);
-    $(this.el).css("width",0).css("height",0).css("top",this.origin.y).css("left",this.origin.x);
-    lobby.el.appendChild(this.el);
+    target.value = target.value == 1 ? 0 : 1;
+    target.update();
+  }
 
-    $(this.el).animate({ left: this.origin.x, top: this.origin.y, width: this.size.width, height: this.size.height }, 300, this.on_launch());
-    this.is_visible = true;
-    this.has_launched = true;
-    this.select();
+  this.el.addEventListener("mousedown", this.mouse_down, false);
+}
+
+function UI_Choice(id,name = "UNK",choices = [])
+{
+  this.id = id;
+  this.name = name;
+  this.choices = choices;
+  this.el = document.getElementById(id);
+  this.el.style.width = "60px";
+  this.el.style.display = "inline-block";
+  this.el.style.marginRight = "10px";
+  this.el.style.cursor = "pointer";
+
+  this.index = 0;
+
+  var target = this;
+
+  this.install = function()
+  {
+    this.el.innerHTML = "!";
+    this.update();
+  }
+
+  this.override = function(id)
+  {
+    this.index = id;
+    this.update();
+  }
+
+  this.update = function()
+  {
+    var target = this.choices[this.index % this.choices.length];
+    this.el.innerHTML = this.name+" <b>"+target+"</b>";
+
+    lobby.apps.marabu.instrument.set_control(this.id,this.index);
+  }
+
+  this.mouse_down = function()
+  {
+    target.index += 1;
+    target.index = target.index % target.choices.length;
+    target.update();
+  }
+
+  this.el.addEventListener("mousedown", this.mouse_down, false);
+}
+
+function UI_Slider(id,name = "UNK",min = 0,max = 255)
+{
+  this.id = id;
+  this.name = name;
+  this.min = min;
+  this.max = max;
+
+  this.width = 30;
+
+  this.el = document.getElementById(id);
+  this.name_el = document.createElement("span");
+  this.value_el = document.createElement("input");
+  this.slide_el = document.createElement("div");
+
+  this.value_el.style.backgroundColor = "transparent";
+
+  this.is_selected = false;
+
+  this.install = function()
+  {
+    this.el.setAttribute("class","slider");
+
+    // Name Span
+    this.name_el.setAttribute("class","w2 di");
+    this.name_el.style.height = "15px";
+    this.name_el.style.width = "30px";
+    this.name_el.style.verticalAlign = "top";
+    this.name_el.innerHTML = this.name;
+
+    // Slide Div
+    this.slide_el.className = "pointer";
+    this.slide_el.style.height = "15px";
+    this.slide_el.style.width = "30px";
+    this.slide_el.style.display = "inline-block";
+    this.slide_el.style.verticalAlign = "top";
+
+    // Value Input
+    this.value_el.className = "w2";
+    this.value_el.style.marginLeft = "10px";
+    this.value_el.value = this.min+"/"+this.max;
+
+    this.el.appendChild(this.name_el);
+    this.el.appendChild(this.slide_el);
+    this.el.appendChild(this.value_el);
+
+    this.slide_el.addEventListener("mousedown", mouse_down, false);
+    this.slide_el.addEventListener("mouseup", mouse_up, false);
+    this.slide_el.addEventListener("mousemove", mouse_move, false);
+    this.value_el.addEventListener('input', value_update, false);
+
+    this.value_el.addEventListener("mousedown", select, false);
+  }
+
+  this.override = function(v)
+  {
+    this.value = parseInt(v);
+    var range = parseInt(this.max) - parseInt(this.min);
+    var mar_left = (((this.value - parseInt(this.min))/parseFloat(range)) * this.width)+"px"
+    this.value_el.value = this.value;
+    this.save();
+    this.update();
+  }
+
+  this.save = function()
+  {
+    var value = this.value;
+    var instr = GUI.instrument();
+    var ARP_CHORD = lobby.apps.marabu.instrument.get_storage("arp_chord");
+
+    if (this.id == "arp_note1" || this.id == "arp_note2") {  // The arpeggio chord notes are combined into a single byte    
+      value = id == "arp_note1" ? (instr.i[ARP_CHORD] & 15) | (value << 4) : (instr.i[ARP_CHORD] & 240) | value;
+    }
+
+    lobby.apps.marabu.instrument.set_control(this.id,this.value);
   }
 
   this.select = function()
   {
-    lobby.commander.deselect();
-    $(this.el).addClass("selected");
-    lobby.commander.select(this);
+    this.is_selected = true;
+    this.el.setAttribute("class","slider active");
   }
 
   this.deselect = function()
   {
-    $(this.el).removeClass("selected");
+    this.is_selected = false;
+    this.el.setAttribute("class","slider");
+    this.value_el.blur();
   }
 
-  this.toggle = function()
+  this.update = function()
   {
-    if(this.is_visible){
-      this.hide();
-    }
-    else{
-      if(!this.has_launched){
-        this.launch();
-      }
-      else{
-        this.show();
-      }
-    }
+    if(parseInt(this.value_el.value) == this.min){ this.value_el.style.color = "#333"; }
+    else if(parseInt(this.value_el.value) == this.max){ this.value_el.style.color = "#fff"; }
+    else{ this.value_el.style.color = "#999"; }
+
+    this.slide_el.innerHTML = "<svg class='fh' style='width:30px;height:15px; stroke-dasharray:1,1; fill:none; stroke-width:10px; stroke-linecap:butt;'><line x1='0' y1='7.5' x2='30' y2='7.5' class='fl'/><line x1='0' y1='7.5' x2='"+parseInt(this.percentage() * 30)+"' y2='7.5' class='fh'/></svg>";
   }
 
-  this.show = function()
+  this.percentage = function()
   {
-    if(!this.has_launched){
-      this.launch();
-    }
-
-    $(this.el).removeClass("hidden");
-    this.is_visible = true;
-    this.select();
+    return ((parseInt(this.value_el.value) + parseInt(this.min))/parseFloat(this.max));
   }
 
-  this.hide = function()
+  function select(e)
   {
-    $(this.el).addClass("hidden");
-    this.is_visible = false;
-    this.deselect();
+    e.target.select();
+    e.preventDefault();
   }
 
-  this.ghost = function()
+  function value_update(e)
   {
-    $(this.el).removeClass("hidden");
-    $(this.el).removeClass("noir");
-    $(this.el).addClass("ghost");
+    var id = this.parentNode.id;
+    var target_obj = lobby.apps.marabu.instrument.sliders[id];
+    var target_val = parseInt(target_obj.value_el.value)
+
+    if(target_val > target_obj.max){target_val = target_obj.max; }
+    if(target_val < target_obj.min){target_val = target_obj.min; }
+
+    target_obj.value = parseInt(target_val);
+
+    var mar_left = ((target_obj.value/parseFloat(target_obj.max)) * this.width)+"px"
+    target_obj.update();
+    target_obj.save();
   }
 
-  this.noir = function()
+  function mouse_update(target_obj,offset)
   {
-    $(this.el).removeClass("hidden");
-    $(this.el).removeClass("ghost");
-    $(this.el).addClass("noir");
+    var target_pos = offset;
+    target_pos = target_pos < 0 ? 0 : target_pos;
+    target_pos = target_pos > 30 ? 30 : target_pos;
+
+    var ratio = target_pos/30.0;
+    var range = parseInt(target_obj.max) - parseInt(target_obj.min);
+    target_obj.value = target_obj.min + parseInt(ratio * range);
+
+    target_obj.value_el.value = target_obj.value;
+    target_obj.update();
+    target_obj.save();
   }
 
-  this.blanc = function()
+  function mouse_down(e)
   {
-    $(this.el).removeClass("hidden");
-    $(this.el).removeClass("ghost");
-    $(this.el).addClass("blanc");
+    var id = this.parentNode.id;
+    var target_obj = lobby.apps.marabu.instrument.sliders[id];
+
+    e.preventDefault();
+    e.stopPropagation();
+
+    mouse_update(target_obj,e.offsetX);
+    target_obj.select();
   }
 
-  //
-
-	this.align_to_grid = function()
-	{
-		var target = {x:parseInt(this.el.style.left),y:parseInt(this.el.style.top)};
-		target.x = (parseInt(target.x / 30) * 30)+"px"
-		target.y = (parseInt(target.y / 30) * 30)+"px"
-		$(this.el).animate({ left: target.x, top: target.y }, 300);
-	}
-
-  this.hint = function(value)
+  function mouse_up(e)
   {
-    var html = "";
-    var method = value.indexOf(".") > -1 ? value.split(".")[1].split(" ")[0] : null;
+    var id = this.parentNode.id;
+    var target_obj = lobby.apps.marabu.instrument.sliders[id];
 
-    if(this.methods[method]){
-      return "<span class='param'>"+this.methods[method].name+"</span> ";
-    }
-    for(method_id in this.methods){
-      if(this.methods[method_id].is_global){ continue; }
-      html += "<span class='method'>."+method_id+"</span> ";
-    }
-    for(method_id in this.methods){
-      var method = this.methods[method_id];
-      if(!method.is_global){ continue; }
-      html += "<span class='method global'>."+method_id+(method.shortcut ? '('+method.shortcut+')' :'')+"</span> ";
-    }
-    return html;
+    e.preventDefault();
+    e.stopPropagation();
+
+    mouse_update(target_obj,e.offsetX);
+    target_obj.deselect();
   }
 
-	// MOUSE
-
-	this.touch = null;
-
-	this.on_mouse_down = function(e)
-	{
-    event.stopPropagation();
-    $(this.el).addClass("dragged");
-		this.touch = {x: e.clientX, y: e.clientY};
-		this.select();
-		e.preventDefault();
-	}
-
-	this.on_mouse_move = function(e)
-	{
-		if(this.touch === null){ return; }
-
-		var position = {x: parseInt(this.el.style.left), y: parseInt(this.el.style.top)}
-		var offset = {x: e.clientX - this.touch.x,y: e.clientY - this.touch.y}
-		var new_position = {x: (position.x + offset.x), y:(position.y + offset.y)};
-
-		if(new_position.x < -30){ new_position.x = -30; }
-		if(new_position.y < 0){ new_position.y = 0; }
-		// if((new_position.y + this.size.height) > window.innerHeight - 120){ new_position.y = window.innerHeight - 180; }
-
-		this.el.style.top = new_position.y+"px";
-		this.el.style.left = new_position.x+"px";
-
-		this.touch = {x: e.clientX, y: e.clientY};
-		e.preventDefault();
-	}
-
-	this.on_mouse_up = function(e)
-	{
-    $(this.el).removeClass("dragged");
-		this.touch = null;
-		this.align_to_grid();
-		e.preventDefault();
-	}
-
-  this.is_typing = function()
+  function mouse_move(e)
   {
-    if(document.activeElement.type == "textarea"){ return true; }
-    if(document.activeElement.type == "input"){ return true; }
-    return false;
-  }
+    var id = this.parentNode.id;
+    var target_obj = lobby.apps.marabu.instrument.sliders[id];
+    if(!target_obj.is_selected){ return; }
 
-	function mouse_down(e)
-	{
-		if(!lobby.apps[this.id]){ return; }
-		lobby.apps[this.id].on_mouse_down(e);
-    lobby.commander.input_el.blur();
-	}
+    e.preventDefault();
+    e.stopPropagation();
 
-	function mouse_move(e)
-	{
-		if(!lobby.apps[this.id]){ return; }
-		lobby.apps[this.id].on_mouse_move(e);
-	}
-
-	function mouse_up(e)
-	{
-		if(!lobby.apps[this.id]){ return; }
-		lobby.apps[this.id].on_mouse_up(e);
-	}
-
-
-  // Keyboard Numbers
-  this.key_number_0 = function(){ }
-  this.key_number_1 = function(){ }
-  this.key_number_2 = function(){ }
-  this.key_number_3 = function(){ }
-  this.key_number_4 = function(){ }
-  this.key_number_5 = function(){ }
-  this.key_number_6 = function(){ }
-  this.key_number_7 = function(){ }
-  this.key_number_8 = function(){ }
-  this.key_number_9 = function(){ }
-  // Keyboard Notes
-  this.key_letter_a = function(){ }
-  this.key_letter_s = function(){ }
-  this.key_letter_d = function(){ }
-  this.key_letter_f = function(){ }
-  this.key_letter_g = function(){ }
-  this.key_letter_h = function(){ }
-  this.key_letter_j = function(){ }
-  // Keyboard Notes sharp
-  this.key_letter_w = function(){ }
-  this.key_letter_e = function(){ }
-  this.key_letter_t = function(){ }
-  this.key_letter_y = function(){ }
-  this.key_letter_u = function(){ }
-  // Controls
-  this.key_letter_c = function(){ }
-  this.key_letter_v = function(){ }
-  // Controls up/down
-  this.key_letter_x = function(){ }
-  this.key_letter_z = function(){ }
-  // Brackets
-  // this.key_square_bracket_right = function(){ this.resize_window(30,0); }
-  // this.key_square_bracket_left  = function(){ this.resize_window(-30,0); }
-  // this.key_curly_bracket_right  = function(){ this.resize_window(0,30); }
-  // this.key_curly_bracket_left   = function(){ this.resize_window(0,-30);}
-  // Keyboard Hex
-  this.key_letter_a = function(){ }
-  this.key_letter_b = function(){ }
-  this.key_letter_c = function(){ }
-  this.key_letter_d = function(){ }
-  this.key_letter_e = function(){ }
-  this.key_letter_f = function(){ }
-  // Arrows
-  this.key_arrow_up    = function(){ }
-  this.key_arrow_down  = function(){ }
-  this.key_arrow_left  = function(){ }
-  this.key_arrow_right = function(){ }
-  // Etc
-  this.key_escape = function()
-  { 
-    lobby.commander.hide_browser();
-  }
-
-  this.key_delete = function()
-  {
-
-  }
-
-  this.key_enter = function()
-  { 
-    lobby.commander.validate(); 
-  }
-
-  this.warp_left = function()
-  {
-    this.move_window_to(-30,-30);
-    this.resize_window_to(lobby.size.width/2 - 30,lobby.size.height-30);
-  }
-  this.warp_right = function()
-  {
-    this.move_window_to(lobby.size.width/2 - 30,-30);
-    this.resize_window_to(lobby.size.width/2,lobby.size.height-30);
-  }
-  this.warp_center = function()
-  {
-    this.move_window_to(30,30);
-    this.resize_window_to(lobby.size.width - 120,lobby.size.height - 150);
-  }
-
-  this.scale_left = function()
-  {
-    this.resize_window(-30,-30);
-  }
-  this.scale_right = function()
-  {
-    this.resize_window(30,30);
-  }
-
-  this.fill = function()
-  {
-    this.resize_window_to(lobby.size.width,lobby.size.height - 30);
-    this.move_window_to(-30,-30)
-  }
-
-  this.on_option = function(key)
-  {
-    switch(key)
-    {
-      case "arrowup": this.move_window(0,-30); event.preventDefault(); break;
-      case "arrowdown": this.move_window(0,30); event.preventDefault(); break;
-      case "arrowleft": this.move_window(-30,0); event.preventDefault(); break;
-      case "arrowright": this.move_window(30,0); event.preventDefault(); break;
-    }
-  }
-
-  this.on_shortcut = function(key)
-  {
-    if(!lobby.commander.app){ return; }
-
-    for(method_id in this.methods){
-      var method = this.methods[method_id];
-      if(method.shortcut != key){ continue; }
-      if(method.run_shortcut){
-        this[method.name](); 
-        return;
-      }
-      else{
-        lobby.commander.inject(this.name+"."+method.name+" ");
-        lobby.commander.input_el.focus()
-        return;
-      }
-    }
-    console.log("Unknown shortcut:",key);
-  }
-
-  this.move_window = function(x,y)
-  {
-    var new_position = {x: parseInt(this.el.style.left) + x, y: parseInt(this.el.style.top) + y}
-
-    if(new_position.x < -30){ new_position.x = -30; }
-    if(new_position.y < -30){ new_position.y = -30; }
-
-    new_position.x = (parseInt(new_position.x / 30) * 30)+"px";
-    new_position.y = (parseInt(new_position.y / 30) * 30)+"px";
-    $(this.el).animate({ left: new_position.x, top: new_position.y }, 50);
-    this.on_move();
-  }
-
-  this.move_window_to = function(x,y)
-  {
-    $(this.el).animate({ left: x, top: y }, 50);
-    this.on_move();
-  }
-
-  this.resize_window = function(x,y)
-  {
-    if(this.size.width + x < 30 || this.size.height + y < 30){ return; }
-    var app_size = this.size;
-    $(this.el).animate({ width: app_size.width + x, height: app_size.height + y }, 50);
-    this.size = {width:app_size.width+x,height:app_size.height+y};
-    this.on_resize();
-  }
-
-  this.resize_window_to = function(x,y)
-  {
-    var app = this;
-    $(this.el).animate({ width: x, height: y }, 50, function(){ app.size = {width:x,height:y}; });
-    this.on_resize();
-  }
-
-  this.organize_window_center = function()
-  {
-    this.resize_window_to(lobby.size.width-180,lobby.size.height-210);
-    this.move_window_to(60,60);
-  }
-
-  this.organize_window_vertical = function()
-  {
-    this.resize_window_to(this.size.width,lobby.size.height-90);
-    this.move_window_to(this.el.style.left,0);
+    mouse_update(target_obj,e.offsetX);
   }
 }
