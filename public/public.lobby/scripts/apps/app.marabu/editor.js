@@ -5,7 +5,7 @@ function Editor(t,b)
 
   this.edit_mode = false;
   this.selection = {x1:0,y1:0,x2:0,y2:0};
-  this.pattern = {id:0,beat:4,length:(t*b),signature:[t,b]};
+  this.pattern = {id:0,beat:4,length:(t*b),signature:[t,b],effect:-1};
 
   this.signature_el = document.getElementById("signature");
 
@@ -103,7 +103,47 @@ function Editor(t,b)
   this.effect_mouse_down = function(e)
   {
     var row = parseInt(e.target.id.slice(3));
+    target.pattern.effect = row;
+    target.deselect();
   }
+
+  this.set_effect = function(cmd,val)
+  {
+    if(this.pattern.effect < 0){ return; }
+
+    var l = this.location();
+    var r = this.pattern.effect;
+
+    GUI.instrument().c[l.p].f[r] = cmd;
+    GUI.instrument().c[l.p].f[r+this.pattern.length] = val;
+
+    this.refresh();
+  }
+
+  this.refresh = function()
+  {
+    this.refresh_title();
+    this.refresh_table();
+  }
+
+  this.refresh_title = function()
+  {
+    var html = "PAT "+(this.pattern.id > -1 ? this.pattern.id : "");
+
+    if(this.edit_mode && this.selection.x2 > -1 && this.selection.y2 > 0){ html += " "+this.selection.x2+":"+this.selection.y2; }
+
+    document.getElementById("pat_title").innerHTML = html;
+    document.getElementById("time_signature").innerHTML = this.pattern.signature[0]+"&"+this.pattern.signature[1];
+  }
+
+  var toHex = function (num, count)
+  {
+    var s = num.toString(16).toUpperCase();
+    var leadingZeros = count - s.length;
+    for (var i = 0; i < leadingZeros; ++i)
+      s = "0" + s;
+    return s;
+  };
 
   this.build_table = function()
   {
@@ -136,31 +176,6 @@ function Editor(t,b)
     }
   }
 
-  this.refresh = function()
-  {
-    this.refresh_title();
-    this.refresh_table();
-  }
-
-  this.refresh_title = function()
-  {
-    var html = "PAT "+(this.pattern.id > -1 ? this.pattern.id : "");
-
-    if(this.edit_mode){ html += " "+this.selection.x2+":"+this.selection.y2; }
-
-    document.getElementById("pat_title").innerHTML = html;
-    document.getElementById("time_signature").innerHTML = this.pattern.signature[0]+"&"+this.pattern.signature[1];
-  }
-
-  var toHex = function (num, count)
-  {
-    var s = num.toString(16).toUpperCase();
-    var leadingZeros = count - s.length;
-    for (var i = 0; i < leadingZeros; ++i)
-      s = "0" + s;
-    return s;
-  };
-
   this.refresh_table = function()
   {
     var l = this.location();
@@ -173,7 +188,7 @@ function Editor(t,b)
         var o_f = document.getElementById("fxr"+r);
         var f_cmd = GUI.instrument().c[l.p].f[r];
         var f_val = GUI.instrument().c[l.p].f[r+this.pattern.length];
-        o_f.textContent = toHex(f_cmd,2) + "" + toHex(f_val,2); //  TODO
+        o_f.textContent = (r == this.pattern.effect) ? "> "+toHex(f_val,2) : (toHex(f_cmd,2) + "" + toHex(f_val,2));
       }
 
       for (var c = 0; c < 4; ++c)

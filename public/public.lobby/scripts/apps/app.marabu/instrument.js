@@ -169,6 +169,9 @@ function Instrument()
   {
     var storage_id = this.get_storage(id);
     GUI.instrument().i[storage_id] = value;
+
+    app.editor.set_effect(storage_id,value);
+
     // console.log("set "+id+"("+storage_id+")",value);
 
     GUI.mJammer_update();

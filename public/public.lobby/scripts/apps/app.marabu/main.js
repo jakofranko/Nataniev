@@ -73,6 +73,7 @@ function Marabu()
 
     html += "<style>";
     html += ".everything { color:white; }";
+    html += ".tracks { text-align:left}";
     html += ".tracks tr {  line-height:15px; position:relative}";
     html += ".tracks tr td { padding-right:5px}";
     html += ".tracks tr:hover { color:#999}";

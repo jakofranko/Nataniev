@@ -31,6 +31,8 @@ LOBBY
     application descriptions
 
 IDE
+  Generic
+    Open project
   Navi
     Display file with changes
   Editor
@@ -46,9 +48,6 @@ MARABU
     Preserve pattern data on pattern lenghts change
     Change time signature
     Effect -> Re-implement
-    Follower -> Fix
-  Instrument
-    Fix issue with MOD
 
 RONIN
   Tools
