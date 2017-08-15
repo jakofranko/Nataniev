@@ -1,9 +1,8 @@
-lobby.apps.marabu.methods.save = {name:"save", shortcut:"s"}
+lobby.apps.marabu.methods.save = {name:"save", shortcut:"s", run_shortcut:true}
 
-lobby.apps.marabu.save = function(val, is_passive = false)
+var format_json = function(song)
 {
-  console.log(song)
-  return;
+  var OSC1_WAVEFORM = 0, OSC1_VOL = 1, OSC1_SEMI = 2, OSC1_XENV = 3, OSC2_WAVEFORM = 4, OSC2_VOL = 5, OSC2_SEMI = 6, OSC2_DETUNE = 7, OSC2_XENV = 8, NOISE_VOL = 9, ENV_ATTACK = 10, ENV_SUSTAIN = 11, ENV_RELEASE = 12, ARP_CHORD = 13, ARP_SPEED = 14, LFO_WAVEFORM = 15, LFO_AMT = 16, LFO_FREQ = 17, LFO_FX_FREQ = 18, FX_FILTER = 19, FX_FREQ = 20, FX_RESONANCE = 21, FX_DIST = 22, FX_DRIVE = 23, FX_PAN_AMT = 24, FX_PAN_FREQ = 25, FX_DELAY_AMT = 26, FX_DELAY_TIME = 27; 
   var i, j, k;
   var jsData = "";
 
@@ -86,6 +85,20 @@ lobby.apps.marabu.save = function(val, is_passive = false)
   jsData += "    };\n";
 
   return jsData;
+}
+
+lobby.apps.marabu.save = function(val, is_passive = false)
+{
+  GUI.update_ranges();
+
+  if(lobby.apps.marabu.location){
+    console.log("overwrite "+lobby.apps.marabu.location,format_json(GUI.song()));
+  }
+  else{
+    var dataURI = "data:text/javascript;base64," + btoa(format_json(GUI.song()));
+    window.open(dataURI);
+    return false;
+  }
 }
 
 lobby.apps.marabu.setup.confirm("methods/save");

@@ -23,23 +23,23 @@ function Editor(t,b)
 
   this.load = function(pattern_id = 0)
   {
+    this.pattern.effect = -1;
     this.pattern.id = pattern_id;
-    this.selection = {x1:0,y1:0,x2:0,y2:0};
-    this.refresh();
+    this.select(0,0,0,0);
 
     document.getElementById("pattern-table").className = pattern_id == -1 ? "tracks inactive" : "tracks";
   }
 
   this.select = function(x1 = 0,y1 = 0,x2 = 0,y2 = 0)
   {
+    this.pattern.effect = -1;
     this.selection = {x1:x1,y1:y1,x2:x2,y2:y2};
     this.refresh();
   }
 
   this.deselect = function()
   {
-    this.selection = {x1:-1,y1:-1,x2:-1,y2:-1};
-    this.refresh();
+    this.select(-1,-1,-1,-1);
   }
 
   this.select_move = function(x,y)
@@ -91,20 +91,16 @@ function Editor(t,b)
     var col = parseInt(e.target.id.slice(2,3));
     var row = parseInt(e.target.id.slice(4));
 
-    app.editor.selection.x1 = col;
-    app.editor.selection.x2 = col;
-    app.editor.selection.y1 = row;
-    app.editor.selection.y2 = row;
-
     lobby.commander.update_status();
-    target.refresh();
+    target.select(col,row,col,row);
   }
 
   this.effect_mouse_down = function(e)
   {
+    target.deselect();
     var row = parseInt(e.target.id.slice(3));
     target.pattern.effect = row;
-    target.deselect();
+    target.refresh();
   }
 
   this.set_effect = function(cmd,val)
@@ -130,7 +126,14 @@ function Editor(t,b)
   {
     var html = "PAT "+(this.pattern.id > -1 ? this.pattern.id : "");
 
-    if(this.edit_mode && this.selection.x2 > -1 && this.selection.y2 > 0){ html += " "+this.selection.x2+":"+this.selection.y2; }
+    if(this.edit_mode){ 
+      if(this.selection.x2 > -1 && this.selection.y2 > 0){
+        html += " "+this.selection.x2+":"+this.selection.y2;
+      }
+      else if(this.pattern.effect > -1){
+        html += " $"+this.pattern.effect; 
+      }
+    }
 
     document.getElementById("pat_title").innerHTML = html;
     document.getElementById("time_signature").innerHTML = this.pattern.signature[0]+"&"+this.pattern.signature[1];

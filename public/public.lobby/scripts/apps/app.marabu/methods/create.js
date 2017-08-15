@@ -1,4 +1,4 @@
-lobby.apps.marabu.methods.create = {name:"create", shortcut:"s"}
+lobby.apps.marabu.methods.create = {name:"create", shortcut:"7"}
 
 var calcSamplesPerRow = function(bpm)
 {

@@ -15,26 +15,24 @@ function Marabu()
   this.editor = null;
   this.instrument = null;
 
+  this.location = null;
+  this.formats = ["mar"];
+
   this.setup.includes = [
     "methods/create",
-    "methods/export",
-    "methods/import",
-    "methods/render",
-    "methods/save",
     "methods/play",
     "methods/stop",
     "methods/set",
+    "methods/load",
+    "methods/save",
+    "methods/render",
 
     "core/jammer",
     "core/player-small",
-    // "core/player-worker",
     "core/player",
-    "core/rle",
 
     "inc/Blob",
-    "inc/deflate",
     "inc/FileSaver",
-    "inc/inflate",
 
     "song",
     "instrument",
