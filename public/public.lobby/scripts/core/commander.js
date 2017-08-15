@@ -274,11 +274,12 @@ function Commander()
 		this.widgets_el.appendChild(el);
 	}
 
-	this.notify = function(content)
+	this.notify = function(content,animate = true)
 	{
 		this.notification_el.innerHTML = content;
-    $(this.notification_el).css('opacity','1').delay(2000).animate({ opacity: 0 }, 300);
-    lobby.apps.terminal.log(content,"!");
+    if(animate){
+      $(this.notification_el).css('opacity','1').delay(2000).animate({ opacity: 0 }, 300);  
+    }
 	}
 
 	this.is_typing = function()

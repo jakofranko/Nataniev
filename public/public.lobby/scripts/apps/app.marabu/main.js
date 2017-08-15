@@ -19,6 +19,7 @@ function Marabu()
     "methods/create",
     "methods/export",
     "methods/import",
+    "methods/render",
     "methods/save",
     "methods/play",
     "methods/stop",
@@ -47,8 +48,8 @@ function Marabu()
 
   this.setup.start = function()
   {
-    this.app.sequencer = new Sequencer();
-    this.app.editor = new Editor();
+    this.app.sequencer = new Sequencer(120);
+    this.app.editor = new Editor(8,4);
     this.app.instrument = new Instrument();
 
     this.app.sequencer.follower = new Sequencer_Follower();
@@ -61,6 +62,7 @@ function Marabu()
 
     GUI = new CGUI();
     GUI.init();
+    GUI.update_rpp(this.app.editor.pattern.length);
 
     lobby.apps.marabu.sequencer.select();
   }
@@ -94,9 +96,8 @@ function Marabu()
   {
     var html = "";
     
-    html += this.sequencer.status();
-    html += this.editor.status();
-    html += this.instrument.status();
+    html += "OCTAVE "+this.instrument.octave+" ";
+    html += "LENGTH "+this.sequencer.calc_time()+" ";
     return html;
   }
 

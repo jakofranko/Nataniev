@@ -1,28 +1,20 @@
-function Editor()
+function Editor(t,b)
 {
   var app = lobby.apps.marabu;
   var target = this;
 
   this.edit_mode = false;
   this.selection = {x1:0,y1:0,x2:0,y2:0};
-  this.pattern = {id:0,beat:4,length:32};
+  this.pattern = {id:0,beat:4,length:(t*b),signature:[t,b]};
 
-  this.rpp_el = document.getElementById("rpp");
-  // this.rpp_el.addEventListener('input', rpp_update, false);
-
-  this.status = function()
-  {
-    var html = "";
-    html += "PAT(#"+this.pattern.id+" "+this.selection.x1+":"+this.selection.y1+" "+this.selection.x2+":"+this.selection.y2+") ";
-    return html;
-  }
+  this.signature_el = document.getElementById("signature");
 
   this.build = function()
   {
     var html = "";
 
     html += "  <div class='pattern' id='pattern_controller' style='width:130px; display:inline-block; vertical-align:top; border-left:1px solid #333; padding-left:30px; margin-left:-5px'>";
-    html += "    <h1 class='lh30' style='width:105px'><b id='pat_title'>PAT</b> <t id='rpp' class='bh fh' style='float:right; text-align:right; height:30px; color:#999; line-height:30px; background:transparent'/></h1>";
+    html += "    <h1 class='lh30' style='width:105px'><b id='pat_title'>PAT</b> <t id='time_signature' class='bh fm' style='float:right; text-align:right; height:30px;  line-height:30px; background:transparent'></t></h1>";
     html += "    <div id='pattern'><table class='tracks' id='pattern-table'></table>";
     html += "  </div>";
 
@@ -94,15 +86,6 @@ function Editor()
     return {i:app.instrument.id,p:this.pattern.id,n:this.selection.y2 + (this.selection.x2 * this.pattern.length)};
   }
 
-  function rpp_update()
-  {
-    if(GUI.pattern_controller.rpp_el.value == ""){ return; }
-    var new_rpp = parseInt(GUI.pattern_controller.rpp_el.value);
-    if(new_rpp < 4){ new_rpp = 4; }
-    if(new_rpp > 16){ new_rpp = 16; }
-    GUI.update_rpp(new_rpp);
-  }
-
   this.pattern_mouse_down = function(e)
   {
     var col = parseInt(e.target.id.slice(2,3));
@@ -133,7 +116,7 @@ function Editor()
     for (var row = 0; row < this.pattern.length; row++) {
       tr = document.createElement("tr");
       tr.id = "ppr"+row;
-      tr.className = row % this.pattern.beat == 0 ? " beat" : "";
+      tr.className = row % this.pattern.signature[1] == 0 ? " fm" : "";
       // Pattern
       for (col = 0; col < 4; col++) {
         td = document.createElement("td");
@@ -166,6 +149,7 @@ function Editor()
     if(this.edit_mode){ html += " "+this.selection.x2+":"+this.selection.y2; }
 
     document.getElementById("pat_title").innerHTML = html;
+    document.getElementById("time_signature").innerHTML = this.pattern.signature[0]+"&"+this.pattern.signature[1];
   }
 
   var toHex = function (num, count)
@@ -279,7 +263,6 @@ function Editor()
       }
     }
   }
-
 }
 
 lobby.apps.marabu.setup.confirm("editor");

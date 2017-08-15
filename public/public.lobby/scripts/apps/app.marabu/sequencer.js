@@ -114,7 +114,7 @@ var CGUI = function()
   this.update_rpp = function(rpp)
   {
     setPatternLength(rpp);
-    updatePatternLength();
+    lobby.apps.marabu.editor.refresh();
   }
 
   this.play_note = function(note)
@@ -188,18 +188,10 @@ var CGUI = function()
     mSong.patternLen = length;
   };
 
-  var updatePatternLength = function()
+  this.update_ranges = function()
   {
-    var rpp = parseInt(document.getElementById("rpp").value);
-    rpp = 32;
-    if (rpp && (rpp >= 1) && (rpp <= 256)) {
-      // Update the pattern length of the song data
-      setPatternLength(rpp);
-
-      // Update UI
-      lobby.apps.marabu.editor.refresh();
-    }
-  };
+    updateSongRanges();
+  }
 
   var updateSongRanges = function ()
   {
@@ -220,20 +212,32 @@ var CGUI = function()
     }
   };
 
+  this.export_wav = function()
+  {
+    updateSongRanges();
+    
+    var doneFun = function(wave)
+    {
+      var blob = new Blob([wave], {type: "application/octet-stream"});
+      saveAs(blob, "render.wav");
+    };
+    generateAudio(doneFun);
+  };
+
   var generateAudio = function (doneFun, opts)
   {
-    console.log("Generating..",mSong);
+    lobby.commander.notify("Starting..",false);
     var d1 = new Date();
     mPlayer = new CPlayer();
     mPlayer.generate(mSong, opts, function (progress){
       if (progress >= 1) {
         var wave = mPlayer.createWave();
         var d2 = new Date();
-        console.log("complete!",progress);
+        lobby.commander.notify("complete!");
         doneFun(wave);
       }
       else{
-        console.log("rendering:",progress);
+        lobby.commander.notify("Rendering "+parseInt(progress * 100)+"%",false);
       }
     });
   };
@@ -254,8 +258,8 @@ var CGUI = function()
 
   this.play_song = function()
   {
-    this.update_bpm(120);
-    this.update_rpp(32);
+    this.update_bpm(lobby.apps.marabu.sequencer.sequence.bpm);
+    this.update_rpp(lobby.apps.marabu.editor.pattern.length);
 
     stopAudio();
     updateSongRanges();
@@ -299,8 +303,6 @@ var CGUI = function()
     lobby.apps.marabu.sequencer.refresh();
     lobby.apps.marabu.editor.refresh();
 
-    document.getElementById("rpp").innerHTML = mSong.patternLen;
-
     lobby.apps.marabu.instrument.install();
     lobby.apps.marabu.instrument.refresh();
 
@@ -313,35 +315,33 @@ var CGUI = function()
 // Program start
 //------------------------------------------------------------------------------
 
-function Sequencer()
+function Sequencer(bpm)
 {
   var app = lobby.apps.marabu;
   var target = this;
 
   this.edit_mode = false;
   this.selection = {x1:0,y1:0,x2:0,y2:0};
-  this.sequence = {length:32}
+  this.sequence = {length:32,bpm:bpm}
 
   this.title_el = document.getElementById("seq_title");
   this.bpm_el = document.getElementById("bpm");
-
-  this.status = function()
-  {
-    var html = "";
-    html += "SEQ("+this.selection.x1+":"+this.selection.y1+" "+this.selection.x2+":"+this.selection.y2+") ";
-    return html;
-  }
 
   this.build = function()
   {
     var html = "";
 
     html += "  <div class='sequencer' id='sequence_controller' style='width:120px; display:inline-block; vertical-align:top'>";
-    html += "    <h1 class='lh30' style='width:90px'><b id='seq_title'>SEQ</b> <t id='bpm' class='bh fh' style='float:right; text-align:right; height:30px; color:#999; line-height:30px; background:transparent'/><hr /></h1>";
+    html += "    <h1 class='lh30' style='width:90px'><b id='seq_title'>SEQ</b> <t id='bpm' class='bh fm' style='float:right; text-align:right; height:30px; line-height:30px; background:transparent'/><hr /></h1>";
     html += "    <div id='sequencer'><table class='tracks' id='sequencer-table'></table></div>";
     html += "  </div>";
 
     return html;
+  }
+
+  this.calc_time = function()
+  {
+    return "4:35";
   }
 
   this.pattern_id_at = function(x,y)
@@ -402,15 +402,14 @@ function Sequencer()
 
   this.edit_note = function(i,c,n,v)
   {
-    console.info("edit_node","i:"+i,"c:"+c,"n:"+n,"v:"+v,GUI.song().songData);
+    // console.info("edit_node","i:"+i,"c:"+c,"n:"+n,"v:"+v,GUI.song().songData);
     GUI.song().songData[i].c[c].n[n] = v;
-
-    console.info("edit_node","i:"+i,"c:"+c,"n:"+n,"v:"+v,GUI.song().songData);
   }
 
   this.edit_sequence = function(i,p,v)
   {
     GUI.song().songData[i].p[p] = parseInt(v);
+    GUI.update_ranges();
 
     console.info("edit_sequence","i:"+i,"p:"+p,"v:"+v,GUI.song().songData);
 
@@ -422,15 +421,6 @@ function Sequencer()
       app.editor.select(0,0,0,0);
       app.sequencer.deselect();
     }
-  }
-
-  function bpm_update(e)
-  {
-    // if(GUI.sequence_controller.bpm_el.value == ""){ return; }
-    // var new_bpm = parseInt(GUI.sequence_controller.bpm_el.value);
-    // if(new_bpm < 20){ new_bpm = 10; }
-    // if(new_bpm > 800){ new_bpm = 800;}
-    // GUI.update_bpm(new_bpm);
   }
 
   this.location = function()
@@ -454,8 +444,6 @@ function Sequencer()
 
   this.refresh = function()
   {
-    document.getElementById("bpm").innerHTML = GUI.get_bpm();
-
     this.refresh_table();
     this.refresh_title();
   }
@@ -467,6 +455,7 @@ function Sequencer()
     if(this.edit_mode){ html += this.selection.y2; }
 
     document.getElementById("seq_title").innerHTML = html;
+    document.getElementById("bpm").innerHTML = this.sequence.bpm;
   }
 
   this.build_sequence_table = function()
@@ -480,7 +469,7 @@ function Sequencer()
     for (var row = 0; row < this.sequence.length; row++) {
       tr = document.createElement("tr");
       tr.id = "spr"+row;
-      tr.className = row % 4 === 0 ? "beat" : "";
+      tr.className = row % 4 === 0 ? "beat" : ""; // TODO, shadow at track length
       for (var col = 0; col < 8; col++) {
         td = document.createElement("td");
         td.id = "sc" + col + "r" + row;
@@ -503,6 +492,11 @@ function Sequencer()
         var classes = "";
         if(pat > 0){ classes += "pattern_"+pat+" "; }
         if (r >= this.selection.y1 && r <= this.selection.y2 && c >= this.selection.x1 && c <= this.selection.x2){ classes += "selected "; }
+
+        if(r > GUI.song().endPattern){ classes += "fl "; }
+        else if(pat){ classes += "fh "; }
+        else{ classes += "fm "; }
+
         o.className = classes;
         if(r == this.selection.y2 && c == this.selection.x2){
           o.textContent = ">";  

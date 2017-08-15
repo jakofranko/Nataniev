@@ -285,9 +285,9 @@ function UI_Slider(id,name = "UNK",min = 0,max = 255)
 
   this.update = function()
   {
-    if(parseInt(this.value_el.value) == this.min){ this.value_el.style.color = "#333"; }
-    else if(parseInt(this.value_el.value) == this.max){ this.value_el.style.color = "#fff"; }
-    else{ this.value_el.style.color = "#999"; }
+    if(parseInt(this.value_el.value) == this.min){ this.value_el.className = "w2 fl"; }
+    else if(parseInt(this.value_el.value) == this.max){ this.value_el.className = "w2 fh"; }
+    else{ this.value_el.className = "w2 fm"; }
 
     this.slide_el.innerHTML = "<svg class='fh' style='width:30px;height:15px; stroke-dasharray:1,1; fill:none; stroke-width:10px; stroke-linecap:butt;'><line x1='0' y1='7.5' x2='30' y2='7.5' class='fl'/><line x1='0' y1='7.5' x2='"+parseInt(this.percentage() * 30)+"' y2='7.5' class='fh'/></svg>";
   }

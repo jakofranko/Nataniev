@@ -175,8 +175,9 @@ app.blanc .cu:hover { background:#000; color:#fff; cursor:pointer;}
 app.noir ::selection       { background: #888; opacity:1.0; color:#999; }
 app.noir     { background: black; color:white; }
 app.noir .fh { color:white; stroke:white; }
+app.noir .fm { color:#999; stroke:#999; }
+app.noir .fl { color:#555; stroke:#555; }
 app.noir .bh { background:black;}
-app.noir .fl { color:#999; stroke:#999; }
 app.noir .bl { background:#A1A1A1;}
 app.noir .cu:hover { background:#fff; color:#000; cursor:pointer;}
 

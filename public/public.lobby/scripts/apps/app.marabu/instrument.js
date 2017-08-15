@@ -169,7 +169,7 @@ function Instrument()
   {
     var storage_id = this.get_storage(id);
     GUI.instrument().i[storage_id] = value;
-    console.log("set "+id+"("+storage_id+")",value);
+    // console.log("set "+id+"("+storage_id+")",value);
 
     GUI.mJammer_update();
   }
@@ -215,7 +215,7 @@ function Instrument()
   {
     var html = "";
     html += "  <div class='instrument' style='width:90px; display:inline-block; vertical-align:top; border-left:1px solid #333; padding-left:30px; margin-left:-5px; line-height:15px'>";
-    html += "    <h1 class='lh30' style='width:90px'><b id='ins_title'></b><input id='instrument_name' type='text' size='10' value='' title='Instrument Name' class='bh fh' style='float:right; text-align:right; height:30px; color:#999; line-height:30px; text-transform:uppercase; width:45px; background:transparent' /><hr /></h1>";
+    html += "    <h1 class='lh30' style='width:90px'><b id='ins_title'></b><input id='instrument_name' type='text' size='10' value='' title='Instrument Name' class='bh fm' style='float:right; text-align:right; height:30px; line-height:30px; text-transform:uppercase; width:45px; background:transparent' /><hr /></h1>";
     html += "    <div class='env' style='width:180px; margin-bottom:15px'>";
     html += "      <div id='env_att'></div>";
     html += "      <div id='env_sust'></div>";
@@ -264,11 +264,6 @@ function Instrument()
     if(this.octave > 8){ this.octave = 8; }
     if(this.octave < 1){ this.octave = 1; }
     lobby.commander.update_status();
-  }
-
-  this.status = function()
-  {
-    return "INS(id:"+this.id+" octave:"+this.octave+")";
   }
 
   this.play = function(note)
