@@ -64,6 +64,12 @@ function Ide()
     lobby.apps.ide.navi.update();
   }
 
+  function wheel(e)
+  {
+    lobby.apps.ide.textarea_el.scrollTop += e.wheelDeltaY * -0.25;
+    e.preventDefault();
+  }
+
   this.location = "";
   this.history = [];
 
@@ -129,6 +135,7 @@ function Ide()
   this.textarea_el.addEventListener('keydown', key_down, false);
   this.textarea_el.addEventListener('mousedown', mouse_down, false);
   this.textarea_el.addEventListener('mouseup', mouse_up, false);
+  this.textarea_el.addEventListener('wheel', wheel, false);
 }
 
 lobby.summon.confirm("Ide");
