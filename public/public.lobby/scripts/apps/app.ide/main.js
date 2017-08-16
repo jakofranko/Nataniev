@@ -12,7 +12,7 @@ function Ide()
   this.methods.replace = {name:"replace", shortcut:"r"};
   this.methods.end = {name:"end"};
 
-  this.setup.includes = ["navi","methods/load","methods/save","methods/create","methods/find","methods/goto","methods/spellcheck"];
+  this.setup.includes = ["navi","methods/load","methods/save","methods/create","methods/find","methods/goto","methods/spellcheck","methods/project"];
 
   this.formats = ["js","rb","html","css","ma","mh","rin","mar"];
 
@@ -42,6 +42,22 @@ function Ide()
   this.when.resize = function()
   {
     this.app.navi.update();
+  }
+
+  this.when.file = function(file)
+  {
+    if (!file.type.match(/text.*/)) { return false; }
+
+    var reader = new FileReader();
+    reader.onload = function(e){
+      lobby.apps.ide.window.show();
+      lobby.apps.ide.textarea_el.value = e.target.result;
+      lobby.apps.ide.navi.update();
+      lobby.apps.ide.textarea_el.scrollTop = 0;
+      lobby.apps.ide.textarea_el.scrollLeft = 0;
+    };
+    reader.readAsText(file);
+    return;
   }
   
   function key_down(e)
