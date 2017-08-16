@@ -36,7 +36,7 @@ lobby.apps.ronin.import = function(param)
     {
       var width = base_image.naturalWidth;
       var height = base_image.naturalHeight;
-      
+    
       lobby.apps.ronin.project.size = {width:width,height:height};
       lobby.apps.ronin.clear();
       // Scale with only 1 unit
