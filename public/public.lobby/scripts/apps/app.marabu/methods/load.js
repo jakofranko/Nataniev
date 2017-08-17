@@ -22,9 +22,9 @@ lobby.apps.marabu.load_file = function(file_path)
     type: 'POST', 
     data: { file_path: this.location },
     success: function(data) {
-      console.log(data)
-      var j = JSON.parse(data);
-      console.log(j);
+      var new_song = JSON.parse(data);
+      GUI.replace_song(new_song);
+      lobby.apps.marabu.sequencer.select();
     }
   })
 }

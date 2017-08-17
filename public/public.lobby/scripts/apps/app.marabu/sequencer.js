@@ -127,6 +127,11 @@ var CGUI = function()
     return mSong;
   }
 
+  this.replace_song = function(new_song)
+  {
+    mSong = new_song;
+  }
+
   this.mJammer_update = function()
   {
     return mJammer.updateInstr(GUI.instrument().i);
