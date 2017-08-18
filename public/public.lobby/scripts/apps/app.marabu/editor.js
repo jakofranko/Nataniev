@@ -110,8 +110,8 @@ function Editor(t,b)
     var l = this.location();
     var r = this.pattern.effect;
 
-    GUI.instrument().c[l.p].f[r] = cmd;
-    GUI.instrument().c[l.p].f[r+this.pattern.length] = val;
+    app.song.instrument().c[l.p].f[r] = cmd;
+    app.song.instrument().c[l.p].f[r+this.pattern.length] = val;
 
     this.refresh();
   }
@@ -187,10 +187,10 @@ function Editor(t,b)
 
     for (var r = 0; r < this.pattern.length; ++r)
     {
-      if(GUI.instrument().c[l.p]){
+      if(app.song.instrument().c[l.p]){
         var o_f = document.getElementById("fxr"+r);
-        var f_cmd = GUI.instrument().c[l.p].f[r];
-        var f_val = GUI.instrument().c[l.p].f[r+this.pattern.length];
+        var f_cmd = app.song.instrument().c[l.p].f[r];
+        var f_val = app.song.instrument().c[l.p].f[r+this.pattern.length];
         o_f.textContent = (r == this.pattern.effect) ? "> "+toHex(f_val,2) : (toHex(f_cmd,2) + "" + toHex(f_val,2));
       }
 
@@ -202,8 +202,8 @@ function Editor(t,b)
 
         if (r >= this.selection.y1 && r <= this.selection.y2 && c >= this.selection.x1 && c <= this.selection.x2){ classes += "selected "; }
 
-        if(GUI.instrument().c[l.p-1]){
-          var n = GUI.instrument().c[l.p-1].n[r+c*this.pattern.length] - 87;
+        if(app.song.instrument().c[l.p-1]){
+          var n = app.song.instrument().c[l.p-1].n[r+c*this.pattern.length] - 87;
         
           if(n >= 0){
             var octaveName = Math.floor(n / 12);

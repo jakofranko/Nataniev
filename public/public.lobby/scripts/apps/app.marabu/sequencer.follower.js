@@ -20,18 +20,18 @@ function Sequencer_Follower()
 
   this.update = function()
   {
-    var t = GUI.mAudio_timer().currentTime();
+    var app = lobby.apps.marabu;
+    var t = app.song.mAudio_timer().currentTime();
 
-    if (GUI.mAudio().ended || (GUI.mAudio().duration && ((GUI.mAudio().duration - t) < 0.1))) {
+    if (app.song.mAudio().ended || (app.song.mAudio().duration && ((app.song.mAudio().duration - t) < 0.1))) {
       stop();
       return;
     }
 
-    var n = Math.floor(t * 44100 / GUI.song().rowLen);
-    var seqPos = Math.floor(n / GUI.song().patternLen) + this.first_row;
-    var patPos = n % GUI.song().patternLen;
+    var n = Math.floor(t * 44100 / app.song.song().rowLen);
+    var seqPos = Math.floor(n / app.song.song().patternLen) + this.first_row;
+    var patPos = n % app.song.song().patternLen;
 
-    // document.getElementById("spr"+seqPos).className = "played";
     document.getElementById("ppr"+patPos).className = "played";
   }
 

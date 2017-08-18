@@ -14,8 +14,8 @@ lobby.apps.marabu.save = function(val, is_passive = false)
 
   if(!this.location){ return; }
 
-  GUI.update_ranges();
-  var str = JSON.stringify(GUI.song());
+  this.song.update_ranges();
+  var str = JSON.stringify(this.song.song());
 
   $.ajax({url: '/ide.save',
     type: 'POST', 

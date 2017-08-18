@@ -34,6 +34,10 @@ function Ide()
   this.textarea_el.style.resize = "none";
   this.textarea_el.style.wrap = "soft";
 
+  this.IO.pos = {x:600,y:30}
+
+  this.methods.inject = {name:"inject",passive:true};
+
   this.setup.start = function()
   {
     this.app.create();

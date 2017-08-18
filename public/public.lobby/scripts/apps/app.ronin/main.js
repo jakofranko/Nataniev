@@ -48,11 +48,18 @@ function Ronin()
   this.project.zoom = 0.25;
   this.tools = {};
 
+  this.IO.pos = {x:300,y:30}
+
   this.formats = ["rin"];
 
   this.setup.start = function()
   {
     this.app.clear();
+  }
+
+  this.when.share = function()
+  {
+
   }
 
   this.when.key = function(key)

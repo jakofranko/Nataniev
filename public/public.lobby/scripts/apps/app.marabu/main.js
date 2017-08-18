@@ -1,6 +1,3 @@
-
-var GUI = null;
-
 function Marabu()
 {
   App.call(this);
@@ -11,12 +8,16 @@ function Marabu()
   this.window.pos = {x:30,y:0};
   this.window.theme = "noir";
 
+  this.song = null;
   this.sequencer = null;
   this.editor = null;
   this.instrument = null;
 
   this.location = null;
   this.formats = ["mar"];
+
+  this.IO.pos = {x:30,y:30}
+  this.IO.route("uv_update","ide","print");
 
   this.setup.includes = [
     "methods/create",
@@ -58,9 +59,9 @@ function Marabu()
     this.app.wrapper_el.innerHTML += this.app.editor.build();
     this.app.wrapper_el.innerHTML += this.app.instrument.build();
 
-    GUI = new CGUI();
-    GUI.init();
-    GUI.update_rpp(this.app.editor.pattern.length);
+    this.app.song = new Song();
+    this.app.song.init();
+    this.app.song.update_rpp(this.app.editor.pattern.length);
 
     lobby.apps.marabu.sequencer.select();
   }
@@ -105,6 +106,11 @@ function Marabu()
     this.app.instrument.when.key(key);
     this.app.editor.when.key(key);
     this.app.sequencer.when.key(key);
+  }
+
+  this.when.uv_update = function()
+  {
+    
   }
 }
 

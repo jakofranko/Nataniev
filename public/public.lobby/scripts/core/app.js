@@ -4,6 +4,7 @@ function App()
   App_Window.call(this);
   App_Touch.call(this);
   App_Events.call(this);
+  App_IO.call(this);
 
 	this.name = "global";
 
@@ -260,7 +261,7 @@ function UI_Slider(id,name = "UNK",min = 0,max = 255)
   this.save = function()
   {
     var value = this.value;
-    var instr = GUI.instrument();
+    var instr = lobby.apps.marabu.song.instrument();
     var ARP_CHORD = lobby.apps.marabu.instrument.get_storage("arp_chord");
 
     if (this.id == "arp_note1" || this.id == "arp_note2") {  // The arpeggio chord notes are combined into a single byte    

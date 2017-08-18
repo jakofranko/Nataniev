@@ -8,6 +8,10 @@ function Twitter()
   this.window.pos = {x:30,y:30};
 
   this.methods.feed = {name:"feed",passive:true};
+  this.methods.tweet = {name:"tweet",passive:true};
+  this.methods.tweet_media = {name:"tweet_media",passive:true};
+
+  this.IO.pos = {x:300,y:300}
 
   this.setup.start = function()
   {
@@ -25,6 +29,7 @@ function Twitter()
 	    }
 	  })
   }
+
 }
 
 lobby.summon.confirm("Twitter");

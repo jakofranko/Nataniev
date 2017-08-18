@@ -135,7 +135,7 @@ function Instrument()
 
   this.update_controls = function()
   {
-    var instr = GUI.instrument();
+    var instr = app.song.instrument();
 
     for(slider_id in this.sliders){
       var slider = this.sliders[slider_id];
@@ -155,7 +155,7 @@ function Instrument()
       toggle.override(value);
     }
 
-    GUI.mJammer_update();
+    app.song.mJammer_update();
   }
 
   this.load = function(instrument_id = 1)
@@ -168,13 +168,13 @@ function Instrument()
   this.set_control = function(id,value)
   {
     var storage_id = this.get_storage(id);
-    GUI.instrument().i[storage_id] = value;
+    app.song.instrument().i[storage_id] = value;
 
     app.editor.set_effect(storage_id,value);
 
     // console.log("set "+id+"("+storage_id+")",value);
 
-    GUI.mJammer_update();
+    app.song.mJammer_update();
   }
 
   this.deselect = function()
@@ -192,10 +192,10 @@ function Instrument()
 
   this.refresh = function()
   {
-    var i = GUI.song().songData[this.id];
+    var i = app.song.song().songData[this.id];
     console.log("Refresh Instrument",i.i);
 
-    this.name = GUI.instrument().name ? GUI.instrument().name : "--";
+    this.name = app.song.instrument().name ? app.song.instrument().name : "--";
 
     this.name_el = document.getElementById("instrument_name");
     this.name_el.value = this.name;
@@ -271,7 +271,7 @@ function Instrument()
 
   this.play = function(note)
   {
-    GUI.play_note(note + this.octave * 12);
+    app.song.play_note(note + this.octave * 12);
   }
 
   // Keyboard Events
