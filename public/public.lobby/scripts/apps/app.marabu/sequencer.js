@@ -152,7 +152,7 @@ function Sequencer(bpm)
     for (var row = 0; row < this.sequence.length; row++) {
       tr = document.createElement("tr");
       tr.id = "spr"+row;
-      tr.className = row % 4 === 0 ? "beat" : ""; // TODO, shadow at track length
+      tr.className = row % 4 === 0 ? "beat" : "";
       for (var col = 0; col < 8; col++) {
         td = document.createElement("td");
         td.id = "sc" + col + "r" + row;

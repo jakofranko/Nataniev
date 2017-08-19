@@ -47,6 +47,19 @@ function Commander()
     console.log("!!")
   }
 
+  this.find_variable = function(target,fallback)
+  {
+    var parts = this.input_el.value.split(" ");
+
+    for(part_id in parts){
+      var word = parts[part_id];
+      if(word.substr(0,target.length) != target){ continue; }
+      return word.replace(target,"").trim();
+    }
+
+    return fallback;
+  }
+
   this.key_down = function(e = null)
   {
     lobby.commander.hide_browser();

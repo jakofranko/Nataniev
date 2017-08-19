@@ -1,4 +1,4 @@
-lobby.apps.ronin.methods.import = {name:"import",params:"path [width:200,height:200]",shortcut:"i",passive:true}
+lobby.apps.ronin.methods.import = {name:"import",params:"path x: y: w: h: s:",shortcut:"i",passive:true}
 
 lobby.apps.ronin.draw_image = function(base_image,pos,size)
 {
@@ -9,45 +9,39 @@ lobby.apps.ronin.import = function(param)
 {
   this.import = function(val, is_passive = false)
   {
+    var path  = val.split(" ")[0];
+    var scale = lobby.commander.find_variable("s:",1);
+    var pos   = {x:lobby.commander.find_variable("x:",0),y:lobby.commander.find_variable("y:",0)};
+    var size  = {width:lobby.commander.find_variable("w:",null) * scale,height:lobby.commander.find_variable("h:",null) * scale};
+    
     if(is_passive){
       lobby.commander.show_browser();
-      lobby.commander.browse_candidates(val,["jpg","png"]);
+      lobby.commander.browse_candidates(path,["jpg","png"]);
       return;
     }
 
-    this.window.show();
-    lobby.commander.hide_browser();
-    this.import_file(lobby.commander.select_candidate(val,["jpg","png"]));
-    return val;
-  }
-
-  this.import_file = function(path)
-  {
-    path = path.replace("public/","");
-
-    var position = {x:0,y:0};
+    // Draw
 
     base_image = new Image();
-    base_image.src = path;
-    base_image.src += '?'+new Date().getTime();
-    base_image.crossOrigin = "Anonymous";
+    base_image.src = lobby.commander.select_candidate(path,["jpg","png"]).replace("public/","");
     
     base_image.onload = function()
     {
       var width = base_image.naturalWidth;
       var height = base_image.naturalHeight;
-    
-      lobby.apps.ronin.project.size = {width:width,height:height};
-      lobby.apps.ronin.clear();
-      // Scale with only 1 unit
-      width  = isNaN(width) && height > 0 ? (height*base_image.naturalWidth)/base_image.naturalHeight : width;
-      height = isNaN(height) && width > 0 ? (width*base_image.naturalHeight)/base_image.naturalWidth : height;
 
-      var pos = {x:0,y:0};
-      var size = {width:width,height:height};
+      default_width  = isNaN(width) && height > 0 ? (height*base_image.naturalWidth)/base_image.naturalHeight : width;
+      default_height = isNaN(height) && width > 0 ? (width*base_image.naturalHeight)/base_image.naturalWidth : height;
 
-      lobby.apps.ronin.draw_image(base_image,pos,size);
+      var new_size = {width:size.width ? size.width * scale : default_width * scale, height:size.height ? size.height * scale : default_height * scale};
+
+      lobby.apps.ronin.draw_image(base_image,pos,new_size);
     }
+
+    // Finish
+
+    this.window.show();
+    lobby.commander.hide_browser();
   }
 }
 

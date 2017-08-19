@@ -108,7 +108,7 @@ function Marabu()
     this.app.sequencer.when.key(key);
   }
 
-  this.when.uv_update = function()
+  this.when.pattern_change = function()
   {
     
   }

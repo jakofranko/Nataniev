@@ -6,6 +6,8 @@ function Sequencer_Follower()
   this.first_col = 0;
   this.last_col = 0;
 
+  this.prev_pat = 0;
+
   this.start = function()
   {
     lobby.apps.marabu.sequencer.refresh();
@@ -32,7 +34,13 @@ function Sequencer_Follower()
     var seqPos = Math.floor(n / app.song.song().patternLen) + this.first_row;
     var patPos = n % app.song.song().patternLen;
 
-    document.getElementById("ppr"+patPos).className = "played";
+    if(patPos != this.prev_pat){
+      if(!lobby.apps.ide.textarea_el.value){ lobby.apps.ide.textarea_el.value = ""; }
+      var note = app.song.song().songData[4].c[0].n[patPos]; // TODO
+      document.getElementById("ppr"+patPos).className = "played";
+    }
+
+    this.prev_pat = patPos;
   }
 
   function stop()

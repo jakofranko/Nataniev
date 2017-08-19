@@ -1,10 +1,9 @@
-lobby.apps.ronin.methods.load = {name:"load"}
+lobby.apps.ronin.methods.load = {name:"load", shortcut:"l", passive:true}
 
 lobby.apps.ronin.load = function(param)
 {
   this.load = function(val, is_passive = false)
   {
-    console.log(val)
     if(is_passive){
       lobby.commander.show_browser();
       lobby.commander.browse_candidates(val,this.formats);

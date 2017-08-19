@@ -49,7 +49,7 @@ function System()
       }
     }
 
-    html += "<line x1='150' y1='180' x2='300' y2='255' stroke='black' stroke-width='2'/>"
+    // html += "<line x1='150' y1='180' x2='300' y2='255' stroke='black' stroke-width='2'/>"
 
     html += "<line x1='420' y1='180' x2='300' y2='390' stroke='black' stroke-width='2'/>"
 

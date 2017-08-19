@@ -2,6 +2,7 @@ lobby.apps.ronin.methods.path = {name:"path"}
 
 lobby.apps.ronin.path = function(stroke)
 {
+  console.log(this)
   var context = this.layers.main.context();
 
   context.beginPath();
