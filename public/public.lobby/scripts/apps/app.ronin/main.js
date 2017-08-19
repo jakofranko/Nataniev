@@ -35,6 +35,7 @@ function Ronin()
   this.setup.ready = function()
   {
     this.app.layers = {main:new Layer("main"),preview:new Layer("preview"),guide:new Layer("guide"),cursor:new Layer("cursor")};
+    this.app.layers.guide.preserve = true;
   }
 
   this.when.share = function()
@@ -57,6 +58,8 @@ function Ronin()
   {
     if (!file.type.match(/image.*/)) { return false; }
 
+    lobby.apps.ronin.window.show();
+
     var reader = new FileReader();
     
     reader.onload = function(event)
@@ -67,10 +70,12 @@ function Ronin()
       var width = base_image.naturalWidth;
       var height = base_image.naturalHeight;
       var pos = {x:0,y:0};
+      var zoom = lobby.apps.ronin.project.zoom;
       var size = {width:width,height:height};
 
-      lobby.apps.ronin.window.show();
-      lobby.apps.ronin.resize(size);
+      lobby.apps.ronin.project.size = size;
+      lobby.apps.ronin.project.zoom = 0.5;
+      lobby.apps.ronin.resize();
       lobby.apps.ronin.draw_image(base_image,pos,size);
     }
     reader.readAsDataURL(file);

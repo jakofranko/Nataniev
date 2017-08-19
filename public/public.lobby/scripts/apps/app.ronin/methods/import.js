@@ -17,8 +17,10 @@ lobby.apps.ronin.import = function(param)
     if(is_passive){
       lobby.commander.show_browser();
       lobby.commander.browse_candidates(path,["jpg","png"]);
+      this.layers.guide.hint(pos,size);
       return;
     }
+
 
     // Draw
 
@@ -36,6 +38,7 @@ lobby.apps.ronin.import = function(param)
       var new_size = {width:size.width ? size.width * scale : default_width * scale, height:size.height ? size.height * scale : default_height * scale};
 
       lobby.apps.ronin.draw_image(base_image,pos,new_size);
+      lobby.apps.ronin.layers.guide.clear();
     }
 
     // Finish
