@@ -17,10 +17,19 @@ function Layer(name = "UNK")
 
   this.resize = function(size = lobby.apps.ronin.project.size)
   {
+    var ctx = this.context();
+
+    var content = new Image();
+    content.src = this.el.toDataURL('image/png');
+
     this.el.width = size.width;
     this.el.height = size.height;
     this.el.style.position = "absolute";   
     this.zoom();
+
+    content.onload = function(){
+      ctx.drawImage(content,0,0,size.width,size.height);
+    }
   }
 
   this.context = function()

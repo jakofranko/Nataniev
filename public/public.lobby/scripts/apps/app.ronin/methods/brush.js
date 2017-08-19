@@ -25,7 +25,7 @@ lobby.apps.ronin.tools.brush =
     context.lineTo(a.x,a.y);
     context.lineCap="round";
     context.lineWidth = 15-this.mouse_size;
-    context.strokeStyle = "black";
+    context.strokeStyle = "red";
     context.stroke();
     context.closePath();
 

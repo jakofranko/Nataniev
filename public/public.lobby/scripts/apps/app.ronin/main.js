@@ -19,6 +19,13 @@ function Ronin()
 
   this.setup.start = function()
   {
+    // Setup
+    for(layer_id in this.app.layers){
+      var layer = this.app.layers[layer_id];
+      this.app.wrapper_el.appendChild(layer.el);
+      layer.setup();
+    }
+
     this.app.clear();
     this.app.window.organize.center();
     this.app.zoom(0.5)
@@ -28,13 +35,6 @@ function Ronin()
   this.setup.ready = function()
   {
     this.app.layers = {main:new Layer("main"),preview:new Layer("preview"),guide:new Layer("guide"),cursor:new Layer("cursor")};
-    
-    // Setup
-    for(layer_id in this.app.layers){
-      var layer = this.app.layers[layer_id];
-      this.app.wrapper_el.appendChild(layer.el);
-      layer.setup();
-    }
   }
 
   this.when.share = function()

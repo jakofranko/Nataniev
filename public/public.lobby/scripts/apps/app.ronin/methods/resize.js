@@ -1,10 +1,9 @@
-lobby.apps.ronin.methods.resize = {name:"resize"}
+lobby.apps.ronin.methods.resize = {name:"resize",params:"w: h: s:"}
 
 lobby.apps.ronin.resize = function(param)
 {
-  if(!param.width && param.indexOf("x") == -1){ console.log("Invalid"); return; }
-
-  var size = param.width ? param : {width:parseInt(param.split("x")[0]),height:parseInt(param.split("x")[1])};
+  var scale = lobby.commander.find_variable("s:",1);
+  var size  = {width:lobby.commander.find_variable("w:",this.project.size.width) * scale,height:lobby.commander.find_variable("h:",this.project.size.height) * scale};
 
   this.project.size = size;
   
@@ -12,7 +11,7 @@ lobby.apps.ronin.resize = function(param)
     var layer = lobby.apps.ronin.layers[layer_id];
     layer.resize(this.project.size,this.project.zoom);
   }
-  
+
   this.window.resize_to({width:this.project.size.width * this.project.zoom,height:this.project.size.height * this.project.zoom});
   lobby.commander.update_status();
 }
