@@ -233,7 +233,6 @@ function Editor(t,b)
   {
     key : function(key)
     {
-      console.log("editor.key",target.edit_mode)
       var note = -1;
 
       switch (key)

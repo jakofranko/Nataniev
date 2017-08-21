@@ -85,7 +85,9 @@ function Sequencer(bpm)
 
   this.edit_note = function(i,c,n,v)
   {
-    // console.info("edit_node","i:"+i,"c:"+c,"n:"+n,"v:"+v,app.song.song().songData);
+    if(c == NaN){ console.warn("error"); return; }
+
+    console.info("edit_node","i:"+i,"c:"+c,"n:"+n,"v:"+v,app.song.song().songData);
     app.song.song().songData[i].c[c].n[n] = v;
   }
 
@@ -97,12 +99,15 @@ function Sequencer(bpm)
     console.info("edit_sequence","i:"+i,"p:"+p,"v:"+v,app.song.song().songData);
 
     this.refresh_table();
-    this.edit(false);
+    if(v == 0){
+      app.editor.refresh();
+    }
     if(v != 0){
       app.editor.pattern.id = parseInt(v);
       app.editor.edit();   
       app.editor.select(0,0,0,0);
       app.sequencer.deselect();
+      this.edit(false);
     }
   }
 
@@ -207,7 +212,7 @@ function Sequencer(bpm)
       if(key == "arrowup"){ target.select_move(0,-1); return; }
       if(key == "arrowdown"){ target.select_move(0,1); return; }
 
-      if(["0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f","escape","backspace","enter"].indexOf(key) == -1){ console.log("SEQ: Unknown Key",key); return; }
+      if(["0","1","2","3","4","5","6","7","8","9","escape","backspace","enter"].indexOf(key) == -1){ console.log("SEQ: Unknown Key",key); return; }
       
       if(key == "escape"){ return; }
       if(key == "backspace"){ key = 0; }
