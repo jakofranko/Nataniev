@@ -4,7 +4,7 @@ function Marabu()
 
   this.name = "marabu";
 
-  this.window.size = {width:420,height:510};
+  this.window.size = {width:600,height:510};
   this.window.pos = {x:30,y:0};
   this.window.theme = "noir";
 
@@ -74,14 +74,14 @@ function Marabu()
     html += ".everything { color:white; }";
     html += ".tracks { text-align:left}";
     html += ".tracks tr {  line-height:15px; position:relative}";
-    html += ".tracks tr td { padding-right:5px}";
+    html += ".tracks tr td { padding-right:5px; color:#555}";
+    html += "#sequencer tr td { padding-right:0px;}";
     html += ".tracks tr:hover { color:#999}";
     html += ".tracks tr td { position:relative}";
     html += ".tracks td:hover { cursor:pointer}";
     html += ".tracks td.selected { color:#fff}";
     html += ".tracks tr.beat th { color:#999}";
-    html += ".tracks.inactive tr td { color:#555}";
-    html += ".tracks.inactive tr th { color:#555}";
+    html += ".tracks tr th { color:#555; font-family: 'input_mono_medium'}";
     html += ".tracks.playing tr td {color:#555}";
     html += ".tracks.playing tr th {color:#555}";
     html += ".tracks.playing tr.played td {color:#fff}";

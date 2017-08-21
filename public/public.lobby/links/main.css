@@ -87,7 +87,8 @@ b         { font-weight: normal; font-family: 'input_mono_medium'}
 .f_misc { text-decoration: underline;  }
 .f_red { color:#f00; }
 
-.t_thin { font-family: "input_mono_thin" }
+.thin { font-family: "input_mono_thin" }
+.bold { font-family: "input_mono_medium" }
 .t45 { font-size:45px; }
 
 /* Background */
@@ -154,6 +155,7 @@ b         { font-weight: normal; font-family: 'input_mono_medium'}
 
 .right { float:right; }
 .left { float:left; }
+.hide { display: none }
 .pointer { cursor:pointer; }
 
 /* HIGHLIGHTS/LOWLIGHTS */
@@ -191,3 +193,4 @@ app.ghost .cu:hover { background:#fff; color:#000; cursor:pointer;}
 
 app.hidden { display: none }
 
+app .color { color:red !important; }

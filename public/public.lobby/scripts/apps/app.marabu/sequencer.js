@@ -14,8 +14,8 @@ function Sequencer(bpm)
   {
     var html = "";
 
-    html += "  <div class='sequencer' id='sequence_controller' style='width:120px; display:inline-block; vertical-align:top'>";
-    html += "    <h1 class='lh30' style='width:90px'><b id='seq_title'>SEQ</b> <t id='bpm' class='bh fm' style='float:right; text-align:right; height:30px; line-height:30px; background:transparent'/><hr /></h1>";
+    html += "  <div class='sequencer' id='sequence_controller' style='width:85px; display:inline-block; vertical-align:top'>";
+    html += "    <h1 class='lh30 hide' style='width:90px'><b id='seq_title'>SEQ</b> <t id='bpm' class='bh fm' style='float:right; text-align:right; height:30px; line-height:30px; background:transparent'/><hr /></h1>";
     html += "    <div id='sequencer'><table class='tracks' id='sequencer-table'></table></div>";
     html += "  </div>";
 
@@ -102,13 +102,6 @@ function Sequencer(bpm)
     if(v == 0){
       app.editor.refresh();
     }
-    if(v != 0){
-      app.editor.pattern.id = parseInt(v);
-      app.editor.edit();   
-      app.editor.select(0,0,0,0);
-      app.sequencer.deselect();
-      this.edit(false);
-    }
   }
 
   this.location = function()
@@ -153,6 +146,15 @@ function Sequencer(bpm)
     while (table.firstChild){
       table.removeChild(table.firstChild);
     }
+    // Head
+    var tr = document.createElement("tr");
+    var th = document.createElement("th");
+    th.colSpan = 8;
+    th.className = "lh30 bold";
+    th.textContent = "SEQ";
+    tr.appendChild(th);
+    table.appendChild(tr);
+    // Main
     var tr, td;
     for (var row = 0; row < this.sequence.length; row++) {
       tr = document.createElement("tr");

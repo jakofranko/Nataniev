@@ -8,7 +8,7 @@ var calcSamplesPerRow = function(bpm)
 lobby.apps.marabu.new_song = function()
 {
 
-  var MAX_SONG_ROWS = 16,
+  var MAX_SONG_ROWS = 32,
       MAX_PATTERNS = 16;
 
     var song = {}, i, j, k, instr, col;
@@ -58,6 +58,11 @@ lobby.apps.marabu.new_song = function()
     }
 
     // Default instruments
+    song.songData[0].name = "SYN1";
+    song.songData[1].name = "SYN2";
+    song.songData[2].name = "PAD1";
+    song.songData[3].name = "PAD2";
+
     song.songData[4].name = "Kick";
     song.songData[4].i = [2,0,92,0,0,255,92,23,1,0,14,0,74,0,0,0,89,0,1,1,16,0,21,255,49,6,0,0];
     song.songData[5].name = "Snare";

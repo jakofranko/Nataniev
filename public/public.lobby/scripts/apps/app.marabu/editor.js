@@ -13,8 +13,8 @@ function Editor(t,b)
   {
     var html = "";
 
-    html += "  <div class='pattern' id='pattern_controller' style='width:130px; display:inline-block; vertical-align:top; border-left:1px solid #333; padding-left:30px; margin-left:-5px'>";
-    html += "    <h1 class='lh30' style='width:105px'><b id='pat_title'>PAT</b> <t id='time_signature' class='bh fm' style='float:right; text-align:right; height:30px;  line-height:30px; background:transparent'></t></h1>";
+    html += "  <div class='pattern' id='pattern_controller' style='width:320px; display:inline-block; vertical-align:top; border-left:1px solid #333; padding-left:30px; margin-left:-5px'>";
+    html += "    <h1 class='lh30 hide' style='width:105px'><b id='pat_title'>PAT</b> <t id='time_signature' class='bh fm' style='float:right; text-align:right; height:30px;  line-height:30px; background:transparent'></t></h1>";
     html += "    <div id='pattern'><table class='tracks' id='pattern-table'></table>";
     html += "  </div>";
 
@@ -155,16 +155,28 @@ function Editor(t,b)
     while (table.firstChild){
       table.removeChild(table.firstChild);
     }
+    // INS NAMES
+    var tr = document.createElement("tr");
+    for (var col = 0; col < 8; col++) {
+      var th = document.createElement("th");
+      th.id = "ih"+col;
+      th.className = "lh30 bold";
+      th.textContent = "KICK";
+      tr.appendChild(th);
+    }
+    table.appendChild(tr);
+      
+    // Main
     var tr, td;
-    for (var row = 0; row < this.pattern.length; row++) {
+    for(var row = 0; row < this.pattern.length; row++) {
       tr = document.createElement("tr");
       tr.id = "ppr"+row;
       tr.className = row % this.pattern.signature[1] == 0 ? " fm" : "";
       // Pattern
-      for (col = 0; col < 4; col++) {
+      for (col = 0; col < 8; col++) {
         td = document.createElement("td");
-        td.id = "pc" + col + "r" + row;
-        td.textContent = "--";
+        td.id = "i"+col+"r"+row;
+        td.textContent = "----";
         td.addEventListener("mousedown", this.pattern_mouse_down, false);
         tr.appendChild(td);
       }
@@ -185,6 +197,27 @@ function Editor(t,b)
 
     document.getElementById("pattern-table").className = l.p == -1 ? "tracks inactive" : "tracks";
 
+    console.log(l);
+
+    // 32 x 8
+    for(var i = 0; i < 8; i++){
+      var instrument_header = document.getElementById("ih"+i);
+      var instrument = app.song.song().songData[i];
+      var sequence = app.song.song().songData[i].p[app.sequencer.selection.y2];
+      instrument_header.textContent = instrument.name ? instrument.name.substr(0,4).toUpperCase() : "";
+      if(i == l.i){ instrument_header.className = "fh lh30"; }
+      else if(sequence > 0){ instrument_header.className = "fm lh30"; }
+      else{ instrument_header.className = "lh30"; }
+      // Each Row
+      for(var r = 0; r < this.pattern.length; r++){
+        var cell = document.getElementById("i"+i+"r"+r);
+        var classes = "";
+        if(sequence > 0){ classes += "fm "; }
+        cell.className = classes;
+      }
+    }
+
+    // 32
     for (var r = 0; r < this.pattern.length; ++r)
     {
       if(app.song.instrument().c[l.p]){
@@ -193,38 +226,49 @@ function Editor(t,b)
         var f_val = app.song.instrument().c[l.p].f[r+this.pattern.length];
         o_f.textContent = (r == this.pattern.effect) ? "> "+toHex(f_val,2) : (toHex(f_cmd,2) + "" + toHex(f_val,2));
       }
-
-      for (var c = 0; c < 4; ++c)
-      {
-        var o_n = document.getElementById("pc" + c + "r" + r);
-        
-        var classes = "";
-
-        if (r >= this.selection.y1 && r <= this.selection.y2 && c >= this.selection.x1 && c <= this.selection.x2){ classes += "selected "; }
-
-        if(app.song.instrument().c[l.p-1]){
-          var n = app.song.instrument().c[l.p-1].n[r+c*this.pattern.length] - 87;
-        
-          if(n >= 0){
-            var octaveName = Math.floor(n / 12);
-            var noteName = ['C', 'C', 'D', 'D', 'E', 'F', 'F', 'G', 'G', 'A', 'A', 'B'][n % 12];
-            var sharp = noteName.substr(1,1) == "#" ? true : false;
-
-            classes += "octave_"+octaveName+" ";
-            classes += "note_"+noteName.substr(0,1)+" ";
-            classes += sharp ? "sharp " : "";
-            o_n.textContent = (r == this.selection.y2 && c == this.selection.x2) ? ">"+octaveName : noteName+octaveName;
-          }
-          else{
-            o_n.textContent = (r == this.selection.y2 && c == this.selection.x2) ? ">" : "--";
-          }
-        }
-        else{
-          o_n.textContent = "--";
-        }
-        o_n.className = classes;
-      }
     }
+
+    // for (var r = 0; r < this.pattern.length; ++r)
+    // {
+    //   if(app.song.instrument().c[l.p]){
+    //     var o_f = document.getElementById("fxr"+r);
+    //     var f_cmd = app.song.instrument().c[l.p].f[r];
+    //     var f_val = app.song.instrument().c[l.p].f[r+this.pattern.length];
+    //     o_f.textContent = (r == this.pattern.effect) ? "> "+toHex(f_val,2) : (toHex(f_cmd,2) + "" + toHex(f_val,2));
+    //   }
+
+    //   for (var c = 0; c < 8; ++c)
+    //   {
+    //     var instrument_id = parseInt(c/2);
+    //     var o_n = document.getElementById("i"+instrument_id+"c"+c+"r"+r);
+        
+    //     var classes = "";
+
+    //     if (r >= this.selection.y1 && r <= this.selection.y2 && c >= this.selection.x1 && c <= this.selection.x2){ classes += "selected "; }
+
+    //     if(app.song.instrument().c[l.p-1]){
+    //       var n = app.song.instrument().c[l.p-1].n[r+c*this.pattern.length] - 87;
+        
+    //       if(n >= 0){
+    //         var octaveName = Math.floor(n / 12);
+    //         var noteName = ['C', 'C', 'D', 'D', 'E', 'F', 'F', 'G', 'G', 'A', 'A', 'B'][n % 12];
+    //         var sharp = noteName.substr(1,1) == "#" ? true : false;
+
+    //         classes += "octave_"+octaveName+" ";
+    //         classes += "note_"+noteName.substr(0,1)+" ";
+    //         classes += sharp ? "sharp " : "";
+    //         o_n.textContent = (r == this.selection.y2 && c == this.selection.x2) ? ">"+octaveName : noteName+octaveName;
+    //       }
+    //       else{
+    //         o_n.textContent = (r == this.selection.y2 && c == this.selection.x2) ? ">" : "----";
+    //       }
+    //     }
+    //     else{
+    //       o_n.textContent = "----";
+    //     }
+    //     o_n.className = classes;
+    //   }
+    // }
   }
 
   // Keyboard Events
