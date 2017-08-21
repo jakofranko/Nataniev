@@ -88,11 +88,11 @@ function Editor(t,b)
 
   this.pattern_mouse_down = function(e)
   {
-    var col = parseInt(e.target.id.slice(2,3));
-    var row = parseInt(e.target.id.slice(4));
+    var i = parseInt(e.target.id.slice(1,2));
+    var r = parseInt(e.target.id.slice(3));
 
-    lobby.commander.update_status();
-    target.select(col,row,col,row);
+    console.log(i,r)
+    target.select(i,r,i,r);
   }
 
   this.effect_mouse_down = function(e)
@@ -195,9 +195,8 @@ function Editor(t,b)
   {
     var l = this.location();
 
-    document.getElementById("pattern-table").className = l.p == -1 ? "tracks inactive" : "tracks";
-
     console.log(l);
+    document.getElementById("pattern-table").className = l.p == -1 ? "tracks inactive" : "tracks";
 
     // 32 x 8
     for(var i = 0; i < 8; i++){
@@ -231,48 +230,6 @@ function Editor(t,b)
       if(r % this.pattern.signature[1] == 0){ classes += "fm "; }
       o_f.className = classes;
     }
-
-    // for (var r = 0; r < this.pattern.length; ++r)
-    // {
-    //   if(app.song.instrument().c[l.p]){
-    //     var o_f = document.getElementById("fxr"+r);
-    //     var f_cmd = app.song.instrument().c[l.p].f[r];
-    //     var f_val = app.song.instrument().c[l.p].f[r+this.pattern.length];
-    //     o_f.textContent = (r == this.pattern.effect) ? "> "+toHex(f_val,2) : (toHex(f_cmd,2) + "" + toHex(f_val,2));
-    //   }
-
-    //   for (var c = 0; c < 8; ++c)
-    //   {
-    //     var instrument_id = parseInt(c/2);
-    //     var o_n = document.getElementById("i"+instrument_id+"c"+c+"r"+r);
-        
-    //     var classes = "";
-
-    //     if (r >= this.selection.y1 && r <= this.selection.y2 && c >= this.selection.x1 && c <= this.selection.x2){ classes += "selected "; }
-
-    //     if(app.song.instrument().c[l.p-1]){
-    //       var n = app.song.instrument().c[l.p-1].n[r+c*this.pattern.length] - 87;
-        
-    //       if(n >= 0){
-    //         var octaveName = Math.floor(n / 12);
-    //         var noteName = ['C', 'C', 'D', 'D', 'E', 'F', 'F', 'G', 'G', 'A', 'A', 'B'][n % 12];
-    //         var sharp = noteName.substr(1,1) == "#" ? true : false;
-
-    //         classes += "octave_"+octaveName+" ";
-    //         classes += "note_"+noteName.substr(0,1)+" ";
-    //         classes += sharp ? "sharp " : "";
-    //         o_n.textContent = (r == this.selection.y2 && c == this.selection.x2) ? ">"+octaveName : noteName+octaveName;
-    //       }
-    //       else{
-    //         o_n.textContent = (r == this.selection.y2 && c == this.selection.x2) ? ">" : "----";
-    //       }
-    //     }
-    //     else{
-    //       o_n.textContent = "----";
-    //     }
-    //     o_n.className = classes;
-    //   }
-    // }
   }
 
   // Keyboard Events
