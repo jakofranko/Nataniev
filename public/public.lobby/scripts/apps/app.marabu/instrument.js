@@ -133,6 +133,12 @@ function Instrument()
     this.update_controls();
   }
 
+  this.select = function(id)
+  {
+    this.id = id;
+    this.refresh();
+  }
+
   this.update_controls = function()
   {
     var instr = app.song.instrument();
@@ -193,7 +199,6 @@ function Instrument()
   this.refresh = function()
   {
     var i = app.song.song().songData[this.id];
-    console.log("Refresh Instrument",i.i);
 
     this.name = app.song.instrument().name ? app.song.instrument().name : "--";
 

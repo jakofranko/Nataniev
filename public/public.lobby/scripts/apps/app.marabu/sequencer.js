@@ -4,7 +4,7 @@ function Sequencer(bpm)
   var target = this;
 
   this.edit_mode = false;
-  this.selection = {x1:0,y1:0,x2:0,y2:0};
+  this.selection = {x:0,y:0};
   this.sequence = {length:32,bpm:bpm}
 
   this.title_el = document.getElementById("seq_title");
@@ -30,16 +30,16 @@ function Sequencer(bpm)
   this.pattern_id_at = function(x,y)
   {
     var instrument_id = app.song.instrument_controller.id;
-    var pattern_id = app.song.song().songData[instrument_id].p[this.selection.y1];
+    var pattern_id = app.song.song().songData[instrument_id].p[this.selection.y];
     return pattern_id - 1;
   }
 
-  this.select = function(x1 = 0,y1 = 0,x2 = 0,y2 = 0)
+  this.select = function(x = 0,y = 0)
   {
-    this.selection = {x1:x1,y1:y1,x2:x2,y2};
+    this.selection = {x:x,y:y};
 
-    var target_pattern_value = document.getElementById("sc"+x2+"r"+y2).textContent;
-    var target_instrument_id = x2;
+    var target_pattern_value = document.getElementById("sc"+x+"r"+y).textContent;
+    var target_instrument_id = x;
     var target_pattern_id = target_pattern_value == "-" ? -1 : parseInt(target_pattern_value);    
 
     app.editor.pattern.id = target_pattern_id;
@@ -52,7 +52,7 @@ function Sequencer(bpm)
 
   this.deselect = function()
   {
-    this.selection = {x1:-1,y1:-1,x2:-1,y2:-1};
+    this.selection = {x:-1,y:-1};
     app.sequencer.refresh();
   }
 
@@ -60,18 +60,15 @@ function Sequencer(bpm)
   {
     var s = this.selection;
 
-    s.x2 += x;
-    s.y2 += y;
+    s.x += x;
+    s.y += y;
 
-    if(s.x2 < 0){ s.x2 = 0; }
-    if(s.y2 < 0){ s.y2 = 0; }
-    if(s.x2 > 7){ s.x2 = 7; }
-    if(s.y2 > 31){ s.y2 = 31; }
+    if(s.x < 0){ s.x = 0; }
+    if(s.y < 0){ s.y = 0; }
+    if(s.x > 7){ s.x = 7; }
+    if(s.y > 31){ s.y = 31; }
 
-    s.x1 = s.x2;
-    s.y1 = s.y2;
-
-    this.select(s.x1,s.y1,s.x2,s.y2);
+    this.select(s.x,s.y);
   }
 
   this.edit = function(toggle = true)
@@ -85,7 +82,7 @@ function Sequencer(bpm)
 
   this.edit_note = function(i,c,n,v)
   {
-    if(c == NaN){ console.warn("error"); return; }
+    if(c == NaN || !app.song.song().songData[i].c[c]){ console.warn("error"); return; }
 
     console.info("edit_node","i:"+i,"c:"+c,"n:"+n,"v:"+v,app.song.song().songData);
     app.song.song().songData[i].c[c].n[n] = v;
@@ -99,12 +96,13 @@ function Sequencer(bpm)
     console.info("edit_sequence","i:"+i,"p:"+p,"v:"+v,app.song.song().songData);
 
     this.refresh_table();
+    app.editor.select(i,-1,i,-1);
     app.editor.refresh();
   }
 
   this.location = function()
   {
-    return {i:app.instrument.id};
+    return {i:app.instrument.id,s:this.selection.y};
   }
 
   // 
@@ -116,6 +114,7 @@ function Sequencer(bpm)
     var col = parseInt(e.target.id.slice(2,3));
     var row = parseInt(e.target.id.slice(4));
 
+    app.editor.edit(false);
     target.edit();
     target.select(col,row,col,row);
     lobby.commander.update_status();
@@ -131,7 +130,7 @@ function Sequencer(bpm)
   {
     var html = "SEQ ";
 
-    if(this.edit_mode){ html += this.selection.y2; }
+    if(this.edit_mode){ html += this.selection.y; }
 
     document.getElementById("seq_title").innerHTML = html;
     document.getElementById("bpm").innerHTML = this.sequence.bpm;
@@ -171,6 +170,8 @@ function Sequencer(bpm)
 
   this.refresh_table = function()
   {
+    var l = this.location();
+
     for (var r = 0; r < this.sequence.length; ++r)
     {
       for (var c = 0; c < 8; ++c)
@@ -179,18 +180,22 @@ function Sequencer(bpm)
         var pat = app.song.song().songData[c].p[r];
         var classes = "";
         if(pat > 0){ classes += "pattern_"+pat+" "; }
-        if (r >= this.selection.y1 && r <= this.selection.y2 && c >= this.selection.x1 && c <= this.selection.x2){ classes += "selected "; }
+        if (r == this.selection.y && c == this.selection.x){ classes += "selected "; }
 
-        if(r > app.song.song().endPattern){ classes += "fl "; }
+        if(l.s == r){ classes += "fh "; }
+        else if(r > app.song.song().endPattern){ classes += "fl "; }
         else if(pat){ classes += "fh "; }
         else{ classes += "fm "; }
 
         o.className = classes;
-        if(r == this.selection.y2 && c == this.selection.x2){
+        if(r == this.selection.y && c == this.selection.x && this.edit_mode){
           o.textContent = ">";  
         }
         else if(pat){
           o.textContent = pat;  
+        }
+        else if(r > app.song.song().endPattern){ 
+          o.textContent = ".";  
         }
         else{
           o.textContent = "-";  
@@ -217,8 +222,8 @@ function Sequencer(bpm)
       if(key == "escape"){ return; }
       if(key == "backspace"){ key = 0; }
 
-      var i = target.selection.x2;
-      var p = target.selection.y2;
+      var i = target.selection.x;
+      var p = target.selection.y;
 
       if(key == "enter"){ target.edit_sequence(i,p,app.editor.pattern.id); return; }
 
