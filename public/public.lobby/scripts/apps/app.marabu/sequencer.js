@@ -99,9 +99,7 @@ function Sequencer(bpm)
     console.info("edit_sequence","i:"+i,"p:"+p,"v:"+v,app.song.song().songData);
 
     this.refresh_table();
-    if(v == 0){
-      app.editor.refresh();
-    }
+    app.editor.refresh();
   }
 
   this.location = function()

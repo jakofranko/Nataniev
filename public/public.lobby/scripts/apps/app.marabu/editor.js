@@ -213,6 +213,7 @@ function Editor(t,b)
         var cell = document.getElementById("i"+i+"r"+r);
         var classes = "";
         if(sequence > 0){ classes += "fm "; }
+        if(r % this.pattern.signature[1] == 0){ classes += "fm "; }
         cell.className = classes;
       }
     }
@@ -220,12 +221,15 @@ function Editor(t,b)
     // 32
     for (var r = 0; r < this.pattern.length; ++r)
     {
+      var o_f = document.getElementById("fxr"+r);
       if(app.song.instrument().c[l.p]){
-        var o_f = document.getElementById("fxr"+r);
         var f_cmd = app.song.instrument().c[l.p].f[r];
         var f_val = app.song.instrument().c[l.p].f[r+this.pattern.length];
         o_f.textContent = (r == this.pattern.effect) ? "> "+toHex(f_val,2) : (toHex(f_cmd,2) + "" + toHex(f_val,2));
       }
+      var classes = "";
+      if(r % this.pattern.signature[1] == 0){ classes += "fm "; }
+      o_f.className = classes;
     }
 
     // for (var r = 0; r < this.pattern.length; ++r)
