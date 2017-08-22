@@ -48,6 +48,8 @@ function Sequencer(bpm)
     app.editor.refresh();
     app.sequencer.refresh();
     app.instrument.refresh();
+
+    console.log(app.sequencer.location());
   }
 
   this.deselect = function()
@@ -84,8 +86,13 @@ function Sequencer(bpm)
   {
     if(c == NaN || !app.song.song().songData[i].c[c]){ console.warn("error"); return; }
 
-    console.info("edit_node","i:"+i,"c:"+c,"n:"+n,"v:"+v,app.song.song().songData);
     app.song.song().songData[i].c[c].n[n] = v;
+  }
+
+  this.edit_effect = function(i,c,f,cmd = 0,val = 0)
+  {
+    app.song.song().songData[i].c[c].f[f] = cmd;
+    app.song.song().songData[i].c[c].f[f+32] = val;
   }
 
   this.edit_sequence = function(i,p,v)
@@ -96,7 +103,7 @@ function Sequencer(bpm)
     console.info("edit_sequence","i:"+i,"p:"+p,"v:"+v,app.song.song().songData);
 
     this.refresh_table();
-    app.editor.select(i,-1,i,-1);
+    app.editor.select(i,0,-1);
     app.editor.refresh();
   }
 
@@ -182,16 +189,13 @@ function Sequencer(bpm)
         if(pat > 0){ classes += "pattern_"+pat+" "; }
         if (r == this.selection.y && c == this.selection.x){ classes += "selected "; }
 
-        if(l.s == r){ classes += "fh "; }
-        else if(r > app.song.song().endPattern){ classes += "fl "; }
-        else if(pat){ classes += "fh "; }
+        if(r > app.song.song().endPattern){ classes += "fl "; }
+        else if(r == this.selection.y && c == this.selection.x && this.edit_mode){ classes += "fh "; }
         else{ classes += "fm "; }
 
         o.className = classes;
-        if(r == this.selection.y && c == this.selection.x && this.edit_mode){
-          o.textContent = ">";  
-        }
-        else if(pat){
+
+        if(pat){
           o.textContent = pat;  
         }
         else if(r > app.song.song().endPattern){ 
@@ -211,6 +215,7 @@ function Sequencer(bpm)
     key : function(key)
     {
       if(target.edit_mode != true){ return; }
+      key = key.toLowerCase();
 
       if(key == "arrowleft"){ target.select_move(-1,0); return; }
       if(key == "arrowright"){ target.select_move(1,0); return; }

@@ -174,11 +174,17 @@ function Instrument()
   this.set_control = function(id,value)
   {
     var storage_id = this.get_storage(id);
-    app.song.instrument().i[storage_id] = value;
 
-    app.editor.set_effect(storage_id,value);
-
-    // console.log("set "+id+"("+storage_id+")",value);
+    // Record Effect
+    if(app.editor.selection.e >= 0){
+      console.log("Set Effect",storage_id)
+      app.editor.set_effect(storage_id,value);  
+    }
+    // Change instrument
+    else{
+      console.log("Update Instrument",storage_id)
+      app.song.instrument().i[storage_id] = value;      
+    }
 
     app.song.mJammer_update();
   }

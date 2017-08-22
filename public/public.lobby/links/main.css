@@ -81,7 +81,7 @@ b         { font-weight: normal; font-family: 'input_mono_medium'}
 .f9 { color: #999; }
 .ff { color:white; }
 .fc { color:#ccc; }
-.f_audio { color:#72dec2; }
+.f_audio { color:#72dec2 !important; }
 .f_visual { color:#999; }
 .f_research { color:#333;  }
 .f_misc { text-decoration: underline;  }
@@ -179,8 +179,10 @@ app.noir     { background: black; color:white; }
 app.noir .fh { color:white; stroke:white; }
 app.noir .fm { color:#999; stroke:#999; }
 app.noir .fl { color:#555; stroke:#555; }
+app.noir .fi { color:black; stroke:black; }
 app.noir .bh { background:black;}
 app.noir .bl { background:#A1A1A1;}
+app.noir .bi { background:#fff;}
 app.noir .cu:hover { background:#fff; color:#000; cursor:pointer;}
 
 app.ghost ::selection       { background: #888; opacity:1.0; color:#999; }
