@@ -29,16 +29,18 @@ function Editor(t,b)
   }
 
   this.select = function(x = 0,y = 0,e = -1)
-  {
+  {    
     this.selection.x = x;
     this.selection.y = y;
     this.selection.e = e;
 
     if(e == -1){ app.instrument.select(x); }
+    else if(e >= 0 && this.location().p == 0){ this.selection.e = -1; }
 
     this.refresh();
     app.sequencer.selection.x = x;
     app.sequencer.refresh();
+    app.instrument.refresh();
   }
 
   this.deselect = function()
@@ -124,7 +126,7 @@ function Editor(t,b)
     var l = this.location();
     var r = this.selection.e;
 
-    console.log(cmd,val,app.song)
+    // console.log(cmd,val,app.song)
 
     if(this.selection.e < 0 || !app.song.instrument().c[l.p-1]){ return; }
 

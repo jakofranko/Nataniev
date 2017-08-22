@@ -158,6 +158,13 @@ b         { font-weight: normal; font-family: 'input_mono_medium'}
 .hide { display: none }
 .pointer { cursor:pointer; }
 
+.slider { cursor: pointer }
+.slider .name { color:#999; width:30px; display: inline-block; }
+.slider:hover .name { color:#fff; }
+.slider.selected .name { color:#fff; }
+.slider.selected { position: relative; }
+.slider.selected:before { content: ">"; position: absolute;left:-15px; }
+
 /* HIGHLIGHTS/LOWLIGHTS */
 
 app { display: block; width:30px; height:30px; background:RGBA(0,0,0,1); position: absolute; top:60px; left:60px; padding:30px; color:black; overflow: hidden; z-index:20;}

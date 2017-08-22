@@ -9,6 +9,7 @@ function Instrument()
   this.name_el = document.getElementById("instrument_name");
   this.edit_mode = false;
 
+  this.selection = {s:null,y:0};
   this.sliders = {};
   this.choices = {};
   this.toggles = {};
@@ -147,9 +148,12 @@ function Instrument()
     this.update_controls();
   }
 
-  this.select = function(id)
+  this.select = function(id = null,slider = null)
   {
-    this.id = id;
+    if(id != null){
+      this.id = id;      
+    }
+    this.selection.s = slider;
     this.refresh();
   }
 
@@ -185,18 +189,18 @@ function Instrument()
     this.refresh();
   }
 
-  this.set_control = function(id,value)
+  this.set_control = function(id,value,effect_keyframe = false)
   {
     var storage_id = this.get_storage(id);
 
     // Record Effect
-    if(app.editor.selection.e >= 0){
-      console.log("Set Effect",storage_id)
+    if(effect_keyframe){
+      // console.log("Set Effect",storage_id)
       app.editor.set_effect(storage_id,value);  
     }
     // Change instrument
     else{
-      console.log("Update Instrument",storage_id)
+      // console.log("Update Instrument",storage_id)
       app.song.instrument().i[storage_id] = value;      
     }
 
@@ -226,6 +230,11 @@ function Instrument()
     this.name_el.value = this.name;
 
     this.update_controls();
+  }
+
+  this.move = function(x,y)
+  {
+    if(this.sliders[this.selection.s]){ this.sliders[this.selection.s].mod(x); }
   }
 
   this.build = function()
@@ -300,8 +309,211 @@ function Instrument()
       if(key == "z"){
         target.set_octave(-1);
       }
+      if(key == "ArrowUp"){
+        target.move(0,1);
+      }
+      if(key == "ArrowDown"){
+        target.move(0,-1);
+      }
+      if(key == "]"){
+        target.move(10,0);
+      }
+      if(key == "["){
+        target.move(-10,0);
+      }
+      if(key == "}"){
+        target.move(1,0);
+      }
+      if(key == "{"){
+        target.move(-1,0);
+      }
     }
   }
 }
 
+// UI
+
+function UI_Toggle(id,name = "UNK")
+{
+  this.id = id;
+  this.name = name;
+  this.el = document.getElementById(id);
+  this.value = 0;
+  this.el.style.cursor = "pointer";
+
+  var target = this;
+
+  this.install = function()
+  {
+    this.el.innerHTML = this.name;
+    this.update();
+  }
+
+  this.update = function()
+  {
+    this.el.style.color = this.value == 1 ? "#fff" : "#555";
+    lobby.apps.marabu.instrument.set_control(this.id,this.value);
+  }
+
+  this.override = function(value)
+  {
+    this.value = value;
+    this.update();
+  }
+
+  this.mouse_down = function()
+  {
+    target.value = target.value == 1 ? 0 : 1;
+    target.update();
+  }
+
+  this.el.addEventListener("mousedown", this.mouse_down, false);
+}
+
+function UI_Choice(id,name = "UNK",choices = [])
+{
+  this.id = id;
+  this.name = name;
+  this.choices = choices;
+  this.el = document.getElementById(id);
+  this.el.style.width = "60px";
+  this.el.style.display = "inline-block";
+  this.el.style.marginRight = "10px";
+  this.el.style.cursor = "pointer";
+
+  this.index = 0;
+
+  var target = this;
+
+  this.install = function()
+  {
+    this.el.innerHTML = "!";
+    this.update();
+  }
+
+  this.override = function(id)
+  {
+    this.index = id;
+    this.update();
+  }
+
+  this.update = function()
+  {
+    var target = this.choices[this.index % this.choices.length];
+    this.el.innerHTML = this.name+" <b>"+target+"</b>";
+
+    lobby.apps.marabu.instrument.set_control(this.id,this.index);
+  }
+
+  this.mouse_down = function()
+  {
+    target.index += 1;
+    target.index = target.index % target.choices.length;
+    target.update();
+  }
+
+  this.el.addEventListener("mousedown", this.mouse_down, false);
+}
+
+function UI_Slider(id,name = "UNK",min = 0,max = 255)
+{
+  this.id = id;
+  this.name = name;
+  this.min = min;
+  this.max = max;
+
+  this.width = 30;
+
+  this.el = document.getElementById(id);
+  this.name_el = document.createElement("span");
+  this.value_el = document.createElement("t");
+  this.slide_el = document.createElement("div");
+
+  this.value_el.style.backgroundColor = "transparent";
+
+  this.is_selected = false;
+
+  this.install = function()
+  {
+    this.el.setAttribute("class","slider");
+
+    // Name Span
+    this.name_el.className = "name";
+    this.name_el.innerHTML = this.name;
+
+    // Slide Div
+    this.slide_el.className = "pointer";
+    this.slide_el.style.height = "15px";
+    this.slide_el.style.width = "30px";
+    this.slide_el.style.display = "inline-block";
+    this.slide_el.style.verticalAlign = "top";
+
+    // Value Input
+    this.value_el.className = "w2";
+    this.value_el.style.marginLeft = "10px";
+    this.value_el.textContent = this.min+"/"+this.max;
+
+    this.el.appendChild(this.name_el);
+    this.el.appendChild(this.slide_el);
+    this.el.appendChild(this.value_el);
+
+    this.el.addEventListener("mousedown", this.mouse_down, false);
+  }
+
+  var self = this;
+
+  this.mouse_down = function(e)
+  {
+    e.preventDefault();
+    document.activeElement.blur();
+
+    lobby.apps.marabu.instrument.select(null,self.id);
+  }
+
+  this.override = function(v,is_keyframe = false)
+  {
+    this.value = parseInt(v);
+    if(this.value < this.min){ this.value = this.min; }
+    if(this.value > this.max){ this.value = this.max; }
+    this.save(is_keyframe);
+    this.refresh();
+  }
+
+  this.refresh = function()
+  {
+    var val = parseInt(this.value) - parseInt(this.min);
+    var over = parseFloat(this.max) - parseInt(this.min);
+    var perc = val/parseFloat(over);
+
+    this.el.className = lobby.apps.marabu.instrument.selection.s == this.id ? "slider selected" : "slider";
+    this.slide_el.innerHTML = "<svg class='fh' style='width:30px;height:15px; stroke-dasharray:1,1; fill:none; stroke-width:1px; stroke-linecap:butt;'><line x1='0' y1='7.5' x2='30' y2='7.5' class='fl'/><line x1='0' y1='7.5' x2='"+parseInt(perc * 30)+"' y2='7.5' class='fh'/></svg>";
+    this.value_el.textContent = this.value;
+
+    if(this.value == this.min){ this.value_el.className = "fl "; }
+    else if(this.value == this.max){ this.value_el.className = "fh "; }
+    else{ this.value_el.className = "fm "; }
+  }
+
+  this.mod = function(mod)
+  {
+    this.override(this.value + mod, true);
+  }
+
+  this.save = function(is_keyframe = false)
+  {
+    var value = this.value;
+    var instr = lobby.apps.marabu.song.instrument();
+    var ARP_CHORD = lobby.apps.marabu.instrument.get_storage("arp_chord");
+
+    if (this.id == "arp_note1" || this.id == "arp_note2") {  // The arpeggio chord notes are combined into a single byte    
+      value = id == "arp_note1" ? (instr.i[ARP_CHORD] & 15) | (value << 4) : (instr.i[ARP_CHORD] & 240) | value;
+    }
+
+    lobby.apps.marabu.instrument.set_control(this.id,this.value,is_keyframe);
+  }
+}
+
+
 lobby.apps.marabu.setup.confirm("instrument");
+
+

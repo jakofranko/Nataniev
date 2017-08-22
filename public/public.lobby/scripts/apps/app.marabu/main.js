@@ -29,7 +29,6 @@ function Marabu()
     "methods/render",
 
     "core/jammer",
-    "core/player-small",
     "core/player",
 
     "inc/Blob",
