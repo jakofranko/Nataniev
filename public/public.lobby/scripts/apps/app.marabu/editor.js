@@ -124,10 +124,12 @@ function Editor(t,b)
     var l = this.location();
     var r = this.selection.e;
 
+    console.log(cmd,val,app.song)
+
     if(this.selection.e < 0 || !app.song.instrument().c[l.p-1]){ return; }
 
-    app.song.instrument().c[l.p-1].f[r] = cmd;
-    app.song.instrument().c[l.p-1].f[r+this.pattern.length] = val;  
+    app.song.instrument().c[l.p-1].f[r] = cmd+1;
+    app.song.instrument().c[l.p-1].f[r+32] = val;  
     this.refresh();  
   }
 

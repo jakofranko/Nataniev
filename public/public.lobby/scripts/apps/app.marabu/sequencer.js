@@ -189,7 +189,7 @@ function Sequencer(bpm)
         if(pat > 0){ classes += "pattern_"+pat+" "; }
         if (r == this.selection.y && c == this.selection.x){ classes += "selected "; }
 
-        if(r > app.song.song().endPattern){ classes += "fl "; }
+        if(r > app.song.song().endPattern-2){ classes += "fl "; }
         else if(r == this.selection.y && c == this.selection.x && this.edit_mode){ classes += "fh "; }
         else{ classes += "fm "; }
 
@@ -198,7 +198,7 @@ function Sequencer(bpm)
         if(pat){
           o.textContent = pat;  
         }
-        else if(r > app.song.song().endPattern){ 
+        else if(r > app.song.song().endPattern-2){ 
           o.textContent = ".";  
         }
         else{

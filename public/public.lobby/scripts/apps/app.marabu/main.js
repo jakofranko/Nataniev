@@ -106,8 +106,19 @@ function Marabu()
   {
     var html = "";
     
-    html += "OCTAVE "+this.instrument.octave+" ";
-    html += "LENGTH "+this.sequencer.calc_time()+" ";
+    var sequences_count = this.song.song().endPattern-1;
+    var bpm = 120;    // Beats per minute
+    var spm = bpm/32; // Sequences per minute
+    var seconds = (sequences_count/spm) * 60;
+    var time = (seconds/4) > 120 ? parseInt(seconds/4/60)+"m" : (seconds/4)+"s";
+    var file_name = this.location ? this.location.split("/")[this.location.split("/").length-1].split(".")[0] : "untitled";
+
+    html += "/ <b>"+file_name+"</b> > ";
+    html += "Octave "+this.instrument.octave+" ";
+    html += "Length "+sequences_count+" ";
+    html += "Time "+time+" ";
+    html += "Rate "+bpm+"bpm ";
+    
     return html;
   }
 
