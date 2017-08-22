@@ -4,7 +4,7 @@ function Marabu()
 
   this.name = "marabu";
 
-  this.window.size = {width:570,height:510};
+  this.window.size = {width:600,height:510};
   this.window.pos = {x:30,y:0};
   this.window.theme = "noir";
 
@@ -61,6 +61,14 @@ function Marabu()
 
     this.app.song = new Song();
     this.app.song.init();
+
+    this.app.sequencer.refresh();
+    this.app.editor.refresh();
+
+    this.app.instrument.install();
+    this.app.instrument.start();
+    this.app.instrument.refresh();
+
     this.app.song.update_rpp(this.app.editor.pattern.length);
 
     lobby.apps.marabu.sequencer.select();

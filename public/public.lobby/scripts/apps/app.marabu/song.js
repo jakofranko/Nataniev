@@ -100,6 +100,12 @@ var Song = function()
     return Math.round((60 * 44100 / 4) / mSong.rowLen);
   };
 
+  this.update_instrument_name = function(instrument_id, name)
+  {
+    if(!name || name == ""){ name = instrument_id+""; }
+    mSong.songData[instrument_id].name = name;
+  }
+
   this.update_bpm = function(bpm)
   {
     mSong.rowLen = calcSamplesPerRow(bpm);
@@ -299,12 +305,6 @@ var Song = function()
     mAudio.addEventListener("canplay", function () { this.play(); }, true);
 
     mSong = lobby.apps.marabu.new_song();
-
-    lobby.apps.marabu.sequencer.refresh();
-    lobby.apps.marabu.editor.refresh();
-
-    lobby.apps.marabu.instrument.install();
-    lobby.apps.marabu.instrument.refresh();
 
     mJammer.start();
     mJammer.updateRowLen(mSong.rowLen);

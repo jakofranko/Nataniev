@@ -56,7 +56,13 @@ function Instrument()
     this.setup_toggles([
       {id: "osc1_xenv", name: "MOD"},
       {id: "osc2_xenv", name: "MOD"},
-    ])
+    ]);
+  }
+
+  this.start = function()
+  {
+    this.name_el = document.getElementById("instrument_name");
+    this.name_el.addEventListener('input', text_change, false);
   }
 
   this.setup_sliders = function(sliders)
@@ -126,6 +132,14 @@ function Instrument()
     else if (id == "fx_dly_amt")  { return 26; }
     else if (id == "fx_dly_time") { return 27; }
     return -1;
+  }
+
+  function text_change(e)
+  {
+    var name = e.target.value;
+    var inst = lobby.apps.marabu.instrument.id;
+    lobby.apps.marabu.song.update_instrument_name(inst,name);
+    lobby.apps.marabu.editor.refresh();
   }
 
   this.refresh = function()
@@ -212,24 +226,13 @@ function Instrument()
     this.name_el.value = this.name;
 
     this.update_controls();
-
-    this.refresh_title();
-  }
-
-  this.refresh_title = function()
-  {
-    var html = "INS ";
-
-    html += this.id;
-
-    document.getElementById("ins_title").innerHTML = html;
   }
 
   this.build = function()
   {
     var html = "";
     html += "  <div class='instrument' style='width:90px; display:inline-block; vertical-align:top; border-left:1px solid #333; padding-left:30px; margin-left:-5px; line-height:15px'>";
-    html += "    <h1 class='lh30' style='width:90px'><b id='ins_title'></b><input id='instrument_name' type='text' size='10' value='' title='Instrument Name' class='bh fm' style='float:right; text-align:right; height:30px; line-height:30px; text-transform:uppercase; width:45px; background:transparent' /><hr /></h1>";
+    html += "    <h1 class='lh30' style='width:90px'><input id='instrument_name' type='text' size='4' maxLength='4' value='' title='Instrument Name' class='bh fm' style='height: 30px;line-height: 30px;text-transform: uppercase;background: transparent;font-family:\"input_mono_medium\";display: block;width:100%' /><hr /></h1>";
     html += "    <div class='env' style='width:180px; margin-bottom:15px'>";
     html += "      <div id='env_att'></div>";
     html += "      <div id='env_sust'></div>";

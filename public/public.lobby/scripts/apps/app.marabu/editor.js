@@ -153,9 +153,10 @@ function Editor(t,b)
 
   function parse_note(val)
   {
+    val -= 87;
     var notes = ['C-', 'C#', 'D-', 'D#', 'E-', 'F-', 'F#', 'G-', 'G#', 'A-', 'A#', 'B-'];
-    var octave = Math.floor(val/12);
-    var key = notes[val % 12];
+    var octave = Math.floor((val)/12);
+    var key = notes[(val) % 12];
     var key_sharp = key.substr(1,1) == "#" ? true : false;
     var key_note = key.substr(0,1);
     return {octave:octave,sharp:key_sharp,note:key_note};
@@ -239,13 +240,13 @@ function Editor(t,b)
 
         // Left Hand
         if(left_note > 0){
-          var n = parse_note(left_note-87); 
+          var n = parse_note(left_note); 
           left_string = n.note+""+n.octave;
         }
 
         // Right Hand
         if(right_note > 0){
-          var n = parse_note(right_note-87);
+          var n = parse_note(right_note);
           right_string = n.note+""+n.octave;
         }
 

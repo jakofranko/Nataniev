@@ -14,7 +14,7 @@ function Sequencer(bpm)
   {
     var html = "";
 
-    html += "  <div class='sequencer' id='sequence_controller' style='width:85px; display:inline-block; vertical-align:top'>";
+    html += "  <div class='sequencer' id='sequence_controller' style='width:105px; display:inline-block; vertical-align:top'>";
     html += "    <h1 class='lh30 hide' style='width:90px'><b id='seq_title'>SEQ</b> <t id='bpm' class='bh fm' style='float:right; text-align:right; height:30px; line-height:30px; background:transparent'/><hr /></h1>";
     html += "    <div id='sequencer'><table class='tracks' id='sequencer-table'></table></div>";
     html += "  </div>";
