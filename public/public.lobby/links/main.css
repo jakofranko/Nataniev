@@ -188,7 +188,7 @@ app.noir .fm { color:#999; stroke:#999; }
 app.noir .fl { color:#555; stroke:#555; }
 app.noir .fi { color:black; stroke:black; }
 app.noir .bh { background:black;}
-app.noir .bl { background:#A1A1A1;}
+app.noir .bl { background:#222;}
 app.noir .bi { background:#fff;}
 app.noir .cu:hover { background:#fff; color:#000; cursor:pointer;}
 

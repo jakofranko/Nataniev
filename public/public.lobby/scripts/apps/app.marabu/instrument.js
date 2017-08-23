@@ -5,7 +5,7 @@ function Instrument()
   
   this.id = 1;
   this.name = "unknown";
-  this.name_el = document.getElementById("instrument_name");
+  this.title_el = null;
   this.edit_mode = false;
 
   this.selection = {s:null,y:0};
@@ -60,8 +60,8 @@ function Instrument()
       {id: "osc2_xenv", name: "MOD"},
     ]);
 
-    this.name_el = document.getElementById("instrument_name");
-    this.name_el.addEventListener('input', text_change, false);
+    this.title_el = document.getElementById("instrument_name");
+    this.title_el.addEventListener('input', this.text_change, false);
   }
 
   this.setup_sliders = function(sliders)
@@ -133,31 +133,19 @@ function Instrument()
     return -1;
   }
 
-  function text_change(e)
+  this.text_change = function(e)
   {
+    e.preventDefault();
+    e.stopPropagation();
     var name = e.target.value;
-    var inst = lobby.apps.marabu.instrument.id;
-    lobby.apps.marabu.song.update_instrument_name(inst,name);
-    lobby.apps.marabu.editor.refresh();
-  }
-
-  this.refresh = function()
-  {
-    this.update();
-  }
-
-  this.select = function(slider = null)
-  {
-    app.sequencer.edit(false);
-    app.editor.edit(false);
-
-    this.selection.s = slider;
-    this.refresh();
+    if(name.length < 4){ return; }
+    app.song.inject_instrument(app.selection.instrument,"name",name);
+    app.update();
   }
 
   this.update = function()
   {
-    this.name_el.value = app.song.instrument().name;
+    this.title_el.value = app.song.instrument().name;
 
     for(slider_id in this.sliders){
       var slider = this.sliders[slider_id];
@@ -180,13 +168,6 @@ function Instrument()
     app.song.mJammer_update();
   }
 
-  this.load = function(instrument_id = 1)
-  {    
-    if(instrument_id == this.id){ return; }
-
-    this.refresh();
-  }
-
   this.set_control = function(id,value,effect_keyframe = false)
   {
     var storage_id = this.get_storage(id);
@@ -203,31 +184,6 @@ function Instrument()
     }
 
     app.song.mJammer_update();
-  }
-
-  this.deselect = function()
-  {
-
-  }
-
-  this.edit = function(toggle = true)
-  {
-    app.sequencer.edit_mode = false;
-    app.editor.edit_mode = false;
-    
-    this.edit_mode = toggle;
-  }
-
-  this.refresh = function()
-  {
-    var i = app.song.song().songData[this.id];
-
-    this.name = app.song.instrument().name ? app.song.instrument().name : "--";
-
-    this.name_el = document.getElementById("instrument_name");
-    this.name_el.value = this.name;
-
-    this.update();
   }
 
   this.build = function()
@@ -276,7 +232,6 @@ function Instrument()
     html += "  </div>";
     return html;
   }
-
 }
 
 lobby.apps.marabu.setup.confirm("instrument");

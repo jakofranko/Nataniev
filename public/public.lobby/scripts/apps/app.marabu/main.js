@@ -58,8 +58,8 @@ function Marabu()
   {
     this.app.wrapper_el.innerHTML = this.app.draw();
 
-    this.app.wrapper_el.innerHTML += "<div id='sequencer' style='width:105px; display:inline-block; vertical-align:top'><table class='tracks' id='sequencer-table'></table></div>";
-    this.app.wrapper_el.innerHTML += "<div id='pattern' style='width:320px; display:inline-block; vertical-align:top; border-left:1px solid #333; padding-left:30px; margin-left:-5px'><table class='tracks' id='pattern-table'></table></div>";
+    this.app.wrapper_el.innerHTML += "<div id='sequencer' style='display:inline-block; vertical-align:top'><table class='tracks' id='sequencer-table'></table></div>";
+    this.app.wrapper_el.innerHTML += "<div id='pattern' style='width:320px; display:inline-block; vertical-align:top; border-left:1px solid #333; padding-left:15px; margin-left:15px'><table class='tracks' id='pattern-table'></table></div>";
     this.app.wrapper_el.innerHTML += this.app.instrument.build();
 
     this.app.song.init();
@@ -97,7 +97,9 @@ function Marabu()
     html += ".tracks { text-align:left}";
     html += ".tracks tr {  line-height:15px; position:relative}";
     html += ".tracks tr td { padding: 0 2.5px; color:#555}";
-    html += "#sequencer tr td { padding-right:0px;}";
+    html += "#sequencer tr td { padding:0px;}";
+    html += "#sequencer tr td:first-child { padding-left:2.5px;}";
+    html += "#sequencer tr td:last-child { padding-right:2.5px;}";
     html += ".tracks tr:hover { color:#999}";
     html += ".tracks tr td { position:relative}";
     html += ".tracks td:hover { cursor:pointer}";
@@ -118,7 +120,7 @@ function Marabu()
 
   this.location_name = function()
   {
-    return this.location ? this.location.split("/")[this.location.split("/").length-1].split(".")[0] : "untitled";
+    return this.location ? this.location.split("/")[this.location.split("/").length-1].split(".")[0] : "SONG";
   }
 
   this.status = function()
@@ -191,6 +193,8 @@ function Marabu()
 
   this.when.key = function(key)
   {
+    // Skip if in input
+    if(document.activeElement.type == "text"){ return; }
     // Movement
     if(key == "ArrowRight"){ this.app.move_inst(1); return; }
     if(key == "ArrowLeft"){ this.app.move_inst(-1); return; }

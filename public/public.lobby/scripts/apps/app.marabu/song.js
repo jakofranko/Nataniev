@@ -96,12 +96,6 @@ var Song = function()
     return Math.round((60 * 44100 / 4) / mSong.rowLen);
   };
 
-  this.update_instrument_name = function(instrument_id, name)
-  {
-    if(!name || name == ""){ name = instrument_id+""; }
-    mSong.songData[instrument_id].name = name;
-  }
-
   this.update_bpm = function(bpm)
   {
     mSong.rowLen = calcSamplesPerRow(bpm);
@@ -139,6 +133,8 @@ var Song = function()
     return this.song().songData[id];
   }
 
+  //
+
   this.pattern_at = function(i,t)
   {
     return this.song().songData[i].p[t];
@@ -165,6 +161,11 @@ var Song = function()
   {
     var c = this.pattern_at(i,t);
     return this.song().songData[i].c[c].f[f];
+  }
+
+  this.inject_instrument = function(i,f,v)
+  {
+    this.song().songData[i][f] = v;
   }
 
 

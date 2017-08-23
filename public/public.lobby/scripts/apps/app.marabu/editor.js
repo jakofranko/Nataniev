@@ -106,7 +106,8 @@ function Editor(t,b)
           var n = parse_note(right_note);
           right_string = (n.sharp ? n.note.toLowerCase() : n.note)+""+n.octave;
         }
-
+        
+        row_el.className = r == app.selection.row ? "bl" : "";
         cell.textContent = left_string+right_string;
 
         if(effect_cmd){ cell.className = "bi fi "; }
