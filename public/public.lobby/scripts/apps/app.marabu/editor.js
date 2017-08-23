@@ -101,7 +101,8 @@ function Editor(t,b)
     var sequence = app.sequencer.location().s;
     var pattern_id = app.song.instrument().p[sequence];
     var note = this.selection.y;
-    var note_val = app.song.instrument().c[pattern_id].n[note];
+    var note_val = pattern_id > 0 ? app.song.instrument().c[pattern_id-1].n[note] : null;
+
     return {i:app.instrument.id,p:pattern_id,n:note,note:note_val};
   }
 
@@ -121,6 +122,15 @@ function Editor(t,b)
     target.select(target.selection.x,row,row);
   }
 
+  this.mod = function(mod)
+  {
+    if(this.selection.e >= 0){ return; }
+    lobby.commander.notify("MOD "+(mod > 0 ? "+"+mod : mod));
+    var l = this.location();
+    app.sequencer.edit_note(l.i,l.p-1,l.n,l.note+mod);
+    this.refresh();
+  }
+
   this.set_effect = function(cmd,val)
   {
     var l = this.location();
@@ -137,13 +147,7 @@ function Editor(t,b)
 
   this.refresh = function()
   {
-    this.refresh_title();
     this.refresh_table();
-  }
-
-  this.refresh_title = function()
-  {
-    document.getElementById("time_signature").innerHTML = this.pattern.signature[0]+"&"+this.pattern.signature[1];
   }
 
   var toHex = function (num, count)
@@ -245,13 +249,13 @@ function Editor(t,b)
         // Left Hand
         if(left_note > 0){
           var n = parse_note(left_note); 
-          left_string = n.note+""+n.octave;
+          left_string = (n.sharp ? n.note.toLowerCase() : n.note)+""+n.octave;
         }
 
         // Right Hand
         if(right_note > 0){
           var n = parse_note(right_note);
-          right_string = n.note+""+n.octave;
+          right_string = (n.sharp ? n.note.toLowerCase() : n.note)+""+n.octave;
         }
 
         cell.textContent = left_string+right_string;
@@ -334,6 +338,11 @@ function Editor(t,b)
         if(note > -1){
           target.inject(note + 87,key == key.toLowerCase());  
         }
+        // Mods
+        if(key == "]"){ target.mod(12); }
+        if(key == "["){ target.mod(-12); }
+        if(key == "}"){ target.mod(1); }
+        if(key == "{"){ target.mod(-1); }
       }
 
       if(note > -1){

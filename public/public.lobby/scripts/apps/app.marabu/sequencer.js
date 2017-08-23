@@ -15,23 +15,29 @@ function Sequencer(bpm)
     var html = "";
 
     html += "  <div class='sequencer' id='sequence_controller' style='width:105px; display:inline-block; vertical-align:top'>";
-    html += "    <h1 class='lh30 hide' style='width:90px'><b id='seq_title'>SEQ</b> <t id='bpm' class='bh fm' style='float:right; text-align:right; height:30px; line-height:30px; background:transparent'/><hr /></h1>";
     html += "    <div id='sequencer'><table class='tracks' id='sequencer-table'></table></div>";
     html += "  </div>";
 
     return html;
   }
 
-  this.calc_time = function()
+  var toHex = function (num, count)
   {
-    return "4:35";
-  }
+    var s = num.toString(16).toUpperCase();
+    var leadingZeros = count - s.length;
+    for (var i = 0; i < leadingZeros; ++i)
+      s = "0" + s;
+    return s;
+  };
 
-  this.pattern_id_at = function(x,y)
+  this.mod = function(mod)
   {
-    var instrument_id = app.song.instrument_controller.id;
-    var pattern_id = app.song.song().songData[instrument_id].p[this.selection.y];
-    return pattern_id - 1;
+    var p = this.location().p+mod;
+
+    if(p < 0){ p = 0; }
+    if(p > 15){ p = 15; }
+
+    this.edit_sequence(app.instrument.id,this.selection.y,p);
   }
 
   this.select = function(x = 0,y = 0)
@@ -84,7 +90,7 @@ function Sequencer(bpm)
 
   this.edit_note = function(i,c,n,v)
   {
-    if(c == NaN || !app.song.song().songData[i].c[c]){ console.warn("error"); return; }
+    if(c == NaN || !app.song.song().songData[i].c[c]){ return; }
 
     app.song.song().songData[i].c[c].n[n] = v;
   }
@@ -109,7 +115,8 @@ function Sequencer(bpm)
 
   this.location = function()
   {
-    return {i:app.instrument.id,s:this.selection.y};
+    var p = app.song.song().songData[app.instrument.id].p[this.selection.y];
+    return {i:app.instrument.id,s:this.selection.y,p:p};
   }
 
   // 
@@ -130,17 +137,6 @@ function Sequencer(bpm)
   this.refresh = function()
   {
     this.refresh_table();
-    this.refresh_title();
-  }
-
-  this.refresh_title = function()
-  {
-    var html = "SEQ ";
-
-    if(this.edit_mode){ html += this.selection.y; }
-
-    document.getElementById("seq_title").innerHTML = html;
-    document.getElementById("bpm").innerHTML = this.sequence.bpm;
   }
 
   this.build_sequence_table = function()
@@ -155,7 +151,7 @@ function Sequencer(bpm)
     var th = document.createElement("th");
     th.colSpan = 8;
     th.className = "lh30 bold";
-    th.textContent = "SEQ";
+    th.id = "location_name";
     tr.appendChild(th);
     table.appendChild(tr);
     // Main
@@ -177,6 +173,9 @@ function Sequencer(bpm)
 
   this.refresh_table = function()
   {
+    console.log(app.location_name())
+    document.getElementById("location_name").textContent = app.location_name().toUpperCase();
+
     var l = this.location();
 
     for (var r = 0; r < this.sequence.length; ++r)
@@ -186,7 +185,7 @@ function Sequencer(bpm)
         var o = document.getElementById("sc" + c + "r" + r);
         var pat = app.song.song().songData[c].p[r];
         var classes = "";
-        if(pat > 0){ classes += "pattern_"+pat+" "; }
+
         if (r == this.selection.y && c == this.selection.x){ classes += "selected "; }
 
         if(r > app.song.song().endPattern-2){ classes += "fl "; }
@@ -196,7 +195,7 @@ function Sequencer(bpm)
         o.className = classes;
 
         if(pat){
-          o.textContent = pat;  
+          o.textContent = toHex(pat);
         }
         else if(r > app.song.song().endPattern-2){ 
           o.textContent = ".";  
@@ -221,6 +220,8 @@ function Sequencer(bpm)
       if(key == "arrowright"){ target.select_move(1,0); return; }
       if(key == "arrowup"){ target.select_move(0,-1); return; }
       if(key == "arrowdown"){ target.select_move(0,1); return; }
+      if(key == "]" || key == "}"){ target.mod(1); return; }
+      if(key == "[" || key == "{"){ target.mod(-1); return; }
 
       if(["0","1","2","3","4","5","6","7","8","9","escape","backspace","enter"].indexOf(key) == -1){ console.log("SEQ: Unknown Key",key); return; }
       

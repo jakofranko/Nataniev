@@ -101,6 +101,11 @@ function Marabu()
     return "<yu style='vertical-align:top' class='everything'>"+html+"</yu>";
   }
 
+  this.location_name = function()
+  {
+    return this.location ? this.location.split("/")[this.location.split("/").length-1].split(".")[0] : "untitled";
+  }
+
   this.status = function()
   {
     var html = "";
@@ -110,7 +115,7 @@ function Marabu()
     var spm = bpm/32; // Sequences per minute
     var seconds = (sequences_count/spm) * 60;
     var time = (seconds/4) > 120 ? parseInt(seconds/4/60)+"m" : (seconds/4)+"s";
-    var file_name = this.location ? this.location.split("/")[this.location.split("/").length-1].split(".")[0] : "untitled";
+    var file_name = this.location_name();
 
     html += "/ <b>"+file_name+"</b> > ";
     html += "Octave "+this.instrument.octave+" ";

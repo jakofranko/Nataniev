@@ -429,10 +429,6 @@ function UI_Slider(id,name = "UNK",min = 0,max = 255)
   this.value_el = document.createElement("t");
   this.slide_el = document.createElement("div");
 
-  this.value_el.style.backgroundColor = "transparent";
-
-  this.is_selected = false;
-
   this.install = function()
   {
     this.el.setAttribute("class","slider");
@@ -466,7 +462,6 @@ function UI_Slider(id,name = "UNK",min = 0,max = 255)
   {
     e.preventDefault();
     document.activeElement.blur();
-
     lobby.apps.marabu.instrument.select(null,self.id);
   }
 
@@ -496,7 +491,7 @@ function UI_Slider(id,name = "UNK",min = 0,max = 255)
 
   this.mod = function(mod)
   {
-    this.override(this.value + mod, true);
+    this.override(this.value + mod, (lobby.apps.marabu.editor.selection.e >= 0));
   }
 
   this.save = function(is_keyframe = false)
