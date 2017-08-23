@@ -13,6 +13,7 @@ function Marabu()
   this.editor = null;
   this.instrument = null;
 
+  this.selection = {};
   this.location = null;
   this.formats = ["mar"];
 
@@ -41,36 +42,27 @@ function Marabu()
     "sequencer.follower"
   ];
 
-  // TODO
-  // Add methods for play_range, play_song, stop
-
-  this.setup.start = function()
+  this.setup.ready = function()
   {
+    this.app.song = new Song();
     this.app.sequencer = new Sequencer(120);
     this.app.editor = new Editor(8,4);
     this.app.instrument = new Instrument();
+  }
 
-    this.app.sequencer.follower = new Sequencer_Follower();
-
+  this.setup.start = function()
+  {
     this.app.wrapper_el.innerHTML = this.app.draw();
 
-    this.app.wrapper_el.innerHTML += this.app.sequencer.build();
-    this.app.wrapper_el.innerHTML += this.app.editor.build();
+    this.app.wrapper_el.innerHTML += "<div id='sequencer' style='width:105px; display:inline-block; vertical-align:top'><table class='tracks' id='sequencer-table'></table></div>";
+    this.app.wrapper_el.innerHTML += "<div id='pattern' style='width:320px; display:inline-block; vertical-align:top; border-left:1px solid #333; padding-left:30px; margin-left:-5px'><table class='tracks' id='pattern-table'></table></div>";
     this.app.wrapper_el.innerHTML += this.app.instrument.build();
 
-    this.app.song = new Song();
     this.app.song.init();
 
-    this.app.sequencer.refresh();
-    this.app.editor.refresh();
-
-    this.app.instrument.install();
-    this.app.instrument.start();
-    this.app.instrument.refresh();
-
-    this.app.song.update_rpp(this.app.editor.pattern.length);
-
-    lobby.apps.marabu.sequencer.select();
+    this.app.sequencer.start();
+    this.app.editor.start();
+    this.app.instrument.start();  
   }
 
   this.draw = function()
@@ -132,11 +124,17 @@ function Marabu()
     this.app.editor.when.key(key);
     this.app.sequencer.when.key(key);
   }
-
-  this.when.pattern_change = function()
-  {
-    
-  }
 }
+
+// Tools
+
+var to_hex = function(num, count)
+{
+  var s = num.toString(16).toUpperCase();
+  for (var i = 0; i < (count - s.length); ++i){
+    s = "0" + s;
+  }
+  return s;
+};
 
 lobby.summon.confirm("Marabu");

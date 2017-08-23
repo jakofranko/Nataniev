@@ -7,7 +7,6 @@ var calcSamplesPerRow = function(bpm)
 
 lobby.apps.marabu.new_song = function()
 {
-
   var MAX_SONG_ROWS = 32,
       MAX_PATTERNS = 16;
 

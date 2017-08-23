@@ -54,10 +54,6 @@ var CAudioTimer = function ()
 
 var Song = function()
 {
-  this.sequence_controller = lobby.apps.marabu.sequencer;
-  this.pattern_controller = lobby.apps.marabu.editor;
-  this.instrument_controller = lobby.apps.marabu.instrument;
-
   var MAX_SONG_ROWS = 32,
       MAX_PATTERNS = 16;
 
@@ -140,7 +136,7 @@ var Song = function()
 
   this.instrument = function()
   {
-    return this.song().songData[this.instrument_controller.id];
+    return this.song().songData[lobby.apps.marabu.instrument.id];
   }
 
 

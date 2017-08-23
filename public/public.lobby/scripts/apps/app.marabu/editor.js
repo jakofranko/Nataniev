@@ -9,16 +9,9 @@ function Editor(t,b)
 
   this.signature_el = document.getElementById("signature");
 
-  this.build = function()
+  this.start = function()
   {
-    var html = "";
-
-    html += "  <div class='pattern' id='pattern_controller' style='width:320px; display:inline-block; vertical-align:top; border-left:1px solid #333; padding-left:30px; margin-left:-5px'>";
-    html += "    <h1 class='lh30 hide' style='width:105px'><b id='pat_title'>PAT</b> <t id='time_signature' class='bh fm' style='float:right; text-align:right; height:30px;  line-height:30px; background:transparent'></t></h1>";
-    html += "    <div id='pattern'><table class='tracks' id='pattern-table'></table>";
-    html += "  </div>";
-
-    return html;
+    console.log("Started Editor");
   }
 
   this.load = function(pattern_id = 0)
@@ -29,12 +22,13 @@ function Editor(t,b)
   }
 
   this.select = function(x = 0,y = 0,e = -1)
-  {    
+  {
+    app.instrument.select(null);
     this.selection.x = x;
     this.selection.y = y;
     this.selection.e = e;
 
-    if(e == -1){ app.instrument.select(x); }
+    if(e == -1){ app.instrument.id = x; }
     else if(e >= 0 && this.location().p == 0){ this.selection.e = -1; }
 
     this.refresh();
@@ -150,15 +144,6 @@ function Editor(t,b)
     this.refresh_table();
   }
 
-  var toHex = function (num, count)
-  {
-    var s = num.toString(16).toUpperCase();
-    var leadingZeros = count - s.length;
-    for (var i = 0; i < leadingZeros; ++i)
-      s = "0" + s;
-    return s;
-  };
-
   function parse_note(val)
   {
     val -= 87;
@@ -243,7 +228,7 @@ function Editor(t,b)
         var right_string = "--";
 
         if(effect_cmd){
-          right_string = toHex(effect_cmd,2);
+          right_string = to_hex(effect_cmd,2);
         }
 
         // Left Hand
@@ -284,7 +269,7 @@ function Editor(t,b)
       if(app.song.instrument().c[l.p]){
         var f_cmd = app.song.instrument().c[l.p-1] ? app.song.instrument().c[l.p-1].f[r] : 0;
         var f_val = app.song.instrument().c[l.p-1] ? app.song.instrument().c[l.p-1].f[r+this.pattern.length] : 0;
-        o_f.textContent = (r == this.selection.e) ? "> "+toHex(f_val,2) : (toHex(f_cmd,2) + "" + toHex(f_val,2));
+        o_f.textContent = (r == this.selection.e) ? "> "+to_hex(f_val,2) : (to_hex(f_cmd,2) + "" + to_hex(f_val,2));
         if(f_cmd > 0){ classes += "fh "; }
       }
 

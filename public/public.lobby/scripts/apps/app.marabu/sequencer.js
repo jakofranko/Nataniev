@@ -3,32 +3,16 @@ function Sequencer(bpm)
   var app = lobby.apps.marabu;
   var target = this;
 
+  this.follower = new Sequencer_Follower();
   this.edit_mode = false;
   this.selection = {x:0,y:0};
   this.sequence = {length:32,bpm:bpm}
 
-  this.title_el = document.getElementById("seq_title");
-  this.bpm_el = document.getElementById("bpm");
-
-  this.build = function()
+  this.start = function()
   {
-    var html = "";
-
-    html += "  <div class='sequencer' id='sequence_controller' style='width:105px; display:inline-block; vertical-align:top'>";
-    html += "    <div id='sequencer'><table class='tracks' id='sequencer-table'></table></div>";
-    html += "  </div>";
-
-    return html;
+    console.log("Started Sequencer");
+    this.refresh();
   }
-
-  var toHex = function (num, count)
-  {
-    var s = num.toString(16).toUpperCase();
-    var leadingZeros = count - s.length;
-    for (var i = 0; i < leadingZeros; ++i)
-      s = "0" + s;
-    return s;
-  };
 
   this.mod = function(mod)
   {
@@ -173,7 +157,6 @@ function Sequencer(bpm)
 
   this.refresh_table = function()
   {
-    console.log(app.location_name())
     document.getElementById("location_name").textContent = app.location_name().toUpperCase();
 
     var l = this.location();
@@ -195,7 +178,7 @@ function Sequencer(bpm)
         o.className = classes;
 
         if(pat){
-          o.textContent = toHex(pat);
+          o.textContent = to_hex(pat);
         }
         else if(r > app.song.song().endPattern-2){ 
           o.textContent = ".";  

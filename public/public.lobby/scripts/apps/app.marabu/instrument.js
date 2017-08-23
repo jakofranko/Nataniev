@@ -14,8 +14,10 @@ function Instrument()
   this.choices = {};
   this.toggles = {};
 
-  this.install = function()
+  this.start = function()
   {
+    console.log("Started Instrument");
+
     this.setup_sliders([
       {id: "osc1_vol", name: "VOL", min: 0, max: 255, percent: true },
       {id: "osc1_semi", name: "FRQ", min: 92, max: 164 },
@@ -50,7 +52,7 @@ function Instrument()
     this.setup_choices([
       {id: "osc1_wave_select", name: "OSC", choices: ["SIN","SQR","SAW","TRI"]},
       {id: "osc2_wave_select", name: "OSC", choices: ["SIN","SQR","SAW","TRI"]},
-      {id: "fx_filter_select", name: "EFX", choices: ["","HP","LP","BP"]},
+      {id: "fx_filter_select", name: "EFX", choices: [null,"HP","LP","BP"]},
       {id: "lfo_wave_select", name: "LFO", choices: ["SIN","SQR","SAW","TRI"]}
     ])
 
@@ -58,10 +60,7 @@ function Instrument()
       {id: "osc1_xenv", name: "MOD"},
       {id: "osc2_xenv", name: "MOD"},
     ]);
-  }
 
-  this.start = function()
-  {
     this.name_el = document.getElementById("instrument_name");
     this.name_el.addEventListener('input', text_change, false);
   }
@@ -148,11 +147,11 @@ function Instrument()
     this.update_controls();
   }
 
-  this.select = function(id = null,slider = null)
+  this.select = function(slider = null)
   {
-    if(id != null){
-      this.id = id;      
-    }
+    app.sequencer.edit(false);
+    app.editor.edit(false);
+
     this.selection.s = slider;
     this.refresh();
   }
@@ -409,6 +408,8 @@ function UI_Choice(id,name = "UNK",choices = [])
   {
     target.index += 1;
     target.index = target.index % target.choices.length;
+
+    if(!target.choices[target.index]){ target.index += 1; }
     target.update();
   }
 
@@ -462,7 +463,7 @@ function UI_Slider(id,name = "UNK",min = 0,max = 255)
   {
     e.preventDefault();
     document.activeElement.blur();
-    lobby.apps.marabu.instrument.select(null,self.id);
+    lobby.apps.marabu.instrument.select(self.id);
   }
 
   this.override = function(v,is_keyframe = false)
