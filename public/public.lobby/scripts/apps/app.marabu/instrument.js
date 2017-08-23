@@ -2,13 +2,7 @@ function Instrument()
 {
   var app = lobby.apps.marabu;
   var target = this;
-  
-  this.id = 1;
-  this.name = "unknown";
-  this.title_el = null;
-  this.edit_mode = false;
 
-  this.selection = {s:null,y:0};
   this.sliders = {};
   this.choices = {};
   this.toggles = {};
@@ -59,9 +53,6 @@ function Instrument()
       {id: "osc1_xenv", name: "MOD"},
       {id: "osc2_xenv", name: "MOD"},
     ]);
-
-    this.title_el = document.getElementById("instrument_name");
-    this.title_el.addEventListener('input', this.text_change, false);
   }
 
   this.setup_sliders = function(sliders)
@@ -145,8 +136,6 @@ function Instrument()
 
   this.update = function()
   {
-    this.title_el.value = app.song.instrument().name;
-
     for(slider_id in this.sliders){
       var slider = this.sliders[slider_id];
       var value = app.song.instrument().i[this.get_storage(slider_id)];
@@ -189,8 +178,7 @@ function Instrument()
   this.build = function()
   {
     var html = "";
-    html += "  <div class='instrument' style='width:90px; display:inline-block; vertical-align:top; border-left:1px solid #333; padding-left:30px; margin-left:-5px; line-height:15px'>";
-    html += "    <h1 class='lh30' style='width:90px'><input id='instrument_name' type='text' size='4' maxLength='4' value='' title='Instrument Name' class='bh fm' style='height: 30px;line-height: 30px;text-transform: uppercase;background: transparent;font-family:\"input_mono_medium\";display: block;width:100%' /><hr /></h1>";
+    html += "  <div class='instrument' style='width:90px; display:block; vertical-align:top; border-left:1px solid #333; padding-left:15px; margin-left:15px; line-height:15px; float:left'>";
     html += "    <div class='env' style='width:180px; margin-bottom:15px'>";
     html += "      <div id='env_att'></div>";
     html += "      <div id='env_sust'></div>";

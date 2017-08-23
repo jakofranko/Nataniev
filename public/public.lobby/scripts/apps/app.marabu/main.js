@@ -4,8 +4,8 @@ function Marabu()
 
   this.name = "marabu";
 
-  this.window.size = {width:600,height:510};
-  this.window.pos = {x:0,y:0};
+  this.window.size = {width:510,height:480};
+  this.window.pos = {x:30,y:30};
   this.window.theme = "noir";
 
   this.song = null;
@@ -58,8 +58,8 @@ function Marabu()
   {
     this.app.wrapper_el.innerHTML = this.app.draw();
 
-    this.app.wrapper_el.innerHTML += "<div id='sequencer' style='display:inline-block; vertical-align:top'><table class='tracks' id='sequencer-table'></table></div>";
-    this.app.wrapper_el.innerHTML += "<div id='pattern' style='width:320px; display:inline-block; vertical-align:top; border-left:1px solid #333; padding-left:15px; margin-left:15px'><table class='tracks' id='pattern-table'></table></div>";
+    this.app.wrapper_el.innerHTML += "<div id='sequencer' style='display:block; vertical-align:top; float:left'><table class='tracks' id='sequencer-table'></table></div>";
+    this.app.wrapper_el.innerHTML += "<div id='pattern' style='display:block; vertical-align:top; border-left:1px solid #333; padding-left:15px; margin-left:15px; float:left'><table class='tracks' id='pattern-table'></table></div>";
     this.app.wrapper_el.innerHTML += this.app.instrument.build();
 
     this.app.song.init();
@@ -133,8 +133,9 @@ function Marabu()
     var seconds = (sequences_count/spm) * 60;
     var time = (seconds/4) > 120 ? parseInt(seconds/4/60)+"m" : (seconds/4)+"s";
     var file_name = this.location_name();
+    var instrument_name = this.song.instrument(this.selection.instrument).name;
 
-    html += "/ <b>"+file_name+"</b> > ";
+    html += "/ <b>"+file_name.toLowerCase()+"</b>."+instrument_name.toLowerCase()+" > ";
 
     html += "Length "+sequences_count+" ";
     html += "Time "+time+" ";

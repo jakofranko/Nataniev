@@ -63,7 +63,6 @@ function UI_Slider(id,name = "UNK",min = 0,max = 255)
     var over = parseFloat(this.max) - parseInt(this.min);
     var perc = val/parseFloat(over);
 
-    this.el.className = lobby.apps.marabu.instrument.selection.s == this.id ? "slider selected" : "slider";
     this.slide_el.innerHTML = "<svg class='fh' style='width:30px;height:15px; stroke-dasharray:1,1; fill:none; stroke-width:1px; stroke-linecap:butt;'><line x1='0' y1='7.5' x2='30' y2='7.5' class='fl'/><line x1='0' y1='7.5' x2='"+parseInt(perc * 30)+"' y2='7.5' class='fh'/></svg>";
     this.value_el.textContent = this.value;
 

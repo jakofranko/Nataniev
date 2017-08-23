@@ -14,16 +14,6 @@ function Editor(t,b)
     console.log("Started Editor");
 
     var table = document.getElementById("pattern-table");
-    var tr = document.createElement("tr");
-    // Names
-    for (var i = 0; i < 8; i++) {
-      var th = document.createElement("th");
-      th.id = "ih"+i;
-      th.className = "lh30 bold";
-      th.textContent = "????";
-      tr.appendChild(th);
-    }
-    table.appendChild(tr);
     var tr, td;
     for(var r = 0; r < 32; r++) {
       tr = document.createElement("tr");
@@ -80,13 +70,6 @@ function Editor(t,b)
     // 32 x 8
     for(var i = 0; i < 8; i++){
       var pattern = app.song.pattern_at(i,app.selection.track);
-
-      // Header
-      var instrument_header = document.getElementById("ih"+i);
-      instrument_header.textContent = app.song.instrument(i).name ? app.song.instrument(i).name.substr(0,4).toUpperCase() : "????";
-      instrument_header.className = pattern ? "lh30 fm" : "lh30 fl";
-      if(app.selection.instrument == i){ instrument_header.className = "lh30 fh"; }
-
       // Each Row
       for(var r = 0; r < 32; r++){
         var row_el = document.getElementById("ppr"+r);
@@ -106,7 +89,7 @@ function Editor(t,b)
           var n = parse_note(right_note);
           right_string = (n.sharp ? n.note.toLowerCase() : n.note)+""+n.octave;
         }
-        
+
         row_el.className = r == app.selection.row ? "bl" : "";
         cell.textContent = left_string+right_string;
 

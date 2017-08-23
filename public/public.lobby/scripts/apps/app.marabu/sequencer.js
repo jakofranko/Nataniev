@@ -6,21 +6,12 @@ function Sequencer(bpm)
   this.follower = new Sequencer_Follower();
   this.sequence = {length:32,bpm:bpm}
 
-  this.title_el = null;
-
   this.start = function()
   {
     console.log("Started Sequencer");
 
     var table = document.getElementById("sequencer-table");
     var tr = document.createElement("tr");
-    var th = document.createElement("th");
-    th.colSpan = 8;
-    th.className = "lh30 bold";
-    th.id = "location_name";
-    tr.appendChild(th);
-    table.appendChild(tr);
-    this.title_el = th;
     var tr, td;
     for (var t = 0; t < 32; t++) {
       tr = document.createElement("tr");
@@ -62,8 +53,6 @@ function Sequencer(bpm)
 
   this.update = function()
   {
-    this.title_el.textContent = app.location_name().toUpperCase();
-
     for (var t = 0; t < 32; ++t)
     {
       var tr = document.getElementById("spr" + t);
