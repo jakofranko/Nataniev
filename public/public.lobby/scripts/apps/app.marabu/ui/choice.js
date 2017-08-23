@@ -1,13 +1,13 @@
-function UI_Choice(id,name = "UNK",choices = [])
+function UI_Choice(id,name = "UNK",choices = [],control = null)
 {
   this.id = id;
   this.name = name;
   this.choices = choices;
+  this.control = control;  
+
   this.el = document.getElementById(id);
-  this.el.style.width = "60px";
-  this.el.style.display = "inline-block";
-  this.el.style.marginRight = "10px";
-  this.el.style.cursor = "pointer";
+  this.name_el = document.createElement("t");
+  this.value_el = document.createElement("t");
 
   this.index = 0;
 
@@ -15,8 +15,20 @@ function UI_Choice(id,name = "UNK",choices = [])
 
   this.install = function()
   {
-    this.el.innerHTML = "!";
-    this.update();
+
+    this.el.className = "slider";
+
+    // Name Span
+    this.name_el.className = "name";
+    this.name_el.innerHTML = this.name;
+    this.name_el.style.width = "30px";
+    this.name_el.style.display = "inline-block";
+
+    this.value_el.className = "w2";
+    this.value_el.textContent = this.min+"/"+this.max;
+
+    this.el.appendChild(this.name_el);
+    this.el.appendChild(this.value_el);
   }
 
   this.override = function(id)
@@ -28,9 +40,13 @@ function UI_Choice(id,name = "UNK",choices = [])
   this.update = function()
   {
     var target = this.choices[this.index % this.choices.length];
-    this.el.innerHTML = this.name+" <b>"+target+"</b>";
+    this.value_el.textContent = target;
 
     lobby.apps.marabu.instrument.set_control(this.id,this.index);
+
+    var app = lobby.apps.marabu;
+    this.el.className = app.selection.control == this.control ? "slider bl" : "slider";
+    this.name_el.className = app.selection.control == this.control ? "fh" : "fm";
   }
 
   this.mouse_down = function()

@@ -4,7 +4,7 @@ function Marabu()
 
   this.name = "marabu";
 
-  this.window.size = {width:510,height:480};
+  this.window.size = {width:540,height:480};
   this.window.pos = {x:30,y:30};
   this.window.theme = "noir";
 
@@ -79,7 +79,7 @@ function Marabu()
     this.selection.track = clamp(this.selection.track,0,32);
     this.selection.row = clamp(this.selection.row,0,32);
     this.selection.octave = clamp(this.selection.octave,0,8);
-    this.selection.control = clamp(this.selection.control,0,3);
+    this.selection.control = clamp(this.selection.control,0,32);
 
     console.log("Update",this.selection);
 

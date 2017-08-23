@@ -6,10 +6,8 @@ function UI_Slider(id,name = "UNK",min = 0,max = 255,control = null)
   this.max = max;
   this.control = control;
 
-  this.width = 30;
-
   this.el = document.getElementById(id);
-  this.name_el = document.createElement("span");
+  this.name_el = document.createElement("t");
   this.value_el = document.createElement("t");
   this.slide_el = document.createElement("div");
 
@@ -26,7 +24,7 @@ function UI_Slider(id,name = "UNK",min = 0,max = 255,control = null)
     // Slide Div
     this.slide_el.className = "pointer";
     this.slide_el.style.height = "15px";
-    this.slide_el.style.width = "30px";
+    this.slide_el.style.width = "45px";
     this.slide_el.style.display = "inline-block";
     this.slide_el.style.verticalAlign = "top";
 
@@ -66,7 +64,7 @@ function UI_Slider(id,name = "UNK",min = 0,max = 255,control = null)
     var over = parseFloat(this.max) - parseInt(this.min);
     var perc = val/parseFloat(over);
 
-    this.slide_el.innerHTML = "<svg class='fh' style='width:30px;height:15px; stroke-dasharray:1,1; fill:none; stroke-width:1px; stroke-linecap:butt;'><line x1='0' y1='7.5' x2='30' y2='7.5' class='fl'/><line x1='0' y1='7.5' x2='"+parseInt(perc * 30)+"' y2='7.5' class='fh'/></svg>";
+    this.slide_el.innerHTML = "<svg class='fh' style='width:45px;height:15px; stroke-dasharray:1,1; fill:none; stroke-width:1px; stroke-linecap:butt;'><line x1='0' y1='7.5' x2='45' y2='7.5' class='fl'/><line x1='0' y1='7.5' x2='"+parseInt(perc * 45)+"' y2='7.5' class='fh'/></svg>";
     this.value_el.textContent = this.value;
 
     if(this.value == this.min){ this.value_el.className = "fl "; }

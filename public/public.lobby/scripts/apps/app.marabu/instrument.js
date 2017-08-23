@@ -12,25 +12,25 @@ function Instrument()
     console.log("Started Instrument");
 
     this.setup_sliders([
-      {id: "osc1_vol", name: "VOL", min: 0, max: 255, percent: true, control:7 },
-      {id: "osc1_semi", name: "FRQ", min: 92, max: 164, control:8 },
-      {id: "noise_vol", name: "NOI", min: 0, max: 255, control:9 },
+      {id: "osc1_vol", name: "VOL", min: 0, max: 255, percent: true, control:4 },
+      {id: "osc1_semi", name: "FRQ", min: 92, max: 164, control:5 },
+      {id: "noise_vol", name: "NOI", min: 0, max: 255, control:6 },
 
-      {id: "osc2_vol", name: "VOL", min: 0, max: 255, percent: true, control:3 },
-      {id: "osc2_semi", name: "FRQ", min: 92, max: 164, control:4 },
-      {id: "osc2_det", name: "DET", min: 0, max: 255, percent: true, nonLinear: true, control:5 },
+      {id: "osc2_vol", name: "VOL", min: 0, max: 255, percent: true, control:8 },
+      {id: "osc2_semi", name: "FRQ", min: 92, max: 164, control:9 },
+      {id: "osc2_det", name: "DET", min: 0, max: 255, percent: true, nonLinear: true, control:10 },
 
       {id: "env_att", name: "ATK", min: 0, max: 255, control:0 },
       {id: "env_sust", name: "SUS", min: 0, max: 255, control:1 },
       {id: "env_rel", name: "REL", min: 0, max: 255, control:2 },
 
-      {id: "arp_note1", name: "ARP", min: 0, max: 12 },
-      {id: "arp_note2", name: "SEC", min: 0, max: 12 },
-      {id: "arp_speed", name: "SPD", min: 0, max: 7 },
+      {id: "arp_note1", name: "ARP", min: 0, max: 12, control:11 },
+      {id: "arp_note2", name: "SEC", min: 0, max: 12, control:12 },
+      {id: "arp_speed", name: "SPD", min: 0, max: 7, control:13 },
 
-      {id: "lfo_amt", name: "AMT", min: 0, max: 255 },
-      {id: "lfo_freq", name: "FRQ", min: 0, max: 254 },
-      {id: "lfo_fxfreq", name: "MOD", min: 0, max: 255 },
+      {id: "lfo_amt", name: "AMT", min: 0, max: 255, control:15 },
+      {id: "lfo_freq", name: "FRQ", min: 0, max: 254, control:16 },
+      {id: "lfo_fxfreq", name: "MOD", min: 0, max: 255, control:17 },
 
       {id: "fx_freq", name: "FRQ", min: 0, max: 255, nonLinear: true },
       {id: "fx_res", name: "RES", min: 0, max: 254 },
@@ -43,10 +43,10 @@ function Instrument()
     ]);
 
     this.setup_choices([
-      {id: "osc1_wave_select", name: "OSC", choices: ["SIN","SQR","SAW","TRI"]},
-      {id: "osc2_wave_select", name: "OSC", choices: ["SIN","SQR","SAW","TRI"]},
+      {id: "osc1_wave_select", name: "OSC", choices: ["SIN","SQR","SAW","TRI"], control:3},
+      {id: "osc2_wave_select", name: "OSC", choices: ["SIN","SQR","SAW","TRI"], control:7},
+      {id: "lfo_wave_select", name: "LFO", choices: ["SIN","SQR","SAW","TRI"], control:14},
       {id: "fx_filter_select", name: "EFX", choices: [null,"HP","LP","BP"]},
-      {id: "lfo_wave_select", name: "LFO", choices: ["SIN","SQR","SAW","TRI"]}
     ])
 
     this.setup_toggles([
@@ -179,18 +179,18 @@ function Instrument()
   this.build = function()
   {
     var html = "";
-    html += "  <div class='instrument' style='width:90px; display:block; vertical-align:top; border-left:1px solid #333; padding-left:15px; margin-left:15px; line-height:15px; float:left'>";
+    html += "  <div class='instrument' style='width:120px; display:block; vertical-align:top; border-left:1px solid #333; padding-left:15px; margin-left:15px; line-height:15px; float:left'>";
     html += "    <div class='env' style='width:180px; margin-bottom:15px'>";
     html += "      <div id='env_att'></div>";
     html += "      <div id='env_sust'></div>";
     html += "      <div id='env_rel'></div>";
     html += "    </div>";
-    html += "    <div class='osc' style='width:180px; margin-bottom:15px'><t id='osc1_wave_select'>ERROR</t><t id='osc1_xenv'>X</t>";
+    html += "    <div class='osc' style='width:180px; margin-bottom:15px'><t id='osc1_wave_select'></t><t class='hide' id='osc1_xenv'>X</t>";
     html += "      <div id='osc1_vol'></div>";
     html += "      <div id='osc1_semi'></div>";
     html += "      <div id='noise_vol'></div>";
     html += "    </div>";
-    html += "    <div class='osc' style='width:180px; margin-bottom:15px'><t id='osc2_wave_select'>ERROR</t><t id='osc2_xenv'>?</t>";
+    html += "    <div class='osc' style='width:180px; margin-bottom:15px'><t id='osc2_wave_select'></t><t class='hide' id='osc2_xenv'>?</t>";
     html += "      <div id='osc2_vol'></div>";
     html += "      <div id='osc2_semi'></div>";
     html += "      <div id='osc2_det'></div>";
@@ -202,13 +202,13 @@ function Instrument()
     html += "    </div>";
     html += "    <div class='lfo' style='width:180px; margin-bottom:15px'>";
     html += "      <h1>";
-    html += "        <t id='lfo_wave_select'>ERROR</t>";
+    html += "        <t id='lfo_wave_select'></t>";
     html += "      </h1>";
     html += "      <div id='lfo_amt'></div>";
     html += "      <div id='lfo_freq'></div>";
     html += "      <div id='lfo_fxfreq'></div>";
     html += "    </div>";
-    html += "    <div class='efx' style='width:180px; margin-bottom:5px'><t id='fx_filter_select'>ERROR</t>";
+    html += "    <div class='efx' style='width:180px; margin-bottom:5px'><t id='fx_filter_select'></t>";
     html += "      <div id='fx_freq'></div>";
     html += "      <div id='fx_res'></div>";
     html += "      <div id='fx_dly_amt'></div>";

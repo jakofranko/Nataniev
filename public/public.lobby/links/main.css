@@ -158,7 +158,7 @@ b         { font-weight: normal; font-family: 'input_mono_medium'}
 .hide { display: none }
 .pointer { cursor:pointer; }
 
-.slider { cursor: pointer; padding:0px 2.5px; }
+.slider { cursor: pointer; padding:0px 2.5px;width:120px;display: block }
 .slider .name { color:#999; width:30px; display: inline-block; }
 .slider:hover .name { color:#fff; }
 .slider.selected .name { color:#fff; }
