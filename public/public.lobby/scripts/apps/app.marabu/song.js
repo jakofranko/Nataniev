@@ -134,9 +134,9 @@ var Song = function()
     return mJammer.updateInstr(this.instrument().i);
   }
 
-  this.instrument = function()
+  this.instrument = function(id = lobby.apps.marabu.selection.instrument)
   {
-    return this.song().songData[lobby.apps.marabu.instrument.id];
+    return this.song().songData[id];
   }
 
   this.pattern_at = function(i,t)
@@ -147,6 +147,24 @@ var Song = function()
   this.inject_pattern_at = function(i,t,v)
   {
     this.song().songData[i].p[t] = v;
+  }
+
+  this.note_at = function(i,t,n)
+  {
+    var c = this.pattern_at(i,t);
+    return this.song().songData[i].c[c].n[n];
+  }
+
+  this.inject_note_at = function(i,t,n,v)
+  {
+    var c = this.pattern_at(i,t);
+    this.song().songData[i].c[c].n[n] = v;
+  }
+
+  this.effect_at = function(i,t,f)
+  {
+    var c = this.pattern_at(i,t);
+    return this.song().songData[i].c[c].f[f];
   }
 
 
@@ -300,10 +318,6 @@ var Song = function()
   this.init = function ()
   {
     var i, j, o;
-
-    // Build the UI tables
-    lobby.apps.marabu.sequencer.build_sequence_table();
-    lobby.apps.marabu.editor.build_table();
 
     // Create audio element, and always play the audio as soon as it's ready
     mAudio = new Audio();

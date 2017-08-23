@@ -13,7 +13,7 @@ function Marabu()
   this.editor = null;
   this.instrument = null;
 
-  this.selection = {instrument:0,track:0};
+  this.selection = {instrument:0,track:0,row:0};
   this.location = null;
   this.formats = ["mar"];
 
@@ -73,10 +73,12 @@ function Marabu()
   {
     this.selection.instrument = clamp(this.selection.instrument,0,7);
     this.selection.track = clamp(this.selection.track,0,32);
+    this.selection.row = clamp(this.selection.row,0,32);
 
     console.log("Update",this.selection);
 
     this.sequencer.update();
+    this.editor.update();
   }
 
   this.draw = function()
@@ -152,12 +154,49 @@ function Marabu()
     this.update();
   }
 
+  this.move_row = function(mod)
+  {
+    this.selection.row += mod;
+    this.update();
+  }
+
+  this.play_note = function(note,right_hand)
+  {
+    var note_value = note + (this.instrument.octave * 12);
+    this.song.play_note(note_value);
+    this.song.inject_note_at(this.selection.instrument,this.selection.track,this.selection.row+(right_hand ? 0 : 32),note_value);
+    this.update();
+  }
+
   this.when.key = function(key)
   {
-    if(key == "ArrowLeft"){ this.app.move_inst(-1); return; }
+    // Movement
     if(key == "ArrowRight"){ this.app.move_inst(1); return; }
+    if(key == "ArrowLeft"){ this.app.move_inst(-1); return; }
     if(key == "+"){ this.app.move_pattern(1); return; }
     if(key == "-" || key == "_"){ this.app.move_pattern(-1); return; }
+    if(key == "ArrowUp"){ this.app.move_row(-1); return; }
+    if(key == "ArrowDown"){ this.app.move_row(1); return; }
+
+    // Keyboard
+    var note = null;
+    var is_cap = key == key.toLowerCase();
+    switch (key.toLowerCase())
+    {
+      case "a": this.app.play_note(0,is_cap); break;
+      case "s": this.app.play_note(2,is_cap); break;
+      case "d": this.app.play_note(4,is_cap); break;
+      case "f": this.app.play_note(5,is_cap); break;
+      case "g": this.app.play_note(7,is_cap); break;
+      case "h": this.app.play_note(9,is_cap); break;
+      case "j": this.app.play_note(11,is_cap); break;
+
+      case "w": this.app.play_note(1,is_cap); break;
+      case "e": this.app.play_note(3,is_cap); break;
+      case "t": this.app.play_note(6,is_cap); break;
+      case "y": this.app.play_note(8,is_cap); break;
+      case "u": this.app.play_note(10,is_cap); break;
+    }
   }
 }
 
