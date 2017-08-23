@@ -12,17 +12,17 @@ function Instrument()
     console.log("Started Instrument");
 
     this.setup_sliders([
-      {id: "osc1_vol", name: "VOL", min: 0, max: 255, percent: true },
-      {id: "osc1_semi", name: "FRQ", min: 92, max: 164 },
-      {id: "noise_vol", name: "NOI", min: 0, max: 255 },
+      {id: "osc1_vol", name: "VOL", min: 0, max: 255, percent: true, control:7 },
+      {id: "osc1_semi", name: "FRQ", min: 92, max: 164, control:8 },
+      {id: "noise_vol", name: "NOI", min: 0, max: 255, control:9 },
 
-      {id: "osc2_vol", name: "VOL", min: 0, max: 255, percent: true },
-      {id: "osc2_semi", name: "FRQ", min: 92, max: 164 },
-      {id: "osc2_det", name: "DET", min: 0, max: 255, percent: true, nonLinear: true },
+      {id: "osc2_vol", name: "VOL", min: 0, max: 255, percent: true, control:3 },
+      {id: "osc2_semi", name: "FRQ", min: 92, max: 164, control:4 },
+      {id: "osc2_det", name: "DET", min: 0, max: 255, percent: true, nonLinear: true, control:5 },
 
-      {id: "env_att", name: "ATK", min: 0, max: 255 },
-      {id: "env_sust", name: "SUS", min: 0, max: 255 },
-      {id: "env_rel", name: "REL", min: 0, max: 255 },
+      {id: "env_att", name: "ATK", min: 0, max: 255, control:0 },
+      {id: "env_sust", name: "SUS", min: 0, max: 255, control:1 },
+      {id: "env_rel", name: "REL", min: 0, max: 255, control:2 },
 
       {id: "arp_note1", name: "ARP", min: 0, max: 12 },
       {id: "arp_note2", name: "SEC", min: 0, max: 12 },
@@ -59,7 +59,7 @@ function Instrument()
   {
     for(id in sliders){
       var s = sliders[id];
-      var slider = new UI_Slider(s.id,s.name,s.min,s.max);
+      var slider = new UI_Slider(s.id,s.name,s.min,s.max,s.control);
       this.sliders[new String(s.id)] = slider;
       slider.install();
     }
@@ -69,7 +69,7 @@ function Instrument()
   {
     for(id in choices){
       var c = choices[id];
-      var choice = new UI_Choice(c.id,c.name,c.choices);
+      var choice = new UI_Choice(c.id,c.name,c.choices,c.control);
       this.choices[new String(c.id)] = choice;
       choice.install();
     }
@@ -79,7 +79,7 @@ function Instrument()
   {
     for(id in toggles){
       var t = toggles[id];
-      var toggle = new UI_Toggle(t.id,t.name);
+      var toggle = new UI_Toggle(t.id,t.name,t.control);
       this.toggles[new String(t.id)] = toggle;
       toggle.install();
     }    
@@ -140,6 +140,7 @@ function Instrument()
       var slider = this.sliders[slider_id];
       var value = app.song.instrument().i[this.get_storage(slider_id)];
       slider.override(value);
+      slider.update();
     }
 
     for(choice_id in this.choices){

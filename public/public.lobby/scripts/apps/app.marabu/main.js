@@ -13,7 +13,7 @@ function Marabu()
   this.editor = null;
   this.instrument = null;
 
-  this.selection = {instrument:0,track:0,row:0,octave:5};
+  this.selection = {instrument:0,track:0,row:0,octave:5,control:0};
   this.location = null;
   this.formats = ["mar"];
 
@@ -79,6 +79,7 @@ function Marabu()
     this.selection.track = clamp(this.selection.track,0,32);
     this.selection.row = clamp(this.selection.row,0,32);
     this.selection.octave = clamp(this.selection.octave,0,8);
+    this.selection.control = clamp(this.selection.control,0,3);
 
     console.log("Update",this.selection);
 
@@ -135,21 +136,15 @@ function Marabu()
     var file_name = this.location_name();
     var instrument_name = this.song.instrument(this.selection.instrument).name;
 
-    html += "/ <b>"+file_name.toLowerCase()+"</b>."+instrument_name.toLowerCase()+" > ";
+    html += "/ <b>"+file_name.toLowerCase()+"</b>."+instrument_name.toLowerCase()+"+"+this.selection.octave+" > ";
 
     html += "Length "+sequences_count+" ";
     html += "Time "+time+" ";
     html += "Rate "+bpm+"bpm ";
 
-    html += "<span class='right'>I"+this.selection.instrument+"T"+this.selection.track+"R"+this.selection.row+"O"+this.selection.octave+"</span>";
+    html += "<span class='right'>I"+this.selection.instrument+"T"+this.selection.track+"R"+this.selection.row+"O"+this.selection.octave+"C"+this.selection.control+"</span>";
     
     return html;
-  }
-
-  this.active = function()
-  {
-    var pattern = this.song.pattern_at(this.selection.instrument,this.selection.track);
-    return {pattern:pattern};
   }
 
   this.move_inst = function(mod)
@@ -160,7 +155,7 @@ function Marabu()
 
   this.move_pattern = function(mod)
   {
-    var p = this.active().pattern + mod;
+    var p = this.song.pattern_at(this.selection.instrument,this.selection.track) + mod;
     p = clamp(p,0,15);
     this.song.inject_pattern_at(this.selection.instrument,this.selection.track,p);
     this.update();
@@ -181,6 +176,12 @@ function Marabu()
   this.move_octave = function(mod)
   {
     this.selection.octave += mod;
+    this.update();
+  }
+
+  this.move_control = function(mod)
+  {
+    this.selection.control += mod;
     this.update();
   }
 
@@ -207,6 +208,8 @@ function Marabu()
     if(key == "ArrowUp"){ this.app.move_row(-1); return; }
     if(key == "x"){ this.app.move_octave(1); return; }
     if(key == "z"){ this.app.move_octave(-1); return; }
+    if(key == "L"){ this.app.move_control(1); return; }
+    if(key == "P"){ this.app.move_control(-1); return; }
 
     // Keyboard
     var note = null;

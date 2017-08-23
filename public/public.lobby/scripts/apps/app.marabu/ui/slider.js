@@ -1,9 +1,10 @@
-function UI_Slider(id,name = "UNK",min = 0,max = 255)
+function UI_Slider(id,name = "UNK",min = 0,max = 255,control = null)
 {
   this.id = id;
   this.name = name;
   this.min = min;
   this.max = max;
+  this.control = control;
 
   this.width = 30;
 
@@ -14,11 +15,13 @@ function UI_Slider(id,name = "UNK",min = 0,max = 255)
 
   this.install = function()
   {
-    this.el.setAttribute("class","slider");
+    this.el.className = "slider";
 
     // Name Span
     this.name_el.className = "name";
     this.name_el.innerHTML = this.name;
+    this.name_el.style.width = "30px";
+    this.name_el.style.display = "inline-block";
 
     // Slide Div
     this.slide_el.className = "pointer";
@@ -87,6 +90,13 @@ function UI_Slider(id,name = "UNK",min = 0,max = 255)
     }
 
     lobby.apps.marabu.instrument.set_control(this.id,this.value,is_keyframe);
+  }
+
+  this.update = function()
+  {
+    var app = lobby.apps.marabu;
+    this.el.className = app.selection.control == this.control ? "slider bl" : "slider";
+    this.name_el.className = app.selection.control == this.control ? "fh" : "fm";
   }
 }
 
