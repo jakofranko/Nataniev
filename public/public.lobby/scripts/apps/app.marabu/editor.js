@@ -14,6 +14,11 @@ function Editor(t,b)
     console.log("Started Editor");
   }
 
+  this.update = function()
+  {
+
+  }
+
   this.load = function(pattern_id = 0)
   {
     this.select(0,0,-1);
@@ -32,7 +37,7 @@ function Editor(t,b)
     else if(e >= 0 && this.location().p == 0){ this.selection.e = -1; }
 
     this.refresh();
-    app.sequencer.selection.x = x;
+    app.selection.instrument = x;
     app.sequencer.refresh();
     app.instrument.refresh();
   }
@@ -208,7 +213,7 @@ function Editor(t,b)
     for(var i = 0; i < 8; i++){
       var instrument_header = document.getElementById("ih"+i);
       var instrument = app.song.song().songData[i];
-      var sequence = app.song.song().songData[i].p[app.sequencer.selection.y];
+      var sequence = app.song.song().songData[i].p[app.selection.instrument];
       instrument_header.textContent = instrument.name ? instrument.name.substr(0,4).toUpperCase() : "";
       if(i == l.i){ instrument_header.className = "fh lh30"; }
       else if(sequence > 0){ instrument_header.className = "fm lh30"; }

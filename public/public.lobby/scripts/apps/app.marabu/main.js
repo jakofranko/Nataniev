@@ -13,7 +13,7 @@ function Marabu()
   this.editor = null;
   this.instrument = null;
 
-  this.selection = {};
+  this.selection = {instrument:0,track:0};
   this.location = null;
   this.formats = ["mar"];
 
@@ -63,6 +63,20 @@ function Marabu()
     this.app.sequencer.start();
     this.app.editor.start();
     this.app.instrument.start();  
+
+    this.app.sequencer.update();
+    this.app.editor.update();
+    this.app.instrument.update();  
+  }
+
+  this.update = function()
+  {
+    this.selection.instrument = clamp(this.selection.instrument,0,7);
+    this.selection.track = clamp(this.selection.track,0,32);
+
+    console.log("Update",this.selection);
+
+    this.sequencer.update();
   }
 
   this.draw = function()
@@ -118,11 +132,18 @@ function Marabu()
     return html;
   }
 
+  this.move_inst = function(mod)
+  {
+    this.selection.instrument += mod;
+    this.update();
+  }
+
   this.when.key = function(key)
   {
-    this.app.instrument.when.key(key);
-    this.app.editor.when.key(key);
-    this.app.sequencer.when.key(key);
+    if(key == "ArrowLeft"){ this.app.move_inst(-1); return; }
+    if(key == "ArrowRight"){ this.app.move_inst(1); return; }
+    if(key == "arrowup"){ target.select_move(0,-1); return; }
+    if(key == "arrowdown"){ target.select_move(0,1); return; }
   }
 }
 
@@ -136,5 +157,12 @@ var to_hex = function(num, count)
   }
   return s;
 };
+
+var clamp = function(val,min,max)
+{
+  val = val < min ? min : val;
+  val = val > max ? max : val;
+  return val;
+}
 
 lobby.summon.confirm("Marabu");

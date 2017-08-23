@@ -65,6 +65,11 @@ function Instrument()
     this.name_el.addEventListener('input', text_change, false);
   }
 
+  this.update = function()
+  {
+    
+  }
+
   this.setup_sliders = function(sliders)
   {
     for(id in sliders){
