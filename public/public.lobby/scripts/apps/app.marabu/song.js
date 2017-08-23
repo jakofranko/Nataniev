@@ -139,6 +139,16 @@ var Song = function()
     return this.song().songData[lobby.apps.marabu.instrument.id];
   }
 
+  this.pattern_at = function(i,t)
+  {
+    return this.song().songData[i].p[t];
+  }
+
+  this.inject_pattern_at = function(i,t,v)
+  {
+    this.song().songData[i].p[t] = v;
+  }
+
 
 
 

@@ -35,15 +35,8 @@ function Sequencer(bpm)
     target.select(col,row);
   }
 
-  this.mod = function(mod)
-  {
-    var p = this.location().p+mod;
 
-    if(p < 0){ p = 0; }
-    if(p > 15){ p = 15; }
-
-    this.edit_sequence(app.instrument.id,app.selection.track,p);
-  }
+  // Old
 
   this.edit_note = function(i,c,n,v)
   {
@@ -58,17 +51,6 @@ function Sequencer(bpm)
     app.song.song().songData[i].c[c].f[f+32] = val;
   }
 
-  this.edit_sequence = function(i,p,v)
-  {
-    app.song.song().songData[i].p[p] = parseInt(v);
-    app.song.update_ranges();
-
-    console.info("edit_sequence","i:"+i,"p:"+p,"v:"+v,app.song.song().songData);
-
-    app.editor.select(i,0,-1);
-    app.editor.refresh();
-  }
-
   this.location = function()
   {
     var p = app.song.song().songData[app.instrument.id].p[app.selection.track];
@@ -78,6 +60,8 @@ function Sequencer(bpm)
   // 
   // Sequence Table
   // 
+
+  this.location_name_el = null;
 
   this.build_sequence_table = function()
   {
@@ -94,15 +78,15 @@ function Sequencer(bpm)
     th.id = "location_name";
     tr.appendChild(th);
     table.appendChild(tr);
+    this.location_name_el = th;
     // Main
     var tr, td;
-    for (var row = 0; row < this.sequence.length; row++) {
+    for (var t = 0; t < 32; t++) {
       tr = document.createElement("tr");
-      tr.id = "spr"+row;
-      tr.className = row % 4 === 0 ? "beat" : "";
-      for (var col = 0; col < 8; col++) {
+      tr.id = "spr"+t;
+      for (var i = 0; i < 8; i++) {
         td = document.createElement("td");
-        td.id = "sc" + col + "r" + row;
+        td.id = "sc" + i + "t" + t;
         td.textContent = "-";
         td.addEventListener("mousedown", this.sequence_mouse_down, false);
         tr.appendChild(td);
@@ -113,65 +97,25 @@ function Sequencer(bpm)
 
   this.update = function()
   {
-    document.getElementById("location_name").textContent = app.location_name().toUpperCase();
+    this.location_name_el.textContent = app.location_name().toUpperCase();
 
     var l = this.location();
 
-    for (var r = 0; r < this.sequence.length; ++r)
+    for (var t = 0; t < 32; ++t)
     {
-      for (var c = 0; c < 8; ++c)
+      for (var i = 0; i < 8; ++i)
       {
-        var o = document.getElementById("sc" + c + "r" + r);
-        var pat = app.song.song().songData[c].p[r];
-        var classes = "";
-
-        if (r == app.selection.track && c == app.selection.instrument){ classes += "selected "; }
-
-        if(r > app.song.song().endPattern-2){ classes += "fl "; }
-        else if(r == app.selection.track && c == app.selection.instrument && this.edit_mode){ classes += "fh "; }
-        else{ classes += "fm "; }
-
-        o.className = classes;
-
-        if(pat){
-          o.textContent = to_hex(pat);
-        }
-        else if(r > app.song.song().endPattern-2){ 
-          o.textContent = ".";  
-        }
-        else{
-          o.textContent = "-";  
-        }
+        var o = document.getElementById("sc" + i + "t" + t);
+        var pat = app.song.pattern_at(i,t);
+        var t_length = app.song.song().endPattern-2;
+        // Default
+        o.className = t > t_length ? "fl" : "fm";
+        o.textContent = pat ? to_hex(pat) : "-";
+        // Special
+        if(t == app.selection.track && i == app.selection.instrument){ o.className = "fh"; }
       }
     }
   }
-
-  // Keyboard Events
-
-  this.when = 
-  {
-    key : function(key)
-    {
-      key = key.toLowerCase();
-      
-      if(key == "]" || key == "}"){ target.mod(1); return; }
-      if(key == "[" || key == "{"){ target.mod(-1); return; }
-
-      if(["0","1","2","3","4","5","6","7","8","9","escape","backspace","enter"].indexOf(key) == -1){ console.log("SEQ: Unknown Key",key); return; }
-      
-      if(key == "escape"){ return; }
-      if(key == "backspace"){ key = 0; }
-
-      var i = app.selection.instrument;
-      var p = app.selection.track;
-
-      if(key == "enter"){ target.edit_sequence(i,p,app.editor.pattern.id); return; }
-
-      target.edit_sequence(i,p,key); 
-      
-    }
-  }
-
 }
 
 lobby.apps.marabu.setup.confirm("sequencer");

@@ -132,9 +132,23 @@ function Marabu()
     return html;
   }
 
+  this.active = function()
+  {
+    var pattern = this.song.pattern_at(this.selection.instrument,this.selection.track);
+    return {pattern:pattern};
+  }
+
   this.move_inst = function(mod)
   {
     this.selection.instrument += mod;
+    this.update();
+  }
+
+  this.move_pattern = function(mod)
+  {
+    var p = this.active().pattern + mod;
+    p = clamp(p,0,15);
+    this.song.inject_pattern_at(this.selection.instrument,this.selection.track,p);
     this.update();
   }
 
@@ -142,8 +156,8 @@ function Marabu()
   {
     if(key == "ArrowLeft"){ this.app.move_inst(-1); return; }
     if(key == "ArrowRight"){ this.app.move_inst(1); return; }
-    if(key == "arrowup"){ target.select_move(0,-1); return; }
-    if(key == "arrowdown"){ target.select_move(0,1); return; }
+    if(key == "+"){ this.app.move_pattern(1); return; }
+    if(key == "-" || key == "_"){ this.app.move_pattern(-1); return; }
   }
 }
 
