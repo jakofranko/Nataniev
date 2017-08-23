@@ -64,11 +64,6 @@ function Instrument()
     this.name_el.addEventListener('input', text_change, false);
   }
 
-  this.update = function()
-  {
-    
-  }
-
   this.setup_sliders = function(sliders)
   {
     for(id in sliders){
@@ -148,7 +143,7 @@ function Instrument()
 
   this.refresh = function()
   {
-    this.update_controls();
+    this.update();
   }
 
   this.select = function(slider = null)
@@ -160,25 +155,25 @@ function Instrument()
     this.refresh();
   }
 
-  this.update_controls = function()
+  this.update = function()
   {
-    var instr = app.song.instrument();
+    this.name_el.value = app.song.instrument().name;
 
     for(slider_id in this.sliders){
       var slider = this.sliders[slider_id];
-      var value = instr.i[this.get_storage(slider_id)];
+      var value = app.song.instrument().i[this.get_storage(slider_id)];
       slider.override(value);
     }
 
     for(choice_id in this.choices){
       var choice = this.choices[choice_id];
-      var value = instr.i[this.get_storage(choice_id)];
+      var value = app.song.instrument().i[this.get_storage(choice_id)];
       choice.override(value);
     }
 
     for(toggle_id in this.toggles){
       var toggle = this.toggles[toggle_id];
-      var value = instr.i[this.get_storage(toggle_id)];
+      var value = app.song.instrument().i[this.get_storage(toggle_id)];
       toggle.override(value);
     }
 
@@ -232,12 +227,7 @@ function Instrument()
     this.name_el = document.getElementById("instrument_name");
     this.name_el.value = this.name;
 
-    this.update_controls();
-  }
-
-  this.move = function(x,y)
-  {
-    if(this.sliders[this.selection.s]){ this.sliders[this.selection.s].mod(x); }
+    this.update();
   }
 
   this.build = function()
@@ -287,218 +277,7 @@ function Instrument()
     return html;
   }
 
-  this.play = function(note)
-  {
-    app.song.play_note(note + app.selection.octave * 12);
-  }
-
-  // Keyboard Events
-
-  this.when = 
-  {
-    key : function(key)
-    {
-      if(key == "ArrowUp"){
-        target.move(0,1);
-      }
-      if(key == "ArrowDown"){
-        target.move(0,-1);
-      }
-      if(key == "]"){
-        target.move(10,0);
-      }
-      if(key == "["){
-        target.move(-10,0);
-      }
-      if(key == "}"){
-        target.move(1,0);
-      }
-      if(key == "{"){
-        target.move(-1,0);
-      }
-    }
-  }
 }
-
-// UI
-
-function UI_Toggle(id,name = "UNK")
-{
-  this.id = id;
-  this.name = name;
-  this.el = document.getElementById(id);
-  this.value = 0;
-  this.el.style.cursor = "pointer";
-
-  var target = this;
-
-  this.install = function()
-  {
-    this.el.innerHTML = this.name;
-    this.update();
-  }
-
-  this.update = function()
-  {
-    this.el.style.color = this.value == 1 ? "#fff" : "#555";
-    lobby.apps.marabu.instrument.set_control(this.id,this.value);
-  }
-
-  this.override = function(value)
-  {
-    this.value = value;
-    this.update();
-  }
-
-  this.mouse_down = function()
-  {
-    target.value = target.value == 1 ? 0 : 1;
-    target.update();
-  }
-
-  this.el.addEventListener("mousedown", this.mouse_down, false);
-}
-
-function UI_Choice(id,name = "UNK",choices = [])
-{
-  this.id = id;
-  this.name = name;
-  this.choices = choices;
-  this.el = document.getElementById(id);
-  this.el.style.width = "60px";
-  this.el.style.display = "inline-block";
-  this.el.style.marginRight = "10px";
-  this.el.style.cursor = "pointer";
-
-  this.index = 0;
-
-  var target = this;
-
-  this.install = function()
-  {
-    this.el.innerHTML = "!";
-    this.update();
-  }
-
-  this.override = function(id)
-  {
-    this.index = id;
-    this.update();
-  }
-
-  this.update = function()
-  {
-    var target = this.choices[this.index % this.choices.length];
-    this.el.innerHTML = this.name+" <b>"+target+"</b>";
-
-    lobby.apps.marabu.instrument.set_control(this.id,this.index);
-  }
-
-  this.mouse_down = function()
-  {
-    target.index += 1;
-    target.index = target.index % target.choices.length;
-
-    if(!target.choices[target.index]){ target.index += 1; }
-    target.update();
-  }
-
-  this.el.addEventListener("mousedown", this.mouse_down, false);
-}
-
-function UI_Slider(id,name = "UNK",min = 0,max = 255)
-{
-  this.id = id;
-  this.name = name;
-  this.min = min;
-  this.max = max;
-
-  this.width = 30;
-
-  this.el = document.getElementById(id);
-  this.name_el = document.createElement("span");
-  this.value_el = document.createElement("t");
-  this.slide_el = document.createElement("div");
-
-  this.install = function()
-  {
-    this.el.setAttribute("class","slider");
-
-    // Name Span
-    this.name_el.className = "name";
-    this.name_el.innerHTML = this.name;
-
-    // Slide Div
-    this.slide_el.className = "pointer";
-    this.slide_el.style.height = "15px";
-    this.slide_el.style.width = "30px";
-    this.slide_el.style.display = "inline-block";
-    this.slide_el.style.verticalAlign = "top";
-
-    // Value Input
-    this.value_el.className = "w2";
-    this.value_el.style.marginLeft = "10px";
-    this.value_el.textContent = this.min+"/"+this.max;
-
-    this.el.appendChild(this.name_el);
-    this.el.appendChild(this.slide_el);
-    this.el.appendChild(this.value_el);
-
-    this.el.addEventListener("mousedown", this.mouse_down, false);
-  }
-
-  var self = this;
-
-  this.mouse_down = function(e)
-  {
-    e.preventDefault();
-    document.activeElement.blur();
-    lobby.apps.marabu.instrument.select(self.id);
-  }
-
-  this.override = function(v,is_keyframe = false)
-  {
-    this.value = parseInt(v);
-    if(this.value < this.min){ this.value = this.min; }
-    if(this.value > this.max){ this.value = this.max; }
-    this.save(is_keyframe);
-    this.refresh();
-  }
-
-  this.refresh = function()
-  {
-    var val = parseInt(this.value) - parseInt(this.min);
-    var over = parseFloat(this.max) - parseInt(this.min);
-    var perc = val/parseFloat(over);
-
-    this.el.className = lobby.apps.marabu.instrument.selection.s == this.id ? "slider selected" : "slider";
-    this.slide_el.innerHTML = "<svg class='fh' style='width:30px;height:15px; stroke-dasharray:1,1; fill:none; stroke-width:1px; stroke-linecap:butt;'><line x1='0' y1='7.5' x2='30' y2='7.5' class='fl'/><line x1='0' y1='7.5' x2='"+parseInt(perc * 30)+"' y2='7.5' class='fh'/></svg>";
-    this.value_el.textContent = this.value;
-
-    if(this.value == this.min){ this.value_el.className = "fl "; }
-    else if(this.value == this.max){ this.value_el.className = "fh "; }
-    else{ this.value_el.className = "fm "; }
-  }
-
-  this.mod = function(mod)
-  {
-    this.override(this.value + mod, (lobby.apps.marabu.editor.selection.e >= 0));
-  }
-
-  this.save = function(is_keyframe = false)
-  {
-    var value = this.value;
-    var instr = lobby.apps.marabu.song.instrument();
-    var ARP_CHORD = lobby.apps.marabu.instrument.get_storage("arp_chord");
-
-    if (this.id == "arp_note1" || this.id == "arp_note2") {  // The arpeggio chord notes are combined into a single byte    
-      value = id == "arp_note1" ? (instr.i[ARP_CHORD] & 15) | (value << 4) : (instr.i[ARP_CHORD] & 240) | value;
-    }
-
-    lobby.apps.marabu.instrument.set_control(this.id,this.value,is_keyframe);
-  }
-}
-
 
 lobby.apps.marabu.setup.confirm("instrument");
 

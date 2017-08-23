@@ -173,14 +173,6 @@ var Song = function()
 
 
 
-
-
-
-
-
-
-
-
   var setPatternLength = function (length)
   {
     if (mSong.patternLen === length)

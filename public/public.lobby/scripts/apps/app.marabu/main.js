@@ -5,7 +5,7 @@ function Marabu()
   this.name = "marabu";
 
   this.window.size = {width:600,height:510};
-  this.window.pos = {x:30,y:0};
+  this.window.pos = {x:0,y:0};
   this.window.theme = "noir";
 
   this.song = null;
@@ -28,6 +28,10 @@ function Marabu()
     "methods/load",
     "methods/save",
     "methods/render",
+
+    "ui/slider",
+    "ui/toggle",
+    "ui/choice",
 
     "core/jammer",
     "core/player",
@@ -80,6 +84,7 @@ function Marabu()
 
     this.sequencer.update();
     this.editor.update();
+    this.instrument.update();
     lobby.commander.update_status();
   }
 
@@ -133,9 +138,7 @@ function Marabu()
     html += "Time "+time+" ";
     html += "Rate "+bpm+"bpm ";
 
-    // 
-
-    html += "<span class='right'>"+Code "I"+this.selection.instrument+"T"+this.selection.track+"R"+this.selection.row+"O"+this.selection.octave+"</span>";
+    html += "<span class='right'>I"+this.selection.instrument+"T"+this.selection.track+"R"+this.selection.row+"O"+this.selection.octave+"</span>";
     
     return html;
   }
@@ -223,6 +226,17 @@ function Marabu()
 }
 
 // Tools
+
+var parse_note = function(val)
+{
+  // val -= 87;
+  var notes = ['C-', 'C#', 'D-', 'D#', 'E-', 'F-', 'F#', 'G-', 'G#', 'A-', 'A#', 'B-'];
+  var octave = Math.floor((val)/12);
+  var key = notes[(val) % 12];
+  var key_sharp = key.substr(1,1) == "#" ? true : false;
+  var key_note = key.substr(0,1);
+  return {octave:octave,sharp:key_sharp,note:key_note};
+}
 
 var to_hex = function(num, count)
 {
