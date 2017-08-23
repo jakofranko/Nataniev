@@ -111,10 +111,10 @@ function Editor(t,b)
       app.sequencer.edit_effect(l.i,l.p-1,l.n+32,0,0);
     }
     else if(!left_hand){
-      app.sequencer.edit_note(l.i,l.p-1,l.n+32,v + (app.instrument.octave * 12));  
+      app.sequencer.edit_note(l.i,l.p-1,l.n+32,v + (app.selection.octave * 12));  
     }
     else{
-      app.sequencer.edit_note(l.i,l.p-1,l.n,v + (app.instrument.octave * 12));  
+      app.sequencer.edit_note(l.i,l.p-1,l.n,v + (app.selection.octave * 12));  
     }
     lobby.commander.update_status();
   }
@@ -186,12 +186,12 @@ function Editor(t,b)
 
     // 32 x 8
     for(var i = 0; i < 8; i++){
-      var sequence = app.song.song().songData[i].p[app.selection.instrument];
+      var pattern = app.song.pattern_at(i,app.selection.track);
 
       // Header
       var instrument_header = document.getElementById("ih"+i);
       instrument_header.textContent = app.song.instrument(i).name ? app.song.instrument(i).name.substr(0,4).toUpperCase() : "????";
-      instrument_header.className = app.song.pattern_at(i,app.selection.track) ? "lh30 fm" : "lh30 fl";
+      instrument_header.className = pattern ? "lh30 fm" : "lh30 fl";
       if(app.selection.instrument == i){ instrument_header.className = "lh30 fh"; }
 
       // Each Row
@@ -218,6 +218,7 @@ function Editor(t,b)
 
         if(effect_cmd){ cell.className = "bi fi "; }
         else if(i == app.selection.instrument && r == app.selection.row){ cell.className = "fh"; }
+        else if(left_note || right_note){ cell.className = "fm"; }
         else{ cell.className = ""; }
       }
     }

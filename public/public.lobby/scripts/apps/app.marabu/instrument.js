@@ -5,7 +5,6 @@ function Instrument()
   
   this.id = 1;
   this.name = "unknown";
-  this.octave = 5;
   this.name_el = document.getElementById("instrument_name");
   this.edit_mode = false;
 
@@ -288,17 +287,9 @@ function Instrument()
     return html;
   }
 
-  this.set_octave = function(mod)
-  {
-    this.octave += mod;
-    if(this.octave > 8){ this.octave = 8; }
-    if(this.octave < 1){ this.octave = 1; }
-    lobby.commander.update_status();
-  }
-
   this.play = function(note)
   {
-    app.song.play_note(note + this.octave * 12);
+    app.song.play_note(note + app.selection.octave * 12);
   }
 
   // Keyboard Events
@@ -307,12 +298,6 @@ function Instrument()
   {
     key : function(key)
     {
-      if(key == "x"){
-        target.set_octave(1);
-      }
-      if(key == "z"){
-        target.set_octave(-1);
-      }
       if(key == "ArrowUp"){
         target.move(0,1);
       }

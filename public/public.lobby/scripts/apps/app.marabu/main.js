@@ -13,7 +13,7 @@ function Marabu()
   this.editor = null;
   this.instrument = null;
 
-  this.selection = {instrument:0,track:0,row:0};
+  this.selection = {instrument:0,track:0,row:0,octave:5};
   this.location = null;
   this.formats = ["mar"];
 
@@ -74,11 +74,13 @@ function Marabu()
     this.selection.instrument = clamp(this.selection.instrument,0,7);
     this.selection.track = clamp(this.selection.track,0,32);
     this.selection.row = clamp(this.selection.row,0,32);
+    this.selection.octave = clamp(this.selection.octave,0,8);
 
     console.log("Update",this.selection);
 
     this.sequencer.update();
     this.editor.update();
+    lobby.commander.update_status();
   }
 
   this.draw = function()
@@ -126,10 +128,14 @@ function Marabu()
     var file_name = this.location_name();
 
     html += "/ <b>"+file_name+"</b> > ";
-    html += "Octave "+this.instrument.octave+" ";
+
     html += "Length "+sequences_count+" ";
     html += "Time "+time+" ";
     html += "Rate "+bpm+"bpm ";
+
+    // 
+
+    html += "<span class='right'>"+Code "I"+this.selection.instrument+"T"+this.selection.track+"R"+this.selection.row+"O"+this.selection.octave+"</span>";
     
     return html;
   }
@@ -160,9 +166,21 @@ function Marabu()
     this.update();
   }
 
+  this.move_track = function(mod)
+  {
+    this.selection.track += mod;
+    this.update();
+  }
+
+  this.move_octave = function(mod)
+  {
+    this.selection.octave += mod;
+    this.update();
+  }
+
   this.play_note = function(note,right_hand)
   {
-    var note_value = note + (this.instrument.octave * 12);
+    var note_value = note + (this.selection.octave * 12);
     this.song.play_note(note_value);
     this.song.inject_note_at(this.selection.instrument,this.selection.track,this.selection.row+(right_hand ? 0 : 32),note_value);
     this.update();
@@ -173,10 +191,14 @@ function Marabu()
     // Movement
     if(key == "ArrowRight"){ this.app.move_inst(1); return; }
     if(key == "ArrowLeft"){ this.app.move_inst(-1); return; }
+    if(key == "l"){ this.app.move_track(1); return; }
+    if(key == "p"){ this.app.move_track(-1); return; }
     if(key == "+"){ this.app.move_pattern(1); return; }
     if(key == "-" || key == "_"){ this.app.move_pattern(-1); return; }
-    if(key == "ArrowUp"){ this.app.move_row(-1); return; }
     if(key == "ArrowDown"){ this.app.move_row(1); return; }
+    if(key == "ArrowUp"){ this.app.move_row(-1); return; }
+    if(key == "x"){ this.app.move_octave(1); return; }
+    if(key == "z"){ this.app.move_octave(-1); return; }
 
     // Keyboard
     var note = null;

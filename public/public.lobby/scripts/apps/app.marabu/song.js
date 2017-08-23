@@ -157,7 +157,7 @@ var Song = function()
 
   this.inject_note_at = function(i,t,n,v)
   {
-    var c = this.pattern_at(i,t);
+    var c = this.pattern_at(i,t); if(c == 0){ return; }
     this.song().songData[i].c[c].n[n] = v;
   }
 
