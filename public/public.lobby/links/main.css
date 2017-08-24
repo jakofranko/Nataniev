@@ -178,7 +178,7 @@ app.blanc     { background:white; color:black;  }
 app.blanc .fh { color:black; stroke:black; }
 app.blanc .bh { background:white;}
 app.blanc .fl { color:#ccc; stroke:#ccc; }
-app.blanc .bl { background:#A1A1A1;}
+app.blanc .bl { background:#eee;}
 app.blanc .cu:hover { background:#000; color:#fff; cursor:pointer;}
 
 app.noir ::selection       { background: #888; opacity:1.0; color:#999; }

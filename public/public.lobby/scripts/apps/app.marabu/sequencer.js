@@ -16,6 +16,7 @@ function Sequencer(bpm)
     for (var t = 0; t < 32; t++) {
       tr = document.createElement("tr");
       tr.id = "spr"+t;
+      tr.style.lineHeight = "15px";
       for (var i = 0; i < 8; i++) {
         td = document.createElement("td");
         td.id = "sc" + i + "t" + t;

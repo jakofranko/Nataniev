@@ -18,11 +18,13 @@ function Editor(t,b)
     for(var r = 0; r < 32; r++) {
       tr = document.createElement("tr");
       tr.id = "ppr"+r;
+      tr.style.lineHeight = "15px";
       tr.className = r % this.pattern.signature[1] == 0 ? " fm" : "";
       // Notes
       for (i = 0; i < 8; i++) {
         td = document.createElement("td");
         td.id = "i"+i+"r"+r;
+        td.style.padding = "0 2.5px";
         td.textContent = "----";
         td.addEventListener("mousedown", this.pattern_mouse_down, false);
         tr.appendChild(td);

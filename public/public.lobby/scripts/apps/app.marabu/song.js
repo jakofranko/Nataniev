@@ -170,22 +170,12 @@ var Song = function()
     this.song().songData[i].c[c].f[f+32] = val;
   }
 
-  this.inject_instrument = function(i,f,v)
-  {
-    this.song().songData[i][f] = v;
-  }
-
   this.inject_control = function(i,c,v)
   {
+    console.log(i,c,v)
     this.song().songData[i].i[c] = v;
     this.mJammer_update();
   }
-
-
-
-
-
-
 
   var setPatternLength = function (length)
   {

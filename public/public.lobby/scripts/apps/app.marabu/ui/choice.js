@@ -37,9 +37,11 @@ function UI_Choice(id,name = "UNK",choices = [],control = null)
   this.mod = function(v)
   {
     var v = clamp(v,-1,1);
-    v = v % this.choices.length;
     this.index += v;
+    this.index = this.index % this.choices.length;
     this.update();
+
+    console.log(this.index)
   }
 
   this.override = function(v)
@@ -61,8 +63,6 @@ function UI_Choice(id,name = "UNK",choices = [],control = null)
   {
     var target = this.choices[this.index % this.choices.length];
     this.value_el.textContent = target;
-
-    lobby.apps.marabu.instrument.set_control(this.id,this.index);
 
     var app = lobby.apps.marabu;
     this.el.className = app.selection.control == this.control ? "bl" : "";

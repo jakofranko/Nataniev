@@ -95,9 +95,6 @@ function Marabu()
     var html = "";
 
     html += "<style>";
-    html += ".everything { color:white; }";
-    html += ".tracks { text-align:left}";
-    html += ".tracks tr {  line-height:15px; position:relative}";
     html += ".tracks tr td { padding: 0 2.5px; color:#555}";
     html += "#sequencer tr td { padding:0px;}";
     html += "#sequencer tr td:first-child { padding-left:2.5px;}";
@@ -107,14 +104,8 @@ function Marabu()
     html += ".tracks td:hover { cursor:pointer}";
     html += ".tracks tr td:hover { cursor:pointer; color:#fff}";
     html += ".tracks td.selected { color:#fff}";
-    html += ".tracks tr.beat th { color:#999}";
     html += ".tracks tr th { color:#555; font-family: 'input_mono_medium'; padding: 0 2.5px;}";
     html += ".tracks tr th:hover { cursor:pointer; color:#999}";
-    html += ".tracks.playing tr td {color:#555}";
-    html += ".tracks.playing tr th {color:#555}";
-    html += ".tracks.playing tr.played td {color:#fff}";
-    html += ".tracks.playing tr.played th {color:#fff}";
-    html += ".tracks tr.playpos td:first-child:before { content:'>'; color:#999; position:absolute; left:-15px;}";
     html += "</style>";
 
     return "<yu style='vertical-align:top' class='everything'>"+html+"</yu>";
@@ -205,6 +196,12 @@ function Marabu()
     this.update();
   }
 
+  this.set_note = function(val)
+  {
+    this.song.inject_note_at(this.selection.instrument,this.selection.track,this.selection.row,val-87);
+    this.update();
+  }
+
   this.play_note = function(note,right_hand)
   {
     var note_value = note + (this.selection.octave * 12);
@@ -238,7 +235,9 @@ function Marabu()
     if(key == "[")        { this.app.move_control_value(-10); return; }
     if(key == "}")        { this.app.move_control_value(1); return; }
     if(key == "{")        { this.app.move_control_value(-1); return; }
+
     if(key == "/")        { this.app.save_control_value(); return; }
+    if(key == "Backspace"){ this.app.set_note(0); return; }
 
     // Keyboard
     var note = null;

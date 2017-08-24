@@ -28,9 +28,8 @@ function UI_Toggle(id,name = "UNK",control = null)
   this.save = function()
   {
     var control_storage = app.instrument.get_storage(this.id);
-    var value = this.index;
     
-    app.song.inject_control(app.selection.instrument,control_storage,value);
+    app.song.inject_control(app.selection.instrument,control_storage,this.value);
   }
 
   this.update = function()

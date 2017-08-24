@@ -158,25 +158,6 @@ function Instrument()
       var value = app.song.instrument().i[this.get_storage(toggle_id)];
       toggle.override(value);
     }
-
-    app.song.mJammer_update();
-  }
-
-  this.set_control = function(id,value,effect_keyframe = false)
-  {
-    var storage_id = this.get_storage(id);
-
-    // Record Effect
-    if(effect_keyframe){
-      // console.log("Set Effect",storage_id)
-      app.editor.set_effect(storage_id,value);  
-    }
-    // Change instrument
-    else{
-      // console.log("Update Instrument",storage_id)
-      app.song.instrument().i[storage_id] = value;      
-    }
-
     app.song.mJammer_update();
   }
 
