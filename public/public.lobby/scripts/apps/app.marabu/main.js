@@ -262,7 +262,7 @@ function Marabu()
 
 var parse_note = function(val)
 {
-  // val -= 87;
+  val -= 87;
   var notes = ['C-', 'C#', 'D-', 'D#', 'E-', 'F-', 'F#', 'G-', 'G#', 'A-', 'A#', 'B-'];
   var octave = Math.floor((val)/12);
   var key = notes[(val) % 12];

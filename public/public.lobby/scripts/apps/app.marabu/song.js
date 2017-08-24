@@ -147,19 +147,19 @@ var Song = function()
 
   this.note_at = function(i,t,n)
   {
-    var c = this.pattern_at(i,t);
+    var c = this.pattern_at(i,t)-1; if(c == -1){ return; }
     return this.song().songData[i].c[c].n[n];
   }
 
   this.inject_note_at = function(i,t,n,v)
   {
-    var c = this.pattern_at(i,t); if(c == 0){ return; }
-    this.song().songData[i].c[c].n[n] = v;
+    var c = this.pattern_at(i,t)-1; if(c == -1){ return; }
+    this.song().songData[i].c[c].n[n] = v+87;
   }
 
   this.effect_at = function(i,t,f)
   {
-    var c = this.pattern_at(i,t);
+    var c = this.pattern_at(i,t)-1; if(c == -1){ return; }
     return this.song().songData[i].c[c].f[f];
   }
 
@@ -293,16 +293,11 @@ var Song = function()
 
   this.play_song = function()
   {
-    this.update_bpm(lobby.apps.marabu.sequencer.sequence.bpm);
-    this.update_rpp(lobby.apps.marabu.editor.pattern.length);
+    this.update_bpm(120);
+    this.update_rpp(32);
 
     stopAudio();
     updateSongRanges();
-
-    mFollowerFirstRow = 0;
-    mFollowerLastRow = mSong.endPattern - 2;
-    mFollowerFirstCol = 0;
-    mFollowerLastCol = 7;
 
     var doneFun = function(wave)
     {
