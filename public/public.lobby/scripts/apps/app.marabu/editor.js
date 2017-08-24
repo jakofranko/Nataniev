@@ -67,7 +67,7 @@ function Editor(t,b)
         var right_note = app.song.note_at(i,app.selection.track,r+32);
         var effect_cmd = app.song.effect_at(i,app.selection.track,r);
 
-        var left_string = "--";
+        var left_string = pattern > 0 && r % 4 == 0 ? ">-" : "--";
         var right_string = effect_cmd ? to_hex(effect_cmd,2) : "--";
 
         if(left_note > 0){
@@ -85,6 +85,7 @@ function Editor(t,b)
         if(effect_cmd){ cell.className = "bi fi "; }
         else if(i == app.selection.instrument && r == app.selection.row){ cell.className = "fh"; }
         else if(left_note || right_note){ cell.className = "fm"; }
+        else if(pattern > 0 && r % 4 == 0){ cell.className = "fm";}
         else{ cell.className = ""; }
       }
     }

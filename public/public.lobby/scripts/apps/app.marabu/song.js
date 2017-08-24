@@ -178,6 +178,7 @@ var Song = function()
   this.inject_control = function(i,c,v)
   {
     this.song().songData[i].i[c] = v;
+    this.mJammer_update();
   }
 
 

@@ -28,6 +28,7 @@ function Marabu()
     "methods/load",
     "methods/save",
     "methods/render",
+    "methods/operate",
 
     "ui/slider",
     "ui/toggle",
@@ -220,21 +221,24 @@ function Marabu()
     if(key == "ArrowRight"){ this.app.move_inst(1); return; }
     if(key == "ArrowLeft"){ this.app.move_inst(-1); return; }
     
-    if(key == "+"){ this.app.move_pattern(1); return; }
-    if(key == "-" || key == "_"){ this.app.move_pattern(-1); return; }
+    if(key == "+")        { this.app.move_pattern(1); return; }
+    if(key == "-")        { this.app.move_pattern(-1); return; }
+    if(key == "_")        { this.app.move_pattern(-1); return; }
     if(key == "ArrowDown"){ this.app.move_row(1); return; }
-    if(key == "ArrowUp"){ this.app.move_row(-1); return; }
-    if(key == "x"){ this.app.move_octave(1); return; }
-    if(key == "z"){ this.app.move_octave(-1); return; }
-    if(key == "k"){ this.app.move_track(1); return; }
-    if(key == "o"){ this.app.move_track(-1); return; }
-    if(key == "l"){ this.app.move_control(1); return; }
-    if(key == "p"){ this.app.move_control(-1); return; }
-    if(key == "]"){ this.app.move_control_value(10); return; }
-    if(key == "["){ this.app.move_control_value(-10); return; }
-    if(key == "}"){ this.app.move_control_value(1); return; }
-    if(key == "{"){ this.app.move_control_value(-1); return; }
-    if(key == "/"){ this.app.save_control_value(); return; }
+    if(key == "ArrowUp")  { this.app.move_row(-1); return; }
+    if(key == "x")        { this.app.move_octave(1); return; }
+    if(key == "z")        { this.app.move_octave(-1); return; }
+    if(key == "k")        { this.app.move_track(1); return; }
+    if(key == "o")        { this.app.move_track(-1); return; }
+    if(key == "l")        { this.app.move_control(1); return; }
+    if(key == "p")        { this.app.move_control(-1); return; }
+    if(key == "2")        { this.app.move_control(1); return; }
+    if(key == "1")        { this.app.move_control(-1); return; }
+    if(key == "]")        { this.app.move_control_value(10); return; }
+    if(key == "[")        { this.app.move_control_value(-10); return; }
+    if(key == "}")        { this.app.move_control_value(1); return; }
+    if(key == "{")        { this.app.move_control_value(-1); return; }
+    if(key == "/")        { this.app.save_control_value(); return; }
 
     // Keyboard
     var note = null;
@@ -256,6 +260,14 @@ function Marabu()
       case "u": this.app.play_note(10,is_cap); break;
     }
   }
+
+  this.wheel = function(e)
+  {
+    lobby.apps.marabu.move_control_value(e.wheelDeltaY * 0.25)
+    e.preventDefault();
+  }
+
+  this.el.addEventListener('wheel', this.wheel, false);
 }
 
 // Tools

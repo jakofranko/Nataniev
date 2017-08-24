@@ -74,6 +74,7 @@ lobby.apps.marabu.new_song = function()
     // Make a first empty pattern
     song.songData[0].p[0] = 1;
 
+
     return song;
 };
 
