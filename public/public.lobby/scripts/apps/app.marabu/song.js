@@ -168,6 +168,11 @@ var Song = function()
     this.song().songData[i][f] = v;
   }
 
+  this.inject_control = function(i,c,v)
+  {
+    this.song().songData[i].i[c] = v;
+  }
+
 
 
 

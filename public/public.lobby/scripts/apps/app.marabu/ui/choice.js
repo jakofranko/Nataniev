@@ -1,5 +1,8 @@
 function UI_Choice(id,name = "UNK",choices = [],control = null)
 {
+  var app = lobby.apps.marabu;
+  var self = this;
+
   this.id = id;
   this.name = name;
   this.choices = choices;
@@ -27,12 +30,31 @@ function UI_Choice(id,name = "UNK",choices = [],control = null)
 
     this.el.appendChild(this.name_el);
     this.el.appendChild(this.value_el);
+
+    this.el.addEventListener("mousedown", this.mouse_down, false);
   }
 
-  this.override = function(id)
+  this.mod = function(v)
   {
-    this.index = id;
+    var v = clamp(v,-1,1);
+    v = v % this.choices.length;
+    this.index += v;
     this.update();
+  }
+
+  this.override = function(v)
+  {
+    var v = v % this.choices.length;
+    this.index = v;
+    this.update();
+  }
+
+  this.save = function()
+  {
+    var control_storage = app.instrument.get_storage(this.id);
+    var value = this.index;
+    
+    app.song.inject_control(app.selection.instrument,control_storage,value);
   }
 
   this.update = function()
@@ -49,14 +71,9 @@ function UI_Choice(id,name = "UNK",choices = [],control = null)
 
   this.mouse_down = function()
   {
-    target.index += 1;
-    target.index = target.index % target.choices.length;
-
-    if(!target.choices[target.index]){ target.index += 1; }
-    target.update();
+    app.selection.control = self.control;
+    app.update();
   }
-
-  this.el.addEventListener("mousedown", this.mouse_down, false);
 }
 
 lobby.apps.marabu.setup.confirm("ui/choice");

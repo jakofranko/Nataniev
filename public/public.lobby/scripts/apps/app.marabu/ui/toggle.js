@@ -1,5 +1,8 @@
 function UI_Toggle(id,name = "UNK",control = null)
 {
+  var app = lobby.apps.marabu;
+  var self = this;
+
   this.id = id;
   this.name = name;
   this.el = document.getElementById(id);
@@ -12,18 +15,27 @@ function UI_Toggle(id,name = "UNK",control = null)
   this.install = function()
   {
     this.el.style.padding = "0px 2.5px";
-    
+
     this.el.innerHTML = this.name;
+  }
+
+  this.mod = function(v)
+  {
+    this.value = v > 0 ? 1 : 0;
     this.update();
+  }
+
+  this.save = function()
+  {
+    var control_storage = app.instrument.get_storage(this.id);
+    var value = this.index;
+    
+    app.song.inject_control(app.selection.instrument,control_storage,value);
   }
 
   this.update = function()
   {
-    var app = lobby.apps.marabu;
-
     this.el.style.color = this.value == 1 ? "#fff" : "#555";
-    app.instrument.set_control(this.id,this.value);
-
     this.el.className = app.selection.control == this.control ? "bl" : "";
   }
 
@@ -35,8 +47,8 @@ function UI_Toggle(id,name = "UNK",control = null)
 
   this.mouse_down = function()
   {
-    target.value = target.value == 1 ? 0 : 1;
-    target.update();
+    app.selection.control = self.control;
+    app.update();
   }
 
   this.el.addEventListener("mousedown", this.mouse_down, false);

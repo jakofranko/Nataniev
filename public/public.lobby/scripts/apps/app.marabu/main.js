@@ -147,6 +147,8 @@ function Marabu()
     return html;
   }
 
+  // Controls
+
   this.move_inst = function(mod)
   {
     this.selection.instrument += mod;
@@ -185,6 +187,18 @@ function Marabu()
     this.update();
   }
 
+  this.move_control_value = function(mod)
+  {
+    var control = this.instrument.control_target(this.selection.control);
+    control.mod(mod);
+    control.save();
+  }
+
+  this.move_control_keyframe = function(mod)
+  {
+    // TODO
+  }
+
   this.play_note = function(note,right_hand)
   {
     var note_value = note + (this.selection.octave * 12);
@@ -200,16 +214,23 @@ function Marabu()
     // Movement
     if(key == "ArrowRight"){ this.app.move_inst(1); return; }
     if(key == "ArrowLeft"){ this.app.move_inst(-1); return; }
-    if(key == "l"){ this.app.move_track(1); return; }
-    if(key == "p"){ this.app.move_track(-1); return; }
+    
     if(key == "+"){ this.app.move_pattern(1); return; }
     if(key == "-" || key == "_"){ this.app.move_pattern(-1); return; }
     if(key == "ArrowDown"){ this.app.move_row(1); return; }
     if(key == "ArrowUp"){ this.app.move_row(-1); return; }
     if(key == "x"){ this.app.move_octave(1); return; }
     if(key == "z"){ this.app.move_octave(-1); return; }
-    if(key == "L"){ this.app.move_control(1); return; }
-    if(key == "P"){ this.app.move_control(-1); return; }
+    if(key == "k"){ this.app.move_track(1); return; }
+    if(key == "o"){ this.app.move_track(-1); return; }
+    if(key == "l"){ this.app.move_control(1); return; }
+    if(key == "p"){ this.app.move_control(-1); return; }
+    if(key == "]"){ this.app.move_control_value(10); return; }
+    if(key == "["){ this.app.move_control_value(-10); return; }
+    if(key == "}"){ this.app.move_control_value(1); return; }
+    if(key == "{"){ this.app.move_control_value(-1); return; }
+    if(key == ">"){ this.app.move_control_keyframe(1); return; }
+    if(key == "<"){ this.app.move_control_keyframe(-1); return; }
 
     // Keyboard
     var note = null;

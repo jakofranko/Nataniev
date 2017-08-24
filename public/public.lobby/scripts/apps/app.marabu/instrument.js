@@ -124,14 +124,18 @@ function Instrument()
     return -1;
   }
 
-  this.text_change = function(e)
+  this.control_target = function(control_id)
   {
-    e.preventDefault();
-    e.stopPropagation();
-    var name = e.target.value;
-    if(name.length < 4){ return; }
-    app.song.inject_instrument(app.selection.instrument,"name",name);
-    app.update();
+    for(id in this.sliders){
+      if(this.sliders[id].control == control_id){ return this.sliders[id]; }
+    }
+    for(id in this.choices){
+      if(this.choices[id].control == control_id){ return this.choices[id]; }
+    }
+    for(id in this.toggles){
+      if(this.toggles[id].control == control_id){ return this.toggles[id]; }
+    }
+    return null;
   }
 
   this.update = function()
