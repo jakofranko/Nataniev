@@ -1,23 +1,30 @@
-function UI_Toggle(id,name = "UNK")
+function UI_Toggle(id,name = "UNK",control = null)
 {
   this.id = id;
   this.name = name;
   this.el = document.getElementById(id);
   this.value = 0;
+  this.control = control;
   this.el.style.cursor = "pointer";
 
   var target = this;
 
   this.install = function()
   {
+    this.el.style.padding = "0px 2.5px";
+    
     this.el.innerHTML = this.name;
     this.update();
   }
 
   this.update = function()
   {
+    var app = lobby.apps.marabu;
+
     this.el.style.color = this.value == 1 ? "#fff" : "#555";
-    lobby.apps.marabu.instrument.set_control(this.id,this.value);
+    app.instrument.set_control(this.id,this.value);
+
+    this.el.className = app.selection.control == this.control ? "bl" : "";
   }
 
   this.override = function(value)

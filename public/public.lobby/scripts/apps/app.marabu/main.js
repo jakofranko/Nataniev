@@ -79,7 +79,7 @@ function Marabu()
     this.selection.track = clamp(this.selection.track,0,32);
     this.selection.row = clamp(this.selection.row,0,32);
     this.selection.octave = clamp(this.selection.octave,0,8);
-    this.selection.control = clamp(this.selection.control,0,32);
+    this.selection.control = clamp(this.selection.control,0,28);
 
     console.log("Update",this.selection);
 

@@ -15,16 +15,14 @@ function UI_Choice(id,name = "UNK",choices = [],control = null)
 
   this.install = function()
   {
-
-    this.el.className = "slider";
-
+    this.el.style.padding = "0px 2.5px";
+    this.el.style.width = "80px";
     // Name Span
     this.name_el.className = "name";
     this.name_el.innerHTML = this.name;
     this.name_el.style.width = "30px";
     this.name_el.style.display = "inline-block";
 
-    this.value_el.className = "w2";
     this.value_el.textContent = this.min+"/"+this.max;
 
     this.el.appendChild(this.name_el);
@@ -45,7 +43,7 @@ function UI_Choice(id,name = "UNK",choices = [],control = null)
     lobby.apps.marabu.instrument.set_control(this.id,this.index);
 
     var app = lobby.apps.marabu;
-    this.el.className = app.selection.control == this.control ? "slider bl" : "slider";
+    this.el.className = app.selection.control == this.control ? "bl" : "";
     this.name_el.className = app.selection.control == this.control ? "fh" : "fm";
   }
 

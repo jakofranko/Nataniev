@@ -12,46 +12,46 @@ function Instrument()
     console.log("Started Instrument");
 
     this.setup_sliders([
-      {id: "osc1_vol", name: "VOL", min: 0, max: 255, percent: true, control:4 },
-      {id: "osc1_semi", name: "FRQ", min: 92, max: 164, control:5 },
-      {id: "noise_vol", name: "NOI", min: 0, max: 255, control:6 },
-
-      {id: "osc2_vol", name: "VOL", min: 0, max: 255, percent: true, control:8 },
-      {id: "osc2_semi", name: "FRQ", min: 92, max: 164, control:9 },
-      {id: "osc2_det", name: "DET", min: 0, max: 255, percent: true, nonLinear: true, control:10 },
-
       {id: "env_att", name: "ATK", min: 0, max: 255, control:0 },
       {id: "env_sust", name: "SUS", min: 0, max: 255, control:1 },
       {id: "env_rel", name: "REL", min: 0, max: 255, control:2 },
 
-      {id: "arp_note1", name: "ARP", min: 0, max: 12, control:11 },
-      {id: "arp_note2", name: "SEC", min: 0, max: 12, control:12 },
-      {id: "arp_speed", name: "SPD", min: 0, max: 7, control:13 },
+      {id: "osc1_vol", name: "VOL", min: 0, max: 255, percent: true, control:5 },
+      {id: "osc1_semi", name: "FRQ", min: 92, max: 164, control:6 },
+      {id: "noise_vol", name: "NOI", min: 0, max: 255, control:7 },
 
-      {id: "lfo_amt", name: "AMT", min: 0, max: 255, control:15 },
-      {id: "lfo_freq", name: "FRQ", min: 0, max: 254, control:16 },
-      {id: "lfo_fxfreq", name: "MOD", min: 0, max: 255, control:17 },
+      {id: "osc2_vol", name: "VOL", min: 0, max: 255, percent: true, control:10 },
+      {id: "osc2_semi", name: "FRQ", min: 92, max: 164, control:11 },
+      {id: "osc2_det", name: "DET", min: 0, max: 255, percent: true, nonLinear: true, control:12 },
 
-      {id: "fx_freq", name: "FRQ", min: 0, max: 255, nonLinear: true },
-      {id: "fx_res", name: "RES", min: 0, max: 254 },
-      {id: "fx_dly_amt", name: "DLY", min: 0, max: 255 },
-      {id: "fx_dly_time", name: "SPD", min: 0, max: 16 },
-      {id: "fx_pan_amt", name: "PAN", min: 0, max: 255 },
-      {id: "fx_pan_freq", name: "FRQ", min: 0, max: 16 },
-      {id: "fx_dist", name: "DIS", min: 0, max: 255, nonLinear: true },
-      {id: "fx_drive", name: "DRV", min: 0, max: 255 },
+      {id: "arp_note1", name: "ARP", min: 0, max: 12, control:13 },
+      {id: "arp_note2", name: "SEC", min: 0, max: 12, control:14 },
+      {id: "arp_speed", name: "SPD", min: 0, max: 7, control:15 },
+
+      {id: "lfo_amt", name: "AMT", min: 0, max: 255, control:17 },
+      {id: "lfo_freq", name: "FRQ", min: 0, max: 254, control:18 },
+      {id: "lfo_fxfreq", name: "MOD", min: 0, max: 255, control:19 },
+
+      {id: "fx_freq", name: "FRQ", min: 0, max: 255, nonLinear: true, control:21 },
+      {id: "fx_res", name: "RES", min: 0, max: 254, control:22 },
+      {id: "fx_dly_amt", name: "DLY", min: 0, max: 255, control:23 },
+      {id: "fx_dly_time", name: "SPD", min: 0, max: 16, control:24 },
+      {id: "fx_pan_amt", name: "PAN", min: 0, max: 255, control:25 },
+      {id: "fx_pan_freq", name: "FRQ", min: 0, max: 16, control:26 },
+      {id: "fx_dist", name: "DIS", min: 0, max: 255, nonLinear: true, control:27 },
+      {id: "fx_drive", name: "DRV", min: 0, max: 255, control:28 },
     ]);
 
     this.setup_choices([
       {id: "osc1_wave_select", name: "OSC", choices: ["SIN","SQR","SAW","TRI"], control:3},
-      {id: "osc2_wave_select", name: "OSC", choices: ["SIN","SQR","SAW","TRI"], control:7},
-      {id: "lfo_wave_select", name: "LFO", choices: ["SIN","SQR","SAW","TRI"], control:14},
-      {id: "fx_filter_select", name: "EFX", choices: [null,"HP","LP","BP"]},
+      {id: "osc2_wave_select", name: "OSC", choices: ["SIN","SQR","SAW","TRI"], control:8},
+      {id: "lfo_wave_select", name: "LFO", choices: ["SIN","SQR","SAW","TRI"], control:16},
+      {id: "fx_filter_select", name: "EFX", choices: [null,"HP","LP","BP"], control:20},
     ])
 
     this.setup_toggles([
-      {id: "osc1_xenv", name: "MOD"},
-      {id: "osc2_xenv", name: "MOD"},
+      {id: "osc1_xenv", name: "MOD", control:4},
+      {id: "osc2_xenv", name: "MOD", control:9},
     ]);
   }
 
@@ -185,12 +185,12 @@ function Instrument()
     html += "      <div id='env_sust'></div>";
     html += "      <div id='env_rel'></div>";
     html += "    </div>";
-    html += "    <div class='osc' style='width:180px; margin-bottom:15px'><t id='osc1_wave_select'></t><t class='hide' id='osc1_xenv'>X</t>";
+    html += "    <div class='osc' style='width:180px; margin-bottom:15px'><t id='osc1_wave_select'></t><t id='osc1_xenv'>X</t>";
     html += "      <div id='osc1_vol'></div>";
     html += "      <div id='osc1_semi'></div>";
     html += "      <div id='noise_vol'></div>";
     html += "    </div>";
-    html += "    <div class='osc' style='width:180px; margin-bottom:15px'><t id='osc2_wave_select'></t><t class='hide' id='osc2_xenv'>?</t>";
+    html += "    <div class='osc' style='width:180px; margin-bottom:15px'><t id='osc2_wave_select'></t><t id='osc2_xenv'>?</t>";
     html += "      <div id='osc2_vol'></div>";
     html += "      <div id='osc2_semi'></div>";
     html += "      <div id='osc2_det'></div>";
@@ -215,8 +215,8 @@ function Instrument()
     html += "      <div id='fx_dly_time'></div>";
     html += "      <div id='fx_pan_amt'></div>";
     html += "      <div id='fx_pan_freq'></div>";
-    html += "      <div id='fx_drive'></div>";
     html += "      <div id='fx_dist'></div>";
+    html += "      <div id='fx_drive'></div>";
     html += "    </div>";
     html += "  </div>";
     return html;
