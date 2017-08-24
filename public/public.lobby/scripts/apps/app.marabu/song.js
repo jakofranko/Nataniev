@@ -105,7 +105,7 @@ var Song = function()
   this.update_rpp = function(rpp)
   {
     setPatternLength(rpp);
-    lobby.apps.marabu.editor.refresh();
+    lobby.apps.marabu.update();
   }
 
   this.play_note = function(note)
@@ -163,6 +163,13 @@ var Song = function()
     return this.song().songData[i].c[c].f[f];
   }
 
+  this.inject_effect_at = function(i,t,f,cmd,val)
+  {
+    var c = this.pattern_at(i,t);
+    this.song().songData[i].c[c].f[f] = cmd;
+    this.song().songData[i].c[c].f[f+32] = val;
+  }
+
   this.inject_instrument = function(i,f,v)
   {
     this.song().songData[i][f] = v;
@@ -191,7 +198,7 @@ var Song = function()
     // Truncate/extend patterns
     var i, j, k, col, notes, fx;
     for (i = 0; i < 8; i++) {
-      for (j = 0; j < MAX_PATTERNS; j++) { // TODO 32 for MAX_PATTERNS
+      for (j = 0; j < MAX_PATTERNS; j++) {
         col = mSong.songData[i].c[j];
         notes = [];
         fx = [];

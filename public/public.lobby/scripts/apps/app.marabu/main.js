@@ -194,9 +194,14 @@ function Marabu()
     control.save();
   }
 
-  this.move_control_keyframe = function(mod)
+  this.save_control_value = function()
   {
-    // TODO
+    var control = this.instrument.control_target(this.selection.control);
+    var control_storage = this.instrument.get_storage(control.id);
+    var control_value = control.value;
+
+    this.song.inject_effect_at(this.selection.instrument,this.selection.track,this.selection.row,control_storage,control_value);
+    this.update();
   }
 
   this.play_note = function(note,right_hand)
@@ -229,8 +234,7 @@ function Marabu()
     if(key == "["){ this.app.move_control_value(-10); return; }
     if(key == "}"){ this.app.move_control_value(1); return; }
     if(key == "{"){ this.app.move_control_value(-1); return; }
-    if(key == ">"){ this.app.move_control_keyframe(1); return; }
-    if(key == "<"){ this.app.move_control_keyframe(-1); return; }
+    if(key == "/"){ this.app.save_control_value(); return; }
 
     // Keyboard
     var note = null;

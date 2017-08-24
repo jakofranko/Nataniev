@@ -51,18 +51,7 @@ function Editor(t,b)
   this.effect_mouse_down = function(e)
   {
     var row = parseInt(e.target.id.slice(3,5));
-    // TODO
-  }
-
-  this.set_effect = function(cmd,val)
-  {
-    var l = this.location();
-    var r = this.selection.e;
-
-    if(this.selection.e < 0 || !app.song.instrument().c[l.p-1]){ return; }
-
-    app.song.instrument().c[l.p-1].f[r] = cmd+1;
-    app.song.instrument().c[l.p-1].f[r+32] = val;  
+    console.log("?????")
   }
 
   this.update = function()
@@ -103,19 +92,13 @@ function Editor(t,b)
     // 32
     for (var r = 0; r < 32; ++r)
     {
-      var classes = "";
+      var pattern = app.song.pattern_at(app.selection.instrument,app.selection.track);
+
       var o_f = document.getElementById("fxr"+r);
-      if(r == this.selection.e){ classes += "fh "; }
-      if(r % this.pattern.signature[1] == 0){ classes += "fm "; }
-
-      // if(app.song.instrument().c[l.p]){
-      //   var f_cmd = app.song.instrument().c[l.p-1] ? app.song.instrument().c[l.p-1].f[r] : 0;
-      //   var f_val = app.song.instrument().c[l.p-1] ? app.song.instrument().c[l.p-1].f[r+this.pattern.length] : 0;
-      //   o_f.textContent = (r == this.selection.e) ? "> "+to_hex(f_val,2) : (to_hex(f_cmd,2) + "" + to_hex(f_val,2));
-      //   if(f_cmd > 0){ classes += "fh "; }
-      // }
-
-      o_f.className = classes;
+      var f_cmd = app.song.instrument().c[pattern] ? app.song.instrument().c[pattern].f[r] : 0;
+      var f_val = app.song.instrument().c[pattern] ? app.song.instrument().c[pattern].f[r+32] : 0;
+      o_f.textContent = (r == this.selection.e) ? "> "+to_hex(f_val,2) : (to_hex(f_cmd,2) + "" + to_hex(f_val,2));
+      o_f.className = r % 4 == 0 ? "fm" : "fl";
     }
   }
 }
