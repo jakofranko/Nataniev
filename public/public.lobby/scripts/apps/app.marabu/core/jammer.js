@@ -339,7 +339,6 @@ var CJammer = function () {
 
   this.updateInstr = function (instr)
   {
-    console.log(instr);
     mInstr = [];
     for (var i = 0; i < instr.length; ++i) {
       mInstr.push(instr[i]);

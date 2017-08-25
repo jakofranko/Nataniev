@@ -2,19 +2,34 @@
 ~ NOTE : YAML
 ~ AUTH : Devine Lu Linvega
 
+IDE
+  Navi
+    Display file with changes
+    Highlight active file
+  Editor
+    .replace
+    .save/rename <path>
+
+MARABU
+  Pattern
+    Change time signature
+    Change BPM
+
+RONIN
+  Tools
+    Zoom in/out
+    Export with size
+    Half-tone painting
+
 GRIMGRAINS
   Diary
     Merge daily results into a graph
-    Move logo at the top
 
 HUNDRED RABBITS
   Video
-    August Episode
     Nataniev Capsule
   Soundtrack
     Release 17Q1  
-  Misc
-    Draft sailing notes book
 
 LOBBY
   Generic
@@ -29,31 +44,6 @@ LOBBY
     Dynamic reload
     .end
     application descriptions
-
-IDE
-  Generic
-    Open project
-  Navi
-    Display file with changes
-  Editor
-    .replace
-    .save/rename <path>
-
-MARABU
-  Sequencer
-    Make longer tracks
-  Pattern
-    Merge with MOD
-    Animate MOD
-    Preserve pattern data on pattern lenghts change
-    Change time signature
-    Effect -> Re-implement
-
-RONIN
-  Tools
-    Zoom in/out
-    Export with size
-    Half-tone painting
 
 ROTONDE
   Generic
@@ -71,9 +61,10 @@ OSCEAN
   Horaire
     Migrate to equal-month calendar
 
-FULCRUM(Mt. Eyn)
+MT_EYN
   Generic
-    Complete album
+    Make Cover
+    Release
 
 UNTITLED?
   Generic
@@ -82,24 +73,13 @@ UNTITLED?
 THOUSAND ROOMS
   Generic
     Fix Amazon Version
-  Translation
-    Complete Portugese
-    Complete Hungarian
 
 CORTEGE
-  Large Maze
-  iPhone Ratio maze
   Send invoice
 
 DONSOL
   Generic
     Port to Ionic
-
-ENGLISH
-  Generic
-    Basic notes
-    Verb tenses timeline
-    Adjective sequence order
 
 OQUONIE
   Generic

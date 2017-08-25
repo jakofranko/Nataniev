@@ -64,9 +64,11 @@ function Editor(t,b)
       for(var r = 0; r < 32; r++){
         var row_el = document.getElementById("ppr"+r);
         var cell = document.getElementById("i"+i+"r"+r);
+        var effect_el = document.getElementById("fxr"+r);
         var left_note = app.song.note_at(i,app.selection.track,r);
         var right_note = app.song.note_at(i,app.selection.track,r+32);
         var effect_cmd = app.song.effect_at(i,app.selection.track,r);
+        var effect_val = app.song.effect_at(i,app.selection.track,r+32);
 
         var left_string = pattern > 0 && r % 4 == 0 ? ">-" : "--";
         var right_string = effect_cmd ? to_hex(effect_cmd,2) : "--";
@@ -88,19 +90,13 @@ function Editor(t,b)
         else if(left_note || right_note){ cell.className = "fm"; }
         else if(pattern > 0 && r % 4 == 0){ cell.className = "fm";}
         else{ cell.className = ""; }
+
+        //Effect
+        if(i == app.selection.instrument){
+          effect_el.textContent = effect_cmd > 0 ? (to_hex(effect_cmd,2) + "" + to_hex(effect_val,2)) : "0000";
+          effect_el.className = r % 4 == 0 ? "fm" : "fl";
+        }
       }
-    }
-
-    // 32
-    for (var r = 0; r < 32; ++r)
-    {
-      var pattern = app.song.pattern_at(app.selection.instrument,app.selection.track);
-
-      var o_f = document.getElementById("fxr"+r);
-      var f_cmd = app.song.instrument().c[pattern] ? app.song.instrument().c[pattern].f[r] : 0;
-      var f_val = app.song.instrument().c[pattern] ? app.song.instrument().c[pattern].f[r+32] : 0;
-      o_f.textContent = (r == this.selection.e) ? "> "+to_hex(f_val,2) : (to_hex(f_cmd,2) + "" + to_hex(f_val,2));
-      o_f.className = r % 4 == 0 ? "fm" : "fl";
     }
   }
 }

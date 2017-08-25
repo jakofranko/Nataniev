@@ -136,7 +136,7 @@ function Ide()
     for(word_id in dict){
       var word = dict[word_id].trim();
       if(last_word == word){ continue; }
-      if(last_word == word.substr(0,last_word.length)){ console.log(last_word,word); return word; }
+      if(last_word == word.substr(0,last_word.length)){ return word; }
     }
     return null;
   }
@@ -174,7 +174,7 @@ function Ide()
       }
     }
     if(key == "Enter" || key == "Backspace"){
-      // this.app.previous = "";
+      this.app.previous = "";
     }
   }
 

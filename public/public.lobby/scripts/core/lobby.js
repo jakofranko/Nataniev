@@ -104,7 +104,7 @@ function Lobby()
       lobby.el.className = "ready";
       lobby.commander.update_hint();
     
-      // lobby.apps.marabu.setup.launch();
+      lobby.apps.marabu.setup.launch();
       // lobby.apps.diary.setup.launch();
       // lobby.apps.typographer.setup.launch();
     }
