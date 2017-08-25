@@ -23,7 +23,7 @@ function Editor(t,b)
       // Notes
       for (i = 0; i < app.channels; i++) {
         td = document.createElement("td");
-        td.id = "i"+i+"r"+r;
+        td.id = "i"+(i < 10 ? "0"+i : i)+"r"+r;
         td.style.padding = "0 2.5px";
         td.textContent = "----";
         td.addEventListener("mousedown", this.pattern_mouse_down, false);
@@ -42,8 +42,8 @@ function Editor(t,b)
 
   this.pattern_mouse_down = function(e)
   {
-    var i = parseInt(e.target.id.slice(1,2));
-    var r = parseInt(e.target.id.slice(3));
+    var i = parseInt(e.target.id.slice(1,3));
+    var r = parseInt(e.target.id.slice(4));
 
     app.selection.instrument = i;
     app.selection.row = r;
@@ -63,7 +63,7 @@ function Editor(t,b)
       // Each Row
       for(var r = 0; r < 32; r++){
         var row_el = document.getElementById("ppr"+r);
-        var cell = document.getElementById("i"+i+"r"+r);
+        var cell = document.getElementById("i"+(i < 10 ? '0'+i : i)+"r"+r);
         var effect_el = document.getElementById("fxr"+r);
         var left_note = app.song.note_at(i,app.selection.track,r);
         var right_note = app.song.note_at(i,app.selection.track,r+32);
