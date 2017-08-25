@@ -168,6 +168,8 @@ var Song = function()
     var c = this.pattern_at(i,t)-1; if(c == -1){ return; }
     this.song().songData[i].c[c].f[f] = cmd;
     this.song().songData[i].c[c].f[f+32] = val;
+
+    console.log(this.song().songData[i]);
   }
 
   this.inject_control = function(i,c,v)

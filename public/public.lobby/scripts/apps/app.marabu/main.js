@@ -194,7 +194,7 @@ function Marabu()
     var control_storage = this.instrument.get_storage(control.id);
     var control_value = control.value;
 
-    this.song.inject_effect_at(this.selection.instrument,this.selection.track,this.selection.row,control_storage,control_value);
+    this.song.inject_effect_at(this.selection.instrument,this.selection.track,this.selection.row,control_storage+1,control_value);
     this.update();
   }
 
