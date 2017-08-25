@@ -1,10 +1,10 @@
-function Sequencer(bpm)
+function Sequencer()
 {
   var app = lobby.apps.marabu;
   var target = this;
 
   this.follower = new Sequencer_Follower();
-  this.sequence = {length:32,bpm:bpm}
+  this.sequence = {length:32}
 
   this.start = function()
   {

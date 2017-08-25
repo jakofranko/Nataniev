@@ -13,7 +13,7 @@ function Marabu()
   this.editor = null;
   this.instrument = null;
 
-  this.selection = {instrument:0,track:0,row:0,octave:5,control:0};
+  this.selection = {instrument:0,track:0,row:0,octave:5,control:0,bpm:120};
   this.location = null;
   this.formats = ["mar"];
   this.channels = 16;
@@ -122,10 +122,9 @@ function Marabu()
     var html = "";
     
     var sequences_count = this.song.song().endPattern-1;
-    var bpm = 120;    // Beats per minute
-    var spm = bpm/32; // Sequences per minute
+    var spm = this.selection.bpm/32; // Sequences per minute
     var seconds = (sequences_count/spm) * 60;
-    var time = (seconds/4) > 120 ? parseInt(seconds/4/60)+"min" : (seconds/4)+"sec";
+    var time = (seconds/4) >  this.selection.bpm ? parseInt(seconds/4/60)+"min" : (seconds/4)+"sec";
     var file_name = this.location_name();
     var instrument_name = this.song.instrument(this.selection.instrument).name ? this.song.instrument(this.selection.instrument).name : "IN"+this.selection.instrument;
 
@@ -134,7 +133,7 @@ function Marabu()
     html += this.selection.octave+"oct ";
     html += sequences_count+"tracks ";
     html += time+" ";
-    html += bpm+"bpm ";
+    html += this.selection.bpm+"bpm ";
 
     html += "<span class='right'>I"+this.selection.instrument+"T"+this.selection.track+"R"+this.selection.row+"O"+this.selection.octave+"C"+this.selection.control+"</span>";
     

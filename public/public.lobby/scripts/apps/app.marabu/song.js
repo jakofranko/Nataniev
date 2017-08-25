@@ -55,18 +55,7 @@ var CAudioTimer = function ()
 var Song = function()
 {
   var MAX_SONG_ROWS = 32,
-      MAX_PATTERNS = 16;
-
-  var mPatternCol = 0,
-      mPatternRow = 0,
-      mPatternCol2 = 0,
-      mPatternRow2 = 0,
-      mSeqCol = 0,
-      mSeqRow = 0,
-      mSeqCol2 = 0,
-      mSeqRow2 = 0,
-      mFxTrackRow = 0,
-      mFxTrackRow2 = 0;
+      MAX_PATTERNS = 32;
 
   // Resources
   var mSong = {};
@@ -168,13 +157,10 @@ var Song = function()
     var c = this.pattern_at(i,t)-1; if(c == -1){ return; }
     this.song().songData[i].c[c].f[f] = cmd;
     this.song().songData[i].c[c].f[f+32] = val;
-
-    console.log(this.song().songData[i]);
   }
 
   this.inject_control = function(i,c,v)
   {
-    console.log(i,c,v)
     this.song().songData[i].i[c] = v;
     this.mJammer_update();
   }
@@ -184,11 +170,8 @@ var Song = function()
     if (mSong.patternLen === length)
       return;
 
-    // Stop song if it's currently playing (the song will be wrong and the
-    // follower will be off)
     stopAudio();
 
-    // Truncate/extend patterns
     var i, j, k, col, notes, fx;
     for (i = 0; i < 8; i++) {
       for (j = 0; j < MAX_PATTERNS; j++) {
@@ -286,7 +269,7 @@ var Song = function()
 
   this.play_song = function()
   {
-    this.update_bpm(120);
+    this.update_bpm(lobby.apps.marabu.selection.bpm);
     this.update_rpp(32);
 
     stopAudio();
