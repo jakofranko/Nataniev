@@ -125,15 +125,16 @@ function Marabu()
     var bpm = 120;    // Beats per minute
     var spm = bpm/32; // Sequences per minute
     var seconds = (sequences_count/spm) * 60;
-    var time = (seconds/4) > 120 ? parseInt(seconds/4/60)+"m" : (seconds/4)+"s";
+    var time = (seconds/4) > 120 ? parseInt(seconds/4/60)+"min" : (seconds/4)+"sec";
     var file_name = this.location_name();
     var instrument_name = this.song.instrument(this.selection.instrument).name ? this.song.instrument(this.selection.instrument).name : "IN"+this.selection.instrument;
 
-    html += "/ <b>"+file_name.toLowerCase()+"</b>."+instrument_name.toLowerCase()+"+"+this.selection.octave+" > ";
+    html += "/ <b>"+file_name.toLowerCase()+"</b>."+instrument_name.toLowerCase()+" > ";
 
-    html += "Length "+sequences_count+" ";
-    html += "Time "+time+" ";
-    html += "Rate "+bpm+"bpm ";
+    html += this.selection.octave+"oct ";
+    html += sequences_count+"tracks ";
+    html += time+" ";
+    html += bpm+"bpm ";
 
     html += "<span class='right'>I"+this.selection.instrument+"T"+this.selection.track+"R"+this.selection.row+"O"+this.selection.octave+"C"+this.selection.control+"</span>";
     
