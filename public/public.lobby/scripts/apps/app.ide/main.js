@@ -34,6 +34,8 @@ function Ide()
   this.textarea_el.style.resize = "none";
   this.textarea_el.style.wrap = "soft";
 
+  this.previous = "";
+
   this.IO.pos = {x:600,y:30}
 
   this.methods.inject = {name:"inject",passive:true};
@@ -121,8 +123,32 @@ function Ide()
     var chars_display = chars_active+"/"+chars_count+"C ";
     
     var scroll_position = parseInt(lines_active/parseFloat(lines_count) * 100);
+    var suggestion = this.suggestion();
 
-    return this.location+" "+lines_display+chars_display+" <b class='di'>"+scroll_position+"%</b> <t class='right'>"+this.window.size.width+"x"+this.window.size.height+"</t>";
+    return this.location+" "+lines_display+chars_display+" <b class='di'>"+scroll_position+"%</b> <t class='right'>"+(suggestion ? '<b>_'+suggestion+'</b>' : '')+" "+this.window.size.width+"x"+this.window.size.height+"</t>";
+  }
+
+  this.suggestion = function()
+  {
+    var last_word = this.previous.split(" ")[this.previous.split(" ").length-1].trim(); 
+    if(last_word.length < 2){ return null; }
+    var dict = this.textarea_el.value.split("\n").join(" ").split(" ");
+    for(word_id in dict){
+      var word = dict[word_id].trim();
+      if(last_word == word){ continue; }
+      if(last_word == word.substr(0,last_word.length)){ console.log(last_word,word); return word; }
+    }
+    return null;
+  }
+
+  this.autocomplete = function()
+  {
+    var last_word = this.previous.split(" ")[this.previous.split(" ").length-1]; 
+    var suggestion = this.suggestion();
+
+    this.inject(suggestion.substr(last_word.length,suggestion.length));
+    this.previous = "";
+    lobby.commander.update_status();
   }
 
   this.title = function()
@@ -132,11 +158,23 @@ function Ide()
 
   this.when.key = function(key)
   {
-    if(key == "escape"){
+    if(key.length == 1){
+      this.app.previous += key;
+      lobby.commander.update_status();
+    }
+    if(key == "Escape"){
       this.app.textarea_el.blur();
     }
-    if(key == "tab"){
-      this.app.inject("  ");
+    if(key == "Tab"){
+      if(this.app.suggestion()){
+        this.app.autocomplete();
+      }
+      else{
+       this.app.inject("  "); 
+      }
+    }
+    if(key == "Enter" || key == "Backspace"){
+      // this.app.previous = "";
     }
   }
 
