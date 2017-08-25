@@ -26,7 +26,7 @@ lobby.apps.marabu.new_song = function()
 
     // All 8 instruments
     song.songData = [];
-    for (i = 0; i < 8; i++) {
+    for (i = 0; i < lobby.apps.marabu.channels; i++) {
       instr = {};
       instr.i = [];
 
@@ -70,7 +70,7 @@ lobby.apps.marabu.new_song = function()
     song.songData[6].i = [0,0,140,0,0,0,140,0,0,60,4,10,34,0,0,0,187,5,0,1,239,135,0,170,87,5,0,4];
     song.songData[7].name = "Toms"
     song.songData[7].i = [0,192,104,1,0,80,99,0,0,0,4,0,66,0,0,3,0,0,0,1,0,1,2,32,37,4,0,0];
-
+    
     // Make a first empty pattern
     song.songData[0].p[0] = 1;
 

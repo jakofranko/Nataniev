@@ -11,7 +11,7 @@ b         { font-weight: normal; font-family: 'input_mono_medium'}
 
 #lobby                  { width:calc(100vw - 60px); height:calc(100vh - 60px);background:black; margin:30px auto 0px auto; position:relative; border-radius: 2px; overflow: hidden;}
 #lobby.ready #wallpaper { opacity: 1 }
-#lobby #wallpaper       { width:100%; height:100%; background-image:url(/public.oscean/media/diary/354.jpg); background-size:cover; background-position: center center; opacity: 0; transition: opacity 500ms;}
+#lobby #wallpaper       { width:100%; height:100%; background-image:url(/public.oscean/media/diary/241.jpg); background-size:cover; background-position: center center; opacity: 0; transition: opacity 500ms;}
 #lobby #grid            { background-image:url(../media/graphics/grid.svg); width:100%; height:100%; background-position: 15px 15px; position:absolute; opacity: 0.5}
 
 #commander { background:white; height:30px; width:30px; position:absolute; bottom:0px; width:100%; vertical-align: top; z-index:9000; }

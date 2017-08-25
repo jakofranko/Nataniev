@@ -21,7 +21,7 @@ function Editor(t,b)
       tr.style.lineHeight = "15px";
       tr.className = r % this.pattern.signature[1] == 0 ? " fm" : "";
       // Notes
-      for (i = 0; i < 8; i++) {
+      for (i = 0; i < app.channels; i++) {
         td = document.createElement("td");
         td.id = "i"+i+"r"+r;
         td.style.padding = "0 2.5px";
@@ -58,8 +58,7 @@ function Editor(t,b)
 
   this.update = function()
   {
-    // 32 x 8
-    for(var i = 0; i < 8; i++){
+    for(var i = 0; i < app.channels; i++){
       var pattern = app.song.pattern_at(i,app.selection.track);
       // Each Row
       for(var r = 0; r < 32; r++){

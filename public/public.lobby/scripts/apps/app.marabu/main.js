@@ -4,7 +4,7 @@ function Marabu()
 
   this.name = "marabu";
 
-  this.window.size = {width:540,height:480};
+  this.window.size = {width:870,height:480};
   this.window.pos = {x:30,y:30};
   this.window.theme = "noir";
 
@@ -16,6 +16,7 @@ function Marabu()
   this.selection = {instrument:0,track:0,row:0,octave:5,control:0};
   this.location = null;
   this.formats = ["mar"];
+  this.channels = 16;
 
   this.IO.pos = {x:30,y:30}
   this.IO.route("uv_update","ide","print");
@@ -76,7 +77,7 @@ function Marabu()
 
   this.update = function()
   {
-    this.selection.instrument = clamp(this.selection.instrument,0,7);
+    this.selection.instrument = clamp(this.selection.instrument,0,this.channels-1);
     this.selection.track = clamp(this.selection.track,0,32);
     this.selection.row = clamp(this.selection.row,0,32);
     this.selection.octave = clamp(this.selection.octave,0,8);
@@ -126,7 +127,7 @@ function Marabu()
     var seconds = (sequences_count/spm) * 60;
     var time = (seconds/4) > 120 ? parseInt(seconds/4/60)+"m" : (seconds/4)+"s";
     var file_name = this.location_name();
-    var instrument_name = this.song.instrument(this.selection.instrument).name;
+    var instrument_name = this.song.instrument(this.selection.instrument).name ? this.song.instrument(this.selection.instrument).name : "IN"+this.selection.instrument;
 
     html += "/ <b>"+file_name.toLowerCase()+"</b>."+instrument_name.toLowerCase()+"+"+this.selection.octave+" > ";
 

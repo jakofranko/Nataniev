@@ -17,7 +17,7 @@ function Sequencer(bpm)
       tr = document.createElement("tr");
       tr.id = "spr"+t;
       tr.style.lineHeight = "15px";
-      for (var i = 0; i < 8; i++) {
+      for (var i = 0; i < app.channels; i++) {
         td = document.createElement("td");
         td.id = "sc" + i + "t" + t;
         td.textContent = "-";
@@ -59,7 +59,7 @@ function Sequencer(bpm)
       var tr = document.getElementById("spr" + t);
       tr.className = t == app.selection.track ? "bl" : "";
 
-      for (var i = 0; i < 8; ++i)
+      for (var i = 0; i < app.channels; ++i)
       {
         var o = document.getElementById("sc" + i + "t" + t);
         var pat = app.song.pattern_at(i,t);
