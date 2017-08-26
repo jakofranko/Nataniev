@@ -4,7 +4,7 @@ function System()
 
   this.name = "system";
   
-  this.window.size = {width:420,height:420};
+  this.window.size = {width:900,height:900};
   this.window.pos = {x:300,y:30};
 
   this.methods.set_wallpaper = {name:"set_wallpaper",passive:true};
@@ -26,6 +26,7 @@ function System()
   this.setup.start = function()
   {
     this.app.update();
+    this.app.window.organize.fill();
   }
 
   this.aquire = function()
@@ -39,22 +40,22 @@ function System()
 
     for(app_id in lobby.apps){
       var app = lobby.apps[app_id];
-      html += "<ln class='lh15'><b>"+app.name+"</b></ln> ";
-      for(method_id in app.methods){
-        var method = app.methods[method_id];
-        if(method.is_global){ continue; }
-        html += "<ln class='lh15 w6 f9 pdl'>."+method.name+" "+(method.shortcut ? '[ctrl+'+method.shortcut+']' : '')+"</ln> ";
+      if(app_id != "ronin" && app_id != "marabu" && app_id != "ide" && app_id != "twitter"){ continue; }
+      html += app.IO.sprite();
+      // Draw routes
+      for(route_id in app.IO.routes){
+        var route = app.IO.routes[route_id];
+        console.log(app.name+" route:",route);
       }
     }
 
-    html += "<ln class='lh15'>GLOBALS</ln> ";
-    for(method_id in this.methods){
-      var method = this.methods[method_id];
-      if(!method.is_global){ continue; }
-      html += "<ln class='lh15 w6 f9 pdl'>."+method.name+" "+(method.shortcut ? '[ctrl+'+method.shortcut+']' : '')+"</ln> ";
-    }
+    // html += "<line x1='150' y1='180' x2='300' y2='255' stroke='black' stroke-width='2'/>"
 
-    this.el.innerHTML = "<list style='column-count:2'>"+html+"</list>";
+    html += "<line x1='420' y1='180' x2='300' y2='390' stroke='black' stroke-width='2'/>"
+
+    html += "<line x1='150' y1='180' x2='600' y2='135' stroke='black' stroke-width='2'/>"
+
+    this.wrapper_el.innerHTML = '<svg width="'+this.window.size.width+'" height="'+this.window.size.height+'" class="fh" style="fill:black; stroke:none; stroke-linecap:butt; font-size:11px">'+html+'</svg>';
   }
 
   this.on_input_change = function(value)

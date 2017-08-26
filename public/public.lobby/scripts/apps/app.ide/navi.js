@@ -65,12 +65,15 @@ lobby.apps.ide.navi =
 
     var html = "";
 
+    var count = 0;
     for(file_id in lobby.apps.ide.history){
+      if(count > 10){ break; }
       var file_path = lobby.apps.ide.history[file_id]
       var file_parts = file_path.split("/");
       var file_name = file_parts[file_parts.length-1];
       var cmd_el = lobby.commander.create_cmd(file_name,"ide.load "+file_path,"lh15 db cu fl");
       lobby.apps.ide.history_el.appendChild(cmd_el);
+      count += 1;
     }
   }
 }

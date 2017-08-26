@@ -1,51 +1,47 @@
 function Sequencer_Follower()
 {
-  var timer = -1;
+  var app = lobby.apps.marabu;
+
+  this.timer = -1;
   this.first_row = 0;
   this.last_row = 0;
   this.first_col = 0;
   this.last_col = 0;
 
+  this.prev = -1;
+
   this.start = function()
   {
-    lobby.apps.marabu.sequencer.refresh();
-    lobby.apps.marabu.editor.refresh();
-
-    timer = setInterval(this.update, 16);
-
-    var table = document.getElementById("pattern-table");
-    table.className = "tracks playing";
+    this.timer = setInterval(this.update, 16);
     console.log("follower","start");
   }
 
   this.update = function()
   {
-    var t = GUI.mAudio_timer().currentTime();
+    var t = app.song.mAudio_timer().currentTime();
 
-    if (GUI.mAudio().ended || (GUI.mAudio().duration && ((GUI.mAudio().duration - t) < 0.1))) {
-      stop();
+    if (app.song.mAudio().ended || (app.song.mAudio().duration && ((app.song.mAudio().duration - t) < 0.1))) {
+      clearInterval(this.timer);
+      this.timer = -1;
       return;
     }
 
-    var n = Math.floor(t * 44100 / GUI.song().rowLen);
-    var seqPos = Math.floor(n / GUI.song().patternLen) + this.first_row;
-    var patPos = n % GUI.song().patternLen;
+    var n = Math.floor(t * 44100 / app.song.song().rowLen);
+    var r = n % 32;
 
-    // document.getElementById("spr"+seqPos).className = "played";
-    document.getElementById("ppr"+patPos).className = "played";
-  }
-
-  function stop()
-  {
-    console.log("follower","stop");
-    clearInterval(timer);
-    timer = -1;
-    lobby.apps.marabu.editor.refresh();
+    if(n != this.prev){
+      app.selection.row = r;
+      app.update();
+      this.prev = n;
+    }
   }
 
   this.stop = function()
   {
-    stop();
+    console.log("follower","stop");
+    clearInterval(this.timer);
+    this.timer = -1;
+    lobby.apps.marabu.update();
   }
 }
 

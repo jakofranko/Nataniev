@@ -51,7 +51,7 @@ function Diary()
 
     html += "<svg class='fh' style='width:"+(line_spacing * 7)+";height:"+svg_height+"px; stroke-dasharray:1,1; fill:none; stroke-width:"+line_width+"; stroke-linecap:butt; margin-right:10px'><path d='"+path+"'></path></svg>";
 
-    html += "<t class='t_thin' style='line-height:60px; font-size:45px; display:inline-block; width:50px; text-align:center; margin-right:5px'>"+parseInt(d.percentage)+"</t>";
+    html += "<t class='thin' style='line-height:60px; font-size:45px; display:inline-block; width:50px; text-align:center; margin-right:5px'>"+parseInt(d.percentage)+"</t>";
     html += "<t style='line-height: 30px;font-size: 15px;position: absolute;top:5px'>"+(d.difference > 0 ? '+' : '')+parseInt(d.difference)+"</t>";
     html += "<t style='line-height: 30px;font-size: 15px;position: absolute;top:25px'>"+d.unit+"</t>";
     html += "</yu>";

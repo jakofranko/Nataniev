@@ -171,6 +171,7 @@ class CorpseHttp
     add_script("core/app.window.js")
     add_script("core/app.touch.js")
     add_script("core/app.events.js")
+    add_script("core/app.node.js")
     add_script("core/app.js")
 
   end

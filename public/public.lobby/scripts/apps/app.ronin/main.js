@@ -1,31 +1,3 @@
-function Layer(size)
-{
-  this.el = document.createElement("canvas");
-
-  this.setup = function(size)
-  {
-    this.el.width = size.width;
-    this.el.height = size.height;
-    this.el.style.width = (size.width/2)+"px";
-    this.el.style.height = (size.height/2)+"px";
-    this.el.style.position = "absolute";
-  }
-
-  this.context = function()
-  {
-    return this.el.getContext('2d');
-  }
-
-  this.mark = function(x,y)
-  {
-    this.context().beginPath();
-    this.context().rect(x,y,2,2);
-    this.context().fillStyle = "red";
-    this.context().fill();
-    this.context().closePath();
-  }
-}
-
 function Ronin()
 {
   App.call(this);
@@ -33,23 +5,60 @@ function Ronin()
   this.name = "ronin";
   this.window.size = {width:300,height:300};
   this.window.pos = {x:60,y:60};
+  this.window.theme = "blanc";
 
-  this.setup.includes = ["methods/clear","methods/fill","methods/brush","methods/path","methods/load","methods/resize","methods/type","methods/magnet","methods/import","methods/export"];
+  this.setup.includes = ["layer","methods/clear","methods/fill","methods/brush","methods/path","methods/load","methods/resize","methods/type","methods/magnet","methods/import","methods/export","methods/zoom","methods/render"];
   this.project = {};
   this.project.size = this.window.size;
-  this.project.zoom = 2;
+  this.project.zoom = 0.25;
   this.tools = {};
+
+  this.IO.pos = {x:300,y:30}
 
   this.formats = ["rin"];
 
   this.setup.start = function()
   {
+    // Setup
+    for(layer_id in this.app.layers){
+      var layer = this.app.layers[layer_id];
+      this.app.wrapper_el.appendChild(layer.el);
+      layer.setup();
+    }
+
     this.app.clear();
+    this.app.window.organize.center();
+    this.app.zoom(0.5)
+    this.app.splash();
+  }
+
+  this.setup.ready = function()
+  {
+    this.app.layers = {main:new Layer("main"),preview:new Layer("preview"),guide:new Layer("guide"),cursor:new Layer("cursor")};
+    this.app.layers.guide.preserve = true;
+  }
+
+  this.when.share = function()
+  {
+
+  }
+
+  this.when.resize = function()
+  {
+    this.app.window.organize.center();
+  }
+
+  this.when.key = function(key)
+  {
+    if(key == ","){ this.app.zoom(this.app.project.zoom - 0.025); }
+    if(key == "."){ this.app.zoom(this.app.project.zoom + 0.025); }
   }
 
   this.when.file = function(file)
   {
     if (!file.type.match(/image.*/)) { return false; }
+
+    lobby.apps.ronin.window.show();
 
     var reader = new FileReader();
     
@@ -61,13 +70,22 @@ function Ronin()
       var width = base_image.naturalWidth;
       var height = base_image.naturalHeight;
       var pos = {x:0,y:0};
+      var zoom = lobby.apps.ronin.project.zoom;
       var size = {width:width,height:height};
 
+      lobby.apps.ronin.project.size = size;
+      lobby.apps.ronin.project.zoom = 0.5;
+      lobby.apps.ronin.resize();
       lobby.apps.ronin.draw_image(base_image,pos,size);
     }
     reader.readAsDataURL(file);
 
     return true;
+  }
+
+  this.splash = function()
+  {
+    lobby.apps.ronin.path("M60,60 l120,0 a60,60 0 0,1 60,60 a-60,60 0 0,1 -60,60 l-120,0 M180,180 a60,60 0 0,1 60,60");
   }
 
   this.on_input_change = function(value)
@@ -105,7 +123,7 @@ function Ronin()
 
   this.status = function()
   {
-    return this.project.size.width+"x"+this.project.size.height+"[*"+this.project.zoom+"]";
+    return this.project.size.width+"x"+this.project.size.height+"["+parseInt(this.project.zoom * 100)+"%] <t class='right'>"+this.window.size.width+"x"+this.window.size.height+"</t>";
   }
 
   this.wrapper_el.addEventListener('mousedown', this.mouse_down, false);

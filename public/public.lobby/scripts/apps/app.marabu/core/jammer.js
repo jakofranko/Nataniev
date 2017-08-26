@@ -28,7 +28,7 @@ var CJammer = function () {
   //--------------------------------------------------------------------------
 
   // Currently playing notes.
-  var MAX_POLYPHONY = 8;
+  var MAX_POLYPHONY = lobby.apps.marabu.channels;
   var mPlayingNotes = [];
 
   // Current instrument.
@@ -337,8 +337,8 @@ var CJammer = function () {
     // TODO(m): Implement me!
   };
 
-  this.updateInstr = function (instr) {
-    // Copy instrument description.
+  this.updateInstr = function (instr)
+  {
     mInstr = [];
     for (var i = 0; i < instr.length; ++i) {
       mInstr.push(instr[i]);

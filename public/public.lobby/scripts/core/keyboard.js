@@ -27,11 +27,11 @@ function Keyboard()
         event.preventDefault();
       }
       else if(!lobby.commander.is_typing()){
-        lobby.commander.app.when.key(event.key.toLowerCase());
+        lobby.commander.app.when.key(event.key);
         if(event.altKey && event.key == "Tab"){ lobby.commander.input_el.focus(); event.preventDefault(); }
-        if(event.key == "Tab"){ event.preventDefault(); }
       }
     }
+    if(event.keyCode == 9){ event.preventDefault(); }
   }
 
   this.listen_onkeyup = function(event)
@@ -40,6 +40,9 @@ function Keyboard()
     if(event.keyCode == 9 && event.ctrlKey){
       lobby.commander.input_el.focus();
       lobby.commander.update_hint();
+      event.preventDefault();
+    }
+    if(event.keyCode == 9){
       event.preventDefault();
     }
   }

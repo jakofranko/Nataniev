@@ -30,13 +30,13 @@ class ActionServe
     ro.glyph = "M240,240 l0,-90 a-90,-90 0 0,0 -90,-90 l-90,0 l0,90 a90,90 0 0,0 90,90 l60,0 l0,-90 a-60,-60 0 0,0 -60,-60 l-60,0 l0,60 a60,60 0 0,0 60,60 l30,0 l0,-60 a-30,-30 0 0,0 -30,-30 l-30,0 l0,30 a30,30 0 0,0 30,30"
 
     ro.feed = logs
-    ro.portal.push("rotonde.monochromatic.co")
-    ro.portal.push("rotonde.cblgh.org")
-    ro.portal.push("rotonde.anxl.faith")
-    # ro.portal.push("johnakers.network/rotonde.json")
-    # ro.portal.push("rotonde.electricgecko.de")
-    # ro.portal.push("rotonde.attilam.com")
-    # ro.portal.push("rotonde.brennan.pizza")
+    ro.portal.push("http://rotonde.monochromatic.co")
+    ro.portal.push("http://rotonde.cblgh.org")
+    ro.portal.push("http://rotonde.anxl.faith")
+    ro.portal.push("http://rotonde.electricgecko.de")
+    ro.portal.push("http://rotonde.attilam.com")
+    ro.portal.push("http://rotonde.brennan.pizza")
+    ro.portal.push("https://rotonde-joshavanier.hashbase.io")
     
     return ro.to_json
     
@@ -53,11 +53,12 @@ class ActionServe
       media = log["PICT"].to_i
       focus = log["CODE"][3,1].to_i
       sector = sector(log["CODE"][2,1].to_i).capitalize
+      task = log["TASK"]
 
       entry = {}
       entry[:time] = Timestamp.new(log["DATE"]).unix.to_s
-      entry[:text] = text ? text.gsub("{{","").gsub("}}","") : "#{sector} day, #{focus}h of #{log["TASK"]} on #{log["TERM"]}."
-      entry[:data] = {:focus => focus/10.0, :nutrition => 0.33, :exercise => 0.33, :sleep => 0.33, :mood => 0.33}
+      entry[:text] = text ? text.gsub("{{","").gsub("}}","") : "#{topic} #{task}, for #{focus}h."
+      entry[:data] = {:focus => focus/10.0, :task => task.downcase, :topic => topic.downcase, :sector => sector.downcase}
 
       if media > 0 then entry[:media] = "http://wiki.xxiivv.com/public.oscean/media/diary/#{media}.jpg" end
       if topic.to_s != "" then entry[:url] = "http://wiki.xxiivv.com/#{topic}" end
