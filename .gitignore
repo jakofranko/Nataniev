@@ -29,3 +29,6 @@ secret.*
 .secret
 *.sublime-*
 disk/
+
+# Misc.
+.DS_Store
