@@ -135,7 +135,7 @@ function Marabu()
     html += time+" ";
     html += this.selection.bpm+"bpm ";
 
-    html += "<span class='right'>I"+this.selection.instrument+"T"+this.selection.track+"R"+this.selection.row+"O"+this.selection.octave+"C"+this.selection.control+"</span>";
+    html += "<span class='right'>I"+this.selection.instrument+"T"+this.selection.track+"R"+this.selection.row+"O"+this.selection.octave+"C"+this.selection.control+" "+this.window.size.width+"x"+this.window.size.height+"</span>";
     
     return html;
   }
