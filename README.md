@@ -2,16 +2,30 @@
 
 Nataniev is an operating system inspired from original MUDs, it hosts various websites and applications of the [Oscean Ecosystem](http://wiki.xxiivv.com/Nataniev).
 
+## The Lobby
+
+The lobby is the Nataniev graphical interface. Upon cloning the repository, [install the Sinatra Gem](https://www.digitalocean.com/community/tutorials/how-to-install-and-get-started-with-sinatra-on-your-system-or-vps).
+```
+ruby nataniev.server.rb lobby   # Will start localhost
+```
+
+Now open your browser to:
+```
+http://localhost:8668/
+```
+
+You should be presented with the Lobby. Have a look at the [Lobby Guide](http://wiki.xxiivv.com/Lobby) on how to use Nataniev applications.
+
 ## Starting
 
 There are 3 main ways of launching Nataniev.
 
 ```
-ruby nataniev.operator (query)  # Will return a response and alt.
-ruby nataniev.console  (query)  # Will return a response and keep the STDIN loop active.
-ruby nataniev.auto              # Will not return a response, instead, write logs.
-ruby nataniev.server            # Will start sinatra and serve the vessels.
+ruby nataniev.server VESSEL                 # Will start sinatra and serve the vessels.
+ruby nataniev.operator.rb VESSEL ACTION     # Will return a response and alt.
+ruby nataniev.auto                          # Will not return a response, instead, write logs.
 ```
+
 ## Paradigm
 
 An application is made of 4 parts.
