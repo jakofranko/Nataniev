@@ -50,8 +50,8 @@ function Ronin()
 
   this.when.key = function(key)
   {
-    if(key == "."){ this.app.zoom(this.app.project.zoom - 0.025); }
-    if(key == "/"){ this.app.zoom(this.app.project.zoom + 0.025); }
+    if(key == ","){ this.app.zoom(this.app.project.zoom - 0.025); }
+    if(key == "."){ this.app.zoom(this.app.project.zoom + 0.025); }
   }
 
   this.when.file = function(file)
