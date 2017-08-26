@@ -48,12 +48,12 @@ class ActionServe
     count = 0
     Memory_Array.new("horaire","#{@host.path}/../vessel.oscean").to_a.each do |log|
       if count > 30 then break end
-      topic = log["TERM"]
+      topic = log["TERM"].to_s
       text = log["TEXT"]
       media = log["PICT"].to_i
       focus = log["CODE"][3,1].to_i
-      sector = sector(log["CODE"][2,1].to_i).capitalize
-      task = log["TASK"]
+      sector = sector(log["CODE"][2,1].to_i).to_s.capitalize
+      task = log["TASK"].to_s
 
       entry = {}
       entry[:time] = Timestamp.new(log["DATE"]).unix.to_s
