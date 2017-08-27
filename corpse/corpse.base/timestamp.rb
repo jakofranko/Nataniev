@@ -67,6 +67,12 @@ class Timestamp
 
   end
 
+  def since
+
+    return (elapsed/86400)
+    
+  end
+
   def to_s
 
     return @stamp.to_s
