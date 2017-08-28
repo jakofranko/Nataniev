@@ -35,8 +35,13 @@ class ActionServe
     ro.portal.push("http://rotonde.anxl.faith")
     ro.portal.push("http://rotonde.electricgecko.de")
     ro.portal.push("http://rotonde.attilam.com")
-    ro.portal.push("http://rotonde.brennan.pizza")
-    ro.portal.push("https://rotonde-joshavanier.hashbase.io")
+    ro.portal.push("http://brennan-ltkmn.hashbase.io")
+    ro.portal.push("http://rotonde-ciel.hashbase.io")
+    ro.portal.push("http://rotonde.cblgh.org/network.json")
+    ro.portal.push("http://rotonde.neufv.website")
+    ro.portal.push("http://rotonde.v-os.ca")
+    ro.portal.push("http://rotonde-joshavanier.hashbase.io")
+    ro.portal.push("http://rotonde-somnius.hashbase.io")
     
     return ro.to_json
     
@@ -58,13 +63,12 @@ class ActionServe
       task = log["TASK"].to_s
 
       entry = {}
-      entry[:id]   = (logs.length-count).to_s
       entry[:time] = Timestamp.new(log["DATE"]).unix.to_s
-      entry[:text] = text ? text.gsub("{{","").gsub("}}","") : "#{topic} #{task}, for #{focus}h."
+      entry[:text] = text ? text.gsub("{{","").gsub("}}","") : "#{topic} #{task}"
       entry[:data] = {:focus => focus/10.0, :task => task.downcase, :topic => topic.downcase, :sector => sector.downcase}
 
       if media > 0 then entry[:media] = "http://wiki.xxiivv.com/public.oscean/media/diary/#{media}.jpg" end
-      if topic.to_s != "" then entry[:url] = "http://wiki.xxiivv.com/#{topic}" end
+      if topic.to_s != "" then entry[:url] = "http://wiki.xxiivv.com/#{topic}".to_url end
 
       a.push(entry)
       count += 1 
