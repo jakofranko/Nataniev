@@ -38,8 +38,9 @@ class Rotonde
         :glyph => @glyph
       },
       :feed => @feed,
+      :dialog => [],
       :portal => @portal
-      }.to_json
+    }.to_json
 
   end
 

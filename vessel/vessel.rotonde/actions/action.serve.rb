@@ -44,9 +44,11 @@ class ActionServe
 
   def logs
 
+    logs = Memory_Array.new("horaire","#{@host.path}/../vessel.oscean").to_a
     a = []
     count = 0
-    Memory_Array.new("horaire","#{@host.path}/../vessel.oscean").to_a.each do |log|
+
+    logs.each do |log|
       if count > 30 then break end
       topic = log["TERM"].to_s
       text = log["TEXT"]
@@ -56,7 +58,7 @@ class ActionServe
       task = log["TASK"].to_s
 
       entry = {}
-      entry[:time] = Timestamp.new(log["DATE"]).unix.to_s
+      entry[:time] = Timestamp.new(log["DATE"]).unix.to_s+"-"+(logs.length-count).to_s
       entry[:text] = text ? text.gsub("{{","").gsub("}}","") : "#{topic} #{task}, for #{focus}h."
       entry[:data] = {:focus => focus/10.0, :task => task.downcase, :topic => topic.downcase, :sector => sector.downcase}
 
