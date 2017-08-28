@@ -31,7 +31,6 @@ class ActionServe
 
     ro.feed = logs
     ro.portal.push("http://rotonde.monochromatic.co")
-    ro.portal.push("http://rotonde.cblgh.org")
     ro.portal.push("http://rotonde.anxl.faith")
     ro.portal.push("http://rotonde.electricgecko.de")
     ro.portal.push("http://rotonde.attilam.com")
