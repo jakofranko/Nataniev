@@ -7,9 +7,10 @@ module Vessel
   attr_accessor :name
   attr_accessor :docs
   attr_accessor :path
-  attr_accessor :site
+
   attr_accessor :media_path
   attr_accessor :actions
+  attr_accessor :corpse
 
   def initialize id = 0
 
@@ -18,7 +19,7 @@ module Vessel
     @media_path = nil
     @name = "Unknown"
     @docs = "No description"
-    @site = "http://xxiivv.com"
+    @corpse = nil
 
   end
 
@@ -49,7 +50,7 @@ module Vessel
     
   end
 
-  def install category,action_name
+  def install category, action_name
 
     if category == :generic then $nataniev.require("action",action_name) end
 
@@ -58,9 +59,28 @@ module Vessel
     
     if Kernel.const_defined?("Action#{action_name.capitalize}") == false then puts "Cannot install #{action_name}." ; return end
 
-    if !actions[category] then actions[category] = [] end
+    if !@actions[category] then @actions[category] = [] end
 
-    actions[category].push(Object.const_get("Action#{action_name.capitalize}"))
+    @actions[category].push(Object.const_get("Action#{action_name.capitalize}"))
+
+  end
+
+end
+
+class Ghost
+
+  include Vessel
+
+  def initialize name = "Unknown"
+
+    super
+
+    @name = name
+    @docs = "The Ghost vessel cannot act."
+    @path = File.expand_path(File.join(File.dirname(__FILE__), "/"))
+
+    install(:generic,:look)
+    install(:generic,:help)
 
   end
 

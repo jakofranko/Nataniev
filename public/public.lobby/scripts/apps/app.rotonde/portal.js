@@ -40,15 +40,14 @@ function Rotonde_Portal(address)
     }
   }
 
-  this.parse = function(data)
+  this.parse = function(response)
   {
-    console.log("response",data);
+    console.log("response",response);
     try {
-      var a = JSON.parse(data);
-      this.data = a;
+      this.data = (typeof response == "object") ? response : JSON.parse(response);
       this.refresh();
     } catch(e){
-      console.log("Invalid JSON");
+      console.log("Invalid JSON",data);
     }
   }
 

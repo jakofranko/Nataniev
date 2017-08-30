@@ -22,7 +22,7 @@ class String
 
   def parser macro
 
-    if macro[0,1] == "$" then return Nataniev.new.answer(macro[1,macro.length-1].strip) end
+    if macro[0,1] == "$" then return $nataniev.answer(macro[1,macro.length-1].strip) end
     if macro[0,1] == "%" then return Media.new(macro.split[1],macro.split[2],macro.split[3]).to_s end
     if macro == "!clock" then return "<a href='/Desamber'>#{Desamber.new.clock}</a>" end
     if macro == "!desamber" then return "<a href='/Desamber'>#{Desamber.new}</a>" end

@@ -8,48 +8,45 @@ class Nataniev
   attr_accessor :time
   attr_accessor :path
   attr_accessor :actor
-  attr_accessor :vessel
+  attr_accessor :vessels
 
   def initialize
 
-    @time    = Time.new
-    @path    = File.expand_path(File.join(File.dirname(__FILE__), "/"))+"/.."
+    @time = Time.new
+    @path = File.expand_path(File.join(File.dirname(__FILE__), "/"))+"/.."
+    @vessels = {}
     
-    load path+"/system/action.rb"
-    load path+"/system/corpse.rb"
-    load path+"/system/vessel.rb"
-    load path+"/system/memory.rb"
+    load "#{@path}/system/action.rb"
+    load "#{@path}/system/corpse.rb"
+    load "#{@path}/system/vessel.rb"
+    load "#{@path}/system/memory.rb"
 
-    load_folder path+"/vessel/vessel.ghost/*"
-    load_folder path+"/corpse/corpse.base/*"
+    load_folder "#{@path}/corpse/corpse.base/*"
+    load_folder "#{@path}/action/*"
 
   end
 
   def answer q = nil
 
     parts   = q.split(" ")
-    vessel  = parts[0] ? parts[0] : "ghost"
+    invoke  = parts[0] ? parts[0] : "ghost"
     action  = parts[1] ? parts[1].to_sym : :help
-    params  = q.sub("#{vessel} #{action}","").strip
+    params  = q.sub("#{invoke} #{action}","").strip
 
-    # Summon
-    spirit  = summon(vessel)
-    @vessel = spirit ? spirit.new : nil
-
-    return @vessel ? @vessel.act(action,params) : "Could not summon the #{vessel} vessel."
+    return summon(invoke).act(action,params)
 
   end
 
-  def summon vessel_name
+  def summon invoke 
 
-    if File.exist?("#{path}/vessel/vessel.#{vessel_name.downcase}/vessel.rb") then load("#{path}/vessel/vessel.#{vessel_name.downcase}/vessel.rb") end    
-    if File.exist?("#{path}/vessel/vessel.#{vessel_name.downcase}.rb") then load("#{path}/vessel/vessel.#{vessel_name.downcase}.rb") end    
+    @vessels[invoke.to_sym] = Ghost.new(invoke)    
 
-    if !Kernel.const_defined?("Vessel#{vessel_name.capitalize}") then puts "Could not create the #{vessel_name} vessel." ; return nil end
+    load_any("#{@path}/vessel/vessel.#{invoke.downcase}","invoke")
 
-    return Object.const_get("Vessel"+vessel_name.to_s.capitalize)
+    return @vessels[invoke.to_sym]
 
   end
+
 
   #
 

@@ -5,18 +5,13 @@ module Corpse
 
   attr_accessor :host
   attr_accessor :query
+  attr_accessor :payload
 
-  def initialize host, query = nil
+  def initialize host
 
     @host = host
-    @query = query
+    @payload = "<empty/>"
     
-  end
-
-  def result
-
-    return "Shapeless."
-
   end
 
 end

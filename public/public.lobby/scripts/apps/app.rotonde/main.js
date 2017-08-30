@@ -22,17 +22,16 @@ function Rotonde()
   {
     // Select portals
     this.app.portals.push(new Rotonde_Portal("http://rotonde.v-os.ca"));
-    this.app.portals.push(new Rotonde_Portal("http://rotonde-joshavanier.hashbase.io"));
-    this.app.portals.push(new Rotonde_Portal("http://rotonde.v-os.ca"));
-    this.app.portals.push(new Rotonde_Portal("http://rotonde.monochromatic.co"));
+    this.app.portals.push(new Rotonde_Portal("http://rotonde.cblgh.org"));
+    // this.app.portals.push(new Rotonde_Portal("http://rotonde.monochromatic.co"));
     this.app.portals.push(new Rotonde_Portal("http://rotonde.anxl.faith"));
     this.app.portals.push(new Rotonde_Portal("http://rotonde.electricgecko.de"));
     this.app.portals.push(new Rotonde_Portal("http://rotonde.attilam.com"));
-    this.app.portals.push(new Rotonde_Portal("http://brennan-ltkmn.hashbase.io"));
-    this.app.portals.push(new Rotonde_Portal("http://rotonde-ciel.hashbase.io"));
-    this.app.portals.push(new Rotonde_Portal("http://rotonde.cblgh.org/network.json"));
+    this.app.portals.push(new Rotonde_Portal("https://rotonde-joshavanier.hashbase.io"));
+    this.app.portals.push(new Rotonde_Portal("https://brennan-ltkmn.hashbase.io"));
+    this.app.portals.push(new Rotonde_Portal("https://rotonde-ciel.hashbase.io"));
     this.app.portals.push(new Rotonde_Portal("http://rotonde.neufv.website"));
-    this.app.portals.push(new Rotonde_Portal("http://rotonde-somnius.hashbase.io"));
+    this.app.portals.push(new Rotonde_Portal("https://rotonde-somnius.hashbase.io"));
 
     update();
   }
