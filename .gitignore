@@ -22,6 +22,8 @@ public/public.*
 !action/action.help.rb
 !action/action.look.rb
 !action/action.tweet.rb
+!action/action.serve.rb
+!action/action.print.rb
 
 # Private
 
