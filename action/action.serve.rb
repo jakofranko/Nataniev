@@ -11,13 +11,15 @@ class ActionServe
 
     @name = "Serve"
     @docs = "Serve corpse."
+    @corpse = CorpseHttp
 
   end
 
   def act params
 
-    p "#{@host.name} is serving[#{params}].."
-    @host.corpse.query(params) # Override
+    @host.corpse.build
+    @host.corpse.query(params)
+    
     return @host.corpse.to_html
 
   end

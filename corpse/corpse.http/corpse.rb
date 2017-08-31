@@ -15,7 +15,7 @@ class CorpseHttp
   attr_accessor :body
   attr_accessor :style
 
-  def initialize host
+  def initialize host = nil
 
     @host = host
     @style = ""
@@ -113,7 +113,7 @@ class CorpseHttp
     </style>
   </head>
   <body>
-    #{@body}
+    #{body}
   </body>
   #{@footers}
 </html>"

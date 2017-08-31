@@ -14,4 +14,8 @@ module Corpse
     
   end
 
+  def build
+    
+  end
+
 end
