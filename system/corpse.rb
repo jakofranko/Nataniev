@@ -7,7 +7,7 @@ module Corpse
   attr_accessor :query
   attr_accessor :payload
 
-  def initialize host
+  def initialize host = nil
 
     @host = host
     @payload = "<empty/>"

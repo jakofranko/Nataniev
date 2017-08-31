@@ -8,13 +8,13 @@ $nataniev.require("corpse","http")
 $nataniev.require("corpse","json")
 
 $nataniev.vessels[:rotonde].path = File.expand_path(File.join(File.dirname(__FILE__), "/"))
-$nataniev.vessels[:rotonde].install(:custom,:serve)
+$nataniev.vessels[:rotonde].install(:custom,:serve,CorpseJson.new)
 
-corpse = CorpseJson.new($nataniev.vessels[:rotonde])
-
-$nataniev.vessels[:rotonde].corpse = corpse
+corpse = $nataniev.vessels[:rotonde].corpse
 
 def corpse.query q = nil
+
+  @host = $nataniev.vessels[:rotonde]
 
   load_folder("#{$nataniev.vessels[:rotonde].path}/objects/*")
 
@@ -46,11 +46,12 @@ end
 
 def corpse.logs
 
-  logs = Memory_Array.new("horaire","#{@host.path}/../vessel.oscean").to_a
   a = []
   count = 0
 
-  logs.each do |log|
+  p @host
+
+  Memory_Array.new("horaire","#{@host.path}/../vessel.oscean").to_a.each do |log|
     if count > 30 then break end
     topic = log["TERM"].to_s
     text = log["TEXT"]
