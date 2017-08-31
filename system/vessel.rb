@@ -77,7 +77,6 @@ class Ghost
     @docs = "The Ghost vessel cannot act."
     @path = File.expand_path(File.join(File.dirname(__FILE__), "/"))
 
-    install(:generic,:look)
     install(:generic,:help)
 
   end

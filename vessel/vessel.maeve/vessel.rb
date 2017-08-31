@@ -14,7 +14,6 @@ class VesselMaeve # TODO
     @path = File.expand_path(File.join(File.dirname(__FILE__), "/"))
 
     install(:generic,:serve)
-    install(:generic,:look)
     install(:generic,:help)
 
   end
