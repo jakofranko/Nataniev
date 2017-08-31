@@ -14,7 +14,13 @@ module Corpse
     
   end
 
-  def build
+  # Override
+
+  def query q = nil
+
+  end
+
+  def build q = nil
     
   end
 

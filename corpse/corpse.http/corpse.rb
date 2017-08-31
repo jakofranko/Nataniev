@@ -24,10 +24,6 @@ class CorpseHttp
 
   end
 
-  # Override
-
-  def query q = nil; end
-
   # Metas
 
   def metas

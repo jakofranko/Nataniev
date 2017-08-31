@@ -11,11 +11,11 @@ class ActionServe
 
     @name = "Serve"
     @docs = "Serve corpse."
-    @corpse = CorpseHttp
+    @corpse = CorpseBase.new
 
   end
 
-  def act params
+  def act params = nil
 
     @host.corpse.build
     @host.corpse.query(params)
