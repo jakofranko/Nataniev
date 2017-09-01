@@ -47,6 +47,12 @@ class Nataniev
 
   end
 
+  def vessel
+
+    return @vessels.first
+    
+  end
+
 
   #
 

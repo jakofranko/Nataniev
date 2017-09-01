@@ -72,8 +72,7 @@ class Array
 
   def query text
 
-    @host = $nataniev.vessel
-    @path = "#{$nataniev.path}/vessel/vessel.#{@host.name.downcase}"
+    @path = "#{$nataniev.path}/vessel/vessel.oscean"
 
     memory_name = text.split(" ").first.downcase.gsub(" ",".")
     memory_target = text.sub(memory_name,"").strip
