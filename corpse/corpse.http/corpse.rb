@@ -18,9 +18,9 @@ class CorpseHttp
   def initialize host = nil
 
     @host = host
-    @style = ""
     @body  = ""
     @footers = ""
+    @style = ""
 
   end
 

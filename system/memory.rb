@@ -9,7 +9,7 @@ module Memory
 
   def initialize name = nil, dir = "#{$nataniev.path}"
 
-    @name    = name.downcase.gsub(" ",".")
+    @name    = "#{name}".downcase.gsub(" ",".")
     @path    = make_path(dir,ext)
     @render  = make_render(get_file)
 
