@@ -128,9 +128,17 @@ function Ide()
     return this.location+" "+lines_display+chars_display+" <b class='di'>"+scroll_position+"%</b> <t class='right'>"+(suggestion ? '<b>_'+suggestion+'</b>' : '')+" "+this.window.size.width+"x"+this.window.size.height+"</t>";
   }
 
+  this.active_word = function()
+  {
+    var before = this.textarea_el.value.substr(0,this.textarea_el.selectionEnd);
+    var words = before.replace(/\n/g," ").split(" ");
+    var last_word = words[words.length-1];
+    return last_word.replace(/\W/g, '');
+  }
+
   this.suggestion = function()
   {
-    var last_word = this.previous.split(" ")[this.previous.split(" ").length-1].trim(); 
+    var last_word = this.active_word(); 
     if(last_word.length < 2){ return null; }
     var dict = this.textarea_el.value.split("\n").join(" ").split(" ");
     for(word_id in dict){
@@ -143,7 +151,7 @@ function Ide()
 
   this.autocomplete = function()
   {
-    var last_word = this.previous.split(" ")[this.previous.split(" ").length-1]; 
+    var last_word = this.active_word(); 
     var suggestion = this.suggestion();
 
     this.inject(suggestion.substr(last_word.length,suggestion.length));
