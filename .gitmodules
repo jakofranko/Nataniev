@@ -49,3 +49,6 @@
 [submodule "vessel/vessel.yuri"]
 	path = vessel/vessel.yuri
 	url = git@github.com:jakofranko/vessel.yuri.git
+[submodule "vessel/vessel.traumae"]
+	path = vessel/vessel.traumae
+	url = git@github.com:jakofranko/vessel.traumae.git
