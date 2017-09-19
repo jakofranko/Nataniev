@@ -150,6 +150,8 @@ b         { font-weight: normal; font-family: 'input_mono_medium'}
 .ar { position:absolute; right:0px; }
 
 .pdl { padding-left:30px; }
+.pdl15 { padding-left:15px; }
+.pdb15 { padding-bottom: 15px }
 
 .oh { overflow: hidden }
 
@@ -176,6 +178,7 @@ app.dragged { background-color:RGBA(255,255,255,0.3) !important; z-index:8002;}
 app.blanc ::selection       { background: #eee; opacity:1.0; color:#000; }
 app.blanc     { background:white; color:black;  }
 app.blanc .fh { color:black; stroke:black; }
+app.blanc .fm { color:#999; stroke:#999; }
 app.blanc .bh { background:white;}
 app.blanc .fl { color:#ccc; stroke:#ccc; }
 app.blanc .bl { background:#eee;}

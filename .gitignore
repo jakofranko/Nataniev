@@ -15,6 +15,7 @@ public/public.*
 !vessel/vessel.lobby
 !corpse/corpse.base
 !corpse/corpse.http
+!corpse/corpse.json
 !public/public.lobby
 !action/action.tweet
 
@@ -22,6 +23,8 @@ public/public.*
 !action/action.help.rb
 !action/action.look.rb
 !action/action.tweet.rb
+!action/action.serve.rb
+!action/action.print.rb
 
 # Private
 

@@ -39,7 +39,7 @@ class Rotonde
       },
       :feed => @feed,
       :portal => @portal
-      }.to_json
+    }.to_json
 
   end
 

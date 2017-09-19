@@ -13,25 +13,15 @@ class CorpseHttp
   attr_accessor :title
   attr_accessor :metas
   attr_accessor :body
-  
-  # Overrides
-  
-  def build
-    
-    puts "Missing build"
+  attr_accessor :style
 
-  end
-  
-  def body
-    
-    return "{body}#{view}{/body}"
-    
-  end
-  
-  def view
-    
-    return "{view}{/view}"
-    
+  def initialize host = nil
+
+    @host = host
+    @body  = ""
+    @footers = ""
+    @style = ""
+
   end
 
   # Metas
@@ -87,14 +77,6 @@ class CorpseHttp
 
   end
 
-  # Inline Style
-
-  def style
-
-    return "<style></style>"
-
-  end
-
   # Footers
 
   def footers
@@ -112,9 +94,7 @@ class CorpseHttp
 
   # Output
 
-  def result
-
-    build
+  def to_html
 
     return "
 <!DOCTYPE html>
@@ -124,12 +104,14 @@ class CorpseHttp
     #{scripts}
     #{links}
     #{title}
-    #{style}
+    <style>
+      #{@style}
+    </style>
   </head>
   <body>
     #{body}
   </body>
-  #{footers}
+  #{@footers}
 </html>"
 
   end

@@ -35,7 +35,7 @@ class Array
       sub_tag  = collection[rune] ? collection[rune][:sub] : "unknown"
 
       if rune == "%" then html += Media.new(cat,text.split(" ").first,text.split(" ")[1,3].join(" ")).to_s ; next end
-      if rune == "$" then html += (n = Nataniev.new ; n.answer(text) ) ; next end
+      if rune == "$" then html += $nataniev.answer(text) ; next end
       if rune == "@" then html += query(text) ; next end
 
       if stash != "" && rune != prev
@@ -72,8 +72,7 @@ class Array
 
   def query text
 
-    @host = $nataniev.vessel
-    @path = "#{$nataniev.path}/vessel/vessel.#{@host.name.downcase}"
+    @path = "#{$nataniev.path}/vessel/vessel.oscean"
 
     memory_name = text.split(" ").first.downcase.gsub(" ",".")
     memory_target = text.sub(memory_name,"").strip
