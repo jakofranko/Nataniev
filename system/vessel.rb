@@ -7,6 +7,7 @@ module Vessel
   attr_accessor :name
   attr_accessor :docs
   attr_accessor :path
+  attr_accessor :site
 
   attr_accessor :media_path
   attr_accessor :actions
