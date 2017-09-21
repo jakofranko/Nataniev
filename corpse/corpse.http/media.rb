@@ -56,6 +56,17 @@ class Media
 
   end
 
+  def to_img
+
+    if File.exist?("#{path}/#{@cat}/#{@id}.jpg")
+      return "<img src='"+path.split('public/').last+"/"+@cat+"/"+@id+".jpg'/>"
+    elsif File.exist?("#{path}/#{@cat}/#{@id}.png")
+      return "<img src='"+path.split('public/').last+"/#{@cat}/#{@id}.png'/>"
+    end
+    return nil
+
+  end
+
   def debug
 
     return "[missing:#{path}/#{@cat}/#{@id}:#{@class}]"
