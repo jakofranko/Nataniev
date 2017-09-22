@@ -5,6 +5,8 @@ require 'date'
 
 class Desamber
 
+  attr_accessor :dict
+  
   def initialize(date = Date.today.to_s)
 
     @date = date.gsub("-","")
