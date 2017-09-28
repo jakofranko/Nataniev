@@ -47,7 +47,7 @@ class Timestamp
 
   def ago
 
-    if elapsed < 60 then return "now" end
+    if elapsed < 60 then return "Today" end
     if elapsed/60.to_f < 60 then return "#{(elapsed/60.to_f).to_i} minutes ago" end
     if elapsed/60/60.to_f < 60 then return "#{(elapsed/60/60.to_f).to_i} hours ago" end
 
