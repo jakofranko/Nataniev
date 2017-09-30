@@ -11,7 +11,7 @@ class String
       
     search = content.scan(/(?:\{\{)([\w\W]*?)(?=\}\})/)
     search.each do |str,details|
-        content = content.gsub("{{"+str+"}}",parser(str))
+      content = content.gsub("{{"+str+"}}",parser(str))
     end
     content = content.gsub("{_","<i>").gsub("_}","</i>")
     content = content.gsub("{*","<b>").gsub("*}","</b>")
@@ -26,6 +26,7 @@ class String
     if macro[0,1] == "%" then return Media.new(macro.split[1],macro.split[2],macro.split[3]).to_s end
     if macro == "!clock" then return "<a href='/Desamber'>#{Desamber.new.clock}</a>" end
     if macro == "!desamber" then return "<a href='/Desamber'>#{Desamber.new}</a>" end
+    if macro[4,1] == "-" && macro[7,1] == "-" then return "<a href='/Desamber'>#{Desamber.new(macro)}</a>" end
 
     if macro.include?("|")
       if macro.split("|")[1].include?("http") then return "<a href='"+macro.split("|")[1]+"' class='external'>"+macro.split("|")[0]+"</a>"
