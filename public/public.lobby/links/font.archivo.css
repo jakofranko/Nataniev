@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'archivo_black';
+    src: url('../media/fonts/archivo_black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'archivo_bold';
+    src: url('../media/fonts/archivo_bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'archivo_bold_italic';
+    src: url('../media/fonts/archivo_bold_italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'archivo_light';
+    src: url('../media/fonts/archivo_light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'archivo_italic';
+    src: url('../media/fonts/archivo_italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'archivo_medium';
+    src: url('../media/fonts/archivo_medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'archivo_medium_italic';
+    src: url('../media/fonts/archivo_medium_italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'archivo_regular';
+    src: url('../media/fonts/archivo_regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -25,7 +25,7 @@ class ActionTweet
     cached_payload = payload
     if !cached_payload then return "#{@host.name} has no payload." end
     if !account then return "#{@host.name} has no account." end
-    if !File.exist?("#{$nataniev.path}/secret.twitter.#{account}.rb") then return "#{@host.name} has no config file(#{account})." end
+    if !File.exist?("#{$nataniev.path}/secret.twitter.#{account}.rb") then return "#{@host.name} has no config file(#{account}). #{$nataniev.path}/secret.twitter.#{account}.rb" end
 
     load "#{$nataniev.path}/secret.twitter.#{account}.rb"
 

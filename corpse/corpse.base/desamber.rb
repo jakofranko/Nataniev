@@ -60,9 +60,9 @@ class Desamber
 
   end
 
-  def to_s
+  def to_s diminitive = false
 
-    return "#{@dict[m-1]} #{d}, #{y}"
+    return "#{diminitive ? @dict[m-1][0,3] : @dict[m-1]} #{d}, #{y}"
 
   end
 
