@@ -12,11 +12,12 @@ configure do
   enable :cross_origin
 end
 
+$nataniev = Nataniev.new
+
 get '/' do
 
   headers( "Access-Control-Allow-Origin" => "*" )
-  $nataniev = Nataniev.new
-  
+
   v = ARGV.first ? ARGV.first : "ghost"
   if request.base_url.include? "xxiivv" then v = "landing" end
   if request.base_url.include? "wiki" then v = "oscean" end
@@ -27,13 +28,12 @@ get '/' do
   if request.base_url.include? ":maeve" then v = "maeve" end
   a = $nataniev.answer("#{v} serve home")
   "#{a}"
-  
+
 end
 
 get '/:task' do
 
   headers( "Access-Control-Allow-Origin" => "*" )
-  $nataniev = Nataniev.new
 
   v = ARGV.first ? ARGV.first : "ghost"
   if request.base_url.include? "xxiivv" then v = "landing" end
