@@ -37,9 +37,11 @@ class Nataniev
 
   end
 
-  def summon invoke 
+  def summon invoke
 
-    @vessels[invoke.to_sym] = Ghost.new(invoke)    
+    if @vessels[invoke.to_sym] then return @vessels[invoke.to_sym] end
+
+    @vessels[invoke.to_sym] = Ghost.new(invoke)
 
     load_any("#{@path}/vessel/vessel.#{invoke.downcase}","invoke")
 
