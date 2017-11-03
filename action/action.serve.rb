@@ -17,9 +17,14 @@ class ActionServe
 
   def act params = nil
 
+    @host.corpse.metas = ""
+    @host.corpse.scripts = ""
+    @host.corpse.links = ""
+    @host.corpse.footers = ""
+
     @host.corpse.build
     @host.corpse.query(params)
-    
+
     return @host.corpse.to_html
 
   end
