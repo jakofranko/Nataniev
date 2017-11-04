@@ -29,3 +29,5 @@ public/public.*
 # Private
 
 secret.*
+
+.DS*

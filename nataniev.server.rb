@@ -12,9 +12,9 @@ configure do
   enable :cross_origin
 end
 
-$nataniev = Nataniev.new
-
 get '/' do
+
+  $nataniev = Nataniev.new
 
   headers( "Access-Control-Allow-Origin" => "*" )
 
@@ -33,6 +33,8 @@ end
 
 get '/:task' do
 
+  $nataniev = Nataniev.new
+  
   headers( "Access-Control-Allow-Origin" => "*" )
 
   v = ARGV.first ? ARGV.first : "ghost"

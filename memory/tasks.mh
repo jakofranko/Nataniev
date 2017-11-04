@@ -2,6 +2,15 @@
 ~ NOTE : YAML
 ~ AUTH : Devine Lu Linvega
 
+THE DAILY DESCENT
+  General
+    Create Twitter/Rotonde feed
+    Auto update
+    Link Shortener
+    Inject filter from url hash ex: /#entry-1
+  Services
+    Basic draft($discover)
+
 IDE
   Navi
     Display file with changes
@@ -20,10 +29,6 @@ RONIN
     Zoom in/out
     Export with size
     Half-tone painting
-
-GRIMGRAINS
-  Diary
-    Merge daily results into a graph
 
 HUNDRED RABBITS
   Video
@@ -45,13 +50,8 @@ LOBBY
     .end
     application descriptions
 
-ROTONDE
-  Generic
-    Inject 100R events
-    Create Rotonde specific .ma file with injection
-  Client
-    Build time based timeline
-    Add location to entries
+WIKTOPHER
+  Write synopsis
 
 OSCEAN
   Generic
@@ -60,11 +60,6 @@ OSCEAN
     Write breathing exercises
   Horaire
     Migrate to equal-month calendar
-
-MT_EYN
-  Generic
-    Make Cover
-    Release
 
 UNTITLED?
   Generic
@@ -105,13 +100,14 @@ CHILDREN KNOT BOOK
   Draft
     Choose knots
 
-
 PINO
   Departure NZ
     Swap reef lines
     Fill diesel tanks
     Fold Iggy
-    Inspect top of mast
     Grease furler
+    Test Iridium
+    Get health insurance
+    Print documents
     
 
