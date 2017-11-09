@@ -12,6 +12,9 @@ class CorpseHttp
 
   attr_accessor :title
   attr_accessor :metas
+  attr_accessor :links
+  attr_accessor :scripts
+  attr_accessor :footers
   attr_accessor :body
   attr_accessor :style
 

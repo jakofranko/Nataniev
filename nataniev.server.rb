@@ -14,9 +14,10 @@ end
 
 get '/' do
 
-  headers( "Access-Control-Allow-Origin" => "*" )
   $nataniev = Nataniev.new
-  
+
+  headers( "Access-Control-Allow-Origin" => "*" )
+
   v = ARGV.first ? ARGV.first : "ghost"
   if request.base_url.include? "xxiivv" then v = "landing" end
   if request.base_url.include? "wiki" then v = "oscean" end
@@ -27,13 +28,14 @@ get '/' do
   if request.base_url.include? ":maeve" then v = "maeve" end
   a = $nataniev.answer("#{v} serve home")
   "#{a}"
-  
+
 end
 
 get '/:task' do
 
-  headers( "Access-Control-Allow-Origin" => "*" )
   $nataniev = Nataniev.new
+  
+  headers( "Access-Control-Allow-Origin" => "*" )
 
   v = ARGV.first ? ARGV.first : "ghost"
   if request.base_url.include? "xxiivv" then v = "landing" end
@@ -45,7 +47,7 @@ get '/:task' do
   if params[:task].include? ":maeve" then v = "maeve" end
   a = $nataniev.answer("#{v} serve "+params[:task])
   "#{a}"
-  
+
 end
 
 post '/ide.save' do
@@ -80,7 +82,7 @@ post '/ide.tree' do
     # if !["ma","mh","rb","js","css","html"].include?(ext) then next end
     a.push(file)
   end
-  
+
   return a.to_json
 
 end
@@ -92,7 +94,7 @@ post '/diary.load' do
   h = {}
   h[:oscean] = $nataniev.summon(:oscean).new.act(:query,"diary")
   h[:grimgrains] = $nataniev.summon(:grimgrains).new.act(:query,"diary")
-  
+
   return h.to_json
 
 end
@@ -107,7 +109,7 @@ post '/dict.load' do
   Memory_Array.new("dict.lietal",Nataniev.new.path).to_a.each do |word|
     if !h[word["ENGLISH"]] then h[word["ENGLISH"]] = {} end
     h[word["ENGLISH"]][:lietal] = word["LIETAL"]
-  end  
+  end
   return h.to_json
 
 end
