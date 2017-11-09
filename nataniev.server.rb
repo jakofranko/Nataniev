@@ -12,11 +12,15 @@ configure do
   enable :cross_origin
 end
 
+$nataniev = Nataniev.new
+
 get '/' do
 
-  $nataniev = Nataniev.new
-
   headers( "Access-Control-Allow-Origin" => "*" )
+
+  puts "================"
+  puts "request.base_url: #{request.base_url}"
+  puts "================"
 
   v = ARGV.first ? ARGV.first : "ghost"
   if request.base_url.include? "xxiivv" then v = "landing" end
@@ -33,9 +37,11 @@ end
 
 get '/:task' do
 
-  $nataniev = Nataniev.new
-  
   headers( "Access-Control-Allow-Origin" => "*" )
+
+  puts "================"
+  puts "request.base_url: #{request.base_url}"
+  puts "================"
 
   v = ARGV.first ? ARGV.first : "ghost"
   if request.base_url.include? "xxiivv" then v = "landing" end
