@@ -37,6 +37,8 @@ end
 
 get '/:task' do
 
+  if params[:task].include? "favicon.ico" then return end
+
   headers( "Access-Control-Allow-Origin" => "*" )
 
   puts "================"
