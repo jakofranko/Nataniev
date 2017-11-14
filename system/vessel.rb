@@ -45,16 +45,16 @@ module Vessel
       end
     end
     return false
-    
+
     # Override installation
     return Kernel.const_defined?("Action#{action_name.capitalize}")
-    
+
   end
 
   def install category, action_name, corpse = nil
 
     if category == :generic then $nataniev.require("action",action_name) end
-    
+
     if Kernel.const_defined?("Action#{action_name.capitalize}") == false then puts "Cannot install #{action_name}." ; return end
 
     if corpse then @corpse = corpse end

@@ -17,7 +17,7 @@ class Array
       "»" => {:tag => "tr", :sub => "th", :rep => true},
       ">" => {:tag => ""}
     }
-    
+
   end
 
   def runes cat = "generic"
@@ -57,7 +57,7 @@ class Array
       else
         html += "<#{tag}>#{text}</#{tag}>"
       end
-      
+
       prev = rune
     end
 
@@ -81,7 +81,7 @@ class Array
     if memory[memory_target.upcase]
       return memory[memory_target.upcase].runes
     end
-    
+
     return "<p>Could not locate #{memory_target} entry in #{memory_name}.</p>"
 
   end
