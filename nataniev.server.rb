@@ -118,6 +118,10 @@ post '/dict.load' do
     if !h[word["ENGLISH"]] then h[word["ENGLISH"]] = {} end
     h[word["ENGLISH"]][:lietal] = word["LIETAL"]
   end
+  Memory_Array.new("dict.traumae",Nataniev.new.path).to_a.each do |word|
+    if !h[word["ENGLISH"]] then h[word["ENGLISH"]] = {} end
+    h[word["ENGLISH"]][:traumae] = word["TRAUMAE"]
+  end
   return h.to_json
 
 end
