@@ -37,15 +37,17 @@ class Nataniev
 
   end
 
-  def summon invoke
+  def summon vessel
 
-    if @vessels[invoke.to_sym] then return @vessels[invoke.to_sym] end
+    name = vessel.to_sym
+    puts name
+    if @vessels[name] then return @vessels[name] end
 
-    @vessels[invoke.to_sym] = Ghost.new(invoke)
+    load_any("#{@path}/vessel/vessel.#{name.downcase}", "vessel")
 
-    load_any("#{@path}/vessel/vessel.#{invoke.downcase}","invoke")
+    @vessels[name] = Object.const_get("Vessel#{name.downcase.capitalize}").new || Ghost.new(name)
 
-    return @vessels[invoke.to_sym]
+    return @vessels[name]
 
   end
 
