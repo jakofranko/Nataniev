@@ -53,7 +53,12 @@ module Vessel
 
   def install category, action_name, corpse = nil
 
-    if category == :generic then $nataniev.require("action",action_name) end
+    if category == :generic then
+        $nataniev.require("action", action_name)
+    else
+        load_action(action_name, category)
+    end
+
 
     if Kernel.const_defined?("Action#{action_name.capitalize}") == false then puts "Cannot install #{action_name}." ; return end
 
@@ -61,6 +66,25 @@ module Vessel
     if !@actions[category] then @actions[category] = [] end
 
     @actions[category].push(Object.const_get("Action#{action_name.capitalize}"))
+
+  end
+
+  def load_action name, category = :primary
+
+    path = @path + "/actions"
+    if category == :primary
+        if File.exist?("#{path}/action.#{name}.rb")
+            require_relative "#{path}/action.#{name}.rb"
+        end
+    else
+        # Target file
+        if File.exist?("#{path}/action.#{category}.#{name}.rb")
+            require_relative "#{path}/action.#{category}.#{name}.rb"
+        # Target folder
+        elsif File.exist?("#{path}/#{category}/action.#{name}.rb")
+            require_relative "#{path}/#{category}/action.#{name}.rb"
+        end
+    end
 
   end
 
