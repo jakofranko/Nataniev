@@ -55,3 +55,6 @@
 [submodule "public/public.tramae"]
 	path = public/public.tramae
 	url = git@github.com:jakofranko/public.traumae.git
+[submodule "vessel\\vessel.french"]
+	path = vessel\\vessel.french
+	url = git@github.com:jakofranko/vessel.french.git
