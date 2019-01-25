@@ -9,14 +9,12 @@ class Nataniev
   attr_accessor :path
   attr_accessor :actor
   attr_accessor :vessels
-  attr_accessor :console_memory
 
   def initialize
 
     @time = Time.new
     @path = File.expand_path(File.join(File.dirname(__FILE__), "/"))+"/.."
     @vessels = {}
-    @console_memory = {}
 
     load "#{@path}/system/action.rb"
     load "#{@path}/system/corpse.rb"
