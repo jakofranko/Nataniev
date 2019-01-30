@@ -50,16 +50,11 @@ begin
     ouroborus
 
 rescue Exception => e
-    puts "There was an exception..."
-    puts "#{$!}"
-    puts "\n\n#{$!.to_s.gsub('`','').gsub('\'','').capitalize}\n\n"
-    $@.each do |e|
-        line = e.scan(/(?:\:)([\w\W]*?)(?=\:)/).first.first
-        file = e.split("/").last.split(":").first.gsub(".rb","").strip
-        func = e.split("`").last.gsub("'","")
-        puts "#{file.append(' ',20)} #{line.prepend(' ',3)} #{func.append(' ',20)}"
+
+    puts e.message
+    e.backtrace.each do |trace|
+        puts trace
     end
-    puts "\n"
 
     ouroborus
 end
