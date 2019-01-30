@@ -39,11 +39,12 @@ module Vessel
 
   def can action_name
 
-    @actions.each do |cat,list|
-      list.each do |action|
-        if "#{action}".like("Action"+action_name.to_s) then return true end
-      end
+    @actions.each do |cat, list|
+        list.each do |action|
+            if "#{action.name}" == action_name.to_s.capitalize then return true end
+        end
     end
+
     return false
 
     # Override installation
@@ -65,7 +66,8 @@ module Vessel
     if corpse then @corpse = corpse end
     if !@actions[category] then @actions[category] = [] end
 
-    @actions[category].push(Object.const_get("Action#{action_name.capitalize}"))
+    action = Object.const_get("Action#{action_name.capitalize}").new(self)
+    @actions[category].push(action)
 
   end
 
