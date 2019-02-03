@@ -10,7 +10,7 @@ class ActionDocument
     super
 
     @name = "Document"
-    @docs = "Generate the Github documentation file."
+    @docs = "Generate the GitHub documentation file."
 
   end
 
@@ -21,7 +21,7 @@ class ActionDocument
     @host.actions.each do |cat,a|
       content_actions += "#{cat.capitalize}\n"
       a.each do |action|
-        content_actions += "  #{action.new.name.append(' ',14)} | #{action.new.docs}\n"
+        content_actions += "  #{action.name.append(' ',14)} | #{action.docs}\n"
       end
     end
 
