@@ -40,7 +40,6 @@ class Nataniev
   def summon vessel
 
     name = vessel.to_sym
-    puts name
     if @vessels[name] then return @vessels[name] end
 
     load_any("#{@path}/vessel/vessel.#{name.downcase}", "vessel")
