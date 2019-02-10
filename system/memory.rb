@@ -203,19 +203,25 @@ class Memory_Hash
 
   private
 
-  def make_render file
+    def make_render file
 
-    @lines, @notes = make_lines_notes(file)
-    @tree = make_tree
+        @lines, @notes = make_lines_notes(file)
+        @tree = make_tree
 
-    content = {}
-    @tree[-1].each do |id|
-      if @tree[id] then content[@lines[id].last.strip] = make_build(id) end
+        content = {}
+        @tree[-1].each do |id|
+            line = @lines[id].last.strip
+            if @tree[id] then
+                content[line] = make_build(id)
+            elsif line.include? " : "
+                key, val = line.split(" : ")
+                content[key] = val
+            end
+        end
+
+        return content
+
     end
-
-    return content
-
-  end
 
   def make_lines_notes file
 
@@ -265,9 +271,10 @@ class Memory_Hash
 
   end
 
+  # TODO: Cleanup
   def make_build id
 
-    if !@tree[id] then return end 
+    if !@tree[id] then return end
     parent = @lines[id].last.strip
 
     t = {}
@@ -277,7 +284,7 @@ class Memory_Hash
       value = make_build(id)
       if value != nil
         if !t.kind_of?(Hash) then t = {} end
-        t[child] = value 
+        t[child] = value
       else
         if child.include?(" : ") && t.kind_of?(Hash)
           if !t.kind_of?(Hash) then t = {} end
