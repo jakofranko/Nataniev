@@ -22,7 +22,7 @@ module Memory
   end
 
   def overwrite content
-    
+
     # Create temp file
     out_file = File.new("#{$nataniev.path}/memory/#{@name}.tmp", "w")
     out_file.puts(content)
@@ -61,7 +61,7 @@ module Memory
 
 end
 
-# 
+#
 
 class Memory_Array
 
@@ -113,7 +113,7 @@ class Memory_Array
         key = make_key(line)
       elsif key
         array.push(parse_line(key,line))
-      end       
+      end
     end
     return array
 
@@ -167,7 +167,7 @@ class Memory_Hash
   end
 
   def to_h type = nil
-    
+
     h = {}
     @render.each do |k,v|
       h[k] = type ? Object.const_get(type.capitalize).new(k,v) : v
@@ -253,13 +253,15 @@ class Memory_Hash
     tree_h[-1] = []
     while i < @lines.count
       l = @lines[i]
-      if l[1] == 0 then tree_h[-1].push(l[0]) end
-      p = l[0]
+      line_number = l[0]
+      depth = l[1]
+      if depth == 0 then tree_h[-1].push(line_number) end
+      p = line_number
       while p > -1
         pl = @lines[p]
-        if pl[1] < l[1]
+        if pl[1] < depth
           if !tree_h[pl[0]] then tree_h[pl[0]] = [] end
-          tree_h[pl[0]].push(l[0])
+          tree_h[pl[0]].push(line_number)
           break
         end
         p -= 1
