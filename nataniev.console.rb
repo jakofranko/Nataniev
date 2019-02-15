@@ -7,16 +7,23 @@ class Nataniev
 
 end
 
-$nataniev = Nataniev.new
-$nataniev.console_bind = ""
-$nataniev.console_memory = {}
+def load_nataniev
+
+    $nataniev = Nataniev.new
+    $nataniev.console_bind = ""
+    $nataniev.console_memory = {}
+
+end
 
 def help
 
     puts "To quit the Nataniev console, type 'exit'"
     puts "To bind vessels and their actions to the console, type bind <vessel> (<action>)"
+    puts "If you have updated any files, you can type 'reload' to restart Nataniev"
 
 end
+
+load_nataniev
 
 puts "\n"
 puts "  #{Desamber.new}"
@@ -30,6 +37,10 @@ while a = gets.strip
             puts "[no input]"
         elsif a == "exit"
             break
+        elsif a == "reload"
+            puts "Restarting Nataniev..."
+            load_nataniev
+            puts "done"
         elsif a == "help"
             help
         elsif a.split(" ").first == "bind"
