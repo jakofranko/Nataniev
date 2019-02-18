@@ -75,7 +75,7 @@ class Memory_Array
 
     a = []
     @render.each do |line|
-      if !line[field.upcase].to_s.like(value) && value != "*" then next end
+      if !line[field].to_s.like(value) && value != "*" then next end
       a.push(type ? Object.const_get(type.capitalize).new(line) : line)
     end
     return a
@@ -97,6 +97,9 @@ class Memory_Array
     open(path, 'a') do |f|
       f.puts line
     end
+
+    # Re-render with new file contents
+    @render = make_render(get_file)
 
   end
 
