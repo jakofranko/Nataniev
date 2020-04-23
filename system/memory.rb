@@ -4,13 +4,18 @@
 module Memory
 
   attr_accessor :name
+  attr_accessor :key
   attr_accessor :path
   attr_accessor :render
+
+  @@note_char = "~"
+  @@key_row_char = "@"
 
   def initialize name = nil, dir = "#{$nataniev.path}"
 
     @name    = "#{name}".downcase.gsub(" ",".")
     @path    = make_path(dir,ext)
+    @key     = nil # Created as part of the render
     @render  = make_render(get_file)
 
   end
@@ -94,7 +99,7 @@ class Memory_Array
 
   def append line
 
-    open(path, 'a') do |f|
+    open(@path, 'a') do |f|
       f.puts line
     end
 
@@ -108,14 +113,13 @@ class Memory_Array
   def make_render file
 
     array = []
-    key = nil
 
     file.each do |line|
-      if line[0,1] == "~" then next end
-      if line[0,1] == "@"
-        key = make_key(line)
-      elsif key
-        array.push(parse_line(key,line))
+      if line[0,1] == @@note_char then next end
+      if line[0,1] == @@key_row_char
+        @key = make_key(line)
+      elsif @key
+        array.push(parse_line(@key,line))
       end
     end
     return array
@@ -124,29 +128,35 @@ class Memory_Array
 
   def make_key key_line
 
-    key_line = key_line.sub("@ ","").strip.sub(" ","   ")
+    key_line = key_line.sub("#{@@key_row_char} ","").strip.sub(" ","   ")
     key = {}
     parts = key_line.split(" ")
-    i = 0
-    parts.each do |part|
+
+    parts.each_index do |i|
+      part = parts[i]
+      next_part = parts[i + 1]
       open  = key_line.index(part)
-      close = parts[i+1] ? key_line.index(parts[i+1]) : 0
-      key[part] = [open,close-open-1]
-      i += 1
+      close = next_part ? key_line.index(next_part) : 0
+      key[part] = [open, close - open - 1]
     end
+
     return key
 
   end
 
-  def parse_line key,line
+  def parse_line key, line
 
     if key.length == 1 then return line end
 
     value = {}
-    key.each do |index,position|
-      data = position.last < 0 ? line[position.first,line.length - position.first].to_s.strip : line[position.first,position.last].to_s.strip
+    key.each do |index, position|
+      open = position[0]
+      length = position[1]
+
+      data = length < 0 ? line[open, line.length - open].to_s.strip : line[open, length].to_s.strip
       if data != "" then value[index] = data end
     end
+
     return value
 
   end
