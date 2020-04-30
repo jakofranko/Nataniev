@@ -1,6 +1,8 @@
 #!/bin/env ruby
 # encoding: utf-8
 
+require "fileutils"
+
 module Memory
 
   attr_accessor :name
@@ -29,7 +31,11 @@ module Memory
   def overwrite content
 
     # Create temp file
-    out_file = File.new("#{$nataniev.path}/memory/#{@name}.tmp", "w")
+    dirs, file_name = File.split("#{$nataniev.path}/memory/#{@name}.tmp")
+
+    if !File.exists? dirs then FileUtils.mkdir_p dirs end
+
+    out_file = File.new("#{dirs}/#{file_name}", "w")
     out_file.puts(content)
     out_file.close
 
