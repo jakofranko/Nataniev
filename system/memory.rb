@@ -42,6 +42,8 @@ module Memory
     # Replace file
     File.rename("#{$nataniev.path}/memory/#{@name}.tmp", @path)
 
+    @render = make_render(get_file)
+
   end
 
   def overwrite_line id, line
@@ -49,6 +51,7 @@ module Memory
     lines = File.readlines(@path)
     lines[id] = line << $/
     File.open(@path, 'w') { |f| f.write(lines.join) }
+    @render = make_render(get_file)
 
   end
 
@@ -121,13 +124,15 @@ class Memory_Array
     array = []
 
     file.each do |line|
-      if line[0,1] == @@note_char then next end
-      if line[0,1] == @@key_row_char
-        @key = make_key(line)
-      elsif @key
-        array.push(parse_line(@key,line))
-      end
+        if line == "" then next end
+        if line[0,1] == @@note_char then next end
+        if line[0,1] == @@key_row_char
+            @key = make_key(line)
+        elsif @key
+            array.push(parse_line(@key,line))
+        end
     end
+
     return array
 
   end
