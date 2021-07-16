@@ -92,6 +92,8 @@ class Memory_Array
       if !line[field].to_s.like(value) && value != "*" then next end
       a.push(type ? Object.const_get(type.capitalize).new(line) : line)
     end
+
+
     return a
 
   end
@@ -114,6 +116,48 @@ class Memory_Array
 
     # Re-render with new file contents
     @render = make_render(get_file)
+
+  end
+
+  def update old_line, new_line
+
+    lines = File.readlines(@path)
+    line_id = lines.index { |l| l.strip == old_line.strip }
+
+    if line_id.nil? then puts "Unable to find line %s" % old_line end
+
+    puts @render.inspect
+    # self.overwrite_line(line_id, newLine)
+
+  end
+
+  ##
+  # Takes a hash that has the same form as a
+  # rendered row (a single item from @render),
+  # and converts it to a string that can be used to update
+  # the memory file associated with this memory.
+  def hash_to_line row
+
+      puts "HASH ROW"
+      puts row.inspect
+      puts @key
+
+    line = ''
+    @key.each do |key, positions|
+        open = positions[0]
+        length = positions[1]
+        val = row[key.to_sym]
+
+        if val then
+            puts "appending"
+            line << val.append(" ", length)
+        end
+
+        puts 'LINE'
+        puts line.inspect
+    end
+
+    return line
 
   end
 
