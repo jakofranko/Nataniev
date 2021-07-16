@@ -224,6 +224,8 @@ class Memory_Hash
 
   include Memory
 
+  @@indent_amount = 4
+
   attr_accessor :render
 
   def ext ; return "mh" end
@@ -247,22 +249,30 @@ class Memory_Hash
   def save
 
     # Add notes
-    content = @note.join("\n")+"\n\n"
+    content = @notes.join("\n")+"\n\n"
+
+    def make_key_val k, v, depth = 0
+        content = ""
+        if v.kind_of?(Array)
+            content += "#{' ' * depth}#{k}\n"
+            v.each do |val|
+                content += "#{' ' * depth + @@indent_amount}#{val}\n"
+            end
+        elsif v.kind_of?(Hash)
+            content += "#{' ' * depth}#{k}\n"
+            v.each do |key, value|
+                content += make_key_val(key, value, depth + @@indent_amount)
+            end
+        elsif k
+            content += "#{' ' * depth}#{k} : #{v}\n"
+        end
+
+        return content
+    end
 
     # Create lines
-    @render.sort.reverse.each do |key,values|
-      content += "#{key}\n"
-      values.each do |k,v|
-        if v.kind_of?(Array)
-          content += "  #{k}\n"
-          v.each do |val,test|
-            content += "    #{val}\n"
-          end
-        elsif k
-          content += "  #{k} : #{v}\n"
-        end
-      end
-      content += "\n"
+    @render.sort.reverse.each do |key, values|
+      content += make_key_val(key, values)
     end
 
     overwrite(content)
