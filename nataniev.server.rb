@@ -110,15 +110,15 @@ end
 post '/dict.load' do
 
   h = {}
-  Memory_Array.new("dict.russian",Nataniev.new.path).to_a.each do |word|
+  Memory_Array.new("dict.russian", $nataniev.path).to_a.each do |word|
     if !h[word["ENGLISH"]] then h[word["ENGLISH"]] = {} end
     h[word["ENGLISH"]][:russian] = word["RUSSIAN"]
   end
-  Memory_Array.new("dict.lietal",Nataniev.new.path).to_a.each do |word|
+  Memory_Array.new("dict.lietal", $nataniev.path).to_a.each do |word|
     if !h[word["ENGLISH"]] then h[word["ENGLISH"]] = {} end
     h[word["ENGLISH"]][:lietal] = word["LIETAL"]
   end
-  Memory_Array.new("dict.traumae",Nataniev.new.path).to_a.each do |word|
+  Memory_Array.new("dict.traumae", $nataniev.path).to_a.each do |word|
     if !h[word["ENGLISH"]] then h[word["ENGLISH"]] = {} end
     h[word["ENGLISH"]][:traumae] = word["TRAUMAE"]
   end

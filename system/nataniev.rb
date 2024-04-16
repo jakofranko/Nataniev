@@ -59,7 +59,7 @@ class Nataniev
 
   #
 
-  def require cat,name
+  def require cat, name
 
     # Target file
     if File.exist?("#{path}/#{cat}/#{cat}.#{name}.rb")

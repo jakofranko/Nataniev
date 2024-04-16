@@ -10,7 +10,7 @@ class ActionServe
     super
 
     @name = "Serve"
-    @docs = "Serve corpse."
+    @docs = "Serve host's corpse's html."
     @corpse = CorpseBase.new
 
   end
