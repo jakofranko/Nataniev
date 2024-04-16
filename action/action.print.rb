@@ -9,13 +9,13 @@ class ActionPrint
 
     super
 
-    @name = "Serve"
-    @docs = "Serve payload."
+    @name = "Print"
+    @docs = "Outputs host's corpse payload."
 
   end
 
   def act params
-    
+
     @host.corpse.query(params) # Override
     return @host.corpse.payload
 
