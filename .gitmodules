@@ -15,7 +15,7 @@
 	url = git@github.com:XXIIVV/public.grimgrains.git
 [submodule "vessel/vessel.paradise"]
 	path = vessel/vessel.paradise
-	url = git@github.com:XXIIVV/vessel.paradise.git
+	url = git@github.com:jakofranko/vessel.paradise.git
 [submodule "vessel/vessel.thewillthewisp"]
 	path = vessel/vessel.thewillthewisp
 	url = git@github.com:XXIIVV/vessel.thewillthewisp.git
