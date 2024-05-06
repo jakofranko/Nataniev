@@ -37,12 +37,14 @@ end
 
 get '/:task' do
 
+  # TODO: handle favicon
   if params[:task].include? "favicon.ico" then return end
 
   headers( "Access-Control-Allow-Origin" => "*" )
 
   puts "================"
-  puts "request.base_url: #{request.base_url}"
+  puts "GET request.base_url: #{request.base_url}"
+  puts "GET request params: #{params}"
   puts "================"
 
   v = ARGV.first ? ARGV.first : "ghost"
@@ -53,7 +55,44 @@ get '/:task' do
   if request.base_url.include? "paradise" then v = "paradise" end
   if request.base_url.include? "rotonde" then v = "rotonde" end
   if params[:task].include? ":maeve" then v = "maeve" end
-  a = $nataniev.answer("#{v} serve "+params[:task])
+
+  # Handle the `q` query parameter, if present
+  unless params['q'].nil? then
+    puts "using q"
+    action_params = params['q']
+  else
+    action_params = params[:task]
+  end
+
+  a = $nataniev.answer("#{v} serve #{action_params}")
+  "#{a}"
+
+end
+
+post '/' do
+
+  headers( "Access-Control-Allow-Origin" => "*" )
+
+  puts "================"
+  puts "POST request.base_url: #{request.base_url}"
+  puts "POST request params: #{params}"
+  puts "================"
+
+  v = ARGV.first ? ARGV.first : "ghost"
+  if request.base_url.include? "xxiivv" then v = "landing" end
+  if request.base_url.include? "wiki" then v = "oscean" end
+  if request.base_url.include? "grimgrains" then v = "grimgrains" end
+  if request.base_url.include? "100r" then v = "hundredrabbits" end
+  if request.base_url.include? "paradise" then v = "paradise" end
+  if request.base_url.include? "rotonde" then v = "rotonde" end
+
+  # Handle the `q` query parameter, if present
+  unless params['q'].nil? then
+    puts "using q"
+    action_params = params['q']
+  end
+
+  a = $nataniev.answer("#{v} serve #{action_params}")
   "#{a}"
 
 end

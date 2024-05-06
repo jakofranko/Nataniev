@@ -19,6 +19,7 @@ class ActionServe
 
     @host.corpse.metas = ""
     @host.corpse.scripts = ""
+    @host.corpse.footer_scripts = ""
     @host.corpse.links = ""
     @host.corpse.footers = ""
 

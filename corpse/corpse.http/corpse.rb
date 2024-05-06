@@ -14,6 +14,7 @@ class CorpseHttp
   attr_accessor :metas
   attr_accessor :links
   attr_accessor :scripts
+  attr_accessor :footer_scripts
   attr_accessor :footers
   attr_accessor :body
   attr_accessor :style
@@ -54,6 +55,19 @@ class CorpseHttp
 
     @scripts = !@scripts ? "" : @scripts
     @scripts += "<script src='public.#{vessel_name.downcase}/scripts/#{name}'></script>"
+
+  end
+
+  def footer_scripts
+
+    return "#{@footer_scripts}"
+    
+  end
+
+  def add_footer_script name, vessel_name = @host.name
+
+    @footer_scripts = !@footer_scripts ? "" : @footer_scripts
+    @footer_scripts += "<script src='public.#{vessel_name.downcase}/scripts/#{name}'></script>"
 
   end
 
@@ -113,6 +127,7 @@ class CorpseHttp
   </head>
   <body>
     #{body}
+    #{footer_scripts}
   </body>
   #{@footers}
 </html>"
