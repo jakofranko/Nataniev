@@ -21,7 +21,7 @@
 	url = git@github.com:XXIIVV/vessel.thewillthewisp.git
 [submodule "public/public.paradise"]
 	path = public/public.paradise
-	url = git@github.com:XXIIVV/public.paradise.git
+	url = git@github.com:jakofranko/public.paradise.git
 [submodule "vessel/vessel.landing"]
 	path = vessel/vessel.landing
 	url = git@github.com:XXIIVV/vessel.landing.git
