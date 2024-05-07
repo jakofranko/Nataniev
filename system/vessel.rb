@@ -73,20 +73,39 @@ module Vessel
 
   def load_action name, category = :primary
 
-    path = @path + "/actions"
+
+
+    # All vessels, except for the base Nataniev vessel, will probably
+    # be located in a /vessel subdirectory. Actions will be in a sibling
+    # directory to this, and so going up a level should find the correct action.
+    in_subdirectory = /\/vessels$/ == path
+    if in_subdirectory then
+      path = @path + "/actions"
+    else
+      path = @path + "/../actions"
+    end
+    
     if category == :primary
         if File.exist?("#{path}/action.#{name}.rb")
             require_relative "#{path}/action.#{name}.rb"
+            return
         end
     else
         # Target file
         if File.exist?("#{path}/action.#{category}.#{name}.rb")
             require_relative "#{path}/action.#{category}.#{name}.rb"
+            return
         # Target folder
         elsif File.exist?("#{path}/#{category}/action.#{name}.rb")
             require_relative "#{path}/#{category}/action.#{name}.rb"
+            return
+        elsif File.exist?("#{path}/#{category}.#{name}.rb")
+            require_relative "#{path}/#{category}.#{name}.rb"
+            return
         end
     end
+
+    raise "didn't find the file at #{path}. Category is #{category}. Name is #{name}."
 
   end
 
