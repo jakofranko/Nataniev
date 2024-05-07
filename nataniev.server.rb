@@ -58,7 +58,6 @@ get '/:task' do
 
   # Handle the `q` query parameter, if present
   unless params['q'].nil? then
-    puts "using q"
     action_params = params['q']
   else
     action_params = params[:task]
@@ -88,7 +87,6 @@ post '/' do
 
   # Handle the `q` query parameter, if present
   unless params['q'].nil? then
-    puts "using q"
     action_params = params['q']
   end
 
