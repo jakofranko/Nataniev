@@ -76,15 +76,16 @@ module Vessel
 
 
     # All vessels, except for the base Nataniev vessel, will probably
-    # be located in a /vessel subdirectory. Actions will be in a sibling
+    # be located in a /vessels subdirectory. Actions will be in a sibling
     # directory to this, and so going up a level should find the correct action.
+    # TODO: probably a more elegant way of handling this
     in_subdirectory = /\/vessels$/ == path
     if in_subdirectory then
       path = @path + "/actions"
     else
       path = @path + "/../actions"
     end
-    
+
     if category == :primary
         if File.exist?("#{path}/action.#{name}.rb")
             require_relative "#{path}/action.#{name}.rb"
