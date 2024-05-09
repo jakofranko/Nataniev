@@ -4,11 +4,13 @@
 require "fileutils"
 
 module Memory
+  extend Gem::Deprecate
 
   attr_accessor :name
   attr_accessor :key
   attr_accessor :path
   attr_accessor :render
+  attr_accessor :data_start
 
   @@note_char = "~"
   @@key_row_char = "@"
@@ -18,7 +20,12 @@ module Memory
     @name    = "#{name}".downcase.gsub(" ",".")
     @path    = make_path(dir,ext)
     @key     = nil # Created as part of the render
+    @data_start = nil # File line index where the front-matter ends and the real data begins
     @render  = make_render(get_file)
+
+    # Used to handle simultaneous writes
+    @is_updating = [] # Add line indexes when updating, then remove when done
+    @is_appending = [] # Add lines to append here with format [memory_index, new_line] e.g., [[0, "new line 1"], [1, "new line 2"]]
 
   end
 
@@ -45,6 +52,7 @@ module Memory
     @render = make_render(get_file)
 
   end
+  deprecate :overwrite, :replace_file, 2024, 12
 
   def overwrite_line id, line
 
@@ -54,6 +62,7 @@ module Memory
     @render = make_render(get_file)
 
   end
+  deprecate :overwrite_line, :replace_line, 2024, 12
 
   private
 
@@ -73,6 +82,45 @@ module Memory
 
   end
 
+  def replace_line memory_index, new_line
+
+    if @data_start.nil? then
+      raise "#{@name} Memory: Data has not been rendered yet, and cannont replace line with #{new_line}"
+    end
+
+    # Get the actual index by adding the memory index to the start of data index
+    file_index = @data_start + memory_index
+
+    lines = File.readlines(@path)
+    lines[file_index] = new_line << $/
+    File.open(@path, 'w') { |f| f.write(lines.join) }
+
+  end
+
+  def replace_file content
+
+    # Perform an atomic update by first creating a temp file
+    dirs, file_name = File.split("#{$nataniev.path}/memory/#{@name}.tmp")
+
+    if !File.exists? dirs then FileUtils.mkdir_p dirs end
+
+    out_file = File.new("#{dirs}/#{file_name}", "w")
+    out_file.puts(content)
+    out_file.close
+
+    # Replace file to complete atomic update
+    File.rename("#{$nataniev.path}/memory/#{@name}.tmp", @path)
+
+  end
+
+  def append_line line
+
+    File.open(@path, 'a') do |f|
+      f.puts line
+    end
+
+  end
+
 end
 
 #
@@ -81,53 +129,97 @@ class Memory_Array
 
   include Memory
 
+  def initialize name = nil, dir = nil
+    super
+
+    @a = []
+    @last_field = nil
+    @last_value = nil
+    @last_a_type = nil
+    @last_filter_type = nil
+    @last_filtered_a = nil
+
+  end
+
   def ext ; return "ma" end
 
   # Methods
 
   def filter field, value, type
 
-    a = []
-    @render.each do |line|
-      if !line[field].to_s.like(value) && value != "*" then next end
-      a.push(type ? Object.const_get(type.capitalize).new(line) : line)
+    if field == @last_field && last_value == @last_value && type == @last_filter_type then
+      return @last_filtered_a
+    end
+
+    new_filtered_a = []
+
+    if @a.length && type == @last_type then
+      @a.each do |obj|
+        if value != "*" && (!obj.has(field) || !obj[field].to_s.like(value)) then next end
+        new_filtered_a.push(obj)
+      end
+    else
+      @render.each do |line|
+        # TODO: I don't think this works, but it was here...might need to fix
+        if value != "*" && !line[field].to_s.like(value) then next end
+        new_filtered_a.push(type ? Object.const_get(type.capitalize).new(line) : line)
+      end
     end
 
 
-    return a
+    @last_field = field
+    @last_value = value
+    @last_filter_type = type
+    @last_filtered_a = new_filtered_a
+    return new_filtered_a
 
   end
 
   def to_a type = nil
 
-    a = []
+    # Return cached array to avoid regenerating
+    if @a.length && type == @last_a_type then return @a end
+
+    @a = []
+    i = 0
     @render.each do |line|
-      a.push(type ? Object.const_get(type.capitalize).new(line) : line)
+      @a.push(type ? Object.const_get(type.capitalize).new(line, i) : line)
+      i += 1
     end
-    return a
+
+    @last_a_type = type
+    return @a
 
   end
 
   def append line
+    
+    append_line line
 
-    open(@path, 'a') do |f|
-      f.puts line
-    end
-
-    # Re-render with new file contents
-    @render = make_render(get_file)
+    parsed_line = parse_line(@key, line)
+    @render.append(parsed_line)
+    append_a parsed_line
 
   end
 
-  def update old_line, new_line
+  def update memory_index, new_line
 
-    lines = File.readlines(@path)
-    line_id = lines.index { |l| l.strip == old_line.strip }
+    already_updating_line = @is_updating.include? memory_index
 
-    if line_id.nil? then puts "Unable to find line %s" % old_line end
+    if already_updating_line then
+      return false
+    end
 
-    puts @render.inspect
-    # self.overwrite_line(line_id, newLine)
+    @is_updating.append(memory_index)
+
+    # TODO: Do this in a new thread
+    self.replace_line(memory_index, new_line)
+
+    parsed_line = parse_line(@key, new_line)
+    @render[memory_index] = parsed_line
+    update_a(memory_index, parsed_line)
+
+    @is_updating.delete(memory_index)
 
   end
 
@@ -167,12 +259,17 @@ class Memory_Array
 
     array = []
 
+    i = 0
     file.each do |line|
-        if line == "" then next end
-        if line[0,1] == @@note_char then next end
+        if line == "" || line[0,1] == @@note_char then
+          i += 1
+          next
+        end
         if line[0,1] == @@key_row_char
             @key = make_key(line)
+            i += 1
         elsif @key
+            if @data_start.nil? then @data_start = i end # set where data begins
             array.push(parse_line(@key,line))
         end
     end
@@ -213,6 +310,22 @@ class Memory_Array
     end
 
     return value
+
+  end
+
+  def append_a new_line
+
+    unless @a.length == 0 then
+      @a.push(@last_a_type ? Object.const_get(@last_a_type.capitalize).new(new_line, @a.length) : new_line)
+    end
+
+  end
+
+  def update_a memory_index, line
+
+    unless @a.length == 0 then
+      @a[memory_index] = @last_a_type ? Object.const_get(@last_a_type.capitalize).new(line, memory_index) : line
+    end
 
   end
 
