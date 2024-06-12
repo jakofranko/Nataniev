@@ -9,6 +9,7 @@ require_relative "system/nataniev.rb"
 set :port, (ARGV.first == "lobby" ? 8668 : 8888)
 
 configure do
+  set :bind, '0.0.0.0'
   enable :cross_origin
 end
 
