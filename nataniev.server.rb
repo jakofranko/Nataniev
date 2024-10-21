@@ -64,8 +64,7 @@ get '/:task' do
     action_params = params[:task]
   end
 
-  a = $nataniev.answer("#{v} serve #{action_params}")
-  "#{a}"
+  $nataniev.answer("#{v} serve #{action_params}").to_s
 
 end
 

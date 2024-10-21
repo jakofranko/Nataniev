@@ -80,7 +80,7 @@ module Vessel
     # directory to this, and so going up a level should find the correct action.
     # TODO: probably a more elegant way of handling this
     in_subdirectory = /\/vessels$/ == path
-    if in_subdirectory then
+    if in_subdirectory or Dir.exist?(@path + '/actions') then
       path = @path + "/actions"
     else
       path = @path + "/../actions"
