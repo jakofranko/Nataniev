@@ -98,8 +98,7 @@ post '/' do
   # Handle the `q` query parameter, if present
   action_params = params['q'] unless params['q'].nil?
 
-  a = $nataniev.answer("#{v} serve #{action_params}")
-  "#{a}"
+  $nataniev.answer("#{v} serve #{action_params}").to_s
 
 end
 
@@ -122,7 +121,7 @@ post '/ide.load' do
 
   path = params['file_path']
 
-  "#{File.read(path, encoding: 'UTF-8')}"
+  File.read(path, encoding: 'UTF-8').to_s
 
 end
 
@@ -132,7 +131,7 @@ post '/ide.tree' do
 
   Dir['**/*'].each do |file|
 
-    ext = file.split('.').last
+    # ext = file.split('.').last
     # if !["ma","mh","rb","js","css","html"].include?(ext) then next end
     a.push(file)
 
@@ -144,7 +143,7 @@ end
 
 post '/diary.load' do
 
-  date = params['date']
+  # date = params['date']
 
   h = {}
   h[:oscean] = $nataniev.summon(:oscean).new.act(:query, 'diary')
@@ -175,7 +174,8 @@ post '/dict.load' do
     h[word['ENGLISH']][:traumae] = word['TRAUMAE']
 
   end
-  return h.to_json
+
+  h.to_json
 
 end
 
@@ -184,6 +184,7 @@ post '/twitter.feed' do
   account = params['account']
 
   require_relative 'vessel/vessel.twitter'
-  return $nataniev.summon(:twitter).new.act(:feed, account)
+
+  $nataniev.summon(:twitter).new.act(:feed, account)
 
 end

@@ -73,8 +73,6 @@ module Vessel
 
   def load_action name, category = :primary
 
-
-
     # All vessels, except for the base Nataniev vessel, will probably
     # be located in a /vessels subdirectory. Actions will be in a sibling
     # directory to this, and so going up a level should find the correct action.

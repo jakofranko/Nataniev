@@ -1,12 +1,12 @@
 #!/bin/env ruby
-# encoding: utf-8
 
 # You see nothing, enter the nothing.
 
-require_relative "system/nataniev.rb"
+require_relative 'system/nataniev'
 
 $nataniev = Nataniev.new
-minute = Time.now.strftime("%M").to_i
+minute = Time.now.strftime('%M').to_i
 
 # Bots
-if minute == 31 then puts $nataniev.summon("thewillthewisp").act(:tweet) end
+puts $nataniev.summon('thewillthewisp').act(:tweet) if minute == 31
+

@@ -51,8 +51,6 @@ class Nataniev
 
   end
 
-  #
-
   def require(cat, name)
 
     # Target file
@@ -108,7 +106,7 @@ end
 
 def require_folder(path)
 
-  Dir[path].each do |file_name|
+  Dir[path].sort.each do |file_name|
 
     next if file_name.to_s.length < 5
     next if file_name[-3, 3] != '.rb'
