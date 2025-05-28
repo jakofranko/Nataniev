@@ -1,19 +1,14 @@
 #!/bin/env ruby
-# encoding: utf-8
 
 # You see nothing, enter the nothing.
-
 class Nataniev
 
-  attr_accessor :time
-  attr_accessor :path
-  attr_accessor :actor
-  attr_accessor :vessels
+  attr_accessor :time, :path, :actor, :vessels
 
   def initialize
 
     @time = Time.new
-    @path = File.expand_path(File.join(File.dirname(__FILE__), "/"))+"/.."
+    @path = File.expand_path(File.join(File.dirname(__FILE__), '/')) + '/..'
     @vessels = {}
 
     load "#{@path}/system/action.rb"
@@ -26,40 +21,39 @@ class Nataniev
 
   end
 
-  def answer q = nil
+  def answer(q = nil)
 
-    parts   = q.split(" ")
-    invoke  = parts[0] ? parts[0] : "ghost"
+    parts   = q.split(' ')
+    invoke  = parts[0] || 'ghost'
     action  = parts[1] ? parts[1].to_sym : :help
-    params  = q.sub("#{invoke} #{action}","").strip
+    params  = q.sub("#{invoke} #{action}", '').strip
 
-    return summon(invoke).act(action,params)
+    summon(invoke).act(action, params)
 
   end
 
-  def summon vessel
+  def summon(vessel)
 
     name = vessel.to_sym
-    if @vessels[name] then return @vessels[name] end
+    return @vessels[name] if @vessels[name]
 
-    load_any("#{@path}/vessel/vessel.#{name.downcase}", "vessel")
+    load_any("#{@path}/vessel/vessel.#{name.downcase}", 'vessel')
 
     @vessels[name] = Object.const_get("Vessel#{name.downcase.capitalize}").new || Ghost.new(name)
 
-    return @vessels[name]
+    @vessels[name]
 
   end
 
   def vessel
 
-    return @vessels.first
+    @vessels.first
 
   end
 
-
   #
 
-  def require cat, name
+  def require(cat, name)
 
     # Target file
     if File.exist?("#{path}/#{cat}/#{cat}.#{name}.rb")
@@ -81,38 +75,46 @@ end
 
 # Loaders
 
-def load_any path, file
+def load_any(path, file)
 
-  if file.to_s == "" then return end
-  if !File.exist?("#{path}/#{file.downcase}.rb") then return end
+  return if file.to_s == ''
+  return unless File.exist?("#{path}/#{file.downcase}.rb")
+
   load "#{path}/#{file.downcase}.rb"
 
 end
 
-def load_folder path
+def load_folder(path)
 
   Dir[path].each do |file_name|
-    if file_name.to_s.length < 5 then next end
-    if file_name[-3,3] != ".rb" then next end
+
+    next if file_name.to_s.length < 5
+    next if file_name[-3, 3] != '.rb'
+
     load file_name
+
   end
 
 end
 
-def require_any path, file
+def require_any(path, file)
 
-  if file.to_s == "" then return end
-  if !File.exist?("#{path}/#{file.downcase}.rb") then return end
+  return if file.to_s == ''
+  return unless File.exist?("#{path}/#{file.downcase}.rb")
+
   require "#{path}/#{file.downcase}.rb"
 
 end
 
-def require_folder path
+def require_folder(path)
 
   Dir[path].each do |file_name|
-    if file_name.to_s.length < 5 then next end
-    if file_name[-3,3] != ".rb" then next end
+
+    next if file_name.to_s.length < 5
+    next if file_name[-3, 3] != '.rb'
+
     require file_name
+
   end
 
 end
