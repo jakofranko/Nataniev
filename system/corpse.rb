@@ -1,27 +1,22 @@
 #!/bin/env ruby
-# encoding: utf-8
 
+# The flesh of a ghost
 module Corpse
 
-  attr_accessor :host
-  attr_accessor :query
-  attr_accessor :payload
+  attr_accessor :host, :payload
 
-  def initialize host = nil
+  def initialize(host = nil)
 
     @host = host
-    @payload = "<empty/>"
-    
+    @payload = '<empty/>'
+
   end
 
   # Override
 
-  def query q = nil
+  def query(q = nil) end
 
-  end
-
-  def build q = nil
-    
-  end
+  def build(q = nil) end
 
 end
+

@@ -1,18 +1,15 @@
 #!/bin/env ruby
-# encoding: utf-8
 
+# Agency, defined
 module Action
 
-  attr_accessor :host
-  attr_accessor :name
-  attr_accessor :docs
-  attr_accessor :corpse
+  attr_accessor :host, :name, :docs, :corpse
 
-  def initialize host = nil
+  def initialize(host = nil)
 
     @host = host
-    @name = "Unknown"
-    @docs = "No documentation"
+    @name = 'Unknown'
+    @docs = 'No documentation'
     @corpse = nil
 
   end

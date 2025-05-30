@@ -1,107 +1,100 @@
 #!/bin/env ruby
-# encoding: utf-8
 
+# The primordial entity within Nataniev
 module Vessel
 
-  attr_accessor :id
-  attr_accessor :name
-  attr_accessor :docs
-  attr_accessor :path
-  attr_accessor :site
+  attr_accessor :id, :name, :docs, :path, :site, :media_path, :actions, :corpse
 
-  attr_accessor :media_path
-  attr_accessor :actions
-  attr_accessor :corpse
-
-  def initialize id = 0
+  def initialize(_ = nil)
 
     @actions = {}
     @path = nil
     @media_path = nil
-    @name = "Unknown"
-    @docs = "No description"
+    @name = 'Unknown'
+    @docs = 'No description'
     @corpse = nil
 
   end
 
   # Action
 
-  def act action_name, params = nil
+  def act(action_name, params = nil)
 
-    if !can(action_name) then return "#{self.name.capitalize} cannot #{action_name}." end
+    return "#{name.capitalize} cannot #{action_name}." unless can(action_name)
 
     action = Object.const_get("Action#{action_name.capitalize}").new
     action.host = self
 
-    return action.act(params)
+    action.act(params)
 
   end
 
-  def can action_name
+  def can(action_name)
 
-    @actions.each do |cat, list|
-        list.each do |action|
-            if "#{action.name}" == action_name.to_s.capitalize then return true end
-        end
+    @actions.each_value do |list|
+
+      list.each do |action|
+
+        return true if action.name.to_s == action_name.to_s.capitalize
+
+      end
+
     end
 
-    return false
-
-    # Override installation
-    return Kernel.const_defined?("Action#{action_name.capitalize}")
+    false
 
   end
 
-  def install category, action_name, corpse = nil
+  def install(category, action_name, corpse = nil)
 
-    if category == :generic then
-        $nataniev.require("action", action_name)
+    if category == :generic
+      $nataniev.require('action', action_name)
     else
-        load_action(action_name, category)
+      load_action(action_name, category)
     end
 
+    if Kernel.const_defined?("Action#{action_name.capitalize}") == false
+      puts "Cannot install #{action_name}."
+      return
+    end
 
-    if Kernel.const_defined?("Action#{action_name.capitalize}") == false then puts "Cannot install #{action_name}." ; return end
-
-    if corpse then @corpse = corpse end
-    if !@actions[category] then @actions[category] = [] end
+    @corpse = corpse if corpse
+    @actions[category] = [] unless @actions[category]
 
     action = Object.const_get("Action#{action_name.capitalize}").new(self)
     @actions[category].push(action)
 
   end
 
-  def load_action name, category = :primary
+  def load_action(name, category = :primary)
 
     # All vessels, except for the base Nataniev vessel, will probably
     # be located in a /vessels subdirectory. Actions will be in a sibling
     # directory to this, and so going up a level should find the correct action.
     # TODO: probably a more elegant way of handling this
-    in_subdirectory = /\/vessels$/ == path
-    if in_subdirectory or Dir.exist?(@path + '/actions') then
-      path = @path + "/actions"
-    else
-      path = @path + "/../actions"
-    end
+    in_subdirectory = path == %r{/vessels$}
+    path = if in_subdirectory || Dir.exist?("#{@path}/actions")
+             "#{@path}/actions"
+           else
+             "#{@path}/../actions"
+           end
 
     if category == :primary
-        if File.exist?("#{path}/action.#{name}.rb")
-            require_relative "#{path}/action.#{name}.rb"
-            return
-        end
-    else
-        # Target file
-        if File.exist?("#{path}/action.#{category}.#{name}.rb")
-            require_relative "#{path}/action.#{category}.#{name}.rb"
-            return
-        # Target folder
-        elsif File.exist?("#{path}/#{category}/action.#{name}.rb")
-            require_relative "#{path}/#{category}/action.#{name}.rb"
-            return
-        elsif File.exist?("#{path}/#{category}.#{name}.rb")
-            require_relative "#{path}/#{category}.#{name}.rb"
-            return
-        end
+      if File.exist?("#{path}/action.#{name}.rb")
+        require_relative "#{path}/action.#{name}.rb"
+        return
+      end
+    elsif File.exist?("#{path}/action.#{category}.#{name}.rb")
+      # Target file
+      require_relative "#{path}/action.#{category}.#{name}.rb"
+      return
+    # Target folder
+    elsif File.exist?("#{path}/#{category}/action.#{name}.rb")
+      require_relative "#{path}/#{category}/action.#{name}.rb"
+      return
+    elsif File.exist?("#{path}/#{category}.#{name}.rb")
+      require_relative "#{path}/#{category}.#{name}.rb"
+      return
     end
 
     raise "didn't find the file at #{path}. Category is #{category}. Name is #{name}."
@@ -110,19 +103,20 @@ module Vessel
 
 end
 
+# An empty Vessel
 class Ghost
 
   include Vessel
 
-  def initialize name = "Unknown"
+  def initialize(name = 'Unknown')
 
     super
 
     @name = name
-    @docs = "The Ghost vessel cannot act."
-    @path = File.expand_path(File.join(File.dirname(__FILE__), "/"))
+    @docs = 'The Ghost vessel cannot act.'
+    @path = File.expand_path(File.join(File.dirname(__FILE__), '/'))
 
-    install(:generic,:help)
+    install(:generic, :help)
 
   end
 
