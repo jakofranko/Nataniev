@@ -19,4 +19,3 @@ module Corpse
   def build(q = nil) end
 
 end
-

@@ -3,13 +3,17 @@
 # You see nothing, enter the nothing.
 class Nataniev
 
-  attr_accessor :time, :path, :actor, :vessels
+  attr_accessor :time, :path, :actor, :vessels, :load_vessel_mutex
 
   def initialize
 
     @time = Time.new
     @path = "#{File.expand_path(File.join(File.dirname(__FILE__), '/'))}/.."
     @vessels = {}
+    @load_vessel_mutex = Mutex.new
+
+    puts 'Nataniev path'
+    puts @path
 
     load "#{@path}/system/action.rb"
     load "#{@path}/system/corpse.rb"
@@ -37,11 +41,22 @@ class Nataniev
     name = vessel.to_sym
     return @vessels[name] if @vessels[name]
 
-    load_any("#{@path}/vessel/vessel.#{name.downcase}", 'vessel')
+    # Synchronize this to prevent vessels from being loaded more than once
+    # in a multi-threaded environment (like the server)
+    @load_vessel_mutex.synchronize do
 
-    @vessels[name] = Object.const_get("Vessel#{name.downcase.capitalize}").new || Ghost.new(name)
+      # If several threads are attempting to load this vessel,
+      # check again if it's been loaded by another thread and
+      # return it if it has been.
+      return @vessels[name] if @vessels[name]
 
-    @vessels[name]
+      load_any("#{@path}/vessel/vessel.#{name.downcase}", 'vessel')
+
+      @vessels[name] = Object.const_get("Vessel#{name.downcase.capitalize}").new || Ghost.new(name)
+
+      @vessels[name]
+
+    end
 
   end
 
