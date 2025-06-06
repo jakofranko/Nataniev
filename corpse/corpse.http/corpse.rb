@@ -1,30 +1,24 @@
 #!/bin/env ruby
-# encoding: utf-8
+require_relative 'media'
+require_relative 'string'
+require_relative 'array'
+require_relative 'progress'
 
-require_relative "media.rb"
-require_relative "string.rb"
-require_relative "array.rb"
-require_relative "progress.rb"
-
+# For serving vessels
 class CorpseHttp
 
   include Corpse
 
-  attr_accessor :title
-  attr_accessor :metas
-  attr_accessor :links
-  attr_accessor :scripts
-  attr_accessor :footer_scripts
-  attr_accessor :footers
-  attr_accessor :body
-  attr_accessor :style
+  attr_accessor :body, :style
 
-  def initialize host = nil
+  attr_writer :metas, :scripts, :footer_scripts, :links, :footers
+
+  def initialize(host = nil)
 
     @host = host
-    @body  = ""
-    @footers = ""
-    @style = ""
+    @body = ''
+    @footers = ''
+    @style = ''
 
   end
 
@@ -32,13 +26,13 @@ class CorpseHttp
 
   def metas
 
-    return "<meta charset='UTF-8'>#{@metas}"
+    "<meta charset='UTF-8'>#{@metas}"
 
   end
 
-  def add_meta name, content
+  def add_meta(name, content)
 
-    @metas = !@metas ? "" : @metas
+    @metas = !@metas ? '' : @metas
     @metas += "<meta name='#{name}' content='#{content}' />"
 
   end
@@ -47,26 +41,26 @@ class CorpseHttp
 
   def scripts
 
-    return "#{@scripts}"
+    @scripts.to_s
 
   end
 
-  def add_script name, vessel_name = @host.name
+  def add_script(name, vessel_name = @host.name)
 
-    @scripts = !@scripts ? "" : @scripts
+    @scripts = !@scripts ? '' : @scripts
     @scripts += "<script src='public.#{vessel_name.downcase}/scripts/#{name}'></script>"
 
   end
 
   def footer_scripts
 
-    return "#{@footer_scripts}"
-    
+    @footer_scripts.to_s
+
   end
 
-  def add_footer_script name, vessel_name = @host.name
+  def add_footer_script(name, vessel_name = @host.name)
 
-    @footer_scripts = !@footer_scripts ? "" : @footer_scripts
+    @footer_scripts = !@footer_scripts ? '' : @footer_scripts
     @footer_scripts += "<script src='public.#{vessel_name.downcase}/scripts/#{name}'></script>"
 
   end
@@ -75,22 +69,22 @@ class CorpseHttp
 
   def links
 
-    return "#{@links}"
+    @links.to_s
 
   end
 
-  def add_link name, vessel_name = @host.name
+  def add_link(name, vessel_name = @host.name)
 
-    @links = !@links ? "" : @links
+    @links = !@links ? '' : @links
     @links += "<link rel='stylesheet' type='text/css' href='public.#{vessel_name.downcase}/links/#{name}' />"
 
   end
 
   # Title
 
-  def title q = nil
+  def title
 
-    return @title ? "<title>#{@title}</title>" : "<title>Missing title</title>"
+    @title ? "<title>#{@title}</title>" : '<title>Missing title</title>'
 
   end
 
@@ -98,13 +92,13 @@ class CorpseHttp
 
   def footers
 
-    return "#{@footers}"
+    @footers.to_s
 
   end
 
-  def add_footer html
+  def add_footer(html)
 
-    @footers = !@footers ? "" : @footers
+    @footers = !@footers ? '' : @footers
     @footers += html
 
   end
@@ -113,7 +107,7 @@ class CorpseHttp
 
   def to_html
 
-    return "
+    "
 <!DOCTYPE html>
 <html>
   <head>

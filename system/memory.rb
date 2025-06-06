@@ -176,8 +176,6 @@ class Memory_Array
 
     # Method mutexes for thread-safety
     @to_a_mutex = Mutex.new
-    @append_a_mutex = Mutex.new
-    @update_a_mutex = Mutex.new
 
   end
 
@@ -226,10 +224,16 @@ class Memory_Array
 
   def to_a(type = nil)
 
+    dirty = @a.empty? || type.nil? || type != @last_a_type
+
     # Return cached array to avoid regenerating
-    return @a if @a.length && !type.nil? && type == @last_a_type
+    return @a unless dirty
 
     @to_a_mutex.synchronize do
+
+      # Check dirty again in case this has just been created by a different thread
+      dirty = @a.empty? || type.nil? || type != @last_a_type
+      return @a unless dirty
 
       @a = []
       i = 0
@@ -249,8 +253,9 @@ class Memory_Array
 
   def append(line)
 
-    @append_mutex.synchronize do
+    @to_a_mutex.synchronize do
 
+      # TODO: Do this in a new thread
       append_line line
 
       parsed_line = parse_line(@key, line)
@@ -263,7 +268,7 @@ class Memory_Array
 
   def update(memory_index, new_line)
 
-    @update_mutex.synchronize do
+    @to_a_mutex.synchronize do
 
       # TODO: Do this in a new thread
       replace_line(memory_index, new_line)
@@ -390,11 +395,7 @@ class Memory_Array
 
   def append_a(new_line)
 
-    @append_a_mutex.synchronize do
-
-      @a.push(@last_a_type ? Object.const_get(@last_a_type.capitalize).new(new_line, @a.length) : new_line)
-
-    end
+    @a.push(@last_a_type ? Object.const_get(@last_a_type.capitalize).new(new_line, @a.length) : new_line)
 
   end
 
@@ -402,11 +403,7 @@ class Memory_Array
 
     return if @a.empty?
 
-    @update_a_mutex.synchronize do
-
-      @a[memory_index] = @last_a_type ? Object.const_get(@last_a_type.capitalize).new(line, memory_index) : line
-
-    end
+    @a[memory_index] = @last_a_type ? Object.const_get(@last_a_type.capitalize).new(line, memory_index) : line
 
   end
 

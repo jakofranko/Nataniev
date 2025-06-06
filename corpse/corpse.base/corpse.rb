@@ -1,10 +1,8 @@
 #!/bin/env ruby
-# encoding: utf-8
-
-require_relative "string.rb"
-require_relative "float.rb"
-require_relative "desamber.rb"
-require_relative "timestamp.rb"
+require_relative 'string'
+require_relative 'float'
+require_relative 'desamber'
+require_relative 'timestamp'
 
 class CorpseBase
 

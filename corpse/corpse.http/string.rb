@@ -1,61 +1,73 @@
 #!/bin/env ruby
-# encoding: utf-8
 
+# For rendering Nataniev strings
 class String
 
   def markup
-    
+
     content = self
 
-    if !content then return "" end
-      
+    return '' unless content
+
     search = content.scan(/(?:\{\{)([\w\W]*?)(?=\}\})/)
-    search.each do |str,details|
-      content = content.gsub("{{"+str+"}}",parser(str))
+
+    # TODO: this may be broken? Why aren't details being used?
+    search.each do |str, _details|
+
+      content = content.gsub("{{#{str}}}", parser(str))
+
     end
-    content = content.gsub("{_","<i>").gsub("_}","</i>")
-    content = content.gsub("{*","<b>").gsub("*}","</b>")
-    content = content.gsub("{#","<c>").gsub("#}","</c>")
-    return "#{content}"
+    content = content.gsub('{_', '<i>').gsub('_}', '</i>')
+    content = content.gsub('{*', '<b>').gsub('*}', '</b>')
+    content = content.gsub('{#', '<c>').gsub('#}', '</c>')
+
+    content.to_s
 
   end
 
-  def parser macro
+  def parser(macro)
 
-    if macro[0,1] == "$" then return $nataniev.answer(macro[1,macro.length-1].strip) end
-    if macro[0,1] == "%" then return Media.new(macro.split[1],macro.split[2],macro.split[3]).to_s end
-    if macro == "!clock" then return "<a href='/Desamber'>#{Desamber.new.clock}</a>" end
-    if macro == "!desamber" then return "<a href='/Desamber'>#{Desamber.new}</a>" end
-    if macro[4,1] == "-" && macro[7,1] == "-" then return "<a href='/Desamber'>#{Desamber.new(macro)}</a>" end
+    return $nataniev.answer(macro[1, macro.length - 1].strip) if macro[0, 1] == '$'
+    return Media.new(macro.split[1], macro.split[2], macro.split[3]).to_s if macro[0, 1] == '%'
+    return "<a href='/Desamber'>#{Desamber.new.clock}</a>" if macro == '!clock'
+    return "<a href='/Desamber'>#{Desamber.new}</a>" if macro == '!desamber'
+    return "<a href='/Desamber'>#{Desamber.new(macro)}</a>" if macro[4, 1] == '-' && macro[7, 1] == '-'
 
-    if macro.include?("|")
-      if macro.split("|")[1].include?("http") then return "<a href='"+macro.split("|")[1]+"' class='external'>"+macro.split("|")[0]+"</a>"
-      else return "<a href='"+macro.split("|")[1]+"'>"+macro.split("|")[0]+"</a>" end
+    if macro.include?('|')
+      ms = macro.split('|')
+
+      return "<a href='#{ms[1]}' class='external'>#{ms('|')[0]}</a>" if ms[1].include?('http')
+
+      return "<a href='#{ms[1]}'>#{ms[0]}</a>"
     end
-    
-    return "<a href='/#{macro.gsub(' ','+')}'>#{macro}</a>"
+
+    "<a href='/#{macro.gsub(' ', '+')}'>#{macro}</a>"
 
   end
 
   def has_badword
 
-    ["dick","pussy","asshole","nigger","cock","jizz","faggot","nazi","cunt","sucker","bitch","fag","jew","nigga","anus","fuck"].each do |bad_word|
-      if self.include?(bad_word) then return bad_word end
+    %w[dick pussy asshole nigger cock jizz faggot nazi cunt sucker bitch fag jew nigga anus
+       fuck].each do |bad_word|
+
+      return bad_word if include?(bad_word)
+
     end
-    return nil
+    nil
 
   end
 
   def is_alphabetic
 
-    if self.gsub(/[^a-z]/i, '').downcase == self.downcase then return true end
-    return nil
+    return true if gsub(/[^a-z]/i, '').downcase == downcase
+
+    nil
 
   end
 
   def to_url
 
-    return self.downcase.gsub(" ","+")
+    downcase.gsub(' ', '+')
   end
 
 end
